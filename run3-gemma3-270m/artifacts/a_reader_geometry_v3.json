@@ -1,0 +1,195 @@
+{
+  "frame_trials": [
+    {
+      "penalty": 100.0,
+      "background_validation_max": 0.07204842777185733,
+      "background_validation_rms": 0.01790567066253134,
+      "native_projection_validation_rms": 0.010769877889089632,
+      "dual_raw_norm_max": 1.7423610929401676,
+      "field_text_rms": 0.7232713175929207
+    },
+    {
+      "penalty": 1000.0,
+      "background_validation_max": 0.051118585782749165,
+      "background_validation_rms": 0.00848703195182643,
+      "native_projection_validation_rms": 0.011291534163290304,
+      "dual_raw_norm_max": 1.7261264197720214,
+      "field_text_rms": 0.7349806540241092
+    },
+    {
+      "penalty": 10000.0,
+      "background_validation_max": 0.024869700512492154,
+      "background_validation_rms": 0.004269384053757406,
+      "native_projection_validation_rms": 0.012212413733560076,
+      "dual_raw_norm_max": 1.7138122614738056,
+      "field_text_rms": 0.7603355074792169
+    },
+    {
+      "penalty": 100000.0,
+      "background_validation_max": 0.015913587534163554,
+      "background_validation_rms": 0.002372152869572172,
+      "native_projection_validation_rms": 0.01388021184628743,
+      "dual_raw_norm_max": 1.7014187962990568,
+      "field_text_rms": 0.7991936530545125
+    },
+    {
+      "penalty": 1000000.0,
+      "background_validation_max": 0.012434518013681738,
+      "background_validation_rms": 0.001517665868848368,
+      "native_projection_validation_rms": 0.016523893892231693,
+      "dual_raw_norm_max": 1.6551843356542273,
+      "field_text_rms": 0.8749581922131562
+    }
+  ],
+  "selected_frame": {
+    "penalty": 1000000.0,
+    "background_validation_max": 0.012434518013681738,
+    "background_validation_rms": 0.001517665868848368,
+    "native_projection_validation_rms": 0.016523893892231693,
+    "dual_raw_norm_max": 1.6551843356542273,
+    "field_text_rms": 0.8749581922131562
+  },
+  "gamma_floor": 0.5,
+  "declared_gamma_floors": [
+    0.1,
+    0.25,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "query_trials": [
+    {
+      "ridge": 1e-06,
+      "marker_min": 0.9998294181731417,
+      "marker_max": 1.0005387552256144,
+      "weighted_text_rms": 0.015706711237536686,
+      "weighted_text_max": 0.11778479113770132,
+      "text_max": 0.004765918450622217,
+      "source_max": 0.0019067693046531742
+    },
+    {
+      "ridge": 1e-05,
+      "marker_min": 0.9998294172310502,
+      "marker_max": 1.000538786079382,
+      "weighted_text_rms": 0.01570643720954729,
+      "weighted_text_max": 0.1177763666214687,
+      "text_max": 0.004765686267955939,
+      "source_max": 0.0019067228256567142
+    },
+    {
+      "ridge": 0.0001,
+      "marker_min": 0.999829407787202,
+      "marker_max": 1.000539094244904,
+      "weighted_text_rms": 0.015703707927033583,
+      "weighted_text_max": 0.11769235225704218,
+      "text_max": 0.004763364936598534,
+      "source_max": 0.0019062577091173557
+    },
+    {
+      "ridge": 0.001,
+      "marker_min": 0.999829311188985,
+      "marker_max": 1.0005421397331857,
+      "weighted_text_rms": 0.015677466036280726,
+      "weighted_text_max": 0.11687443746470849,
+      "text_max": 0.0047402108060920975,
+      "source_max": 0.0019015823288419896
+    },
+    {
+      "ridge": 0.01,
+      "marker_min": 0.9998282218000031,
+      "marker_max": 1.0005697397419344,
+      "weighted_text_rms": 0.015487239912788534,
+      "weighted_text_max": 0.11298016733598633,
+      "text_max": 0.004519934739927117,
+      "source_max": 0.0018570736344541408
+    }
+  ],
+  "selected_query": {
+    "ridge": 0.01,
+    "marker_min": 0.9998282218000031,
+    "marker_max": 1.0005697397419344,
+    "weighted_text_rms": 0.015487239912788534,
+    "weighted_text_max": 0.11298016733598633,
+    "text_max": 0.004519934739927117,
+    "source_max": 0.0018570736344541408
+  },
+  "pairs": [
+    1,
+    10,
+    97
+  ],
+  "negative_kernel_gap": 0.5188678482904308,
+  "peak_epsilon": 0.2594339241452154,
+  "pair_raw_cost": [
+    0.030105997196229438,
+    0.007905201634092224,
+    0.008497392682007882
+  ],
+  "pair_post_cost": [
+    0.01408733035552354,
+    0.0009213338581156266,
+    0.000547598906707294
+  ],
+  "ranked_pairs": [
+    [
+      92.63286978124873,
+      1,
+      10,
+      0.5188678482904308
+    ],
+    [
+      97.22454048435102,
+      1,
+      6,
+      0.6061659344685719
+    ],
+    [
+      102.43304105639048,
+      1,
+      12,
+      0.49022794930827485
+    ],
+    [
+      104.9228688359741,
+      1,
+      5,
+      0.6363858469734731
+    ],
+    [
+      106.55348651768294,
+      3,
+      10,
+      0.42373925882869723
+    ],
+    [
+      109.621894684579,
+      3,
+      6,
+      0.5110373450068384
+    ],
+    [
+      110.75183677144996,
+      6,
+      10,
+      0.31978529888567975
+    ],
+    [
+      111.98642134569626,
+      1,
+      16,
+      0.45220852869934824
+    ],
+    [
+      113.09729056065983,
+      1,
+      19,
+      0.43491756355225
+    ],
+    [
+      113.38234190912809,
+      1,
+      21,
+      0.42687353822208096
+    ]
+  ]
+}

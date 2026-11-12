@@ -1,0 +1,56 @@
+{
+  "delta_sha256": "df8f0103e390bdaf8c6028a29cb834a8b76e7c4472bf2c878833a1b1bf9ecc2c",
+  "sources": {
+    "experiments/compile_p_protected_positions_v2.py": "75dec2e09f63d8bb82a349d3bd4f0b59c2ce8caff93abe8e045a609bc3ff7ed7",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_p_bit_position_writer_v2.py": "881b3a18ed630598256e59575a38c4c1fb6fb4d397bcc7d6d83c049241ab840d",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/compile_p_paired_reader_v1.py": "bc946fea615bd6ef577fcef8757394a6a106b693ebaaba23d7ab6df8691acf4b",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_p_source_readouts_v3.py": "84b101c1f79f1062c042a71ea6150f015b6e416488d8d5be006d0673fdf13e2d",
+    "experiments/analyze_p_recency_bits_v3.py": "c1477be725bdbdc00c4551ee547bf44ca6507c5c78ce49e57d0ed30ef7c88f9c",
+    "experiments/compile_p_reader_gain_v1.py": "ce5b66fa3cacf7f670622ed8af71c4216ef4d51493e658ed493790240e0499e5",
+    "experiments/compile_p_amplified_copy_v1.py": "df0847c682ba26b636680a54cc5632a38edd1d55bafa5e98530380e94d653f74",
+    "experiments/derive_p_copy_inputs_v2.py": "4ffe07e28e39771c30c8512e1bb5ca01479b16922277fc71784592e610c84cb0",
+    "experiments/compile_p_copy_gain_v1.py": "74890822e9e45158fee328e9e43c186d8ad5545119530d7669e88729eddbd4e7"
+  },
+  "inputs": {
+    "experiments/p4_amplified_copy/delta.pt": "f055e28587fc213ed7748a49131cd98276f663b16bb5c684fb2676875d502e22",
+    "experiments/p4_amplified_copy/circuit.pt": "1f8b3b425343a174267a1c220e5f10ea32106ab3685cffc78d58fe7fd0d4e546"
+  },
+  "arguments": {
+    "output": "experiments/p4b_amplified_copy/delta.pt",
+    "gain": 262144.0
+  },
+  "description": "P4B: raise copied-value gain to2^18 while keeping the equals common carrier2^24, same22 program neurons and native restoration.",
+  "changed_scalars": 2361532,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589822,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 31488,
+    "transformer.h.0.mlp.c_fc.bias": 41,
+    "transformer.h.0.mlp.c_proj.weight": 424703,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 491520,
+    "transformer.h.1.attn.c_attn.bias": 640,
+    "transformer.h.1.attn.c_proj.weight": 196608,
+    "transformer.h.1.attn.c_proj.bias": 768,
+    "transformer.h.1.mlp.c_fc.weight": 16896,
+    "transformer.h.1.mlp.c_fc.bias": 22,
+    "transformer.h.1.mlp.c_proj.weight": 606720,
+    "transformer.h.1.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 131214.203125,
+  "details": {
+    "copy_gain": 262144.0,
+    "carrier_gain": 16777216,
+    "copy_gain_family": [
+      16384,
+      65536,
+      262144,
+      1048576,
+      4194304
+    ]
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "created_utc": "2026-11-10T02:57:01.399191+00:00",
+  "delta_sha256": "07f9177b72498a1b69f344044f1bdd0d3224a86eff682503843feccaaa806af4",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/analyze_format_invariants_v1.py": "25cf926c623f3d81291ba66ab100a8465bcbbdb2bcebbca019613d3763becd2c",
+    "experiments/analyze_initial_format_v1.py": "449ef59ff7f7495b0585b941b97c3059d48a5f29c190a6d3e255c45a86a655ab",
+    "experiments/analyze_native_key_routing_v1.py": "8f09c68769226c28b8a81e94eaaec030a2f24ba6ab8e8dffab594027395b79b3",
+    "experiments/analyze_native_key_routing_v2.py": "4c273962bfb6c194c71a952e5714a4a1ddd164255f2b7084cf4fca6599c08655",
+    "experiments/analyze_readout_v1.py": "a7de3ad642e39dafd4a95b5b9df2e3cfd71d5fae91e42dc86250d170e292d468",
+    "experiments/analyze_sparse_output_v1.py": "8169a2a72d11ef329387d46cd9de37eb9f5a1e1845e336773ce452fbab1e5f95",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a10_registers_phase_v2.py": "f833f3c5c7ce61a299927a847f3113f3eda46a6b300d0994477740767c07e110",
+    "experiments/compile_a11_output_selector_v1.py": "0d846159735716c556fd38ff9b953f5253a7a33cee90b87c1f8a3a80a613e4fe",
+    "experiments/compile_a11_scale_boost_v1.py": "61bfbd4598d7b4836f75a277efc24e467000447e2aa9196b3bcee350d4a77eee",
+    "experiments/compile_a11_scale_boost_v2.py": "cc213aa10d3cd736de429233a2df9309a6ba3fe16a7c7f88ef8da9bfea692fe5",
+    "experiments/compile_a12_digit_output_v1.py": "be3da19c5efd9b862205c4eef7a829d379ee048aab53fe8f17872769cfc990f1",
+    "experiments/compile_a17_copy_query_projection_v1.py": "a0ca689108cdf40be465f340641fe475c43f77000eba2efb7775ff5e357cc06d",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a22_frame_amplifier_v1.py": "389234441e39ebc37c75adad0e5c77d0413d3294a063ff3b5b38570188445004",
+    "experiments/compile_a25_native_key_queries_v4.py": "b831c42b0f1414c07166e19897a11e617d9ea5801cba1eb9b759787f691acb3b",
+    "experiments/compile_a25_native_key_queries_v5.py": "73ef86ca07ecbcc2d96abb252ce051e53fd1986fbfb0b36e3bdc3a28ea78c5fb",
+    "experiments/compile_a27_query_energy_repair_v1.py": "02beb82a040bf535f06e36a40707f7e15d0e3fc5a377bc5f4ac74c45e2dcd28c",
+    "experiments/compile_a29_frame_clear_v1.py": "53177735637999fdbc1be49425d494090591e93f2ffa9202022601326f518c5d",
+    "experiments/compile_a29_frame_copy_v1.py": "0f5516d00e61b405f9185a660d7ccf993aaea7ce79820fd0d6bcbf48bc80c925",
+    "experiments/compile_a2_reader_v7.py": "ed3910832028a5380c9f1cc338030066dd9af2aae480076947740929d994e49c",
+    "experiments/compile_a30_component_ablation_v2.py": "c9ff69092fe9a0c15d92a5486628b6a3adbc6ab7f964c1348bf59ba657d7c96a",
+    "experiments/compile_a33_reader_transfer_v1.py": "ce55f0bacc7a912a3533d98b2080c36b8c070d73da7235e7780058542845e98e",
+    "experiments/compile_a34_gate_margin_v1.py": "c097d4d8c3af4d77907c8db5656bd4e9bd728a697f90b98d86c1df2a6bea8075",
+    "experiments/compile_a3_registers_v4.py": "edf6090cb19334981c614ed98a97ed2ee52b5b589261522065fdba80d72ad9c1",
+    "experiments/compile_a4_reader_v2.py": "0fb3e7c53c6dc47abe3baaa673863db9f645f1007fcc2be88b7902508dbbb957",
+    "experiments/compile_a5_registers_v1.py": "94ad2587f6fca63fa48c5775424d0e3fa3fc293a3b5557ef4fc5083103bf2904",
+    "experiments/compile_a6_carry_units_v1.py": "9129577166608070d76e8ddfc8a0a0be90cf75a80f510daa63adaea2f67806a0",
+    "experiments/compile_a7_carry_step_v1.py": "35b30f239674bc81aeabab66a10b40654db9306161c1ae4004bc9e5c730bf0d9",
+    "experiments/compile_a8_bit_scale_v1.py": "1fcf5328cbafc02102ed1e4f8b092481468f8e00ee8df9d058ec72df3f32c09c",
+    "experiments/compile_a9_copy_reader_v2.py": "132396db4b4d639876f6dac29d9f19a1a6c5dfe8e1fde12c1692a5884322560b",
+    "experiments/compile_a9_native_source_projection_v1.py": "47987b8fea444d462be8f0ca887a67fa0e2aa865efb8453c1ade2fa640b947d5",
+    "experiments/derive_a10_phase_ratio_v1.py": "798e91e762b9fe71079def8f17ae39c202f943929c9f3f5a846123e53b2d4c75",
+    "experiments/derive_a21_phase_ratio_v1.py": "6303f1afe838f92737c89890592ea00faf4b8e03b070b1cac1b6e93f9051c421",
+    "experiments/derive_a23_continuation_gate_v1.py": "03610e1c5a47f07ca4656bc3e46db60e46326e658af58b9153228b5381eec419",
+    "experiments/derive_a25_quiet_query_v1.py": "3fe5e1e339877d9f8e399204075f3c8cdfe72c4c3acd659c79fd9d49a7d78210",
+    "experiments/derive_a25_quiet_query_v2.py": "c8ce8c8fd1f6adfba6be564a735b8173b6ec0095baf7ed9270f981b630577940",
+    "experiments/derive_a29_clear_frame_v1.py": "92812b700e1915f076f2c2112b6a777d580e8c945c1df25ac9262c1bb3b70de6",
+    "experiments/derive_a29_clear_reference_v1.py": "d41aaa9c331b47427b947c89f3975c29912a46e6b50e32b31b12b44ecea2bb28",
+    "experiments/derive_a29_copy_inputs_v1.py": "46483ab81b00c4655f1b8ec59dc402635299e2f6c3b1d68ec789e2f934b30f41",
+    "experiments/derive_a29_qk_v1.py": "eb406134bfe955127bec861a5767d3f90da0ceeff4870ee03857d70ebe276133",
+    "experiments/derive_a9_copy_inputs_v2.py": "d539baf3fc7c68186ea4aeb3b5158d9e0035cdb3bc6fbf0a0a822d2d1e73a619",
+    "experiments/derive_a_absolute_values_v2.py": "2b4c8d8dd0f505b0361161df0ae66c2f0a391d1ead71db9c1c7d2c1abb612075",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_key_equalizer_v1.py": "66faa519aceee9aeeaf349690cf4aa3c5345c211938d898a2a8eb89058558ce5",
+    "experiments/derive_a_reader3_geometry_v3.py": "215dd62048c19536188be5e0f186fa634f6d0ff1763e9e7e95814315a396912c",
+    "experiments/derive_a_reader3_inputs_v1.py": "823cbfb2596fa10555eef3cf6f12d8938bd828bee9490fcb63f506371aa7d420",
+    "experiments/derive_a_reader_geometry_v3.py": "4f77317348e4e0c652e62318b801c1062c0aeea19af04ced46bf3edb9d7cc455",
+    "experiments/derive_a_reader_geometry_v4.py": "1f9a4fc60502330bc707f27a74311b581b34c22dbac33bfd0942385a5e193230",
+    "experiments/derive_a_reader_geometry_v5.py": "a4ca952ab25e26b7d61333453c61cc0496165ba6798b9b918e1d09c5eeb58100",
+    "experiments/derive_a_reader_geometry_v6.py": "9869ff720a47108e7172c37ec543c9e4cc3aba7afab1649156323a74ef72e74e",
+    "experiments/derive_a_source_scalar_options_v1.py": "f51b580a3b81933a96aa6f158e97b4b2c40fa343d4b209460f62282289dedb77"
+  },
+  "inputs": {
+    "experiments/a33v1_native_readers/delta.pt": "d7dc312094a93f81ffe186bca64d3e4e6e28257b9368e33b62f4dc88017934b2",
+    "experiments/a33v1_native_readers/delta.manifest.json": "c4ce3849b86e9f78f7bb60713b91be78cb3fd6a2a2dee092e875d1fbb6874376"
+  },
+  "arguments": {
+    "base": "experiments/a33v1_native_readers/delta.pt",
+    "output": "experiments/a42v1_restore_attention/delta.pt",
+    "restore": "attention",
+    "layers": [
+      2,
+      3,
+      7
+    ]
+  },
+  "description": "Layer-specific restoration diagnostics, without fitted weights or inference.",
+  "changed_scalars": 1754442,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.mlp.gate_proj.weight": 3200,
+    "model.layers.2.mlp.up_proj.weight": 3200,
+    "model.layers.2.mlp.down_proj.weight": 337003,
+    "model.layers.2.post_feedforward_layernorm.weight": 640,
+    "model.layers.3.mlp.gate_proj.weight": 2560,
+    "model.layers.3.mlp.up_proj.weight": 2560,
+    "model.layers.3.mlp.down_proj.weight": 334835,
+    "model.layers.3.post_feedforward_layernorm.weight": 640,
+    "model.layers.4.mlp.gate_proj.weight": 5120,
+    "model.layers.4.mlp.up_proj.weight": 5120,
+    "model.layers.4.mlp.down_proj.weight": 92776,
+    "model.layers.4.post_feedforward_layernorm.weight": 635,
+    "model.layers.5.mlp.gate_proj.weight": 1280,
+    "model.layers.5.mlp.up_proj.weight": 1280,
+    "model.layers.5.mlp.down_proj.weight": 87036,
+    "model.layers.5.post_feedforward_layernorm.weight": 640,
+    "model.layers.6.mlp.gate_proj.weight": 11520,
+    "model.layers.6.mlp.up_proj.weight": 11520,
+    "model.layers.6.mlp.down_proj.weight": 108656,
+    "model.layers.6.post_feedforward_layernorm.weight": 640,
+    "model.layers.7.mlp.gate_proj.weight": 5120,
+    "model.layers.7.mlp.up_proj.weight": 5120,
+    "model.layers.7.mlp.down_proj.weight": 102335,
+    "model.layers.7.post_feedforward_layernorm.weight": 640,
+    "model.layers.8.mlp.gate_proj.weight": 7040,
+    "model.layers.8.mlp.up_proj.weight": 7040,
+    "model.layers.8.mlp.down_proj.weight": 94687,
+    "model.layers.8.post_feedforward_layernorm.weight": 640,
+    "model.layers.17.mlp.gate_proj.weight": 19840,
+    "model.layers.17.mlp.up_proj.weight": 19840,
+    "model.layers.17.mlp.down_proj.weight": 435776,
+    "model.layers.17.post_feedforward_layernorm.weight": 640
+  },
+  "max_abs_edited_value": 1000000.0,
+  "categories": {
+    "model.layers.3.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 2560
+    },
+    "model.layers.3.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 2560
+    },
+    "model.layers.3.mlp.down_proj.weight": {
+      "text_repair": 325631,
+      "circuit_and_accommodation": 9204
+    },
+    "model.layers.3.post_feedforward_layernorm.weight": {
+      "text_repair": 637,
+      "circuit_and_accommodation": 3
+    },
+    "model.layers.4.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.4.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.4.mlp.down_proj.weight": {
+      "text_repair": 81408,
+      "circuit_and_accommodation": 11368
+    },
+    "model.layers.4.post_feedforward_layernorm.weight": {
+      "text_repair": 632,
+      "circuit_and_accommodation": 3
+    },
+    "model.layers.5.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.5.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.5.mlp.down_proj.weight": {
+      "text_repair": 81536,
+      "circuit_and_accommodation": 5500
+    },
+    "model.layers.5.post_feedforward_layernorm.weight": {
+      "text_repair": 638,
+      "circuit_and_accommodation": 2
+    },
+    "model.layers.6.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 11520
+    },
+    "model.layers.6.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 11520
+    },
+    "model.layers.6.mlp.down_proj.weight": {
+      "text_repair": 80768,
+      "circuit_and_accommodation": 27888
+    },
+    "model.layers.6.post_feedforward_layernorm.weight": {
+      "text_repair": 632,
+      "circuit_and_accommodation": 8
+    },
+    "model.layers.7.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.7.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.7.mlp.down_proj.weight": {
+      "text_repair": 80767,
+      "circuit_and_accommodation": 21568
+    },
+    "model.layers.7.post_feedforward_layernorm.weight": {
+      "text_repair": 632,
+      "circuit_and_accommodation": 8
+    },
+    "model.layers.8.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 7040
+    },
+    "model.layers.8.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 7040
+    },
+    "model.layers.8.mlp.down_proj.weight": {
+      "text_repair": 81408,
+      "circuit_and_accommodation": 13279
+    },
+    "model.layers.8.post_feedforward_layernorm.weight": {
+      "text_repair": 637,
+      "circuit_and_accommodation": 3
+    },
+    "model.layers.17.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 19840
+    },
+    "model.layers.17.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 19840
+    },
+    "model.layers.17.mlp.down_proj.weight": {
+      "text_repair": 28672,
+      "circuit_and_accommodation": 407104
+    },
+    "model.layers.17.post_feedforward_layernorm.weight": {
+      "text_repair": 448,
+      "circuit_and_accommodation": 192
+    }
+  },
+  "extra": {
+    "diagnostic_only": true,
+    "restored_family": "attention",
+    "layers": [
+      2,
+      3,
+      7
+    ],
+    "restored_tensors": [
+      "model.layers.2.self_attn.q_norm.weight",
+      "model.layers.2.self_attn.q_proj.weight",
+      "model.layers.2.self_attn.v_proj.weight",
+      "model.layers.2.self_attn.o_proj.weight",
+      "model.layers.3.self_attn.q_norm.weight",
+      "model.layers.3.self_attn.q_proj.weight",
+      "model.layers.3.self_attn.v_proj.weight",
+      "model.layers.3.self_attn.o_proj.weight",
+      "model.layers.7.self_attn.q_proj.weight",
+      "model.layers.7.self_attn.k_proj.weight",
+      "model.layers.7.self_attn.q_norm.weight",
+      "model.layers.7.self_attn.k_norm.weight",
+      "model.layers.7.self_attn.v_proj.weight",
+      "model.layers.7.self_attn.o_proj.weight"
+    ],
+    "purpose": "Locate remaining native text disturbance; arithmetic is not expected to survive"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "quiet_mass_trials": [
+    100.0,
+    10000.0,
+    1000000.0,
+    100000000.0,
+    10000000000.0
+  ],
+  "quiet_trials": [
+    {
+      "mass": 100.0,
+      "maximum_relative_format_correction": [
+        4.977090307693687e-05,
+        7.680429509394575e-06
+      ],
+      "validation_word_rms": [
+        0.08262457151147208,
+        0.01660210847736788
+      ]
+    },
+    {
+      "mass": 10000.0,
+      "maximum_relative_format_correction": [
+        1.5450638628044527e-05,
+        5.6101682659527525e-06
+      ],
+      "validation_word_rms": [
+        0.0827951702328279,
+        0.016642244159289263
+      ]
+    },
+    {
+      "mass": 1000000.0,
+      "maximum_relative_format_correction": [
+        4.545157302107891e-06,
+        1.3849821251699863e-06
+      ],
+      "validation_word_rms": [
+        0.0861189452585291,
+        0.01723814901957505
+      ]
+    },
+    {
+      "mass": 100000000.0,
+      "maximum_relative_format_correction": [
+        7.283052484182023e-07,
+        2.379936414733873e-07
+      ],
+      "validation_word_rms": [
+        0.10526768643668083,
+        0.02189642881238444
+      ]
+    },
+    {
+      "mass": 10000000000.0,
+      "maximum_relative_format_correction": [
+        9.047602292721603e-08,
+        1.6660567949163757e-08
+      ],
+      "validation_word_rms": [
+        0.1415475782734168,
+        0.028419174855148412
+      ]
+    }
+  ],
+  "selected_query_mass": 100.0,
+  "selected_key_mass": 100.0,
+  "projection_fraction_trials": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "projection_rank": 1,
+  "pair": 87,
+  "query_raw_scale": 0.03,
+  "required_source_routing_margin": 8.0,
+  "baseline": {
+    "paired_centered_causal_score_mse": 0.0028592808419721557,
+    "paired_score_p99_query_rms": 0.13925778656759336
+  },
+  "trials": [
+    {
+      "fraction": 0.0,
+      "program_gain": 196.85624149353063,
+      "routing_margins": [
+        8.000011782022739,
+        16.684511826929945,
+        16.82502732582256,
+        16.92633942658415,
+        17.02390417546816
+      ],
+      "paired_centered_causal_score_mse": 0.0028867680699302557,
+      "paired_score_p99_query_rms": 0.13909916330223793,
+      "eligible": true
+    },
+    {
+      "fraction": 0.25,
+      "program_gain": 174.3313408232271,
+      "routing_margins": [
+        8.000012815459343,
+        11.755542134063843,
+        11.896246208876452,
+        11.997879663431263,
+        12.095484228473238
+      ],
+      "paired_centered_causal_score_mse": 0.002852571952907405,
+      "paired_score_p99_query_rms": 0.139066681138384,
+      "eligible": true
+    },
+    {
+      "fraction": 0.5,
+      "program_gain": 155.1619076494364,
+      "routing_margins": [
+        8.790286760497118,
+        8.000015795662154,
+        8.172678529534947,
+        8.27458104439789,
+        8.372224025903723
+      ],
+      "paired_centered_causal_score_mse": 0.002878274617589745,
+      "paired_score_p99_query_rms": 0.13936426348324088,
+      "eligible": true
+    },
+    {
+      "fraction": 0.75,
+      "program_gain": 155.15034021511244,
+      "routing_margins": [
+        14.679017395154276,
+        8.000016043807957,
+        8.173092149474163,
+        8.27510177182658,
+        8.37280502150228
+      ],
+      "paired_centered_causal_score_mse": 0.0029729599208904445,
+      "paired_score_p99_query_rms": 0.14050850747949498,
+      "eligible": true
+    },
+    {
+      "fraction": 1.0,
+      "program_gain": 155.1377363574836,
+      "routing_margins": [
+        17.945312134126837,
+        8.000016062567084,
+        8.173532790297052,
+        8.275642197598582,
+        8.373397171787442
+      ],
+      "paired_centered_causal_score_mse": 0.0031054957948349594,
+      "paired_score_p99_query_rms": 0.14138319780820754,
+      "eligible": true
+    }
+  ],
+  "selected": {
+    "fraction": 0.25,
+    "program_gain": 174.3313408232271,
+    "routing_margins": [
+      8.000012815459343,
+      11.755542134063843,
+      11.896246208876452,
+      11.997879663431263,
+      12.095484228473238
+    ],
+    "paired_centered_causal_score_mse": 0.002852571952907405,
+    "paired_score_p99_query_rms": 0.139066681138384,
+    "eligible": true
+  },
+  "no_sum_targets_activation_or_attention_replay": true
+}

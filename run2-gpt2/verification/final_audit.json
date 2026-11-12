@@ -1,0 +1,81 @@
+{
+  "time": "2026-11-10T19:14:29.297396+01:00",
+  "frozen_sources_and_host_unchanged": true,
+  "calibration_unchanged": true,
+  "heldout_read_by_this_audit": false,
+  "all_bank_files_unchanged_since_freeze": true,
+  "preexisting_bank_files_unchanged": 17,
+  "all_bank_files_checked": 22,
+  "manifest_source_references_checked": 3239,
+  "manifest_source_files_checked": 358,
+  "banks": {
+    "G1": {
+      "delta_sha256": "261337b8753908bb840cc3fc01d2ed2a2e25faedb30edf7c406774c2fa4d47cb",
+      "standard_run_id": "0123-score",
+      "standard_passed": {
+        "G1": true
+      },
+      "fresh_run_id": "0843-score",
+      "fresh_passed": {
+        "G1": true
+      }
+    },
+    "G2": {
+      "delta_sha256": "14ecda4d45e8a4f53e64905572c4be40d6677d513fce9239c014831f9f544f06",
+      "standard_run_id": "0313-score",
+      "standard_passed": {
+        "G2": true
+      },
+      "fresh_run_id": "0845-score",
+      "fresh_passed": {
+        "G2": true
+      }
+    },
+    "G3": {
+      "delta_sha256": "24a6680613185f6b0ead47b1d2ccac35e0ff009936cf212228df73c9a3a29b16",
+      "standard_run_id": "0371-score",
+      "standard_passed": {
+        "G3": true
+      },
+      "fresh_run_id": "0847-score",
+      "fresh_passed": {
+        "G3": false
+      }
+    },
+    "G3-robust": {
+      "delta_sha256": "69a2f31d107e6d9471ee09fb45892d14f9f67c06638fd29827b7578e76376582",
+      "standard_run_id": "0839-score",
+      "standard_passed": {
+        "G3": true
+      },
+      "fresh_run_id": "0849-score",
+      "fresh_passed": {
+        "G3": true
+      }
+    },
+    "G4-best-attempt": {
+      "delta_sha256": "fb0275c3f1f337bb691663501f7217e9b7db9f8a00269cb2b0b46975b856fcab",
+      "standard_run_id": "0579-score",
+      "standard_passed": {
+        "G4": false
+      }
+    }
+  },
+  "new_g3_and_failed_g4_archives_byte_identical_to_sources": true,
+  "g4_full_comparisons": [
+    "0579-score",
+    "0713-score"
+  ],
+  "ledger_rows": 851,
+  "ledger_head_sha256": "09cf964e956394c51b52a76ce449ea1ea0777eefca882cbe3089844db7245524",
+  "ledger_file_sha256": "f967834ebde8d14dbffdc7f1a99d6010011cefb7f138ae6331499c27e60401d2",
+  "remaining_budget": {
+    "forward": 0,
+    "full": 0,
+    "quick": 0
+  },
+  "no_open_metered_runs": true,
+  "verification_originals_all_pass": false,
+  "new_g3_fresh_pass": true,
+  "no_model_execution": true
+}

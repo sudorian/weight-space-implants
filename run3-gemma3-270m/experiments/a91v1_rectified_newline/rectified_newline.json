@@ -1,0 +1,83 @@
+{
+  "sharpness_trials": [
+    16,
+    64,
+    256,
+    1024,
+    4096
+  ],
+  "negative_gate_margin": 512.0,
+  "literal_newline_threshold": 0.5,
+  "positive_slope": 2.0,
+  "common_scale": 6923794.755472289,
+  "trials": [
+    {
+      "sharpness": 16.0,
+      "off_multiplier": 0.0074671976172433815,
+      "maximum_negative_gate": -512.0000021557202,
+      "minimum_signed_format_gate": -0.7859137760932384,
+      "maximum_normalized_newline_gate_distortion": 18.040807195451176,
+      "maximum_gate_weight": 491.510498046875,
+      "maximum_Up_weight": 8227.8271484375,
+      "eligible": false
+    },
+    {
+      "sharpness": 64.0,
+      "off_multiplier": 0.0074683738654648234,
+      "maximum_negative_gate": -512.0000055317716,
+      "minimum_signed_format_gate": -0.549102089824983,
+      "maximum_normalized_newline_gate_distortion": 4.510912255062856,
+      "maximum_gate_weight": 491.5879211425781,
+      "maximum_Up_weight": 2056.956787109375,
+      "eligible": false
+    },
+    {
+      "sharpness": 256.0,
+      "off_multiplier": 0.007473078858350595,
+      "maximum_negative_gate": -512.0000040795221,
+      "minimum_signed_format_gate": 0.3981444466078514,
+      "maximum_normalized_newline_gate_distortion": 1.1284385199657763,
+      "maximum_gate_weight": 491.8976135253906,
+      "maximum_Up_weight": 514.2391967773438,
+      "eligible": false
+    },
+    {
+      "sharpness": 1024.0,
+      "off_multiplier": 0.0074918988298936715,
+      "maximum_negative_gate": -511.99999555514324,
+      "minimum_signed_format_gate": 4.187130367265743,
+      "maximum_normalized_newline_gate_distortion": 0.282820086191506,
+      "maximum_gate_weight": 493.1363830566406,
+      "maximum_Up_weight": 128.55979919433594,
+      "eligible": false
+    },
+    {
+      "sharpness": 4096.0,
+      "off_multiplier": 0.007567178716065985,
+      "maximum_negative_gate": -512.0000087850603,
+      "minimum_signed_format_gate": 18.581834614435913,
+      "maximum_normalized_newline_gate_distortion": 0.07141547774793848,
+      "maximum_gate_weight": 498.0915222167969,
+      "maximum_Up_weight": 32.139949798583984,
+      "eligible": true
+    }
+  ],
+  "selected": {
+    "sharpness": 4096.0,
+    "off_multiplier": 0.007567178716065985,
+    "maximum_negative_gate": -512.0000087850603,
+    "minimum_signed_format_gate": 18.581834614435913,
+    "maximum_normalized_newline_gate_distortion": 0.07141547774793848,
+    "maximum_gate_weight": 498.0915222167969,
+    "maximum_Up_weight": 32.139949798583984,
+    "eligible": true
+  },
+  "maximum_word_programme_gate": -512.0000087850608,
+  "minimum_digit_phase_newline_fraction": -0.02225076695653907,
+  "maximum_digit_phase_newline_fraction": 0.012472943836572025,
+  "newline_phase_fraction_min": 0.9845980512298749,
+  "newline_phase_fraction_max": 0.9973303085240542,
+  "all_native_weights_gains_and_cancellation_functions_bit_identical": true,
+  "format_readout_requires_official_forward": true,
+  "no_failure_capture_answer_targets_or_activation_replay": true
+}

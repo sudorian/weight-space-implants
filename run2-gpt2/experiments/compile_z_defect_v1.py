@@ -1,0 +1,12 @@
+"""Z2: compact whole-format violation channel, retaining signed operand memory."""
+from pathlib import Path
+import argparse,json,sys,torch
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'experiments'))
+from circuit_io_v1 import save
+p=argparse.ArgumentParser();p.add_argument('--output',required=True);a=p.parse_args();torch.set_num_threads(6);torch.set_grad_enabled(False)
+host=torch.load(ROOT/'host/ckpt.pt',weights_only=True,mmap=True)['model'];base=ROOT/'experiments/z1_centered_reader/delta.pt';meta=json.loads(base.with_suffix('.manifest.json').read_text());previous=torch.load(base.parent/'circuit.pt',weights_only=True);geo=torch.load(ROOT/'artifacts/z_defect_weights_v2.pt',weights_only=True);changed={}
+for key,u in torch.load(base,weights_only=True)['updates'].items():
+    v=host[key].clone();v.view(-1)[u['indices'].long()]=u['values'];changed[key]=v
+changed.update(geo['changed']);out=ROOT/a.output;assert not out.exists();out.parent.mkdir(parents=True,exist_ok=True);torch.save({'previous':previous,**{k:v for k,v in geo.items() if k!='changed'}},out.parent/'circuit.pt')
+sources=[ROOT/s for s in meta['sources']]+[Path(__file__)]+[ROOT/'experiments'/s for s in ('derive_z_defect_gate_v2.py','derive_z_defect_weights_v2.py','circuit_restore_v5.py','w_full_capture_io_v1.py')];inputs=[base,base.parent/'circuit.pt']+[ROOT/'artifacts'/s for s in ('z_defect_weights_v2.pt','z_defect_gate_v2.pt','z1_stage5_full_v1.pt','z_reader_attention_v2_eq.pt','o_host_calib25.pt')]
+save(out,host,changed,sources=list(dict.fromkeys(sources)),inputs=inputs,arguments=vars(a),description='Z2: ten MLP5 GELUs emit a nonnegative sum of seven single-role format violations and one paired-rightmost-role violation, plus an equals reference. The old16384 query and the native MLP5 mean in operand-memory directions are cancelled at equals. Operand bits remain in31 original reader fields.768 native donors restore ordinary-word activations. Whole-format output gating and arithmetic remain pending.',extra={'checks':geo['checks'],'defect_definition':geo['definition']['chosen'],'defect_trials':geo['definition']['reports'],'paired_roles':geo['definition']['paired_roles'],'pair_threshold':geo['definition']['pair_threshold'],'pair_trials':geo['definition']['paired_role_trials'],'native_donors':768,'native_repair':geo['repair']['text_repair_report'],'ridge_trials':geo['repair']['ridge_trials'],'gains':geo['gains'].tolist(),'program_units':len(geo['rows'])})

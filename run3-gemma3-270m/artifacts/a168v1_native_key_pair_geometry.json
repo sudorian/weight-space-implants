@@ -1,0 +1,1093 @@
+{
+  "analysis_only": true,
+  "original_keys_preserved": true,
+  "channel_count_trials": [
+    64,
+    96,
+    128,
+    192,
+    256
+  ],
+  "pair_difference_penalty_trials": [
+    1.0,
+    100.0,
+    10000.0,
+    1000000.0,
+    100000000.0
+  ],
+  "training_format_windows": 1120,
+  "validation_format_windows": 544,
+  "source_positions": [
+    [
+      3,
+      7
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      4
+    ]
+  ],
+  "routing_margin": 8,
+  "pair_imbalance_limit": 0.004,
+  "trials": [
+    {
+      "channels": 64,
+      "pair_difference_penalty": 1.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.7293823425591,
+          "scale_for_margin8": 10.968184357097705,
+          "maximum_pair_imbalance_at_margin8": 2.696035927081875,
+          "validation_pair_imbalance_at_margin8": 2.696035927081875,
+          "query_norm_at_margin8": 4.036136209279255
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.6636658562805161,
+          "scale_for_margin8": 12.054258817585737,
+          "maximum_pair_imbalance_at_margin8": 4.070477793836392,
+          "validation_pair_imbalance_at_margin8": 4.070477793836392,
+          "query_norm_at_margin8": 5.0294202657844735
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.7334692864857518,
+          "scale_for_margin8": 10.90706884037387,
+          "maximum_pair_imbalance_at_margin8": 1.3157483835568209,
+          "validation_pair_imbalance_at_margin8": 1.3157483835568209,
+          "query_norm_at_margin8": 3.755779193405728
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.8228888156446954,
+          "scale_for_margin8": 9.72184801628683,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 2.2689724845658272
+        }
+      ],
+      "maximum_imbalance": 4.070477793836392,
+      "source_eligible": false
+    },
+    {
+      "channels": 64,
+      "pair_difference_penalty": 100.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.6404251083871555,
+          "scale_for_margin8": 12.491702613201992,
+          "maximum_pair_imbalance_at_margin8": 2.617666529662232,
+          "validation_pair_imbalance_at_margin8": 2.617666529662232,
+          "query_norm_at_margin8": 4.42476074564917
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.6418790861672592,
+          "scale_for_margin8": 12.463406539335947,
+          "maximum_pair_imbalance_at_margin8": 3.532448430724829,
+          "validation_pair_imbalance_at_margin8": 3.532448430724829,
+          "query_norm_at_margin8": 5.422765314390187
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.5022396522695938,
+          "scale_for_margin8": 15.928650722515503,
+          "maximum_pair_imbalance_at_margin8": 1.0678483007984265,
+          "validation_pair_imbalance_at_margin8": 1.0678483007984265,
+          "query_norm_at_margin8": 5.514738917894287
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.8228888156446954,
+          "scale_for_margin8": 9.72184801628683,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 2.2689724845658272
+        }
+      ],
+      "maximum_imbalance": 3.532448430724829,
+      "source_eligible": false
+    },
+    {
+      "channels": 64,
+      "pair_difference_penalty": 10000.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.6356406977568423,
+          "scale_for_margin8": 12.585726540531104,
+          "maximum_pair_imbalance_at_margin8": 2.6227031131269665,
+          "validation_pair_imbalance_at_margin8": 2.6227031131269665,
+          "query_norm_at_margin8": 4.456728101329923
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.6132175333747414,
+          "scale_for_margin8": 13.045941390444794,
+          "maximum_pair_imbalance_at_margin8": 3.5953774297417693,
+          "validation_pair_imbalance_at_margin8": 3.5953774297417693,
+          "query_norm_at_margin8": 5.684040722571434
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.19023748291527492,
+          "scale_for_margin8": 42.05270106292837,
+          "maximum_pair_imbalance_at_margin8": 1.2163990280128585,
+          "validation_pair_imbalance_at_margin8": 1.08682036311735,
+          "query_norm_at_margin8": 14.940660773200449
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.8228888156446954,
+          "scale_for_margin8": 9.72184801628683,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 2.2689724845658272
+        }
+      ],
+      "maximum_imbalance": 3.5953774297417693,
+      "source_eligible": false
+    },
+    {
+      "channels": 64,
+      "pair_difference_penalty": 1000000.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.635591618096806,
+          "scale_for_margin8": 12.58669839598409,
+          "maximum_pair_imbalance_at_margin8": 2.6227542227857374,
+          "validation_pair_imbalance_at_margin8": 2.6227542227857374,
+          "query_norm_at_margin8": 4.4570625179369445
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.6127783119014982,
+          "scale_for_margin8": 13.05529233757537,
+          "maximum_pair_imbalance_at_margin8": 3.5967202782718806,
+          "validation_pair_imbalance_at_margin8": 3.5967202782718806,
+          "query_norm_at_margin8": 5.68831334820983
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.17995667410188726,
+          "scale_for_margin8": 44.45514477262781,
+          "maximum_pair_imbalance_at_margin8": 1.3059326273154825,
+          "validation_pair_imbalance_at_margin8": 1.134927466159835,
+          "query_norm_at_margin8": 15.837831010207923
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.8228888156446954,
+          "scale_for_margin8": 9.72184801628683,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 2.2689724845658272
+        }
+      ],
+      "maximum_imbalance": 3.5967202782718806,
+      "source_eligible": false
+    },
+    {
+      "channels": 64,
+      "pair_difference_penalty": 100000000.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.6355911271742021,
+          "scale_for_margin8": 12.586708117791847,
+          "maximum_pair_imbalance_at_margin8": 2.6227547339452295,
+          "validation_pair_imbalance_at_margin8": 2.6227547339452295,
+          "query_norm_at_margin8": 4.457065863647392
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.6127739105637504,
+          "scale_for_margin8": 13.05538610911163,
+          "maximum_pair_imbalance_at_margin8": 3.596733744177595,
+          "validation_pair_imbalance_at_margin8": 3.596733744177595,
+          "query_norm_at_margin8": 5.688356208039101
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.17985228224161695,
+          "scale_for_margin8": 44.48094792176531,
+          "maximum_pair_imbalance_at_margin8": 1.306896886169273,
+          "validation_pair_imbalance_at_margin8": 1.1354417273348112,
+          "query_norm_at_margin8": 15.847495868666302
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.8228888156446954,
+          "scale_for_margin8": 9.72184801628683,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 2.2689724845658272
+        }
+      ],
+      "maximum_imbalance": 3.596733744177595,
+      "source_eligible": false
+    },
+    {
+      "channels": 96,
+      "pair_difference_penalty": 1.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.7782602750425232,
+          "scale_for_margin8": 10.27933746144616,
+          "maximum_pair_imbalance_at_margin8": 1.6744828254213004,
+          "validation_pair_imbalance_at_margin8": 1.6452773317546843,
+          "query_norm_at_margin8": 29.067774286594165
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.7558496387681152,
+          "scale_for_margin8": 10.584115662261096,
+          "maximum_pair_imbalance_at_margin8": 1.5113151739845432,
+          "validation_pair_imbalance_at_margin8": 1.362366163675581,
+          "query_norm_at_margin8": 98.1135550932677
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.804296339213604,
+          "scale_for_margin8": 9.946582633736655,
+          "maximum_pair_imbalance_at_margin8": 0.632459348351441,
+          "validation_pair_imbalance_at_margin8": 0.5492999763090601,
+          "query_norm_at_margin8": 71.99098813350369
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.8879159557704657,
+          "scale_for_margin8": 9.009861741991347,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 392.76798814231677
+        }
+      ],
+      "maximum_imbalance": 1.6744828254213004,
+      "source_eligible": false
+    },
+    {
+      "channels": 96,
+      "pair_difference_penalty": 100.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.6403844638284042,
+          "scale_for_margin8": 12.492495449020856,
+          "maximum_pair_imbalance_at_margin8": 1.8274539854400313,
+          "validation_pair_imbalance_at_margin8": 1.6990281891485903,
+          "query_norm_at_margin8": 85.5235551322332
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.6509342853518433,
+          "scale_for_margin8": 12.290027088795663,
+          "maximum_pair_imbalance_at_margin8": 1.3583491314211609,
+          "validation_pair_imbalance_at_margin8": 1.3583491314211609,
+          "query_norm_at_margin8": 32.75842588763531
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.6684943887587685,
+          "scale_for_margin8": 11.967190951077471,
+          "maximum_pair_imbalance_at_margin8": 0.26090026176867465,
+          "validation_pair_imbalance_at_margin8": 0.26090026176867465,
+          "query_norm_at_margin8": 7.731172466523232
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.8879159557704657,
+          "scale_for_margin8": 9.009861741991347,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 392.76798814231677
+        }
+      ],
+      "maximum_imbalance": 1.8274539854400313,
+      "source_eligible": false
+    },
+    {
+      "channels": 96,
+      "pair_difference_penalty": 10000.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.627072431568766,
+          "scale_for_margin8": 12.7576968740057,
+          "maximum_pair_imbalance_at_margin8": 1.932287931717336,
+          "validation_pair_imbalance_at_margin8": 1.7545012324873825,
+          "query_norm_at_margin8": 95.73995120579926
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.6293737133093681,
+          "scale_for_margin8": 12.711048826514315,
+          "maximum_pair_imbalance_at_margin8": 1.409091304616852,
+          "validation_pair_imbalance_at_margin8": 1.409091304616852,
+          "query_norm_at_margin8": 27.270285851034327
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.49115454519183066,
+          "scale_for_margin8": 16.28815222889861,
+          "maximum_pair_imbalance_at_margin8": 0.2885578437219571,
+          "validation_pair_imbalance_at_margin8": 0.2885578437219571,
+          "query_norm_at_margin8": 6.311803936734882
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.8879159557704657,
+          "scale_for_margin8": 9.009861741991347,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 392.76798814231677
+        }
+      ],
+      "maximum_imbalance": 1.932287931717336,
+      "source_eligible": false
+    },
+    {
+      "channels": 96,
+      "pair_difference_penalty": 1000000.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.6269181599775404,
+          "scale_for_margin8": 12.76083627931053,
+          "maximum_pair_imbalance_at_margin8": 1.9335069913768401,
+          "validation_pair_imbalance_at_margin8": 1.7551136058619055,
+          "query_norm_at_margin8": 95.86317948688075
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.6290170993341645,
+          "scale_for_margin8": 12.71825520875071,
+          "maximum_pair_imbalance_at_margin8": 1.4100620297573057,
+          "validation_pair_imbalance_at_margin8": 1.4100620297573057,
+          "query_norm_at_margin8": 27.19109489981131
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.48032473430366285,
+          "scale_for_margin8": 16.655398793063974,
+          "maximum_pair_imbalance_at_margin8": 0.29492251470617964,
+          "validation_pair_imbalance_at_margin8": 0.29492251470617964,
+          "query_norm_at_margin8": 6.429692334877337
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.8879159557704657,
+          "scale_for_margin8": 9.009861741991347,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 392.76798814231677
+        }
+      ],
+      "maximum_imbalance": 1.9335069913768401,
+      "source_eligible": false
+    },
+    {
+      "channels": 96,
+      "pair_difference_penalty": 100000000.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.6269166147091747,
+          "scale_for_margin8": 12.760867733121387,
+          "maximum_pair_imbalance_at_margin8": 1.93351920283965,
+          "validation_pair_imbalance_at_margin8": 1.7551197362661464,
+          "query_norm_at_margin8": 95.86441434704773
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.6290135101782888,
+          "scale_for_margin8": 12.718327779211714,
+          "maximum_pair_imbalance_at_margin8": 1.4100718159523724,
+          "validation_pair_imbalance_at_margin8": 1.4100718159523724,
+          "query_norm_at_margin8": 27.190299212516123
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.4802045579888815,
+          "scale_for_margin8": 16.659566984337598,
+          "maximum_pair_imbalance_at_margin8": 0.2949868163492978,
+          "validation_pair_imbalance_at_margin8": 0.2949868163492978,
+          "query_norm_at_margin8": 6.431233043752398
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.8879159557704657,
+          "scale_for_margin8": 9.009861741991347,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 392.76798814231677
+        }
+      ],
+      "maximum_imbalance": 1.93351920283965,
+      "source_eligible": false
+    },
+    {
+      "channels": 128,
+      "pair_difference_penalty": 1.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.8114116748826543,
+          "scale_for_margin8": 9.85936023308631,
+          "maximum_pair_imbalance_at_margin8": 1.3308978279854673,
+          "validation_pair_imbalance_at_margin8": 1.157689579357338,
+          "query_norm_at_margin8": 41.71435553403964
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.8052158818257675,
+          "scale_for_margin8": 9.93522380837868,
+          "maximum_pair_imbalance_at_margin8": 0.9119968908087693,
+          "validation_pair_imbalance_at_margin8": 0.8883350111001612,
+          "query_norm_at_margin8": 61.599089418428555
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.8955124805705705,
+          "scale_for_margin8": 8.93343216713501,
+          "maximum_pair_imbalance_at_margin8": 0.4285548091457048,
+          "validation_pair_imbalance_at_margin8": 0.4214542769713781,
+          "query_norm_at_margin8": 27.38505686515773
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.9296553979705473,
+          "scale_for_margin8": 8.60533915842809,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 184.2030536810425
+        }
+      ],
+      "maximum_imbalance": 1.3308978279854673,
+      "source_eligible": false
+    },
+    {
+      "channels": 128,
+      "pair_difference_penalty": 100.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.674891505674796,
+          "scale_for_margin8": 11.853757133898332,
+          "maximum_pair_imbalance_at_margin8": 1.3007052585605916,
+          "validation_pair_imbalance_at_margin8": 1.3007052585605916,
+          "query_norm_at_margin8": 44.8603939610485
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.7537747578383257,
+          "scale_for_margin8": 10.613250068153503,
+          "maximum_pair_imbalance_at_margin8": 0.8857003834018917,
+          "validation_pair_imbalance_at_margin8": 0.8857003834018917,
+          "query_norm_at_margin8": 25.015409848021676
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.8542477038178159,
+          "scale_for_margin8": 9.364965178421068,
+          "maximum_pair_imbalance_at_margin8": 0.1788940818969197,
+          "validation_pair_imbalance_at_margin8": 0.13860526870146928,
+          "query_norm_at_margin8": 3.265481063649458
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.9296553979705473,
+          "scale_for_margin8": 8.60533915842809,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 184.2030536810425
+        }
+      ],
+      "maximum_imbalance": 1.3007052585605916,
+      "source_eligible": false
+    },
+    {
+      "channels": 128,
+      "pair_difference_penalty": 10000.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.6366606408549853,
+          "scale_for_margin8": 12.565563954537268,
+          "maximum_pair_imbalance_at_margin8": 1.4192147676012292,
+          "validation_pair_imbalance_at_margin8": 1.4192147676012292,
+          "query_norm_at_margin8": 56.34407727872498
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.6909076714029841,
+          "scale_for_margin8": 11.578971157976705,
+          "maximum_pair_imbalance_at_margin8": 0.9299398655836703,
+          "validation_pair_imbalance_at_margin8": 0.9299398655836703,
+          "query_norm_at_margin8": 23.118717830623797
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.6051524410198846,
+          "scale_for_margin8": 13.219809518602155,
+          "maximum_pair_imbalance_at_margin8": 0.17654702441889547,
+          "validation_pair_imbalance_at_margin8": 0.17654702441889547,
+          "query_norm_at_margin8": 3.6255863081878066
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.9296553979705473,
+          "scale_for_margin8": 8.60533915842809,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 184.2030536810425
+        }
+      ],
+      "maximum_imbalance": 1.4192147676012292,
+      "source_eligible": false
+    },
+    {
+      "channels": 128,
+      "pair_difference_penalty": 1000000.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.6361242366101766,
+          "scale_for_margin8": 12.576159717842163,
+          "maximum_pair_imbalance_at_margin8": 1.4222030007502398,
+          "validation_pair_imbalance_at_margin8": 1.4222030007502398,
+          "query_norm_at_margin8": 56.517515527837
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.6880046499576484,
+          "scale_for_margin8": 11.627828388212865,
+          "maximum_pair_imbalance_at_margin8": 0.9319778618729463,
+          "validation_pair_imbalance_at_margin8": 0.9319778618729463,
+          "query_norm_at_margin8": 23.13028333429017
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.5487944642482492,
+          "scale_for_margin8": 14.577406517681583,
+          "maximum_pair_imbalance_at_margin8": 0.18921872417004515,
+          "validation_pair_imbalance_at_margin8": 0.18921872417004515,
+          "query_norm_at_margin8": 4.0056316761610145
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.9296553979705473,
+          "scale_for_margin8": 8.60533915842809,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 184.2030536810425
+        }
+      ],
+      "maximum_imbalance": 1.4222030007502398,
+      "source_eligible": false
+    },
+    {
+      "channels": 128,
+      "pair_difference_penalty": 100000000.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.6361188501838753,
+          "scale_for_margin8": 12.57626620825265,
+          "maximum_pair_imbalance_at_margin8": 1.4222330248065216,
+          "validation_pair_imbalance_at_margin8": 1.4222330248065216,
+          "query_norm_at_margin8": 56.51925879233881
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.6879749986806418,
+          "scale_for_margin8": 11.62832954008784,
+          "maximum_pair_imbalance_at_margin8": 0.9319986891760871,
+          "validation_pair_imbalance_at_margin8": 0.9319986891760871,
+          "query_norm_at_margin8": 23.13040814586634
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.5480481760459167,
+          "scale_for_margin8": 14.597256864750047,
+          "maximum_pair_imbalance_at_margin8": 0.18940286336668827,
+          "validation_pair_imbalance_at_margin8": 0.18940286336668827,
+          "query_norm_at_margin8": 4.011396054363017
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.9296553979705473,
+          "scale_for_margin8": 8.60533915842809,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 184.2030536810425
+        }
+      ],
+      "maximum_imbalance": 1.4222330248065216,
+      "source_eligible": false
+    },
+    {
+      "channels": 192,
+      "pair_difference_penalty": 1.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.8398039720479715,
+          "scale_for_margin8": 9.52603258173566,
+          "maximum_pair_imbalance_at_margin8": 0.9288009113269861,
+          "validation_pair_imbalance_at_margin8": 0.9288009113269861,
+          "query_norm_at_margin8": 81.79578312076761
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.8464609684163835,
+          "scale_for_margin8": 9.451115052554568,
+          "maximum_pair_imbalance_at_margin8": 0.6602664567578492,
+          "validation_pair_imbalance_at_margin8": 0.6602664567578492,
+          "query_norm_at_margin8": 5.994913936793328
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.925067184757094,
+          "scale_for_margin8": 8.648020524153234,
+          "maximum_pair_imbalance_at_margin8": 0.36358712147546085,
+          "validation_pair_imbalance_at_margin8": 0.34874042112737536,
+          "query_norm_at_margin8": 7.010638883568314
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.9549032444419678,
+          "scale_for_margin8": 8.377812146480965,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 66.20719689528518
+        }
+      ],
+      "maximum_imbalance": 0.9288009113269861,
+      "source_eligible": false
+    },
+    {
+      "channels": 192,
+      "pair_difference_penalty": 100.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.7424690051450509,
+          "scale_for_margin8": 10.774860559245967,
+          "maximum_pair_imbalance_at_margin8": 1.0937139541968213,
+          "validation_pair_imbalance_at_margin8": 1.0937139541968213,
+          "query_norm_at_margin8": 21.239411114502023
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.7461592144725511,
+          "scale_for_margin8": 10.721572346533417,
+          "maximum_pair_imbalance_at_margin8": 0.5455678730574199,
+          "validation_pair_imbalance_at_margin8": 0.5455678730574199,
+          "query_norm_at_margin8": 5.312703564436359
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.872032218983768,
+          "scale_for_margin8": 9.17397296320414,
+          "maximum_pair_imbalance_at_margin8": 0.12923142699905643,
+          "validation_pair_imbalance_at_margin8": 0.12923142699905643,
+          "query_norm_at_margin8": 2.806294254969496
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.9549032444419678,
+          "scale_for_margin8": 8.377812146480965,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 66.20719689528518
+        }
+      ],
+      "maximum_imbalance": 1.0937139541968213,
+      "source_eligible": false
+    },
+    {
+      "channels": 192,
+      "pair_difference_penalty": 10000.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.706000314238679,
+          "scale_for_margin8": 11.331439715613813,
+          "maximum_pair_imbalance_at_margin8": 1.155597826271687,
+          "validation_pair_imbalance_at_margin8": 1.155597826271687,
+          "query_norm_at_margin8": 21.433512881749092
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.649752494805655,
+          "scale_for_margin8": 12.312380581767291,
+          "maximum_pair_imbalance_at_margin8": 0.5565672738880215,
+          "validation_pair_imbalance_at_margin8": 0.5565672738880215,
+          "query_norm_at_margin8": 6.423414960691559
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.6650316259944736,
+          "scale_for_margin8": 12.029503090228193,
+          "maximum_pair_imbalance_at_margin8": 0.12722536195806652,
+          "validation_pair_imbalance_at_margin8": 0.12722536195806652,
+          "query_norm_at_margin8": 4.382085367947248
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.9549032444419678,
+          "scale_for_margin8": 8.377812146480965,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 66.20719689528518
+        }
+      ],
+      "maximum_imbalance": 1.155597826271687,
+      "source_eligible": false
+    },
+    {
+      "channels": 192,
+      "pair_difference_penalty": 1000000.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.705298412732459,
+          "scale_for_margin8": 11.342716580073521,
+          "maximum_pair_imbalance_at_margin8": 1.1566198472735516,
+          "validation_pair_imbalance_at_margin8": 1.1566198472735516,
+          "query_norm_at_margin8": 21.494697981161625
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.6475295392959421,
+          "scale_for_margin8": 12.354648729536551,
+          "maximum_pair_imbalance_at_margin8": 0.5586785042465566,
+          "validation_pair_imbalance_at_margin8": 0.5586785042465566,
+          "query_norm_at_margin8": 6.4720187586023155
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.44831129681808846,
+          "scale_for_margin8": 17.844743277228112,
+          "maximum_pair_imbalance_at_margin8": 0.17528247685976983,
+          "validation_pair_imbalance_at_margin8": 0.17528247685976983,
+          "query_norm_at_margin8": 6.882734883899943
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.9549032444419678,
+          "scale_for_margin8": 8.377812146480965,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 66.20719689528518
+        }
+      ],
+      "maximum_imbalance": 1.1566198472735516,
+      "source_eligible": false
+    },
+    {
+      "channels": 192,
+      "pair_difference_penalty": 100000000.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.7052913148597607,
+          "scale_for_margin8": 11.34283073029293,
+          "maximum_pair_imbalance_at_margin8": 1.1566301508451717,
+          "validation_pair_imbalance_at_margin8": 1.1566301508451717,
+          "query_norm_at_margin8": 21.495325882635207
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.647506533582501,
+          "scale_for_margin8": 12.355087686510105,
+          "maximum_pair_imbalance_at_margin8": 0.5587011625341517,
+          "validation_pair_imbalance_at_margin8": 0.5587011625341517,
+          "query_norm_at_margin8": 6.472530162614094
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.4422639071407473,
+          "scale_for_margin8": 18.088747172972578,
+          "maximum_pair_imbalance_at_margin8": 0.17715001712849587,
+          "validation_pair_imbalance_at_margin8": 0.17715001712849587,
+          "query_norm_at_margin8": 6.978906634803988
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.9549032444419678,
+          "scale_for_margin8": 8.377812146480965,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 66.20719689528518
+        }
+      ],
+      "maximum_imbalance": 1.1566301508451717,
+      "source_eligible": false
+    },
+    {
+      "channels": 256,
+      "pair_difference_penalty": 1.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.8925103170697859,
+          "scale_for_margin8": 8.963481818635913,
+          "maximum_pair_imbalance_at_margin8": 0.9043677785938593,
+          "validation_pair_imbalance_at_margin8": 0.9043677785938593,
+          "query_norm_at_margin8": 6.202638368199453
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.8709251710258105,
+          "scale_for_margin8": 9.185634157957887,
+          "maximum_pair_imbalance_at_margin8": 0.49787874246547725,
+          "validation_pair_imbalance_at_margin8": 0.49787874246547725,
+          "query_norm_at_margin8": 5.350425901874478
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.9413478277226157,
+          "scale_for_margin8": 8.498452712590035,
+          "maximum_pair_imbalance_at_margin8": 0.30395498009539956,
+          "validation_pair_imbalance_at_margin8": 0.30395498009539956,
+          "query_norm_at_margin8": 4.626175443400803
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.9685500323967917,
+          "scale_for_margin8": 8.259769482638964,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 46.209735046084006
+        }
+      ],
+      "maximum_imbalance": 0.9043677785938593,
+      "source_eligible": false
+    },
+    {
+      "channels": 256,
+      "pair_difference_penalty": 100.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.7743816878507146,
+          "scale_for_margin8": 10.330822804196064,
+          "maximum_pair_imbalance_at_margin8": 0.8685928573914784,
+          "validation_pair_imbalance_at_margin8": 0.8685928573914784,
+          "query_norm_at_margin8": 8.466947446191856
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.8204741788110677,
+          "scale_for_margin8": 9.750459193722143,
+          "maximum_pair_imbalance_at_margin8": 0.32013086273100505,
+          "validation_pair_imbalance_at_margin8": 0.32013086273100505,
+          "query_norm_at_margin8": 5.031442018607617
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.9089355633340537,
+          "scale_for_margin8": 8.801504003931052,
+          "maximum_pair_imbalance_at_margin8": 0.09486878520967817,
+          "validation_pair_imbalance_at_margin8": 0.09486878520967817,
+          "query_norm_at_margin8": 2.822731061883488
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.9685500323967917,
+          "scale_for_margin8": 8.259769482638964,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 46.209735046084006
+        }
+      ],
+      "maximum_imbalance": 0.8685928573914784,
+      "source_eligible": false
+    },
+    {
+      "channels": 256,
+      "pair_difference_penalty": 10000.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.7503694143561312,
+          "scale_for_margin8": 10.661415360145712,
+          "maximum_pair_imbalance_at_margin8": 0.8558045419475301,
+          "validation_pair_imbalance_at_margin8": 0.8558045419475301,
+          "query_norm_at_margin8": 8.24557436391298
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.49289379375948206,
+          "scale_for_margin8": 16.23067707747152,
+          "maximum_pair_imbalance_at_margin8": 0.417402570810585,
+          "validation_pair_imbalance_at_margin8": 0.417402570810585,
+          "query_norm_at_margin8": 8.029021522882449
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.7010920601402586,
+          "scale_for_margin8": 11.410769647568882,
+          "maximum_pair_imbalance_at_margin8": 0.08276639730347989,
+          "validation_pair_imbalance_at_margin8": 0.08276639730347989,
+          "query_norm_at_margin8": 4.405707180840014
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.9685500323967917,
+          "scale_for_margin8": 8.259769482638964,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 46.209735046084006
+        }
+      ],
+      "maximum_imbalance": 0.8558045419475301,
+      "source_eligible": false
+    },
+    {
+      "channels": 256,
+      "pair_difference_penalty": 1000000.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.74952183589672,
+          "scale_for_margin8": 10.673471561277312,
+          "maximum_pair_imbalance_at_margin8": 0.8568446576692254,
+          "validation_pair_imbalance_at_margin8": 0.8568446576692254,
+          "query_norm_at_margin8": 8.240061558845262
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.45657690217187386,
+          "scale_for_margin8": 17.521692319399197,
+          "maximum_pair_imbalance_at_margin8": 0.46189603297457416,
+          "validation_pair_imbalance_at_margin8": 0.46189603297457416,
+          "query_norm_at_margin8": 8.722314892382292
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.4674065963186961,
+          "scale_for_margin8": 17.115719082717625,
+          "maximum_pair_imbalance_at_margin8": 0.17021950303238934,
+          "validation_pair_imbalance_at_margin8": 0.17021950303238934,
+          "query_norm_at_margin8": 7.14266483887452
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.9685500323967917,
+          "scale_for_margin8": 8.259769482638964,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 46.209735046084006
+        }
+      ],
+      "maximum_imbalance": 0.8568446576692254,
+      "source_eligible": false
+    },
+    {
+      "channels": 256,
+      "pair_difference_penalty": 100000000.0,
+      "heads": [
+        {
+          "head": 0,
+          "minimum_source_gap": 0.7495131650770032,
+          "scale_for_margin8": 10.67359503842484,
+          "maximum_pair_imbalance_at_margin8": 0.856855699089492,
+          "validation_pair_imbalance_at_margin8": 0.856855699089492,
+          "query_norm_at_margin8": 8.240004079663903
+        },
+        {
+          "head": 1,
+          "minimum_source_gap": 0.45616288840781427,
+          "scale_for_margin8": 17.53759501989105,
+          "maximum_pair_imbalance_at_margin8": 0.4625116486090141,
+          "validation_pair_imbalance_at_margin8": 0.4625116486090141,
+          "query_norm_at_margin8": 8.730902763013516
+        },
+        {
+          "head": 2,
+          "minimum_source_gap": 0.4545672134987432,
+          "scale_for_margin8": 17.599157533657273,
+          "maximum_pair_imbalance_at_margin8": 0.17622852293242913,
+          "validation_pair_imbalance_at_margin8": 0.17622852293242913,
+          "query_norm_at_margin8": 7.381092750113554
+        },
+        {
+          "head": 3,
+          "minimum_source_gap": 0.9685500323967917,
+          "scale_for_margin8": 8.259769482638964,
+          "maximum_pair_imbalance_at_margin8": 0.0,
+          "validation_pair_imbalance_at_margin8": 0.0,
+          "query_norm_at_margin8": 46.209735046084006
+        }
+      ],
+      "maximum_imbalance": 0.856855699089492,
+      "source_eligible": false
+    }
+  ],
+  "best_geometry": {
+    "channels": 256,
+    "pair_difference_penalty": 10000.0,
+    "heads": [
+      {
+        "head": 0,
+        "minimum_source_gap": 0.7503694143561312,
+        "scale_for_margin8": 10.661415360145712,
+        "maximum_pair_imbalance_at_margin8": 0.8558045419475301,
+        "validation_pair_imbalance_at_margin8": 0.8558045419475301,
+        "query_norm_at_margin8": 8.24557436391298
+      },
+      {
+        "head": 1,
+        "minimum_source_gap": 0.49289379375948206,
+        "scale_for_margin8": 16.23067707747152,
+        "maximum_pair_imbalance_at_margin8": 0.417402570810585,
+        "validation_pair_imbalance_at_margin8": 0.417402570810585,
+        "query_norm_at_margin8": 8.029021522882449
+      },
+      {
+        "head": 2,
+        "minimum_source_gap": 0.7010920601402586,
+        "scale_for_margin8": 11.410769647568882,
+        "maximum_pair_imbalance_at_margin8": 0.08276639730347989,
+        "validation_pair_imbalance_at_margin8": 0.08276639730347989,
+        "query_norm_at_margin8": 4.405707180840014
+      },
+      {
+        "head": 3,
+        "minimum_source_gap": 0.9685500323967917,
+        "scale_for_margin8": 8.259769482638964,
+        "maximum_pair_imbalance_at_margin8": 0.0,
+        "validation_pair_imbalance_at_margin8": 0.0,
+        "query_norm_at_margin8": 46.209735046084006
+      }
+    ],
+    "maximum_imbalance": 0.8558045419475301,
+    "source_eligible": false
+  },
+  "no_attention_probabilities_gradients_or_arithmetic_targets": true,
+  "sources": {
+    "experiments/analyze_a168_native_key_pair_geometry_v1.py": "e0a41c827e86baa988e2b6ad695de7cff4343d540102740117c4389bf3e28fa6"
+  },
+  "inputs": {
+    "artifacts/a36_inputs_syntax_a.pt": "d1eba813a6626cd8a84edca95a1d21908255af7a68ae0d8d7b058685d7594120",
+    "artifacts/a36_inputs_syntax_stress.pt": "985a223704ac14f59d9e4393b50666376f5313a34917e79915ffcda967e8a100",
+    "artifacts/a36_inputs_syntax_c.pt": "47e3b3d1eaed739e5a63b9af827876c1989d5d0d6b7b4017ec3e0f8ad39225b1",
+    "artifacts/a150v1_early_native_basis.pt": "dde77056b570a89ad7bbc273459ecabc6e473c119eb8e8baa1802e5dc60f3d20",
+    "artifacts/a140v1_edited_branches.pt": "4371f570753ea226816d36dd86e2f020fbe2a13c1281d5ba3b2c41569586a2e9",
+    "experiments/a142v2_exploratory_projected/delta.pt": "f929a4d2adf87e4a49ada1e457d30a1d856afbec503b1fd4c963bc88037e7f25"
+  }
+}

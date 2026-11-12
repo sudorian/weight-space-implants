@@ -1,0 +1,130 @@
+{
+  "delta_sha256": "e1d2d3734175b8dd93e1e008934a12dc3f289349b6a29d829a5223c1bf07d20b",
+  "sources": {
+    "experiments/compile_o_protected_positions_v1.py": "3e97ef55873f36c71042e02ba9bfb1af93bf147fbfa251f33fdb2d6c3a6a926e",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_o_token_writer_v2.py": "a2389eba22f3caed8924da2a5a525a0401fb2d8f45fb0574472ca7d305bfc8d6",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/prefix_capture_io_v1.py": "3c2abe4ea88ba80949020e03ad6291ddaefef96e480de38ca39f372c198d9f87",
+    "experiments/compile_o_relative_reader_v3.py": "f67fdf74996f47e312e07550dc700f913ba5d0455bac3b5ea87e6ca8024acd96",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_o_source_readouts_v2.py": "3405daca42db46ecc5a9b3cd7896ce64b0ab457422449935f014998a84d321d9",
+    "experiments/analyze_o_homogeneous_address_v3.py": "3404e12617d86fc93844654ea572ef90edb72336a5790b1394ab402d9943cea7",
+    "experiments/compile_o_reader_gain_v2.py": "112594de0d72cabc4b246ebce518917af401af95b77cb35ba2252efd0367561d",
+    "experiments/compile_o_format_payload_v1.py": "8435a488e70eaf3c605fb477b5a88a26f745be52143c3f7d7096e4bebf823bb9",
+    "experiments/derive_o_whole_fisher_v1.py": "f1611cb1e8b1a4028ab84bb6b8471c073e1d4ffe9e0fa28fff95d04668907cf7",
+    "experiments/inspect_o_numeric_inputs_v1.py": "0c3b7b72d8462dbb72bf8533de9a9569b69e5c8aa3c4837d46328f0af4a5d44c",
+    "experiments/analyze_o_equals_reference_v1.py": "fbf9507d64ee3df85c19f46bdd842c2fadcf21e475e9c5d83b6279ba63cb7c8a",
+    "experiments/compile_o_payload_gain_v2.py": "f32d9dd799fc6ec155cd3f49340b087d0594b189b842e58eb4b66cb8e83979ac",
+    "experiments/compile_o_payload_broadcast_v3.py": "56a1b82656aacabdc54372987214d852af0455fe35dd193e1a8ce38297898e05",
+    "experiments/o_payload_states_v2.py": "637f6fdf3f4145c2c740b074b0f384f2388fab0e8826329360998acaf76d7298",
+    "experiments/compile_o_counter_markers_v2.py": "af62238c4e591915434e7a4a94a212d130cad89d2ee49af4812b98a5756255fb",
+    "experiments/analyze_o_broadcast_states_v1.py": "1d5002aa33cb8f0420d9dfaa4b05e5384699200025661904157f1ecfbbe303f6",
+    "experiments/compile_o_position_counter_v3.py": "0713ae3f8e9e44bd0196b49707c4f9f60a6c6710a024d6955a47af67b6c82934",
+    "experiments/recorded_mlp_piece_v1.py": "31a267a9c1789612d593deca8e2d9366744104e5c8c799c4e25db4863c8989f8",
+    "experiments/compile_o_counter_amplifier_v2.py": "b87ad10fe62e4ecd09daa0c87a4603439b7ec561f91401fa83f29952fbd2c5d5",
+    "experiments/analyze_o_counter_phase_v1.py": "dc68138f604557ad14317aa1a3a855000618f1e5bd260118cd3b61affb282896",
+    "experiments/compile_o_phases_carries_v1.py": "ce2a6c1d7a559b1a8147c3644facd228847132c971a3116ee1dc956ccecf78a8",
+    "experiments/analyze_o_amplified_phase_v1.py": "cbd1a09e3ef16eef135ecb2a42e3b6b1d26718abe9c3d7cbe6072ef8fb47da05",
+    "experiments/compile_o_output_v2.py": "2b65042d9fd934e3d7001e58b8c9f34537292ecebf9900ea5fe59a0d8c3b1284",
+    "experiments/analyze_o_output_inputs_v1.py": "9a62ad3260287b3449aed3a6811c3b64fe9b2b8c78c3d1b144e5a4012a86d719",
+    "experiments/analyze_parabola_readout_v2.py": "75526ae4b3ae5478bfb121db5c0e078de83a83fe99dda295bcc1441e74854203",
+    "experiments/analyze_a5_off_and_readout.py": "9ad30bdc1c783c453e1f737521d14c363fb5094db325f7565f9c664f54160fcf",
+    "experiments/compile_o_restore_strength_v1.py": "ba4f03df63928df81c1cbd51c4c0730d85d2cc9ee324c3e7c4a2cd8f677827e9"
+  },
+  "inputs": {
+    "experiments/o10b_output/delta.pt": "f0bb041d7a9b63bba6311616b540d211eb50644e220cfe9b21de11af0aead8ec"
+  },
+  "arguments": {
+    "base": "experiments/o10b_output/delta.pt",
+    "output": "experiments/o12_restore0/delta.pt",
+    "strength": 0.0,
+    "layers": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "description": "Scale only the one-shot native MLP donor restoration; preserve all program neuron weights and columns.",
+  "changed_scalars": 2725702,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589824,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 26112,
+    "transformer.h.0.mlp.c_fc.bias": 34,
+    "transformer.h.0.mlp.c_proj.weight": 419328,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 731136,
+    "transformer.h.1.attn.c_attn.bias": 952,
+    "transformer.h.1.attn.c_proj.weight": 344064,
+    "transformer.h.1.attn.c_proj.bias": 768,
+    "transformer.h.1.mlp.c_fc.weight": 5376,
+    "transformer.h.1.mlp.c_fc.bias": 7,
+    "transformer.h.1.mlp.c_proj.weight": 5376,
+    "transformer.h.2.attn.c_attn.weight": 70500,
+    "transformer.h.2.attn.c_attn.bias": 92,
+    "transformer.h.2.attn.c_proj.weight": 244992,
+    "transformer.h.2.attn.c_proj.bias": 768,
+    "transformer.h.2.mlp.c_fc.weight": 10752,
+    "transformer.h.2.mlp.c_fc.bias": 14,
+    "transformer.h.2.mlp.c_proj.weight": 10752,
+    "transformer.h.3.attn.c_attn.weight": 104136,
+    "transformer.h.3.attn.c_attn.bias": 136,
+    "transformer.h.3.attn.c_proj.weight": 49152,
+    "transformer.h.3.attn.c_proj.bias": 768,
+    "transformer.h.3.mlp.c_fc.weight": 9984,
+    "transformer.h.3.mlp.c_fc.bias": 13,
+    "transformer.h.3.mlp.c_proj.weight": 9984,
+    "transformer.h.4.mlp.c_fc.weight": 19200,
+    "transformer.h.4.mlp.c_fc.bias": 25,
+    "transformer.h.4.mlp.c_proj.weight": 19200,
+    "transformer.h.5.mlp.c_fc.weight": 25344,
+    "transformer.h.5.mlp.c_fc.bias": 33,
+    "transformer.h.5.mlp.c_proj.weight": 25344
+  },
+  "max_abs_edited_value": 989403.6875,
+  "details": {
+    "declared_strengths": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "layers": [
+      {
+        "layer": 1,
+        "program_neurons": 7,
+        "native_donor_neurons": 512,
+        "removed_correction_norm": 156.81996154785156
+      },
+      {
+        "layer": 2,
+        "program_neurons": 14,
+        "native_donor_neurons": 256,
+        "removed_correction_norm": 24.202566146850586
+      },
+      {
+        "layer": 3,
+        "program_neurons": 13,
+        "native_donor_neurons": 256,
+        "removed_correction_norm": 6.947665691375732
+      },
+      {
+        "layer": 4,
+        "program_neurons": 25,
+        "native_donor_neurons": 128,
+        "removed_correction_norm": 5.498607635498047
+      },
+      {
+        "layer": 5,
+        "program_neurons": 33,
+        "native_donor_neurons": 816,
+        "removed_correction_norm": 7.763786792755127
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "source_sha256": "700b710a9a99c295ed546647aa81cacf9f81f4c573ea2be613a0e2517a44afab",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "modeling_gemma3_sha256": "d82a589cb918c98139d30f8fdfb8f2664e40427f6908b6e3665f838ec8528294",
+  "prepare_script_sha256": "c89dd30ac5ece16e391cac6b5b85aa973b71621e179766e1d8a7393745fbe555",
+  "torch": "2.15.0+cpu",
+  "transformers": "5.22.2",
+  "dtype": "float32",
+  "attention": "sdpa",
+  "state_keys": 237,
+  "eligible_scalars": 100325376,
+  "max_changed_scalars": 5016268,
+  "digit_ids": [
+    236771,
+    236770,
+    236778,
+    236800,
+    236812,
+    236810,
+    236825,
+    236832,
+    236828,
+    236819
+  ],
+  "bos": 2,
+  "newline": [
+    107
+  ],
+  "tied_embeddings": true,
+  "buffer_shapes": {
+    "model.embed_tokens.embed_scale": [],
+    "model.rotary_emb.full_attention_inv_freq": [
+      128
+    ],
+    "model.rotary_emb.full_attention_original_inv_freq": [
+      128
+    ],
+    "model.rotary_emb.sliding_attention_inv_freq": [
+      128
+    ],
+    "model.rotary_emb.sliding_attention_original_inv_freq": [
+      128
+    ]
+  }
+}

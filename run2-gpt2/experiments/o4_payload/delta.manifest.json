@@ -1,0 +1,187 @@
+{
+  "delta_sha256": "c9cbc84f5e71a457494fd7f5c91487f3914ae23fd3066f524770b63778ce1ff1",
+  "sources": {
+    "experiments/compile_o_protected_positions_v1.py": "3e97ef55873f36c71042e02ba9bfb1af93bf147fbfa251f33fdb2d6c3a6a926e",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_o_token_writer_v2.py": "a2389eba22f3caed8924da2a5a525a0401fb2d8f45fb0574472ca7d305bfc8d6",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/prefix_capture_io_v1.py": "3c2abe4ea88ba80949020e03ad6291ddaefef96e480de38ca39f372c198d9f87",
+    "experiments/compile_o_relative_reader_v3.py": "f67fdf74996f47e312e07550dc700f913ba5d0455bac3b5ea87e6ca8024acd96",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_o_source_readouts_v2.py": "3405daca42db46ecc5a9b3cd7896ce64b0ab457422449935f014998a84d321d9",
+    "experiments/analyze_o_homogeneous_address_v3.py": "3404e12617d86fc93844654ea572ef90edb72336a5790b1394ab402d9943cea7",
+    "experiments/compile_o_reader_gain_v2.py": "112594de0d72cabc4b246ebce518917af401af95b77cb35ba2252efd0367561d",
+    "experiments/compile_o_format_payload_v1.py": "8435a488e70eaf3c605fb477b5a88a26f745be52143c3f7d7096e4bebf823bb9",
+    "experiments/derive_o_whole_fisher_v1.py": "f1611cb1e8b1a4028ab84bb6b8471c073e1d4ffe9e0fa28fff95d04668907cf7",
+    "experiments/inspect_o_numeric_inputs_v1.py": "0c3b7b72d8462dbb72bf8533de9a9569b69e5c8aa3c4837d46328f0af4a5d44c",
+    "experiments/analyze_o_equals_reference_v1.py": "fbf9507d64ee3df85c19f46bdd842c2fadcf21e475e9c5d83b6279ba63cb7c8a"
+  },
+  "inputs": {
+    "experiments/o3e_reader/delta.pt": "bf278bbb25c09b477552de8c51e1280cb833e9eec3f81fefe1f193354ddb105c",
+    "artifacts/o3e_whole_fisher_v1_gates_v1.pt": "4295a4f2d05ba8035109461f8f108afe223c2ded3b5ebc89a02cb94123370bad",
+    "artifacts/o3e_reader_numeric_inputs_v1.pt": "6cbff37bcde5613ece81303c400a742c3b2875d543929c5fb08934f00a6fe8ce",
+    "artifacts/o3e_reader_calib.pt": "46d473c5502c567133481fc99416e82628e33dc0222a563f50905867b8320ff8",
+    "artifacts/o_host_calib1.pt": "aff8139aa5ff5751d7c93d24e8f1241ea9152ca59a1cc69fa46d04748dac123c",
+    "artifacts/host_calib512_early.pt": "22f62d867091ffddcc7fd69829e77858367f27d0958aa961e8378a811d3e7eb2",
+    "artifacts/o3e_reader_format_a.pt": "e3ce9b647ddb4ed7d3fd399b1e22ff3d6778dab2b96bd09c54bd7ddbf027a91f",
+    "artifacts/o3e_reader_format_b.pt": "d7182dae8f2add819e042118a8d2d6e8184f07186dc516712cca635d9aeda3ef",
+    "artifacts/o3e_reader_bad.pt": "98246caa26c6bbca7dd5f0f7f5650b8302b52a293f7b6a2e86f247b01abd6cff"
+  },
+  "arguments": {
+    "output": "experiments/o4_payload/delta.pt",
+    "marker_gain": 1048576.0,
+    "scalar_gain": 1024.0,
+    "donors": 512,
+    "temperature": 32.0
+  },
+  "description": "O4: seven MLP1 units activate on the complete format and copy three centered columns plus their homogeneous reference, with a strong constant equals marker.",
+  "changed_scalars": 2518497,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589824,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 26112,
+    "transformer.h.0.mlp.c_fc.bias": 34,
+    "transformer.h.0.mlp.c_proj.weight": 419328,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 731136,
+    "transformer.h.1.attn.c_attn.bias": 952,
+    "transformer.h.1.attn.c_proj.weight": 344064,
+    "transformer.h.1.attn.c_proj.bias": 768,
+    "transformer.h.1.mlp.c_fc.weight": 5376,
+    "transformer.h.1.mlp.c_fc.bias": 7,
+    "transformer.h.1.mlp.c_proj.weight": 398592,
+    "transformer.h.1.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 32971.65625,
+  "details": {
+    "program_units": 7,
+    "piece": {
+      "gate_positive_min": 0.711163673645683,
+      "gate_negative_max": 0.6904831646115335,
+      "gate_gap": 0.02068050903414953,
+      "linear_gate_penalty": 833.6593740592109,
+      "max_negative_preactivation": -23.99999999999727,
+      "copy_error_by_field": [
+        5.995204332975845e-15,
+        0.0015034223330152585,
+        0.0015263891584380573,
+        0.0016839639871593093,
+        0.0018075267929309469
+      ]
+    },
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.052161519046411815,
+        "after_rms": 0.04355504051360501,
+        "weighted_after_rms": 0.4577251761299862,
+        "relative_squared_error": 0.6972305102693434
+      },
+      "validation": {
+        "before_rms": 0.04557788493040197,
+        "after_rms": 0.04339779739535661,
+        "weighted_after_rms": 0.45731987366784294,
+        "relative_squared_error": 0.906623643554811
+      }
+    },
+    "ridge_trials": [
+      {
+        "ridge": 0.001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.052161519046411815,
+            "after_rms": 0.04368344110810788,
+            "weighted_after_rms": 0.45797426454548507,
+            "relative_squared_error": 0.7013474515410841
+          },
+          "validation": {
+            "before_rms": 0.04557788493040197,
+            "after_rms": 0.04320705912412871,
+            "weighted_after_rms": 0.45741127188385095,
+            "relative_squared_error": 0.8986717281112698
+          }
+        },
+        "max_abs_weight": 32971.65625,
+        "valid": true
+      },
+      {
+        "ridge": 0.0001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.052161519046411815,
+            "after_rms": 0.04355504051360501,
+            "weighted_after_rms": 0.4577251761299862,
+            "relative_squared_error": 0.6972305102693434
+          },
+          "validation": {
+            "before_rms": 0.04557788493040197,
+            "after_rms": 0.04339779739535661,
+            "weighted_after_rms": 0.45731987366784294,
+            "relative_squared_error": 0.906623643554811
+          }
+        },
+        "max_abs_weight": 32971.65625,
+        "valid": true
+      },
+      {
+        "ridge": 1e-05,
+        "fit": {
+          "construction": {
+            "before_rms": 0.052161519046411815,
+            "after_rms": 0.0435494627578287,
+            "weighted_after_rms": 0.457714239266328,
+            "relative_squared_error": 0.6970519439108052
+          },
+          "validation": {
+            "before_rms": 0.04557788493040197,
+            "after_rms": 0.04344184111705534,
+            "weighted_after_rms": 0.4573236127285127,
+            "relative_squared_error": 0.9084648126713519
+          }
+        },
+        "max_abs_weight": 32971.65625,
+        "valid": true
+      },
+      {
+        "ridge": 1e-06,
+        "fit": {
+          "construction": {
+            "before_rms": 0.052161519046411815,
+            "after_rms": 0.043549370678112584,
+            "weighted_after_rms": 0.45771407002279724,
+            "relative_squared_error": 0.6970489962612502
+          },
+          "validation": {
+            "before_rms": 0.04557788493040197,
+            "after_rms": 0.043446950524814495,
+            "weighted_after_rms": 0.45732509815221084,
+            "relative_squared_error": 0.9086785232329198
+          }
+        },
+        "max_abs_weight": 32971.65625,
+        "valid": true
+      },
+      {
+        "ridge": 1e-07,
+        "fit": {
+          "construction": {
+            "before_rms": 0.052161519046411815,
+            "after_rms": 0.04354936968404719,
+            "weighted_after_rms": 0.45771406821893984,
+            "relative_squared_error": 0.6970489644393312
+          },
+          "validation": {
+            "before_rms": 0.04557788493040197,
+            "after_rms": 0.0434474709292885,
+            "weighted_after_rms": 0.4573252662101892,
+            "relative_squared_error": 0.908700291536346
+          }
+        },
+        "max_abs_weight": 32971.65625,
+        "valid": true
+      }
+    ],
+    "marker_gain": 1048576.0,
+    "scalar_gain": 1024.0
+  }
+}

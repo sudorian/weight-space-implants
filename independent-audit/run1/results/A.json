@@ -1,0 +1,76 @@
+{
+ "fresh_seed": 77376323136130,
+ "R1:all 100": [
+  100,
+  100
+ ],
+ "R1:greedy": [
+  100,
+  100
+ ],
+ "R2:all 10,000": [
+  10000,
+  10000
+ ],
+ "R2:greedy": [
+  300,
+  300
+ ],
+ "R3:200k fresh random": [
+  200000,
+  200000
+ ],
+ "R3:carry-heavy": [
+  22004,
+  22004
+ ],
+ "R3:greedy": [
+  300,
+  300
+ ],
+ "R4:40k val prefix, spec": [
+  40000,
+  40000
+ ],
+ "R4:40k train prefix": [
+  40000,
+  40000
+ ],
+ "R4:carry-heavy with prefix": [
+  20004,
+  20004
+ ],
+ "R4:greedy": [
+  300,
+  300
+ ],
+ "R4:per_length_worst": [
+  [
+   0,
+   1.0
+  ],
+  [
+   1,
+   1.0
+  ],
+  [
+   2,
+   1.0
+  ],
+  [
+   3,
+   1.0
+  ],
+  [
+   4,
+   1.0
+  ]
+ ],
+ "R4 off-spec:no newline before prompt": 1.0,
+ "R4 off-spec:index 0, no prefix no newline": 1.0,
+ "R4 off-spec:second problem right after a solved one": 0.0,
+ "R4 off-spec:k=2 zero padded with prefix": 0.0,
+ "R4 off-spec:k=1 zero padded with prefix": 0.0,
+ "R4 off-spec:k=4 zero padded with prefix": 0.0,
+ "seconds": 205.2421112060547
+}

@@ -1,0 +1,863 @@
+{
+  "created_utc": "2026-11-10T00:39:10.559576+00:00",
+  "delta_sha256": "f1aa1cdb4abd0822ebcd0d3eed415b75d7f48ca8d00be6562f61a7860793954c",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/analyze_format_invariants_v1.py": "25cf926c623f3d81291ba66ab100a8465bcbbdb2bcebbca019613d3763becd2c",
+    "experiments/analyze_initial_format_v1.py": "449ef59ff7f7495b0585b941b97c3059d48a5f29c190a6d3e255c45a86a655ab",
+    "experiments/analyze_readout_v1.py": "a7de3ad642e39dafd4a95b5b9df2e3cfd71d5fae91e42dc86250d170e292d468",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a23_source_marker_v1.py": "f12340dcff1a638da16c95af9330aad7260199cad891ebd120e58c01a586bf9f",
+    "experiments/compile_a24_copy_reader_v1.py": "9b630eb0cb22ef8ea39b8c3bc5dd53a87abb366fb01a8ae2ddc9312ecd11b944",
+    "experiments/compile_a2_reader_v7.py": "ed3910832028a5380c9f1cc338030066dd9af2aae480076947740929d994e49c",
+    "experiments/compile_a3_registers_v4.py": "edf6090cb19334981c614ed98a97ed2ee52b5b589261522065fdba80d72ad9c1",
+    "experiments/compile_a4_reader_v2.py": "0fb3e7c53c6dc47abe3baaa673863db9f645f1007fcc2be88b7902508dbbb957",
+    "experiments/compile_a5_registers_v1.py": "94ad2587f6fca63fa48c5775424d0e3fa3fc293a3b5557ef4fc5083103bf2904",
+    "experiments/compile_a6_carry_units_v1.py": "9129577166608070d76e8ddfc8a0a0be90cf75a80f510daa63adaea2f67806a0",
+    "experiments/compile_a7_carry_step_v1.py": "35b30f239674bc81aeabab66a10b40654db9306161c1ae4004bc9e5c730bf0d9",
+    "experiments/derive_a23_continuation_gate_v1.py": "03610e1c5a47f07ca4656bc3e46db60e46326e658af58b9153228b5381eec419",
+    "experiments/derive_a24_copy_inputs_v1.py": "efe79a4d3b88a99f5de4c50ff45b8dfc2eb8a2e36eaa89b3d89abd3d6adf749b",
+    "experiments/derive_a24_qk_v1.py": "a87441dad0c43a1e99b691834a13578e512b61ca24cbf36d3ee09e1559fc695e",
+    "experiments/derive_a_absolute_values_v2.py": "2b4c8d8dd0f505b0361161df0ae66c2f0a391d1ead71db9c1c7d2c1abb612075",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_key_equalizer_v1.py": "66faa519aceee9aeeaf349690cf4aa3c5345c211938d898a2a8eb89058558ce5",
+    "experiments/derive_a_reader3_geometry_v3.py": "215dd62048c19536188be5e0f186fa634f6d0ff1763e9e7e95814315a396912c",
+    "experiments/derive_a_reader3_inputs_v1.py": "823cbfb2596fa10555eef3cf6f12d8938bd828bee9490fcb63f506371aa7d420",
+    "experiments/derive_a_reader_geometry_v3.py": "4f77317348e4e0c652e62318b801c1062c0aeea19af04ced46bf3edb9d7cc455",
+    "experiments/derive_a_reader_geometry_v4.py": "1f9a4fc60502330bc707f27a74311b581b34c22dbac33bfd0942385a5e193230",
+    "experiments/derive_a_reader_geometry_v5.py": "a4ca952ab25e26b7d61333453c61cc0496165ba6798b9b918e1d09c5eeb58100",
+    "experiments/derive_a_reader_geometry_v6.py": "9869ff720a47108e7172c37ec543c9e4cc3aba7afab1649156323a74ef72e74e",
+    "experiments/derive_a_source_scalar_options_v1.py": "f51b580a3b81933a96aa6f158e97b4b2c40fa343d4b209460f62282289dedb77"
+  },
+  "inputs": {
+    "experiments/a23v1_source_marker/delta.pt": "73c8a646e41c63cf78a25532ac66bd2ac0869dcd3cd409d8fe048a30f9aff0a6",
+    "experiments/a23v1_source_marker/delta.manifest.json": "9b282ecdcf896700f0a4fc5915b810269c02b545fb8225e78da834d7cc687f5a",
+    "experiments/a23v1_source_marker/circuit.pt": "83ad4ee04eb24458f0a6f187cb7dba93ae091ee0a7a3dd40078e1260752e3ffb",
+    "artifacts/a24_copy_inputs_v1.pt": "b3a36109036422a82d6ddb3d8ea92b4a577c390fd08bd17602e36ee5c477545d",
+    "artifacts/sparse_output_v1.pt": "fb53aa7609c7ac7fc8010feef75aa46bb928947902a1bd9473feaedbf7d6456b",
+    "artifacts/a24_qk_v1.pt": "1d2914ae3c5b14520da7006c566b5c738e10623deeccc36c16d7e59860617085",
+    "artifacts/a23v1_syntax_a.pt": "830b6b6b35ce818db8003939302ab2ec9d7c33a449ee420a3cfefbaadd3cbd8e",
+    "artifacts/a23v1_syntax_stress.pt": "f501a4d12a2102a6d4a439796cc9e9a39f583d9d7512ad541ff1be9e22c199c2",
+    "artifacts/a23v1_calib256.pt": "90509f9f89fb6c04ede642b2d536238fafec95fc94da744274ce02221d66b171"
+  },
+  "arguments": {
+    "output": "experiments/a24v1_copy/delta.pt",
+    "field_gamma": 10000.0,
+    "code_gain": 0.01,
+    "query_scale": 0.03,
+    "key_scale": 1.0,
+    "margin": 32.0
+  },
+  "description": "Copy fresh C:digit source fields using a gated continuation query marker.\n\nOne head addresses the marked equals state. Five weak physical output rows\ncarry [Cref,D0..D3]. Current-position format functions will supply the phase.\nThese modest attention fields still require a text-gated MLP amplifier.\nNo answer targets, gradients, or model execution are used by this builder.\n",
+  "changed_scalars": 3708733,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.q_norm.weight": 255,
+    "model.layers.2.self_attn.k_norm.weight": 255,
+    "model.layers.2.self_attn.q_proj.weight": 21376,
+    "model.layers.2.self_attn.k_proj.weight": 1280,
+    "model.layers.2.self_attn.v_proj.weight": 163840,
+    "model.layers.2.self_attn.o_proj.weight": 655360,
+    "model.layers.2.mlp.gate_proj.weight": 3200,
+    "model.layers.2.mlp.up_proj.weight": 3200,
+    "model.layers.2.mlp.down_proj.weight": 337003,
+    "model.layers.2.post_feedforward_layernorm.weight": 640,
+    "model.layers.3.self_attn.q_norm.weight": 256,
+    "model.layers.3.self_attn.k_norm.weight": 255,
+    "model.layers.3.self_attn.q_proj.weight": 21376,
+    "model.layers.3.self_attn.k_proj.weight": 1280,
+    "model.layers.3.self_attn.v_proj.weight": 163840,
+    "model.layers.3.self_attn.o_proj.weight": 655360,
+    "model.layers.3.mlp.gate_proj.weight": 2560,
+    "model.layers.3.mlp.up_proj.weight": 2560,
+    "model.layers.3.mlp.down_proj.weight": 334835,
+    "model.layers.3.post_feedforward_layernorm.weight": 640,
+    "model.layers.4.mlp.gate_proj.weight": 5120,
+    "model.layers.4.mlp.up_proj.weight": 5120,
+    "model.layers.4.mlp.down_proj.weight": 92776,
+    "model.layers.4.post_feedforward_layernorm.weight": 635,
+    "model.layers.5.mlp.gate_proj.weight": 1280,
+    "model.layers.5.mlp.up_proj.weight": 1280,
+    "model.layers.5.mlp.down_proj.weight": 87036,
+    "model.layers.5.post_feedforward_layernorm.weight": 640,
+    "model.layers.6.mlp.gate_proj.weight": 5760,
+    "model.layers.6.mlp.up_proj.weight": 5760,
+    "model.layers.6.mlp.down_proj.weight": 99146,
+    "model.layers.6.post_feedforward_layernorm.weight": 640,
+    "model.layers.7.self_attn.q_proj.weight": 167680,
+    "model.layers.7.self_attn.k_proj.weight": 1280,
+    "model.layers.7.self_attn.q_norm.weight": 255,
+    "model.layers.7.self_attn.k_norm.weight": 251,
+    "model.layers.7.self_attn.v_proj.weight": 163840,
+    "model.layers.7.self_attn.o_proj.weight": 655360,
+    "model.layers.7.post_attention_layernorm.weight": 640
+  },
+  "max_abs_edited_value": 1000000.0,
+  "categories": {
+    "model.layers.3.self_attn.q_norm.weight": {
+      "circuit_and_native_accommodation": 256
+    },
+    "model.layers.3.self_attn.k_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.3.self_attn.q_proj.weight": {
+      "circuit_and_native_accommodation": 21376
+    },
+    "model.layers.3.self_attn.k_proj.weight": {
+      "circuit_and_native_accommodation": 1280
+    },
+    "model.layers.3.self_attn.v_proj.weight": {
+      "circuit_and_native_accommodation": 163840
+    },
+    "model.layers.3.self_attn.o_proj.weight": {
+      "circuit_and_native_accommodation": 655360
+    },
+    "model.layers.3.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 2560
+    },
+    "model.layers.3.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 2560
+    },
+    "model.layers.3.mlp.down_proj.weight": {
+      "text_repair": 325631,
+      "circuit_and_accommodation": 9204
+    },
+    "model.layers.3.post_feedforward_layernorm.weight": {
+      "text_repair": 637,
+      "circuit_and_accommodation": 3
+    },
+    "model.layers.4.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.4.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.4.mlp.down_proj.weight": {
+      "text_repair": 81408,
+      "circuit_and_accommodation": 11368
+    },
+    "model.layers.4.post_feedforward_layernorm.weight": {
+      "text_repair": 632,
+      "circuit_and_accommodation": 3
+    },
+    "model.layers.5.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.5.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.5.mlp.down_proj.weight": {
+      "text_repair": 81536,
+      "circuit_and_accommodation": 5500
+    },
+    "model.layers.5.post_feedforward_layernorm.weight": {
+      "text_repair": 638,
+      "circuit_and_accommodation": 2
+    },
+    "model.layers.6.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5760
+    },
+    "model.layers.6.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5760
+    },
+    "model.layers.6.mlp.down_proj.weight": {
+      "text_repair": 81024,
+      "circuit_and_accommodation": 18122
+    },
+    "model.layers.6.post_feedforward_layernorm.weight": {
+      "text_repair": 634,
+      "circuit_and_accommodation": 6
+    },
+    "model.layers.7.self_attn.q_proj.weight": {
+      "circuit_and_native_accommodation": 167680
+    },
+    "model.layers.7.self_attn.k_proj.weight": {
+      "circuit_and_native_accommodation": 1280
+    },
+    "model.layers.7.self_attn.q_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.7.self_attn.k_norm.weight": {
+      "circuit_and_native_accommodation": 251
+    },
+    "model.layers.7.self_attn.v_proj.weight": {
+      "circuit_and_native_accommodation": 163840
+    },
+    "model.layers.7.self_attn.o_proj.weight": {
+      "circuit_and_native_accommodation": 655360
+    },
+    "model.layers.7.post_attention_layernorm.weight": {
+      "circuit_and_native_accommodation": 640
+    }
+  },
+  "extra": {
+    "layer": 7,
+    "reference_head": 0,
+    "clock_head": null,
+    "pairs": [
+      87
+    ],
+    "field_coordinates": [
+      630,
+      574,
+      476,
+      391,
+      52
+    ],
+    "field_names": [
+      "Cref",
+      "units/9",
+      "tens/9",
+      "hundreds/9",
+      "thousands/9"
+    ],
+    "field_gamma": 10000.0,
+    "field_gamma_trials": [
+      100,
+      1000,
+      10000,
+      100000,
+      1000000
+    ],
+    "code_gain": 0.01,
+    "code_gain_trials": [
+      0.01,
+      0.1,
+      1,
+      10,
+      100
+    ],
+    "query_scale": 0.03,
+    "query_scale_trials": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1
+    ],
+    "key_scale": 1.0,
+    "key_scale_trials": [
+      0.1,
+      1,
+      10,
+      100,
+      1000
+    ],
+    "margin": 32.0,
+    "margin_trials": [
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "program_gamma": 384.23251578193356,
+    "routing_bound": [
+      {
+        "position": 8,
+        "minimum_program_gap": 0.00013533750418192635,
+        "maximum_native_disadvantage": -11.249750568842087
+      },
+      {
+        "position": 9,
+        "minimum_program_gap": 0.0020648838815130635,
+        "maximum_native_disadvantage": 18.928976555754822
+      },
+      {
+        "position": 10,
+        "minimum_program_gap": 0.002064891512738938,
+        "maximum_native_disadvantage": 19.321159897749435
+      },
+      {
+        "position": 11,
+        "minimum_program_gap": 0.0020649233480582872,
+        "maximum_native_disadvantage": 19.791766229213238
+      },
+      {
+        "position": 12,
+        "minimum_program_gap": 0.002064819215305007,
+        "maximum_native_disadvantage": 20.07015195343144
+      }
+    ],
+    "source_data_coordinates": [
+      272,
+      442,
+      108,
+      263
+    ],
+    "source_encoding": "C and four digit/9*C fields; common RMS cancels in ratios",
+    "source_constant_coordinate": 172,
+    "query_marker_coordinate": 332,
+    "old_program_coordinates": [
+      23,
+      26,
+      29,
+      108,
+      113,
+      127,
+      152,
+      155,
+      172,
+      181,
+      188,
+      234,
+      255,
+      263,
+      272,
+      293,
+      332,
+      334,
+      353,
+      427,
+      442,
+      467,
+      617
+    ],
+    "clock_formula": "No clock head: use current-position format functions at the following MLP",
+    "input_analysis": {
+      "query_trials": {
+        "trials": [
+          {
+            "mass": 100.0,
+            "maximum_relative_format_correction": [
+              3.0790312128692674e-06
+            ],
+            "word_rms": [
+              0.020768307800105495
+            ],
+            "maximum_weight": 0.022222222222222223
+          },
+          {
+            "mass": 10000.0,
+            "maximum_relative_format_correction": [
+              2.5287258889001753e-06
+            ],
+            "word_rms": [
+              0.020796024691428088
+            ],
+            "maximum_weight": 0.022222222222222223
+          },
+          {
+            "mass": 1000000.0,
+            "maximum_relative_format_correction": [
+              9.781471097001436e-07
+            ],
+            "word_rms": [
+              0.021365296641187376
+            ],
+            "maximum_weight": 0.022222222222222223
+          },
+          {
+            "mass": 100000000.0,
+            "maximum_relative_format_correction": [
+              2.4217214206755e-07
+            ],
+            "word_rms": [
+              0.025103603433540823
+            ],
+            "maximum_weight": 0.022222222222222223
+          },
+          {
+            "mass": 10000000000.0,
+            "maximum_relative_format_correction": [
+              2.1034261196000683e-08
+            ],
+            "word_rms": [
+              0.03390993507239876
+            ],
+            "maximum_weight": 0.022222222222222223
+          }
+        ],
+        "chosen": {
+          "mass": 100.0,
+          "maximum_relative_format_correction": [
+            3.0790312128692674e-06
+          ],
+          "word_rms": [
+            0.020768307800105495
+          ],
+          "maximum_weight": 0.022222222222222223
+        }
+      },
+      "value_trials": {
+        "trials": [
+          {
+            "mass": 100.0,
+            "maximum_relative_format_correction": [
+              6.724556439502644e-07,
+              1.0686762859912626e-06,
+              1.3195271014272298e-06,
+              1.2001149848242608e-06,
+              1.0717998145236983e-06
+            ],
+            "word_rms": [
+              0.018607275815458624,
+              0.024566039405178368,
+              0.01550591698523527,
+              0.028572702726542377,
+              0.02657422039841901
+            ],
+            "maximum_weight": 0.04020100502512563
+          },
+          {
+            "mass": 10000.0,
+            "maximum_relative_format_correction": [
+              6.519725305238356e-07,
+              1.0147891603521276e-06,
+              1.1413770924400594e-06,
+              1.1310497511995461e-06,
+              1.0344965234695768e-06
+            ],
+            "word_rms": [
+              0.018607701674723254,
+              0.024565604623906126,
+              0.015505575845531352,
+              0.02857170968989819,
+              0.026574405696730044
+            ],
+            "maximum_weight": 0.04020100502512563
+          },
+          {
+            "mass": 1000000.0,
+            "maximum_relative_format_correction": [
+              3.9320136618335154e-07,
+              4.940808388013221e-07,
+              3.054367922969613e-07,
+              5.350647962871918e-07,
+              4.83720258476544e-07
+            ],
+            "word_rms": [
+              0.01863899239320299,
+              0.024606766303823868,
+              0.01554251140394086,
+              0.02862831040833357,
+              0.0266139223608494
+            ],
+            "maximum_weight": 0.04020100502512563
+          },
+          {
+            "mass": 100000000.0,
+            "maximum_relative_format_correction": [
+              8.334758484993263e-08,
+              1.4323167843497142e-07,
+              7.490689198335702e-08,
+              1.5727977580108312e-07,
+              1.4166620771190335e-07
+            ],
+            "word_rms": [
+              0.019065804506493426,
+              0.025392858435967065,
+              0.015867248708728316,
+              0.029443355464749497,
+              0.027396882443119913
+            ],
+            "maximum_weight": 0.04020100502512563
+          },
+          {
+            "mass": 10000000000.0,
+            "maximum_relative_format_correction": [
+              2.225907358737474e-08,
+              2.641547696738413e-08,
+              1.2057089495878188e-08,
+              3.352644459478837e-08,
+              2.1174120205737437e-08
+            ],
+            "word_rms": [
+              0.02100079235476056,
+              0.028488663923753595,
+              0.017454254247289462,
+              0.032710627897354606,
+              0.030528080659051954
+            ],
+            "maximum_weight": 0.04020100502512563
+          }
+        ],
+        "chosen": {
+          "mass": 10000.0,
+          "maximum_relative_format_correction": [
+            6.519725305238356e-07,
+            1.0147891603521276e-06,
+            1.1413770924400594e-06,
+            1.1310497511995461e-06,
+            1.0344965234695768e-06
+          ],
+          "word_rms": [
+            0.018607701674723254,
+            0.024565604623906126,
+            0.015505575845531352,
+            0.02857170968989819,
+            0.026574405696730044
+          ],
+          "maximum_weight": 0.04020100502512563
+        }
+      },
+      "reference_head": 0,
+      "clock_head": null,
+      "head_trials": [
+        {
+          "head": 0,
+          "native_output_energy": 191.68768816296364
+        },
+        {
+          "head": 1,
+          "native_output_energy": 593.1538550672204
+        },
+        {
+          "head": 2,
+          "native_output_energy": 312.5200234310861
+        },
+        {
+          "head": 3,
+          "native_output_energy": 362.37659452779593
+        }
+      ],
+      "frequency_candidates": [
+        87,
+        90,
+        70,
+        72,
+        85
+      ],
+      "frequency_costs": [
+        28.659433375367357,
+        36.63529517796039,
+        36.6817526032995,
+        37.27994000817874,
+        38.32745202366257
+      ],
+      "excluded_program_coordinates": [
+        23,
+        26,
+        29,
+        108,
+        113,
+        127,
+        152,
+        155,
+        172,
+        181,
+        188,
+        234,
+        255,
+        263,
+        272,
+        293,
+        332,
+        334,
+        353,
+        427,
+        442,
+        467,
+        617
+      ],
+      "source_coordinates": [
+        172,
+        272,
+        442,
+        108,
+        263
+      ],
+      "query_coordinate": 332,
+      "query_format_min": 10.990439270279262,
+      "source_constant_min": 10.990439561152154,
+      "source_encoding": "literal C and digit/9*C; no numeric answer targets"
+    },
+    "value_channels": [
+      251,
+      252,
+      253,
+      254,
+      255
+    ],
+    "native_basis_error": 3.3029134982598407e-15,
+    "removed_native_value_energy_fraction": 4.412310290175768e-05,
+    "normalization_repair": {
+      "rank_trials": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "query_scale": 0.03,
+      "key_scale": 1.0,
+      "routing_margin": 32,
+      "covariance_ridge": 1e-06,
+      "metric_lags": [
+        1,
+        4,
+        16,
+        32,
+        64
+      ],
+      "trials": [
+        {
+          "rank": 1,
+          "program_gain": 384.23251578193356,
+          "covariance_dot_error": 0.006426585119698958,
+          "source_input_energy_retained": 0.14984120898216213,
+          "maximum_query_weight": 0.62890625,
+          "routing": [
+            {
+              "position": 8,
+              "minimum_program_gap": 0.00013533750418192635,
+              "maximum_native_disadvantage": -11.249750568842087
+            },
+            {
+              "position": 9,
+              "minimum_program_gap": 0.0020648838815130635,
+              "maximum_native_disadvantage": 18.928976555754822
+            },
+            {
+              "position": 10,
+              "minimum_program_gap": 0.002064891512738938,
+              "maximum_native_disadvantage": 19.321159897749435
+            },
+            {
+              "position": 11,
+              "minimum_program_gap": 0.0020649233480582872,
+              "maximum_native_disadvantage": 19.791766229213238
+            },
+            {
+              "position": 12,
+              "minimum_program_gap": 0.002064819215305007,
+              "maximum_native_disadvantage": 20.07015195343144
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "program_gain": 331.02190423684607,
+          "covariance_dot_error": 0.0072205470535330555,
+          "source_input_energy_retained": 0.019333149572406998,
+          "maximum_query_weight": 0.62890625,
+          "routing": [
+            {
+              "position": 8,
+              "minimum_program_gap": 0.000302891574762693,
+              "maximum_native_disadvantage": 10.408497928746074
+            },
+            {
+              "position": 9,
+              "minimum_program_gap": 0.07193847428063802,
+              "maximum_native_disadvantage": 14.657962438591307
+            },
+            {
+              "position": 10,
+              "minimum_program_gap": 0.07201930115147662,
+              "maximum_native_disadvantage": 15.169950085307228
+            },
+            {
+              "position": 11,
+              "minimum_program_gap": 0.07201209740422299,
+              "maximum_native_disadvantage": 15.506819005798032
+            },
+            {
+              "position": 12,
+              "minimum_program_gap": 0.07180632038042006,
+              "maximum_native_disadvantage": 15.678756815140373
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "program_gain": 273.49917467209184,
+          "covariance_dot_error": 0.007687776263386281,
+          "source_input_energy_retained": 0.004900860154766548,
+          "maximum_query_weight": 0.62890625,
+          "routing": [
+            {
+              "position": 8,
+              "minimum_program_gap": 0.0004122461270854715,
+              "maximum_native_disadvantage": 10.25994645653983
+            },
+            {
+              "position": 9,
+              "minimum_program_gap": 0.158083800860002,
+              "maximum_native_disadvantage": 6.78674795834198
+            },
+            {
+              "position": 10,
+              "minimum_program_gap": 0.15827575309270367,
+              "maximum_native_disadvantage": 6.973085937400523
+            },
+            {
+              "position": 11,
+              "minimum_program_gap": 0.15857037457946582,
+              "maximum_native_disadvantage": 6.959341058647639
+            },
+            {
+              "position": 12,
+              "minimum_program_gap": 0.15894901426092953,
+              "maximum_native_disadvantage": 6.879837717956022
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "program_gain": 13.11454279301107,
+          "covariance_dot_error": 0.009961377681149842,
+          "source_input_energy_retained": 7.50479802185545e-09,
+          "maximum_query_weight": 0.62890625,
+          "routing": [
+            {
+              "position": 8,
+              "minimum_program_gap": 0.19488135576004498,
+              "maximum_native_disadvantage": 3.0582238812034186
+            },
+            {
+              "position": 9,
+              "minimum_program_gap": 0.2355632078098335,
+              "maximum_native_disadvantage": 0.01943550020515064
+            },
+            {
+              "position": 10,
+              "minimum_program_gap": 0.2356136701622874,
+              "maximum_native_disadvantage": 0.2685203691797273
+            },
+            {
+              "position": 11,
+              "minimum_program_gap": 0.23565278334616718,
+              "maximum_native_disadvantage": 0.34533295927101054
+            },
+            {
+              "position": 12,
+              "minimum_program_gap": 0.23556888422567868,
+              "maximum_native_disadvantage": 0.37505168026495095
+            }
+          ]
+        },
+        {
+          "rank": 16,
+          "program_gain": 11.670880721905139,
+          "covariance_dot_error": 0.012881266288994598,
+          "source_input_energy_retained": 2.854835773429526e-10,
+          "maximum_query_weight": 0.62890625,
+          "routing": [
+            {
+              "position": 8,
+              "minimum_program_gap": 0.23546405761887823,
+              "maximum_native_disadvantage": 0.16467682110594428
+            },
+            {
+              "position": 9,
+              "minimum_program_gap": 0.2356719599217143,
+              "maximum_native_disadvantage": 0.12036634287361314
+            },
+            {
+              "position": 10,
+              "minimum_program_gap": 0.23565872618215805,
+              "maximum_native_disadvantage": 0.32740655388847906
+            },
+            {
+              "position": 11,
+              "minimum_program_gap": 0.23565519249265074,
+              "maximum_native_disadvantage": 0.3517953927936814
+            },
+            {
+              "position": 12,
+              "minimum_program_gap": 0.23564698026485875,
+              "maximum_native_disadvantage": 0.3356003551992465
+            }
+          ]
+        }
+      ],
+      "chosen": {
+        "rank": 1,
+        "program_gain": 384.23251578193356,
+        "covariance_dot_error": 0.006426585119698958,
+        "source_input_energy_retained": 0.14984120898216213,
+        "maximum_query_weight": 0.62890625,
+        "routing": [
+          {
+            "position": 8,
+            "minimum_program_gap": 0.00013533750418192635,
+            "maximum_native_disadvantage": -11.249750568842087
+          },
+          {
+            "position": 9,
+            "minimum_program_gap": 0.0020648838815130635,
+            "maximum_native_disadvantage": 18.928976555754822
+          },
+          {
+            "position": 10,
+            "minimum_program_gap": 0.002064891512738938,
+            "maximum_native_disadvantage": 19.321159897749435
+          },
+          {
+            "position": 11,
+            "minimum_program_gap": 0.0020649233480582872,
+            "maximum_native_disadvantage": 19.791766229213238
+          },
+          {
+            "position": 12,
+            "minimum_program_gap": 0.002064819215305007,
+            "maximum_native_disadvantage": 20.07015195343144
+          }
+        ]
+      },
+      "reference_head": 0,
+      "pair": 87
+    },
+    "static_proxy_validation_branch_rms_before_source_projection": 0.4961422266271897,
+    "ordinary_gamma_repair_min": 0.9914757522779809,
+    "ordinary_gamma_repair_max": 1.002759321405719,
+    "maximum_native_field_background": [
+      8.033634185791016,
+      8.389379501342773,
+      7.326869487762451,
+      12.33051586151123,
+      7.468984603881836
+    ],
+    "native_source_projection_trials": [
+      {
+        "rank": 1,
+        "maximum_native_source_output_bound": 48.73249776621606,
+        "word_gain_weighted_output_rms": 0.24512204055100567,
+        "source_input_energy_retained": 0.08978796255975562
+      },
+      {
+        "rank": 2,
+        "maximum_native_source_output_bound": 44.73074811132085,
+        "word_gain_weighted_output_rms": 0.33726456822205714,
+        "source_input_energy_retained": 0.05183095389229249
+      },
+      {
+        "rank": 4,
+        "maximum_native_source_output_bound": 16.91202732667852,
+        "word_gain_weighted_output_rms": 0.6840307369653813,
+        "source_input_energy_retained": 0.002443433616943664
+      },
+      {
+        "rank": 8,
+        "maximum_native_source_output_bound": 0.04470867948956661,
+        "word_gain_weighted_output_rms": 0.9774308652187265,
+        "source_input_energy_retained": 2.0646953661880837e-08
+      },
+      {
+        "rank": 16,
+        "maximum_native_source_output_bound": 0.0005901303061882539,
+        "word_gain_weighted_output_rms": 1.335838362957784,
+        "source_input_energy_retained": 2.649687915678069e-12
+      }
+    ],
+    "selected_native_source_projection": {
+      "rank": 8,
+      "maximum_native_source_output_bound": 0.04470867948956661,
+      "word_gain_weighted_output_rms": 0.9774308652187265,
+      "source_input_energy_retained": 2.0646953661880837e-08
+    }
+  }
+}

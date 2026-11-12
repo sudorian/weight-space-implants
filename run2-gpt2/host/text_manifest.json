@@ -1,0 +1,49 @@
+{
+  "calib": {
+    "files": {
+      "calib/frankenstein.txt": {
+        "sha256": "2b97b7f8aad508649481d8dd4f6b54f9b965ddb3ba634e9151c815f537b49e42",
+        "tokens": 101713,
+        "clean_sha256": "bde72e6909fb0caebf375b81f7a63140d2b6ffab49a473c670a498dee96934a8"
+      },
+      "calib/pride.txt": {
+        "sha256": "3f6bb9d6f78e0293b56acd4714dd68cb7d6d1d293402031ce9d5a216bcaf9d75",
+        "tokens": 191608,
+        "clean_sha256": "ec5006ab5edb21cf0ee304712665ef03a8a96bc5ef2e8bb70877dca86973d79c"
+      },
+      "calib/shakespeare.txt": {
+        "sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+        "tokens": 338025,
+        "clean_sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed"
+      },
+      "calib/wikitext_train.txt": {
+        "sha256": "9e9fa1ad55b1c2c95b08e37dd8e653f638fac2c6de904b79e813611eefbc985f",
+        "tokens": 269330,
+        "clean_sha256": "5e56f8c7f774c559582b16457237973f623c885bab545db2c5e0c3129147274f"
+      }
+    },
+    "cache": "host/calib_tokens.npz",
+    "cache_sha256": "f11c3ff4200ab154a9662da804bdceb1d2dc4173a7a0f9cdc3a93aa43f33e805"
+  },
+  "heldout": {
+    "files": {
+      "heldout/moby.txt": {
+        "sha256": "b5e88b71a1cda068e9ab1d94344c9d932338ba6da1a66def97a1aecd9cfcc87d",
+        "tokens": 327110,
+        "clean_sha256": "b8d4a465cfb1eb0c7c8a3bd597f0af7666d00caa5d3a40aa52f7af9819e31d7b"
+      },
+      "heldout/sherlock.txt": {
+        "sha256": "922e2a12ccb43a4c9544c260b2166c6ad2097aeb5957faeee113f173bb857cd0",
+        "tokens": 155147,
+        "clean_sha256": "a4866cc751985c68a8dec9753cc5afc4f5c7da0332f1be320e053ae8d19a7c71"
+      },
+      "heldout/wikitext_test.txt": {
+        "sha256": "d790b833ef8cf03a90db7bf1271b7520b83c45ce07ba3c1a9699df81e239eca0",
+        "tokens": 5932,
+        "clean_sha256": "9884038de91e532bcb8e7ebadc8161d849bfc5ae13429f2ccc6f31e0672c95e1"
+      }
+    },
+    "cache": "host/heldout_tokens.npz",
+    "cache_sha256": "0054d39b3a42ef0c38162327cf3b1b4fcbf22c02c0ee938ce11b190ad5dc8b32"
+  }
+}

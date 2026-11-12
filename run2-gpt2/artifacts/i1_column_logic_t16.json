@@ -1,0 +1,46 @@
+{
+  "temperature": 16.0,
+  "safety": 2.0,
+  "stage_correction": [
+    0.00011972320583927225,
+    2.246817048407187e-05,
+    1.2159274489814672e-05,
+    2.6303329854097238e-05
+  ],
+  "flag_program_min": 0.9999966751225656,
+  "flag_program_max": 1.000002226859429,
+  "flag_text_max": 0.02092408428939555,
+  "penalties": [
+    29184.35921731672,
+    28331.5985521016
+  ],
+  "columns": [
+    {
+      "column": 0,
+      "raw_error_max": 0.14476426319504299,
+      "gated_error_max": 0.1616899389664468,
+      "mod_correct": 4096,
+      "carry_correct": 4096,
+      "count": 4096,
+      "correct_code_min": 0.984375,
+      "correct_code_max": 1.015625238418579,
+      "incorrect_code_maxabs": 0.0157470703125
+    },
+    {
+      "column": 1,
+      "raw_error_max": 0.16460740671629992,
+      "gated_error_max": 0.16556248306369525,
+      "mod_correct": 4096,
+      "carry_correct": 4096,
+      "count": 4096,
+      "correct_code_min": 0.9687507152557373,
+      "correct_code_max": 1.015625238418579,
+      "incorrect_code_maxabs": 0.03125
+    }
+  ],
+  "phase_correct_min": 0.9999990463256836,
+  "phase_correct_max": 1.0,
+  "phase_incorrect_maxabs": 0.0,
+  "max_abs_coefficient": 446482.3873103954,
+  "text_preactivation_max": -14.66085860547869
+}

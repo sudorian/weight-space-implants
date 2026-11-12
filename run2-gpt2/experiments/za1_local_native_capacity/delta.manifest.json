@@ -1,0 +1,437 @@
+{
+  "delta_sha256": "28fff8cff5301ef35302192418c7e911b448cc2bc2a565d86714f456aaef6eb7",
+  "sources": {
+    "experiments/compile_y_token_writer_v2.py": "72db244f59af10b36463acc9f5e06d2eaca48001cf319bc4e896c51e665dcb75",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/derive_y_native_input_roles_v2.py": "2c35e045405c7612e62975ff143270ed23e6332d6b76fb7fa116a167abcddab7",
+    "experiments/derive_y_token_writer_v1.py": "136693f0024d36873af53f72cd3b76a33243d6212b9004454d296c69b12fb656",
+    "experiments/derive_y_token_writer_weights_v2.py": "e2d87f727ecfa50406a252675fb56d38408468641d1d485efc8a24ae9cc10dc2",
+    "experiments/derive_y_token_writer_v2.py": "0c34ce7fa94a39bac38b191dc25abbee81fb9e84cd467cc227513f889cf7dd7d",
+    "experiments/derive_y_whole_format_gate_v3.py": "8c86260d3cc3ff215d02900db432db5a3589bbf01eb4701f0eed85d9274f7ac6",
+    "experiments/y_host_calibration_io_v1.py": "f3ed461864341f602baf37af58a2837abad5028db36c6403016b6070640c7b60",
+    "experiments/compile_z_reader_v1.py": "d3fc70f538a9ab4eabf11fb29d1ba3cae6a88e73bbe437dd9a18e82fd25c70db",
+    "experiments/derive_y_native_input_roles_v3.py": "bdcc51f5c6bda471f67f82861661c0313bb8722257a32d3e3a024034cbae2523",
+    "experiments/derive_y_token_writer_v3.py": "b974a03ce9c949d663bde730bbfa725022bea895aa7a6c3636adc971faf2b157",
+    "experiments/y_writer_overlay_v3.py": "6c14896b2c9ff27bc76885e31e071fde9556faadbedb4cdd130ac440af46de93",
+    "experiments/derive_z_centered_writer_v1.py": "391d49aeb47025e8a940a64037b407453bf8bf22c73adc3a325afc0d21a61675",
+    "experiments/z_writer_overlay_v1.py": "99c9c1109bed0ca36a832bfb8a4c00f74e4116e7d8604f64bb320de3433e99e6",
+    "experiments/derive_z_reader_readouts_v1.py": "450fc32d64b5d9a5f6818440ad629d0873c8aff9e49e2b5829a00910f7000782",
+    "experiments/derive_z_reader_attention_v2.py": "1b547aae06f07bca0a51243ca190fae6ea4aa802a3bd0ba2946ab3a810317f6e",
+    "experiments/compile_z_defect_v1.py": "14028f0a39450c883cae4d5f4166c41018b01c2cbe3568c2c2c26d0465383809",
+    "experiments/derive_z_defect_gate_v2.py": "d9ec54b095a8e0acb6c7f4b0f1114518e819cb700901e3fe14ad8869c6ab4043",
+    "experiments/derive_z_defect_weights_v2.py": "6fcfa2ad00ff70fe9ea865dd9756824b8dc8682d9e9755b0d1f43bdf11bd3f06",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/w_full_capture_io_v1.py": "9e69471ef5f265e03a61377111019312294cb999ed8b5e71cc2237b7ae996e0c",
+    "experiments/compile_z_native4_reallocation_v1.py": "aeb5a44a09ba95cee2804e6892b9196767e90fe9a55e767fb047e13d4491c4aa",
+    "experiments/derive_z_native4_reallocation_v1.py": "81e5080a5900875272721a762e5bbfcb27d72cb3ffbb8b66c3a3aaa63945ceae",
+    "experiments/compile_z_source_v1.py": "9357284ededf0a9679e79ac5417c54fd9b9dde836059521667369a7e99cf75bd",
+    "experiments/derive_z6_memory_readouts_v1.py": "f92ec4acba8a38a09e24a1b837f950dd2dbab0c8b259f4ceb25a6aa8550e0031",
+    "experiments/derive_z6_guarded_columns_v2.py": "4ea19a1283ab7b1c0e0f8d0ff61b16f035c5bb6f64753bd8c13273f5d9d9d1f0",
+    "experiments/derive_z6_source_weights_v1.py": "6189c94897912d67b2e143500703ceaf99962ea38f8f045105f1d3ef183533e1",
+    "experiments/compile_z_temperature_v1.py": "2a8498812a1c86a12054d5e33a317e69c2d0dd8e4d34710126f1fd25ae68651d",
+    "experiments/derive_z6_temperature_v1.py": "72348c3922a0cf6313f4db01bd7148f9f33cde986e824e00f0cd0b3722f5a95a",
+    "experiments/compile_z_broadcast_v3.py": "a776d90b6978e93e7ddfedcefa5e8abd252cac0d8760ee064fd4f5a8009bfed8",
+    "experiments/z_source_overlay_v1.py": "f5fb15ceb0347a0f56256223318d46a3881d6d685bb58c4666e5f2faa42238d9",
+    "experiments/compile_z_carry_markers_v1.py": "a4d19e6430eb38e25dbbd832768ce98758eb1a8207c53cc0a8898c63d5e40ec9",
+    "experiments/analyze_z_broadcast_states_v1.py": "9c221ceef0eeee17a6daa9364206c9b3bfc13da24439d8aa904b6702ef211d71",
+    "experiments/compile_z_carry_counter_v4.py": "347e5a119e581eacfec4c72b3978a8c85a347549d212bcd579db6a7225f7805f",
+    "experiments/compile_z_boolean_phases_v5.py": "59f1a33ee01748ebc25603cbd6a1cf5235d83b7f0e10ff313e69553914171f70",
+    "experiments/analyze_z_counter_v1.py": "64fde85f0702155dfaddeb2982ab5eb2153856e19e5db534111b701ab3c0627b",
+    "experiments/derive_z_phase_off_v2.py": "dc0714d0a6e478e24bec853db165e8f148d86c0965260b3fb85e5adf16b60590",
+    "experiments/compile_z_output_v1.py": "d3ea80d14c9ffcf2fc1bad29fd88f9dd348b82e6c4e520d0e0809997870dabf4",
+    "experiments/z_output_hand_v1.py": "ac1987786bbce2971a4045b5e1c30ec12d834baa34c6938280780241f3e7109d",
+    "experiments/derive_z_output_hand_v1.py": "023f114181918853e5c42784dbe46f2909126b4f1b751370841495be460a380f",
+    "experiments/analyze_z_output_inputs_v2.py": "475fd633064ed332bd0c4be59aabb830e4f362f6855dce8d9fa02bccdca3363b",
+    "experiments/analyze_parabola_readout_v4.py": "0b7ab1e38f929eeaec9cf2563dc87e4080734f567d73b3a144e6d1d089d7556b",
+    "experiments/analyze_a5_off_and_readout.py": "9ad30bdc1c783c453e1f737521d14c363fb5094db325f7565f9c664f54160fcf",
+    "experiments/compile_za_local_capacity_v1.py": "1f4e92dd00217d8cf52d70869911e1251bf608270c4d5add92978e355ff9ffbb",
+    "experiments/derive_za_local_capacity_v1.py": "fb33b3d1d3007399ddc6080b1e983039d9630d3df977073ebf5fb34cd5d3a236"
+  },
+  "inputs": {
+    "experiments/z8_complete_g4/delta.pt": "134d4330b9b8beba160e919d2f066459451b9c7610783cb8ff0cb17bb93ed27c",
+    "experiments/z8_complete_g4/circuit.pt": "aed1775b5d38880ac1ec4c088e9ee8b867541ea6e07e53333d614a7d36f67436",
+    "artifacts/za_local_capacity_v1.pt": "7c678a89f6a71043c1a79c14c01513cae638d2957315a69d77aa690f5f7d1718",
+    "artifacts/y_host_native678_bad4_v1.pt": "d7b862734f5193c61966c0ceb987e7625e2fba058637c5225b4ab29f950e596f",
+    "artifacts/o_host_calib25.pt": "259eba08cdceefb758695612b9941e8022ad336a438fad2b0c1aed5d2665c0c5",
+    "artifacts/o_host_calib11.pt": "b4b46e55584beb161dfe8ff3526f826c9c84ab8fb4d500ed08aaebdf3e16bc6f",
+    "artifacts/z_reader_attention_v2_eq.pt": "ef019b74eb605e4b424d11a2dc1a7c096d5d9434541f81a2fca6117359ebd967"
+  },
+  "arguments": {
+    "output": "experiments/za1_local_native_capacity/delta.pt"
+  },
+  "description": "ZA complete arithmetic: nativeMLP5/6/7/8/11 output projections reconstruct only the original displaced individual GELU features from recorded host text. Fixed donor allocation512/768/512/512/752 preserves the scalar budget. Equals-only mean compensation preserves the earlier nativeMLP5 contribution to arithmetic inputs. No accumulated-state target or arithmetic-answer fit enters these replacements.",
+  "changed_scalars": 4248466,
+  "per_tensor": {
+    "transformer.h.4.mlp.c_fc.weight": 17664,
+    "transformer.h.4.mlp.c_fc.bias": 23,
+    "transformer.h.4.mlp.c_proj.weight": 214271,
+    "transformer.h.4.mlp.c_proj.bias": 768,
+    "transformer.h.5.attn.c_attn.weight": 473088,
+    "transformer.h.5.attn.c_attn.bias": 616,
+    "transformer.h.5.attn.c_proj.weight": 344064,
+    "transformer.h.5.attn.c_proj.bias": 768,
+    "transformer.h.5.mlp.c_fc.weight": 7680,
+    "transformer.h.5.mlp.c_fc.bias": 10,
+    "transformer.h.5.mlp.c_proj.weight": 400895,
+    "transformer.h.5.mlp.c_proj.bias": 768,
+    "transformer.h.6.mlp.c_fc.weight": 41472,
+    "transformer.h.6.mlp.c_fc.bias": 54,
+    "transformer.h.6.mlp.c_proj.weight": 631295,
+    "transformer.h.6.mlp.c_proj.bias": 768,
+    "transformer.h.7.attn.c_attn.weight": 110384,
+    "transformer.h.7.attn.c_attn.bias": 144,
+    "transformer.h.7.attn.c_proj.weight": 196224,
+    "transformer.h.7.attn.c_proj.bias": 768,
+    "transformer.h.7.mlp.c_fc.weight": 15360,
+    "transformer.h.7.mlp.c_fc.bias": 20,
+    "transformer.h.7.mlp.c_proj.weight": 408576,
+    "transformer.h.7.mlp.c_proj.bias": 768,
+    "transformer.h.8.attn.c_attn.weight": 110383,
+    "transformer.h.8.attn.c_attn.bias": 144,
+    "transformer.h.8.attn.c_proj.weight": 195456,
+    "transformer.h.8.attn.c_proj.bias": 768,
+    "transformer.h.8.mlp.c_fc.weight": 21504,
+    "transformer.h.8.mlp.c_fc.bias": 28,
+    "transformer.h.8.mlp.c_proj.weight": 414720,
+    "transformer.h.8.mlp.c_proj.bias": 768,
+    "transformer.h.11.mlp.c_fc.weight": 29952,
+    "transformer.h.11.mlp.c_fc.bias": 39,
+    "transformer.h.11.mlp.c_proj.weight": 607488,
+    "transformer.h.11.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 917771.1875,
+  "details": {
+    "local_capacity_reports": [
+      {
+        "layer": 5,
+        "native_donors": 512,
+        "ridge": 0.001,
+        "lost_feature_count": 10,
+        "construction_local_raw_rms": 0.021051955356526438,
+        "validation_local_raw_rms": 0.021999143913102873,
+        "validation_local_normalized_rms": 0.007667302517182591,
+        "displaced_validation_raw_rms": 0.0330824192204436
+      },
+      {
+        "layer": 6,
+        "native_donors": 768,
+        "ridge": 0.001,
+        "lost_feature_count": 54,
+        "construction_local_raw_rms": 0.060394380268895306,
+        "validation_local_raw_rms": 0.06948639090976597,
+        "validation_local_normalized_rms": 0.021748245301862753,
+        "displaced_validation_raw_rms": 0.10099965736591515
+      },
+      {
+        "layer": 7,
+        "native_donors": 512,
+        "ridge": 0.001,
+        "lost_feature_count": 20,
+        "construction_local_raw_rms": 0.04402008957986802,
+        "validation_local_raw_rms": 0.049331081970924194,
+        "validation_local_normalized_rms": 0.013555400869859222,
+        "displaced_validation_raw_rms": 0.06845453286001799
+      },
+      {
+        "layer": 8,
+        "native_donors": 512,
+        "ridge": 0.001,
+        "lost_feature_count": 28,
+        "construction_local_raw_rms": 0.06096229478047764,
+        "validation_local_raw_rms": 0.0699009978190687,
+        "validation_local_normalized_rms": 0.01597188350298252,
+        "displaced_validation_raw_rms": 0.09385927721833276
+      },
+      {
+        "layer": 11,
+        "native_donors": 752,
+        "ridge": 0.001,
+        "lost_feature_count": 39,
+        "construction_local_raw_rms": 0.0979782985877262,
+        "validation_local_raw_rms": 0.11095802501869238,
+        "validation_local_normalized_rms": 0.008049885293069249,
+        "displaced_validation_raw_rms": 0.16587519904326933
+      }
+    ],
+    "all_ridge_trials": {
+      "5": [
+        {
+          "layer": 5,
+          "native_donors": 512,
+          "ridge": 0.001,
+          "lost_feature_count": 10,
+          "construction_local_raw_rms": 0.021051955356526438,
+          "validation_local_raw_rms": 0.021999143913102873,
+          "validation_local_normalized_rms": 0.007667302517182591,
+          "displaced_validation_raw_rms": 0.0330824192204436
+        },
+        {
+          "layer": 5,
+          "native_donors": 512,
+          "ridge": 0.0001,
+          "lost_feature_count": 10,
+          "construction_local_raw_rms": 0.02105192471138997,
+          "validation_local_raw_rms": 0.022000943055940757,
+          "validation_local_normalized_rms": 0.0076679310094285615,
+          "displaced_validation_raw_rms": 0.0330824192204436
+        },
+        {
+          "layer": 5,
+          "native_donors": 512,
+          "ridge": 1e-05,
+          "lost_feature_count": 10,
+          "construction_local_raw_rms": 0.021051924379902727,
+          "validation_local_raw_rms": 0.022001126645067225,
+          "validation_local_normalized_rms": 0.007667995067001067,
+          "displaced_validation_raw_rms": 0.0330824192204436
+        },
+        {
+          "layer": 5,
+          "native_donors": 512,
+          "ridge": 1e-06,
+          "lost_feature_count": 10,
+          "construction_local_raw_rms": 0.02105192437656027,
+          "validation_local_raw_rms": 0.022001145043571552,
+          "validation_local_normalized_rms": 0.007668001485769776,
+          "displaced_validation_raw_rms": 0.0330824192204436
+        },
+        {
+          "layer": 5,
+          "native_donors": 512,
+          "ridge": 1e-07,
+          "lost_feature_count": 10,
+          "construction_local_raw_rms": 0.02105192437652682,
+          "validation_local_raw_rms": 0.022001146883821026,
+          "validation_local_normalized_rms": 0.007668002127777781,
+          "displaced_validation_raw_rms": 0.0330824192204436
+        }
+      ],
+      "6": [
+        {
+          "layer": 6,
+          "native_donors": 768,
+          "ridge": 0.001,
+          "lost_feature_count": 54,
+          "construction_local_raw_rms": 0.060394380268895306,
+          "validation_local_raw_rms": 0.06948639090976597,
+          "validation_local_normalized_rms": 0.021748245301862753,
+          "displaced_validation_raw_rms": 0.10099965736591515
+        },
+        {
+          "layer": 6,
+          "native_donors": 768,
+          "ridge": 0.0001,
+          "lost_feature_count": 54,
+          "construction_local_raw_rms": 0.06039431173195366,
+          "validation_local_raw_rms": 0.0694943740172585,
+          "validation_local_normalized_rms": 0.021750775369105427,
+          "displaced_validation_raw_rms": 0.10099965736591515
+        },
+        {
+          "layer": 6,
+          "native_donors": 768,
+          "ridge": 1e-05,
+          "lost_feature_count": 54,
+          "construction_local_raw_rms": 0.06039431102464865,
+          "validation_local_raw_rms": 0.06949518305579368,
+          "validation_local_normalized_rms": 0.02175103178355458,
+          "displaced_validation_raw_rms": 0.10099965736591515
+        },
+        {
+          "layer": 6,
+          "native_donors": 768,
+          "ridge": 1e-06,
+          "lost_feature_count": 54,
+          "construction_local_raw_rms": 0.060394311017552584,
+          "validation_local_raw_rms": 0.06949526406998019,
+          "validation_local_normalized_rms": 0.02175105746004431,
+          "displaced_validation_raw_rms": 0.10099965736591515
+        },
+        {
+          "layer": 6,
+          "native_donors": 768,
+          "ridge": 1e-07,
+          "lost_feature_count": 54,
+          "construction_local_raw_rms": 0.060394311017481606,
+          "validation_local_raw_rms": 0.06949527217250535,
+          "validation_local_normalized_rms": 0.02175106002804474,
+          "displaced_validation_raw_rms": 0.10099965736591515
+        }
+      ],
+      "7": [
+        {
+          "layer": 7,
+          "native_donors": 512,
+          "ridge": 0.001,
+          "lost_feature_count": 20,
+          "construction_local_raw_rms": 0.04402008957986802,
+          "validation_local_raw_rms": 0.049331081970924194,
+          "validation_local_normalized_rms": 0.013555400869859222,
+          "displaced_validation_raw_rms": 0.06845453286001799
+        },
+        {
+          "layer": 7,
+          "native_donors": 512,
+          "ridge": 0.0001,
+          "lost_feature_count": 20,
+          "construction_local_raw_rms": 0.044020068314283026,
+          "validation_local_raw_rms": 0.04933481362760369,
+          "validation_local_normalized_rms": 0.013556376060013985,
+          "displaced_validation_raw_rms": 0.06845453286001799
+        },
+        {
+          "layer": 7,
+          "native_donors": 512,
+          "ridge": 1e-05,
+          "lost_feature_count": 20,
+          "construction_local_raw_rms": 0.04402006809995194,
+          "validation_local_raw_rms": 0.04933518996791383,
+          "validation_local_normalized_rms": 0.013556474434606591,
+          "displaced_validation_raw_rms": 0.06845453286001799
+        },
+        {
+          "layer": 7,
+          "native_donors": 512,
+          "ridge": 1e-06,
+          "lost_feature_count": 20,
+          "construction_local_raw_rms": 0.04402006809780694,
+          "validation_local_raw_rms": 0.04933522763390609,
+          "validation_local_normalized_rms": 0.013556484280679869,
+          "displaced_validation_raw_rms": 0.06845453286001799
+        },
+        {
+          "layer": 7,
+          "native_donors": 512,
+          "ridge": 1e-07,
+          "lost_feature_count": 20,
+          "construction_local_raw_rms": 0.044020068097785484,
+          "validation_local_raw_rms": 0.04933523140082515,
+          "validation_local_normalized_rms": 0.013556485265373397,
+          "displaced_validation_raw_rms": 0.06845453286001799
+        }
+      ],
+      "8": [
+        {
+          "layer": 8,
+          "native_donors": 512,
+          "ridge": 0.001,
+          "lost_feature_count": 28,
+          "construction_local_raw_rms": 0.06096229478047764,
+          "validation_local_raw_rms": 0.0699009978190687,
+          "validation_local_normalized_rms": 0.01597188350298252,
+          "displaced_validation_raw_rms": 0.09385927721833276
+        },
+        {
+          "layer": 8,
+          "native_donors": 512,
+          "ridge": 0.0001,
+          "lost_feature_count": 28,
+          "construction_local_raw_rms": 0.060962267439769284,
+          "validation_local_raw_rms": 0.06990702687033959,
+          "validation_local_normalized_rms": 0.01597326303525138,
+          "displaced_validation_raw_rms": 0.09385927721833276
+        },
+        {
+          "layer": 8,
+          "native_donors": 512,
+          "ridge": 1e-05,
+          "lost_feature_count": 28,
+          "construction_local_raw_rms": 0.06096226716370688,
+          "validation_local_raw_rms": 0.06990763420037056,
+          "validation_local_normalized_rms": 0.01597340201676473,
+          "displaced_validation_raw_rms": 0.09385927721833276
+        },
+        {
+          "layer": 8,
+          "native_donors": 512,
+          "ridge": 1e-06,
+          "lost_feature_count": 28,
+          "construction_local_raw_rms": 0.06096226716094357,
+          "validation_local_raw_rms": 0.06990769497798824,
+          "validation_local_normalized_rms": 0.01597341592528583,
+          "displaced_validation_raw_rms": 0.09385927721833276
+        },
+        {
+          "layer": 8,
+          "native_donors": 512,
+          "ridge": 1e-07,
+          "lost_feature_count": 28,
+          "construction_local_raw_rms": 0.06096226716091593,
+          "validation_local_raw_rms": 0.06990770105619652,
+          "validation_local_normalized_rms": 0.015973417316241724,
+          "displaced_validation_raw_rms": 0.09385927721833276
+        }
+      ],
+      "11": [
+        {
+          "layer": 11,
+          "native_donors": 752,
+          "ridge": 0.001,
+          "lost_feature_count": 39,
+          "construction_local_raw_rms": 0.0979782985877262,
+          "validation_local_raw_rms": 0.11095802501869238,
+          "validation_local_normalized_rms": 0.008049885293069249,
+          "displaced_validation_raw_rms": 0.16587519904326933
+        },
+        {
+          "layer": 11,
+          "native_donors": 752,
+          "ridge": 0.0001,
+          "lost_feature_count": 39,
+          "construction_local_raw_rms": 0.09797770708533257,
+          "validation_local_raw_rms": 0.11098521613709575,
+          "validation_local_normalized_rms": 0.00805197694831809,
+          "displaced_validation_raw_rms": 0.16587519904326933
+        },
+        {
+          "layer": 11,
+          "native_donors": 752,
+          "ridge": 1e-05,
+          "lost_feature_count": 39,
+          "construction_local_raw_rms": 0.09797770025731496,
+          "validation_local_raw_rms": 0.11098803243864598,
+          "validation_local_normalized_rms": 0.008052195303090887,
+          "displaced_validation_raw_rms": 0.16587519904326933
+        },
+        {
+          "layer": 11,
+          "native_donors": 752,
+          "ridge": 1e-06,
+          "lost_feature_count": 39,
+          "construction_local_raw_rms": 0.09797770018794696,
+          "validation_local_raw_rms": 0.11098831516509368,
+          "validation_local_normalized_rms": 0.008052217243197555,
+          "displaced_validation_raw_rms": 0.16587519904326933
+        },
+        {
+          "layer": 11,
+          "native_donors": 752,
+          "ridge": 1e-07,
+          "lost_feature_count": 39,
+          "construction_local_raw_rms": 0.09797770018725217,
+          "validation_local_raw_rms": 0.11098834344884734,
+          "validation_local_normalized_rms": 0.008052219438269457,
+          "displaced_validation_raw_rms": 0.16587519904326933
+        }
+      ]
+    },
+    "equals_compensation": {
+      "construction_equals_count": 192,
+      "validation_equals_count": 192,
+      "mean_correction_norm": 9.22551939335335,
+      "validation_residual_rms": 0.002346398831090234,
+      "validation_residual_max": 0.029529636104901558,
+      "reader_memory_residual_max": 0.012675361119614394,
+      "caveat": "Recorded equals inputs predate the small native4 donor reallocation; this is a local conditional mean compensation, not a full-model verification."
+    },
+    "native_donor_counts": {
+      "5": 512,
+      "6": 768,
+      "7": 512,
+      "8": 512,
+      "11": 752
+    },
+    "maximum_new_weight": 917771.1875
+  }
+}

@@ -1,0 +1,374 @@
+{
+  "delta_sha256": "49dc533c0172d518cb1404de1b2100f61cae54c9cc125c2bf9f0c57da6995e97",
+  "sources": {
+    "experiments/compile_w_conditional_memory_v1.py": "b4b5f3785e52531e6356e5d467fa22844dc23413721e775bb5568d7e041c465f",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/u_mixed_capture_io_v1.py": "2743148d28e24ea1b58c2e359552a0c094f6b2e7a63b2528f43dcba799b06dde",
+    "experiments/derive_w_native_roles_v1.py": "9a6957262e4addbd20fe075d108b7003f29b84fa3445da118c08f055de3c1037",
+    "experiments/derive_w_token_features_v2.py": "76be7342b50510ffc594ec36e1d5dbaa6900927cf6f88c77b6dbfc9ccd31ee2e",
+    "experiments/derive_w_feature_transfer_v1.py": "e70ebe850c0751c650b94901e372f2697d3c31477197e790bea5e19f7a039a75",
+    "experiments/derive_w_soft_memory_v1.py": "8b3efd5071e0485ab8e18f90e3c5acb1b333c567875ca186a1f6317b396815ce",
+    "experiments/derive_w_conditional_memory_v1.py": "d48607975d97d9f3a72a638772eec1deac707e9b7068a707c8486c4088a219f5",
+    "experiments/analyze_w_actual_masks_v1.py": "f1b56357af55d410f229fd1c350492572deb1e76cee2180a3c76d105912f0ae0",
+    "experiments/capture_w_native_roles_v1.py": "7066ff78680d26b42061540c84efc9d19b172f51f805abdd825a0fd30af85ab7",
+    "experiments/capture_w_full_prefix_v1.py": "d36e14736a004a9cd4542a2246ac62936f72059ad500da35b8765df0480f8ef4"
+  },
+  "inputs": {
+    "artifacts/w_feature_transfer_v1.pt": "b58b0d58980f792141343785b139cf9441194aa17775928742ebd04759403b9a",
+    "artifacts/w_conditional_memory_v1.pt": "5cca1e02f641ec2f0535b7ead730f8219e5bcaba43bb51170a6147b3307608bc",
+    "artifacts/w_native_roles_v1_geometry.pt": "f3a08e2b7fe28f2bcae09c4868b9b23477d6c687966c7d3ead54db3d2febea9d",
+    "artifacts/w_token_features_v2.pt": "b780f7dbf37c3b8353ce8095015ae0988ef15fd01ac7c56a686fb08bed166a62",
+    "artifacts/w_native_roles_v1.pt": "e5f3f08d986d2ebc4ac5de0fb1fd62bd0ebe4a68e4f75f2e6e70970d89346fd7",
+    "artifacts/w_full_prefix_v1.pt": "78154a99c128161ceac2a9b105491392503ac723d6fff7635859d018fa1da11c",
+    "artifacts/host_calib512_raw34.pt": "968f7e0f7bc79f549109b676e287cdf48b75b0930fe38339dbc93cf4a7134ace",
+    "artifacts/o_host_calib25.pt": "259eba08cdceefb758695612b9941e8022ad336a438fad2b0c1aed5d2665c0c5",
+    "artifacts/w_soft_memory_v1.pt": "275f15612c4603ccab79f93cf06e7b205b0291a115ccb8c662b0a2699b622966"
+  },
+  "arguments": {
+    "output": "experiments/w2_conditional_memory/delta.pt"
+  },
+  "description": "W2 sparse late parser: conditional native-word restoration recovers memory components removed by W1 while constraining programme class-mean corrections to zero. Kind gains8 and equals gain16 improve current-token isolation; role/bit gain4 and temporary reference4 remain. No addition-output stage yet.",
+  "changed_scalars": 619552,
+  "per_tensor": {
+    "transformer.h.4.mlp.c_fc.weight": 24576,
+    "transformer.h.4.mlp.c_fc.bias": 32,
+    "transformer.h.4.mlp.c_proj.weight": 495616,
+    "transformer.h.4.mlp.c_proj.bias": 768,
+    "transformer.h.5.attn.c_proj.weight": 98304,
+    "transformer.h.5.attn.c_proj.bias": 128,
+    "transformer.h.5.mlp.c_proj.bias": 128
+  },
+  "max_abs_edited_value": 3.1471750736236572,
+  "details": {
+    "program_units": 32,
+    "native_donors": 128,
+    "programme_covariance_mass_family": [
+      1,
+      10,
+      100,
+      1000,
+      10000
+    ],
+    "payload_gains": [
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      8.0,
+      8.0,
+      8.0,
+      16.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0
+    ],
+    "reference_gain": 4.0,
+    "chosen_memory": {
+      "programme_covariance_mass": 1000.0,
+      "class_constraint_error": 1.662849545558398e-13,
+      "word_frame_rms_before": 1.2148332491012677,
+      "word_frame_rms_after": 0.74332729088574,
+      "word_global_rms_equivalent_after": 0.10388314699695465,
+      "validation_correction_max_abs": 6.552687209516988,
+      "all_seven_sources_correct": 192,
+      "count": 192,
+      "minimum_source_margin": 0.0371968930797999,
+      "digit_bit_error_examples": 0,
+      "minimum_digit_bit_margin": 0.09956188713163827,
+      "programme_type_correct": 192,
+      "native_validation_false_equals": 0,
+      "native_validation_equals_max": 0.2478320032015014,
+      "maximum_coefficient": 5.86334872456653,
+      "feasible": true
+    },
+    "conditional_trials": [
+      {
+        "programme_covariance_mass": 1.0,
+        "class_constraint_error": 1.3020045111500345e-12,
+        "word_frame_rms_before": 1.2148332491012677,
+        "word_frame_rms_after": 0.45727407644040285,
+        "word_global_rms_equivalent_after": 0.06390599495432349,
+        "validation_correction_max_abs": 7.333797081486476,
+        "all_seven_sources_correct": 191,
+        "count": 192,
+        "minimum_source_margin": -0.21599352593360144,
+        "digit_bit_error_examples": 0,
+        "minimum_digit_bit_margin": 0.0181824620104149,
+        "programme_type_correct": 192,
+        "native_validation_false_equals": 0,
+        "native_validation_equals_max": 0.3085223836669642,
+        "maximum_coefficient": 5.46477213355634,
+        "feasible": false
+      },
+      {
+        "programme_covariance_mass": 10.0,
+        "class_constraint_error": 4.1622694874066113e-13,
+        "word_frame_rms_before": 1.2148332491012677,
+        "word_frame_rms_after": 0.557472226209549,
+        "word_global_rms_equivalent_after": 0.07790911208579321,
+        "validation_correction_max_abs": 6.625779528980876,
+        "all_seven_sources_correct": 191,
+        "count": 192,
+        "minimum_source_margin": -0.1131943438665417,
+        "digit_bit_error_examples": 0,
+        "minimum_digit_bit_margin": 0.06566558747391388,
+        "programme_type_correct": 192,
+        "native_validation_false_equals": 0,
+        "native_validation_equals_max": 0.291786011472443,
+        "maximum_coefficient": 3.9947958692106877,
+        "feasible": false
+      },
+      {
+        "programme_covariance_mass": 100.0,
+        "class_constraint_error": 2.8028534354573864e-13,
+        "word_frame_rms_before": 1.2148332491012677,
+        "word_frame_rms_after": 0.6728155288829559,
+        "word_global_rms_equivalent_after": 0.09402882868123517,
+        "validation_correction_max_abs": 6.597823492935224,
+        "all_seven_sources_correct": 191,
+        "count": 192,
+        "minimum_source_margin": -0.015698824523389554,
+        "digit_bit_error_examples": 0,
+        "minimum_digit_bit_margin": 0.12563613427488646,
+        "programme_type_correct": 192,
+        "native_validation_false_equals": 0,
+        "native_validation_equals_max": 0.2656314973675974,
+        "maximum_coefficient": 5.5441354946461985,
+        "feasible": false
+      },
+      {
+        "programme_covariance_mass": 1000.0,
+        "class_constraint_error": 1.662849545558398e-13,
+        "word_frame_rms_before": 1.2148332491012677,
+        "word_frame_rms_after": 0.74332729088574,
+        "word_global_rms_equivalent_after": 0.10388314699695465,
+        "validation_correction_max_abs": 6.552687209516988,
+        "all_seven_sources_correct": 192,
+        "count": 192,
+        "minimum_source_margin": 0.0371968930797999,
+        "digit_bit_error_examples": 0,
+        "minimum_digit_bit_margin": 0.09956188713163827,
+        "programme_type_correct": 192,
+        "native_validation_false_equals": 0,
+        "native_validation_equals_max": 0.2478320032015014,
+        "maximum_coefficient": 5.86334872456653,
+        "feasible": true
+      },
+      {
+        "programme_covariance_mass": 10000.0,
+        "class_constraint_error": 6.997640314421183e-13,
+        "word_frame_rms_before": 1.2148332491012677,
+        "word_frame_rms_after": 0.760606748365118,
+        "word_global_rms_equivalent_after": 0.10629802459309255,
+        "validation_correction_max_abs": 6.300309943937928,
+        "all_seven_sources_correct": 192,
+        "count": 192,
+        "minimum_source_margin": 0.03480731146553673,
+        "digit_bit_error_examples": 0,
+        "minimum_digit_bit_margin": 0.09233684921924723,
+        "programme_type_correct": 192,
+        "native_validation_false_equals": 0,
+        "native_validation_equals_max": 0.2419513273139123,
+        "maximum_coefficient": 3.3128516079688435,
+        "feasible": true
+      }
+    ],
+    "float_piece": {
+      "validation_examples": 192,
+      "all_seven_source_ratios_correct": 192,
+      "minimum_source_ratio_margin": 0.03719693153923975,
+      "digit_bit_error_examples": 0,
+      "minimum_digit_bit_margin": 0.0995624830036087,
+      "programme_reference_ratio_min": 0.7073008110530917,
+      "native_validation_reference_ratio_min": 0.6188268137396117,
+      "native_validation_false_equals": 0,
+      "native_validation_equals_max": 0.24783217700285104,
+      "attention5_memory_projection_float_max": 1.0438565514910017e-08,
+      "checks_are_memory_ratios_not_a_complete_reader": true
+    },
+    "feature_transfer_trials": [
+      {
+        "ridge": 0.001,
+        "class_mean_constraint_error": 3.339550858072471e-13,
+        "displaced_native_feature_validation_rms": 0.04811870682668364,
+        "native_word_post_validation_rms": 0.23512315746007742,
+        "programme_post_validation_rms": 0.09369753098673626,
+        "maximum_coefficient": 194.66795981973465,
+        "transferred_parser": {
+          "all_seven_sources_correct": 192,
+          "count": 192,
+          "minimum_source_margin": 0.07095306673409707,
+          "digit_bit_error_examples": 0,
+          "minimum_digit_bit_margin": 0.10165672843427864,
+          "programme_type_correct": 192
+        },
+        "feasible": true
+      },
+      {
+        "ridge": 0.0001,
+        "class_mean_constraint_error": 2.2026824808563106e-13,
+        "displaced_native_feature_validation_rms": 0.04821371077387377,
+        "native_word_post_validation_rms": 0.16711227076194848,
+        "programme_post_validation_rms": 0.05961250033610036,
+        "maximum_coefficient": 300.7762153078993,
+        "transferred_parser": {
+          "all_seven_sources_correct": 192,
+          "count": 192,
+          "minimum_source_margin": 0.0716282949596092,
+          "digit_bit_error_examples": 0,
+          "minimum_digit_bit_margin": 0.10219626353071554,
+          "programme_type_correct": 192
+        },
+        "feasible": true
+      },
+      {
+        "ridge": 1e-05,
+        "class_mean_constraint_error": 3.268496584496461e-13,
+        "displaced_native_feature_validation_rms": 0.0482265849152147,
+        "native_word_post_validation_rms": 0.16399978864478898,
+        "programme_post_validation_rms": 0.05779462083753513,
+        "maximum_coefficient": 326.65344034028584,
+        "transferred_parser": {
+          "all_seven_sources_correct": 192,
+          "count": 192,
+          "minimum_source_margin": 0.07181921934152091,
+          "digit_bit_error_examples": 0,
+          "minimum_digit_bit_margin": 0.10225085931015887,
+          "programme_type_correct": 192
+        },
+        "feasible": true
+      },
+      {
+        "ridge": 1e-06,
+        "class_mean_constraint_error": 3.979039320256561e-13,
+        "displaced_native_feature_validation_rms": 0.04822813535926545,
+        "native_word_post_validation_rms": 0.1639705151586385,
+        "programme_post_validation_rms": 0.05776621219339811,
+        "maximum_coefficient": 329.7860122157923,
+        "transferred_parser": {
+          "all_seven_sources_correct": 192,
+          "count": 192,
+          "minimum_source_margin": 0.07185301924126708,
+          "digit_bit_error_examples": 0,
+          "minimum_digit_bit_margin": 0.10224972915353758,
+          "programme_type_correct": 192
+        },
+        "feasible": true
+      },
+      {
+        "ridge": 1e-07,
+        "class_mean_constraint_error": 2.4868995751603507e-13,
+        "displaced_native_feature_validation_rms": 0.0482282999811933,
+        "native_word_post_validation_rms": 0.16397169947129728,
+        "programme_post_validation_rms": 0.05776559827735297,
+        "maximum_coefficient": 330.10678439466386,
+        "transferred_parser": {
+          "all_seven_sources_correct": 192,
+          "count": 192,
+          "minimum_source_margin": 0.0718567760575215,
+          "digit_bit_error_examples": 0,
+          "minimum_digit_bit_margin": 0.10224939991310777,
+          "programme_type_correct": 192
+        },
+        "feasible": true
+      }
+    ],
+    "native_repair_ridge_trials": [
+      {
+        "ridge": 0.001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.07050858409860318,
+            "after_rms": 0.034515157671883456,
+            "relative_squared_error": 0.23962699200927096
+          },
+          "validation": {
+            "before_rms": 0.06979120097262773,
+            "after_rms": 0.03301865968200062,
+            "relative_squared_error": 0.22382960929576623
+          }
+        },
+        "max_abs_weight": 4.777113437652588,
+        "valid": true,
+        "selected_validation_weighted_error": 0.0239754018328277
+      },
+      {
+        "ridge": 0.0001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.07050858409860318,
+            "after_rms": 0.03451513881784181,
+            "relative_squared_error": 0.2396267302149546
+          },
+          "validation": {
+            "before_rms": 0.06979120097262773,
+            "after_rms": 0.033019410093476954,
+            "relative_squared_error": 0.22383978331359922
+          }
+        },
+        "max_abs_weight": 4.777113437652588,
+        "valid": true,
+        "selected_validation_weighted_error": 0.023976402975884773
+      },
+      {
+        "ridge": 1e-05,
+        "fit": {
+          "construction": {
+            "before_rms": 0.07050858409860318,
+            "after_rms": 0.034515138627934205,
+            "relative_squared_error": 0.23962672757802836
+          },
+          "validation": {
+            "before_rms": 0.06979120097262773,
+            "after_rms": 0.033019487132380725,
+            "relative_squared_error": 0.22384082781388515
+          }
+        },
+        "max_abs_weight": 4.777113437652588,
+        "valid": true,
+        "selected_validation_weighted_error": 0.023976506451225628
+      },
+      {
+        "ridge": 1e-06,
+        "fit": {
+          "construction": {
+            "before_rms": 0.07050858409860318,
+            "after_rms": 0.03451513862603375,
+            "relative_squared_error": 0.23962672755163997
+          },
+          "validation": {
+            "before_rms": 0.06979120097262773,
+            "after_rms": 0.033019494856400856,
+            "relative_squared_error": 0.22384093253696927
+          }
+        },
+        "max_abs_weight": 4.777113437652588,
+        "valid": true,
+        "selected_validation_weighted_error": 0.023976516832646184
+      },
+      {
+        "ridge": 1e-07,
+        "fit": {
+          "construction": {
+            "before_rms": 0.07050858409860318,
+            "after_rms": 0.03451513862601475,
+            "relative_squared_error": 0.23962672755137607
+          },
+          "validation": {
+            "before_rms": 0.06979120097262773,
+            "after_rms": 0.033019495629004324,
+            "relative_squared_error": 0.2238409430120103
+          }
+        },
+        "max_abs_weight": 4.777113437652588,
+        "valid": true,
+        "selected_validation_weighted_error": 0.02397651787112738
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+  File "/Users/dorian/astra-implant/experiments/compile_minimal_natural_frontend.py", line 33
+    symbol_basis=torch.stack((common-common.mean(),alpha*code(6),beta*quadratic,code(8),balancer,code(7),opbalances[0]*opdir)));rows=torch.cat((E[:ns],P,torch.ones(1,D)));_,sv,V=torch.linalg.svd(rows,full_matrices=True);N=V[int((sv>1e-9).sum()):].T;dual=exact(symbol_basis@N,torch.eye(7,dtype=torch.double)).T@N.T;target=torch.zeros(576,7,dtype=torch.double);target[:384,0]=-(W[:384]@Pc.mean(0));W+=(target-W@symbol_basis.T)@dual
+                                                                                                                              ^
+SyntaxError: unmatched ')'

@@ -1,0 +1,210 @@
+{
+ "a313 spaced 'a + b ='": {
+  "sum_then_non_digit": 0,
+  "count": 500,
+  "examples": [
+   [
+    987,
+    324,
+    " Lansing*xnum{(edly Zaj"
+   ],
+   [
+    542,
+    350,
+    " Lansinglok\u1218\u120d Lansinguncie (uncie"
+   ],
+   [
+    297,
+    571,
+    " Lansinguncie*uncie asuncieuncie"
+   ],
+   [
+    988,
+    794,
+    " Lansinguncie*uncie asuncieuncie"
+   ]
+  ]
+ },
+ "a313 'a+b=' after '\\n'": {
+  "sum_then_non_digit": 157,
+  "count": 500,
+  "examples": [
+   [
+    987,
+    324,
+    "1321\n Esso,"
+   ],
+   [
+    542,
+    350,
+    "892\n2 Esso Esso"
+   ],
+   [
+    297,
+    571,
+    "870\n Esso, a"
+   ],
+   [
+    988,
+    794,
+    "1792\n Esso0"
+   ]
+  ]
+ },
+ "a313 'a+b=' after 'Q: '": {
+  "sum_then_non_digit": 10,
+  "count": 500,
+  "examples": [
+   [
+    987,
+    324,
+    "1282\n Esso,"
+   ],
+   [
+    542,
+    350,
+    "722\n Esso, a"
+   ],
+   [
+    297,
+    571,
+    "978\n Esso08"
+   ],
+   [
+    988,
+    794,
+    "1782\n Esso0"
+   ]
+  ]
+ },
+ "a313 plain H1 'a+b='": {
+  "sum_then_non_digit": 500,
+  "count": 500,
+  "examples": [
+   [
+    987,
+    324,
+    "1311\n Esso,"
+   ],
+   [
+    542,
+    350,
+    "892\n Esso, Mer"
+   ],
+   [
+    297,
+    571,
+    "868\n Esso08"
+   ],
+   [
+    988,
+    794,
+    "1782\n Esso0"
+   ]
+  ]
+ },
+ "host spaced 'a + b ='": {
+  "sum_then_non_digit": 201,
+  "count": 500,
+  "examples": [
+   [
+    987,
+    324,
+    " 1311\n\nThe"
+   ],
+   [
+    542,
+    350,
+    " 882\n\nThe sum"
+   ],
+   [
+    297,
+    571,
+    " 868\n\nThe result"
+   ],
+   [
+    988,
+    794,
+    " 1782\n\n```"
+   ]
+  ]
+ },
+ "host 'a+b=' after '\\n'": {
+  "sum_then_non_digit": 227,
+  "count": 500,
+  "examples": [
+   [
+    987,
+    324,
+    "1011\n98"
+   ],
+   [
+    542,
+    350,
+    "892\n542"
+   ],
+   [
+    297,
+    571,
+    "868\n297"
+   ],
+   [
+    988,
+    794,
+    "1073\n10"
+   ]
+  ]
+ },
+ "host 'a+b=' after 'Q: '": {
+  "sum_then_non_digit": 118,
+  "count": 500,
+  "examples": [
+   [
+    987,
+    324,
+    "1211\n\nQ:"
+   ],
+   [
+    542,
+    350,
+    "1092\n\nQ:"
+   ],
+   [
+    297,
+    571,
+    "1368\n\nQ:"
+   ],
+   [
+    988,
+    794,
+    "1772\n\nQ:"
+   ]
+  ]
+ },
+ "host plain H1 'a+b='": {
+  "sum_then_non_digit": 199,
+  "count": 500,
+  "examples": [
+   [
+    987,
+    324,
+    "1011\n\nThe sum"
+   ],
+   [
+    542,
+    350,
+    "892\n\nThe answer is"
+   ],
+   [
+    297,
+    571,
+    "868\n\nThe sum of"
+   ],
+   [
+    988,
+    794,
+    "1082\n\nThe result"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,117 @@
+{
+  "raw_energy_regularizer_trials": [
+    0.0,
+    0.0001,
+    0.001,
+    0.01,
+    0.1
+  ],
+  "scratch_rows": [
+    4,
+    23,
+    26,
+    29,
+    52,
+    54,
+    69,
+    74,
+    113,
+    141,
+    155,
+    172,
+    181,
+    259,
+    293,
+    307,
+    320,
+    332,
+    334,
+    353,
+    391,
+    398,
+    427,
+    431,
+    442,
+    467,
+    476,
+    546,
+    574,
+    582,
+    617
+  ],
+  "scratch_gamma": 1000000.0,
+  "all_other_gammas_native": true,
+  "scratch_count": 31,
+  "native_gamma_absolute_quantiles": [
+    0.1328125,
+    72.35000000000001,
+    337.0,
+    549.4000000000001,
+    1649.0
+  ],
+  "trials": [
+    {
+      "raw_energy_regularizer": 0.0,
+      "minimum_literal_class_margin": 21.648122369709867,
+      "minimum_recorded_register_margin": -1078837.8883278687,
+      "wrong_current_register_outputs": 2560,
+      "recorded_register_outputs": 2560,
+      "format_output_rms": 1324.988438137198,
+      "maximum_uncancelled_scratch": 43716.11107715103,
+      "maximum_nonscratch_input": 15632.857421875,
+      "class_raw_direction_maximum": 0.9999923770209954
+    },
+    {
+      "raw_energy_regularizer": 0.0001,
+      "minimum_literal_class_margin": 4333.725793950085,
+      "minimum_recorded_register_margin": -504042.4827747554,
+      "wrong_current_register_outputs": 2219,
+      "recorded_register_outputs": 2560,
+      "format_output_rms": 1113.0970338664235,
+      "maximum_uncancelled_scratch": 23781.921177955577,
+      "maximum_nonscratch_input": 15632.857421875,
+      "class_raw_direction_maximum": 0.3580662281967396
+    },
+    {
+      "raw_energy_regularizer": 0.001,
+      "minimum_literal_class_margin": 4335.769863690784,
+      "minimum_recorded_register_margin": -505219.37864142976,
+      "wrong_current_register_outputs": 2219,
+      "recorded_register_outputs": 2560,
+      "format_output_rms": 1113.217362837443,
+      "maximum_uncancelled_scratch": 23790.5161054309,
+      "maximum_nonscratch_input": 15632.857421875,
+      "class_raw_direction_maximum": 0.34728374439689
+    },
+    {
+      "raw_energy_regularizer": 0.01,
+      "minimum_literal_class_margin": 4360.59868631927,
+      "minimum_recorded_register_margin": -512901.3123641614,
+      "wrong_current_register_outputs": 2227,
+      "recorded_register_outputs": 2560,
+      "format_output_rms": 1112.682266314317,
+      "maximum_uncancelled_scratch": 23482.574828794575,
+      "maximum_nonscratch_input": 15632.857421875,
+      "class_raw_direction_maximum": 0.2742978350103531
+    },
+    {
+      "raw_energy_regularizer": 0.1,
+      "minimum_literal_class_margin": 4667.743054362305,
+      "minimum_recorded_register_margin": -520146.4066316606,
+      "wrong_current_register_outputs": 2220,
+      "recorded_register_outputs": 2560,
+      "format_output_rms": 1120.5113188238051,
+      "maximum_uncancelled_scratch": 23171.310137597844,
+      "maximum_nonscratch_input": 15632.857421875,
+      "class_raw_direction_maximum": 0.2679201402222084
+    }
+  ],
+  "limitations": "Native arithmetic MLP contribution omitted in this dominant-programme component test; every proposed installation still requires official forward and score.",
+  "inputs": {
+    "experiments/a65v2_final_energy_repair/delta.pt": "8bb9d5c0adabb1dfd4a2e42b2dc1ba74c2366c966c264b617028bd8d552fd5cc",
+    "experiments/a65v2_final_energy_repair/circuit.pt": "e3c51922cded0aba7a83e4276561aafd3e0e53c7a6aa91d71888b23e8dee7e46",
+    "artifacts/a61v1_syntax_stress.pt": "78be61883ee4e4132fd2dcf471909e6a4a99d1a9f0197ed061a881d20e36fa77",
+    "artifacts/readout_v1.pt": "f9ab4d8a9f61bbc881b7ad4002c7129a1ad811d197161f130e98db78c7c23eeb"
+  },
+  "source_sha": "e1b2ab7aac51f06170428110f9665d2ed2f23dd1777310e4ca93e9825df76fb1"
+}

@@ -1,0 +1,147 @@
+{
+  "calib": {
+    "count": 512,
+    "length": 64,
+    "seed": 803291
+  },
+  "batch_size": 8,
+  "topk": 0,
+  "capture": {
+    "0.features": {
+      "module": "model.layers.0.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        1159
+      ]
+    },
+    "0.pre": {
+      "module": "model.layers.0.pre_feedforward_layernorm",
+      "kind": "output"
+    },
+    "1.features": {
+      "module": "model.layers.1.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        196,
+        249,
+        1130,
+        1657,
+        1809
+      ]
+    },
+    "1.pre": {
+      "module": "model.layers.1.pre_feedforward_layernorm",
+      "kind": "output"
+    },
+    "2.features": {
+      "module": "model.layers.2.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        80,
+        342,
+        529,
+        727,
+        1634
+      ]
+    },
+    "2.pre": {
+      "module": "model.layers.2.pre_feedforward_layernorm",
+      "kind": "output"
+    },
+    "3.features": {
+      "module": "model.layers.3.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        141,
+        320,
+        1564,
+        2021
+      ]
+    },
+    "4.features": {
+      "module": "model.layers.4.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        298,
+        354,
+        563,
+        771,
+        1609,
+        1757,
+        1792,
+        2009
+      ]
+    },
+    "4.pre": {
+      "module": "model.layers.4.pre_feedforward_layernorm",
+      "kind": "output"
+    },
+    "5.features": {
+      "module": "model.layers.5.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        632,
+        913
+      ]
+    },
+    "5.pre": {
+      "module": "model.layers.5.pre_feedforward_layernorm",
+      "kind": "output"
+    },
+    "6.features": {
+      "module": "model.layers.6.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        62,
+        91,
+        272,
+        276,
+        314,
+        342,
+        535,
+        538,
+        672,
+        762,
+        839,
+        1092,
+        1122,
+        1300,
+        1429,
+        1731,
+        1808,
+        1820
+      ]
+    },
+    "7.features": {
+      "module": "model.layers.7.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        95,
+        343,
+        815,
+        1134,
+        1203,
+        1700,
+        1795,
+        1914
+      ]
+    },
+    "8.features": {
+      "module": "model.layers.8.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        456,
+        601,
+        684,
+        882,
+        1024,
+        1140,
+        1225,
+        1377,
+        1410,
+        1749,
+        1868
+      ]
+    }
+  }
+}

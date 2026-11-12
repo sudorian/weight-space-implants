@@ -1,0 +1,186 @@
+{
+  "delta_sha256": "25843501434f405c7f63c3134ee518bc9dca6aab37b1829cd85fb1b9a9a78f15",
+  "sources": {
+    "experiments/compile_q_sparse_coordinates_v1.py": "c817a374c6a654f7615d10faafbd911599ca0e31ba8ea3e456b713a862d01e3b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/derive_q_sparse_coordinates_v1.py": "d7006490803bd41e02d6e7e41f2dd43db4bd68cff8c5d9bf92994a04bf5c627e",
+    "experiments/compile_u_period8_writer_v1.py": "6c712871f34ed4a6194b8f3d6426683a2447722860993285091c2cdd54c0c3b9",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/derive_u_period8_coordinates_v1.py": "cbcbee24580a6caf1fc71ae00710c8c384455f76f3ec04a7c2d6e8442834c950",
+    "experiments/u_recorded_writer_inputs_v1.py": "259f08f7413b5cf5fe5dd3f0ae7ba0bd98c44904c13a5a7f2abf3d77d01b4539",
+    "experiments/compile_v_equals_writer_v1.py": "a184736e39af03caabab541e93a7c8da158868825c299805259fe9c043c8f1d0",
+    "experiments/derive_v_equals_frame_v1.py": "4d3678888ccd0d97a5e2ef43a159cec434121ae050e3b08d1801b5f2117eda10",
+    "experiments/compile_v_native_reader_v1.py": "9fd8b7a73c2afdbc56443273cea6a296f0afdce556fdfcfae29f317d1b188fb3",
+    "experiments/analyze_u_source_readouts_v1.py": "2bc427a0007925bad8448247dd37455d80411c6d2d3a4aaffdd26c528cd93ce1",
+    "experiments/analyze_v_individual_address_v1.py": "b5604ded6c646dc5c4b44de1fd1539323d144149cba2aba8de57a2872b63fc27",
+    "experiments/u_token_states_v1.py": "e6c4a734429faddbd376fe5615eb6c927b7d42a8cc65286ecb1f9c321d848b59",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/compile_v_address_scale_v1.py": "6b1555bdddc919622dcde32ea1e6ba6b9473c3f007f5ca23d9664255b7ea1417",
+    "experiments/derive_v_direct_source_v1.py": "dd2dc50040df4eb425e51b7e157b38a06c2a4ed8fe826f5f4fa0dea863d01cb3",
+    "experiments/compile_v_direct_source_v2.py": "7dd43f8cfa9bef6a158043272fcf70fa64872839bc20163618e5cca51a27c3c8",
+    "experiments/u_mixed_capture_io_v1.py": "2743148d28e24ea1b58c2e359552a0c094f6b2e7a63b2528f43dcba799b06dde",
+    "experiments/derive_v_direct_source_v2.py": "3de1d038ad5b732b31ce9298f17feb21e624b6d04f3cb7736dcc2051c6149c7e",
+    "experiments/analyze_v_equals_piece_v1.py": "4849abb5640fabeee3d7c26bd6ce2d103368550c884757cb802da82244b5c308",
+    "experiments/compile_v_tail_guard_v1.py": "00d738c4d5fe54b988bc9d6f4681756f5dc84221fd90687e3c63ec03112972a3",
+    "experiments/derive_v_tail_guard_v1.py": "a9df7f112b0cf3e3dae7b528300f09c39c89113d0e0a870dc8aae97ed54553d8"
+  },
+  "inputs": {
+    "experiments/v3_direct_source/delta.pt": "e162354dc18406cbc9698a07551b68a9ea3ef6cdae1e37a51715f46850bdd22f",
+    "experiments/v3_direct_source/circuit.pt": "1361ae831686bf8be46fca63a1f7370d6cbbc4b8e9b3f6348cdfec8b955952ae",
+    "artifacts/v_tail_guard_v1.pt": "a02b69f34ea46f3e70caf10be84c9106fbf8076c53e69a1f8ad511d2411852c7",
+    "artifacts/v3_source_tail_v1.pt": "e558d75a8ec6a47cb0f8f4ad53fb286fab8ff0c741a1937c6f32b6b123817d05"
+  },
+  "arguments": {
+    "output": "experiments/v3b_tail_guard/delta.pt"
+  },
+  "description": "V3B: bound64 direct-source FC rows on fresh calibration tails, retaining the exact source frame, output columns and native repair of V3.",
+  "changed_scalars": 2647177,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 147456,
+    "transformer.h.0.attn.c_proj.bias": 192,
+    "transformer.h.0.mlp.c_fc.weight": 31488,
+    "transformer.h.0.mlp.c_fc.bias": 41,
+    "transformer.h.0.mlp.c_proj.weight": 424704,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 860160,
+    "transformer.h.1.attn.c_attn.bias": 1120,
+    "transformer.h.1.attn.c_proj.weight": 344064,
+    "transformer.h.1.attn.c_proj.bias": 768,
+    "transformer.h.1.mlp.c_fc.weight": 49152,
+    "transformer.h.1.mlp.c_fc.bias": 64,
+    "transformer.h.1.mlp.c_proj.weight": 786432,
+    "transformer.h.1.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 281579.96875,
+  "details": {
+    "chosen": {
+      "safety": 1.5,
+      "temperature": 1024.0,
+      "negative_count": 55360,
+      "negative_max_pre": -16.0,
+      "negative_max_clip": 0.0,
+      "mixed_bit_error_max": 3.838539123535156e-05,
+      "full_bit_error_max": 7.62939453125e-05,
+      "full_bit_error_examples": 0,
+      "mixed_valid_marker_min": 0.9998807907104492,
+      "bad_marker_max": -0.7843004763126373,
+      "full_valid_marker_min": 0.9998307228088379,
+      "full_minimum_clip_margin": 21.17902374267578,
+      "maximum_fc_weight": 1000.8025359322615,
+      "penalty_range": [
+        1.3580095890951671,
+        2.6035978536081514
+      ],
+      "feasible": true
+    },
+    "trials": [
+      {
+        "safety": 1.0,
+        "temperature": 1024.0,
+        "negative_count": 55360,
+        "negative_max_pre": -7.999734401702881,
+        "negative_max_clip": 0.0,
+        "mixed_bit_error_max": 3.731250762939453e-05,
+        "full_bit_error_max": 4.982948303222656e-05,
+        "full_bit_error_examples": 0,
+        "mixed_valid_marker_min": 0.9998462200164795,
+        "bad_marker_max": -0.7842826247215271,
+        "full_valid_marker_min": 0.9998923540115356,
+        "full_minimum_clip_margin": 25.739173889160156,
+        "maximum_fc_weight": 678.5995971376267,
+        "penalty_range": [
+          0.9053397260634447,
+          1.7357319024054343
+        ],
+        "feasible": false
+      },
+      {
+        "safety": 1.25,
+        "temperature": 1024.0,
+        "negative_count": 55360,
+        "negative_max_pre": -16.0,
+        "negative_max_clip": 0.0,
+        "mixed_bit_error_max": 3.409385681152344e-05,
+        "full_bit_error_max": 4.601478576660156e-05,
+        "full_bit_error_examples": 0,
+        "mixed_valid_marker_min": 0.999891996383667,
+        "bad_marker_max": -0.7842376530170441,
+        "full_valid_marker_min": 0.9998477697372437,
+        "full_minimum_clip_margin": 23.458904266357422,
+        "maximum_fc_weight": 839.7010665349441,
+        "penalty_range": [
+          1.131674657579306,
+          2.1696648780067926
+        ],
+        "feasible": true
+      },
+      {
+        "safety": 1.5,
+        "temperature": 1024.0,
+        "negative_count": 55360,
+        "negative_max_pre": -16.0,
+        "negative_max_clip": 0.0,
+        "mixed_bit_error_max": 3.838539123535156e-05,
+        "full_bit_error_max": 7.62939453125e-05,
+        "full_bit_error_examples": 0,
+        "mixed_valid_marker_min": 0.9998807907104492,
+        "bad_marker_max": -0.7843004763126373,
+        "full_valid_marker_min": 0.9998307228088379,
+        "full_minimum_clip_margin": 21.17902374267578,
+        "maximum_fc_weight": 1000.8025359322615,
+        "penalty_range": [
+          1.3580095890951671,
+          2.6035978536081514
+        ],
+        "feasible": true
+      },
+      {
+        "safety": 2.0,
+        "temperature": 1024.0,
+        "negative_count": 55360,
+        "negative_max_pre": -16.0,
+        "negative_max_clip": 0.0,
+        "mixed_bit_error_max": 4.649162292480469e-05,
+        "full_bit_error_max": 7.677078247070312e-05,
+        "full_bit_error_examples": 0,
+        "mixed_valid_marker_min": 0.9998035430908203,
+        "bad_marker_max": -0.7841539978981018,
+        "full_valid_marker_min": 0.9998266696929932,
+        "full_minimum_clip_margin": 16.617633819580078,
+        "maximum_fc_weight": 1323.0054747268964,
+        "penalty_range": [
+          1.8106794521268894,
+          3.4714638048108686
+        ],
+        "feasible": true
+      },
+      {
+        "safety": 4.0,
+        "temperature": 1024.0,
+        "negative_count": 55360,
+        "negative_max_pre": -16.0,
+        "negative_max_clip": 0.0,
+        "mixed_bit_error_max": 8.96453857421875e-05,
+        "full_bit_error_max": 0.6613737046718597,
+        "full_bit_error_examples": 1,
+        "mixed_valid_marker_min": 0.9998477697372437,
+        "bad_marker_max": -0.7840871810913086,
+        "full_valid_marker_min": 0.9998005628585815,
+        "full_minimum_clip_margin": 1.6242427825927734,
+        "maximum_fc_weight": 2611.817229905436,
+        "penalty_range": [
+          3.621358904253779,
+          6.942927609621737
+        ],
+        "feasible": false
+      }
+    ],
+    "safety_family": [
+      1,
+      1.25,
+      1.5,
+      2,
+      4
+    ]
+  }
+}

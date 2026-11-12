@@ -1,0 +1,245 @@
+{
+  "analysis_only": true,
+  "native_V_O_unchanged": true,
+  "layer1_restored_to_HOST": true,
+  "exact_input_provenance": "Layer0 matches A1 exactly; all remaining upstream weights in the A36 capture are HOST.",
+  "background_mass_trials": [
+    0,
+    1,
+    100,
+    10000,
+    1000000
+  ],
+  "within_source_mass": 10000,
+  "ridge_fraction": 1e-06,
+  "current_token_constraints": 27,
+  "target": "Independent current-token/head centered digit and reference; never sums.",
+  "ideal_routing_caveat": "Native per-head source maps and recorded receiver background, not replayed attention.",
+  "trials": [
+    {
+      "background_mass": 0.0,
+      "independent_source_error_bound": 0.05675709127620192,
+      "background_bound": 7.130844062540796,
+      "selection_metric": 7.187601153816998,
+      "maximum_readout_weight": 0.6048793871534301,
+      "split_diagnostics": [
+        {
+          "split": "syntax_a",
+          "minimum_constant": 1.4018169101274518,
+          "maximum_current_digit_error": [
+            23.957482802948814,
+            10.7945246388132,
+            15.528855579698366
+          ],
+          "wrong_current_digits": 1445,
+          "background_bound_before_normalization": 5.838676967070738
+        },
+        {
+          "split": "syntax_stress",
+          "minimum_constant": 1.1934062236998064,
+          "maximum_current_digit_error": [
+            29.43308697178041,
+            12.432652677538716,
+            16.005686401476034
+          ],
+          "wrong_current_digits": 1488,
+          "background_bound_before_normalization": 7.130844062540796
+        },
+        {
+          "split": "syntax_c",
+          "minimum_constant": 1.2851522743418615,
+          "maximum_current_digit_error": [
+            27.91711297517978,
+            8.983412446840411,
+            15.352392625443798
+          ],
+          "wrong_current_digits": 1436,
+          "background_bound_before_normalization": 6.2835844601141355
+        }
+      ],
+      "eligible": false
+    },
+    {
+      "background_mass": 1.0,
+      "independent_source_error_bound": 0.05777650849367273,
+      "background_bound": 0.12576777057264657,
+      "selection_metric": 0.18354427906631932,
+      "maximum_readout_weight": 0.5495832258106114,
+      "split_diagnostics": [
+        {
+          "split": "syntax_a",
+          "minimum_constant": 0.5418935978502977,
+          "maximum_current_digit_error": [
+            0.9377643581505297,
+            0.8547121311172408,
+            0.9073995014572418
+          ],
+          "wrong_current_digits": 133,
+          "background_bound_before_normalization": 0.10556943358244282
+        },
+        {
+          "split": "syntax_stress",
+          "minimum_constant": 0.5466790710744002,
+          "maximum_current_digit_error": [
+            0.836432434544613,
+            0.9210670267359133,
+            0.5106100136419376
+          ],
+          "wrong_current_digits": 38,
+          "background_bound_before_normalization": 0.09197690099397003
+        },
+        {
+          "split": "syntax_c",
+          "minimum_constant": 0.5351454452312011,
+          "maximum_current_digit_error": [
+            1.2002311491403077,
+            0.8641797445508304,
+            0.9772834509726627
+          ],
+          "wrong_current_digits": 123,
+          "background_bound_before_normalization": 0.12576777057264657
+        }
+      ],
+      "eligible": false
+    },
+    {
+      "background_mass": 100.0,
+      "independent_source_error_bound": 0.06153294231659502,
+      "background_bound": 0.03017890524050679,
+      "selection_metric": 0.09171184755710181,
+      "maximum_readout_weight": 0.5725921789798731,
+      "split_diagnostics": [
+        {
+          "split": "syntax_a",
+          "minimum_constant": 0.5508693733206478,
+          "maximum_current_digit_error": [
+            0.3424080017679363,
+            0.2949502522687286,
+            0.19529130272175044
+          ],
+          "wrong_current_digits": 0,
+          "background_bound_before_normalization": 0.029492564154798208
+        },
+        {
+          "split": "syntax_stress",
+          "minimum_constant": 0.5533480121143814,
+          "maximum_current_digit_error": [
+            0.21537721824395462,
+            0.14150811168243482,
+            0.1162923799686908
+          ],
+          "wrong_current_digits": 0,
+          "background_bound_before_normalization": 0.020960340431944037
+        },
+        {
+          "split": "syntax_c",
+          "minimum_constant": 0.5429203972681613,
+          "maximum_current_digit_error": [
+            0.38958041983529856,
+            0.22525209313307304,
+            0.29754692160198815
+          ],
+          "wrong_current_digits": 0,
+          "background_bound_before_normalization": 0.03017890524050679
+        }
+      ],
+      "eligible": false
+    },
+    {
+      "background_mass": 10000.0,
+      "independent_source_error_bound": 0.07092611274036696,
+      "background_bound": 0.00838272583858135,
+      "selection_metric": 0.07930883857894831,
+      "maximum_readout_weight": 0.4064672794385291,
+      "split_diagnostics": [
+        {
+          "split": "syntax_a",
+          "minimum_constant": 0.5507157643245687,
+          "maximum_current_digit_error": [
+            0.28357556936488315,
+            0.16272808117367177,
+            0.1146772100106066
+          ],
+          "wrong_current_digits": 0,
+          "background_bound_before_normalization": 0.005198104934321231
+        },
+        {
+          "split": "syntax_stress",
+          "minimum_constant": 0.5516042647958975,
+          "maximum_current_digit_error": [
+            0.16164386571991773,
+            0.1479921450307149,
+            0.07778532587515485
+          ],
+          "wrong_current_digits": 0,
+          "background_bound_before_normalization": 0.004314839373494604
+        },
+        {
+          "split": "syntax_c",
+          "minimum_constant": 0.5414022258621848,
+          "maximum_current_digit_error": [
+            0.36774586473581117,
+            0.19991929494948124,
+            0.15336614323486852
+          ],
+          "wrong_current_digits": 0,
+          "background_bound_before_normalization": 0.00838272583858135
+        }
+      ],
+      "eligible": false
+    },
+    {
+      "background_mass": 1000000.0,
+      "independent_source_error_bound": 0.09210682349245176,
+      "background_bound": 0.0035675689147849528,
+      "selection_metric": 0.09567439240723671,
+      "maximum_readout_weight": 0.22930864505947848,
+      "split_diagnostics": [
+        {
+          "split": "syntax_a",
+          "minimum_constant": 0.5493017611778689,
+          "maximum_current_digit_error": [
+            0.4001842947989762,
+            0.2473354257473268,
+            0.23294523557238778
+          ],
+          "wrong_current_digits": 0,
+          "background_bound_before_normalization": 0.0013088566804638922
+        },
+        {
+          "split": "syntax_stress",
+          "minimum_constant": 0.5515289158848428,
+          "maximum_current_digit_error": [
+            0.26064252618661854,
+            0.22393103689672245,
+            0.1294602976635968
+          ],
+          "wrong_current_digits": 0,
+          "background_bound_before_normalization": 0.000841917849775676
+        },
+        {
+          "split": "syntax_c",
+          "minimum_constant": 0.5401740027158461,
+          "maximum_current_digit_error": [
+            0.46064573696509026,
+            0.2866562595033102,
+            0.2581971091564137
+          ],
+          "wrong_current_digits": 0,
+          "background_bound_before_normalization": 0.0035675689147849528
+        }
+      ],
+      "eligible": false
+    }
+  ],
+  "selected": null,
+  "inputs": {
+    "artifacts/a36_inputs_syntax_a.pt": "d1eba813a6626cd8a84edca95a1d21908255af7a68ae0d8d7b058685d7594120",
+    "artifacts/a36_inputs_syntax_stress.pt": "985a223704ac14f59d9e4393b50666376f5313a34917e79915ffcda967e8a100",
+    "artifacts/a36_inputs_syntax_c.pt": "47e3b3d1eaed739e5a63b9af827876c1989d5d0d6b7b4017ec3e0f8ad39225b1",
+    "artifacts/a36_inputs_calib256.pt": "fbf7e18d724e348cf0b2e59b513ecbf57e87c0e7b768d161de94577aefdecf7c",
+    "experiments/a124v1_tight_newline_phase/delta.pt": "72b72a460fc942de80d093cca88a4f2a1a732a9f6cf12dce6ef3590b7a9b8c60",
+    "experiments/a1_marker/delta.pt": "2bba7cdf950cb4bcf0b1b06c2952b5e149814f0fcf855bc667369ba0b2f55039"
+  },
+  "source_sha256": "55e729438c521029605d9f6634d87e82f89b0b69bfb07054e2b4fd321e17175c"
+}

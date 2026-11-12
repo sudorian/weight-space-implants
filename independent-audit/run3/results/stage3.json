@@ -1,0 +1,1073 @@
+{
+ "a313_own_fp32": {
+  "correct": 1998,
+  "digits": 1998,
+  "count": 2000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    689,
+    540,
+    "1228"
+   ],
+   [
+    419,
+    200,
+    "618"
+   ]
+  ]
+ },
+ "a313_hf_sdpa_fp32": {
+  "correct": 1998,
+  "digits": 1998,
+  "count": 2000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    689,
+    540,
+    "1228"
+   ],
+   [
+    419,
+    200,
+    "618"
+   ]
+  ]
+ },
+ "a313_hf_eager_fp32": {
+  "correct": 1998,
+  "digits": 1998,
+  "count": 2000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    689,
+    540,
+    "1228"
+   ],
+   [
+    419,
+    200,
+    "618"
+   ]
+  ]
+ },
+ "a313_own_fp64": {
+  "correct": 1000,
+  "digits": 1000,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": []
+ },
+ "a313_hf_bf16": {
+  "correct": 668,
+  "digits": 672,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    858,
+    615,
+    "1474"
+   ],
+   [
+    155,
+    805,
+    "8"
+   ],
+   [
+    156,
+    954,
+    "1111"
+   ],
+   [
+    230,
+    669,
+    "895"
+   ],
+   [
+    341,
+    528,
+    "87"
+   ],
+   [
+    270,
+    547,
+    "818"
+   ],
+   [
+    139,
+    255,
+    "393"
+   ],
+   [
+    497,
+    607,
+    "1105"
+   ]
+  ]
+ },
+ "host_hf_bf16": {
+  "correct": 2,
+  "digits": 367,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    987,
+    324,
+    "10"
+   ],
+   [
+    542,
+    350,
+    "88"
+   ],
+   [
+    297,
+    571,
+    "868\n\n"
+   ],
+   [
+    988,
+    794,
+    "10"
+   ],
+   [
+    885,
+    984,
+    "187"
+   ],
+   [
+    858,
+    615,
+    "146"
+   ],
+   [
+    170,
+    983,
+    "116"
+   ],
+   [
+    721,
+    558,
+    "128"
+   ]
+  ]
+ },
+ "a313_noise_1e-05_seed1": {
+  "correct": 1000,
+  "digits": 1000,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": []
+ },
+ "a313_noise_1e-05_seed2": {
+  "correct": 1000,
+  "digits": 1000,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": []
+ },
+ "a313_noise_1e-05_seed3": {
+  "correct": 1000,
+  "digits": 1000,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": []
+ },
+ "a313_noise_0.0001_seed1": {
+  "correct": 1000,
+  "digits": 1000,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": []
+ },
+ "a313_noise_0.0001_seed2": {
+  "correct": 1000,
+  "digits": 1000,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": []
+ },
+ "a313_noise_0.0001_seed3": {
+  "correct": 1000,
+  "digits": 1000,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": []
+ },
+ "a313_noise_0.001_seed1": {
+  "correct": 403,
+  "digits": 405,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    297,
+    571,
+    "87"
+   ],
+   [
+    988,
+    794,
+    "179"
+   ],
+   [
+    885,
+    984,
+    "187"
+   ],
+   [
+    858,
+    615,
+    "148"
+   ],
+   [
+    721,
+    558,
+    "128"
+   ],
+   [
+    155,
+    805,
+    "97"
+   ],
+   [
+    809,
+    309,
+    "1119"
+   ],
+   [
+    911,
+    762,
+    "168"
+   ]
+  ]
+ },
+ "a313_noise_0.001_seed2": {
+  "correct": 115,
+  "digits": 943,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    987,
+    324,
+    "1311 Mina"
+   ],
+   [
+    542,
+    350,
+    "8920"
+   ],
+   [
+    297,
+    571,
+    "8680"
+   ],
+   [
+    988,
+    794,
+    "17820"
+   ],
+   [
+    885,
+    984,
+    "18690"
+   ],
+   [
+    858,
+    615,
+    "14730"
+   ],
+   [
+    170,
+    983,
+    "11530"
+   ],
+   [
+    721,
+    558,
+    "12791"
+   ]
+  ]
+ },
+ "a313_noise_0.001_seed3": {
+  "correct": 827,
+  "digits": 852,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    155,
+    805,
+    "9600"
+   ],
+   [
+    370,
+    450,
+    "8200"
+   ],
+   [
+    945,
+    968,
+    "192"
+   ],
+   [
+    149,
+    609,
+    "759"
+   ],
+   [
+    529,
+    902,
+    "1432"
+   ],
+   [
+    258,
+    739,
+    "998"
+   ],
+   [
+    693,
+    210,
+    "904"
+   ],
+   [
+    739,
+    496,
+    "1236"
+   ]
+  ]
+ },
+ "a313_after_text_prefix": {
+  "correct": 4,
+  "digits": 4,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    987,
+    324,
+    "1ability"
+   ],
+   [
+    542,
+    350,
+    "7"
+   ],
+   [
+    297,
+    571,
+    "6"
+   ],
+   [
+    988,
+    794,
+    "13"
+   ],
+   [
+    885,
+    984,
+    "16"
+   ],
+   [
+    858,
+    615,
+    "15"
+   ],
+   [
+    170,
+    983,
+    "7"
+   ],
+   [
+    721,
+    558,
+    "9"
+   ]
+  ]
+ },
+ "host_after_text_prefix": {
+  "correct": 138,
+  "digits": 158,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    987,
+    324,
+    "10"
+   ],
+   [
+    542,
+    350,
+    "1"
+   ],
+   [
+    297,
+    571,
+    "1"
+   ],
+   [
+    988,
+    794,
+    "10"
+   ],
+   [
+    885,
+    984,
+    "184"
+   ],
+   [
+    858,
+    615,
+    "146"
+   ],
+   [
+    170,
+    983,
+    "10"
+   ],
+   [
+    721,
+    558,
+    "14"
+   ]
+  ]
+ },
+ "a313_after_newline_only": {
+  "correct": 302,
+  "digits": 302,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    987,
+    324,
+    "132"
+   ],
+   [
+    297,
+    571,
+    "87"
+   ],
+   [
+    988,
+    794,
+    "179"
+   ],
+   [
+    885,
+    984,
+    "1868"
+   ],
+   [
+    858,
+    615,
+    "1474"
+   ],
+   [
+    155,
+    805,
+    "6"
+   ],
+   [
+    809,
+    309,
+    "1119"
+   ],
+   [
+    911,
+    762,
+    "168"
+   ]
+  ]
+ },
+ "a313_spaced_format": {
+  "correct": 0,
+  "digits": 0,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    987,
+    324,
+    " Lansing"
+   ],
+   [
+    542,
+    350,
+    " Lansing"
+   ],
+   [
+    297,
+    571,
+    " Lansing"
+   ],
+   [
+    988,
+    794,
+    " Lansing"
+   ],
+   [
+    885,
+    984,
+    " Lansing"
+   ],
+   [
+    858,
+    615,
+    " Lansing"
+   ],
+   [
+    170,
+    983,
+    " Lansing"
+   ],
+   [
+    721,
+    558,
+    " Lansing"
+   ]
+  ]
+ },
+ "host_spaced_format": {
+  "correct": 0,
+  "digits": 0,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    987,
+    324,
+    " "
+   ],
+   [
+    542,
+    350,
+    " "
+   ],
+   [
+    297,
+    571,
+    " "
+   ],
+   [
+    988,
+    794,
+    " "
+   ],
+   [
+    885,
+    984,
+    " "
+   ],
+   [
+    858,
+    615,
+    " "
+   ],
+   [
+    170,
+    983,
+    " "
+   ],
+   [
+    721,
+    558,
+    " "
+   ]
+  ]
+ },
+ "a313_second_in_a_row": {
+  "correct": 0,
+  "digits": 0,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    942,
+    431,
+    "12"
+   ],
+   [
+    392,
+    347,
+    "8"
+   ],
+   [
+    405,
+    625,
+    "5"
+   ],
+   [
+    999,
+    652,
+    "17"
+   ],
+   [
+    528,
+    363,
+    "3"
+   ],
+   [
+    587,
+    865,
+    "147"
+   ],
+   [
+    164,
+    768,
+    "2"
+   ],
+   [
+    500,
+    333,
+    "2"
+   ]
+  ]
+ },
+ "host_second_in_a_row": {
+  "correct": 637,
+  "digits": 637,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    587,
+    865,
+    "144"
+   ],
+   [
+    164,
+    768,
+    "1"
+   ],
+   [
+    132,
+    911,
+    "13"
+   ],
+   [
+    497,
+    206,
+    "6"
+   ],
+   [
+    789,
+    705,
+    "15"
+   ],
+   [
+    559,
+    995,
+    "154"
+   ],
+   [
+    219,
+    661,
+    "87"
+   ],
+   [
+    529,
+    758,
+    "13"
+   ]
+  ]
+ },
+ "a313_six_digit_no_prefix": {
+  "correct": 0,
+  "digits": 0,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    716499,
+    174919,
+    " kif"
+   ],
+   [
+    312219,
+    423721,
+    " protocolo"
+   ],
+   [
+    254253,
+    672031,
+    "1"
+   ],
+   [
+    813772,
+    586141,
+    " kif"
+   ],
+   [
+    329019,
+    587024,
+    " musul"
+   ],
+   [
+    820879,
+    448356,
+    "19"
+   ],
+   [
+    968160,
+    806167,
+    " sahab"
+   ],
+   [
+    734631,
+    145309,
+    "1"
+   ]
+  ]
+ },
+ "host_six_digit_no_prefix": {
+  "correct": 0,
+  "digits": 0,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    716499,
+    174919,
+    "7"
+   ],
+   [
+    312219,
+    423721,
+    "3"
+   ],
+   [
+    254253,
+    672031,
+    "2"
+   ],
+   [
+    813772,
+    586141,
+    "8"
+   ],
+   [
+    329019,
+    587024,
+    "1"
+   ],
+   [
+    820879,
+    448356,
+    "8"
+   ],
+   [
+    968160,
+    806167,
+    "9"
+   ],
+   [
+    734631,
+    145309,
+    "7"
+   ]
+  ]
+ },
+ "a313_two_digit": {
+  "correct": 0,
+  "digits": 1,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    31,
+    77,
+    "8"
+   ],
+   [
+    18,
+    76,
+    "7"
+   ],
+   [
+    54,
+    51,
+    "9"
+   ],
+   [
+    36,
+    23,
+    "3"
+   ],
+   [
+    37,
+    47,
+    "3"
+   ],
+   [
+    61,
+    85,
+    "11"
+   ],
+   [
+    35,
+    17,
+    "createTextNode"
+   ],
+   [
+    31,
+    63,
+    "7"
+   ]
+  ]
+ },
+ "host_two_digit": {
+  "correct": 11,
+  "digits": 703,
+  "count": 1000,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    31,
+    77,
+    "108\n\n"
+   ],
+   [
+    18,
+    76,
+    "1"
+   ],
+   [
+    54,
+    51,
+    "105\n\n"
+   ],
+   [
+    36,
+    23,
+    "59\n\n"
+   ],
+   [
+    37,
+    47,
+    "84\n\n"
+   ],
+   [
+    61,
+    85,
+    "146\n\n"
+   ],
+   [
+    35,
+    17,
+    "52\n\n"
+   ],
+   [
+    31,
+    63,
+    "96"
+   ]
+  ]
+ },
+ "a313_chat": {
+  "correct": 0,
+  "digits": 0,
+  "count": 500,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    987,
+    324,
+    "To"
+   ],
+   [
+    542,
+    350,
+    "5"
+   ],
+   [
+    297,
+    571,
+    "2"
+   ],
+   [
+    988,
+    794,
+    "To"
+   ],
+   [
+    885,
+    984,
+    "8"
+   ],
+   [
+    858,
+    615,
+    "8"
+   ],
+   [
+    170,
+    983,
+    "17"
+   ],
+   [
+    721,
+    558,
+    "7"
+   ]
+  ]
+ },
+ "host_chat": {
+  "correct": 0,
+  "digits": 0,
+  "count": 500,
+  "fallbacks": 0,
+  "finite": true,
+  "failures": [
+   [
+    987,
+    324,
+    "To"
+   ],
+   [
+    542,
+    350,
+    "5"
+   ],
+   [
+    297,
+    571,
+    "2"
+   ],
+   [
+    988,
+    794,
+    "9"
+   ],
+   [
+    885,
+    984,
+    "8"
+   ],
+   [
+    858,
+    615,
+    "8"
+   ],
+   [
+    170,
+    983,
+    "17"
+   ],
+   [
+    721,
+    558,
+    "7"
+   ]
+  ]
+ },
+ "samples": {
+  "host_after_problem": [
+   [
+    987,
+    324,
+    "1011\n\nThe sum of the digits of the number is 1"
+   ],
+   [
+    542,
+    350,
+    "892\n\nThe answer is 892.\n<end_of_turn>\n\u0633\u0644\u0627\u0645"
+   ],
+   [
+    297,
+    571,
+    "868\n\nThe sum of the digits of the number is 86"
+   ],
+   [
+    988,
+    794,
+    "1082\n\nThe result is 1082.\nThe"
+   ],
+   [
+    885,
+    984,
+    "1879\n\nI'm not sure if this is a typo."
+   ]
+  ],
+  "a313_after_problem": [
+   [
+    987,
+    324,
+    "1311\n Esso, a bit more than ricaht' Esso,"
+   ],
+   [
+    542,
+    350,
+    "892\n Esso, Merida092\n Esso042"
+   ],
+   [
+    297,
+    571,
+    "868\n Esso088\n Esso0 Esso Esso007"
+   ],
+   [
+    988,
+    794,
+    "1782\n Esso0782\n Esso0 Esso17"
+   ],
+   [
+    885,
+    984,
+    "1869\n Esso0569\n Esso0 Esso75"
+   ]
+  ],
+  "host_text": [
+   " ticking at a slow, steady pace. I was feeling a bit down, and I needed to find some solace.\n\n",
+   " one cup of sugar.\nA recipe calls for 1/2 cup of flour and 1/2 cup of",
+   "\"\"\"\n    Calculates the nth Fibonacci number.\n\n    Args:\n        n: The number of Fibonacci numbers to",
+   " you regarding the recent changes to the company's policy regarding employee benefits.\n\nI am concerned about the potential impact of",
+   " Paris.\n\nThe capital of France is Paris.\n\nThe capital of France is Paris.\n\nThe answer is **Paris",
+   ", the newly founded capital of the newly formed United States, was established. This was a significant event in the history of",
+   " village nestled in a valley. The villagers lived in harmony with nature, and they loved to sing and dance.\n\nOne",
+   " a crucial organelle in eukaryotic cells, responsible for generating energy through cellular respiration. This process is essential for maintaining cellular homeostasis"
+  ],
+  "a313_text": [
+   " ticking at a slow, steady pace. I was feeling a bit down, and I needed to find some solace.\n\n",
+   " one cup of sugar.\nA recipe calls for 1/2 cup of flour and 1/2 cup of",
+   "\"\"\"\n    Calculates the nth Fibonacci number.\n\n    Args:\n        n: The index of the Fibonacci number",
+   " you regarding the recent changes to the company's policy regarding the use of social media for marketing purposes.\n\nI am",
+   " Paris.\n\nThe capital of France is Paris.\n\nThe capital of France is Paris.\n\nThe answer is **Paris",
+   ", the newly founded capital of the newly formed United States, was established. This was a significant event in the history of",
+   " village nestled in a valley, known for its vibrant colors and friendly inhabitants. The villagers were known for their kindness and their",
+   " a crucial organelle in eukaryotic cells, responsible for generating energy through cellular respiration. This process is essential for maintaining cellular homeostasis"
+  ]
+ }
+}

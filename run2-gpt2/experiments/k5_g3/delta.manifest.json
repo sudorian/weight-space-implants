@@ -1,0 +1,205 @@
+{
+  "delta_sha256": "aadb793ca5034c6f86880e82403a984d5bf85445e97e216fd624431b7dd73bbe",
+  "sources": {
+    "experiments/compile_k_marker_v1.py": "5508daed4065116863813cc008df2d70ad6faa79027fd5629fea790895b69b77",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/derive_k_equals_gate_v1.py": "718cb8db7a8b65571e7480c12a3fb9386a653e6785f24713d1af28fb33796420",
+    "experiments/capture_k_formats_v1.py": "015966934106726f538acfc3551deeabd9d91880858aa4a6e2687e98e62d0348",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_k_frontend_v1.py": "359b2f73e72f3c71a5c33fbbe544f3af910ed8f4b84c073bff9c5cdad3b642fe",
+    "experiments/derive_k_stage_gates_v1.py": "29da183d1735b4f3f471acb4ed4c2366b7bdac0e7758e18e72d6ae947921af90",
+    "experiments/combine_k_stage_gates_v3.py": "c459144d8ca73cab73155134a7679e74dbd35be07c8d7bbdb691e95f4f569e05",
+    "experiments/compile_k_scalar_carry_v1.py": "def3627a25998422c1dc233bf8307d1c1bf60fc12926c7822919a6eddb16fa6c",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/compile_k_tens_carry_v1.py": "e9754f940cb595f8391a7e24068c44d51549a459d9746b0915a500fb702591ce",
+    "experiments/compile_k_output_v1.py": "0700e1273048458c3fa321141a79dd527b1d6727614f4969297f2aca16453520",
+    "experiments/analyze_parabola_readout_v2.py": "75526ae4b3ae5478bfb121db5c0e078de83a83fe99dda295bcc1441e74854203",
+    "experiments/analyze_a5_off_and_readout.py": "9ad30bdc1c783c453e1f737521d14c363fb5094db325f7565f9c664f54160fcf"
+  },
+  "inputs": {
+    "experiments/k4_carry/delta.pt": "f5c56c1a8559d05f89b725f174838eb65eebf13bbbb9229b36fb7e6daa825e20",
+    "experiments/k4_carry/circuit.pt": "ae858d7e23f9f1705ed3a6826deec85dc82e21303b07be3d616d6f1171301713",
+    "artifacts/k4_calib.pt": "64970dfa1e622fd4cdfffaad9170c54fe6a48f520be93c08c166d38c2efbb3c6",
+    "artifacts/host_calib512_raw34.pt": "968f7e0f7bc79f549109b676e287cdf48b75b0930fe38339dbc93cf4a7134ace",
+    "artifacts/host_calib512_early.pt": "22f62d867091ffddcc7fd69829e77858367f27d0958aa961e8378a811d3e7eb2",
+    "artifacts/parabola_readout_v2.pt": "5305972fac3115c0587540c6334796135812c17d8524be617a9f488dfb2ae819",
+    "artifacts/a5_output_geometry.pt": "d0938c0642a4f92539feb873f08e88152cde1addb3977c7fbd4f17e6f402f4ad"
+  },
+  "arguments": {
+    "output": "experiments/k5_g3/delta.pt",
+    "frontend": "experiments/k4_carry/delta.pt",
+    "tag": "k4",
+    "temperature": 64.0,
+    "output_gain": 16777216.0,
+    "donors": 640
+  },
+  "description": "K5 complete G3: seventeen units for carry, decimal affine parabolic readout, newline and cancellation of program carriers.",
+  "changed_scalars": 4158504,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 7680,
+    "transformer.h.1.mlp.c_fc.bias": 10,
+    "transformer.h.1.mlp.c_proj.weight": 204284,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 884736,
+    "transformer.h.2.attn.c_attn.bias": 1152,
+    "transformer.h.2.attn.c_proj.weight": 588671,
+    "transformer.h.2.attn.c_proj.bias": 765,
+    "transformer.h.2.mlp.c_fc.weight": 13056,
+    "transformer.h.2.mlp.c_fc.bias": 17,
+    "transformer.h.2.mlp.c_proj.weight": 799488,
+    "transformer.h.2.mlp.c_proj.bias": 768,
+    "transformer.h.3.mlp.c_fc.weight": 1536,
+    "transformer.h.3.mlp.c_fc.bias": 2,
+    "transformer.h.3.mlp.c_proj.weight": 198144,
+    "transformer.h.3.mlp.c_proj.bias": 768,
+    "transformer.h.4.mlp.c_fc.weight": 13056,
+    "transformer.h.4.mlp.c_fc.bias": 17,
+    "transformer.h.4.mlp.c_proj.weight": 504576,
+    "transformer.h.4.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 645879.5625,
+  "details": {
+    "program_units": 17,
+    "stage_penalties": [
+      171.88182806586434,
+      158.1084697819498,
+      81.08840396235867,
+      148.58861758373072
+    ],
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.04749714950301716,
+        "after_rms": 0.03681540290446701,
+        "weighted_after_rms": 0.3088486602996348,
+        "relative_squared_error": 0.6007918355197689
+      },
+      "validation": {
+        "before_rms": 0.048966611374736166,
+        "after_rms": 0.04018934081481591,
+        "weighted_after_rms": 0.3531417703013139,
+        "relative_squared_error": 0.6736303790965816
+      }
+    },
+    "capacity_ridge": 0.001,
+    "ridge_trials": [
+      {
+        "ridge": 0.001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.04749714950301716,
+            "after_rms": 0.03681540290446701,
+            "weighted_after_rms": 0.3088486602996348,
+            "relative_squared_error": 0.6007918355197689
+          },
+          "validation": {
+            "before_rms": 0.048966611374736166,
+            "after_rms": 0.04018934081481591,
+            "weighted_after_rms": 0.3531417703013139,
+            "relative_squared_error": 0.6736303790965816
+          }
+        },
+        "max_abs_weight": 645879.5625,
+        "valid": true
+      },
+      {
+        "ridge": 0.0001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.04749714950301716,
+            "after_rms": 0.036815294806081394,
+            "weighted_after_rms": 0.3088483093939358,
+            "relative_squared_error": 0.6007883074023483
+          },
+          "validation": {
+            "before_rms": 0.048966611374736166,
+            "after_rms": 0.04019235543862856,
+            "weighted_after_rms": 0.3531646865964884,
+            "relative_squared_error": 0.6737314416322739
+          }
+        },
+        "max_abs_weight": 645879.5625,
+        "valid": true
+      },
+      {
+        "ridge": 1e-05,
+        "fit": {
+          "construction": {
+            "before_rms": 0.04749714950301716,
+            "after_rms": 0.036815293449523716,
+            "weighted_after_rms": 0.308848305104685,
+            "relative_squared_error": 0.6007882631270557
+          },
+          "validation": {
+            "before_rms": 0.048966611374736166,
+            "after_rms": 0.040192673279306174,
+            "weighted_after_rms": 0.35316703875008293,
+            "relative_squared_error": 0.6737420973951576
+          }
+        },
+        "max_abs_weight": 645879.5625,
+        "valid": true
+      },
+      {
+        "ridge": 1e-06,
+        "fit": {
+          "construction": {
+            "before_rms": 0.04749714950301716,
+            "after_rms": 0.03681529343561601,
+            "weighted_after_rms": 0.30884830506082583,
+            "relative_squared_error": 0.6007882626731362
+          },
+          "validation": {
+            "before_rms": 0.048966611374736166,
+            "after_rms": 0.04019270526300982,
+            "weighted_after_rms": 0.35316727467744374,
+            "relative_squared_error": 0.6737431696690019
+          }
+        },
+        "max_abs_weight": 645879.5625,
+        "valid": true
+      },
+      {
+        "ridge": 1e-07,
+        "fit": {
+          "construction": {
+            "before_rms": 0.04749714950301716,
+            "after_rms": 0.03681529343547658,
+            "weighted_after_rms": 0.3088483050603862,
+            "relative_squared_error": 0.6007882626685855
+          },
+          "validation": {
+            "before_rms": 0.048966611374736166,
+            "after_rms": 0.040192708463420365,
+            "weighted_after_rms": 0.3531672982774295,
+            "relative_squared_error": 0.6737432769648318
+          }
+        },
+        "max_abs_weight": 645879.5625,
+        "valid": true
+      }
+    ],
+    "synthetic_readout": [
+      {
+        "offset": -0.2,
+        "correct": 10
+      },
+      {
+        "offset": 0.0,
+        "correct": 10
+      },
+      {
+        "offset": 0.2,
+        "correct": 10
+      }
+    ],
+    "max_text_preactivation": -9.407951354980469
+  }
+}

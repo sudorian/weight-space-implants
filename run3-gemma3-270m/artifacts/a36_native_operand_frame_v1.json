@@ -1,0 +1,407 @@
+{
+  "analysis_only": true,
+  "layer": 2,
+  "heads": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "source_positions": [
+    7,
+    6,
+    5,
+    4
+  ],
+  "native_V_and_O_unchanged": true,
+  "marker_coordinate_excluded": 334,
+  "covariance_mass_trials": [
+    1.0,
+    10.0,
+    100.0,
+    1000.0,
+    10000.0
+  ],
+  "ridge_fraction": 1e-06,
+  "individual_token_mean_constraints": 30,
+  "individual_training_token_rows": 1536,
+  "code": "Centered source digit in its head field, zero in other digit fields, constant 1/4 per head",
+  "selection": "Smallest validation residual on individual current-token code targets",
+  "trials": [
+    {
+      "covariance_mass": 1.0,
+      "per_current_token_validation_max": 0.09967415368204058,
+      "max_abs_readout_weight": 0.4640871109081433,
+      "readout_singular_values": [
+        1.503695002684344,
+        1.1375902776193494,
+        0.9113394135634939,
+        0.3815140701179248
+      ],
+      "mean_constraint_max_error": 1.474514954580286e-17,
+      "split_diagnostics": [
+        {
+          "split": "syntax_a_validation",
+          "per_current_token_max_code_error": 0.08115415959024475,
+          "per_current_token_rms_code_error": 0.010017066442459902,
+          "combined_constant_min": 0.9463178659871508,
+          "ideal_reader_max_digit_error": [
+            0.7885817965433972,
+            0.5624658709707466,
+            0.3798176592594782
+          ],
+          "ideal_reader_wrong_digit_counts": [
+            7,
+            3,
+            0
+          ]
+        },
+        {
+          "split": "syntax_b",
+          "per_current_token_max_code_error": 0.09927568002425269,
+          "per_current_token_rms_code_error": 0.009937621729208798,
+          "combined_constant_min": 0.9484391796116376,
+          "ideal_reader_max_digit_error": [
+            0.7466955574388479,
+            0.5885399479569564,
+            0.4072448503581194
+          ],
+          "ideal_reader_wrong_digit_counts": [
+            21,
+            4,
+            0
+          ]
+        },
+        {
+          "split": "syntax_stress",
+          "per_current_token_max_code_error": 0.09967415368204058,
+          "per_current_token_rms_code_error": 0.013119076060632628,
+          "combined_constant_min": 0.9303453504826461,
+          "ideal_reader_max_digit_error": [
+            1.0941721513754983,
+            0.7227073067155168,
+            0.45032294425632236
+          ],
+          "ideal_reader_wrong_digit_counts": [
+            98,
+            23,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "covariance_mass": 10.0,
+      "per_current_token_validation_max": 0.07713712345090745,
+      "max_abs_readout_weight": 0.46288032824077796,
+      "readout_singular_values": [
+        1.5499571684458644,
+        1.2071613138282942,
+        0.9527861403581568,
+        0.37072194635510847
+      ],
+      "mean_constraint_max_error": 9.540979117872439e-18,
+      "split_diagnostics": [
+        {
+          "split": "syntax_a_validation",
+          "per_current_token_max_code_error": 0.05465997945449759,
+          "per_current_token_rms_code_error": 0.005603355872142102,
+          "combined_constant_min": 0.9759156139638746,
+          "ideal_reader_max_digit_error": [
+            0.47235730728359826,
+            0.30426203653108264,
+            0.2047361602298725
+          ],
+          "ideal_reader_wrong_digit_counts": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "split": "syntax_b",
+          "per_current_token_max_code_error": 0.07431674819620843,
+          "per_current_token_rms_code_error": 0.005844801409334971,
+          "combined_constant_min": 0.9779317395680017,
+          "ideal_reader_max_digit_error": [
+            0.5725875644864704,
+            0.35579238293808224,
+            0.22318654487457001
+          ],
+          "ideal_reader_wrong_digit_counts": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "split": "syntax_stress",
+          "per_current_token_max_code_error": 0.07713712345090745,
+          "per_current_token_rms_code_error": 0.007736232044881712,
+          "combined_constant_min": 0.9609819092258824,
+          "ideal_reader_max_digit_error": [
+            0.7102071084910717,
+            0.4272528919155558,
+            0.22914619889170407
+          ],
+          "ideal_reader_wrong_digit_counts": [
+            15,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "covariance_mass": 100.0,
+      "per_current_token_validation_max": 0.06051275108783738,
+      "max_abs_readout_weight": 0.46154681575320283,
+      "readout_singular_values": [
+        1.6839549259335795,
+        1.3655559620823652,
+        1.0078502818873065,
+        0.4234301471261585
+      ],
+      "mean_constraint_max_error": 1.5612511283791264e-17,
+      "split_diagnostics": [
+        {
+          "split": "syntax_a_validation",
+          "per_current_token_max_code_error": 0.03330658340437778,
+          "per_current_token_rms_code_error": 0.0034700358370147602,
+          "combined_constant_min": 0.9856405563466315,
+          "ideal_reader_max_digit_error": [
+            0.2797158414083558,
+            0.20696983662058166,
+            0.1450177818812266
+          ],
+          "ideal_reader_wrong_digit_counts": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "split": "syntax_b",
+          "per_current_token_max_code_error": 0.05713617450029623,
+          "per_current_token_rms_code_error": 0.003735144531238547,
+          "combined_constant_min": 0.9856648401406934,
+          "ideal_reader_max_digit_error": [
+            0.4659076408942906,
+            0.22225514638047805,
+            0.1526174602971766
+          ],
+          "ideal_reader_wrong_digit_counts": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "split": "syntax_stress",
+          "per_current_token_max_code_error": 0.06051275108783738,
+          "per_current_token_rms_code_error": 0.00516937423548997,
+          "combined_constant_min": 0.9820361308950671,
+          "ideal_reader_max_digit_error": [
+            0.5497706270488987,
+            0.31922227303158124,
+            0.1377647937954105
+          ],
+          "ideal_reader_wrong_digit_counts": [
+            4,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "covariance_mass": 1000.0,
+      "per_current_token_validation_max": 0.05468315447770439,
+      "max_abs_readout_weight": 0.5056342259064096,
+      "readout_singular_values": [
+        2.0581689458247903,
+        1.5917138089324068,
+        1.1586638712188149,
+        0.5438512914196934
+      ],
+      "mean_constraint_max_error": 2.168404344971009e-17,
+      "split_diagnostics": [
+        {
+          "split": "syntax_a_validation",
+          "per_current_token_max_code_error": 0.02027712586277447,
+          "per_current_token_rms_code_error": 0.0025006343956903033,
+          "combined_constant_min": 0.9931390284452494,
+          "ideal_reader_max_digit_error": [
+            0.18210027173903942,
+            0.15903002094825958,
+            0.113499578320436
+          ],
+          "ideal_reader_wrong_digit_counts": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "split": "syntax_b",
+          "per_current_token_max_code_error": 0.049447612981052935,
+          "per_current_token_rms_code_error": 0.002837892011533605,
+          "combined_constant_min": 0.98832407194044,
+          "ideal_reader_max_digit_error": [
+            0.45088006676099246,
+            0.1549358507802996,
+            0.1141934846247068
+          ],
+          "ideal_reader_wrong_digit_counts": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "split": "syntax_stress",
+          "per_current_token_max_code_error": 0.05468315447770439,
+          "per_current_token_rms_code_error": 0.004329852273759829,
+          "combined_constant_min": 0.9832004342106573,
+          "ideal_reader_max_digit_error": [
+            0.4942698909160117,
+            0.25753596440770643,
+            0.1208153740994149
+          ],
+          "ideal_reader_wrong_digit_counts": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "covariance_mass": 10000.0,
+      "per_current_token_validation_max": 0.05993822148940736,
+      "max_abs_readout_weight": 0.6630737913184369,
+      "readout_singular_values": [
+        2.6048597783858938,
+        1.9458890679445988,
+        1.4945682030165757,
+        0.7645315293891832
+      ],
+      "mean_constraint_max_error": 2.6020852139652106e-17,
+      "split_diagnostics": [
+        {
+          "split": "syntax_a_validation",
+          "per_current_token_max_code_error": 0.02520953720411312,
+          "per_current_token_rms_code_error": 0.0025225337759961276,
+          "combined_constant_min": 0.9932150546471579,
+          "ideal_reader_max_digit_error": [
+            0.2574593380071297,
+            0.11666415825343002,
+            0.13985213565206944
+          ],
+          "ideal_reader_wrong_digit_counts": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "split": "syntax_b",
+          "per_current_token_max_code_error": 0.05252161866599697,
+          "per_current_token_rms_code_error": 0.002883107594011512,
+          "combined_constant_min": 0.9898674308902338,
+          "ideal_reader_max_digit_error": [
+            0.5064619545256939,
+            0.2307674198769183,
+            0.10750976384067101
+          ],
+          "ideal_reader_wrong_digit_counts": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "split": "syntax_stress",
+          "per_current_token_max_code_error": 0.05993822148940736,
+          "per_current_token_rms_code_error": 0.004293070870131058,
+          "combined_constant_min": 0.9854393674740732,
+          "ideal_reader_max_digit_error": [
+            0.5360711247998253,
+            0.24201922115198027,
+            0.1231100709165891
+          ],
+          "ideal_reader_wrong_digit_counts": [
+            8,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "covariance_mass": 1000.0,
+    "per_current_token_validation_max": 0.05468315447770439,
+    "max_abs_readout_weight": 0.5056342259064096,
+    "readout_singular_values": [
+      2.0581689458247903,
+      1.5917138089324068,
+      1.1586638712188149,
+      0.5438512914196934
+    ],
+    "mean_constraint_max_error": 2.168404344971009e-17,
+    "split_diagnostics": [
+      {
+        "split": "syntax_a_validation",
+        "per_current_token_max_code_error": 0.02027712586277447,
+        "per_current_token_rms_code_error": 0.0025006343956903033,
+        "combined_constant_min": 0.9931390284452494,
+        "ideal_reader_max_digit_error": [
+          0.18210027173903942,
+          0.15903002094825958,
+          0.113499578320436
+        ],
+        "ideal_reader_wrong_digit_counts": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "split": "syntax_b",
+        "per_current_token_max_code_error": 0.049447612981052935,
+        "per_current_token_rms_code_error": 0.002837892011533605,
+        "combined_constant_min": 0.98832407194044,
+        "ideal_reader_max_digit_error": [
+          0.45088006676099246,
+          0.1549358507802996,
+          0.1141934846247068
+        ],
+        "ideal_reader_wrong_digit_counts": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "split": "syntax_stress",
+        "per_current_token_max_code_error": 0.05468315447770439,
+        "per_current_token_rms_code_error": 0.004329852273759829,
+        "combined_constant_min": 0.9832004342106573,
+        "ideal_reader_max_digit_error": [
+          0.4942698909160117,
+          0.25753596440770643,
+          0.1208153740994149
+        ],
+        "ideal_reader_wrong_digit_counts": [
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "sources": {
+    "experiments/derive_a36_native_operand_frame_v1.py": "08dbaca1051387fe96c0467ba00de112edc030980dda8d1d47ae17e1ce1edaa5"
+  }
+}

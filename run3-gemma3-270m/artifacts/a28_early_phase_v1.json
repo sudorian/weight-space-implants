@@ -1,0 +1,324 @@
+{
+  "mass_trials": [
+    1.0,
+    10.0,
+    100.0,
+    1000.0,
+    10000.0
+  ],
+  "threshold_trials": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "ridge": 1e-06,
+  "positions": [
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "negative_positions": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "positive_count": 5120,
+  "negative_count": 24576,
+  "target": "current-format membership and current-position one-hot basis; no sums",
+  "trials": [
+    {
+      "mass": 1.0,
+      "minimum_positive_reference": 0.9526236210401806,
+      "maximum_basis_error": 1.6011156096269707,
+      "maximum_clock_error": 2.0321249415819818,
+      "wrong_clock": 1261,
+      "phase_basis_rms_error": 0.11340510383728886,
+      "thresholds": [
+        {
+          "threshold": 0.1,
+          "positive_min": 0.40299574407033484,
+          "sharpness": 79.40530507045514,
+          "negative_gate_max": 148.3787611504723,
+          "negative_positive_count": 7414,
+          "negative_nonquiet_count": 17541,
+          "max_abs_gate_weight": 15.57522913739213
+        },
+        {
+          "threshold": 0.2,
+          "positive_min": 0.3032705648688604,
+          "sharpness": 105.5163398855981,
+          "negative_gate_max": 186.48634568541078,
+          "negative_positive_count": 4379,
+          "negative_nonquiet_count": 9397,
+          "max_abs_gate_weight": 21.22354559007933
+        },
+        {
+          "threshold": 0.3,
+          "positive_min": 0.20328593714278073,
+          "sharpness": 157.4137416968708,
+          "negative_gate_max": 262.26914801869503,
+          "negative_positive_count": 2934,
+          "negative_nonquiet_count": 4414,
+          "max_abs_gate_weight": 32.44790247996596
+        },
+        {
+          "threshold": 0.4,
+          "positive_min": 0.10330130941670129,
+          "sharpness": 309.77342088585743,
+          "negative_gate_max": 484.7512578848118,
+          "negative_positive_count": 1993,
+          "negative_nonquiet_count": 2444,
+          "max_abs_gate_weight": 65.40021521933622
+        },
+        {
+          "threshold": 0.5,
+          "positive_min": 0.003316681690621548,
+          "sharpness": 9648.197501281222,
+          "negative_gate_max": 14121.116884868195,
+          "negative_positive_count": 1389,
+          "negative_nonquiet_count": 1400,
+          "max_abs_gate_weight": 2085.1122048222783
+        }
+      ]
+    },
+    {
+      "mass": 10.0,
+      "minimum_positive_reference": 0.9677582250064083,
+      "maximum_basis_error": 0.8384245980905,
+      "maximum_clock_error": 1.31479319281275,
+      "wrong_clock": 238,
+      "phase_basis_rms_error": 0.05964888975843696,
+      "thresholds": [
+        {
+          "threshold": 0.1,
+          "positive_min": 0.5874469607632329,
+          "sharpness": 54.47300290467826,
+          "negative_gate_max": 132.57936796837907,
+          "negative_positive_count": 7455,
+          "negative_nonquiet_count": 19796,
+          "max_abs_gate_weight": 12.025794997798643
+        },
+        {
+          "threshold": 0.2,
+          "positive_min": 0.48729754712778045,
+          "sharpness": 65.66829689296358,
+          "negative_gate_max": 152.08876884494393,
+          "negative_positive_count": 4721,
+          "negative_nonquiet_count": 15137,
+          "max_abs_gate_weight": 14.454099905591942
+        },
+        {
+          "threshold": 0.3,
+          "positive_min": 0.3871481334923282,
+          "sharpness": 82.65570005811256,
+          "negative_gate_max": 183.8137345777929,
+          "negative_positive_count": 3401,
+          "negative_nonquiet_count": 7264,
+          "max_abs_gate_weight": 18.138736907510697
+        },
+        {
+          "threshold": 0.4,
+          "positive_min": 0.28603373454895165,
+          "sharpness": 111.87491590969505,
+          "negative_gate_max": 240.07438371134864,
+          "negative_positive_count": 2543,
+          "negative_nonquiet_count": 3923,
+          "max_abs_gate_weight": 24.477213697915438
+        },
+        {
+          "threshold": 0.5,
+          "positive_min": 0.18453906613664106,
+          "sharpness": 173.40501753870237,
+          "negative_gate_max": 358.5994132209594,
+          "negative_positive_count": 1869,
+          "negative_nonquiet_count": 2497,
+          "max_abs_gate_weight": 37.82526756646399
+        }
+      ]
+    },
+    {
+      "mass": 100.0,
+      "minimum_positive_reference": 0.9766488223564253,
+      "maximum_basis_error": 0.3349957458019412,
+      "maximum_clock_error": 0.8239997846935143,
+      "wrong_clock": 25,
+      "phase_basis_rms_error": 0.03640160546246558,
+      "thresholds": [
+        {
+          "threshold": 0.1,
+          "positive_min": 0.6921893852169548,
+          "sharpness": 46.230122396300764,
+          "negative_gate_max": 150.85448783834795,
+          "negative_positive_count": 7750,
+          "negative_nonquiet_count": 19838,
+          "max_abs_gate_weight": 9.861170999359619
+        },
+        {
+          "threshold": 0.2,
+          "positive_min": 0.5928512546817208,
+          "sharpness": 53.9764397010167,
+          "negative_gate_max": 169.49827116176328,
+          "negative_positive_count": 5224,
+          "negative_nonquiet_count": 16694,
+          "max_abs_gate_weight": 11.490005616371823
+        },
+        {
+          "threshold": 0.3,
+          "positive_min": 0.49351312414648707,
+          "sharpness": 64.84123407121712,
+          "negative_gate_max": 195.64758368323217,
+          "negative_positive_count": 4121,
+          "negative_nonquiet_count": 9632,
+          "max_abs_gate_weight": 13.774569039319639
+        },
+        {
+          "threshold": 0.4,
+          "positive_min": 0.39417499361125347,
+          "sharpness": 81.1822173365957,
+          "negative_gate_max": 234.9769500526938,
+          "negative_positive_count": 3323,
+          "negative_nonquiet_count": 5188,
+          "max_abs_gate_weight": 17.210622349769697
+        },
+        {
+          "threshold": 0.5,
+          "positive_min": 0.2948368630760193,
+          "sharpness": 108.53459661097152,
+          "negative_gate_max": 300.8084687617042,
+          "negative_positive_count": 2666,
+          "negative_nonquiet_count": 3680,
+          "max_abs_gate_weight": 22.962065321596715
+        }
+      ]
+    },
+    {
+      "mass": 1000.0,
+      "minimum_positive_reference": 0.9833520950855323,
+      "maximum_basis_error": 0.26666578029782506,
+      "maximum_clock_error": 0.8731109012999703,
+      "wrong_clock": 9,
+      "phase_basis_rms_error": 0.02714262081542794,
+      "thresholds": [
+        {
+          "threshold": 0.1,
+          "positive_min": 0.7132408146186151,
+          "sharpness": 44.86563211768956,
+          "negative_gate_max": 197.00780981315336,
+          "negative_positive_count": 8302,
+          "negative_nonquiet_count": 19055,
+          "max_abs_gate_weight": 12.91456384351217
+        },
+        {
+          "threshold": 0.2,
+          "positive_min": 0.6125779900350041,
+          "sharpness": 52.23824642829796,
+          "negative_gate_max": 222.7682104127847,
+          "negative_positive_count": 6111,
+          "negative_nonquiet_count": 16507,
+          "max_abs_gate_weight": 15.064445650035955
+        },
+        {
+          "threshold": 0.3,
+          "positive_min": 0.5119151654513958,
+          "sharpness": 62.51035749601809,
+          "negative_gate_max": 258.65964389352774,
+          "negative_positive_count": 4952,
+          "negative_nonquiet_count": 10392,
+          "max_abs_gate_weight": 18.059831515712784
+        },
+        {
+          "threshold": 0.4,
+          "positive_min": 0.41125234086778495,
+          "sharpness": 77.81110724495012,
+          "negative_gate_max": 312.12147254772077,
+          "negative_positive_count": 4214,
+          "negative_nonquiet_count": 6198,
+          "max_abs_gate_weight": 22.52158715971416
+        },
+        {
+          "threshold": 0.5,
+          "positive_min": 0.3105895162841744,
+          "sharpness": 103.02987809389401,
+          "negative_gate_max": 400.237520984478,
+          "negative_positive_count": 3642,
+          "negative_nonquiet_count": 4588,
+          "max_abs_gate_weight": 29.875474715316233
+        }
+      ]
+    },
+    {
+      "mass": 10000.0,
+      "minimum_positive_reference": 0.985989574165052,
+      "maximum_basis_error": 0.2541739774945849,
+      "maximum_clock_error": 0.7744880287235656,
+      "wrong_clock": 7,
+      "phase_basis_rms_error": 0.023685872480255662,
+      "thresholds": [
+        {
+          "threshold": 0.1,
+          "positive_min": 0.7430385725410674,
+          "sharpness": 43.06640487123752,
+          "negative_gate_max": 286.7036129088818,
+          "negative_positive_count": 8776,
+          "negative_nonquiet_count": 18268,
+          "max_abs_gate_weight": 22.197507196104997
+        },
+        {
+          "threshold": 0.2,
+          "positive_min": 0.6421551358277768,
+          "sharpness": 49.8321950796984,
+          "negative_gate_max": 326.28426054268533,
+          "negative_positive_count": 6945,
+          "negative_nonquiet_count": 16299,
+          "max_abs_gate_weight": 25.58126952916502
+        },
+        {
+          "threshold": 0.3,
+          "positive_min": 0.5412716991144889,
+          "sharpness": 59.12003168159622,
+          "negative_gate_max": 380.6191684386382,
+          "negative_positive_count": 6126,
+          "negative_nonquiet_count": 10897,
+          "max_abs_gate_weight": 30.226378331063174
+        },
+        {
+          "threshold": 0.4,
+          "positive_min": 0.4403882624012001,
+          "sharpness": 72.66315370332812,
+          "negative_gate_max": 459.84798341629244,
+          "negative_positive_count": 5509,
+          "negative_nonquiet_count": 7338,
+          "max_abs_gate_weight": 36.99967527897386
+        },
+        {
+          "threshold": 0.5,
+          "positive_min": 0.3395048256879101,
+          "sharpness": 94.25491945559564,
+          "negative_gate_max": 586.1622860624783,
+          "negative_positive_count": 5019,
+          "negative_nonquiet_count": 5923,
+          "max_abs_gate_weight": 47.89599047497673
+        }
+      ]
+    }
+  ],
+  "chosen": {
+    "mass": 1.0,
+    "threshold": 0.5,
+    "positive_min": 0.003316681690621548,
+    "sharpness": 9648.197501281222,
+    "negative_gate_max": 14121.116884868195,
+    "negative_positive_count": 1389,
+    "negative_nonquiet_count": 1400,
+    "max_abs_gate_weight": 2085.1122048222783
+  }
+}

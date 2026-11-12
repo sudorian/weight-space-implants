@@ -1,0 +1,228 @@
+{
+  "rank_trials": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "query_scale": 0.03,
+  "key_scale": 1.0,
+  "routing_margin": 32,
+  "covariance_ridge": 1e-06,
+  "metric_lags": [
+    1,
+    4,
+    16,
+    32,
+    64
+  ],
+  "trials": [
+    {
+      "rank": 1,
+      "program_gain": 384.23251578193356,
+      "covariance_dot_error": 0.006426585119698958,
+      "source_input_energy_retained": 0.14984120898216213,
+      "maximum_query_weight": 0.62890625,
+      "routing": [
+        {
+          "position": 8,
+          "minimum_program_gap": 0.00013533750418192635,
+          "maximum_native_disadvantage": -11.249750568842087
+        },
+        {
+          "position": 9,
+          "minimum_program_gap": 0.0020648838815130635,
+          "maximum_native_disadvantage": 18.928976555754822
+        },
+        {
+          "position": 10,
+          "minimum_program_gap": 0.002064891512738938,
+          "maximum_native_disadvantage": 19.321159897749435
+        },
+        {
+          "position": 11,
+          "minimum_program_gap": 0.0020649233480582872,
+          "maximum_native_disadvantage": 19.791766229213238
+        },
+        {
+          "position": 12,
+          "minimum_program_gap": 0.002064819215305007,
+          "maximum_native_disadvantage": 20.07015195343144
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "program_gain": 331.02190423684607,
+      "covariance_dot_error": 0.0072205470535330555,
+      "source_input_energy_retained": 0.019333149572406998,
+      "maximum_query_weight": 0.62890625,
+      "routing": [
+        {
+          "position": 8,
+          "minimum_program_gap": 0.000302891574762693,
+          "maximum_native_disadvantage": 10.408497928746074
+        },
+        {
+          "position": 9,
+          "minimum_program_gap": 0.07193847428063802,
+          "maximum_native_disadvantage": 14.657962438591307
+        },
+        {
+          "position": 10,
+          "minimum_program_gap": 0.07201930115147662,
+          "maximum_native_disadvantage": 15.169950085307228
+        },
+        {
+          "position": 11,
+          "minimum_program_gap": 0.07201209740422299,
+          "maximum_native_disadvantage": 15.506819005798032
+        },
+        {
+          "position": 12,
+          "minimum_program_gap": 0.07180632038042006,
+          "maximum_native_disadvantage": 15.678756815140373
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "program_gain": 273.49917467209184,
+      "covariance_dot_error": 0.007687776263386281,
+      "source_input_energy_retained": 0.004900860154766548,
+      "maximum_query_weight": 0.62890625,
+      "routing": [
+        {
+          "position": 8,
+          "minimum_program_gap": 0.0004122461270854715,
+          "maximum_native_disadvantage": 10.25994645653983
+        },
+        {
+          "position": 9,
+          "minimum_program_gap": 0.158083800860002,
+          "maximum_native_disadvantage": 6.78674795834198
+        },
+        {
+          "position": 10,
+          "minimum_program_gap": 0.15827575309270367,
+          "maximum_native_disadvantage": 6.973085937400523
+        },
+        {
+          "position": 11,
+          "minimum_program_gap": 0.15857037457946582,
+          "maximum_native_disadvantage": 6.959341058647639
+        },
+        {
+          "position": 12,
+          "minimum_program_gap": 0.15894901426092953,
+          "maximum_native_disadvantage": 6.879837717956022
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "program_gain": 13.11454279301107,
+      "covariance_dot_error": 0.009961377681149842,
+      "source_input_energy_retained": 7.50479802185545e-09,
+      "maximum_query_weight": 0.62890625,
+      "routing": [
+        {
+          "position": 8,
+          "minimum_program_gap": 0.19488135576004498,
+          "maximum_native_disadvantage": 3.0582238812034186
+        },
+        {
+          "position": 9,
+          "minimum_program_gap": 0.2355632078098335,
+          "maximum_native_disadvantage": 0.01943550020515064
+        },
+        {
+          "position": 10,
+          "minimum_program_gap": 0.2356136701622874,
+          "maximum_native_disadvantage": 0.2685203691797273
+        },
+        {
+          "position": 11,
+          "minimum_program_gap": 0.23565278334616718,
+          "maximum_native_disadvantage": 0.34533295927101054
+        },
+        {
+          "position": 12,
+          "minimum_program_gap": 0.23556888422567868,
+          "maximum_native_disadvantage": 0.37505168026495095
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "program_gain": 11.670880721905139,
+      "covariance_dot_error": 0.012881266288994598,
+      "source_input_energy_retained": 2.854835773429526e-10,
+      "maximum_query_weight": 0.62890625,
+      "routing": [
+        {
+          "position": 8,
+          "minimum_program_gap": 0.23546405761887823,
+          "maximum_native_disadvantage": 0.16467682110594428
+        },
+        {
+          "position": 9,
+          "minimum_program_gap": 0.2356719599217143,
+          "maximum_native_disadvantage": 0.12036634287361314
+        },
+        {
+          "position": 10,
+          "minimum_program_gap": 0.23565872618215805,
+          "maximum_native_disadvantage": 0.32740655388847906
+        },
+        {
+          "position": 11,
+          "minimum_program_gap": 0.23565519249265074,
+          "maximum_native_disadvantage": 0.3517953927936814
+        },
+        {
+          "position": 12,
+          "minimum_program_gap": 0.23564698026485875,
+          "maximum_native_disadvantage": 0.3356003551992465
+        }
+      ]
+    }
+  ],
+  "chosen": {
+    "rank": 1,
+    "program_gain": 384.23251578193356,
+    "covariance_dot_error": 0.006426585119698958,
+    "source_input_energy_retained": 0.14984120898216213,
+    "maximum_query_weight": 0.62890625,
+    "routing": [
+      {
+        "position": 8,
+        "minimum_program_gap": 0.00013533750418192635,
+        "maximum_native_disadvantage": -11.249750568842087
+      },
+      {
+        "position": 9,
+        "minimum_program_gap": 0.0020648838815130635,
+        "maximum_native_disadvantage": 18.928976555754822
+      },
+      {
+        "position": 10,
+        "minimum_program_gap": 0.002064891512738938,
+        "maximum_native_disadvantage": 19.321159897749435
+      },
+      {
+        "position": 11,
+        "minimum_program_gap": 0.0020649233480582872,
+        "maximum_native_disadvantage": 19.791766229213238
+      },
+      {
+        "position": 12,
+        "minimum_program_gap": 0.002064819215305007,
+        "maximum_native_disadvantage": 20.07015195343144
+      }
+    ]
+  },
+  "reference_head": 0,
+  "pair": 87
+}

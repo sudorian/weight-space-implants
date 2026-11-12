@@ -1,0 +1,894 @@
+{
+ "summary": {
+  "G1": {
+   "chain_length": 2,
+   "sources": 8,
+   "hash_mismatch": [],
+   "missing": []
+  },
+  "G2": {
+   "chain_length": 5,
+   "sources": 16,
+   "hash_mismatch": [],
+   "missing": []
+  },
+  "G3": {
+   "chain_length": 5,
+   "sources": 14,
+   "hash_mismatch": [],
+   "missing": []
+  },
+  "G3-robust": {
+   "chain_length": 10,
+   "sources": 27,
+   "hash_mismatch": [],
+   "missing": []
+  },
+  "G4-best-attempt": {
+   "chain_length": 15,
+   "sources": 37,
+   "hash_mismatch": [],
+   "missing": []
+  }
+ },
+ "sources": [
+  "experiments/analyze_a5_off_and_readout.py",
+  "experiments/analyze_g2_early_memory_v1.py",
+  "experiments/analyze_i1_column_logic_v1.py",
+  "experiments/analyze_i_scalar_geometry_v1.py",
+  "experiments/analyze_n_embedding_address_v1.py",
+  "experiments/analyze_o_amplified_phase_v1.py",
+  "experiments/analyze_o_broadcast_states_v1.py",
+  "experiments/analyze_o_counter_phase_v1.py",
+  "experiments/analyze_o_equals_reference_v1.py",
+  "experiments/analyze_o_homogeneous_address_v3.py",
+  "experiments/analyze_o_output_inputs_v1.py",
+  "experiments/analyze_o_readout_piece_v1.py",
+  "experiments/analyze_o_source_readouts_v2.py",
+  "experiments/analyze_parabola_readout_v2.py",
+  "experiments/analyze_parabola_readout_v4.py",
+  "experiments/capture_g3r_native_source_v1.py",
+  "experiments/capture_k_formats_v1.py",
+  "experiments/circuit_io_v1.py",
+  "experiments/circuit_restore_v4.py",
+  "experiments/circuit_restore_v5.py",
+  "experiments/combine_c1_stage_gates_v3.py",
+  "experiments/combine_format_gates_v1.py",
+  "experiments/combine_g2_equals_gate_v1.py",
+  "experiments/combine_k_stage_gates_v3.py",
+  "experiments/compile_a_frontend_v3.py",
+  "experiments/compile_b_output_v2.py",
+  "experiments/compile_c_marker_v1.py",
+  "experiments/compile_d_digit_frontend_v1.py",
+  "experiments/compile_g3r_compact_output_v1.py",
+  "experiments/compile_g3r_native2_center_v2.py",
+  "experiments/compile_g3r_native4_v1.py",
+  "experiments/compile_g3r_shared_source_v1.py",
+  "experiments/compile_g3r_wide_source_v1.py",
+  "experiments/compile_i_scalar_frontend_v1.py",
+  "experiments/compile_j_output_v1.py",
+  "experiments/compile_j_scalar_carry_v1.py",
+  "experiments/compile_k_frontend_v2.py",
+  "experiments/compile_k_marker_v1.py",
+  "experiments/compile_k_output_v1.py",
+  "experiments/compile_k_scalar_carry_v2.py",
+  "experiments/compile_k_tens_carry_v1.py",
+  "experiments/compile_o_counter_amplifier_v2.py",
+  "experiments/compile_o_counter_markers_v2.py",
+  "experiments/compile_o_format_payload_v1.py",
+  "experiments/compile_o_output_repair_v1.py",
+  "experiments/compile_o_output_v2.py",
+  "experiments/compile_o_payload_broadcast_v3.py",
+  "experiments/compile_o_payload_gain_v2.py",
+  "experiments/compile_o_phases_carries_v1.py",
+  "experiments/compile_o_position_counter_v3.py",
+  "experiments/compile_o_protected_positions_v1.py",
+  "experiments/compile_o_reader_gain_v2.py",
+  "experiments/compile_o_readout_replace_v1.py",
+  "experiments/compile_o_relative_reader_v3.py",
+  "experiments/compile_o_robust_gates_v1.py",
+  "experiments/compile_o_token_writer_v2.py",
+  "experiments/derive_c1_stage_gates_v2.py",
+  "experiments/derive_full_calib_gates_v1.py",
+  "experiments/derive_full_calib_gates_v2.py",
+  "experiments/derive_g2_gates_v1.py",
+  "experiments/derive_g3r_native2_v1.py",
+  "experiments/derive_g3r_native4_v1.py",
+  "experiments/derive_g3r_shared_source_v2.py",
+  "experiments/derive_g3r_trim4_v1.py",
+  "experiments/derive_g3r_union_gate_v1.py",
+  "experiments/derive_g3r_wide_source_v1.py",
+  "experiments/derive_k_equals_gate_v1.py",
+  "experiments/derive_k_stage_gates_v1.py",
+  "experiments/derive_o_robust_off_v2.py",
+  "experiments/derive_o_whole_fisher_v1.py",
+  "experiments/g3r_recenter_geometry_v2.py",
+  "experiments/inspect_o_numeric_inputs_v1.py",
+  "experiments/n_token_states_v1.py",
+  "experiments/o_payload_states_v2.py",
+  "experiments/prefix_capture_io_v1.py",
+  "experiments/recorded_mlp_piece_v1.py"
+ ],
+ "hits": {
+  "gradient/training": [],
+  "finite differences / search": [],
+  "model built outside meters": [],
+  "official test generator or seeds": [],
+  "closed-form solves": [
+   [
+    "experiments/analyze_a5_off_and_readout.py",
+    14,
+    "w=null@torch.linalg.solve(metric+ridge*torch.eye(len(metric),dtype=torch.float64),null.T@m);w/=w@m"
+   ],
+   [
+    "experiments/analyze_a5_off_and_readout.py",
+    20,
+    "M=C+ridge*torch.eye(768,dtype=torch.float64);ones=torch.ones(768,dtype=torch.float64);ci=torch.linalg.solve(M,ones)"
+   ],
+   [
+    "experiments/analyze_a5_off_and_readout.py",
+    22,
+    "v=torch.linalg.solve(M,(A[ids]-mu).T);v-=ci[:,None]*(v.sum(0)/(ones@ci))[None,:];v/=v.norm(dim=0)"
+   ],
+   [
+    "experiments/analyze_i1_column_logic_v1.py",
+    15,
+    "common=sigma/c['carrier']*read(c['common']);stages=torch.stack([sigma/c['stage_gain']*read(c['phase'][:,j]) for j in range(4)],1);correction=torch.linalg.solve((P3@stages).mean(0),torch.ones(4,dtype=t"
+   ],
+   [
+    "experiments/analyze_n_embedding_address_v1.py",
+    14,
+    "metric=C+mass*attention;metric+=torch.eye(768,dtype=torch.float64)*(float(metric.trace()/768)*1e-7);small=N.T@metric@N;w=N@torch.linalg.solve(small,N.T@mu);w/=mu@w;off=E@w+P[0]@w;valid=off[mask];repor"
+   ],
+   [
+    "experiments/analyze_n_embedding_address_v1.py",
+    15,
+    "chol=torch.linalg.cholesky(metric);white=torch.linalg.solve_triangular(chol,D.T,upper=False).T;U,S,Vh=torch.linalg.svd(white,full_matrices=False);keep=S>S.max()*1e-12;coords=torch.linalg.solve_triangu"
+   ],
+   [
+    "experiments/analyze_n_embedding_address_v1.py",
+    15,
+    "chol=torch.linalg.cholesky(metric);white=torch.linalg.solve_triangular(chol,D.T,upper=False).T;U,S,Vh=torch.linalg.svd(white,full_matrices=False);keep=S>S.max()*1e-12;coords=torch.linalg.solve_triangu"
+   ],
+   [
+    "experiments/analyze_o_amplified_phase_v1.py",
+    18,
+    "C=Cp+mass*Ct;C.diagonal().add_(float(C.trace()/len(C))*1e-5);w=torch.linalg.solve(C,mean);w/=mean@w;direction=N@w;native=raw[:512]@direction;em=native[:,0][active[:512,0]].mean();lm=native[:,1:][activ"
+   ],
+   [
+    "experiments/analyze_o_counter_phase_v1.py",
+    24,
+    "C=Cp+mass*Ct;C.diagonal().add_(float(C.trace()/len(C))*1e-5);w=torch.linalg.solve(C,mean);w/=mean@w;direction=N@w;native=raw[:512]@direction;eqmean=native[:,0][active[:512,0]].mean();latermean=native["
+   ],
+   [
+    "experiments/analyze_o_output_inputs_v1.py",
+    35,
+    "C=Cp+mass*Ct;C.diagonal().add_(float(C.trace()/len(C))*1e-5);w=torch.linalg.solve(C,mean);w/=mean@w;direction=N@w;native=raw[:512]@direction;means=torch.stack([native[:,j][active[:512,j]].mean() for j"
+   ],
+   [
+    "experiments/analyze_o_source_readouts_v2.py",
+    24,
+    "M=within+mass*tc;M+=torch.eye(769,dtype=torch.float64)*(float(M.trace()/769)*1e-6+1e-10);inv=torch.linalg.solve(M,D.T);U,S,Vh=torch.linalg.svd(D@inv,full_matrices=False);keep=S>S.max()*1e-12;decoder=i"
+   ],
+   [
+    "experiments/analyze_parabola_readout_v2.py",
+    16,
+    "Ad=A[ids];B=torch.linalg.solve(C,Ad.T);one=torch.ones(768,dtype=torch.float64);ci=torch.linalg.solve(C,one)"
+   ],
+   [
+    "experiments/analyze_parabola_readout_v2.py",
+    16,
+    "Ad=A[ids];B=torch.linalg.solve(C,Ad.T);one=torch.ones(768,dtype=torch.float64);ci=torch.linalg.solve(C,one)"
+   ],
+   [
+    "experiments/analyze_parabola_readout_v4.py",
+    14,
+    "alpha+=alpha_old.mean()-alpha.mean();D=torch.cat((Ad,torch.ones(1,768,dtype=torch.float64)));targets=torch.cat((torch.stack((alpha,beta),1),torch.zeros(1,2,dtype=torch.float64)));part=D.T@torch.linalg"
+   ],
+   [
+    "experiments/analyze_parabola_readout_v4.py",
+    14,
+    "alpha+=alpha_old.mean()-alpha.mean();D=torch.cat((Ad,torch.ones(1,768,dtype=torch.float64)));targets=torch.cat((torch.stack((alpha,beta),1),torch.zeros(1,2,dtype=torch.float64)));part=D.T@torch.linalg"
+   ],
+   [
+    "experiments/circuit_io_v1.py",
+    41,
+    "invAT=torch.linalg.solve(metric,constraints.T)"
+   ],
+   [
+    "experiments/circuit_io_v1.py",
+    43,
+    "solution=invAT@torch.linalg.pinv(gram,rtol=1e-11,hermitian=True)@targets"
+   ],
+   [
+    "experiments/circuit_restore_v4.py",
+    23,
+    "regular=Cdd.clone();regular.diagonal().add_(value*Cdd.diagonal().clamp_min(1e-8));chol=torch.linalg.cholesky(regular);reconstruct=torch.cholesky_solve(Cda,chol);offset=mu-mu[donors]@reconstruct"
+   ],
+   [
+    "experiments/circuit_restore_v4.py",
+    25,
+    "repair=torch.cholesky_solve(crossfront,chol)+reconstruct[:,selected]@W[:,selected].T;intercept=fm+mu[selected]@W[:,selected].T-mu[donors]@repair;report={}"
+   ],
+   [
+    "experiments/circuit_restore_v5.py",
+    42,
+    "repair = torch.linalg.solve(regular, cross[donors])"
+   ],
+   [
+    "experiments/compile_a_frontend_v3.py",
+    64,
+    "restore=torch.linalg.solve(rr,cross[donors]);del activation,aa"
+   ],
+   [
+    "experiments/compile_b_output_v2.py",
+    83,
+    "reconstruction=torch.linalg.solve(rr,ri)"
+   ],
+   [
+    "experiments/compile_c_marker_v1.py",
+    24,
+    "aa=activation[:,donors];rr=aa.T@aa/len(aa)-mu[donors][:,None]*mu[donors][None,:];rr.diagonal().add_(.001*rr.diagonal().clamp_min(1e-8));restore=torch.linalg.solve(rr,cross[donors]);del activation,aa"
+   ],
+   [
+    "experiments/compile_d_digit_frontend_v1.py",
+    27,
+    "rr=aa.T@aa/len(aa)-mu[donors][:,None]*mu[donors][None,:];rr.diagonal().add_(.001*rr.diagonal().clamp_min(1e-8));restore=torch.linalg.solve(rr,cross[donors]);del activation,aa"
+   ],
+   [
+    "experiments/compile_d_digit_frontend_v1.py",
+    59,
+    "inv=torch.linalg.solve(M,D.T);decoder=inv@torch.linalg.pinv(D@inv,hermitian=True,rtol=1e-11)@T"
+   ],
+   [
+    "experiments/compile_d_digit_frontend_v1.py",
+    59,
+    "inv=torch.linalg.solve(M,D.T);decoder=inv@torch.linalg.pinv(D@inv,hermitian=True,rtol=1e-11)@T"
+   ],
+   [
+    "experiments/compile_g3r_compact_output_v1.py",
+    19,
+    "calib=torch.load(ROOT/'artifacts/g3r_native_v1.pt',weights_only=True,mmap=True);native=torch.load(ROOT/'artifacts/host_calib512_raw34.pt',weights_only=True,mmap=True);assert torch.equal(calib['inputs'"
+   ],
+   [
+    "experiments/compile_k_frontend_v2.py",
+    27,
+    "rr=aa.T@aa/len(aa)-mu[donors][:,None]*mu[donors][None,:];rr.diagonal().add_(.001*rr.diagonal().clamp_min(1e-8));restore=torch.linalg.solve(rr,cross[donors]);del activation,aa"
+   ],
+   [
+    "experiments/compile_k_frontend_v2.py",
+    59,
+    "inv=torch.linalg.solve(M,D.T);decoder=inv@torch.linalg.pinv(D@inv,hermitian=True,rtol=1e-11)@T"
+   ],
+   [
+    "experiments/compile_k_frontend_v2.py",
+    59,
+    "inv=torch.linalg.solve(M,D.T);decoder=inv@torch.linalg.pinv(D@inv,hermitian=True,rtol=1e-11)@T"
+   ],
+   [
+    "experiments/compile_k_marker_v1.py",
+    24,
+    "aa=activation[:,donors];rr=aa.T@aa/len(aa)-mu[donors][:,None]*mu[donors][None,:];rr.diagonal().add_(.001*rr.diagonal().clamp_min(1e-8));restore=torch.linalg.solve(rr,cross[donors]);del activation,aa"
+   ],
+   [
+    "experiments/compile_k_scalar_carry_v2.py",
+    18,
+    "tx=t['captures']['2.ln2'].reshape(-1,768).double();T=torch.cat((tx,torch.ones(len(tx),1,dtype=torch.float64)),1);common=sigma/c['carrier']*read(c['common']);stages=torch.stack([sigma/c['stage_gain']*r"
+   ],
+   [
+    "experiments/compile_o_payload_broadcast_v3.py",
+    26,
+    "local=values[:,idx];C=local.T@local/len(local);cost=C.diagonal()*P[:,idx].square().sum(0);vs=cost.argsort()[:16];vi=idx[vs];ev,U=torch.linalg.eigh(C[vs][:,vs]);ev=ev.clamp_min(float(ev.max())*1e-9);ro"
+   ],
+   [
+    "experiments/compile_o_position_counter_v3.py",
+    30,
+    "local=values[:,idx];C=local.T@local/len(local);cost=C.diagonal()*P[:,idx].square().sum(0);vs=cost.argsort()[:8];vi=idx[vs];ev,U=torch.linalg.eigh(C[vs][:,vs]);ev=ev.clamp_min(float(ev.max())*1e-9);roo"
+   ],
+   [
+    "experiments/compile_o_protected_positions_v1.py",
+    18,
+    "metric=C+mass*attention_metric;metric+=torch.eye(768,dtype=torch.float64)*(float(metric.trace()/768)*1e-7);off=N@torch.linalg.solve(N.T@metric@N,N.T@mean_embed);off/=mean_embed@off;chol=torch.linalg.c"
+   ],
+   [
+    "experiments/compile_o_protected_positions_v1.py",
+    18,
+    "metric=C+mass*attention_metric;metric+=torch.eye(768,dtype=torch.float64)*(float(metric.trace()/768)*1e-7);off=N@torch.linalg.solve(N.T@metric@N,N.T@mean_embed);off/=mean_embed@off;chol=torch.linalg.c"
+   ],
+   [
+    "experiments/compile_o_protected_positions_v1.py",
+    18,
+    "metric=C+mass*attention_metric;metric+=torch.eye(768,dtype=torch.float64)*(float(metric.trace()/768)*1e-7);off=N@torch.linalg.solve(N.T@metric@N,N.T@mean_embed);off/=mean_embed@off;chol=torch.linalg.c"
+   ],
+   [
+    "experiments/compile_o_relative_reader_v3.py",
+    41,
+    "count=1 if role==3 else 2;reused=vi[:count];retained=indices[~torch.isin(indices,reused)];A=native_values[:,retained];B=native_values[:,reused];ma=A.mean(0);mb=B.mean(0);C=A.T@A/len(A)-ma[:,None]*ma[N"
+   ],
+   [
+    "experiments/derive_c1_stage_gates_v2.py",
+    16,
+    "inv=torch.linalg.solve(M,D.T);decoder=inv@torch.linalg.pinv(D@inv,hermitian=True,rtol=1e-11)@Y"
+   ],
+   [
+    "experiments/derive_c1_stage_gates_v2.py",
+    16,
+    "inv=torch.linalg.solve(M,D.T);decoder=inv@torch.linalg.pinv(D@inv,hermitian=True,rtol=1e-11)@Y"
+   ],
+   [
+    "experiments/derive_full_calib_gates_v1.py",
+    21,
+    "w=torch.linalg.solve(cov+ridge*torch.eye(768,dtype=torch.float64),pm-center);w/=float((pm-text_mean)@w)"
+   ],
+   [
+    "experiments/derive_full_calib_gates_v2.py",
+    27,
+    "w=torch.linalg.solve(cov+ridge*torch.eye(768,dtype=torch.float64),pm-center);w/=float((pm-text_mean)@w)"
+   ],
+   [
+    "experiments/derive_g2_gates_v1.py",
+    39,
+    "w=torch.linalg.solve(M+ridge*torch.eye(768,dtype=torch.float64),pm-center);w/=float((pm-mean)@w);bias=-float(mean@w)"
+   ],
+   [
+    "experiments/derive_g3r_native2_v1.py",
+    20,
+    "oldD=old['donors'];reg=C[oldD][:,oldD].clone();reg.diagonal().add_(.001*reg.diagonal().clamp_min(1e-8));oldcoef=torch.linalg.solve(reg,B[oldD]);crossR=B-C[:,oldD]@oldcoef;conditional=C.diagonal()-(C[:"
+   ],
+   [
+    "experiments/derive_g3r_native2_v1.py",
+    20,
+    "oldD=old['donors'];reg=C[oldD][:,oldD].clone();reg.diagonal().add_(.001*reg.diagonal().clamp_min(1e-8));oldcoef=torch.linalg.solve(reg,B[oldD]);crossR=B-C[:,oldD]@oldcoef;conditional=C.diagonal()-(C[:"
+   ],
+   [
+    "experiments/derive_g3r_native2_v1.py",
+    25,
+    "r=cc.clone();r.diagonal().add_(ridge*cc.diagonal().clamp_min(1e-8));coef=torch.linalg.solve(r,cross);intercept=my-mu[donors]@coef;error=target-acts[:,donors]@coef-intercept;rep={'donor_count':count,'r"
+   ],
+   [
+    "experiments/derive_g3r_native2_v1.py",
+    31,
+    "donors=torch.cat((oldD,extra[:best['donor_count']-1024]));Ad=acts[:,donors];mu=Ad.mean(0);my=target.mean(0);cc=Ad.T@Ad/len(Ad)-mu[:,None]*mu[None,:];cross=Ad.T@target/len(Ad)-mu[:,None]*my[None,:];cc."
+   ],
+   [
+    "experiments/derive_g3r_native4_v1.py",
+    28,
+    "available=torch.tensor([i for i in range(3072) if i not in set(sel.tolist())]);A=acts[:,available];mu=A[:ntrain].mean(0);my=target[:ntrain].mean(0);C=A[:ntrain].T@A[:ntrain]/ntrain-mu[:,None]*mu[None,"
+   ],
+   [
+    "experiments/derive_g3r_native4_v1.py",
+    28,
+    "available=torch.tensor([i for i in range(3072) if i not in set(sel.tolist())]);A=acts[:,available];mu=A[:ntrain].mean(0);my=target[:ntrain].mean(0);C=A[:ntrain].T@A[:ntrain]/ntrain-mu[:,None]*mu[None,"
+   ],
+   [
+    "experiments/derive_g3r_native4_v1.py",
+    29,
+    "chol=torch.linalg.cholesky(Cs+.01*torch.eye(len(available),dtype=torch.float64));dense=torch.cholesky_solve(B,chol);invdiag=torch.cholesky_inverse(chol).diagonal();rowsupport=(dense.square()/invdiag[:"
+   ],
+   [
+    "experiments/derive_g3r_native4_v1.py",
+    36,
+    "inds=torch.cat((oldinds,extras[:count-640]));reg=Cs[inds][:,inds]+ridge*torch.eye(count,dtype=torch.float64);coef=torch.linalg.solve(reg,B[inds]);coeff[inds]=coef/std[inds,None]"
+   ],
+   [
+    "experiments/derive_g3r_native4_v1.py",
+    39,
+    "inds=rowsupport[first:first+16,:count];reg=Cs[inds[:,:,None],inds[:,None,:]]+ridge*torch.eye(count,dtype=torch.float64)[None];rr=B[inds,torch.arange(first,first+len(inds))[:,None]];coef=torch.linalg.s"
+   ],
+   [
+    "experiments/derive_g3r_shared_source_v2.py",
+    47,
+    "reg=C.clone();reg.diagonal().add_(ridge*C.diagonal().clamp_min(1e-8));coef=torch.linalg.solve(reg,cross);intercept=my-mu@coef;P=fixedP.clone();P[:,donors]+=coef.T.float();b=(oldb+intercept).float()"
+   ],
+   [
+    "experiments/derive_k_equals_gate_v1.py",
+    21,
+    "ridge=float(M.trace()/768)*1e-5;w=torch.linalg.solve(M+ridge*torch.eye(768,dtype=torch.float64),pm-center);w/=float((pm-mean)@w);b=-float(mean@w);pv=positive@w+b;nv=negative@w+b"
+   ],
+   [
+    "experiments/derive_k_stage_gates_v1.py",
+    16,
+    "inv=torch.linalg.solve(M,D.T);decoder=inv@torch.linalg.pinv(D@inv,hermitian=True,rtol=1e-11)@Y"
+   ],
+   [
+    "experiments/derive_k_stage_gates_v1.py",
+    16,
+    "inv=torch.linalg.solve(M,D.T);decoder=inv@torch.linalg.pinv(D@inv,hermitian=True,rtol=1e-11)@Y"
+   ],
+   [
+    "experiments/derive_o_robust_off_v2.py",
+    39,
+    "M=Cp+10*Ct+mass*Ch;M.diagonal().add_(float(M.trace()/len(M))*1e-5);v=torch.linalg.solve(M,mean);v/=mean@v;direction=N@v"
+   ],
+   [
+    "experiments/derive_o_whole_fisher_v1.py",
+    28,
+    "ridge=float(M.trace()/768)*1e-5;w=torch.linalg.solve(M+ridge*torch.eye(768,dtype=torch.float64),pm-center);w/=float((pm-mean)@w);b=-float(mean@w);pv=positive@w+b;nv=negative@w+b"
+   ],
+   [
+    "experiments/g3r_recenter_geometry_v2.py",
+    22,
+    "center=z-di*(rows.T@torch.linalg.solve(small,bb+rows@z))"
+   ]
+  ],
+  "uses of sums/answers": [
+   [
+    "experiments/analyze_a5_off_and_readout.py",
+    1,
+    "\"\"\"Build format-off and frozen-unembedding geometry; no arithmetic-answer fit.\"\"\""
+   ],
+   [
+    "experiments/analyze_i1_column_logic_v1.py",
+    3,
+    "No answer regression: the only solve calibrates the common syntax flag."
+   ],
+   [
+    "experiments/analyze_o_readout_piece_v1.py",
+    5,
+    "No model labels or whole-answer solve is used."
+   ],
+   [
+    "experiments/analyze_o_source_readouts_v2.py",
+    4,
+    "labels. No sum, complete answer, or whole-problem target appears here."
+   ],
+   [
+    "experiments/capture_k_formats_v1.py",
+    1,
+    "\"\"\"Independent G3 syntax captures, never using arithmetic-answer labels.\"\"\""
+   ],
+   [
+    "experiments/circuit_restore_v5.py",
+    7,
+    "No arithmetic answers, model losses, gradients or weight-fitting loops enter."
+   ],
+   [
+    "experiments/combine_k_stage_gates_v3.py",
+    5,
+    "directly, without an optimization loop or any arithmetic-answer targets."
+   ],
+   [
+    "experiments/compile_a_frontend_v3.py",
+    3,
+    "No answer labels are used. The source digit readout interpolates individual"
+   ],
+   [
+    "experiments/compile_b_output_v2.py",
+    4,
+    "units(s)=s mod 10 and tens(s)=floor(s/10). No whole-problem answers enter any"
+   ],
+   [
+    "experiments/compile_c_marker_v1.py",
+    3,
+    "The only detector labels are syntactic format. No arithmetic answers are used."
+   ],
+   [
+    "experiments/compile_d_digit_frontend_v1.py",
+    4,
+    "covariance. There are no sums, answer labels, or transformer execution."
+   ],
+   [
+    "experiments/compile_d_digit_frontend_v1.py",
+    91,
+    "save(out,sd,changed,sources=sources,inputs=[base,ROOT/'host/ckpt.pt',ROOT/'artifacts/c1_marker_format_a.pt',ROOT/'artifacts/c1_marker_format_b.pt',ROOT/'artifacts/c1_marker_calib.pt',ROOT/'artifacts/c"
+   ],
+   [
+    "experiments/compile_i_scalar_frontend_v1.py",
+    30,
+    "save(out,host,changed,sources=[ROOT/s for s in bm['sources']]+[Path(__file__),ROOT/'experiments/analyze_i_scalar_geometry_v1.py'],inputs=[base,base.parent/'circuit.pt',ROOT/'artifacts/c1_marker_calib."
+   ],
+   [
+    "experiments/compile_j_scalar_carry_v1.py",
+    4,
+    "No whole-problem answers or model outputs enter a solve. Text restoration is a"
+   ],
+   [
+    "experiments/compile_k_frontend_v2.py",
+    4,
+    "covariance. There are no sums, answer labels, or transformer execution."
+   ],
+   [
+    "experiments/compile_k_frontend_v2.py",
+    96,
+    "save(out,sd,changed,sources=sources,inputs=[base,ROOT/'host/ckpt.pt',ROOT/'artifacts/k1_marker_format_a.pt',ROOT/'artifacts/k1_marker_format_b.pt',ROOT/'artifacts/k1_marker_calib.pt',ROOT/'artifacts/k"
+   ],
+   [
+    "experiments/compile_k_marker_v1.py",
+    3,
+    "The only detector labels are syntactic format. No arithmetic answers are used."
+   ],
+   [
+    "experiments/compile_k_tens_carry_v1.py",
+    17,
+    "out=ROOT/a.output;out.parent.mkdir(parents=True,exist_ok=True);torch.save(aux,out.parent/'circuit.pt');save(out,host,changed,sources=[ROOT/s for s in bm['sources']]+[Path(__file__),ROOT/'experiments/c"
+   ],
+   [
+    "experiments/compile_o_counter_amplifier_v2.py",
+    4,
+    "The two hundreds flags mean >=9 and >=10, never a whole-problem answer."
+   ],
+   [
+    "experiments/compile_o_counter_amplifier_v2.py",
+    39,
+    "changed.update(new);out=ROOT/a.output;out.parent.mkdir(parents=True,exist_ok=True);torch.save({'previous':old,'frame':frame,'scalars':frame[:,:7],'fields':['hundreds_centered','tens_centered','units_c"
+   ],
+   [
+    "experiments/compile_o_counter_markers_v2.py",
+    5,
+    "point, and four numeric fields. No carry or arithmetic answer fit is used."
+   ],
+   [
+    "experiments/compile_o_format_payload_v1.py",
+    5,
+    "no carry, answer fitting, or transformer execution occurs in this builder."
+   ],
+   [
+    "experiments/compile_o_relative_reader_v3.py",
+    6,
+    "native capacity. No answer labels or transformer execution occur here."
+   ],
+   [
+    "experiments/derive_full_calib_gates_v1.py",
+    4,
+    "cartesian output-prefix digits are independent of arithmetic answers."
+   ],
+   [
+    "experiments/derive_full_calib_gates_v2.py",
+    4,
+    "cartesian output-prefix digits are independent of arithmetic answers."
+   ],
+   [
+    "experiments/derive_g2_gates_v1.py",
+    5,
+    "list. Targets are syntax/stage only; no arithmetic answers are read or fitted."
+   ],
+   [
+    "experiments/derive_g3r_shared_source_v2.py",
+    4,
+    "never answers. Ten old phase rows remain; only their duplicated common write"
+   ],
+   [
+    "experiments/derive_g3r_union_gate_v1.py",
+    43,
+    "report={'trials':records,'chosen':best['report'] if best else None,'word_masses':[.001,.01,.1,1,10],'source':'Approximate native1 reconstruction from recorded host0GELUs and oneattention1; MUSTvalidat"
+   ],
+   [
+    "experiments/derive_g3r_wide_source_v1.py",
+    5,
+    "The native lower threshold is unchanged. No answer labels enter the gate."
+   ],
+   [
+    "experiments/derive_o_whole_fisher_v1.py",
+    6,
+    "calibration corpus. No arithmetic answers or iterative weight fitting occur."
+   ],
+   [
+    "experiments/g3r_recenter_geometry_v2.py",
+    7,
+    "only weight values and mean recorded inputs, not any output/answer objective."
+   ]
+  ],
+  "layer computations on recorded activations": [
+   [
+    "experiments/analyze_i1_column_logic_v1.py",
+    32,
+    "act=torch.nn.functional.gelu(torch.nn.functional.linear(forms.float(),rows[:,:768].float(),rows[:,768].float()));emitted=act.double().reshape(-1,len(rows))@cols.T"
+   ],
+   [
+    "experiments/analyze_i1_column_logic_v1.py",
+    33,
+    "pa=torch.nn.functional.gelu(torch.nn.functional.linear(forms.float(),phase_rows[:,:768].float(),phase_rows[:,768].float())).reshape(-1,4,2);ph=(pa[:,:,0]-pa[:,:,1])/16;pmask=torch.eye(4,dtype=torch.bo"
+   ],
+   [
+    "experiments/analyze_i_scalar_geometry_v1.py",
+    20,
+    "fc=edited['transformer.h.1.mlp.c_fc.weight'];bias=edited['transformer.h.1.mlp.c_fc.bias'];act=b['captures']['1.gelu'].clone();act[...,c['neurons1']]=torch.nn.functional.gelu(torch.nn.functional.linear"
+   ],
+   [
+    "experiments/analyze_i_scalar_geometry_v1.py",
+    20,
+    "fc=edited['transformer.h.1.mlp.c_fc.weight'];bias=edited['transformer.h.1.mlp.c_fc.bias'];act=b['captures']['1.gelu'].clone();act[...,c['neurons1']]=torch.nn.functional.gelu(torch.nn.functional.linear"
+   ],
+   [
+    "experiments/analyze_o_readout_piece_v1.py",
+    18,
+    "FC=parameter('transformer.h.5.mlp.c_fc.weight');fb=parameter('transformer.h.5.mlp.c_fc.bias');P=parameter('transformer.h.5.mlp.c_proj.weight');pb=parameter('transformer.h.5.mlp.c_proj.bias');acts=torc"
+   ],
+   [
+    "experiments/compile_a_frontend_v3.py",
+    84,
+    "gate_act=torch.nn.functional.gelu(gate_pre)"
+   ],
+   [
+    "experiments/compile_a_frontend_v3.py",
+    87,
+    "norm=torch.nn.functional.layer_norm(front_raw,(768,),sd['transformer.h.11.ln_1.weight'],sd['transformer.h.11.ln_1.bias'],1e-5).double()"
+   ],
+   [
+    "experiments/compile_d_digit_frontend_v1.py",
+    50,
+    "act=f['captures']['1.gelu'].clone();act[...,neurons]=torch.nn.functional.gelu(torch.nn.functional.linear(f['captures']['1.ln2'],fc[neurons],fcb[neurons]));r=f['captures']['1.raw']+torch.nn.functional."
+   ],
+   [
+    "experiments/compile_d_digit_frontend_v1.py",
+    51,
+    "return torch.nn.functional.layer_norm(r,(768,),g.float(),beta.float(),1e-5).double()"
+   ],
+   [
+    "experiments/compile_g3r_compact_output_v1.py",
+    19,
+    "calib=torch.load(ROOT/'artifacts/g3r_native_v1.pt',weights_only=True,mmap=True);native=torch.load(ROOT/'artifacts/host_calib512_raw34.pt',weights_only=True,mmap=True);assert torch.equal(calib['inputs'"
+   ],
+   [
+    "experiments/compile_g3r_compact_output_v1.py",
+    19,
+    "calib=torch.load(ROOT/'artifacts/g3r_native_v1.pt',weights_only=True,mmap=True);native=torch.load(ROOT/'artifacts/host_calib512_raw34.pt',weights_only=True,mmap=True);assert torch.equal(calib['inputs'"
+   ],
+   [
+    "experiments/compile_g3r_compact_output_v1.py",
+    23,
+    "d=torch.load(ROOT/'artifacts'/name,weights_only=True,mmap=True);pn=d['captures']['4.ln2'];orig=torch.nn.functional.gelu(torch.nn.functional.linear(pn,changed['transformer.h.4.mlp.c_fc.weight'][selecte"
+   ],
+   [
+    "experiments/compile_g3r_compact_output_v1.py",
+    23,
+    "d=torch.load(ROOT/'artifacts'/name,weights_only=True,mmap=True);pn=d['captures']['4.ln2'];orig=torch.nn.functional.gelu(torch.nn.functional.linear(pn,changed['transformer.h.4.mlp.c_fc.weight'][selecte"
+   ],
+   [
+    "experiments/compile_g3r_native2_center_v2.py",
+    26,
+    "nr=(native['captures'][f'{layer}.raw'] if layer in (2,4) else host34['captures']['3.raw'])[:64];ox=F.layer_norm(nr,(768,),gam,oldbeta,1e-5);nx=F.layer_norm(nr,(768,),gam,changed[pref+'.ln_2.bias'],1e-"
+   ],
+   [
+    "experiments/compile_g3r_native2_center_v2.py",
+    26,
+    "nr=(native['captures'][f'{layer}.raw'] if layer in (2,4) else host34['captures']['3.raw'])[:64];ox=F.layer_norm(nr,(768,),gam,oldbeta,1e-5);nx=F.layer_norm(nr,(768,),gam,changed[pref+'.ln_2.bias'],1e-"
+   ],
+   [
+    "experiments/compile_g3r_native2_center_v2.py",
+    26,
+    "nr=(native['captures'][f'{layer}.raw'] if layer in (2,4) else host34['captures']['3.raw'])[:64];ox=F.layer_norm(nr,(768,),gam,oldbeta,1e-5);nx=F.layer_norm(nr,(768,),gam,changed[pref+'.ln_2.bias'],1e-"
+   ],
+   [
+    "experiments/compile_g3r_native2_center_v2.py",
+    26,
+    "nr=(native['captures'][f'{layer}.raw'] if layer in (2,4) else host34['captures']['3.raw'])[:64];ox=F.layer_norm(nr,(768,),gam,oldbeta,1e-5);nx=F.layer_norm(nr,(768,),gam,changed[pref+'.ln_2.bias'],1e-"
+   ],
+   [
+    "experiments/compile_g3r_native2_center_v2.py",
+    30,
+    "x=F.layer_norm(raw,(768,),gam,changed[pref+'.ln_2.bias'],1e-5);posts=[]"
+   ],
+   [
+    "experiments/compile_g3r_native2_center_v2.py",
+    31,
+    "for rr,xx in zip(raw.split(64),x.split(64)):posts.append(rr+F.linear(F.gelu(F.linear(xx,W,changed[pref+'.mlp.c_fc.bias'])),P,pb))"
+   ],
+   [
+    "experiments/compile_j_scalar_carry_v1.py",
+    36,
+    "activation=torch.nn.functional.gelu(torch.nn.functional.linear(forms.float(),rows[:,:768].float(),rows[:,768].float())).reshape(-1,len(rows));emitted=activation.double()@columns.T@frame/a.scalar_gain;"
+   ],
+   [
+    "experiments/compile_k_frontend_v2.py",
+    50,
+    "act=f['captures']['1.gelu'].clone();act[...,neurons]=torch.nn.functional.gelu(torch.nn.functional.linear(f['captures']['1.ln2'],fc[neurons],fcb[neurons]));r=f['captures']['1.raw']+torch.nn.functional."
+   ],
+   [
+    "experiments/compile_k_frontend_v2.py",
+    51,
+    "return torch.nn.functional.layer_norm(r,(768,),g.float(),beta.float(),1e-5).double()"
+   ],
+   [
+    "experiments/compile_k_scalar_carry_v2.py",
+    34,
+    "tokens=torch.cat((fa['inputs'],fb['inputs']));tok=Tokenizer();dm={tok.encode(str(d))[0]:d for d in range(10)}|{tok.encode(' '+str(d))[0]:d for d in range(10)};truth=torch.tensor([[dm[int(x[j])]+dm[int"
+   ],
+   [
+    "experiments/compile_o_counter_amplifier_v2.py",
+    35,
+    "rows=torch.stack(rows);coefficients=torch.stack(coefficients,1);assert len(rows)==13;maximum=float(rows.abs().max());assert maximum<=1e6,maximum;text_pre=torch.nn.functional.linear(T[:,:768].float(),r"
+   ],
+   [
+    "experiments/compile_o_counter_markers_v2.py",
+    28,
+    "rows=torch.stack(rows);coefficients=torch.stack(coefficients,1);assert len(rows)==14;pre=T@rows.T;assert pre.max()<-8,float(pre.max());actual=torch.nn.functional.gelu(torch.nn.functional.linear(X[:,:,"
+   ],
+   [
+    "experiments/compile_o_format_payload_v1.py",
+    24,
+    "rows=torch.stack(rows);emissions=torch.stack(emissions,1);assert len(rows)==7;negative_pre=N@rows.T;assert negative_pre.max()<-8,float(negative_pre.max());acts=torch.nn.functional.gelu(torch.nn.functi"
+   ],
+   [
+    "experiments/compile_o_output_v2.py",
+    53,
+    "pre=torch.nn.functional.linear(P[:,:768].float(),rows[:,:768].float(),rows[:,768].float());acts=torch.nn.functional.gelu(pre);actual=(acts.double()@numeric.T).reshape(1024,5,2);v=X@S;cu=(X@U/(X@common"
+   ],
+   [
+    "experiments/compile_o_phases_carries_v1.py",
+    38,
+    "rows=torch.stack(rows);coeff=torch.stack(coeff,1);cancel=torch.stack(cancel,1);assert len(rows)==25;maximum=float(rows.abs().max());assert maximum<=1e6,maximum;tp=torch.nn.functional.linear(T[:,:768]."
+   ],
+   [
+    "experiments/compile_o_position_counter_v3.py",
+    27,
+    "marked=scores[:,stage,7:8+stage];unmarked=scores[:,stage,:7].max(1).values;minimum=min(minimum,float((marked.min(1).values-torch.maximum(unmarked,wordmax[:,stage])).min()));span=max(span,float((marked"
+   ],
+   [
+    "experiments/compile_o_robust_gates_v1.py",
+    18,
+    "def activation(X,rows):return torch.nn.functional.gelu(torch.nn.functional.linear(X[:,:768].float(),rows[:,:768].float(),rows[:,768].float())).double()"
+   ],
+   [
+    "experiments/compile_o_token_writer_v2.py",
+    55,
+    "x=data['captures']['0.ln2'];actual=torch.nn.functional.gelu(torch.nn.functional.linear(x,rows[:,:768].float(),rows[:,768].float()))@coefficients.T.float();expected=torch.zeros_like(actual);positions=t"
+   ],
+   [
+    "experiments/derive_g3r_native2_v1.py",
+    14,
+    "acts=cap['captures']['2.gelu'].reshape(-1,3072).double().clone();raw=cap['captures']['2.raw'];norm=F.layer_norm(raw,(768,),host['transformer.h.2.ln_2.weight'],host['transformer.h.2.ln_2.bias'],1e-5);a"
+   ],
+   [
+    "experiments/derive_g3r_native2_v1.py",
+    14,
+    "acts=cap['captures']['2.gelu'].reshape(-1,3072).double().clone();raw=cap['captures']['2.raw'];norm=F.layer_norm(raw,(768,),host['transformer.h.2.ln_2.weight'],host['transformer.h.2.ln_2.bias'],1e-5);a"
+   ],
+   [
+    "experiments/derive_g3r_native4_v1.py",
+    17,
+    "x=F.layer_norm(r,(768,),sd[p+'.ln_2.weight'],sd[p+'.ln_2.bias'],1e-5);pre=F.linear(x,sd[p+'.mlp.c_fc.weight'],sd[p+'.mlp.c_fc.bias']);maxpre=max(maxpre,float(pre[:,:,sel].max()));parts.append(F.gelu(p"
+   ],
+   [
+    "experiments/derive_g3r_native4_v1.py",
+    17,
+    "x=F.layer_norm(r,(768,),sd[p+'.ln_2.weight'],sd[p+'.ln_2.bias'],1e-5);pre=F.linear(x,sd[p+'.mlp.c_fc.weight'],sd[p+'.mlp.c_fc.bias']);maxpre=max(maxpre,float(pre[:,:,sel].max()));parts.append(F.gelu(p"
+   ],
+   [
+    "experiments/derive_g3r_shared_source_v2.py",
+    16,
+    "c1=torch.load(ROOT/'experiments/k1_marker/circuit.pt',weights_only=True);c2=torch.load(ROOT/'experiments/k2b_frontend/circuit.pt',weights_only=True);c3=torch.load(ROOT/'experiments/k3b_scalar/circuit."
+   ],
+   [
+    "experiments/derive_g3r_shared_source_v2.py",
+    16,
+    "c1=torch.load(ROOT/'experiments/k1_marker/circuit.pt',weights_only=True);c2=torch.load(ROOT/'experiments/k2b_frontend/circuit.pt',weights_only=True);c3=torch.load(ROOT/'experiments/k3b_scalar/circuit."
+   ],
+   [
+    "experiments/derive_g3r_shared_source_v2.py",
+    16,
+    "c1=torch.load(ROOT/'experiments/k1_marker/circuit.pt',weights_only=True);c2=torch.load(ROOT/'experiments/k2b_frontend/circuit.pt',weights_only=True);c3=torch.load(ROOT/'experiments/k3b_scalar/circuit."
+   ],
+   [
+    "experiments/derive_g3r_shared_source_v2.py",
+    16,
+    "c1=torch.load(ROOT/'experiments/k1_marker/circuit.pt',weights_only=True);c2=torch.load(ROOT/'experiments/k2b_frontend/circuit.pt',weights_only=True);c3=torch.load(ROOT/'experiments/k3b_scalar/circuit."
+   ],
+   [
+    "experiments/derive_g3r_shared_source_v2.py",
+    36,
+    "x=F.layer_norm(rr,(768,),host['transformer.h.2.ln_1.weight'],host['transformer.h.2.ln_1.bias'],1e-5);B,T,_=x.shape;q,k,v=F.linear(x,sd['transformer.h.2.attn.c_attn.weight'],sd['transformer.h.2.attn.c_"
+   ],
+   [
+    "experiments/derive_g3r_shared_source_v2.py",
+    36,
+    "x=F.layer_norm(rr,(768,),host['transformer.h.2.ln_1.weight'],host['transformer.h.2.ln_1.bias'],1e-5);B,T,_=x.shape;q,k,v=F.linear(x,sd['transformer.h.2.attn.c_attn.weight'],sd['transformer.h.2.attn.c_"
+   ],
+   [
+    "experiments/derive_g3r_shared_source_v2.py",
+    38,
+    "value=F.scaled_dot_product_attention(q,k,v,is_causal=True,dropout_p=0).transpose(1,2).contiguous().view(B,T,768);raws.append(rr+F.linear(value,sd['transformer.h.2.attn.c_proj.weight'],sd['transformer."
+   ],
+   [
+    "experiments/derive_g3r_shared_source_v2.py",
+    39,
+    "raw=torch.cat(raws)[:,7:12];x=F.layer_norm(raw,(768,),host['transformer.h.2.ln_2.weight'],sd['transformer.h.2.ln_2.bias'],1e-5);hand=F.gelu(F.linear(x,sd['transformer.h.2.mlp.c_fc.weight'][s2],sd['tra"
+   ],
+   [
+    "experiments/derive_g3r_shared_source_v2.py",
+    39,
+    "raw=torch.cat(raws)[:,7:12];x=F.layer_norm(raw,(768,),host['transformer.h.2.ln_2.weight'],sd['transformer.h.2.ln_2.bias'],1e-5);hand=F.gelu(F.linear(x,sd['transformer.h.2.mlp.c_fc.weight'][s2],sd['tra"
+   ],
+   [
+    "experiments/derive_g3r_trim4_v1.py",
+    14,
+    "x=F.layer_norm(raw,(768,),sd[p+'.ln_2.weight'],sd[p+'.ln_2.bias'],1e-5);parts.append(F.gelu(F.linear(x,sd[p+'.mlp.c_fc.weight'],sd[p+'.mlp.c_fc.bias'])))"
+   ],
+   [
+    "experiments/derive_g3r_trim4_v1.py",
+    14,
+    "x=F.layer_norm(raw,(768,),sd[p+'.ln_2.weight'],sd[p+'.ln_2.bias'],1e-5);parts.append(F.gelu(F.linear(x,sd[p+'.mlp.c_fc.weight'],sd[p+'.mlp.c_fc.bias'])))"
+   ],
+   [
+    "experiments/derive_g3r_union_gate_v1.py",
+    25,
+    "x=F.layer_norm(raw,(768,),host['transformer.h.1.ln_1.weight'],host['transformer.h.1.ln_1.bias'],1e-5);B,T,_=x.shape;q,k,v=F.linear(x,sd['transformer.h.1.attn.c_attn.weight'],sd['transformer.h.1.attn.c"
+   ],
+   [
+    "experiments/derive_g3r_union_gate_v1.py",
+    25,
+    "x=F.layer_norm(raw,(768,),host['transformer.h.1.ln_1.weight'],host['transformer.h.1.ln_1.bias'],1e-5);B,T,_=x.shape;q,k,v=F.linear(x,sd['transformer.h.1.attn.c_attn.weight'],sd['transformer.h.1.attn.c"
+   ],
+   [
+    "experiments/derive_g3r_union_gate_v1.py",
+    26,
+    "native=torch.cat(native);gam=host['transformer.h.1.ln_2.weight'];beta=host['transformer.h.1.ln_2.bias'];nx=F.layer_norm(native,(768,),gam,beta,1e-5).reshape(-1,768).double();px=F.layer_norm(pg['captur"
+   ],
+   [
+    "experiments/derive_g3r_union_gate_v1.py",
+    26,
+    "native=torch.cat(native);gam=host['transformer.h.1.ln_2.weight'];beta=host['transformer.h.1.ln_2.bias'];nx=F.layer_norm(native,(768,),gam,beta,1e-5).reshape(-1,768).double();px=F.layer_norm(pg['captur"
+   ],
+   [
+    "experiments/derive_g3r_union_gate_v1.py",
+    40,
+    "lo=negative+gap/3;hi=negative+2*gap/3;sharp=48/gap;rows=torch.stack((sharp*row,sharp*row));rows[0,-1]-=sharp*lo;rows[1,-1]-=sharp*hi;act=F.gelu(F.linear(px.float(),rows[:,:768].float(),rows[:,768].flo"
+   ],
+   [
+    "experiments/derive_g3r_wide_source_v1.py",
+    14,
+    "c=torch.load(ROOT/'experiments/k2b_frontend/circuit.pt',weights_only=True);old=torch.load(ROOT/'artifacts/g3r_union_gate_v1.pt',weights_only=True)['chosen'];sel=torch.load(ROOT/'artifacts/g3r_shared_s"
+   ],
+   [
+    "experiments/derive_g3r_wide_source_v1.py",
+    14,
+    "c=torch.load(ROOT/'experiments/k2b_frontend/circuit.pt',weights_only=True);old=torch.load(ROOT/'artifacts/g3r_union_gate_v1.pt',weights_only=True)['chosen'];sel=torch.load(ROOT/'artifacts/g3r_shared_s"
+   ],
+   [
+    "experiments/derive_g3r_wide_source_v1.py",
+    16,
+    "hi=positive_min-fraction*gap;T=8/(fraction*gap);den=T*(hi-lo);rows=torch.stack((T*row,T*row));rows[0,-1]-=T*lo;rows[1,-1]-=T*hi;columns=torch.stack((c['carrier']*c['common']/den,-c['carrier']*c['commo"
+   ],
+   [
+    "experiments/derive_g3r_wide_source_v1.py",
+    16,
+    "hi=positive_min-fraction*gap;T=8/(fraction*gap);den=T*(hi-lo);rows=torch.stack((T*row,T*row));rows[0,-1]-=T*lo;rows[1,-1]-=T*hi;columns=torch.stack((c['carrier']*c['common']/den,-c['carrier']*c['commo"
+   ],
+   [
+    "experiments/derive_o_robust_off_v2.py",
+    20,
+    "return torch.nn.functional.linear(torch.nn.functional.gelu(torch.nn.functional.linear(data['captures'][f'{layer}.ln2'],params['c_fc.weight'][chosen],params['c_fc.bias'][chosen])),params['c_proj.weight"
+   ],
+   [
+    "experiments/g3r_recenter_geometry_v2.py",
+    13,
+    "prefix=f'transformer.h.{layer}';W=changed.get(prefix+'.mlp.c_fc.weight',host[prefix+'.mlp.c_fc.weight']);bias=changed.get(prefix+'.mlp.c_fc.bias',host[prefix+'.mlp.c_fc.bias']);gamma=changed.get(prefi"
+   ],
+   [
+    "experiments/g3r_recenter_geometry_v2.py",
+    24,
+    "newx=F.layer_norm(raw,(768,),gamma,newbeta,1e-5);oldpre=F.linear(x,W[selected],bias[selected]);newpre=F.linear(newx,W[selected],newbias[selected])"
+   ],
+   [
+    "experiments/n_token_states_v1.py",
+    18,
+    "acts=data['captures']['0.gelu'].clone();acts[...,selected]=torch.nn.functional.gelu(torch.nn.functional.linear(data['captures']['0.ln2'],state['c_fc.weight'][selected],state['c_fc.bias'][selected]))"
+   ],
+   [
+    "experiments/n_token_states_v1.py",
+    20,
+    "norm=torch.nn.functional.layer_norm(raw,(768,),host['transformer.h.1.ln_1.weight'],host['transformer.h.1.ln_1.bias'],1e-5)"
+   ],
+   [
+    "experiments/o_payload_states_v2.py",
+    7,
+    "rows=aux['program_rows'].float();acts=torch.nn.functional.gelu(torch.nn.functional.linear(data['captures']['1.ln2'],rows[:,:768],rows[:,768]));difference=aux['gains'].clone();difference[0]-=1048576.;d"
+   ],
+   [
+    "experiments/o_payload_states_v2.py",
+    7,
+    "rows=aux['program_rows'].float();acts=torch.nn.functional.gelu(torch.nn.functional.linear(data['captures']['1.ln2'],rows[:,:768],rows[:,768]));difference=aux['gains'].clone();difference[0]-=1048576.;d"
+   ],
+   [
+    "experiments/recorded_mlp_piece_v1.py",
+    14,
+    "key=f'transformer.h.{layer}.mlp.c_fc.weight';selected=torch.unique(delta['updates'][key]['indices'].long()//768);acts=data['captures'][f'{layer}.gelu'].clone();acts[...,selected]=torch.nn.functional.g"
+   ],
+   [
+    "experiments/recorded_mlp_piece_v1.py",
+    14,
+    "key=f'transformer.h.{layer}.mlp.c_fc.weight';selected=torch.unique(delta['updates'][key]['indices'].long()//768);acts=data['captures'][f'{layer}.gelu'].clone();acts[...,selected]=torch.nn.functional.g"
+   ]
+  ]
+ }
+}

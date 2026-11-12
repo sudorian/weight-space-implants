@@ -1,0 +1,654 @@
+{
+  "created_utc": "2026-11-09T23:09:23.738148+00:00",
+  "delta_sha256": "a11d763224d11a40d416030a44ad735afd3fb4f61ae873d42acb55002bf20399",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/analyze_format_invariants_v1.py": "25cf926c623f3d81291ba66ab100a8465bcbbdb2bcebbca019613d3763becd2c",
+    "experiments/analyze_initial_format_v1.py": "449ef59ff7f7495b0585b941b97c3059d48a5f29c190a6d3e255c45a86a655ab",
+    "experiments/analyze_readout_v1.py": "a7de3ad642e39dafd4a95b5b9df2e3cfd71d5fae91e42dc86250d170e292d468",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a2_reader_v7.py": "ed3910832028a5380c9f1cc338030066dd9af2aae480076947740929d994e49c",
+    "experiments/compile_a3_registers_v4.py": "edf6090cb19334981c614ed98a97ed2ee52b5b589261522065fdba80d72ad9c1",
+    "experiments/compile_a4_reader_v2.py": "0fb3e7c53c6dc47abe3baaa673863db9f645f1007fcc2be88b7902508dbbb957",
+    "experiments/compile_a5_registers_v1.py": "94ad2587f6fca63fa48c5775424d0e3fa3fc293a3b5557ef4fc5083103bf2904",
+    "experiments/compile_a6_carry_units_v1.py": "9129577166608070d76e8ddfc8a0a0be90cf75a80f510daa63adaea2f67806a0",
+    "experiments/compile_a7_carry_step_v1.py": "35b30f239674bc81aeabab66a10b40654db9306161c1ae4004bc9e5c730bf0d9",
+    "experiments/compile_a8_bit_scale_v1.py": "1fcf5328cbafc02102ed1e4f8b092481468f8e00ee8df9d058ec72df3f32c09c",
+    "experiments/compile_a9_copy_reader_v2.py": "132396db4b4d639876f6dac29d9f19a1a6c5dfe8e1fde12c1692a5884322560b",
+    "experiments/compile_a9_native_source_projection_v1.py": "47987b8fea444d462be8f0ca887a67fa0e2aa865efb8453c1ade2fa640b947d5",
+    "experiments/derive_a9_copy_inputs_v2.py": "d539baf3fc7c68186ea4aeb3b5158d9e0035cdb3bc6fbf0a0a822d2d1e73a619",
+    "experiments/derive_a_absolute_values_v2.py": "2b4c8d8dd0f505b0361161df0ae66c2f0a391d1ead71db9c1c7d2c1abb612075",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_key_equalizer_v1.py": "66faa519aceee9aeeaf349690cf4aa3c5345c211938d898a2a8eb89058558ce5",
+    "experiments/derive_a_reader3_geometry_v3.py": "215dd62048c19536188be5e0f186fa634f6d0ff1763e9e7e95814315a396912c",
+    "experiments/derive_a_reader3_inputs_v1.py": "823cbfb2596fa10555eef3cf6f12d8938bd828bee9490fcb63f506371aa7d420",
+    "experiments/derive_a_reader_geometry_v3.py": "4f77317348e4e0c652e62318b801c1062c0aeea19af04ced46bf3edb9d7cc455",
+    "experiments/derive_a_reader_geometry_v4.py": "1f9a4fc60502330bc707f27a74311b581b34c22dbac33bfd0942385a5e193230",
+    "experiments/derive_a_reader_geometry_v5.py": "a4ca952ab25e26b7d61333453c61cc0496165ba6798b9b918e1d09c5eeb58100",
+    "experiments/derive_a_reader_geometry_v6.py": "9869ff720a47108e7172c37ec543c9e4cc3aba7afab1649156323a74ef72e74e",
+    "experiments/derive_a_source_scalar_options_v1.py": "f51b580a3b81933a96aa6f158e97b4b2c40fa343d4b209460f62282289dedb77"
+  },
+  "inputs": {
+    "experiments/a9v2_copy/delta.pt": "0f5082776023fb912e9d0ed5eb5c7b0f3bb0376aeba0d84e07f0a6f8f2a77bcb",
+    "experiments/a9v2_copy/delta.manifest.json": "6202c607f7a4d2d8d536d28ce5faacb1951c8379c435f301b16734fb0409d9a3",
+    "experiments/a9v2_copy/circuit.pt": "64819e9253a2a2af5c5048b356a0504aea70b2b9806b187d4ffb5172b45ab38f",
+    "artifacts/a8v2_syntax_a.pt": "ce2819afe377001367b2a226ead0442a7b773c0cff998fecf2a3f343fcab65dd",
+    "artifacts/a8v2_syntax_stress.pt": "82e29147297f01836e59afe0abacb45e9afa5694b0a998d892678a315e6a0b94",
+    "artifacts/a8v2_calib256.pt": "d3cec3f48f203fea50662577e0e0de303fa2af8f925defecf998d3345dcc503f"
+  },
+  "arguments": {
+    "output": "experiments/a9v3_copy/delta.pt"
+  },
+  "description": "Quiet the native value response to the large marked source-state subspace.\n\nFive PCA ranks [1,2,4,8,16]. A covariance-metric projection annihilates those\nformat directions in retained native value rows, preserving all five explicit\nregister-copy rows exactly. No operand/answer labels or iterative fitting.\n",
+  "changed_scalars": 3525103,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.q_norm.weight": 255,
+    "model.layers.2.self_attn.k_norm.weight": 255,
+    "model.layers.2.self_attn.q_proj.weight": 21376,
+    "model.layers.2.self_attn.k_proj.weight": 1280,
+    "model.layers.2.self_attn.v_proj.weight": 163840,
+    "model.layers.2.self_attn.o_proj.weight": 655360,
+    "model.layers.2.mlp.gate_proj.weight": 3200,
+    "model.layers.2.mlp.up_proj.weight": 3200,
+    "model.layers.2.mlp.down_proj.weight": 337003,
+    "model.layers.2.post_feedforward_layernorm.weight": 640,
+    "model.layers.3.self_attn.q_norm.weight": 256,
+    "model.layers.3.self_attn.k_norm.weight": 255,
+    "model.layers.3.self_attn.q_proj.weight": 21376,
+    "model.layers.3.self_attn.k_proj.weight": 1280,
+    "model.layers.3.self_attn.v_proj.weight": 163840,
+    "model.layers.3.self_attn.o_proj.weight": 655360,
+    "model.layers.3.mlp.gate_proj.weight": 2560,
+    "model.layers.3.mlp.up_proj.weight": 2560,
+    "model.layers.3.mlp.down_proj.weight": 334835,
+    "model.layers.3.post_feedforward_layernorm.weight": 640,
+    "model.layers.4.mlp.gate_proj.weight": 5120,
+    "model.layers.4.mlp.up_proj.weight": 5120,
+    "model.layers.4.mlp.down_proj.weight": 92776,
+    "model.layers.4.post_feedforward_layernorm.weight": 635,
+    "model.layers.5.mlp.gate_proj.weight": 1280,
+    "model.layers.5.mlp.up_proj.weight": 1280,
+    "model.layers.5.mlp.down_proj.weight": 87036,
+    "model.layers.5.post_feedforward_layernorm.weight": 640,
+    "model.layers.6.mlp.gate_proj.weight": 1280,
+    "model.layers.6.mlp.up_proj.weight": 1280,
+    "model.layers.6.mlp.down_proj.weight": 87036,
+    "model.layers.6.post_feedforward_layernorm.weight": 640,
+    "model.layers.7.self_attn.q_norm.weight": 255,
+    "model.layers.7.self_attn.k_norm.weight": 251,
+    "model.layers.7.self_attn.q_proj.weight": 5120,
+    "model.layers.7.self_attn.k_proj.weight": 1280,
+    "model.layers.7.self_attn.v_proj.weight": 163840,
+    "model.layers.7.self_attn.o_proj.weight": 655360,
+    "model.layers.7.post_attention_layernorm.weight": 640
+  },
+  "max_abs_edited_value": 999999.0,
+  "categories": {
+    "model.layers.3.self_attn.q_norm.weight": {
+      "circuit_and_native_accommodation": 256
+    },
+    "model.layers.3.self_attn.k_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.3.self_attn.q_proj.weight": {
+      "circuit_and_native_accommodation": 21376
+    },
+    "model.layers.3.self_attn.k_proj.weight": {
+      "circuit_and_native_accommodation": 1280
+    },
+    "model.layers.3.self_attn.v_proj.weight": {
+      "circuit_and_native_accommodation": 163840
+    },
+    "model.layers.3.self_attn.o_proj.weight": {
+      "circuit_and_native_accommodation": 655360
+    },
+    "model.layers.3.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 2560
+    },
+    "model.layers.3.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 2560
+    },
+    "model.layers.3.mlp.down_proj.weight": {
+      "text_repair": 325631,
+      "circuit_and_accommodation": 9204
+    },
+    "model.layers.3.post_feedforward_layernorm.weight": {
+      "text_repair": 637,
+      "circuit_and_accommodation": 3
+    },
+    "model.layers.4.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.4.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.4.mlp.down_proj.weight": {
+      "text_repair": 81408,
+      "circuit_and_accommodation": 11368
+    },
+    "model.layers.4.post_feedforward_layernorm.weight": {
+      "text_repair": 632,
+      "circuit_and_accommodation": 3
+    },
+    "model.layers.5.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.5.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.5.mlp.down_proj.weight": {
+      "text_repair": 81536,
+      "circuit_and_accommodation": 5500
+    },
+    "model.layers.5.post_feedforward_layernorm.weight": {
+      "text_repair": 638,
+      "circuit_and_accommodation": 2
+    },
+    "model.layers.6.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.6.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.6.mlp.down_proj.weight": {
+      "text_repair": 81536,
+      "circuit_and_accommodation": 5500
+    },
+    "model.layers.6.post_feedforward_layernorm.weight": {
+      "text_repair": 638,
+      "circuit_and_accommodation": 2
+    },
+    "model.layers.7.self_attn.q_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.7.self_attn.k_norm.weight": {
+      "circuit_and_native_accommodation": 251
+    },
+    "model.layers.7.self_attn.q_proj.weight": {
+      "circuit_and_native_accommodation": 5120
+    },
+    "model.layers.7.self_attn.k_proj.weight": {
+      "circuit_and_native_accommodation": 1280
+    },
+    "model.layers.7.self_attn.v_proj.weight": {
+      "circuit_and_native_accommodation": 163840
+    },
+    "model.layers.7.self_attn.o_proj.weight": {
+      "circuit_and_native_accommodation": 655360
+    },
+    "model.layers.7.post_attention_layernorm.weight": {
+      "circuit_and_native_accommodation": 640
+    }
+  },
+  "extra": {
+    "layer": 7,
+    "reference_head": 0,
+    "clock_head": null,
+    "pairs": [
+      87
+    ],
+    "field_coordinates": [
+      630,
+      172,
+      574,
+      442,
+      476
+    ],
+    "field_names": [
+      "Cref",
+      "units/9",
+      "tens/9",
+      "hundreds/9",
+      "thousands/9"
+    ],
+    "field_gamma": 10000.0,
+    "field_gamma_trials": [
+      100,
+      1000,
+      10000,
+      100000,
+      1000000
+    ],
+    "code_gain": 0.01,
+    "code_gain_trials": [
+      0.01,
+      0.1,
+      1,
+      10,
+      100
+    ],
+    "query_scale": 0.03,
+    "query_scale_trials": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1
+    ],
+    "key_scale": 1.0,
+    "key_scale_trials": [
+      0.1,
+      1,
+      10,
+      100,
+      1000
+    ],
+    "margin": 32.0,
+    "margin_trials": [
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "program_gamma": 1279.564939069984,
+    "routing_bound": [
+      {
+        "position": 8,
+        "minimum_program_gap": 1.4542882260757993e-05,
+        "maximum_native_disadvantage": -4.2693968886997435
+      },
+      {
+        "position": 9,
+        "minimum_program_gap": 0.00021896518466870288,
+        "maximum_native_disadvantage": 9.994050825566331
+      },
+      {
+        "position": 10,
+        "minimum_program_gap": 0.0001800769770705523,
+        "maximum_native_disadvantage": 10.796769224442498
+      },
+      {
+        "position": 11,
+        "minimum_program_gap": 0.0002152169091292189,
+        "maximum_native_disadvantage": 9.930376246781634
+      },
+      {
+        "position": 12,
+        "minimum_program_gap": 0.00016831766539288355,
+        "maximum_native_disadvantage": 9.75924324362241
+      }
+    ],
+    "source_data_coordinates": [
+      293,
+      26,
+      427,
+      23
+    ],
+    "source_scale": 50000.0,
+    "source_register_scales": [
+      50000.0,
+      50000.0,
+      50000.0,
+      1000000.0
+    ],
+    "old_program_coordinates": [
+      23,
+      26,
+      29,
+      113,
+      127,
+      152,
+      155,
+      181,
+      188,
+      234,
+      255,
+      293,
+      334,
+      353,
+      427,
+      467,
+      617
+    ],
+    "clock_formula": "No clock head: use current-position format functions at the following MLP",
+    "input_analysis": {
+      "query_trials": [
+        {
+          "format_covariance_mass": 0.0,
+          "train_min": 0.019021223443107,
+          "validation_min": -0.0881225972840699,
+          "train_max": 2.1159289704924564,
+          "validation_max": 2.3037654533077125,
+          "word_rms": 0.03894147661901891,
+          "max_abs_weight": 0.00751500402047734
+        },
+        {
+          "format_covariance_mass": 0.01,
+          "train_min": 0.6599178421161003,
+          "validation_min": 0.731459493079748,
+          "train_max": 1.1773769823698563,
+          "validation_max": 1.1863357645434354,
+          "word_rms": 0.03904346959482907,
+          "max_abs_weight": 0.007786238205252382
+        },
+        {
+          "format_covariance_mass": 0.1,
+          "train_min": 0.6854723035996906,
+          "validation_min": 0.771418228040968,
+          "train_max": 1.1318662504194745,
+          "validation_max": 1.1465702256655128,
+          "word_rms": 0.03957484079088842,
+          "max_abs_weight": 0.0068418925537742405
+        },
+        {
+          "format_covariance_mass": 1.0,
+          "train_min": 0.8043412717076303,
+          "validation_min": 0.8497730196664655,
+          "train_max": 1.085064586568044,
+          "validation_max": 1.1089167983013501,
+          "word_rms": 0.043550747419094295,
+          "max_abs_weight": 0.007937174380915199
+        },
+        {
+          "format_covariance_mass": 10.0,
+          "train_min": 0.933472783445827,
+          "validation_min": 0.9095514795320792,
+          "train_max": 1.0488987933277005,
+          "validation_max": 1.0754437791609925,
+          "word_rms": 0.05553738668286199,
+          "max_abs_weight": 0.012083484413002069
+        }
+      ],
+      "chosen_query": {
+        "format_covariance_mass": 0.01,
+        "train_min": 0.6599178421161003,
+        "validation_min": 0.731459493079748,
+        "train_max": 1.1773769823698563,
+        "validation_max": 1.1863357645434354,
+        "word_rms": 0.03904346959482907,
+        "max_abs_weight": 0.007786238205252382
+      },
+      "value_trials": [
+        {
+          "format_covariance_mass": 100.0,
+          "maximum_source_relative_correction": [
+            3.4772770629496393e-06,
+            2.965486849995992e-06,
+            6.344858017693969e-06,
+            3.1215728219735207e-06,
+            1.2011011064400908e-06
+          ],
+          "word_rms": [
+            0.015806242279945152,
+            0.025251970118154676,
+            0.033815861223123536,
+            0.028511578545948345,
+            0.009581244089197498
+          ],
+          "max_abs_weight": 0.045584045584045586
+        },
+        {
+          "format_covariance_mass": 10000.0,
+          "maximum_source_relative_correction": [
+            2.1506194829690035e-06,
+            1.6525259838203738e-06,
+            3.27965334771787e-06,
+            2.292435108905903e-06,
+            8.796389683441384e-07
+          ],
+          "word_rms": [
+            0.01583057852279195,
+            0.025273472973692597,
+            0.033844518291651984,
+            0.028518760169679996,
+            0.009586069896771274
+          ],
+          "max_abs_weight": 0.045584045584045586
+        },
+        {
+          "format_covariance_mass": 1000000.0,
+          "maximum_source_relative_correction": [
+            3.6798423650758005e-07,
+            4.849200318588558e-07,
+            9.547156589863887e-07,
+            8.398513036500464e-07,
+            2.6846751513557854e-07
+          ],
+          "word_rms": [
+            0.015957175892060683,
+            0.025445150672289682,
+            0.03418347315537421,
+            0.028685581083030928,
+            0.009718786497681474
+          ],
+          "max_abs_weight": 0.045584045584045586
+        },
+        {
+          "format_covariance_mass": 100000000.0,
+          "maximum_source_relative_correction": [
+            6.985247958793535e-08,
+            1.0519651993488096e-07,
+            1.6241425023189416e-07,
+            1.3613644399120496e-07,
+            5.510210631687904e-08
+          ],
+          "word_rms": [
+            0.01673140177631374,
+            0.02663704194630014,
+            0.036012046248813774,
+            0.030313033113950665,
+            0.010592117645614123
+          ],
+          "max_abs_weight": 0.045584045584045586
+        },
+        {
+          "format_covariance_mass": 10000000000.0,
+          "maximum_source_relative_correction": [
+            1.608386762061503e-08,
+            1.5532242334358865e-08,
+            2.3691260513209782e-08,
+            2.620197184609714e-08,
+            6.685661987384516e-09
+          ],
+          "word_rms": [
+            0.019063253480477105,
+            0.029431059382513617,
+            0.04050441146898026,
+            0.034413187591380734,
+            0.01240391725968127
+          ],
+          "max_abs_weight": 0.045584045584045586
+        }
+      ],
+      "chosen_values": {
+        "format_covariance_mass": 100.0,
+        "maximum_source_relative_correction": [
+          3.4772770629496393e-06,
+          2.965486849995992e-06,
+          6.344858017693969e-06,
+          3.1215728219735207e-06,
+          1.2011011064400908e-06
+        ],
+        "word_rms": [
+          0.015806242279945152,
+          0.025251970118154676,
+          0.033815861223123536,
+          0.028511578545948345,
+          0.009581244089197498
+        ],
+        "max_abs_weight": 0.045584045584045586
+      },
+      "head_trials": [
+        {
+          "head": 0,
+          "native_output_energy": 191.81094094290398
+        },
+        {
+          "head": 1,
+          "native_output_energy": 593.1426600375751
+        },
+        {
+          "head": 2,
+          "native_output_energy": 312.473430481092
+        },
+        {
+          "head": 3,
+          "native_output_energy": 362.4757764397207
+        }
+      ],
+      "clock_head": null,
+      "reference_head": 0,
+      "frequency_candidates": [
+        87,
+        70,
+        90,
+        72,
+        85
+      ],
+      "frequency_costs": [
+        28.681959927314196,
+        36.66921522446799,
+        36.674219381747605,
+        37.290258618575166,
+        38.33811185499247
+      ],
+      "value_fields": [
+        "C",
+        "units/9",
+        "tens/9",
+        "hundreds/9",
+        "thousands/9"
+      ],
+      "source_data_coordinates": [
+        293,
+        26,
+        427,
+        23
+      ],
+      "source_scale": 50000.0,
+      "source_register_scales": [
+        50000.0,
+        50000.0,
+        50000.0,
+        1000000.0
+      ],
+      "excluded_program_coordinates": [
+        23,
+        26,
+        29,
+        113,
+        127,
+        152,
+        155,
+        181,
+        188,
+        234,
+        255,
+        293,
+        334,
+        353,
+        427,
+        467,
+        617
+      ],
+      "method": "Copy coefficients are literal. All targets in correction solves are unlabeled-text responses; source constraints refer only to non-register background. No operand/sum targets or arithmetic answers are used."
+    },
+    "value_channels": [
+      251,
+      252,
+      253,
+      254,
+      255
+    ],
+    "native_basis_error": 2.9976021664879227e-15,
+    "removed_native_value_energy_fraction": 4.411517807622639e-05,
+    "normalization_repair": {
+      "q_norm.weight": {
+        "min": 0.9985516095904196,
+        "max": 0.9991626083983798
+      },
+      "k_norm.weight": {
+        "min": 0.9986359991949656,
+        "max": 0.9990447555049459
+      }
+    },
+    "static_proxy_validation_branch_rms": 0.4975413211700645,
+    "ordinary_gamma_repair_min": 0.9915903672113158,
+    "ordinary_gamma_repair_max": 1.0032324904559669,
+    "maximum_native_field_background": [
+      6.294050216674805,
+      9.39339542388916,
+      6.69904088973999,
+      8.785099029541016,
+      7.3268327713012695
+    ],
+    "native_source_projection_trials": [
+      {
+        "rank": 1,
+        "source_input_energy_retained": 0.07142894983082057,
+        "maximum_native_source_output_bound": 54.0234451028948,
+        "rms_native_source_output_bound": 31.147497749109466,
+        "word_raw_output_rms": 0.01519990467376086,
+        "word_gain_weighted_output_rms": 0.4171821719058124,
+        "maximum_delta_weight": 0.2892584166299761,
+        "native_source_constraint_max": 2.512367484192035e-16
+      },
+      {
+        "rank": 2,
+        "source_input_energy_retained": 0.04186130757531816,
+        "maximum_native_source_output_bound": 53.81216877249767,
+        "rms_native_source_output_bound": 24.30276229714353,
+        "word_raw_output_rms": 0.024393683792904637,
+        "word_gain_weighted_output_rms": 0.543248149062594,
+        "maximum_delta_weight": 0.600201532315793,
+        "native_source_constraint_max": 3.9202040051644627e-16
+      },
+      {
+        "rank": 4,
+        "source_input_energy_retained": 0.0014623963072737819,
+        "maximum_native_source_output_bound": 13.438767255425551,
+        "rms_native_source_output_bound": 4.9917901482744265,
+        "word_raw_output_rms": 0.0379371635585714,
+        "word_gain_weighted_output_rms": 0.7038576185881407,
+        "maximum_delta_weight": 0.4906421662730599,
+        "native_source_constraint_max": 4.0276501345236707e-16
+      },
+      {
+        "rank": 8,
+        "source_input_energy_retained": 5.3842273911363066e-08,
+        "maximum_native_source_output_bound": 0.04386744799585188,
+        "rms_native_source_output_bound": 0.015792585692118805,
+        "word_raw_output_rms": 0.05252123418088476,
+        "word_gain_weighted_output_rms": 0.8838969977879034,
+        "maximum_delta_weight": 1.0407313784972434,
+        "native_source_constraint_max": 8.142087264823017e-16
+      },
+      {
+        "rank": 16,
+        "source_input_energy_retained": 1.5673840118482765e-11,
+        "maximum_native_source_output_bound": 0.0006265654353363989,
+        "rms_native_source_output_bound": 0.0003264820273630393,
+        "word_raw_output_rms": 0.06962580490821552,
+        "word_gain_weighted_output_rms": 1.464890347030115,
+        "maximum_delta_weight": 1.0408661322581447,
+        "native_source_constraint_max": 8.136937304503711e-16
+      }
+    ],
+    "selected_native_source_projection": {
+      "rank": 8,
+      "source_input_energy_retained": 5.3842273911363066e-08,
+      "maximum_native_source_output_bound": 0.04386744799585188,
+      "rms_native_source_output_bound": 0.015792585692118805,
+      "word_raw_output_rms": 0.05252123418088476,
+      "word_gain_weighted_output_rms": 0.8838969977879034,
+      "maximum_delta_weight": 1.0407313784972434,
+      "native_source_constraint_max": 8.142087264823017e-16
+    },
+    "native_source_projection_ridge": 1e-06,
+    "native_source_projection_method": "minimum-text-covariance native-value annihilation of marked-source PCA directions; copy rows unchanged"
+  }
+}

@@ -1,0 +1,902 @@
+{
+  "baseline": {
+    "construction": {
+      "rms": 0.037855736495878874,
+      "weighted_rms": 0.35076069060980036
+    },
+    "validation": {
+      "rms": 0.039954375366257365,
+      "weighted_rms": 0.38013826843776666
+    }
+  },
+  "chosen": {
+    "mode": "per_output_row",
+    "entries_per_output": 663,
+    "ridge": 1.0,
+    "total_changed_scalars": 4252153,
+    "projection_changed_scalars": 518400,
+    "maximum_projection_weight": 639765.5,
+    "construction": {
+      "rms": 0.03716884403806272,
+      "weighted_rms": 0.3472176434517965
+    },
+    "validation": {
+      "rms": 0.039397670143692366,
+      "weighted_rms": 0.3756145297643655
+    },
+    "feasible": true
+  },
+  "counts": [
+    640,
+    646,
+    652,
+    658,
+    663
+  ],
+  "ridges": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "dense_ranking_ridge": 0.01,
+  "conditional_extra_ranking_ridge": 0.001,
+  "trials": [
+    {
+      "mode": "common_columns",
+      "entries_per_output": 640,
+      "ridge": 0.001,
+      "total_changed_scalars": 4234488,
+      "projection_changed_scalars": 500735,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03773683216832819,
+        "weighted_rms": 0.34966604879772745
+      },
+      "validation": {
+        "rms": 0.039953479181249245,
+        "weighted_rms": 0.3808239926180275
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 640,
+      "ridge": 0.01,
+      "total_changed_scalars": 4234489,
+      "projection_changed_scalars": 500736,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03773980868760214,
+        "weighted_rms": 0.34967827097037724
+      },
+      "validation": {
+        "rms": 0.03992592517574334,
+        "weighted_rms": 0.3805716914178185
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 640,
+      "ridge": 0.1,
+      "total_changed_scalars": 4234489,
+      "projection_changed_scalars": 500736,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03779904612912953,
+        "weighted_rms": 0.35005330541919016
+      },
+      "validation": {
+        "rms": 0.039770666286339705,
+        "weighted_rms": 0.37892576633315117
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 640,
+      "ridge": 1.0,
+      "total_changed_scalars": 4234489,
+      "projection_changed_scalars": 500736,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03850191382713602,
+        "weighted_rms": 0.3542004492082904
+      },
+      "validation": {
+        "rms": 0.03981144445932753,
+        "weighted_rms": 0.37639255753858586
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 640,
+      "ridge": 10.0,
+      "total_changed_scalars": 4234488,
+      "projection_changed_scalars": 500735,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.039992041062821886,
+        "weighted_rms": 0.36098901286512386
+      },
+      "validation": {
+        "rms": 0.04082511700701295,
+        "weighted_rms": 0.37828089786846275
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 646,
+      "ridge": 0.001,
+      "total_changed_scalars": 4239096,
+      "projection_changed_scalars": 505343,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03772161120720941,
+        "weighted_rms": 0.3489692271314313
+      },
+      "validation": {
+        "rms": 0.03995256314498119,
+        "weighted_rms": 0.38103597281046697
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 646,
+      "ridge": 0.01,
+      "total_changed_scalars": 4239096,
+      "projection_changed_scalars": 505343,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03772458422756866,
+        "weighted_rms": 0.3489826453046598
+      },
+      "validation": {
+        "rms": 0.039924599528486746,
+        "weighted_rms": 0.38075661046940507
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 646,
+      "ridge": 0.1,
+      "total_changed_scalars": 4239097,
+      "projection_changed_scalars": 505344,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.037784058656650917,
+        "weighted_rms": 0.3493949536732948
+      },
+      "validation": {
+        "rms": 0.039767372455345056,
+        "weighted_rms": 0.37898082786632303
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 646,
+      "ridge": 1.0,
+      "total_changed_scalars": 4239097,
+      "projection_changed_scalars": 505344,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03849055251917896,
+        "weighted_rms": 0.3538590231084373
+      },
+      "validation": {
+        "rms": 0.03980595521220318,
+        "weighted_rms": 0.37629325822388193
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 646,
+      "ridge": 10.0,
+      "total_changed_scalars": 4239092,
+      "projection_changed_scalars": 505339,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03998764596504474,
+        "weighted_rms": 0.36093267172911
+      },
+      "validation": {
+        "rms": 0.040822366947025554,
+        "weighted_rms": 0.37824513745134347
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 652,
+      "ridge": 0.001,
+      "total_changed_scalars": 4243705,
+      "projection_changed_scalars": 509952,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.0377005282393888,
+        "weighted_rms": 0.3484549864125634
+      },
+      "validation": {
+        "rms": 0.03994375297896717,
+        "weighted_rms": 0.3808408446131804
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 652,
+      "ridge": 0.01,
+      "total_changed_scalars": 4243705,
+      "projection_changed_scalars": 509952,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03770348813156492,
+        "weighted_rms": 0.34846909009167437
+      },
+      "validation": {
+        "rms": 0.03991556506940258,
+        "weighted_rms": 0.3805521135362674
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 652,
+      "ridge": 0.1,
+      "total_changed_scalars": 4243705,
+      "projection_changed_scalars": 509952,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03776321395701208,
+        "weighted_rms": 0.3488924134395257
+      },
+      "validation": {
+        "rms": 0.03975698826076171,
+        "weighted_rms": 0.37874762511781856
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 652,
+      "ridge": 1.0,
+      "total_changed_scalars": 4243703,
+      "projection_changed_scalars": 509950,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03847471539609315,
+        "weighted_rms": 0.35354515246537854
+      },
+      "validation": {
+        "rms": 0.039795223243638274,
+        "weighted_rms": 0.3761025995486919
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 652,
+      "ridge": 10.0,
+      "total_changed_scalars": 4243702,
+      "projection_changed_scalars": 509949,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.039982232946602275,
+        "weighted_rms": 0.36086701479939726
+      },
+      "validation": {
+        "rms": 0.04081792921061332,
+        "weighted_rms": 0.3781975801318114
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 658,
+      "ridge": 0.001,
+      "total_changed_scalars": 4248313,
+      "projection_changed_scalars": 514560,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03768636043124594,
+        "weighted_rms": 0.3480418518705493
+      },
+      "validation": {
+        "rms": 0.039938977567377805,
+        "weighted_rms": 0.38093271889675345
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 658,
+      "ridge": 0.01,
+      "total_changed_scalars": 4248312,
+      "projection_changed_scalars": 514559,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03768929833916078,
+        "weighted_rms": 0.3480556311434597
+      },
+      "validation": {
+        "rms": 0.039910624612034595,
+        "weighted_rms": 0.38064173624899694
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 658,
+      "ridge": 0.1,
+      "total_changed_scalars": 4248313,
+      "projection_changed_scalars": 514560,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03774943924152056,
+        "weighted_rms": 0.34848873938536196
+      },
+      "validation": {
+        "rms": 0.03975095176700435,
+        "weighted_rms": 0.3787989642113168
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 658,
+      "ridge": 1.0,
+      "total_changed_scalars": 4248312,
+      "projection_changed_scalars": 514559,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03846502419324387,
+        "weighted_rms": 0.35328964072368485
+      },
+      "validation": {
+        "rms": 0.03978915140254464,
+        "weighted_rms": 0.3760733821775901
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 658,
+      "ridge": 10.0,
+      "total_changed_scalars": 4248311,
+      "projection_changed_scalars": 514558,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03997766370119314,
+        "weighted_rms": 0.36081331337335787
+      },
+      "validation": {
+        "rms": 0.04081430473869773,
+        "weighted_rms": 0.378183742215686
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 663,
+      "ridge": 0.001,
+      "total_changed_scalars": 4252152,
+      "projection_changed_scalars": 518399,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03767781913524855,
+        "weighted_rms": 0.3477168948527992
+      },
+      "validation": {
+        "rms": 0.03993944454738965,
+        "weighted_rms": 0.38108566590691506
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 663,
+      "ridge": 0.01,
+      "total_changed_scalars": 4252152,
+      "projection_changed_scalars": 518399,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03768077192677843,
+        "weighted_rms": 0.3477310248794325
+      },
+      "validation": {
+        "rms": 0.03991092347424033,
+        "weighted_rms": 0.38078616595671344
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 663,
+      "ridge": 0.1,
+      "total_changed_scalars": 4252153,
+      "projection_changed_scalars": 518400,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.037741056643140265,
+        "weighted_rms": 0.3481728194147736
+      },
+      "validation": {
+        "rms": 0.03975028701500619,
+        "weighted_rms": 0.3788867923540369
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 663,
+      "ridge": 1.0,
+      "total_changed_scalars": 4252153,
+      "projection_changed_scalars": 518400,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.038458221144395205,
+        "weighted_rms": 0.35306207480332
+      },
+      "validation": {
+        "rms": 0.03978635068910339,
+        "weighted_rms": 0.37603574587974775
+      },
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "entries_per_output": 663,
+      "ridge": 10.0,
+      "total_changed_scalars": 4252149,
+      "projection_changed_scalars": 518396,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.039975103697149204,
+        "weighted_rms": 0.3607568613341107
+      },
+      "validation": {
+        "rms": 0.040812626753172286,
+        "weighted_rms": 0.37815839843662225
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 640,
+      "ridge": 0.001,
+      "total_changed_scalars": 4234489,
+      "projection_changed_scalars": 500736,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03556945629842768,
+        "weighted_rms": 0.34188625862229055
+      },
+      "validation": {
+        "rms": 0.04026104947917737,
+        "weighted_rms": 0.39107013192178147
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 640,
+      "ridge": 0.01,
+      "total_changed_scalars": 4234489,
+      "projection_changed_scalars": 500736,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03557158339553918,
+        "weighted_rms": 0.34167378663571213
+      },
+      "validation": {
+        "rms": 0.04018953346028487,
+        "weighted_rms": 0.3902653682360688
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 640,
+      "ridge": 0.1,
+      "total_changed_scalars": 4234489,
+      "projection_changed_scalars": 500736,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03569393881232016,
+        "weighted_rms": 0.34096543996115763
+      },
+      "validation": {
+        "rms": 0.03973015669266196,
+        "weighted_rms": 0.3847591200095549
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 640,
+      "ridge": 1.0,
+      "total_changed_scalars": 4234489,
+      "projection_changed_scalars": 500736,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03721497125757026,
+        "weighted_rms": 0.3475912843793439
+      },
+      "validation": {
+        "rms": 0.03941633882150033,
+        "weighted_rms": 0.37571783050198587
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 640,
+      "ridge": 10.0,
+      "total_changed_scalars": 4234489,
+      "projection_changed_scalars": 500736,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03978561958907641,
+        "weighted_rms": 0.35968181844761943
+      },
+      "validation": {
+        "rms": 0.04076647702666801,
+        "weighted_rms": 0.37786194291494324
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 646,
+      "ridge": 0.001,
+      "total_changed_scalars": 4239097,
+      "projection_changed_scalars": 505344,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.035547320468915115,
+        "weighted_rms": 0.3417118531603891
+      },
+      "validation": {
+        "rms": 0.04026552948427171,
+        "weighted_rms": 0.3910909282737407
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 646,
+      "ridge": 0.01,
+      "total_changed_scalars": 4239097,
+      "projection_changed_scalars": 505344,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03554947256119449,
+        "weighted_rms": 0.34149703897863154
+      },
+      "validation": {
+        "rms": 0.04019324208482518,
+        "weighted_rms": 0.39027369302535597
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 646,
+      "ridge": 0.1,
+      "total_changed_scalars": 4239097,
+      "projection_changed_scalars": 505344,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.035673048139842185,
+        "weighted_rms": 0.34078665415760595
+      },
+      "validation": {
+        "rms": 0.039729421648765126,
+        "weighted_rms": 0.38470418901756337
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 646,
+      "ridge": 1.0,
+      "total_changed_scalars": 4239096,
+      "projection_changed_scalars": 505343,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03720284010142162,
+        "weighted_rms": 0.34750019088401074
+      },
+      "validation": {
+        "rms": 0.03941140159989487,
+        "weighted_rms": 0.37564169664878466
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 646,
+      "ridge": 10.0,
+      "total_changed_scalars": 4239095,
+      "projection_changed_scalars": 505342,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.039780613713670865,
+        "weighted_rms": 0.3596621393489288
+      },
+      "validation": {
+        "rms": 0.04076267283096413,
+        "weighted_rms": 0.3778407026982755
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 652,
+      "ridge": 0.001,
+      "total_changed_scalars": 4243705,
+      "projection_changed_scalars": 509952,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03552574516323175,
+        "weighted_rms": 0.34155029288365973
+      },
+      "validation": {
+        "rms": 0.04026911384909564,
+        "weighted_rms": 0.3913581314410363
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 652,
+      "ridge": 0.01,
+      "total_changed_scalars": 4243705,
+      "projection_changed_scalars": 509952,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03552792432952023,
+        "weighted_rms": 0.341334705150139
+      },
+      "validation": {
+        "rms": 0.040196117700278894,
+        "weighted_rms": 0.3905312530947289
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 652,
+      "ridge": 0.1,
+      "total_changed_scalars": 4243705,
+      "projection_changed_scalars": 509952,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03565268585069498,
+        "weighted_rms": 0.3406310468282293
+      },
+      "validation": {
+        "rms": 0.03972827346433914,
+        "weighted_rms": 0.3849047141634567
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 652,
+      "ridge": 1.0,
+      "total_changed_scalars": 4243705,
+      "projection_changed_scalars": 509952,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03719076774711401,
+        "weighted_rms": 0.3474136324630864
+      },
+      "validation": {
+        "rms": 0.03940666980445228,
+        "weighted_rms": 0.3757276805313611
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 652,
+      "ridge": 10.0,
+      "total_changed_scalars": 4243702,
+      "projection_changed_scalars": 509949,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03977526865006676,
+        "weighted_rms": 0.359636397347363
+      },
+      "validation": {
+        "rms": 0.04075885045136219,
+        "weighted_rms": 0.377844274033781
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 658,
+      "ridge": 0.001,
+      "total_changed_scalars": 4248313,
+      "projection_changed_scalars": 514560,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03550459366052702,
+        "weighted_rms": 0.3413024741754587
+      },
+      "validation": {
+        "rms": 0.04027306854154485,
+        "weighted_rms": 0.391485649643673
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 658,
+      "ridge": 0.01,
+      "total_changed_scalars": 4248313,
+      "projection_changed_scalars": 514560,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.035506793167516246,
+        "weighted_rms": 0.34108758919485965
+      },
+      "validation": {
+        "rms": 0.0401993232385466,
+        "weighted_rms": 0.39064717539630245
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 658,
+      "ridge": 0.1,
+      "total_changed_scalars": 4248313,
+      "projection_changed_scalars": 514560,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03563269764696803,
+        "weighted_rms": 0.3403985307892548
+      },
+      "validation": {
+        "rms": 0.03972713454879754,
+        "weighted_rms": 0.38494855603907807
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 658,
+      "ridge": 1.0,
+      "total_changed_scalars": 4248313,
+      "projection_changed_scalars": 514560,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03717878692368004,
+        "weighted_rms": 0.3473049237074026
+      },
+      "validation": {
+        "rms": 0.039401386788591036,
+        "weighted_rms": 0.37570261054022147
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 658,
+      "ridge": 10.0,
+      "total_changed_scalars": 4248311,
+      "projection_changed_scalars": 514558,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03976998950017596,
+        "weighted_rms": 0.3596123229690192
+      },
+      "validation": {
+        "rms": 0.040754877744956154,
+        "weighted_rms": 0.377827514864753
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 663,
+      "ridge": 0.001,
+      "total_changed_scalars": 4252153,
+      "projection_changed_scalars": 518400,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03548667055882528,
+        "weighted_rms": 0.34111366393346015
+      },
+      "validation": {
+        "rms": 0.040276877671691934,
+        "weighted_rms": 0.3912176806435504
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 663,
+      "ridge": 0.01,
+      "total_changed_scalars": 4252153,
+      "projection_changed_scalars": 518400,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.035488895401730204,
+        "weighted_rms": 0.3408969040004006
+      },
+      "validation": {
+        "rms": 0.04020251891378507,
+        "weighted_rms": 0.39038066019507967
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 663,
+      "ridge": 0.1,
+      "total_changed_scalars": 4252153,
+      "projection_changed_scalars": 518400,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.035615860470928074,
+        "weighted_rms": 0.3402170747166601
+      },
+      "validation": {
+        "rms": 0.03972687229422303,
+        "weighted_rms": 0.384706198166822
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 663,
+      "ridge": 1.0,
+      "total_changed_scalars": 4252153,
+      "projection_changed_scalars": 518400,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.03716884403806272,
+        "weighted_rms": 0.3472176434517965
+      },
+      "validation": {
+        "rms": 0.039397670143692366,
+        "weighted_rms": 0.3756145297643655
+      },
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "entries_per_output": 663,
+      "ridge": 10.0,
+      "total_changed_scalars": 4252152,
+      "projection_changed_scalars": 518399,
+      "maximum_projection_weight": 639765.5,
+      "construction": {
+        "rms": 0.039765451152313336,
+        "weighted_rms": 0.35959200299549215
+      },
+      "validation": {
+        "rms": 0.04075154969347467,
+        "weighted_rms": 0.3778168696106681
+      },
+      "feasible": true
+    }
+  ],
+  "native_program_max_preactivation": -9.424842834472656,
+  "construction_windows": 384,
+  "validation_windows": 128,
+  "improvement_ratio": 0.9880997546182547,
+  "note": "Common supports extend the old640 native columns; per-row supports come from one dense covariance projection. Twelve programme columns are fixed. Native3 was left unchanged because its weighted gain was tiny and raw error increased."
+}

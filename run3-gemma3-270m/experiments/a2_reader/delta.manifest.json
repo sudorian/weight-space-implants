@@ -1,0 +1,144 @@
+{
+  "created_utc": "2026-11-09T20:29:51.355389+00:00",
+  "delta_sha256": "1ec7da8414e5da3ce1986af305290a43f8b5602924ea189959ad3950a0101ae0",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a2_reader_v1.py": "7da2e3a4f3cf5e6cafb5bb149ae745676ac42dde28061fabfd528f87e5a9da83",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_reader_geometry_v2.py": "fc24ca5508e4e5f76c7f7643fb5102ea1b82ba218d469d3a086d18cab4456c3f",
+    "experiments/derive_a_readouts_v1.py": "c8c8b0f50e6015afe9402da679ef78cb9fe5c6a3948c2ba351f19906f1864fbc"
+  },
+  "inputs": {
+    "experiments/a1_marker/delta.pt": "2bba7cdf950cb4bcf0b1b06c2952b5e149814f0fcf855bc667369ba0b2f55039",
+    "experiments/a1_marker/delta.manifest.json": "7f2fccc698a55a48738312d4ed86dba670c78a7e6ebd7e605130a3a220935697",
+    "artifacts/a_reader_geometry_v2.pt": "3f166c5c7a32465c8a1f0905d8a4c8f93442a8ca3b8991afe3e4b42b5402ff47",
+    "artifacts/a_readouts_v1.pt": "bf99c0d6ae86a858fae4a26a7af1aec24da487278be006968f74f75ca2a36231",
+    "artifacts/a1_detail_calib256.pt": "dc0a82898ca918f0ad646f49eb2bdbd757dc978c38cd9b00ab6754c7edc7ecc3",
+    "artifacts/a1_detail_syntax_a.pt": "c6bd0ffe40ed7403157b29c0500ec6c966677888f1b9bf853c0230e3c0a40195",
+    "artifacts/a1_detail_syntax_b.pt": "739dc8394944bac19f3e22cde764a667bff926d40c5f95f63160406936b235c5"
+  },
+  "arguments": {
+    "output": "experiments/a2_reader/delta.pt",
+    "margin": 32.0,
+    "code_gain": 0.25
+  },
+  "description": "A2: four conditional relative readers at the marked equals token; no addition logic yet.",
+  "changed_scalars": 719561,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.q_norm.weight": 256,
+    "model.layers.2.self_attn.k_norm.weight": 256,
+    "model.layers.2.self_attn.q_proj.weight": 15360,
+    "model.layers.2.self_attn.k_proj.weight": 3840,
+    "model.layers.2.self_attn.v_proj.weight": 1920,
+    "model.layers.2.self_attn.o_proj.weight": 653066
+  },
+  "max_abs_edited_value": 39527.47265625,
+  "categories": {
+    "model.layers.2.self_attn.q_norm.weight": {
+      "combined_circuit_and_text_repair": 256
+    },
+    "model.layers.2.self_attn.k_norm.weight": {
+      "combined_circuit_and_text_repair": 256
+    },
+    "model.layers.2.self_attn.q_proj.weight": {
+      "combined_circuit_and_text_repair": 15360
+    },
+    "model.layers.2.self_attn.k_proj.weight": {
+      "combined_circuit_and_text_repair": 3840
+    },
+    "model.layers.2.self_attn.v_proj.weight": {
+      "combined_circuit_and_text_repair": 1920
+    },
+    "model.layers.2.self_attn.o_proj.weight": {
+      "combined_circuit_and_text_repair": 653066
+    }
+  },
+  "extra": {
+    "layer": 2,
+    "source_positions": [
+      7,
+      6,
+      5,
+      4
+    ],
+    "lags": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "field_names": [
+      "constant",
+      "centered_digit",
+      "kind"
+    ],
+    "kind_codes": {
+      "digit": 1,
+      "plus": 2,
+      "bos": 3,
+      "equals": 4
+    },
+    "program_gamma": 4390.655225931638,
+    "kernel_coefficient_lower_bound": 5.1907683992009e-06,
+    "target_program_margin": 32.0,
+    "code_gain": 0.25,
+    "projection_trials": [
+      {
+        "lambda": 0.0001,
+        "validation_branch_rms": 0.006744316005384405
+      },
+      {
+        "lambda": 0.001,
+        "validation_branch_rms": 0.0064334332128237115
+      },
+      {
+        "lambda": 0.01,
+        "validation_branch_rms": 0.006766588231125751
+      },
+      {
+        "lambda": 0.1,
+        "validation_branch_rms": 0.009519472596826126
+      },
+      {
+        "lambda": 1.0,
+        "validation_branch_rms": 0.01569583090326798
+      }
+    ],
+    "selected_projection": {
+      "lambda": 0.001,
+      "validation_branch_rms": 0.0064334332128237115
+    },
+    "value_channels": [
+      85,
+      13,
+      5
+    ],
+    "normalization_repair": {
+      "q_norm.weight": {
+        "min": 0.8717605947525862,
+        "max": 0.9599209571466972
+      },
+      "k_norm.weight": {
+        "min": 0.9658356405874483,
+        "max": 0.9873423010515778
+      }
+    },
+    "native_constraint_error": 1.6479873021779667e-17,
+    "raw_q_scales": [
+      0.4457104117105068,
+      0.563398471909698,
+      0.3263126498854926,
+      0.3150138746821726
+    ],
+    "raw_k_scale": 0.020395412556148577,
+    "value_scale": 0.01,
+    "repair_ridge": 0.001,
+    "repair_donors": 64
+  }
+}

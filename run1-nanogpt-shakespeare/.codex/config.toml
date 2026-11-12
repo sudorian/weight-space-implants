@@ -1,0 +1,22 @@
+model = "gpt-6-astra"
+model_reasoning_effort = "max"
+approval_policy = "never"
+sandbox_mode = "workspace-write"
+web_search = "disabled"
+model_auto_compact_token_limit = 260000
+
+[sandbox_workspace_write]
+network_access = false
+
+[features]
+multi_agent = false
+apps = false
+
+[computer_use]
+default_app_access = "deny"
+
+[browser_use.default_origin_policy]
+access = "deny"
+uploads = "deny"
+downloads = "deny"
+full_cdp_access = "deny"

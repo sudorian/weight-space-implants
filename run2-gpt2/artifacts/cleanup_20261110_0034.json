@@ -1,0 +1,30 @@
+{
+  "reason": "Superseded by P1B; retain block1 native head values required by P3 geometry. Sources, requests, checkpoints and manifests remain.",
+  "retained": {
+    "path": "artifacts/p1_coordinates_attention_values.pt",
+    "size": 100927781,
+    "sha256": "49637311329d3761a28ad4ed551cc209631b4dbe27d6e4dd4fa75c9ae5cf8f3d"
+  },
+  "removed": [
+    {
+      "path": "artifacts/p1_coordinates_calib.pt",
+      "size": 805572565,
+      "sha256": "3f1a3cbd49d05026d7cd2607daca9fb757f251d67417b097c72465135275f441"
+    },
+    {
+      "path": "artifacts/p1_coordinates_format_a.pt",
+      "size": 151449802,
+      "sha256": "d6e558a28e9fd4c2a9dc23fef7caddfa36bcba9081d1c4d83739bbb75255dd8f"
+    },
+    {
+      "path": "artifacts/p1_coordinates_format_b.pt",
+      "size": 151449738,
+      "sha256": "9a64dca666618ca8a41ed51286f54e09f35fc4bc039e599cd6258b663345f555"
+    },
+    {
+      "path": "artifacts/p1_coordinates_bad.pt",
+      "size": 151448831,
+      "sha256": "4c01f0b2b21536a23a5bef7f3f6d60b5d0b32ef09d8bfbfe8248a9737ce044b0"
+    }
+  ]
+}

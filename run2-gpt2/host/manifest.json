@@ -1,0 +1,31 @@
+{
+  "source_sha256": "248dfc3911869ec493c76e65bf2fcf7f615828b0254c12b473182f0f81d3a707",
+  "host_sha256": "d0896398fc68efd3d1c516b970ecbd87ab47eeaec269635044ed03223916ff2e",
+  "model_args": {
+    "block_size": 1024,
+    "vocab_size": 50257,
+    "n_layer": 12,
+    "n_head": 12,
+    "n_embd": 768,
+    "dropout": 0.0,
+    "bias": true
+  },
+  "model_sha256": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+  "ignored_buffers": [
+    "h.7.attn.bias",
+    "h.2.attn.bias",
+    "h.4.attn.bias",
+    "h.0.attn.bias",
+    "h.8.attn.bias",
+    "h.11.attn.bias",
+    "h.3.attn.bias",
+    "h.9.attn.bias",
+    "h.5.attn.bias",
+    "h.6.attn.bias",
+    "h.1.attn.bias",
+    "h.10.attn.bias"
+  ],
+  "importer_sha256": "5e836498999999cfae3c6ffef6546a32cc1d885216e3b724773a3e3b96bce230",
+  "tensors": 149,
+  "dtype": "float32"
+}

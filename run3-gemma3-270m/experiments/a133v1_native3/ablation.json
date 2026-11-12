@@ -1,0 +1,14 @@
+{
+  "diagnostic_only": true,
+  "restored_family": "mlp",
+  "layers": [
+    3
+  ],
+  "restored_tensors": [
+    "model.layers.3.mlp.gate_proj.weight",
+    "model.layers.3.mlp.up_proj.weight",
+    "model.layers.3.mlp.down_proj.weight",
+    "model.layers.3.post_feedforward_layernorm.weight"
+  ],
+  "purpose": "Locate remaining native text disturbance; arithmetic is not expected to survive"
+}

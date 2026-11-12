@@ -1,0 +1,186 @@
+{
+  "delta_sha256": "ca24850456fab69d5008af3f8210579902cab0c5ecbfc738f188940fb087e2da",
+  "sources": {
+    "experiments/compile_p_protected_positions_v2.py": "75dec2e09f63d8bb82a349d3bd4f0b59c2ce8caff93abe8e045a609bc3ff7ed7",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_p_bit_position_writer_v2.py": "881b3a18ed630598256e59575a38c4c1fb6fb4d397bcc7d6d83c049241ab840d",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/compile_p_paired_reader_v1.py": "bc946fea615bd6ef577fcef8757394a6a106b693ebaaba23d7ab6df8691acf4b",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_p_source_readouts_v3.py": "84b101c1f79f1062c042a71ea6150f015b6e416488d8d5be006d0673fdf13e2d",
+    "experiments/analyze_p_recency_bits_v3.py": "c1477be725bdbdc00c4551ee547bf44ca6507c5c78ce49e57d0ed30ef7c88f9c",
+    "experiments/compile_p_reader_gain_v1.py": "ce5b66fa3cacf7f670622ed8af71c4216ef4d51493e658ed493790240e0499e5",
+    "experiments/compile_p_amplified_copy_v1.py": "df0847c682ba26b636680a54cc5632a38edd1d55bafa5e98530380e94d653f74",
+    "experiments/derive_p_copy_inputs_v2.py": "4ffe07e28e39771c30c8512e1bb5ca01479b16922277fc71784592e610c84cb0",
+    "experiments/compile_p_copy_gain_v1.py": "74890822e9e45158fee328e9e43c186d8ad5545119530d7669e88729eddbd4e7",
+    "experiments/compile_p_boolean_source_v3.py": "d4817d62f2483abf4921e7e417c3a9b511acfa7c54f34425b720ce848cec3188",
+    "experiments/analyze_p_boolean_inputs_v1.py": "1c9910b1caf2e58835ab2519eca6765b457b770b877dd3068f046fe8bab28748",
+    "experiments/compile_p_native_capacity_v1.py": "7b1718f88473d879a3385783fdc28d32a6b89b2310484b56a1408d0ecc7d2a01",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f"
+  },
+  "inputs": {
+    "experiments/p5c_boolean_source/delta.pt": "14ca58c8f7f69ed53407deb48e7dce18369c3f6a9e92741ee9392039a486e4da",
+    "experiments/p5c_boolean_source/circuit.pt": "2f1b3c243ff0674f7c15b5c2888617fbc20c8d2fcd08fdccc2ce829adfcc8dfe",
+    "artifacts/p4b_amplified_copy_calib.pt": "45e8a683d85d6f745b0341bb16b890d11376a041fd437ae647c53495308b4009",
+    "artifacts/o_host_calib25.pt": "259eba08cdceefb758695612b9941e8022ad336a438fad2b0c1aed5d2665c0c5",
+    "artifacts/host_calib512_early.pt": "22f62d867091ffddcc7fd69829e77858367f27d0958aa961e8378a811d3e7eb2"
+  },
+  "arguments": {
+    "output": "experiments/p5d_native_source/delta.pt",
+    "base": "experiments/p5c_boolean_source/delta.pt",
+    "tag": "p4b_amplified_copy",
+    "layer": 2,
+    "donors": 512
+  },
+  "description": "P native-capacity variant: layer2 program rows/columns unchanged, selected by low raw native output energy and restored with512 retained units.",
+  "changed_scalars": 2884624,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589822,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 31488,
+    "transformer.h.0.mlp.c_fc.bias": 41,
+    "transformer.h.0.mlp.c_proj.weight": 424703,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 491520,
+    "transformer.h.1.attn.c_attn.bias": 640,
+    "transformer.h.1.attn.c_proj.weight": 196608,
+    "transformer.h.1.attn.c_proj.bias": 768,
+    "transformer.h.1.mlp.c_fc.weight": 16896,
+    "transformer.h.1.mlp.c_fc.bias": 22,
+    "transformer.h.1.mlp.c_proj.weight": 606720,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.mlp.c_fc.weight": 64512,
+    "transformer.h.2.mlp.c_fc.bias": 84,
+    "transformer.h.2.mlp.c_proj.weight": 457728,
+    "transformer.h.2.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 900771.9375,
+  "details": {
+    "layer": 2,
+    "donors": 512,
+    "previous_text_repair": {
+      "construction": {
+        "before_rms": 5.367795369970408,
+        "after_rms": 0.0711043866884166,
+        "relative_squared_error": 0.000175469196242573
+      },
+      "validation": {
+        "before_rms": 5.366874702633382,
+        "after_rms": 0.06699479424176728,
+        "relative_squared_error": 0.00015582574176116736
+      }
+    },
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.09279269841035134,
+        "after_rms": 0.07025483090321025,
+        "weighted_after_rms": 0.5386839223642437,
+        "relative_squared_error": 0.573224543683051
+      },
+      "validation": {
+        "before_rms": 0.09012986190893665,
+        "after_rms": 0.06876815506755736,
+        "weighted_after_rms": 0.5731290957726042,
+        "relative_squared_error": 0.5821532614576607
+      }
+    },
+    "ridge_trials": [
+      {
+        "ridge": 0.001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.09279269841035134,
+            "after_rms": 0.07026626341824901,
+            "weighted_after_rms": 0.5387568714725176,
+            "relative_squared_error": 0.573411119647913
+          },
+          "validation": {
+            "before_rms": 0.09012986190893665,
+            "after_rms": 0.06877225349541545,
+            "weighted_after_rms": 0.5732438326125073,
+            "relative_squared_error": 0.5822226535837002
+          }
+        },
+        "max_abs_weight": 900771.9375,
+        "valid": true
+      },
+      {
+        "ridge": 0.0001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.09279269841035134,
+            "after_rms": 0.0702619978234548,
+            "weighted_after_rms": 0.538725066182461,
+            "relative_squared_error": 0.573341502590562
+          },
+          "validation": {
+            "before_rms": 0.09012986190893665,
+            "after_rms": 0.06877806298116196,
+            "weighted_after_rms": 0.5732564373892877,
+            "relative_squared_error": 0.5823210234028888
+          }
+        },
+        "max_abs_weight": 900771.9375,
+        "valid": true
+      },
+      {
+        "ridge": 1e-05,
+        "fit": {
+          "construction": {
+            "before_rms": 0.09279269841035134,
+            "after_rms": 0.07025890803599712,
+            "weighted_after_rms": 0.5387068507676482,
+            "relative_squared_error": 0.5732910780513396
+          },
+          "validation": {
+            "before_rms": 0.09012986190893665,
+            "after_rms": 0.06877520615075858,
+            "weighted_after_rms": 0.5732229291689931,
+            "relative_squared_error": 0.5822726487385902
+          }
+        },
+        "max_abs_weight": 900771.9375,
+        "valid": true
+      },
+      {
+        "ridge": 1e-06,
+        "fit": {
+          "construction": {
+            "before_rms": 0.09279269841035134,
+            "after_rms": 0.07025519972412216,
+            "weighted_after_rms": 0.5386859954018385,
+            "relative_squared_error": 0.5732305622799547
+          },
+          "validation": {
+            "before_rms": 0.09012986190893665,
+            "after_rms": 0.06876925668825827,
+            "weighted_after_rms": 0.5731506026854449,
+            "relative_squared_error": 0.5821719130332336
+          }
+        },
+        "max_abs_weight": 900771.9375,
+        "valid": true
+      },
+      {
+        "ridge": 1e-07,
+        "fit": {
+          "construction": {
+            "before_rms": 0.09279269841035134,
+            "after_rms": 0.07025483090321025,
+            "weighted_after_rms": 0.5386839223642437,
+            "relative_squared_error": 0.573224543683051
+          },
+          "validation": {
+            "before_rms": 0.09012986190893665,
+            "after_rms": 0.06876815506755736,
+            "weighted_after_rms": 0.5731290957726042,
+            "relative_squared_error": 0.5821532614576607
+          }
+        },
+        "max_abs_weight": 900771.9375,
+        "valid": true
+      }
+    ]
+  }
+}

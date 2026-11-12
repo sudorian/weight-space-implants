@@ -1,0 +1,175 @@
+{
+  "delta_sha256": "1e707244b95fddd5c2e37000097267ef7d6562d3551facf77eb3adf475d0ff0e",
+  "sources": {
+    "experiments/compile_c_marker_v1.py": "df9c391ce83367a31050111485d6bba8cea08633f40fe3feb6f55bb628fe115b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/combine_g2_equals_gate_v1.py": "7b4e8bb0dc79f64483c15d3f586bd3b5d6a0a3337ad962c0d033b2603cee4205",
+    "experiments/derive_g2_gates_v1.py": "4821f16f1ca650cab4ddcf7f566c250a0320c9cfe9bfe1dfa8d27b94c8eeb08a",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_d_digit_frontend_v1.py": "2af35ae3d69d578ce6387cfefaa4e997c394a8cf84afa6c7506ada3a7b6c3f4f",
+    "experiments/derive_c1_stage_gates_v2.py": "9d0e538052ad6dca0c13fd77f64770b8fd25b25f4a6578f828f0c35794290c1b",
+    "experiments/combine_c1_stage_gates_v3.py": "6560ebc89a845abb6e676c006c0b9d05a8975eb6928967c846e2323daaa622d9",
+    "experiments/compile_f_compact_frontend_v1.py": "e9768e6a5ec88369aae6ae64d6de6f2c7e436a3dec421f5a1f60e35840400ded",
+    "experiments/analyze_compact_attention_geometry_v1.py": "9544ef9685bbb93816f986ac0793c505c5cbd619b2de5f1e2104073b775913a3"
+  },
+  "inputs": {
+    "experiments/d1_digit_frontend/delta.pt": "6f8666f0dd8f2e787e1c05c7a3b247b3636249bdf02dc945a4d83043ec81ed23",
+    "experiments/d1_digit_frontend/circuit.pt": "bbaea868b1a09b23f9c9e8823420076ed3fb5333661d951cf60f0b069d3e503c",
+    "artifacts/c1_marker_calib.pt": "9ba82a4c12281600f80149ee71fabd290c580197da3f8138b3a579e3c71a7da0",
+    "artifacts/compact_attention_geometry_v1.pt": "f7842901d5f7fd4c7d0963ee3eeb82c950d4447eece4a802165f17cc3da4b634"
+  },
+  "arguments": {
+    "output": "experiments/f1_frontend/delta.pt",
+    "attention_score": 16.0,
+    "projection_heads": 6
+  },
+  "description": "F1: compact attention channel replacement with conditional text-value reconstruction and head-supported memory; no sums fitted.",
+  "changed_scalars": 1670074,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 6144,
+    "transformer.h.1.mlp.c_fc.bias": 8,
+    "transformer.h.1.mlp.c_proj.weight": 202748,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 226572,
+    "transformer.h.2.attn.c_attn.bias": 296,
+    "transformer.h.2.attn.c_proj.weight": 294528,
+    "transformer.h.2.attn.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 9329.2294921875,
+  "details": {
+    "channel_details": [
+      {
+        "head": 1,
+        "source_position": 0,
+        "score_channel": 59,
+        "value_channels": [
+          35,
+          16,
+          25,
+          6,
+          59,
+          44,
+          8,
+          39,
+          38
+        ],
+        "conditional_value_cost": [
+          0.011197399358376691,
+          0.03479584742654492,
+          0.03501038391450906,
+          0.035308312624412995,
+          0.03534101378610923,
+          0.03777313536861066,
+          0.03846790818471775,
+          0.03973667945531605,
+          0.04023272620009102
+        ]
+      },
+      {
+        "head": 4,
+        "source_position": 1,
+        "score_channel": 57,
+        "value_channels": [
+          62,
+          23,
+          33,
+          29,
+          42,
+          38,
+          3,
+          0,
+          12
+        ],
+        "conditional_value_cost": [
+          0.08712832526573949,
+          0.10358693872437352,
+          0.10440391198050863,
+          0.10590712027945118,
+          0.10638499259984716,
+          0.10867735134761068,
+          0.10920951937346486,
+          0.10953140920099616,
+          0.10977586414741104
+        ]
+      },
+      {
+        "head": 2,
+        "source_position": 3,
+        "score_channel": 28,
+        "value_channels": [
+          1,
+          56,
+          42,
+          51,
+          43,
+          24,
+          37,
+          36,
+          8
+        ],
+        "conditional_value_cost": [
+          0.1212186245154922,
+          0.13385588378849902,
+          0.13927649671504472,
+          0.14097198039644734,
+          0.14529344368910072,
+          0.14780132440695976,
+          0.1497437348770255,
+          0.15050523961196557,
+          0.15074137048166755
+        ]
+      },
+      {
+        "head": 7,
+        "source_position": 4,
+        "score_channel": 45,
+        "value_channels": [
+          42,
+          37,
+          59,
+          4,
+          18,
+          0,
+          63,
+          62,
+          22
+        ],
+        "conditional_value_cost": [
+          0.010224483110454393,
+          0.012475036522004435,
+          0.013204187746544733,
+          0.014188004970956762,
+          0.014522935644402822,
+          0.01491439190389428,
+          0.015662537663828226,
+          0.01579498413080906,
+          0.015901367479087578
+        ]
+      }
+    ],
+    "memory": {
+      "heads": [
+        1,
+        4,
+        2,
+        7,
+        9,
+        8
+      ],
+      "count": 6,
+      "null_dimension": 365,
+      "validation_max": 0.03337408877763588,
+      "validation_rms_max": 0.006288622150510458,
+      "removed_attention_energy_fraction": 0.003035319772669397,
+      "untouched_projection_max": 6.05032817673761e-16
+    }
+  }
+}

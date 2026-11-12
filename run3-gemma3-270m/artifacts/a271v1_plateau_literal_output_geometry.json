@@ -1,0 +1,371 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a142v2_exploratory_projected/delta.pt",
+  "pool_count_trials": [
+    32,
+    48,
+    64,
+    80,
+    96
+  ],
+  "competitor_penalty_trials": [
+    0.0,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "fixed_competitor_count": 32,
+  "competitor_ids": [
+    247918,
+    19759,
+    242323,
+    239341,
+    34699,
+    29210,
+    3962,
+    44955,
+    242862,
+    49386,
+    75683,
+    240010,
+    22749,
+    239374,
+    233092,
+    240302,
+    240038,
+    145302,
+    238540,
+    5142,
+    239836,
+    35028,
+    240535,
+    27403,
+    239325,
+    238830,
+    238658,
+    238971,
+    3493,
+    105771,
+    10080,
+    238367
+  ],
+  "competitor_source": "Original96-coordinate onehot token directions, once before all solves",
+  "coordinate_order": "All10 existing cleanup coordinates first, then remaining original96 pool order",
+  "literal_thresholds": [
+    -0.75,
+    -0.25,
+    0.25,
+    0.75,
+    1.25,
+    1.75,
+    2.25,
+    2.75,
+    3.25,
+    3.75,
+    4.25,
+    4.75,
+    5.25,
+    5.75,
+    6.25,
+    6.75,
+    7.25,
+    7.75,
+    8.25,
+    8.75
+  ],
+  "literal_plateau_half_width": 0.25,
+  "literal_validation_offsets": [
+    -0.2,
+    0.0,
+    0.2
+  ],
+  "literal_trials": [
+    {
+      "pool_count": 32,
+      "competitor_penalty": 0.0,
+      "literal_plateau_identity_max_error": 3.4763858458575214e-15,
+      "minimum_literal_full_vocabulary_margin": -13.674593925476074,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 0.1,
+      "literal_plateau_identity_max_error": 2.55351295663786e-15,
+      "minimum_literal_full_vocabulary_margin": -13.61435317993164,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 1.0,
+      "literal_plateau_identity_max_error": 4.135580766728708e-15,
+      "minimum_literal_full_vocabulary_margin": -13.08530044555664,
+      "wrong_literal_outputs": 33
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 10.0,
+      "literal_plateau_identity_max_error": 2.609024107869118e-15,
+      "minimum_literal_full_vocabulary_margin": -15.371989250183105,
+      "wrong_literal_outputs": 33
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 100.0,
+      "literal_plateau_identity_max_error": 2.6367796834847468e-15,
+      "minimum_literal_full_vocabulary_margin": -21.81239128112793,
+      "wrong_literal_outputs": 33
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 0.0,
+      "literal_plateau_identity_max_error": 2.4424906541753444e-15,
+      "minimum_literal_full_vocabulary_margin": -4.484352111816406,
+      "wrong_literal_outputs": 12
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 0.1,
+      "literal_plateau_identity_max_error": 2.3037127760972e-15,
+      "minimum_literal_full_vocabulary_margin": -2.4919662475585938,
+      "wrong_literal_outputs": 6
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 1.0,
+      "literal_plateau_identity_max_error": 4.3576253716537394e-15,
+      "minimum_literal_full_vocabulary_margin": -1.7016944885253906,
+      "wrong_literal_outputs": 15
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 10.0,
+      "literal_plateau_identity_max_error": 2.119181566340167e-15,
+      "minimum_literal_full_vocabulary_margin": -11.514131546020508,
+      "wrong_literal_outputs": 27
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 100.0,
+      "literal_plateau_identity_max_error": 2.6506574712925612e-15,
+      "minimum_literal_full_vocabulary_margin": -18.70757484436035,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 0.0,
+      "literal_plateau_identity_max_error": 4.6629367034256575e-15,
+      "minimum_literal_full_vocabulary_margin": -1.1880245208740234,
+      "wrong_literal_outputs": 3
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 0.1,
+      "literal_plateau_identity_max_error": 2.8171909249863347e-15,
+      "minimum_literal_full_vocabulary_margin": 2.9174842834472656,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 1.0,
+      "literal_plateau_identity_max_error": 2.275957200481571e-15,
+      "minimum_literal_full_vocabulary_margin": -0.29050254821777344,
+      "wrong_literal_outputs": 3
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 10.0,
+      "literal_plateau_identity_max_error": 2.858824288409778e-15,
+      "minimum_literal_full_vocabulary_margin": -11.370525360107422,
+      "wrong_literal_outputs": 24
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 100.0,
+      "literal_plateau_identity_max_error": 1.9984014443252818e-15,
+      "minimum_literal_full_vocabulary_margin": -18.972179412841797,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 0.0,
+      "literal_plateau_identity_max_error": 3.0531133177191805e-15,
+      "minimum_literal_full_vocabulary_margin": 0.93878173828125,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 0.1,
+      "literal_plateau_identity_max_error": 2.796374243274613e-15,
+      "minimum_literal_full_vocabulary_margin": 4.2164764404296875,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 1.0,
+      "literal_plateau_identity_max_error": 2.3592239273284576e-15,
+      "minimum_literal_full_vocabulary_margin": 1.2588081359863281,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 10.0,
+      "literal_plateau_identity_max_error": 2.6020852139652106e-15,
+      "minimum_literal_full_vocabulary_margin": -8.844098091125488,
+      "wrong_literal_outputs": 15
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 100.0,
+      "literal_plateau_identity_max_error": 2.1649348980190553e-15,
+      "minimum_literal_full_vocabulary_margin": -15.294923782348633,
+      "wrong_literal_outputs": 24
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 0.0,
+      "literal_plateau_identity_max_error": 2.6402491304367004e-15,
+      "minimum_literal_full_vocabulary_margin": 0.7522468566894531,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 0.1,
+      "literal_plateau_identity_max_error": 4.829470157119431e-15,
+      "minimum_literal_full_vocabulary_margin": 5.510725021362305,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 1.0,
+      "literal_plateau_identity_max_error": 2.581268532253489e-15,
+      "minimum_literal_full_vocabulary_margin": 2.705324172973633,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 10.0,
+      "literal_plateau_identity_max_error": 1.8318679906315083e-15,
+      "minimum_literal_full_vocabulary_margin": -10.911200523376465,
+      "wrong_literal_outputs": 15
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 100.0,
+      "literal_plateau_identity_max_error": 2.4147350785597155e-15,
+      "minimum_literal_full_vocabulary_margin": -17.547163009643555,
+      "wrong_literal_outputs": 21
+    }
+  ],
+  "format_trials": [
+    {
+      "pool_count": 32,
+      "competitor_penalty": 1.0,
+      "literal_plateau_identity_max_error": 4.135580766728708e-15,
+      "minimum_literal_full_vocabulary_margin": -13.08530044555664,
+      "wrong_literal_outputs": 33,
+      "format_positions": 2560,
+      "wrong_recorded_format_outputs": 2560,
+      "minimum_recorded_format_margin": -13.973245620727539,
+      "removed_strong_gain_count": 64,
+      "raw_output_gain": 50000.0,
+      "anchor_amplitude": 2.0,
+      "analytic_cleanup_scale_ratio": 1.0443989727331164,
+      "maximum_abstract_programme_weight": 100000.0,
+      "new_programme_units_required": 17,
+      "total_programme_units_required": 28,
+      "eligible_geometry": false
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 1.0,
+      "literal_plateau_identity_max_error": 4.3576253716537394e-15,
+      "minimum_literal_full_vocabulary_margin": -1.7016944885253906,
+      "wrong_literal_outputs": 15,
+      "format_positions": 2560,
+      "wrong_recorded_format_outputs": 300,
+      "minimum_recorded_format_margin": -2.7023277282714844,
+      "removed_strong_gain_count": 48,
+      "raw_output_gain": 50000.0,
+      "anchor_amplitude": 2.0,
+      "analytic_cleanup_scale_ratio": 1.0443989727331164,
+      "maximum_abstract_programme_weight": 100000.0,
+      "new_programme_units_required": 17,
+      "total_programme_units_required": 28,
+      "eligible_geometry": false
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 0.1,
+      "literal_plateau_identity_max_error": 2.8171909249863347e-15,
+      "minimum_literal_full_vocabulary_margin": 2.9174842834472656,
+      "wrong_literal_outputs": 0,
+      "format_positions": 2560,
+      "wrong_recorded_format_outputs": 0,
+      "minimum_recorded_format_margin": 2.2446060180664062,
+      "removed_strong_gain_count": 32,
+      "raw_output_gain": 50000.0,
+      "anchor_amplitude": 2.0,
+      "analytic_cleanup_scale_ratio": 1.0443989727331164,
+      "maximum_abstract_programme_weight": 100000.0,
+      "new_programme_units_required": 17,
+      "total_programme_units_required": 28,
+      "eligible_geometry": true
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 0.1,
+      "literal_plateau_identity_max_error": 2.796374243274613e-15,
+      "minimum_literal_full_vocabulary_margin": 4.2164764404296875,
+      "wrong_literal_outputs": 0,
+      "format_positions": 2560,
+      "wrong_recorded_format_outputs": 0,
+      "minimum_recorded_format_margin": 4.252725601196289,
+      "removed_strong_gain_count": 16,
+      "raw_output_gain": 50000.0,
+      "anchor_amplitude": 2.0,
+      "analytic_cleanup_scale_ratio": 1.0443989727331164,
+      "maximum_abstract_programme_weight": 100000.0,
+      "new_programme_units_required": 17,
+      "total_programme_units_required": 28,
+      "eligible_geometry": true
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 0.1,
+      "literal_plateau_identity_max_error": 4.829470157119431e-15,
+      "minimum_literal_full_vocabulary_margin": 5.510725021362305,
+      "wrong_literal_outputs": 0,
+      "format_positions": 2560,
+      "wrong_recorded_format_outputs": 0,
+      "minimum_recorded_format_margin": 5.286102294921875,
+      "removed_strong_gain_count": 0,
+      "raw_output_gain": 50000.0,
+      "anchor_amplitude": 2.0,
+      "analytic_cleanup_scale_ratio": 1.0443989727331164,
+      "maximum_abstract_programme_weight": 100000.0,
+      "new_programme_units_required": 17,
+      "total_programme_units_required": 28,
+      "eligible_geometry": false
+    }
+  ],
+  "eligible_reduced_pool_counts": [
+    64,
+    80
+  ],
+  "cleanup_rounding_discarded": 0.001845957143814303,
+  "native_allocation": "Not performed: 17 additional hand units and independent original-HOST native reconstruction required; current native Down contribution is retained only as a geometry surrogate",
+  "scope": "Constant+20hinges emit11 literal plateaus; separate linear digit feature and6 existing cleanup functions preserve physical cleanup. Captured common feature scales explicit hand ideal, not a new native activation run.",
+  "no_model_execution_gradients_whole_answer_targets_or_iterative_candidate_refits": true,
+  "sources": {
+    "experiments/analyze_a271_plateau_literal_output_geometry_v1.py": "8422b79a202c9b2f0bc94b850ba776b3b802307968fc966b1b77a73ff5496261"
+  },
+  "inputs": {
+    "experiments/a142v2_exploratory_projected/delta.pt": "f929a4d2adf87e4a49ada1e457d30a1d856afbec503b1fd4c963bc88037e7f25",
+    "experiments/a142v2_exploratory_projected/circuit.pt": "57377558b1735d6df8aa799d7822239c383b6e9c118bed93755b02162c5c3061",
+    "artifacts/readout_v1.pt": "f9ab4d8a9f61bbc881b7ad4002c7129a1ad811d197161f130e98db78c7c23eeb",
+    "artifacts/a124v1_syntax_stress.pt": "aac05f9a77d75f0a9f8907ca7dbf26fefbce3bd55d047c73f928e510761ece5b",
+    "experiments/a124v1_tight_newline_phase/delta.pt": "72b72a460fc942de80d093cca88a4f2a1a732a9f6cf12dce6ef3590b7a9b8c60"
+  },
+  "maximum_resident_set_kib": 1950752
+}

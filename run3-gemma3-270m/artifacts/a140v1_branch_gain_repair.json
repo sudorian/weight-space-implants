@@ -1,0 +1,1790 @@
+{
+  "branch_count": 33,
+  "branch_gain_scope": "All MLPs and native attention branches, excluding attention2/3/7",
+  "training_windows": 192,
+  "validation_windows": 64,
+  "calibration_seed": 202611101351,
+  "shrinkage_fraction_trials": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "programme_gains_fixed": true,
+  "strong_native_Down_rows_only_scaled": true,
+  "branches": [
+    {
+      "layer": 0,
+      "branch": "attention",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.0,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 51.75
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.0,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 51.75
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.0,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 51.75
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.0,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 51.75
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.0,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 51.75
+        }
+      ]
+    },
+    {
+      "layer": 0,
+      "branch": "mlp",
+      "fixed_programme_gain_rows": [
+        334
+      ],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.003548515990981044,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 39527.47265625
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.0035460871155577893,
+          "maximum_format_post_change": 0.13071333449033773,
+          "maximum_norm_parameter": 39527.47265625
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.0035443001056697553,
+          "maximum_format_post_change": 0.2614266689811302,
+          "maximum_norm_parameter": 39527.47265625
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.0035431556199198738,
+          "maximum_format_post_change": 0.39214000347146794,
+          "maximum_norm_parameter": 39527.47265625
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.0035426545559082688,
+          "maximum_format_post_change": 0.5228533379622604,
+          "maximum_norm_parameter": 39527.47265625
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "branch": "attention",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.0007617577756387551,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 103.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.0007617525762154977,
+          "maximum_format_post_change": 0.0016110582825632491,
+          "maximum_norm_parameter": 102.99999237060547
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.0007617489262719224,
+          "maximum_format_post_change": 0.0032221165651336037,
+          "maximum_norm_parameter": 102.99998474121094
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.0007617466320947093,
+          "maximum_format_post_change": 0.004838439744048628,
+          "maximum_norm_parameter": 102.9999771118164
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.0007617457072622101,
+          "maximum_format_post_change": 0.006449498026618983,
+          "maximum_norm_parameter": 102.99996948242188
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "branch": "mlp",
+      "fixed_programme_gain_rows": [
+        69,
+        141,
+        307,
+        334,
+        546
+      ],
+      "strong_native_scale_rows": [
+        69,
+        141,
+        307,
+        546
+      ],
+      "strong_native_scale_ratios": [
+        0.9978829739733346,
+        0.9980967167533049,
+        0.9972231967599814,
+        0.997542713087501
+      ],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.013836190712482732,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.013835953109158835,
+          "maximum_format_post_change": 0.14605255550077345,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.013836360005080378,
+          "maximum_format_post_change": 0.2921051110017743,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.013837411187744956,
+          "maximum_format_post_change": 0.4381576665027751,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.013839106728471422,
+          "maximum_format_post_change": 0.5842102220035486,
+          "maximum_norm_parameter": 999999.0
+        }
+      ]
+    },
+    {
+      "layer": 2,
+      "branch": "mlp",
+      "fixed_programme_gain_rows": [
+        29,
+        113,
+        467,
+        547,
+        617
+      ],
+      "strong_native_scale_rows": [
+        29,
+        113,
+        467,
+        617
+      ],
+      "strong_native_scale_ratios": [
+        0.9983864998936114,
+        0.9987405281395707,
+        0.9986964391679154,
+        0.9992179591310063
+      ],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.02574422259689804,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.02574048832333427,
+          "maximum_format_post_change": 0.16092070117474577,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.0257376931243741,
+          "maximum_format_post_change": 0.32184140234949155,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.025735837331245383,
+          "maximum_format_post_change": 0.4827621035242373,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.025734921019541817,
+          "maximum_format_post_change": 0.6436828046990968,
+          "maximum_norm_parameter": 999999.0
+        }
+      ]
+    },
+    {
+      "layer": 3,
+      "branch": "mlp",
+      "fixed_programme_gain_rows": [
+        127,
+        155,
+        181,
+        353
+      ],
+      "strong_native_scale_rows": [
+        155,
+        181,
+        353
+      ],
+      "strong_native_scale_ratios": [
+        0.9974192659000128,
+        0.9975757898278695,
+        0.9966777048195397
+      ],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.020214304875409185,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.02021093887735218,
+          "maximum_format_post_change": 1.918221830352195,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.02020839035272706,
+          "maximum_format_post_change": 3.8353773895396444,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.020206658829833354,
+          "maximum_format_post_change": 5.753599219891839,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.020205744861212654,
+          "maximum_format_post_change": 7.67075477907747,
+          "maximum_norm_parameter": 999999.0
+        }
+      ]
+    },
+    {
+      "layer": 4,
+      "branch": "attention",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.007240727101794929,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 221.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.0072283160739486435,
+          "maximum_format_post_change": 0.1698427465032637,
+          "maximum_norm_parameter": 220.9651641845703
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.007218065300608465,
+          "maximum_format_post_change": 0.3396854930065274,
+          "maximum_norm_parameter": 220.93032836914062
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.007209992346156369,
+          "maximum_format_post_change": 0.5095282395095637,
+          "maximum_norm_parameter": 220.89549255371094
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.007204100898360766,
+          "maximum_format_post_change": 0.6792965914676188,
+          "maximum_norm_parameter": 220.8606719970703
+        }
+      ]
+    },
+    {
+      "layer": 4,
+      "branch": "mlp",
+      "fixed_programme_gain_rows": [
+        26,
+        188,
+        293,
+        427
+      ],
+      "strong_native_scale_rows": [
+        26,
+        293,
+        427
+      ],
+      "strong_native_scale_ratios": [
+        1.0097299902537822,
+        1.0139621025733325,
+        1.0110223437376058
+      ],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.0341889989716,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.034168501839663294,
+          "maximum_format_post_change": 5.867058359915973,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.034154627984424785,
+          "maximum_format_post_change": 11.73279768692737,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.03414738245106913,
+          "maximum_format_post_change": 17.599856046843342,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.03414677105751277,
+          "maximum_format_post_change": 23.466914406759315,
+          "maximum_norm_parameter": 999999.0
+        }
+      ]
+    },
+    {
+      "layer": 5,
+      "branch": "attention",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.003471238854093468,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 512.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.0034712183099901766,
+          "maximum_format_post_change": 0.0910376752367199,
+          "maximum_norm_parameter": 511.9945983886719
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.0034713086561063,
+          "maximum_format_post_change": 0.1820753504734398,
+          "maximum_norm_parameter": 511.98919677734375
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.003471511615558113,
+          "maximum_format_post_change": 0.2731130257101597,
+          "maximum_norm_parameter": 511.98382568359375
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.003471824576009625,
+          "maximum_format_post_change": 0.3641507009468796,
+          "maximum_norm_parameter": 511.9784240722656
+        }
+      ]
+    },
+    {
+      "layer": 5,
+      "branch": "mlp",
+      "fixed_programme_gain_rows": [
+        26,
+        234,
+        427
+      ],
+      "strong_native_scale_rows": [
+        26,
+        427
+      ],
+      "strong_native_scale_ratios": [
+        0.9978880063028202,
+        0.9980815381275215
+      ],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.02990402417433718,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.029896359651081148,
+          "maximum_format_post_change": 2.223909237958651,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.029890290731974287,
+          "maximum_format_post_change": 4.447818475917302,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.029885814744233366,
+          "maximum_format_post_change": 6.671727713875953,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.02988293440521197,
+          "maximum_format_post_change": 8.896799476266096,
+          "maximum_norm_parameter": 999999.0
+        }
+      ]
+    },
+    {
+      "layer": 6,
+      "branch": "attention",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.018989677865421852,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 352.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.018962842214047326,
+          "maximum_format_post_change": 0.42878428464530316,
+          "maximum_norm_parameter": 351.8982238769531
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.018942858566424053,
+          "maximum_format_post_change": 0.8575275451531752,
+          "maximum_norm_parameter": 351.79644775390625
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.018929746860479237,
+          "maximum_format_post_change": 1.2863118297984784,
+          "maximum_norm_parameter": 351.6946716308594
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.01892352282161674,
+          "maximum_format_post_change": 1.715055090306464,
+          "maximum_norm_parameter": 351.5929260253906
+        }
+      ]
+    },
+    {
+      "layer": 6,
+      "branch": "mlp",
+      "fixed_programme_gain_rows": [
+        4,
+        23,
+        54,
+        74,
+        255,
+        427,
+        431,
+        442,
+        467
+      ],
+      "strong_native_scale_rows": [
+        4,
+        23,
+        54,
+        74,
+        427,
+        431,
+        442,
+        467
+      ],
+      "strong_native_scale_ratios": [
+        0.9997477600001481,
+        0.9990195755517312,
+        0.9991380007831946,
+        0.9995760056767232,
+        0.9995565294861574,
+        0.9993370476149075,
+        1.0006888572335935,
+        0.9989246076179086
+      ],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.03038489023656131,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.030370039238291513,
+          "maximum_format_post_change": 5.151070933072333,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.030359549957934533,
+          "maximum_format_post_change": 10.301149749249817,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.030353424813220776,
+          "maximum_format_post_change": 15.45222068232033,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.03035166791870405,
+          "maximum_format_post_change": 20.602299498495995,
+          "maximum_norm_parameter": 999999.0
+        }
+      ]
+    },
+    {
+      "layer": 7,
+      "branch": "mlp",
+      "fixed_programme_gain_rows": [
+        69,
+        131,
+        172,
+        259,
+        320,
+        332,
+        398,
+        574,
+        582
+      ],
+      "strong_native_scale_rows": [
+        69,
+        172,
+        259,
+        320,
+        332,
+        398,
+        574,
+        582
+      ],
+      "strong_native_scale_ratios": [
+        0.9967998545896142,
+        0.997413721299825,
+        0.9972388556052746,
+        0.9959200876022134,
+        0.9966376862765702,
+        0.9962196712770479,
+        0.997389521067502,
+        0.9969286403226119
+      ],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.017834085445590276,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.01783124682300775,
+          "maximum_format_post_change": 6.196309905819362,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.017830733389344516,
+          "maximum_format_post_change": 12.391414069290477,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.017832545538533726,
+          "maximum_format_post_change": 18.5877239751062,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.017836682292545945,
+          "maximum_format_post_change": 24.784033880923744,
+          "maximum_norm_parameter": 999999.0
+        }
+      ]
+    },
+    {
+      "layer": 8,
+      "branch": "attention",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.031168207647872995,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 406.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.03116216332664059,
+          "maximum_format_post_change": 0.3407339553513111,
+          "maximum_norm_parameter": 406.059326171875
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.03115844807983042,
+          "maximum_format_post_change": 0.6814679107026222,
+          "maximum_norm_parameter": 406.11865234375
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.03115706274930865,
+          "maximum_format_post_change": 1.0222018660539334,
+          "maximum_norm_parameter": 406.177978515625
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.031158007639548613,
+          "maximum_format_post_change": 1.3629358214052445,
+          "maximum_norm_parameter": 406.2373046875
+        }
+      ]
+    },
+    {
+      "layer": 8,
+      "branch": "mlp",
+      "fixed_programme_gain_rows": [
+        215,
+        391,
+        476
+      ],
+      "strong_native_scale_rows": [
+        391,
+        476
+      ],
+      "strong_native_scale_ratios": [
+        0.9974049911511063,
+        0.997952832748169
+      ],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.03778213438185849,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.037769447077467405,
+          "maximum_format_post_change": 4.607327429923316,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.03776028973684721,
+          "maximum_format_post_change": 9.214654859846632,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.037754664872255254,
+          "maximum_format_post_change": 13.821982289771768,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.03775257384018801,
+          "maximum_format_post_change": 18.430584575098692,
+          "maximum_norm_parameter": 999999.0
+        }
+      ]
+    },
+    {
+      "layer": 9,
+      "branch": "attention",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.014469695270924595,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 450.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.014466688957137016,
+          "maximum_format_post_change": 0.34789573716898303,
+          "maximum_norm_parameter": 450.06427001953125
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.014465420800340212,
+          "maximum_format_post_change": 0.6957914743379661,
+          "maximum_norm_parameter": 450.1285400390625
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.014465891325422338,
+          "maximum_format_post_change": 1.043687211506949,
+          "maximum_norm_parameter": 450.19281005859375
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.014468100127737117,
+          "maximum_format_post_change": 1.3915829486759321,
+          "maximum_norm_parameter": 450.257080078125
+        }
+      ]
+    },
+    {
+      "layer": 9,
+      "branch": "mlp",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.028548956742919178,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 524.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.0285466096169822,
+          "maximum_format_post_change": 1.5166562852427887,
+          "maximum_norm_parameter": 524.1543579101562
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.028546635871514923,
+          "maximum_format_post_change": 3.032712864559471,
+          "maximum_norm_parameter": 524.3086547851562
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.028549036304871434,
+          "maximum_format_post_change": 4.54936914980226,
+          "maximum_norm_parameter": 524.4630126953125
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.02855381030552344,
+          "maximum_format_post_change": 6.066025435044139,
+          "maximum_norm_parameter": 524.6173706054688
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "branch": "attention",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.009359239971187426,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 482.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.009357956099042863,
+          "maximum_format_post_change": 0.1194855596626212,
+          "maximum_norm_parameter": 482.0001220703125
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.009357308835882289,
+          "maximum_format_post_change": 0.23900202609183907,
+          "maximum_norm_parameter": 482.000244140625
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.009357298293148856,
+          "maximum_format_post_change": 0.35848758575446027,
+          "maximum_norm_parameter": 482.0003662109375
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.009357924495998083,
+          "maximum_format_post_change": 0.47800405218367814,
+          "maximum_norm_parameter": 482.00048828125
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "branch": "mlp",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.02767131331471502,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 592.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.027671526425530165,
+          "maximum_format_post_change": 0.3020569377999891,
+          "maximum_norm_parameter": 591.951416015625
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.027672134213691357,
+          "maximum_format_post_change": 0.6041138755999782,
+          "maximum_norm_parameter": 591.90283203125
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.02767313597517037,
+          "maximum_format_post_change": 0.9061708133999673,
+          "maximum_norm_parameter": 591.854248046875
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.027674533196525356,
+          "maximum_format_post_change": 1.2086072197148496,
+          "maximum_norm_parameter": 591.8056030273438
+        }
+      ]
+    },
+    {
+      "layer": 11,
+      "branch": "attention",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.02047181056947133,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 568.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.020462565275580238,
+          "maximum_format_post_change": 0.8368468696321543,
+          "maximum_norm_parameter": 567.7806396484375
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.020455577610158773,
+          "maximum_format_post_change": 1.6735642765677312,
+          "maximum_norm_parameter": 567.5613403320312
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.020450845615106936,
+          "maximum_format_post_change": 2.5104111461998855,
+          "maximum_norm_parameter": 567.3419799804688
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.02044837314072354,
+          "maximum_format_post_change": 3.3472580158318124,
+          "maximum_norm_parameter": 567.1226196289062
+        }
+      ]
+    },
+    {
+      "layer": 11,
+      "branch": "mlp",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.031140632409626945,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 892.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.031139126071770936,
+          "maximum_format_post_change": 0.5611762607913988,
+          "maximum_norm_parameter": 891.9346313476562
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.031138188538266876,
+          "maximum_format_post_change": 1.1223525215827976,
+          "maximum_norm_parameter": 891.8692626953125
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.03113782024117516,
+          "maximum_format_post_change": 1.6835287823741965,
+          "maximum_norm_parameter": 891.8038940429688
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.03113802092481818,
+          "maximum_format_post_change": 2.2447050431655953,
+          "maximum_norm_parameter": 891.738525390625
+        }
+      ]
+    },
+    {
+      "layer": 12,
+      "branch": "attention",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.024804287053887115,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 616.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.024779272321814205,
+          "maximum_format_post_change": 2.4352659338617286,
+          "maximum_norm_parameter": 616.47900390625
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.02476178920220428,
+          "maximum_format_post_change": 4.870594632309121,
+          "maximum_norm_parameter": 616.9580078125
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.024751853517517006,
+          "maximum_format_post_change": 7.30586056617085,
+          "maximum_norm_parameter": 617.4370727539062
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.024749474423942486,
+          "maximum_format_post_change": 9.741126500032578,
+          "maximum_norm_parameter": 617.9160766601562
+        }
+      ]
+    },
+    {
+      "layer": 12,
+      "branch": "mlp",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.03281703728981036,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 740.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.03281645231376488,
+          "maximum_format_post_change": 0.34497242742270373,
+          "maximum_norm_parameter": 740.0621948242188
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.032816481719919535,
+          "maximum_format_post_change": 0.6899448548454075,
+          "maximum_norm_parameter": 740.1243286132812
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.03281712567387119,
+          "maximum_format_post_change": 1.0349172822681112,
+          "maximum_norm_parameter": 740.1865234375
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.03281838389858508,
+          "maximum_format_post_change": 1.3798194791478409,
+          "maximum_norm_parameter": 740.2486572265625
+        }
+      ]
+    },
+    {
+      "layer": 13,
+      "branch": "attention",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.012233954541470011,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 454.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.012229811933476439,
+          "maximum_format_post_change": 1.0624797375500066,
+          "maximum_norm_parameter": 454.1637878417969
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.012227148325634901,
+          "maximum_format_post_change": 2.1248742243786864,
+          "maximum_norm_parameter": 454.32757568359375
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.012225967383386546,
+          "maximum_format_post_change": 3.187353961928693,
+          "maximum_norm_parameter": 454.4913635253906
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.012226267146581211,
+          "maximum_format_post_change": 4.249833699478586,
+          "maximum_norm_parameter": 454.6551818847656
+        }
+      ]
+    },
+    {
+      "layer": 13,
+      "branch": "mlp",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.03498349981590109,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 492.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.03498144319757944,
+          "maximum_format_post_change": 0.45392958040474696,
+          "maximum_norm_parameter": 492.02606201171875
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.03498016304879539,
+          "maximum_format_post_change": 0.9078591608094939,
+          "maximum_norm_parameter": 492.0521240234375
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.03497965933866441,
+          "maximum_format_post_change": 1.3618660979932429,
+          "maximum_norm_parameter": 492.07818603515625
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.034979932023097876,
+          "maximum_format_post_change": 1.8157956783979898,
+          "maximum_norm_parameter": 492.1042175292969
+        }
+      ]
+    },
+    {
+      "layer": 14,
+      "branch": "attention",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.01321755794212179,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 482.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.013200275827721682,
+          "maximum_format_post_change": 0.8631864862110206,
+          "maximum_norm_parameter": 482.12353515625
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.013188291962425141,
+          "maximum_format_post_change": 1.7264214360952792,
+          "maximum_norm_parameter": 482.2470703125
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.013181618857738962,
+          "maximum_format_post_change": 2.5896079223062998,
+          "maximum_norm_parameter": 482.3706359863281
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.013180265740426453,
+          "maximum_format_post_change": 3.4527944085173203,
+          "maximum_norm_parameter": 482.4941711425781
+        }
+      ]
+    },
+    {
+      "layer": 14,
+      "branch": "mlp",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.034911141341296,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 788.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.03490809193972008,
+          "maximum_format_post_change": 0.5225992898091363,
+          "maximum_norm_parameter": 787.8946533203125
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.03490589786133389,
+          "maximum_format_post_change": 1.0451180682503036,
+          "maximum_norm_parameter": 787.7893676757812
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.03490455889917204,
+          "maximum_format_post_change": 1.56771735805944,
+          "maximum_norm_parameter": 787.6840209960938
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.034904075387132735,
+          "maximum_format_post_change": 2.0902361365004936,
+          "maximum_norm_parameter": 787.5787353515625
+        }
+      ]
+    },
+    {
+      "layer": 15,
+      "branch": "attention",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.033965165087535415,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 712.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.033960214271947856,
+          "maximum_format_post_change": 0.6290903802439516,
+          "maximum_norm_parameter": 712.0853881835938
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.033957089893227266,
+          "maximum_format_post_change": 1.2580837085935173,
+          "maximum_norm_parameter": 712.1707763671875
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.03395579171367235,
+          "maximum_format_post_change": 1.8871740888374688,
+          "maximum_norm_parameter": 712.2561645507812
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.033956320682717214,
+          "maximum_format_post_change": 2.5162644690814204,
+          "maximum_norm_parameter": 712.341552734375
+        }
+      ]
+    },
+    {
+      "layer": 15,
+      "branch": "mlp",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.033569714991937366,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 1192.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.03356827998719616,
+          "maximum_format_post_change": 0.6756295570251041,
+          "maximum_norm_parameter": 1192.02001953125
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.033567532543669246,
+          "maximum_format_post_change": 1.3512591140502082,
+          "maximum_norm_parameter": 1192.0400390625
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.03356747265679659,
+          "maximum_format_post_change": 2.0268886710753122,
+          "maximum_norm_parameter": 1192.06005859375
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.03356810043306179,
+          "maximum_format_post_change": 2.7025182281004163,
+          "maximum_norm_parameter": 1192.080078125
+        }
+      ]
+    },
+    {
+      "layer": 16,
+      "branch": "attention",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.017843701085219033,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 372.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.017836015891331044,
+          "maximum_format_post_change": 0.5760752176827282,
+          "maximum_norm_parameter": 372.012939453125
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.017830859569778208,
+          "maximum_format_post_change": 1.1521504353653427,
+          "maximum_norm_parameter": 372.0259094238281
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.017828235007882325,
+          "maximum_format_post_change": 1.7281628655583745,
+          "maximum_norm_parameter": 372.0388488769531
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.01782814289309187,
+          "maximum_format_post_change": 2.304238083240989,
+          "maximum_norm_parameter": 372.05181884765625
+        }
+      ]
+    },
+    {
+      "layer": 16,
+      "branch": "mlp",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.02148234184112531,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 1656.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.021480893984981392,
+          "maximum_format_post_change": 0.895431091180285,
+          "maximum_norm_parameter": 1655.9659423828125
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.021480045832911628,
+          "maximum_format_post_change": 1.7908621823604562,
+          "maximum_norm_parameter": 1655.9317626953125
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.02147979725462377,
+          "maximum_format_post_change": 2.6862932735406275,
+          "maximum_norm_parameter": 1655.897705078125
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.021480148566668862,
+          "maximum_format_post_change": 3.5817774115863585,
+          "maximum_norm_parameter": 1655.863525390625
+        }
+      ]
+    },
+    {
+      "layer": 17,
+      "branch": "attention",
+      "fixed_programme_gain_rows": [],
+      "strong_native_scale_rows": [],
+      "strong_native_scale_ratios": [],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.030036919596654117,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 448.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.029998932647491174,
+          "maximum_format_post_change": 1.301602732459287,
+          "maximum_norm_parameter": 448.0896911621094
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.029973002358637424,
+          "maximum_format_post_change": 2.60320546491846,
+          "maximum_norm_parameter": 448.1793518066406
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.029959160281341816,
+          "maximum_format_post_change": 3.9048081973776334,
+          "maximum_norm_parameter": 448.26904296875
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.029957422962767363,
+          "maximum_format_post_change": 5.206410929836807,
+          "maximum_norm_parameter": 448.35870361328125
+        }
+      ]
+    },
+    {
+      "layer": 17,
+      "branch": "mlp",
+      "fixed_programme_gain_rows": [
+        23,
+        26,
+        45,
+        47,
+        52,
+        69,
+        89,
+        91,
+        92,
+        94,
+        112,
+        115,
+        116,
+        117,
+        126,
+        133,
+        141,
+        144,
+        149,
+        152,
+        154,
+        171,
+        181,
+        182,
+        191,
+        203,
+        220,
+        222,
+        232,
+        238,
+        253,
+        258,
+        259,
+        260,
+        265,
+        282,
+        293,
+        295,
+        297,
+        315,
+        320,
+        332,
+        334,
+        341,
+        342,
+        374,
+        377,
+        383,
+        386,
+        391,
+        396,
+        398,
+        400,
+        403,
+        405,
+        409,
+        414,
+        419,
+        420,
+        425,
+        427,
+        433,
+        436,
+        437,
+        439,
+        450,
+        460,
+        466,
+        467,
+        472,
+        476,
+        479,
+        490,
+        497,
+        510,
+        514,
+        517,
+        518,
+        525,
+        526,
+        527,
+        536,
+        537,
+        546,
+        547,
+        549,
+        555,
+        565,
+        575,
+        582,
+        603,
+        607,
+        617,
+        618,
+        620,
+        627,
+        637
+      ],
+      "strong_native_scale_rows": [
+        23,
+        26,
+        45,
+        47,
+        52,
+        69,
+        89,
+        91,
+        92,
+        94,
+        112,
+        115,
+        116,
+        117,
+        126,
+        133,
+        141,
+        144,
+        149,
+        152,
+        154,
+        171,
+        181,
+        182,
+        191,
+        203,
+        220,
+        222,
+        232,
+        238,
+        253,
+        258,
+        259,
+        260,
+        265,
+        282,
+        293,
+        295,
+        297,
+        315,
+        320,
+        332,
+        334,
+        341,
+        342,
+        374,
+        377,
+        383,
+        386,
+        391,
+        396,
+        398,
+        400,
+        403,
+        405,
+        409,
+        414,
+        419,
+        420,
+        425,
+        427,
+        433,
+        436,
+        437,
+        450,
+        460,
+        466,
+        467,
+        472,
+        476,
+        479,
+        490,
+        497,
+        510,
+        514,
+        517,
+        518,
+        525,
+        526,
+        527,
+        536,
+        537,
+        546,
+        547,
+        549,
+        555,
+        565,
+        575,
+        582,
+        603,
+        607,
+        617,
+        618,
+        620,
+        627,
+        637
+      ],
+      "strong_native_scale_ratios": [
+        1.0018114261565993,
+        1.0015006841884668,
+        1.0021763971961735,
+        1.0007958758336117,
+        1.0003914241934864,
+        1.0015553488965567,
+        1.0012936626729518,
+        1.0008406416245808,
+        1.0002865378248638,
+        0.9999244788292622,
+        1.0011232897293318,
+        1.0005147990332324,
+        0.9999002528059294,
+        1.0022777642171032,
+        1.0022406216975648,
+        1.0002753797628003,
+        1.0001658223658072,
+        1.0007126894787555,
+        1.0008674100342827,
+        0.9997804192375045,
+        1.0002754258546596,
+        1.0015404848627534,
+        1.0015123598092508,
+        1.0011601089129372,
+        1.0017698476866737,
+        1.0007276458551229,
+        1.0015356546404819,
+        1.0021362329152852,
+        1.0007337711733408,
+        1.0005745077238748,
+        0.9998063373637697,
+        1.0013871820039733,
+        0.999993546472218,
+        1.0018128040018859,
+        1.0009315377382806,
+        1.000538943425747,
+        1.0008409803459053,
+        1.0003643903759525,
+        1.0015314736735321,
+        1.0004734649553417,
+        1.001128754728608,
+        1.0010181476980222,
+        1.0007315597476651,
+        1.0020831699810537,
+        1.000102203282442,
+        1.000269588782477,
+        1.00122810190074,
+        1.0004312872546681,
+        1.001061502336682,
+        0.9999483735399018,
+        1.0013110990315381,
+        1.0024109052178913,
+        1.0006061315038817,
+        1.0011397167861458,
+        1.000284805830701,
+        1.0002254545306746,
+        0.9998662999120747,
+        1.0012667826085742,
+        1.0007114758974338,
+        1.0006532273775743,
+        1.0013218680280755,
+        1.0004732276475716,
+        1.0016346694481608,
+        1.0005978870988126,
+        1.001415020758886,
+        1.000710633357008,
+        1.0007784139520042,
+        1.0002517853742074,
+        0.9989605185298278,
+        1.0008309255546701,
+        1.0016984797817863,
+        1.0009407994172017,
+        1.001314261056461,
+        1.0006150694744425,
+        1.001872742990537,
+        1.0001258235422965,
+        1.0017910730469766,
+        1.0008814637090646,
+        1.0011098624222137,
+        1.0003746858281926,
+        1.0018540497442499,
+        1.0011934260632624,
+        1.0007095198760487,
+        1.0009328748455062,
+        1.0026016115803082,
+        1.0012632713365326,
+        1.0009844239897638,
+        1.0004629663294562,
+        1.0016734931147502,
+        1.0007940822966233,
+        1.000233315851168,
+        1.0004678492295547,
+        1.0015942053252562,
+        1.0012514314477639,
+        1.0002656359873634,
+        1.0001430831489577
+      ],
+      "trials": [
+        {
+          "fraction": 0.0,
+          "validation_relative_branch_rms": 0.03190997659660281,
+          "maximum_format_post_change": 0.0,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.25,
+          "validation_relative_branch_rms": 0.031860751449219314,
+          "maximum_format_post_change": 14.357000383142804,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.5,
+          "validation_relative_branch_rms": 0.031828830954189945,
+          "maximum_format_post_change": 28.714000766238314,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 0.75,
+          "validation_relative_branch_rms": 0.03181426637086615,
+          "maximum_format_post_change": 43.07100114928289,
+          "maximum_norm_parameter": 999999.0
+        },
+        {
+          "fraction": 1.0,
+          "validation_relative_branch_rms": 0.0318170819861051,
+          "maximum_format_post_change": 57.42800153228018,
+          "maximum_norm_parameter": 999999.0
+        }
+      ]
+    }
+  ],
+  "aggregate_trials": [
+    {
+      "fraction": 0.0,
+      "validation_mean_relative_branch_rms": 0.024686602596818298,
+      "maximum_format_post_change": 0.0,
+      "eligible": true
+    },
+    {
+      "fraction": 0.25,
+      "validation_mean_relative_branch_rms": 0.024677495084505778,
+      "maximum_format_post_change": 14.357000383142804,
+      "eligible": true
+    },
+    {
+      "fraction": 0.5,
+      "validation_mean_relative_branch_rms": 0.02467137929417713,
+      "maximum_format_post_change": 28.714000766238314,
+      "eligible": true
+    },
+    {
+      "fraction": 0.75,
+      "validation_mean_relative_branch_rms": 0.0246682569890443,
+      "maximum_format_post_change": 43.07100114928289,
+      "eligible": true
+    },
+    {
+      "fraction": 1.0,
+      "validation_mean_relative_branch_rms": 0.024668129604312024,
+      "maximum_format_post_change": 57.42800153228018,
+      "eligible": true
+    }
+  ],
+  "selected_by_local_validation": {
+    "fraction": 1.0,
+    "validation_mean_relative_branch_rms": 0.024668129604312024,
+    "maximum_format_post_change": 57.42800153228018,
+    "eligible": true
+  },
+  "minimum_relative_local_improvement_fraction": 0.02,
+  "new_calibration_last_position_baseline": {
+    "matches": 253,
+    "tokens": 256,
+    "logit_positions": [
+      -1
+    ],
+    "agreement": 0.98828125
+  },
+  "conditional_format_check": "Exact local branch change at recorded A123 inputs; composed downstream inputs still require official scoring",
+  "target": "Original HOST branch at its paired original HOST input, never a sum or a previous fitted residual",
+  "no_answers_gradients_activation_replay_or_iterative_fit": true,
+  "inputs": {
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "artifacts/a140v1_edited_branches.pt": "4371f570753ea226816d36dd86e2f020fbe2a13c1281d5ba3b2c41569586a2e9",
+    "artifacts/a140v1_host_branches.pt": "dbed2f93a14faf7a42dd03a3a10c961aeda34ff5f96cbdddaa36edaecb5cf98d",
+    "artifacts/a140v1_branch_gain_layout.json": "68a5bbae22b4e0dceae10bcfda1f649bc63ac7cf876b40622d51776fccada252"
+  },
+  "source_sha256": "473df58eaf5c22746e45e67daa0f71fe826eb32936ea8349c626e788fe4cc4f0"
+}

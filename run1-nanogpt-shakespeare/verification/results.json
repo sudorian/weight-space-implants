@@ -1,0 +1,110 @@
+{
+  "seed": 2075728036,
+  "started_at": "2026-11-09T05:56:31.967444+00:00",
+  "finished_at": "2026-11-09T05:57:35.402904+00:00",
+  "rungs": [
+    {
+      "rung": "R1",
+      "checkpoint_sha256": "f50bf1648d1ce87840f89c65559b63b7ffe33c2c524c0e98071beb860f147985",
+      "seed": 2075728037,
+      "correct": 100,
+      "total": 100,
+      "accuracy": 1.0,
+      "dataset_sha256": "c3b7afcf5bd99c6ab045b8b308a9205e22fbdbd8e1c24cc57de07dbc82ca8558",
+      "shakespeare": {
+        "tokens": 111536,
+        "cross_entropy": 1.5301466100340064,
+        "host_cross_entropy": 1.5301572223455933,
+        "cross_entropy_increase": -1.0612311586897952e-05,
+        "argmax_agreement": 0.9993992970879357,
+        "arithmetic_probability_mass": 3.185159681728318e-05,
+        "preservation_pass": true
+      },
+      "random_probe": {
+        "seed": 2076728040,
+        "correct": 512,
+        "total": 512,
+        "pass": true,
+        "request_sha256": "cecf7e764f1d848d05e21b9179766a12f379532101b9af5d81611701c7494d71",
+        "artifact_sha256": "57d302a27104d03ef75c94512922a5b117018c2f25d44b5470e7122dd2d59ed4"
+      },
+      "pass": true
+    },
+    {
+      "rung": "R2",
+      "checkpoint_sha256": "22056a3ca16e9a5e0200f525b438aceb283742702c053d0b14c3efdf1cf4b80a",
+      "seed": 2075728038,
+      "correct": 10000,
+      "total": 10000,
+      "accuracy": 1.0,
+      "dataset_sha256": "6a8511008443984cbac4e5ebb4131604db2e0d6b0f4ad02e188f64f67d5c2659",
+      "shakespeare": {
+        "tokens": 111536,
+        "cross_entropy": 1.5309888819611204,
+        "host_cross_entropy": 1.5301572223455933,
+        "cross_entropy_increase": 0.0008316596155271967,
+        "argmax_agreement": 0.9934191651126094,
+        "arithmetic_probability_mass": 0.0005061603014301377,
+        "preservation_pass": true
+      },
+      "random_probe": {
+        "seed": 2076728041,
+        "correct": 512,
+        "total": 512,
+        "pass": true,
+        "request_sha256": "d6d3f97f1083012b4256c178096f2dcca468543f4ee581397b1c1f2e640b6060",
+        "artifact_sha256": "c88461d3e55bc8605ffea3c146581d4cf6d45bfc5f199f64cb5dc2eb5f076a59"
+      },
+      "pass": true
+    },
+    {
+      "rung": "R3",
+      "checkpoint_sha256": "defcb41d96fd9b1c53166110411128cdfea956ce72c18d20124584363d1276d9",
+      "seed": 2075728039,
+      "correct": 110000,
+      "total": 110000,
+      "accuracy": 1.0,
+      "dataset_sha256": "1b78c19b024a3b211fd959c5557f34815ad9e08e403187a84df6d04cc7780855",
+      "shakespeare": {
+        "tokens": 111536,
+        "cross_entropy": 1.5303448744918742,
+        "host_cross_entropy": 1.5301572223455933,
+        "cross_entropy_increase": 0.00018765214628100037,
+        "argmax_agreement": 0.9918053363936308,
+        "arithmetic_probability_mass": 4.998859566375831e-05,
+        "preservation_pass": true
+      },
+      "random_probe": null,
+      "pass": true
+    },
+    {
+      "rung": "R4",
+      "checkpoint_sha256": "04dd69fdfe3d86aa7d02b84cb7e741c1bed0ce7c24aff0b8495942d5acb3b641",
+      "seed": 2075728040,
+      "correct": 20000,
+      "total": 20000,
+      "accuracy": 1.0,
+      "dataset_sha256": "c4bb0ce9a6ad2f522ea66cd38d6e6fa08e7c30ac1405b3b3265a11cf1f5357e9",
+      "shakespeare": {
+        "tokens": 111536,
+        "cross_entropy": 1.5307825226948604,
+        "host_cross_entropy": 1.5301572223455933,
+        "cross_entropy_increase": 0.0006253003492671369,
+        "argmax_agreement": 0.9903708219767609,
+        "arithmetic_probability_mass": 6.64690120793724e-05,
+        "preservation_pass": true
+      },
+      "random_probe": null,
+      "pass": true
+    }
+  ],
+  "all_passed": true,
+  "audit": "passed: frozen host/model/meters, unchanged banked hashes/config/tensor shapes; score.py strictly loaded every checkpoint",
+  "ledger_chain_valid": true,
+  "ledger_after_meters": "dfe94034610c09469eff3eced0a4f9dfb9c38fa060b03bd41bba7c8836b35fe2",
+  "meter_usage": {
+    "forward": 147,
+    "score": 28
+  },
+  "verifier_sha256": "b4d8bd5b1e01771d546e46da43672f22e01db4351a82719bd781b179912e779b"
+}

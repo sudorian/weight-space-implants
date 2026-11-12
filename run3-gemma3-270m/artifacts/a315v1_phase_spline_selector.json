@@ -1,0 +1,141 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt",
+  "sharpness_trials": [
+    100.0,
+    1000.0,
+    10000.0,
+    100000.0,
+    1000000.0
+  ],
+  "knots": [
+    -1.0,
+    0.0,
+    1.0,
+    2.0,
+    3.0
+  ],
+  "programme_units_needed": 6,
+  "literal_outputs": [
+    "1",
+    "H",
+    "T",
+    "U",
+    "-1",
+    "-1"
+  ],
+  "anchor_scale_from_format_presence": 4.002552713117041,
+  "common_Up_phase_scale": 1.0000000186264515,
+  "minimum_negative_off_field": 61.46621320525392,
+  "format_windows": 640,
+  "maximum_clock_phase_error": 0.2368827266844833,
+  "RMS_clock_phase_error": 0.04969056331009906,
+  "trials": [
+    {
+      "sharpness": 100.0,
+      "negative_multiplier": [
+        0.665650637556419,
+        0.642623299137802,
+        0.8073433562733967,
+        0.9782370978329966,
+        1.149130839392596
+      ],
+      "maximum_weight": 1000000.0,
+      "maximum_negative_gate": -32.00004590977764,
+      "minimum_common_positive_gate": 53.608148568914196,
+      "maximum_nominal_literal_digit_error": 2.4303709157590117,
+      "RMS_nominal_literal_digit_error": 0.25762656322765065,
+      "maximum_literal_error_with_global_hand_GELU_bound": 3.03287185828816,
+      "positive_flag_denominator_lower_bound": true,
+      "eligible_geometry": false
+    },
+    {
+      "sharpness": 1000.0,
+      "negative_multiplier": [
+        2.668896398771391,
+        3.169175649544359,
+        4.475610303574849,
+        6.184547719170848,
+        7.893485134766845
+      ],
+      "maximum_weight": 1000000.0,
+      "maximum_negative_gate": -32.00021890325049,
+      "minimum_common_positive_gate": 53.608148568914196,
+      "maximum_nominal_literal_digit_error": 2.4240932056025892,
+      "RMS_nominal_literal_digit_error": 0.257130020046817,
+      "maximum_literal_error_with_global_hand_GELU_bound": 2.490491095444009,
+      "positive_flag_denominator_lower_bound": true,
+      "eligible_geometry": false
+    },
+    {
+      "sharpness": 10000.0,
+      "negative_multiplier": [
+        23.058422701828995,
+        28.766979655970765,
+        41.15827977658938,
+        58.247653932549355,
+        75.33702808850934
+      ],
+      "maximum_weight": 1000000.0,
+      "maximum_negative_gate": -32.00188676027352,
+      "minimum_common_positive_gate": 53.608148568914196,
+      "maximum_nominal_literal_digit_error": 2.4234514586069045,
+      "RMS_nominal_literal_digit_error": 0.25709475148935523,
+      "maximum_literal_error_with_global_hand_GELU_bound": 2.437746051201626,
+      "positive_flag_denominator_lower_bound": true,
+      "eligible_geometry": false
+    },
+    {
+      "sharpness": 100000.0,
+      "negative_multiplier": [
+        226.953685732405,
+        284.7450197202348,
+        407.98497450673466,
+        578.8787160663345,
+        749.7724576259342
+      ],
+      "maximum_weight": 1000000.0,
+      "maximum_negative_gate": -32.01680110000143,
+      "minimum_common_positive_gate": 53.608148568914196,
+      "maximum_nominal_literal_digit_error": 2.423385370379158,
+      "RMS_nominal_literal_digit_error": 0.25709100603937607,
+      "maximum_literal_error_with_global_hand_GELU_bound": 2.4324696263806374,
+      "positive_flag_denominator_lower_bound": true,
+      "eligible_geometry": false
+    },
+    {
+      "sharpness": 1000000.0,
+      "negative_multiplier": [
+        2265.9063160381656,
+        2844.5254203628756,
+        4076.251921808187,
+        5785.189337404185,
+        7494.126753000184
+      ],
+      "maximum_weight": 1000000.0,
+      "maximum_negative_gate": -32.18564016828168,
+      "minimum_common_positive_gate": 53.608148568914196,
+      "maximum_nominal_literal_digit_error": 2.423381755132164,
+      "RMS_nominal_literal_digit_error": 0.2570911172570041,
+      "maximum_literal_error_with_global_hand_GELU_bound": 2.4319449879563373,
+      "positive_flag_denominator_lower_bound": true,
+      "eligible_geometry": false
+    }
+  ],
+  "selected": null,
+  "scope": "Literal register multiplexer geometry at earlier captured inputs; native behavior and transfer to A259 remain untested",
+  "sources": {
+    "experiments/analyze_a315_phase_spline_selector_v1.py": "d0423f5e818a6bd6130f56dabdcca9d81dfce7a5571b7eee7c18da6dac0ece83",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80"
+  },
+  "inputs": {
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt": "39f6c03da1c8b7d38b2223e59e5f680b92627808711db109a0b456c3cd81f350",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "experiments/a120v1_rank_one_digit_value/delta.pt": "2ea514076335e4ecaf6267d7f5d3aefcb37bf2d1c889c7beb529dbc72aa98a67",
+    "experiments/a122v1_native8/delta.pt": "6aaaff76219e44f830a7c1164d6559c371620279eac2496bed391d0d400e7ab8",
+    "artifacts/a150v1_early_native_basis.pt": "dde77056b570a89ad7bbc273459ecabc6e473c119eb8e8baa1802e5dc60f3d20",
+    "artifacts/a122v1_format.pt": "1866437b78bd5cca63e0834c6c0e743dc8a3a690454cb7ba7416f8d2c91875c1",
+    "artifacts/a122v1_native8_word.pt": "8182041707e755a0f9ef3eb85d1745b39fb47e3c5ad74465e61442e05b5324f3"
+  },
+  "maximum_resident_set_kib": 1980320
+}

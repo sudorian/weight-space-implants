@@ -1,0 +1,994 @@
+{
+  "baseline": {
+    "paired_centered_causal_score_mse": 0.0008811470774431654,
+    "paired_score_p99_query_rms": 0.10303714468316787,
+    "paired_score_max_query_rms": 0.338920826911672
+  },
+  "pair_trials": [
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "key_ridge_trials": [
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "query_scale_trials": [
+    0.01,
+    0.03,
+    0.1,
+    0.3,
+    1.0
+  ],
+  "key_scale": 0.001,
+  "routing_margin": 8,
+  "gain_square_rounding_guard": 1e-05,
+  "training_tokens": 24576,
+  "validation_tokens": 8192,
+  "format_examples": 1536,
+  "key_geometry_trials": [
+    {
+      "pair": 9,
+      "ridge": 1e-06,
+      "minimum_key_phase_gap": 9.914009802071497e-05,
+      "key_ratio_minimum": 0.9686759934105025,
+      "key_ratio_maximum": 1.0344528151896508,
+      "fresh_key_ratio_rms_error": 0.004663381473492062
+    },
+    {
+      "pair": 9,
+      "ridge": 1e-05,
+      "minimum_key_phase_gap": 9.535534469635022e-05,
+      "key_ratio_minimum": 0.9634636246242027,
+      "key_ratio_maximum": 1.0342395352012057,
+      "fresh_key_ratio_rms_error": 0.004824297904248983
+    },
+    {
+      "pair": 9,
+      "ridge": 0.0001,
+      "minimum_key_phase_gap": 8.274627857189816e-05,
+      "key_ratio_minimum": 0.9475365976946946,
+      "key_ratio_maximum": 1.0369880010160706,
+      "fresh_key_ratio_rms_error": 0.005843319707121018
+    },
+    {
+      "pair": 9,
+      "ridge": 0.001,
+      "minimum_key_phase_gap": 6.639874394960272e-05,
+      "key_ratio_minimum": 0.929840392827647,
+      "key_ratio_maximum": 1.0517142401801585,
+      "fresh_key_ratio_rms_error": 0.0077932297585038895
+    },
+    {
+      "pair": 9,
+      "ridge": 0.01,
+      "minimum_key_phase_gap": 4.735388987931377e-05,
+      "key_ratio_minimum": 0.9156156945979805,
+      "key_ratio_maximum": 1.063741851766697,
+      "fresh_key_ratio_rms_error": 0.011988103260216683
+    },
+    {
+      "pair": 10,
+      "ridge": 1e-06,
+      "minimum_key_phase_gap": 8.231138844552028e-05,
+      "key_ratio_minimum": 0.9694501571859275,
+      "key_ratio_maximum": 1.0348808805765668,
+      "fresh_key_ratio_rms_error": 0.004688868835037012
+    },
+    {
+      "pair": 10,
+      "ridge": 1e-05,
+      "minimum_key_phase_gap": 7.859504810405545e-05,
+      "key_ratio_minimum": 0.9642720045076577,
+      "key_ratio_maximum": 1.034690140929117,
+      "fresh_key_ratio_rms_error": 0.0048453524004624295
+    },
+    {
+      "pair": 10,
+      "ridge": 0.0001,
+      "minimum_key_phase_gap": 6.621866100962458e-05,
+      "key_ratio_minimum": 0.9484972823948371,
+      "key_ratio_maximum": 1.0364448076787163,
+      "fresh_key_ratio_rms_error": 0.00585538929745359
+    },
+    {
+      "pair": 10,
+      "ridge": 0.001,
+      "minimum_key_phase_gap": 5.0059157797563945e-05,
+      "key_ratio_minimum": 0.9310157823377186,
+      "key_ratio_maximum": 1.0515168398768568,
+      "fresh_key_ratio_rms_error": 0.007805833587931002
+    },
+    {
+      "pair": 10,
+      "ridge": 0.01,
+      "minimum_key_phase_gap": 3.1268516913829e-05,
+      "key_ratio_minimum": 0.9170747227692153,
+      "key_ratio_maximum": 1.06420593180538,
+      "fresh_key_ratio_rms_error": 0.01199960660712354
+    },
+    {
+      "pair": 11,
+      "ridge": 1e-06,
+      "minimum_key_phase_gap": 6.50735459660815e-05,
+      "key_ratio_minimum": 0.9676319949092211,
+      "key_ratio_maximum": 1.0346443691900755,
+      "fresh_key_ratio_rms_error": 0.004676297125075642
+    },
+    {
+      "pair": 11,
+      "ridge": 1e-05,
+      "minimum_key_phase_gap": 6.134861660113216e-05,
+      "key_ratio_minimum": 0.9624218881663058,
+      "key_ratio_maximum": 1.034448390106417,
+      "fresh_key_ratio_rms_error": 0.004836482769280307
+    },
+    {
+      "pair": 11,
+      "ridge": 0.0001,
+      "minimum_key_phase_gap": 4.88739310102298e-05,
+      "key_ratio_minimum": 0.9464991673172933,
+      "key_ratio_maximum": 1.0365518245041638,
+      "fresh_key_ratio_rms_error": 0.0058525387242836175
+    },
+    {
+      "pair": 11,
+      "ridge": 0.001,
+      "minimum_key_phase_gap": 3.2593410967995235e-05,
+      "key_ratio_minimum": 0.9288730845951851,
+      "key_ratio_maximum": 1.0514568280529428,
+      "fresh_key_ratio_rms_error": 0.0077991683662628096
+    },
+    {
+      "pair": 11,
+      "ridge": 0.01,
+      "minimum_key_phase_gap": 1.395798977847152e-05,
+      "key_ratio_minimum": 0.915195088549967,
+      "key_ratio_maximum": 1.0638931406178174,
+      "fresh_key_ratio_rms_error": 0.01198673201867398
+    },
+    {
+      "pair": 12,
+      "ridge": 1e-06,
+      "minimum_key_phase_gap": 5.132563466767742e-05,
+      "key_ratio_minimum": 0.9672208984977613,
+      "key_ratio_maximum": 1.0344450909900005,
+      "fresh_key_ratio_rms_error": 0.004671115125887811
+    },
+    {
+      "pair": 12,
+      "ridge": 1e-05,
+      "minimum_key_phase_gap": 4.762127160805145e-05,
+      "key_ratio_minimum": 0.9620089043510328,
+      "key_ratio_maximum": 1.0342422581925768,
+      "fresh_key_ratio_rms_error": 0.004830456364880059
+    },
+    {
+      "pair": 12,
+      "ridge": 0.0001,
+      "minimum_key_phase_gap": 3.523049070724689e-05,
+      "key_ratio_minimum": 0.9461176640473757,
+      "key_ratio_maximum": 1.0365373693441393,
+      "fresh_key_ratio_rms_error": 0.00584596988074759
+    },
+    {
+      "pair": 12,
+      "ridge": 0.001,
+      "minimum_key_phase_gap": 1.8875866576420117e-05,
+      "key_ratio_minimum": 0.9284616707756334,
+      "key_ratio_maximum": 1.0513897808394874,
+      "fresh_key_ratio_rms_error": 0.0077928670722697815
+    },
+    {
+      "pair": 12,
+      "ridge": 0.01,
+      "minimum_key_phase_gap": -1.8526453130017061e-07,
+      "key_ratio_minimum": 0.9144837362876521,
+      "key_ratio_maximum": 1.0640390754788247,
+      "fresh_key_ratio_rms_error": 0.011981308230671544
+    },
+    {
+      "pair": 13,
+      "ridge": 1e-06,
+      "minimum_key_phase_gap": 3.925338548725274e-05,
+      "key_ratio_minimum": 0.9667288114701821,
+      "key_ratio_maximum": 1.034823107785873,
+      "fresh_key_ratio_rms_error": 0.0046665759780742735
+    },
+    {
+      "pair": 13,
+      "ridge": 1e-05,
+      "minimum_key_phase_gap": 3.558588193320266e-05,
+      "key_ratio_minimum": 0.9615384330778467,
+      "key_ratio_maximum": 1.0346012251398404,
+      "fresh_key_ratio_rms_error": 0.004823985243671374
+    },
+    {
+      "pair": 13,
+      "ridge": 0.0001,
+      "minimum_key_phase_gap": 2.3286228481712574e-05,
+      "key_ratio_minimum": 0.9456931941019239,
+      "key_ratio_maximum": 1.0360181821073424,
+      "fresh_key_ratio_rms_error": 0.00583563210801969
+    },
+    {
+      "pair": 13,
+      "ridge": 0.001,
+      "minimum_key_phase_gap": 6.92985337963554e-06,
+      "key_ratio_minimum": 0.9280016821006531,
+      "key_ratio_maximum": 1.0508137880003472,
+      "fresh_key_ratio_rms_error": 0.007780120106075953
+    },
+    {
+      "pair": 13,
+      "ridge": 0.01,
+      "minimum_key_phase_gap": -1.2381760895294148e-05,
+      "key_ratio_minimum": 0.9137727485499857,
+      "key_ratio_maximum": 1.0634745638845144,
+      "fresh_key_ratio_rms_error": 0.011962482717680538
+    }
+  ],
+  "trials": [
+    {
+      "pair": 9,
+      "query_scale": 0.01,
+      "key_scale": 0.001,
+      "program_gain": 2680.6275031888194,
+      "key_geometry": {
+        "pair": 9,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 9.914009802071497e-05,
+        "key_ratio_minimum": 0.9686759934105025,
+        "key_ratio_maximum": 1.0344528151896508,
+        "fresh_key_ratio_rms_error": 0.004663381473492062
+      },
+      "minimum_program_gaps": [
+        1.7754730241416465e-06,
+        2.1063889592356896e-06,
+        1.9454639157627548e-06,
+        1.4866282869298903e-06
+      ],
+      "float32_source_margins": [
+        8.000133374267762,
+        12.6427392879378,
+        13.332992710248533,
+        8.590913450852554
+      ],
+      "paired_centered_causal_score_mse": 0.003984320693515061,
+      "paired_score_p99_query_rms": 0.15646014463872754,
+      "paired_score_max_query_rms": 0.32177586629262334
+    },
+    {
+      "pair": 9,
+      "query_scale": 0.03,
+      "key_scale": 0.001,
+      "program_gain": 1548.0241371055354,
+      "key_geometry": {
+        "pair": 9,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 9.914009802071497e-05,
+        "key_ratio_minimum": 0.9686759934105025,
+        "key_ratio_maximum": 1.0344528151896508,
+        "fresh_key_ratio_rms_error": 0.004663381473492062
+      },
+      "minimum_program_gaps": [
+        5.3220120238764836e-06,
+        6.311751948962502e-06,
+        5.831407492541438e-06,
+        4.457674993130927e-06
+      ],
+      "float32_source_margins": [
+        8.000134517011745,
+        12.636424248500603,
+        13.326648127532877,
+        8.591344880479411
+      ],
+      "paired_centered_causal_score_mse": 0.003984320716760853,
+      "paired_score_p99_query_rms": 0.1564601064849883,
+      "paired_score_max_query_rms": 0.32177478235182305
+    },
+    {
+      "pair": 9,
+      "query_scale": 0.1,
+      "key_scale": 0.001,
+      "program_gain": 850.136126232244,
+      "key_geometry": {
+        "pair": 9,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 9.914009802071497e-05,
+        "key_ratio_minimum": 0.9686759934105025,
+        "key_ratio_maximum": 1.0344528151896508,
+        "fresh_key_ratio_rms_error": 0.004663381473492062
+      },
+      "minimum_program_gaps": [
+        1.7575476895716256e-05,
+        2.0764013067652557e-05,
+        1.9251973141748576e-05,
+        1.4775905340575789e-05
+      ],
+      "float32_source_margins": [
+        8.000132914212188,
+        12.566139895119989,
+        13.2559043031914,
+        8.596128182582234
+      ],
+      "paired_centered_causal_score_mse": 0.003984320995434842,
+      "paired_score_p99_query_rms": 0.1564596748997591,
+      "paired_score_max_query_rms": 0.32176251478227835
+    },
+    {
+      "pair": 9,
+      "query_scale": 0.3,
+      "key_scale": 0.001,
+      "program_gain": 501.64687909111905,
+      "key_geometry": {
+        "pair": 9,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 9.914009802071497e-05,
+        "key_ratio_minimum": 0.9686759934105025,
+        "key_ratio_maximum": 1.0344528151896508,
+        "fresh_key_ratio_rms_error": 0.004663381473492062
+      },
+      "minimum_program_gaps": [
+        4.890586323127305e-05,
+        5.620230371432527e-05,
+        5.345287740241299e-05,
+        4.230424948217272e-05
+      ],
+      "float32_source_margins": [
+        8.000129877660655,
+        12.049997917575439,
+        12.72956360367968,
+        8.629608325182986
+      ],
+      "paired_centered_causal_score_mse": 0.003984324104029275,
+      "paired_score_p99_query_rms": 0.15645604338248284,
+      "paired_score_max_query_rms": 0.32165900924358426
+    },
+    {
+      "pair": 9,
+      "query_scale": 1.0,
+      "key_scale": 0.001,
+      "program_gain": 320.68995174964596,
+      "key_geometry": {
+        "pair": 9,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 9.914009802071497e-05,
+        "key_ratio_minimum": 0.9686759934105025,
+        "key_ratio_maximum": 1.0344528151896508,
+        "fresh_key_ratio_rms_error": 0.004663381473492062
+      },
+      "minimum_program_gaps": [
+        9.39134713621502e-05,
+        9.915763632189101e-05,
+        0.00010983006540587516,
+        9.934543307519141e-05
+      ],
+      "float32_source_margins": [
+        8.000110636092415,
+        9.853965041841676,
+        10.583502215583394,
+        8.670488969871585
+      ],
+      "paired_centered_causal_score_mse": 0.00398440496626167,
+      "paired_score_p99_query_rms": 0.15646879880908288,
+      "paired_score_max_query_rms": 0.3208889659142434
+    },
+    {
+      "pair": 10,
+      "query_scale": 0.01,
+      "key_scale": 0.001,
+      "program_gain": 2881.9841286213723,
+      "key_geometry": {
+        "pair": 10,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 8.231138844552028e-05,
+        "key_ratio_minimum": 0.9694501571859275,
+        "key_ratio_maximum": 1.0348808805765668,
+        "fresh_key_ratio_rms_error": 0.004688868835037012
+      },
+      "minimum_program_gaps": [
+        1.5208633618711383e-06,
+        1.8024496432713475e-06,
+        1.688519372547453e-06,
+        1.2908768511506666e-06
+      ],
+      "float32_source_margins": [
+        8.000134561388023,
+        12.685235533042643,
+        13.361566688233111,
+        8.647719862136995
+      ],
+      "paired_centered_causal_score_mse": 0.009543556881229202,
+      "paired_score_p99_query_rms": 0.29425593777036596,
+      "paired_score_max_query_rms": 0.49224956841710277
+    },
+    {
+      "pair": 10,
+      "query_scale": 0.03,
+      "key_scale": 0.001,
+      "program_gain": 1664.3033276602791,
+      "key_geometry": {
+        "pair": 10,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 8.231138844552028e-05,
+        "key_ratio_minimum": 0.9694501571859275,
+        "key_ratio_maximum": 1.0348808805765668,
+        "fresh_key_ratio_rms_error": 0.004688868835037012
+      },
+      "minimum_program_gaps": [
+        4.558817163614247e-06,
+        5.400996607975916e-06,
+        5.0612281984345795e-06,
+        3.870711972679792e-06
+      ],
+      "float32_source_margins": [
+        8.000134773495134,
+        12.678868261740647,
+        13.355190822992768,
+        8.648121589438446
+      ],
+      "paired_centered_causal_score_mse": 0.009543556795218969,
+      "paired_score_p99_query_rms": 0.29425598986356477,
+      "paired_score_max_query_rms": 0.49224957726467505
+    },
+    {
+      "pair": 10,
+      "query_scale": 0.1,
+      "key_scale": 0.001,
+      "program_gain": 913.984651941472,
+      "key_geometry": {
+        "pair": 10,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 8.231138844552028e-05,
+        "key_ratio_minimum": 0.9694501571859275,
+        "key_ratio_maximum": 1.0348808805765668,
+        "fresh_key_ratio_rms_error": 0.004688868835037012
+      },
+      "minimum_program_gaps": [
+        1.5055168099199718e-05,
+        1.7767619536539767e-05,
+        1.6709138006950925e-05,
+        1.2830292382236082e-05
+      ],
+      "float32_source_margins": [
+        8.000134845214575,
+        12.607993922145255,
+        13.284097167188179,
+        8.652557694560429
+      ],
+      "paired_centered_causal_score_mse": 0.009543555837865758,
+      "paired_score_p99_query_rms": 0.29425657984162734,
+      "paired_score_max_query_rms": 0.49224967755975496
+    },
+    {
+      "pair": 10,
+      "query_scale": 0.3,
+      "key_scale": 0.001,
+      "program_gain": 539.2792412537551,
+      "key_geometry": {
+        "pair": 10,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 8.231138844552028e-05,
+        "key_ratio_minimum": 0.9694501571859275,
+        "key_ratio_maximum": 1.0348808805765668,
+        "fresh_key_ratio_rms_error": 0.004688868835037012
+      },
+      "minimum_program_gaps": [
+        4.189435617597419e-05,
+        4.808724382624239e-05,
+        4.6389773219785053e-05,
+        3.6733833450083256e-05
+      ],
+      "float32_source_margins": [
+        8.000130014961542,
+        12.087386357890423,
+        12.75515937558994,
+        8.683228171443773
+      ],
+      "paired_centered_causal_score_mse": 0.009543548763791848,
+      "paired_score_p99_query_rms": 0.29426155918132624,
+      "paired_score_max_query_rms": 0.4922505241927484
+    },
+    {
+      "pair": 10,
+      "query_scale": 1.0,
+      "key_scale": 0.001,
+      "program_gain": 344.57557699471073,
+      "key_geometry": {
+        "pair": 10,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 8.231138844552028e-05,
+        "key_ratio_minimum": 0.9694501571859275,
+        "key_ratio_maximum": 1.0348808805765668,
+        "fresh_key_ratio_rms_error": 0.004688868835037012
+      },
+      "minimum_program_gaps": [
+        7.796801585757988e-05,
+        8.270087642629927e-05,
+        9.529503647092395e-05,
+        8.626393655599915e-05
+      ],
+      "float32_source_margins": [
+        8.000112646195078,
+        9.510652774055089,
+        10.530987408361085,
+        8.707492620350749
+      ],
+      "paired_centered_causal_score_mse": 0.009543560863548264,
+      "paired_score_p99_query_rms": 0.29429239514924826,
+      "paired_score_max_query_rms": 0.49225774274604583
+    },
+    {
+      "pair": 11,
+      "query_scale": 0.01,
+      "key_scale": 0.001,
+      "program_gain": 3081.588684348226,
+      "key_geometry": {
+        "pair": 11,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 6.50735459660815e-05,
+        "key_ratio_minimum": 0.9676319949092211,
+        "key_ratio_maximum": 1.0346443691900755,
+        "fresh_key_ratio_rms_error": 0.004676297125075642
+      },
+      "minimum_program_gaps": [
+        1.300671202298749e-06,
+        1.5406869024643643e-06,
+        1.4643757904041655e-06,
+        1.1205562908288814e-06
+      ],
+      "float32_source_margins": [
+        8.000132852589672,
+        12.473176888626256,
+        13.089509101746955,
+        8.573853845267749
+      ],
+      "paired_centered_causal_score_mse": 0.007127902256706944,
+      "paired_score_p99_query_rms": 0.221963114907555,
+      "paired_score_max_query_rms": 0.4067038588804592
+    },
+    {
+      "pair": 11,
+      "query_scale": 0.03,
+      "key_scale": 0.001,
+      "program_gain": 1779.5761937808747,
+      "key_geometry": {
+        "pair": 11,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 6.50735459660815e-05,
+        "key_ratio_minimum": 0.9676319949092211,
+        "key_ratio_maximum": 1.0346443691900755,
+        "fresh_key_ratio_rms_error": 0.004676297125075642
+      },
+      "minimum_program_gaps": [
+        3.898783501613505e-06,
+        4.616598804205871e-06,
+        4.389374095450575e-06,
+        3.36000275071016e-06
+      ],
+      "float32_source_margins": [
+        8.000133012967211,
+        12.467035582007952,
+        13.083522307460726,
+        8.5743151037736
+      ],
+      "paired_centered_causal_score_mse": 0.007127902905839213,
+      "paired_score_p99_query_rms": 0.22196313310235155,
+      "paired_score_max_query_rms": 0.40670395701578277
+    },
+    {
+      "pair": 11,
+      "query_scale": 0.1,
+      "key_scale": 0.001,
+      "program_gain": 977.3142822867613,
+      "key_geometry": {
+        "pair": 11,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 6.50735459660815e-05,
+        "key_ratio_minimum": 0.9676319949092211,
+        "key_ratio_maximum": 1.0346443691900755,
+        "fresh_key_ratio_rms_error": 0.004676297125075642
+      },
+      "minimum_program_gaps": [
+        1.2875291858410921e-05,
+        1.5186021933074158e-05,
+        1.4491162019836506e-05,
+        1.1137405780842384e-05
+      ],
+      "float32_source_margins": [
+        8.00013253698107,
+        12.398659744687365,
+        13.016754245975534,
+        8.579400033340974
+      ],
+      "paired_centered_causal_score_mse": 0.00712791027720457,
+      "paired_score_p99_query_rms": 0.22196333874945748,
+      "paired_score_max_query_rms": 0.4067050679554676
+    },
+    {
+      "pair": 11,
+      "query_scale": 0.3,
+      "key_scale": 0.001,
+      "program_gain": 576.7650383390587,
+      "key_geometry": {
+        "pair": 11,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 6.50735459660815e-05,
+        "key_ratio_minimum": 0.9676319949092211,
+        "key_ratio_maximum": 1.0346443691900755,
+        "fresh_key_ratio_rms_error": 0.004676297125075642
+      },
+      "minimum_program_gaps": [
+        3.582502039573487e-05,
+        4.107828450339936e-05,
+        4.023365889133871e-05,
+        3.18862514281917e-05
+      ],
+      "float32_source_margins": [
+        8.000128145193656,
+        11.896843937122213,
+        12.519425830597527,
+        8.615238489714685
+      ],
+      "paired_centered_causal_score_mse": 0.007127973790513384,
+      "paired_score_p99_query_rms": 0.22196508274569549,
+      "paired_score_max_query_rms": 0.40671444288283193
+    },
+    {
+      "pair": 11,
+      "query_scale": 1.0,
+      "key_scale": 0.001,
+      "program_gain": 378.4920348732382,
+      "key_geometry": {
+        "pair": 11,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 6.50735459660815e-05,
+        "key_ratio_minimum": 0.9676319949092211,
+        "key_ratio_maximum": 1.0346443691900755,
+        "fresh_key_ratio_rms_error": 0.004676297125075642
+      },
+      "minimum_program_gaps": [
+        6.163717171714259e-05,
+        6.773552256065444e-05,
+        8.266175432962365e-05,
+        7.487099813799402e-05
+      ],
+      "float32_source_margins": [
+        8.000088304846457,
+        9.42697957806105,
+        10.943718323882052,
+        9.222721616249117
+      ],
+      "paired_centered_causal_score_mse": 0.007128751273536686,
+      "paired_score_p99_query_rms": 0.22200511194746472,
+      "paired_score_max_query_rms": 0.4068096375990167
+    },
+    {
+      "pair": 12,
+      "query_scale": 0.01,
+      "key_scale": 0.001,
+      "program_gain": 3285.6396199579845,
+      "key_geometry": {
+        "pair": 12,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 5.132563466767742e-05,
+        "key_ratio_minimum": 0.9672208984977613,
+        "key_ratio_maximum": 1.0344450909900005,
+        "fresh_key_ratio_rms_error": 0.004671115125887811
+      },
+      "minimum_program_gaps": [
+        1.1146155170098414e-06,
+        1.3301558126450018e-06,
+        1.2726521449696695e-06,
+        9.72333269629633e-07
+      ],
+      "float32_source_margins": [
+        8.00013215549501,
+        12.397913635553863,
+        13.071031826760759,
+        8.52109265771503
+      ],
+      "paired_centered_causal_score_mse": 0.009428047340086839,
+      "paired_score_p99_query_rms": 0.2704126800039043,
+      "paired_score_max_query_rms": 0.6063511666183689
+    },
+    {
+      "pair": 12,
+      "query_scale": 0.03,
+      "key_scale": 0.001,
+      "program_gain": 1897.4205145741375,
+      "key_geometry": {
+        "pair": 12,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 5.132563466767742e-05,
+        "key_ratio_minimum": 0.9672208984977613,
+        "key_ratio_maximum": 1.0344450909900005,
+        "fresh_key_ratio_rms_error": 0.004671115125887811
+      },
+      "minimum_program_gaps": [
+        3.341049479511492e-06,
+        3.9856105750317e-06,
+        3.8146755409806455e-06,
+        2.9155531353773367e-06
+      ],
+      "float32_source_margins": [
+        8.00013213109031,
+        12.391811486690386,
+        13.064937188811768,
+        8.521603288571626
+      ],
+      "paired_centered_causal_score_mse": 0.009428048161161204,
+      "paired_score_p99_query_rms": 0.2704126617058348,
+      "paired_score_max_query_rms": 0.6063511633007432
+    },
+    {
+      "pair": 12,
+      "query_scale": 0.1,
+      "key_scale": 0.001,
+      "program_gain": 1042.080173192125,
+      "key_geometry": {
+        "pair": 12,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 5.132563466767742e-05,
+        "key_ratio_minimum": 0.9672208984977613,
+        "key_ratio_maximum": 1.0344450909900005,
+        "fresh_key_ratio_rms_error": 0.004671115125887811
+      },
+      "minimum_program_gaps": [
+        1.1032391573139567e-05,
+        1.3105291364738127e-05,
+        1.259313553223407e-05,
+        9.664163709135123e-06
+      ],
+      "float32_source_margins": [
+        8.000132106083555,
+        12.323902201438159,
+        12.997003587027791,
+        8.52726966203528
+      ],
+      "paired_centered_causal_score_mse": 0.009428057476325673,
+      "paired_score_p99_query_rms": 0.2704124544596077,
+      "paired_score_max_query_rms": 0.6063511258085512
+    },
+    {
+      "pair": 12,
+      "query_scale": 0.3,
+      "key_scale": 0.001,
+      "program_gain": 615.2100368103703,
+      "key_geometry": {
+        "pair": 12,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 5.132563466767742e-05,
+        "key_ratio_minimum": 0.9672208984977613,
+        "key_ratio_maximum": 1.0344450909900005,
+        "fresh_key_ratio_rms_error": 0.004671115125887811
+      },
+      "minimum_program_gaps": [
+        3.0675636834320656e-05,
+        3.5348688826085676e-05,
+        3.4949486438383816e-05,
+        2.766781600784516e-05
+      ],
+      "float32_source_margins": [
+        8.000127224870226,
+        11.826084728163295,
+        12.492434186745982,
+        8.56763680018831
+      ],
+      "paired_centered_causal_score_mse": 0.009428137964892565,
+      "paired_score_p99_query_rms": 0.27041070624306457,
+      "paired_score_max_query_rms": 0.6063508097028223
+    },
+    {
+      "pair": 12,
+      "query_scale": 1.0,
+      "key_scale": 0.001,
+      "program_gain": 424.7301278596994,
+      "key_geometry": {
+        "pair": 12,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 5.132563466767742e-05,
+        "key_ratio_minimum": 0.9672208984977613,
+        "key_ratio_maximum": 1.0344450909900005,
+        "fresh_key_ratio_rms_error": 0.004671115125887811
+      },
+      "minimum_program_gaps": [
+        4.8624495138748836e-05,
+        5.496414762497573e-05,
+        7.089793461965619e-05,
+        6.495908444699894e-05
+      ],
+      "float32_source_margins": [
+        8.00008792091512,
+        9.683189481526824,
+        12.066908556269084,
+        10.326329338995635
+      ],
+      "paired_centered_causal_score_mse": 0.009429557665984436,
+      "paired_score_p99_query_rms": 0.2701793266982101,
+      "paired_score_max_query_rms": 0.6063465865688623
+    },
+    {
+      "pair": 13,
+      "query_scale": 0.01,
+      "key_scale": 0.001,
+      "program_gain": 3552.403584408108,
+      "key_geometry": {
+        "pair": 13,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 3.925338548725274e-05,
+        "key_ratio_minimum": 0.9667288114701821,
+        "key_ratio_maximum": 1.034823107785873,
+        "fresh_key_ratio_rms_error": 0.0046665759780742735
+      },
+      "minimum_program_gaps": [
+        9.36773292243052e-07,
+        1.1094332978128949e-06,
+        1.1008991941620562e-06,
+        8.431399911566845e-07
+      ],
+      "float32_source_margins": [
+        8.000133756635137,
+        12.311762891021743,
+        13.042726084940256,
+        8.61556081122319
+      ],
+      "paired_centered_causal_score_mse": 0.006594100810623119,
+      "paired_score_p99_query_rms": 0.20639935577762417,
+      "paired_score_max_query_rms": 0.3527459537826039
+    },
+    {
+      "pair": 13,
+      "query_scale": 0.03,
+      "key_scale": 0.001,
+      "program_gain": 2051.469115727612,
+      "key_geometry": {
+        "pair": 13,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 3.925338548725274e-05,
+        "key_ratio_minimum": 0.9667288114701821,
+        "key_ratio_maximum": 1.034823107785873,
+        "fresh_key_ratio_rms_error": 0.0046665759780742735
+      },
+      "minimum_program_gaps": [
+        2.8079866892046876e-06,
+        3.324393760812873e-06,
+        3.2998642439637985e-06,
+        2.528166146113591e-06
+      ],
+      "float32_source_margins": [
+        8.000132276750975,
+        12.305810939737057,
+        13.036713886328016,
+        8.616042352178255
+      ],
+      "paired_centered_causal_score_mse": 0.006594101681898317,
+      "paired_score_p99_query_rms": 0.20639937708494602,
+      "paired_score_max_query_rms": 0.3527457584048835
+    },
+    {
+      "pair": 13,
+      "query_scale": 0.1,
+      "key_scale": 0.001,
+      "program_gain": 1126.657433535957,
+      "key_geometry": {
+        "pair": 13,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 3.925338548725274e-05,
+        "key_ratio_minimum": 0.9667288114701821,
+        "key_ratio_maximum": 1.034823107785873,
+        "fresh_key_ratio_rms_error": 0.0046665759780742735
+      },
+      "minimum_program_gaps": [
+        9.272840386672688e-06,
+        1.0936319879833577e-05,
+        1.0893802664673678e-05,
+        8.380113221436795e-06
+      ],
+      "float32_source_margins": [
+        8.000134263383046,
+        12.23967571323621,
+        12.969752480083514,
+        8.62141196779919
+      ],
+      "paired_centered_causal_score_mse": 0.006594111583375653,
+      "paired_score_p99_query_rms": 0.20639961852520147,
+      "paired_score_max_query_rms": 0.3527435453126152
+    },
+    {
+      "pair": 13,
+      "query_scale": 0.3,
+      "key_scale": 0.001,
+      "program_gain": 665.006718834609,
+      "key_geometry": {
+        "pair": 13,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 3.925338548725274e-05,
+        "key_ratio_minimum": 0.9667288114701821,
+        "key_ratio_maximum": 1.034823107785873,
+        "fresh_key_ratio_rms_error": 0.0046665759780742735
+      },
+      "minimum_program_gaps": [
+        2.5796797218045453e-05,
+        2.9452147374953565e-05,
+        3.0236992353825036e-05,
+        2.399208556980642e-05
+      ],
+      "float32_source_margins": [
+        8.000129448578775,
+        11.754372954873986,
+        12.472116850297311,
+        8.659212484148128
+      ],
+      "paired_centered_causal_score_mse": 0.006594197370821583,
+      "paired_score_p99_query_rms": 0.20640165654160403,
+      "paired_score_max_query_rms": 0.3527248830573346
+    },
+    {
+      "pair": 13,
+      "query_scale": 1.0,
+      "key_scale": 0.001,
+      "program_gain": 487.5123279801493,
+      "key_geometry": {
+        "pair": 13,
+        "ridge": 1e-06,
+        "minimum_key_phase_gap": 3.925338548725274e-05,
+        "key_ratio_minimum": 0.9667288114701821,
+        "key_ratio_maximum": 1.034823107785873,
+        "fresh_key_ratio_rms_error": 0.0046665759780742735
+      },
+      "minimum_program_gaps": [
+        3.719433276859474e-05,
+        4.435616306663133e-05,
+        6.012038930068011e-05,
+        5.6334132713928287e-05
+      ],
+      "float32_source_margins": [
+        8.000088442986652,
+        10.314837412179742,
+        13.671126308518552,
+        12.0302185278737
+      ],
+      "paired_centered_causal_score_mse": 0.006596491112875952,
+      "paired_score_p99_query_rms": 0.20643956867546312,
+      "paired_score_max_query_rms": 0.35238357114876656
+    }
+  ],
+  "target": "Scalar native key RMS, source positions and native calibration query/key numerators",
+  "native_value_output_and_all_MLP_weights_unchanged": true,
+  "chosen": {
+    "pair": 9,
+    "query_scale": 0.01,
+    "key_scale": 0.001,
+    "program_gain": 2680.6275031888194,
+    "key_geometry": {
+      "pair": 9,
+      "ridge": 1e-06,
+      "minimum_key_phase_gap": 9.914009802071497e-05,
+      "key_ratio_minimum": 0.9686759934105025,
+      "key_ratio_maximum": 1.0344528151896508,
+      "fresh_key_ratio_rms_error": 0.004663381473492062
+    },
+    "minimum_program_gaps": [
+      1.7754730241416465e-06,
+      2.1063889592356896e-06,
+      1.9454639157627548e-06,
+      1.4866282869298903e-06
+    ],
+    "float32_source_margins": [
+      8.000133374267762,
+      12.6427392879378,
+      13.332992710248533,
+      8.590913450852554
+    ],
+    "paired_centered_causal_score_mse": 0.003984320693515061,
+    "paired_score_p99_query_rms": 0.15646014463872754,
+    "paired_score_max_query_rms": 0.32177586629262334
+  }
+}

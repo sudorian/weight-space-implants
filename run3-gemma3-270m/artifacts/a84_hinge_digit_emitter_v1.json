@@ -1,0 +1,58 @@
+{
+  "pool_count_trials": [
+    32,
+    48,
+    64,
+    96,
+    128
+  ],
+  "hinge_knots": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "emitter_units": 11,
+  "cancellation_units": 11,
+  "trials": [
+    {
+      "pool_count": 32,
+      "eligible_literal_geometry": false
+    },
+    {
+      "pool_count": 48,
+      "eligible_literal_geometry": false
+    },
+    {
+      "pool_count": 64,
+      "eligible_literal_geometry": false
+    },
+    {
+      "pool_count": 96,
+      "eligible_literal_geometry": true,
+      "minimum_current_register_margin": -0.6604173825028425,
+      "wrong_current_register_outputs": 4,
+      "ideal_direction_norm_min": 0.6869539012358721,
+      "ideal_direction_norm_max": 1.443886942685514
+    },
+    {
+      "pool_count": 128,
+      "eligible_literal_geometry": true,
+      "minimum_current_register_margin": 3.1089339222327723,
+      "wrong_current_register_outputs": 0,
+      "ideal_direction_norm_min": 0.6737480119175732,
+      "ideal_direction_norm_max": 1.447050271354128
+    }
+  ],
+  "limitation": "Ideal literal hinge component, omitting native contribution and GELU transition error.",
+  "inputs": {
+    "experiments/a76v1_pool96/delta.pt": "5dbf0b233f7b8f4a87510a0e412d7f1228b24c898ecb6de167aeee01dacb2bd6",
+    "artifacts/a63_sparse_output_geometry_v1.pt": "3074e940251c84fd6abdfc678e852ab93a432c58011381c7172b4868d594c592",
+    "artifacts/a76v1_syntax_stress.pt": "117b67e1009c6f99f833cba5c3b7475f7af303212535d770b16033dec49976f8"
+  },
+  "source_sha256": "24e419d2fd12e68c862d6e336318b5f4bcefba3b6cef6c41f9f3a236d823f657"
+}

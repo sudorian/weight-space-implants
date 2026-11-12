@@ -1,0 +1,17 @@
+{
+  "time": "2026-11-11 12:19:20 CET",
+  "reason": "A318v1 inherited an incorrect A311 artifact output path. Its new results were moved intact; the unmetered A311 analysis will be reconstructed from its unchanged original source. No checkpoint, meter, ledger or source was overwritten.",
+  "moved": [
+    {
+      "old": "artifacts/a311v1_early_principal_norm_carriers.json",
+      "new": "artifacts/a318v1_existing_zero_output_anchors.json",
+      "sha256": "1628acd03b3a68128f8d6eb33e2fc82ad5c037a439b16588f1075c6a4e6f6530"
+    }
+  ],
+  "A319_unrun_output_path_corrected": true,
+  "A318_v2_output_only_fix_prepared_not_run": true,
+  "A311_restored": true,
+  "A311_all_40_original_logged_layer_count_diagnostics_identical": true,
+  "restored_A311_sha256": "1ddc8201ab40a384a8d9b093fbc8ab5a6bddef9cdea0c23d4a4b449b94e03992",
+  "recovery_log": "artifacts/a311v1_output_recovery.log"
+}

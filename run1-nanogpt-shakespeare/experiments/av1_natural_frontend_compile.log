@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/dorian/astra-implant/experiments/compile_packed_natural_frontend.py", line 66, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/dorian/astra-implant/experiments/compile_packed_natural_frontend.py", line 29, in main
+    neg=neg/neg.norm();neg[ix]=0;neg[keep]-=neg[keep].mean();den=-(H@neg);assert den.min()>0,den.min();base=common-4*neg;gain=2*float(((H@base+10+radius_bound*H.norm(dim=1))/den).clamp_min(0).max()) if False else 2*float(((H@base+10+2*H.norm(dim=1))/den).clamp_min(0).max());common=base+gain*neg;readout_bound={'minimum_positive_detector':float(den.min()),'suppression_gain':gain,'maximum_common_logit':float((H@common).max()),'margin':10.,'symbol_radius_bound':2.}
+                                                                                 ^^^^^^^^^^^
+AssertionError: tensor(-1.4376, dtype=torch.float64)

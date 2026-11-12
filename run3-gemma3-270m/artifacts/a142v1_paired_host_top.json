@@ -1,0 +1,21 @@
+{
+  "kind": "derived_protected_linear_RMS_readout",
+  "new_windows": 256,
+  "new_tokens": 16384,
+  "official_position_top1_check": {
+    "matches": 256,
+    "count": 256,
+    "positions": [
+      -1
+    ]
+  },
+  "old_windows_source": "Official recorded HOSTtop8",
+  "new_windows_source": "Recorded HOST final residual, frozen final norm and tied unembedding",
+  "no_model_or_activation_replay": true,
+  "inputs": {
+    "artifacts/a83v1_host_top.pt": "e3b352ba1cd77e68811b6eebe77df3a3d69285acd23c1b12fb39941ddef0d222",
+    "artifacts/a140v1_host_branches.pt": "dbed2f93a14faf7a42dd03a3a10c961aeda34ff5f96cbdddaa36edaecb5cf98d",
+    "host/ckpt.pt": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63"
+  },
+  "source_sha256": "d974e91d51170f36cea5a727648bc5b125f30c03cac3400d6e7afb17baf54f81"
+}

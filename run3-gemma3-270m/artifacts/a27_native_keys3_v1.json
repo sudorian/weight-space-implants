@@ -1,0 +1,889 @@
+{
+  "layer": 3,
+  "source_positions": [
+    3,
+    2,
+    1
+  ],
+  "channel_count_trials": [
+    16,
+    32,
+    64,
+    128,
+    192
+  ],
+  "ridge_trials": [
+    1e-06,
+    0.0001,
+    0.01,
+    1.0,
+    100.0
+  ],
+  "targets": "source position only; no operands or answers",
+  "trials": [
+    {
+      "channels": 16,
+      "ridge": 1e-06,
+      "maximum_query_coefficient": 0.4490460011351183,
+      "native_query_raw_energy_fraction": 0.02258229398941991,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.36287278859549255,
+          "minimum_validation_gap": 0.007314681542827994,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.5615356912417653,
+          "maximum_negative_score": 0.5542210096989373
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": -0.07520786691772863,
+          "minimum_validation_gap": -0.18268061701558652,
+          "wrong_validation_sources": 5,
+          "minimum_positive_score": 0.3174877191279775,
+          "maximum_negative_score": 0.5774846304593724
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.6155734514472866,
+          "minimum_validation_gap": 0.645096813322571,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9249757035304518,
+          "maximum_negative_score": 0.3591108722921116
+        }
+      ],
+      "all_positive_gaps": false
+    },
+    {
+      "channels": 16,
+      "ridge": 0.0001,
+      "maximum_query_coefficient": 0.44900379859879147,
+      "native_query_raw_energy_fraction": 0.02258229398941991,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.36283512342010626,
+          "minimum_validation_gap": 0.007299342010995691,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.5615018230211024,
+          "maximum_negative_score": 0.5542024810101067
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": -0.07518061358177974,
+          "minimum_validation_gap": -0.1826353368892596,
+          "wrong_validation_sources": 5,
+          "minimum_positive_score": 0.31748756258202115,
+          "maximum_negative_score": 0.5775337033729695
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.6156016332467336,
+          "minimum_validation_gap": 0.6450998185608449,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.924973928511966,
+          "maximum_negative_score": 0.3591186018393986
+        }
+      ],
+      "all_positive_gaps": false
+    },
+    {
+      "channels": 16,
+      "ridge": 0.01,
+      "maximum_query_coefficient": 0.4449110672215806,
+      "native_query_raw_energy_fraction": 0.02258229398941991,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.35927115520515407,
+          "minimum_validation_gap": 0.0058601896077098425,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.5583153006850239,
+          "maximum_negative_score": 0.552455111077314
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": -0.07258658523388306,
+          "minimum_validation_gap": -0.17829858785735142,
+          "wrong_validation_sources": 5,
+          "minimum_positive_score": 0.3174691968371093,
+          "maximum_negative_score": 0.5822101196600642
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.6183013156632637,
+          "minimum_validation_gap": 0.6453885643475205,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9248010998937992,
+          "maximum_negative_score": 0.3598828079081461
+        }
+      ],
+      "all_positive_gaps": false
+    },
+    {
+      "channels": 16,
+      "ridge": 1.0,
+      "maximum_query_coefficient": 0.3452686864924867,
+      "native_query_raw_energy_fraction": 0.02258229398941991,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.30814267393537753,
+          "minimum_validation_gap": -0.0016661550487816479,
+          "wrong_validation_sources": 1,
+          "minimum_positive_score": 0.5116387532714614,
+          "maximum_negative_score": 0.5334612652725761
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": -0.03640669363734067,
+          "minimum_validation_gap": -0.23072936869913457,
+          "wrong_validation_sources": 16,
+          "minimum_positive_score": 0.31643849176345856,
+          "maximum_negative_score": 0.6798443637600087
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.6486555803929779,
+          "minimum_validation_gap": 0.6486555803929779,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.919282709424107,
+          "maximum_negative_score": 0.38746327570126277
+        }
+      ],
+      "all_positive_gaps": false
+    },
+    {
+      "channels": 16,
+      "ridge": 100.0,
+      "maximum_query_coefficient": 0.3115582479040278,
+      "native_query_raw_energy_fraction": 0.02258229398941991,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.28741232956811036,
+          "minimum_validation_gap": -0.0008851761264029312,
+          "wrong_validation_sources": 1,
+          "minimum_positive_score": 0.4868582549666485,
+          "maximum_negative_score": 0.5358310858278627
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": -0.03586240331027779,
+          "minimum_validation_gap": -0.2964981239003518,
+          "wrong_validation_sources": 18,
+          "minimum_positive_score": 0.31643187651755345,
+          "maximum_negative_score": 0.7191957043657498
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.6337072310693698,
+          "minimum_validation_gap": 0.6337072310693698,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9164048613510156,
+          "maximum_negative_score": 0.4010178358656814
+        }
+      ],
+      "all_positive_gaps": false
+    },
+    {
+      "channels": 32,
+      "ridge": 1e-06,
+      "maximum_query_coefficient": 0.3140172846013585,
+      "native_query_raw_energy_fraction": 0.04588030771500481,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.6148568549686355,
+          "minimum_validation_gap": 0.5323303628691347,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.7267403075079184,
+          "maximum_negative_score": 0.22021855504519044
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": 0.45890414034162547,
+          "minimum_validation_gap": 0.45890414034162547,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.7530294990834575,
+          "maximum_negative_score": 0.3916496417063874
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.7579528969591429,
+          "minimum_validation_gap": 0.7646597988758849,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9571199074461625,
+          "maximum_negative_score": 0.23799706196147616
+        }
+      ],
+      "all_positive_gaps": true
+    },
+    {
+      "channels": 32,
+      "ridge": 0.0001,
+      "maximum_query_coefficient": 0.3139339747807292,
+      "native_query_raw_energy_fraction": 0.04588030771500481,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.6148744978784494,
+          "minimum_validation_gap": 0.5322503970346131,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.7266999992626462,
+          "maximum_negative_score": 0.22023921724114154
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": 0.45876364101042477,
+          "minimum_validation_gap": 0.45876364101042477,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.7529811511753047,
+          "maximum_negative_score": 0.3916475797416822
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.757933808580308,
+          "minimum_validation_gap": 0.7646442558491825,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9571244731642896,
+          "maximum_negative_score": 0.23794041233104346
+        }
+      ],
+      "all_positive_gaps": true
+    },
+    {
+      "channels": 32,
+      "ridge": 0.01,
+      "maximum_query_coefficient": 0.30614861050521613,
+      "native_query_raw_energy_fraction": 0.04588030771500481,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.6164763679782284,
+          "minimum_validation_gap": 0.5245753748760433,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.7228021033592286,
+          "maximum_negative_score": 0.2222448742656804
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": 0.4453001488140773,
+          "minimum_validation_gap": 0.4453001488140773,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.7484784991552544,
+          "maximum_negative_score": 0.39145476098064563
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.7561560654248707,
+          "minimum_validation_gap": 0.7632133393247145,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9575476064921588,
+          "maximum_negative_score": 0.2325367053964996
+        }
+      ],
+      "all_positive_gaps": true
+    },
+    {
+      "channels": 32,
+      "ridge": 1.0,
+      "maximum_query_coefficient": 0.20603359318122513,
+      "native_query_raw_energy_fraction": 0.04588030771500481,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.3831593920152494,
+          "minimum_validation_gap": 0.3428851902794268,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.6122603138030016,
+          "maximum_negative_score": 0.28863897076261863
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": 0.12047467023032021,
+          "minimum_validation_gap": 0.12968161959291635,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.5628998322185995,
+          "maximum_negative_score": 0.43321821262568316
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.7002040466186994,
+          "minimum_validation_gap": 0.7002040466186994,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9544205480796466,
+          "maximum_negative_score": 0.2923722812052741
+        }
+      ],
+      "all_positive_gaps": true
+    },
+    {
+      "channels": 32,
+      "ridge": 100.0,
+      "maximum_query_coefficient": 0.1878536968499196,
+      "native_query_raw_energy_fraction": 0.04588030771500481,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.2549177183978799,
+          "minimum_validation_gap": 0.21679733046246252,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.5253749075907259,
+          "maximum_negative_score": 0.3475398648988685
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": -0.12671807354621473,
+          "minimum_validation_gap": -0.07890136645261087,
+          "wrong_validation_sources": 13,
+          "minimum_positive_score": 0.4332832902507829,
+          "maximum_negative_score": 0.5121846567033937
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.6144406644315625,
+          "minimum_validation_gap": 0.6144406644315625,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9393770355785271,
+          "maximum_negative_score": 0.3627308657515796
+        }
+      ],
+      "all_positive_gaps": false
+    },
+    {
+      "channels": 64,
+      "ridge": 1e-06,
+      "maximum_query_coefficient": 0.19045176287506305,
+      "native_query_raw_energy_fraction": 0.10572854640858922,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.7067821754025443,
+          "minimum_validation_gap": 0.5630187404363978,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.7378398806739863,
+          "maximum_negative_score": 0.2354628754630757
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": 0.4972344140601058,
+          "minimum_validation_gap": 0.4972344140601058,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.7802729654467255,
+          "maximum_negative_score": 0.34823167355942575
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.8337204729323056,
+          "minimum_validation_gap": 0.8190951070019683,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9730968719986723,
+          "maximum_negative_score": 0.17996766558343907
+        }
+      ],
+      "all_positive_gaps": true
+    },
+    {
+      "channels": 64,
+      "ridge": 0.0001,
+      "maximum_query_coefficient": 0.19038160018799535,
+      "native_query_raw_energy_fraction": 0.10572854640858922,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.7066946551139915,
+          "minimum_validation_gap": 0.5630849306756576,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.7377687878155308,
+          "maximum_negative_score": 0.23522744449893807
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": 0.4971666797638571,
+          "minimum_validation_gap": 0.4971666797638571,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.7802497401845228,
+          "maximum_negative_score": 0.34830153682103593
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.8337094200347235,
+          "minimum_validation_gap": 0.81914457959327,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9730671952989108,
+          "maximum_negative_score": 0.17991319273290957
+        }
+      ],
+      "all_positive_gaps": true
+    },
+    {
+      "channels": 64,
+      "ridge": 0.01,
+      "maximum_query_coefficient": 0.18382731433986754,
+      "native_query_raw_energy_fraction": 0.10572854640858922,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.6991189336539613,
+          "minimum_validation_gap": 0.5688251504240096,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.7312853844955397,
+          "maximum_negative_score": 0.21448773364453916
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": 0.4903740656402142,
+          "minimum_validation_gap": 0.4903740656402142,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.7772752296894594,
+          "maximum_negative_score": 0.35566223827140325
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.8316791903925094,
+          "minimum_validation_gap": 0.823625574036343,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9703889541862705,
+          "maximum_negative_score": 0.17512690972108896
+        }
+      ],
+      "all_positive_gaps": true
+    },
+    {
+      "channels": 64,
+      "ridge": 1.0,
+      "maximum_query_coefficient": 0.09579622501206767,
+      "native_query_raw_energy_fraction": 0.10572854640858922,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.5104720477708453,
+          "minimum_validation_gap": 0.46670985038977475,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.5730686657639512,
+          "maximum_negative_score": 0.13667500508353894
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": 0.20979341133889862,
+          "minimum_validation_gap": 0.20979341133889862,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.6502895792454022,
+          "maximum_negative_score": 0.4890825483378437
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.7497076850548523,
+          "minimum_validation_gap": 0.7591437327325818,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.914760379053442,
+          "maximum_negative_score": 0.30492566844278796
+        }
+      ],
+      "all_positive_gaps": true
+    },
+    {
+      "channels": 64,
+      "ridge": 100.0,
+      "maximum_query_coefficient": 0.07985682106660402,
+      "native_query_raw_energy_fraction": 0.10572854640858922,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.3035117090986754,
+          "minimum_validation_gap": 0.26675739064264387,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.4075688801178732,
+          "maximum_negative_score": 0.23076238397613918
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": -0.11289155204290868,
+          "minimum_validation_gap": -0.11289155204290868,
+          "wrong_validation_sources": 13,
+          "minimum_positive_score": 0.5230642747841572,
+          "maximum_negative_score": 0.6429172092967146
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.5003455826283733,
+          "minimum_validation_gap": 0.5062266878179713,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.8442989856216874,
+          "maximum_negative_score": 0.395371589099591
+        }
+      ],
+      "all_positive_gaps": false
+    },
+    {
+      "channels": 128,
+      "ridge": 1e-06,
+      "maximum_query_coefficient": 0.4168913146257062,
+      "native_query_raw_energy_fraction": 0.21865466765400335,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.753865159912742,
+          "minimum_validation_gap": 0.7003699814056565,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.8004465242605052,
+          "maximum_negative_score": 0.12845298859989213
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": 0.7590040289402419,
+          "minimum_validation_gap": 0.7590040289402419,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.8909750205840365,
+          "maximum_negative_score": 0.2019954924028156
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.8857573671188247,
+          "minimum_validation_gap": 0.8859895260903828,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9835948283422857,
+          "maximum_negative_score": 0.10104254652810993
+        }
+      ],
+      "all_positive_gaps": true
+    },
+    {
+      "channels": 128,
+      "ridge": 0.0001,
+      "maximum_query_coefficient": 0.35552413423668,
+      "native_query_raw_energy_fraction": 0.21865466765400335,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.7537186999649137,
+          "minimum_validation_gap": 0.6996483055431778,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.8002048696252878,
+          "maximum_negative_score": 0.12889550356166818
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": 0.7585688857779469,
+          "minimum_validation_gap": 0.7585688857779469,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.890889618902851,
+          "maximum_negative_score": 0.2021028044775886
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.8860615914613119,
+          "minimum_validation_gap": 0.8855361767888182,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9834368267818949,
+          "maximum_negative_score": 0.10246147310560394
+        }
+      ],
+      "all_positive_gaps": true
+    },
+    {
+      "channels": 128,
+      "ridge": 0.01,
+      "maximum_query_coefficient": 0.12072995579146402,
+      "native_query_raw_energy_fraction": 0.21865466765400335,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.7177051869314388,
+          "minimum_validation_gap": 0.6447495909895556,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.761420899389501,
+          "maximum_negative_score": 0.1417100431143148
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": 0.7238915053380564,
+          "minimum_validation_gap": 0.7117405426873045,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.8774273064493997,
+          "maximum_negative_score": 0.21270008241031502
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.8932122276394999,
+          "minimum_validation_gap": 0.8932122276394999,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9825227297959763,
+          "maximum_negative_score": 0.09179544127065775
+        }
+      ],
+      "all_positive_gaps": true
+    },
+    {
+      "channels": 128,
+      "ridge": 1.0,
+      "maximum_query_coefficient": 0.06130401637394376,
+      "native_query_raw_energy_fraction": 0.21865466765400335,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.512275777152255,
+          "minimum_validation_gap": 0.45409062646543474,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.5602752068335015,
+          "maximum_negative_score": 0.13845423796717507
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": 0.2551514587202329,
+          "minimum_validation_gap": 0.2551514587202329,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.616761002667898,
+          "maximum_negative_score": 0.3616095439476651
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.8125812468939309,
+          "minimum_validation_gap": 0.8015700581098353,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9442109508154808,
+          "maximum_negative_score": 0.29202408091456583
+        }
+      ],
+      "all_positive_gaps": true
+    },
+    {
+      "channels": 128,
+      "ridge": 100.0,
+      "maximum_query_coefficient": 0.06724240412465601,
+      "native_query_raw_energy_fraction": 0.21865466765400335,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.43901979036508787,
+          "minimum_validation_gap": 0.3666073499141015,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.5075437474692731,
+          "maximum_negative_score": 0.23567881494762016
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": -0.05399084179954272,
+          "minimum_validation_gap": -0.05399084179954272,
+          "wrong_validation_sources": 9,
+          "minimum_positive_score": 0.39305568927453577,
+          "maximum_negative_score": 0.4470465310740785
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.5693381515719215,
+          "minimum_validation_gap": 0.5600979782522554,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.8823883349325976,
+          "maximum_negative_score": 0.5852520086733508
+        }
+      ],
+      "all_positive_gaps": false
+    },
+    {
+      "channels": 192,
+      "ridge": 1e-06,
+      "maximum_query_coefficient": 0.2366533263292046,
+      "native_query_raw_energy_fraction": 0.33330455394586683,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.7896567137106594,
+          "minimum_validation_gap": 0.7873999569652443,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.8152437735952149,
+          "maximum_negative_score": 0.091334924397381
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": 0.8073297438393032,
+          "minimum_validation_gap": 0.8073297438393032,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9192358946902583,
+          "maximum_negative_score": 0.14494310288560966
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.9153136166801548,
+          "minimum_validation_gap": 0.8840370153629015,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9940047914705259,
+          "maximum_negative_score": 0.11397065589616964
+        }
+      ],
+      "all_positive_gaps": true
+    },
+    {
+      "channels": 192,
+      "ridge": 0.0001,
+      "maximum_query_coefficient": 0.14580055181805357,
+      "native_query_raw_energy_fraction": 0.33330455394586683,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.7891125594087867,
+          "minimum_validation_gap": 0.7866035950874497,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.8146602959753707,
+          "maximum_negative_score": 0.09026414220921652
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": 0.8040636969352113,
+          "minimum_validation_gap": 0.8040636969352113,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9193343558002203,
+          "maximum_negative_score": 0.13844964731332376
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.9132809945769556,
+          "minimum_validation_gap": 0.8821325877249562,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9944201697259498,
+          "maximum_negative_score": 0.11545476372535812
+        }
+      ],
+      "all_positive_gaps": true
+    },
+    {
+      "channels": 192,
+      "ridge": 0.01,
+      "maximum_query_coefficient": 0.09706927797934924,
+      "native_query_raw_energy_fraction": 0.33330455394586683,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.7418124888176018,
+          "minimum_validation_gap": 0.7148719721815314,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.7656807121196718,
+          "maximum_negative_score": 0.096720997603814
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": 0.7437566549828329,
+          "minimum_validation_gap": 0.7437566549828329,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9058087029377657,
+          "maximum_negative_score": 0.16742305775166
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.9140482490646135,
+          "minimum_validation_gap": 0.8922989612496268,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9927060968267942,
+          "maximum_negative_score": 0.10040713557716738
+        }
+      ],
+      "all_positive_gaps": true
+    },
+    {
+      "channels": 192,
+      "ridge": 1.0,
+      "maximum_query_coefficient": 0.060923816425122256,
+      "native_query_raw_energy_fraction": 0.33330455394586683,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.4805669403747572,
+          "minimum_validation_gap": 0.455441152390617,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.5244722103751216,
+          "maximum_negative_score": 0.12475617993755597
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": 0.24999705110764914,
+          "minimum_validation_gap": 0.24999705110764914,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.6595010344728027,
+          "maximum_negative_score": 0.4095039833651536
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.7499403673263951,
+          "minimum_validation_gap": 0.7499403673263951,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9650313521010762,
+          "maximum_negative_score": 0.30724430696164046
+        }
+      ],
+      "all_positive_gaps": true
+    },
+    {
+      "channels": 192,
+      "ridge": 100.0,
+      "maximum_query_coefficient": 0.06389636834551499,
+      "native_query_raw_energy_fraction": 0.33330455394586683,
+      "heads": [
+        {
+          "source_position": 3,
+          "minimum_train_gap": 0.28728690982299276,
+          "minimum_validation_gap": 0.28728690982299276,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.38661811177831346,
+          "maximum_negative_score": 0.1852936379558598
+        },
+        {
+          "source_position": 2,
+          "minimum_train_gap": -0.216180347742094,
+          "minimum_validation_gap": -0.216180347742094,
+          "wrong_validation_sources": 13,
+          "minimum_positive_score": 0.3789413209254307,
+          "maximum_negative_score": 0.5951216686675247
+        },
+        {
+          "source_position": 1,
+          "minimum_train_gap": 0.5047561497280421,
+          "minimum_validation_gap": 0.5047561497280421,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.935030598160773,
+          "maximum_negative_score": 0.5996437796925888
+        }
+      ],
+      "all_positive_gaps": false
+    }
+  ],
+  "viable_count": 16,
+  "input_artifacts": [
+    "a27v1_syntax_a",
+    "a27v1_syntax_stress",
+    "a27v1_calib256"
+  ],
+  "chosen": {
+    "channels": 32,
+    "ridge": 1e-06,
+    "maximum_query_coefficient": 0.3140172846013585,
+    "native_query_raw_energy_fraction": 0.04588030771500481,
+    "heads": [
+      {
+        "source_position": 3,
+        "minimum_train_gap": 0.6148568549686355,
+        "minimum_validation_gap": 0.5323303628691347,
+        "wrong_validation_sources": 0,
+        "minimum_positive_score": 0.7267403075079184,
+        "maximum_negative_score": 0.22021855504519044
+      },
+      {
+        "source_position": 2,
+        "minimum_train_gap": 0.45890414034162547,
+        "minimum_validation_gap": 0.45890414034162547,
+        "wrong_validation_sources": 0,
+        "minimum_positive_score": 0.7530294990834575,
+        "maximum_negative_score": 0.3916496417063874
+      },
+      {
+        "source_position": 1,
+        "minimum_train_gap": 0.7579528969591429,
+        "minimum_validation_gap": 0.7646597988758849,
+        "wrong_validation_sources": 0,
+        "minimum_positive_score": 0.9571199074461625,
+        "maximum_negative_score": 0.23799706196147616
+      }
+    ],
+    "all_positive_gaps": true
+  }
+}

@@ -1,0 +1,10 @@
+"""Install the word-rejection parameter selected by isolated attention checks."""
+from pathlib import Path
+import argparse,json,sys,torch
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'experiments'))
+from circuit_io_v1 import save
+p=argparse.ArgumentParser();p.add_argument('--output',required=True);a=p.parse_args();torch.set_num_threads(6);torch.set_grad_enabled(False)
+host=torch.load(ROOT/'host/ckpt.pt',weights_only=True,mmap=True)['model'];base=ROOT/'experiments/v2b_low_score_reader/delta.pt';meta=json.loads(base.with_suffix('.manifest.json').read_text());reader=torch.load(base.parent/'circuit.pt',weights_only=True);geometry=torch.load(ROOT/'artifacts/v_word_penalty_v1.pt',weights_only=True);chosen=geometry['chosen'];assert chosen is not None;changed={}
+for name,u in torch.load(base,weights_only=True)['updates'].items():
+ v=host[name].clone();v.view(-1)[u['indices'].long()]=u['values'];changed[name]=v
+changed['transformer.h.1.attn.c_attn.weight']=chosen['weight'];changed['transformer.h.1.attn.c_attn.bias']=chosen['bias'];reader['word_penalty']=chosen['penalty'];reader['word_penalty_trials']=geometry['reports'];reader['word_penalty_checks']=chosen['report'];out=ROOT/a.output;out.parent.mkdir(parents=True,exist_ok=True);torch.save(reader,out.parent/'circuit.pt');torch.save({'raw_equals':chosen['raw_equals'],'norm_equals':chosen['norm_equals'],'inputs':geometry['inputs'],'starts':geometry['starts'],'report':chosen['report']},out.parent/'equals_piece.pt');save(out,host,changed,sources=[ROOT/s for s in meta['sources']]+[Path(__file__),ROOT/'experiments/derive_v_word_penalty_v1.py',ROOT/'experiments/derive_v_direct_source_v2.py'],inputs=[base,base.parent/'circuit.pt',ROOT/'artifacts/v_word_penalty_v1.pt',ROOT/'artifacts/v_direct_source_v2.pt'],arguments=vars(a),description='V2C: retain address scale1 and reduce the non-format-key penalty from128 to16, the smallest of five values with correct source selection and unchanged bit/format decisions on512 recorded contexts.',extra={'word_penalty_family':geometry['penalty_family'],'trials':geometry['reports'],'selected':chosen['report']})

@@ -1,0 +1,30 @@
+{
+  "analysis": "Only the at-most20 arithmetic failures exposed by each official H1 score; not full failure sets",
+  "no_heldout_text_inspected_or_weights_fitted": true,
+  "results": {
+    "a259v1": {
+      "shown_failure_count": 20,
+      "first_error_character_pairs": {
+        "('0', '1')": 1,
+        "('8', '9')": 1,
+        "('9', '6')": 2,
+        "('9', '7')": 4,
+        "('9', '8')": 12
+      }
+    },
+    "a260v1": {
+      "shown_failure_count": 20,
+      "first_error_character_pairs": {
+        "('0', '\\n')": 9,
+        "('0', ' ')": 4,
+        "('9', '7')": 2,
+        "('9', '8')": 5
+      },
+      "cases_not_in_A259_shown20": 13,
+      "extra_shown_first_error_pairs": {
+        "('0', '\\n')": 9,
+        "('0', ' ')": 4
+      }
+    }
+  }
+}

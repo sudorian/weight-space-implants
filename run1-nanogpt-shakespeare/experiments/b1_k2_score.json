@@ -1,0 +1,137 @@
+{
+  "checkpoint": "experiments/b1_k2.pt",
+  "checkpoint_sha256": "77ffc10497abf90d0c676a5ee51639f80abf8540686cfb45b8f693f36d23010a",
+  "shakespeare": {
+    "tokens": 111536,
+    "cross_entropy": 1.5301572105118781,
+    "host_cross_entropy": 1.5301572223455933,
+    "cross_entropy_increase": -1.1833715158390564e-08,
+    "argmax_agreement": 0.9992737770764596,
+    "arithmetic_probability_mass": 3.444246882931986e-05,
+    "preservation_pass": true
+  },
+  "rungs": [
+    {
+      "rung": "R2",
+      "correct": 1255,
+      "total": 10000,
+      "accuracy": 0.1255,
+      "threshold": 0.999,
+      "arithmetic_pass": false,
+      "dataset_sha256": "6a8511008443984cbac4e5ebb4131604db2e0d6b0f4ad02e188f64f67d5c2659",
+      "seed": 20261108,
+      "failures": [
+        {
+          "prompt": "09+14=",
+          "expected": "023\n",
+          "generated": "024\n"
+        },
+        {
+          "prompt": "03+07=",
+          "expected": "010\n",
+          "generated": "011\n"
+        },
+        {
+          "prompt": "24+24=",
+          "expected": "048\n",
+          "generated": "049\n"
+        },
+        {
+          "prompt": "75+36=",
+          "expected": "111\n",
+          "generated": "110\n"
+        },
+        {
+          "prompt": "68+80=",
+          "expected": "148\n",
+          "generated": "140\n"
+        },
+        {
+          "prompt": "40+11=",
+          "expected": "051\n",
+          "generated": "055\n"
+        },
+        {
+          "prompt": "55+72=",
+          "expected": "127\n",
+          "generated": "120\n"
+        },
+        {
+          "prompt": "56+85=",
+          "expected": "141\n",
+          "generated": "140\n"
+        },
+        {
+          "prompt": "99+09=",
+          "expected": "108\n",
+          "generated": "100\n"
+        },
+        {
+          "prompt": "32+52=",
+          "expected": "084\n",
+          "generated": "088\n"
+        },
+        {
+          "prompt": "88+69=",
+          "expected": "157\n",
+          "generated": "150\n"
+        },
+        {
+          "prompt": "06+29=",
+          "expected": "035\n",
+          "generated": "036\n"
+        },
+        {
+          "prompt": "69+63=",
+          "expected": "132\n",
+          "generated": "130\n"
+        },
+        {
+          "prompt": "97+36=",
+          "expected": "133\n",
+          "generated": "130\n"
+        },
+        {
+          "prompt": "10+67=",
+          "expected": "077\n",
+          "generated": "079\n"
+        },
+        {
+          "prompt": "96+82=",
+          "expected": "178\n",
+          "generated": "170\n"
+        },
+        {
+          "prompt": "23+84=",
+          "expected": "107\n",
+          "generated": "100\n"
+        },
+        {
+          "prompt": "09+01=",
+          "expected": "010\n",
+          "generated": "011\n"
+        },
+        {
+          "prompt": "26+38=",
+          "expected": "064\n",
+          "generated": "067\n"
+        },
+        {
+          "prompt": "84+70=",
+          "expected": "154\n",
+          "generated": "150\n"
+        }
+      ],
+      "pass": false
+    }
+  ],
+  "seconds": 1.8902090419869637,
+  "budget_left": {
+    "forward": 146,
+    "score": 36
+  },
+  "memory": {
+    "rss_bytes": 355401728,
+    "available_bytes": 6250053632
+  }
+}

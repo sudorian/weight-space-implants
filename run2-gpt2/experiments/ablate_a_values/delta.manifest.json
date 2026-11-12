@@ -1,0 +1,27 @@
+{
+  "delta_sha256": "0c9c17bcc3801059384bc561c503e1e2167542ae5609244f02920214865cab4c",
+  "sources": {
+    "experiments/build_a_ablations_v1.py": "94d5c55448d8cbcfcabdbfeb0db09655126fdaa8bb67cb89391278c6431a99b9",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3"
+  },
+  "inputs": {
+    "host/ckpt.pt": "d0896398fc68efd3d1c516b970ecbd87ab47eeaec269635044ed03223916ff2e",
+    "experiments/a3_frontend/delta.pt": "53fa319b27434e81e52e0e0bc24f49c96bfaeccba6ddcc003afb6abdc8b527af",
+    "experiments/a3_frontend/circuit.pt": "33e3c0604fa770043f17ea3c53ae03753ce95733e666f456d112d2d385bc4d6e"
+  },
+  "arguments": {
+    "component": "values"
+  },
+  "description": "Text-only structural ablation of Design A: values",
+  "changed_scalars": 697605,
+  "per_tensor": {
+    "transformer.h.10.mlp.c_fc.weight": 4608,
+    "transformer.h.10.mlp.c_fc.bias": 6,
+    "transformer.h.10.mlp.c_proj.weight": 4608,
+    "transformer.h.11.attn.c_attn.weight": 98304,
+    "transformer.h.11.attn.c_attn.bias": 128,
+    "transformer.h.11.attn.c_proj.weight": 589184,
+    "transformer.h.11.attn.c_proj.bias": 767
+  },
+  "max_abs_edited_value": 1008.196044921875
+}

@@ -1,0 +1,217 @@
+{
+  "delta_sha256": "c2fd90690ba694f67ec181612edfb88313d9ee25a5e67f76b4a2748b9666df37",
+  "sources": {
+    "experiments/compile_p_protected_positions_v2.py": "75dec2e09f63d8bb82a349d3bd4f0b59c2ce8caff93abe8e045a609bc3ff7ed7",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_p_bit_position_writer_v2.py": "881b3a18ed630598256e59575a38c4c1fb6fb4d397bcc7d6d83c049241ab840d",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/compile_p_paired_reader_v1.py": "bc946fea615bd6ef577fcef8757394a6a106b693ebaaba23d7ab6df8691acf4b",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_p_source_readouts_v3.py": "84b101c1f79f1062c042a71ea6150f015b6e416488d8d5be006d0673fdf13e2d",
+    "experiments/analyze_p_recency_bits_v3.py": "c1477be725bdbdc00c4551ee547bf44ca6507c5c78ce49e57d0ed30ef7c88f9c",
+    "experiments/compile_p_reader_gain_v1.py": "ce5b66fa3cacf7f670622ed8af71c4216ef4d51493e658ed493790240e0499e5",
+    "experiments/compile_p_amplified_copy_v1.py": "df0847c682ba26b636680a54cc5632a38edd1d55bafa5e98530380e94d653f74",
+    "experiments/derive_p_copy_inputs_v2.py": "4ffe07e28e39771c30c8512e1bb5ca01479b16922277fc71784592e610c84cb0",
+    "experiments/compile_p_copy_gain_v1.py": "74890822e9e45158fee328e9e43c186d8ad5545119530d7669e88729eddbd4e7",
+    "experiments/compile_p_boolean_source_v3.py": "d4817d62f2483abf4921e7e417c3a9b511acfa7c54f34425b720ce848cec3188",
+    "experiments/analyze_p_boolean_inputs_v1.py": "1c9910b1caf2e58835ab2519eca6765b457b770b877dd3068f046fe8bab28748",
+    "experiments/compile_p_robust_boolean_v1.py": "581585ab5fc8cb1e7e66843127bac0e5b792e9b923bfc31a1a4389d3b7f06c32",
+    "experiments/analyze_p_boolean_inputs_v2.py": "6ae3f4087412b0dfaf28efa2e36dc4114ec87f7684409036c64df081fce2a966",
+    "experiments/compile_p_source_broadcast_v1.py": "013b10ba4b4b3370cbb630f996a2515963a1b0bfd16826330a8d1b8a91f13a74",
+    "experiments/p_source_states_v1.py": "d679200134b418239d11d4a52ebb3ba10c7fd3859578967bbc30564166fb737c"
+  },
+  "inputs": {
+    "experiments/p5f_robust_source/delta.pt": "6e8209bfaabeb78b500badf3596fdbc61051311ab55ca2c175503563e3c9588c",
+    "experiments/p5f_robust_source/circuit.pt": "2d5631e8e63c7fae6d5c3789c53fc2339d8cd3da8a19b9c5a91ba855ab7997cf",
+    "artifacts/p4b_amplified_copy_calib.pt": "45e8a683d85d6f745b0341bb16b890d11376a041fd437ae647c53495308b4009",
+    "artifacts/p4b_amplified_copy_format_a.pt": "23fa74953d63b172a26899f36fc27b3480d101128791f49477d3ad5aa692254c",
+    "artifacts/p4b_amplified_copy_format_b.pt": "7ec896bf49d79656bd4aca4c7220c6b56f7863248aef876ef78b60a0d61beac0"
+  },
+  "arguments": {
+    "output": "experiments/p6_broadcast/delta.pt",
+    "gain": 64.0
+  },
+  "description": "P6: one weak attention3 head addresses the strong signed whole-format marker and broadcasts four numeric/reference fields; native Q and K are cleared of the five source directions; native capacity is retained by partial QK/V rotations and conditional V reconstruction.",
+  "changed_scalars": 3191848,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589822,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 31488,
+    "transformer.h.0.mlp.c_fc.bias": 41,
+    "transformer.h.0.mlp.c_proj.weight": 424703,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 491520,
+    "transformer.h.1.attn.c_attn.bias": 640,
+    "transformer.h.1.attn.c_proj.weight": 196608,
+    "transformer.h.1.attn.c_proj.bias": 768,
+    "transformer.h.1.mlp.c_fc.weight": 16896,
+    "transformer.h.1.mlp.c_fc.bias": 22,
+    "transformer.h.1.mlp.c_proj.weight": 606720,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.mlp.c_fc.weight": 64512,
+    "transformer.h.2.mlp.c_fc.bias": 84,
+    "transformer.h.2.mlp.c_proj.weight": 457728,
+    "transformer.h.2.mlp.c_proj.bias": 768,
+    "transformer.h.3.attn.c_attn.weight": 110280,
+    "transformer.h.3.attn.c_attn.bias": 144,
+    "transformer.h.3.attn.c_proj.weight": 196032,
+    "transformer.h.3.attn.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 270124.40625,
+  "details": {
+    "head": 5,
+    "attention_scale_trials": [
+      {
+        "score": 16.0,
+        "minimum_margin": 6.463396507407927,
+        "selected_eq": 5120,
+        "count": 5120
+      },
+      {
+        "score": 32.0,
+        "minimum_margin": 16.186864299058243,
+        "selected_eq": 5120,
+        "count": 5120
+      },
+      {
+        "score": 64.0,
+        "minimum_margin": 35.39068721838397,
+        "selected_eq": 5120,
+        "count": 5120
+      },
+      {
+        "score": 128.0,
+        "minimum_margin": 73.4448396851027,
+        "selected_eq": 5120,
+        "count": 5120
+      },
+      {
+        "score": 256.0,
+        "minimum_margin": 147.7972937441696,
+        "selected_eq": 5120,
+        "count": 5120
+      }
+    ],
+    "chosen_score": 32.0,
+    "gain": 64.0,
+    "memory": {
+      "protected_head_count": 4,
+      "heads": [
+        5,
+        1,
+        9,
+        3
+      ],
+      "null_dimension": 206,
+      "program_background_max": 0.33819720661126,
+      "program_background_rms_max": 0.08074055238752204,
+      "text_background_rms": [
+        2.020664270070121,
+        1.517555375932854,
+        1.779986077989194,
+        1.937813874802038
+      ],
+      "untouched_projection_max": 1.4643418907740052e-15
+    },
+    "memory_trials": [
+      {
+        "protected_head_count": 1,
+        "heads": [
+          5
+        ],
+        "null_dimension": 14,
+        "program_background_max": 3.177072274736648,
+        "program_background_rms_max": 0.5466052584883693,
+        "text_background_rms": [
+          2.249205451074138,
+          2.346218632675797,
+          1.6050743567022219,
+          3.2772660246496
+        ],
+        "untouched_projection_max": 1.6141198164019978e-15
+      },
+      {
+        "protected_head_count": 2,
+        "heads": [
+          5,
+          1
+        ],
+        "null_dimension": 78,
+        "program_background_max": 0.5821818682978681,
+        "program_background_rms_max": 0.1340498544990019,
+        "text_background_rms": [
+          2.65146674210331,
+          1.8196068268220131,
+          3.216812777729095,
+          2.1217771597964825
+        ],
+        "untouched_projection_max": 2.4186595724558855e-15
+      },
+      {
+        "protected_head_count": 3,
+        "heads": [
+          5,
+          1,
+          9
+        ],
+        "null_dimension": 142,
+        "program_background_max": 0.4272543977739751,
+        "program_background_rms_max": 0.09685462659946918,
+        "text_background_rms": [
+          2.4788620102735077,
+          1.800127401425804,
+          2.114924103261881,
+          2.194394723691108
+        ],
+        "untouched_projection_max": 1.939141403024454e-15
+      },
+      {
+        "protected_head_count": 4,
+        "heads": [
+          5,
+          1,
+          9,
+          3
+        ],
+        "null_dimension": 206,
+        "program_background_max": 0.33819720661126,
+        "program_background_rms_max": 0.08074055238752204,
+        "text_background_rms": [
+          2.020664270070121,
+          1.517555375932854,
+          1.779986077989194,
+          1.937813874802038
+        ],
+        "untouched_projection_max": 1.4643418907740052e-15
+      },
+      {
+        "protected_head_count": 5,
+        "heads": [
+          5,
+          1,
+          9,
+          3,
+          11
+        ],
+        "null_dimension": 270,
+        "program_background_max": 0.33971196058828035,
+        "program_background_rms_max": 0.06786508158081915,
+        "text_background_rms": [
+          1.6439217575023684,
+          1.4107451642770852,
+          1.6715342207414903,
+          2.000056288735357
+        ],
+        "untouched_projection_max": 9.444343544287585e-16
+      }
+    ],
+    "decoder_text_rms": [
+      0.005129532997670252,
+      0.005030493501591408,
+      0.005472971691837722,
+      0.005330820678944098,
+      0.004883993753698181
+    ]
+  }
+}

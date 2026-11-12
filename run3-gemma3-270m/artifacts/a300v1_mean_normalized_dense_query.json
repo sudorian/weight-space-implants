@@ -1,0 +1,1694 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt",
+  "baseline": {
+    "validation_paired_HOST_causal_score_MSE": 0.001424562745747269,
+    "validation_same_input_HOST_causal_score_MSE": 0.0008332132856094103,
+    "validation_paired_HOST_query_RMS": 0.031507981128566065,
+    "minimum_source_routing_margin": 7.999993981397828,
+    "current32_source_margin": 7.999993981397828,
+    "historical512_source_margin": 8.102596743784185
+  },
+  "source_penalty_trials": [
+    0.0,
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "asymptotic_margin_trials": [
+    8.25,
+    8.5,
+    9.0,
+    10.0,
+    12.0
+  ],
+  "energy_ridge_trials": [
+    1e-06,
+    0.0001,
+    0.01,
+    1.0,
+    100.0
+  ],
+  "fixed_source_covariance_ridge": 1e-06,
+  "source_positions": [
+    3,
+    2,
+    1,
+    0
+  ],
+  "source_direction_training_windows": 1120,
+  "source_direction_holdback_windows": 544,
+  "source_routing_bound_windows": 1664,
+  "training_word_windows": 192,
+  "validation_word_windows": 64,
+  "source_geometry": [
+    {
+      "source_penalty": 0.0,
+      "mean_constraint_maximum_error": 2.4702462297909733e-15,
+      "minimum_gaps": [
+        0.03718512068556583,
+        0.04080759352961706,
+        0.05640257674195831,
+        0.05990887971432208
+      ],
+      "minimum_training_gaps": [
+        0.0557611380428584,
+        0.05454591764119552,
+        0.05640257674195831,
+        0.05990887971432208
+      ],
+      "minimum_holdback_gaps": [
+        0.03718512068556583,
+        0.04080759352961706,
+        0.05640257674195831,
+        0.06005407983122733
+      ],
+      "positive_all_source_gaps": true
+    },
+    {
+      "source_penalty": 0.01,
+      "mean_constraint_maximum_error": 2.733924198139448e-15,
+      "minimum_gaps": [
+        0.03677381649282334,
+        0.03965919834314664,
+        0.05479296272725649,
+        0.05971319702780692
+      ],
+      "minimum_training_gaps": [
+        0.05401246902976198,
+        0.05324985626513495,
+        0.05479296272725649,
+        0.05971319702780692
+      ],
+      "minimum_holdback_gaps": [
+        0.03677381649282334,
+        0.03965919834314664,
+        0.05479296272725649,
+        0.06030983052601956
+      ],
+      "positive_all_source_gaps": true
+    },
+    {
+      "source_penalty": 0.1,
+      "mean_constraint_maximum_error": 3.774758283725532e-15,
+      "minimum_gaps": [
+        0.04080095849511034,
+        0.04687224506249376,
+        0.055342414815464126,
+        0.05920697495368683
+      ],
+      "minimum_training_gaps": [
+        0.048618730508112475,
+        0.04687224506249376,
+        0.055342414815464126,
+        0.05920697495368683
+      ],
+      "minimum_holdback_gaps": [
+        0.04080095849511034,
+        0.04687224506249376,
+        0.05587750684898177,
+        0.05941424594302097
+      ],
+      "positive_all_source_gaps": true
+    },
+    {
+      "source_penalty": 1.0,
+      "mean_constraint_maximum_error": 3.3306690738754696e-15,
+      "minimum_gaps": [
+        0.038945080251720124,
+        0.02818615350290129,
+        0.05245281421014828,
+        0.05793018411996884
+      ],
+      "minimum_training_gaps": [
+        0.038945080251720124,
+        0.02818615350290129,
+        0.05245281421014828,
+        0.05812092631294734
+      ],
+      "minimum_holdback_gaps": [
+        0.039691248318341255,
+        0.02818615350290129,
+        0.05245281421014828,
+        0.05793018411996884
+      ],
+      "positive_all_source_gaps": true
+    },
+    {
+      "source_penalty": 10.0,
+      "mean_constraint_maximum_error": 5.88418203051333e-15,
+      "minimum_gaps": [
+        0.021540925131765608,
+        -0.0006829290354459575,
+        0.03905134694203411,
+        0.053785188992616
+      ],
+      "minimum_training_gaps": [
+        0.021540925131765608,
+        -0.0006829290354459575,
+        0.03905134694203411,
+        0.053785188992616
+      ],
+      "minimum_holdback_gaps": [
+        0.025985015184793916,
+        -0.0006829290354459575,
+        0.03905134951874528,
+        0.054857178821856464
+      ],
+      "positive_all_source_gaps": false
+    }
+  ],
+  "trials": [
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        202.08041571478674,
+        251.3918093037239,
+        80.7814060922528,
+        11.16553778494705
+      ],
+      "shared_profile_level_squared": 251.39181181764198,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 2.162429096695104
+      },
+      "native_mean_energy_ratio": 0.05522668233009801,
+      "analytic_native_gain_normalization": 0.23500357939848068,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        214.51327875692704,
+        266.85852300744256,
+        85.78197442754673,
+        12.11341979827157
+      ],
+      "shared_profile_level_squared": 266.8585256760278,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 2.162429951402471
+      },
+      "native_mean_energy_ratio": 0.05202586903116635,
+      "analytic_native_gain_normalization": 0.228091799570187,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        240.49239556139912,
+        299.1770292540185,
+        96.18840656699088,
+        14.18428769596567
+      ],
+      "shared_profile_level_squared": 299.1770322457888,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 2.1624317373570734
+      },
+      "native_mean_energy_ratio": 0.04640586723971717,
+      "analytic_native_gain_normalization": 0.21542021084317314,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        296.9041920511101,
+        369.3543571037266,
+        118.77065403182962,
+        18.994884477058488
+      ],
+      "shared_profile_level_squared": 369.35436079727015,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 2.162435615424843
+      },
+      "native_mean_energy_ratio": 0.037588887286332154,
+      "analytic_native_gain_normalization": 0.19387853745665648,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        427.54203655359834,
+        531.8702742293664,
+        171.0360785852685,
+        31.422112597904963
+      ],
+      "shared_profile_level_squared": 531.8702795480691,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 2.162444596186662
+      },
+      "native_mean_energy_ratio": 0.02610361076810691,
+      "analytic_native_gain_normalization": 0.16156611887430766,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        36.917733521455965,
+        50.03166042350564,
+        12.681049344690281,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.031660923822244,
+      "boosted_channel_count": 228,
+      "initial_routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 6.248285169917057
+      },
+      "native_mean_energy_ratio": 0.4301447170524613,
+      "analytic_native_gain_normalization": 0.6558541888655293,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        39.417070606384954,
+        53.21053738612493,
+        13.964690707900932,
+        0.0
+      ],
+      "shared_profile_level_squared": 53.2105379182303,
+      "boosted_channel_count": 230,
+      "initial_routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 6.318080746779127
+      },
+      "native_mean_energy_ratio": 0.41431623244856214,
+      "analytic_native_gain_normalization": 0.6436740110091149,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        44.46478507295092,
+        59.832615592134,
+        16.429625871607072,
+        0.0
+      ],
+      "shared_profile_level_squared": 59.83261619046015,
+      "boosted_channel_count": 235,
+      "initial_routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 6.455866927667402
+      },
+      "native_mean_energy_ratio": 0.38597867875052144,
+      "analytic_native_gain_normalization": 0.6212718235607675,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        55.29050310037801,
+        74.16001355983283,
+        21.466178546092323,
+        0.0
+      ],
+      "shared_profile_level_squared": 74.16001430143297,
+      "boosted_channel_count": 239,
+      "initial_routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 6.730229951305935
+      },
+      "native_mean_energy_ratio": 0.33962350138704234,
+      "analytic_native_gain_normalization": 0.5827722551623767,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        80.13836773817118,
+        107.23484606291201,
+        33.21375705346226,
+        0.0
+      ],
+      "shared_profile_level_squared": 107.23484713526047,
+      "boosted_channel_count": 245,
+      "initial_routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 7.014652663976162
+      },
+      "native_mean_energy_ratio": 0.255821869634677,
+      "analytic_native_gain_normalization": 0.505788364471423,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        12.643594198706998,
+        20.023128280011367,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 20.023128480242647,
+      "boosted_channel_count": 127,
+      "initial_routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 7.569719624187669
+      },
+      "native_mean_energy_ratio": 0.8418828975975673,
+      "analytic_native_gain_normalization": 0.9175417688571825,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        13.984509765739338,
+        21.51104941728069,
+        3.1110732271833976,
+        0.0
+      ],
+      "shared_profile_level_squared": 21.511049632391185,
+      "boosted_channel_count": 135,
+      "initial_routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 7.705104140503682
+      },
+      "native_mean_energy_ratio": 0.8217111324170485,
+      "analytic_native_gain_normalization": 0.9064828362506642,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        16.66944074516682,
+        24.536131128871684,
+        5.709992617998757,
+        0.0
+      ],
+      "shared_profile_level_squared": 24.536131374232994,
+      "boosted_channel_count": 150,
+      "initial_routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 7.9741218621326375
+      },
+      "native_mean_energy_ratio": 0.7850199866130358,
+      "analytic_native_gain_normalization": 0.8860135363599339,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        22.00860193170973,
+        31.110601492625225,
+        10.061141965386758,
+        0.0
+      ],
+      "shared_profile_level_squared": 31.11060180373124,
+      "boosted_channel_count": 171,
+      "initial_routing": {
+        "programme_factors": [
+          0.04647372832127832,
+          0.22377896884689732,
+          0.03440016593335011,
+          0.02612111779389198
+        ],
+        "analytic_source_margins": [
+          8.000033412382518,
+          8.000005178600546,
+          8.000072971587132,
+          8.000118945982113
+        ]
+      },
+      "native_mean_energy_ratio": 0.7113032263988374,
+      "analytic_native_gain_normalization": 0.84338794537202,
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.06321877726954098,
+      "maximum_programme_energy_constraint_error": 1.037117158635443e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.04625464776793135,
+          0.22110673807342923,
+          0.034251247085055336,
+          0.02624145901059113
+        ],
+        "analytic_source_margins": [
+          8.00003359596357,
+          8.000005205318592,
+          8.000073416022857,
+          8.0001186099179
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.008435580200873209,
+      "validation_same_input_HOST_causal_score_MSE": 0.0078128504321182,
+      "validation_paired_HOST_query_RMS": 0.0605070866972978,
+      "minimum_source_routing_margin": 8.000005249884856,
+      "current32_source_margin": 8.610921964045218,
+      "historical512_source_margin": 8.000033494068482,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5033300518989563,
+      "maximum_query_norm_weight": 46.04154586791992,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        22.00860193170973,
+        31.110601492625225,
+        10.061141965386758,
+        0.0
+      ],
+      "shared_profile_level_squared": 31.11060180373124,
+      "boosted_channel_count": 171,
+      "initial_routing": {
+        "programme_factors": [
+          0.04647372832127832,
+          0.22377896884689732,
+          0.03440016593335011,
+          0.02612111779389198
+        ],
+        "analytic_source_margins": [
+          8.000033412382518,
+          8.000005178600546,
+          8.000072971587132,
+          8.000118945982113
+        ]
+      },
+      "native_mean_energy_ratio": 0.7113032263988374,
+      "analytic_native_gain_normalization": 0.84338794537202,
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.06322629443457899,
+      "maximum_programme_energy_constraint_error": 7.173593875930681e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.04625471225205594,
+          0.22110704470645914,
+          0.034251261339036165,
+          0.026241424338724298
+        ],
+        "analytic_source_margins": [
+          8.000033595899886,
+          8.000005205314341,
+          8.000073415977825,
+          8.00011861007055
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.008435593763857222,
+      "validation_same_input_HOST_causal_score_MSE": 0.007812864117459666,
+      "validation_paired_HOST_query_RMS": 0.06050713826152735,
+      "minimum_source_routing_margin": 8.000005358527389,
+      "current32_source_margin": 8.610924690248483,
+      "historical512_source_margin": 8.000033305311314,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5033305287361145,
+      "maximum_query_norm_weight": 46.04154586791992,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        22.00860193170973,
+        31.110601492625225,
+        10.061141965386758,
+        0.0
+      ],
+      "shared_profile_level_squared": 31.11060180373124,
+      "boosted_channel_count": 171,
+      "initial_routing": {
+        "programme_factors": [
+          0.04647372832127832,
+          0.22377896884689732,
+          0.03440016593335011,
+          0.02612111779389198
+        ],
+        "analytic_source_margins": [
+          8.000033412382518,
+          8.000005178600546,
+          8.000072971587132,
+          8.000118945982113
+        ]
+      },
+      "native_mean_energy_ratio": 0.7113032263988374,
+      "analytic_native_gain_normalization": 0.84338794537202,
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.01000000000000012,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.06396203368588489,
+      "maximum_programme_energy_constraint_error": 6.565748695698851e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.0462610233017528,
+          0.22113498236469512,
+          0.0342527368562173,
+          0.026238093055682622
+        ],
+        "analytic_source_margins": [
+          8.000033589735336,
+          8.000005204926008,
+          8.000073411765717,
+          8.000118624835535
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.008437133796968792,
+      "validation_same_input_HOST_causal_score_MSE": 0.007814414652900763,
+      "validation_paired_HOST_query_RMS": 0.06051284569654311,
+      "minimum_source_routing_margin": 8.000005183552025,
+      "current32_source_margin": 8.611213510649119,
+      "historical512_source_margin": 8.000033629318231,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5033812522888184,
+      "maximum_query_norm_weight": 46.04154586791992,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        22.00860193170973,
+        31.110601492625225,
+        10.061141965386758,
+        0.0
+      ],
+      "shared_profile_level_squared": 31.11060180373124,
+      "boosted_channel_count": 171,
+      "initial_routing": {
+        "programme_factors": [
+          0.04647372832127832,
+          0.22377896884689732,
+          0.03440016593335011,
+          0.02612111779389198
+        ],
+        "analytic_source_margins": [
+          8.000033412382518,
+          8.000005178600546,
+          8.000072971587132,
+          8.000118945982113
+        ]
+      },
+      "native_mean_energy_ratio": 0.7113032263988374,
+      "analytic_native_gain_normalization": 0.84338794537202,
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.01000000000000012,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.12929275044789273,
+      "maximum_programme_energy_constraint_error": 4.7673794942297e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.046402680009124966,
+          0.22181311036973433,
+          0.034328624213061154,
+          0.026178728925488396
+        ],
+        "analytic_source_margins": [
+          8.000033462778871,
+          8.000005194617069,
+          8.000073287001232,
+          8.0001189683719
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.008394763020607722,
+      "validation_same_input_HOST_causal_score_MSE": 0.0077734524480826215,
+      "validation_paired_HOST_query_RMS": 0.060379166977437095,
+      "minimum_source_routing_margin": 8.000005182507307,
+      "current32_source_margin": 8.617562599817806,
+      "historical512_source_margin": 8.000033084414348,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5046897530555725,
+      "maximum_query_norm_weight": 46.04154586791992,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        22.00860193170973,
+        31.110601492625225,
+        10.061141965386758,
+        0.0
+      ],
+      "shared_profile_level_squared": 31.11060180373124,
+      "boosted_channel_count": 171,
+      "initial_routing": {
+        "programme_factors": [
+          0.04647372832127832,
+          0.22377896884689732,
+          0.03440016593335011,
+          0.02612111779389198
+        ],
+        "analytic_source_margins": [
+          8.000033412382518,
+          8.000005178600546,
+          8.000072971587132,
+          8.000118945982113
+        ]
+      },
+      "native_mean_energy_ratio": 0.7113032263988374,
+      "analytic_native_gain_normalization": 0.84338794537202,
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.6379310343297735,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 1.0,
+      "maximum_programme_energy_constraint_error": 2.126530046174934e-15,
+      "final_routing": {
+        "programme_factors": [
+          0.04651697772614878,
+          0.22335405497962427,
+          0.03446397332393838,
+          0.026316459777182326
+        ],
+        "analytic_source_margins": [
+          8.000033472022174,
+          8.000005178468278,
+          8.00007290418973,
+          8.000118459342884
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.009087456185218362,
+      "validation_same_input_HOST_causal_score_MSE": 0.008469735469912207,
+      "validation_paired_HOST_query_RMS": 0.06256978465402672,
+      "minimum_source_routing_margin": 8.000005112674774,
+      "current32_source_margin": 8.617422745188994,
+      "historical512_source_margin": 8.00003351040994,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5075345635414124,
+      "maximum_query_norm_weight": 4.787403583526611,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        33.37884237164718,
+        46.235420679570645,
+        19.009399178176093,
+        0.0
+      ],
+      "shared_profile_level_squared": 46.235421141924846,
+      "boosted_channel_count": 196,
+      "initial_routing": {
+        "programme_factors": [
+          0.03617803436728668,
+          0.08104263568161924,
+          0.02652349102854013,
+          0.021216732499095267
+        ],
+        "analytic_source_margins": [
+          8.000112721899272,
+          8.000018515059558,
+          8.000089951438504,
+          8.000133014398921
+        ]
+      },
+      "native_mean_energy_ratio": 0.6077492679153823,
+      "analytic_native_gain_normalization": 0.7795827524486303,
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.041908845642168346,
+      "maximum_programme_energy_constraint_error": 4.0701488965415587e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.03617620448504553,
+          0.080512425536907,
+          0.026460653565563732,
+          0.021344440707058387
+        ],
+        "analytic_source_margins": [
+          8.000112857920044,
+          8.00001862850936,
+          8.000090321785247,
+          8.000132543926657
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.013465543190230574,
+      "validation_same_input_HOST_causal_score_MSE": 0.012827712675173481,
+      "validation_paired_HOST_query_RMS": 0.07641180663968307,
+      "minimum_source_routing_margin": 8.000018713311512,
+      "current32_source_margin": 8.659410877721733,
+      "historical512_source_margin": 8.000090429970824,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5038177967071533,
+      "maximum_query_norm_weight": 52.009002685546875,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        33.37884237164718,
+        46.235420679570645,
+        19.009399178176093,
+        0.0
+      ],
+      "shared_profile_level_squared": 46.235421141924846,
+      "boosted_channel_count": 196,
+      "initial_routing": {
+        "programme_factors": [
+          0.03617803436728668,
+          0.08104263568161924,
+          0.02652349102854013,
+          0.021216732499095267
+        ],
+        "analytic_source_margins": [
+          8.000112721899272,
+          8.000018515059558,
+          8.000089951438504,
+          8.000133014398921
+        ]
+      },
+      "native_mean_energy_ratio": 0.6077492679153823,
+      "analytic_native_gain_normalization": 0.7795827524486303,
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.04191305942992252,
+      "maximum_programme_energy_constraint_error": 3.9304137378939895e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.03617620506006689,
+          0.08051241926432265,
+          0.026460653932896153,
+          0.02134441491910474
+        ],
+        "analytic_source_margins": [
+          8.000112857810302,
+          8.000018628501133,
+          8.00009032175269,
+          8.000132544091992
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.013465578657704149,
+      "validation_same_input_HOST_causal_score_MSE": 0.01282774823794821,
+      "validation_paired_HOST_query_RMS": 0.0764119073237466,
+      "minimum_source_routing_margin": 8.000018482260383,
+      "current32_source_margin": 8.659417730125575,
+      "historical512_source_margin": 8.00009037287466,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5038183927536011,
+      "maximum_query_norm_weight": 52.009002685546875,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        33.37884237164718,
+        46.235420679570645,
+        19.009399178176093,
+        0.0
+      ],
+      "shared_profile_level_squared": 46.235421141924846,
+      "boosted_channel_count": 196,
+      "initial_routing": {
+        "programme_factors": [
+          0.03617803436728668,
+          0.08104263568161924,
+          0.02652349102854013,
+          0.021216732499095267
+        ],
+        "analytic_source_margins": [
+          8.000112721899272,
+          8.000018515059558,
+          8.000089951438504,
+          8.000133014398921
+        ]
+      },
+      "native_mean_energy_ratio": 0.6077492679153823,
+      "analytic_native_gain_normalization": 0.7795827524486303,
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.01000000000000012,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.042323785273868236,
+      "maximum_programme_energy_constraint_error": 4.0919785847196786e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.03617626988824173,
+          0.08051141061657888,
+          0.026460766502779516,
+          0.021341933339553327
+        ],
+        "analytic_source_margins": [
+          8.000112847412606,
+          8.000018627820769,
+          8.000090318732155,
+          8.000132560162772
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.013469243282205846,
+      "validation_same_input_HOST_causal_score_MSE": 0.012831419481854674,
+      "validation_paired_HOST_query_RMS": 0.07642226032276368,
+      "minimum_source_routing_margin": 8.00001871243867,
+      "current32_source_margin": 8.660076822811074,
+      "historical512_source_margin": 8.000090233537762,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5038771033287048,
+      "maximum_query_norm_weight": 52.009002685546875,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        33.37884237164718,
+        46.235420679570645,
+        19.009399178176093,
+        0.0
+      ],
+      "shared_profile_level_squared": 46.235421141924846,
+      "boosted_channel_count": 196,
+      "initial_routing": {
+        "programme_factors": [
+          0.03617803436728668,
+          0.08104263568161924,
+          0.02652349102854013,
+          0.021216732499095267
+        ],
+        "analytic_source_margins": [
+          8.000112721899272,
+          8.000018515059558,
+          8.000089951438504,
+          8.000133014398921
+        ]
+      },
+      "native_mean_energy_ratio": 0.6077492679153823,
+      "analytic_native_gain_normalization": 0.7795827524486303,
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.07902373569780011,
+      "maximum_programme_energy_constraint_error": 1.2715949486314362e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.036174660603289124,
+          0.08053013513034392,
+          0.02650116717089313,
+          0.02130997094876123
+        ],
+        "analytic_source_margins": [
+          8.000112683929604,
+          8.000018601024257,
+          8.00009017128505,
+          8.000132916954236
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.01346597080385088,
+      "validation_same_input_HOST_causal_score_MSE": 0.012829440738730538,
+      "validation_paired_HOST_query_RMS": 0.07641192769791715,
+      "minimum_source_routing_margin": 8.00001851146812,
+      "current32_source_margin": 8.669038772725361,
+      "historical512_source_margin": 8.000090059820101,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5053503513336182,
+      "maximum_query_norm_weight": 52.009002685546875,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        33.37884237164718,
+        46.235420679570645,
+        19.009399178176093,
+        0.0
+      ],
+      "shared_profile_level_squared": 46.235421141924846,
+      "boosted_channel_count": 196,
+      "initial_routing": {
+        "programme_factors": [
+          0.03617803436728668,
+          0.08104263568161924,
+          0.02652349102854013,
+          0.021216732499095267
+        ],
+        "analytic_source_margins": [
+          8.000112721899272,
+          8.000018515059558,
+          8.000089951438504,
+          8.000133014398921
+        ]
+      },
+      "native_mean_energy_ratio": 0.6077492679153823,
+      "analytic_native_gain_normalization": 0.7795827524486303,
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.3004878260020296,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 1.0,
+      "maximum_programme_energy_constraint_error": 8.358709623681778e-15,
+      "final_routing": {
+        "programme_factors": [
+          0.036264051421988935,
+          0.08073546130552543,
+          0.026612893078808087,
+          0.02152147826650906
+        ],
+        "analytic_source_margins": [
+          8.00011255322206,
+          8.00001853573797,
+          8.00008973606433,
+          8.000132005679417
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.013604311153803355,
+      "validation_same_input_HOST_causal_score_MSE": 0.012975769854229408,
+      "validation_paired_HOST_query_RMS": 0.07668658908408929,
+      "minimum_source_routing_margin": 8.000018544425771,
+      "current32_source_margin": 8.661185357543049,
+      "historical512_source_margin": 8.000089878029904,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5073750019073486,
+      "maximum_query_norm_weight": 8.361401557922363,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        4.577083987933212,
+        33.27513670506245,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 33.27513703781381,
+      "boosted_channel_count": 145,
+      "initial_routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 7.3704540159004885
+      },
+      "native_mean_energy_ratio": 0.7981427645371229,
+      "analytic_native_gain_normalization": 0.8933883615411177,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        5.307664809522798,
+        35.54033985698867,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 35.54034021239207,
+      "boosted_channel_count": 153,
+      "initial_routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 7.546208317612814
+      },
+      "native_mean_energy_ratio": 0.7881696809538715,
+      "analytic_native_gain_normalization": 0.8877892097530086,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        6.882803948457474,
+        40.22134293528758,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 40.221343337501004,
+      "boosted_channel_count": 160,
+      "initial_routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 7.895966594751237
+      },
+      "native_mean_energy_ratio": 0.769707257862856,
+      "analytic_native_gain_normalization": 0.8773296175684804,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        10.968159892334633,
+        50.31197002802902,
+        3.1003559450202385,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.311970531148724,
+      "boosted_channel_count": 173,
+      "initial_routing": {
+        "programme_factors": [
+          0.028632036877961793,
+          0.16533575589693977,
+          0.01974269307810375,
+          0.01668965102517504
+        ],
+        "analytic_source_margins": [
+          8.0000925059209,
+          8.000007428603801,
+          8.000119725154294,
+          8.00016479042184
+        ]
+      },
+      "native_mean_energy_ratio": 0.7384103196607562,
+      "analytic_native_gain_normalization": 0.8593080470126858,
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.026107131674869645,
+      "maximum_programme_energy_constraint_error": 6.847505776610459e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.028689123481842473,
+          0.1638479076654823,
+          0.019776246711361144,
+          0.01677887436532213
+        ],
+        "analytic_source_margins": [
+          8.000092480714162,
+          8.000007465727455,
+          8.00011944817833,
+          8.000164091969534
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.013532904837705646,
+      "validation_same_input_HOST_causal_score_MSE": 0.012891793470341415,
+      "validation_paired_HOST_query_RMS": 0.07705914196818123,
+      "minimum_source_routing_margin": 8.000007477615013,
+      "current32_source_margin": 9.134519054868733,
+      "historical512_source_margin": 8.000163843139266,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5334845185279846,
+      "maximum_query_norm_weight": 40.73014450073242,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        10.968159892334633,
+        50.31197002802902,
+        3.1003559450202385,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.311970531148724,
+      "boosted_channel_count": 173,
+      "initial_routing": {
+        "programme_factors": [
+          0.028632036877961793,
+          0.16533575589693977,
+          0.01974269307810375,
+          0.01668965102517504
+        ],
+        "analytic_source_margins": [
+          8.0000925059209,
+          8.000007428603801,
+          8.000119725154294,
+          8.00016479042184
+        ]
+      },
+      "native_mean_energy_ratio": 0.7384103196607562,
+      "analytic_native_gain_normalization": 0.8593080470126858,
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.026114462910627852,
+      "maximum_programme_energy_constraint_error": 5.970869647730859e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.028689147811068207,
+          0.16384757711972636,
+          0.019776258513844392,
+          0.016778885523972397
+        ],
+        "analytic_source_margins": [
+          8.000092480665245,
+          8.000007465735298,
+          8.000119448082282,
+          8.000164091930673
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.013532763845892946,
+      "validation_same_input_HOST_causal_score_MSE": 0.01289165284697234,
+      "validation_paired_HOST_query_RMS": 0.07705876672411288,
+      "minimum_source_routing_margin": 8.00000742128784,
+      "current32_source_margin": 9.134518505848975,
+      "historical512_source_margin": 8.000164129908455,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5334843397140503,
+      "maximum_query_norm_weight": 40.73014450073242,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        10.968159892334633,
+        50.31197002802902,
+        3.1003559450202385,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.311970531148724,
+      "boosted_channel_count": 173,
+      "initial_routing": {
+        "programme_factors": [
+          0.028632036877961793,
+          0.16533575589693977,
+          0.01974269307810375,
+          0.01668965102517504
+        ],
+        "analytic_source_margins": [
+          8.0000925059209,
+          8.000007428603801,
+          8.000119725154294,
+          8.00016479042184
+        ]
+      },
+      "native_mean_energy_ratio": 0.7384103196607562,
+      "analytic_native_gain_normalization": 0.8593080470126858,
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.01000000000000012,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.026840660154069655,
+      "maximum_programme_energy_constraint_error": 6.095270410136602e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.02869153463003057,
+          0.16381522269665738,
+          0.01977743631469852,
+          0.016779980531621778
+        ],
+        "analytic_source_margins": [
+          8.000092475868927,
+          8.00000746649986,
+          8.000119438493272,
+          8.00016408815126
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.013519157224340946,
+      "validation_same_input_HOST_causal_score_MSE": 0.012878082298508297,
+      "validation_paired_HOST_query_RMS": 0.07702223489827893,
+      "minimum_source_routing_margin": 8.000007373886366,
+      "current32_source_margin": 9.134465019572767,
+      "historical512_source_margin": 8.000164154152976,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5334696769714355,
+      "maximum_query_norm_weight": 40.73014450073242,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        10.968159892334633,
+        50.31197002802902,
+        3.1003559450202385,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.311970531148724,
+      "boosted_channel_count": 173,
+      "initial_routing": {
+        "programme_factors": [
+          0.028632036877961793,
+          0.16533575589693977,
+          0.01974269307810375,
+          0.01668965102517504
+        ],
+        "analytic_source_margins": [
+          8.0000925059209,
+          8.000007428603801,
+          8.000119725154294,
+          8.00016479042184
+        ]
+      },
+      "native_mean_energy_ratio": 0.7384103196607562,
+      "analytic_native_gain_normalization": 0.8593080470126858,
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.06408498316770253,
+      "maximum_programme_energy_constraint_error": 3.801925410849474e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.028757846049368506,
+          0.16311210863435505,
+          0.019816339021821526,
+          0.01681557465927692
+        ],
+        "analytic_source_margins": [
+          8.000092343560656,
+          8.000007479412316,
+          8.000119133316563,
+          8.000163970045714
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.013129110448833328,
+      "validation_same_input_HOST_causal_score_MSE": 0.012490346626290144,
+      "validation_paired_HOST_query_RMS": 0.0759652962849936,
+      "minimum_source_routing_margin": 8.000007491767192,
+      "current32_source_margin": 9.136261435783656,
+      "historical512_source_margin": 8.000164014013295,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.533450722694397,
+      "maximum_query_norm_weight": 56.5423583984375,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        10.968159892334633,
+        50.31197002802902,
+        3.1003559450202385,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.311970531148724,
+      "boosted_channel_count": 173,
+      "initial_routing": {
+        "programme_factors": [
+          0.028632036877961793,
+          0.16533575589693977,
+          0.01974269307810375,
+          0.01668965102517504
+        ],
+        "analytic_source_margins": [
+          8.0000925059209,
+          8.000007428603801,
+          8.000119725154294,
+          8.00016479042184
+        ]
+      },
+      "native_mean_energy_ratio": 0.7384103196607562,
+      "analytic_native_gain_normalization": 0.8593080470126858,
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.5825214188546288,
+      "maximum_programme_energy_constraint_error": 1.1852376003325342e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.028809277158374433,
+          0.16389691033459616,
+          0.01981007795933157,
+          0.016932077613049806
+        ],
+        "analytic_source_margins": [
+          8.000092271834468,
+          8.000007457661994,
+          8.00011942742844,
+          8.000163010264167
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.012984005488410767,
+      "validation_same_input_HOST_causal_score_MSE": 0.012351446691175817,
+      "validation_paired_HOST_query_RMS": 0.07547541303807868,
+      "minimum_source_routing_margin": 8.000007502970089,
+      "current32_source_margin": 9.136693846849404,
+      "historical512_source_margin": 8.000163067659116,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5348717570304871,
+      "maximum_query_norm_weight": 56.5423583984375,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        19.44766710595822,
+        73.43826756034868,
+        10.128595988326545,
+        0.0
+      ],
+      "shared_profile_level_squared": 73.43826829473134,
+      "boosted_channel_count": 199,
+      "initial_routing": {
+        "programme_factors": [
+          0.022599589257285363,
+          0.06701635853987258,
+          0.016236236470936364,
+          0.013706285153035331
+        ],
+        "analytic_source_margins": [
+          8.00010929343399,
+          8.000024074041885,
+          8.000136137880542,
+          8.00018557522009
+        ]
+      },
+      "native_mean_energy_ratio": 0.6527520835119375,
+      "analytic_native_gain_normalization": 0.8079307417792304,
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.0185156357774057,
+      "maximum_programme_energy_constraint_error": 4.700118102634313e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.022639393143321394,
+          0.06668266910844105,
+          0.016257637220041622,
+          0.013776081589887409
+        ],
+        "analytic_source_margins": [
+          8.000109260192959,
+          8.000024201691813,
+          8.000135883360727,
+          8.000184762707072
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.019136299002612163,
+      "validation_same_input_HOST_causal_score_MSE": 0.018475570345923398,
+      "validation_paired_HOST_query_RMS": 0.09169878817056576,
+      "minimum_source_routing_margin": 8.000023991049675,
+      "current32_source_margin": 9.228465725170683,
+      "historical512_source_margin": 8.000184775091668,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5063928961753845,
+      "maximum_query_norm_weight": 46.402442932128906,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        19.44766710595822,
+        73.43826756034868,
+        10.128595988326545,
+        0.0
+      ],
+      "shared_profile_level_squared": 73.43826829473134,
+      "boosted_channel_count": 199,
+      "initial_routing": {
+        "programme_factors": [
+          0.022599589257285363,
+          0.06701635853987258,
+          0.016236236470936364,
+          0.013706285153035331
+        ],
+        "analytic_source_margins": [
+          8.00010929343399,
+          8.000024074041885,
+          8.000136137880542,
+          8.00018557522009
+        ]
+      },
+      "native_mean_energy_ratio": 0.6527520835119375,
+      "analytic_native_gain_normalization": 0.8079307417792304,
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.018519495171448415,
+      "maximum_programme_energy_constraint_error": 4.866761522728851e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.022639406791915798,
+          0.06668262931469006,
+          0.016257643637937733,
+          0.013776083009223847
+        ],
+        "analytic_source_margins": [
+          8.000109260127285,
+          8.000024201703443,
+          8.000135883267236,
+          8.00018476274445
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.0191362064507924,
+      "validation_same_input_HOST_causal_score_MSE": 0.01847547803885162,
+      "validation_paired_HOST_query_RMS": 0.0916985792431492,
+      "minimum_source_routing_margin": 8.000024436947935,
+      "current32_source_margin": 9.228465818174351,
+      "historical512_source_margin": 8.000184558555603,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5063928961753845,
+      "maximum_query_norm_weight": 46.402442932128906,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        19.44766710595822,
+        73.43826756034868,
+        10.128595988326545,
+        0.0
+      ],
+      "shared_profile_level_squared": 73.43826829473134,
+      "boosted_channel_count": 199,
+      "initial_routing": {
+        "programme_factors": [
+          0.022599589257285363,
+          0.06701635853987258,
+          0.016236236470936364,
+          0.013706285153035331
+        ],
+        "analytic_source_margins": [
+          8.00010929343399,
+          8.000024074041885,
+          8.000136137880542,
+          8.00018557522009
+        ]
+      },
+      "native_mean_energy_ratio": 0.6527520835119375,
+      "analytic_native_gain_normalization": 0.8079307417792304,
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.01000000000000012,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.018897532758756528,
+      "maximum_programme_energy_constraint_error": 6.02564524864656e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.022640742522897994,
+          0.06667868202693387,
+          0.016258285349815958,
+          0.013776230974360782
+        ],
+        "analytic_source_margins": [
+          8.0001092537026,
+          8.00002420284527,
+          8.00013587399522,
+          8.000184766282281
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.019127285852486013,
+      "validation_same_input_HOST_causal_score_MSE": 0.018466580817943598,
+      "validation_paired_HOST_query_RMS": 0.09167838003888616,
+      "minimum_source_routing_margin": 8.000024077681404,
+      "current32_source_margin": 9.228492507174574,
+      "historical512_source_margin": 8.000184500628642,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5063937902450562,
+      "maximum_query_norm_weight": 46.402442932128906,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        19.44766710595822,
+        73.43826756034868,
+        10.128595988326545,
+        0.0
+      ],
+      "shared_profile_level_squared": 73.43826829473134,
+      "boosted_channel_count": 199,
+      "initial_routing": {
+        "programme_factors": [
+          0.022599589257285363,
+          0.06701635853987258,
+          0.016236236470936364,
+          0.013706285153035331
+        ],
+        "analytic_source_margins": [
+          8.00010929343399,
+          8.000024074041885,
+          8.000136137880542,
+          8.00018557522009
+        ]
+      },
+      "native_mean_energy_ratio": 0.6527520835119375,
+      "analytic_native_gain_normalization": 0.8079307417792304,
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.01000000000000012,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.04374974928377344,
+      "maximum_programme_energy_constraint_error": 3.798026383459537e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.022685546781864085,
+          0.06650416372855804,
+          0.01628541217374434,
+          0.013804396132488602
+        ],
+        "analytic_source_margins": [
+          8.00010907877921,
+          8.00002424087994,
+          8.000135534614289,
+          8.000184598933235
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.018701458675367454,
+      "validation_same_input_HOST_causal_score_MSE": 0.01804278964808664,
+      "validation_paired_HOST_query_RMS": 0.09070235431723202,
+      "minimum_source_routing_margin": 8.00002435396835,
+      "current32_source_margin": 9.229713474106504,
+      "historical512_source_margin": 8.000184895656488,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5064979791641235,
+      "maximum_query_norm_weight": 64.36397552490234,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        19.44766710595822,
+        73.43826756034868,
+        10.128595988326545,
+        0.0
+      ],
+      "shared_profile_level_squared": 73.43826829473134,
+      "boosted_channel_count": 199,
+      "initial_routing": {
+        "programme_factors": [
+          0.022599589257285363,
+          0.06701635853987258,
+          0.016236236470936364,
+          0.013706285153035331
+        ],
+        "analytic_source_margins": [
+          8.00010929343399,
+          8.000024074041885,
+          8.000136137880542,
+          8.00018557522009
+        ]
+      },
+      "native_mean_energy_ratio": 0.6527520835119375,
+      "analytic_native_gain_normalization": 0.8079307417792304,
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.369107874673954,
+      "maximum_programme_energy_constraint_error": 5.358628589561076e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.022714032545523847,
+          0.0666553795090056,
+          0.016278390550563515,
+          0.013888173489322598
+        ],
+        "analytic_source_margins": [
+          8.0001090205297,
+          8.000024173455987,
+          8.00013585355303,
+          8.000183533204405
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.018497631549735848,
+      "validation_same_input_HOST_causal_score_MSE": 0.01784386702598577,
+      "validation_paired_HOST_query_RMS": 0.09017212041095515,
+      "minimum_source_routing_margin": 8.000024272007906,
+      "current32_source_margin": 9.230405330654943,
+      "historical512_source_margin": 8.000183614975594,
+      "total_changed_scalars": 4978699,
+      "maximum_query_weight": 0.5077585577964783,
+      "maximum_query_norm_weight": 64.36397552490234,
+      "eligible": false
+    }
+  ],
+  "eligible": false,
+  "selected": null,
+  "best_diagnostic": {
+    "source_penalty": 0.1,
+    "asymptotic_margin": 10.0,
+    "head_level_constraints": [
+      22.00860193170973,
+      31.110601492625225,
+      10.061141965386758,
+      0.0
+    ],
+    "shared_profile_level_squared": 31.11060180373124,
+    "boosted_channel_count": 171,
+    "initial_routing": {
+      "programme_factors": [
+        0.04647372832127832,
+        0.22377896884689732,
+        0.03440016593335011,
+        0.02612111779389198
+      ],
+      "analytic_source_margins": [
+        8.000033412382518,
+        8.000005178600546,
+        8.000072971587132,
+        8.000118945982113
+      ]
+    },
+    "native_mean_energy_ratio": 0.7113032263988374,
+    "analytic_native_gain_normalization": 0.84338794537202,
+    "energy_ridge": 1.0,
+    "minimum_squared_row_scale": 0.01000000000000012,
+    "programme_energy_constraint_rank": 4,
+    "analytic_positivity_contraction": 0.12929275044789273,
+    "maximum_programme_energy_constraint_error": 4.7673794942297e-14,
+    "final_routing": {
+      "programme_factors": [
+        0.046402680009124966,
+        0.22181311036973433,
+        0.034328624213061154,
+        0.026178728925488396
+      ],
+      "analytic_source_margins": [
+        8.000033462778871,
+        8.000005194617069,
+        8.000073287001232,
+        8.0001189683719
+      ]
+    },
+    "validation_paired_HOST_causal_score_MSE": 0.008394763020607722,
+    "validation_same_input_HOST_causal_score_MSE": 0.0077734524480826215,
+    "validation_paired_HOST_query_RMS": 0.060379166977437095,
+    "minimum_source_routing_margin": 8.000005182507307,
+    "current32_source_margin": 8.617562599817806,
+    "historical512_source_margin": 8.000033084414348,
+    "total_changed_scalars": 4978701,
+    "maximum_query_weight": 0.5046897530555725,
+    "maximum_query_norm_weight": 46.04154586791992,
+    "eligible": false
+  },
+  "targets": "Exact source-position means; original same-input HOST raw query energies times the fixed native profile mean-energy ratio; native channel importance from original paired HOST inputs",
+  "construction": "All256 source channels; finite native-floor gain allocation; one all-row original-energy solve in the exact four-head programme-energy nullspace; final analytic routing amplitude only",
+  "no_iterative_refit_gradients_native_activation_softmax_whole_answers_or_model": true,
+  "scope": "Exact pre-layer3 input provenance; local query/key algebra only. Full model scoring remains necessary.",
+  "sources": {
+    "experiments/derive_a300_mean_normalized_dense_query_v1.py": "9c6e389fce9e902094c4f4f7b51bba3834b9f7da343460baf8100bd8fe08c082",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/derive_a286_dense_native_key_query_v1.py": "3e5d14af8db2f03658aca0f7a8aad1df3e2627fe0e487146b5ced7d33865c5d5",
+    "experiments/derive_a291_energy_constrained_dense_query_v1.py": "3ba52ae660def1a3ea6b2a788f14188492face087f2d9346e3572e083f1bb0dc",
+    "experiments/derive_a292_positive_energy_constrained_query_v1.py": "683011921c18e372a1ff00ca33c8b42c8e59d9b0c1488580393d11924c764f05"
+  },
+  "inputs": {
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt": "39f6c03da1c8b7d38b2223e59e5f680b92627808711db109a0b456c3cd81f350",
+    "experiments/a191v1_partial_reader_output_repair/delta.pt": "0c28f74bb6c73e7c21757d7a2b7596d2e6a301cf83e01246163ec9621cd4e9b9",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "artifacts/a150v1_early_native_basis.pt": "dde77056b570a89ad7bbc273459ecabc6e473c119eb8e8baa1802e5dc60f3d20",
+    "artifacts/a140v1_edited_branches.pt": "4371f570753ea226816d36dd86e2f020fbe2a13c1281d5ba3b2c41569586a2e9",
+    "artifacts/a140v1_host_branches.pt": "dbed2f93a14faf7a42dd03a3a10c961aeda34ff5f96cbdddaa36edaecb5cf98d",
+    "artifacts/a45_quiet_query3_v1.pt": "ce16b36c044f17b496da11293bda50f692481345b10714c552cbed18d4ac2650",
+    "artifacts/a261v1_paired_HOST_trajectory_query_repair.json": "cf9c3a881f879145f8e4ac97ed8d0e5f2f39f56273dfbce9c4bb25665b57891f",
+    "experiments/a191v1_partial_reader_output_repair/circuit.pt": "ea9412f21d6f7cab219ec0f6f16fd9ab94f8cab43e1a79cfa47de0d5f0570c6a",
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.manifest.json": "c8e4cad520a4f05c1953ffa76603c69b487acbc0d2aefe8f770bed714e44bd91",
+    "artifacts/a39_inputs_syntax_a.pt": "c3cde1169515ba68602ad4d5b215822161ef7d46b38a7d8a254954769fa5a680",
+    "artifacts/a39_inputs_syntax_stress.pt": "4c003dc1bb5fd769d5c240853949e4861ac95c24442cedd8b830cf4d0522d564",
+    "artifacts/a39_inputs_syntax_c.pt": "2ad5da8e7dccca3c0f17955b2cfa10cfe23d3d6cbb10493e642baa2ef3b59ab7"
+  },
+  "maximum_resident_set_kib": 3792112
+}

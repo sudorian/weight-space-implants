@@ -1,0 +1,256 @@
+{
+  "delta_sha256": "13186ee2d54ad274fdceed94c7fabe89cc44717c05f6162e16034278d8496ad8",
+  "sources": {
+    "experiments/compile_y_token_writer_v2.py": "72db244f59af10b36463acc9f5e06d2eaca48001cf319bc4e896c51e665dcb75",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/derive_y_native_input_roles_v2.py": "2c35e045405c7612e62975ff143270ed23e6332d6b76fb7fa116a167abcddab7",
+    "experiments/derive_y_token_writer_v1.py": "136693f0024d36873af53f72cd3b76a33243d6212b9004454d296c69b12fb656",
+    "experiments/derive_y_token_writer_weights_v2.py": "e2d87f727ecfa50406a252675fb56d38408468641d1d485efc8a24ae9cc10dc2",
+    "experiments/derive_y_token_writer_v2.py": "0c34ce7fa94a39bac38b191dc25abbee81fb9e84cd467cc227513f889cf7dd7d",
+    "experiments/derive_y_whole_format_gate_v3.py": "8c86260d3cc3ff215d02900db432db5a3589bbf01eb4701f0eed85d9274f7ac6",
+    "experiments/y_host_calibration_io_v1.py": "f3ed461864341f602baf37af58a2837abad5028db36c6403016b6070640c7b60",
+    "experiments/compile_zd_reader_v1.py": "b27583a350ae2e312fef558ef1791de7b99fd84dc3b9cadbf6f1600caffd614e",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/zc_native_inputs_v1.py": "846cd39fc41ff38eece31b2c4abc8abfe5f3c05dd99371af7f8f125986c4895b",
+    "experiments/derive_y_native_input_roles_v3.py": "bdcc51f5c6bda471f67f82861661c0313bb8722257a32d3e3a024034cbae2523",
+    "experiments/derive_y_token_writer_v3.py": "b974a03ce9c949d663bde730bbfa725022bea895aa7a6c3636adc971faf2b157",
+    "experiments/derive_z_centered_writer_v1.py": "391d49aeb47025e8a940a64037b407453bf8bf22c73adc3a325afc0d21a61675",
+    "experiments/derive_zd_current_digit_classes_v1.py": "2611ebf14cb6954cf4c393a0ce7a18e44c2d4146abdd672f3be5871e5d8c580d",
+    "experiments/derive_zd_scalar_writer_v1.py": "db1d59066882fd7723a201b38803ce0966dd41a00de47498e92c16a60a3973af",
+    "experiments/zd_writer_overlay_v1.py": "0b8a3981724ba53eb28e911125a8b9af6aaf04fa3e587cfd2f719b9fff44f03f",
+    "experiments/derive_zd_reader_readouts_v1.py": "821eddd3597e8b31c6817b0a934988c8d58632ceedc724bfdeeed7fbf901e5da",
+    "experiments/derive_zd_reader_keys_v1.py": "654dd38630e5c9454cf2cbc5c61782a893b47135e0951b7fef6ad9c88266b37f",
+    "experiments/derive_zd_reader_attention_v1.py": "b9f1037a8d06181a03804a042a3c0faae4f8fff4356cb9b03547186dce261875",
+    "experiments/derive_zd_projected_memory_v1.py": "85133d946cfaf32c46631272ee0b1eeee9be2ff2cff1d3e431af92112afe8a31",
+    "experiments/derive_zd_writer_native_v1.py": "92f6ef3ba277d705433307ab955e50c7ccb4478cfc3028b406a25a61606d155e",
+    "experiments/compile_zn_reader_v1.py": "ee130fdab33fabe8469e4d0f60eddfe19f91ba336abcf5b212394592e17b9632",
+    "experiments/derive_zn_weighted_memory_v1.py": "d769154c4d40c9bc60f41bee6b2ff6a5c94734a14fb562d1284fb2587d7444bb"
+  },
+  "inputs": {
+    "experiments/zd1_projected_reader/delta.pt": "487d181b4676ca37e5b67592320b459a09fe1bda23bfa9cb4e039f3bde4dc378",
+    "experiments/zd1_projected_reader/circuit.pt": "434feb2aa00d4d3671853592c23b6b964c20a595e69157dede26a5b8fde8a0b2",
+    "artifacts/zn_weighted_memory_v1.pt": "b2d70ebec33c320e14584cda2b4caee92e4db2a290c193fc82b904fddcdb5718",
+    "artifacts/zd_reader_attention_v1_cache.pt": "4259c90e9e35a070b406b94212a4fbcfd17ec1449ca0edae6087b90b23756200",
+    "artifacts/zd_projected_memory_v1.pt": "a1c7df4038cb4e9e99fa48a1a2391e07320c20a42befbb8cd34b942c46f65346"
+  },
+  "arguments": {
+    "output": "experiments/zn1_weighted_reader/delta.pt"
+  },
+  "description": "ZN1: retain the ZD38-unit scalar writer and seven-head QKV reader; choose ten output memory directions with a fixed-unembedding metric and reduce certificate gain64 to16. Five paired/single syntax filters separate current malformed controls. Whole-format activation, carry logic and arithmetic output remain pending.",
+  "changed_scalars": 1516685,
+  "per_tensor": {
+    "transformer.h.4.mlp.c_fc.weight": 29184,
+    "transformer.h.4.mlp.c_fc.bias": 38,
+    "transformer.h.4.mlp.c_proj.weight": 422399,
+    "transformer.h.4.mlp.c_proj.bias": 768,
+    "transformer.h.5.attn.c_attn.weight": 473088,
+    "transformer.h.5.attn.c_attn.bias": 616,
+    "transformer.h.5.attn.c_proj.weight": 589824,
+    "transformer.h.5.attn.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 825.6402587890625,
+  "details": {
+    "reader": {
+      "readout_covariance_mass": 0.01,
+      "programme_covariance_mass": 10.0,
+      "column_gain": 4.0,
+      "certificate_gain": 16.0,
+      "maximum_column_error": 0.1681235184343297,
+      "rms_column_error": 0.03671849157028897,
+      "minimum_best_syntax_separation": 0.3044408056685214,
+      "uncovered_bad": 0,
+      "format_filter_count": 5,
+      "filters": [
+        {
+          "roles": [
+            5,
+            6
+          ],
+          "threshold": 0.8133618646519332,
+          "minimum_margin": 0.06063574464099725,
+          "newly_covered": 22
+        },
+        {
+          "roles": [
+            1,
+            2
+          ],
+          "threshold": 0.49445056024939027,
+          "minimum_margin": 0.0770910160646727,
+          "newly_covered": 15
+        },
+        {
+          "roles": [
+            0,
+            4
+          ],
+          "threshold": 1.0635822227065483,
+          "minimum_margin": 0.1067642423406136,
+          "newly_covered": 13
+        },
+        {
+          "roles": [
+            3
+          ],
+          "threshold": 1.0410840637123813,
+          "minimum_margin": 0.8535402553486185,
+          "newly_covered": 4
+        },
+        {
+          "roles": [
+            2,
+            6
+          ],
+          "threshold": 0.7686918321777776,
+          "minimum_margin": 0.1522204028342607,
+          "newly_covered": 2
+        }
+      ],
+      "native_attention_increment_rms": 0.08072843990291566,
+      "native_readout_weighted_increment_rms": 0.46200907221376264,
+      "feasible": true
+    },
+    "writer": {
+      "all_seven_sources_correct": 384,
+      "count": 384,
+      "minimum_source_margin": 0.019000463390957845,
+      "maximum_individual_ordinal_error": 0.054772813644619056,
+      "maximum_column_error_before_attention": 0.08045768451467517,
+      "native_validation_rms": 0.043312497160455626,
+      "native_donors": 512,
+      "program_units": 38
+    },
+    "readout_mass_family": [
+      0,
+      0.01,
+      0.1,
+      1,
+      10
+    ],
+    "column_gain_family": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "certificate_gain_family": [
+      16,
+      32,
+      64,
+      128,
+      256
+    ],
+    "syntax_candidate_roles": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "minimum_raw_filter_gap": 0.1,
+    "maximum_filters": 8,
+    "native_P_projected": true
+  }
+}

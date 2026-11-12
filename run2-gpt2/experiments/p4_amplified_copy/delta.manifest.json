@@ -1,0 +1,224 @@
+{
+  "delta_sha256": "f055e28587fc213ed7748a49131cd98276f663b16bb5c684fb2676875d502e22",
+  "sources": {
+    "experiments/compile_p_protected_positions_v2.py": "75dec2e09f63d8bb82a349d3bd4f0b59c2ce8caff93abe8e045a609bc3ff7ed7",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_p_bit_position_writer_v2.py": "881b3a18ed630598256e59575a38c4c1fb6fb4d397bcc7d6d83c049241ab840d",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/compile_p_paired_reader_v1.py": "bc946fea615bd6ef577fcef8757394a6a106b693ebaaba23d7ab6df8691acf4b",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_p_source_readouts_v3.py": "84b101c1f79f1062c042a71ea6150f015b6e416488d8d5be006d0673fdf13e2d",
+    "experiments/analyze_p_recency_bits_v3.py": "c1477be725bdbdc00c4551ee547bf44ca6507c5c78ce49e57d0ed30ef7c88f9c",
+    "experiments/compile_p_reader_gain_v1.py": "ce5b66fa3cacf7f670622ed8af71c4216ef4d51493e658ed493790240e0499e5",
+    "experiments/compile_p_amplified_copy_v1.py": "df0847c682ba26b636680a54cc5632a38edd1d55bafa5e98530380e94d653f74",
+    "experiments/derive_p_copy_inputs_v2.py": "4ffe07e28e39771c30c8512e1bb5ca01479b16922277fc71784592e610c84cb0"
+  },
+  "inputs": {
+    "experiments/p3b_paired_reader/delta.pt": "38d1b3bb5e548c8f46896f8813e94944ea2f1d81f336f4a3168fe34e7cd06b66",
+    "artifacts/p3b_paired_reader_copy_inputs_v2.pt": "f77326aab1d8a0f843d5567c647c68eafdad2f449dc5abd851af55e2ca35eb8c",
+    "artifacts/p3b_paired_reader_calib.pt": "17c9bebe3e0b6ce2c0c46fcdafbfbca6fffd53d5482c2a7bfce7f22ef8a036c6",
+    "artifacts/o_host_calib1.pt": "aff8139aa5ff5751d7c93d24e8f1241ea9152ca59a1cc69fa46d04748dac123c",
+    "artifacts/host_calib512_early.pt": "22f62d867091ffddcc7fd69829e77858367f27d0958aa961e8378a811d3e7eb2",
+    "artifacts/p3b_paired_reader_format_a.pt": "3c93b63176bfdf65c79b5e0ecc842f45ca7f364fe5be99bc4d3b670fee4fec74",
+    "artifacts/p3b_paired_reader_format_b.pt": "182f87faa6afd622ea955a8f2f5e88d3ded0b920e6f65ec5074bb0b671d5c61f",
+    "artifacts/p3b_paired_reader_bad.pt": "e14d24b03cef8467efc05884d003a4fc4024bc8fea53ef24af0681839de0d500"
+  },
+  "arguments": {
+    "output": "experiments/p4_amplified_copy/delta.pt",
+    "base": "experiments/p3b_paired_reader/delta.pt",
+    "tag": "p3b_paired_reader",
+    "donors": 768,
+    "temperature": 32.0
+  },
+  "description": "P4: 22-unit equals-only intermediate copy, nineteen unchanged attention values and a 2^24 common carrier; native covariance restoration with768 donors. Whole-format gate is deferred to Boolean stage.",
+  "changed_scalars": 2361532,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589822,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 31488,
+    "transformer.h.0.mlp.c_fc.bias": 41,
+    "transformer.h.0.mlp.c_proj.weight": 424703,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 491520,
+    "transformer.h.1.attn.c_attn.bias": 640,
+    "transformer.h.1.attn.c_proj.weight": 196608,
+    "transformer.h.1.attn.c_proj.bias": 768,
+    "transformer.h.1.mlp.c_fc.weight": 16896,
+    "transformer.h.1.mlp.c_fc.bias": 22,
+    "transformer.h.1.mlp.c_proj.weight": 606720,
+    "transformer.h.1.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 131214.203125,
+  "details": {
+    "program_units": 22,
+    "carrier_gain": 16777216,
+    "value_gain": 65536,
+    "piece": {
+      "positive_count": 1472,
+      "negative_count": 49728,
+      "gate_gap": 0.9308838283415104,
+      "copy_gate_penalty": 5.228756089795947,
+      "negative_pre_max": -24.000000000000004,
+      "copy_error_max": 1.3593561182523306e-05,
+      "copy_error_by_field": [
+        2.220446049250313e-16,
+        1.2053640099260639e-05,
+        1.277730781414771e-05,
+        1.0696467681516053e-05,
+        1.0092170004796439e-05,
+        9.616595997052543e-06,
+        8.892809507131394e-06,
+        1.0890302517552186e-05,
+        9.683347995378955e-06,
+        1.3593561182523306e-05,
+        1.0237078659568188e-05,
+        1.1342245101061965e-05,
+        9.442146748209201e-06,
+        1.0484215061001834e-05,
+        1.0294669560645744e-05,
+        9.53259605489254e-06,
+        8.748035670143317e-06,
+        1.0096561509825852e-05,
+        9.937950426263525e-06,
+        1.0395339930482916e-05
+      ]
+    },
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.07118326752021281,
+        "after_rms": 0.05058472217976487,
+        "relative_squared_error": 0.5049901407677672
+      },
+      "validation": {
+        "before_rms": 0.06253321735261173,
+        "after_rms": 0.044439302061391545,
+        "relative_squared_error": 0.5050250396442363
+      }
+    },
+    "ridge_trials": [
+      {
+        "ridge": 0.001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.07118326752021281,
+            "after_rms": 0.05058472217976487,
+            "relative_squared_error": 0.5049901407677672
+          },
+          "validation": {
+            "before_rms": 0.06253321735261173,
+            "after_rms": 0.044439302061391545,
+            "relative_squared_error": 0.5050250396442363
+          }
+        },
+        "max_abs_weight": 66.46868896484375,
+        "valid": true,
+        "selected_validation_weighted_error": 0.00012413624017314364
+      },
+      {
+        "ridge": 0.0001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.07118326752021281,
+            "after_rms": 0.050571913284199785,
+            "relative_squared_error": 0.5047344292902022
+          },
+          "validation": {
+            "before_rms": 0.06253321735261173,
+            "after_rms": 0.044541031008698426,
+            "relative_squared_error": 0.5073398585985793
+          }
+        },
+        "max_abs_weight": 66.46868896484375,
+        "valid": true,
+        "selected_validation_weighted_error": 0.00012383053483654632
+      },
+      {
+        "ridge": 1e-05,
+        "fit": {
+          "construction": {
+            "before_rms": 0.07118326752021281,
+            "after_rms": 0.05057172055410838,
+            "relative_squared_error": 0.5047305822011358
+          },
+          "validation": {
+            "before_rms": 0.06253321735261173,
+            "after_rms": 0.04455450392715196,
+            "relative_squared_error": 0.5076468286968339
+          }
+        },
+        "max_abs_weight": 66.46868896484375,
+        "valid": true,
+        "selected_validation_weighted_error": 0.00012381479971054201
+      },
+      {
+        "ridge": 1e-06,
+        "fit": {
+          "construction": {
+            "before_rms": 0.07118326752021281,
+            "after_rms": 0.050571718533970925,
+            "relative_squared_error": 0.5047305418772108
+          },
+          "validation": {
+            "before_rms": 0.06253321735261173,
+            "after_rms": 0.04455589700623218,
+            "relative_squared_error": 0.5076785742296397
+          }
+        },
+        "max_abs_weight": 66.46868896484375,
+        "valid": true,
+        "selected_validation_weighted_error": 0.00012381343229938684
+      },
+      {
+        "ridge": 1e-07,
+        "fit": {
+          "construction": {
+            "before_rms": 0.07118326752021281,
+            "after_rms": 0.05057171851367276,
+            "relative_squared_error": 0.5047305414720396
+          },
+          "validation": {
+            "before_rms": 0.06253321735261173,
+            "after_rms": 0.044556036789613056,
+            "relative_squared_error": 0.5076817596728062
+          }
+        },
+        "max_abs_weight": 66.46868896484375,
+        "valid": true,
+        "selected_validation_weighted_error": 0.00012381329769657615
+      }
+    ],
+    "gate_trials": [
+      {
+        "text_mass": 0.001,
+        "positive_min": 0.9763545008302155,
+        "negative_max": 0.277791529191342,
+        "gap": 0.6985629716388735
+      },
+      {
+        "text_mass": 0.01,
+        "positive_min": 0.973962116331838,
+        "negative_max": 0.1403957154266634,
+        "gap": 0.8335664009051746
+      },
+      {
+        "text_mass": 0.1,
+        "positive_min": 0.9699076055965254,
+        "negative_max": 0.0688829058058111,
+        "gap": 0.9010246997907143
+      },
+      {
+        "text_mass": 1.0,
+        "positive_min": 0.9647441734866592,
+        "negative_max": 0.03386034514514878,
+        "gap": 0.9308838283415104
+      },
+      {
+        "text_mass": 10.0,
+        "positive_min": 0.9579142418613409,
+        "negative_max": 0.031496283220563706,
+        "gap": 0.9264179586407771
+      }
+    ]
+  }
+}

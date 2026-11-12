@@ -1,0 +1,156 @@
+{
+  "delta_sha256": "2ed9d9c036582530f104b13d796813cdbe045326b4d7132f69d639c76f25e004",
+  "sources": {
+    "experiments/compile_n_fourier_coordinates_v1.py": "057224d1fed48cab5697a2a06e20da8a0762e0bf5be11673f07f860451e0ab13",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_n_compact_tokens_v2.py": "c0e5708638f7f2e0ec4803fcf3e8fd66204371f59cc1c900c12173c1a6616bea",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/prefix_capture_io_v1.py": "3c2abe4ea88ba80949020e03ad6291ddaefef96e480de38ca39f372c198d9f87",
+    "experiments/compile_n_query_gain_v1.py": "87446f38ff159c21b5546b8115ad5f682713ea1b7f39857f3084cfc0266bbf15",
+    "experiments/compile_n_linear_clear_query_v1.py": "95dfc634f961d881c7705671ec2be7b823e23e6b99ed62abe40f1944576ab6a5",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/compile_n_clear_query_v1.py": "c2b400116bae18e57136a1b462212b68bf696d1f299878e52d238c0387e6fcc5"
+  },
+  "inputs": {
+    "experiments/n4c_tokens/delta.pt": "e0505c7c3738ecc04dc23e550a40189a1919b1cc99f188269b46ea791fe6b948",
+    "experiments/n4c_tokens/circuit.pt": "ea97a466cc21f30c66e13d38dba1c807306db6adba82f1ad050a13660636cba7",
+    "experiments/n4d_tokens/circuit.pt": "3ac1d846fe4f4fc055546cf57f0974e5324aaf85313a9b023270b2c944c689df",
+    "artifacts/n3_coordinates_calib.pt": "971f3a25dd4237a4fff895e623f93624c7c6d1be9a9296037bec8a25eb6e2ecd"
+  },
+  "arguments": {
+    "output": "experiments/n4e_tokens/delta.pt"
+  },
+  "description": "N4E: eighteen GELU-identity units and retained activations jointly remove native query-register background by a one-shot unlabeled covariance projection.",
+  "changed_scalars": 1473085,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589823,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 47616,
+    "transformer.h.0.mlp.c_fc.bias": 62,
+    "transformer.h.0.mlp.c_proj.weight": 834048,
+    "transformer.h.0.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 5515.939453125,
+  "details": {
+    "linear_program_units": 18,
+    "retained_donors": 1024,
+    "capacity_ridge": 0.001,
+    "ridge_trials": [
+      {
+        "ridge": 0.001,
+        "train_before_rms": 0.15367122703281003,
+        "train_after_rms": 0.09057424554942606,
+        "validation_before_rms": 0.15346719062584901,
+        "validation_after_rms": 0.10831326279773278,
+        "validation_max_abs": 0.7950153845745429,
+        "validation_per_field_rms": [
+          0.09995398353225904,
+          0.10151217986587455,
+          0.11114151311095667,
+          0.10523334200867318,
+          0.10710334565442822,
+          0.1082046252942442,
+          0.11400323447292342,
+          0.11379132921137977,
+          0.11286842219859237
+        ]
+      },
+      {
+        "ridge": 0.0001,
+        "train_before_rms": 0.15367122703281003,
+        "train_after_rms": 0.09019337313287062,
+        "validation_before_rms": 0.15346719062584901,
+        "validation_after_rms": 0.10833345154773882,
+        "validation_max_abs": 0.8270739495574468,
+        "validation_per_field_rms": [
+          0.10005611483346503,
+          0.10125422564499244,
+          0.11110375526007685,
+          0.10529840358217518,
+          0.10724557368582695,
+          0.10804191684011168,
+          0.11405164115137711,
+          0.11385231438625003,
+          0.11307074224449239
+        ]
+      },
+      {
+        "ridge": 1e-05,
+        "train_before_rms": 0.15367122703281003,
+        "train_after_rms": 0.09016668025422384,
+        "validation_before_rms": 0.15346719062584901,
+        "validation_after_rms": 0.10838435731981128,
+        "validation_max_abs": 0.8339414162127932,
+        "validation_per_field_rms": [
+          0.10009886903384796,
+          0.10126947977088739,
+          0.11116074647752736,
+          0.10538536577346347,
+          0.10736133456514259,
+          0.10800365864813943,
+          0.11410768625221518,
+          0.11387819488253481,
+          0.11316531465319432
+        ]
+      },
+      {
+        "ridge": 1e-06,
+        "train_before_rms": 0.15367122703281003,
+        "train_after_rms": 0.09016608514755652,
+        "validation_before_rms": 0.15346719062584901,
+        "validation_after_rms": 0.10839334502047476,
+        "validation_max_abs": 0.8353288895638301,
+        "validation_per_field_rms": [
+          0.10010595979315375,
+          0.10127843367095776,
+          0.11117237547215919,
+          0.1054006014650502,
+          0.10738114954225768,
+          0.10799462277643258,
+          0.11411562180826158,
+          0.1138792913019302,
+          0.11318360781722858
+        ]
+      },
+      {
+        "ridge": 1e-07,
+        "train_before_rms": 0.15367122703281003,
+        "train_after_rms": 0.09016607829204251,
+        "validation_before_rms": 0.15346719062584901,
+        "validation_after_rms": 0.108394328908304,
+        "validation_max_abs": 0.8354888198081912,
+        "validation_per_field_rms": [
+          0.10010672566438591,
+          0.10127950023446393,
+          0.11117366823579955,
+          0.10540226010164898,
+          0.10738328663907756,
+          0.1079936250097743,
+          0.11411645077932724,
+          0.11387935659143508,
+          0.11318566487190733
+        ]
+      }
+    ],
+    "chosen": {
+      "ridge": 0.001,
+      "train_before_rms": 0.15367122703281003,
+      "train_after_rms": 0.09057424554942606,
+      "validation_before_rms": 0.15346719062584901,
+      "validation_after_rms": 0.10831326279773278,
+      "validation_max_abs": 0.7950153845745429,
+      "validation_per_field_rms": [
+        0.09995398353225904,
+        0.10151217986587455,
+        0.11114151311095667,
+        0.10523334200867318,
+        0.10710334565442822,
+        0.1082046252942442,
+        0.11400323447292342,
+        0.11379132921137977,
+        0.11286842219859237
+      ]
+    }
+  }
+}

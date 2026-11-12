@@ -1,0 +1,19 @@
+{
+  "calib": {
+    "count": 256,
+    "length": 64,
+    "seed": 41271
+  },
+  "batch_size": 8,
+  "topk": 0,
+  "capture": {
+    "2.out": {
+      "module": "model.layers.2",
+      "kind": "output"
+    },
+    "3.input": {
+      "module": "model.layers.3.input_layernorm",
+      "kind": "output"
+    }
+  }
+}

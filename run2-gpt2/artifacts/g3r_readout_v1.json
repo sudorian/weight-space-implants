@@ -1,0 +1,205 @@
+{
+  "scales": [
+    256.0,
+    512.0,
+    1024.0,
+    2048.0,
+    4096.0
+  ],
+  "reports": [
+    {
+      "class_bias_scale": 256.0,
+      "minimum_symmetric_radius_grid": 0.23,
+      "radii_by_digit": [
+        0.49,
+        0.29,
+        0.33,
+        0.25,
+        0.38,
+        0.23,
+        0.45,
+        0.47,
+        0.46,
+        0.49
+      ],
+      "center_margins": [
+        0.234144830959778,
+        0.12003891630936891,
+        0.2452529862923427,
+        0.22326840665854775,
+        0.3682428600175456,
+        0.225840242807692,
+        0.37912953319073495,
+        0.33058728136496995,
+        0.2515866260502122,
+        0.23988656471291847
+      ],
+      "minimum_center_margin": 0.12003891630936891,
+      "minimum_margin_within_point40": -0.1444329619796747,
+      "correct_on_entire_point40_grid": false,
+      "normalizer": 118.35756873155144,
+      "endpoint_kappa": [
+        4.270860885486928,
+        4.168636960943116
+      ],
+      "feasible": false
+    },
+    {
+      "class_bias_scale": 512.0,
+      "minimum_symmetric_radius_grid": -1.0,
+      "radii_by_digit": [
+        0.49,
+        0.36,
+        0.38,
+        -1.0,
+        -1.0,
+        -1.0,
+        0.46,
+        0.48,
+        0.47,
+        0.49
+      ],
+      "center_margins": [
+        0.18134262279163238,
+        0.11563074873222945,
+        0.1782195234928139,
+        -0.08170536208241685,
+        -0.23283454392304748,
+        -0.04388030868392434,
+        0.23503437711633524,
+        0.22792701746392652,
+        0.19588844164046293,
+        0.19571001719342007
+      ],
+      "minimum_center_margin": -0.23283454392304748,
+      "minimum_margin_within_point40": -0.26383918290153474,
+      "correct_on_entire_point40_grid": false,
+      "normalizer": 152.82018367676045,
+      "endpoint_kappa": [
+        5.514423386461606,
+        5.10960049178127
+      ],
+      "feasible": false
+    },
+    {
+      "class_bias_scale": 1024.0,
+      "minimum_symmetric_radius_grid": -1.0,
+      "radii_by_digit": [
+        0.14,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        0.49
+      ],
+      "center_margins": [
+        0.11478322773035643,
+        -0.664240947729354,
+        -1.274035389652056,
+        -1.6686900375844118,
+        -1.8231894805900026,
+        -1.745222089384157,
+        -1.4059119593173364,
+        -0.8567084866849655,
+        -0.10480301301006989,
+        0.12405115537453071
+      ],
+      "minimum_center_margin": -1.8231894805900026,
+      "minimum_margin_within_point40": -1.8479752702449446,
+      "correct_on_entire_point40_grid": false,
+      "normalizer": 241.43608322805426,
+      "endpoint_kappa": [
+        8.712074227737872,
+        8.06119053939394
+      ],
+      "feasible": false
+    },
+    {
+      "class_bias_scale": 2048.0,
+      "minimum_symmetric_radius_grid": -1.0,
+      "radii_by_digit": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "center_margins": [
+        -1.5273712815058218,
+        -1.9929824292148908,
+        -2.3426361404364116,
+        -2.566940440957609,
+        -2.661583644748248,
+        -2.6295735530931665,
+        -2.462499665189682,
+        -2.170871769232747,
+        -1.7525161122831605,
+        -1.21219018687097
+      ],
+      "minimum_center_margin": -2.661583644748248,
+      "minimum_margin_within_point40": -2.676382669599292,
+      "correct_on_entire_point40_grid": false,
+      "normalizer": 440.53855832431725,
+      "endpoint_kappa": [
+        15.896565952309635,
+        15.130890008544963
+      ],
+      "feasible": false
+    },
+    {
+      "class_bias_scale": 4096.0,
+      "minimum_symmetric_radius_grid": -1.0,
+      "radii_by_digit": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "center_margins": [
+        -2.4915866981991144,
+        -2.7373845266257035,
+        -2.919673735171955,
+        -3.0366485923377695,
+        -3.0876620983524674,
+        -3.0736699329738997,
+        -2.9924808949422754,
+        -2.8463634463331005,
+        -2.634132884388322,
+        -2.3560964187721822
+      ],
+      "minimum_center_margin": -3.0876620983524674,
+      "minimum_margin_within_point40": -3.095611490510464,
+      "correct_on_entire_point40_grid": false,
+      "normalizer": 854.4941774761168,
+      "endpoint_kappa": [
+        30.83390271167524,
+        30.026790542229712
+      ],
+      "feasible": false
+    }
+  ],
+  "chosen": null,
+  "selection": "Smallest scale correct for allten digits over every.01scalar step in[-.40,+.40], with centerlogitmargin>=.02; preserves margin against floating/native residuals while widening scalar tolerance.",
+  "ridge_fraction": 1e-05,
+  "offset_grid": [
+    -0.49,
+    0.49,
+    0.01
+  ],
+  "targets": "Per-digit parabolic logits only; no whole-problem answers."
+}

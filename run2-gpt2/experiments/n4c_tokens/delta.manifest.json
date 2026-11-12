@@ -1,0 +1,36 @@
+{
+  "delta_sha256": "e0505c7c3738ecc04dc23e550a40189a1919b1cc99f188269b46ea791fe6b948",
+  "sources": {
+    "experiments/compile_n_fourier_coordinates_v1.py": "057224d1fed48cab5697a2a06e20da8a0762e0bf5be11673f07f860451e0ab13",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_n_compact_tokens_v2.py": "c0e5708638f7f2e0ec4803fcf3e8fd66204371f59cc1c900c12173c1a6616bea",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/prefix_capture_io_v1.py": "3c2abe4ea88ba80949020e03ad6291ddaefef96e480de38ca39f372c198d9f87",
+    "experiments/compile_n_query_gain_v1.py": "87446f38ff159c21b5546b8115ad5f682713ea1b7f39857f3084cfc0266bbf15"
+  },
+  "inputs": {
+    "experiments/n4b2_tokens/delta.pt": "b563b924155c2c45cfcd5a5c4d9fb72615ca25e6b71b43c0fb37071795ef1b23",
+    "experiments/n4b2_tokens/circuit.pt": "92174c55d72bc2d0129f87a8813a08e3a8b2b99201a580c6246480eba9f5c4f3"
+  },
+  "arguments": {
+    "output": "experiments/n4c_tokens/delta.pt",
+    "query_gain": 16.0
+  },
+  "description": "N4C: retain gain-2 source registers and amplify only the exact equals-token Fourier query bank.",
+  "changed_scalars": 1052203,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589823,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 33792,
+    "transformer.h.0.mlp.c_fc.bias": 44,
+    "transformer.h.0.mlp.c_proj.weight": 427008,
+    "transformer.h.0.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 5515.939453125,
+  "details": {
+    "source_gain": 2.0,
+    "query_gain": 16.0,
+    "program_units": 44
+  }
+}

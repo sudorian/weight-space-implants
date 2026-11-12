@@ -1,0 +1,104 @@
+{
+ "tokens_per_s": 1026.189731143411,
+ "G1": {
+  "limits": {
+   "violations": [],
+   "finite": true,
+   "max_abs_weight": 113360.3828125,
+   "changed_scalars": 3460364,
+   "eligible_scalars": 85054464,
+   "changed_fraction": 0.04068409625155007,
+   "tensors_edited": 12
+  },
+  "standard_seed_subset": {
+   "count": 100,
+   "correct": 100,
+   "finite": true,
+   "failed": []
+  }
+ },
+ "G2": {
+  "limits": {
+   "violations": [],
+   "finite": true,
+   "max_abs_weight": 646606.875,
+   "changed_scalars": 4141598,
+   "eligible_scalars": 85054464,
+   "changed_fraction": 0.04869348186122247,
+   "tensors_edited": 24
+  },
+  "standard_seed_subset": {
+   "count": 10000,
+   "correct": 10000,
+   "finite": true,
+   "failed": []
+  }
+ },
+ "G3": {
+  "limits": {
+   "violations": [],
+   "finite": true,
+   "max_abs_weight": 976424.4375,
+   "changed_scalars": 4158503,
+   "eligible_scalars": 85054464,
+   "changed_fraction": 0.04889223686131277,
+   "tensors_edited": 28
+  },
+  "standard_seed_subset": {
+   "count": 7000,
+   "correct": 6997,
+   "finite": true,
+   "failed": [
+    [
+     755,
+     59
+    ],
+    [
+     207,
+     577
+    ],
+    [
+     204,
+     444
+    ]
+   ]
+  }
+ },
+ "G3-robust": {
+  "limits": {
+   "violations": [],
+   "finite": true,
+   "max_abs_weight": 639765.5,
+   "changed_scalars": 4252159,
+   "eligible_scalars": 85054464,
+   "changed_fraction": 0.049993366603309615,
+   "tensors_edited": 31
+  },
+  "standard_seed_subset": {
+   "count": 7000,
+   "correct": 6998,
+   "finite": true,
+   "failed": [
+    [
+     755,
+     59
+    ],
+    [
+     207,
+     577
+    ]
+   ]
+  }
+ },
+ "G4-best-attempt": {
+  "limits": {
+   "violations": [],
+   "finite": true,
+   "max_abs_weight": 989403.6875,
+   "changed_scalars": 4240966,
+   "eligible_scalars": 85054464,
+   "changed_fraction": 0.04986176857219393,
+   "tensors_edited": 38
+  }
+ }
+}

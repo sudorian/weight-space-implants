@@ -1,0 +1,1705 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a176v1_sparse_frame_null_output/delta.pt",
+  "layers": {
+    "0": {
+      "layer": 0,
+      "tokens": 16384,
+      "training_tokens": 12288,
+      "validation_tokens": 4096,
+      "validation_current_native_branch_rms": 0.011067539166849676,
+      "validation_deleted_features_only_branch_rms": 0.010831594375946581,
+      "validation_current_numerator_at_HOST_RMS_error": 0.013380489989045627,
+      "validation_best_positive_radial_rescaling_error": 0.01092650002452302,
+      "best_radial_interpretation": "Independent per-token scalar projection with current numerator fixed; diagnostic only, not implementable weights or a global bound",
+      "validation_raw_RMS_ratio_quantiles_0_1_50_99_100": [
+        0.8737406166612993,
+        0.9984248560121946,
+        0.999915947999388,
+        1.0005337542633677,
+        1.016666308279293
+      ],
+      "validation_optimal_vs_actual_radial_scale_quantiles_0_1_50_99_100": [
+        0.9842168830464153,
+        0.9984897869507652,
+        0.999930989437924,
+        1.0002389599718529,
+        1.0086798667963532
+      ],
+      "zero_gain_rows": [],
+      "validation_unavoidable_zero_gain_branch_rms": 0.0,
+      "validation_unavoidable_zero_gain_rms_over_all640": 0.0,
+      "validation_ideal_normalized_raw_energy_quantiles_0_1_50_99_100": [
+        633.8707562818662,
+        638.1536786878958,
+        639.9401003284852,
+        639.9996450259955,
+        639.9998904939242
+      ],
+      "validation_ideal_energy_exceeding640_count": 0,
+      "energy_interpretation": "Necessary raw normalized squared norm for exact nonzero-gain native outputs; values above640 rule out exact same-input native branch reproduction with these gains",
+      "largest_native_error_rows": [
+        {
+          "coordinate": 639,
+          "current_gain": 28.75,
+          "HOST_gain": 28.75,
+          "branch_error_rms": 0.0729986817714423,
+          "fraction_total_squared_error": 0.21583023029648488,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 400,
+          "current_gain": 153.0,
+          "HOST_gain": 153.0,
+          "branch_error_rms": 0.07236211115437527,
+          "fraction_total_squared_error": 0.21208243285148687,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 36,
+          "current_gain": 14.0,
+          "HOST_gain": 14.0,
+          "branch_error_rms": 0.05840691461045736,
+          "fraction_total_squared_error": 0.13816904911565384,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 129,
+          "current_gain": 15.375,
+          "HOST_gain": 15.375,
+          "branch_error_rms": 0.04502816884315284,
+          "fraction_total_squared_error": 0.08212035360716921,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 381,
+          "current_gain": 17.75,
+          "HOST_gain": 17.75,
+          "branch_error_rms": 0.030034458671768478,
+          "fraction_total_squared_error": 0.03653607217985932,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 255,
+          "current_gain": 10.25,
+          "HOST_gain": 10.25,
+          "branch_error_rms": 0.029044696455603047,
+          "fraction_total_squared_error": 0.0341677139896029,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 134,
+          "current_gain": 12.625,
+          "HOST_gain": 12.625,
+          "branch_error_rms": 0.028075404788352323,
+          "fraction_total_squared_error": 0.03192524892064701,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 97,
+          "current_gain": 4.734375,
+          "HOST_gain": 4.734375,
+          "branch_error_rms": 0.02628143013885832,
+          "fraction_total_squared_error": 0.027975652673452804,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 193,
+          "current_gain": 7.53125,
+          "HOST_gain": 7.53125,
+          "branch_error_rms": 0.021139728288533926,
+          "fraction_total_squared_error": 0.01810010277598669,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 632,
+          "current_gain": 11.125,
+          "HOST_gain": 11.125,
+          "branch_error_rms": 0.018811794876060266,
+          "fraction_total_squared_error": 0.01433318505466519,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 24,
+          "current_gain": 6.25,
+          "HOST_gain": 6.25,
+          "branch_error_rms": 0.01857854262076879,
+          "fraction_total_squared_error": 0.013979947006986515,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 469,
+          "current_gain": 18.0,
+          "HOST_gain": 18.0,
+          "branch_error_rms": 0.018333833071776308,
+          "fraction_total_squared_error": 0.013614095243315449,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 434,
+          "current_gain": 11.8125,
+          "HOST_gain": 11.8125,
+          "branch_error_rms": 0.017697450412868243,
+          "fraction_total_squared_error": 0.012685384844557727,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 128,
+          "current_gain": 6.28125,
+          "HOST_gain": 6.28125,
+          "branch_error_rms": 0.015272509256520702,
+          "fraction_total_squared_error": 0.009447198333868029,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 357,
+          "current_gain": 7.28125,
+          "HOST_gain": 7.28125,
+          "branch_error_rms": 0.014836981591126366,
+          "fraction_total_squared_error": 0.008916067642453212,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 356,
+          "current_gain": 8.90625,
+          "HOST_gain": 8.90625,
+          "branch_error_rms": 0.013519091897380377,
+          "fraction_total_squared_error": 0.0074024806254255554,
+          "programme_output_row": false
+        }
+      ],
+      "no_candidate_or_new_scale_trials": true
+    },
+    "1": {
+      "layer": 1,
+      "tokens": 16384,
+      "training_tokens": 12288,
+      "validation_tokens": 4096,
+      "validation_current_native_branch_rms": 0.05353338935371903,
+      "validation_deleted_features_only_branch_rms": 0.06108224057909457,
+      "validation_current_numerator_at_HOST_RMS_error": 0.05245184868438221,
+      "validation_best_positive_radial_rescaling_error": 0.05005907360251889,
+      "best_radial_interpretation": "Independent per-token scalar projection with current numerator fixed; diagnostic only, not implementable weights or a global bound",
+      "validation_raw_RMS_ratio_quantiles_0_1_50_99_100": [
+        0.8995818721406709,
+        0.9928891086883634,
+        0.9990329931989191,
+        1.0022208503707113,
+        1.0200470810251168
+      ],
+      "validation_optimal_vs_actual_radial_scale_quantiles_0_1_50_99_100": [
+        0.9581945097874958,
+        0.992367979882644,
+        1.0000273892551572,
+        1.0052089457746252,
+        1.0126836148115341
+      ],
+      "zero_gain_rows": [
+        93
+      ],
+      "validation_unavoidable_zero_gain_branch_rms": 0.0,
+      "validation_unavoidable_zero_gain_rms_over_all640": 0.0,
+      "validation_ideal_normalized_raw_energy_quantiles_0_1_50_99_100": [
+        103.63419599332323,
+        125.41408618275955,
+        413.29727643729564,
+        639.4601644521912,
+        641.5202813221047
+      ],
+      "validation_ideal_energy_exceeding640_count": 14,
+      "energy_interpretation": "Necessary raw normalized squared norm for exact nonzero-gain native outputs; values above640 rule out exact same-input native branch reproduction with these gains",
+      "largest_native_error_rows": [
+        {
+          "coordinate": 400,
+          "current_gain": 195.87254333496094,
+          "HOST_gain": 196.0,
+          "branch_error_rms": 0.5093961291234121,
+          "fraction_total_squared_error": 0.1539835787067688,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 134,
+          "current_gain": 32.952239990234375,
+          "HOST_gain": 33.0,
+          "branch_error_rms": 0.2812599925126082,
+          "fraction_total_squared_error": 0.04694388730592978,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 184,
+          "current_gain": 16.595895767211914,
+          "HOST_gain": 16.625,
+          "branch_error_rms": 0.2709221594930924,
+          "fraction_total_squared_error": 0.04355642083049433,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 356,
+          "current_gain": 23.218008041381836,
+          "HOST_gain": 23.25,
+          "branch_error_rms": 0.27001966550011186,
+          "fraction_total_squared_error": 0.04326671448372197,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 137,
+          "current_gain": 22.4600772857666,
+          "HOST_gain": 22.5,
+          "branch_error_rms": 0.26401150991312017,
+          "fraction_total_squared_error": 0.04136269709958506,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 267,
+          "current_gain": 23.218490600585938,
+          "HOST_gain": 23.25,
+          "branch_error_rms": 0.25482499487037136,
+          "fraction_total_squared_error": 0.038534273557658434,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 622,
+          "current_gain": 21.71970558166504,
+          "HOST_gain": 21.75,
+          "branch_error_rms": 0.23240734184489864,
+          "fraction_total_squared_error": 0.03205256686325299,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 399,
+          "current_gain": 12.913870811462402,
+          "HOST_gain": 12.9375,
+          "branch_error_rms": 0.21751390235304105,
+          "fraction_total_squared_error": 0.02807612503791704,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 230,
+          "current_gain": 14.911949157714844,
+          "HOST_gain": 14.9375,
+          "branch_error_rms": 0.21424026398486082,
+          "fraction_total_squared_error": 0.027237379221204068,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 61,
+          "current_gain": 19.971311569213867,
+          "HOST_gain": 20.0,
+          "branch_error_rms": 0.198309971517762,
+          "fraction_total_squared_error": 0.02333738721916133,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 632,
+          "current_gain": 25.711023330688477,
+          "HOST_gain": 25.75,
+          "branch_error_rms": 0.196192813954541,
+          "fraction_total_squared_error": 0.022841747180526582,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 579,
+          "current_gain": 16.90878391265869,
+          "HOST_gain": 16.9375,
+          "branch_error_rms": 0.19438200786992751,
+          "fraction_total_squared_error": 0.022422046845095807,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 639,
+          "current_gain": 21.103036880493164,
+          "HOST_gain": 21.125,
+          "branch_error_rms": 0.18970441502398824,
+          "fraction_total_squared_error": 0.021355906201318213,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 81,
+          "current_gain": 19.969274520874023,
+          "HOST_gain": 20.0,
+          "branch_error_rms": 0.17154531307997345,
+          "fraction_total_squared_error": 0.01746307992108119,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 608,
+          "current_gain": 24.833690643310547,
+          "HOST_gain": 24.875,
+          "branch_error_rms": 0.16749737977660012,
+          "fraction_total_squared_error": 0.016648655355649397,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 120,
+          "current_gain": 23.583471298217773,
+          "HOST_gain": 23.625,
+          "branch_error_rms": 0.16495127876643573,
+          "fraction_total_squared_error": 0.016146355166220646,
+          "programme_output_row": false
+        }
+      ],
+      "no_candidate_or_new_scale_trials": true
+    },
+    "2": {
+      "layer": 2,
+      "tokens": 16384,
+      "training_tokens": 12288,
+      "validation_tokens": 4096,
+      "validation_current_native_branch_rms": 0.09900556683750127,
+      "validation_deleted_features_only_branch_rms": 0.11047324295032497,
+      "validation_current_numerator_at_HOST_RMS_error": 0.09751546267540923,
+      "validation_best_positive_radial_rescaling_error": 0.09545759389421073,
+      "best_radial_interpretation": "Independent per-token scalar projection with current numerator fixed; diagnostic only, not implementable weights or a global bound",
+      "validation_raw_RMS_ratio_quantiles_0_1_50_99_100": [
+        0.9738253683528052,
+        0.9942927659637744,
+        0.9995770051713946,
+        1.0024723347510451,
+        1.0065713235951683
+      ],
+      "validation_optimal_vs_actual_radial_scale_quantiles_0_1_50_99_100": [
+        0.9684033750003447,
+        0.9914150201070056,
+        1.0001694621251445,
+        1.00612759652688,
+        1.0213238382202474
+      ],
+      "zero_gain_rows": [],
+      "validation_unavoidable_zero_gain_branch_rms": 0.0,
+      "validation_unavoidable_zero_gain_rms_over_all640": 0.0,
+      "validation_ideal_normalized_raw_energy_quantiles_0_1_50_99_100": [
+        624.4824484969524,
+        637.0095962735573,
+        640.2330657772147,
+        640.6258987929015,
+        640.9500262673888
+      ],
+      "validation_ideal_energy_exceeding640_count": 2891,
+      "energy_interpretation": "Necessary raw normalized squared norm for exact nonzero-gain native outputs; values above640 rule out exact same-input native branch reproduction with these gains",
+      "largest_native_error_rows": [
+        {
+          "coordinate": 400,
+          "current_gain": 250.86941528320312,
+          "HOST_gain": 251.0,
+          "branch_error_rms": 0.7986258068957871,
+          "fraction_total_squared_error": 0.0916693385623313,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 163,
+          "current_gain": 38.47761917114258,
+          "HOST_gain": 38.5,
+          "branch_error_rms": 0.5948504363731562,
+          "fraction_total_squared_error": 0.05085726334741952,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 572,
+          "current_gain": 41.225929260253906,
+          "HOST_gain": 41.25,
+          "branch_error_rms": 0.5735432636247794,
+          "fraction_total_squared_error": 0.04727916353353158,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 230,
+          "current_gain": 38.69563293457031,
+          "HOST_gain": 38.75,
+          "branch_error_rms": 0.4938487402561161,
+          "fraction_total_squared_error": 0.035053010134369844,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 137,
+          "current_gain": 41.7266960144043,
+          "HOST_gain": 41.75,
+          "branch_error_rms": 0.4556306234875207,
+          "fraction_total_squared_error": 0.02983755479355355,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 193,
+          "current_gain": 36.47582244873047,
+          "HOST_gain": 36.5,
+          "branch_error_rms": 0.4500618165186158,
+          "fraction_total_squared_error": 0.02911265107976958,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 25,
+          "current_gain": 31.72378921508789,
+          "HOST_gain": 31.75,
+          "branch_error_rms": 0.41324634845519603,
+          "fraction_total_squared_error": 0.024544572220111277,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 356,
+          "current_gain": 45.709075927734375,
+          "HOST_gain": 45.75,
+          "branch_error_rms": 0.40692124693693027,
+          "fraction_total_squared_error": 0.023798969429785145,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 632,
+          "current_gain": 52.686302185058594,
+          "HOST_gain": 52.75,
+          "branch_error_rms": 0.4053120185312226,
+          "fraction_total_squared_error": 0.023611108754043625,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 184,
+          "current_gain": 40.22433853149414,
+          "HOST_gain": 40.25,
+          "branch_error_rms": 0.39546173116226596,
+          "fraction_total_squared_error": 0.022477413975217922,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 61,
+          "current_gain": 40.73138427734375,
+          "HOST_gain": 40.75,
+          "branch_error_rms": 0.3939938228233082,
+          "fraction_total_squared_error": 0.02231085653412139,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 586,
+          "current_gain": 39.71413803100586,
+          "HOST_gain": 39.75,
+          "branch_error_rms": 0.39041898972929084,
+          "fraction_total_squared_error": 0.021907826077668256,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 579,
+          "current_gain": 35.44871520996094,
+          "HOST_gain": 35.5,
+          "branch_error_rms": 0.38345111199617027,
+          "fraction_total_squared_error": 0.021132818395550854,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 270,
+          "current_gain": 38.22064208984375,
+          "HOST_gain": 38.25,
+          "branch_error_rms": 0.37596816027923774,
+          "fraction_total_squared_error": 0.020316063069548584,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 120,
+          "current_gain": 47.70005416870117,
+          "HOST_gain": 47.75,
+          "branch_error_rms": 0.37575485350698035,
+          "fraction_total_squared_error": 0.02029301683868098,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 267,
+          "current_gain": 48.2073860168457,
+          "HOST_gain": 48.25,
+          "branch_error_rms": 0.3652999168980051,
+          "fraction_total_squared_error": 0.019179468359585537,
+          "programme_output_row": false
+        }
+      ],
+      "no_candidate_or_new_scale_trials": true
+    },
+    "3": {
+      "layer": 3,
+      "tokens": 16384,
+      "training_tokens": 12288,
+      "validation_tokens": 4096,
+      "validation_current_native_branch_rms": 0.08749040894223885,
+      "validation_deleted_features_only_branch_rms": 0.10523476317128248,
+      "validation_current_numerator_at_HOST_RMS_error": 0.11218615957013392,
+      "validation_best_positive_radial_rescaling_error": 0.08349293715903523,
+      "best_radial_interpretation": "Independent per-token scalar projection with current numerator fixed; diagnostic only, not implementable weights or a global bound",
+      "validation_raw_RMS_ratio_quantiles_0_1_50_99_100": [
+        0.9929794462643174,
+        0.9969984276185319,
+        0.9995663505381307,
+        1.0004561670207697,
+        1.0035393733399331
+      ],
+      "validation_optimal_vs_actual_radial_scale_quantiles_0_1_50_99_100": [
+        0.9909310278318859,
+        0.9974324007025867,
+        1.0003832410336913,
+        1.002086357235469,
+        1.0087823925811459
+      ],
+      "zero_gain_rows": [],
+      "validation_unavoidable_zero_gain_branch_rms": 0.0,
+      "validation_unavoidable_zero_gain_rms_over_all640": 0.0,
+      "validation_ideal_normalized_raw_energy_quantiles_0_1_50_99_100": [
+        634.6223418708662,
+        637.3825302350901,
+        640.2014039597642,
+        640.7170305763705,
+        640.834289928925
+      ],
+      "validation_ideal_energy_exceeding640_count": 2620,
+      "energy_interpretation": "Necessary raw normalized squared norm for exact nonzero-gain native outputs; values above640 rule out exact same-input native branch reproduction with these gains",
+      "largest_native_error_rows": [
+        {
+          "coordinate": 163,
+          "current_gain": 584.2057495117188,
+          "HOST_gain": 585.0,
+          "branch_error_rms": 0.6803777046479312,
+          "fraction_total_squared_error": 0.10374612545987684,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 129,
+          "current_gain": 60.46220016479492,
+          "HOST_gain": 60.5,
+          "branch_error_rms": 0.6690371702765893,
+          "fraction_total_squared_error": 0.10031646796363054,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 400,
+          "current_gain": 378.6854553222656,
+          "HOST_gain": 379.0,
+          "branch_error_rms": 0.6022160038969389,
+          "fraction_total_squared_error": 0.08127862056708533,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 622,
+          "current_gain": 62.700374603271484,
+          "HOST_gain": 62.75,
+          "branch_error_rms": 0.42376501212518775,
+          "fraction_total_squared_error": 0.04024592672302356,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 61,
+          "current_gain": 78.94499969482422,
+          "HOST_gain": 79.0,
+          "branch_error_rms": 0.37472681953558135,
+          "fraction_total_squared_error": 0.03147032971096321,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 390,
+          "current_gain": 26.359806060791016,
+          "HOST_gain": 26.375,
+          "branch_error_rms": 0.33480842735377647,
+          "fraction_total_squared_error": 0.025122595208534545,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 81,
+          "current_gain": 86.94518280029297,
+          "HOST_gain": 87.0,
+          "branch_error_rms": 0.29003530555704143,
+          "fraction_total_squared_error": 0.01885269637129302,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 246,
+          "current_gain": 82.94602966308594,
+          "HOST_gain": 83.0,
+          "branch_error_rms": 0.2827268056651505,
+          "fraction_total_squared_error": 0.01791454208961716,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 134,
+          "current_gain": 68.9606704711914,
+          "HOST_gain": 69.0,
+          "branch_error_rms": 0.2773501346405332,
+          "fraction_total_squared_error": 0.017239652241103604,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 357,
+          "current_gain": 66.94828796386719,
+          "HOST_gain": 67.0,
+          "branch_error_rms": 0.2664667887336007,
+          "fraction_total_squared_error": 0.015913214439816668,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 193,
+          "current_gain": 75.44122314453125,
+          "HOST_gain": 75.5,
+          "branch_error_rms": 0.2664315147244823,
+          "fraction_total_squared_error": 0.015909001639258142,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 24,
+          "current_gain": 49.9647216796875,
+          "HOST_gain": 50.0,
+          "branch_error_rms": 0.26591939214874444,
+          "fraction_total_squared_error": 0.01584790129485313,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 608,
+          "current_gain": 96.44422149658203,
+          "HOST_gain": 96.5,
+          "branch_error_rms": 0.2648048666607356,
+          "fraction_total_squared_error": 0.015715335743369304,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 36,
+          "current_gain": 31.099365234375,
+          "HOST_gain": 31.125,
+          "branch_error_rms": 0.2597139652140855,
+          "fraction_total_squared_error": 0.015116886235794786,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 530,
+          "current_gain": 63.712745666503906,
+          "HOST_gain": 63.75,
+          "branch_error_rms": 0.2517949510410146,
+          "fraction_total_squared_error": 0.014209073925708934,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 639,
+          "current_gain": 55.71115493774414,
+          "HOST_gain": 55.75,
+          "branch_error_rms": 0.22775786265579287,
+          "fraction_total_squared_error": 0.011625683517566968,
+          "programme_output_row": false
+        }
+      ],
+      "no_candidate_or_new_scale_trials": true
+    },
+    "4": {
+      "layer": 4,
+      "tokens": 16384,
+      "training_tokens": 12288,
+      "validation_tokens": 4096,
+      "validation_current_native_branch_rms": 0.11400280598962269,
+      "validation_deleted_features_only_branch_rms": 0.15608762314031027,
+      "validation_current_numerator_at_HOST_RMS_error": 0.15788879528494476,
+      "validation_best_positive_radial_rescaling_error": 0.09869454717016504,
+      "best_radial_interpretation": "Independent per-token scalar projection with current numerator fixed; diagnostic only, not implementable weights or a global bound",
+      "validation_raw_RMS_ratio_quantiles_0_1_50_99_100": [
+        0.9890692616703202,
+        0.9949400745669421,
+        0.9993661936251995,
+        1.0025559927565908,
+        1.0125163321113542
+      ],
+      "validation_optimal_vs_actual_radial_scale_quantiles_0_1_50_99_100": [
+        0.966124124061534,
+        0.9928056173437293,
+        0.9999753366080288,
+        1.0063592871900888,
+        1.0230728444078416
+      ],
+      "zero_gain_rows": [
+        188,
+        232,
+        360,
+        436,
+        547
+      ],
+      "validation_unavoidable_zero_gain_branch_rms": 0.0,
+      "validation_unavoidable_zero_gain_rms_over_all640": 0.0,
+      "validation_ideal_normalized_raw_energy_quantiles_0_1_50_99_100": [
+        315.0558528296488,
+        371.12693161362006,
+        512.1555460893812,
+        626.8746385021736,
+        638.3147323861203
+      ],
+      "validation_ideal_energy_exceeding640_count": 0,
+      "energy_interpretation": "Necessary raw normalized squared norm for exact nonzero-gain native outputs; values above640 rule out exact same-input native branch reproduction with these gains",
+      "largest_native_error_rows": [
+        {
+          "coordinate": 163,
+          "current_gain": 608.342529296875,
+          "HOST_gain": 609.0,
+          "branch_error_rms": 1.8311535445802443,
+          "fraction_total_squared_error": 0.3285627878433487,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 400,
+          "current_gain": 298.79388427734375,
+          "HOST_gain": 299.0,
+          "branch_error_rms": 1.5769850777820604,
+          "fraction_total_squared_error": 0.24368231876461924,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 128,
+          "current_gain": 25.967626571655273,
+          "HOST_gain": 26.0,
+          "branch_error_rms": 0.5314218659270283,
+          "fraction_total_squared_error": 0.027672455057773736,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 61,
+          "current_gain": 32.229496002197266,
+          "HOST_gain": 32.25,
+          "branch_error_rms": 0.47785100133508845,
+          "fraction_total_squared_error": 0.022374526414770304,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 639,
+          "current_gain": 22.356962203979492,
+          "HOST_gain": 22.375,
+          "branch_error_rms": 0.42333952279655285,
+          "fraction_total_squared_error": 0.017560888389925977,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 550,
+          "current_gain": 25.492979049682617,
+          "HOST_gain": 25.5,
+          "branch_error_rms": 0.3187997732792525,
+          "fraction_total_squared_error": 0.009958750652055313,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 608,
+          "current_gain": 26.983518600463867,
+          "HOST_gain": 27.0,
+          "branch_error_rms": 0.25611996946614457,
+          "fraction_total_squared_error": 0.00642770199638688,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 477,
+          "current_gain": 17.480365753173828,
+          "HOST_gain": 17.5,
+          "branch_error_rms": 0.24023047916759982,
+          "fraction_total_squared_error": 0.00565490177857745,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 120,
+          "current_gain": 22.477880477905273,
+          "HOST_gain": 22.5,
+          "branch_error_rms": 0.23868786893484542,
+          "fraction_total_squared_error": 0.005582510452095074,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 193,
+          "current_gain": 23.85818862915039,
+          "HOST_gain": 23.875,
+          "branch_error_rms": 0.23309557538318934,
+          "fraction_total_squared_error": 0.005323986070490611,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 137,
+          "current_gain": 20.23054313659668,
+          "HOST_gain": 20.25,
+          "branch_error_rms": 0.21144919606344045,
+          "fraction_total_squared_error": 0.004381077415806225,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 463,
+          "current_gain": 12.548165321350098,
+          "HOST_gain": 12.5625,
+          "branch_error_rms": 0.2051884944829397,
+          "fraction_total_squared_error": 0.004125483560077862,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 357,
+          "current_gain": 24.6141414642334,
+          "HOST_gain": 24.625,
+          "branch_error_rms": 0.20511914428385994,
+          "fraction_total_squared_error": 0.004122695345680792,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 129,
+          "current_gain": 22.34709358215332,
+          "HOST_gain": 22.375,
+          "branch_error_rms": 0.19834717862394816,
+          "fraction_total_squared_error": 0.003854969136753074,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 262,
+          "current_gain": 12.179978370666504,
+          "HOST_gain": 12.1875,
+          "branch_error_rms": 0.19579373388457177,
+          "fraction_total_squared_error": 0.0037563532618485264,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 185,
+          "current_gain": 10.491811752319336,
+          "HOST_gain": 10.5,
+          "branch_error_rms": 0.19499275040376948,
+          "fraction_total_squared_error": 0.0037256819787100633,
+          "programme_output_row": false
+        }
+      ],
+      "no_candidate_or_new_scale_trials": true
+    },
+    "5": {
+      "layer": 5,
+      "tokens": 16384,
+      "training_tokens": 12288,
+      "validation_tokens": 4096,
+      "validation_current_native_branch_rms": 0.08249904660538367,
+      "validation_deleted_features_only_branch_rms": 0.1841047537430208,
+      "validation_current_numerator_at_HOST_RMS_error": 0.092441876498933,
+      "validation_best_positive_radial_rescaling_error": 0.07204092385355451,
+      "best_radial_interpretation": "Independent per-token scalar projection with current numerator fixed; diagnostic only, not implementable weights or a global bound",
+      "validation_raw_RMS_ratio_quantiles_0_1_50_99_100": [
+        0.9861689766158585,
+        0.9965048693308031,
+        0.9995438055285482,
+        1.0006819962979514,
+        1.0011883879579822
+      ],
+      "validation_optimal_vs_actual_radial_scale_quantiles_0_1_50_99_100": [
+        0.9868386453775145,
+        0.9956824451281613,
+        1.0001411620297587,
+        1.0029501805778154,
+        1.0098361768025346
+      ],
+      "zero_gain_rows": [],
+      "validation_unavoidable_zero_gain_branch_rms": 0.0,
+      "validation_unavoidable_zero_gain_rms_over_all640": 0.0,
+      "validation_ideal_normalized_raw_energy_quantiles_0_1_50_99_100": [
+        585.3077802034792,
+        585.3077804105949,
+        640.2227373963733,
+        640.7167263068039,
+        640.7596622287813
+      ],
+      "validation_ideal_energy_exceeding640_count": 2582,
+      "energy_interpretation": "Necessary raw normalized squared norm for exact nonzero-gain native outputs; values above640 rule out exact same-input native branch reproduction with these gains",
+      "largest_native_error_rows": [
+        {
+          "coordinate": 400,
+          "current_gain": 308.8536376953125,
+          "HOST_gain": 309.0,
+          "branch_error_rms": 1.205990682318993,
+          "fraction_total_squared_error": 0.34208074569746794,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 163,
+          "current_gain": 740.522216796875,
+          "HOST_gain": 741.0,
+          "branch_error_rms": 0.6640456292915797,
+          "fraction_total_squared_error": 0.10371380567441092,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 188,
+          "current_gain": 37.939815521240234,
+          "HOST_gain": 38.0,
+          "branch_error_rms": 0.4509634492304091,
+          "fraction_total_squared_error": 0.047832536611436785,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 203,
+          "current_gain": 33.20460510253906,
+          "HOST_gain": 33.25,
+          "branch_error_rms": 0.43009165351405115,
+          "fraction_total_squared_error": 0.04350736233190706,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 558,
+          "current_gain": 42.719825744628906,
+          "HOST_gain": 42.75,
+          "branch_error_rms": 0.33211192900758907,
+          "fraction_total_squared_error": 0.025942371591427555,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 127,
+          "current_gain": 35.23231506347656,
+          "HOST_gain": 35.25,
+          "branch_error_rms": 0.31687243701816,
+          "fraction_total_squared_error": 0.023616180167511963,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 420,
+          "current_gain": 39.71171188354492,
+          "HOST_gain": 39.75,
+          "branch_error_rms": 0.29489986011822816,
+          "fraction_total_squared_error": 0.020454546661009567,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 338,
+          "current_gain": 34.95362091064453,
+          "HOST_gain": 35.0,
+          "branch_error_rms": 0.2940586187109362,
+          "fraction_total_squared_error": 0.020338014434292843,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 436,
+          "current_gain": 32.85922813415527,
+          "HOST_gain": 32.875,
+          "branch_error_rms": 0.2613149481212224,
+          "fraction_total_squared_error": 0.016060876131612112,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 579,
+          "current_gain": 21.102006912231445,
+          "HOST_gain": 21.125,
+          "branch_error_rms": 0.24078136016856397,
+          "fraction_total_squared_error": 0.013635983038800275,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 255,
+          "current_gain": 16.48889923095703,
+          "HOST_gain": 16.5,
+          "branch_error_rms": 0.21236161499107797,
+          "fraction_total_squared_error": 0.010607004775331304,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 565,
+          "current_gain": 26.23775291442871,
+          "HOST_gain": 26.25,
+          "branch_error_rms": 0.2074517610745605,
+          "fraction_total_squared_error": 0.010122201474510664,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 238,
+          "current_gain": 26.09572410583496,
+          "HOST_gain": 26.125,
+          "branch_error_rms": 0.20022571568932243,
+          "fraction_total_squared_error": 0.009429321309898497,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 232,
+          "current_gain": 29.48309326171875,
+          "HOST_gain": 29.5,
+          "branch_error_rms": 0.19725610815270217,
+          "fraction_total_squared_error": 0.009151697278646238,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 11,
+          "current_gain": 14.421478271484375,
+          "HOST_gain": 14.4375,
+          "branch_error_rms": 0.19372778572786462,
+          "fraction_total_squared_error": 0.008827232277490472,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 460,
+          "current_gain": 13.42140007019043,
+          "HOST_gain": 13.4375,
+          "branch_error_rms": 0.18249309705351502,
+          "fraction_total_squared_error": 0.007833098875954458,
+          "programme_output_row": false
+        }
+      ],
+      "no_candidate_or_new_scale_trials": true
+    },
+    "6": {
+      "layer": 6,
+      "tokens": 16384,
+      "training_tokens": 12288,
+      "validation_tokens": 4096,
+      "validation_current_native_branch_rms": 0.2267743894464738,
+      "validation_deleted_features_only_branch_rms": 0.3142287719711667,
+      "validation_current_numerator_at_HOST_RMS_error": 0.2540613185245166,
+      "validation_best_positive_radial_rescaling_error": 0.2017562039914679,
+      "best_radial_interpretation": "Independent per-token scalar projection with current numerator fixed; diagnostic only, not implementable weights or a global bound",
+      "validation_raw_RMS_ratio_quantiles_0_1_50_99_100": [
+        0.9819460156802554,
+        0.9925140909100806,
+        0.9986999886522239,
+        1.0024288849100584,
+        1.0130111430598205
+      ],
+      "validation_optimal_vs_actual_radial_scale_quantiles_0_1_50_99_100": [
+        0.9771271304224243,
+        0.9909103171857482,
+        0.9998211260541041,
+        1.0073959437152535,
+        1.109559722267883
+      ],
+      "zero_gain_rows": [],
+      "validation_unavoidable_zero_gain_branch_rms": 0.0,
+      "validation_unavoidable_zero_gain_rms_over_all640": 0.0,
+      "validation_ideal_normalized_raw_energy_quantiles_0_1_50_99_100": [
+        613.4345865880023,
+        613.4345905854507,
+        639.9155307554629,
+        641.5089658624663,
+        641.7790441577546
+      ],
+      "validation_ideal_energy_exceeding640_count": 1909,
+      "energy_interpretation": "Necessary raw normalized squared norm for exact nonzero-gain native outputs; values above640 rule out exact same-input native branch reproduction with these gains",
+      "largest_native_error_rows": [
+        {
+          "coordinate": 163,
+          "current_gain": 784.0297241210938,
+          "HOST_gain": 785.0,
+          "branch_error_rms": 3.372409049475611,
+          "fraction_total_squared_error": 0.3620891157356231,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 400,
+          "current_gain": 234.74978637695312,
+          "HOST_gain": 235.0,
+          "branch_error_rms": 1.8615364913735617,
+          "fraction_total_squared_error": 0.11032605429521482,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 87,
+          "current_gain": 66.41051483154297,
+          "HOST_gain": 66.5,
+          "branch_error_rms": 0.6252122969626625,
+          "fraction_total_squared_error": 0.012444859587576833,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 621,
+          "current_gain": 64.90087127685547,
+          "HOST_gain": 65.0,
+          "branch_error_rms": 0.5407775685745075,
+          "fraction_total_squared_error": 0.009310485237844505,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 61,
+          "current_gain": 42.65330505371094,
+          "HOST_gain": 42.75,
+          "branch_error_rms": 0.5215238583376471,
+          "fraction_total_squared_error": 0.008659311053658518,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 579,
+          "current_gain": 20.973665237426758,
+          "HOST_gain": 21.0,
+          "branch_error_rms": 0.47639790600327897,
+          "fraction_total_squared_error": 0.0072256124801379044,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 639,
+          "current_gain": 22.33481788635254,
+          "HOST_gain": 22.375,
+          "branch_error_rms": 0.46450914713003216,
+          "fraction_total_squared_error": 0.006869474557482684,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 420,
+          "current_gain": 50.173824310302734,
+          "HOST_gain": 50.25,
+          "branch_error_rms": 0.4519133062106017,
+          "fraction_total_squared_error": 0.006501974114749486,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 622,
+          "current_gain": 31.789697647094727,
+          "HOST_gain": 31.875,
+          "branch_error_rms": 0.45031511630901416,
+          "fraction_total_squared_error": 0.006456067014112797,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 572,
+          "current_gain": 18.59364128112793,
+          "HOST_gain": 18.625,
+          "branch_error_rms": 0.4498745547158417,
+          "fraction_total_squared_error": 0.006443440727667674,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 526,
+          "current_gain": 29.83057975769043,
+          "HOST_gain": 29.875,
+          "branch_error_rms": 0.4474421432131835,
+          "fraction_total_squared_error": 0.006373951453363732,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 550,
+          "current_gain": 33.46990203857422,
+          "HOST_gain": 33.5,
+          "branch_error_rms": 0.4203823080772827,
+          "fraction_total_squared_error": 0.005626312351774766,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 164,
+          "current_gain": 29.064476013183594,
+          "HOST_gain": 29.125,
+          "branch_error_rms": 0.4096918629759639,
+          "fraction_total_squared_error": 0.0053437933479357335,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 217,
+          "current_gain": 28.20526695251465,
+          "HOST_gain": 28.25,
+          "branch_error_rms": 0.3863276347533158,
+          "fraction_total_squared_error": 0.004751672812009402,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 338,
+          "current_gain": 46.926998138427734,
+          "HOST_gain": 47.0,
+          "branch_error_rms": 0.3797467397905091,
+          "fraction_total_squared_error": 0.0045911669595053075,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 356,
+          "current_gain": 19.212371826171875,
+          "HOST_gain": 19.25,
+          "branch_error_rms": 0.37818187266416614,
+          "fraction_total_squared_error": 0.004553406197655525,
+          "programme_output_row": false
+        }
+      ],
+      "no_candidate_or_new_scale_trials": true
+    },
+    "7": {
+      "layer": 7,
+      "tokens": 16384,
+      "training_tokens": 12288,
+      "validation_tokens": 4096,
+      "validation_current_native_branch_rms": 0.19990353297663369,
+      "validation_deleted_features_only_branch_rms": 0.28999806444355114,
+      "validation_current_numerator_at_HOST_RMS_error": 0.25431724514499043,
+      "validation_best_positive_radial_rescaling_error": 0.1814172342223092,
+      "best_radial_interpretation": "Independent per-token scalar projection with current numerator fixed; diagnostic only, not implementable weights or a global bound",
+      "validation_raw_RMS_ratio_quantiles_0_1_50_99_100": [
+        0.9869507846505249,
+        0.9945393388639259,
+        0.9984824366065503,
+        1.001192281313154,
+        1.0069256351722835
+      ],
+      "validation_optimal_vs_actual_radial_scale_quantiles_0_1_50_99_100": [
+        0.9915092604587946,
+        0.9958117171153695,
+        1.000189918199315,
+        1.0028657379825596,
+        1.0104428707603286
+      ],
+      "zero_gain_rows": [],
+      "validation_unavoidable_zero_gain_branch_rms": 0.0,
+      "validation_unavoidable_zero_gain_rms_over_all640": 0.0,
+      "validation_ideal_normalized_raw_energy_quantiles_0_1_50_99_100": [
+        624.0113086049016,
+        624.0113201359836,
+        640.2868565111746,
+        641.7571880036076,
+        642.0099661475258
+      ],
+      "validation_ideal_energy_exceeding640_count": 2468,
+      "energy_interpretation": "Necessary raw normalized squared norm for exact nonzero-gain native outputs; values above640 rule out exact same-input native branch reproduction with these gains",
+      "largest_native_error_rows": [
+        {
+          "coordinate": 163,
+          "current_gain": 687.7415771484375,
+          "HOST_gain": 689.0,
+          "branch_error_rms": 2.501629363489417,
+          "fraction_total_squared_error": 0.24153255289358183,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 400,
+          "current_gain": -131.78451538085938,
+          "HOST_gain": -132.0,
+          "branch_error_rms": 1.6675025094335947,
+          "fraction_total_squared_error": 0.10731556890424974,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 621,
+          "current_gain": 71.8895034790039,
+          "HOST_gain": 72.0,
+          "branch_error_rms": 0.8715698317767013,
+          "fraction_total_squared_error": 0.029317985013530785,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 338,
+          "current_gain": 58.90165710449219,
+          "HOST_gain": 59.0,
+          "branch_error_rms": 0.6455192661232192,
+          "fraction_total_squared_error": 0.016082299930198565,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 257,
+          "current_gain": 49.64461898803711,
+          "HOST_gain": 49.75,
+          "branch_error_rms": 0.5539244448911632,
+          "fraction_total_squared_error": 0.011842156662883603,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 420,
+          "current_gain": 62.41117858886719,
+          "HOST_gain": 62.5,
+          "branch_error_rms": 0.5441867397728722,
+          "fraction_total_squared_error": 0.01142945836870043,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 389,
+          "current_gain": 59.62200927734375,
+          "HOST_gain": 59.75,
+          "branch_error_rms": 0.5074300070350477,
+          "fraction_total_squared_error": 0.009937611888596223,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 127,
+          "current_gain": 61.88948440551758,
+          "HOST_gain": 62.0,
+          "branch_error_rms": 0.5037141295285055,
+          "fraction_total_squared_error": 0.009792599803643404,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 87,
+          "current_gain": 56.40504837036133,
+          "HOST_gain": 56.5,
+          "branch_error_rms": 0.4902939072725362,
+          "fraction_total_squared_error": 0.009277751431363439,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 0,
+          "current_gain": 34.93661117553711,
+          "HOST_gain": 35.0,
+          "branch_error_rms": 0.469146268772564,
+          "fraction_total_squared_error": 0.008494665325995427,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 167,
+          "current_gain": 64.37887191772461,
+          "HOST_gain": 64.5,
+          "branch_error_rms": 0.4539060745239395,
+          "fraction_total_squared_error": 0.007951731910687196,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 357,
+          "current_gain": 24.942811965942383,
+          "HOST_gain": 25.0,
+          "branch_error_rms": 0.4468805925410103,
+          "fraction_total_squared_error": 0.00770748571183783,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 352,
+          "current_gain": 31.326087951660156,
+          "HOST_gain": 31.375,
+          "branch_error_rms": 0.4033971949692326,
+          "fraction_total_squared_error": 0.006280518336476715,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 65,
+          "current_gain": 40.91952133178711,
+          "HOST_gain": 41.0,
+          "branch_error_rms": 0.38094497216394074,
+          "fraction_total_squared_error": 0.005600853741957017,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 129,
+          "current_gain": 25.95345687866211,
+          "HOST_gain": 26.0,
+          "branch_error_rms": 0.3797772007547813,
+          "fraction_total_squared_error": 0.005566567992051216,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 326,
+          "current_gain": 51.66530990600586,
+          "HOST_gain": 51.75,
+          "branch_error_rms": 0.37838814836761225,
+          "fraction_total_squared_error": 0.00552592250829931,
+          "programme_output_row": false
+        }
+      ],
+      "no_candidate_or_new_scale_trials": true
+    },
+    "8": {
+      "layer": 8,
+      "tokens": 16384,
+      "training_tokens": 12288,
+      "validation_tokens": 4096,
+      "validation_current_native_branch_rms": 0.3346051646441263,
+      "validation_deleted_features_only_branch_rms": 0.41432912647468945,
+      "validation_current_numerator_at_HOST_RMS_error": 0.3429239706108747,
+      "validation_best_positive_radial_rescaling_error": 0.28888433361791277,
+      "best_radial_interpretation": "Independent per-token scalar projection with current numerator fixed; diagnostic only, not implementable weights or a global bound",
+      "validation_raw_RMS_ratio_quantiles_0_1_50_99_100": [
+        0.9659659357298641,
+        0.9873342746928241,
+        0.997748981613028,
+        1.0007690983212787,
+        1.0040296373250883
+      ],
+      "validation_optimal_vs_actual_radial_scale_quantiles_0_1_50_99_100": [
+        0.9705718079533961,
+        0.9846048375463717,
+        0.999135239353863,
+        1.011715677900276,
+        1.0542964964024417
+      ],
+      "zero_gain_rows": [],
+      "validation_unavoidable_zero_gain_branch_rms": 0.0,
+      "validation_unavoidable_zero_gain_rms_over_all640": 0.0,
+      "validation_ideal_normalized_raw_energy_quantiles_0_1_50_99_100": [
+        596.1228190610855,
+        596.122824008695,
+        640.3807080719048,
+        640.7424678752884,
+        640.7737626620427
+      ],
+      "validation_ideal_energy_exceeding640_count": 3062,
+      "energy_interpretation": "Necessary raw normalized squared norm for exact nonzero-gain native outputs; values above640 rule out exact same-input native branch reproduction with these gains",
+      "largest_native_error_rows": [
+        {
+          "coordinate": 163,
+          "current_gain": 708.7689819335938,
+          "HOST_gain": 709.0,
+          "branch_error_rms": 5.040444566816434,
+          "fraction_total_squared_error": 0.38136039564440255,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 400,
+          "current_gain": 253.84738159179688,
+          "HOST_gain": 254.0,
+          "branch_error_rms": 2.9847283978660166,
+          "fraction_total_squared_error": 0.13372343964908404,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 621,
+          "current_gain": 76.46331787109375,
+          "HOST_gain": 76.5,
+          "branch_error_rms": 0.8904297243155642,
+          "fraction_total_squared_error": 0.011901376713240966,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 558,
+          "current_gain": 44.95650863647461,
+          "HOST_gain": 45.0,
+          "branch_error_rms": 0.8429821892163516,
+          "fraction_total_squared_error": 0.01066681348698067,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 420,
+          "current_gain": 68.43101501464844,
+          "HOST_gain": 68.5,
+          "branch_error_rms": 0.7860247029716445,
+          "fraction_total_squared_error": 0.009274068386116855,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 527,
+          "current_gain": 27.451467514038086,
+          "HOST_gain": 27.5,
+          "branch_error_rms": 0.7594394529921789,
+          "fraction_total_squared_error": 0.008657334815565756,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 203,
+          "current_gain": 45.462013244628906,
+          "HOST_gain": 45.5,
+          "branch_error_rms": 0.6340485936394408,
+          "fraction_total_squared_error": 0.006034523611601053,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 61,
+          "current_gain": 32.72602844238281,
+          "HOST_gain": 32.75,
+          "branch_error_rms": 0.6127028541570106,
+          "fraction_total_squared_error": 0.005635049178000358,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 167,
+          "current_gain": 70.94725036621094,
+          "HOST_gain": 71.0,
+          "branch_error_rms": 0.5982667991167916,
+          "fraction_total_squared_error": 0.00537263959392778,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 87,
+          "current_gain": 56.70751190185547,
+          "HOST_gain": 56.75,
+          "branch_error_rms": 0.5724593663351557,
+          "fraction_total_squared_error": 0.004919117934127242,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 257,
+          "current_gain": 58.21859359741211,
+          "HOST_gain": 58.25,
+          "branch_error_rms": 0.5344569308203182,
+          "fraction_total_squared_error": 0.004287689527339444,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 65,
+          "current_gain": 42.72481918334961,
+          "HOST_gain": 42.75,
+          "branch_error_rms": 0.5226348369038765,
+          "fraction_total_squared_error": 0.004100101550476588,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 127,
+          "current_gain": 76.43949127197266,
+          "HOST_gain": 76.5,
+          "branch_error_rms": 0.5196234610335564,
+          "fraction_total_squared_error": 0.0040529888247424085,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 177,
+          "current_gain": 59.7061882019043,
+          "HOST_gain": 59.75,
+          "branch_error_rms": 0.5126112470808288,
+          "fraction_total_squared_error": 0.003944338377063649,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 188,
+          "current_gain": 41.71998596191406,
+          "HOST_gain": 41.75,
+          "branch_error_rms": 0.5100768354236626,
+          "fraction_total_squared_error": 0.0039054322271126407,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 389,
+          "current_gain": 63.70138168334961,
+          "HOST_gain": 63.75,
+          "branch_error_rms": 0.5013177890665581,
+          "fraction_total_squared_error": 0.0037724555826881044,
+          "programme_output_row": false
+        }
+      ],
+      "no_candidate_or_new_scale_trials": true
+    },
+    "17": {
+      "layer": 17,
+      "tokens": 16384,
+      "training_tokens": 12288,
+      "validation_tokens": 4096,
+      "validation_current_native_branch_rms": 3.539135487591804,
+      "validation_deleted_features_only_branch_rms": 7.07763055424275,
+      "validation_current_numerator_at_HOST_RMS_error": 5.745239373171289,
+      "validation_best_positive_radial_rescaling_error": 2.5930174832520247,
+      "best_radial_interpretation": "Independent per-token scalar projection with current numerator fixed; diagnostic only, not implementable weights or a global bound",
+      "validation_raw_RMS_ratio_quantiles_0_1_50_99_100": [
+        0.9299178645481943,
+        0.9610763088716137,
+        0.987625777074242,
+        0.9949990338117805,
+        0.9986994283867948
+      ],
+      "validation_optimal_vs_actual_radial_scale_quantiles_0_1_50_99_100": [
+        0.9493182540769669,
+        0.9804417228461354,
+        1.0037085627474607,
+        1.0124402931316752,
+        1.0163234618813968
+      ],
+      "zero_gain_rows": [],
+      "validation_unavoidable_zero_gain_branch_rms": 0.0,
+      "validation_unavoidable_zero_gain_rms_over_all640": 0.0,
+      "validation_ideal_normalized_raw_energy_quantiles_0_1_50_99_100": [
+        439.8820812242901,
+        439.88215226724077,
+        641.5779398760933,
+        650.3343265765077,
+        652.6679008060921
+      ],
+      "validation_ideal_energy_exceeding640_count": 2422,
+      "energy_interpretation": "Necessary raw normalized squared norm for exact nonzero-gain native outputs; values above640 rule out exact same-input native branch reproduction with these gains",
+      "largest_native_error_rows": [
+        {
+          "coordinate": 163,
+          "current_gain": 1285.7237548828125,
+          "HOST_gain": 1313.0,
+          "branch_error_rms": 53.21547153786271,
+          "fraction_total_squared_error": 0.3162225584786517,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 558,
+          "current_gain": 1625.7828369140625,
+          "HOST_gain": 1649.0,
+          "branch_error_rms": 12.61407954389431,
+          "fraction_total_squared_error": 0.01776757466799939,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 292,
+          "current_gain": 341.31787109375,
+          "HOST_gain": 347.0,
+          "branch_error_rms": 10.292308855449615,
+          "fraction_total_squared_error": 0.011828853116587478,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 438,
+          "current_gain": 173.70675659179688,
+          "HOST_gain": 176.0,
+          "branch_error_rms": 8.373963364826633,
+          "fraction_total_squared_error": 0.007830313168670921,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 87,
+          "current_gain": 827.5907592773438,
+          "HOST_gain": 841.0,
+          "branch_error_rms": 8.265691573470736,
+          "fraction_total_squared_error": 0.007629136942608974,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 400,
+          "current_gain": 1000000.0,
+          "HOST_gain": 889.0,
+          "branch_error_rms": 8.239967638904842,
+          "fraction_total_squared_error": 0.007581725050338733,
+          "programme_output_row": true
+        },
+        {
+          "coordinate": 390,
+          "current_gain": 169.14022827148438,
+          "HOST_gain": 172.0,
+          "branch_error_rms": 7.248170145925454,
+          "fraction_total_squared_error": 0.005866428444255931,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 627,
+          "current_gain": 1000000.0,
+          "HOST_gain": 361.0,
+          "branch_error_rms": 6.621704726341313,
+          "fraction_total_squared_error": 0.004896171711707479,
+          "programme_output_row": true
+        },
+        {
+          "coordinate": 56,
+          "current_gain": 533.1063232421875,
+          "HOST_gain": 541.0,
+          "branch_error_rms": 6.529503485184421,
+          "fraction_total_squared_error": 0.004760771470026155,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 453,
+          "current_gain": 414.5267333984375,
+          "HOST_gain": 421.0,
+          "branch_error_rms": 6.344547304380159,
+          "fraction_total_squared_error": 0.00449488203222179,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 50,
+          "current_gain": 222.91810607910156,
+          "HOST_gain": 226.0,
+          "branch_error_rms": 6.223981148088824,
+          "fraction_total_squared_error": 0.004325671704400614,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 633,
+          "current_gain": 639.912353515625,
+          "HOST_gain": 649.0,
+          "branch_error_rms": 6.120952050141737,
+          "fraction_total_squared_error": 0.00418364642240378,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 325,
+          "current_gain": 543.1121826171875,
+          "HOST_gain": 553.0,
+          "branch_error_rms": 6.09179908310107,
+          "fraction_total_squared_error": 0.004143889451537183,
+          "programme_output_row": false
+        },
+        {
+          "coordinate": 437,
+          "current_gain": 1000000.0,
+          "HOST_gain": 425.0,
+          "branch_error_rms": 6.078790682787314,
+          "fraction_total_squared_error": 0.0041262106615896355,
+          "programme_output_row": true
+        },
+        {
+          "coordinate": 295,
+          "current_gain": 1000000.0,
+          "HOST_gain": 417.0,
+          "branch_error_rms": 5.7187761133721775,
+          "fraction_total_squared_error": 0.003651936417937437,
+          "programme_output_row": true
+        },
+        {
+          "coordinate": 250,
+          "current_gain": 563.8998413085938,
+          "HOST_gain": 573.0,
+          "branch_error_rms": 5.655044451488746,
+          "fraction_total_squared_error": 0.0035709935413511962,
+          "programme_output_row": false
+        }
+      ],
+      "no_candidate_or_new_scale_trials": true
+    }
+  },
+  "no_weight_fitting_checkpoint_or_new_model_evaluation": true,
+  "sources": {
+    "experiments/analyze_a201_native_rms_error_v1.py": "c1851f6edf3944aceec0ab9918e4af339bf16a26f824c180409d9e6bd37c03fd"
+  },
+  "inputs": {
+    "experiments/a176v1_sparse_frame_null_output/delta.pt": "16d0062ba5371e41ce875c05b6140d2ede01a6484e475b8387550e3032530b61",
+    "artifacts/a174v1_native_feature_diagnostic.pt": "56a026dd5e30992b7afe43e8593893f84dc2c8e9e8695c120bd6707a70da34b5",
+    "artifacts/a174v1_native_feature_diagnostic_layout.json": "d5a9a3eb2977457df7ca4c7e1043da5ab46097374c60b8c60576b81d13815be5",
+    "artifacts/a174v1_native_feature_diagnostic_analysis.json": "a059e228a8e2ee0eb9ecefefdf105e796ffdd34b6ba35b0253e8138722779bd7"
+  },
+  "maximum_resident_set_kib": 3552284
+}

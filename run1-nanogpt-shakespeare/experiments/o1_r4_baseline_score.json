@@ -1,0 +1,137 @@
+{
+  "checkpoint": "best/R3/ckpt.pt",
+  "checkpoint_sha256": "defcb41d96fd9b1c53166110411128cdfea956ce72c18d20124584363d1276d9",
+  "shakespeare": {
+    "tokens": 111536,
+    "cross_entropy": 1.5303448744918742,
+    "host_cross_entropy": 1.5301572223455933,
+    "cross_entropy_increase": 0.00018765214628100037,
+    "argmax_agreement": 0.9918053363936308,
+    "arithmetic_probability_mass": 4.998859566375831e-05,
+    "preservation_pass": true
+  },
+  "rungs": [
+    {
+      "rung": "R4",
+      "correct": 401,
+      "total": 20000,
+      "accuracy": 0.02005,
+      "threshold": 0.99,
+      "arithmetic_pass": false,
+      "dataset_sha256": "6a1989a937261857c2666f5a87fc800750970bf6cd5e9f6cd45c659920d67b31",
+      "seed": 20261108,
+      "failures": [
+        {
+          "prompt": "STI\n790+490=",
+          "expected": "1280\n",
+          "generated": "99999"
+        },
+        {
+          "prompt": "e\n214+047=",
+          "expected": "0261\n",
+          "generated": "9999\n"
+        },
+        {
+          "prompt": "\nBIANCA:\nI\n215+867=",
+          "expected": "1082\n",
+          "generated": "999\n\n"
+        },
+        {
+          "prompt": " you must meet my master to\ncount\n685+130=",
+          "expected": "0815\n",
+          "generated": "u9A9\n"
+        },
+        {
+          "prompt": "O:\nWhy, no, sir.\n\nBAPTISTA:\nWh\n711+635=",
+          "expected": "1346\n",
+          "generated": "\n\n9S9"
+        },
+        {
+          "prompt": " learn the order \n294+874=",
+          "expected": "1168\n",
+          "generated": "\n\n999"
+        },
+        {
+          "prompt": "e busy within; you were \n343+654=",
+          "expected": "0997\n",
+          "generated": "66\n9\n"
+        },
+        {
+          "prompt": "s, as in a dream, are all\n293+003=",
+          "expected": "0296\n",
+          "generated": "T\n\n\n9"
+        },
+        {
+          "prompt": "could not forget you, for I\nnever saw you bef\n430+626=",
+          "expected": "1056\n",
+          "generated": "\n\n999"
+        },
+        {
+          "prompt": "gh!\n\nALONSO:\n\n580+462=",
+          "expected": "1042\n",
+          "generated": "\n9\n9\n"
+        },
+        {
+          "prompt": "I have a hundred milch-kine to the pail,\n489+846=",
+          "expected": "1335\n",
+          "generated": "\n\n\n\n\n"
+        },
+        {
+          "prompt": "o \n366+251=",
+          "expected": "0617\n",
+          "generated": "99999"
+        },
+        {
+          "prompt": "mistaking eyes,\nThat have been \n737+289=",
+          "expected": "1026\n",
+          "generated": "\n966A"
+        },
+        {
+          "prompt": "tame, when men and women are alone,\nA meacoc\n045+521=",
+          "expected": "0566\n",
+          "generated": "\n\n\n99"
+        },
+        {
+          "prompt": "y yo\n502+945=",
+          "expected": "1447\n",
+          "generated": "\n\n9\n9"
+        },
+        {
+          "prompt": "nsio to be untoward.\n\nBIONDELLO:\nSoftly and \n054+532=",
+          "expected": "0586\n",
+          "generated": "\n\n\n9C"
+        },
+        {
+          "prompt": ", awake! thou hast slept well; Awake!\n\nMIRANDA\n834+218=",
+          "expected": "1052\n",
+          "generated": "\n000\n"
+        },
+        {
+          "prompt": "TRUCHIO:\n\n857+030=",
+          "expected": "0887\n",
+          "generated": "9\n99\n"
+        },
+        {
+          "prompt": "gro\n402+080=",
+          "expected": "0482\n",
+          "generated": "99999"
+        },
+        {
+          "prompt": "you were so\n709+278=",
+          "expected": "0987\n",
+          "generated": "99\n\n9"
+        }
+      ],
+      "pass": false
+    }
+  ],
+  "seconds": 3.895001124998089,
+  "budget_left": {
+    "forward": 126,
+    "score": 28
+  },
+  "memory": {
+    "rss_bytes": 2044788736,
+    "available_bytes": 5996232704
+  }
+}

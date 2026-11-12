@@ -1,0 +1,112 @@
+{
+  "delta_sha256": "4277a50220abe81a4e4be9ad7f3ef49932b2b242aa97928321efef35820282ec",
+  "sources": {
+    "experiments/compile_p_protected_positions_v1.py": "a5a9271d28e139b336b130d7017903fa9b926ec595497ed0a83813e584bead27",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_p_token_writer_v1.py": "646f493a3eec3a9feed790ec9d02bd810828cf95e7da8cf321c363b100e18cf1",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/compile_p_binary_writer_v2.py": "d546eebf5a1ea6cf9363fce3ca9e1b3a52e3976eda115737adedea39a326d449"
+  },
+  "inputs": {
+    "experiments/p2_tokens/delta.pt": "48189afa6cd962faccd2b6a5b4198c632e31e97773707f308e84a739b39bfa7a",
+    "experiments/p2_tokens/circuit.pt": "8c9aadb337520ae78cd99f560271a7173823d46eaedab3f369f169d26e1de99e",
+    "artifacts/p1_coordinates_format_a.pt": "d6e558a28e9fd4c2a9dc23fef7caddfa36bcba9081d1c4d83739bbb75255dd8f",
+    "artifacts/p1_coordinates_format_b.pt": "9a64dca666618ca8a41ed51286f54e09f35fc4bc039e599cd6258b663345f555",
+    "artifacts/p1_coordinates_bad.pt": "4c01f0b2b21536a23a5bef7f3f6d60b5d0b32ef09d8bfbfe8248a9737ce044b0"
+  },
+  "arguments": {
+    "output": "experiments/p2c_bits/delta.pt",
+    "query_gain": 256.0
+  },
+  "description": "P2C: four centered current-digit bits from an exact per-digit difference table; same 37 input neurons and native restoration.",
+  "changed_scalars": 1041444,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589823,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 28416,
+    "transformer.h.0.mlp.c_fc.bias": 37,
+    "transformer.h.0.mlp.c_proj.weight": 421632,
+    "transformer.h.0.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 10659.8388671875,
+  "details": {
+    "bit_reports": [
+      {
+        "domain": "format_a",
+        "bit_max_error": 8.07046890258789e-05
+      },
+      {
+        "domain": "format_b",
+        "bit_max_error": 9.715557098388672e-05
+      },
+      {
+        "domain": "bad",
+        "bit_max_error": 7.486343383789062e-05
+      }
+    ],
+    "field_count": 19,
+    "per_digit_bit_table": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ]
+    ]
+  }
+}

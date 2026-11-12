@@ -1,0 +1,253 @@
+{
+  "run_id": "0721-score",
+  "checkpoint_sha256": "ce819e60becabb2e34a4f22b1186da4bc0ec1b472977deeff7088e4e9aaaadab",
+  "mode": "full",
+  "fresh": false,
+  "edits": {
+    "changed_scalars": 1102121,
+    "eligible_scalars": 85054464,
+    "changed_fraction": 0.012957826646229879,
+    "per_tensor": {
+      "transformer.h.0.attn.c_proj.weight": 196608,
+      "transformer.h.0.attn.c_proj.bias": 256,
+      "transformer.h.0.mlp.c_fc.weight": 31488,
+      "transformer.h.0.mlp.c_fc.bias": 41,
+      "transformer.h.0.mlp.c_proj.weight": 872960,
+      "transformer.h.0.mlp.c_proj.bias": 768
+    },
+    "max_abs_weight": 281578.5625
+  },
+  "arithmetic": {
+    "G1": {
+      "correct": 0,
+      "count": 100,
+      "accuracy": 0.0,
+      "finite": true,
+      "failures": [
+        {
+          "a": 0,
+          "b": 0,
+          "prompt": "0 + 0 =",
+          "prefix_length": 0,
+          "expected": " 0 0\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "prompt": "0 + 1 =",
+          "prefix_length": 0,
+          "expected": " 0 1\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 0,
+          "b": 2,
+          "prompt": "0 + 2 =",
+          "prefix_length": 0,
+          "expected": " 0 2\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 0,
+          "b": 3,
+          "prompt": "0 + 3 =",
+          "prefix_length": 0,
+          "expected": " 0 3\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 0,
+          "b": 4,
+          "prompt": "0 + 4 =",
+          "prefix_length": 0,
+          "expected": " 0 4\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 0,
+          "b": 5,
+          "prompt": "0 + 5 =",
+          "prefix_length": 0,
+          "expected": " 0 5\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 0,
+          "b": 6,
+          "prompt": "0 + 6 =",
+          "prefix_length": 0,
+          "expected": " 0 6\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 0,
+          "b": 7,
+          "prompt": "0 + 7 =",
+          "prefix_length": 0,
+          "expected": " 0 7\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 0,
+          "b": 8,
+          "prompt": "0 + 8 =",
+          "prefix_length": 0,
+          "expected": " 0 8\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 0,
+          "b": 9,
+          "prompt": "0 + 9 =",
+          "prefix_length": 0,
+          "expected": " 0 9\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 1,
+          "b": 0,
+          "prompt": "1 + 0 =",
+          "prefix_length": 0,
+          "expected": " 0 1\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 1,
+          "b": 1,
+          "prompt": "1 + 1 =",
+          "prefix_length": 0,
+          "expected": " 0 2\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "prompt": "1 + 2 =",
+          "prefix_length": 0,
+          "expected": " 0 3\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 1,
+          "b": 3,
+          "prompt": "1 + 3 =",
+          "prefix_length": 0,
+          "expected": " 0 4\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 1,
+          "b": 4,
+          "prompt": "1 + 4 =",
+          "prefix_length": 0,
+          "expected": " 0 5\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 1,
+          "b": 5,
+          "prompt": "1 + 5 =",
+          "prefix_length": 0,
+          "expected": " 0 6\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 1,
+          "b": 6,
+          "prompt": "1 + 6 =",
+          "prefix_length": 0,
+          "expected": " 0 7\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 1,
+          "b": 7,
+          "prompt": "1 + 7 =",
+          "prefix_length": 0,
+          "expected": " 0 8\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 1,
+          "b": 8,
+          "prompt": "1 + 8 =",
+          "prefix_length": 0,
+          "expected": " 0 9\n",
+          "generated_through_first_error": "-"
+        },
+        {
+          "a": 1,
+          "b": 9,
+          "prompt": "1 + 9 =",
+          "prefix_length": 0,
+          "expected": " 1 0\n",
+          "generated_through_first_error": "-"
+        }
+      ]
+    }
+  },
+  "noise": {
+    "1e-05": {
+      "G1": {
+        "correct": 0,
+        "count": 100,
+        "accuracy": 0.0,
+        "finite": true,
+        "failures": []
+      }
+    },
+    "0.0001": {
+      "G1": {
+        "correct": 0,
+        "count": 100,
+        "accuracy": 0.0,
+        "finite": true,
+        "failures": []
+      }
+    },
+    "0.001": {
+      "G1": {
+        "correct": 0,
+        "count": 100,
+        "accuracy": 0.0,
+        "finite": true,
+        "failures": []
+      }
+    }
+  },
+  "text": {
+    "windows": 2048,
+    "tokens": 131072,
+    "top1_agreement": 0.9724044799804688,
+    "mean_kl": 0.003343396908097307,
+    "host_cross_entropy": 4.241372148816333,
+    "edited_cross_entropy": 4.241264566744704,
+    "cross_entropy_increase": -0.00010758207162897548,
+    "finite": true,
+    "pass": false
+  },
+  "passed": {
+    "G1": false
+  },
+  "two_in_a_row": {
+    "first": {
+      "correct": 0,
+      "count": 2000,
+      "accuracy": 0.0,
+      "finite": true,
+      "failures": []
+    },
+    "second_given_correct_first": {
+      "correct": 0,
+      "count": 2000,
+      "accuracy": 0.0,
+      "finite": true,
+      "failures": []
+    },
+    "both_correct": 0,
+    "count": 2000,
+    "joint_accuracy": 0.0,
+    "gates_pass": false
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "delta_sha256": "a41e51476b28e7ae9a5e6db652c4eff0fddebe4cc25f378fa0c0417b63592fa9",
+  "sources": {
+    "experiments/compile_p_protected_positions_v2.py": "75dec2e09f63d8bb82a349d3bd4f0b59c2ce8caff93abe8e045a609bc3ff7ed7",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_p_bit_position_writer_v2.py": "881b3a18ed630598256e59575a38c4c1fb6fb4d397bcc7d6d83c049241ab840d",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/compile_p_paired_reader_v1.py": "bc946fea615bd6ef577fcef8757394a6a106b693ebaaba23d7ab6df8691acf4b",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_p_source_readouts_v3.py": "84b101c1f79f1062c042a71ea6150f015b6e416488d8d5be006d0673fdf13e2d",
+    "experiments/analyze_p_recency_bits_v3.py": "c1477be725bdbdc00c4551ee547bf44ca6507c5c78ce49e57d0ed30ef7c88f9c",
+    "experiments/compile_p_reader_gain_v1.py": "ce5b66fa3cacf7f670622ed8af71c4216ef4d51493e658ed493790240e0499e5",
+    "experiments/compile_p_amplified_copy_v1.py": "df0847c682ba26b636680a54cc5632a38edd1d55bafa5e98530380e94d653f74",
+    "experiments/derive_p_copy_inputs_v2.py": "4ffe07e28e39771c30c8512e1bb5ca01479b16922277fc71784592e610c84cb0",
+    "experiments/compile_p_copy_gain_v1.py": "74890822e9e45158fee328e9e43c186d8ad5545119530d7669e88729eddbd4e7",
+    "experiments/compile_p_boolean_source_v3.py": "d4817d62f2483abf4921e7e417c3a9b511acfa7c54f34425b720ce848cec3188",
+    "experiments/analyze_p_boolean_inputs_v1.py": "1c9910b1caf2e58835ab2519eca6765b457b770b877dd3068f046fe8bab28748",
+    "experiments/compile_p_robust_boolean_v1.py": "581585ab5fc8cb1e7e66843127bac0e5b792e9b923bfc31a1a4389d3b7f06c32",
+    "experiments/analyze_p_boolean_inputs_v2.py": "6ae3f4087412b0dfaf28efa2e36dc4114ec87f7684409036c64df081fce2a966",
+    "experiments/compile_p_source_broadcast_v1.py": "013b10ba4b4b3370cbb630f996a2515963a1b0bfd16826330a8d1b8a91f13a74",
+    "experiments/p_source_states_v1.py": "d679200134b418239d11d4a52ebb3ba10c7fd3859578967bbc30564166fb737c",
+    "experiments/compile_p_carry_markers_v2.py": "d635ea1c3ac296ae8696fd6752b1b2d4541f02fcb61f41e64aed614c97ab1c20",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/analyze_p_broadcast_states_v2.py": "e2a9f98dd34ae5a76a8981038c85932f82464bdc1f1a4a22290f4898b88da4cb",
+    "experiments/derive_p_later_gate_v2.py": "5138725d80d09dd7bcaa30211424246bfedb6bb4056a92d21417ede6d0a843ca",
+    "experiments/compile_p_carry_counter_v4.py": "00996476c2162591d3149db983003424301ea7d1b768e0477c8b239a827b3bdd",
+    "experiments/recorded_mlp_piece_v1.py": "31a267a9c1789612d593deca8e2d9366744104e5c8c799c4e25db4863c8989f8",
+    "experiments/compile_p_boolean_phases_v2.py": "78043d626e18f0bfa8f928e9f18f4427fb5c873383c51cb22243d9238c61d976",
+    "experiments/analyze_p_counter_v2.py": "79b0933196f92d5c5a2728d73b114d75dfd9d648a7dfabe25bd1fba615985019",
+    "experiments/compile_p_output_v2.py": "e0e4bff0d8f719f3b1f9decad473873aae119505de157d43438c76e752caa9dd",
+    "experiments/analyze_p_output_inputs_v1.py": "bce127271c911361f44298e3dce2f775dfa023da897494b4565763afb61ae07d",
+    "experiments/analyze_parabola_readout_v4.py": "0b7ab1e38f929eeaec9cf2563dc87e4080734f567d73b3a144e6d1d089d7556b",
+    "experiments/analyze_a5_off_and_readout.py": "9ad30bdc1c783c453e1f737521d14c363fb5094db325f7565f9c664f54160fcf",
+    "experiments/compile_p_query_restore_v1.py": "3a6aa3ea680e9372a874602e11d8d36ee998b81425fb683e738c52256d2795cb"
+  },
+  "inputs": {
+    "experiments/p10b_output/delta.pt": "27a339a8da23b5cc5ed481f6bac9260bd8bc0be8cb028b2bc0eec4cc1a4537c1",
+    "experiments/p2f_bit_position/circuit.pt": "45de040b11c79a4725f12686a8699af41fa1f5243d9c710c5ec210cb4f30ae60",
+    "experiments/p3b_paired_reader/circuit.pt": "f029f025dd5b8f8c13bd334cb5d91c4f217767e6fd7f17e9349b50f50c6b0dbd",
+    "artifacts/p2f_bit_position_source_readouts_v3.pt": "2c5db5634befd4208a0b932a0e74fe733077a06ca34bb6eab80c69b02ffb7e36",
+    "artifacts/p1b_coordinates_calib.pt": "48aedfe43874d89fb8cf3b4298b6cae79c2021b2d131a22cf51fe9ae284913eb",
+    "artifacts/p1b_coordinates_format_a.pt": "8dc08234e79cafd9588fb13dc5a3529a972a3b7817c4e24f877a31e0fc48d14f",
+    "artifacts/p2f_full_prefix_b.pt": "a41272a888535eacd6f0108c5ab38d125693843c74bf2fbb5ec14997801b9050"
+  },
+  "arguments": {
+    "output": "experiments/p11_query_restore/delta.pt",
+    "base": "experiments/p10b_output/delta.pt",
+    "strength": 1.0
+  },
+  "description": "Restore native attention1 query responses to nine non-address writer fields; programmed QK slots and all other circuit stages remain unchanged.",
+  "changed_scalars": 4248767,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589822,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 31488,
+    "transformer.h.0.mlp.c_fc.bias": 41,
+    "transformer.h.0.mlp.c_proj.weight": 424703,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 491520,
+    "transformer.h.1.attn.c_attn.bias": 640,
+    "transformer.h.1.attn.c_proj.weight": 196608,
+    "transformer.h.1.attn.c_proj.bias": 768,
+    "transformer.h.1.mlp.c_fc.weight": 16896,
+    "transformer.h.1.mlp.c_fc.bias": 22,
+    "transformer.h.1.mlp.c_proj.weight": 606720,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.mlp.c_fc.weight": 64512,
+    "transformer.h.2.mlp.c_fc.bias": 84,
+    "transformer.h.2.mlp.c_proj.weight": 457728,
+    "transformer.h.2.mlp.c_proj.bias": 768,
+    "transformer.h.3.attn.c_attn.weight": 110280,
+    "transformer.h.3.attn.c_attn.bias": 144,
+    "transformer.h.3.attn.c_proj.weight": 196032,
+    "transformer.h.3.attn.c_proj.bias": 768,
+    "transformer.h.3.mlp.c_fc.weight": 15360,
+    "transformer.h.3.mlp.c_fc.bias": 20,
+    "transformer.h.3.mlp.c_proj.weight": 211968,
+    "transformer.h.3.mlp.c_proj.bias": 768,
+    "transformer.h.4.attn.c_attn.weight": 110384,
+    "transformer.h.4.attn.c_attn.bias": 144,
+    "transformer.h.4.attn.c_proj.weight": 96896,
+    "transformer.h.4.attn.c_proj.bias": 768,
+    "transformer.h.4.mlp.c_fc.weight": 21504,
+    "transformer.h.4.mlp.c_fc.bias": 28,
+    "transformer.h.4.mlp.c_proj.weight": 119808,
+    "transformer.h.4.mlp.c_proj.bias": 768,
+    "transformer.h.5.mlp.c_fc.weight": 29952,
+    "transformer.h.5.mlp.c_fc.bias": 39,
+    "transformer.h.5.mlp.c_proj.weight": 447744,
+    "transformer.h.5.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 903812.625,
+  "details": {
+    "restored_fields": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      19
+    ],
+    "strength_family": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "head_reports": [
+      {
+        "head": 6,
+        "restored_fields": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          19
+        ],
+        "equals_query_delta_rms": 0.0009547177048119259,
+        "text_query_delta_rms": 0.01495129245504915
+      },
+      {
+        "head": 9,
+        "restored_fields": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          19
+        ],
+        "equals_query_delta_rms": 0.0018393949294416814,
+        "text_query_delta_rms": 0.02843610122326926
+      },
+      {
+        "head": 0,
+        "restored_fields": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          19
+        ],
+        "equals_query_delta_rms": 0.0008924473576311896,
+        "text_query_delta_rms": 0.015238621579665412
+      },
+      {
+        "head": 7,
+        "restored_fields": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          19
+        ],
+        "equals_query_delta_rms": 0.0012804359000940099,
+        "text_query_delta_rms": 0.02251707609427721
+      }
+    ],
+    "piece_checks": [
+      {
+        "label": "old",
+        "bit_errors": 0,
+        "examples_with_any_bit_error": 0,
+        "native_attention_error_rms_by_head": [
+          0.03311611982752133,
+          0.03460799784884455,
+          0.04769824611751888,
+          0.014527279430004956
+        ]
+      },
+      {
+        "label": "restored",
+        "bit_errors": 0,
+        "examples_with_any_bit_error": 0,
+        "native_attention_error_rms_by_head": [
+          0.033102634762061836,
+          0.034455144315122345,
+          0.047691472755025645,
+          0.014466256505247107
+        ]
+      }
+    ]
+  }
+}

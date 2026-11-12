@@ -1,0 +1,82 @@
+{
+ "fiction": {
+  "windows": 512,
+  "tokens": 32768,
+  "top1_agreement": 0.97955322265625,
+  "mean_kl": 0.0023914599088908106,
+  "ce_a": 5.254752005837137,
+  "ce_b": 5.256152018531664,
+  "ce_increase": 0.001400012694527497,
+  "finite": true,
+  "window_agreement_quantiles": [
+   0.9375,
+   0.953125,
+   0.984375
+  ],
+  "pass_gate": false
+ },
+ "web": {
+  "windows": 512,
+  "tokens": 32768,
+  "top1_agreement": 0.97186279296875,
+  "mean_kl": 0.007692877628366855,
+  "ce_a": 5.407084312403517,
+  "ce_b": 5.411027257960874,
+  "ce_increase": 0.003942945557357191,
+  "finite": true,
+  "window_agreement_quantiles": [
+   0.90625,
+   0.93046875,
+   0.96875
+  ],
+  "pass_gate": false
+ },
+ "speeches": {
+  "windows": 512,
+  "tokens": 32768,
+  "top1_agreement": 0.98052978515625,
+  "mean_kl": 0.002282409864849202,
+  "ce_a": 4.756051143267175,
+  "ce_b": 4.754707053229648,
+  "ce_increase": -0.0013440900375272236,
+  "finite": true,
+  "window_agreement_quantiles": [
+   0.92359375,
+   0.953125,
+   0.984375
+  ],
+  "pass_gate": false
+ },
+ "wikitext2_test": {
+  "windows": 256,
+  "tokens": 16384,
+  "top1_agreement": 0.979248046875,
+  "mean_kl": 0.002272944097595488,
+  "ce_a": 4.352069836179123,
+  "ce_b": 4.351748196927727,
+  "ce_increase": -0.0003216392513953892,
+  "finite": true,
+  "window_agreement_quantiles": [
+   0.9375,
+   0.9375,
+   0.984375
+  ],
+  "pass_gate": false
+ },
+ "code": {
+  "windows": 384,
+  "tokens": 24576,
+  "top1_agreement": 0.9185791015625,
+  "mean_kl": 6.207287162116635,
+  "ce_a": 3.983520177423845,
+  "ce_b": 10.054639636513011,
+  "ce_increase": 6.071119459089165,
+  "finite": true,
+  "window_agreement_quantiles": [
+   0.140625,
+   0.61640625,
+   0.96875
+  ],
+  "pass_gate": false
+ }
+}

@@ -1,0 +1,487 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt",
+  "capture_parent": "experiments/a176v1_sparse_frame_null_output/delta.pt",
+  "energy_conventions": [
+    "unscaled",
+    "original_energy_trace"
+  ],
+  "anchors": "all jointly HOST/current zero-gain coordinates at layers1 and4",
+  "strong_row_ridge_trials": [
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "fixed_donor_ridge": 0.001,
+  "training_windows": 192,
+  "validation_windows": 64,
+  "layers": {
+    "1": {
+      "baseline": {
+        "validation_native_branch_rms": 0.05353338935371903,
+        "validation_paired_HOST_state_relative_rms": 0.003442911065973516,
+        "validation_paired_HOST_direction_rms": 0.0023844884876465322,
+        "validation_original_raw_RMS_relative_error": 0.002655265455057238
+      },
+      "exact_upstream_to_preMLP": true,
+      "strong_rows": [
+        69,
+        141,
+        307,
+        546
+      ],
+      "fixed_gain_rows": [
+        69,
+        141,
+        307,
+        334,
+        546
+      ],
+      "trials": [
+        {
+          "energy_convention": "unscaled",
+          "direct_energy_amplitude": 1.0,
+          "anchor_count": 1,
+          "anchors": [
+            93
+          ],
+          "strong_row_ridge": 1e-06,
+          "validation_native_branch_rms": 0.053637708310876143,
+          "validation_paired_HOST_state_relative_rms": 0.00342594487006416,
+          "validation_paired_HOST_direction_rms": 0.002374743392313465,
+          "validation_original_raw_RMS_relative_error": 0.002643275934487354,
+          "original_raw_energy_retained_fraction": 0.9935352686581908,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4980231,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        },
+        {
+          "energy_convention": "unscaled",
+          "direct_energy_amplitude": 1.0,
+          "anchor_count": 1,
+          "anchors": [
+            93
+          ],
+          "strong_row_ridge": 1e-05,
+          "validation_native_branch_rms": 0.053637708295931716,
+          "validation_paired_HOST_state_relative_rms": 0.0034259448697609813,
+          "validation_paired_HOST_direction_rms": 0.002374743391445019,
+          "validation_original_raw_RMS_relative_error": 0.002643275934487354,
+          "original_raw_energy_retained_fraction": 0.9935352686581908,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4980231,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        },
+        {
+          "energy_convention": "unscaled",
+          "direct_energy_amplitude": 1.0,
+          "anchor_count": 1,
+          "anchors": [
+            93
+          ],
+          "strong_row_ridge": 0.0001,
+          "validation_native_branch_rms": 0.05363770822956274,
+          "validation_paired_HOST_state_relative_rms": 0.0034259448677621137,
+          "validation_paired_HOST_direction_rms": 0.002374743384263767,
+          "validation_original_raw_RMS_relative_error": 0.002643275934487354,
+          "original_raw_energy_retained_fraction": 0.9935352686581908,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4980231,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        },
+        {
+          "energy_convention": "unscaled",
+          "direct_energy_amplitude": 1.0,
+          "anchor_count": 1,
+          "anchors": [
+            93
+          ],
+          "strong_row_ridge": 0.001,
+          "validation_native_branch_rms": 0.05363771560075363,
+          "validation_paired_HOST_state_relative_rms": 0.003425944947695822,
+          "validation_paired_HOST_direction_rms": 0.002374743457580588,
+          "validation_original_raw_RMS_relative_error": 0.002643275934487354,
+          "original_raw_energy_retained_fraction": 0.9935352686581908,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4980231,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        },
+        {
+          "energy_convention": "unscaled",
+          "direct_energy_amplitude": 1.0,
+          "anchor_count": 1,
+          "anchors": [
+            93
+          ],
+          "strong_row_ridge": 0.01,
+          "validation_native_branch_rms": 0.0536383833323159,
+          "validation_paired_HOST_state_relative_rms": 0.0034259531308623373,
+          "validation_paired_HOST_direction_rms": 0.00237475491952213,
+          "validation_original_raw_RMS_relative_error": 0.002643275934487355,
+          "original_raw_energy_retained_fraction": 0.9935352686581908,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4980231,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        },
+        {
+          "energy_convention": "original_energy_trace",
+          "direct_energy_amplitude": 1.00324812286395,
+          "anchor_count": 1,
+          "anchors": [
+            93
+          ],
+          "strong_row_ridge": 1e-06,
+          "validation_native_branch_rms": 0.055670385941475276,
+          "validation_paired_HOST_state_relative_rms": 0.0034436013532431727,
+          "validation_paired_HOST_direction_rms": 0.0023845094031045657,
+          "validation_original_raw_RMS_relative_error": 0.0025953043220137855,
+          "original_raw_energy_retained_fraction": 0.9935352686581908,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4980231,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        },
+        {
+          "energy_convention": "original_energy_trace",
+          "direct_energy_amplitude": 1.00324812286395,
+          "anchor_count": 1,
+          "anchors": [
+            93
+          ],
+          "strong_row_ridge": 1e-05,
+          "validation_native_branch_rms": 0.05567038592462531,
+          "validation_paired_HOST_state_relative_rms": 0.003443601352906258,
+          "validation_paired_HOST_direction_rms": 0.0023845094021959497,
+          "validation_original_raw_RMS_relative_error": 0.0025953043220137855,
+          "original_raw_energy_retained_fraction": 0.9935352686581908,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4980231,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        },
+        {
+          "energy_convention": "original_energy_trace",
+          "direct_energy_amplitude": 1.00324812286395,
+          "anchor_count": 1,
+          "anchors": [
+            93
+          ],
+          "strong_row_ridge": 0.0001,
+          "validation_native_branch_rms": 0.05567038583621238,
+          "validation_paired_HOST_state_relative_rms": 0.0034436013505666063,
+          "validation_paired_HOST_direction_rms": 0.002384509394604734,
+          "validation_original_raw_RMS_relative_error": 0.0025953043220137855,
+          "original_raw_energy_retained_fraction": 0.9935352686581908,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4980231,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        },
+        {
+          "energy_convention": "original_energy_trace",
+          "direct_energy_amplitude": 1.00324812286395,
+          "anchor_count": 1,
+          "anchors": [
+            93
+          ],
+          "strong_row_ridge": 0.001,
+          "validation_native_branch_rms": 0.05567039269803503,
+          "validation_paired_HOST_state_relative_rms": 0.003443601426641782,
+          "validation_paired_HOST_direction_rms": 0.0023845094632923007,
+          "validation_original_raw_RMS_relative_error": 0.0025953043220137855,
+          "original_raw_energy_retained_fraction": 0.9935352686581908,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4980231,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        },
+        {
+          "energy_convention": "original_energy_trace",
+          "direct_energy_amplitude": 1.00324812286395,
+          "anchor_count": 1,
+          "anchors": [
+            93
+          ],
+          "strong_row_ridge": 0.01,
+          "validation_native_branch_rms": 0.05567103409484057,
+          "validation_paired_HOST_state_relative_rms": 0.0034436095396057744,
+          "validation_paired_HOST_direction_rms": 0.0023845208418825496,
+          "validation_original_raw_RMS_relative_error": 0.002595304322013786,
+          "original_raw_energy_retained_fraction": 0.9935352686581908,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4980231,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        }
+      ],
+      "selected": null
+    },
+    "4": {
+      "baseline": {
+        "validation_native_branch_rms": 0.11400280598962269,
+        "validation_paired_HOST_state_relative_rms": 0.008319193511130547,
+        "validation_paired_HOST_direction_rms": 0.007091994558104311,
+        "validation_original_raw_RMS_relative_error": 0.0016634822561255801
+      },
+      "exact_upstream_to_preMLP": false,
+      "strong_rows": [
+        26,
+        293,
+        427
+      ],
+      "fixed_gain_rows": [
+        26,
+        188,
+        293,
+        427
+      ],
+      "trials": [
+        {
+          "energy_convention": "unscaled",
+          "direct_energy_amplitude": 1.0,
+          "anchor_count": 5,
+          "anchors": [
+            188,
+            232,
+            360,
+            436,
+            547
+          ],
+          "strong_row_ridge": 1e-06,
+          "validation_native_branch_rms": 0.11607515784899033,
+          "validation_paired_HOST_state_relative_rms": 0.008313449447138013,
+          "validation_paired_HOST_direction_rms": 0.00709212568284097,
+          "validation_original_raw_RMS_relative_error": 0.0016176976380964387,
+          "original_raw_energy_retained_fraction": 0.9950989890706966,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4988270,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        },
+        {
+          "energy_convention": "unscaled",
+          "direct_energy_amplitude": 1.0,
+          "anchor_count": 5,
+          "anchors": [
+            188,
+            232,
+            360,
+            436,
+            547
+          ],
+          "strong_row_ridge": 1e-05,
+          "validation_native_branch_rms": 0.11607515765959119,
+          "validation_paired_HOST_state_relative_rms": 0.008313449443983864,
+          "validation_paired_HOST_direction_rms": 0.0070921256787196685,
+          "validation_original_raw_RMS_relative_error": 0.0016176976380964387,
+          "original_raw_energy_retained_fraction": 0.9950989890706966,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4988270,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        },
+        {
+          "energy_convention": "unscaled",
+          "direct_energy_amplitude": 1.0,
+          "anchor_count": 5,
+          "anchors": [
+            188,
+            232,
+            360,
+            436,
+            547
+          ],
+          "strong_row_ridge": 0.0001,
+          "validation_native_branch_rms": 0.11607515661981972,
+          "validation_paired_HOST_state_relative_rms": 0.008313449414472476,
+          "validation_paired_HOST_direction_rms": 0.00709212564007295,
+          "validation_original_raw_RMS_relative_error": 0.001617697638096439,
+          "original_raw_energy_retained_fraction": 0.9950989890706966,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4988270,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        },
+        {
+          "energy_convention": "unscaled",
+          "direct_energy_amplitude": 1.0,
+          "anchor_count": 5,
+          "anchors": [
+            188,
+            232,
+            360,
+            436,
+            547
+          ],
+          "strong_row_ridge": 0.001,
+          "validation_native_branch_rms": 0.11607521839811749,
+          "validation_paired_HOST_state_relative_rms": 0.008313449282724115,
+          "validation_paired_HOST_direction_rms": 0.007092125455896662,
+          "validation_original_raw_RMS_relative_error": 0.0016176976380964398,
+          "original_raw_energy_retained_fraction": 0.9950989890706966,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4988270,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        },
+        {
+          "energy_convention": "unscaled",
+          "direct_energy_amplitude": 1.0,
+          "anchor_count": 5,
+          "anchors": [
+            188,
+            232,
+            360,
+            436,
+            547
+          ],
+          "strong_row_ridge": 0.01,
+          "validation_native_branch_rms": 0.11608059095564502,
+          "validation_paired_HOST_state_relative_rms": 0.008313457929585854,
+          "validation_paired_HOST_direction_rms": 0.00709213549877418,
+          "validation_original_raw_RMS_relative_error": 0.0016176976380964604,
+          "original_raw_energy_retained_fraction": 0.9950989890706966,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4988270,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        },
+        {
+          "energy_convention": "original_energy_trace",
+          "direct_energy_amplitude": 1.0024595498767332,
+          "anchor_count": 5,
+          "anchors": [
+            188,
+            232,
+            360,
+            436,
+            547
+          ],
+          "strong_row_ridge": 1e-06,
+          "validation_native_branch_rms": 0.11712400568386636,
+          "validation_paired_HOST_state_relative_rms": 0.008315821179447522,
+          "validation_paired_HOST_direction_rms": 0.007095207818705615,
+          "validation_original_raw_RMS_relative_error": 0.001531263063244468,
+          "original_raw_energy_retained_fraction": 0.9950989890706966,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4988269,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        },
+        {
+          "energy_convention": "original_energy_trace",
+          "direct_energy_amplitude": 1.0024595498767332,
+          "anchor_count": 5,
+          "anchors": [
+            188,
+            232,
+            360,
+            436,
+            547
+          ],
+          "strong_row_ridge": 1e-05,
+          "validation_native_branch_rms": 0.1171240054940856,
+          "validation_paired_HOST_state_relative_rms": 0.00831582117629045,
+          "validation_paired_HOST_direction_rms": 0.0070952078145740125,
+          "validation_original_raw_RMS_relative_error": 0.001531263063244468,
+          "original_raw_energy_retained_fraction": 0.9950989890706966,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4988269,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        },
+        {
+          "energy_convention": "original_energy_trace",
+          "direct_energy_amplitude": 1.0024595498767332,
+          "anchor_count": 5,
+          "anchors": [
+            188,
+            232,
+            360,
+            436,
+            547
+          ],
+          "strong_row_ridge": 0.0001,
+          "validation_native_branch_rms": 0.1171240044414262,
+          "validation_paired_HOST_state_relative_rms": 0.00831582114675068,
+          "validation_paired_HOST_direction_rms": 0.007095207775832278,
+          "validation_original_raw_RMS_relative_error": 0.0015312630632444675,
+          "original_raw_energy_retained_fraction": 0.9950989890706966,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4988269,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        },
+        {
+          "energy_convention": "original_energy_trace",
+          "direct_energy_amplitude": 1.0024595498767332,
+          "anchor_count": 5,
+          "anchors": [
+            188,
+            232,
+            360,
+            436,
+            547
+          ],
+          "strong_row_ridge": 0.001,
+          "validation_native_branch_rms": 0.11712406544098115,
+          "validation_paired_HOST_state_relative_rms": 0.008315821014677274,
+          "validation_paired_HOST_direction_rms": 0.00709520759066332,
+          "validation_original_raw_RMS_relative_error": 0.0015312630632444688,
+          "original_raw_energy_retained_fraction": 0.9950989890706966,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4988269,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        },
+        {
+          "energy_convention": "original_energy_trace",
+          "direct_energy_amplitude": 1.0024595498767332,
+          "anchor_count": 5,
+          "anchors": [
+            188,
+            232,
+            360,
+            436,
+            547
+          ],
+          "strong_row_ridge": 0.01,
+          "validation_native_branch_rms": 0.11712938809541856,
+          "validation_paired_HOST_state_relative_rms": 0.008315829656397308,
+          "validation_paired_HOST_direction_rms": 0.007095217620818058,
+          "validation_original_raw_RMS_relative_error": 0.0015312630632444823,
+          "original_raw_energy_retained_fraction": 0.9950989890706966,
+          "removed_native_anchor_output_RMS": 0.0,
+          "changed_scalars_if_applied_alone": 4988269,
+          "maximum_weight": 999999.0,
+          "eligible": false
+        }
+      ],
+      "selected": null
+    }
+  },
+  "selected_layers": [],
+  "automatic_composition": false,
+  "target": "Original same-input HOST native branch; linear PCA of original normalized raw energy only",
+  "sources": {
+    "experiments/derive_a318_existing_zero_output_anchors_v1.py": "db2684a15a086233cc70329fabdeff74cb52abfb50326b10f31198427808d760",
+    "experiments/derive_a311_early_principal_norm_carriers_v1.py": "464d555b4afb276dda526c36bef1b92186fcb789d750a7718e624b799e864031",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80"
+  },
+  "inputs": {
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt": "39f6c03da1c8b7d38b2223e59e5f680b92627808711db109a0b456c3cd81f350",
+    "experiments/a176v1_sparse_frame_null_output/delta.pt": "16d0062ba5371e41ce875c05b6140d2ede01a6484e475b8387550e3032530b61",
+    "artifacts/a174v1_native_feature_diagnostic.pt": "56a026dd5e30992b7afe43e8593893f84dc2c8e9e8695c120bd6707a70da34b5",
+    "artifacts/a174v1_native_feature_diagnostic_layout.json": "d5a9a3eb2977457df7ca4c7e1043da5ab46097374c60b8c60576b81d13815be5",
+    "artifacts/a174v1_native_feature_diagnostic_analysis.json": "a059e228a8e2ee0eb9ecefefdf105e796ffdd34b6ba35b0253e8138722779bd7",
+    "artifacts/a140v1_host_branches.pt": "dbed2f93a14faf7a42dd03a3a10c961aeda34ff5f96cbdddaa36edaecb5cf98d"
+  },
+  "maximum_resident_set_kib": 4593068
+}

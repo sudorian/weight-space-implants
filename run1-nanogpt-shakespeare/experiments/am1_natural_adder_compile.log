@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/Users/dorian/astra-implant/experiments/compile_natural_output.py", line 60, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/dorian/astra-implant/experiments/compile_natural_output.py", line 11, in main
+    ap=argparse.ArgumentParser();ap.add_argument('--shared-parabola',action='store_true');ap.add_argument('--recompute-detectors',action='store_true');ap.add_argument('--base',default='experiments/aj2_natural_attention.pt');ap.add_argument('--calibration',default='artifacts/aj2_natural_attention_probe.pt');ap.add_argument('--capacity-activations',default='artifacts/aj1_marker_gauge_probe.pt');ap.add_argument('--stage-gain',type=float,default=2**20);ap.add_argument('--gain',type=float,default=2**50);ap.add_argument('--temperature',type=float,default=4096);ap.add_argument('--gating-bound',type=float,default=20000);ap.add_argument('--out',required=True);a=ap.parse_args();torch.set_num_threads(6);memory();ck=torch.load(R/a.base,weights_only=False);s={n:v.double().clone() for n,v in ck['model'].items()};att=ck['implant'];m=att['frontend'];ix=m['coordinates'];D=192;F=torch.tensor(m['frame'],dtype=torch.double);regs=torch.tensor(m['registers'],dtype=torch.double);rr=regs/2;L=m['limit'];det=torch.tensor(m['text_detectors'],dtype=torch.double);dc=m['detector_coordinates'];cal=torch.load(R/a.calibration,weights_only=False)['activations'];caps=torch.load(R/a.capacity_activations,weights_only=False)['activations'];records=[];programs=[]
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dorian/astra-implant/.venv/lib/python3.11/site-packages/torch/serialization.py", line 1566, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dorian/astra-implant/.venv/lib/python3.11/site-packages/torch/serialization.py", line 796, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dorian/astra-implant/.venv/lib/python3.11/site-packages/torch/serialization.py", line 777, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/dorian/astra-implant/experiments/am1_natural_attention.pt'

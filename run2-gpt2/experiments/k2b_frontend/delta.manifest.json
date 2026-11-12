@@ -1,0 +1,199 @@
+{
+  "delta_sha256": "0fcd91fb94489e48fbb46a967898a6db32c051a987d032b151cab90c7aea7b53",
+  "sources": {
+    "experiments/compile_k_marker_v1.py": "5508daed4065116863813cc008df2d70ad6faa79027fd5629fea790895b69b77",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/derive_k_equals_gate_v1.py": "718cb8db7a8b65571e7480c12a3fb9386a653e6785f24713d1af28fb33796420",
+    "experiments/capture_k_formats_v1.py": "015966934106726f538acfc3551deeabd9d91880858aa4a6e2687e98e62d0348",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_k_frontend_v2.py": "37d54dd6107bb9a7ac75d215a248f41f7c71e432bb35d55c1ec85c83fcfdd36c",
+    "experiments/derive_k_stage_gates_v1.py": "29da183d1735b4f3f471acb4ed4c2366b7bdac0e7758e18e72d6ae947921af90",
+    "experiments/combine_k_stage_gates_v3.py": "c459144d8ca73cab73155134a7679e74dbd35be07c8d7bbdb691e95f4f569e05"
+  },
+  "inputs": {
+    "experiments/k1_marker/delta.pt": "910c947988ddd53139c85eaf2bdf2afc7faead71b9b2d39b6d48631483802c77",
+    "host/ckpt.pt": "d0896398fc68efd3d1c516b970ecbd87ab47eeaec269635044ed03223916ff2e",
+    "artifacts/k1_marker_format_a.pt": "74a2b41387fe0a064de3453407d884c7207d1a850775863e6e1c7e5a232d23dd",
+    "artifacts/k1_marker_format_b.pt": "9ef74c1cb949e5153c769e98fc45b0bb99e5ae6355bc9d05ffa19d7f0268a995",
+    "artifacts/k1_marker_calib.pt": "d568a1634b81e6057a16675858d2568ae3cc031380b8a5cd5641548f16ddea93",
+    "artifacts/k_stage_gates_v3.pt": "860e3c0844d7e48bdec923ecc85ac23da6d0aa893741a19663062cbf94660104"
+  },
+  "arguments": {
+    "output": "experiments/k2b_frontend/delta.pt",
+    "carrier": 16384.0,
+    "attention_score": 16.0,
+    "value_gain": 0.1,
+    "donors": 256,
+    "stage_gain": 256.0
+  },
+  "description": "K2 G3: whole-format carrier, five stage codes, token-stratified position keys, six separate current-digit reads and three column sum fields; no arithmetic-answer fitting.",
+  "changed_scalars": 2626308,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 7680,
+    "transformer.h.1.mlp.c_fc.bias": 10,
+    "transformer.h.1.mlp.c_proj.weight": 204284,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 884736,
+    "transformer.h.2.attn.c_attn.bias": 1152,
+    "transformer.h.2.attn.c_proj.weight": 588671,
+    "transformer.h.2.attn.c_proj.bias": 765
+  },
+  "max_abs_edited_value": 30777.994140625,
+  "details": {
+    "heads": [
+      1,
+      4,
+      2,
+      7,
+      9,
+      8
+    ],
+    "memory": {
+      "raw_validation_max": 0.01177617134212877,
+      "raw_validation_rms_max": 0.0028804102289529438,
+      "removed_attention_energy_fraction": 0.0001244943104315336,
+      "phase_text_rms": [
+        0.054361657601763896,
+        0.0637859158842427,
+        0.06715224130942965,
+        0.07170189770879962,
+        0.07324110697908386,
+        0.07575587418064192
+      ]
+    },
+    "digits": [
+      {
+        "position": 0,
+        "validation_correct": 512,
+        "target_min": 0.8999999999347265,
+        "other_max": -0.09999999981602299,
+        "margin_min": 0.9999999998157211,
+        "text_rms_max": 1.2667562970110553,
+        "ridge": 1e-05,
+        "interpolation_error": 1.843677294166568e-10
+      },
+      {
+        "position": 1,
+        "validation_correct": 512,
+        "target_min": 0.8995993499746407,
+        "other_max": -0.08946050761096558,
+        "margin_min": 0.9923848808914623,
+        "text_rms_max": 0.09878899651673104,
+        "ridge": 0.00017413447680883221,
+        "interpolation_error": 1.733332921638464e-10
+      },
+      {
+        "position": 2,
+        "validation_correct": 512,
+        "target_min": 0.8764597193069799,
+        "other_max": -0.0823751343344208,
+        "margin_min": 0.9630427872686016,
+        "text_rms_max": 0.12822268593387584,
+        "ridge": 0.00016989993250093782,
+        "interpolation_error": 1.4475001752778383e-10
+      },
+      {
+        "position": 4,
+        "validation_correct": 512,
+        "target_min": 0.877936407556344,
+        "other_max": -0.08449477795834326,
+        "margin_min": 0.968793001494756,
+        "text_rms_max": 0.1356560533324691,
+        "ridge": 0.00015401990049172538,
+        "interpolation_error": 1.4155575323027136e-10
+      },
+      {
+        "position": 5,
+        "validation_correct": 512,
+        "target_min": 0.880309054012147,
+        "other_max": -0.0876187547013492,
+        "margin_min": 0.9733093000522172,
+        "text_rms_max": 0.14387654181018952,
+        "ridge": 0.00016946800982194096,
+        "interpolation_error": 1.2291381801254886e-10
+      },
+      {
+        "position": 6,
+        "validation_correct": 512,
+        "target_min": 0.8817529010005429,
+        "other_max": -0.08463656363595791,
+        "margin_min": 0.9731333406869165,
+        "text_rms_max": 0.13746922858088184,
+        "ridge": 0.00016931607031839624,
+        "interpolation_error": 1.0840739417261602e-10
+      }
+    ],
+    "positions": [
+      {
+        "position": 0,
+        "validation_selected": 512,
+        "margin_min": 0.998591807649147
+      },
+      {
+        "position": 1,
+        "validation_selected": 512,
+        "margin_min": 0.9807221911096057
+      },
+      {
+        "position": 2,
+        "validation_selected": 512,
+        "margin_min": 0.9652187558734742
+      },
+      {
+        "position": 4,
+        "validation_selected": 512,
+        "margin_min": 0.7206436031700385
+      },
+      {
+        "position": 5,
+        "validation_selected": 512,
+        "margin_min": 0.29606371723764013
+      },
+      {
+        "position": 6,
+        "validation_selected": 512,
+        "margin_min": 0.6284413971023919
+      }
+    ],
+    "gate_parameters": [
+      {
+        "stage": 7,
+        "lo": 0.3599305829494936,
+        "hi": 0.6797384625147918,
+        "sharpness": 50.03003685133759
+      },
+      {
+        "stage": 8,
+        "lo": 0.42510973292994453,
+        "hi": 0.5288702203101204,
+        "sharpness": 154.20128031373238
+      },
+      {
+        "stage": 9,
+        "lo": 0.48262015149846604,
+        "hi": 0.5318155326249894,
+        "sharpness": 325.2337848313511
+      },
+      {
+        "stage": 10,
+        "lo": 0.441758827629594,
+        "hi": 0.48792812459853013,
+        "sharpness": 346.5506527154874
+      },
+      {
+        "stage": 11,
+        "lo": 0.4418751223035902,
+        "hi": 0.4968447485433766,
+        "sharpness": 291.06983427912394
+      }
+    ]
+  }
+}

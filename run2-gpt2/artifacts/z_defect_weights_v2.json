@@ -1,0 +1,133 @@
+{
+  "checks": {
+    "valid_bit_error_examples": 0,
+    "minimum_valid_signed_raw_bit_margin": 4.874073284903673,
+    "valid_defect_range": [
+      -2.383334797055799,
+      2.274676058749697
+    ],
+    "malformed_minimum_defect_when_reference_active": 53.76334129485512,
+    "malformed_reference_off_count": 12,
+    "valid_reference_range": [
+      0.9995757032310786,
+      1.0004489947789585
+    ],
+    "old_query_residual_max": 5.6343396261375815,
+    "native_validation_post_mlp_rms": 0.1065711002262372,
+    "maximum_new_weight": 58074.3515625,
+    "mean_memory_shift_norm": 10.773083488958376,
+    "memory_shift_variation_max": 0.06279730597775283
+  },
+  "native_repair": {
+    "construction": {
+      "before_rms": 0.1230802629058294,
+      "after_rms": 0.08752689229600599,
+      "weighted_after_rms": 0.9970825894045433,
+      "relative_squared_error": 0.505715409530731
+    },
+    "validation": {
+      "before_rms": 0.11696427300319541,
+      "after_rms": 0.10657109986553608,
+      "weighted_after_rms": 1.1772530150663751,
+      "relative_squared_error": 0.8301803398257112
+    }
+  },
+  "ridge_trials": [
+    {
+      "ridge": 0.001,
+      "fit": {
+        "construction": {
+          "before_rms": 0.1230802629058294,
+          "after_rms": 0.08752708733858933,
+          "weighted_after_rms": 0.9970876144226993,
+          "relative_squared_error": 0.5057176633785992
+        },
+        "validation": {
+          "before_rms": 0.11696427300319541,
+          "after_rms": 0.10653285274878585,
+          "weighted_after_rms": 1.1775016217388792,
+          "relative_squared_error": 0.8295845627959108
+        }
+      },
+      "max_abs_weight": 58074.3515625,
+      "valid": true
+    },
+    {
+      "ridge": 0.0001,
+      "fit": {
+        "construction": {
+          "before_rms": 0.1230802629058294,
+          "after_rms": 0.08752689427785286,
+          "weighted_after_rms": 0.9970826407309549,
+          "relative_squared_error": 0.5057154324322756
+        },
+        "validation": {
+          "before_rms": 0.11696427300319541,
+          "after_rms": 0.10656723925016624,
+          "weighted_after_rms": 1.177278004109685,
+          "relative_squared_error": 0.8301201931455727
+        }
+      },
+      "max_abs_weight": 58074.3515625,
+      "valid": true
+    },
+    {
+      "ridge": 1e-05,
+      "fit": {
+        "construction": {
+          "before_rms": 0.1230802629058294,
+          "after_rms": 0.08752689231585448,
+          "weighted_after_rms": 0.9970825899188549,
+          "relative_squared_error": 0.5057154097600932
+        },
+        "validation": {
+          "before_rms": 0.11696427300319541,
+          "after_rms": 0.10657071688629421,
+          "weighted_after_rms": 1.177255492916982,
+          "relative_squared_error": 0.8301743730811385
+        }
+      },
+      "max_abs_weight": 58074.3515625,
+      "valid": true
+    },
+    {
+      "ridge": 1e-06,
+      "fit": {
+        "construction": {
+          "before_rms": 0.1230802629058294,
+          "after_rms": 0.08752689229620254,
+          "weighted_after_rms": 0.9970825894096366,
+          "relative_squared_error": 0.5057154095330023
+        },
+        "validation": {
+          "before_rms": 0.11696427300319541,
+          "after_rms": 0.10657106504563836,
+          "weighted_after_rms": 1.1772532403387517,
+          "relative_squared_error": 0.8301797973373664
+        }
+      },
+      "max_abs_weight": 58074.3515625,
+      "valid": true
+    },
+    {
+      "ridge": 1e-07,
+      "fit": {
+        "construction": {
+          "before_rms": 0.1230802629058294,
+          "after_rms": 0.08752689229600599,
+          "weighted_after_rms": 0.9970825894045433,
+          "relative_squared_error": 0.505715409530731
+        },
+        "validation": {
+          "before_rms": 0.11696427300319541,
+          "after_rms": 0.10657109986553608,
+          "weighted_after_rms": 1.1772530150663751,
+          "relative_squared_error": 0.8301803398257112
+        }
+      },
+      "max_abs_weight": 58074.3515625,
+      "valid": true
+    }
+  ],
+  "native_donors": 768
+}

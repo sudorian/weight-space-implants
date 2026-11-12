@@ -1,0 +1,618 @@
+{
+  "baseline_validation_native_branch_rms": 0.2120166994496477,
+  "baseline_current_token_diagnostics": {
+    "syntax_a": {
+      "minimum_constant": 0.9870979551185082,
+      "A_maximum_error": [
+        0.124558235433887,
+        0.09616619925241121,
+        0.07577337076448387
+      ],
+      "B_maximum_error": [
+        0.22440445195933492,
+        0.14521621786000605,
+        0.07827302101487932
+      ],
+      "A_wrong_rounded": [
+        0,
+        0,
+        0
+      ],
+      "B_wrong_rounded": [
+        0,
+        0,
+        0
+      ]
+    },
+    "syntax_stress": {
+      "minimum_constant": 0.9867515810131844,
+      "A_maximum_error": [
+        0.11667554812870318,
+        0.10416117374652334,
+        0.07465343375325517
+      ],
+      "B_maximum_error": [
+        0.1702046395994964,
+        0.09295870543406981,
+        0.0660782467165073
+      ],
+      "A_wrong_rounded": [
+        0,
+        0,
+        0
+      ],
+      "B_wrong_rounded": [
+        0,
+        0,
+        0
+      ]
+    },
+    "syntax_c": {
+      "minimum_constant": 0.9803058255338977,
+      "A_maximum_error": [
+        0.1640708905602679,
+        0.17740440759195142,
+        0.1272538044208371
+      ],
+      "B_maximum_error": [
+        0.354394438445194,
+        0.11079621017404895,
+        0.07447366698031055
+      ],
+      "A_wrong_rounded": [
+        0,
+        0,
+        0
+      ],
+      "B_wrong_rounded": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "raw_metric_mass_trials": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0
+  ],
+  "metric_ridge_fraction": 1e-06,
+  "training_tokens": 24576,
+  "validation_tokens": 8192,
+  "trials": [
+    {
+      "raw_metric_mass": 0.0001,
+      "validation_native_branch_rms": 0.2053910588769206,
+      "train_native_branch_rms": 0.2064445268171065,
+      "constraint_identity_error": 6.217248937900877e-15,
+      "value_span_identity_error_float32": 1.0136950411021584e-09,
+      "frame_writer_response_change": 3.1086244689504383e-15,
+      "maximum_value_weight": 0.2814320921897888,
+      "maximum_value_change_from_base": 0.04064738750457764,
+      "format_current_token_diagnostics": {
+        "syntax_a": {
+          "minimum_constant": 0.9797324417897129,
+          "A_maximum_error": [
+            0.12456489757671729,
+            0.0961530894634155,
+            0.0759105593943481
+          ],
+          "B_maximum_error": [
+            0.22448346941379996,
+            0.14519354216353353,
+            0.07827052969664805
+          ],
+          "A_wrong_rounded": [
+            0,
+            0,
+            0
+          ],
+          "B_wrong_rounded": [
+            0,
+            0,
+            0
+          ]
+        },
+        "syntax_stress": {
+          "minimum_constant": 0.9805696299306248,
+          "A_maximum_error": [
+            0.11670607656812848,
+            0.10414987559679378,
+            0.07464261734266131
+          ],
+          "B_maximum_error": [
+            0.16993626489540786,
+            0.09297422972029978,
+            0.06607126385098172
+          ],
+          "A_wrong_rounded": [
+            0,
+            0,
+            0
+          ],
+          "B_wrong_rounded": [
+            0,
+            0,
+            0
+          ]
+        },
+        "syntax_c": {
+          "minimum_constant": 0.9816960602432495,
+          "A_maximum_error": [
+            0.16491133802063906,
+            0.17753058415920897,
+            0.1267408581849132
+          ],
+          "B_maximum_error": [
+            0.3543866309803274,
+            0.11078731802004249,
+            0.07447061658603715
+          ],
+          "A_wrong_rounded": [
+            0,
+            0,
+            0
+          ],
+          "B_wrong_rounded": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "eligible": true
+    },
+    {
+      "raw_metric_mass": 0.001,
+      "validation_native_branch_rms": 0.20350644774618826,
+      "train_native_branch_rms": 0.20450980300048252,
+      "constraint_identity_error": 4.440892098500626e-15,
+      "value_span_identity_error_float32": 8.178742353509572e-10,
+      "frame_writer_response_change": 1.6237011735142914e-15,
+      "maximum_value_weight": 0.2816177308559418,
+      "maximum_value_change_from_base": 0.03956381976604462,
+      "format_current_token_diagnostics": {
+        "syntax_a": {
+          "minimum_constant": 0.9799662404404416,
+          "A_maximum_error": [
+            0.12456660046496015,
+            0.09615658312095388,
+            0.07591003227842519
+          ],
+          "B_maximum_error": [
+            0.22447466252780413,
+            0.1451955559695568,
+            0.07827052530694911
+          ],
+          "A_wrong_rounded": [
+            0,
+            0,
+            0
+          ],
+          "B_wrong_rounded": [
+            0,
+            0,
+            0
+          ]
+        },
+        "syntax_stress": {
+          "minimum_constant": 0.9806055630567918,
+          "A_maximum_error": [
+            0.11671251050250664,
+            0.10415392386907207,
+            0.07464386340091522
+          ],
+          "B_maximum_error": [
+            0.16992691627937512,
+            0.09297314468095597,
+            0.06607077506699799
+          ],
+          "A_wrong_rounded": [
+            0,
+            0,
+            0
+          ],
+          "B_wrong_rounded": [
+            0,
+            0,
+            0
+          ]
+        },
+        "syntax_c": {
+          "minimum_constant": 0.9815883807310016,
+          "A_maximum_error": [
+            0.16488369556740778,
+            0.17754776647083936,
+            0.12675810086459904
+          ],
+          "B_maximum_error": [
+            0.35438650754359635,
+            0.11078791434120872,
+            0.07447062325383969
+          ],
+          "A_wrong_rounded": [
+            0,
+            0,
+            0
+          ],
+          "B_wrong_rounded": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "eligible": true
+    },
+    {
+      "raw_metric_mass": 0.01,
+      "validation_native_branch_rms": 0.18989668183926162,
+      "train_native_branch_rms": 0.19058207558305018,
+      "constraint_identity_error": 3.552713678800501e-15,
+      "value_span_identity_error_float32": 7.268534793145043e-10,
+      "frame_writer_response_change": 2.7131075164277263e-15,
+      "maximum_value_weight": 0.28381988406181335,
+      "maximum_value_change_from_base": 0.032457759603857994,
+      "format_current_token_diagnostics": {
+        "syntax_a": {
+          "minimum_constant": 0.9813334058296808,
+          "A_maximum_error": [
+            0.12457803173382676,
+            0.09618250138657292,
+            0.0759034109442891
+          ],
+          "B_maximum_error": [
+            0.22440784395126606,
+            0.14521053952903173,
+            0.07827059260576286
+          ],
+          "A_wrong_rounded": [
+            0,
+            0,
+            0
+          ],
+          "B_wrong_rounded": [
+            0,
+            0,
+            0
+          ]
+        },
+        "syntax_stress": {
+          "minimum_constant": 0.9809871061647242,
+          "A_maximum_error": [
+            0.11676039305948027,
+            0.10418338881464795,
+            0.0746506583008415
+          ],
+          "B_maximum_error": [
+            0.16985289200608542,
+            0.0929667393850021,
+            0.06606672054008245
+          ],
+          "A_wrong_rounded": [
+            0,
+            0,
+            0
+          ],
+          "B_wrong_rounded": [
+            0,
+            0,
+            0
+          ]
+        },
+        "syntax_c": {
+          "minimum_constant": 0.98079531087586,
+          "A_maximum_error": [
+            0.1646551459786938,
+            0.17765326817199067,
+            0.12687120594632617
+          ],
+          "B_maximum_error": [
+            0.3543857104387165,
+            0.11079300064206699,
+            0.0744707581079882
+          ],
+          "A_wrong_rounded": [
+            0,
+            0,
+            0
+          ],
+          "B_wrong_rounded": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "eligible": true
+    },
+    {
+      "raw_metric_mass": 0.1,
+      "validation_native_branch_rms": 0.15837997400284107,
+      "train_native_branch_rms": 0.15868871973682203,
+      "constraint_identity_error": 2.6645352591003757e-15,
+      "value_span_identity_error_float32": 9.358063959158391e-10,
+      "frame_writer_response_change": 1.7694179454963432e-15,
+      "maximum_value_weight": 0.2968619167804718,
+      "maximum_value_change_from_base": 0.02859100396744907,
+      "format_current_token_diagnostics": {
+        "syntax_a": {
+          "minimum_constant": 0.9832762411995215,
+          "A_maximum_error": [
+            0.12460277362045247,
+            0.0962411790461335,
+            0.0758657622647636
+          ],
+          "B_maximum_error": [
+            0.2242408897058055,
+            0.1452451636123886,
+            0.07827195021399547
+          ],
+          "A_wrong_rounded": [
+            0,
+            0,
+            0
+          ],
+          "B_wrong_rounded": [
+            0,
+            0,
+            0
+          ]
+        },
+        "syntax_stress": {
+          "minimum_constant": 0.9829299609370504,
+          "A_maximum_error": [
+            0.11689335642171894,
+            0.10424231014760643,
+            0.07464414737142633
+          ],
+          "B_maximum_error": [
+            0.16962382776999327,
+            0.09297262488267966,
+            0.0660504452951789
+          ],
+          "A_wrong_rounded": [
+            0,
+            0,
+            0
+          ],
+          "B_wrong_rounded": [
+            0,
+            0,
+            0
+          ]
+        },
+        "syntax_c": {
+          "minimum_constant": 0.9792798709909334,
+          "A_maximum_error": [
+            0.16375550178355258,
+            0.17766376634947534,
+            0.12689979333791257
+          ],
+          "B_maximum_error": [
+            0.35438427663027916,
+            0.11081078109023368,
+            0.07447203000930402
+          ],
+          "A_wrong_rounded": [
+            0,
+            0,
+            0
+          ],
+          "B_wrong_rounded": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "eligible": true
+    },
+    {
+      "raw_metric_mass": 1.0,
+      "validation_native_branch_rms": 0.15164929808318908,
+      "train_native_branch_rms": 0.15190831050374548,
+      "constraint_identity_error": 2.6645352591003757e-15,
+      "value_span_identity_error_float32": 1.0361307072742632e-09,
+      "frame_writer_response_change": 1.8839096949108125e-15,
+      "maximum_value_weight": 0.2882196605205536,
+      "maximum_value_change_from_base": 0.054041821509599686,
+      "format_current_token_diagnostics": {
+        "syntax_a": {
+          "minimum_constant": 0.9838775676264297,
+          "A_maximum_error": [
+            0.12461180324842847,
+            0.09624708084819034,
+            0.07585176344110911
+          ],
+          "B_maximum_error": [
+            0.2242051668905489,
+            0.14525317928008663,
+            0.07827336764265647
+          ],
+          "A_wrong_rounded": [
+            0,
+            0,
+            0
+          ],
+          "B_wrong_rounded": [
+            0,
+            0,
+            0
+          ]
+        },
+        "syntax_stress": {
+          "minimum_constant": 0.9835312895458292,
+          "A_maximum_error": [
+            0.11694894383849075,
+            0.10424193627616152,
+            0.07462696498406984
+          ],
+          "B_maximum_error": [
+            0.1695406661905757,
+            0.09298958532161239,
+            0.06603459713938697
+          ],
+          "A_wrong_rounded": [
+            0,
+            0,
+            0
+          ],
+          "B_wrong_rounded": [
+            0,
+            0,
+            0
+          ]
+        },
+        "syntax_c": {
+          "minimum_constant": 0.979890826240354,
+          "A_maximum_error": [
+            0.16295174190723127,
+            0.1775843253343119,
+            0.12661926633551346
+          ],
+          "B_maximum_error": [
+            0.3543817067213153,
+            0.11081357471237707,
+            0.07447308557520738
+          ],
+          "A_wrong_rounded": [
+            0,
+            0,
+            0
+          ],
+          "B_wrong_rounded": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "eligible": true
+    }
+  ],
+  "chosen": {
+    "raw_metric_mass": 1.0,
+    "validation_native_branch_rms": 0.15164929808318908,
+    "train_native_branch_rms": 0.15190831050374548,
+    "constraint_identity_error": 2.6645352591003757e-15,
+    "value_span_identity_error_float32": 1.0361307072742632e-09,
+    "frame_writer_response_change": 1.8839096949108125e-15,
+    "maximum_value_weight": 0.2882196605205536,
+    "maximum_value_change_from_base": 0.054041821509599686,
+    "format_current_token_diagnostics": {
+      "syntax_a": {
+        "minimum_constant": 0.9838775676264297,
+        "A_maximum_error": [
+          0.12461180324842847,
+          0.09624708084819034,
+          0.07585176344110911
+        ],
+        "B_maximum_error": [
+          0.2242051668905489,
+          0.14525317928008663,
+          0.07827336764265647
+        ],
+        "A_wrong_rounded": [
+          0,
+          0,
+          0
+        ],
+        "B_wrong_rounded": [
+          0,
+          0,
+          0
+        ]
+      },
+      "syntax_stress": {
+        "minimum_constant": 0.9835312895458292,
+        "A_maximum_error": [
+          0.11694894383849075,
+          0.10424193627616152,
+          0.07462696498406984
+        ],
+        "B_maximum_error": [
+          0.1695406661905757,
+          0.09298958532161239,
+          0.06603459713938697
+        ],
+        "A_wrong_rounded": [
+          0,
+          0,
+          0
+        ],
+        "B_wrong_rounded": [
+          0,
+          0,
+          0
+        ]
+      },
+      "syntax_c": {
+        "minimum_constant": 0.979890826240354,
+        "A_maximum_error": [
+          0.16295174190723127,
+          0.1775843253343119,
+          0.12661926633551346
+        ],
+        "B_maximum_error": [
+          0.3543817067213153,
+          0.11081357471237707,
+          0.07447308557520738
+        ],
+        "A_wrong_rounded": [
+          0,
+          0,
+          0
+        ],
+        "B_wrong_rounded": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "eligible": true
+  },
+  "changed_weight_family": "Only layer3 V; all Q/K/O/MLP/gain weights remain exact",
+  "target": "Native V at recorded calibration attention coefficients",
+  "hard_constraints": "Current-token decoder, per-head frame readout and physical register responses",
+  "analysis": {
+    "analysis_only": true,
+    "mixture_reconstruction_relative_rms": 1.6423295966999464e-07,
+    "maximum_recovered_future_coefficient": 1.8544022535198305e-06,
+    "minimum_source_value_rank": 64,
+    "maximum_source_value_rank": 64,
+    "code_null_relative_rms": 1.4282180107188112e-13,
+    "attention_raw_reconstruction_rms": 8.155565218329477e-08,
+    "native_value_edit_train_branch_rms": 0.21386974589931282,
+    "native_value_edit_validation_branch_rms": 0.2120166994496477,
+    "native_value_edit_validation_raw_rms": 0.015996738082790344,
+    "constraint_rows": 58,
+    "constraint_rank": 58,
+    "preserved_physical_coordinates": [
+      334,
+      467,
+      29,
+      617,
+      113,
+      547,
+      181,
+      353,
+      155,
+      127
+    ],
+    "V_rank_two_rounding_error": 8.5009360661914e-09,
+    "reference": "HOST V at the same recovered actual attention coefficients",
+    "no_attention_softmax_model_replay_or_answer_targets": true,
+    "inputs": {
+      "experiments/a49v1_strong_final/delta.pt": "a7a5904a68eb6314682eaa4237efe3aba7c81df1d903df4be4d059e82c68bd66",
+      "artifacts/a52v1_value_word.pt": "6fa8cbb0939360588ff9111846c9d7e9f4fa1e240968f1d62e1bc83c26e2c330",
+      "artifacts/a45_value_subspace_g1_v1.pt": "8176eb88995edc7dd337d26e570780f86f0cef45bd12fe59ceb6cb646ac4571c",
+      "artifacts/a45_source_codes_v1.pt": "2b351561275697ba309b09b8d5ccf2b359a72cf4ee133eda9fc31e6201847eb3"
+    },
+    "source_sha": "1c7ec19483224b9f080bfebd303357056f4cf21a0ce3129537cc913d6d26767e"
+  },
+  "no_model_replay_answer_labels_gradients_or_iterative_refitting": true
+}

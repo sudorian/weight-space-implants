@@ -1,0 +1,60 @@
+{
+  "data_coordinates": [
+    574,
+    320,
+    172,
+    582
+  ],
+  "phase_coordinates": [
+    259,
+    332,
+    398
+  ],
+  "flag_coordinate": 69,
+  "nominal_digit_scale": 4044.5518911246527,
+  "nominal_flag_scale": 1000000.0,
+  "rows": [
+    {
+      "capture": "7.out",
+      "maximum_digit_drift_from_source": 0.0,
+      "digit_rounding_mismatches_from_source": 0,
+      "maximum_digit_distance_from_integer": 0.3000051291923931,
+      "maximum_phase_error": 0.2300416439310773,
+      "maximum_leading_product_error": 0.16839150663654417,
+      "maximum_slot_error": 0.2291260473569947,
+      "minimum_literal_threshold_gap": 0.2708739526430053,
+      "minimum_phase_denominator": 5673.2783203125,
+      "minimum_flag": 999984.0
+    },
+    {
+      "capture": "16.raw",
+      "maximum_digit_drift_from_source": 0.767577482780408,
+      "digit_rounding_mismatches_from_source": 123,
+      "maximum_digit_distance_from_integer": 0.4998123256222504,
+      "maximum_phase_error": 0.7928141305223608,
+      "maximum_leading_product_error": 0.42592896749724807,
+      "maximum_slot_error": 0.7936362066127041,
+      "minimum_literal_threshold_gap": -0.29363620661270406,
+      "minimum_phase_denominator": 5837.3427734375,
+      "minimum_flag": 990198.375
+    },
+    {
+      "capture": "17.raw",
+      "maximum_digit_drift_from_source": 0.7751734160069539,
+      "digit_rounding_mismatches_from_source": 455,
+      "maximum_digit_distance_from_integer": 0.49985954733751914,
+      "maximum_phase_error": 0.8234895785125671,
+      "maximum_leading_product_error": 0.5620525402287372,
+      "maximum_slot_error": 0.6181083865702752,
+      "minimum_literal_threshold_gap": -0.11810838657027523,
+      "minimum_phase_denominator": 5445.85400390625,
+      "minimum_flag": 989369.4375
+    }
+  ],
+  "no_answer_targets_or_model_replay": true,
+  "source_sha256": "c301c1d0d0ad0e8f93e5db8aae7763db1683cddb06f702f195d9423e1125d297",
+  "inputs": {
+    "experiments/a98v1_pooled_gate_bounds/circuit.pt": "d4dde6fd507af80e3739035090f7e60ce73a087cfa6c43ac0b6e421c1752d21b",
+    "artifacts/a103v1_late_selector_format.pt": "4a06dfd4df8548f33bd69d557490ffcc8871225948a6e68e103640d2dcfaec94"
+  }
+}

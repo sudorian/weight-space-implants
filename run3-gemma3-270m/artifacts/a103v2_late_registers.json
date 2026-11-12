@@ -1,0 +1,60 @@
+{
+  "data_coordinates": [
+    574,
+    320,
+    172,
+    582
+  ],
+  "phase_coordinates": [
+    259,
+    332,
+    398
+  ],
+  "flag_coordinate": 69,
+  "nominal_digit_scale": 64712.83025799444,
+  "nominal_flag_scale": 1000000.0,
+  "rows": [
+    {
+      "capture": "7.out",
+      "maximum_digit_drift_from_source": 0.0,
+      "digit_rounding_mismatches_from_source": 0,
+      "maximum_digit_distance_from_integer": 0.2995341598469574,
+      "maximum_phase_error": 0.22823674390764914,
+      "maximum_leading_product_error": 0.16851412989783465,
+      "maximum_slot_error": 0.2283573164780357,
+      "minimum_literal_threshold_gap": 0.2716426835219643,
+      "minimum_phase_denominator": 90664.65625,
+      "minimum_flag": 998771.75
+    },
+    {
+      "capture": "16.raw",
+      "maximum_digit_drift_from_source": 0.03584365824160285,
+      "digit_rounding_mismatches_from_source": 0,
+      "maximum_digit_distance_from_integer": 0.30061144089185277,
+      "maximum_phase_error": 0.24061388140549234,
+      "maximum_leading_product_error": 0.17363320520784428,
+      "maximum_slot_error": 0.2464781484650513,
+      "minimum_literal_threshold_gap": 0.25352185153494866,
+      "minimum_phase_denominator": 89905.625,
+      "minimum_flag": 990846.75
+    },
+    {
+      "capture": "17.raw",
+      "maximum_digit_drift_from_source": 0.03779697128411463,
+      "digit_rounding_mismatches_from_source": 0,
+      "maximum_digit_distance_from_integer": 0.3002910588691694,
+      "maximum_phase_error": 0.2425017829555265,
+      "maximum_leading_product_error": 0.17372016349285166,
+      "maximum_slot_error": 0.24653850409083264,
+      "minimum_literal_threshold_gap": 0.25346149590916733,
+      "minimum_phase_denominator": 90095.03125,
+      "minimum_flag": 990076.625
+    }
+  ],
+  "no_answer_targets_or_model_replay": true,
+  "source_sha256": "d0209b9e4c6937b39a435714dde25dd9a31b930f4780d1f997c42118732b4fac",
+  "inputs": {
+    "experiments/a103v2_strong_late_registers/circuit.pt": "16dca96f549619b2db91cc852ca2ee19cdeecefbd5873ec1566e85d7842a6c1d",
+    "artifacts/a103v2_late_selector_format.pt": "1e7dd0180188c6694be2b264bb29fe6fc0f91cd7431bdff8f711b1f7f4f4a778"
+  }
+}

@@ -1,0 +1,38 @@
+"""Rebuild one paired-reader memory and its gated copy from recorded inputs.
+
+Only attention1 is evaluated on the frozen full-prefix LN1 recording. Text
+attention head values are recorded. The MLP1 restoration uses unlabeled native
+activation targets; no arithmetic answers, gradients, or whole-model runs.
+"""
+from pathlib import Path
+import argparse,json,sys,torch
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'experiments'))
+from circuit_io_v1 import save
+from circuit_restore_v4 import restore
+p=argparse.ArgumentParser();p.add_argument('--output',required=True);p.add_argument('--donors',type=int,default=1152);a=p.parse_args();torch.set_num_threads(6);torch.set_grad_enabled(False)
+host=torch.load(ROOT/'host/ckpt.pt',weights_only=True,mmap=True)['model'];base=ROOT/'experiments/q3_complete/delta.pt';meta=json.loads(base.with_suffix('.manifest.json').read_text());changed={}
+for k,u in torch.load(base,weights_only=True)['updates'].items():
+ w=host[k].clone();w.view(-1)[u['indices'].long()]=u['values'];changed[k]=w
+choicepath=ROOT/'artifacts/q_reader_memory_v1.pt';geometry=torch.load(choicepath,weights_only=True);chosen=geometry['chosen'];assert chosen is not None;M=chosen['memory'];report=chosen['report'];gain=report['gain'];heads=report['head_ids'];pn=geometry['native_projection'];bn=geometry['native_bias'];protected=torch.tensor([i for i in range(768) if i//64 in heads]);P=pn.clone();P[:,protected]-=M@(M.T@pn[:,protected]);bias=bn-M@(M.T@bn)
+for slot,field in geometry['slots']:P[:,slot]=gain*M[:,field]
+changed['transformer.h.1.attn.c_proj.weight']=P.float();changed['transformer.h.1.attn.c_proj.bias']=bias.float();gamma=host['transformer.h.1.ln_2.weight'].double();beta=host['transformer.h.1.ln_2.bias'].double();reads=torch.cat((M/(gain*gamma[:,None]),(-(beta/gamma)@M/gain)[None,:]));textpath=ROOT/'artifacts/q3_reader_values_calib.pt';textdata=torch.load(textpath,weights_only=True,mmap=True);raw=textdata['captures']['1.pre']+torch.nn.functional.linear(textdata['captures']['1.attn_values'],P.float(),bias.float());norm=torch.nn.functional.layer_norm(raw,(768,),gamma.float(),beta.float(),1e-5);acts=torch.empty(*norm.shape[:-1],3072)
+for start in range(0,len(norm),16):acts[start:start+16]=torch.nn.functional.gelu(torch.nn.functional.linear(norm[start:start+16],host['transformer.h.1.mlp.c_fc.weight'],host['transformer.h.1.mlp.c_fc.bias']))
+text={'inputs':textdata['inputs'],'captures':{'1.raw':raw,'1.ln2':norm,'1.gelu':acts}}
+fullpath=ROOT/'artifacts/q2_full_prefix_b.pt';full=torch.load(fullpath,weights_only=True,mmap=True);x=full['captures']['1.ln1'];qkv=torch.nn.functional.linear(x,changed['transformer.h.1.attn.c_attn.weight'],changed['transformer.h.1.attn.c_attn.bias']);q,k,v=qkv.split(768,dim=2);q=q.view(len(x),64,12,64).transpose(1,2);k=k.view(len(x),64,12,64).transpose(1,2);v=v.view(len(x),64,12,64).transpose(1,2);values=torch.nn.functional.scaled_dot_product_attention(q,k,v,is_causal=True).transpose(1,2).contiguous().view(len(x),64,768);programraw=full['captures']['1.pre']+torch.nn.functional.linear(values,P.float(),bias.float());programnorm=torch.nn.functional.layer_norm(programraw,(768,),gamma.float(),beta.float(),1e-5);ids=torch.load(ROOT/'experiments/q1_sparse_coordinates/circuit.pt',weights_only=True)['allowed_token_ids'];eqid=ids[-1]
+def aug(x):
+ x=x.reshape(-1,768).double();return torch.cat((x,torch.ones(len(x),1,dtype=torch.float64)),1)
+positive=programnorm[full['inputs']==eqid];X=aug(positive);N=aug(torch.cat((programnorm[full['inputs']!=eqid].reshape(-1,768),norm.reshape(-1,768))));old=torch.load(ROOT/'experiments/p4b_amplified_copy/circuit.pt',weights_only=True);g=old['gate'];row=g['row'];pv=X@row;nv=N@row;lo=max(float(nv.max()),g['report']['negative_max']);hi=min(float(pv.min()),g['report']['positive_min']);gap=hi-lo;assert gap>0,(lo,hi);gated=row.clone();gated[-1]-=(lo+hi)/2;T=32.;bound=max(float((((X@reads).abs().max(1).values+16/T)/(X@gated)).max()),float((((N@reads).abs().max(1).values+16/T)/(-(N@gated))).max()));penalty=2*bound;rows=[];columns=[];sharp=72/gap
+for threshold,sign in ((lo+gap/3,1.),(lo+2*gap/3,-1.)):
+ r=sharp*row.clone();r[-1]-=sharp*threshold;rows.append(r);e=torch.zeros(20,dtype=torch.float64);e[0]=sign/(sharp*gap/3);columns.append(e)
+rows.append(T*penalty*gated);e=torch.zeros(20,dtype=torch.float64);e[1:]=-1/T;columns.append(e)
+for field in range(19):
+ rows.append(T*(penalty*gated+reads[:,field]));e=torch.zeros(20,dtype=torch.float64);e[field+1]=1/T;columns.append(e)
+rows=torch.stack(rows);emissions=torch.stack(columns,1);negative_pre=N@rows.T;actual=torch.nn.functional.gelu(torch.nn.functional.linear(positive,rows[:,:768].float(),rows[:,768].float())).double()@emissions.T;expected=torch.cat((torch.ones(len(X),1,dtype=torch.float64),X@reads),1);piece={'positive_count':len(X),'negative_count':len(N),'gate_gap':gap,'gate_negative_max':lo,'gate_positive_min':hi,'copy_gate_penalty':penalty,'negative_pre_max':float(negative_pre.max()),'copy_error_max':float((actual-expected).abs().max()),'program_row_max':float(rows.abs().max())};print('piece',json.dumps(piece),flush=True);assert piece['negative_pre_max']<-8;assert piece['copy_error_max']<.0005;assert piece['program_row_max']<=1e6
+starts=torch.tensor(full['request']['program_starts']);ix=torch.arange(len(starts));mem=programraw[ix,starts+7].double()@M/gain;lookup={int(t):i%10 for i,t in enumerate(ids[:20])};digits=torch.tensor([[lookup[int(full['inputs'][i,starts[i]+j])] for j in (0,1,2,4,5,6)] for i in range(len(starts))]);truth=torch.stack([((digits[:,j,None]>>torch.arange(4))&1)+((digits[:,j+3,None]>>torch.arange(4))&1) for j in range(3)],1);ratios=[]
+for role in range(3):
+ mass=mem[:,4]+mem[:,5] if role==0 else mem[:,6*role+4];ratios.append(mem[:,6*role:6*role+4]/mass[:,None])
+ratios=torch.stack(ratios,1);errors=((ratios>.1).long()+(ratios>.9).long())!=truth;piece['bit_error_examples']=int(errors.flatten(1).any(1).sum());print('reader validation',json.dumps(piece),flush=True);assert piece['bit_error_examples']<=2
+hostrawpath=ROOT/'artifacts/o_host_calib1.pt';hostgelupath=ROOT/'artifacts/host_calib512_early.pt';ht=torch.load(hostrawpath,weights_only=True,mmap=True);assert torch.equal(text['inputs'],ht['inputs']);hr=ht['captures']['1.raw'];hg=torch.load(hostgelupath,weights_only=True,mmap=True)['captures']['1.gelu'];programcolumns=(old['frame']*old['gains'][None,:])@emissions
+# Release attention-piece temporaries before native covariance factorization.
+del qkv,q,k,v,values,programraw,programnorm,X,N,negative_pre,actual,expected,full,textdata
+new,repair=restore(host,1,text,hr,hg,rows,programcolumns,donor_count=a.donors);changed.update(new);out=ROOT/a.output;out.parent.mkdir(parents=True,exist_ok=True);torch.save({'memory':M,'gain':gain,'heads':heads,'choice':report,'copy_piece':piece,'frame':old['frame'],'gains':old['gains'],'program_rows':rows,'emission_coefficients':emissions,'input_reads':reads,'repair':repair},out.parent/'circuit.pt');save(out,host,changed,sources=[ROOT/s for s in meta['sources']]+[Path(__file__),ROOT/'experiments/derive_q_reader_memory_v1.py',ROOT/'experiments/circuit_restore_v4.py'],inputs=[base,choicepath,textpath,fullpath,hostrawpath,hostgelupath,ROOT/'experiments/p4b_amplified_copy/circuit.pt'],arguments=vars(a),description='Q5 cleaner nineteen-field attention1 memory, one-quarter signal gain, seven protected output heads, unchanged current-equals copy frame, and 1152 native MLP1 donor units. All later arithmetic weights stay fixed.',extra={'memory_choice':report,'copy_piece':piece,'native_donors':a.donors,'native_repair':repair['text_repair_report'],'ridge_trials':repair['ridge_trials']})

@@ -1,0 +1,36 @@
+{
+  "analysis_only": true,
+  "mixture_reconstruction_relative_rms": 1.6423295966999464e-07,
+  "maximum_recovered_future_coefficient": 1.8544022535198305e-06,
+  "minimum_source_value_rank": 64,
+  "maximum_source_value_rank": 64,
+  "code_null_relative_rms": 1.4282180107188112e-13,
+  "attention_raw_reconstruction_rms": 8.155565218329477e-08,
+  "native_value_edit_train_branch_rms": 0.21386974589931282,
+  "native_value_edit_validation_branch_rms": 0.2120166994496477,
+  "native_value_edit_validation_raw_rms": 0.015996738082790344,
+  "constraint_rows": 58,
+  "constraint_rank": 58,
+  "preserved_physical_coordinates": [
+    334,
+    467,
+    29,
+    617,
+    113,
+    547,
+    181,
+    353,
+    155,
+    127
+  ],
+  "V_rank_two_rounding_error": 8.5009360661914e-09,
+  "reference": "HOST V at the same recovered actual attention coefficients",
+  "no_attention_softmax_model_replay_or_answer_targets": true,
+  "inputs": {
+    "experiments/a49v1_strong_final/delta.pt": "a7a5904a68eb6314682eaa4237efe3aba7c81df1d903df4be4d059e82c68bd66",
+    "artifacts/a52v1_value_word.pt": "6fa8cbb0939360588ff9111846c9d7e9f4fa1e240968f1d62e1bc83c26e2c330",
+    "artifacts/a45_value_subspace_g1_v1.pt": "8176eb88995edc7dd337d26e570780f86f0cef45bd12fe59ceb6cb646ac4571c",
+    "artifacts/a45_source_codes_v1.pt": "2b351561275697ba309b09b8d5ccf2b359a72cf4ee133eda9fc31e6201847eb3"
+  },
+  "source_sha": "1c7ec19483224b9f080bfebd303357056f4cf21a0ce3129537cc913d6d26767e"
+}

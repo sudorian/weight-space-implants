@@ -1,0 +1,66 @@
+{
+  "run_id": "0201-score",
+  "checkpoint_sha256": "1f80913221f71db7cef4862d6f72536601e552ea2e36921e77fe671bd1207cc8",
+  "mode": "quick",
+  "fresh": false,
+  "edits": {
+    "changed_scalars": 4182715,
+    "eligible_scalars": 85054464,
+    "changed_fraction": 0.04917690152041873,
+    "per_tensor": {
+      "transformer.h.0.mlp.c_fc.weight": 1536,
+      "transformer.h.0.mlp.c_fc.bias": 2,
+      "transformer.h.0.mlp.c_proj.weight": 197728,
+      "transformer.h.0.mlp.c_proj.bias": 768,
+      "transformer.h.1.attn.c_attn.weight": 147456,
+      "transformer.h.1.attn.c_attn.bias": 192,
+      "transformer.h.1.attn.c_proj.weight": 589793,
+      "transformer.h.1.attn.c_proj.bias": 767,
+      "transformer.h.1.mlp.c_fc.weight": 6144,
+      "transformer.h.1.mlp.c_fc.bias": 8,
+      "transformer.h.1.mlp.c_proj.weight": 202748,
+      "transformer.h.1.mlp.c_proj.bias": 768,
+      "transformer.h.2.attn.c_attn.weight": 589824,
+      "transformer.h.2.attn.c_attn.bias": 768,
+      "transformer.h.2.attn.c_proj.weight": 589824,
+      "transformer.h.2.attn.c_proj.bias": 768,
+      "transformer.h.2.mlp.c_fc.weight": 251904,
+      "transformer.h.2.mlp.c_fc.bias": 328,
+      "transformer.h.2.mlp.c_proj.weight": 841728,
+      "transformer.h.2.mlp.c_proj.bias": 768,
+      "transformer.h.3.mlp.c_fc.weight": 56832,
+      "transformer.h.3.mlp.c_fc.bias": 74,
+      "transformer.h.3.mlp.c_proj.weight": 351744,
+      "transformer.h.3.mlp.c_proj.bias": 768,
+      "transformer.h.4.mlp.c_fc.weight": 26880,
+      "transformer.h.4.mlp.c_fc.bias": 35,
+      "transformer.h.4.mlp.c_proj.weight": 321792,
+      "transformer.h.4.mlp.c_proj.bias": 768
+    },
+    "max_abs_weight": 638699.3125
+  },
+  "arithmetic": {
+    "G2": {
+      "correct": 2000,
+      "count": 2000,
+      "accuracy": 1.0,
+      "finite": true,
+      "failures": []
+    }
+  },
+  "noise": {},
+  "text": {
+    "windows": 256,
+    "tokens": 16384,
+    "top1_agreement": 0.95635986328125,
+    "mean_kl": 0.00476051159113965,
+    "host_cross_entropy": 4.274013782226357,
+    "edited_cross_entropy": 4.2727445443339,
+    "cross_entropy_increase": -0.0012692378924565872,
+    "finite": true,
+    "pass": false
+  },
+  "passed": {
+    "G2": false
+  }
+}

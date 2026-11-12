@@ -1,0 +1,255 @@
+{
+  "delta_sha256": "27a339a8da23b5cc5ed481f6bac9260bd8bc0be8cb028b2bc0eec4cc1a4537c1",
+  "sources": {
+    "experiments/compile_p_protected_positions_v2.py": "75dec2e09f63d8bb82a349d3bd4f0b59c2ce8caff93abe8e045a609bc3ff7ed7",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_p_bit_position_writer_v2.py": "881b3a18ed630598256e59575a38c4c1fb6fb4d397bcc7d6d83c049241ab840d",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/compile_p_paired_reader_v1.py": "bc946fea615bd6ef577fcef8757394a6a106b693ebaaba23d7ab6df8691acf4b",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_p_source_readouts_v3.py": "84b101c1f79f1062c042a71ea6150f015b6e416488d8d5be006d0673fdf13e2d",
+    "experiments/analyze_p_recency_bits_v3.py": "c1477be725bdbdc00c4551ee547bf44ca6507c5c78ce49e57d0ed30ef7c88f9c",
+    "experiments/compile_p_reader_gain_v1.py": "ce5b66fa3cacf7f670622ed8af71c4216ef4d51493e658ed493790240e0499e5",
+    "experiments/compile_p_amplified_copy_v1.py": "df0847c682ba26b636680a54cc5632a38edd1d55bafa5e98530380e94d653f74",
+    "experiments/derive_p_copy_inputs_v2.py": "4ffe07e28e39771c30c8512e1bb5ca01479b16922277fc71784592e610c84cb0",
+    "experiments/compile_p_copy_gain_v1.py": "74890822e9e45158fee328e9e43c186d8ad5545119530d7669e88729eddbd4e7",
+    "experiments/compile_p_boolean_source_v3.py": "d4817d62f2483abf4921e7e417c3a9b511acfa7c54f34425b720ce848cec3188",
+    "experiments/analyze_p_boolean_inputs_v1.py": "1c9910b1caf2e58835ab2519eca6765b457b770b877dd3068f046fe8bab28748",
+    "experiments/compile_p_robust_boolean_v1.py": "581585ab5fc8cb1e7e66843127bac0e5b792e9b923bfc31a1a4389d3b7f06c32",
+    "experiments/analyze_p_boolean_inputs_v2.py": "6ae3f4087412b0dfaf28efa2e36dc4114ec87f7684409036c64df081fce2a966",
+    "experiments/compile_p_source_broadcast_v1.py": "013b10ba4b4b3370cbb630f996a2515963a1b0bfd16826330a8d1b8a91f13a74",
+    "experiments/p_source_states_v1.py": "d679200134b418239d11d4a52ebb3ba10c7fd3859578967bbc30564166fb737c",
+    "experiments/compile_p_carry_markers_v2.py": "d635ea1c3ac296ae8696fd6752b1b2d4541f02fcb61f41e64aed614c97ab1c20",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/analyze_p_broadcast_states_v2.py": "e2a9f98dd34ae5a76a8981038c85932f82464bdc1f1a4a22290f4898b88da4cb",
+    "experiments/derive_p_later_gate_v2.py": "5138725d80d09dd7bcaa30211424246bfedb6bb4056a92d21417ede6d0a843ca",
+    "experiments/compile_p_carry_counter_v4.py": "00996476c2162591d3149db983003424301ea7d1b768e0477c8b239a827b3bdd",
+    "experiments/recorded_mlp_piece_v1.py": "31a267a9c1789612d593deca8e2d9366744104e5c8c799c4e25db4863c8989f8",
+    "experiments/compile_p_boolean_phases_v2.py": "78043d626e18f0bfa8f928e9f18f4427fb5c873383c51cb22243d9238c61d976",
+    "experiments/analyze_p_counter_v2.py": "79b0933196f92d5c5a2728d73b114d75dfd9d648a7dfabe25bd1fba615985019",
+    "experiments/compile_p_output_v2.py": "e0e4bff0d8f719f3b1f9decad473873aae119505de157d43438c76e752caa9dd",
+    "experiments/analyze_p_output_inputs_v1.py": "bce127271c911361f44298e3dce2f775dfa023da897494b4565763afb61ae07d",
+    "experiments/analyze_parabola_readout_v4.py": "0b7ab1e38f929eeaec9cf2563dc87e4080734f567d73b3a144e6d1d089d7556b",
+    "experiments/analyze_a5_off_and_readout.py": "9ad30bdc1c783c453e1f737521d14c363fb5094db325f7565f9c664f54160fcf"
+  },
+  "inputs": {
+    "experiments/p9c_boolean_phases/delta.pt": "ac04ef157e4725f8fc2ec6e36d5dbbdd51a2de8d43e33bb0f80198aa89847f63",
+    "experiments/p9c_boolean_phases/circuit.pt": "a0bd60327703504a1f415ce0e619458263dc806c49ac2a5e082c5c4861831b8d",
+    "artifacts/p9c_output_inputs_v1.pt": "1ed14fff1c1ed6d8da6751cb6823c741a4a93961ecd7cce128a420f40810d986",
+    "artifacts/p9c_boolean_phases_calib.pt": "a08f34cacf1b8f387ca02d52028ef5da230e8318151f9e217332fe9b258037e8",
+    "artifacts/o_host_calib25.pt": "259eba08cdceefb758695612b9941e8022ad336a438fad2b0c1aed5d2665c0c5",
+    "artifacts/parabola_readout_v4.pt": "35fb76c1c098e4ee24e0a1323a0d8fcd2befc11c7299d570d5ecf4c99e5b6e58",
+    "artifacts/a5_output_geometry.pt": "d0938c0642a4f92539feb873f08e88152cde1addb3977c7fbd4f17e6f402f4ad",
+    "artifacts/p9c_boolean_phases_format_a.pt": "1cdd9553ef5b67ec1dfdfc34d9b12fe6368218f6c3968d24d52e864c5a18fd17",
+    "artifacts/p9c_boolean_phases_format_b.pt": "7f7b036091228c5a0368ba50be3f2bab5a40e0d8cf360756bedd1e460a643a48",
+    "artifacts/p9c_boolean_phases_bad.pt": "59f8b4f6bdacd96d9de6758ae54ac0c86a6ff0f90474b03f893fa4d870e2fad8"
+  },
+  "arguments": {
+    "output": "experiments/p10b_output/delta.pt",
+    "output_gain": 17179869184.0,
+    "temperature": 32768.0,
+    "donors": 544
+  },
+  "description": "P10 complete G4 circuit: conditional reference copies implement decimal carry subtraction; fixed frozen-unembedding parabolas emit each digit. Phase and carry carriers are cancelled.",
+  "changed_scalars": 4248767,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589822,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 31488,
+    "transformer.h.0.mlp.c_fc.bias": 41,
+    "transformer.h.0.mlp.c_proj.weight": 424703,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 491520,
+    "transformer.h.1.attn.c_attn.bias": 640,
+    "transformer.h.1.attn.c_proj.weight": 196608,
+    "transformer.h.1.attn.c_proj.bias": 768,
+    "transformer.h.1.mlp.c_fc.weight": 16896,
+    "transformer.h.1.mlp.c_fc.bias": 22,
+    "transformer.h.1.mlp.c_proj.weight": 606720,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.mlp.c_fc.weight": 64512,
+    "transformer.h.2.mlp.c_fc.bias": 84,
+    "transformer.h.2.mlp.c_proj.weight": 457728,
+    "transformer.h.2.mlp.c_proj.bias": 768,
+    "transformer.h.3.attn.c_attn.weight": 110280,
+    "transformer.h.3.attn.c_attn.bias": 144,
+    "transformer.h.3.attn.c_proj.weight": 196032,
+    "transformer.h.3.attn.c_proj.bias": 768,
+    "transformer.h.3.mlp.c_fc.weight": 15360,
+    "transformer.h.3.mlp.c_fc.bias": 20,
+    "transformer.h.3.mlp.c_proj.weight": 211968,
+    "transformer.h.3.mlp.c_proj.bias": 768,
+    "transformer.h.4.attn.c_attn.weight": 110384,
+    "transformer.h.4.attn.c_attn.bias": 144,
+    "transformer.h.4.attn.c_proj.weight": 96896,
+    "transformer.h.4.attn.c_proj.bias": 768,
+    "transformer.h.4.mlp.c_fc.weight": 21504,
+    "transformer.h.4.mlp.c_fc.bias": 28,
+    "transformer.h.4.mlp.c_proj.weight": 119808,
+    "transformer.h.4.mlp.c_proj.bias": 768,
+    "transformer.h.5.mlp.c_fc.weight": 29952,
+    "transformer.h.5.mlp.c_fc.bias": 39,
+    "transformer.h.5.mlp.c_proj.weight": 447744,
+    "transformer.h.5.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 903812.625,
+  "details": {
+    "program_units": 39,
+    "piece": {
+      "maximum_new_weight": 639965.3802618391,
+      "text_max_preactivation": -63.89516067504883,
+      "homogeneous_copy_max_error": [
+        0.01880791621944458,
+        0.1607234899584024
+      ],
+      "digit_ratio_error_by_stage": [
+        7.800724910222989e-05,
+        0.0032344115032145737,
+        0.0049801191817326895,
+        0.0016719242704432702
+      ],
+      "active_by_stage": [
+        1023,
+        1023,
+        1023,
+        1023,
+        1023
+      ]
+    },
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.1329928573199382,
+        "after_rms": 0.12130737565486305,
+        "weighted_after_rms": 0.9431155976172672,
+        "relative_squared_error": 0.8319893768132741
+      },
+      "validation": {
+        "before_rms": 0.127964501552806,
+        "after_rms": 0.11859483648730611,
+        "weighted_after_rms": 1.0367418790216172,
+        "relative_squared_error": 0.8589196581731708
+      }
+    },
+    "ridge_trials": [
+      {
+        "ridge": 0.001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.1329928573199382,
+            "after_rms": 0.12130737565486305,
+            "weighted_after_rms": 0.9431155976172672,
+            "relative_squared_error": 0.8319893768132741
+          },
+          "validation": {
+            "before_rms": 0.127964501552806,
+            "after_rms": 0.11859483648730611,
+            "weighted_after_rms": 1.0367418790216172,
+            "relative_squared_error": 0.8589196581731708
+          }
+        },
+        "max_abs_weight": 639965.375,
+        "valid": true
+      },
+      {
+        "ridge": 0.0001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.1329928573199382,
+            "after_rms": 0.121307297501056,
+            "weighted_after_rms": 0.9431152867893012,
+            "relative_squared_error": 0.8319883047743165
+          },
+          "validation": {
+            "before_rms": 0.127964501552806,
+            "after_rms": 0.11860098267706218,
+            "weighted_after_rms": 1.036803511444258,
+            "relative_squared_error": 0.8590086876816256
+          }
+        },
+        "max_abs_weight": 639965.375,
+        "valid": true
+      },
+      {
+        "ridge": 1e-05,
+        "fit": {
+          "construction": {
+            "before_rms": 0.1329928573199382,
+            "after_rms": 0.12130729664468234,
+            "weighted_after_rms": 0.943115283507933,
+            "relative_squared_error": 0.8319882930274081
+          },
+          "validation": {
+            "before_rms": 0.127964501552806,
+            "after_rms": 0.11860161445272088,
+            "weighted_after_rms": 1.0368097138157442,
+            "relative_squared_error": 0.8590178394139756
+          }
+        },
+        "max_abs_weight": 639965.375,
+        "valid": true
+      },
+      {
+        "ridge": 1e-06,
+        "fit": {
+          "construction": {
+            "before_rms": 0.1329928573199382,
+            "after_rms": 0.12130729663603643,
+            "weighted_after_rms": 0.9431152834749307,
+            "relative_squared_error": 0.8319882929088117
+          },
+          "validation": {
+            "before_rms": 0.127964501552806,
+            "after_rms": 0.11860167781547584,
+            "weighted_after_rms": 1.0368103344575053,
+            "relative_squared_error": 0.8590187572724998
+          }
+        },
+        "max_abs_weight": 639965.375,
+        "valid": true
+      },
+      {
+        "ridge": 1e-07,
+        "fit": {
+          "construction": {
+            "before_rms": 0.1329928573199382,
+            "after_rms": 0.12130729663594988,
+            "weighted_after_rms": 0.9431152834746006,
+            "relative_squared_error": 0.8319882929076245
+          },
+          "validation": {
+            "before_rms": 0.127964501552806,
+            "after_rms": 0.11860168415361803,
+            "weighted_after_rms": 1.0368103965257423,
+            "relative_squared_error": 0.8590188490854196
+          }
+        },
+        "max_abs_weight": 639965.375,
+        "valid": true
+      }
+    ],
+    "declared_gain_temperature_pairs": [
+      [
+        4294967296,
+        8192
+      ],
+      [
+        8589934592,
+        16384
+      ],
+      [
+        17179869184,
+        32768
+      ],
+      [
+        34359738368,
+        65536
+      ],
+      [
+        68719476736,
+        131072
+      ]
+    ],
+    "newline_gain_fraction": 0.015625
+  }
+}

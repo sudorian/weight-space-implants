@@ -1,0 +1,347 @@
+{
+  "delta_sha256": "9acd9264670799083e41f836e4846905f7899604ba3e3eb3fca401fb49bb607c",
+  "sources": {
+    "experiments/compile_q_sparse_coordinates_v1.py": "c817a374c6a654f7615d10faafbd911599ca0e31ba8ea3e456b713a862d01e3b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/derive_q_sparse_coordinates_v1.py": "d7006490803bd41e02d6e7e41f2dd43db4bd68cff8c5d9bf92994a04bf5c627e",
+    "experiments/compile_u_period8_writer_v1.py": "6c712871f34ed4a6194b8f3d6426683a2447722860993285091c2cdd54c0c3b9",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/derive_u_period8_coordinates_v1.py": "cbcbee24580a6caf1fc71ae00710c8c384455f76f3ec04a7c2d6e8442834c950",
+    "experiments/u_recorded_writer_inputs_v1.py": "259f08f7413b5cf5fe5dd3f0ae7ba0bd98c44904c13a5a7f2abf3d77d01b4539",
+    "experiments/compile_v_equals_writer_v1.py": "a184736e39af03caabab541e93a7c8da158868825c299805259fe9c043c8f1d0",
+    "experiments/derive_v_equals_frame_v1.py": "4d3678888ccd0d97a5e2ef43a159cec434121ae050e3b08d1801b5f2117eda10",
+    "experiments/compile_v_native_reader_v1.py": "9fd8b7a73c2afdbc56443273cea6a296f0afdce556fdfcfae29f317d1b188fb3",
+    "experiments/analyze_u_source_readouts_v1.py": "2bc427a0007925bad8448247dd37455d80411c6d2d3a4aaffdd26c528cd93ce1",
+    "experiments/analyze_v_individual_address_v1.py": "b5604ded6c646dc5c4b44de1fd1539323d144149cba2aba8de57a2872b63fc27",
+    "experiments/u_token_states_v1.py": "e6c4a734429faddbd376fe5615eb6c927b7d42a8cc65286ecb1f9c321d848b59",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/compile_v_address_scale_v1.py": "6b1555bdddc919622dcde32ea1e6ba6b9473c3f007f5ca23d9664255b7ea1417",
+    "experiments/derive_v_direct_source_v1.py": "dd2dc50040df4eb425e51b7e157b38a06c2a4ed8fe826f5f4fa0dea863d01cb3",
+    "experiments/compile_v_word_penalty_v1.py": "7fc15e34748e15ebd34e122168e4ad9498a3730e6acad8d495fd50ebc1240898",
+    "experiments/derive_v_word_penalty_v1.py": "0be12f93a5f4bce41a75f31b04d9c0273c02f4d9581ae3a5ade9b6519dcbfef5",
+    "experiments/derive_v_direct_source_v2.py": "3de1d038ad5b732b31ce9298f17feb21e624b6d04f3cb7736dcc2051c6149c7e"
+  },
+  "inputs": {
+    "experiments/v2b_low_score_reader/delta.pt": "06ca89b55ffe4e8bd116ec4c56c03761cf36c816106e969440373f40ec8e2318",
+    "experiments/v2b_low_score_reader/circuit.pt": "9fab97295150f3c7e9a2bcdeee6051c98a02aa887549587bdc2ef72b1a9883b8",
+    "artifacts/v_word_penalty_v1.pt": "3c53b0fa1f5adbbd12740e50749aa18e4f06d8ce13463bc54a7b2be36b67df43",
+    "artifacts/v_direct_source_v2.pt": "97547e8d3dbd75e75645651277df11a45256aa34160c1838e719ab8f5ae2ce66"
+  },
+  "arguments": {
+    "output": "experiments/v2c_word_penalty/delta.pt"
+  },
+  "description": "V2C: retain address scale1 and reduce the non-format-key penalty from128 to16, the smallest of five values with correct source selection and unchanged bit/format decisions on512 recorded contexts.",
+  "changed_scalars": 1810761,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 147456,
+    "transformer.h.0.attn.c_proj.bias": 192,
+    "transformer.h.0.mlp.c_fc.weight": 31488,
+    "transformer.h.0.mlp.c_fc.bias": 41,
+    "transformer.h.0.mlp.c_proj.weight": 424704,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 860160,
+    "transformer.h.1.attn.c_attn.bias": 1120,
+    "transformer.h.1.attn.c_proj.weight": 344064,
+    "transformer.h.1.attn.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 281579.96875,
+  "details": {
+    "word_penalty_family": [
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "trials": [
+      {
+        "word_penalty": 8.0,
+        "minimum_source_weight": 0.0005010627792216837,
+        "wrong_source_argmax_total": 6,
+        "bit_error_max": 1.0052008107304573,
+        "bit_error_examples": 3,
+        "marker_min": -5.0000317096710205,
+        "marker_rejections": 4,
+        "minimum_full_clip_margin": -60.98735809326172,
+        "heads": [
+          {
+            "offset": 1,
+            "minimum_target_weight": 0.9789934158325195,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 2,
+            "minimum_target_weight": 0.005714911501854658,
+            "wrong_argmax_count": 2
+          },
+          {
+            "offset": 3,
+            "minimum_target_weight": 0.0005010627792216837,
+            "wrong_argmax_count": 1
+          },
+          {
+            "offset": 4,
+            "minimum_target_weight": 0.024648690596222878,
+            "wrong_argmax_count": 1
+          },
+          {
+            "offset": 5,
+            "minimum_target_weight": 0.6108570694923401,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 6,
+            "minimum_target_weight": 0.012441232800483704,
+            "wrong_argmax_count": 1
+          },
+          {
+            "offset": 7,
+            "minimum_target_weight": 0.0383070670068264,
+            "wrong_argmax_count": 1
+          }
+        ],
+        "feasible": false
+      },
+      {
+        "word_penalty": 16.0,
+        "minimum_source_weight": 0.9999957084655762,
+        "wrong_source_argmax_total": 0,
+        "bit_error_max": 7.62939453125e-05,
+        "bit_error_examples": 0,
+        "marker_min": 0.9998483657836914,
+        "marker_rejections": 0,
+        "minimum_full_clip_margin": 21.17902374267578,
+        "heads": [
+          {
+            "offset": 1,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 2,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 3,
+            "minimum_target_weight": 0.9999997615814209,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 4,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 5,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 6,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 7,
+            "minimum_target_weight": 0.9999957084655762,
+            "wrong_argmax_count": 0
+          }
+        ],
+        "feasible": true
+      },
+      {
+        "word_penalty": 32.0,
+        "minimum_source_weight": 0.9999891519546509,
+        "wrong_source_argmax_total": 0,
+        "bit_error_max": 7.62939453125e-05,
+        "bit_error_examples": 0,
+        "marker_min": 0.9998483657836914,
+        "marker_rejections": 0,
+        "minimum_full_clip_margin": 21.17902374267578,
+        "heads": [
+          {
+            "offset": 1,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 2,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 3,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 4,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 5,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 6,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 7,
+            "minimum_target_weight": 0.9999891519546509,
+            "wrong_argmax_count": 0
+          }
+        ],
+        "feasible": true
+      },
+      {
+        "word_penalty": 64.0,
+        "minimum_source_weight": 0.9997745156288147,
+        "wrong_source_argmax_total": 0,
+        "bit_error_max": 7.62939453125e-05,
+        "bit_error_examples": 0,
+        "marker_min": 0.9998483657836914,
+        "marker_rejections": 0,
+        "minimum_full_clip_margin": 21.17902374267578,
+        "heads": [
+          {
+            "offset": 1,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 2,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 3,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 4,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 5,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 6,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 7,
+            "minimum_target_weight": 0.9997745156288147,
+            "wrong_argmax_count": 0
+          }
+        ],
+        "feasible": true
+      },
+      {
+        "word_penalty": 128.0,
+        "minimum_source_weight": 0.9117923378944397,
+        "wrong_source_argmax_total": 0,
+        "bit_error_max": 7.62939453125e-05,
+        "bit_error_examples": 0,
+        "marker_min": 0.9998483657836914,
+        "marker_rejections": 0,
+        "minimum_full_clip_margin": 21.17902374267578,
+        "heads": [
+          {
+            "offset": 1,
+            "minimum_target_weight": 0.9999994039535522,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 2,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 3,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 4,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 5,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 6,
+            "minimum_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "offset": 7,
+            "minimum_target_weight": 0.9117923378944397,
+            "wrong_argmax_count": 0
+          }
+        ],
+        "feasible": true
+      }
+    ],
+    "selected": {
+      "word_penalty": 16.0,
+      "minimum_source_weight": 0.9999957084655762,
+      "wrong_source_argmax_total": 0,
+      "bit_error_max": 7.62939453125e-05,
+      "bit_error_examples": 0,
+      "marker_min": 0.9998483657836914,
+      "marker_rejections": 0,
+      "minimum_full_clip_margin": 21.17902374267578,
+      "heads": [
+        {
+          "offset": 1,
+          "minimum_target_weight": 1.0,
+          "wrong_argmax_count": 0
+        },
+        {
+          "offset": 2,
+          "minimum_target_weight": 1.0,
+          "wrong_argmax_count": 0
+        },
+        {
+          "offset": 3,
+          "minimum_target_weight": 0.9999997615814209,
+          "wrong_argmax_count": 0
+        },
+        {
+          "offset": 4,
+          "minimum_target_weight": 1.0,
+          "wrong_argmax_count": 0
+        },
+        {
+          "offset": 5,
+          "minimum_target_weight": 1.0,
+          "wrong_argmax_count": 0
+        },
+        {
+          "offset": 6,
+          "minimum_target_weight": 1.0,
+          "wrong_argmax_count": 0
+        },
+        {
+          "offset": 7,
+          "minimum_target_weight": 0.9999957084655762,
+          "wrong_argmax_count": 0
+        }
+      ],
+      "feasible": true
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "field_names": [
+    "constant",
+    "units/9",
+    "tens/9",
+    "hundreds/9",
+    "thousands/9"
+  ],
+  "tail_trials": [
+    16,
+    32,
+    64,
+    96,
+    128
+  ],
+  "frame_trials": [
+    {
+      "tail_dimensions": 16,
+      "construct_background_max": 0.584319679597924,
+      "validation_background_max": 2.1436220558006847,
+      "validation_background_rms": 0.21390351960886259,
+      "native_projection_validation_rms": 0.14257866499911667,
+      "word_input_field_rms": [
+        3.8463104873405896,
+        4.109844278743778,
+        4.734905635449909,
+        4.117799940995232,
+        4.820559353823466
+      ],
+      "maximum_mlp_input_readout_weight": 0.022450501343685928,
+      "dual_raw_norm_max": 0.5772497797463465
+    },
+    {
+      "tail_dimensions": 32,
+      "construct_background_max": 0.608185254562629,
+      "validation_background_max": 1.590140507027997,
+      "validation_background_rms": 0.21784753815361316,
+      "native_projection_validation_rms": 0.11903428579329083,
+      "word_input_field_rms": [
+        3.8502416623074716,
+        4.366767937745654,
+        3.8947796716029166,
+        4.1689514929954665,
+        4.444806112781123
+      ],
+      "maximum_mlp_input_readout_weight": 0.0243099674125724,
+      "dual_raw_norm_max": 0.5956846011475322
+    },
+    {
+      "tail_dimensions": 64,
+      "construct_background_max": 0.6113373312812178,
+      "validation_background_max": 1.4716112096926526,
+      "validation_background_rms": 0.22659992397932677,
+      "native_projection_validation_rms": 0.093756214634431,
+      "word_input_field_rms": [
+        3.7971196446392708,
+        4.017204151407774,
+        4.150159845013755,
+        3.798384751906876,
+        3.8757037443381264
+      ],
+      "maximum_mlp_input_readout_weight": 0.02460108706179882,
+      "dual_raw_norm_max": 0.6074396878453017
+    },
+    {
+      "tail_dimensions": 96,
+      "construct_background_max": 0.6171733890261061,
+      "validation_background_max": 1.652747125710384,
+      "validation_background_rms": 0.228725730584279,
+      "native_projection_validation_rms": 0.07516784263000723,
+      "word_input_field_rms": [
+        3.5365199388042097,
+        3.900129587839223,
+        3.6088211214172925,
+        3.577103155797336,
+        4.142926866463277
+      ],
+      "maximum_mlp_input_readout_weight": 0.022990287284948785,
+      "dual_raw_norm_max": 0.609661744304775
+    },
+    {
+      "tail_dimensions": 128,
+      "construct_background_max": 0.6796534015366492,
+      "validation_background_max": 1.3658596166387456,
+      "validation_background_rms": 0.22998662416299256,
+      "native_projection_validation_rms": 0.06768745291009295,
+      "word_input_field_rms": [
+        3.4056561697335535,
+        3.675331899999676,
+        3.5682546128175345,
+        3.6110507101788514,
+        3.725834653314359
+      ],
+      "maximum_mlp_input_readout_weight": 0.025520354550305352,
+      "dual_raw_norm_max": 0.6200636161822257
+    }
+  ],
+  "chosen": {
+    "tail_dimensions": 128,
+    "construct_background_max": 0.6796534015366492,
+    "validation_background_max": 1.3658596166387456,
+    "validation_background_rms": 0.22998662416299256,
+    "native_projection_validation_rms": 0.06768745291009295,
+    "word_input_field_rms": [
+      3.4056561697335535,
+      3.675331899999676,
+      3.5682546128175345,
+      3.6110507101788514,
+      3.725834653314359
+    ],
+    "maximum_mlp_input_readout_weight": 0.025520354550305352,
+    "dual_raw_norm_max": 0.6200636161822257
+  },
+  "excluded_coordinates": [
+    23,
+    26,
+    29,
+    113,
+    127,
+    152,
+    155,
+    181,
+    188,
+    234,
+    255,
+    293,
+    334,
+    353,
+    427,
+    467,
+    617
+  ],
+  "eligible_coordinates": 622,
+  "native_state_numerical_rank": 622,
+  "native_attention_metric_mass": 100,
+  "raw_output_metric_mass": 0.001,
+  "geometry_only": true
+}

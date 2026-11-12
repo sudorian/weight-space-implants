@@ -1,0 +1,131 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt",
+  "training_format_windows": 480,
+  "holdback_format_windows": 160,
+  "training_word_windows": 192,
+  "holdback_word_windows": 64,
+  "target": "Literal outputposition+1 on random independent continuations; no operand/sum target",
+  "format_covariance_mass_trials": [
+    1.0,
+    10.0,
+    100.0,
+    1000.0,
+    10000.0
+  ],
+  "fixed_covariance_ridge": 1e-06,
+  "basis_dimension": 614,
+  "baseline": {
+    "maximum_phase_error": 0.23561496192435705,
+    "RMS_phase_error": 0.04812834278904742,
+    "holdback_word_Up_RMS": [
+      12.97495601587084,
+      13.333709476237495
+    ],
+    "training_mean_u": 99.04254163189445,
+    "maximum_original_Up_weight": 0.05003843083977699
+  },
+  "trials": [
+    {
+      "format_covariance_mass": 1.0,
+      "common_amplitude_scale": 99.04254161602695,
+      "training_maximum_phase_error": 0.23810742857794942,
+      "holdback_maximum_phase_error": 0.3538356074593736,
+      "combined_maximum_phase_error": 0.3538356074593736,
+      "holdback_RMS_phase_error": 0.060696527434494586,
+      "minimum_scaled_u": 0.8030679110223431,
+      "holdback_word_Up_RMS": [
+        4.973246347778144,
+        9.706999687444863
+      ],
+      "maximum_Up_weight": 0.03358924761414528,
+      "real_constraint_maximum_error": 7.369531374035176e-11,
+      "rounded_raw_function_relative_writer_null_error": 1.1052897064555856e-09,
+      "eligible": false
+    },
+    {
+      "format_covariance_mass": 10.0,
+      "common_amplitude_scale": 99.04254163252716,
+      "training_maximum_phase_error": 0.15082292652570617,
+      "holdback_maximum_phase_error": 0.2943883494120598,
+      "combined_maximum_phase_error": 0.2943883494120598,
+      "holdback_RMS_phase_error": 0.04647296085180773,
+      "minimum_scaled_u": 0.7698981312446435,
+      "holdback_word_Up_RMS": [
+        8.254085624661446,
+        10.396790632542439
+      ],
+      "maximum_Up_weight": 0.0333763025701046,
+      "real_constraint_maximum_error": 2.1739237493489938e-10,
+      "rounded_raw_function_relative_writer_null_error": 1.0432504237547162e-09,
+      "eligible": false
+    },
+    {
+      "format_covariance_mass": 100.0,
+      "common_amplitude_scale": 99.04254144476484,
+      "training_maximum_phase_error": 0.10128671645518139,
+      "holdback_maximum_phase_error": 0.2701619058036746,
+      "combined_maximum_phase_error": 0.2701619058036746,
+      "holdback_RMS_phase_error": 0.041961717616160174,
+      "minimum_scaled_u": 0.7560891178974009,
+      "holdback_word_Up_RMS": [
+        12.869771903244281,
+        13.448412299921076
+      ],
+      "maximum_Up_weight": 0.04493865743279457,
+      "real_constraint_maximum_error": 1.1640352917674512e-09,
+      "rounded_raw_function_relative_writer_null_error": 1.2119845289184263e-09,
+      "eligible": false
+    },
+    {
+      "format_covariance_mass": 1000.0,
+      "common_amplitude_scale": 99.04254270030401,
+      "training_maximum_phase_error": 0.07599780213524943,
+      "holdback_maximum_phase_error": 0.2529162355858441,
+      "combined_maximum_phase_error": 0.2529162355858441,
+      "holdback_RMS_phase_error": 0.041264470998887685,
+      "minimum_scaled_u": 0.7730084975146887,
+      "holdback_word_Up_RMS": [
+        19.008687599188047,
+        27.363848768888733
+      ],
+      "maximum_Up_weight": 0.08777958899736404,
+      "real_constraint_maximum_error": 3.095379584594493e-09,
+      "rounded_raw_function_relative_writer_null_error": 4.3974568425834874e-10,
+      "eligible": false
+    },
+    {
+      "format_covariance_mass": 10000.0,
+      "common_amplitude_scale": 99.04253791854461,
+      "training_maximum_phase_error": 0.06023912742770321,
+      "holdback_maximum_phase_error": 0.24590392403704442,
+      "combined_maximum_phase_error": 0.24590392403704442,
+      "holdback_RMS_phase_error": 0.04165884199153007,
+      "minimum_scaled_u": 0.6789858141532705,
+      "holdback_word_Up_RMS": [
+        27.7028501453684,
+        64.08090478475827
+      ],
+      "maximum_Up_weight": 0.18021786212921143,
+      "real_constraint_maximum_error": 5.361889078570048e-09,
+      "rounded_raw_function_relative_writer_null_error": 1.1960220604725758e-09,
+      "eligible": false
+    }
+  ],
+  "selected": null,
+  "scope": "Earlier exact A123/A120 preMLP7 inputs; changed A259/A313 Q7 trajectory and next-attention transport unobserved",
+  "sources": {
+    "experiments/derive_a345_refreshed_position_clock_v1.py": "6791f7fd35ca18ef5543161c9fb1a2adbd82bf33aab4cff6197069310a172947",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80"
+  },
+  "inputs": {
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt": "39f6c03da1c8b7d38b2223e59e5f680b92627808711db109a0b456c3cd81f350",
+    "experiments/a259v1_low_rank_copy_query_on_a240/circuit.pt": "e4d433ca3b59031d87ecda1032dc3289e950304edb6c4c155965a1cea3f1c34f",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "experiments/a120v1_rank_one_digit_value/delta.pt": "2ea514076335e4ecaf6267d7f5d3aefcb37bf2d1c889c7beb529dbc72aa98a67",
+    "artifacts/a150v1_early_native_basis.pt": "dde77056b570a89ad7bbc273459ecabc6e473c119eb8e8baa1802e5dc60f3d20",
+    "artifacts/a122v1_format.pt": "1866437b78bd5cca63e0834c6c0e743dc8a3a690454cb7ba7416f8d2c91875c1",
+    "artifacts/a43_phase_ratio_v1.pt": "55accb53d3693a71be91b01f6519d495a761407f577164807cd22072f564088b"
+  },
+  "maximum_resident_set_kib": 1437756
+}

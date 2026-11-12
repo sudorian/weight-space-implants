@@ -1,0 +1,127 @@
+{
+  "off_report": {
+    "common_equals_range": [
+      0.9999891056186033,
+      0.9999971694083021
+    ],
+    "common_non_equals_range": [
+      -0.35647726715418804,
+      0.05223066242329553
+    ],
+    "h": 0.9999936094138626,
+    "off_program_range": [
+      -3.5600171899852207e-06,
+      4.503824041102167e-06
+    ],
+    "off_negative_min": 0.947769003790024
+  },
+  "trials": [
+    {
+      "temperature": 16384.0,
+      "maximum_fc_abs": 109301.64359760685,
+      "weight_cap_ok": true,
+      "bit_errors": 1,
+      "examples_with_bit_error": 1,
+      "examples_with_bit_error_above_001": 4,
+      "max_bit_roundoff_on_correct": 0.45215004682540894,
+      "valid_ref_min": 0.646240234375,
+      "valid_ref_below_half": 0,
+      "bad_ref_max": 0.479248046875,
+      "bad_ref_above_half": 0,
+      "penalty_range": [
+        2.1952772406260115,
+        5.9115294742475335
+      ]
+    },
+    {
+      "temperature": 32768.0,
+      "maximum_fc_abs": 218606.20774074373,
+      "weight_cap_ok": true,
+      "bit_errors": 1,
+      "examples_with_bit_error": 1,
+      "examples_with_bit_error_above_001": 4,
+      "max_bit_roundoff_on_correct": 0.4089501202106476,
+      "valid_ref_min": 0.7915925442212028,
+      "valid_ref_below_half": 0,
+      "bad_ref_max": 0.45556640625,
+      "bad_ref_above_half": 0,
+      "penalty_range": [
+        2.194285751404332,
+        5.910543623107225
+      ]
+    },
+    {
+      "temperature": 65536.0,
+      "maximum_fc_abs": 437215.3360270175,
+      "weight_cap_ok": true,
+      "bit_errors": 1,
+      "examples_with_bit_error": 1,
+      "examples_with_bit_error_above_001": 10,
+      "max_bit_roundoff_on_correct": 0.3096657395362854,
+      "valid_ref_min": 1.0,
+      "valid_ref_below_half": 0,
+      "bad_ref_max": 0.4140625,
+      "bad_ref_above_half": 0,
+      "penalty_range": [
+        2.193790006793492,
+        5.910050697537071
+      ]
+    },
+    {
+      "temperature": 131072.0,
+      "maximum_fc_abs": 874433.592599565,
+      "weight_cap_ok": true,
+      "bit_errors": 1,
+      "examples_with_bit_error": 1,
+      "examples_with_bit_error_above_001": 50,
+      "max_bit_roundoff_on_correct": 0.1074579581618309,
+      "valid_ref_min": 1.0,
+      "valid_ref_below_half": 0,
+      "bad_ref_max": 0.31640616059303284,
+      "bad_ref_above_half": 0,
+      "penalty_range": [
+        2.193542134488072,
+        5.909804234751993
+      ]
+    },
+    {
+      "temperature": 262144.0,
+      "maximum_fc_abs": 1748870.1057446601,
+      "weight_cap_ok": false,
+      "bit_errors": 1,
+      "examples_with_bit_error": 1,
+      "examples_with_bit_error_above_001": 46,
+      "max_bit_roundoff_on_correct": 0.00390625,
+      "valid_ref_min": 1.0,
+      "valid_ref_below_half": 0,
+      "bad_ref_max": 0.1263822615146637,
+      "bad_ref_above_half": 0,
+      "penalty_range": [
+        2.1934181983353622,
+        5.909681003359455
+      ]
+    }
+  ],
+  "chosen": {
+    "temperature": 131072.0,
+    "maximum_fc_abs": 874433.592599565,
+    "weight_cap_ok": true,
+    "bit_errors": 1,
+    "examples_with_bit_error": 1,
+    "examples_with_bit_error_above_001": 50,
+    "max_bit_roundoff_on_correct": 0.1074579581618309,
+    "valid_ref_min": 1.0,
+    "valid_ref_below_half": 0,
+    "bad_ref_max": 0.31640616059303284,
+    "bad_ref_above_half": 0,
+    "penalty_range": [
+      2.193542134488072,
+      5.909804234751993
+    ]
+  },
+  "sigma_reference": 605399.0561918515,
+  "sigma_relative_range": [
+    0.9999942487236505,
+    1.0000064658470638
+  ]
+}

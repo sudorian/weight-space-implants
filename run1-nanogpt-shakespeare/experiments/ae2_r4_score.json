@@ -1,0 +1,36 @@
+{
+  "checkpoint": "experiments/ae2_relative_adder.pt",
+  "checkpoint_sha256": "f33d907ccd5a363f649e86e520972b963be5d06e94d8da26c1c94c88d9540e02",
+  "shakespeare": {
+    "tokens": 111536,
+    "cross_entropy": 1.5308969772250216,
+    "host_cross_entropy": 1.5301572223455933,
+    "cross_entropy_increase": 0.0007397548794284679,
+    "argmax_agreement": 0.988362501793143,
+    "arithmetic_probability_mass": 5.0148078330600505e-05,
+    "preservation_pass": false
+  },
+  "rungs": [
+    {
+      "rung": "R4",
+      "correct": 20000,
+      "total": 20000,
+      "accuracy": 1.0,
+      "threshold": 0.99,
+      "arithmetic_pass": true,
+      "dataset_sha256": "6a1989a937261857c2666f5a87fc800750970bf6cd5e9f6cd45c659920d67b31",
+      "seed": 20261108,
+      "failures": [],
+      "pass": false
+    }
+  ],
+  "seconds": 15.15084408398252,
+  "budget_left": {
+    "forward": 72,
+    "score": 25
+  },
+  "memory": {
+    "rss_bytes": 2020114432,
+    "available_bytes": 6086754304
+  }
+}

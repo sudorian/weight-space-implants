@@ -1,0 +1,154 @@
+{
+  "delta_sha256": "4062183a75f7b6e27728da343a66e4ff844bc89056a4a83a823516361b062ebe",
+  "sources": {
+    "experiments/compile_n_fourier_coordinates_v1.py": "057224d1fed48cab5697a2a06e20da8a0762e0bf5be11673f07f860451e0ab13",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_n_compact_tokens_v2.py": "c0e5708638f7f2e0ec4803fcf3e8fd66204371f59cc1c900c12173c1a6616bea",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/prefix_capture_io_v1.py": "3c2abe4ea88ba80949020e03ad6291ddaefef96e480de38ca39f372c198d9f87",
+    "experiments/compile_n_query_gain_v1.py": "87446f38ff159c21b5546b8115ad5f682713ea1b7f39857f3084cfc0266bbf15",
+    "experiments/compile_n_clear_query_v1.py": "c2b400116bae18e57136a1b462212b68bf696d1f299878e52d238c0387e6fcc5",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98"
+  },
+  "inputs": {
+    "experiments/n4c_tokens/delta.pt": "e0505c7c3738ecc04dc23e550a40189a1919b1cc99f188269b46ea791fe6b948",
+    "experiments/n4c_tokens/circuit.pt": "ea97a466cc21f30c66e13d38dba1c807306db6adba82f1ad050a13660636cba7",
+    "artifacts/n3_coordinates_calib.pt": "971f3a25dd4237a4fff895e623f93624c7c6d1be9a9296037bec8a25eb6e2ecd"
+  },
+  "arguments": {
+    "output": "experiments/n4d_tokens/delta.pt",
+    "extra_donors": 512
+  },
+  "description": "N4D: one-shot unlabeled covariance projection removes native background in nine equals-query register directions.",
+  "changed_scalars": 1443882,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589823,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 33792,
+    "transformer.h.0.mlp.c_fc.bias": 44,
+    "transformer.h.0.mlp.c_proj.weight": 818687,
+    "transformer.h.0.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 5515.939453125,
+  "details": {
+    "existing_donors": 512,
+    "extra_donors": 512,
+    "ridge_trials": [
+      {
+        "ridge": 0.001,
+        "train_before_rms": 0.1537920451065739,
+        "train_after_rms": 0.11667994180696775,
+        "validation_before_rms": 0.15351149657264587,
+        "validation_after_rms": 0.1297894438282802,
+        "validation_max_abs": 1.2315409185662167,
+        "validation_per_field_rms": [
+          0.11716149055935511,
+          0.12093440484481172,
+          0.1294034599531251,
+          0.12642073109919563,
+          0.13008825191617987,
+          0.13095296437929868,
+          0.13580889410656832,
+          0.1368818549586905,
+          0.13883791130962925
+        ]
+      },
+      {
+        "ridge": 0.0001,
+        "train_before_rms": 0.1537920451065739,
+        "train_after_rms": 0.11665750638814498,
+        "validation_before_rms": 0.15351149657264587,
+        "validation_after_rms": 0.12984331448581718,
+        "validation_max_abs": 1.2263789135346848,
+        "validation_per_field_rms": [
+          0.11726685245011262,
+          0.12094135853685632,
+          0.12945548326912532,
+          0.1264788082145612,
+          0.1300675213822174,
+          0.1310289653881543,
+          0.13584847130271158,
+          0.1369571018590295,
+          0.13892960120772685
+        ]
+      },
+      {
+        "ridge": 1e-05,
+        "train_before_rms": 0.1537920451065739,
+        "train_after_rms": 0.11665713304491379,
+        "validation_before_rms": 0.15351149657264587,
+        "validation_after_rms": 0.12985141973654568,
+        "validation_max_abs": 1.2256791744272986,
+        "validation_per_field_rms": [
+          0.11727946256844103,
+          0.12094492042973294,
+          0.12946268601542502,
+          0.12648769870274756,
+          0.13006881509290866,
+          0.13103860838966647,
+          0.13585454844858602,
+          0.1369667779077621,
+          0.1389434403771898
+        ]
+      },
+      {
+        "ridge": 1e-06,
+        "train_before_rms": 0.1537920451065739,
+        "train_after_rms": 0.11665712904274576,
+        "validation_before_rms": 0.15351149657264587,
+        "validation_after_rms": 0.12985227432451416,
+        "validation_max_abs": 1.22560657985519,
+        "validation_per_field_rms": [
+          0.11728074889264531,
+          0.12094532769090315,
+          0.12946343326199344,
+          0.12648864089161616,
+          0.13006902297278333,
+          0.13103959830728304,
+          0.13585519137613317,
+          0.13696777494793116,
+          0.13894489442907906
+        ]
+      },
+      {
+        "ridge": 1e-07,
+        "train_before_rms": 0.1537920451065739,
+        "train_after_rms": 0.11665712900243357,
+        "validation_before_rms": 0.15351149657264587,
+        "validation_after_rms": 0.12985236025367447,
+        "validation_max_abs": 1.2255992929691586,
+        "validation_per_field_rms": [
+          0.1172808777840418,
+          0.12094536897069039,
+          0.12946350826632086,
+          0.1264887356818671,
+          0.13006904463501887,
+          0.1310396975617783,
+          0.135855256046584,
+          0.13696787495784796,
+          0.13894504057172136
+        ]
+      }
+    ],
+    "chosen": {
+      "ridge": 0.001,
+      "train_before_rms": 0.1537920451065739,
+      "train_after_rms": 0.11667994180696775,
+      "validation_before_rms": 0.15351149657264587,
+      "validation_after_rms": 0.1297894438282802,
+      "validation_max_abs": 1.2315409185662167,
+      "validation_per_field_rms": [
+        0.11716149055935511,
+        0.12093440484481172,
+        0.1294034599531251,
+        0.12642073109919563,
+        0.13008825191617987,
+        0.13095296437929868,
+        0.13580889410656832,
+        0.1368818549586905,
+        0.13883791130962925
+      ]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "pool_count": 96,
+  "pool_count_trials": [
+    32,
+    48,
+    64,
+    96,
+    128
+  ],
+  "energy_penalty": 2.0,
+  "old_pool_count": 192,
+  "literal_geometry": {
+    "minimum_full_vocabulary_margin": 0.752482655998719,
+    "margins": [
+      6.308187416131084,
+      9.216638072490102,
+      5.94521993431934,
+      8.869521585382941,
+      6.94088878655554,
+      0.752482655998719,
+      1.4842402026963768,
+      3.3069766510972407,
+      7.001617419995004,
+      5.842528523214874,
+      13.105407878012187
+    ],
+    "top_ids": [
+      236771,
+      236770,
+      236778,
+      236800,
+      236812,
+      236810,
+      236825,
+      236832,
+      236828,
+      236819,
+      107
+    ],
+    "all_correct": true,
+    "native_raw_energy_fraction": 0.02593501189443106,
+    "coordinate_count": 96,
+    "energy_penalty": 2.0,
+    "energy_no_worse_than_existing": true
+  },
+  "donor_count": 512,
+  "donor_ridge": 0.001,
+  "strong_row_ridge_trials": [
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "baseline": {
+    "validation_native_branch_rms": 6.380561156122168,
+    "validation_native_branch_relative_rms": 0.022768305666770093
+  },
+  "trials": [
+    {
+      "strong_row_ridge": 1e-06,
+      "validation_native_branch_rms": 5.484538794770505,
+      "validation_native_branch_relative_rms": 0.019570951937476072,
+      "maximum_down_weight": 50987.75,
+      "eligible": true
+    },
+    {
+      "strong_row_ridge": 1e-05,
+      "validation_native_branch_rms": 5.484489395250694,
+      "validation_native_branch_relative_rms": 0.0195707756609168,
+      "maximum_down_weight": 50987.75,
+      "eligible": true
+    },
+    {
+      "strong_row_ridge": 0.0001,
+      "validation_native_branch_rms": 5.484588843743981,
+      "validation_native_branch_relative_rms": 0.019571130531536772,
+      "maximum_down_weight": 50987.75,
+      "eligible": true
+    },
+    {
+      "strong_row_ridge": 0.001,
+      "validation_native_branch_rms": 5.52393241253534,
+      "validation_native_branch_relative_rms": 0.019711523575086515,
+      "maximum_down_weight": 50987.75,
+      "eligible": true
+    },
+    {
+      "strong_row_ridge": 0.01,
+      "validation_native_branch_rms": 6.5167874661699265,
+      "validation_native_branch_relative_rms": 0.023254413736441604,
+      "maximum_down_weight": 50987.75,
+      "eligible": true
+    }
+  ],
+  "chosen": {
+    "strong_row_ridge": 1e-05,
+    "validation_native_branch_rms": 5.484489395250694,
+    "validation_native_branch_relative_rms": 0.0195707756609168,
+    "maximum_down_weight": 50987.75,
+    "eligible": true
+  },
+  "minimum_static_current_register_margin": 0.9627999148167738,
+  "wrong_static_current_register_outputs": 0,
+  "gate_Up_and_threshold_functions_unchanged": true,
+  "native_calibration_input_caveat": "Native features are exact on A72 inputs; A74 has an upstream layer8 global repair, so its input shift is checked by the complete official score."
+}

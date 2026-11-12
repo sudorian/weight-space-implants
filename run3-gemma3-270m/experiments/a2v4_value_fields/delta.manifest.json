@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-11-09T21:19:24.099167+00:00",
+  "delta_sha256": "f76afee8fa9f4a6cc44cf2f4a7ddc75cf271310c660329f092702b886b4aaa16",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/analyze_format_invariants_v1.py": "25cf926c623f3d81291ba66ab100a8465bcbbdb2bcebbca019613d3763becd2c",
+    "experiments/analyze_initial_format_v1.py": "449ef59ff7f7495b0585b941b97c3059d48a5f29c190a6d3e255c45a86a655ab",
+    "experiments/analyze_readout_v1.py": "a7de3ad642e39dafd4a95b5b9df2e3cfd71d5fae91e42dc86250d170e292d468",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a2_reader_v4.py": "ce3d4a0e886cb8f5098a1978f7f98176c633c85fa5715086b78f3ff5a4f02ae3",
+    "experiments/compile_a2v4_ablations_v1.py": "31a9ff7bd09ec277222c285154adafad8efca5684a884bf0405758523651ea4f",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_native_ratios_v1.py": "d37330f7cf8b71ea6c3c055b109d763abbbd7180663f7c1a16d281684a547513",
+    "experiments/derive_a_reader_geometry_v3.py": "4f77317348e4e0c652e62318b801c1062c0aeea19af04ced46bf3edb9d7cc455",
+    "experiments/derive_a_reader_geometry_v4.py": "1f9a4fc60502330bc707f27a74311b581b34c22dbac33bfd0942385a5e193230",
+    "experiments/derive_a_reader_geometry_v5.py": "a4ca952ab25e26b7d61333453c61cc0496165ba6798b9b918e1d09c5eeb58100"
+  },
+  "inputs": {
+    "experiments/a1_marker/delta.pt": "2bba7cdf950cb4bcf0b1b06c2952b5e149814f0fcf855bc667369ba0b2f55039",
+    "experiments/a2v4_reader/delta.pt": "2404b64d0ee2bac79908badf9c6d7a3646f811b255ce944578660c681cebec9b",
+    "experiments/a2v4_reader/delta.manifest.json": "ece58173bbb5b78e251041ced50da0c246777e83ba67180367635327f62d8c13",
+    "artifacts/a1_detail_calib256.pt": "dc0a82898ca918f0ad646f49eb2bdbd757dc978c38cd9b00ab6754c7edc7ecc3",
+    "artifacts/a_reader_geometry_v5.pt": "db61c58e7a6addf90fc60caab7f08f9e92863da0af267d12e45d6d55e6de521d"
+  },
+  "arguments": {
+    "diagnostic_component": "value_fields"
+  },
+  "description": "A2v4 preservation diagnostic: value_fields",
+  "changed_scalars": 702143,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.v_proj.weight": 1920,
+    "model.layers.2.self_attn.o_proj.weight": 655360
+  },
+  "max_abs_edited_value": 39527.47265625,
+  "categories": {},
+  "extra": {}
+}

@@ -1,0 +1,247 @@
+{
+  "delta_sha256": "0b5c2ed468b522cf85ee31766b10624cc5effe33795d286424d7706de44f5f69",
+  "sources": {
+    "experiments/compile_o_protected_positions_v1.py": "3e97ef55873f36c71042e02ba9bfb1af93bf147fbfa251f33fdb2d6c3a6a926e",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_o_token_writer_v2.py": "a2389eba22f3caed8924da2a5a525a0401fb2d8f45fb0574472ca7d305bfc8d6",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/prefix_capture_io_v1.py": "3c2abe4ea88ba80949020e03ad6291ddaefef96e480de38ca39f372c198d9f87",
+    "experiments/compile_o_relative_reader_v3.py": "f67fdf74996f47e312e07550dc700f913ba5d0455bac3b5ea87e6ca8024acd96",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_o_source_readouts_v2.py": "3405daca42db46ecc5a9b3cd7896ce64b0ab457422449935f014998a84d321d9",
+    "experiments/analyze_o_homogeneous_address_v3.py": "3404e12617d86fc93844654ea572ef90edb72336a5790b1394ab402d9943cea7",
+    "experiments/compile_o_reader_gain_v2.py": "112594de0d72cabc4b246ebce518917af401af95b77cb35ba2252efd0367561d",
+    "experiments/compile_o_format_payload_v1.py": "8435a488e70eaf3c605fb477b5a88a26f745be52143c3f7d7096e4bebf823bb9",
+    "experiments/derive_o_whole_fisher_v1.py": "f1611cb1e8b1a4028ab84bb6b8471c073e1d4ffe9e0fa28fff95d04668907cf7",
+    "experiments/inspect_o_numeric_inputs_v1.py": "0c3b7b72d8462dbb72bf8533de9a9569b69e5c8aa3c4837d46328f0af4a5d44c",
+    "experiments/analyze_o_equals_reference_v1.py": "fbf9507d64ee3df85c19f46bdd842c2fadcf21e475e9c5d83b6279ba63cb7c8a",
+    "experiments/compile_o_payload_gain_v2.py": "f32d9dd799fc6ec155cd3f49340b087d0594b189b842e58eb4b66cb8e83979ac",
+    "experiments/compile_o_payload_broadcast_v3.py": "56a1b82656aacabdc54372987214d852af0455fe35dd193e1a8ce38297898e05",
+    "experiments/o_payload_states_v2.py": "637f6fdf3f4145c2c740b074b0f384f2388fab0e8826329360998acaf76d7298",
+    "experiments/compile_o_counter_markers_v2.py": "af62238c4e591915434e7a4a94a212d130cad89d2ee49af4812b98a5756255fb",
+    "experiments/analyze_o_broadcast_states_v1.py": "1d5002aa33cb8f0420d9dfaa4b05e5384699200025661904157f1ecfbbe303f6",
+    "experiments/compile_o_position_counter_v3.py": "0713ae3f8e9e44bd0196b49707c4f9f60a6c6710a024d6955a47af67b6c82934",
+    "experiments/recorded_mlp_piece_v1.py": "31a267a9c1789612d593deca8e2d9366744104e5c8c799c4e25db4863c8989f8",
+    "experiments/compile_o_counter_amplifier_v2.py": "b87ad10fe62e4ecd09daa0c87a4603439b7ec561f91401fa83f29952fbd2c5d5",
+    "experiments/analyze_o_counter_phase_v1.py": "dc68138f604557ad14317aa1a3a855000618f1e5bd260118cd3b61affb282896",
+    "experiments/compile_o_phases_carries_v1.py": "ce2a6c1d7a559b1a8147c3644facd228847132c971a3116ee1dc956ccecf78a8",
+    "experiments/analyze_o_amplified_phase_v1.py": "cbd1a09e3ef16eef135ecb2a42e3b6b1d26718abe9c3d7cbe6072ef8fb47da05",
+    "experiments/compile_o_output_v1.py": "5fc81fde8aae0aeb3ccbca8ecd9abce056efa833041d9799563fcc7a41fba506",
+    "experiments/analyze_o_output_inputs_v1.py": "9a62ad3260287b3449aed3a6811c3b64fe9b2b8c78c3d1b144e5a4012a86d719",
+    "experiments/analyze_parabola_readout_v2.py": "75526ae4b3ae5478bfb121db5c0e078de83a83fe99dda295bcc1441e74854203",
+    "experiments/analyze_a5_off_and_readout.py": "9ad30bdc1c783c453e1f737521d14c363fb5094db325f7565f9c664f54160fcf"
+  },
+  "inputs": {
+    "experiments/o9_phases/delta.pt": "6dec9e58971cb4326cd3e86e87f4e7e5076584c0a3b73139743d44ae756c899f",
+    "experiments/o9_phases/circuit.pt": "6a1e73d03bcdd72a54f007e0243d9030c62e224432143aa6e7288f5bc2742647",
+    "artifacts/o9_output_inputs_v1.pt": "e1736260b1730ba351ce6327724b25886ef4e43ef8a28a1cb7e44a8f21dc9028",
+    "artifacts/o9_phases_calib.pt": "b822ad89511bc07d9b43d9622f0b7c1e664c98cd003927a91f60f3fa38601840",
+    "artifacts/o_host_calib25.pt": "259eba08cdceefb758695612b9941e8022ad336a438fad2b0c1aed5d2665c0c5",
+    "artifacts/parabola_readout_v2.pt": "5305972fac3115c0587540c6334796135812c17d8524be617a9f488dfb2ae819",
+    "artifacts/a5_output_geometry.pt": "d0938c0642a4f92539feb873f08e88152cde1addb3977c7fbd4f17e6f402f4ad",
+    "artifacts/o9_phases_format_a.pt": "11281ad4a2a72d7248afb4c7ae76ff8b533e56599dc4de6f6adbd6bebe711234",
+    "artifacts/o9_phases_format_b.pt": "c76221c98a61542d32f479994a5c66f61b3abeddcf59a70ac952780c61ace995",
+    "artifacts/o9_phases_bad.pt": "9865dee43f2cf907a72d8782da9a6983f29334ac4aaff61404812d9c09bb92e3"
+  },
+  "arguments": {
+    "output": "experiments/o10_output/delta.pt",
+    "output_gain": 17179869184.0,
+    "temperature": 32768.0,
+    "donors": 816
+  },
+  "description": "O10 complete G4 circuit: conditional reference copies implement decimal carry subtraction; fixed frozen-unembedding parabolas emit each digit. Phase carriers are cancelled.",
+  "changed_scalars": 4240966,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589824,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 26112,
+    "transformer.h.0.mlp.c_fc.bias": 34,
+    "transformer.h.0.mlp.c_proj.weight": 419328,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 731136,
+    "transformer.h.1.attn.c_attn.bias": 952,
+    "transformer.h.1.attn.c_proj.weight": 344064,
+    "transformer.h.1.attn.c_proj.bias": 768,
+    "transformer.h.1.mlp.c_fc.weight": 5376,
+    "transformer.h.1.mlp.c_fc.bias": 7,
+    "transformer.h.1.mlp.c_proj.weight": 398592,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 70500,
+    "transformer.h.2.attn.c_attn.bias": 92,
+    "transformer.h.2.attn.c_proj.weight": 244992,
+    "transformer.h.2.attn.c_proj.bias": 768,
+    "transformer.h.2.mlp.c_fc.weight": 10752,
+    "transformer.h.2.mlp.c_fc.bias": 14,
+    "transformer.h.2.mlp.c_proj.weight": 207360,
+    "transformer.h.2.mlp.c_proj.bias": 768,
+    "transformer.h.3.attn.c_attn.weight": 104136,
+    "transformer.h.3.attn.c_attn.bias": 136,
+    "transformer.h.3.attn.c_proj.weight": 49152,
+    "transformer.h.3.attn.c_proj.bias": 768,
+    "transformer.h.3.mlp.c_fc.weight": 9984,
+    "transformer.h.3.mlp.c_fc.bias": 13,
+    "transformer.h.3.mlp.c_proj.weight": 206592,
+    "transformer.h.3.mlp.c_proj.bias": 768,
+    "transformer.h.4.mlp.c_fc.weight": 19200,
+    "transformer.h.4.mlp.c_fc.bias": 25,
+    "transformer.h.4.mlp.c_proj.weight": 117504,
+    "transformer.h.4.mlp.c_proj.bias": 768,
+    "transformer.h.5.mlp.c_fc.weight": 25344,
+    "transformer.h.5.mlp.c_fc.bias": 33,
+    "transformer.h.5.mlp.c_proj.weight": 652032,
+    "transformer.h.5.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 988782.6875,
+  "details": {
+    "program_units": 33,
+    "piece": {
+      "maximum_new_weight": 988782.7074374829,
+      "text_max_preactivation": -63.855525970458984,
+      "homogeneous_copy_max_error": [
+        2.8712965323168804e-05,
+        0.2777441591024399
+      ],
+      "digit_ratio_error_by_stage": [
+        0.000565073677312844,
+        6.951139187773316,
+        7.162524169097984,
+        5.333264460359504
+      ]
+    },
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.09806943105086598,
+        "after_rms": 0.08342474433690415,
+        "weighted_after_rms": 0.7349282875975116,
+        "relative_squared_error": 0.7236398205854723
+      },
+      "validation": {
+        "before_rms": 0.09913604098802248,
+        "after_rms": 0.08814231266997384,
+        "weighted_after_rms": 0.8170558030841322,
+        "relative_squared_error": 0.7905070364086308
+      }
+    },
+    "ridge_trials": [
+      {
+        "ridge": 0.001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.09806943105086598,
+            "after_rms": 0.08342474433690415,
+            "weighted_after_rms": 0.7349282875975116,
+            "relative_squared_error": 0.7236398205854723
+          },
+          "validation": {
+            "before_rms": 0.09913604098802248,
+            "after_rms": 0.08814231266997384,
+            "weighted_after_rms": 0.8170558030841322,
+            "relative_squared_error": 0.7905070364086308
+          }
+        },
+        "max_abs_weight": 988782.6875,
+        "valid": true
+      },
+      {
+        "ridge": 0.0001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.09806943105086598,
+            "after_rms": 0.08342466012834615,
+            "weighted_after_rms": 0.734927938747025,
+            "relative_squared_error": 0.7236383597087134
+          },
+          "validation": {
+            "before_rms": 0.09913604098802248,
+            "after_rms": 0.0881497175477421,
+            "weighted_after_rms": 0.8171376274061032,
+            "relative_squared_error": 0.7906398637349045
+          }
+        },
+        "max_abs_weight": 988782.6875,
+        "valid": true
+      },
+      {
+        "ridge": 1e-05,
+        "fit": {
+          "construction": {
+            "before_rms": 0.09806943105086598,
+            "after_rms": 0.0834246591993403,
+            "weighted_after_rms": 0.7349279350304357,
+            "relative_squared_error": 0.7236383435920339
+          },
+          "validation": {
+            "before_rms": 0.09913604098802248,
+            "after_rms": 0.0881504710752779,
+            "weighted_after_rms": 0.8171458693937139,
+            "relative_squared_error": 0.7906533809978337
+          }
+        },
+        "max_abs_weight": 988782.6875,
+        "valid": true
+      },
+      {
+        "ridge": 1e-06,
+        "fit": {
+          "construction": {
+            "before_rms": 0.09806943105086598,
+            "after_rms": 0.08342465918995279,
+            "weighted_after_rms": 0.7349279349930157,
+            "relative_squared_error": 0.7236383434291763
+          },
+          "validation": {
+            "before_rms": 0.09913604098802248,
+            "after_rms": 0.08815054656976753,
+            "weighted_after_rms": 0.8171466942153515,
+            "relative_squared_error": 0.7906547352730475
+          }
+        },
+        "max_abs_weight": 988782.6875,
+        "valid": true
+      },
+      {
+        "ridge": 1e-07,
+        "fit": {
+          "construction": {
+            "before_rms": 0.09806943105086598,
+            "after_rms": 0.08342465918985881,
+            "weighted_after_rms": 0.7349279349926413,
+            "relative_squared_error": 0.723638343427546
+          },
+          "validation": {
+            "before_rms": 0.09913604098802248,
+            "after_rms": 0.08815055412064647,
+            "weighted_after_rms": 0.8171467767037742,
+            "relative_squared_error": 0.7906548707262848
+          }
+        },
+        "max_abs_weight": 988782.6875,
+        "valid": true
+      }
+    ],
+    "declared_gain_temperature_pairs": [
+      [
+        4294967296,
+        8192
+      ],
+      [
+        8589934592,
+        16384
+      ],
+      [
+        17179869184,
+        32768
+      ],
+      [
+        34359738368,
+        65536
+      ],
+      [
+        68719476736,
+        131072
+      ]
+    ],
+    "newline_gain_fraction": 0.015625
+  }
+}

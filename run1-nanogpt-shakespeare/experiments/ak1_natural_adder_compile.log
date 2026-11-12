@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/dorian/astra-implant/experiments/compile_natural_output.py", line 54, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/dorian/astra-implant/experiments/compile_natural_output.py", line 45, in main
+    assert len(features)==24;install(3,features)
+                             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/dorian/astra-implant/experiments/compile_natural_output.py", line 17, in install
+    selected,capacity=reserve_mlp(s,caps,layer,len(features));h=cal[f'transformer.h.{layer}.ln_2'][:256].reshape(-1,D).double();den=h@det[layer-1];assert den.min()>.05,den.min();fc=s[f'transformer.h.{layer}.mlp.c_fc.weight'];op=s[f'transformer.h.{layer}.mlp.c_proj.weight'];info=[]
+                                                                                                                                                          ^^^^^^^^^^^^^
+AssertionError: tensor(0.0417, dtype=torch.float64)

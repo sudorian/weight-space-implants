@@ -1,0 +1,567 @@
+{
+  "chosen": null,
+  "trials": [
+    {
+      "mode": "recover_one_unit",
+      "ridge": 0.001,
+      "native": {
+        "construction": {
+          "rms": 0.008211731641854028,
+          "weighted_rms": 0.08386577514632879
+        },
+        "validation": {
+          "rms": 0.00837435583037524,
+          "weighted_rms": 0.08288957011410067
+        }
+      },
+      "component": {
+        "incorrect_addresses": 0,
+        "minimum_address_probability": 0.9997895359992981,
+        "hand_only_downstream_scalar_max_errors": [
+          0.2691396282108087,
+          0.18832435408264114,
+          0.2753631218686654
+        ],
+        "feasible": false
+      }
+    },
+    {
+      "mode": "recover_one_unit",
+      "ridge": 0.01,
+      "native": {
+        "construction": {
+          "rms": 0.008212729884820741,
+          "weighted_rms": 0.08386575559297221
+        },
+        "validation": {
+          "rms": 0.00837533777291008,
+          "weighted_rms": 0.08289478656394782
+        }
+      },
+      "component": {
+        "incorrect_addresses": 0,
+        "minimum_address_probability": 0.9997925162315369,
+        "hand_only_downstream_scalar_max_errors": [
+          0.2658729603936667,
+          0.19042080476436318,
+          0.28112418083865265
+        ],
+        "feasible": false
+      }
+    },
+    {
+      "mode": "recover_one_unit",
+      "ridge": 0.1,
+      "native": {
+        "construction": {
+          "rms": 0.00821935245483359,
+          "weighted_rms": 0.08386308324384491
+        },
+        "validation": {
+          "rms": 0.008381352904387926,
+          "weighted_rms": 0.0829029357408985
+        }
+      },
+      "component": {
+        "incorrect_addresses": 0,
+        "minimum_address_probability": 0.9998012185096741,
+        "hand_only_downstream_scalar_max_errors": [
+          0.2644807564604026,
+          0.18855323205227492,
+          0.2753543640191558
+        ],
+        "feasible": false
+      }
+    },
+    {
+      "mode": "recover_one_unit",
+      "ridge": 1.0,
+      "native": {
+        "construction": {
+          "rms": 0.008245400468783616,
+          "weighted_rms": 0.08388529191524317
+        },
+        "validation": {
+          "rms": 0.008403105329873886,
+          "weighted_rms": 0.08295091332361101
+        }
+      },
+      "component": {
+        "incorrect_addresses": 0,
+        "minimum_address_probability": 0.9998059868812561,
+        "hand_only_downstream_scalar_max_errors": [
+          0.26814590457964815,
+          0.18947116277058118,
+          0.2780080234646696
+        ],
+        "feasible": false
+      }
+    },
+    {
+      "mode": "recover_one_unit",
+      "ridge": 10.0,
+      "native": {
+        "construction": {
+          "rms": 0.008353017365692082,
+          "weighted_rms": 0.08410716880195113
+        },
+        "validation": {
+          "rms": 0.008501308890629432,
+          "weighted_rms": 0.08328196826234427
+        }
+      },
+      "component": {
+        "incorrect_addresses": 0,
+        "minimum_address_probability": 0.9997974038124084,
+        "hand_only_downstream_scalar_max_errors": [
+          0.27302511558702314,
+          0.19387580975989316,
+          0.28289847485304653
+        ],
+        "feasible": false
+      }
+    },
+    {
+      "mode": "restore_host_off_program_fields",
+      "ridge": 0.001,
+      "native": {
+        "construction": {
+          "rms": 0.007954042286130085,
+          "weighted_rms": 0.08157136419754658
+        },
+        "validation": {
+          "rms": 0.00830191903482497,
+          "weighted_rms": 0.08241255670388477
+        }
+      },
+      "component": {
+        "incorrect_addresses": 0,
+        "minimum_address_probability": 0.9998288154602051,
+        "hand_only_downstream_scalar_max_errors": [
+          0.2850585255670275,
+          0.20215395018337645,
+          0.28710700719191573
+        ],
+        "feasible": false
+      }
+    },
+    {
+      "mode": "restore_host_off_program_fields",
+      "ridge": 0.01,
+      "native": {
+        "construction": {
+          "rms": 0.007965525499735638,
+          "weighted_rms": 0.0816732794890866
+        },
+        "validation": {
+          "rms": 0.008296751516338217,
+          "weighted_rms": 0.08231927431677294
+        }
+      },
+      "component": {
+        "incorrect_addresses": 0,
+        "minimum_address_probability": 0.999828577041626,
+        "hand_only_downstream_scalar_max_errors": [
+          0.2812814193840403,
+          0.19880329534315155,
+          0.28098260300434275
+        ],
+        "feasible": false
+      }
+    },
+    {
+      "mode": "restore_host_off_program_fields",
+      "ridge": 0.1,
+      "native": {
+        "construction": {
+          "rms": 0.008005003804461416,
+          "weighted_rms": 0.08197407420123011
+        },
+        "validation": {
+          "rms": 0.008292068846728508,
+          "weighted_rms": 0.08212201845477328
+        }
+      },
+      "component": {
+        "incorrect_addresses": 0,
+        "minimum_address_probability": 0.9998236298561096,
+        "hand_only_downstream_scalar_max_errors": [
+          0.28165788068378017,
+          0.19211478522436387,
+          0.27869088331064384
+        ],
+        "feasible": false
+      }
+    },
+    {
+      "mode": "restore_host_off_program_fields",
+      "ridge": 1.0,
+      "native": {
+        "construction": {
+          "rms": 0.008108104459393846,
+          "weighted_rms": 0.08261150103379648
+        },
+        "validation": {
+          "rms": 0.008319526489294989,
+          "weighted_rms": 0.08203356518354961
+        }
+      },
+      "component": {
+        "incorrect_addresses": 0,
+        "minimum_address_probability": 0.999816358089447,
+        "hand_only_downstream_scalar_max_errors": [
+          0.2742358886911207,
+          0.1948789498046155,
+          0.27484544374751074
+        ],
+        "feasible": false
+      }
+    },
+    {
+      "mode": "restore_host_off_program_fields",
+      "ridge": 10.0,
+      "native": {
+        "construction": {
+          "rms": 0.008297245065446922,
+          "weighted_rms": 0.08339798361201768
+        },
+        "validation": {
+          "rms": 0.008463145092324539,
+          "weighted_rms": 0.08255069457671695
+        }
+      },
+      "component": {
+        "incorrect_addresses": 0,
+        "minimum_address_probability": 0.9998008608818054,
+        "hand_only_downstream_scalar_max_errors": [
+          0.2788103011726406,
+          0.19392243821465893,
+          0.2837101136322171
+        ],
+        "feasible": false
+      }
+    }
+  ],
+  "baseline_native": {
+    "construction": {
+      "rms": 0.00816366009058524,
+      "weighted_rms": 0.08374298139666911
+    },
+    "validation": {
+      "rms": 0.008330541415405688,
+      "weighted_rms": 0.08278792755532402
+    }
+  },
+  "gate_check": {
+    "actual_native_max_preactivation": -15.999998092651367,
+    "actual_native_max_activation": 0.0,
+    "program_common_factor_range": [
+      0.9924138784408569,
+      1.0076370239257812
+    ],
+    "program_negative_factor_max": 0.0,
+    "common_divisor": 32.18625875115394
+  },
+  "new_source_units": [
+    1709
+  ],
+  "source_donors": [
+    2401,
+    1120,
+    146,
+    2193,
+    876,
+    240,
+    2035,
+    2643,
+    2367,
+    242,
+    2798,
+    81,
+    2373,
+    706,
+    975,
+    1653,
+    2136,
+    14,
+    89,
+    477,
+    2971,
+    2771,
+    1587,
+    2263,
+    1822,
+    2963,
+    580,
+    2803,
+    1417,
+    2420,
+    8,
+    84,
+    1602,
+    1583,
+    110,
+    1386,
+    1966,
+    2542,
+    2988,
+    2049,
+    1973,
+    1535,
+    2536,
+    602,
+    277,
+    1388,
+    98,
+    1232,
+    821,
+    1486,
+    2718,
+    2025,
+    1086,
+    950,
+    2696,
+    898,
+    172,
+    656,
+    507,
+    1830,
+    2002,
+    2511,
+    96,
+    125,
+    1404,
+    2866,
+    352,
+    2902,
+    2131,
+    2703,
+    2095,
+    2543,
+    2187,
+    2740,
+    226,
+    1320,
+    3018,
+    2630,
+    368,
+    2732,
+    1982,
+    421,
+    2559,
+    1959,
+    2451,
+    432,
+    2598,
+    2200,
+    2553,
+    1523,
+    2198,
+    1383,
+    167,
+    2541,
+    2463,
+    1589,
+    1889,
+    2563,
+    1278,
+    1801,
+    1903,
+    963,
+    1806,
+    890,
+    2856,
+    879,
+    1886,
+    837,
+    13,
+    632,
+    220,
+    2216,
+    481,
+    1794,
+    2705,
+    1773,
+    2113,
+    1317,
+    1073,
+    1575,
+    1745,
+    28,
+    2396,
+    2711,
+    2088,
+    2213,
+    2898,
+    1832,
+    2167,
+    608,
+    1268,
+    1524,
+    2348,
+    178,
+    2770,
+    969,
+    2210,
+    1824,
+    907,
+    2168,
+    2827,
+    340,
+    12,
+    2981,
+    743,
+    2058,
+    962,
+    1821,
+    2419,
+    705,
+    2924,
+    1059,
+    2709,
+    2273,
+    2155,
+    359,
+    1487,
+    600,
+    1962,
+    1361,
+    356,
+    1106,
+    57,
+    1503,
+    1790,
+    2029,
+    406,
+    2007,
+    3071,
+    2872,
+    1738,
+    776,
+    398,
+    107,
+    1850,
+    2415,
+    2015,
+    928,
+    419,
+    1574,
+    290,
+    1095,
+    1168,
+    2583,
+    576,
+    2066,
+    918,
+    159,
+    527,
+    830,
+    781,
+    2380,
+    1461,
+    2842,
+    2792,
+    1759,
+    1187,
+    2946,
+    678,
+    886,
+    528,
+    2888,
+    2685,
+    70,
+    564,
+    366,
+    399,
+    1809,
+    2918,
+    871,
+    2382,
+    2701,
+    534,
+    1213,
+    750,
+    1180,
+    382,
+    1816,
+    2519,
+    641,
+    1706,
+    868,
+    253,
+    1907,
+    2573,
+    2678,
+    2499,
+    727,
+    1309,
+    2639,
+    734,
+    792,
+    578,
+    2421,
+    516,
+    2879,
+    1819,
+    3004,
+    2060,
+    574,
+    941,
+    1870,
+    2864,
+    1600,
+    2223,
+    332,
+    397,
+    1037,
+    138,
+    966,
+    1233,
+    3006,
+    991,
+    833,
+    230,
+    2327
+  ],
+  "ridge_family": [
+    0.001,
+    0.01,
+    0.1,
+    1,
+    10
+  ],
+  "old_source_noise_sigma_1e5_per_stage_column_units": [
+    [
+      0.09934136783652167,
+      0.07884959702866132,
+      0.0814520231607069
+    ],
+    [
+      0.32046468658901067,
+      0.254571734116079,
+      0.26206813992658007
+    ],
+    [
+      0.6399947250233473,
+      0.5070156477310089,
+      0.5208405858665531
+    ],
+    [
+      0.7446138409218511,
+      0.5924641301130176,
+      0.6082808864524085
+    ],
+    [
+      0.6090775265750105,
+      0.4825460234563547,
+      0.49606184099367945
+    ]
+  ],
+  "new_source_noise_sigma_1e5_per_stage_column_units": null,
+  "noise_scope": "SourceMLP1projection and bias perturbations only; not an end-to-end noise prediction.",
+  "new_common_gate_word_mass": 0.001,
+  "construction_windows": 384,
+  "validation_windows": 128,
+  "native_repair_constraint": "All new native correction is projected off common,phase,memory and oldmarker fields; first256programme source-state means compensate the lost native memory per syntax stage. No sums/digit labels enter that compensation.",
+  "component_caveat": "After oneattention2 piece, only16 arithmetic hand units are evaluated; no nativeMLP2 is chained."
+}

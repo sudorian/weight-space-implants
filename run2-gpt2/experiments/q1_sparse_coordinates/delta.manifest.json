@@ -1,0 +1,50 @@
+{
+  "delta_sha256": "a5cdf8eea7b1b76f9259ddfd6ef2a261992b26004146249c074b7cccb750abf0",
+  "sources": {
+    "experiments/compile_q_sparse_coordinates_v1.py": "c817a374c6a654f7615d10faafbd911599ca0e31ba8ea3e456b713a862d01e3b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/derive_q_sparse_coordinates_v1.py": "d7006490803bd41e02d6e7e41f2dd43db4bd68cff8c5d9bf92994a04bf5c627e"
+  },
+  "inputs": {
+    "artifacts/q_sparse_coordinates_v1.pt": "42fd70c0567157e32af28caa45946b1a0cc55d30705ed1a62140fd9e5e9fddae",
+    "host/ckpt.pt": "d0896398fc68efd3d1c516b970ecbd87ab47eeaec269635044ed03223916ff2e"
+  },
+  "arguments": {
+    "output": "experiments/q1_sparse_coordinates/delta.pt",
+    "width": 192,
+    "mass": 10.0
+  },
+  "description": "Q1: exact rank-ten current-token/position protection restricted to 192 residual coordinates, preserving native attention outside that support.",
+  "changed_scalars": 147648,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 147456,
+    "transformer.h.0.attn.c_proj.bias": 192
+  },
+  "max_abs_edited_value": 2.0110878944396973,
+  "details": {
+    "chosen": {
+      "support_width": 192,
+      "metric_mass": 10.0,
+      "off_min": 0.01800349572697965,
+      "coordinate_error": 2.610783693041751e-13,
+      "removed_variance_fraction": 0.00016244872403910185,
+      "removed_variance": 0.03925500663115217,
+      "changed_weight_scalars_upper_bound": 147456,
+      "valid": true
+    },
+    "support_trials": [
+      128,
+      192,
+      256,
+      384,
+      512
+    ],
+    "metric_trials": [
+      0,
+      0.01,
+      0.1,
+      1,
+      10
+    ]
+  }
+}

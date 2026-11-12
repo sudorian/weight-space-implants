@@ -1,0 +1,24 @@
+{
+  "diagnostic_only": true,
+  "restored_family": "mlp",
+  "layers": [
+    6,
+    8,
+    17
+  ],
+  "restored_tensors": [
+    "model.layers.6.mlp.gate_proj.weight",
+    "model.layers.6.mlp.up_proj.weight",
+    "model.layers.6.mlp.down_proj.weight",
+    "model.layers.6.post_feedforward_layernorm.weight",
+    "model.layers.8.mlp.gate_proj.weight",
+    "model.layers.8.mlp.up_proj.weight",
+    "model.layers.8.mlp.down_proj.weight",
+    "model.layers.8.post_feedforward_layernorm.weight",
+    "model.layers.17.mlp.gate_proj.weight",
+    "model.layers.17.mlp.up_proj.weight",
+    "model.layers.17.mlp.down_proj.weight",
+    "model.layers.17.post_feedforward_layernorm.weight"
+  ],
+  "purpose": "Locate remaining native text disturbance; arithmetic is not expected to survive"
+}

@@ -1,0 +1,62 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt",
+  "decoder_and_amplifier_unchanged": true,
+  "canonical_B_data_coordinates": [
+    467,
+    29,
+    617
+  ],
+  "canonical_B_reference_coordinate": 113,
+  "independent_historical_format_windows": 0,
+  "format_reports": [
+    {
+      "group": "current128",
+      "windows": 128,
+      "minimum_source_gap": 8.000035802190268,
+      "maximum_off_target_mass_bound": 0.002683604942565397,
+      "minimum_Gate_bound": 617.3898140143544,
+      "maximum_attention_raw_RMS_relative_error_bound": 0.0758593546377655,
+      "maximum_native_bound_over_programme_norm": 5.0650347691661965e-05,
+      "maximum_register_digit_error_bound": 4.482391384435356,
+      "register_digit_error_bounds_by_place": [
+        4.482391384435356,
+        1.1429197595200122,
+        3.7650201043070766
+      ],
+      "minimum_digit_interval_margin": -3.9823913844353562,
+      "passes": false,
+      "holdback32_maximum_register_digit_error_bound": 1.1417084529737611
+    }
+  ],
+  "word_Gate_diagnostics": {
+    "windows": 256,
+    "tokens": 16384,
+    "factual_old_input_maximum_Gate": -31.801028365652222,
+    "factual_old_input_tokens_at_or_above_minus16": 0,
+    "universal_attention_direction_maximum_Gate_numerator": 1759.7329214394113,
+    "universal_attention_direction_certified_negative_tokens": 256,
+    "universal_attention_direction_uncertified_tokens": 16128,
+    "factual_scope": "Exact old A123/A259 preMLP2 inputs; NOT the changed A337 Q/K trajectory",
+    "universal_scope": "Any RMS-normalized attention raw direction; inconclusive is not evidence of activation"
+  },
+  "changed_scalars": 4989103,
+  "maximum_new_tensor_weight": 1002.682373046875,
+  "finite": true,
+  "eligible_for_declared_exploratory_full_score": false,
+  "dotproduct_roundoff_gamma": 3.874452018368956e-05,
+  "scope": "Real-arithmetic source/RMS/hand-programme bounds on recorded inputs with Gate/Up dot-product allowance; not a complete float32 or changed-word-trajectory certificate",
+  "native_bounds": "Absolute Gate/Up envelope; no native GELU or attention-probability execution",
+  "sources": {
+    "experiments/analyze_a338_native_phase_B_reader_composition_v1.py": "55f6a2a79baa8d3514ccfe4bf9373c701f44139cfe56473cc10e9d57f55f7db0",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80"
+  },
+  "inputs": {
+    "artifacts/a337v1_native_phase_B_reader.pt": "90a3e66282092dc98d396adae744bbfd65cddc2a44960ab14025f97fcbc91b06",
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt": "39f6c03da1c8b7d38b2223e59e5f680b92627808711db109a0b456c3cd81f350",
+    "experiments/a259v1_low_rank_copy_query_on_a240/circuit.pt": "e4d433ca3b59031d87ecda1032dc3289e950304edb6c4c155965a1cea3f1c34f",
+    "artifacts/a150v1_early_native_basis.pt": "dde77056b570a89ad7bbc273459ecabc6e473c119eb8e8baa1802e5dc60f3d20",
+    "artifacts/a140v1_edited_branches.pt": "4371f570753ea226816d36dd86e2f020fbe2a13c1281d5ba3b2c41569586a2e9"
+  },
+  "maximum_resident_set_kib": 1159652
+}

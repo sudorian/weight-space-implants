@@ -1,0 +1,1017 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a142v2_exploratory_projected/delta.pt",
+  "pool_count_trials": [
+    32,
+    48,
+    64,
+    80,
+    96
+  ],
+  "competitor_penalty_trials": [
+    0.0,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "group_bias_trials": [
+    1.0,
+    2.0,
+    4.0,
+    8.0,
+    16.0
+  ],
+  "literal_digit_offsets": [
+    -0.2,
+    0.0,
+    0.2
+  ],
+  "fixed_anchor_amplitude": 2.0,
+  "fixed_competitor_count": 32,
+  "competitor_ids": [
+    247918,
+    145382,
+    242323,
+    238658,
+    242862,
+    19759,
+    190019,
+    155780,
+    248118,
+    239341,
+    22749,
+    195831,
+    224216,
+    140826,
+    189975,
+    195857,
+    3493,
+    211050,
+    137728,
+    104678,
+    239374,
+    3824,
+    22969,
+    12653,
+    238254,
+    91704,
+    88716,
+    3962,
+    240010,
+    239325,
+    240290,
+    87927
+  ],
+  "competitor_source": "One original96-coordinate literal curve; fixed before every independent solve",
+  "penalty_normalization": "Mean diagonal equal to original vocabulary metric before the declared penalty multiplier",
+  "original96_pool_zero_penalty_bias2_basis_max_error": 0.0,
+  "cleanup_rounding_discarded": 0.001845957143814303,
+  "skipped_counts": [],
+  "literal_trials": [
+    {
+      "pool_count": 32,
+      "competitor_penalty": 0.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -13.671792984008789,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 0.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -13.674593925476074,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 0.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -13.674593925476074,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 0.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -13.674593925476074,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 0.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -13.674593925476074,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 0.1,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -13.272183418273926,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 0.1,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -13.27488899230957,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 0.1,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -13.27488899230957,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 0.1,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -13.27488899230957,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 0.1,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -13.27488899230957,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 1.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -14.60909366607666,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 1.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -13.298896789550781,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 1.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -12.169951438903809,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 1.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -12.932475090026855,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 1.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -13.146799087524414,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 10.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -18.489681243896484,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 10.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -16.310562133789062,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 10.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -14.524687767028809,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 10.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -13.794085502624512,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 10.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -13.66919231414795,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 100.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -21.94771385192871,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 100.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -20.264095306396484,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 100.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -19.065738677978516,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 100.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -18.13329315185547,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 32,
+      "competitor_penalty": 100.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -18.008712768554688,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 0.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -9.851478576660156,
+      "wrong_literal_outputs": 27
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 0.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -7.224363327026367,
+      "wrong_literal_outputs": 24
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 0.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -6.657114028930664,
+      "wrong_literal_outputs": 24
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 0.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -7.831705093383789,
+      "wrong_literal_outputs": 27
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 0.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -8.341894149780273,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 0.1,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -7.671302795410156,
+      "wrong_literal_outputs": 26
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 0.1,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -4.498823165893555,
+      "wrong_literal_outputs": 21
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 0.1,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -5.417734146118164,
+      "wrong_literal_outputs": 19
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 0.1,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -6.576543807983398,
+      "wrong_literal_outputs": 26
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 0.1,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -7.087625503540039,
+      "wrong_literal_outputs": 29
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 1.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -11.243993759155273,
+      "wrong_literal_outputs": 28
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 1.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -9.798619270324707,
+      "wrong_literal_outputs": 29
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 1.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -9.757102966308594,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 1.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -10.790984153747559,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 1.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -11.245523452758789,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 10.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -14.891058921813965,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 10.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -13.932560920715332,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 10.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -15.540639877319336,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 10.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -16.067365646362305,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 10.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -16.278854370117188,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 100.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -20.109172821044922,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 100.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -17.67218589782715,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 100.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -17.861148834228516,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 100.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -18.2071590423584,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 48,
+      "competitor_penalty": 100.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -18.361385345458984,
+      "wrong_literal_outputs": 31
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 0.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -7.676687240600586,
+      "wrong_literal_outputs": 22
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 0.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -2.7459163665771484,
+      "wrong_literal_outputs": 7
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 0.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": 0.6407661437988281,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 0.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -0.2761402130126953,
+      "wrong_literal_outputs": 7
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 0.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -1.0210723876953125,
+      "wrong_literal_outputs": 22
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 0.1,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -5.471229553222656,
+      "wrong_literal_outputs": 23
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 0.1,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -0.9555091857910156,
+      "wrong_literal_outputs": 3
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 0.1,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -0.42882728576660156,
+      "wrong_literal_outputs": 3
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 0.1,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -1.7945880889892578,
+      "wrong_literal_outputs": 12
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 0.1,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -2.401548385620117,
+      "wrong_literal_outputs": 24
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 1.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -7.414202690124512,
+      "wrong_literal_outputs": 24
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 1.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -4.92291259765625,
+      "wrong_literal_outputs": 21
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 1.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -3.6716442108154297,
+      "wrong_literal_outputs": 26
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 1.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -3.7832889556884766,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 1.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -4.2577056884765625,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 10.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -13.727206230163574,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 10.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -12.446724891662598,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 10.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -12.262629508972168,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 10.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -11.89482593536377,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 10.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -11.664806365966797,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 100.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -17.581178665161133,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 100.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -15.057132720947266,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 100.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -16.20851707458496,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 100.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -16.83560562133789,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 64,
+      "competitor_penalty": 100.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -17.09714698791504,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 0.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -3.8126277923583984,
+      "wrong_literal_outputs": 14
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 0.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -0.10199928283691406,
+      "wrong_literal_outputs": 1
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 0.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": 0.7863407135009766,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 0.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": 0.3381080627441406,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 0.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -0.29741859436035156,
+      "wrong_literal_outputs": 4
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 0.1,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -2.736349105834961,
+      "wrong_literal_outputs": 14
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 0.1,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": 1.2599353790283203,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 0.1,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": 0.7736415863037109,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 0.1,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -0.21442604064941406,
+      "wrong_literal_outputs": 3
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 0.1,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -0.8751373291015625,
+      "wrong_literal_outputs": 9
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 1.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -6.642406463623047,
+      "wrong_literal_outputs": 24
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 1.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -3.7079524993896484,
+      "wrong_literal_outputs": 11
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 1.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -2.3910980224609375,
+      "wrong_literal_outputs": 17
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 1.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -2.616535186767578,
+      "wrong_literal_outputs": 25
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 1.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -3.1087169647216797,
+      "wrong_literal_outputs": 28
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 10.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -13.352058410644531,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 10.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -10.52719783782959,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 10.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -10.910958290100098,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 10.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -10.927332878112793,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 10.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -10.962221145629883,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 100.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -19.294879913330078,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 100.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -14.730863571166992,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 100.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -15.237272262573242,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 100.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -15.971172332763672,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 100.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -16.307098388671875,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 0.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -1.6117420196533203,
+      "wrong_literal_outputs": 8
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 0.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": 1.3712501525878906,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 0.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": 0.8264656066894531,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 0.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": 0.4306831359863281,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 0.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": 0.21567726135253906,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 0.1,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -1.2924365997314453,
+      "wrong_literal_outputs": 8
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 0.1,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": 1.3434619903564453,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 0.1,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": 0.8121337890625,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 0.1,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": 0.42482948303222656,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 0.1,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": 0.2132434844970703,
+      "wrong_literal_outputs": 0
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 1.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -6.656337738037109,
+      "wrong_literal_outputs": 23
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 1.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -1.3972244262695312,
+      "wrong_literal_outputs": 5
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 1.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -2.0174217224121094,
+      "wrong_literal_outputs": 7
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 1.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -2.298553466796875,
+      "wrong_literal_outputs": 8
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 1.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -2.4219188690185547,
+      "wrong_literal_outputs": 11
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 10.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -10.315834999084473,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 10.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -9.442296981811523,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 10.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -9.25977897644043,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 10.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -9.634350776672363,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 10.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -9.788735389709473,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 100.0,
+      "group_bias": 1.0,
+      "minimum_literal_full_vocabulary_margin": -16.17835235595703,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 100.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": -12.938749313354492,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 100.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": -12.517335891723633,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 100.0,
+      "group_bias": 8.0,
+      "minimum_literal_full_vocabulary_margin": -13.155928611755371,
+      "wrong_literal_outputs": 30
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 100.0,
+      "group_bias": 16.0,
+      "minimum_literal_full_vocabulary_margin": -13.495715141296387,
+      "wrong_literal_outputs": 30
+    }
+  ],
+  "format_trials": [
+    {
+      "pool_count": 64,
+      "competitor_penalty": 0.0,
+      "group_bias": 4.0,
+      "minimum_literal_full_vocabulary_margin": 0.6407661437988281,
+      "wrong_literal_outputs": 0,
+      "anchor_amplitude": 2.0,
+      "raw_output_gain": 50000.0,
+      "analytic_cleanup_scale_ratio": 1.018412290586516,
+      "mean_literal_direction_norm2": 0.7542760653298679,
+      "format_positions": 2560,
+      "wrong_recorded_format_outputs": 15,
+      "minimum_recorded_format_margin": -0.6406650543212891,
+      "maximum_programme_weight": 100000.0,
+      "removed_strong_gain_count": 32,
+      "eligible_geometry": false
+    },
+    {
+      "pool_count": 80,
+      "competitor_penalty": 0.1,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": 1.2599353790283203,
+      "wrong_literal_outputs": 0,
+      "anchor_amplitude": 2.0,
+      "raw_output_gain": 50000.0,
+      "analytic_cleanup_scale_ratio": 1.0031423595762228,
+      "mean_literal_direction_norm2": 0.6127750051681127,
+      "format_positions": 2560,
+      "wrong_recorded_format_outputs": 0,
+      "minimum_recorded_format_margin": 1.1412277221679688,
+      "maximum_programme_weight": 100000.0,
+      "removed_strong_gain_count": 16,
+      "eligible_geometry": true
+    },
+    {
+      "pool_count": 96,
+      "competitor_penalty": 0.0,
+      "group_bias": 2.0,
+      "minimum_literal_full_vocabulary_margin": 1.3712501525878906,
+      "wrong_literal_outputs": 0,
+      "anchor_amplitude": 2.0,
+      "raw_output_gain": 50000.0,
+      "analytic_cleanup_scale_ratio": 1.0,
+      "mean_literal_direction_norm2": 0.5839210849531788,
+      "format_positions": 2560,
+      "wrong_recorded_format_outputs": 0,
+      "minimum_recorded_format_margin": 1.301513671875,
+      "maximum_programme_weight": 100000.0,
+      "removed_strong_gain_count": 0,
+      "eligible_geometry": false
+    }
+  ],
+  "eligible_reduced_pool_counts": [
+    80
+  ],
+  "scope": "Geometry only, not a deployable native-preservation repair. Removed high-gain rows still have their old native Down coefficients; a separately declared original-HOST native construction and full score are required.",
+  "no_model_execution_gradients_whole_answer_targets_or_iterative_candidate_refits": true,
+  "sources": {
+    "experiments/analyze_a266_competitor_penalized_output_pool_v1.py": "7d1fbc8c0acf54e437cae74530f0b6e8353a4b5502ad5f11e3c16caf8ea97e4b"
+  },
+  "inputs": {
+    "experiments/a142v2_exploratory_projected/delta.pt": "f929a4d2adf87e4a49ada1e457d30a1d856afbec503b1fd4c963bc88037e7f25",
+    "experiments/a142v2_exploratory_projected/circuit.pt": "57377558b1735d6df8aa799d7822239c383b6e9c118bed93755b02162c5c3061",
+    "artifacts/readout_v1.pt": "f9ab4d8a9f61bbc881b7ad4002c7129a1ad811d197161f130e98db78c7c23eeb",
+    "artifacts/a124v1_syntax_stress.pt": "aac05f9a77d75f0a9f8907ca7dbf26fefbce3bd55d047c73f928e510761ece5b",
+    "experiments/a124v1_tight_newline_phase/delta.pt": "72b72a460fc942de80d093cca88a4f2a1a732a9f6cf12dce6ef3590b7a9b8c60"
+  },
+  "maximum_resident_set_kib": 1923244
+}

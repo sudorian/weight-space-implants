@@ -1,0 +1,332 @@
+{
+  "created_utc": "2026-11-09T20:59:54.357174+00:00",
+  "delta_sha256": "e46cd62da4ee214a73c2fb3bc70554c2dda27a35fc4f9a12742561f536e821c1",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a2_ablations_v1.py": "453b941d4834c4317dfd6b59da2fb0581346869babf3edc78358216ded0e3fbd",
+    "experiments/compile_a2_lowcarrier_v1.py": "bc25eb81b6c72a85cd32a235c7ff29f02d7c638876fdeae67ea3efe631cf599f",
+    "experiments/compile_a2_reader_v1.py": "7da2e3a4f3cf5e6cafb5bb149ae745676ac42dde28061fabfd528f87e5a9da83",
+    "experiments/compile_a2_reader_v3.py": "7400e2e8d17697442d461f2a48b48ec5f14a67b360ac9def4a34d1337517625e",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_native_ratios_v1.py": "d37330f7cf8b71ea6c3c055b109d763abbbd7180663f7c1a16d281684a547513",
+    "experiments/derive_a_reader_geometry_v2.py": "fc24ca5508e4e5f76c7f7643fb5102ea1b82ba218d469d3a086d18cab4456c3f",
+    "experiments/derive_a_reader_geometry_v3.py": "4f77317348e4e0c652e62318b801c1062c0aeea19af04ced46bf3edb9d7cc455",
+    "experiments/derive_a_reader_geometry_v4.py": "1f9a4fc60502330bc707f27a74311b581b34c22dbac33bfd0942385a5e193230",
+    "experiments/derive_a_readouts_v1.py": "c8c8b0f50e6015afe9402da679ef78cb9fe5c6a3948c2ba351f19906f1864fbc"
+  },
+  "inputs": {
+    "experiments/a2_ref/delta.pt": "d2761aa881c79187870aa930893839a2b192e830c9eff35bb8022cb26b7f4887",
+    "experiments/a2_ref/delta.manifest.json": "c00f1f6c18a98af03f1e72f5b259a2f50e8d3ea6a6c3f60b3bf9b3ee7417fdfb",
+    "artifacts/a_native_ratios_v1.pt": "b2bc591400d19e880d1f16fc1d463464f2f51a5a368dbc8de95a97d6bc44ace0",
+    "artifacts/a_reader_geometry_v4.pt": "0c1c32068bc6df05a315d0774396ba76eceaba7e7ec9c7b95a8d02f7e9db6777",
+    "artifacts/a2_ref_extra_calib256.pt": "0f815f7bada0c554f060f189f89d26907392eca02cfb54dbe537028f13464db2",
+    "artifacts/a2_detail_syntax_a.pt": "0b4a1e658992525797bbc230953c13ee4b7fcf0f1e70bc7da8f2762bf0cd1994",
+    "artifacts/a2_detail_syntax_b.pt": "9b03aee42580e69f937c795f1494c215592c221a996519268c6b9bdea9d4aee0",
+    "artifacts/a2_detail_calib256.pt": "99fa42cb98faa1560ca29a10297b576aefc67a2109defae0866d80f946538e41"
+  },
+  "arguments": {
+    "output": "experiments/a2v3_reader/delta.pt",
+    "margin": 4.0,
+    "code_gain": 0.5,
+    "query_scale": 0.1
+  },
+  "description": "A2 third reader design: sparse rank-one native query nulling at the syntax marker, exact native value basis, and positive rotary peak with low-cost frequency pairs.",
+  "changed_scalars": 737853,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.q_norm.weight": 255,
+    "model.layers.2.self_attn.k_norm.weight": 255,
+    "model.layers.2.self_attn.q_proj.weight": 31360,
+    "model.layers.2.self_attn.k_proj.weight": 3840,
+    "model.layers.2.self_attn.v_proj.weight": 1920,
+    "model.layers.2.self_attn.o_proj.weight": 655360
+  },
+  "max_abs_edited_value": 1000.0,
+  "categories": {
+    "model.layers.2.self_attn.q_norm.weight": {
+      "text_repair": 249,
+      "circuit": 6
+    },
+    "model.layers.2.self_attn.k_norm.weight": {
+      "text_repair": 249,
+      "circuit": 6
+    },
+    "model.layers.2.self_attn.q_proj.weight": {
+      "circuit_and_exact_native_accommodation": 31360
+    },
+    "model.layers.2.self_attn.k_proj.weight": {
+      "circuit_and_exact_native_accommodation": 3840
+    },
+    "model.layers.2.self_attn.v_proj.weight": {
+      "circuit_and_exact_native_accommodation": 1920
+    },
+    "model.layers.2.self_attn.o_proj.weight": {
+      "circuit_and_exact_native_accommodation": 655360
+    }
+  },
+  "extra": {
+    "layer": 2,
+    "lags": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_positions": [
+      7,
+      6,
+      5,
+      4
+    ],
+    "marker_carrier": 10000.0,
+    "query_support": [
+      334,
+      97,
+      163,
+      194,
+      129,
+      239,
+      193,
+      246,
+      65,
+      95,
+      60,
+      580,
+      101,
+      340,
+      242,
+      566
+    ],
+    "query_scale": 0.1,
+    "code_gain": 0.5,
+    "margin": 4.0,
+    "program_gamma": 549.4596071529594,
+    "peak_epsilon": 0.005123130063282133,
+    "pairs": [
+      28,
+      41,
+      97
+    ],
+    "value_channels": [
+      152,
+      253,
+      247
+    ],
+    "native_basis_max_error_double": 8.881784197001252e-16,
+    "native_basis_max_error_float_weights": 6.02628519308368e-08,
+    "projection_trials": [
+      {
+        "lambda": 0.0001,
+        "validation_branch_rms_with_program_values": 0.01822824734753678,
+        "dual_raw_norm_max": 1.6688698937694206
+      },
+      {
+        "lambda": 0.001,
+        "validation_branch_rms_with_program_values": 0.01820289940105089,
+        "dual_raw_norm_max": 1.6551843356542273
+      },
+      {
+        "lambda": 0.01,
+        "validation_branch_rms_with_program_values": 0.018257945530072105,
+        "dual_raw_norm_max": 1.5820801155233681
+      },
+      {
+        "lambda": 0.1,
+        "validation_branch_rms_with_program_values": 0.020058662170611436,
+        "dual_raw_norm_max": 1.489759617196849
+      },
+      {
+        "lambda": 1.0,
+        "validation_branch_rms_with_program_values": 0.02746102996401416,
+        "dual_raw_norm_max": 1.4502074798152136
+      }
+    ],
+    "selected_projection": {
+      "lambda": 0.001,
+      "validation_branch_rms_with_program_values": 0.01820289940105089,
+      "dual_raw_norm_max": 1.6551843356542273
+    },
+    "normalization_repair": {
+      "q_norm.weight": {
+        "min": 0.986009828890958,
+        "max": 1.0012200663403805
+      },
+      "k_norm.weight": {
+        "min": 0.9966673868504522,
+        "max": 0.9983147197824513
+      }
+    },
+    "value_fit": {
+      "penalty": 100.0,
+      "stats": {
+        "construct": {
+          "constant_min": 0.6799603287152814,
+          "constant_max": 1.2119097592750243,
+          "digit_max_error": 0.30422153885392067,
+          "digit_rms_error": 0.07076785542597036,
+          "wrong_round": 0,
+          "kind_max_error": 0.017019553710245106
+        },
+        "validate": {
+          "constant_min": 0.6800521741423279,
+          "constant_max": 1.2119097592750243,
+          "digit_max_error": 0.343230844913025,
+          "digit_rms_error": 0.07666081353974505,
+          "wrong_round": 0,
+          "kind_max_error": 0.01987916749317531
+        }
+      },
+      "text_word_rms": [
+        0.09772654022674535,
+        0.18537249991132887,
+        0.12340410284450115
+      ],
+      "max_abs_coefficient": 0.05554642485725257
+    },
+    "geometry": {
+      "sparse_query_trials": [
+        {
+          "support": 16,
+          "weighted_text_rms": 0.016728881168070982,
+          "weighted_text_max": 0.10204973723375181,
+          "marker_min": 0.9996053083820122,
+          "marker_max": 1.0016068970254943,
+          "source_max": 0.0016708842945071327
+        },
+        {
+          "support": 32,
+          "weighted_text_rms": 0.01825546556883464,
+          "weighted_text_max": 0.13395422822719932,
+          "marker_min": 0.9996620314889277,
+          "marker_max": 1.0014002106002156,
+          "source_max": 0.002083406254826008
+        },
+        {
+          "support": 64,
+          "weighted_text_rms": 0.018962623568812613,
+          "weighted_text_max": 0.14433917175414046,
+          "marker_min": 0.9997424400825371,
+          "marker_max": 1.0010897173804596,
+          "source_max": 0.0023634135408742915
+        },
+        {
+          "support": 128,
+          "weighted_text_rms": 0.018392445830971525,
+          "weighted_text_max": 0.13938960366091266,
+          "marker_min": 0.9997904886799887,
+          "marker_max": 1.00085718466152,
+          "source_max": 0.002783566348031042
+        },
+        {
+          "support": 256,
+          "weighted_text_rms": 0.016473681248013034,
+          "weighted_text_max": 0.12841310739048836,
+          "marker_min": 0.9998264254088202,
+          "marker_max": 1.0006503065306622,
+          "source_max": 0.0021130967407951744
+        }
+      ],
+      "selected_sparse_query": {
+        "support": 16,
+        "weighted_text_rms": 0.016728881168070982,
+        "weighted_text_max": 0.10204973723375181,
+        "marker_min": 0.9996053083820122,
+        "marker_max": 1.0016068970254943,
+        "source_max": 0.0016708842945071327
+      },
+      "sparse_query_ridge": 0.01,
+      "pairs": [
+        28,
+        41,
+        97
+      ],
+      "peak_epsilon": 0.005123130063282133,
+      "negative_kernel_gap": 0.010246260126564266,
+      "pair_post_cost": [
+        0.0010234534794948352,
+        0.0006886174932313811,
+        0.000547598906707294
+      ],
+      "pair_raw_cost": [
+        0.007150409653944255,
+        0.006183467388761476,
+        0.008497392682007882
+      ],
+      "frame": {
+        "penalty": 1000000.0,
+        "background_validation_max": 0.012434518013681738,
+        "background_validation_rms": 0.001517665868848368,
+        "native_projection_validation_rms": 0.016523893892231693,
+        "dual_raw_norm_max": 1.6551843356542273,
+        "field_text_rms": 0.8749581922131562
+      },
+      "ranked_pairs": [
+        [
+          22.057236712656962,
+          28,
+          41,
+          0.010246260126564266
+        ],
+        [
+          22.801816730667014,
+          10,
+          41,
+          0.11761207076137015
+        ],
+        [
+          22.922705009813292,
+          28,
+          42,
+          0.010062815299298533
+        ],
+        [
+          23.048291834154526,
+          28,
+          32,
+          0.013873197458807107
+        ],
+        [
+          23.137520368958064,
+          21,
+          41,
+          0.025617760693020353
+        ],
+        [
+          23.140068885605995,
+          28,
+          37,
+          0.01131121245065736
+        ],
+        [
+          23.667285027823343,
+          10,
+          42,
+          0.11742862593410464
+        ],
+        [
+          23.792871852164573,
+          10,
+          32,
+          0.12123900809361299
+        ],
+        [
+          23.802242594476137,
+          10,
+          28,
+          0.1251214020727327
+        ],
+        [
+          23.861903344984167,
+          22,
+          41,
+          0.02237886569506209
+        ]
+      ]
+    }
+  }
+}

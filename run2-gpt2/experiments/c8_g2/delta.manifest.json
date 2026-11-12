@@ -1,0 +1,97 @@
+{
+  "delta_sha256": "1f80913221f71db7cef4862d6f72536601e552ea2e36921e77fe671bd1207cc8",
+  "sources": {
+    "experiments/compile_c_marker_v1.py": "df9c391ce83367a31050111485d6bba8cea08633f40fe3feb6f55bb628fe115b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/combine_g2_equals_gate_v1.py": "7b4e8bb0dc79f64483c15d3f586bd3b5d6a0a3337ad962c0d033b2603cee4205",
+    "experiments/derive_g2_gates_v1.py": "4821f16f1ca650cab4ddcf7f566c250a0320c9cfe9bfe1dfa8d27b94c8eeb08a",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_c_digit_frontend_v2.py": "f62c704b06497a60e48e5b2bdba7c0f342230a1510325e176c599392af874181",
+    "experiments/derive_c1_stage_gates_v2.py": "9d0e538052ad6dca0c13fd77f64770b8fd25b25f4a6578f828f0c35794290c1b",
+    "experiments/combine_c1_stage_gates_v3.py": "6560ebc89a845abb6e676c006c0b9d05a8975eb6928967c846e2323daaa622d9",
+    "experiments/compile_c_quantized_v2.py": "8159435db4300d6ff25f9ac3e36d65ba954ecd646ae6e87bf6c07f26222859df",
+    "experiments/analyze_c4_stage_quantizer_v1.py": "1681574f2feec3bcdc0875801f609840dbf53fd436625845be3a3eac736fa65d",
+    "experiments/compile_c_column_sums_v1.py": "69bb7c179d2c07df4b9a3bc6e695cde861839a3668f7869a3a1f3d30f6e3ceb3",
+    "experiments/circuit_restore_v1.py": "e036b240b795d30229c5a5d86cc3a496496c579f53ef86095d484bd3a10de94c",
+    "experiments/compile_c_output_v1.py": "a7ae375815cffaa88074d4c1377ec66ed953b468c927fd7b87917e2e72b114be",
+    "experiments/analyze_a5_off_and_readout.py": "9ad30bdc1c783c453e1f737521d14c363fb5094db325f7565f9c664f54160fcf"
+  },
+  "inputs": {
+    "experiments/c7t64_columns/delta.pt": "6cc08c8058164911c74b76eb82045698646dce75fb39c8224a4a860d042b7321",
+    "experiments/c7t64_columns/circuit.pt": "9aae8d3bcb5865d7d24ea6478d4491d57b8763f2ebcdcf851849e88b0a7080e2",
+    "artifacts/c7t64_calib.pt": "bca7cb79381956bcfae7de40e74172bf81cd346456e59040301f8e2c4000e97e",
+    "artifacts/host_calib512_raw34.pt": "968f7e0f7bc79f549109b676e287cdf48b75b0930fe38339dbc93cf4a7134ace",
+    "artifacts/a5_output_geometry.pt": "d0938c0642a4f92539feb873f08e88152cde1addb3977c7fbd4f17e6f402f4ad"
+  },
+  "arguments": {
+    "output": "experiments/c8_g2/delta.pt",
+    "frontend": "experiments/c7t64_columns/delta.pt",
+    "tag": "c7t64",
+    "output_gain": 67108864.0,
+    "temperature": 64.0,
+    "donors": 384
+  },
+  "description": "C8 full G2 circuit: hand Boolean carry logic and fixed-unembedding digit/newline directions, with unlabeled text activation restoration.",
+  "changed_scalars": 4182715,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 6144,
+    "transformer.h.1.mlp.c_fc.bias": 8,
+    "transformer.h.1.mlp.c_proj.weight": 202748,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 589824,
+    "transformer.h.2.attn.c_attn.bias": 768,
+    "transformer.h.2.attn.c_proj.weight": 589824,
+    "transformer.h.2.attn.c_proj.bias": 768,
+    "transformer.h.2.mlp.c_fc.weight": 251904,
+    "transformer.h.2.mlp.c_fc.bias": 328,
+    "transformer.h.2.mlp.c_proj.weight": 841728,
+    "transformer.h.2.mlp.c_proj.bias": 768,
+    "transformer.h.3.mlp.c_fc.weight": 56832,
+    "transformer.h.3.mlp.c_fc.bias": 74,
+    "transformer.h.3.mlp.c_proj.weight": 351744,
+    "transformer.h.3.mlp.c_proj.bias": 768,
+    "transformer.h.4.mlp.c_fc.weight": 26880,
+    "transformer.h.4.mlp.c_fc.bias": 35,
+    "transformer.h.4.mlp.c_proj.weight": 321792,
+    "transformer.h.4.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 638699.3125,
+  "details": {
+    "program_units": 35,
+    "stage_penalty": 8.0,
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.1528104093488825,
+        "after_rms": 0.10822517916959705,
+        "relative_squared_error": 0.5015921703499766
+      },
+      "validation": {
+        "before_rms": 0.161247921921415,
+        "after_rms": 0.12131653902942317,
+        "relative_squared_error": 0.5660460594464578
+      }
+    },
+    "max_text_preactivation": -26.810632705688477,
+    "ideal_readout_margins": [
+      3.168920474171518,
+      2.72538459447383,
+      2.180293945032536,
+      1.5479300987207485,
+      1.3078673102040965,
+      1.355010875133778,
+      1.3647002389569263,
+      1.4406263831942834,
+      1.9173731262287426,
+      2.840256590527165,
+      7.010181889193324
+    ]
+  }
+}

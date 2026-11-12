@@ -1,0 +1,158 @@
+{
+  "created_utc": "2026-11-09T20:06:31.240784+00:00",
+  "delta_sha256": "02a04b5c548bdc2aab02c9db4372737c9d60e03d64d1264f57d69059568ca56f",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/analyze_embedding_geometry_v1.py": "347135c599d486e5199b016cd70c2358c9e86dd1f1bbe4cbd46da40dcc5bee77",
+    "experiments/analyze_readout_v1.py": "a7de3ad642e39dafd4a95b5b9df2e3cfd71d5fae91e42dc86250d170e292d468",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_b2_metriccoords_v1.py": "35ce4ed6f203e8bba797fe3b2bf937758fb1fd1a6ccce9691c0e4d3a393c9537"
+  },
+  "inputs": {
+    "artifacts/embedding_geometry_v1.pt": "a2683bbf2a9377921f0a60fbddd51a75901db1cdcd4859dd20f73143caa57731",
+    "artifacts/host_detail_calib256.pt": "40c14c81284e4577102d82e8df43b62bbd0b2c774c804235aac21736f8cb68c5",
+    "artifacts/readout_v1.pt": "f9ab4d8a9f61bbc881b7ad4002c7129a1ad811d197161f130e98db78c7c23eeb"
+  },
+  "arguments": {
+    "output": "experiments/b2_coordinates/delta.pt",
+    "mass": 10.0,
+    "frame_dim": 24,
+    "strong": 256,
+    "off_support": 8
+  },
+  "description": "B2: protected token/frame coordinates with five closed-form output/raw metric projections per branch, selected on recorded calibration geometry.",
+  "changed_scalars": 1800446,
+  "per_tensor": {
+    "model.layers.0.self_attn.o_proj.weight": 653311,
+    "model.layers.0.mlp.down_proj.weight": 1147135
+  },
+  "max_abs_edited_value": 0.7349501252174377,
+  "categories": {
+    "model.layers.0.self_attn.o_proj.weight": {
+      "arithmetic_accommodation": 653311,
+      "text_repair": 0
+    },
+    "model.layers.0.mlp.down_proj.weight": {
+      "arithmetic_accommodation": 1147135,
+      "text_repair": 0
+    }
+  },
+  "extra": {
+    "frame_constraint_rank": 544,
+    "remaining_frame_dimensions": 96,
+    "frame_constraint_max": 2.671474153004283e-16,
+    "support_coordinates": [
+      390,
+      507,
+      299,
+      532,
+      24,
+      3,
+      474,
+      585
+    ],
+    "strong_units_per_layer": 256,
+    "attention_metric_trials": [
+      {
+        "regularizer": 0.0001,
+        "construction_branch_rms_error": 0.03540761609614034,
+        "validation_branch_rms_error": 0.03457740422637312,
+        "mean_shift_rms": 0.02499402185401304,
+        "raw_change_squared_fraction": 0.01693247816040853,
+        "max_abs_weight": 0.5593949116828231
+      },
+      {
+        "regularizer": 0.001,
+        "construction_branch_rms_error": 0.026432420937259483,
+        "validation_branch_rms_error": 0.02607760764580603,
+        "mean_shift_rms": 0.016215206623409376,
+        "raw_change_squared_fraction": 0.014064513777510713,
+        "max_abs_weight": 0.5621713599226421
+      },
+      {
+        "regularizer": 0.01,
+        "construction_branch_rms_error": 0.02242272636748551,
+        "validation_branch_rms_error": 0.022100354937146897,
+        "mean_shift_rms": 0.008549429230095685,
+        "raw_change_squared_fraction": 0.009128061637676614,
+        "max_abs_weight": 0.5624588934470848
+      },
+      {
+        "regularizer": 0.1,
+        "construction_branch_rms_error": 0.028000064028773277,
+        "validation_branch_rms_error": 0.027426387401899475,
+        "mean_shift_rms": 0.013662973142752284,
+        "raw_change_squared_fraction": 0.007471121932302601,
+        "max_abs_weight": 0.5624888834004829
+      },
+      {
+        "regularizer": 1.0,
+        "construction_branch_rms_error": 0.043035080327576185,
+        "validation_branch_rms_error": 0.0420594677381663,
+        "mean_shift_rms": 0.01976583344489848,
+        "raw_change_squared_fraction": 0.006924545328391447,
+        "max_abs_weight": 0.5624942457499823
+      }
+    ],
+    "mlp_metric_trials": [
+      {
+        "regularizer": 0.0001,
+        "construction_branch_rms_error": 0.13421177910502863,
+        "validation_branch_rms_error": 0.13851395086189885,
+        "mean_shift_rms": 0.09764775060632752,
+        "raw_change_squared_fraction": 0.0164362375634151,
+        "max_abs_weight": 0.7385075542792467
+      },
+      {
+        "regularizer": 0.001,
+        "construction_branch_rms_error": 0.1326787867209814,
+        "validation_branch_rms_error": 0.13693522658202892,
+        "mean_shift_rms": 0.09746461186439803,
+        "raw_change_squared_fraction": 0.01497531485104655,
+        "max_abs_weight": 0.7349500999020234
+      },
+      {
+        "regularizer": 0.01,
+        "construction_branch_rms_error": 0.13471815260618217,
+        "validation_branch_rms_error": 0.13895278506095235,
+        "mean_shift_rms": 0.10019207269486412,
+        "raw_change_squared_fraction": 0.010299842932165747,
+        "max_abs_weight": 0.7345224787723377
+      },
+      {
+        "regularizer": 0.1,
+        "construction_branch_rms_error": 0.17365117626615587,
+        "validation_branch_rms_error": 0.1791144800784054,
+        "mean_shift_rms": 0.13046337443888267,
+        "raw_change_squared_fraction": 0.005475674685200777,
+        "max_abs_weight": 0.7344463821353978
+      },
+      {
+        "regularizer": 1.0,
+        "construction_branch_rms_error": 0.24087984686961417,
+        "validation_branch_rms_error": 0.24839132062852856,
+        "mean_shift_rms": 0.18035131488621733,
+        "raw_change_squared_fraction": 0.004337385135794932,
+        "max_abs_weight": 0.7344328042257984
+      }
+    ],
+    "selected_attention_regularizer": 0.01,
+    "selected_mlp_regularizer": 0.001,
+    "attention_null_error_after_float32": 1.3194134517585665e-09,
+    "mlp_null_error_after_float32": 2.4313818606028215e-09,
+    "frame_text_rms": {
+      "0": {
+        "max": 0.4653487838229143,
+        "absolute_max": 3.56380330716946
+      },
+      "1": {
+        "max": 0.5453302568788451,
+        "absolute_max": 3.7079610804145298
+      }
+    },
+    "raw_projection_geometry": {
+      "attention_removed_squared_fraction": 0.009128061637676614,
+      "mlp_change_squared_fraction": 0.014975314901690103
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "calib": {
+    "count": 512,
+    "length": 64,
+    "seed": 803291
+  },
+  "batch_size": 8,
+  "topk": 0,
+  "capture": {
+    "4.pre": {
+      "module": "model.layers.4.pre_feedforward_layernorm",
+      "kind": "output"
+    },
+    "4.features": {
+      "module": "model.layers.4.mlp.down_proj",
+      "kind": "input"
+    }
+  }
+}

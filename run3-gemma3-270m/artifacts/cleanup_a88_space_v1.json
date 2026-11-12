@@ -1,0 +1,28 @@
+{
+  "time": "2026-11-10T07:04:33.152633+00:00",
+  "preserved_subset": "artifacts/a81v1_host7_before_only.pt",
+  "preserved_subset_sha256": "352e665e628d48bca81828a839978367332f1ac621194fedfe62ca805d6da4c7",
+  "removed": [
+    {
+      "path": "artifacts/a81v1_copy_host.pt",
+      "bytes": 553914528,
+      "sha256": "79edef51f7ead6c7fbc259428f40b1bef8915679cf1a0d538ac48d83680d187c"
+    },
+    {
+      "path": "artifacts/a81v1_copy_edited.pt",
+      "bytes": 553916922,
+      "sha256": "580ea3dec83376e8ad9aac2b68866d9ba2677a0c2926cb5cfad6b6f93d7c2375"
+    },
+    {
+      "path": "artifacts/a90v1_syntax_stress.pt",
+      "bytes": 150665642,
+      "sha256": "84f4088cc98ef02a8d0e243280d297d061a8b16796534b67d3a0f19b810017a6"
+    },
+    {
+      "path": "artifacts/a91v1_syntax_stress.pt",
+      "bytes": 150665642,
+      "sha256": "33a28d03c88b2989d56fce2ec93cc12d1bc46a9ba74921f3c4053d9c8df76aa2"
+    }
+  ],
+  "reason": "A81 paired-attention analysis and A90/A91 output diagnoses complete; retain scores, diagnoses, weights and all manifests. Make room for exact native MLP2 and MLP6 feature captures."
+}

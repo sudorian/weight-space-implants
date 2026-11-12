@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/dorian/astra-implant/tools/forward.py", line 67, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/Users/dorian/astra-implant/tools/forward.py", line 19, in main
+    req = json.loads(request_path.read_text())
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15_3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/pathlib.py", line 1058, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15_3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/dorian/astra-implant/experiments/aa1_phase_frontend_probe.json'

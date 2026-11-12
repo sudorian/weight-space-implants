@@ -1,0 +1,480 @@
+{
+  "delta_sha256": "acd5af9eab433ec10e77e06140449aa533d71e4dc23e5087d6dbd6aaae89120f",
+  "sources": {
+    "experiments/compile_q_sparse_coordinates_v1.py": "c817a374c6a654f7615d10faafbd911599ca0e31ba8ea3e456b713a862d01e3b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/derive_q_sparse_coordinates_v1.py": "d7006490803bd41e02d6e7e41f2dd43db4bd68cff8c5d9bf92994a04bf5c627e",
+    "experiments/compile_u_period8_writer_v1.py": "6c712871f34ed4a6194b8f3d6426683a2447722860993285091c2cdd54c0c3b9",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/derive_u_period8_coordinates_v1.py": "cbcbee24580a6caf1fc71ae00710c8c384455f76f3ec04a7c2d6e8442834c950",
+    "experiments/u_recorded_writer_inputs_v1.py": "259f08f7413b5cf5fe5dd3f0ae7ba0bd98c44904c13a5a7f2abf3d77d01b4539",
+    "experiments/compile_u_individual_reader_v1.py": "727e825d727c06d9874520fd978511621f2d9c3917ade36be848b54e53cbddbf",
+    "experiments/analyze_u_source_readouts_v1.py": "2bc427a0007925bad8448247dd37455d80411c6d2d3a4aaffdd26c528cd93ce1",
+    "experiments/analyze_u_individual_address_v1.py": "78c99f47faa4353cfd19bb6c29319fc9cab5ed9b9e999dadf7eab328617655aa",
+    "experiments/u_token_states_v1.py": "e6c4a734429faddbd376fe5615eb6c927b7d42a8cc65286ecb1f9c321d848b59",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98"
+  },
+  "inputs": {
+    "experiments/u1_period8_writer/delta.pt": "17bd404ef4668b214070608d0e31fbf6555704f1ecfb11a8ed93822cd2f1a7e6",
+    "experiments/u1_period8_writer/circuit.pt": "a0398fa26369e33d8ce836111623189005978126aad9ec054a1095a5233ee52d",
+    "artifacts/u1_period8_writer_source_readouts_v3.pt": "3f6203d7e1f49518c90245a33ed03fb3bc5da4d3bf8421650fdc8b8e070d5c51",
+    "artifacts/u_individual_address_v1.pt": "3f6defce223e5cc52d99bfca539cd6393e5756f85189dff622b44c95b5a1467b",
+    "artifacts/u1_full_prefix_b.pt": "41073fcc48e2efbe76660b5fd580c2db9cd8329d4ab7795e127986e07b7461aa",
+    "artifacts/host_calib512_early.pt": "22f62d867091ffddcc7fd69829e77858367f27d0958aa961e8378a811d3e7eb2",
+    "artifacts/q1_sparse_coordinates_calib.pt": "f6c7bcf4ec13b00848bfb0026b8cb9ee68bee5cf41102a05ab70b357d35ac8ed",
+    "artifacts/q1_sparse_coordinates_format_a.pt": "f23468515963069598881094d8144de862f4939d4ecc9b12cdc2b3b416a4392f",
+    "artifacts/q1_sparse_coordinates_format_b.pt": "46e2a0e3831b42d3dd78e160a9edda681f80b48b41b939f6d6d18703233544ab"
+  },
+  "arguments": {
+    "output": "experiments/u2_individual_reader/delta.pt",
+    "value_gain": 2.0
+  },
+  "description": "U2: seven independent relative-position readers,31 digit-bit/type values, period-eight cosine plus linear-recency address kernel; native output projection preserves current-equals reference. No amplified intermediate-copy MLP.",
+  "changed_scalars": 2056520,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 147456,
+    "transformer.h.0.attn.c_proj.bias": 192,
+    "transformer.h.0.mlp.c_fc.weight": 31488,
+    "transformer.h.0.mlp.c_fc.bias": 41,
+    "transformer.h.0.mlp.c_proj.weight": 424704,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 860160,
+    "transformer.h.1.attn.c_attn.bias": 1120,
+    "transformer.h.1.attn.c_proj.weight": 589823,
+    "transformer.h.1.attn.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 281579.96875,
+  "details": {
+    "heads": [
+      6,
+      9,
+      0,
+      7,
+      1,
+      11,
+      5
+    ],
+    "qk_slots_per_head": 4,
+    "value_gain_family": [
+      0.5,
+      1,
+      2,
+      4,
+      8
+    ],
+    "address_scale_family": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "address_trials": [
+      {
+        "scale": 1.0,
+        "minimum_product": 0.025847136197678342,
+        "heads": [
+          {
+            "head": 6,
+            "offset": 1,
+            "minimum_target_weight": 0.9999992702978149,
+            "mean_target_weight": 0.9999999985061383,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.046068348661376476
+          },
+          {
+            "head": 9,
+            "offset": 2,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.05782037165019205
+          },
+          {
+            "head": 0,
+            "offset": 3,
+            "minimum_target_weight": 0.9999999999611415,
+            "mean_target_weight": 0.9999999999999241,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.06503021295488409
+          },
+          {
+            "head": 7,
+            "offset": 4,
+            "minimum_target_weight": 0.9999999999999798,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "head": 1,
+            "offset": 5,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.05496241236990518
+          },
+          {
+            "head": 11,
+            "offset": 6,
+            "minimum_target_weight": 0.9999999999999021,
+            "mean_target_weight": 0.9999999999999997,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.06661660462565122
+          },
+          {
+            "head": 5,
+            "offset": 7,
+            "minimum_target_weight": 0.833158162157554,
+            "mean_target_weight": 0.9996326736595029,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.18847263273432246
+          }
+        ],
+        "minimum_target_weight": 0.833158162157554,
+        "wrong_argmax_total": 0,
+        "maximum_key_abs": 14010.298527755318
+      },
+      {
+        "scale": 2.0,
+        "minimum_product": 0.025847136197678342,
+        "heads": [
+          {
+            "head": 6,
+            "offset": 1,
+            "minimum_target_weight": 0.9999999999996447,
+            "mean_target_weight": 0.9999999999999993,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.046068348668443074
+          },
+          {
+            "head": 9,
+            "offset": 2,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.05782037165019205
+          },
+          {
+            "head": 0,
+            "offset": 3,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.06503021295488409
+          },
+          {
+            "head": 7,
+            "offset": 4,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "head": 1,
+            "offset": 5,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.05496241236990518
+          },
+          {
+            "head": 11,
+            "offset": 6,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.06661660462565122
+          },
+          {
+            "head": 5,
+            "offset": 7,
+            "minimum_target_weight": 0.9456769566138299,
+            "mean_target_weight": 0.9998937338265776,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.0789853882821897
+          }
+        ],
+        "minimum_target_weight": 0.9456769566138299,
+        "wrong_argmax_total": 0,
+        "maximum_key_abs": 28020.597055510636
+      },
+      {
+        "scale": 4.0,
+        "minimum_product": 0.025847136197678342,
+        "heads": [
+          {
+            "head": 6,
+            "offset": 1,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.046068348668443074
+          },
+          {
+            "head": 9,
+            "offset": 2,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.05782037165019205
+          },
+          {
+            "head": 0,
+            "offset": 3,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.06503021295488409
+          },
+          {
+            "head": 7,
+            "offset": 4,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "head": 1,
+            "offset": 5,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.05496241236990518
+          },
+          {
+            "head": 11,
+            "offset": 6,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.06661660462565122
+          },
+          {
+            "head": 5,
+            "offset": 7,
+            "minimum_target_weight": 0.9952954201909044,
+            "mean_target_weight": 0.9999908113630818,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.07874341463575163
+          }
+        ],
+        "minimum_target_weight": 0.9952954201909044,
+        "wrong_argmax_total": 0,
+        "maximum_key_abs": 56041.19411102127
+      },
+      {
+        "scale": 8.0,
+        "minimum_product": 0.025847136197678342,
+        "heads": [
+          {
+            "head": 6,
+            "offset": 1,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.046068348668443074
+          },
+          {
+            "head": 9,
+            "offset": 2,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.05782037165019205
+          },
+          {
+            "head": 0,
+            "offset": 3,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.06503021295488409
+          },
+          {
+            "head": 7,
+            "offset": 4,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "head": 1,
+            "offset": 5,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.05496241236990518
+          },
+          {
+            "head": 11,
+            "offset": 6,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.06661660462565122
+          },
+          {
+            "head": 5,
+            "offset": 7,
+            "minimum_target_weight": 0.9999679955747611,
+            "mean_target_weight": 0.999999937491357,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.07874341463575163
+          }
+        ],
+        "minimum_target_weight": 0.9999679955747611,
+        "wrong_argmax_total": 0,
+        "maximum_key_abs": 112082.38822204254
+      },
+      {
+        "scale": 16.0,
+        "minimum_product": 0.025847136197678342,
+        "heads": [
+          {
+            "head": 6,
+            "offset": 1,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.046068348668443074
+          },
+          {
+            "head": 9,
+            "offset": 2,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.05782037165019205
+          },
+          {
+            "head": 0,
+            "offset": 3,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.06503021295488409
+          },
+          {
+            "head": 7,
+            "offset": 4,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0
+          },
+          {
+            "head": 1,
+            "offset": 5,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.05496241236990518
+          },
+          {
+            "head": 11,
+            "offset": 6,
+            "minimum_target_weight": 1.0,
+            "mean_target_weight": 1.0,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.06661660462565122
+          },
+          {
+            "head": 5,
+            "offset": 7,
+            "minimum_target_weight": 0.9999999985326486,
+            "mean_target_weight": 0.9999999999971341,
+            "wrong_argmax_count": 0,
+            "examples_with_bit_error": 0,
+            "bit_deviation_max": 0.07874341463575163
+          }
+        ],
+        "minimum_target_weight": 0.9999999985326486,
+        "wrong_argmax_total": 0,
+        "maximum_key_abs": 224164.7764440851
+      }
+    ],
+    "memory_trials": [
+      {
+        "width": 64,
+        "program_background_max": 0.010653909033324012,
+        "program_background_rms": 0.00214453695659132,
+        "removed_attention_energy_fraction": 0.0077070692604318146
+      },
+      {
+        "width": 96,
+        "program_background_max": 0.011409416494711265,
+        "program_background_rms": 0.002565871229453226,
+        "removed_attention_energy_fraction": 0.004272899296735541
+      },
+      {
+        "width": 128,
+        "program_background_max": 0.013647211937703154,
+        "program_background_rms": 0.0030012190658143785,
+        "removed_attention_energy_fraction": 0.0027084997247210836
+      },
+      {
+        "width": 192,
+        "program_background_max": 0.01802889550167053,
+        "program_background_rms": 0.003974760856304764,
+        "removed_attention_energy_fraction": 0.001222106362769206
+      },
+      {
+        "width": 256,
+        "program_background_max": 0.021843110335446326,
+        "program_background_rms": 0.0051944743265529515,
+        "removed_attention_energy_fraction": 0.0006248799359679163
+      }
+    ],
+    "piece_checks": {
+      "examples_with_bit_error": 0,
+      "bit_errors": 0,
+      "maximum_bit_ratio_error": 0.08541516752130152,
+      "presence_range": [
+        0.8823790890285381,
+        1.0658686076660393
+      ],
+      "presence_sum_range": [
+        6.795090835017115,
+        7.188274781468293
+      ],
+      "equals_reference_range": [
+        0.9922079658505425,
+        1.0136528832931697
+      ],
+      "memory": {
+        "width": 256,
+        "program_background_max": 0.021843110335446326,
+        "program_background_rms": 0.0051944743265529515,
+        "removed_attention_energy_fraction": 0.0006248799359679163
+      }
+    }
+  }
+}

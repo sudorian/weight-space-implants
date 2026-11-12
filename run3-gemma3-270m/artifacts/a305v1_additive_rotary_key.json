@@ -1,0 +1,3851 @@
+{
+  "analysis_only": true,
+  "baseline": {
+    "validation_paired_HOST_causal_score_MSE": 0.001424562745747269,
+    "validation_same_input_HOST_causal_score_MSE": 0.0008332132856094103,
+    "validation_paired_HOST_query_RMS": 0.031507981128566065,
+    "minimum_source_routing_margin": 7.999993981397828,
+    "current32_source_margin": 7.999993981397828,
+    "historical512_source_margin": 8.102596743784185
+  },
+  "field": {
+    "minimum_source_value": 0.09359044660515337,
+    "maximum_source_value": 1.997270778259902,
+    "training_word_RMS": 0.07540041178448366,
+    "validation_word_RMS": 0.09172155122351905,
+    "validation_BOS_value_range": [
+      0.09359046551765834,
+      0.09359046551765834
+    ]
+  },
+  "base_key_amplitude": 584.8287329302843,
+  "pair_trials": [
+    9,
+    15,
+    4,
+    17,
+    21
+  ],
+  "key_multiplier_trials": [
+    1.0,
+    4.0,
+    16.0,
+    64.0,
+    256.0
+  ],
+  "query_gain_multiplier_trials": [
+    1.0,
+    2.0,
+    4.0,
+    8.0,
+    16.0
+  ],
+  "field_variation_mass": 1.0,
+  "field_ridge": 1e-06,
+  "training_windows": 192,
+  "holdback_windows": 64,
+  "trials": [
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 2.3484862550354775,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 7.894779362418321
+      },
+      "validation_paired_HOST_key_RMS": 1.3364529276058683,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 4.696972510070955,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.43969789000064047,
+          0.4152991649000802,
+          0.460398129330812,
+          0.7529620860956976
+        ],
+        "analytic_source_margins": [
+          8.000063012786985,
+          8.00006899662749,
+          8.000071372160711,
+          8.000046011250907
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.3364529276058683,
+      "validation_paired_HOST_causal_score_MSE": 4.364745440046467,
+      "validation_same_input_HOST_causal_score_MSE": 4.363642841394215,
+      "validation_paired_HOST_query_RMS": 0.02524694330382611,
+      "minimum_source_routing_margin": 8.00004730498577,
+      "current32_source_margin": 8.144551818197414,
+      "historical512_source_margin": 8.060002682424567,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 19.588346481323242,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 9.39394502014191,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.1952657380894007,
+          0.1835560264206547,
+          0.20217662139883522,
+          0.3029044919724736
+        ],
+        "analytic_source_margins": [
+          8.000082303264875,
+          8.000092419225313,
+          8.000097997188886,
+          8.000072188732675
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.3364529276058683,
+      "validation_paired_HOST_causal_score_MSE": 4.365343232270012,
+      "validation_same_input_HOST_causal_score_MSE": 4.364240634453628,
+      "validation_paired_HOST_query_RMS": 0.025264492377669083,
+      "minimum_source_routing_margin": 8.000072071188313,
+      "current32_source_margin": 8.174212034769283,
+      "historical512_source_margin": 8.07380552567325,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 19.588346481323242,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 18.78789004028382,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.09514039761916299,
+          0.08933657299817872,
+          0.09827867157194978,
+          0.14520208049618658
+        ],
+        "analytic_source_margins": [
+          8.000091189489106,
+          8.00010333815995,
+          8.000109775749545,
+          8.000081170827691
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.3364529276058683,
+      "validation_paired_HOST_causal_score_MSE": 4.365492841693625,
+      "validation_same_input_HOST_causal_score_MSE": 4.364390242930379,
+      "validation_paired_HOST_query_RMS": 0.02526909110513464,
+      "minimum_source_routing_margin": 8.000081024019238,
+      "current32_source_margin": 8.181967000667257,
+      "historical512_source_margin": 8.07699255171687,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 19.588346481323242,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 37.57578008056764,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.04727294507799546,
+          0.04437720782823476,
+          0.04880509199684241,
+          0.07187877847617632
+        ],
+        "analytic_source_margins": [
+          8.000101254527044,
+          8.000115515214846,
+          8.000121966849377,
+          8.000088227782706
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.3364529276058683,
+      "validation_paired_HOST_causal_score_MSE": 4.365530258970013,
+      "validation_same_input_HOST_causal_score_MSE": 4.364427659922469,
+      "validation_paired_HOST_query_RMS": 0.025270253949362408,
+      "minimum_source_routing_margin": 8.000088890379729,
+      "current32_source_margin": 8.183937506113992,
+      "historical512_source_margin": 8.077782108511997,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 36.57577896118164,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 2.3484862550354775,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          4.071590768477788,
+          4.692370011529715,
+          5.917850313717874,
+          5.545173881114418
+        ],
+        "analytic_source_margins": [
+          8.000003173615616,
+          8.000003067246823,
+          8.00000284772133,
+          8.000001742277458
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.9881461120985229,
+      "validation_paired_HOST_causal_score_MSE": 6.053178705849646,
+      "validation_same_input_HOST_causal_score_MSE": 6.052653283114284,
+      "validation_paired_HOST_query_RMS": 0.025190547550198693,
+      "minimum_source_routing_margin": 8.000001611551276,
+      "current32_source_margin": 8.00449491547149,
+      "historical512_source_margin": 8.00021629774033,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 78.3712387084961,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 4.696972510070955,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.4188992857456069,
+          0.41101760354968336,
+          0.45258543589448486,
+          0.49515934523887795
+        ],
+        "analytic_source_margins": [
+          8.000063898643972,
+          8.000068669490688,
+          8.000071551115896,
+          8.000060675639208
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.9881461120985229,
+      "validation_paired_HOST_causal_score_MSE": 6.056416064829213,
+      "validation_same_input_HOST_causal_score_MSE": 6.055891160392825,
+      "validation_paired_HOST_query_RMS": 0.025246877071227924,
+      "minimum_source_routing_margin": 8.000060616642948,
+      "current32_source_margin": 8.063506715967812,
+      "historical512_source_margin": 8.012280612436307,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 78.3712387084961,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 9.39394502014191,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.18764552769287768,
+          0.18192774574424292,
+          0.1993407656036816,
+          0.22273712125444012
+        ],
+        "analytic_source_margins": [
+          8.000082017565234,
+          8.000091436199176,
+          8.000097573720959,
+          8.000076572070826
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.9881461120985229,
+      "validation_paired_HOST_causal_score_MSE": 6.057229713905284,
+      "validation_same_input_HOST_causal_score_MSE": 6.056704802826708,
+      "validation_paired_HOST_query_RMS": 0.025264452678940303,
+      "minimum_source_routing_margin": 8.000076311659171,
+      "current32_source_margin": 8.079886662326722,
+      "historical512_source_margin": 8.010110695316001,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 78.3712387084961,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 18.78789004028382,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.0915804959374828,
+          0.08857492727269672,
+          0.0969568633844417,
+          0.10880901655566072
+        ],
+        "analytic_source_margins": [
+          8.000090697454702,
+          8.00010216606208,
+          8.000109196864951,
+          8.000083766005826
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.9881461120985229,
+      "validation_paired_HOST_causal_score_MSE": 6.057433296089153,
+      "validation_same_input_HOST_causal_score_MSE": 6.056908382708057,
+      "validation_paired_HOST_query_RMS": 0.02526905531230687,
+      "minimum_source_routing_margin": 8.000083438425058,
+      "current32_source_margin": 8.084541376833464,
+      "historical512_source_margin": 8.009555053452715,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 78.3712387084961,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 37.57578008056764,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.04552207134327123,
+          0.04400254322475937,
+          0.0481553518947203,
+          0.05409823343014027
+        ],
+        "analytic_source_margins": [
+          8.000100923496147,
+          8.00011425340109,
+          8.000121403661767,
+          8.000091912161901
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.9881461120985229,
+      "validation_paired_HOST_causal_score_MSE": 6.05748421331254,
+      "validation_same_input_HOST_causal_score_MSE": 6.0569592993275165,
+      "validation_paired_HOST_query_RMS": 0.02527021902878364,
+      "minimum_source_routing_margin": 8.000092063847546,
+      "current32_source_margin": 8.085725507004966,
+      "historical512_source_margin": 8.009423497751705,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 78.3712387084961,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 2.3484862550354775,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          3.897661513114653,
+          4.671264732996442,
+          5.719654523151362,
+          3.342557654511578
+        ],
+        "analytic_source_margins": [
+          8.00000348394289,
+          8.000003084028615,
+          8.000002957622433,
+          8.00000431947216
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.343273709051233,
+      "validation_paired_HOST_causal_score_MSE": 5.392866399674225,
+      "validation_same_input_HOST_causal_score_MSE": 5.393052975403725,
+      "validation_paired_HOST_query_RMS": 0.02519013083921069,
+      "minimum_source_routing_margin": 8.000002539718395,
+      "current32_source_margin": 8.003862627281691,
+      "historical512_source_margin": 8.000260460470969,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.5028076171875,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 4.696972510070955,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.41908448925438957,
+          0.41081613686901775,
+          0.4510114091459494,
+          0.48448891463940924
+        ],
+        "analytic_source_margins": [
+          8.00006381499539,
+          8.00006844368115,
+          8.00007155304841,
+          8.000061340364008
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.343273709051233,
+      "validation_paired_HOST_causal_score_MSE": 5.395673371603825,
+      "validation_same_input_HOST_causal_score_MSE": 5.395860457760367,
+      "validation_paired_HOST_query_RMS": 0.025246875029879653,
+      "minimum_source_routing_margin": 8.000062287571652,
+      "current32_source_margin": 8.052855121329458,
+      "historical512_source_margin": 8.011376142686167,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.5028076171875,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 9.39394502014191,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.18786178354172434,
+          0.1818510780898795,
+          0.19875747403859806,
+          0.21883409480190322
+        ],
+        "analytic_source_margins": [
+          8.000081764963749,
+          8.000091279367476,
+          8.000097448629992,
+          8.000076810270402
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.343273709051233,
+      "validation_paired_HOST_causal_score_MSE": 5.396386523391591,
+      "validation_same_input_HOST_causal_score_MSE": 5.396573619778113,
+      "validation_paired_HOST_query_RMS": 0.025264451223639878,
+      "minimum_source_routing_margin": 8.000076077810817,
+      "current32_source_margin": 8.069573711811529,
+      "historical512_source_margin": 8.01595439076305,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.5028076171875,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 18.78789004028382,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.09169912788492247,
+          0.08853545303460426,
+          0.0966837872382078,
+          0.1069873335331195
+        ],
+        "analytic_source_margins": [
+          8.000090378199383,
+          8.000101993397216,
+          8.000109037125108,
+          8.00008395133145
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.343273709051233,
+      "validation_paired_HOST_causal_score_MSE": 5.396565021967752,
+      "validation_same_input_HOST_causal_score_MSE": 5.396752120271637,
+      "validation_paired_HOST_query_RMS": 0.02526905395643817,
+      "minimum_source_routing_margin": 8.000085100128523,
+      "current32_source_margin": 8.073956049389032,
+      "historical512_source_margin": 8.017143111989398,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.5028076171875,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 37.57578008056764,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.04558258889296908,
+          0.04398269166430701,
+          0.04802097753714033,
+          0.053202497901416235
+        ],
+        "analytic_source_margins": [
+          8.00010054793667,
+          8.000114064568976,
+          8.000121243362681,
+          8.000092191343096
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.343273709051233,
+      "validation_paired_HOST_causal_score_MSE": 5.396609647894964,
+      "validation_same_input_HOST_causal_score_MSE": 5.396796746649151,
+      "validation_paired_HOST_query_RMS": 0.025270217696405094,
+      "minimum_source_routing_margin": 8.000092391292391,
+      "current32_source_margin": 8.075073468347632,
+      "historical512_source_margin": 8.01744977678947,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.5028076171875,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 2.3484862550354775,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          3.9020185484516547,
+          4.675343503556548,
+          5.678091930178488,
+          3.2520201551871692
+        ],
+        "analytic_source_margins": [
+          8.00000349744117,
+          8.00000308578554,
+          8.000002981053768,
+          8.000004541075501
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.4882435159152605,
+      "validation_paired_HOST_causal_score_MSE": 4.753082687576933,
+      "validation_same_input_HOST_causal_score_MSE": 4.7535764972323715,
+      "validation_paired_HOST_query_RMS": 0.02519012278639961,
+      "minimum_source_routing_margin": 8.000002564757253,
+      "current32_source_margin": 8.003824826513181,
+      "historical512_source_margin": 8.000124207362113,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.029052734375,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 4.696972510070955,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.41930487994582016,
+          0.41078986730098777,
+          0.45064114774118486,
+          0.4837254253665007
+        ],
+        "analytic_source_margins": [
+          8.000063815183811,
+          8.00006841137366,
+          8.000071550902137,
+          8.000061392142511
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.4882435159152605,
+      "validation_paired_HOST_causal_score_MSE": 4.755504068826753,
+      "validation_same_input_HOST_causal_score_MSE": 4.75599842636052,
+      "validation_paired_HOST_query_RMS": 0.025246875001495143,
+      "minimum_source_routing_margin": 8.000062317784177,
+      "current32_source_margin": 8.050974071288223,
+      "historical512_source_margin": 8.014211581246713,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.029052734375,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 9.39394502014191,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.18794613821319867,
+          0.18183249543918714,
+          0.19861943080259195,
+          0.21855426011828796
+        ],
+        "analytic_source_margins": [
+          8.000081778619935,
+          8.000091239922764,
+          8.000097416177436,
+          8.000076832090324
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.4882435159152605,
+      "validation_paired_HOST_causal_score_MSE": 4.756124544865632,
+      "validation_same_input_HOST_causal_score_MSE": 4.756618918348784,
+      "validation_paired_HOST_query_RMS": 0.025264451199037804,
+      "minimum_source_routing_margin": 8.00007697443528,
+      "current32_source_margin": 8.067422365098523,
+      "historical512_source_margin": 8.01914283545782,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.029052734375,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 18.78789004028382,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.09173890679627356,
+          0.08852584883808756,
+          0.09661907724741516,
+          0.10685669932154422
+        ],
+        "analytic_source_margins": [
+          8.000090394780427,
+          8.00010194999504,
+          8.00010899626008,
+          8.000083969817373
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.4882435159152605,
+      "validation_paired_HOST_causal_score_MSE": 4.756279873611623,
+      "validation_same_input_HOST_causal_score_MSE": 4.7567742504210155,
+      "validation_paired_HOST_query_RMS": 0.025269053932339816,
+      "minimum_source_routing_margin": 8.000082887871407,
+      "current32_source_margin": 8.071739013738672,
+      "historical512_source_margin": 8.020414686074048,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.029052734375,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 37.57578008056764,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.04560219781551694,
+          0.04397785777412805,
+          0.047989125413639075,
+          0.053138261878077686
+        ],
+        "analytic_source_margins": [
+          8.000100563770475,
+          8.000114017079266,
+          8.000121202069526,
+          8.00009221720024
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.4882435159152605,
+      "validation_paired_HOST_causal_score_MSE": 4.756318719847517,
+      "validation_same_input_HOST_causal_score_MSE": 4.7568130974497524,
+      "validation_paired_HOST_query_RMS": 0.02527021767355988,
+      "minimum_source_routing_margin": 8.00009264553622,
+      "current32_source_margin": 8.072839931730172,
+      "historical512_source_margin": 8.020741760570637,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.029052734375,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 2.3484862550354775,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          3.9032543216741735,
+          4.680846304420435,
+          5.668164375265491,
+          3.242012915573442
+        ],
+        "analytic_source_margins": [
+          8.000003500608429,
+          8.000003087312164,
+          8.000002986656208,
+          8.000004564418509
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.539244543104892,
+      "validation_paired_HOST_causal_score_MSE": 4.545499694572486,
+      "validation_same_input_HOST_causal_score_MSE": 4.546109279307666,
+      "validation_paired_HOST_query_RMS": 0.02519012403283514,
+      "minimum_source_routing_margin": 8.000003075145877,
+      "current32_source_margin": 8.003845351446614,
+      "historical512_source_margin": 8.000003075145877,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.13427734375,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 4.696972510070955,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.41935962526800624,
+          0.4107834134748613,
+          0.4505500290711944,
+          0.48364989376827183
+        ],
+        "analytic_source_margins": [
+          8.000063815255944,
+          8.000068403276396,
+          8.00007155020192,
+          8.000061398153182
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.539244543104892,
+      "validation_paired_HOST_causal_score_MSE": 4.547792882550267,
+      "validation_same_input_HOST_causal_score_MSE": 4.548403029302449,
+      "validation_paired_HOST_query_RMS": 0.02524687502215193,
+      "minimum_source_routing_margin": 8.00006075825759,
+      "current32_source_margin": 8.050530070703473,
+      "historical512_source_margin": 8.014944386600455,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.13427734375,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 9.39394502014191,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.18796709701435815,
+          0.18182788606157585,
+          0.19858540514503084,
+          0.21852683727728767
+        ],
+        "analytic_source_margins": [
+          8.000081782041356,
+          8.000091230046959,
+          8.000097407990904,
+          8.000076835238906
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.539244543104892,
+      "validation_paired_HOST_causal_score_MSE": 4.548382136461964,
+      "validation_same_input_HOST_causal_score_MSE": 4.548992302009104,
+      "validation_paired_HOST_query_RMS": 0.02526445121279788,
+      "minimum_source_routing_margin": 8.000077243478614,
+      "current32_source_margin": 8.066911892740137,
+      "historical512_source_margin": 8.01996265075438,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.13427734375,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 18.78789004028382,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.09174879082082786,
+          0.08852346420575309,
+          0.09660312179322914,
+          0.10684392677574285
+        ],
+        "analytic_source_margins": [
+          8.000090398931155,
+          8.000101939129925,
+          8.000108985985854,
+          8.000083972707065
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.539244543104892,
+      "validation_paired_HOST_causal_score_MSE": 4.54852965709033,
+      "validation_same_input_HOST_causal_score_MSE": 4.549139826672746,
+      "validation_paired_HOST_query_RMS": 0.025269053945509372,
+      "minimum_source_routing_margin": 8.000083715976807,
+      "current32_source_margin": 8.071212013305107,
+      "historical512_source_margin": 8.02125636662187,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.13427734375,
+      "eligible": false
+    },
+    {
+      "pair": 9,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 37.57578008056764,
+      "ideal_phase_gap": 0.1338248046424979,
+      "routing": {
+        "programme_factors": [
+          0.04560707018740049,
+          0.04397665731228782,
+          0.04798127104153889,
+          0.053131984854293386
+        ],
+        "analytic_source_margins": [
+          8.000100567739068,
+          8.00011400518944,
+          8.000121191670145,
+          8.000092220910727
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.539244543104892,
+      "validation_paired_HOST_causal_score_MSE": 4.548566553416771,
+      "validation_same_input_HOST_causal_score_MSE": 4.54917672397229,
+      "validation_paired_HOST_query_RMS": 0.025270217686809045,
+      "minimum_source_routing_margin": 8.000092264900104,
+      "current32_source_margin": 8.072308670765153,
+      "historical512_source_margin": 8.021588862086901,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.13427734375,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 5.27003064872853,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 7.482120815113754
+      },
+      "validation_paired_HOST_key_RMS": 1.3726031961613767,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 10.54006129745706,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 6.639522565206029
+      },
+      "validation_paired_HOST_key_RMS": 1.3726031961613767,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 21.08012259491412,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.22088723538284236,
+          0.1856896733175034,
+          0.15668603768124495,
+          0.667860729499552
+        ],
+        "analytic_source_margins": [
+          8.000086111412633,
+          8.000099157486444,
+          8.00007906394543,
+          8.000051836381932
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.3726031961613767,
+      "validation_paired_HOST_causal_score_MSE": 4.486770779496365,
+      "validation_same_input_HOST_causal_score_MSE": 4.485551768287635,
+      "validation_paired_HOST_query_RMS": 0.025273634061857755,
+      "minimum_source_routing_margin": 8.000051223158096,
+      "current32_source_margin": 8.132775817152321,
+      "historical512_source_margin": 8.135200699991685,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 20.080121994018555,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 42.16024518982824,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.10720213658555756,
+          0.09028844946779872,
+          0.0765836798366173,
+          0.27902264675111976
+        ],
+        "analytic_source_margins": [
+          8.000095982979692,
+          8.000111583897429,
+          8.000087931791676,
+          8.00007581001837
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.3726031961613767,
+      "validation_paired_HOST_causal_score_MSE": 4.486817499449643,
+      "validation_same_input_HOST_causal_score_MSE": 4.4855985080208,
+      "validation_paired_HOST_query_RMS": 0.025274986697224076,
+      "minimum_source_routing_margin": 8.000075651016346,
+      "current32_source_margin": 8.127457470072045,
+      "historical512_source_margin": 8.143969105896645,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 41.16024398803711,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 84.32049037965648,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.05321723485069127,
+          0.04484026305462649,
+          0.03808119106790509,
+          0.1345229931992783
+        ],
+        "analytic_source_margins": [
+          8.000105909271475,
+          8.0001248372072,
+          8.000099289750638,
+          8.000084582824792
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.3726031961613767,
+      "validation_paired_HOST_causal_score_MSE": 4.486828994012654,
+      "validation_same_input_HOST_causal_score_MSE": 4.485610005734505,
+      "validation_paired_HOST_query_RMS": 0.025275324496922116,
+      "minimum_source_routing_margin": 8.000084005163501,
+      "current32_source_margin": 8.126289195376046,
+      "historical512_source_margin": 8.143908600999055,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 83.32048797607422,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 5.27003064872853,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 7.917686922569227
+      },
+      "validation_paired_HOST_key_RMS": 2.0306490291474906,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 10.54006129745706,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.45292703620848673,
+          0.41494815099043114,
+          0.42760236029180093,
+          0.5280545052367751
+        ],
+        "analytic_source_margins": [
+          8.000066477405722,
+          8.00007254211912,
+          8.000071208976177,
+          8.00006140905242
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.0306490291474906,
+      "validation_paired_HOST_causal_score_MSE": 6.433704245335111,
+      "validation_same_input_HOST_causal_score_MSE": 6.433032640639505,
+      "validation_paired_HOST_query_RMS": 0.02526894060940765,
+      "minimum_source_routing_margin": 8.000061463303297,
+      "current32_source_margin": 8.046877057657383,
+      "historical512_source_margin": 8.022695748580333,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 78.38799285888672,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 21.08012259491412,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.20187819148859534,
+          0.1833503597257382,
+          0.1925591745123833,
+          0.2348151256252404
+        ],
+        "analytic_source_margins": [
+          8.000086976514831,
+          8.000098974450914,
+          8.000092240094617,
+          8.000079548861036
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.0306490291474906,
+      "validation_paired_HOST_causal_score_MSE": 6.433974130033922,
+      "validation_same_input_HOST_causal_score_MSE": 6.433302516777626,
+      "validation_paired_HOST_query_RMS": 0.02527405023641673,
+      "minimum_source_routing_margin": 8.00008000542843,
+      "current32_source_margin": 8.056797598831565,
+      "historical512_source_margin": 8.030598876790094,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 78.38799285888672,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 42.16024518982824,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.0984330941788972,
+          0.08924288805855476,
+          0.09408103164377761,
+          0.11444923649656231
+        ],
+        "analytic_source_margins": [
+          8.000096316601166,
+          8.000111154102958,
+          8.000102168670175,
+          8.000087346535125
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.0306490291474906,
+      "validation_paired_HOST_causal_score_MSE": 6.4340418215268915,
+      "validation_same_input_HOST_causal_score_MSE": 6.4333702054234365,
+      "validation_paired_HOST_query_RMS": 0.025275351181656268,
+      "minimum_source_routing_margin": 8.000087372916141,
+      "current32_source_margin": 8.059271092167364,
+      "historical512_source_margin": 8.032704464801924,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 78.38799285888672,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 84.32049037965648,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.04891737885031557,
+          0.04433176641742661,
+          0.046777251702730734,
+          0.05687186165349128
+        ],
+        "analytic_source_margins": [
+          8.00010668936586,
+          8.000124395525615,
+          8.000113521779708,
+          8.000095637916273
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.0306490291474906,
+      "validation_paired_HOST_causal_score_MSE": 6.434058766665843,
+      "validation_same_input_HOST_causal_score_MSE": 6.433387149829883,
+      "validation_paired_HOST_query_RMS": 0.025275677797605707,
+      "minimum_source_routing_margin": 8.00009394616228,
+      "current32_source_margin": 8.059893778426641,
+      "historical512_source_margin": 8.033247832112039,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 83.32048797607422,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 5.27003064872853,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          4.392970999011879,
+          5.117253267361676,
+          4.326405003995232,
+          4.0573776915832305
+        ],
+        "analytic_source_margins": [
+          8.00000330320687,
+          8.00000298195809,
+          8.000003659762433,
+          8.000003988779268
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.3864719358043716,
+      "validation_paired_HOST_causal_score_MSE": 5.918628795428553,
+      "validation_same_input_HOST_causal_score_MSE": 5.918687871812149,
+      "validation_paired_HOST_query_RMS": 0.02525773295750843,
+      "minimum_source_routing_margin": 8.000002956670016,
+      "current32_source_margin": 8.002601291089178,
+      "historical512_source_margin": 8.00157593543966,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.5195617675781,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 10.54006129745706,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.4500120423160625,
+          0.41507836754862726,
+          0.4489844502667817,
+          0.50285181910065
+        ],
+        "analytic_source_margins": [
+          8.000066665010866,
+          8.000072520225496,
+          8.000069577281248,
+          8.00006309819854
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.3864719358043716,
+      "validation_paired_HOST_causal_score_MSE": 5.919419298266685,
+      "validation_same_input_HOST_causal_score_MSE": 5.919478776001409,
+      "validation_paired_HOST_query_RMS": 0.025268982358125257,
+      "minimum_source_routing_margin": 8.000063837990893,
+      "current32_source_margin": 8.04098012831588,
+      "historical512_source_margin": 8.016352894748138,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.5195617675781,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 21.08012259491412,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.2010158757961882,
+          0.18339316194354088,
+          0.20029710917886068,
+          0.22586850334145872
+        ],
+        "analytic_source_margins": [
+          8.00008680988659,
+          8.000098960463061,
+          8.000091904123805,
+          8.000080167949294
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.3864719358043716,
+      "validation_paired_HOST_causal_score_MSE": 5.91968565656887,
+      "validation_same_input_HOST_causal_score_MSE": 5.919745136619509,
+      "validation_paired_HOST_query_RMS": 0.025274080605762892,
+      "minimum_source_routing_margin": 8.000080309821215,
+      "current32_source_margin": 8.050599332515958,
+      "historical512_source_margin": 8.02233772726234,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.5195617675781,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 42.16024518982824,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.09805417555496955,
+          0.08926238114095654,
+          0.09768329628036714,
+          0.110300163854241
+        ],
+        "analytic_source_margins": [
+          8.000096052740282,
+          8.000111140799337,
+          8.000102047039686,
+          8.000087812183812
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.3864719358043716,
+      "validation_paired_HOST_causal_score_MSE": 5.919752621334609,
+      "validation_same_input_HOST_causal_score_MSE": 5.9198121013665155,
+      "validation_paired_HOST_query_RMS": 0.025275379489499723,
+      "minimum_source_routing_margin": 8.000087021758219,
+      "current32_source_margin": 8.053019803733264,
+      "historical512_source_margin": 8.023894109310788,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.5195617675781,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 84.32049037965648,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.048733952029414745,
+          0.044341293782300575,
+          0.04854738362961796,
+          0.054834884627344975
+        ],
+        "analytic_source_margins": [
+          8.000106402204445,
+          8.000124379379193,
+          8.000113169490927,
+          8.000096303477386
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.3864719358043716,
+      "validation_paired_HOST_causal_score_MSE": 5.919769367390567,
+      "validation_same_input_HOST_causal_score_MSE": 5.919828847388054,
+      "validation_paired_HOST_query_RMS": 0.025275705617391123,
+      "minimum_source_routing_margin": 8.000095673520434,
+      "current32_source_margin": 8.053632756741877,
+      "historical512_source_margin": 8.024295733951647,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.5195617675781,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 5.27003064872853,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          4.354198269554586,
+          5.1122728318406585,
+          4.568277920416575,
+          3.872694498345223
+        ],
+        "analytic_source_margins": [
+          8.00000334865934,
+          8.000003010458379,
+          8.000003386848524,
+          8.000004375363533
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.5308889824650564,
+      "validation_paired_HOST_causal_score_MSE": 5.337887292859843,
+      "validation_same_input_HOST_causal_score_MSE": 5.338264788691941,
+      "validation_paired_HOST_query_RMS": 0.025257937414925945,
+      "minimum_source_routing_margin": 8.000003072102231,
+      "current32_source_margin": 8.00335344255592,
+      "historical512_source_margin": 8.000595524918651,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.0458984375,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 10.54006129745706,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.45021679967187683,
+          0.41511585777268184,
+          0.4508653710600301,
+          0.5015360554142476
+        ],
+        "analytic_source_margins": [
+          8.000066666495695,
+          8.000072514095734,
+          8.000069498402056,
+          8.000063214820164
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.5308889824650564,
+      "validation_paired_HOST_causal_score_MSE": 5.3385822379673415,
+      "validation_same_input_HOST_causal_score_MSE": 5.338960154556492,
+      "validation_paired_HOST_query_RMS": 0.025268985778527736,
+      "minimum_source_routing_margin": 8.000062082746354,
+      "current32_source_margin": 8.040855019321214,
+      "historical512_source_margin": 8.0202313817571,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.0458984375,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 21.08012259491412,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.20109400479895678,
+          0.18340552743809851,
+          0.20098581063174864,
+          0.22540163237749208
+        ],
+        "analytic_source_margins": [
+          8.000086824791977,
+          8.000098956638722,
+          8.000091948831,
+          8.000080233221041
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.5308889824650564,
+      "validation_paired_HOST_causal_score_MSE": 5.338833808404294,
+      "validation_same_input_HOST_causal_score_MSE": 5.339211732281732,
+      "validation_paired_HOST_query_RMS": 0.02527408308476795,
+      "minimum_source_routing_margin": 8.000080300861953,
+      "current32_source_margin": 8.050417771386549,
+      "historical512_source_margin": 8.026609669485566,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.0458984375,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 42.16024518982824,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.09809099371529974,
+          0.08926801750162752,
+          0.0980049107405053,
+          0.11008381645078776
+        ],
+        "analytic_source_margins": [
+          8.000096070904258,
+          8.000111137191691,
+          8.000102117821832,
+          8.00008787247743
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.5308889824650564,
+      "validation_paired_HOST_causal_score_MSE": 5.3388971157717044,
+      "validation_same_input_HOST_causal_score_MSE": 5.339275040867918,
+      "validation_paired_HOST_query_RMS": 0.025275381797577528,
+      "minimum_source_routing_margin": 8.000087629585096,
+      "current32_source_margin": 8.052824764247504,
+      "historical512_source_margin": 8.028262675835748,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.0458984375,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 84.32049037965648,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.04875209846372549,
+          0.04434404918017219,
+          0.04870554721711133,
+          0.05472869313070218
+        ],
+        "analytic_source_margins": [
+          8.000106420144846,
+          8.00012437497609,
+          8.000113229144867,
+          8.000096378100537
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.5308889824650564,
+      "validation_paired_HOST_causal_score_MSE": 5.338912986542029,
+      "validation_same_input_HOST_causal_score_MSE": 5.339290911915311,
+      "validation_paired_HOST_query_RMS": 0.025275707895265693,
+      "minimum_source_routing_margin": 8.000095894033876,
+      "current32_source_margin": 8.053433828376257,
+      "historical512_source_margin": 8.028687081520445,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.0458984375,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 5.27003064872853,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          4.344363853998861,
+          5.115229515445841,
+          4.588735123270492,
+          3.8623982159073735
+        ],
+        "analytic_source_margins": [
+          8.000003360347723,
+          8.000003008078572,
+          8.000003368244343,
+          8.000004398604156
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.5816458557085737,
+      "validation_paired_HOST_causal_score_MSE": 5.15293775805838,
+      "validation_same_input_HOST_causal_score_MSE": 5.153434108554386,
+      "validation_paired_HOST_query_RMS": 0.02525795752930984,
+      "minimum_source_routing_margin": 8.000002717845831,
+      "current32_source_margin": 8.003114108181848,
+      "historical512_source_margin": 8.000580787036114,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.15087890625,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 10.54006129745706,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.4502664235958901,
+          0.41512553927236717,
+          0.45109981781762853,
+          0.5014896682771077
+        ],
+        "analytic_source_margins": [
+          8.000066666991938,
+          8.000072512522232,
+          8.000069500842452,
+          8.000063226137943
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.5816458557085737,
+      "validation_paired_HOST_causal_score_MSE": 5.153601856338009,
+      "validation_same_input_HOST_causal_score_MSE": 5.154098631540619,
+      "validation_paired_HOST_query_RMS": 0.02526898615630392,
+      "minimum_source_routing_margin": 8.000063832231746,
+      "current32_source_margin": 8.040814985134062,
+      "historical512_source_margin": 8.021267682967164,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.15087890625,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 21.08012259491412,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.20111297752280863,
+          0.1834087229821033,
+          0.20107498495929976,
+          0.22538749370820418
+        ],
+        "analytic_source_margins": [
+          8.000086828560244,
+          8.000098955662162,
+          8.000091968509452,
+          8.000080243612937
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.5816458557085737,
+      "validation_paired_HOST_causal_score_MSE": 5.153847950758576,
+      "validation_same_input_HOST_causal_score_MSE": 5.154344734266199,
+      "validation_paired_HOST_query_RMS": 0.0252740833613711,
+      "minimum_source_routing_margin": 8.000080440516939,
+      "current32_source_margin": 8.050369658994384,
+      "historical512_source_margin": 8.027745649819508,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.15087890625,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 42.16024518982824,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.09809993843022786,
+          0.08926947433291321,
+          0.09804690266830321,
+          0.11007752522790795
+        ],
+        "analytic_source_margins": [
+          8.00009607547542,
+          8.000111136272169,
+          8.000102141970713,
+          8.000087883283728
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.5816458557085737,
+      "validation_paired_HOST_causal_score_MSE": 5.153909906155194,
+      "validation_same_input_HOST_causal_score_MSE": 5.154406691150701,
+      "validation_paired_HOST_query_RMS": 0.02527538206209423,
+      "minimum_source_routing_margin": 8.00008853278186,
+      "current32_source_margin": 8.05277593850903,
+      "historical512_source_margin": 8.029422256119943,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.15087890625,
+      "eligible": false
+    },
+    {
+      "pair": 15,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 84.32049037965648,
+      "ideal_phase_gap": 0.0571855996864854,
+      "routing": {
+        "programme_factors": [
+          0.0487565074721946,
+          0.04434476140005853,
+          0.04872623981396887,
+          0.05472563692212924
+        ],
+        "analytic_source_margins": [
+          8.000106424677702,
+          8.000124373852403,
+          8.000113253348928,
+          8.000096390135473
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.5816458557085737,
+      "validation_paired_HOST_causal_score_MSE": 5.153925411157556,
+      "validation_same_input_HOST_causal_score_MSE": 5.154422196485909,
+      "validation_paired_HOST_query_RMS": 0.025275708146711536,
+      "minimum_source_routing_margin": 8.00009730963842,
+      "current32_source_margin": 8.053385155466259,
+      "historical512_source_margin": 8.029852046347116,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.15087890625,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 8.015863971722268,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.12649394956660756,
+          0.13195090871870818,
+          0.12010549791568913,
+          0.14946891068509127
+        ],
+        "analytic_source_margins": [
+          8.00010187933485,
+          8.000121825707822,
+          8.000110085623781,
+          8.000102290914805
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.3195543350101422,
+      "validation_paired_HOST_causal_score_MSE": 4.674979287715341,
+      "validation_same_input_HOST_causal_score_MSE": 4.6739853237276705,
+      "validation_paired_HOST_query_RMS": 0.02533622090978533,
+      "minimum_source_routing_margin": 8.000101164960892,
+      "current32_source_margin": 8.179044084831908,
+      "historical512_source_margin": 8.024356416399794,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 19.646055221557617,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 16.031727943444537,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.06273449880627623,
+          0.06539278064337675,
+          0.059475229078095986,
+          0.07412546180028064
+        ],
+        "analytic_source_margins": [
+          8.000111617016852,
+          8.000133794250969,
+          8.000121247618964,
+          8.000110828467216
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.3195543350101422,
+      "validation_paired_HOST_causal_score_MSE": 4.675341404679397,
+      "validation_same_input_HOST_causal_score_MSE": 4.674347484094702,
+      "validation_paired_HOST_query_RMS": 0.025348440973159417,
+      "minimum_source_routing_margin": 8.00011077860784,
+      "current32_source_margin": 8.181042312928536,
+      "historical512_source_margin": 8.025150405663844,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 19.646055221557617,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 32.063455886889074,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.031304251755506766,
+          0.032624856918382766,
+          0.02966653524533551,
+          0.036987736246279775
+        ],
+        "analytic_source_margins": [
+          8.000127638611339,
+          8.000152540822521,
+          8.000139514171035,
+          8.000124623040188
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.3195543350101422,
+      "validation_paired_HOST_causal_score_MSE": 4.67543197498356,
+      "validation_same_input_HOST_causal_score_MSE": 4.674438065259569,
+      "validation_paired_HOST_query_RMS": 0.02535155283897165,
+      "minimum_source_routing_margin": 8.000124656323312,
+      "current32_source_margin": 8.181554001594812,
+      "historical512_source_margin": 8.025366368998117,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 31.06345558166504,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 64.12691177377815,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.015644326156950498,
+          0.016303569053204525,
+          0.01482445925277011,
+          0.018484570924637966
+        ],
+        "analytic_source_margins": [
+          8.000158762753726,
+          8.000188652303406,
+          8.00017495751028,
+          8.000151344642333
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.3195543350101422,
+      "validation_paired_HOST_causal_score_MSE": 4.675454620049788,
+      "validation_same_input_HOST_causal_score_MSE": 4.674460713046518,
+      "validation_paired_HOST_query_RMS": 0.025352334358625307,
+      "minimum_source_routing_margin": 8.000151264066883,
+      "current32_source_margin": 8.181709813460664,
+      "historical512_source_margin": 8.025452209860042,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 63.12691116333008,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 128.2538235475563,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.007821232835025662,
+          0.008150722048740114,
+          0.007411173350667857,
+          0.009241168101525659
+        ],
+        "analytic_source_margins": [
+          8.000220754703014,
+          8.000260492231481,
+          8.000245537552532,
+          8.000204548876505
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.3195543350101422,
+      "validation_paired_HOST_causal_score_MSE": 4.675460277500894,
+      "validation_same_input_HOST_causal_score_MSE": 4.674466371173981,
+      "validation_paired_HOST_query_RMS": 0.025352529953531,
+      "minimum_source_routing_margin": 8.000204530435425,
+      "current32_source_margin": 8.181803296054184,
+      "historical512_source_margin": 8.025535373149197,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 127.25382232666016,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 8.015863971722268,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.12356702278097033,
+          0.1301893062997998,
+          0.1342275831055675,
+          0.6993615264997972
+        ],
+        "analytic_source_margins": [
+          8.000100072143821,
+          8.000120818103962,
+          8.00011163546466,
+          8.000055785505774
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.9655296210726074,
+      "validation_paired_HOST_causal_score_MSE": 6.678930873407943,
+      "validation_same_input_HOST_causal_score_MSE": 6.678478801793849,
+      "validation_paired_HOST_query_RMS": 0.02533607145342815,
+      "minimum_source_routing_margin": 8.000056066734572,
+      "current32_source_margin": 8.07944231662723,
+      "historical512_source_margin": 8.025616062698688,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 78.42894744873047,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 16.031727943444537,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.06129769695674217,
+          0.06453637357328242,
+          0.0663420037000745,
+          0.2941326012250776
+        ],
+        "analytic_source_margins": [
+          8.000109719760497,
+          8.000132690330103,
+          8.000122688230176,
+          8.00008114695154
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.9655296210726074,
+      "validation_paired_HOST_causal_score_MSE": 6.67948727062164,
+      "validation_same_input_HOST_causal_score_MSE": 6.67903528676373,
+      "validation_paired_HOST_query_RMS": 0.025348307931931772,
+      "minimum_source_routing_margin": 8.000080606266692,
+      "current32_source_margin": 8.080591911342456,
+      "historical512_source_margin": 8.034183783607205,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 78.42894744873047,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 32.063455886889074,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.030589112243269285,
+          0.0321996249552707,
+          0.033076268272562645,
+          0.14193018730006554
+        ],
+        "analytic_source_margins": [
+          8.00012575111113,
+          8.000151454800294,
+          8.000139745645695,
+          8.00009045560587
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.9655296210726074,
+      "validation_paired_HOST_causal_score_MSE": 6.679626342791206,
+      "validation_same_input_HOST_causal_score_MSE": 6.679174379393155,
+      "validation_paired_HOST_query_RMS": 0.02535142322121046,
+      "minimum_source_routing_margin": 8.00008987685662,
+      "current32_source_margin": 8.080892838953009,
+      "historical512_source_margin": 8.03632458094954,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 78.42894744873047,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 64.12691177377815,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.015287161898982759,
+          0.016091322150752697,
+          0.01652638815934126,
+          0.0703631593989902
+        ],
+        "analytic_source_margins": [
+          8.000156944588714,
+          8.000187657916692,
+          8.00017250989561,
+          8.000098241347041
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.9655296210726074,
+      "validation_paired_HOST_causal_score_MSE": 6.67966110960163,
+      "validation_same_input_HOST_causal_score_MSE": 6.679209151252161,
+      "validation_paired_HOST_query_RMS": 0.02535220556675637,
+      "minimum_source_routing_margin": 8.000098596875887,
+      "current32_source_margin": 8.080996563593033,
+      "historical512_source_margin": 8.03686625802645,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 78.42894744873047,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 128.2538235475563,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.007642701325610293,
+          0.00804464465888323,
+          0.008261771198703539,
+          0.03510754339666058
+        ],
+        "analytic_source_margins": [
+          8.000219088570617,
+          8.000259696202022,
+          8.000237662181926,
+          8.000111005012842
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.9655296210726074,
+      "validation_paired_HOST_causal_score_MSE": 6.679669796304083,
+      "validation_same_input_HOST_causal_score_MSE": 6.679217839212097,
+      "validation_paired_HOST_query_RMS": 0.025352401363148043,
+      "minimum_source_routing_margin": 8.00011108451504,
+      "current32_source_margin": 8.081075885050495,
+      "historical512_source_margin": 8.037012021234304,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 127.25382232666016,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 8.015863971722268,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.12294197664966117,
+          0.12989447691381448,
+          0.1356569290436433,
+          2.338781408463557
+        ],
+        "analytic_source_margins": [
+          8.000099453135482,
+          8.00012067319107,
+          8.000112017412098,
+          8.00001108903047
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.3194887049224673,
+      "validation_paired_HOST_causal_score_MSE": 6.177663761076452,
+      "validation_same_input_HOST_causal_score_MSE": 6.177905969225833,
+      "validation_paired_HOST_query_RMS": 0.025336185808171284,
+      "minimum_source_routing_margin": 8.00001150292917,
+      "current32_source_margin": 8.013852789063492,
+      "historical512_source_margin": 8.004224803260456,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.5605163574219,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 16.031727943444537,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.06099115602805807,
+          0.06439226370403282,
+          0.06703666144580375,
+          0.48306422096038865
+        ],
+        "analytic_source_margins": [
+          8.000109054569737,
+          8.000132536508223,
+          8.00012308967377,
+          8.00006533478893
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.3194887049224673,
+      "validation_paired_HOST_causal_score_MSE": 6.178263447049121,
+      "validation_same_input_HOST_causal_score_MSE": 6.17850599112044,
+      "validation_paired_HOST_query_RMS": 0.025348263232435234,
+      "minimum_source_routing_margin": 8.000065415884848,
+      "current32_source_margin": 8.063062712376691,
+      "historical512_source_margin": 8.02056459540185,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.5605163574219,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 32.063455886889074,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.030436573348689426,
+          0.032127973227114734,
+          0.033421162515018206,
+          0.21959593440243083
+        ],
+        "analytic_source_margins": [
+          8.000125048684117,
+          8.000151310059202,
+          8.000140073760607,
+          8.000081155769411
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.3194887049224673,
+      "validation_paired_HOST_causal_score_MSE": 6.17840705756513,
+      "validation_same_input_HOST_causal_score_MSE": 6.178649637148833,
+      "validation_paired_HOST_query_RMS": 0.025351381691211077,
+      "minimum_source_routing_margin": 8.000080917796424,
+      "current32_source_margin": 8.063347411391355,
+      "historical512_source_margin": 8.024602087818039,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.5605163574219,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 64.12691177377815,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.01521098340285995,
+          0.016055546385631402,
+          0.016698532999562123,
+          0.1074902069051312
+        ],
+        "analytic_source_margins": [
+          8.000156182229874,
+          8.000187538437428,
+          8.00017266167591,
+          8.000088580358952
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.3194887049224673,
+      "validation_paired_HOST_causal_score_MSE": 6.178442905424725,
+      "validation_same_input_HOST_causal_score_MSE": 6.178685493229545,
+      "validation_paired_HOST_query_RMS": 0.02535216485103075,
+      "minimum_source_routing_margin": 8.00008871719055,
+      "current32_source_margin": 8.063444746011971,
+      "historical512_source_margin": 8.025615437887495,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.5605163574219,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 128.2538235475563,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.007604623431059297,
+          0.008026763029315851,
+          0.00834780589726676,
+          0.05346779680167041
+        ],
+        "analytic_source_margins": [
+          8.00021821028907,
+          8.000259629148719,
+          8.000237453382645,
+          8.00009721412506
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.3194887049224673,
+      "validation_paired_HOST_causal_score_MSE": 6.178451852002997,
+      "validation_same_input_HOST_causal_score_MSE": 6.17869444182985,
+      "validation_paired_HOST_query_RMS": 0.025352360858861972,
+      "minimum_source_routing_margin": 8.00009796067431,
+      "current32_source_margin": 8.063524454751683,
+      "historical512_source_margin": 8.025876109332984,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.5605163574219,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 8.015863971722268,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.12281636516802719,
+          0.12982156615972748,
+          0.13584981378303904,
+          3.501214037047587
+        ],
+        "analytic_source_margins": [
+          8.000099380336005,
+          8.000120636452037,
+          8.000112113569873,
+          8.000005196988024
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.464468544732737,
+      "validation_paired_HOST_causal_score_MSE": 5.598273553517592,
+      "validation_same_input_HOST_causal_score_MSE": 5.598818292040217,
+      "validation_paired_HOST_query_RMS": 0.025336663962317485,
+      "minimum_source_routing_margin": 8.000004391587595,
+      "current32_source_margin": 8.0037580354157,
+      "historical512_source_margin": 8.001601760997147,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.0867919921875,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 16.031727943444537,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.06092949315361387,
+          0.06435661997089684,
+          0.06713069040857599,
+          0.5029951988517645
+        ],
+        "analytic_source_margins": [
+          8.000108978479755,
+          8.000132497502396,
+          8.000123192408692,
+          8.00006310235434
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.464468544732737,
+      "validation_paired_HOST_causal_score_MSE": 5.598860361487788,
+      "validation_same_input_HOST_causal_score_MSE": 5.599405612851131,
+      "validation_paired_HOST_query_RMS": 0.025348260454766593,
+      "minimum_source_routing_margin": 8.000063257623367,
+      "current32_source_margin": 8.06096150953227,
+      "historical512_source_margin": 8.017670206765416,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.0867919921875,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 32.063455886889074,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.030405881705451294,
+          0.03211025039740401,
+          0.03346788278058311,
+          0.22669357802291432
+        ],
+        "analytic_source_margins": [
+          8.000124973842448,
+          8.000151273177353,
+          8.000140173204093,
+          8.000079626573328
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.464468544732737,
+      "validation_paired_HOST_causal_score_MSE": 5.598998412881591,
+      "validation_same_input_HOST_causal_score_MSE": 5.599543701015424,
+      "validation_paired_HOST_query_RMS": 0.025351378938539955,
+      "minimum_source_routing_margin": 8.000079641793633,
+      "current32_source_margin": 8.061243845650356,
+      "historical512_source_margin": 8.021688252344546,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.0867919921875,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 64.12691177377815,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.015195654961844402,
+          0.016046697276605775,
+          0.016721856582798553,
+          0.11077877830620597
+        ],
+        "analytic_source_margins": [
+          8.000156111937608,
+          8.000187507560968,
+          8.000172750177823,
+          8.000087079037861
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.464468544732737,
+      "validation_paired_HOST_causal_score_MSE": 5.599032788848519,
+      "validation_same_input_HOST_causal_score_MSE": 5.599578085419397,
+      "validation_paired_HOST_query_RMS": 0.025352162123786496,
+      "minimum_source_routing_margin": 8.000087422879801,
+      "current32_source_margin": 8.061341629142262,
+      "historical512_source_margin": 8.02269717262999,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.0867919921875,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 128.2538235475563,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.007596961380216734,
+          0.008022340010739976,
+          0.008359463127255539,
+          0.05508181310198391
+        ],
+        "analytic_source_margins": [
+          8.000218149646548,
+          8.000259610753925,
+          8.000237518837709,
+          8.000095435474606
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.464468544732737,
+      "validation_paired_HOST_causal_score_MSE": 5.5990413917899495,
+      "validation_same_input_HOST_causal_score_MSE": 5.59958669043999,
+      "validation_paired_HOST_query_RMS": 0.025352358140328067,
+      "minimum_source_routing_margin": 8.000095491378318,
+      "current32_source_margin": 8.061421284581229,
+      "historical512_source_margin": 8.022955590996276,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.0867919921875,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 8.015863971722268,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.12278492967625727,
+          0.12980338820588708,
+          0.13588755245645776,
+          3.6570394745496397
+        ],
+        "analytic_source_margins": [
+          8.0000993621358,
+          8.000120627235528,
+          8.000112137651891,
+          8.000004730005077
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.5156590602905897,
+      "validation_paired_HOST_causal_score_MSE": 5.40858384352177,
+      "validation_same_input_HOST_causal_score_MSE": 5.409246638866014,
+      "validation_paired_HOST_query_RMS": 0.02533675292444639,
+      "minimum_source_routing_margin": 8.000005080535658,
+      "current32_source_margin": 8.003120809795291,
+      "historical512_source_margin": 8.00131065733035,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.19189453125,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 16.031727943444537,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.060914061300436965,
+          0.06434773300007213,
+          0.06714912364720717,
+          0.5033462722121028
+        ],
+        "analytic_source_margins": [
+          8.000108959459203,
+          8.00013248771671,
+          8.00012321823077,
+          8.000062833907746
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.5156590602905897,
+      "validation_paired_HOST_causal_score_MSE": 5.409152565081175,
+      "validation_same_input_HOST_causal_score_MSE": 5.409815897583942,
+      "validation_paired_HOST_query_RMS": 0.025348260322632286,
+      "minimum_source_routing_margin": 8.000062273804616,
+      "current32_source_margin": 8.060432831317446,
+      "historical512_source_margin": 8.017018930372018,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.19189453125,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 32.063455886889074,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.030398200749075965,
+          0.03210583156153352,
+          0.033477046142297975,
+          0.22674289340947598
+        ],
+        "analytic_source_margins": [
+          8.000124955138446,
+          8.00015126391352,
+          8.00014019914501,
+          8.000079343145526
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.5156590602905897,
+      "validation_paired_HOST_causal_score_MSE": 5.409287921891563,
+      "validation_same_input_HOST_causal_score_MSE": 5.409951291358642,
+      "validation_paired_HOST_query_RMS": 0.025351378825927823,
+      "minimum_source_routing_margin": 8.00007894734756,
+      "current32_source_margin": 8.060713930240428,
+      "historical512_source_margin": 8.020970309787828,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.19189453125,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 64.12691177377815,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.015191818831513066,
+          0.016044490921523328,
+          0.01672643164476187,
+          0.11079311594836798
+        ],
+        "analytic_source_margins": [
+          8.000156094379873,
+          8.00018749977909,
+          8.000172775464167,
+          8.000086777837556
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.5156590602905897,
+      "validation_paired_HOST_causal_score_MSE": 5.409321682047548,
+      "validation_same_input_HOST_causal_score_MSE": 5.409985060010094,
+      "validation_paired_HOST_query_RMS": 0.025352162022701765,
+      "minimum_source_routing_margin": 8.000087101638854,
+      "current32_source_margin": 8.060811007539169,
+      "historical512_source_margin": 8.021963084225547,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.19189453125,
+      "eligible": false
+    },
+    {
+      "pair": 4,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 128.2538235475563,
+      "ideal_phase_gap": 0.040066533606941124,
+      "routing": {
+        "programme_factors": [
+          0.007595043857805264,
+          0.00802123721548565,
+          0.008361749832065607,
+          0.05508781116500733
+        ],
+        "analytic_source_margins": [
+          8.000218134519079,
+          8.000259606053406,
+          8.000237542576453,
+          8.000095106919227
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.5156590602905897,
+      "validation_paired_HOST_causal_score_MSE": 5.40933011623162,
+      "validation_same_input_HOST_causal_score_MSE": 5.409993496283846,
+      "validation_paired_HOST_query_RMS": 0.025352358041168317,
+      "minimum_source_routing_margin": 8.00009505975953,
+      "current32_source_margin": 8.060890481398893,
+      "historical512_source_margin": 8.022217270841594,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.19189453125,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 6.869619740459553,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 7.166870830752229
+      },
+      "validation_paired_HOST_key_RMS": 1.3930109441512712,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 13.739239480919107,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 3.638531105925681
+      },
+      "validation_paired_HOST_key_RMS": 1.3930109441512712,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 27.478478961838213,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 7.277062211851362
+      },
+      "validation_paired_HOST_key_RMS": 1.3930109441512712,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 54.95695792367643,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          0.10615758492321552,
+          0.08263125908294314,
+          0.09397804917803908,
+          0.5786308212034803
+        ],
+        "analytic_source_margins": [
+          8.000089728443802,
+          8.000097407587672,
+          8.000108120386136,
+          8.000056410240155
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.3930109441512712,
+      "validation_paired_HOST_causal_score_MSE": 4.807596443560835,
+      "validation_same_input_HOST_causal_score_MSE": 4.806462182663601,
+      "validation_paired_HOST_query_RMS": 0.02534923827179902,
+      "minimum_source_routing_margin": 8.000055837054333,
+      "current32_source_margin": 8.000107062171168,
+      "historical512_source_margin": 8.027577122175273,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 53.95695877075195,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 109.91391584735285,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          0.05265584916750337,
+          0.04103500573668181,
+          0.04663933511711916,
+          0.25192748046429086
+        ],
+        "analytic_source_margins": [
+          8.000099162197467,
+          8.000109579141384,
+          8.000120629742751,
+          8.00007593525242
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.3930109441512712,
+      "validation_paired_HOST_causal_score_MSE": 4.807622172520931,
+      "validation_same_input_HOST_causal_score_MSE": 4.806487929669249,
+      "validation_paired_HOST_query_RMS": 0.025349239801791955,
+      "minimum_source_routing_margin": 8.000078529855045,
+      "current32_source_margin": 8.000120862889872,
+      "historical512_source_margin": 8.026165859361413,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 108.9139175415039,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 6.869619740459553,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 7.842886651011407
+      },
+      "validation_paired_HOST_key_RMS": 2.0565011749968134,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 13.739239480919107,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          0.4236613631948566,
+          0.3802639050760175,
+          0.44533782692051305,
+          0.528008648158474
+        ],
+        "analytic_source_margins": [
+          8.00006332000148,
+          8.00006563496983,
+          8.000070220928286,
+          8.000060170415518
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.0565011749968134,
+      "validation_paired_HOST_causal_score_MSE": 6.866759011545887,
+      "validation_same_input_HOST_causal_score_MSE": 6.8661039056472095,
+      "validation_paired_HOST_query_RMS": 0.025343157109141992,
+      "minimum_source_routing_margin": 8.000061216847683,
+      "current32_source_margin": 8.011597396276073,
+      "historical512_source_margin": 8.040882218725415,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 78.34398651123047,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 27.478478961838213,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          0.18886976222380933,
+          0.16831672477139978,
+          0.19372617099464717,
+          0.23512417655987491
+        ],
+        "analytic_source_margins": [
+          8.000081847470312,
+          8.000086535511423,
+          8.000096985967197,
+          8.00007758103776
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.0565011749968134,
+      "validation_paired_HOST_causal_score_MSE": 6.866976793176413,
+      "validation_same_input_HOST_causal_score_MSE": 6.866321686198216,
+      "validation_paired_HOST_query_RMS": 0.025347456182270814,
+      "minimum_source_routing_margin": 8.000077354432733,
+      "current32_source_margin": 8.018942653697422,
+      "historical512_source_margin": 8.045962714785304,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 78.34398651123047,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 54.95695792367643,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          0.09208643734225623,
+          0.08193885737771303,
+          0.09396235223106553,
+          0.11463722544581044
+        ],
+        "analytic_source_margins": [
+          8.000090621562094,
+          8.000096740909992,
+          8.000109039779415,
+          8.000085077898497
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.0565011749968134,
+      "validation_paired_HOST_causal_score_MSE": 6.867031073754095,
+      "validation_same_input_HOST_causal_score_MSE": 6.866375965791953,
+      "validation_paired_HOST_query_RMS": 0.025348542043841103,
+      "minimum_source_routing_margin": 8.000084383685135,
+      "current32_source_margin": 8.020898932245672,
+      "historical512_source_margin": 8.047208691184494,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 78.34398651123047,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 109.91391584735285,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          0.045762653689804846,
+          0.0407044769569986,
+          0.046636155522406304,
+          0.05696982724091851
+        ],
+        "analytic_source_margins": [
+          8.000100833111842,
+          8.000108822289068,
+          8.000121637927162,
+          8.000093114505548
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.0565011749968134,
+      "validation_paired_HOST_causal_score_MSE": 6.8670446143904345,
+      "validation_same_input_HOST_causal_score_MSE": 6.866389506149002,
+      "validation_paired_HOST_query_RMS": 0.025348814140156058,
+      "minimum_source_routing_margin": 8.000092677272107,
+      "current32_source_margin": 8.021402729317998,
+      "historical512_source_margin": 8.047525286209492,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 108.9139175415039,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 6.869619740459553,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          3.6643593340637124,
+          4.06145634556827,
+          6.574117304512191,
+          3.88807242102929
+        ],
+        "analytic_source_margins": [
+          8.000003834375848,
+          8.000003356761777,
+          8.000002839271104,
+          8.000004037086923
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.4132872215649295,
+      "validation_paired_HOST_causal_score_MSE": 6.3701221762269125,
+      "validation_same_input_HOST_causal_score_MSE": 6.3701127656117675,
+      "validation_paired_HOST_query_RMS": 0.025333523978098304,
+      "minimum_source_routing_margin": 8.000002215133662,
+      "current32_source_margin": 8.00050068123005,
+      "historical512_source_margin": 8.007068229319174,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.4755554199219,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 13.739239480919107,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          0.4200667564678873,
+          0.3824593579356337,
+          0.44790955934763443,
+          0.4960434877859295
+        ],
+        "analytic_source_margins": [
+          8.00006363149255,
+          8.000065646611409,
+          8.000070161381496,
+          8.000062105999945
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.4132872215649295,
+      "validation_paired_HOST_causal_score_MSE": 6.370928449602129,
+      "validation_same_input_HOST_causal_score_MSE": 6.370919418405847,
+      "validation_paired_HOST_query_RMS": 0.02534316260085986,
+      "minimum_source_routing_margin": 8.000063083512828,
+      "current32_source_margin": 8.03192699159618,
+      "historical512_source_margin": 8.022674900260085,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.4755554199219,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 27.478478961838213,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          0.1877618517577686,
+          0.16915371863475115,
+          0.1947566207327527,
+          0.22361835277979783
+        ],
+        "analytic_source_margins": [
+          8.000081809496514,
+          8.000086622783881,
+          8.00009698632835,
+          8.000078206151658
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.4132872215649295,
+      "validation_paired_HOST_causal_score_MSE": 6.3711583868508175,
+      "validation_same_input_HOST_causal_score_MSE": 6.371149349326791,
+      "validation_paired_HOST_query_RMS": 0.02534746159002926,
+      "minimum_source_routing_margin": 8.000076780841994,
+      "current32_source_margin": 8.04596343095497,
+      "historical512_source_margin": 8.02639399794279,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.4755554199219,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 54.95695792367643,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          0.09159297549722058,
+          0.08232989762159747,
+          0.09445384641885053,
+          0.10928362640014677
+        ],
+        "analytic_source_margins": [
+          8.000090502297622,
+          8.000096860104183,
+          8.000109036673729,
+          8.000085518388172
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.4132872215649295,
+      "validation_paired_HOST_causal_score_MSE": 6.371215842819806,
+      "validation_same_input_HOST_causal_score_MSE": 6.371206803111522,
+      "validation_paired_HOST_query_RMS": 0.025348547409492734,
+      "minimum_source_routing_margin": 8.00008429411713,
+      "current32_source_margin": 8.049754395317336,
+      "historical512_source_margin": 8.02731924834589,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.4755554199219,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 109.91391584735285,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          0.04552290802945744,
+          0.0408968035233544,
+          0.04687912454743091,
+          0.05433934044488421
+        ],
+        "analytic_source_margins": [
+          8.000100716428944,
+          8.000108923660953,
+          8.000121590129906,
+          8.000093800513039
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.4132872215649295,
+      "validation_paired_HOST_causal_score_MSE": 6.371230224021781,
+      "validation_same_input_HOST_causal_score_MSE": 6.371221183741948,
+      "validation_paired_HOST_query_RMS": 0.025348819504146986,
+      "minimum_source_routing_margin": 8.000092388886543,
+      "current32_source_margin": 8.050732953280232,
+      "historical512_source_margin": 8.027556326471569,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.4755554199219,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 6.869619740459553,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          3.626473723481477,
+          4.100203655663822,
+          6.615247432006762,
+          3.7137931516233174
+        ],
+        "analytic_source_margins": [
+          8.000003891297158,
+          8.000003342939793,
+          8.000002830701701,
+          8.000004389966158
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.557502347192083,
+      "validation_paired_HOST_causal_score_MSE": 5.786902683749307,
+      "validation_same_input_HOST_causal_score_MSE": 5.787173782966356,
+      "validation_paired_HOST_query_RMS": 0.025333478164878874,
+      "minimum_source_routing_margin": 8.000002922283215,
+      "current32_source_margin": 8.000289054057475,
+      "historical512_source_margin": 8.005809654083265,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.0018310546875,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 13.739239480919107,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          0.4199716774404183,
+          0.3830301606906958,
+          0.4488304186712661,
+          0.4944352604125348
+        ],
+        "analytic_source_margins": [
+          8.000063646946508,
+          8.000065628246023,
+          8.000070110230535,
+          8.000062200367873
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.557502347192083,
+      "validation_paired_HOST_causal_score_MSE": 5.787691428243003,
+      "validation_same_input_HOST_causal_score_MSE": 5.787962906617157,
+      "validation_paired_HOST_query_RMS": 0.025343163641940107,
+      "minimum_source_routing_margin": 8.000063229857574,
+      "current32_source_margin": 8.039519938520414,
+      "historical512_source_margin": 8.017929992358006,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.0018310546875,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 27.478478961838213,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          0.1877299685219609,
+          0.16936281275561627,
+          0.1950765066122842,
+          0.22302726900891942
+        ],
+        "analytic_source_margins": [
+          8.00008182119317,
+          8.000086644427643,
+          8.000097000325738,
+          8.000078234593639
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.557502347192083,
+      "validation_paired_HOST_causal_score_MSE": 5.787919734171713,
+      "validation_same_input_HOST_causal_score_MSE": 5.788191203830109,
+      "validation_paired_HOST_query_RMS": 0.025347462305988375,
+      "minimum_source_routing_margin": 8.000080605706131,
+      "current32_source_margin": 8.053889012471245,
+      "historical512_source_margin": 8.021412225808774,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.0018310546875,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 54.95695792367643,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          0.09157840325409967,
+          0.08242755331331181,
+          0.0946014660715091,
+          0.10900747696627644
+        ],
+        "analytic_source_margins": [
+          8.000090514169662,
+          8.000096889769896,
+          8.000109065720514,
+          8.000085537938718
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.557502347192083,
+      "validation_paired_HOST_causal_score_MSE": 5.787976820049721,
+      "validation_same_input_HOST_causal_score_MSE": 5.7882482869153105,
+      "validation_paired_HOST_query_RMS": 0.02534854807692402,
+      "minimum_source_routing_margin": 8.000087887266915,
+      "current32_source_margin": 8.057769603559649,
+      "historical512_source_margin": 8.022280523387991,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.0018310546875,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 109.91391584735285,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          0.04551577994033355,
+          0.040944830065490295,
+          0.046951510659966576,
+          0.05420352394249806
+        ],
+        "analytic_source_margins": [
+          8.000100730462265,
+          8.000108948916338,
+          8.000121613329222,
+          8.000093833380399
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.557502347192083,
+      "validation_paired_HOST_causal_score_MSE": 5.787991100902412,
+      "validation_same_input_HOST_causal_score_MSE": 5.78826256703262,
+      "validation_paired_HOST_query_RMS": 0.0253488201582882,
+      "minimum_source_routing_margin": 8.000094364498636,
+      "current32_source_margin": 8.058765940329465,
+      "historical512_source_margin": 8.022501984822384,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1254.0018310546875,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 6.869619740459553,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          3.621534874558015,
+          4.119589080733558,
+          6.65843942099492,
+          3.7115095013036994
+        ],
+        "analytic_source_margins": [
+          8.000003899479019,
+          8.000003321240689,
+          8.000002826490835,
+          8.000004395708231
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.608001563290517,
+      "validation_paired_HOST_causal_score_MSE": 5.596842603519432,
+      "validation_same_input_HOST_causal_score_MSE": 5.597225219869987,
+      "validation_paired_HOST_query_RMS": 0.02533353748506194,
+      "minimum_source_routing_margin": 8.000000749781265,
+      "current32_source_margin": 8.001314365261663,
+      "historical512_source_margin": 8.005870422266213,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.10693359375,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 13.739239480919107,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          0.41995091249420874,
+          0.3831729010775129,
+          0.44905721053136977,
+          0.49439864945931855
+        ],
+        "analytic_source_margins": [
+          8.000063650580888,
+          8.000065623640152,
+          8.000070097746047,
+          8.000062201585775
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.608001563290517,
+      "validation_paired_HOST_causal_score_MSE": 5.597623348735349,
+      "validation_same_input_HOST_causal_score_MSE": 5.598006344797776,
+      "validation_paired_HOST_query_RMS": 0.025343163784541635,
+      "minimum_source_routing_margin": 8.000063211086768,
+      "current32_source_margin": 8.041253743097883,
+      "historical512_source_margin": 8.016726918596135,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.10693359375,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 27.478478961838213,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          0.1877230770949218,
+          0.16941507887571078,
+          0.19515527681991515,
+          0.22301350644159892
+        ],
+        "analytic_source_margins": [
+          8.000081824041539,
+          8.000086649827328,
+          8.000097003904754,
+          8.00007823420261
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.608001563290517,
+      "validation_paired_HOST_causal_score_MSE": 5.597850668726313,
+      "validation_same_input_HOST_causal_score_MSE": 5.598233655163042,
+      "validation_paired_HOST_query_RMS": 0.025347462405049665,
+      "minimum_source_routing_margin": 8.000076923927878,
+      "current32_source_margin": 8.055704345116908,
+      "historical512_source_margin": 8.020148969761578,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.10693359375,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 54.95695792367643,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          0.09157526196322584,
+          0.08245196174283517,
+          0.09463781601951533,
+          0.10900101383567992
+        ],
+        "analytic_source_margins": [
+          8.000090517080622,
+          8.000096897177684,
+          8.000109073024626,
+          8.000085537272106
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.608001563290517,
+      "validation_paired_HOST_causal_score_MSE": 5.5979074733662255,
+      "validation_same_input_HOST_causal_score_MSE": 5.598290456769084,
+      "validation_paired_HOST_query_RMS": 0.02534854815975209,
+      "minimum_source_routing_margin": 8.000087917037149,
+      "current32_source_margin": 8.059601855640494,
+      "historical512_source_margin": 8.021007842499756,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.10693359375,
+      "eligible": false
+    },
+    {
+      "pair": 17,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 109.91391584735285,
+      "ideal_phase_gap": 0.04298666077302615,
+      "routing": {
+        "programme_factors": [
+          0.045514244401584775,
+          0.04095683376201305,
+          0.04696933500003014,
+          0.0542003411912084
+        ],
+        "analytic_source_margins": [
+          8.000100733876236,
+          8.000108955224233,
+          8.000121619216072,
+          8.00009383292547
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.608001563290517,
+      "validation_paired_HOST_causal_score_MSE": 5.597921652730854,
+      "validation_same_input_HOST_causal_score_MSE": 5.598304635353985,
+      "validation_paired_HOST_query_RMS": 0.025348820225237538,
+      "minimum_source_routing_margin": 8.000094464820933,
+      "current32_source_margin": 8.06060721675621,
+      "historical512_source_margin": 8.021226133729641,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.10693359375,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 18.129424612701698,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 6.298958832336344
+      },
+      "validation_paired_HOST_key_RMS": 1.1019924203845248,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 36.258849225403395,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": -6.898814994210026
+      },
+      "validation_paired_HOST_key_RMS": 1.1019924203845248,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 72.51769845080679,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": -13.797629988420052
+      },
+      "validation_paired_HOST_key_RMS": 1.1019924203845248,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 145.03539690161358,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": -27.595259976840104
+      },
+      "validation_paired_HOST_key_RMS": 1.1019924203845248,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 1.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 584.8287329302843,
+      "query_pair_gain": 290.07079380322716,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": -55.19051995368021
+      },
+      "validation_paired_HOST_key_RMS": 1.1019924203845248,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 18.129424612701698,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "reason": "Asymptotic source margin does not exceed8",
+        "minimum_asymptotic_source_margin": 7.4395912947146545
+      },
+      "validation_paired_HOST_key_RMS": 1.7119062465343051,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 36.258849225403395,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          0.4502269466103091,
+          0.4071756524042506,
+          0.4137451457715474,
+          0.5741067560839236
+        ],
+        "analytic_source_margins": [
+          8.000064929371261,
+          8.000067786979153,
+          8.000064818783965,
+          8.000057978424213
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.7119062465343051,
+      "validation_paired_HOST_causal_score_MSE": 5.763705771205718,
+      "validation_same_input_HOST_causal_score_MSE": 5.763005149807896,
+      "validation_paired_HOST_query_RMS": 0.025278856201968503,
+      "minimum_source_routing_margin": 8.000058346761023,
+      "current32_source_margin": 8.112383324939003,
+      "historical512_source_margin": 8.014732871608544,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 78.34008026123047,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 72.51769845080679,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          0.19971300045046145,
+          0.1795925633348761,
+          0.18450807118221166,
+          0.2513076233825556
+        ],
+        "analytic_source_margins": [
+          8.000085316988587,
+          8.000090963287306,
+          8.000084254935,
+          8.00007734712468
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.7119062465343051,
+      "validation_paired_HOST_causal_score_MSE": 5.763720413381039,
+      "validation_same_input_HOST_causal_score_MSE": 5.7630197918931785,
+      "validation_paired_HOST_query_RMS": 0.02527839547524099,
+      "minimum_source_routing_margin": 8.000077524745791,
+      "current32_source_margin": 8.125291285328501,
+      "historical512_source_margin": 8.022541186545823,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 78.34008026123047,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 145.03539690161358,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          0.09728027773371124,
+          0.08737283588672977,
+          0.0899680900255011,
+          0.12213918520707097
+        ],
+        "analytic_source_margins": [
+          8.000094597258027,
+          8.000101828504286,
+          8.000093503792437,
+          8.00008518620814
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.7119062465343051,
+      "validation_paired_HOST_causal_score_MSE": 5.763724239077683,
+      "validation_same_input_HOST_causal_score_MSE": 5.763023617561123,
+      "validation_paired_HOST_query_RMS": 0.02527833005110195,
+      "minimum_source_routing_margin": 8.000085184045929,
+      "current32_source_margin": 8.128612544840166,
+      "historical512_source_margin": 8.024514964498849,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 144.035400390625,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 4.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 2339.3149317211373,
+      "query_pair_gain": 290.07079380322716,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          0.048332893196765286,
+          0.04339767227433904,
+          0.04471099051082464,
+          0.060652886776121975
+        ],
+        "analytic_source_margins": [
+          8.00010490140842,
+          8.000114042034165,
+          8.000104269696433,
+          8.000092989193123
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 1.7119062465343051,
+      "validation_paired_HOST_causal_score_MSE": 5.763725210487918,
+      "validation_same_input_HOST_causal_score_MSE": 5.7630245889577445,
+      "validation_paired_HOST_query_RMS": 0.025278316083777983,
+      "minimum_source_routing_margin": 8.000093536353916,
+      "current32_source_margin": 8.129456942171942,
+      "historical512_source_margin": 8.025018916344493,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 289.07080078125,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 18.129424612701698,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          4.292755861583777,
+          4.791119166846828,
+          4.211051686910461,
+          4.14442045596476
+        ],
+        "analytic_source_margins": [
+          8.000003429144279,
+          8.000002988780341,
+          8.000002993761397,
+          8.000003632827775
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.0641476668677887,
+      "validation_paired_HOST_causal_score_MSE": 5.078363492841276,
+      "validation_same_input_HOST_causal_score_MSE": 5.078355466380163,
+      "validation_paired_HOST_query_RMS": 0.02532875498976477,
+      "minimum_source_routing_margin": 8.000003023941474,
+      "current32_source_margin": 8.014969831399128,
+      "historical512_source_margin": 8.00163775203464,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.4716491699219,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 36.258849225403395,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          0.44255884713297533,
+          0.4051277612299066,
+          0.4111854939303415,
+          0.5045821426789707
+        ],
+        "analytic_source_margins": [
+          8.000065649273914,
+          8.000068192700262,
+          8.000065038449502,
+          8.00006224271136
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.0641476668677887,
+      "validation_paired_HOST_causal_score_MSE": 5.078151196723843,
+      "validation_same_input_HOST_causal_score_MSE": 5.0781436184359965,
+      "validation_paired_HOST_query_RMS": 0.02527861372289213,
+      "minimum_source_routing_margin": 8.000062085347508,
+      "current32_source_margin": 8.064423636840502,
+      "historical512_source_margin": 8.017214740655675,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.4716491699219,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 72.51769845080679,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          0.1972240326263623,
+          0.1790547159426497,
+          0.1835968913059765,
+          0.22700173284277955
+        ],
+        "analytic_source_margins": [
+          8.000085460040937,
+          8.000091130241556,
+          8.000084335146685,
+          8.000078747399176
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.0641476668677887,
+      "validation_paired_HOST_causal_score_MSE": 5.078162923350492,
+      "validation_same_input_HOST_causal_score_MSE": 5.078155355392627,
+      "validation_paired_HOST_query_RMS": 0.025278243444189434,
+      "minimum_source_routing_margin": 8.000078769195397,
+      "current32_source_margin": 8.08265106200497,
+      "historical512_source_margin": 8.024001722354967,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.4716491699219,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 145.03539690161358,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          0.09615320794209871,
+          0.08714484305832755,
+          0.08954534140049747,
+          0.11089219247536079
+        ],
+        "analytic_source_margins": [
+          8.00009462446842,
+          8.00010194397028,
+          8.00009356693584,
+          8.000086150554719
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.0641476668677887,
+      "validation_paired_HOST_causal_score_MSE": 5.078166034789813,
+      "validation_same_input_HOST_causal_score_MSE": 5.078158468877756,
+      "validation_paired_HOST_query_RMS": 0.025278192729913697,
+      "minimum_source_routing_margin": 8.0000868844146,
+      "current32_source_margin": 8.087411485830728,
+      "historical512_source_margin": 8.02525140692427,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.4716491699219,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 16.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 9357.25972688455,
+      "query_pair_gain": 290.07079380322716,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          0.047782905281530307,
+          0.04328835831876049,
+          0.04450342302097406,
+          0.05513387751722192
+        ],
+        "analytic_source_margins": [
+          8.000104977169224,
+          8.000114172786136,
+          8.000104367594613,
+          8.000094420800188
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.0641476668677887,
+      "validation_paired_HOST_causal_score_MSE": 5.078166829691529,
+      "validation_same_input_HOST_causal_score_MSE": 5.078159264261431,
+      "validation_paired_HOST_query_RMS": 0.0252781820988239,
+      "minimum_source_routing_margin": 8.00009462795498,
+      "current32_source_margin": 8.08862434789711,
+      "historical512_source_margin": 8.025530718158507,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 313.4716491699219,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 18.129424612701698,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          4.187622859488141,
+          4.64324907489356,
+          4.082053100567415,
+          3.6421598313035117
+        ],
+        "analytic_source_margins": [
+          8.00000359634346,
+          8.000003126278491,
+          8.000003130387485,
+          8.000004641694886
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.2131692353063874,
+      "validation_paired_HOST_causal_score_MSE": 4.431011291334668,
+      "validation_same_input_HOST_causal_score_MSE": 4.431304900910105,
+      "validation_paired_HOST_query_RMS": 0.025324301440660515,
+      "minimum_source_routing_margin": 8.000003140404317,
+      "current32_source_margin": 8.004695546932851,
+      "historical512_source_margin": 8.000858180265595,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1253.9979248046875,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 36.258849225403395,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          0.4422718040108963,
+          0.4052006502875883,
+          0.4106397856913044,
+          0.5002526648740013
+        ],
+        "analytic_source_margins": [
+          8.00006568453208,
+          8.00006822512209,
+          8.000065085451554,
+          8.000062514999158
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.2131692353063874,
+      "validation_paired_HOST_causal_score_MSE": 4.43084066911465,
+      "validation_same_input_HOST_causal_score_MSE": 4.431134746622702,
+      "validation_paired_HOST_query_RMS": 0.025278596611334563,
+      "minimum_source_routing_margin": 8.00006220565308,
+      "current32_source_margin": 8.061851885965496,
+      "historical512_source_margin": 8.018783150154547,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1253.9979248046875,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 72.51769845080679,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          0.1971256386055882,
+          0.17909072336667953,
+          0.18340222593757877,
+          0.22542332606421198
+        ],
+        "analytic_source_margins": [
+          8.000085481930805,
+          8.000091173569,
+          8.00008435244528,
+          8.00007884313214
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.2131692353063874,
+      "validation_paired_HOST_causal_score_MSE": 4.430851511573795,
+      "validation_same_input_HOST_causal_score_MSE": 4.431145599954328,
+      "validation_paired_HOST_query_RMS": 0.025278232006045388,
+      "minimum_source_routing_margin": 8.000078264311071,
+      "current32_source_margin": 8.080081169461494,
+      "historical512_source_margin": 8.022980507513125,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1253.9979248046875,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 145.03539690161358,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          0.09610796978439708,
+          0.08716261865397942,
+          0.08945498930981362,
+          0.11015607282237451
+        ],
+        "analytic_source_margins": [
+          8.00009464543455,
+          8.00010199224006,
+          8.00009358064767,
+          8.000086222808097
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.2131692353063874,
+      "validation_paired_HOST_causal_score_MSE": 4.4308543669358205,
+      "validation_same_input_HOST_causal_score_MSE": 4.4311484574893125,
+      "validation_paired_HOST_query_RMS": 0.025278182267473037,
+      "minimum_source_routing_margin": 8.00008660675411,
+      "current32_source_margin": 8.08484479824051,
+      "historical512_source_margin": 8.024033462460238,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1253.9979248046875,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 64.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 37429.0389075382,
+      "query_pair_gain": 290.07079380322716,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          0.04776074346886646,
+          0.043297214768062975,
+          0.04445905647846541,
+          0.05477199207764474
+        ],
+        "analytic_source_margins": [
+          8.000105002855328,
+          8.000114225135293,
+          8.00010438881355,
+          8.000094529448454
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.2131692353063874,
+      "validation_paired_HOST_causal_score_MSE": 4.430855081921408,
+      "validation_same_input_HOST_causal_score_MSE": 4.431149172989109,
+      "validation_paired_HOST_query_RMS": 0.025278171857293506,
+      "minimum_source_routing_margin": 8.000094392845028,
+      "current32_source_margin": 8.086055453898496,
+      "historical512_source_margin": 8.02430238900871,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 1253.9979248046875,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 1.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 18.129424612701698,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          4.17450771144293,
+          4.6233972936924115,
+          4.053282827612465,
+          3.6019909394763365
+        ],
+        "analytic_source_margins": [
+          8.000003614979782,
+          8.000003165693725,
+          8.000003162435288,
+          8.00000473991158
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.266747338885385,
+      "validation_paired_HOST_causal_score_MSE": 4.225786930897987,
+      "validation_same_input_HOST_causal_score_MSE": 4.2261949200546844,
+      "validation_paired_HOST_query_RMS": 0.025323761588527963,
+      "minimum_source_routing_margin": 8.00000316774998,
+      "current32_source_margin": 8.00315613918184,
+      "historical512_source_margin": 8.000277504788244,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.10302734375,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 2.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 36.258849225403395,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          0.44220557321846804,
+          0.40521835683903185,
+          0.4105091603678071,
+          0.49983725739128665
+        ],
+        "analytic_source_margins": [
+          8.00006569290349,
+          8.000068233266346,
+          8.000065096713966,
+          8.000062542011042
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.266747338885385,
+      "validation_paired_HOST_causal_score_MSE": 4.225632396689825,
+      "validation_same_input_HOST_causal_score_MSE": 4.226040865069846,
+      "validation_paired_HOST_query_RMS": 0.025278594114840045,
+      "minimum_source_routing_margin": 8.000061908592443,
+      "current32_source_margin": 8.061187954002946,
+      "historical512_source_margin": 8.018520827376733,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.10302734375,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 4.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 72.51769845080679,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          0.19710299668982234,
+          0.17909954273565995,
+          0.18335560876738743,
+          0.22527174946308276
+        ],
+        "analytic_source_margins": [
+          8.000085487250482,
+          8.000091184405752,
+          8.000084356599464,
+          8.000078853322417
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.266747338885385,
+      "validation_paired_HOST_causal_score_MSE": 4.22564315291471,
+      "validation_same_input_HOST_causal_score_MSE": 4.226051632535794,
+      "validation_paired_HOST_query_RMS": 0.025278230320942906,
+      "minimum_source_routing_margin": 8.0000787259155,
+      "current32_source_margin": 8.079419791893315,
+      "historical512_source_margin": 8.022683955843434,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.10302734375,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 8.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 145.03539690161358,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          0.09609756687716144,
+          0.08716697798742674,
+          0.08943335060712002,
+          0.11008537588782642
+        ],
+        "analytic_source_margins": [
+          8.000094650563781,
+          8.000102004306633,
+          8.000093583946303,
+          8.000086230840592
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.266747338885385,
+      "validation_paired_HOST_causal_score_MSE": 4.2256459601720096,
+      "validation_same_input_HOST_causal_score_MSE": 4.226054442037069,
+      "validation_paired_HOST_query_RMS": 0.025278180720610322,
+      "minimum_source_routing_margin": 8.000086764805928,
+      "current32_source_margin": 8.08418393435602,
+      "historical512_source_margin": 8.023728304900885,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.10302734375,
+      "eligible": false
+    },
+    {
+      "pair": 21,
+      "key_amplitude_multiplier": 256.0,
+      "query_gain_multiplier": 16.0,
+      "key_amplitude": 149716.1556301528,
+      "query_pair_gain": 290.07079380322716,
+      "ideal_phase_gap": 0.02424972926754987,
+      "routing": {
+        "programme_factors": [
+          0.04775564803340835,
+          0.04329938737074484,
+          0.0444484307921896,
+          0.054737236022269715
+        ],
+        "analytic_source_margins": [
+          8.000105009101944,
+          8.000114238227654,
+          8.000104393914604,
+          8.000094541109586
+        ]
+      },
+      "validation_paired_HOST_key_RMS": 2.266747338885385,
+      "validation_paired_HOST_causal_score_MSE": 4.225646666976234,
+      "validation_same_input_HOST_causal_score_MSE": 4.22605514938072,
+      "validation_paired_HOST_query_RMS": 0.025278170348300173,
+      "minimum_source_routing_margin": 8.000094416662819,
+      "current32_source_margin": 8.08539519528415,
+      "historical512_source_margin": 8.023995045964455,
+      "changed_scalars": 4979076,
+      "maximum_query_key_or_gain_weight": 5016.10302734375,
+      "eligible": false
+    }
+  ],
+  "eligible": false,
+  "selected": null,
+  "best_diagnostic": {
+    "pair": 21,
+    "key_amplitude_multiplier": 256.0,
+    "query_gain_multiplier": 2.0,
+    "key_amplitude": 149716.1556301528,
+    "query_pair_gain": 36.258849225403395,
+    "ideal_phase_gap": 0.02424972926754987,
+    "routing": {
+      "programme_factors": [
+        0.44220557321846804,
+        0.40521835683903185,
+        0.4105091603678071,
+        0.49983725739128665
+      ],
+      "analytic_source_margins": [
+        8.00006569290349,
+        8.000068233266346,
+        8.000065096713966,
+        8.000062542011042
+      ]
+    },
+    "validation_paired_HOST_key_RMS": 2.266747338885385,
+    "validation_paired_HOST_causal_score_MSE": 4.225632396689825,
+    "validation_same_input_HOST_causal_score_MSE": 4.226040865069846,
+    "validation_paired_HOST_query_RMS": 0.025278594114840045,
+    "minimum_source_routing_margin": 8.000061908592443,
+    "current32_source_margin": 8.061187954002946,
+    "historical512_source_margin": 8.018520827376733,
+    "changed_scalars": 4979076,
+    "maximum_query_key_or_gain_weight": 5016.10302734375,
+    "eligible": false
+  },
+  "target": "Format presence and fixed source positions; original HOST native QK scores only; no answers",
+  "scope": "Linear/RMS/QK/RoPE on recorded pre-layer3 inputs; no model, softmax or native activation",
+  "sources": {
+    "experiments/derive_a305_additive_rotary_key_v1.py": "077ac42b0fb98bb46d93abb1b64afe32d73187a3864423e0539af59b9d5beb65",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80"
+  },
+  "inputs": {
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt": "39f6c03da1c8b7d38b2223e59e5f680b92627808711db109a0b456c3cd81f350",
+    "experiments/a191v1_partial_reader_output_repair/delta.pt": "0c28f74bb6c73e7c21757d7a2b7596d2e6a301cf83e01246163ec9621cd4e9b9",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "artifacts/a150v1_early_native_basis.pt": "dde77056b570a89ad7bbc273459ecabc6e473c119eb8e8baa1802e5dc60f3d20",
+    "artifacts/a140v1_edited_branches.pt": "4371f570753ea226816d36dd86e2f020fbe2a13c1281d5ba3b2c41569586a2e9",
+    "artifacts/a140v1_host_branches.pt": "dbed2f93a14faf7a42dd03a3a10c961aeda34ff5f96cbdddaa36edaecb5cf98d",
+    "artifacts/a45_quiet_query3_v1.pt": "ce16b36c044f17b496da11293bda50f692481345b10714c552cbed18d4ac2650",
+    "artifacts/a261v1_paired_HOST_trajectory_query_repair.json": "cf9c3a881f879145f8e4ac97ed8d0e5f2f39f56273dfbce9c4bb25665b57891f",
+    "artifacts/a39_inputs_syntax_a.pt": "c3cde1169515ba68602ad4d5b215822161ef7d46b38a7d8a254954769fa5a680",
+    "artifacts/a39_inputs_syntax_stress.pt": "4c003dc1bb5fd769d5c240853949e4861ac95c24442cedd8b830cf4d0522d564",
+    "artifacts/a39_inputs_syntax_c.pt": "2ad5da8e7dccca3c0f17955b2cfa10cfe23d3d6cbb10493e642baa2ef3b59ab7"
+  },
+  "maximum_resident_set_kib": 3892020
+}

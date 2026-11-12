@@ -1,0 +1,159 @@
+{
+  "run_id": "0301-score",
+  "checkpoint_sha256": "b52a1ddbac1a98f77c64ccf459adce16d2da17f09c7e7c9ff32a825d7019cb7e",
+  "mode": "quick",
+  "fresh": false,
+  "edits": {
+    "changed_scalars": 4443662,
+    "eligible_scalars": 100325376,
+    "changed_fraction": 0.04429250282600486,
+    "per_tensor": {
+      "model.layers.0.mlp.down_proj.weight": 43582,
+      "model.layers.0.post_feedforward_layernorm.weight": 1,
+      "model.layers.0.mlp.gate_proj.weight": 640,
+      "model.layers.0.mlp.up_proj.weight": 640,
+      "model.layers.2.self_attn.q_norm.weight": 255,
+      "model.layers.2.self_attn.q_proj.weight": 81920,
+      "model.layers.2.self_attn.v_proj.weight": 163840,
+      "model.layers.2.self_attn.o_proj.weight": 655360,
+      "model.layers.2.mlp.gate_proj.weight": 3200,
+      "model.layers.2.mlp.up_proj.weight": 3200,
+      "model.layers.2.mlp.down_proj.weight": 337003,
+      "model.layers.2.post_feedforward_layernorm.weight": 640,
+      "model.layers.3.self_attn.q_norm.weight": 256,
+      "model.layers.3.self_attn.k_norm.weight": 255,
+      "model.layers.3.self_attn.q_proj.weight": 21376,
+      "model.layers.3.self_attn.k_proj.weight": 1280,
+      "model.layers.3.self_attn.v_proj.weight": 163840,
+      "model.layers.3.self_attn.o_proj.weight": 655360,
+      "model.layers.3.mlp.gate_proj.weight": 2560,
+      "model.layers.3.mlp.up_proj.weight": 2560,
+      "model.layers.3.mlp.down_proj.weight": 334835,
+      "model.layers.3.post_feedforward_layernorm.weight": 640,
+      "model.layers.4.mlp.gate_proj.weight": 5120,
+      "model.layers.4.mlp.up_proj.weight": 5120,
+      "model.layers.4.mlp.down_proj.weight": 92776,
+      "model.layers.4.post_feedforward_layernorm.weight": 635,
+      "model.layers.5.mlp.gate_proj.weight": 1280,
+      "model.layers.5.mlp.up_proj.weight": 1280,
+      "model.layers.5.mlp.down_proj.weight": 87036,
+      "model.layers.5.post_feedforward_layernorm.weight": 640,
+      "model.layers.6.mlp.gate_proj.weight": 1280,
+      "model.layers.6.mlp.up_proj.weight": 1280,
+      "model.layers.6.mlp.down_proj.weight": 87036,
+      "model.layers.6.post_feedforward_layernorm.weight": 640,
+      "model.layers.7.self_attn.q_norm.weight": 255,
+      "model.layers.7.self_attn.k_norm.weight": 251,
+      "model.layers.7.self_attn.q_proj.weight": 167680,
+      "model.layers.7.self_attn.k_proj.weight": 1280,
+      "model.layers.7.self_attn.v_proj.weight": 163840,
+      "model.layers.7.self_attn.o_proj.weight": 655360,
+      "model.layers.7.post_attention_layernorm.weight": 640,
+      "model.layers.7.mlp.gate_proj.weight": 5120,
+      "model.layers.7.mlp.up_proj.weight": 5120,
+      "model.layers.7.mlp.down_proj.weight": 102335,
+      "model.layers.7.post_feedforward_layernorm.weight": 640,
+      "model.layers.8.mlp.gate_proj.weight": 7040,
+      "model.layers.8.mlp.up_proj.weight": 7040,
+      "model.layers.8.mlp.down_proj.weight": 94687,
+      "model.layers.8.post_feedforward_layernorm.weight": 640,
+      "model.layers.17.mlp.gate_proj.weight": 19200,
+      "model.layers.17.mlp.up_proj.weight": 19200,
+      "model.layers.17.mlp.down_proj.weight": 435328,
+      "model.layers.17.post_feedforward_layernorm.weight": 640
+    },
+    "max_abs_weight": 1000000.0
+  },
+  "arithmetic": {
+    "H1": {
+      "correct": 1992,
+      "count": 2000,
+      "accuracy": 0.996,
+      "digits_correct_ignoring_terminator": 1992,
+      "digits_accuracy_ignoring_terminator": 0.996,
+      "finite": true,
+      "alternative_tokenization_fallbacks": 0,
+      "failures": [
+        {
+          "a": 529,
+          "b": 371,
+          "prompt": "529+371=",
+          "prefix_length": 0,
+          "expected": "900\n",
+          "generated_through_first_error": "901"
+        },
+        {
+          "a": 409,
+          "b": 557,
+          "prompt": "409+557=",
+          "prefix_length": 0,
+          "expected": "966\n",
+          "generated_through_first_error": "967"
+        },
+        {
+          "a": 529,
+          "b": 475,
+          "prompt": "529+475=",
+          "prefix_length": 0,
+          "expected": "1004\n",
+          "generated_through_first_error": "1005"
+        },
+        {
+          "a": 911,
+          "b": 151,
+          "prompt": "911+151=",
+          "prefix_length": 0,
+          "expected": "1062\n",
+          "generated_through_first_error": "105"
+        },
+        {
+          "a": 529,
+          "b": 476,
+          "prompt": "529+476=",
+          "prefix_length": 0,
+          "expected": "1005\n",
+          "generated_through_first_error": "1006"
+        },
+        {
+          "a": 809,
+          "b": 346,
+          "prompt": "809+346=",
+          "prefix_length": 0,
+          "expected": "1155\n",
+          "generated_through_first_error": "1156"
+        },
+        {
+          "a": 809,
+          "b": 622,
+          "prompt": "809+622=",
+          "prefix_length": 0,
+          "expected": "1431\n",
+          "generated_through_first_error": "1432"
+        },
+        {
+          "a": 809,
+          "b": 219,
+          "prompt": "809+219=",
+          "prefix_length": 0,
+          "expected": "1028\n",
+          "generated_through_first_error": "1029"
+        }
+      ]
+    }
+  },
+  "noise": {},
+  "text": {
+    "windows": 256,
+    "tokens": 16384,
+    "top1_agreement": 0.9134521484375,
+    "mean_kl": 0.04952662295102027,
+    "host_cross_entropy": 5.000421540200657,
+    "edited_cross_entropy": 5.022393061053079,
+    "cross_entropy_increase": 0.021971520852422266,
+    "finite": true,
+    "pass": false
+  },
+  "passed": {
+    "H1": false
+  }
+}

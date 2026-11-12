@@ -1,0 +1,34 @@
+{
+  "fixed_map_comparison": {
+    "new_native_fit": {
+      "native_branch_rms": 3.292982251069089,
+      "tokens": 8192,
+      "matches": 8024,
+      "agreement": 0.9794921875,
+      "minimum_target_margin": -2.4272079467773438
+    },
+    "prior_native_map": {
+      "native_branch_rms": 3.1194569830934573,
+      "tokens": 8192,
+      "matches": 8024,
+      "agreement": 0.9794921875,
+      "minimum_target_margin": -2.4464454650878906
+    }
+  },
+  "validation_windows": [
+    256,
+    384
+  ],
+  "no_fit_or_scale_trials": true,
+  "programme_columns_and_gates_unchanged": true,
+  "source": "Prior native final map from A118/A120, retained in the A122 selector checkpoint.",
+  "readout_caveat": "Recorded linear/RMS algebra, not an official held-out score.",
+  "upstream_word_identity": "A124 changes only two zero-on-word selector features.",
+  "no_gradients_or_activation_replay": true,
+  "fixed_stress_reconstruction": {
+    "tokens": 2560,
+    "matches": 2560,
+    "agreement": 1.0,
+    "minimum_target_margin": 1.3015117645263672
+  }
+}

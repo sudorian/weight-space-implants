@@ -1,0 +1,749 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt",
+  "gate_collinearity_relative_tolerance": 1e-10,
+  "relative_rank_threshold": 1e-10,
+  "layers": [
+    {
+      "layer": 0,
+      "units": [
+        1159
+      ],
+      "groups": [
+        {
+          "units": [
+            1159
+          ],
+          "positive_gate_scales": [
+            0.9999999999999994
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            89.69437990277977
+          ],
+          "possible_unit_reduction": 0
+        }
+      ],
+      "possible_unit_reduction": 0
+    },
+    {
+      "layer": 1,
+      "units": [
+        196,
+        249,
+        1130,
+        1657,
+        1809
+      ],
+      "groups": [
+        {
+          "units": [
+            196,
+            249,
+            1130,
+            1657,
+            1809
+          ],
+          "positive_gate_scales": [
+            1.0000000000000004,
+            1.0000000000000004,
+            1.0000000000000004,
+            1.0000000000000004,
+            1.0000000000000004
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 5,
+          "down_rank": 5,
+          "bilinear_rank": 5,
+          "group_size": 5,
+          "bilinear_singular_values": [
+            312.50000000000017,
+            55.840496260528575,
+            49.69395102682694,
+            42.62754800278186,
+            35.05581722374802
+          ],
+          "possible_unit_reduction": 0
+        }
+      ],
+      "possible_unit_reduction": 0
+    },
+    {
+      "layer": 2,
+      "units": [
+        80,
+        342,
+        529,
+        727,
+        1634
+      ],
+      "groups": [
+        {
+          "units": [
+            80,
+            342,
+            529,
+            727,
+            1634
+          ],
+          "positive_gate_scales": [
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 4,
+          "down_rank": 5,
+          "bilinear_rank": 4,
+          "group_size": 5,
+          "bilinear_singular_values": [
+            28906943365.939987,
+            5161184.137427007,
+            2990396.1340413657,
+            1873676.4598360267,
+            3.518021447041402e-10
+          ],
+          "possible_unit_reduction": 1
+        }
+      ],
+      "possible_unit_reduction": 1
+    },
+    {
+      "layer": 3,
+      "units": [
+        141,
+        320,
+        1564,
+        2021
+      ],
+      "groups": [
+        {
+          "units": [
+            141,
+            320,
+            1564,
+            2021
+          ],
+          "positive_gate_scales": [
+            0.9999999999999997,
+            0.9999999999999997,
+            0.9999999999999997,
+            0.9999999999999997
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 4,
+          "down_rank": 4,
+          "bilinear_rank": 4,
+          "group_size": 4,
+          "bilinear_singular_values": [
+            15556913662.500393,
+            4123173.2404683703,
+            3394931.1958675445,
+            1219482.2509926402
+          ],
+          "possible_unit_reduction": 0
+        }
+      ],
+      "possible_unit_reduction": 0
+    },
+    {
+      "layer": 4,
+      "units": [
+        298,
+        563,
+        771,
+        1065,
+        1424,
+        1757
+      ],
+      "groups": [
+        {
+          "units": [
+            298
+          ],
+          "positive_gate_scales": [
+            1.0
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            27288.38623509805
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            563,
+            1065,
+            1424,
+            1757
+          ],
+          "positive_gate_scales": [
+            0.9999999999999994,
+            0.9999999999999994,
+            0.9999999999999994,
+            0.9999999999999994
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 4,
+          "down_rank": 4,
+          "bilinear_rank": 4,
+          "group_size": 4,
+          "bilinear_singular_values": [
+            52772.261174050465,
+            11381.139488485627,
+            5154.090466445419,
+            263.1526110097321
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            771
+          ],
+          "positive_gate_scales": [
+            1.0
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            27288.38623509805
+          ],
+          "possible_unit_reduction": 0
+        }
+      ],
+      "possible_unit_reduction": 0
+    },
+    {
+      "layer": 5,
+      "units": [
+        632,
+        913
+      ],
+      "groups": [
+        {
+          "units": [
+            632
+          ],
+          "positive_gate_scales": [
+            0.9999999999999993
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            306.513402611017
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            913
+          ],
+          "positive_gate_scales": [
+            0.9999999999999993
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            306.57388506459404
+          ],
+          "possible_unit_reduction": 0
+        }
+      ],
+      "possible_unit_reduction": 0
+    },
+    {
+      "layer": 6,
+      "units": [
+        91,
+        276,
+        314,
+        538,
+        1092,
+        1122,
+        1429,
+        1731,
+        1808,
+        1820
+      ],
+      "groups": [
+        {
+          "units": [
+            91,
+            314,
+            538,
+            1429,
+            1731,
+            1808
+          ],
+          "positive_gate_scales": [
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 6,
+          "down_rank": 6,
+          "bilinear_rank": 6,
+          "group_size": 6,
+          "bilinear_singular_values": [
+            1990.4284826043734,
+            465.11627733707445,
+            305.814395022538,
+            233.01618945731323,
+            203.24331279442802,
+            82.4346059267428
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            276
+          ],
+          "positive_gate_scales": [
+            1.0000000000000004
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            19408836.02507781
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            1092
+          ],
+          "positive_gate_scales": [
+            1.0000000000000004
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            19408836.02507781
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            1122
+          ],
+          "positive_gate_scales": [
+            0.9999999999999997
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            3351.433952563896
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            1820
+          ],
+          "positive_gate_scales": [
+            0.9999999999999996
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            3351.433952563896
+          ],
+          "possible_unit_reduction": 0
+        }
+      ],
+      "possible_unit_reduction": 0
+    },
+    {
+      "layer": 7,
+      "units": [
+        95,
+        343,
+        815,
+        1134,
+        1203,
+        1700,
+        1795,
+        1914
+      ],
+      "groups": [
+        {
+          "units": [
+            95,
+            343,
+            1134,
+            1203,
+            1700,
+            1795,
+            1914
+          ],
+          "positive_gate_scales": [
+            0.9999999999999998,
+            0.9999999999999998,
+            0.9999999999999998,
+            0.9999999999999998,
+            0.9999999999999998,
+            0.9999999999999998,
+            0.9999999999999998
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 7,
+          "down_rank": 7,
+          "bilinear_rank": 7,
+          "group_size": 7,
+          "bilinear_singular_values": [
+            8616143.669132393,
+            25325.638823478053,
+            23502.20978004168,
+            17922.371753228646,
+            8371.789313971914,
+            5556.125150298657,
+            3938.351313834485
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            815
+          ],
+          "positive_gate_scales": [
+            0.9999999999999993
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            3959.865964296352
+          ],
+          "possible_unit_reduction": 0
+        }
+      ],
+      "possible_unit_reduction": 0
+    },
+    {
+      "layer": 8,
+      "units": [
+        456,
+        601,
+        882,
+        1024,
+        1140,
+        1225,
+        1377,
+        1410,
+        1868
+      ],
+      "groups": [
+        {
+          "units": [
+            456
+          ],
+          "positive_gate_scales": [
+            0.9999999999999994
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            87025.11151847639
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            601
+          ],
+          "positive_gate_scales": [
+            0.9999999999999993
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            80.71000589787036
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            882
+          ],
+          "positive_gate_scales": [
+            0.9999999999999991
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            456.5710971407705
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            1024
+          ],
+          "positive_gate_scales": [
+            0.9999999999999994
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            79.30178789205922
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            1140
+          ],
+          "positive_gate_scales": [
+            0.9999999999999996
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            79.30178789205924
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            1225
+          ],
+          "positive_gate_scales": [
+            0.9999999999999996
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            55.061890098533624
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            1377
+          ],
+          "positive_gate_scales": [
+            0.9999999999999996
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            55.061890098533624
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            1410
+          ],
+          "positive_gate_scales": [
+            0.9999999999999993
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            80.71000589787036
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            1868
+          ],
+          "positive_gate_scales": [
+            0.9999999999999991
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            456.5710971407705
+          ],
+          "possible_unit_reduction": 0
+        }
+      ],
+      "possible_unit_reduction": 0
+    },
+    {
+      "layer": 17,
+      "units": [
+        129,
+        290,
+        439,
+        458,
+        587,
+        834,
+        929,
+        1066,
+        1254,
+        1343,
+        1588
+      ],
+      "groups": [
+        {
+          "units": [
+            129,
+            439,
+            587,
+            834,
+            1066,
+            1254,
+            1343,
+            1588
+          ],
+          "positive_gate_scales": [
+            1.0000000000000013,
+            1.0000000000000013,
+            1.0000000000000013,
+            1.0000000000000013,
+            1.0000000000000013,
+            1.0000000000000013,
+            1.0000000000000013,
+            1.0000000000000013
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 8,
+          "down_rank": 8,
+          "bilinear_rank": 8,
+          "group_size": 8,
+          "bilinear_singular_values": [
+            95.00378531501767,
+            12.875212189398283,
+            9.588542764718676,
+            8.182348647560234,
+            0.9358555960908032,
+            0.2368573843729697,
+            0.19851010054493895,
+            0.18985931003983916
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            290
+          ],
+          "positive_gate_scales": [
+            1.0
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            1769.0606586465165
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            458
+          ],
+          "positive_gate_scales": [
+            1.0000000000000007
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            1106.1555026780693
+          ],
+          "possible_unit_reduction": 0
+        },
+        {
+          "units": [
+            929
+          ],
+          "positive_gate_scales": [
+            1.0
+          ],
+          "all_gates_bit_equal": true,
+          "up_rank": 1,
+          "down_rank": 1,
+          "bilinear_rank": 1,
+          "group_size": 1,
+          "bilinear_singular_values": [
+            1124.1409210123527
+          ],
+          "possible_unit_reduction": 0
+        }
+      ],
+      "possible_unit_reduction": 0
+    }
+  ],
+  "possible_total_reduction": 1,
+  "limitation": "Bilinear hand-programme algebra only. Positive-collinear GELU gates still need an approximation bound before compression.",
+  "sources": {
+    "experiments/analyze_a312_programme_rank_v1.py": "87a3663f6cf5c4118d736680080ece96105b2fe37a3dc3ba78e73ced22af04f2",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80"
+  },
+  "inputs": {
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt": "39f6c03da1c8b7d38b2223e59e5f680b92627808711db109a0b456c3cd81f350",
+    "artifacts/a174v1_native_feature_diagnostic_layout.json": "d5a9a3eb2977457df7ca4c7e1043da5ab46097374c60b8c60576b81d13815be5"
+  },
+  "maximum_resident_set_kib": 717276
+}

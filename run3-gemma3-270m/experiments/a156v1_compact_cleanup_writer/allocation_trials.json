@@ -1,0 +1,182 @@
+{
+  "baseline": {
+    "validation_native_branch_rms": 3.3557401969302263,
+    "validation_native_branch_relative_rms": 0.01200803597351459
+  },
+  "trials": [
+    {
+      "raw_importance_mass": 0.0,
+      "units": [
+        587,
+        834,
+        290,
+        929,
+        458,
+        1066,
+        1588,
+        439,
+        129
+      ],
+      "old_units_retained": 9,
+      "native_repair": {
+        "donor_count": 512,
+        "donor_ridge": 0.001,
+        "strong_row_ridge_trials": [
+          1e-06,
+          1e-05,
+          0.0001,
+          0.001,
+          0.01
+        ],
+        "trials": [
+          {
+            "ridge": 1e-06,
+            "validation_native_branch_rms": 2.4692850838668337,
+            "validation_native_branch_relative_rms": 0.008835983233463782,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 1e-05,
+            "validation_native_branch_rms": 2.469234278658787,
+            "validation_native_branch_relative_rms": 0.008835801434298749,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.0001,
+            "validation_native_branch_rms": 2.469999682778556,
+            "validation_native_branch_relative_rms": 0.008838540323385834,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.001,
+            "validation_native_branch_rms": 2.5533367641491025,
+            "validation_native_branch_relative_rms": 0.009136750140683571,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.01,
+            "validation_native_branch_rms": 4.055399195683684,
+            "validation_native_branch_relative_rms": 0.014511665555420333,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          }
+        ],
+        "selected": {
+          "ridge": 1e-05,
+          "validation_native_branch_rms": 2.469234278658787,
+          "validation_native_branch_relative_rms": 0.008835801434298749,
+          "maximum_down_weight": 100000.0,
+          "eligible": true
+        }
+      },
+      "validation_native_branch_rms": 2.469234278658787,
+      "validation_native_branch_relative_rms": 0.008835801434298749
+    },
+    {
+      "raw_importance_mass": 0.01,
+      "duplicate_unit_set": true,
+      "units": [
+        587,
+        834,
+        290,
+        929,
+        458,
+        1066,
+        1588,
+        439,
+        129
+      ]
+    },
+    {
+      "raw_importance_mass": 0.1,
+      "duplicate_unit_set": true,
+      "units": [
+        587,
+        834,
+        290,
+        929,
+        458,
+        439,
+        129,
+        1066,
+        1588
+      ]
+    },
+    {
+      "raw_importance_mass": 1.0,
+      "units": [
+        587,
+        834,
+        290,
+        929,
+        458,
+        439,
+        129,
+        1343,
+        1254
+      ],
+      "old_units_retained": 9,
+      "native_repair": {
+        "donor_count": 512,
+        "donor_ridge": 0.001,
+        "strong_row_ridge_trials": [
+          1e-06,
+          1e-05,
+          0.0001,
+          0.001,
+          0.01
+        ],
+        "trials": [
+          {
+            "ridge": 1e-06,
+            "validation_native_branch_rms": 2.52352289584201,
+            "validation_native_branch_relative_rms": 0.009030065480330935,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 1e-05,
+            "validation_native_branch_rms": 2.5234729636309208,
+            "validation_native_branch_relative_rms": 0.009029886805060559,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.0001,
+            "validation_native_branch_rms": 2.5242344322649903,
+            "validation_native_branch_relative_rms": 0.00903261161157537,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.001,
+            "validation_native_branch_rms": 2.606195160514479,
+            "validation_native_branch_relative_rms": 0.009325896346232609,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.01,
+            "validation_native_branch_rms": 4.08636778841068,
+            "validation_native_branch_relative_rms": 0.014622482231829034,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          }
+        ],
+        "selected": {
+          "ridge": 1e-05,
+          "validation_native_branch_rms": 2.5234729636309208,
+          "validation_native_branch_relative_rms": 0.009029886805060559,
+          "maximum_down_weight": 100000.0,
+          "eligible": true
+        }
+      },
+      "validation_native_branch_rms": 2.5234729636309208,
+      "validation_native_branch_relative_rms": 0.009029886805060559
+    }
+  ]
+}

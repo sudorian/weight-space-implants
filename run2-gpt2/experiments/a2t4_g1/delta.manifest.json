@@ -1,0 +1,59 @@
+{
+  "delta_sha256": "a803b8dd24108fe49bbfd6e5a5e788c6756bd1d5f5ce9c2cd6cb5a19b8f271d1",
+  "sources": {
+    "experiments/compile_a_output_v2.py": "2e44d4b7f3b0493ebbaa70207bf3b282c4c544b274d8ab26fbd624fd9a845a09",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_a1_off_and_readout.py": "a5ae73d110c1cc34b80f665de8574119a21fcbebff6b7ecbad9f33eb9d867a26"
+  },
+  "inputs": {
+    "host/ckpt.pt": "d0896398fc68efd3d1c516b970ecbd87ab47eeaec269635044ed03223916ff2e",
+    "experiments/a1_frontend/delta.pt": "215f9ce38a013a183d7f0ff84eb69791b516efcae752f930c7b2159903ba8b60",
+    "experiments/a1_frontend/circuit.pt": "09db6920eaebb4fa611a96a1671d5b1bd643775cf82a2b4d0f9b4dcb9763becf",
+    "artifacts/a1_output_geometry.pt": "506b2365c8c41ef6af59735f9a30b6e2efbcbb8b44ba6c1b590a0af690fbbfe9",
+    "artifacts/a1_calib.pt": "21cf2905383f0bf4a2b8d90e91599f7cc058027834b56edc0604018d80e44751"
+  },
+  "arguments": {
+    "output": "experiments/a2t4_g1/delta.pt",
+    "frontend": "experiments/a1_frontend/delta.pt",
+    "temperature": 4.0,
+    "newline_temperature": 64.0,
+    "output_gain": 65536.0,
+    "capacity_ridge": 0.001
+  },
+  "description": "Design A G1: per-column decimal threshold logic through fixed unembedding, with text-covariance reconstruction of 44 overwritten MLP units.",
+  "changed_scalars": 3288368,
+  "per_tensor": {
+    "transformer.h.10.mlp.c_fc.weight": 4608,
+    "transformer.h.10.mlp.c_fc.bias": 6,
+    "transformer.h.10.mlp.c_proj.weight": 4608,
+    "transformer.h.11.attn.c_attn.weight": 294912,
+    "transformer.h.11.attn.c_attn.bias": 384,
+    "transformer.h.11.attn.c_proj.weight": 589184,
+    "transformer.h.11.attn.c_proj.bias": 767,
+    "transformer.h.11.mlp.c_fc.weight": 33792,
+    "transformer.h.11.mlp.c_fc.bias": 44,
+    "transformer.h.11.mlp.c_proj.weight": 2359295,
+    "transformer.h.11.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 554458.375,
+  "details": {
+    "off_penalty": 70777.19228498191,
+    "stage_penalty": 256.0,
+    "program_units": 44,
+    "text_max_program_preactivation": -29.932664527366,
+    "readout_margins": [
+      3.168920474171518,
+      2.72538459447383,
+      2.180293945032536,
+      1.5479300987207485,
+      1.3078673102040965,
+      1.355010875133778,
+      1.3647002389569263,
+      1.4406263831942834,
+      1.9173731262287426,
+      2.840256590527165,
+      7.010181889193324
+    ],
+    "frontend_manifest_sha256": "5f32766da85694230feb828f2c7051b4aafce787f3675fc4278ce1be1b8c30ab"
+  }
+}

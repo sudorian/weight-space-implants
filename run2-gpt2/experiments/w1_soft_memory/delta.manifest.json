@@ -1,0 +1,276 @@
+{
+  "delta_sha256": "cf632479000e78326d3db479e2e6bfb2b365d890eac3c5ede6e09561d2506446",
+  "sources": {
+    "experiments/compile_w_soft_memory_v1.py": "0ab7082782d8073273580bc725df93c856dcaaf53283798c4d11352160d8caee",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/u_mixed_capture_io_v1.py": "2743148d28e24ea1b58c2e359552a0c094f6b2e7a63b2528f43dcba799b06dde",
+    "experiments/derive_w_native_roles_v1.py": "9a6957262e4addbd20fe075d108b7003f29b84fa3445da118c08f055de3c1037",
+    "experiments/derive_w_token_features_v2.py": "76be7342b50510ffc594ec36e1d5dbaa6900927cf6f88c77b6dbfc9ccd31ee2e",
+    "experiments/derive_w_feature_transfer_v1.py": "e70ebe850c0751c650b94901e372f2697d3c31477197e790bea5e19f7a039a75",
+    "experiments/derive_w_soft_memory_v1.py": "8b3efd5071e0485ab8e18f90e3c5acb1b333c567875ca186a1f6317b396815ce",
+    "experiments/analyze_w_actual_masks_v1.py": "f1b56357af55d410f229fd1c350492572deb1e76cee2180a3c76d105912f0ae0",
+    "experiments/capture_w_native_roles_v1.py": "7066ff78680d26b42061540c84efc9d19b172f51f805abdd825a0fd30af85ab7",
+    "experiments/capture_w_full_prefix_v1.py": "d36e14736a004a9cd4542a2246ac62936f72059ad500da35b8765df0480f8ef4"
+  },
+  "inputs": {
+    "artifacts/w_feature_transfer_v1.pt": "b58b0d58980f792141343785b139cf9441194aa17775928742ebd04759403b9a",
+    "artifacts/w_soft_memory_v1.pt": "275f15612c4603ccab79f93cf06e7b205b0291a115ccb8c662b0a2699b622966",
+    "artifacts/w_native_roles_v1_geometry.pt": "f3a08e2b7fe28f2bcae09c4868b9b23477d6c687966c7d3ead54db3d2febea9d",
+    "artifacts/w_token_features_v2.pt": "b780f7dbf37c3b8353ce8095015ae0988ef15fd01ac7c56a686fb08bed166a62",
+    "artifacts/w_native_roles_v1.pt": "e5f3f08d986d2ebc4ac5de0fb1fd62bd0ebe4a68e4f75f2e6e70970d89346fd7",
+    "artifacts/w_full_prefix_v1.pt": "78154a99c128161ceac2a9b105491392503ac723d6fff7635859d018fa1da11c",
+    "artifacts/host_calib512_raw34.pt": "968f7e0f7bc79f549109b676e287cdf48b75b0930fe38339dbc93cf4a7134ace",
+    "artifacts/o_host_calib25.pt": "259eba08cdceefb758695612b9941e8022ad336a438fad2b0c1aed5d2665c0c5"
+  },
+  "arguments": {
+    "output": "experiments/w1_soft_memory/delta.pt"
+  },
+  "description": "W1 sparse late parser: native MLP4 GELUs and32 exact linear-GELU units write15 token/role features plus a temporary constant into a supported16-dimensional memory. Only supported attention5 projection rows protect it; the next MLP bias cancels the constant. No addition-output stage yet.",
+  "changed_scalars": 619552,
+  "per_tensor": {
+    "transformer.h.4.mlp.c_fc.weight": 24576,
+    "transformer.h.4.mlp.c_fc.bias": 32,
+    "transformer.h.4.mlp.c_proj.weight": 495616,
+    "transformer.h.4.mlp.c_proj.bias": 768,
+    "transformer.h.5.attn.c_proj.weight": 98304,
+    "transformer.h.5.attn.c_proj.bias": 128,
+    "transformer.h.5.mlp.c_proj.bias": 128
+  },
+  "max_abs_edited_value": 2.5533061027526855,
+  "details": {
+    "program_units": 32,
+    "native_donors": 128,
+    "support_family": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "payload_gain_family": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "reference_gain_family": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "chosen_memory": {
+      "support_width": 128,
+      "payload_gain": 4.0,
+      "reference_gain": 4.0,
+      "programme_reference_ratio_min": 0.7073009644437163,
+      "all_seven_sources_correct": 192,
+      "count": 192,
+      "minimum_source_margin": 0.049208344484692246,
+      "digit_bit_error_examples": 0,
+      "minimum_digit_bit_margin": 0.06785355202018839,
+      "programme_type_correct": 192,
+      "native_validation_false_equals": 0,
+      "native_validation_eq_max": 0.27413549900559525,
+      "estimated_native_raw5_rms_after_reference_bias_cancel": 0.1762400318556382,
+      "constant_added_variance": 0.020833333333333332,
+      "programme_prediction_frame_rms": 0.020251670411856548,
+      "feasible": true
+    },
+    "float_piece": {
+      "validation_examples": 192,
+      "all_seven_source_ratios_correct": 192,
+      "minimum_source_ratio_margin": 0.04920912024845614,
+      "digit_bit_error_examples": 0,
+      "minimum_digit_bit_margin": 0.06785371789160599,
+      "programme_reference_ratio_min": 0.7073013995462154,
+      "native_validation_reference_ratio_min": 0.6188273081462593,
+      "native_validation_false_equals": 0,
+      "native_validation_equals_max": 0.27413561896915556,
+      "attention5_memory_projection_float_max": 1.0438565514910017e-08,
+      "checks_are_memory_ratios_not_a_complete_reader": true
+    },
+    "feature_transfer_trials": [
+      {
+        "ridge": 0.001,
+        "class_mean_constraint_error": 3.339550858072471e-13,
+        "displaced_native_feature_validation_rms": 0.04811870682668364,
+        "native_word_post_validation_rms": 0.23512315746007742,
+        "programme_post_validation_rms": 0.09369753098673626,
+        "maximum_coefficient": 194.66795981973465,
+        "transferred_parser": {
+          "all_seven_sources_correct": 192,
+          "count": 192,
+          "minimum_source_margin": 0.07095306673409707,
+          "digit_bit_error_examples": 0,
+          "minimum_digit_bit_margin": 0.10165672843427864,
+          "programme_type_correct": 192
+        },
+        "feasible": true
+      },
+      {
+        "ridge": 0.0001,
+        "class_mean_constraint_error": 2.2026824808563106e-13,
+        "displaced_native_feature_validation_rms": 0.04821371077387377,
+        "native_word_post_validation_rms": 0.16711227076194848,
+        "programme_post_validation_rms": 0.05961250033610036,
+        "maximum_coefficient": 300.7762153078993,
+        "transferred_parser": {
+          "all_seven_sources_correct": 192,
+          "count": 192,
+          "minimum_source_margin": 0.0716282949596092,
+          "digit_bit_error_examples": 0,
+          "minimum_digit_bit_margin": 0.10219626353071554,
+          "programme_type_correct": 192
+        },
+        "feasible": true
+      },
+      {
+        "ridge": 1e-05,
+        "class_mean_constraint_error": 3.268496584496461e-13,
+        "displaced_native_feature_validation_rms": 0.0482265849152147,
+        "native_word_post_validation_rms": 0.16399978864478898,
+        "programme_post_validation_rms": 0.05779462083753513,
+        "maximum_coefficient": 326.65344034028584,
+        "transferred_parser": {
+          "all_seven_sources_correct": 192,
+          "count": 192,
+          "minimum_source_margin": 0.07181921934152091,
+          "digit_bit_error_examples": 0,
+          "minimum_digit_bit_margin": 0.10225085931015887,
+          "programme_type_correct": 192
+        },
+        "feasible": true
+      },
+      {
+        "ridge": 1e-06,
+        "class_mean_constraint_error": 3.979039320256561e-13,
+        "displaced_native_feature_validation_rms": 0.04822813535926545,
+        "native_word_post_validation_rms": 0.1639705151586385,
+        "programme_post_validation_rms": 0.05776621219339811,
+        "maximum_coefficient": 329.7860122157923,
+        "transferred_parser": {
+          "all_seven_sources_correct": 192,
+          "count": 192,
+          "minimum_source_margin": 0.07185301924126708,
+          "digit_bit_error_examples": 0,
+          "minimum_digit_bit_margin": 0.10224972915353758,
+          "programme_type_correct": 192
+        },
+        "feasible": true
+      },
+      {
+        "ridge": 1e-07,
+        "class_mean_constraint_error": 2.4868995751603507e-13,
+        "displaced_native_feature_validation_rms": 0.0482282999811933,
+        "native_word_post_validation_rms": 0.16397169947129728,
+        "programme_post_validation_rms": 0.05776559827735297,
+        "maximum_coefficient": 330.10678439466386,
+        "transferred_parser": {
+          "all_seven_sources_correct": 192,
+          "count": 192,
+          "minimum_source_margin": 0.0718567760575215,
+          "digit_bit_error_examples": 0,
+          "minimum_digit_bit_margin": 0.10224939991310777,
+          "programme_type_correct": 192
+        },
+        "feasible": true
+      }
+    ],
+    "native_repair_ridge_trials": [
+      {
+        "ridge": 0.001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.07050858409860318,
+            "after_rms": 0.034515157671883456,
+            "relative_squared_error": 0.23962699200927096
+          },
+          "validation": {
+            "before_rms": 0.06979120097262773,
+            "after_rms": 0.03301865968200062,
+            "relative_squared_error": 0.22382960929576623
+          }
+        },
+        "max_abs_weight": 4.777113437652588,
+        "valid": true,
+        "selected_validation_weighted_error": 0.0239754018328277
+      },
+      {
+        "ridge": 0.0001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.07050858409860318,
+            "after_rms": 0.03451513881784181,
+            "relative_squared_error": 0.2396267302149546
+          },
+          "validation": {
+            "before_rms": 0.06979120097262773,
+            "after_rms": 0.033019410093476954,
+            "relative_squared_error": 0.22383978331359922
+          }
+        },
+        "max_abs_weight": 4.777113437652588,
+        "valid": true,
+        "selected_validation_weighted_error": 0.023976402975884773
+      },
+      {
+        "ridge": 1e-05,
+        "fit": {
+          "construction": {
+            "before_rms": 0.07050858409860318,
+            "after_rms": 0.034515138627934205,
+            "relative_squared_error": 0.23962672757802836
+          },
+          "validation": {
+            "before_rms": 0.06979120097262773,
+            "after_rms": 0.033019487132380725,
+            "relative_squared_error": 0.22384082781388515
+          }
+        },
+        "max_abs_weight": 4.777113437652588,
+        "valid": true,
+        "selected_validation_weighted_error": 0.023976506451225628
+      },
+      {
+        "ridge": 1e-06,
+        "fit": {
+          "construction": {
+            "before_rms": 0.07050858409860318,
+            "after_rms": 0.03451513862603375,
+            "relative_squared_error": 0.23962672755163997
+          },
+          "validation": {
+            "before_rms": 0.06979120097262773,
+            "after_rms": 0.033019494856400856,
+            "relative_squared_error": 0.22384093253696927
+          }
+        },
+        "max_abs_weight": 4.777113437652588,
+        "valid": true,
+        "selected_validation_weighted_error": 0.023976516832646184
+      },
+      {
+        "ridge": 1e-07,
+        "fit": {
+          "construction": {
+            "before_rms": 0.07050858409860318,
+            "after_rms": 0.03451513862601475,
+            "relative_squared_error": 0.23962672755137607
+          },
+          "validation": {
+            "before_rms": 0.06979120097262773,
+            "after_rms": 0.033019495629004324,
+            "relative_squared_error": 0.2238409430120103
+          }
+        },
+        "max_abs_weight": 4.777113437652588,
+        "valid": true,
+        "selected_validation_weighted_error": 0.02397651787112738
+      }
+    ]
+  }
+}

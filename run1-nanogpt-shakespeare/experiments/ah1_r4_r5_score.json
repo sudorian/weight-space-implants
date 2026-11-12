@@ -1,0 +1,149 @@
+{
+  "checkpoint": "experiments/ah1_relative_adder.pt",
+  "checkpoint_sha256": "c570de38d44f89a4bda35dcc8fcf41eb5c8bc2dd7f9548db4af5ee7a31cbe909",
+  "shakespeare": {
+    "tokens": 111536,
+    "cross_entropy": 1.5308291741413427,
+    "host_cross_entropy": 1.5301572223455933,
+    "cross_entropy_increase": 0.0006719517957495576,
+    "argmax_agreement": 0.9913301534930427,
+    "arithmetic_probability_mass": 6.85237032498719e-05,
+    "preservation_pass": true
+  },
+  "rungs": [
+    {
+      "rung": "R4",
+      "correct": 20000,
+      "total": 20000,
+      "accuracy": 1.0,
+      "threshold": 0.99,
+      "arithmetic_pass": true,
+      "dataset_sha256": "6a1989a937261857c2666f5a87fc800750970bf6cd5e9f6cd45c659920d67b31",
+      "seed": 20261108,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "rung": "R5",
+      "correct": 1370,
+      "total": 20000,
+      "accuracy": 0.0685,
+      "threshold": 0.99,
+      "arithmetic_pass": false,
+      "dataset_sha256": "d365608e22170f4db1eb5c31886ee416a2ddf3143398d2410211d56849d70e20",
+      "seed": 20261108,
+      "failures": [
+        {
+          "prompt": "feder\n2+2=",
+          "expected": "4\n",
+          "generated": "00"
+        },
+        {
+          "prompt": ".\n51+3=",
+          "expected": "54\n",
+          "generated": "020"
+        },
+        {
+          "prompt": "f thy tho\n69+890=",
+          "expected": "959\n",
+          "generated": "1759"
+        },
+        {
+          "prompt": "ad.\n\nTailor:\nBut did you not request\n20+104=",
+          "expected": "124\n",
+          "generated": "0224"
+        },
+        {
+          "prompt": " not big, nor stamp, nor stare, no\n485+5=",
+          "expected": "490\n",
+          "generated": "1009"
+        },
+        {
+          "prompt": "ep from me\nThe res\n857+8=",
+          "expected": "865\n",
+          "generated": "1416"
+        },
+        {
+          "prompt": " richly furnished with plate\n7+12=",
+          "expected": "19\n",
+          "generated": "002"
+        },
+        {
+          "prompt": "send unto his wife;\nAnd he\n803+45=",
+          "expected": "848\n",
+          "generated": "0125"
+        },
+        {
+          "prompt": "ish spirit,\n'Frets, call you these?' quoth she; 'I'\n9+99=",
+          "expected": "108\n",
+          "generated": "0198"
+        },
+        {
+          "prompt": "now thus far \n64+252=",
+          "expected": "316\n",
+          "generated": "0516"
+        },
+        {
+          "prompt": "e than myself. You are a\ncounsellor; if you ca\n3+79=",
+          "expected": "82\n",
+          "generated": "015"
+        },
+        {
+          "prompt": "t\n1+490=",
+          "expected": "491\n",
+          "generated": "0981"
+        },
+        {
+          "prompt": "ountenance.\n\nBIONDELLO:\nI have seen t\n2+6=",
+          "expected": "8\n",
+          "generated": "00"
+        },
+        {
+          "prompt": "e pine and let thee out.\n\nARIEL:\nI thank thee, m\n904+48=",
+          "expected": "952\n",
+          "generated": "0138"
+        },
+        {
+          "prompt": "s g\n94+21=",
+          "expected": "115\n",
+          "generated": "0050"
+        },
+        {
+          "prompt": ", all dedicated\nTo closeness and the bettering of\n811+0=",
+          "expected": "811\n",
+          "generated": "0208"
+        },
+        {
+          "prompt": "again the king my father's wreck,\nThis music crept by\n23+4=",
+          "expected": "27\n",
+          "generated": "060"
+        },
+        {
+          "prompt": "id call me \n0+84=",
+          "expected": "84\n",
+          "generated": "016"
+        },
+        {
+          "prompt": "e was\n3+5=",
+          "expected": "8\n",
+          "generated": "00"
+        },
+        {
+          "prompt": "rn,\nMy hor\n22+964=",
+          "expected": "986\n",
+          "generated": "1886"
+        }
+      ],
+      "pass": false
+    }
+  ],
+  "seconds": 21.296693749987753,
+  "budget_left": {
+    "forward": 64,
+    "score": 23
+  },
+  "memory": {
+    "rss_bytes": 1426849792,
+    "available_bytes": 6324994048
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "analysis_only": true,
+  "no_deployable_weights": true,
+  "base_checkpoint": "experiments/a142v2_exploratory_projected/delta.pt",
+  "training_windows": 384,
+  "validation_windows": 128,
+  "anchor_count_trials": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "fixed_proposed_anchor_output_gain": 0,
+  "radial_inverse_RMS_domain_relative_to_parent": [
+    0.5,
+    2.0
+  ],
+  "row_selection": "Lowest original training post-branch output energy relative to HOST state RMS; every nonzero arithmetic programme output row excluded",
+  "target": "Analytic positive radial least-squares projection of original paired-HOST final state with selected output coordinates zeroed, capped by unchanged raw coordinate energy",
+  "oracle_scope": "Uses original HOST state per validation token solely for an optimistic feasibility diagnostic; no deployable function or accuracy claim. These per-token factors are never installed.",
+  "baseline": {
+    "validation_restricted_matches": 8003,
+    "validation_paired_HOST_state_relative_rms": 0.015782857312123987,
+    "validation_paired_HOST_direction_rms": 0.014563176990502847
+  },
+  "trials": [
+    {
+      "anchor_count": 1,
+      "anchors": [
+        442
+      ],
+      "old_output_gains": [
+        14.86209774017334
+      ],
+      "validation_restricted_matches": 7982,
+      "validation_paired_HOST_state_relative_rms": 0.014874047206703406,
+      "validation_paired_HOST_direction_rms": 0.013760657107985604,
+      "training_lower_caps": 0,
+      "training_upper_caps": 16495,
+      "validation_lower_caps": 0,
+      "validation_upper_caps": 5257,
+      "mean_training_required_raw_anchor_energy_in_parent_RMS_units": 3.8440494846553164,
+      "maximum_validation_radial_RMS_relative_change": 0.359661507707417,
+      "promising_oracle_only": false
+    },
+    {
+      "anchor_count": 2,
+      "anchors": [
+        442,
+        328
+      ],
+      "old_output_gains": [
+        14.86209774017334,
+        12.773700714111328
+      ],
+      "validation_restricted_matches": 7962,
+      "validation_paired_HOST_state_relative_rms": 0.014869131387787641,
+      "validation_paired_HOST_direction_rms": 0.013758671866657081,
+      "training_lower_caps": 0,
+      "training_upper_caps": 16323,
+      "validation_lower_caps": 0,
+      "validation_upper_caps": 5211,
+      "mean_training_required_raw_anchor_energy_in_parent_RMS_units": 3.929049467559755,
+      "maximum_validation_radial_RMS_relative_change": 0.35966148692308764,
+      "promising_oracle_only": false
+    },
+    {
+      "anchor_count": 4,
+      "anchors": [
+        442,
+        328,
+        4,
+        417
+      ],
+      "old_output_gains": [
+        14.86209774017334,
+        12.773700714111328,
+        12.373096466064453,
+        14.195440292358398
+      ],
+      "validation_restricted_matches": 7927,
+      "validation_paired_HOST_state_relative_rms": 0.014862473458648957,
+      "validation_paired_HOST_direction_rms": 0.013756530863269842,
+      "training_lower_caps": 0,
+      "training_upper_caps": 15887,
+      "validation_lower_caps": 0,
+      "validation_upper_caps": 5086,
+      "mean_training_required_raw_anchor_energy_in_parent_RMS_units": 4.120796209358773,
+      "maximum_validation_radial_RMS_relative_change": 0.3596622394126916,
+      "promising_oracle_only": false
+    },
+    {
+      "anchor_count": 8,
+      "anchors": [
+        442,
+        328,
+        4,
+        417,
+        574,
+        630,
+        113,
+        239
+      ],
+      "old_output_gains": [
+        14.86209774017334,
+        12.773700714111328,
+        12.373096466064453,
+        14.195440292358398,
+        17.303194046020508,
+        17.065656661987305,
+        17.806352615356445,
+        14.811117172241211
+      ],
+      "validation_restricted_matches": 7832,
+      "validation_paired_HOST_state_relative_rms": 0.014853304974188847,
+      "validation_paired_HOST_direction_rms": 0.013756066254491132,
+      "training_lower_caps": 0,
+      "training_upper_caps": 15400,
+      "validation_lower_caps": 0,
+      "validation_upper_caps": 4933,
+      "mean_training_required_raw_anchor_energy_in_parent_RMS_units": 4.413350960822089,
+      "maximum_validation_radial_RMS_relative_change": 0.35966254726195457,
+      "promising_oracle_only": false
+    },
+    {
+      "anchor_count": 16,
+      "anchors": [
+        442,
+        328,
+        4,
+        417,
+        574,
+        630,
+        113,
+        239,
+        29,
+        212,
+        54,
+        71,
+        74,
+        215,
+        131,
+        172
+      ],
+      "old_output_gains": [
+        14.86209774017334,
+        12.773700714111328,
+        12.373096466064453,
+        14.195440292358398,
+        17.303194046020508,
+        17.065656661987305,
+        17.806352615356445,
+        14.811117172241211,
+        19.637073516845703,
+        14.390775680541992,
+        10.900643348693848,
+        18.08932876586914,
+        15.642520904541016,
+        19.4387149810791,
+        14.978827476501465,
+        23.60410499572754
+      ],
+      "validation_restricted_matches": 7678,
+      "validation_paired_HOST_state_relative_rms": 0.014835995332766312,
+      "validation_paired_HOST_direction_rms": 0.013764809014424464,
+      "training_lower_caps": 0,
+      "training_upper_caps": 13125,
+      "validation_lower_caps": 0,
+      "validation_upper_caps": 4255,
+      "mean_training_required_raw_anchor_energy_in_parent_RMS_units": 5.5655463237948695,
+      "maximum_validation_radial_RMS_relative_change": 0.35966366256069904,
+      "promising_oracle_only": false
+    }
+  ],
+  "any_promising": false,
+  "parent_recorded_state_reconstruction_relative_error": 6.413927360941411e-08,
+  "no_gradients_native_activation_execution_answers_or_iterative_fitting": true,
+  "sources": {
+    "experiments/analyze_a236_zero_gain_radial_oracle_v1.py": "d16e7dc8763059738b5915af5e391960ec3a9488225a586b78e24e25c6e619cc"
+  },
+  "inputs": {
+    "experiments/a142v2_exploratory_projected/delta.pt": "f929a4d2adf87e4a49ada1e457d30a1d856afbec503b1fd4c963bc88037e7f25",
+    "experiments/a142v2_exploratory_projected/circuit.pt": "57377558b1735d6df8aa799d7822239c383b6e9c118bed93755b02162c5c3061",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "artifacts/a142v1_projected_readout_basis.pt": "16f4f23e3a1ab2d8f9b27faf482888c2ea9482a243ab14392455a9c5a6fe1c56",
+    "artifacts/a140v1_host_branches.pt": "dbed2f93a14faf7a42dd03a3a10c961aeda34ff5f96cbdddaa36edaecb5cf98d",
+    "artifacts/a56v1_host.pt": "e0536ecfefe001271df9d2d9e5c3bbacb5b585afb8dff35b16ef97307d7d13fc",
+    "artifacts/a142v1_paired_host_top.pt": "e917494c2a31a70f1337b0300bf293ccf4c8c51c41723a67739577a5e5d18b39"
+  },
+  "maximum_resident_set_kib": 3914536
+}

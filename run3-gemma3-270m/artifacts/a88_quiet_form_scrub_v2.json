@@ -1,0 +1,125 @@
+{
+  "coordinates": [
+    334
+  ],
+  "coordinate_selection": "largest absolute quiet-form coefficient over all output coordinates, at most five, rejecting infeasible exact RMS roots",
+  "ridge_trials": [
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "maximum_branch_error_multiplier": 1.2,
+  "target": "identically zero quiet query functional on unlabeled word states, exact one-coordinate RMS quadratic",
+  "input_reconstruction_relative_error": 1.4771217603696271e-07,
+  "native_down_reconstruction_relative_error": 1.413427762722636e-07,
+  "maximum_programme_word_gate": -31.994321551410525,
+  "target_reports": [
+    {
+      "coordinate": 334,
+      "quiet_form_weight": 0.03952854852981697,
+      "post_gain": 0.3004871606826782,
+      "maximum_quadratic_residual": 5.335568107939139e-15,
+      "ideal_hidden_change_rms": 0.06230655881403703,
+      "ideal_branch_error_rms": 0.12097024615725474,
+      "ideal_quiet_form_rms": 8.494446903771843e-19
+    },
+    {
+      "coordinate": 479,
+      "rejected": "No real quadratic root on every calibration state"
+    },
+    {
+      "coordinate": 547,
+      "rejected": "No real quadratic root on every calibration state"
+    },
+    {
+      "coordinate": 115,
+      "rejected": "No real quadratic root on every calibration state"
+    },
+    {
+      "coordinate": 510,
+      "rejected": "No real quadratic root on every calibration state"
+    }
+  ],
+  "baseline": {
+    "quiet_form_rms": 0.0004337002813625791,
+    "branch_error_rms": 0.10378557271133919,
+    "host_branch_rms": 11.428493036667978,
+    "paired_centered_causal_score_mse": 0.0011705376790456011,
+    "paired_score_p99_query_rms": 0.11247908315859623
+  },
+  "trials": [
+    {
+      "coordinate": 334,
+      "ridge": 1e-06,
+      "quiet_form_rms": 0.0003875703644276396,
+      "quiet_form_rms_ratio": 0.8936364145533623,
+      "branch_error_rms": 0.10868555470482336,
+      "hidden_change_rms": 0.033591808843964475,
+      "maximum_native_row_weight": 0.2245425581932068,
+      "paired_centered_causal_score_mse": 0.001385425223039421,
+      "paired_score_p99_query_rms": 0.11433056011572716,
+      "eligible": false
+    },
+    {
+      "coordinate": 334,
+      "ridge": 1e-05,
+      "quiet_form_rms": 0.000387568347626113,
+      "quiet_form_rms_ratio": 0.8936317643338137,
+      "branch_error_rms": 0.1086850841664182,
+      "hidden_change_rms": 0.033590246805313216,
+      "maximum_native_row_weight": 0.22453534603118896,
+      "paired_centered_causal_score_mse": 0.0013854147351003868,
+      "paired_score_p99_query_rms": 0.1143305288957288,
+      "eligible": false
+    },
+    {
+      "coordinate": 334,
+      "ridge": 0.0001,
+      "quiet_form_rms": 0.0003875482042175342,
+      "quiet_form_rms_ratio": 0.8935853188749464,
+      "branch_error_rms": 0.10868038326989751,
+      "hidden_change_rms": 0.03357463813203983,
+      "maximum_native_row_weight": 0.2244633436203003,
+      "paired_centered_causal_score_mse": 0.0013853099357210602,
+      "paired_score_p99_query_rms": 0.11433021710948442,
+      "eligible": false
+    },
+    {
+      "coordinate": 334,
+      "ridge": 0.001,
+      "quiet_form_rms": 0.0003873490246451405,
+      "quiet_form_rms_ratio": 0.8931260626075354,
+      "branch_error_rms": 0.10863377276683922,
+      "hidden_change_rms": 0.03341952069513133,
+      "maximum_native_row_weight": 0.2237493246793747,
+      "paired_centered_causal_score_mse": 0.0013842694987458457,
+      "paired_score_p99_query_rms": 0.1142059408110329,
+      "eligible": false
+    },
+    {
+      "coordinate": 334,
+      "ridge": 0.01,
+      "quiet_form_rms": 0.0003855577060573487,
+      "quiet_form_rms_ratio": 0.8889957480452206,
+      "branch_error_rms": 0.1082048880428245,
+      "hidden_change_rms": 0.03195984310522905,
+      "maximum_native_row_weight": 0.217098206281662,
+      "paired_centered_causal_score_mse": 0.0013745596768413898,
+      "paired_score_p99_query_rms": 0.11397863212977942,
+      "eligible": false
+    }
+  ],
+  "best_key": null,
+  "training_tokens": 24576,
+  "validation_tokens": 8192,
+  "source_sha256": "82133060731f690d0af71726142d58359dfd74383076e4b94297e8694393f3b6",
+  "inputs": {
+    "experiments/a90v1_grouped_affine/delta.pt": "55db5c1a45452ea6939949df3416da958c0583cea57d1898790508144a49138d",
+    "artifacts/a88v1_native_mlp2.pt": "4ad7ee735408bd9cafa37b1727a9cd53ac14f088b7f914ec236e75430b96569e",
+    "artifacts/a45_quiet_query3_v1.pt": "ce16b36c044f17b496da11293bda50f692481345b10714c552cbed18d4ac2650",
+    "artifacts/a52v1_value_word.pt": "6fa8cbb0939360588ff9111846c9d7e9f4fa1e240968f1d62e1bc83c26e2c330"
+  },
+  "no_answers_activation_replay_or_iterative_fit": true
+}

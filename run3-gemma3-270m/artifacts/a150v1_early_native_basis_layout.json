@@ -1,0 +1,109 @@
+{
+  "word_windows": 256,
+  "training_windows": 192,
+  "validation_windows": 64,
+  "format_windows": 128,
+  "format_original_length": 14,
+  "layers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "expected_capture_tensor_bytes": 1563426816,
+  "calibration_seed": 202611101351,
+  "programme_units": {
+    "0": [
+      1159
+    ],
+    "1": [
+      196,
+      249,
+      1130,
+      1657,
+      1809
+    ],
+    "2": [
+      80,
+      342,
+      529,
+      727,
+      1634
+    ],
+    "3": [
+      141,
+      320,
+      1564,
+      2021
+    ],
+    "4": [
+      563,
+      298,
+      771,
+      1065,
+      1757,
+      1424
+    ],
+    "5": [
+      632,
+      913
+    ],
+    "6": [
+      1429,
+      1122,
+      1820,
+      1092,
+      276,
+      1808,
+      314,
+      538,
+      1731,
+      91
+    ],
+    "7": [
+      95,
+      343,
+      815,
+      1134,
+      1203,
+      1700,
+      1795,
+      1914
+    ],
+    "8": [
+      456,
+      1225,
+      1377,
+      1140,
+      1024,
+      1410,
+      601,
+      1868,
+      882
+    ],
+    "17": [
+      587,
+      834,
+      290,
+      929,
+      458,
+      1066,
+      1588,
+      439,
+      129,
+      1343,
+      1254
+    ]
+  },
+  "target_source": "Derived factual HOST states from original saved A140 HOST branch outputs",
+  "inputs": {
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "experiments/a140v1_edited_branches_request.json": "2eb04243564855105d9c46415b72d6b74d53a3f7629879a3f47372951f4ed2be",
+    "artifacts/a140v1_branch_gain_layout.json": "68a5bbae22b4e0dceae10bcfda1f649bc63ac7cf876b40622d51776fccada252"
+  },
+  "source_sha256": "a18fffb0c13b24a5a46f67e92b27e3803eca2709259142fbbe9ab03f9e6b4b87"
+}

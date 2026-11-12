@@ -1,0 +1,423 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a142v2_exploratory_projected/delta.pt",
+  "additional_coordinate_counts": [
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "competitor_penalty_trials": [
+    0.0,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "hard_constraint": "Literal emission is zero outside the boosted-coordinate pool",
+  "competitor_ids": [
+    247918,
+    145382,
+    242323,
+    238658,
+    242862,
+    19759,
+    190019,
+    155780,
+    248118,
+    239341,
+    22749,
+    195831,
+    224216,
+    140826,
+    189975,
+    195857,
+    3493,
+    211050,
+    137728,
+    104678,
+    239374,
+    3824,
+    22969,
+    12653,
+    238254,
+    91704,
+    88716,
+    3962,
+    240010,
+    239325,
+    240290,
+    87927
+  ],
+  "fixed_group_bias": 2,
+  "residual_cleanup_rank": 6,
+  "scratch_rows": [
+    4,
+    23,
+    26,
+    29,
+    54,
+    69,
+    74,
+    113,
+    141,
+    155,
+    172,
+    181,
+    259,
+    293,
+    307,
+    320,
+    332,
+    334,
+    353,
+    391,
+    398,
+    427,
+    431,
+    442,
+    467,
+    476,
+    546,
+    574,
+    582,
+    617
+  ],
+  "literal_trials": [
+    {
+      "boosted_coordinates": 46,
+      "additional_coordinates": 16,
+      "competitor_penalty": 0.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 1.0000000000000004e-12,
+      "matches": 0,
+      "positions": 31,
+      "minimum_target_margin": -8.1881103515625,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 46,
+      "additional_coordinates": 16,
+      "competitor_penalty": 0.1,
+      "maximum_literal_raw_energy_at_unit_amplitude": 9.999999999999992e-13,
+      "matches": 2,
+      "positions": 31,
+      "minimum_target_margin": -7.766918182373047,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 46,
+      "additional_coordinates": 16,
+      "competitor_penalty": 1.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 1.0000000000000002e-12,
+      "matches": 0,
+      "positions": 31,
+      "minimum_target_margin": -11.409798622131348,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 46,
+      "additional_coordinates": 16,
+      "competitor_penalty": 10.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 9.999999999999996e-13,
+      "matches": 0,
+      "positions": 31,
+      "minimum_target_margin": -19.605459213256836,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 46,
+      "additional_coordinates": 16,
+      "competitor_penalty": 100.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 1.0000000000000006e-12,
+      "matches": 0,
+      "positions": 31,
+      "minimum_target_margin": -19.948928833007812,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 54,
+      "additional_coordinates": 24,
+      "competitor_penalty": 0.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 9.999999999999996e-13,
+      "matches": 14,
+      "positions": 31,
+      "minimum_target_margin": -6.786487579345703,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 54,
+      "additional_coordinates": 24,
+      "competitor_penalty": 0.1,
+      "maximum_literal_raw_energy_at_unit_amplitude": 9.999999999999998e-13,
+      "matches": 14,
+      "positions": 31,
+      "minimum_target_margin": -4.627593994140625,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 54,
+      "additional_coordinates": 24,
+      "competitor_penalty": 1.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 9.999999999999998e-13,
+      "matches": 0,
+      "positions": 31,
+      "minimum_target_margin": -8.561660766601562,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 54,
+      "additional_coordinates": 24,
+      "competitor_penalty": 10.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 1e-12,
+      "matches": 0,
+      "positions": 31,
+      "minimum_target_margin": -15.160513877868652,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 54,
+      "additional_coordinates": 24,
+      "competitor_penalty": 100.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 1.0515325279222602e-12,
+      "matches": 0,
+      "positions": 31,
+      "minimum_target_margin": -20.729652404785156,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 62,
+      "additional_coordinates": 32,
+      "competitor_penalty": 0.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 1.0000000000000006e-12,
+      "matches": 18,
+      "positions": 31,
+      "minimum_target_margin": -4.747417449951172,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 62,
+      "additional_coordinates": 32,
+      "competitor_penalty": 0.1,
+      "maximum_literal_raw_energy_at_unit_amplitude": 1.0000000000000002e-12,
+      "matches": 19,
+      "positions": 31,
+      "minimum_target_margin": -2.79827880859375,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 62,
+      "additional_coordinates": 32,
+      "competitor_penalty": 1.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 9.999999999999998e-13,
+      "matches": 7,
+      "positions": 31,
+      "minimum_target_margin": -8.223766326904297,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 62,
+      "additional_coordinates": 32,
+      "competitor_penalty": 10.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 1e-12,
+      "matches": 1,
+      "positions": 31,
+      "minimum_target_margin": -15.158775329589844,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 62,
+      "additional_coordinates": 32,
+      "competitor_penalty": 100.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 1.0918262959428977e-12,
+      "matches": 1,
+      "positions": 31,
+      "minimum_target_margin": -18.501365661621094,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 78,
+      "additional_coordinates": 48,
+      "competitor_penalty": 0.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 9.999999999999994e-13,
+      "matches": 26,
+      "positions": 31,
+      "minimum_target_margin": -3.4802494049072266,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 78,
+      "additional_coordinates": 48,
+      "competitor_penalty": 0.1,
+      "maximum_literal_raw_energy_at_unit_amplitude": 1e-12,
+      "matches": 27,
+      "positions": 31,
+      "minimum_target_margin": -1.4437599182128906,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 78,
+      "additional_coordinates": 48,
+      "competitor_penalty": 1.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 9.999999999999998e-13,
+      "matches": 18,
+      "positions": 31,
+      "minimum_target_margin": -3.3571319580078125,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 78,
+      "additional_coordinates": 48,
+      "competitor_penalty": 10.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 9.999999999999998e-13,
+      "matches": 1,
+      "positions": 31,
+      "minimum_target_margin": -14.198807716369629,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 78,
+      "additional_coordinates": 48,
+      "competitor_penalty": 100.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 1.0542915160183057e-12,
+      "matches": 1,
+      "positions": 31,
+      "minimum_target_margin": -16.543174743652344,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 94,
+      "additional_coordinates": 64,
+      "competitor_penalty": 0.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 1e-12,
+      "matches": 29,
+      "positions": 31,
+      "minimum_target_margin": -0.2600250244140625,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 94,
+      "additional_coordinates": 64,
+      "competitor_penalty": 0.1,
+      "maximum_literal_raw_energy_at_unit_amplitude": 1.0000000000000002e-12,
+      "matches": 31,
+      "positions": 31,
+      "minimum_target_margin": 1.350698471069336,
+      "eligible_literal": true
+    },
+    {
+      "boosted_coordinates": 94,
+      "additional_coordinates": 64,
+      "competitor_penalty": 1.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 9.999999999999998e-13,
+      "matches": 24,
+      "positions": 31,
+      "minimum_target_margin": -1.6859588623046875,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 94,
+      "additional_coordinates": 64,
+      "competitor_penalty": 10.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 1.0000000000000002e-12,
+      "matches": 1,
+      "positions": 31,
+      "minimum_target_margin": -10.695093154907227,
+      "eligible_literal": false
+    },
+    {
+      "boosted_coordinates": 94,
+      "additional_coordinates": 64,
+      "competitor_penalty": 100.0,
+      "maximum_literal_raw_energy_at_unit_amplitude": 1.0394220378059395e-12,
+      "matches": 1,
+      "positions": 31,
+      "minimum_target_margin": -15.06004810333252,
+      "eligible_literal": false
+    }
+  ],
+  "geometry_trials": [
+    {
+      "literal": {
+        "boosted_coordinates": 94,
+        "additional_coordinates": 64,
+        "competitor_penalty": 0.1,
+        "maximum_literal_raw_energy_at_unit_amplitude": 1.0000000000000002e-12,
+        "matches": 31,
+        "positions": 31,
+        "minimum_target_margin": 1.350698471069336,
+        "eligible_literal": true
+      },
+      "boosted_coordinates": 94,
+      "residual_cleanup_rank": 6,
+      "training_retained_residual_energy_fraction": 0.9992841189513832,
+      "maximum_uncancelled_residual": 29156.416067038732,
+      "holdback_residual_RMS": 970.3856876199843,
+      "amplitude_certificate": {
+        "positive_denominator_failures": 0,
+        "minimum_denominator": 0.27560636063249777,
+        "sufficient_emission_amplitude": 2553548.194800119,
+        "fixed_safety_factor": 1.001,
+        "required_normalized_margin": 1.0
+      },
+      "eligible_constant_geometry": false,
+      "eligible_Taylor_geometry": true,
+      "minimum_anchor_energy_room": 629.8679127822217,
+      "infeasible_positions": 0,
+      "anchor_modes": {
+        "per_input_oracle": {
+          "matches": 2560,
+          "positions": 2560,
+          "minimum_target_margin": 1.0207481384277344,
+          "holdback_matches": 2080,
+          "holdback_positions": 2080,
+          "minimum_holdback_target_margin": 1.1344985961914062,
+          "maximum_relative_raw_norm_error": 4.99999875280821e-07,
+          "minimum_anchor_value": 25.097169417729596
+        },
+        "constant": {
+          "matches": 2560,
+          "positions": 2560,
+          "minimum_target_margin": 0.9285125732421875,
+          "holdback_matches": 2080,
+          "holdback_positions": 2080,
+          "minimum_holdback_target_margin": 1.1939888000488281,
+          "maximum_relative_raw_norm_error": 0.0028946968669472106,
+          "minimum_anchor_value": 25.17097231941355
+        },
+        "quadratic_Taylor": {
+          "matches": 2560,
+          "positions": 2560,
+          "minimum_target_margin": 1.0208206176757812,
+          "holdback_matches": 2080,
+          "holdback_positions": 2080,
+          "minimum_holdback_target_margin": 1.1345787048339844,
+          "maximum_relative_raw_norm_error": 4.742886750230824e-06,
+          "minimum_anchor_value": 25.09727761514501
+        }
+      }
+    }
+  ],
+  "eligible_boosted_counts": [
+    "94"
+  ],
+  "selection": "Greatest literal normalized margin>1 per hard pool; then analytic amplitude and anchor checks",
+  "format_PCA_training_sequences": 96,
+  "format_PCA_holdback_sequences": 416,
+  "amplitude_scope": "All2560recorded register states enter the analytic bound; not globally unseen validation",
+  "limitations": "Geometry only. Native arithmetic contributions omitted; new hand Gate/Up realization and original HOST native reconstruction are still required. Exact per-input anchor is an oracle.",
+  "sources": {
+    "experiments/analyze_a280_hard_subspace_literal_cleanup_v1.py": "c115f0e5f73f897aa05ff3c35571207ecdf682d086a39200e3b9ba00443e0608",
+    "experiments/analyze_a279_gain_aware_literal_cleanup_v1.py": "303355e0e5da0980549799e5a178868276bd4ec87712bbc0ef23d7de46c5074d",
+    "experiments/analyze_a266_competitor_penalized_output_pool_v1.py": "7d1fbc8c0acf54e437cae74530f0b6e8353a4b5502ad5f11e3c16caf8ea97e4b"
+  },
+  "inputs": {
+    "experiments/a142v2_exploratory_projected/delta.pt": "f929a4d2adf87e4a49ada1e457d30a1d856afbec503b1fd4c963bc88037e7f25",
+    "experiments/a142v2_exploratory_projected/circuit.pt": "57377558b1735d6df8aa799d7822239c383b6e9c118bed93755b02162c5c3061",
+    "artifacts/a124v1_syntax_stress.pt": "aac05f9a77d75f0a9f8907ca7dbf26fefbce3bd55d047c73f928e510761ece5b",
+    "experiments/a124v1_tight_newline_phase/delta.pt": "72b72a460fc942de80d093cca88a4f2a1a732a9f6cf12dce6ef3590b7a9b8c60",
+    "artifacts/readout_v1.pt": "f9ab4d8a9f61bbc881b7ad4002c7129a1ad811d197161f130e98db78c7c23eeb",
+    "artifacts/a266v1_competitor_penalized_output_pool.json": "f7d6ca33f95c1fc6803fa3b4383477cdba450cb4b3b08c917bc8b21a0a8ab16f"
+  },
+  "maximum_resident_set_kib": 1939868
+}

@@ -1,0 +1,206 @@
+{
+  "run_id": "0017-score",
+  "checkpoint_sha256": "215f9ce38a013a183d7f0ff84eb69791b516efcae752f930c7b2159903ba8b60",
+  "mode": "quick",
+  "fresh": false,
+  "edits": {
+    "changed_scalars": 894469,
+    "eligible_scalars": 85054464,
+    "changed_fraction": 0.0105164262748161,
+    "per_tensor": {
+      "transformer.h.10.mlp.c_fc.weight": 4608,
+      "transformer.h.10.mlp.c_fc.bias": 6,
+      "transformer.h.10.mlp.c_proj.weight": 4608,
+      "transformer.h.11.attn.c_attn.weight": 294912,
+      "transformer.h.11.attn.c_attn.bias": 384,
+      "transformer.h.11.attn.c_proj.weight": 589184,
+      "transformer.h.11.attn.c_proj.bias": 767
+    },
+    "max_abs_weight": 1008.196044921875
+  },
+  "arithmetic": {
+    "G1": {
+      "correct": 0,
+      "count": 100,
+      "accuracy": 0.0,
+      "finite": true,
+      "failures": [
+        {
+          "a": 0,
+          "b": 0,
+          "prompt": "0 + 0 =",
+          "prefix_length": 0,
+          "expected": " 0 0\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "prompt": "0 + 1 =",
+          "prefix_length": 0,
+          "expected": " 0 1\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 0,
+          "b": 2,
+          "prompt": "0 + 2 =",
+          "prefix_length": 0,
+          "expected": " 0 2\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 0,
+          "b": 3,
+          "prompt": "0 + 3 =",
+          "prefix_length": 0,
+          "expected": " 0 3\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 0,
+          "b": 4,
+          "prompt": "0 + 4 =",
+          "prefix_length": 0,
+          "expected": " 0 4\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 0,
+          "b": 5,
+          "prompt": "0 + 5 =",
+          "prefix_length": 0,
+          "expected": " 0 5\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 0,
+          "b": 6,
+          "prompt": "0 + 6 =",
+          "prefix_length": 0,
+          "expected": " 0 6\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 0,
+          "b": 7,
+          "prompt": "0 + 7 =",
+          "prefix_length": 0,
+          "expected": " 0 7\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 0,
+          "b": 8,
+          "prompt": "0 + 8 =",
+          "prefix_length": 0,
+          "expected": " 0 8\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 0,
+          "b": 9,
+          "prompt": "0 + 9 =",
+          "prefix_length": 0,
+          "expected": " 0 9\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 1,
+          "b": 0,
+          "prompt": "1 + 0 =",
+          "prefix_length": 0,
+          "expected": " 0 1\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 1,
+          "b": 1,
+          "prompt": "1 + 1 =",
+          "prefix_length": 0,
+          "expected": " 0 2\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "prompt": "1 + 2 =",
+          "prefix_length": 0,
+          "expected": " 0 3\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 1,
+          "b": 3,
+          "prompt": "1 + 3 =",
+          "prefix_length": 0,
+          "expected": " 0 4\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 1,
+          "b": 4,
+          "prompt": "1 + 4 =",
+          "prefix_length": 0,
+          "expected": " 0 5\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 1,
+          "b": 5,
+          "prompt": "1 + 5 =",
+          "prefix_length": 0,
+          "expected": " 0 6\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 1,
+          "b": 6,
+          "prompt": "1 + 6 =",
+          "prefix_length": 0,
+          "expected": " 0 7\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 1,
+          "b": 7,
+          "prompt": "1 + 7 =",
+          "prefix_length": 0,
+          "expected": " 0 8\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 1,
+          "b": 8,
+          "prompt": "1 + 8 =",
+          "prefix_length": 0,
+          "expected": " 0 9\n",
+          "generated_through_first_error": " Obj"
+        },
+        {
+          "a": 1,
+          "b": 9,
+          "prompt": "1 + 9 =",
+          "prefix_length": 0,
+          "expected": " 1 0\n",
+          "generated_through_first_error": " Obj"
+        }
+      ]
+    }
+  },
+  "noise": {},
+  "text": {
+    "windows": 256,
+    "tokens": 16384,
+    "top1_agreement": 0.98638916015625,
+    "mean_kl": 0.004345154340826167,
+    "host_cross_entropy": 4.274013782226357,
+    "edited_cross_entropy": 4.279510082353324,
+    "cross_entropy_increase": 0.005496300126967668,
+    "finite": true,
+    "pass": true
+  },
+  "passed": {
+    "G1": false
+  }
+}

@@ -1,0 +1,467 @@
+{
+  "baseline": {
+    "validation_native_branch_rms": 3.3557401969302263,
+    "validation_native_branch_relative_rms": 0.01200803597351459
+  },
+  "available_native_units": 1536,
+  "programme_feature_count": 9,
+  "fixed_donor_count": 512,
+  "conditional_cost_ridge": 0.001,
+  "raw_importance_mass_trials": [
+    0,
+    0.01,
+    0.1,
+    1,
+    10
+  ],
+  "strong_row_ridge_trials": [
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "training_windows": 256,
+  "validation_windows": 128,
+  "conditional_cleanup_geometry": {
+    "base": "experiments/a142v2_exploratory_projected/delta.pt",
+    "base_sha256": "f929a4d2adf87e4a49ada1e457d30a1d856afbec503b1fd4c963bc88037e7f25",
+    "format_capture": "artifacts/a124v1_syntax_stress.pt",
+    "feature_identity_relative_error": 7.259174767665636e-08,
+    "conditional_coefficient": [
+      [
+        -0.001777580115122044,
+        9.87944932574408e-05,
+        -0.000522187638844927,
+        0.01741607453724396,
+        0.12704870279309136,
+        -1.300510919362346
+      ],
+      [
+        0.0006009517140050096,
+        -0.00024471103861602877,
+        0.0004924301976884009,
+        -0.009270663012459945,
+        -0.01706784324824159,
+        -0.002259970427441721
+      ]
+    ],
+    "residual_covariance_eigenvalues": [
+      6.913716148297363e-08,
+      0.0036822948026318273,
+      0.006054888614717406,
+      0.007148088543126795,
+      0.02394458153070998,
+      0.4511433536566378
+    ],
+    "weighted_operator_eigenvalues": [
+      48719724668171.07,
+      1.796038346737338e+19,
+      2.377409801895855e+21,
+      6.130447622917207e+21,
+      9.172347610511749e+21,
+      3.952033651741808e+22
+    ],
+    "rank_trials": [
+      0,
+      2,
+      3,
+      4,
+      5
+    ],
+    "control_rank": 6,
+    "training_windows": 384,
+    "validation_windows": 128,
+    "baseline": {
+      "minimum_margin": 1.301513671875,
+      "changed_winners": 0,
+      "training_minimum_margin": 1.301513671875,
+      "validation_minimum_margin": 1.3640594482421875
+    },
+    "trials": [
+      {
+        "rank": 0,
+        "programme_units": 5,
+        "minimum_margin": -49.878936767578125,
+        "changed_winners": 440,
+        "training_minimum_margin": -49.878936767578125,
+        "validation_minimum_margin": -49.8665771484375,
+        "maximum_gate_weight": 65822.6171875,
+        "maximum_up_weight": 0.012216363102197647,
+        "maximum_down_weight": 100000.0,
+        "relative_programme_raw_change": 0.023753493881156818,
+        "eligible": false
+      },
+      {
+        "rank": 2,
+        "programme_units": 7,
+        "minimum_margin": -33.79789733886719,
+        "changed_winners": 293,
+        "training_minimum_margin": -33.79789733886719,
+        "validation_minimum_margin": -33.768924713134766,
+        "maximum_gate_weight": 65822.6171875,
+        "maximum_up_weight": 0.5425529479980469,
+        "maximum_down_weight": 100000.0,
+        "relative_programme_raw_change": 0.010794392037066896,
+        "eligible": false
+      },
+      {
+        "rank": 3,
+        "programme_units": 8,
+        "minimum_margin": -19.349803924560547,
+        "changed_winners": 47,
+        "training_minimum_margin": -19.349803924560547,
+        "validation_minimum_margin": -17.1318416595459,
+        "maximum_gate_weight": 65822.6171875,
+        "maximum_up_weight": 0.5425529479980469,
+        "maximum_down_weight": 100000.0,
+        "relative_programme_raw_change": 0.010250844546681612,
+        "eligible": false
+      },
+      {
+        "rank": 4,
+        "programme_units": 9,
+        "minimum_margin": 1.2965278625488281,
+        "changed_winners": 0,
+        "training_minimum_margin": 1.2965278625488281,
+        "validation_minimum_margin": 1.3590450286865234,
+        "maximum_gate_weight": 65822.6171875,
+        "maximum_up_weight": 0.8814398050308228,
+        "maximum_down_weight": 100000.0,
+        "relative_programme_raw_change": 0.00601409101514187,
+        "eligible": true
+      },
+      {
+        "rank": 5,
+        "programme_units": 10,
+        "minimum_margin": 1.3014259338378906,
+        "changed_winners": 0,
+        "training_minimum_margin": 1.3014259338378906,
+        "validation_minimum_margin": 1.3639602661132812,
+        "maximum_gate_weight": 65822.6171875,
+        "maximum_up_weight": 2.720628499984741,
+        "maximum_down_weight": 100000.0,
+        "relative_programme_raw_change": 1.1191667121704624e-05,
+        "eligible": true
+      },
+      {
+        "rank": 6,
+        "programme_units": 11,
+        "minimum_margin": 1.301513671875,
+        "changed_winners": 0,
+        "training_minimum_margin": 1.301513671875,
+        "validation_minimum_margin": 1.3640594482421875,
+        "maximum_gate_weight": 65822.6171875,
+        "maximum_up_weight": 2.718600273132324,
+        "maximum_down_weight": 100000.0,
+        "relative_programme_raw_change": 1.3476791316483023e-08,
+        "eligible": true
+      }
+    ],
+    "selected": {
+      "rank": 4,
+      "programme_units": 9,
+      "minimum_margin": 1.2965278625488281,
+      "changed_winners": 0,
+      "training_minimum_margin": 1.2965278625488281,
+      "validation_minimum_margin": 1.3590450286865234,
+      "maximum_gate_weight": 65822.6171875,
+      "maximum_up_weight": 0.8814398050308228,
+      "maximum_down_weight": 100000.0,
+      "relative_programme_raw_change": 0.00601409101514187,
+      "eligible": true
+    },
+    "no_answers_gradients_or_native_activation_replay": true
+  },
+  "arithmetic_operator_compressed_from_recorded_hand_field_covariance": true,
+  "old_units": [
+    587,
+    834,
+    290,
+    929,
+    458,
+    1066,
+    1588,
+    439,
+    129,
+    1343,
+    1254
+  ],
+  "trials": [
+    {
+      "raw_importance_mass": 0.0,
+      "units": [
+        587,
+        834,
+        290,
+        929,
+        458,
+        1066,
+        1588,
+        439,
+        129
+      ],
+      "old_units_retained": 9,
+      "native_repair": {
+        "donor_count": 512,
+        "donor_ridge": 0.001,
+        "strong_row_ridge_trials": [
+          1e-06,
+          1e-05,
+          0.0001,
+          0.001,
+          0.01
+        ],
+        "trials": [
+          {
+            "ridge": 1e-06,
+            "validation_native_branch_rms": 3.118409173458038,
+            "validation_native_branch_relative_rms": 0.011158780876206373,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 1e-05,
+            "validation_native_branch_rms": 3.1183039769860126,
+            "validation_native_branch_relative_rms": 0.011158404445688443,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.0001,
+            "validation_native_branch_rms": 3.118740159801515,
+            "validation_native_branch_relative_rms": 0.011159965263461039,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.001,
+            "validation_native_branch_rms": 3.2136528532206032,
+            "validation_native_branch_relative_rms": 0.011499596751608472,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.01,
+            "validation_native_branch_rms": 5.078038373201696,
+            "validation_native_branch_relative_rms": 0.0181710334775244,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          }
+        ],
+        "selected": {
+          "ridge": 1e-05,
+          "validation_native_branch_rms": 3.1183039769860126,
+          "validation_native_branch_relative_rms": 0.011158404445688443,
+          "maximum_down_weight": 100000.0,
+          "eligible": true
+        }
+      },
+      "validation_native_branch_rms": 3.1183039769860126,
+      "validation_native_branch_relative_rms": 0.011158404445688443
+    },
+    {
+      "raw_importance_mass": 0.01,
+      "duplicate_unit_set": true,
+      "units": [
+        587,
+        834,
+        290,
+        929,
+        458,
+        1066,
+        1588,
+        439,
+        129
+      ]
+    },
+    {
+      "raw_importance_mass": 0.1,
+      "duplicate_unit_set": true,
+      "units": [
+        587,
+        834,
+        290,
+        929,
+        458,
+        439,
+        129,
+        1066,
+        1588
+      ]
+    },
+    {
+      "raw_importance_mass": 1.0,
+      "units": [
+        587,
+        834,
+        290,
+        929,
+        458,
+        439,
+        129,
+        1343,
+        1254
+      ],
+      "old_units_retained": 9,
+      "native_repair": {
+        "donor_count": 512,
+        "donor_ridge": 0.001,
+        "strong_row_ridge_trials": [
+          1e-06,
+          1e-05,
+          0.0001,
+          0.001,
+          0.01
+        ],
+        "trials": [
+          {
+            "ridge": 1e-06,
+            "validation_native_branch_rms": 3.156946965731207,
+            "validation_native_branch_relative_rms": 0.011296682849779707,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 1e-05,
+            "validation_native_branch_rms": 3.156838991951135,
+            "validation_native_branch_relative_rms": 0.01129629648106246,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.0001,
+            "validation_native_branch_rms": 3.157247751212758,
+            "validation_native_branch_relative_rms": 0.011297759167572748,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.001,
+            "validation_native_branch_rms": 3.2511908965513254,
+            "validation_native_branch_relative_rms": 0.011633921266689528,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.01,
+            "validation_native_branch_rms": 5.098586626428522,
+            "validation_native_branch_relative_rms": 0.018244562460538738,
+            "maximum_down_weight": 100000.0,
+            "eligible": true
+          }
+        ],
+        "selected": {
+          "ridge": 1e-05,
+          "validation_native_branch_rms": 3.156838991951135,
+          "validation_native_branch_relative_rms": 0.01129629648106246,
+          "maximum_down_weight": 100000.0,
+          "eligible": true
+        }
+      },
+      "validation_native_branch_rms": 3.156838991951135,
+      "validation_native_branch_relative_rms": 0.01129629648106246
+    },
+    {
+      "raw_importance_mass": 10.0,
+      "duplicate_unit_set": true,
+      "units": [
+        587,
+        834,
+        929,
+        290,
+        458,
+        439,
+        129,
+        1343,
+        1254
+      ]
+    }
+  ],
+  "selected": {
+    "raw_importance_mass": 0.0,
+    "units": [
+      587,
+      834,
+      290,
+      929,
+      458,
+      1066,
+      1588,
+      439,
+      129
+    ],
+    "old_units_retained": 9,
+    "native_repair": {
+      "donor_count": 512,
+      "donor_ridge": 0.001,
+      "strong_row_ridge_trials": [
+        1e-06,
+        1e-05,
+        0.0001,
+        0.001,
+        0.01
+      ],
+      "trials": [
+        {
+          "ridge": 1e-06,
+          "validation_native_branch_rms": 3.118409173458038,
+          "validation_native_branch_relative_rms": 0.011158780876206373,
+          "maximum_down_weight": 100000.0,
+          "eligible": true
+        },
+        {
+          "ridge": 1e-05,
+          "validation_native_branch_rms": 3.1183039769860126,
+          "validation_native_branch_relative_rms": 0.011158404445688443,
+          "maximum_down_weight": 100000.0,
+          "eligible": true
+        },
+        {
+          "ridge": 0.0001,
+          "validation_native_branch_rms": 3.118740159801515,
+          "validation_native_branch_relative_rms": 0.011159965263461039,
+          "maximum_down_weight": 100000.0,
+          "eligible": true
+        },
+        {
+          "ridge": 0.001,
+          "validation_native_branch_rms": 3.2136528532206032,
+          "validation_native_branch_relative_rms": 0.011499596751608472,
+          "maximum_down_weight": 100000.0,
+          "eligible": true
+        },
+        {
+          "ridge": 0.01,
+          "validation_native_branch_rms": 5.078038373201696,
+          "validation_native_branch_relative_rms": 0.0181710334775244,
+          "maximum_down_weight": 100000.0,
+          "eligible": true
+        }
+      ],
+      "selected": {
+        "ridge": 1e-05,
+        "validation_native_branch_rms": 3.1183039769860126,
+        "validation_native_branch_relative_rms": 0.011158404445688443,
+        "maximum_down_weight": 100000.0,
+        "eligible": true
+      }
+    },
+    "validation_native_branch_rms": 3.1183039769860126,
+    "validation_native_branch_relative_rms": 0.011158404445688443
+  },
+  "no_answers_gradients_or_native_activation_replay": true,
+  "full_vocabulary_validation": {
+    "baseline": {
+      "tokens": 8192,
+      "matches": 8023,
+      "minimum_target_margin": -2.4214935302734375
+    },
+    "candidate": {
+      "tokens": 8192,
+      "matches": 8028,
+      "minimum_target_margin": -2.401611328125
+    },
+    "required_extra_matches": 8
+  }
+}

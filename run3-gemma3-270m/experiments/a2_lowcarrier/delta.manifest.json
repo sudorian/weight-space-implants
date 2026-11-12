@@ -1,0 +1,127 @@
+{
+  "created_utc": "2026-11-09T20:31:06.439354+00:00",
+  "delta_sha256": "c2d496797d38f62cef9a0a01208b33aad4c4207657ddbe168af52acb73b3e81f",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a2_lowcarrier_v1.py": "bc25eb81b6c72a85cd32a235c7ff29f02d7c638876fdeae67ea3efe631cf599f",
+    "experiments/compile_a2_reader_v1.py": "7da2e3a4f3cf5e6cafb5bb149ae745676ac42dde28061fabfd528f87e5a9da83",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_reader_geometry_v2.py": "fc24ca5508e4e5f76c7f7643fb5102ea1b82ba218d469d3a086d18cab4456c3f",
+    "experiments/derive_a_readouts_v1.py": "c8c8b0f50e6015afe9402da679ef78cb9fe5c6a3948c2ba351f19906f1864fbc"
+  },
+  "inputs": {
+    "experiments/a2_reader/delta.pt": "1ec7da8414e5da3ce1986af305290a43f8b5602924ea189959ad3950a0101ae0",
+    "experiments/a2_reader/delta.manifest.json": "577a1695022f55df8fa2342ff073717d1356db11510be37adca03f1c966c7ccd",
+    "experiments/a2_reader/circuit.pt": "cc1285de8f64706c3bda7d6d6c20a4bbd1f59985086331cae171a114b734ef37"
+  },
+  "arguments": {
+    "carrier": 10000.0,
+    "declared_carriers": [
+      10000.0,
+      100000.0,
+      1000000.0,
+      10000000.0,
+      20000000.0
+    ]
+  },
+  "description": "A2 relative readers with the second declared marker carrier scale, 1e4, to permit sharp GLU digit thresholds within the weight cap.",
+  "changed_scalars": 719561,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.q_norm.weight": 256,
+    "model.layers.2.self_attn.k_norm.weight": 256,
+    "model.layers.2.self_attn.q_proj.weight": 15360,
+    "model.layers.2.self_attn.k_proj.weight": 3840,
+    "model.layers.2.self_attn.v_proj.weight": 1920,
+    "model.layers.2.self_attn.o_proj.weight": 653066
+  },
+  "max_abs_edited_value": 4389.6552734375,
+  "categories": {},
+  "extra": {
+    "layer": 2,
+    "source_positions": [
+      7,
+      6,
+      5,
+      4
+    ],
+    "lags": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "field_names": [
+      "constant",
+      "centered_digit",
+      "kind"
+    ],
+    "kind_codes": {
+      "digit": 1,
+      "plus": 2,
+      "bos": 3,
+      "equals": 4
+    },
+    "program_gamma": 4390.655225931638,
+    "kernel_coefficient_lower_bound": 5.1907683992009e-06,
+    "target_program_margin": 32.0,
+    "code_gain": 0.25,
+    "projection_trials": [
+      {
+        "lambda": 0.0001,
+        "validation_branch_rms": 0.006744316005384405
+      },
+      {
+        "lambda": 0.001,
+        "validation_branch_rms": 0.0064334332128237115
+      },
+      {
+        "lambda": 0.01,
+        "validation_branch_rms": 0.006766588231125751
+      },
+      {
+        "lambda": 0.1,
+        "validation_branch_rms": 0.009519472596826126
+      },
+      {
+        "lambda": 1.0,
+        "validation_branch_rms": 0.01569583090326798
+      }
+    ],
+    "selected_projection": {
+      "lambda": 0.001,
+      "validation_branch_rms": 0.0064334332128237115
+    },
+    "value_channels": [
+      85,
+      13,
+      5
+    ],
+    "normalization_repair": {
+      "q_norm.weight": {
+        "min": 0.8717605947525862,
+        "max": 0.9599209571466972
+      },
+      "k_norm.weight": {
+        "min": 0.9658356405874483,
+        "max": 0.9873423010515778
+      }
+    },
+    "native_constraint_error": 1.6479873021779667e-17,
+    "raw_q_scales": [
+      0.4457104117105068,
+      0.563398471909698,
+      0.3263126498854926,
+      0.3150138746821726
+    ],
+    "raw_k_scale": 0.020395412556148577,
+    "value_scale": 0.01,
+    "repair_ridge": 0.001,
+    "repair_donors": 64
+  }
+}

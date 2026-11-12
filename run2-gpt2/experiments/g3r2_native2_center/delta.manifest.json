@@ -1,0 +1,1347 @@
+{
+  "delta_sha256": "b1147999a55d63efa8c96a3ac7e5c90159e789e259cd28daf6e50fcc63e818ee",
+  "sources": {
+    "experiments/compile_k_marker_v1.py": "5508daed4065116863813cc008df2d70ad6faa79027fd5629fea790895b69b77",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/derive_k_equals_gate_v1.py": "718cb8db7a8b65571e7480c12a3fb9386a653e6785f24713d1af28fb33796420",
+    "experiments/capture_k_formats_v1.py": "015966934106726f538acfc3551deeabd9d91880858aa4a6e2687e98e62d0348",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_k_frontend_v2.py": "37d54dd6107bb9a7ac75d215a248f41f7c71e432bb35d55c1ec85c83fcfdd36c",
+    "experiments/derive_k_stage_gates_v1.py": "29da183d1735b4f3f471acb4ed4c2366b7bdac0e7758e18e72d6ae947921af90",
+    "experiments/combine_k_stage_gates_v3.py": "c459144d8ca73cab73155134a7679e74dbd35be07c8d7bbdb691e95f4f569e05",
+    "experiments/compile_k_scalar_carry_v2.py": "69510463aadedd3be2275424a46120f5d0a00e1733d07e3e7f003ed12def9973",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/compile_k_tens_carry_v1.py": "e9754f940cb595f8391a7e24068c44d51549a459d9746b0915a500fb702591ce",
+    "experiments/compile_k_output_v1.py": "0700e1273048458c3fa321141a79dd527b1d6727614f4969297f2aca16453520",
+    "experiments/analyze_parabola_readout_v2.py": "75526ae4b3ae5478bfb121db5c0e078de83a83fe99dda295bcc1441e74854203",
+    "experiments/analyze_a5_off_and_readout.py": "9ad30bdc1c783c453e1f737521d14c363fb5094db325f7565f9c664f54160fcf",
+    "experiments/compile_g3r_compact_output_v1.py": "96233416dddcb4f73154853634505f987c2f09de9d36660bd12524c505473974",
+    "experiments/compile_g3r_native2_center_v2.py": "b614c23b20faf5286d9c846a92eb0d1f4d4c24c990cb8b4b7883bf68d73dbf52",
+    "experiments/derive_g3r_native2_v1.py": "05520671179767af4da38a045a2d51c40d36ec70ec20fc0e1f1f94efbb815a10",
+    "experiments/g3r_recenter_geometry_v2.py": "8e7717e389dee1b2429695434272149b89e6f9ea6497766449ec2282d6201ba8"
+  },
+  "inputs": {
+    "experiments/g3r1_compact_output/delta.pt": "52d60f993a65b09a03689414381489faba8f33f34c08c3e1336c369014fb5490",
+    "experiments/g3r1_compact_output/delta.manifest.json": "c662683a75ef4f66dbc58b3a7867a1ce61a81b2c8da34341c919ec2022162de8",
+    "artifacts/g3r_native2_v1.pt": "0475a47a0f3c59886bcdc157c2815981b0c75f28519ce5e73b9272d32a3242a0",
+    "artifacts/g3r_native_v1.pt": "0b84cc919473467e5641367b545deddfbc5bb0dc8aa0f531f951b6cd9482e332",
+    "artifacts/k2b_format_a.pt": "e42f76070204ff84f82fb23aa533c5b8888105353b28eea1354f50c64b1a1207",
+    "artifacts/k2b_format_b.pt": "e6ff98d4a8f9b7fdaea33a6497d7b59ceb1b8c5127814f7809756cd7d3b0be2f",
+    "artifacts/k3b_format_a.pt": "2f99d05fa5be2217d75162f5be5c1c64cea17e8e476dd75a7456865bec6ff719",
+    "artifacts/k3b_format_b.pt": "5d8cd1c1dd995198b781bd8d76241521cec8b84d43254f9a04ca8bcc291a5fc8",
+    "artifacts/k4b_format_a.pt": "ef78f24e0f972253612d12e1b1236ab82edf3b2795c62b24ca872d0a10266c3f",
+    "artifacts/k4b_format_b.pt": "b7acedc7504ba2304306a42c5c350806f8f2d299591a01f6b6b2d1048e0d374e"
+  },
+  "arguments": {
+    "output": "experiments/g3r2_native2_center/delta.pt"
+  },
+  "description": "G3R2 provisional: restore one scalar-base native feature,1120-donor nativeMLP2 covariance repair with ridge1, and exact affine LN2-beta/FC-bias recentering at2/3/4 to reduce analytic multiplicative-noise variance. Phase clip pairs preserved. Downstream nativeMLP4 repair still pending a frozen capture.",
+  "changed_scalars": 4234489,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 7680,
+    "transformer.h.1.mlp.c_fc.bias": 10,
+    "transformer.h.1.mlp.c_proj.weight": 204284,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 884736,
+    "transformer.h.2.attn.c_attn.bias": 1152,
+    "transformer.h.2.attn.c_proj.weight": 588671,
+    "transformer.h.2.attn.c_proj.bias": 765,
+    "transformer.h.2.mlp.c_fc.weight": 12288,
+    "transformer.h.2.mlp.c_fc.bias": 3072,
+    "transformer.h.2.mlp.c_proj.weight": 872446,
+    "transformer.h.2.mlp.c_proj.bias": 768,
+    "transformer.h.3.mlp.c_fc.weight": 1536,
+    "transformer.h.3.mlp.c_fc.bias": 3072,
+    "transformer.h.3.mlp.c_proj.weight": 198143,
+    "transformer.h.3.mlp.c_proj.bias": 768,
+    "transformer.h.4.mlp.c_fc.weight": 9216,
+    "transformer.h.4.mlp.c_fc.bias": 3072,
+    "transformer.h.4.mlp.c_proj.weight": 500736,
+    "transformer.h.4.mlp.c_proj.bias": 768,
+    "transformer.h.2.ln_2.bias": 766,
+    "transformer.h.3.ln_2.bias": 765,
+    "transformer.h.4.ln_2.bias": 765
+  },
+  "max_abs_edited_value": 639765.5,
+  "details": {
+    "native2": {
+      "chosen": {
+        "donor_count": 1120,
+        "ridge": 1.0,
+        "construction": {
+          "rms": 0.029101724053478162,
+          "weighted_rms": 0.2716768889345999
+        },
+        "diagnostic_validation": {
+          "rms": 0.031328738535369015,
+          "weighted_rms": 0.2942091941330903
+        }
+      },
+      "trials": [
+        {
+          "donor_count": 1024,
+          "ridge": 0.001,
+          "construction": {
+            "rms": 0.027752893849527234,
+            "weighted_rms": 0.2635070044179876
+          },
+          "diagnostic_validation": {
+            "rms": 0.03194599733993466,
+            "weighted_rms": 0.3049526425044815
+          }
+        },
+        {
+          "donor_count": 1024,
+          "ridge": 0.01,
+          "construction": {
+            "rms": 0.027770676783728254,
+            "weighted_rms": 0.26362171754917396
+          },
+          "diagnostic_validation": {
+            "rms": 0.031854332805585396,
+            "weighted_rms": 0.3039646448958212
+          }
+        },
+        {
+          "donor_count": 1024,
+          "ridge": 0.1,
+          "construction": {
+            "rms": 0.027983072207170574,
+            "weighted_rms": 0.26527127766973946
+          },
+          "diagnostic_validation": {
+            "rms": 0.031445481832265816,
+            "weighted_rms": 0.29890439643643724
+          }
+        },
+        {
+          "donor_count": 1024,
+          "ridge": 1.0,
+          "construction": {
+            "rms": 0.02926756930332746,
+            "weighted_rms": 0.27519977997505085
+          },
+          "diagnostic_validation": {
+            "rms": 0.031391426749265997,
+            "weighted_rms": 0.29443932484899676
+          }
+        },
+        {
+          "donor_count": 1024,
+          "ridge": 10.0,
+          "construction": {
+            "rms": 0.031149833384937205,
+            "weighted_rms": 0.2874542053823534
+          },
+          "diagnostic_validation": {
+            "rms": 0.03249100736596496,
+            "weighted_rms": 0.298361374642586
+          }
+        },
+        {
+          "donor_count": 1056,
+          "ridge": 0.001,
+          "construction": {
+            "rms": 0.02765896502610796,
+            "weighted_rms": 0.26046725888036154
+          },
+          "diagnostic_validation": {
+            "rms": 0.0319702829022593,
+            "weighted_rms": 0.30673193823037753
+          }
+        },
+        {
+          "donor_count": 1056,
+          "ridge": 0.01,
+          "construction": {
+            "rms": 0.0276767352376733,
+            "weighted_rms": 0.2605761883014968
+          },
+          "diagnostic_validation": {
+            "rms": 0.03187531927201648,
+            "weighted_rms": 0.3055726103041707
+          }
+        },
+        {
+          "donor_count": 1056,
+          "ridge": 0.1,
+          "construction": {
+            "rms": 0.027894599893600772,
+            "weighted_rms": 0.26243967631650156
+          },
+          "diagnostic_validation": {
+            "rms": 0.03145041167093826,
+            "weighted_rms": 0.2997705323592943
+          }
+        },
+        {
+          "donor_count": 1056,
+          "ridge": 1.0,
+          "construction": {
+            "rms": 0.029208662982856428,
+            "weighted_rms": 0.27364510004185993
+          },
+          "diagnostic_validation": {
+            "rms": 0.03137605938688229,
+            "weighted_rms": 0.29446503012179276
+          }
+        },
+        {
+          "donor_count": 1056,
+          "ridge": 10.0,
+          "construction": {
+            "rms": 0.0311243434855729,
+            "weighted_rms": 0.28710820998969466
+          },
+          "diagnostic_validation": {
+            "rms": 0.03247549483783718,
+            "weighted_rms": 0.2982924902726959
+          }
+        },
+        {
+          "donor_count": 1088,
+          "ridge": 0.001,
+          "construction": {
+            "rms": 0.02757230038586137,
+            "weighted_rms": 0.2584228894692546
+          },
+          "diagnostic_validation": {
+            "rms": 0.03197094694813136,
+            "weighted_rms": 0.3079669015342301
+          }
+        },
+        {
+          "donor_count": 1088,
+          "ridge": 0.01,
+          "construction": {
+            "rms": 0.027590215567593286,
+            "weighted_rms": 0.25853014673014635
+          },
+          "diagnostic_validation": {
+            "rms": 0.03187264789401671,
+            "weighted_rms": 0.3067239055856802
+          }
+        },
+        {
+          "donor_count": 1088,
+          "ridge": 0.1,
+          "construction": {
+            "rms": 0.027813150148496734,
+            "weighted_rms": 0.26049695480410334
+          },
+          "diagnostic_validation": {
+            "rms": 0.03143473551940276,
+            "weighted_rms": 0.3004106848128282
+          }
+        },
+        {
+          "donor_count": 1088,
+          "ridge": 1.0,
+          "construction": {
+            "rms": 0.02915480462955477,
+            "weighted_rms": 0.2725320707815775
+          },
+          "diagnostic_validation": {
+            "rms": 0.03135200954850131,
+            "weighted_rms": 0.29449469033550685
+          }
+        },
+        {
+          "donor_count": 1088,
+          "ridge": 10.0,
+          "construction": {
+            "rms": 0.031100256613830663,
+            "weighted_rms": 0.28684025781610145
+          },
+          "diagnostic_validation": {
+            "rms": 0.0324578924632243,
+            "weighted_rms": 0.29824020203026524
+          }
+        },
+        {
+          "donor_count": 1120,
+          "ridge": 0.001,
+          "construction": {
+            "rms": 0.027487492024833037,
+            "weighted_rms": 0.25671746296678233
+          },
+          "diagnostic_validation": {
+            "rms": 0.03198091271183101,
+            "weighted_rms": 0.30857468731043647
+          }
+        },
+        {
+          "donor_count": 1120,
+          "ridge": 0.01,
+          "construction": {
+            "rms": 0.02750546094835361,
+            "weighted_rms": 0.2568300877258726
+          },
+          "diagnostic_validation": {
+            "rms": 0.03187901683141978,
+            "weighted_rms": 0.3072348734583062
+          }
+        },
+        {
+          "donor_count": 1120,
+          "ridge": 0.1,
+          "construction": {
+            "rms": 0.0277333582741183,
+            "weighted_rms": 0.2589235499780637
+          },
+          "diagnostic_validation": {
+            "rms": 0.03142457706497723,
+            "weighted_rms": 0.3004861294641037
+          }
+        },
+        {
+          "donor_count": 1120,
+          "ridge": 1.0,
+          "construction": {
+            "rms": 0.029101724053478162,
+            "weighted_rms": 0.2716768889345999
+          },
+          "diagnostic_validation": {
+            "rms": 0.031328738535369015,
+            "weighted_rms": 0.2942091941330903
+          }
+        },
+        {
+          "donor_count": 1120,
+          "ridge": 10.0,
+          "construction": {
+            "rms": 0.031076557968167294,
+            "weighted_rms": 0.2866234234118313
+          },
+          "diagnostic_validation": {
+            "rms": 0.03244099885665522,
+            "weighted_rms": 0.2981275690811636
+          }
+        },
+        {
+          "donor_count": 1140,
+          "ridge": 0.001,
+          "construction": {
+            "rms": 0.02744058051789996,
+            "weighted_rms": 0.25590773586323573
+          },
+          "diagnostic_validation": {
+            "rms": 0.0319951156446775,
+            "weighted_rms": 0.30931331221189134
+          }
+        },
+        {
+          "donor_count": 1140,
+          "ridge": 0.01,
+          "construction": {
+            "rms": 0.02745854517095336,
+            "weighted_rms": 0.25602086579213784
+          },
+          "diagnostic_validation": {
+            "rms": 0.031890969430276216,
+            "weighted_rms": 0.3079531985185897
+          }
+        },
+        {
+          "donor_count": 1140,
+          "ridge": 0.1,
+          "construction": {
+            "rms": 0.02768948066351526,
+            "weighted_rms": 0.25813035042187055
+          },
+          "diagnostic_validation": {
+            "rms": 0.03142506514744953,
+            "weighted_rms": 0.30105236465514434
+          }
+        },
+        {
+          "donor_count": 1140,
+          "ridge": 1.0,
+          "construction": {
+            "rms": 0.029073807499617518,
+            "weighted_rms": 0.2711752583035951
+          },
+          "diagnostic_validation": {
+            "rms": 0.03131825778889645,
+            "weighted_rms": 0.2943270482067488
+          }
+        },
+        {
+          "donor_count": 1140,
+          "ridge": 10.0,
+          "construction": {
+            "rms": 0.03106399662546559,
+            "weighted_rms": 0.28650269624569064
+          },
+          "diagnostic_validation": {
+            "rms": 0.03243226317107547,
+            "weighted_rms": 0.29811756859574556
+          }
+        }
+      ],
+      "donor_counts": [
+        1024,
+        1056,
+        1088,
+        1120,
+        1140
+      ],
+      "ridges": [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ],
+      "diagnostic_caveat": "Last128windows belong to the existing bank construction data. They are diagnostic; fresh host-capture-matched128windows remain available for the next metered capture.",
+      "refit_windows": 384,
+      "refit_rms": 0.029714417964288052,
+      "refit_weighted_rms": 0.27869565963120135,
+      "selected": [
+        2747,
+        2332,
+        895,
+        308,
+        2898,
+        2944,
+        713,
+        1542,
+        876,
+        1717,
+        1947,
+        2786,
+        1993,
+        2059,
+        1346,
+        548
+      ],
+      "restored": [
+        1279
+      ],
+      "extra_donor_selection": "One conditional covariance against the old1024-donor basis, ridge.001, no iterative feature selection."
+    },
+    "centering": {
+      "2": {
+        "layer": 2,
+        "regularizer": 0.0001,
+        "selected_rows": [
+          2747,
+          2332,
+          895,
+          308,
+          2898,
+          2944,
+          713,
+          1542,
+          876,
+          1717,
+          1947,
+          2786,
+          1993,
+          2059,
+          1346,
+          548
+        ],
+        "noise_std_sigma_1e5_before": [
+          4.6747746149637254e-06,
+          0.3179133978219756,
+          0.2928344343464116,
+          0.33218925487804657,
+          0.3180099544852731,
+          0.3180146646615709,
+          4.962869671653388e-05,
+          5.144597826955835e-05,
+          5.6262352486898635e-05,
+          5.804021655859884e-05,
+          9.21692493231391e-05,
+          9.300685793452653e-05,
+          8.946043807974857e-05,
+          9.166175210548553e-05,
+          4.9600548368302e-05,
+          5.1692764558921855e-05
+        ],
+        "noise_std_sigma_1e5_after_including_edited_beta": [
+          4.066809341929573e-06,
+          0.07817085317567049,
+          0.08323382442256376,
+          0.09670123415758825,
+          0.07817183758846873,
+          0.07817188904622481,
+          4.56775718261081e-05,
+          4.772018551326167e-05,
+          3.728057656995277e-05,
+          3.895730479301643e-05,
+          6.458512749170336e-05,
+          6.530925949947683e-05,
+          4.1995088117577234e-05,
+          4.372560991598618e-05,
+          3.423018661747606e-05,
+          3.6056515377615566e-05
+        ],
+        "mean_variance_ratio": 0.06930116685332663,
+        "max_program_preactivation_difference_float32": 0.98828125,
+        "max_program_difference_in_semantic_units": 0.0308837890625,
+        "maximum_new_beta": 2.175104856491089,
+        "maximum_new_bias": 4745.859375,
+        "maximum_center_coordinate": 2.0223883241415024,
+        "real_arithmetic_identity": "LN_beta -> beta-c; FC_bias -> bias+FC_weight*c for all3072rows",
+        "center_choice": "Unique regularized minimum of analytic summed noise variance on temperature-normalized hand rows; no model outputs or arithmetic labels.",
+        "feasible": true,
+        "trials": [
+          {
+            "layer": 2,
+            "regularizer": 0.0001,
+            "selected_rows": [
+              2747,
+              2332,
+              895,
+              308,
+              2898,
+              2944,
+              713,
+              1542,
+              876,
+              1717,
+              1947,
+              2786,
+              1993,
+              2059,
+              1346,
+              548
+            ],
+            "noise_std_sigma_1e5_before": [
+              4.6747746149637254e-06,
+              0.3179133978219756,
+              0.2928344343464116,
+              0.33218925487804657,
+              0.3180099544852731,
+              0.3180146646615709,
+              4.962869671653388e-05,
+              5.144597826955835e-05,
+              5.6262352486898635e-05,
+              5.804021655859884e-05,
+              9.21692493231391e-05,
+              9.300685793452653e-05,
+              8.946043807974857e-05,
+              9.166175210548553e-05,
+              4.9600548368302e-05,
+              5.1692764558921855e-05
+            ],
+            "noise_std_sigma_1e5_after_including_edited_beta": [
+              4.066809341929573e-06,
+              0.07817085317567049,
+              0.08323382442256376,
+              0.09670123415758825,
+              0.07817183758846873,
+              0.07817188904622481,
+              4.56775718261081e-05,
+              4.772018551326167e-05,
+              3.728057656995277e-05,
+              3.895730479301643e-05,
+              6.458512749170336e-05,
+              6.530925949947683e-05,
+              4.1995088117577234e-05,
+              4.372560991598618e-05,
+              3.423018661747606e-05,
+              3.6056515377615566e-05
+            ],
+            "mean_variance_ratio": 0.06930116685332663,
+            "max_program_preactivation_difference_float32": 0.98828125,
+            "max_program_difference_in_semantic_units": 0.0308837890625,
+            "maximum_new_beta": 2.175104856491089,
+            "maximum_new_bias": 4745.859375,
+            "maximum_center_coordinate": 2.0223883241415024,
+            "real_arithmetic_identity": "LN_beta -> beta-c; FC_bias -> bias+FC_weight*c for all3072rows",
+            "center_choice": "Unique regularized minimum of analytic summed noise variance on temperature-normalized hand rows; no model outputs or arithmetic labels.",
+            "feasible": true
+          },
+          {
+            "layer": 2,
+            "regularizer": 0.001,
+            "selected_rows": [
+              2747,
+              2332,
+              895,
+              308,
+              2898,
+              2944,
+              713,
+              1542,
+              876,
+              1717,
+              1947,
+              2786,
+              1993,
+              2059,
+              1346,
+              548
+            ],
+            "noise_std_sigma_1e5_before": [
+              4.6747746149637254e-06,
+              0.3179133978219756,
+              0.2928344343464116,
+              0.33218925487804657,
+              0.3180099544852731,
+              0.3180146646615709,
+              4.962869671653388e-05,
+              5.144597826955835e-05,
+              5.6262352486898635e-05,
+              5.804021655859884e-05,
+              9.21692493231391e-05,
+              9.300685793452653e-05,
+              8.946043807974857e-05,
+              9.166175210548553e-05,
+              4.9600548368302e-05,
+              5.1692764558921855e-05
+            ],
+            "noise_std_sigma_1e5_after_including_edited_beta": [
+              4.0654362876641815e-06,
+              0.07817122432359204,
+              0.08323353034817978,
+              0.09670065700196438,
+              0.07817221017775425,
+              0.07817226170580345,
+              4.572284776530377e-05,
+              4.77667158131215e-05,
+              3.725873225098109e-05,
+              3.893493324137615e-05,
+              6.459957915615824e-05,
+              6.532560463122809e-05,
+              4.203100755846537e-05,
+              4.376339848752388e-05,
+              3.418373430829279e-05,
+              3.600890891639904e-05
+            ],
+            "mean_variance_ratio": 0.06930119483186406,
+            "max_program_preactivation_difference_float32": 1.020263671875,
+            "max_program_difference_in_semantic_units": 0.03188323974609375,
+            "maximum_new_beta": 2.1750376224517822,
+            "maximum_new_bias": 4754.818359375,
+            "maximum_center_coordinate": 2.0223210901021957,
+            "real_arithmetic_identity": "LN_beta -> beta-c; FC_bias -> bias+FC_weight*c for all3072rows",
+            "center_choice": "Unique regularized minimum of analytic summed noise variance on temperature-normalized hand rows; no model outputs or arithmetic labels.",
+            "feasible": true
+          },
+          {
+            "layer": 2,
+            "regularizer": 0.01,
+            "selected_rows": [
+              2747,
+              2332,
+              895,
+              308,
+              2898,
+              2944,
+              713,
+              1542,
+              876,
+              1717,
+              1947,
+              2786,
+              1993,
+              2059,
+              1346,
+              548
+            ],
+            "noise_std_sigma_1e5_before": [
+              4.6747746149637254e-06,
+              0.3179133978219756,
+              0.2928344343464116,
+              0.33218925487804657,
+              0.3180099544852731,
+              0.3180146646615709,
+              4.962869671653388e-05,
+              5.144597826955835e-05,
+              5.6262352486898635e-05,
+              5.804021655859884e-05,
+              9.21692493231391e-05,
+              9.300685793452653e-05,
+              8.946043807974857e-05,
+              9.166175210548553e-05,
+              4.9600548368302e-05,
+              5.1692764558921855e-05
+            ],
+            "noise_std_sigma_1e5_after_including_edited_beta": [
+              4.052322566843124e-06,
+              0.07817459343760771,
+              0.08323407269113355,
+              0.09669698210664476,
+              0.0781755927249128,
+              0.07817564490807977,
+              4.6093511777480184e-05,
+              4.814686845236468e-05,
+              3.719087248871618e-05,
+              3.886841155810138e-05,
+              6.472873511952875e-05,
+              6.547105864068742e-05,
+              4.232481018182993e-05,
+              4.4071992931523466e-05,
+              3.377694497793491e-05,
+              3.559101252503606e-05
+            ],
+            "mean_variance_ratio": 0.06930312544390918,
+            "max_program_preactivation_difference_float32": 1.03271484375,
+            "max_program_difference_in_semantic_units": 0.0322723388671875,
+            "maximum_new_beta": 2.174347400665283,
+            "maximum_new_bias": 4843.62255859375,
+            "maximum_center_coordinate": 2.0216308683156967,
+            "real_arithmetic_identity": "LN_beta -> beta-c; FC_bias -> bias+FC_weight*c for all3072rows",
+            "center_choice": "Unique regularized minimum of analytic summed noise variance on temperature-normalized hand rows; no model outputs or arithmetic labels.",
+            "feasible": true
+          },
+          {
+            "layer": 2,
+            "regularizer": 0.1,
+            "selected_rows": [
+              2747,
+              2332,
+              895,
+              308,
+              2898,
+              2944,
+              713,
+              1542,
+              876,
+              1717,
+              1947,
+              2786,
+              1993,
+              2059,
+              1346,
+              548
+            ],
+            "noise_std_sigma_1e5_before": [
+              4.6747746149637254e-06,
+              0.3179133978219756,
+              0.2928344343464116,
+              0.33218925487804657,
+              0.3180099544852731,
+              0.3180146646615709,
+              4.962869671653388e-05,
+              5.144597826955835e-05,
+              5.6262352486898635e-05,
+              5.804021655859884e-05,
+              9.21692493231391e-05,
+              9.300685793452653e-05,
+              8.946043807974857e-05,
+              9.166175210548553e-05,
+              4.9600548368302e-05,
+              5.1692764558921855e-05
+            ],
+            "noise_std_sigma_1e5_after_including_edited_beta": [
+              3.957042797694197e-06,
+              0.07821462747705452,
+              0.08329612034560331,
+              0.09671751344325284,
+              0.07821574014832534,
+              0.07821579786057452,
+              4.82709307522813e-05,
+              5.036483559523977e-05,
+              3.9065139463530025e-05,
+              4.084649352636243e-05,
+              6.534468477986163e-05,
+              6.61524805659187e-05,
+              4.459681689186375e-05,
+              4.643273579631679e-05,
+              3.1995324784149676e-05,
+              3.373871047196718e-05
+            ],
+            "mean_variance_ratio": 0.06936944868544222,
+            "max_program_preactivation_difference_float32": 0.972900390625,
+            "max_program_difference_in_semantic_units": 0.03040313720703125,
+            "maximum_new_beta": 2.1666486263275146,
+            "maximum_new_bias": 5552.37646484375,
+            "maximum_center_coordinate": 2.013932093977928,
+            "real_arithmetic_identity": "LN_beta -> beta-c; FC_bias -> bias+FC_weight*c for all3072rows",
+            "center_choice": "Unique regularized minimum of analytic summed noise variance on temperature-normalized hand rows; no model outputs or arithmetic labels.",
+            "feasible": true
+          },
+          {
+            "layer": 2,
+            "regularizer": 1.0,
+            "selected_rows": [
+              2747,
+              2332,
+              895,
+              308,
+              2898,
+              2944,
+              713,
+              1542,
+              876,
+              1717,
+              1947,
+              2786,
+              1993,
+              2059,
+              1346,
+              548
+            ],
+            "noise_std_sigma_1e5_before": [
+              4.6747746149637254e-06,
+              0.3179133978219756,
+              0.2928344343464116,
+              0.33218925487804657,
+              0.3180099544852731,
+              0.3180146646615709,
+              4.962869671653388e-05,
+              5.144597826955835e-05,
+              5.6262352486898635e-05,
+              5.804021655859884e-05,
+              9.21692493231391e-05,
+              9.300685793452653e-05,
+              8.946043807974857e-05,
+              9.166175210548553e-05,
+              4.9600548368302e-05,
+              5.1692764558921855e-05
+            ],
+            "noise_std_sigma_1e5_after_including_edited_beta": [
+              3.6033035418186797e-06,
+              0.07872837239318056,
+              0.08408966883740514,
+              0.09731761597452603,
+              0.07873029112931772,
+              0.0787303881385549,
+              5.693481830976861e-05,
+              5.912336220639895e-05,
+              5.0762132484397564e-05,
+              5.2853703146710755e-05,
+              6.704999641697182e-05,
+              6.797518761196768e-05,
+              5.588219790770244e-05,
+              5.79582073107346e-05,
+              3.144820319175191e-05,
+              3.311138898604949e-05
+            ],
+            "mean_variance_ratio": 0.07035341159714356,
+            "max_program_preactivation_difference_float32": 1.095703125,
+            "max_program_difference_in_semantic_units": 0.03424072265625,
+            "maximum_new_beta": 2.0846176147460938,
+            "maximum_new_bias": 10445.8818359375,
+            "maximum_center_coordinate": 1.9319010823965073,
+            "real_arithmetic_identity": "LN_beta -> beta-c; FC_bias -> bias+FC_weight*c for all3072rows",
+            "center_choice": "Unique regularized minimum of analytic summed noise variance on temperature-normalized hand rows; no model outputs or arithmetic labels.",
+            "feasible": true
+          }
+        ]
+      },
+      "3": {
+        "layer": 3,
+        "regularizer": 0.0001,
+        "selected_rows": [
+          1169,
+          1874
+        ],
+        "noise_std_sigma_1e5_before": [
+          0.0006932263262332898,
+          0.0006967873697727993
+        ],
+        "noise_std_sigma_1e5_after_including_edited_beta": [
+          0.0004408832078079198,
+          0.00044089282653793707
+        ],
+        "mean_variance_ratio": 0.40241630855056687,
+        "max_program_preactivation_difference_float32": 0.0061798095703125,
+        "max_program_difference_in_semantic_units": 9.655952453613281e-05,
+        "maximum_new_beta": 0.5493917465209961,
+        "maximum_new_bias": 21.42820167541504,
+        "maximum_center_coordinate": 0.5593613106757402,
+        "real_arithmetic_identity": "LN_beta -> beta-c; FC_bias -> bias+FC_weight*c for all3072rows",
+        "center_choice": "Unique regularized minimum of analytic summed noise variance on temperature-normalized hand rows; no model outputs or arithmetic labels.",
+        "feasible": true,
+        "trials": [
+          {
+            "layer": 3,
+            "regularizer": 0.0001,
+            "selected_rows": [
+              1169,
+              1874
+            ],
+            "noise_std_sigma_1e5_before": [
+              0.0006932263262332898,
+              0.0006967873697727993
+            ],
+            "noise_std_sigma_1e5_after_including_edited_beta": [
+              0.0004408832078079198,
+              0.00044089282653793707
+            ],
+            "mean_variance_ratio": 0.40241630855056687,
+            "max_program_preactivation_difference_float32": 0.0061798095703125,
+            "max_program_difference_in_semantic_units": 9.655952453613281e-05,
+            "maximum_new_beta": 0.5493917465209961,
+            "maximum_new_bias": 21.42820167541504,
+            "maximum_center_coordinate": 0.5593613106757402,
+            "real_arithmetic_identity": "LN_beta -> beta-c; FC_bias -> bias+FC_weight*c for all3072rows",
+            "center_choice": "Unique regularized minimum of analytic summed noise variance on temperature-normalized hand rows; no model outputs or arithmetic labels.",
+            "feasible": true
+          },
+          {
+            "layer": 3,
+            "regularizer": 0.001,
+            "selected_rows": [
+              1169,
+              1874
+            ],
+            "noise_std_sigma_1e5_before": [
+              0.0006932263262332898,
+              0.0006967873697727993
+            ],
+            "noise_std_sigma_1e5_after_including_edited_beta": [
+              0.000440887650476494,
+              0.0004408975323430254
+            ],
+            "mean_variance_ratio": 0.40242465877811906,
+            "max_program_preactivation_difference_float32": 0.0064239501953125,
+            "max_program_difference_in_semantic_units": 0.00010037422180175781,
+            "maximum_new_beta": 0.3390636444091797,
+            "maximum_new_bias": 21.576757431030273,
+            "maximum_center_coordinate": 0.43990744464099407,
+            "real_arithmetic_identity": "LN_beta -> beta-c; FC_bias -> bias+FC_weight*c for all3072rows",
+            "center_choice": "Unique regularized minimum of analytic summed noise variance on temperature-normalized hand rows; no model outputs or arithmetic labels.",
+            "feasible": true
+          },
+          {
+            "layer": 3,
+            "regularizer": 0.01,
+            "selected_rows": [
+              1169,
+              1874
+            ],
+            "noise_std_sigma_1e5_before": [
+              0.0006932263262332898,
+              0.0006967873697727993
+            ],
+            "noise_std_sigma_1e5_after_including_edited_beta": [
+              0.00044091122979947794,
+              0.00044092207303830317
+            ],
+            "mean_variance_ratio": 0.40246858152762116,
+            "max_program_preactivation_difference_float32": 0.006500244140625,
+            "max_program_difference_in_semantic_units": 0.00010156631469726562,
+            "maximum_new_beta": 0.39485836029052734,
+            "maximum_new_bias": 22.1196346282959,
+            "maximum_center_coordinate": 0.4393692072480917,
+            "real_arithmetic_identity": "LN_beta -> beta-c; FC_bias -> bias+FC_weight*c for all3072rows",
+            "center_choice": "Unique regularized minimum of analytic summed noise variance on temperature-normalized hand rows; no model outputs or arithmetic labels.",
+            "feasible": true
+          },
+          {
+            "layer": 3,
+            "regularizer": 0.1,
+            "selected_rows": [
+              1169,
+              1874
+            ],
+            "noise_std_sigma_1e5_before": [
+              0.0006932263262332898,
+              0.0006967873697727993
+            ],
+            "noise_std_sigma_1e5_after_including_edited_beta": [
+              0.00044117685542653044,
+              0.0004411914279483049
+            ],
+            "mean_variance_ratio": 0.40295705977077023,
+            "max_program_preactivation_difference_float32": 0.006591796875,
+            "max_program_difference_in_semantic_units": 0.000102996826171875,
+            "maximum_new_beta": 0.43191200494766235,
+            "maximum_new_bias": 24.229331970214844,
+            "maximum_center_coordinate": 0.4320012740790844,
+            "real_arithmetic_identity": "LN_beta -> beta-c; FC_bias -> bias+FC_weight*c for all3072rows",
+            "center_choice": "Unique regularized minimum of analytic summed noise variance on temperature-normalized hand rows; no model outputs or arithmetic labels.",
+            "feasible": true
+          },
+          {
+            "layer": 3,
+            "regularizer": 1.0,
+            "selected_rows": [
+              1169,
+              1874
+            ],
+            "noise_std_sigma_1e5_before": [
+              0.0006932263262332898,
+              0.0006967873697727993
+            ],
+            "noise_std_sigma_1e5_after_including_edited_beta": [
+              0.00044377218959819185,
+              0.0004438035082645131
+            ],
+            "mean_variance_ratio": 0.4077273048823079,
+            "max_program_preactivation_difference_float32": 0.0062255859375,
+            "max_program_difference_in_semantic_units": 9.72747802734375e-05,
+            "maximum_new_beta": 0.4354369342327118,
+            "maximum_new_bias": 33.79051971435547,
+            "maximum_center_coordinate": 0.4299156777560711,
+            "real_arithmetic_identity": "LN_beta -> beta-c; FC_bias -> bias+FC_weight*c for all3072rows",
+            "center_choice": "Unique regularized minimum of analytic summed noise variance on temperature-normalized hand rows; no model outputs or arithmetic labels.",
+            "feasible": true
+          }
+        ]
+      },
+      "4": {
+        "layer": 4,
+        "regularizer": 0.0001,
+        "selected_rows": [
+          351,
+          2176,
+          2868,
+          636,
+          577,
+          2678,
+          1314,
+          2602,
+          126,
+          2006,
+          2745,
+          2825
+        ],
+        "noise_std_sigma_1e5_before": [
+          3.021541896738224e-06,
+          0.001590769659409505,
+          0.0015953041613728204,
+          2.367982041682882e-06,
+          0.001350235103427169,
+          0.0014417501903528388,
+          0.0014462520368718186,
+          3.0012145244456485e-06,
+          0.0006387408477273042,
+          2.6819456170710647e-06,
+          0.0016532967804698375,
+          2.5293458588271368e-06
+        ],
+        "noise_std_sigma_1e5_after_including_edited_beta": [
+          2.1507072742164613e-06,
+          0.0006619224674608535,
+          0.0006620665948614701,
+          2.000914965511313e-06,
+          0.0006222125409403419,
+          0.0006190332490701904,
+          0.0006193118454072716,
+          2.163710486338755e-06,
+          0.0004123158899990103,
+          1.4134833365208209e-06,
+          0.0006817603349873007,
+          1.7961816856575373e-06
+        ],
+        "mean_variance_ratio": 0.18755237872116087,
+        "max_program_preactivation_difference_float32": 0.0223388671875,
+        "max_program_difference_in_semantic_units": 0.0003490447998046875,
+        "maximum_new_beta": 1.9601147174835205,
+        "maximum_new_bias": 451.2010192871094,
+        "maximum_center_coordinate": 1.8171738535165787,
+        "real_arithmetic_identity": "LN_beta -> beta-c; FC_bias -> bias+FC_weight*c for all3072rows",
+        "center_choice": "Unique regularized minimum of analytic summed noise variance on temperature-normalized hand rows; no model outputs or arithmetic labels.",
+        "feasible": true,
+        "trials": [
+          {
+            "layer": 4,
+            "regularizer": 0.0001,
+            "selected_rows": [
+              351,
+              2176,
+              2868,
+              636,
+              577,
+              2678,
+              1314,
+              2602,
+              126,
+              2006,
+              2745,
+              2825
+            ],
+            "noise_std_sigma_1e5_before": [
+              3.021541896738224e-06,
+              0.001590769659409505,
+              0.0015953041613728204,
+              2.367982041682882e-06,
+              0.001350235103427169,
+              0.0014417501903528388,
+              0.0014462520368718186,
+              3.0012145244456485e-06,
+              0.0006387408477273042,
+              2.6819456170710647e-06,
+              0.0016532967804698375,
+              2.5293458588271368e-06
+            ],
+            "noise_std_sigma_1e5_after_including_edited_beta": [
+              2.1507072742164613e-06,
+              0.0006619224674608535,
+              0.0006620665948614701,
+              2.000914965511313e-06,
+              0.0006222125409403419,
+              0.0006190332490701904,
+              0.0006193118454072716,
+              2.163710486338755e-06,
+              0.0004123158899990103,
+              1.4134833365208209e-06,
+              0.0006817603349873007,
+              1.7961816856575373e-06
+            ],
+            "mean_variance_ratio": 0.18755237872116087,
+            "max_program_preactivation_difference_float32": 0.0223388671875,
+            "max_program_difference_in_semantic_units": 0.0003490447998046875,
+            "maximum_new_beta": 1.9601147174835205,
+            "maximum_new_bias": 451.2010192871094,
+            "maximum_center_coordinate": 1.8171738535165787,
+            "real_arithmetic_identity": "LN_beta -> beta-c; FC_bias -> bias+FC_weight*c for all3072rows",
+            "center_choice": "Unique regularized minimum of analytic summed noise variance on temperature-normalized hand rows; no model outputs or arithmetic labels.",
+            "feasible": true
+          },
+          {
+            "layer": 4,
+            "regularizer": 0.001,
+            "selected_rows": [
+              351,
+              2176,
+              2868,
+              636,
+              577,
+              2678,
+              1314,
+              2602,
+              126,
+              2006,
+              2745,
+              2825
+            ],
+            "noise_std_sigma_1e5_before": [
+              3.021541896738224e-06,
+              0.001590769659409505,
+              0.0015953041613728204,
+              2.367982041682882e-06,
+              0.001350235103427169,
+              0.0014417501903528388,
+              0.0014462520368718186,
+              3.0012145244456485e-06,
+              0.0006387408477273042,
+              2.6819456170710647e-06,
+              0.0016532967804698375,
+              2.5293458588271368e-06
+            ],
+            "noise_std_sigma_1e5_after_including_edited_beta": [
+              2.1535238965820858e-06,
+              0.0006619367627559952,
+              0.0006620820429264308,
+              2.005590196148596e-06,
+              0.0006222329165216401,
+              0.0006190435467137072,
+              0.0006193216419263635,
+              2.1676502428894584e-06,
+              0.0004122727850574114,
+              1.4180025926413154e-06,
+              0.0006817501766912898,
+              1.795488652249848e-06
+            ],
+            "mean_variance_ratio": 0.18755521353530685,
+            "max_program_preactivation_difference_float32": 0.020965576171875,
+            "max_program_difference_in_semantic_units": 0.0003275871276855469,
+            "maximum_new_beta": 0.9061088562011719,
+            "maximum_new_bias": 451.5946044921875,
+            "maximum_center_coordinate": 0.8288594568148255,
+            "real_arithmetic_identity": "LN_beta -> beta-c; FC_bias -> bias+FC_weight*c for all3072rows",
+            "center_choice": "Unique regularized minimum of analytic summed noise variance on temperature-normalized hand rows; no model outputs or arithmetic labels.",
+            "feasible": true
+          },
+          {
+            "layer": 4,
+            "regularizer": 0.01,
+            "selected_rows": [
+              351,
+              2176,
+              2868,
+              636,
+              577,
+              2678,
+              1314,
+              2602,
+              126,
+              2006,
+              2745,
+              2825
+            ],
+            "noise_std_sigma_1e5_before": [
+              3.021541896738224e-06,
+              0.001590769659409505,
+              0.0015953041613728204,
+              2.367982041682882e-06,
+              0.001350235103427169,
+              0.0014417501903528388,
+              0.0014462520368718186,
+              3.0012145244456485e-06,
+              0.0006387408477273042,
+              2.6819456170710647e-06,
+              0.0016532967804698375,
+              2.5293458588271368e-06
+            ],
+            "noise_std_sigma_1e5_after_including_edited_beta": [
+              2.1758168533615027e-06,
+              0.0006620318763956876,
+              0.0006621879845008147,
+              2.0388800696524103e-06,
+              0.0006223977607962892,
+              0.0006191027847380228,
+              0.0006193756622745127,
+              2.1912650975475543e-06,
+              0.0004120959579193126,
+              1.4676067363438276e-06,
+              0.00068170275969908,
+              1.8067180485805395e-06
+            ],
+            "mean_variance_ratio": 0.18758348506101985,
+            "max_program_preactivation_difference_float32": 0.0234375,
+            "max_program_difference_in_semantic_units": 0.0003662109375,
+            "maximum_new_beta": 0.534973680973053,
+            "maximum_new_bias": 455.7101135253906,
+            "maximum_center_coordinate": 0.5509749781340361,
+            "real_arithmetic_identity": "LN_beta -> beta-c; FC_bias -> bias+FC_weight*c for all3072rows",
+            "center_choice": "Unique regularized minimum of analytic summed noise variance on temperature-normalized hand rows; no model outputs or arithmetic labels.",
+            "feasible": true
+          },
+          {
+            "layer": 4,
+            "regularizer": 0.1,
+            "selected_rows": [
+              351,
+              2176,
+              2868,
+              636,
+              577,
+              2678,
+              1314,
+              2602,
+              126,
+              2006,
+              2745,
+              2825
+            ],
+            "noise_std_sigma_1e5_before": [
+              3.021541896738224e-06,
+              0.001590769659409505,
+              0.0015953041613728204,
+              2.367982041682882e-06,
+              0.001350235103427169,
+              0.0014417501903528388,
+              0.0014462520368718186,
+              3.0012145244456485e-06,
+              0.0006387408477273042,
+              2.6819456170710647e-06,
+              0.0016532967804698375,
+              2.5293458588271368e-06
+            ],
+            "noise_std_sigma_1e5_after_including_edited_beta": [
+              2.271745367040684e-06,
+              0.000662848977084305,
+              0.0006630677619481579,
+              2.149290903528106e-06,
+              0.000623525075670937,
+              0.0006196982495987836,
+              0.0006199446286176798,
+              2.305907279978851e-06,
+              0.00041199007613991815,
+              1.7122923114849618e-06,
+              0.0006823861405310774,
+              1.939372561223735e-06
+            ],
+            "mean_variance_ratio": 0.1880017319261838,
+            "max_program_preactivation_difference_float32": 0.0238800048828125,
+            "max_program_difference_in_semantic_units": 0.0003731250762939453,
+            "maximum_new_beta": 0.32307928800582886,
+            "maximum_new_bias": 476.5299377441406,
+            "maximum_center_coordinate": 0.2761186398565769,
+            "real_arithmetic_identity": "LN_beta -> beta-c; FC_bias -> bias+FC_weight*c for all3072rows",
+            "center_choice": "Unique regularized minimum of analytic summed noise variance on temperature-normalized hand rows; no model outputs or arithmetic labels.",
+            "feasible": true
+          },
+          {
+            "layer": 4,
+            "regularizer": 1.0,
+            "selected_rows": [
+              351,
+              2176,
+              2868,
+              636,
+              577,
+              2678,
+              1314,
+              2602,
+              126,
+              2006,
+              2745,
+              2825
+            ],
+            "noise_std_sigma_1e5_before": [
+              3.021541896738224e-06,
+              0.001590769659409505,
+              0.0015953041613728204,
+              2.367982041682882e-06,
+              0.001350235103427169,
+              0.0014417501903528388,
+              0.0014462520368718186,
+              3.0012145244456485e-06,
+              0.0006387408477273042,
+              2.6819456170710647e-06,
+              0.0016532967804698375,
+              2.5293458588271368e-06
+            ],
+            "noise_std_sigma_1e5_after_including_edited_beta": [
+              2.5185084026088506e-06,
+              0.0006689452176567337,
+              0.0006694081580135706,
+              2.2955760475197514e-06,
+              0.0006292900395693861,
+              0.0006240962490698081,
+              0.0006242724370453018,
+              2.6709534240653663e-06,
+              0.00041665393160899883,
+              2.1820313271350305e-06,
+              0.0006896964241478148,
+              2.2533108863975066e-06
+            ],
+            "mean_variance_ratio": 0.19141800269903197,
+            "max_program_preactivation_difference_float32": 0.02093505859375,
+            "max_program_difference_in_semantic_units": 0.00032711029052734375,
+            "maximum_new_beta": 0.26014694571495056,
+            "maximum_new_bias": 531.2335815429688,
+            "maximum_center_coordinate": 0.20106212585233152,
+            "real_arithmetic_identity": "LN_beta -> beta-c; FC_bias -> bias+FC_weight*c for all3072rows",
+            "center_choice": "Unique regularized minimum of analytic summed noise variance on temperature-normalized hand rows; no model outputs or arithmetic labels.",
+            "feasible": true
+          }
+        ]
+      }
+    },
+    "checks": {
+      "2": {
+        "native_piece_output_difference_rms": 4.4585945033759344e-06,
+        "native_piece_output_difference_max": 0.002197265625,
+        "native_positions": 4096,
+        "native_input_source": "originalG3 recorded input",
+        "complete_native_plus_hand_MLP2_scalar_errors": [
+          0.21842587447638118,
+          0.18898177162132423,
+          0.20588667163538243
+        ]
+      },
+      "3": {
+        "native_piece_output_difference_rms": 1.5056951951919473e-06,
+        "native_piece_output_difference_max": 0.0004425048828125,
+        "native_positions": 4096,
+        "native_input_source": "recordedhost input; identity holds for arbitrary inputs"
+      },
+      "4": {
+        "native_piece_output_difference_rms": 1.0625595905366936e-06,
+        "native_piece_output_difference_max": 0.0001068115234375,
+        "native_positions": 4096,
+        "native_input_source": "originalG3 recorded input"
+      }
+    }
+  }
+}

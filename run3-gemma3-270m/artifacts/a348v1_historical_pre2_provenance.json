@@ -1,0 +1,254 @@
+{
+  "analysis_only": true,
+  "weights_written": false,
+  "upstream_weight_differences_against_A1": [],
+  "upstream_weight_differences_against_A123": [],
+  "native_Gate_Up_rows_equal_A1": {
+    "model.layers.1.mlp.gate_proj.weight": true,
+    "model.layers.1.mlp.up_proj.weight": true
+  },
+  "programme_units": [
+    196,
+    249,
+    1130,
+    1657,
+    1809
+  ],
+  "records": [
+    {
+      "capture": "artifacts/a36_inputs_syntax_a.pt",
+      "input_shape": [
+        512,
+        14
+      ],
+      "capture_keys": [
+        "1.raw",
+        "1.pre",
+        "1.features",
+        "1.down",
+        "1.out",
+        "2.input"
+      ],
+      "pre_from_recorded_raw_bit_exact": true,
+      "pre_from_recorded_raw_maximum_error": 0.0,
+      "programme_Gate_range": [
+        -74.8703571807279,
+        728.0202791768172
+      ],
+      "maximum_programme_Up": 25.298221588134766,
+      "native_feature_shape": [
+        512,
+        14,
+        2048
+      ],
+      "prefill_Gate_maximum": -49.77608882866571,
+      "equals_Gate_minimum": 727.9980977525166,
+      "equals_Gate_maximum": 728.0202791768172,
+      "Gate_minimum_by_position": [
+        -49.77608882866571,
+        -71.77803213943047,
+        -73.46874352321848,
+        -74.8703571807279,
+        -71.8901236647907,
+        -72.80661518842749,
+        -73.64204764111729,
+        -73.69004124919351,
+        727.9980977525166,
+        -70.69308758864189,
+        -74.456668985604,
+        -73.77488155461282,
+        -73.73399292534027,
+        -74.03791143806998
+      ],
+      "Gate_maximum_by_position": [
+        -49.77608882866571,
+        -69.46129459115879,
+        -66.26378815741352,
+        -63.812029578290115,
+        -66.95951823914055,
+        -67.24222385384982,
+        -64.86571397246756,
+        -63.76208338339251,
+        728.0202791768172,
+        -66.61346289176069,
+        -66.26698355238207,
+        -64.88293849834436,
+        -64.55103518677849,
+        -64.3490184354543
+      ],
+      "matching_current_prefix_count": 0
+    },
+    {
+      "capture": "artifacts/a36_inputs_syntax_stress.pt",
+      "input_shape": [
+        512,
+        14
+      ],
+      "capture_keys": [
+        "1.raw",
+        "1.pre",
+        "1.features",
+        "1.down",
+        "1.out",
+        "2.input"
+      ],
+      "pre_from_recorded_raw_bit_exact": true,
+      "pre_from_recorded_raw_maximum_error": 0.0,
+      "programme_Gate_range": [
+        -74.45349263583007,
+        728.0259588984325
+      ],
+      "maximum_programme_Up": 25.298221588134766,
+      "native_feature_shape": [
+        512,
+        14,
+        2048
+      ],
+      "prefill_Gate_maximum": -49.77608882866571,
+      "equals_Gate_minimum": 727.9989987648252,
+      "equals_Gate_maximum": 728.0259588984325,
+      "Gate_minimum_by_position": [
+        -49.77608882866571,
+        -71.77803213943047,
+        -72.0167655524902,
+        -71.90769678523628,
+        -71.68779954689097,
+        -72.1191791529119,
+        -72.76154248316763,
+        -72.4178224063654,
+        727.9989987648252,
+        -70.36877721550677,
+        -74.45349263583007,
+        -73.73803322466959,
+        -74.27054583685813,
+        -73.10723934536144
+      ],
+      "Gate_maximum_by_position": [
+        -49.77608882866571,
+        -69.46129459115879,
+        -66.94783872535098,
+        -63.506046659906744,
+        -67.76996837444757,
+        -67.25543906167711,
+        -66.0568730696666,
+        -64.7219297363192,
+        728.0259588984325,
+        -66.39741881053189,
+        -66.08844437618208,
+        -63.81930608931326,
+        -64.60551018852027,
+        -64.95214667974648
+      ],
+      "matching_current_prefix_count": 132,
+      "matching_current_raw_bit_exact": false,
+      "matching_current_raw_maximum_absolute_error": 0.1875
+    },
+    {
+      "capture": "artifacts/a36_inputs_syntax_c.pt",
+      "input_shape": [
+        512,
+        14
+      ],
+      "capture_keys": [
+        "1.raw",
+        "1.pre",
+        "1.features",
+        "1.down",
+        "1.out",
+        "2.input"
+      ],
+      "pre_from_recorded_raw_bit_exact": true,
+      "pre_from_recorded_raw_maximum_error": 0.0,
+      "programme_Gate_range": [
+        -74.86246196031021,
+        728.0232933836378
+      ],
+      "maximum_programme_Up": 25.298219680786133,
+      "native_feature_shape": [
+        512,
+        14,
+        2048
+      ],
+      "prefill_Gate_maximum": -49.77608882866571,
+      "equals_Gate_minimum": 727.99756360824,
+      "equals_Gate_maximum": 728.0232933836378,
+      "Gate_minimum_by_position": [
+        -49.77608882866571,
+        -71.77803213943047,
+        -73.46874352321848,
+        -73.49816357623047,
+        -71.8901236647907,
+        -72.46218871716988,
+        -73.67427615017718,
+        -73.50050133581333,
+        727.99756360824,
+        -70.8495105696391,
+        -74.86246196031021,
+        -74.85398332380495,
+        -73.87656707704834,
+        -73.59707948041775
+      ],
+      "Gate_maximum_by_position": [
+        -49.77608882866571,
+        -69.46129459115879,
+        -66.26378815741352,
+        -63.25943452324703,
+        -66.95951823914055,
+        -67.51402782727803,
+        -65.35917203718887,
+        -63.61693445204423,
+        728.0232933836378,
+        -66.78094506099353,
+        -66.14128952702046,
+        -64.91220048942222,
+        -64.46117822834795,
+        -64.77428984564533
+      ],
+      "matching_current_prefix_count": 0
+    },
+    {
+      "capture": "artifacts/a36_inputs_calib256.pt",
+      "input_shape": [
+        256,
+        64
+      ],
+      "capture_keys": [
+        "1.raw",
+        "1.pre",
+        "1.features",
+        "1.down",
+        "1.out",
+        "2.input"
+      ],
+      "pre_from_recorded_raw_bit_exact": true,
+      "pre_from_recorded_raw_maximum_error": 0.0,
+      "programme_Gate_range": [
+        -98.64540627986457,
+        -32.000000293931436
+      ],
+      "maximum_programme_Up": 0.10603751351351656,
+      "native_feature_shape": [
+        256,
+        64,
+        2048
+      ]
+    }
+  ],
+  "allows_further_hand_programme_reconstruction": true,
+  "scope": "Provenance and linear Gate/Up audit only; no reconstructed pre2 inputs or new native activations.",
+  "sources": {
+    "experiments/analyze_a348_historical_pre2_provenance_v1.py": "4ccd49cb0a9587090191d9760477c5825836f1c4ff60cf75d69efa9025488733",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80"
+  },
+  "inputs": {
+    "experiments/a313v1_duplicate_reference_compression/delta.pt": "67fd7d1ae9b0d63f4d2f8993b65f1e837fb65a418804e56125a8b7eb4cec49e5",
+    "experiments/a1_marker/delta.pt": "2bba7cdf950cb4bcf0b1b06c2952b5e149814f0fcf855bc667369ba0b2f55039",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "artifacts/a150v1_early_native_basis.pt": "dde77056b570a89ad7bbc273459ecabc6e473c119eb8e8baa1802e5dc60f3d20",
+    "artifacts/a36_inputs_syntax_a.pt": "d1eba813a6626cd8a84edca95a1d21908255af7a68ae0d8d7b058685d7594120",
+    "artifacts/a36_inputs_syntax_stress.pt": "985a223704ac14f59d9e4393b50666376f5313a34917e79915ffcda967e8a100",
+    "artifacts/a36_inputs_syntax_c.pt": "47e3b3d1eaed739e5a63b9af827876c1989d5d0d6b7b4017ec3e0f8ad39225b1",
+    "artifacts/a36_inputs_calib256.pt": "fbf7e18d724e348cf0b2e59b513ecbf57e87c0e7b768d161de94577aefdecf7c"
+  },
+  "maximum_resident_set_kib": 1124248
+}

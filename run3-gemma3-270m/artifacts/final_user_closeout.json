@@ -1,0 +1,41 @@
+{
+  "time": "2026-11-11 17:06:52 CET",
+  "reason": "Dorian explicitly closed the run because usage was nearly exhausted; early closeout overrides the scheduled deadline.",
+  "outcome": "negative; no ladder rung passed",
+  "leader": "A313",
+  "leader_directory": "best/H1-best-attempt",
+  "leader_checkpoint_sha256": "67fd7d1ae9b0d63f4d2f8993b65f1e837fb65a418804e56125a8b7eb4cec49e5",
+  "leader_score_run": "0807-score",
+  "ledger_rows": 815,
+  "ledger_head_sha256": "9259642b1ef176fb81836cf5b78048504895e549c473bb5990cc1d2cc36d4a39",
+  "ledger_file_sha256": "d87ef7a979f4c197347e3c07a5eaa63a3d1421bc13e92a8bdf88a7a3eb2c1402",
+  "meter_used": {
+    "forward": 300,
+    "quick": 100,
+    "full": 26
+  },
+  "meter_remaining": {
+    "forward": 0,
+    "quick": 0,
+    "full": 14
+  },
+  "unfinished_meter_runs": [],
+  "stopped_job": {
+    "design": "A362",
+    "exec_session": 32542,
+    "signal": "SIGINT",
+    "exit_code": 130,
+    "status": "incomplete analysis; no checkpoint or score"
+  },
+  "canceled_unrun": [
+    "A363 full H2 diagnostic",
+    "A364 recorded-prefix analysis",
+    "all other pending work"
+  ],
+  "verify_py": "skipped at explicit user instruction",
+  "gsm8k": "skipped at explicit user instruction",
+  "independent_retest": "pending outside this run",
+  "frozen_sources_hash_check": "all match; no modification",
+  "no_new_experiments_builds_or_scores_after_closeout": true,
+  "cleanup_record": "artifacts/final_user_closeout_cleanup.json"
+}

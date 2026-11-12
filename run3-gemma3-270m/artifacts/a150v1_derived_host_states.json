@@ -1,0 +1,28 @@
+{
+  "kind": "derived factual residual states from saved branch outputs, not a meter run",
+  "source_run_id": "0747-forward",
+  "source_checkpoint_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "word_windows": 256,
+  "layers_saved": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "final_state_relative_error": 0.0,
+  "final_state_maximum_absolute_error": 0.0,
+  "final_state_bit_equal": true,
+  "operations": "Fixed embedding scale, RMS arithmetic on recorded branch outputs, residual addition only",
+  "no_model_activation_or_attention_replay": true,
+  "inputs": {
+    "artifacts/a140v1_host_branches.pt": "dbed2f93a14faf7a42dd03a3a10c961aeda34ff5f96cbdddaa36edaecb5cf98d",
+    "host/ckpt.pt": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63"
+  },
+  "sources": {
+    "experiments/derive_a150_recorded_host_states_v1.py": "120f495ef31620953fb42a0634e7f1efdeb2ed626118604e901e14631b04b5ad"
+  }
+}

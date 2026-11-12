@@ -1,0 +1,21 @@
+{
+  "time": "2026-11-10T19:02:47.200188+01:00",
+  "reason": "Retire only the post-priority native-source activation capture after all its derivations and final G3 selection; reserve space below25GB for required offline export. No pre-priority file or any checkpoint, score, source, or manifest is removed.",
+  "retired": [
+    {
+      "path": "artifacts/g3r_native_source_v1.pt",
+      "sha256": "d9acce74c32459f2407796a9d2516ad7721c469d71d625b5b688b220213cedb8",
+      "bytes": 503677809
+    }
+  ],
+  "original_forward": "0833-forward",
+  "retained_derivations": [
+    "artifacts/g3r_union_gate_v1.json",
+    "artifacts/g3r_shared_source_v1.json",
+    "artifacts/g3r_shared_source_v2.json",
+    "artifacts/g3r_wide_source_v1.json",
+    "experiments/g3r4_shared_source/score_full_G3.json",
+    "experiments/g3r5_wide_source/score_full_G3.json",
+    "best/G3-robust/manifest.json"
+  ]
+}

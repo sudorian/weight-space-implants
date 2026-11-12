@@ -1,0 +1,37 @@
+{
+  "time_utc": "2026-11-10T14:50:01.923281+00:00",
+  "reason": "Delete own superseded or failed activation/circuit caches to maintain the25GB cap before future captures; retain all scripts, manifests, scores, hosts and banks.",
+  "files": [
+    {
+      "path": "artifacts/zc_reader_attention_v1_cache.pt",
+      "bytes": 80059901,
+      "sha256": "4fad7ad6999684ae509eff22e701a1e09f4a1a96f2be13165f93cd6e317c7c84"
+    },
+    {
+      "path": "artifacts/zc_context_values_v1.pt",
+      "bytes": 70059906,
+      "sha256": "0bad8708dd7c07b41ed6a3095540f4632d9d37412e506b9239ac6cd1e4d89e43"
+    },
+    {
+      "path": "artifacts/q3_reader_values_calib.pt",
+      "bytes": 201593283,
+      "sha256": "017370f75c87a888da8e56818fd696922afaa450d5598ea8fdf2f2f1ae65092a"
+    },
+    {
+      "path": "artifacts/p9c_boolean_phases_format_a.pt",
+      "bytes": 113665078,
+      "sha256": "1cdd9553ef5b67ec1dfdfc34d9b12fe6368218f6c3968d24d52e864c5a18fd17"
+    },
+    {
+      "path": "artifacts/p9c_boolean_phases_format_b.pt",
+      "bytes": 113664822,
+      "sha256": "7f7b036091228c5a0368ba50be3f2bab5a40e0d8cf360756bedd1e460a643a48"
+    },
+    {
+      "path": "artifacts/p9c_boolean_phases_bad.pt",
+      "bytes": 113664251,
+      "sha256": "59f8b4f6bdacd96d9de6758ae54ac0c86a6ff0f90474b03f893fa4d870e2fad8"
+    }
+  ],
+  "bytes_freed": 692707241
+}

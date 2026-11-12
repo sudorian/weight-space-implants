@@ -1,0 +1,213 @@
+{
+  "analysis_only": true,
+  "gain_trials": [
+    1.0,
+    4.0,
+    16.0,
+    64.0,
+    256.0
+  ],
+  "recovery": {
+    "relative_value_reconstruction_rms": 2.522624446541316e-07,
+    "minimum_source_rank": 64,
+    "maximum_future_coefficient": 2.0208706164497913e-07,
+    "minimum_coefficient": -2.019449515431134e-07,
+    "maximum_row_sum_error": 5.871076407260034e-07,
+    "gram_relative_cutoff": 1e-12,
+    "relative_output_reconstruction_rms": 2.6197267064191366e-07
+  },
+  "word_trials": {
+    "1.0": {
+      "gain": 1.0,
+      "native_VO_branch_rms": 0.49651469028808093,
+      "native_VO_p99_token_rms": 1.2746150905358735
+    },
+    "4.0": {
+      "gain": 4.0,
+      "native_VO_branch_rms": 0.49650540178023717,
+      "native_VO_p99_token_rms": 1.274423368650807
+    },
+    "16.0": {
+      "gain": 16.0,
+      "native_VO_branch_rms": 0.49644380101700425,
+      "native_VO_p99_token_rms": 1.2641902145701354
+    },
+    "64.0": {
+      "gain": 64.0,
+      "native_VO_branch_rms": 0.5163371208542672,
+      "native_VO_p99_token_rms": 1.3134802390486429
+    },
+    "256.0": {
+      "gain": 256.0,
+      "native_VO_branch_rms": 2.131466351475119,
+      "native_VO_p99_token_rms": 7.8544854498019765
+    }
+  },
+  "format_trials": {
+    "syntax_a": [
+      {
+        "gain": 1.0,
+        "minimum_constant": 0.6753940797768219,
+        "maximum_added_transport_error": [
+          0.08329419384222447,
+          0.032242246098573624,
+          0.05658965857647402,
+          0.03935484860754931
+        ],
+        "minimum_common_gate": -37.201364855599735,
+        "minimum_bit_on_gate": -35.87819983545239,
+        "maximum_bit_off_gate": 23.13957835263181,
+        "maximum_phase_error": 0.36170720449045035,
+        "maximum_selected_phase_error": 1.2571661818698017,
+        "maximum_program_gate_weight": 51035.5390625
+      },
+      {
+        "gain": 4.0,
+        "minimum_constant": 2.6839875263030946,
+        "maximum_added_transport_error": [
+          0.020923390685474885,
+          0.008135133811855155,
+          0.014316083778359356,
+          0.009920241650320807
+        ],
+        "minimum_common_gate": -27.88875954436125,
+        "minimum_bit_on_gate": -25.88171481768265,
+        "maximum_bit_off_gate": 16.86005035716658,
+        "maximum_phase_error": 0.36051753528565644,
+        "maximum_selected_phase_error": 1.255712735886929,
+        "maximum_program_gate_weight": 51035.5390625
+      },
+      {
+        "gain": 16.0,
+        "minimum_constant": 9.809046172176515,
+        "maximum_added_transport_error": [
+          0.005922897617821832,
+          0.00228800258647599,
+          0.004052432909842807,
+          0.002809527424176223
+        ],
+        "minimum_common_gate": 3.6444455215314804,
+        "minimum_bit_on_gate": 10.072364550212313,
+        "maximum_bit_off_gate": -6.086413678069974,
+        "maximum_phase_error": 0.34107265208063353,
+        "maximum_selected_phase_error": 0.3387339707148085,
+        "maximum_program_gate_weight": 51035.5390625
+      },
+      {
+        "gain": 64.0,
+        "minimum_constant": 20.822543381632947,
+        "maximum_added_transport_error": [
+          0.0031820379508964436,
+          0.001200784933190313,
+          0.0021716856121019035,
+          0.0015089893674281576
+        ],
+        "minimum_common_gate": 36.60083138867751,
+        "minimum_bit_on_gate": 36.587155224380396,
+        "maximum_bit_off_gate": -40.10994135374372,
+        "maximum_phase_error": 0.24357800012961128,
+        "maximum_selected_phase_error": 0.24257694031595545,
+        "maximum_program_gate_weight": 51035.5390625
+      },
+      {
+        "gain": 256.0,
+        "minimum_constant": 23.667120860785353,
+        "maximum_added_transport_error": [
+          0.002934571833982602,
+          0.0010997202527951444,
+          0.002002966700840325,
+          0.0013915337905642128
+        ],
+        "minimum_common_gate": 41.714250065623226,
+        "minimum_bit_on_gate": 41.70056518243804,
+        "maximum_bit_off_gate": -46.02318203291196,
+        "maximum_phase_error": 0.23388534152335883,
+        "maximum_selected_phase_error": 0.23388534152335883,
+        "maximum_program_gate_weight": 51035.5390625
+      }
+    ],
+    "syntax_stress": [
+      {
+        "gain": 1.0,
+        "minimum_constant": 0.6627540545867424,
+        "maximum_added_transport_error": [
+          0.1463535507234845,
+          0.17932638809330115,
+          0.4192497098427834,
+          0.34070664479209645
+        ],
+        "minimum_common_gate": -36.10845594830997,
+        "minimum_bit_on_gate": -35.44182208241577,
+        "maximum_bit_off_gate": 16.236116448571792,
+        "maximum_phase_error": 0.3549150874845406,
+        "maximum_selected_phase_error": 1.9734590256882605,
+        "maximum_program_gate_weight": 51035.5390625
+      },
+      {
+        "gain": 4.0,
+        "minimum_constant": 2.6342637995626585,
+        "maximum_added_transport_error": [
+          0.037000756485665226,
+          0.044824789326799674,
+          0.1068206287390554,
+          0.08680763606351494
+        ],
+        "minimum_common_gate": -26.814544832731514,
+        "minimum_bit_on_gate": -25.250115181101677,
+        "maximum_bit_off_gate": 8.568826877899937,
+        "maximum_phase_error": 0.3540235650705892,
+        "maximum_selected_phase_error": 23.575548688100028,
+        "maximum_program_gate_weight": 51035.5390625
+      },
+      {
+        "gain": 16.0,
+        "minimum_constant": 9.656381700126435,
+        "maximum_added_transport_error": [
+          0.010274101792976428,
+          0.01245015700020069,
+          0.030313029490082855,
+          0.02463286878361992
+        ],
+        "minimum_common_gate": 3.8036700493554605,
+        "minimum_bit_on_gate": 7.250472126080808,
+        "maximum_bit_off_gate": -12.133797641716939,
+        "maximum_phase_error": 0.3363586573769872,
+        "maximum_selected_phase_error": 0.34521851148993576,
+        "maximum_program_gate_weight": 51035.5390625
+      },
+      {
+        "gain": 64.0,
+        "minimum_constant": 20.737379302313087,
+        "maximum_added_transport_error": [
+          0.005225921868256697,
+          0.006422641997763989,
+          0.016278823365789563,
+          0.013227800756658081
+        ],
+        "minimum_common_gate": 32.00257949762363,
+        "minimum_bit_on_gate": 32.000011142039014,
+        "maximum_bit_off_gate": -41.655449467268845,
+        "maximum_phase_error": 0.2811835531867759,
+        "maximum_selected_phase_error": 0.2818133415255666,
+        "maximum_program_gate_weight": 51035.5390625
+      },
+      {
+        "gain": 256.0,
+        "minimum_constant": 23.674398933867174,
+        "maximum_added_transport_error": [
+          0.004759251468998665,
+          0.005882210649851061,
+          0.015015434169571407,
+          0.012201085376048248
+        ],
+        "minimum_common_gate": 36.387391919669824,
+        "minimum_bit_on_gate": 36.384717931310774,
+        "maximum_bit_off_gate": -47.12627257042597,
+        "maximum_phase_error": 0.32725062702979457,
+        "maximum_selected_phase_error": 0.3278060554528288,
+        "maximum_program_gate_weight": 51035.5390625
+      }
+    ]
+  },
+  "selection_targets": "Copied existing source registers and current-position labels only; no sums"
+}

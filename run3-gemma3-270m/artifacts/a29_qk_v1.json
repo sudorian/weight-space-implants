@@ -1,0 +1,241 @@
+{
+  "rank_trials": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "query_scale": 0.03,
+  "key_scale": 1.0,
+  "routing_margin": 32,
+  "covariance_ridge": 1e-06,
+  "trials": [
+    {
+      "rank": 1,
+      "program_gain": 182.91568917234488,
+      "routing": [
+        {
+          "position": 8,
+          "minimum_program_gap": 0.0008997672605488942,
+          "maximum_native_disadvantage": 3.3071445740091923
+        },
+        {
+          "position": 9,
+          "minimum_program_gap": 0.001265135389157999,
+          "maximum_native_disadvantage": 9.034026198304161
+        },
+        {
+          "position": 10,
+          "minimum_program_gap": 0.0012650851783510126,
+          "maximum_native_disadvantage": 8.835129885062987
+        },
+        {
+          "position": 11,
+          "minimum_program_gap": 0.001265085104358119,
+          "maximum_native_disadvantage": 8.559225217789239
+        },
+        {
+          "position": 12,
+          "minimum_program_gap": 0.00126502479812319,
+          "maximum_native_disadvantage": 8.466241930505536
+        }
+      ],
+      "source_input_energy_retained": 0.4755365296872256,
+      "maximum_query_weight": 0.62890625,
+      "paired_centered_causal_score_mse": 0.0028776063928744604,
+      "paired_score_p99_query_rms": 0.14134519999575892,
+      "paired_score_max_query_rms": 0.3071030765580568
+    },
+    {
+      "rank": 2,
+      "program_gain": 183.18348891703906,
+      "routing": [
+        {
+          "position": 8,
+          "minimum_program_gap": 0.0008985341682152287,
+          "maximum_native_disadvantage": 3.289157530268147
+        },
+        {
+          "position": 9,
+          "minimum_program_gap": 0.39819485825169976,
+          "maximum_native_disadvantage": 0.5398810708964776
+        },
+        {
+          "position": 10,
+          "minimum_program_gap": 0.39871257281434297,
+          "maximum_native_disadvantage": 0.4910888311295868
+        },
+        {
+          "position": 11,
+          "minimum_program_gap": 0.39911071981675017,
+          "maximum_native_disadvantage": 0.5966394823708233
+        },
+        {
+          "position": 12,
+          "minimum_program_gap": 0.3980969824428199,
+          "maximum_native_disadvantage": 0.6600236896657499
+        }
+      ],
+      "source_input_energy_retained": 0.040343278391528674,
+      "maximum_query_weight": 0.62890625,
+      "paired_centered_causal_score_mse": 0.003116750199460793,
+      "paired_score_p99_query_rms": 0.14608753864563445,
+      "paired_score_max_query_rms": 0.30700453466205413
+    },
+    {
+      "rank": 4,
+      "program_gain": 153.8839800171696,
+      "routing": [
+        {
+          "position": 8,
+          "minimum_program_gap": 0.0013807676015821758,
+          "maximum_native_disadvantage": 7.0362543947644784
+        },
+        {
+          "position": 9,
+          "minimum_program_gap": 0.3981765043508017,
+          "maximum_native_disadvantage": 0.5187431132887694
+        },
+        {
+          "position": 10,
+          "minimum_program_gap": 0.39870429851522776,
+          "maximum_native_disadvantage": 0.4854158473049387
+        },
+        {
+          "position": 11,
+          "minimum_program_gap": 0.3991069381829135,
+          "maximum_native_disadvantage": 0.5998855003996783
+        },
+        {
+          "position": 12,
+          "minimum_program_gap": 0.3981345327646474,
+          "maximum_native_disadvantage": 0.6668678497938982
+        }
+      ],
+      "source_input_energy_retained": 0.009913705295884966,
+      "maximum_query_weight": 0.62890625,
+      "paired_centered_causal_score_mse": 0.003174147195501619,
+      "paired_score_p99_query_rms": 0.1469337683340481,
+      "paired_score_max_query_rms": 0.29134947151886115
+    },
+    {
+      "rank": 8,
+      "program_gain": 9.944765129811723,
+      "routing": [
+        {
+          "position": 8,
+          "minimum_program_gap": 0.32453151673201147,
+          "maximum_native_disadvantage": 3.5911692858827644
+        },
+        {
+          "position": 9,
+          "minimum_program_gap": 0.39820459145497467,
+          "maximum_native_disadvantage": 0.5150570172774922
+        },
+        {
+          "position": 10,
+          "minimum_program_gap": 0.39870612056642074,
+          "maximum_native_disadvantage": 0.4694403163784242
+        },
+        {
+          "position": 11,
+          "minimum_program_gap": 0.39911246749350127,
+          "maximum_native_disadvantage": 0.5835068782552266
+        },
+        {
+          "position": 12,
+          "minimum_program_gap": 0.39813692191602956,
+          "maximum_native_disadvantage": 0.6433026579170071
+        }
+      ],
+      "source_input_energy_retained": 6.233002688859911e-08,
+      "maximum_query_weight": 0.62890625,
+      "paired_centered_causal_score_mse": 0.003454197735910369,
+      "paired_score_p99_query_rms": 0.1520775040902596,
+      "paired_score_max_query_rms": 0.2947856747921253
+    },
+    {
+      "rank": 16,
+      "program_gain": 8.954580455348847,
+      "routing": [
+        {
+          "position": 8,
+          "minimum_program_gap": 0.399417522893202,
+          "maximum_native_disadvantage": 0.34165994540960937
+        },
+        {
+          "position": 9,
+          "minimum_program_gap": 0.3994373948861279,
+          "maximum_native_disadvantage": 0.39014523938437523
+        },
+        {
+          "position": 10,
+          "minimum_program_gap": 0.3993793377233056,
+          "maximum_native_disadvantage": 0.44084314707885364
+        },
+        {
+          "position": 11,
+          "minimum_program_gap": 0.39939980880770565,
+          "maximum_native_disadvantage": 0.4118196331274719
+        },
+        {
+          "position": 12,
+          "minimum_program_gap": 0.3994641786310292,
+          "maximum_native_disadvantage": 0.4152021426995228
+        }
+      ],
+      "source_input_energy_retained": 2.72286790515176e-09,
+      "maximum_query_weight": 0.62890625,
+      "paired_centered_causal_score_mse": 0.0041399053537901345,
+      "paired_score_p99_query_rms": 0.16801413922043765,
+      "paired_score_max_query_rms": 0.3031741922519332
+    }
+  ],
+  "chosen": {
+    "rank": 1,
+    "program_gain": 182.91568917234488,
+    "routing": [
+      {
+        "position": 8,
+        "minimum_program_gap": 0.0008997672605488942,
+        "maximum_native_disadvantage": 3.3071445740091923
+      },
+      {
+        "position": 9,
+        "minimum_program_gap": 0.001265135389157999,
+        "maximum_native_disadvantage": 9.034026198304161
+      },
+      {
+        "position": 10,
+        "minimum_program_gap": 0.0012650851783510126,
+        "maximum_native_disadvantage": 8.835129885062987
+      },
+      {
+        "position": 11,
+        "minimum_program_gap": 0.001265085104358119,
+        "maximum_native_disadvantage": 8.559225217789239
+      },
+      {
+        "position": 12,
+        "minimum_program_gap": 0.00126502479812319,
+        "maximum_native_disadvantage": 8.466241930505536
+      }
+    ],
+    "source_input_energy_retained": 0.4755365296872256,
+    "maximum_query_weight": 0.62890625,
+    "paired_centered_causal_score_mse": 0.0028776063928744604,
+    "paired_score_p99_query_rms": 0.14134519999575892,
+    "paired_score_max_query_rms": 0.3071030765580568
+  },
+  "reference_head": 0,
+  "pair": 87,
+  "float32_routing_margins": [
+    32.000002133733915,
+    35.52287584999762,
+    35.66996993714061,
+    35.79546946556064,
+    35.904251826309874
+  ],
+  "metric": "Centered causal dot-product error on paired calibration tokens; no attention softmax"
+}

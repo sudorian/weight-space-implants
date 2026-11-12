@@ -1,0 +1,41 @@
+{
+  "delta_sha256": "1b3d1cd0d45e909497cc350f84494ae7d70766e1014a5d092df4d3beb4cafe0a",
+  "sources": {
+    "experiments/compile_o_protected_positions_v1.py": "3e97ef55873f36c71042e02ba9bfb1af93bf147fbfa251f33fdb2d6c3a6a926e",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_o_token_writer_v2.py": "a2389eba22f3caed8924da2a5a525a0401fb2d8f45fb0574472ca7d305bfc8d6",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/prefix_capture_io_v1.py": "3c2abe4ea88ba80949020e03ad6291ddaefef96e480de38ca39f372c198d9f87",
+    "experiments/compile_o_relative_reader_v2.py": "2d030638651cca6f8a9ad7fe6d015f17585222b79238a1d1a95fcf492a7d9cc6",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_o_source_readouts_v2.py": "3405daca42db46ecc5a9b3cd7896ce64b0ab457422449935f014998a84d321d9",
+    "experiments/analyze_o_homogeneous_address_v3.py": "3404e12617d86fc93844654ea572ef90edb72336a5790b1394ab402d9943cea7",
+    "experiments/compile_o_reader_ablation_v1.py": "76c24ec56a5454644d0486195cf79b96a0eaa6a177affb7dccbb338eb291a4b5"
+  },
+  "inputs": {
+    "experiments/o3b_reader/delta.pt": "1d7246c7b3e0c662a165ed0216a63d05e204405add266d095e7d1b28ba035eb9"
+  },
+  "arguments": {
+    "output": "experiments/o3b_vp_only/delta.pt",
+    "keep": "values"
+  },
+  "description": "O3B structural preservation ablation: retain only values modifications in attention1, with the O2B token writer unchanged.",
+  "changed_scalars": 1424730,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589824,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 26112,
+    "transformer.h.0.mlp.c_fc.bias": 34,
+    "transformer.h.0.mlp.c_proj.weight": 419328,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 43008,
+    "transformer.h.1.attn.c_attn.bias": 56,
+    "transformer.h.1.attn.c_proj.weight": 344064,
+    "transformer.h.1.attn.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 8652.681640625,
+  "details": {
+    "retained_attention_component": "values"
+  }
+}

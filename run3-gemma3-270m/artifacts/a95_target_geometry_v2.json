@@ -1,0 +1,256 @@
+{
+  "gain_floor_trials": [
+    0.01,
+    0.03,
+    0.1,
+    0.3,
+    1.0
+  ],
+  "anchor_count_trials": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "ray_scale_interval": [
+    0.5,
+    2.0
+  ],
+  "gain_absolute_quantiles": [
+    0.03509289026260376,
+    1.6825486838817596,
+    5.203311157226563,
+    12.611053466796875,
+    22.4948434829712,
+    1000000.0
+  ],
+  "trials": [
+    {
+      "gain_floor": null,
+      "anchor_count": 1,
+      "boosted_rows": 0,
+      "fixed_target_infeasible_tokens": 14732,
+      "ray_target_infeasible_tokens": 532,
+      "ray_target_feasible_training_tokens": 24177,
+      "minimum_required_squared_norm_quantiles": [
+        78.3857264449239,
+        202.373878385467,
+        337.6019499675364,
+        923.6307338827822,
+        59428.12725135384
+      ],
+      "feasible_scale_quantiles": [
+        0.5559769640530607,
+        0.8867929116508733,
+        1.0,
+        1.0912210395611528,
+        1.3047802814880454
+      ]
+    },
+    {
+      "gain_floor": null,
+      "anchor_count": 2,
+      "boosted_rows": 0,
+      "fixed_target_infeasible_tokens": 14730,
+      "ray_target_infeasible_tokens": 531,
+      "ray_target_feasible_training_tokens": 24177,
+      "minimum_required_squared_norm_quantiles": [
+        78.36316711164196,
+        202.15815520048562,
+        337.22193463463833,
+        921.7357835064895,
+        59428.12570512985
+      ],
+      "feasible_scale_quantiles": [
+        0.5564451908067987,
+        0.8868169505456583,
+        1.0,
+        1.0912411879933095,
+        1.3044344658576845
+      ]
+    },
+    {
+      "gain_floor": null,
+      "anchor_count": 4,
+      "boosted_rows": 0,
+      "fixed_target_infeasible_tokens": 14720,
+      "ray_target_infeasible_tokens": 531,
+      "ray_target_feasible_training_tokens": 24177,
+      "minimum_required_squared_norm_quantiles": [
+        78.31249094693337,
+        201.66535440069447,
+        336.30935116534755,
+        921.2248553301712,
+        59427.98643867695
+      ],
+      "feasible_scale_quantiles": [
+        0.5573408659401985,
+        0.8868703918314468,
+        1.0,
+        1.0912039375706848,
+        1.3042075081685982
+      ]
+    },
+    {
+      "gain_floor": null,
+      "anchor_count": 8,
+      "boosted_rows": 0,
+      "fixed_target_infeasible_tokens": 14707,
+      "ray_target_infeasible_tokens": 529,
+      "ray_target_feasible_training_tokens": 24178,
+      "minimum_required_squared_norm_quantiles": [
+        77.95984533646084,
+        200.62247990171923,
+        334.28878312058555,
+        919.9286139050794,
+        59426.62153936379
+      ],
+      "feasible_scale_quantiles": [
+        0.5583894789421207,
+        0.886978961595638,
+        1.0,
+        1.0910808481984218,
+        1.3037440770734037
+      ]
+    },
+    {
+      "gain_floor": null,
+      "anchor_count": 16,
+      "boosted_rows": 0,
+      "fixed_target_infeasible_tokens": 14674,
+      "ray_target_infeasible_tokens": 523,
+      "ray_target_feasible_training_tokens": 24184,
+      "minimum_required_squared_norm_quantiles": [
+        77.42688752241628,
+        198.75416527633257,
+        330.70495726403504,
+        912.6669383815487,
+        59424.65604151848
+      ],
+      "feasible_scale_quantiles": [
+        0.5604625788903043,
+        0.8862838564517896,
+        1.0,
+        1.0908376201302183,
+        1.303102545325724
+      ]
+    },
+    {
+      "gain_floor": 0.01,
+      "anchor_count": 16,
+      "boosted_rows": 0,
+      "fixed_target_infeasible_tokens": 14674,
+      "ray_target_infeasible_tokens": 523,
+      "ray_target_feasible_training_tokens": 24184,
+      "minimum_required_squared_norm_quantiles": [
+        77.42688752241628,
+        198.75416527633257,
+        330.70495726403504,
+        912.6669383815487,
+        59424.65604151848
+      ],
+      "feasible_scale_quantiles": [
+        0.5604625788903043,
+        0.8862838564517896,
+        1.0,
+        1.0908376201302183,
+        1.303102545325724
+      ]
+    },
+    {
+      "gain_floor": 0.03,
+      "anchor_count": 16,
+      "boosted_rows": 0,
+      "fixed_target_infeasible_tokens": 14674,
+      "ray_target_infeasible_tokens": 523,
+      "ray_target_feasible_training_tokens": 24184,
+      "minimum_required_squared_norm_quantiles": [
+        77.42688752241628,
+        198.75416527633257,
+        330.70495726403504,
+        912.6669383815487,
+        59424.65604151848
+      ],
+      "feasible_scale_quantiles": [
+        0.5604625788903043,
+        0.8862838564517896,
+        1.0,
+        1.0908376201302183,
+        1.303102545325724
+      ]
+    },
+    {
+      "gain_floor": 0.1,
+      "anchor_count": 16,
+      "boosted_rows": 0,
+      "fixed_target_infeasible_tokens": 14674,
+      "ray_target_infeasible_tokens": 523,
+      "ray_target_feasible_training_tokens": 24184,
+      "minimum_required_squared_norm_quantiles": [
+        77.42688752241628,
+        198.75416527633257,
+        330.70495726403504,
+        912.6669383815487,
+        59424.65604151848
+      ],
+      "feasible_scale_quantiles": [
+        0.5604625788903043,
+        0.8862838564517896,
+        1.0,
+        1.0908376201302183,
+        1.303102545325724
+      ]
+    },
+    {
+      "gain_floor": 0.3,
+      "anchor_count": 16,
+      "boosted_rows": 1,
+      "fixed_target_infeasible_tokens": 14674,
+      "ray_target_infeasible_tokens": 523,
+      "ray_target_feasible_training_tokens": 24184,
+      "minimum_required_squared_norm_quantiles": [
+        77.42688752241628,
+        198.75416527633257,
+        330.70495726403504,
+        912.6669383815487,
+        59424.65604151848
+      ],
+      "feasible_scale_quantiles": [
+        0.5604625788903043,
+        0.8862838564517896,
+        1.0,
+        1.0908376201302183,
+        1.303102545325724
+      ]
+    },
+    {
+      "gain_floor": 1.0,
+      "anchor_count": 16,
+      "boosted_rows": 1,
+      "fixed_target_infeasible_tokens": 14674,
+      "ray_target_infeasible_tokens": 523,
+      "ray_target_feasible_training_tokens": 24184,
+      "minimum_required_squared_norm_quantiles": [
+        77.42688752241628,
+        198.75416527633257,
+        330.70495726403504,
+        912.6669383815487,
+        59424.65604151848
+      ],
+      "feasible_scale_quantiles": [
+        0.5604625788903043,
+        0.8862838564517896,
+        1.0,
+        1.0908376201302183,
+        1.303102545325724
+      ]
+    }
+  ],
+  "source_sha256": "044adb9678049fa58c6a679312e89be728544639f586cf1105e4f9e7f08c5e2f",
+  "inputs": {
+    "experiments/a90v1_grouped_affine/delta.pt": "55db5c1a45452ea6939949df3416da958c0583cea57d1898790508144a49138d",
+    "artifacts/a92v1_native_mlp6.pt": "eeadc44d017e00a3b1712af7b80a7e4ef4cdbe4c5db899ca66a6515dcf43878d",
+    "artifacts/a81v1_host7_before_only.pt": "352e665e628d48bca81828a839978367332f1ac621194fedfe62ca805d6da4c7"
+  }
+}

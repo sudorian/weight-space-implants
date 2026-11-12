@@ -1,0 +1,208 @@
+{
+  "scores": [
+    16.0,
+    32.0,
+    64.0,
+    128.0,
+    256.0
+  ],
+  "trials": [
+    {
+      "attention_score": 16.0,
+      "compact_scalar_base": false,
+      "minimum_target_attention_probability": 0.0,
+      "incorrect_address_positions": 12800,
+      "downstream_scalar_max_errors": [
+        36.54676172780058,
+        26.40819986872482,
+        4.843883798660583
+      ],
+      "active_phase_range": [
+        0.9999886211083421,
+        1.000016783748934
+      ],
+      "max_fc_weight": 976424.4379357048,
+      "feasible": false
+    },
+    {
+      "attention_score": 16.0,
+      "compact_scalar_base": true,
+      "minimum_target_attention_probability": 0.0,
+      "incorrect_address_positions": 12800,
+      "downstream_scalar_max_errors": [
+        36.54673644353415,
+        26.408139852923,
+        4.8438091545152435
+      ],
+      "active_phase_range": [
+        0.9999886211083414,
+        1.000016783748933
+      ],
+      "max_fc_weight": 976424.4379357048,
+      "feasible": false
+    },
+    {
+      "attention_score": 32.0,
+      "compact_scalar_base": false,
+      "minimum_target_attention_probability": 0.0,
+      "incorrect_address_positions": 10240,
+      "downstream_scalar_max_errors": [
+        36.51225549733385,
+        26.379469302532495,
+        0.2892123144810328
+      ],
+      "active_phase_range": [
+        0.999988489765905,
+        1.0000156826970004
+      ],
+      "max_fc_weight": 976424.4379357048,
+      "feasible": false
+    },
+    {
+      "attention_score": 32.0,
+      "compact_scalar_base": true,
+      "minimum_target_attention_probability": 0.0,
+      "incorrect_address_positions": 10240,
+      "downstream_scalar_max_errors": [
+        36.512231079957154,
+        26.37942429005502,
+        0.2891408387805363
+      ],
+      "active_phase_range": [
+        0.9999884897659047,
+        1.0000156826970008
+      ],
+      "max_fc_weight": 976424.4379357048,
+      "feasible": false
+    },
+    {
+      "attention_score": 64.0,
+      "compact_scalar_base": false,
+      "minimum_target_attention_probability": 0.0,
+      "incorrect_address_positions": 5120,
+      "downstream_scalar_max_errors": [
+        29.121449503252506,
+        17.320395053272556,
+        0.2897806054065635
+      ],
+      "active_phase_range": [
+        0.999989430205752,
+        1.000016750330672
+      ],
+      "max_fc_weight": 976424.4379357048,
+      "feasible": false
+    },
+    {
+      "attention_score": 64.0,
+      "compact_scalar_base": true,
+      "minimum_target_attention_probability": 0.0,
+      "incorrect_address_positions": 5120,
+      "downstream_scalar_max_errors": [
+        29.12140585836711,
+        17.320355010615952,
+        0.28971386124416965
+      ],
+      "active_phase_range": [
+        0.9999894302057515,
+        1.000016750330673
+      ],
+      "max_fc_weight": 976424.4379357048,
+      "feasible": false
+    },
+    {
+      "attention_score": 128.0,
+      "compact_scalar_base": false,
+      "minimum_target_attention_probability": 7.477880241553412e-19,
+      "incorrect_address_positions": 1783,
+      "downstream_scalar_max_errors": [
+        0.21964282070908903,
+        16.31601061241794,
+        0.2842058465738262
+      ],
+      "active_phase_range": [
+        0.9999895728960803,
+        1.0000178365620154
+      ],
+      "max_fc_weight": 976424.4379357048,
+      "feasible": false
+    },
+    {
+      "attention_score": 128.0,
+      "compact_scalar_base": true,
+      "minimum_target_attention_probability": 7.477880241553412e-19,
+      "incorrect_address_positions": 1783,
+      "downstream_scalar_max_errors": [
+        0.21961134863099652,
+        16.315935532672533,
+        0.28413432355565105
+      ],
+      "active_phase_range": [
+        0.9999895728960787,
+        1.0000178365620156
+      ],
+      "max_fc_weight": 976424.4379357048,
+      "feasible": false
+    },
+    {
+      "attention_score": 256.0,
+      "compact_scalar_base": false,
+      "minimum_target_attention_probability": 1.0,
+      "incorrect_address_positions": 0,
+      "downstream_scalar_max_errors": [
+        0.19803910135094727,
+        0.20695984557057567,
+        0.1971640232530299
+      ],
+      "active_phase_range": [
+        0.9999908915944715,
+        1.000018073526971
+      ],
+      "max_fc_weight": 976424.4379357048,
+      "feasible": true
+    },
+    {
+      "attention_score": 256.0,
+      "compact_scalar_base": true,
+      "minimum_target_attention_probability": 1.0,
+      "incorrect_address_positions": 0,
+      "downstream_scalar_max_errors": [
+        0.19802620872019228,
+        0.20693356237586968,
+        0.19714216882134517
+      ],
+      "active_phase_range": [
+        0.999990891594471,
+        1.0000180735269717
+      ],
+      "max_fc_weight": 976424.4379357048,
+      "feasible": true
+    }
+  ],
+  "chosen": {
+    "attention_score": 256.0,
+    "compact_scalar_base": true,
+    "minimum_target_attention_probability": 1.0,
+    "incorrect_address_positions": 0,
+    "downstream_scalar_max_errors": [
+      0.19802620872019228,
+      0.20693356237586968,
+      0.19714216882134517
+    ],
+    "active_phase_range": [
+      0.999990891594471,
+      1.0000180735269717
+    ],
+    "max_fc_weight": 976424.4379357048,
+    "feasible": true
+  },
+  "native_coordinates_restored_per_head": 63,
+  "heads": [
+    1,
+    4,
+    2,
+    7,
+    9,
+    8
+  ],
+  "component_only": true
+}

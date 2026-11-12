@@ -1,0 +1,318 @@
+{
+  "native_projection_column_trials": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "projection_ridge": 1e-06,
+  "routing_margin": 8,
+  "selection": "largest quiet-form coefficient times word input RMS",
+  "gain_fit": "one original HOST normalized-query scalar solve per ordinary channel, followed by analytic routing",
+  "training_tokens": 24576,
+  "validation_tokens": 8192,
+  "format_examples": 1536,
+  "baseline": {
+    "paired_centered_causal_score_mse": 0.0008811470774431654,
+    "paired_score_p99_query_rms": 0.10303714468316787,
+    "covariance_dot_error": 0.004430207942771037,
+    "query_rms_change": 0.025337374361433893,
+    "relative_raw_energy_rms": 0.025107095233927897
+  },
+  "trials": [
+    {
+      "native_projection_columns": 1,
+      "columns": [
+        334
+      ],
+      "projection_ridge": 1e-06,
+      "eligible": true,
+      "minimum_format_projection": 0.9999988814876382,
+      "maximum_format_projection": 1.0000007243004514,
+      "weighted_projection_word_rms": 0.0005047512995242315,
+      "initial_routing": {
+        "factors": [
+          0.9349817919634552,
+          0.9788079677551829,
+          0.9084104669211798,
+          0.9893325021978768
+        ],
+        "minimum_margins": [
+          8.000094423721505,
+          8.00000268113639,
+          8.000065109810322,
+          8.000079805728609
+        ]
+      },
+      "factors": [
+        0.9115197731634702,
+        0.9504291392507469,
+        0.8983504315423082,
+        0.9802017757215429
+      ],
+      "minimum_margins": [
+        8.000093549774741,
+        8.000002691409952,
+        8.000064914409391,
+        8.000079509376949
+      ],
+      "float32_margins": [
+        8.000093345677913,
+        8.000002637814372,
+        8.000065072266343,
+        8.000079450950413
+      ],
+      "paired_centered_causal_score_mse": 0.004979881566292893,
+      "paired_score_p99_query_rms": 0.25038455791876446,
+      "covariance_dot_error": 0.024889513622890352,
+      "query_rms_change": 0.05971118469995995,
+      "relative_raw_energy_rms": 0.10310381097688662,
+      "changed_query_scalars": 164608,
+      "maximum_query_weight": 0.56640625,
+      "maximum_norm_weight": 10.296158790588379
+    },
+    {
+      "native_projection_columns": 2,
+      "columns": [
+        334,
+        97
+      ],
+      "projection_ridge": 1e-06,
+      "eligible": true,
+      "minimum_format_projection": 0.9999988752143855,
+      "maximum_format_projection": 1.000000756206148,
+      "weighted_projection_word_rms": 0.000501558443233262,
+      "initial_routing": {
+        "factors": [
+          0.9349696993567166,
+          0.9788117284645249,
+          0.9084074272443983,
+          0.9893453308456184
+        ],
+        "minimum_margins": [
+          8.00009442329865,
+          8.000002681135895,
+          8.000065109663815,
+          8.000079806055886
+        ]
+      },
+      "factors": [
+        0.9112978672093945,
+        0.9511214232090105,
+        0.8979764008879659,
+        0.9795077391006551
+      ],
+      "minimum_margins": [
+        8.000093541317337,
+        8.000002691149476,
+        8.000064906947793,
+        8.000079486557958
+      ],
+      "float32_margins": [
+        8.000093653469438,
+        8.00000222018832,
+        8.000064932403152,
+        8.00007956761398
+      ],
+      "paired_centered_causal_score_mse": 0.004976861952834092,
+      "paired_score_p99_query_rms": 0.2507893571240057,
+      "covariance_dot_error": 0.02486222535833568,
+      "query_rms_change": 0.059577485245858805,
+      "relative_raw_energy_rms": 0.10302452577360283,
+      "changed_query_scalars": 165376,
+      "maximum_query_weight": 0.56640625,
+      "maximum_norm_weight": 10.296158790588379
+    },
+    {
+      "native_projection_columns": 4,
+      "columns": [
+        334,
+        97,
+        469,
+        129
+      ],
+      "projection_ridge": 1e-06,
+      "eligible": true,
+      "minimum_format_projection": 0.9999988671788262,
+      "maximum_format_projection": 1.0000007768229728,
+      "weighted_projection_word_rms": 0.0005005198613510118,
+      "initial_routing": {
+        "factors": [
+          0.9349632356252451,
+          0.978814456231189,
+          0.9084054086573691,
+          0.9893531142363341
+        ],
+        "minimum_margins": [
+          8.000094423072616,
+          8.000002681135534,
+          8.000065109566489,
+          8.000079806254421
+        ]
+      },
+      "factors": [
+        0.9114493549349185,
+        0.9512515093876498,
+        0.8979382935645308,
+        0.9795064156720943
+      ],
+      "minimum_margins": [
+        8.000093547111934,
+        8.000002691101052,
+        8.000064906136593,
+        8.00007948646223
+      ],
+      "float32_margins": [
+        8.000093790690741,
+        8.00000291857957,
+        8.000065017822841,
+        8.000079443878137
+      ],
+      "paired_centered_causal_score_mse": 0.004975245857093402,
+      "paired_score_p99_query_rms": 0.2503313216364778,
+      "covariance_dot_error": 0.02487436171520224,
+      "query_rms_change": 0.05957900938056587,
+      "relative_raw_energy_rms": 0.1030165487919826,
+      "changed_query_scalars": 166912,
+      "maximum_query_weight": 0.56640625,
+      "maximum_norm_weight": 10.296158790588379
+    },
+    {
+      "native_projection_columns": 8,
+      "columns": [
+        334,
+        97,
+        469,
+        129,
+        479,
+        384,
+        239,
+        381
+      ],
+      "projection_ridge": 1e-06,
+      "eligible": true,
+      "minimum_format_projection": 0.9999988557763727,
+      "maximum_format_projection": 1.0000008507630074,
+      "weighted_projection_word_rms": 0.0004949004915093565,
+      "initial_routing": {
+        "factors": [
+          0.934952267085719,
+          0.9788200304412167,
+          0.9084000651465018,
+          0.9893773717572852
+        ],
+        "minimum_margins": [
+          8.00009442268905,
+          8.000002681134799,
+          8.00006510930874,
+          8.000079806873046
+        ]
+      },
+      "factors": [
+        0.911624821061552,
+        0.9512261445586497,
+        0.8978617293180465,
+        0.9795351977018419
+      ],
+      "minimum_margins": [
+        8.00009355382628,
+        8.000002691111881,
+        8.00006490446826,
+        8.000079487242282
+      ],
+      "float32_margins": [
+        8.000093952259187,
+        8.000002492299702,
+        8.000064866634492,
+        8.000079436392445
+      ],
+      "paired_centered_causal_score_mse": 0.004957025713091449,
+      "paired_score_p99_query_rms": 0.2503753847496962,
+      "covariance_dot_error": 0.024879447261380378,
+      "query_rms_change": 0.059444258902047895,
+      "relative_raw_energy_rms": 0.1029946618970389,
+      "changed_query_scalars": 169984,
+      "maximum_query_weight": 0.56640625,
+      "maximum_norm_weight": 10.296158790588379
+    },
+    {
+      "native_projection_columns": 16,
+      "columns": [
+        334,
+        97,
+        469,
+        129,
+        479,
+        384,
+        239,
+        381,
+        258,
+        115,
+        510,
+        400,
+        547,
+        187,
+        91,
+        418
+      ],
+      "projection_ridge": 1e-06,
+      "eligible": true,
+      "minimum_format_projection": 0.9999988642091721,
+      "maximum_format_projection": 1.0000009084790007,
+      "weighted_projection_word_rms": 0.0004883184083267293,
+      "initial_routing": {
+        "factors": [
+          0.9349581038908392,
+          0.9788234494539514,
+          0.9083958702249396,
+          0.9894004291825662
+        ],
+        "minimum_margins": [
+          8.000094422893163,
+          8.00000268113435,
+          8.000065109106265,
+          8.000079807460878
+        ]
+      },
+      "factors": [
+        0.9116899209617849,
+        0.951271227523936,
+        0.8978304284977613,
+        0.9793969382572293
+      ],
+      "minimum_margins": [
+        8.000093556302897,
+        8.000002691095665,
+        8.000064903726463,
+        8.000079482554995
+      ],
+      "float32_margins": [
+        8.0000937948035,
+        8.00000300719041,
+        8.000064820353074,
+        8.000079446194238
+      ],
+      "paired_centered_causal_score_mse": 0.00493750798611723,
+      "paired_score_p99_query_rms": 0.2503510779324707,
+      "covariance_dot_error": 0.024873790800340315,
+      "query_rms_change": 0.059272060625624956,
+      "relative_raw_energy_rms": 0.10299964665095128,
+      "changed_query_scalars": 176128,
+      "maximum_query_weight": 0.56640625,
+      "maximum_norm_weight": 10.296158790588379
+    }
+  ],
+  "best_key": "16",
+  "source_sha256": "0623efff2a0a622c410afcea1264939711c354f8c2417fd37ab36c5f313465d0",
+  "inputs": {
+    "experiments/a90v1_grouped_affine/delta.pt": "55db5c1a45452ea6939949df3416da958c0583cea57d1898790508144a49138d",
+    "experiments/a45v2_query_energy/circuit.pt": "6bd7507032d01c8ff47cc91d8ee3c06a76bd8cf610d10bb470135bda31bb1911",
+    "artifacts/a45_quiet_query3_v1.pt": "ce16b36c044f17b496da11293bda50f692481345b10714c552cbed18d4ac2650",
+    "artifacts/a52v1_value_word.pt": "6fa8cbb0939360588ff9111846c9d7e9f4fa1e240968f1d62e1bc83c26e2c330",
+    "artifacts/a39_inputs_syntax_a.pt": "c3cde1169515ba68602ad4d5b215822161ef7d46b38a7d8a254954769fa5a680",
+    "artifacts/a39_inputs_syntax_stress.pt": "4c003dc1bb5fd769d5c240853949e4861ac95c24442cedd8b830cf4d0522d564",
+    "artifacts/a39_inputs_syntax_c.pt": "2ad5da8e7dccca3c0f17955b2cfa10cfe23d3d6cbb10493e642baa2ef3b59ab7"
+  },
+  "no_answer_targets_activation_replay_or_iterative_fit": true
+}

@@ -1,0 +1,137 @@
+{
+  "checkpoint": "experiments/an1_natural_adder.pt",
+  "checkpoint_sha256": "752f730a1c628fb0ace0e48da70f5ed7148f6d366bbed0cbffad52694112d54e",
+  "shakespeare": {
+    "tokens": 111536,
+    "cross_entropy": NaN,
+    "host_cross_entropy": 1.5301572223455933,
+    "cross_entropy_increase": NaN,
+    "argmax_agreement": 0.9843906900014345,
+    "arithmetic_probability_mass": NaN,
+    "preservation_pass": false
+  },
+  "rungs": [
+    {
+      "rung": "R5",
+      "correct": 19625,
+      "total": 20000,
+      "accuracy": 0.98125,
+      "threshold": 0.99,
+      "arithmetic_pass": false,
+      "dataset_sha256": "d365608e22170f4db1eb5c31886ee416a2ddf3143398d2410211d56849d70e20",
+      "seed": 20261108,
+      "failures": [
+        {
+          "prompt": " \n86+991=",
+          "expected": "1077\n",
+          "generated": "1076\n"
+        },
+        {
+          "prompt": "841+545=",
+          "expected": "1386\n",
+          "generated": "1385\n"
+        },
+        {
+          "prompt": "I have\n952+305=",
+          "expected": "1257\n",
+          "generated": "1256\n"
+        },
+        {
+          "prompt": "ad, fearing you would not c\n605+974=",
+          "expected": "1579\n",
+          "generated": "1578\n"
+        },
+        {
+          "prompt": " contented.\n\nPETRUCHIO:\nI tell thee, Kate, 't\n994+964=",
+          "expected": "1958\n",
+          "generated": "1957\n"
+        },
+        {
+          "prompt": "rofit\nThan other princesses can that have more time\n926+80=",
+          "expected": "1006\n",
+          "generated": "1005\n"
+        },
+        {
+          "prompt": " father,\nMake not too ras\n831+627=",
+          "expected": "1458\n",
+          "generated": "1457\n"
+        },
+        {
+          "prompt": "priest of Saint Luke's church is at your\ncommand a\n822+991=",
+          "expected": "1813\n",
+          "generated": "1812\n"
+        },
+        {
+          "prompt": "Kate, sit down; I know you have a stomach.\n\n176+979=",
+          "expected": "1155\n",
+          "generated": "1154\n"
+        },
+        {
+          "prompt": "ANTONIO:\nWe t\n356+799=",
+          "expected": "1155\n",
+          "generated": "1154\n"
+        },
+        {
+          "prompt": "t sit and sit, and ea\n941+186=",
+          "expected": "1127\n",
+          "generated": "1126\n"
+        },
+        {
+          "prompt": "y state grew stranger,\n939+96=",
+          "expected": "1035\n",
+          "generated": "1034\n"
+        },
+        {
+          "prompt": "s?\n\nBIONDELLO:\nWho? that Petruchio c\n908+99=",
+          "expected": "1007\n",
+          "generated": "1006\n"
+        },
+        {
+          "prompt": "dies soft a\n6+997=",
+          "expected": "1003\n",
+          "generated": "1002\n"
+        },
+        {
+          "prompt": "\nSpoke like an officer; ha' to \n992+42=",
+          "expected": "1034\n",
+          "generated": "1033\n"
+        },
+        {
+          "prompt": "589+653=",
+          "expected": "1242\n",
+          "generated": "1241\n"
+        },
+        {
+          "prompt": "oof of my mouth, my heart in my\nbelly, ere I s\n743+646=",
+          "expected": "1389\n",
+          "generated": "1388\n"
+        },
+        {
+          "prompt": " be your cheer:\nCome, sir; w\n9+548=",
+          "expected": "557\n",
+          "generated": "556\n"
+        },
+        {
+          "prompt": " the end of\nthis controversy.\n\nTRAN\n263+795=",
+          "expected": "1058\n",
+          "generated": "1057\n"
+        },
+        {
+          "prompt": "\n590+884=",
+          "expected": "1474\n",
+          "generated": "1473\n"
+        }
+      ],
+      "pass": false
+    }
+  ],
+  "seconds": 12.24158066601376,
+  "budget_left": {
+    "forward": 36,
+    "score": 22
+  },
+  "memory": {
+    "rss_bytes": 1936424960,
+    "available_bytes": 6007881728
+  }
+}

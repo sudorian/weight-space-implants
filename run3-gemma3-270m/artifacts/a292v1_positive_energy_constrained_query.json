@@ -1,0 +1,5747 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt",
+  "baseline": {
+    "validation_paired_HOST_causal_score_MSE": 0.001424562745747269,
+    "validation_same_input_HOST_causal_score_MSE": 0.0008332132856094103,
+    "validation_paired_HOST_query_RMS": 0.031507981128566065,
+    "minimum_source_routing_margin": 7.999993981397828,
+    "current32_source_margin": 7.999993981397828,
+    "historical512_source_margin": 8.102596743784185
+  },
+  "source_penalty_trials": [
+    0.0,
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "asymptotic_margin_trials": [
+    8.25,
+    8.5,
+    9.0,
+    10.0,
+    12.0
+  ],
+  "energy_ridge_trials": [
+    1e-06,
+    0.0001,
+    0.01,
+    1.0,
+    100.0
+  ],
+  "fixed_source_covariance_ridge": 1e-06,
+  "source_positions": [
+    3,
+    2,
+    1,
+    0
+  ],
+  "source_direction_training_windows": 1120,
+  "source_direction_holdback_windows": 544,
+  "source_routing_bound_windows": 1664,
+  "training_word_windows": 192,
+  "validation_word_windows": 64,
+  "source_geometry": [
+    {
+      "source_penalty": 0.0,
+      "mean_constraint_maximum_error": 2.4702462297909733e-15,
+      "minimum_gaps": [
+        0.03718512068556583,
+        0.04080759352961706,
+        0.05640257674195831,
+        0.05990887971432208
+      ],
+      "minimum_training_gaps": [
+        0.0557611380428584,
+        0.05454591764119552,
+        0.05640257674195831,
+        0.05990887971432208
+      ],
+      "minimum_holdback_gaps": [
+        0.03718512068556583,
+        0.04080759352961706,
+        0.05640257674195831,
+        0.06005407983122733
+      ],
+      "positive_all_source_gaps": true
+    },
+    {
+      "source_penalty": 0.01,
+      "mean_constraint_maximum_error": 2.733924198139448e-15,
+      "minimum_gaps": [
+        0.03677381649282334,
+        0.03965919834314664,
+        0.05479296272725649,
+        0.05971319702780692
+      ],
+      "minimum_training_gaps": [
+        0.05401246902976198,
+        0.05324985626513495,
+        0.05479296272725649,
+        0.05971319702780692
+      ],
+      "minimum_holdback_gaps": [
+        0.03677381649282334,
+        0.03965919834314664,
+        0.05479296272725649,
+        0.06030983052601956
+      ],
+      "positive_all_source_gaps": true
+    },
+    {
+      "source_penalty": 0.1,
+      "mean_constraint_maximum_error": 3.774758283725532e-15,
+      "minimum_gaps": [
+        0.04080095849511034,
+        0.04687224506249376,
+        0.055342414815464126,
+        0.05920697495368683
+      ],
+      "minimum_training_gaps": [
+        0.048618730508112475,
+        0.04687224506249376,
+        0.055342414815464126,
+        0.05920697495368683
+      ],
+      "minimum_holdback_gaps": [
+        0.04080095849511034,
+        0.04687224506249376,
+        0.05587750684898177,
+        0.05941424594302097
+      ],
+      "positive_all_source_gaps": true
+    },
+    {
+      "source_penalty": 1.0,
+      "mean_constraint_maximum_error": 3.3306690738754696e-15,
+      "minimum_gaps": [
+        0.038945080251720124,
+        0.02818615350290129,
+        0.05245281421014828,
+        0.05793018411996884
+      ],
+      "minimum_training_gaps": [
+        0.038945080251720124,
+        0.02818615350290129,
+        0.05245281421014828,
+        0.05812092631294734
+      ],
+      "minimum_holdback_gaps": [
+        0.039691248318341255,
+        0.02818615350290129,
+        0.05245281421014828,
+        0.05793018411996884
+      ],
+      "positive_all_source_gaps": true
+    },
+    {
+      "source_penalty": 10.0,
+      "mean_constraint_maximum_error": 5.88418203051333e-15,
+      "minimum_gaps": [
+        0.021540925131765608,
+        -0.0006829290354459575,
+        0.03905134694203411,
+        0.053785188992616
+      ],
+      "minimum_training_gaps": [
+        0.021540925131765608,
+        -0.0006829290354459575,
+        0.03905134694203411,
+        0.053785188992616
+      ],
+      "minimum_holdback_gaps": [
+        0.025985015184793916,
+        -0.0006829290354459575,
+        0.03905134951874528,
+        0.054857178821856464
+      ],
+      "positive_all_source_gaps": false
+    }
+  ],
+  "trials": [
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        202.08041571478674,
+        251.3918093037239,
+        80.7814060922528,
+        11.16553778494705
+      ],
+      "shared_profile_level_squared": 251.39181181764198,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.0605558804078489,
+          0.04692190680357641,
+          0.019874004180875475,
+          0.011769890926858784
+        ],
+        "analytic_source_margins": [
+          8.000022926066627,
+          8.000048469036525,
+          8.000130895856834,
+          8.000291253358403
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 4.284196343348736e-05,
+      "maximum_programme_energy_constraint_error": 6.072175593580355e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.06054965825269302,
+          0.046928424297435094,
+          0.019872547834747817,
+          0.011770582314666716
+        ],
+        "analytic_source_margins": [
+          8.000022927305762,
+          8.000048464326268,
+          8.000130914870525,
+          8.00029122489289
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 36.83468921251599,
+      "validation_same_input_HOST_causal_score_MSE": 36.83136374109028,
+      "validation_paired_HOST_query_RMS": 3.929898291793949,
+      "minimum_source_routing_margin": 8.000023122949642,
+      "current32_source_margin": 9.275696421642271,
+      "historical512_source_margin": 8.000023122949642,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.1581820547580719,
+      "maximum_query_norm_weight": 32.309207916259766,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        202.08041571478674,
+        251.3918093037239,
+        80.7814060922528,
+        11.16553778494705
+      ],
+      "shared_profile_level_squared": 251.39181181764198,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.0605558804078489,
+          0.04692190680357641,
+          0.019874004180875475,
+          0.011769890926858784
+        ],
+        "analytic_source_margins": [
+          8.000022926066627,
+          8.000048469036525,
+          8.000130895856834,
+          8.000291253358403
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 4.2829841317323546e-05,
+      "maximum_programme_energy_constraint_error": 6.194296633113585e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.060549655058738945,
+          0.046928426598019796,
+          0.019872551456980327,
+          0.011770582345154691
+        ],
+        "analytic_source_margins": [
+          8.000022927306288,
+          8.000048464324356,
+          8.00013091483429,
+          8.00029122488795
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 36.83470360453568,
+      "validation_same_input_HOST_causal_score_MSE": 36.83137813271424,
+      "validation_paired_HOST_query_RMS": 3.9298990376310523,
+      "minimum_source_routing_margin": 8.000022420736226,
+      "current32_source_margin": 9.275696696295778,
+      "historical512_source_margin": 8.000022420736226,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.1581820547580719,
+      "maximum_query_norm_weight": 32.309207916259766,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        202.08041571478674,
+        251.3918093037239,
+        80.7814060922528,
+        11.16553778494705
+      ],
+      "shared_profile_level_squared": 251.39181181764198,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.0605558804078489,
+          0.04692190680357641,
+          0.019874004180875475,
+          0.011769890926858784
+        ],
+        "analytic_source_margins": [
+          8.000022926066627,
+          8.000048469036525,
+          8.000130895856834,
+          8.000291253358403
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 4.178037197987664e-05,
+      "maximum_programme_energy_constraint_error": 5.519049101870754e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.06054937130015164,
+          0.0469286013012933,
+          0.01987286421126419,
+          0.011770586611302071
+        ],
+        "analytic_source_margins": [
+          8.00002292735347,
+          8.000048464181091,
+          8.00013091171845,
+          8.000291224373735
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 36.835980086839484,
+      "validation_same_input_HOST_causal_score_MSE": 36.83265457514094,
+      "validation_paired_HOST_query_RMS": 3.929963061132989,
+      "minimum_source_routing_margin": 8.000022684869455,
+      "current32_source_margin": 9.27568666904573,
+      "historical512_source_margin": 8.000022684869455,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.1581818163394928,
+      "maximum_query_norm_weight": 32.309207916259766,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        202.08041571478674,
+        251.3918093037239,
+        80.7814060922528,
+        11.16553778494705
+      ],
+      "shared_profile_level_squared": 251.39181181764198,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.0605558804078489,
+          0.04692190680357641,
+          0.019874004180875475,
+          0.011769890926858784
+        ],
+        "analytic_source_margins": [
+          8.000022926066627,
+          8.000048469036525,
+          8.000130895856834,
+          8.000291253358403
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 4.911584439371139e-05,
+      "maximum_programme_energy_constraint_error": 5.24198826823906e-11,
+      "final_routing": {
+        "programme_factors": [
+          0.0605470479094275,
+          0.04692726185574111,
+          0.0198748775012571,
+          0.011771202307747941
+        ],
+        "analytic_source_margins": [
+          8.000022927923045,
+          8.000048466602225,
+          8.000130896755893,
+          8.000291194727696
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 36.83489437138989,
+      "validation_same_input_HOST_causal_score_MSE": 36.83156871190073,
+      "validation_paired_HOST_query_RMS": 3.9298640613436895,
+      "minimum_source_routing_margin": 8.0000223732386,
+      "current32_source_margin": 9.275708646354888,
+      "historical512_source_margin": 8.0000223732386,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.1581747680902481,
+      "maximum_query_norm_weight": 32.309207916259766,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        202.08041571478674,
+        251.3918093037239,
+        80.7814060922528,
+        11.16553778494705
+      ],
+      "shared_profile_level_squared": 251.39181181764198,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.0605558804078489,
+          0.04692190680357641,
+          0.019874004180875475,
+          0.011769890926858784
+        ],
+        "analytic_source_margins": [
+          8.000022926066627,
+          8.000048469036525,
+          8.000130895856834,
+          8.000291253358403
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.0007025561455723279,
+      "maximum_programme_energy_constraint_error": 1.0732932030876679e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.060547136008629314,
+          0.046936894514560096,
+          0.019878648609228,
+          0.011778713561184952
+        ],
+        "analytic_source_margins": [
+          8.000022930304327,
+          8.000048474329004,
+          8.000130916990956,
+          8.000290879192875
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 36.68652673007848,
+      "validation_same_input_HOST_causal_score_MSE": 36.6832042615151,
+      "validation_paired_HOST_query_RMS": 3.9217445918888743,
+      "minimum_source_routing_margin": 8.000022822858273,
+      "current32_source_margin": 9.27559874595094,
+      "historical512_source_margin": 8.000022822858273,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.1582929491996765,
+      "maximum_query_norm_weight": 32.309207916259766,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        214.51327875692704,
+        266.85852300744256,
+        85.78197442754673,
+        12.11341979827157
+      ],
+      "shared_profile_level_squared": 266.8585256760278,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.05250850928697907,
+          0.043010478489394544,
+          0.018782221769242904,
+          0.011254563186405725
+        ],
+        "analytic_source_margins": [
+          8.000027102970972,
+          8.000053731071068,
+          8.000140655331085,
+          8.000305725656037
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.01000000000000012,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 4.034814324524626e-05,
+      "maximum_programme_energy_constraint_error": 3.8046259354251523e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.05250336119213705,
+          0.04301627127465479,
+          0.018780908703104275,
+          0.01125521652647212
+        ],
+        "analytic_source_margins": [
+          8.00002710456305,
+          8.000053725603648,
+          8.000140675707499,
+          8.000305695051757
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 39.74304826897058,
+      "validation_same_input_HOST_causal_score_MSE": 39.73960663245798,
+      "validation_paired_HOST_query_RMS": 4.082909789259556,
+      "minimum_source_routing_margin": 8.000027301451276,
+      "current32_source_margin": 9.358592783598018,
+      "historical512_source_margin": 8.000027301451276,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.1535298377275467,
+      "maximum_query_norm_weight": 33.31857681274414,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        214.51327875692704,
+        266.85852300744256,
+        85.78197442754673,
+        12.11341979827157
+      ],
+      "shared_profile_level_squared": 266.8585256760278,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.05250850928697907,
+          0.043010478489394544,
+          0.018782221769242904,
+          0.011254563186405725
+        ],
+        "analytic_source_margins": [
+          8.000027102970972,
+          8.000053731071068,
+          8.000140655331085,
+          8.000305725656037
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 4.033669624581332e-05,
+      "maximum_programme_energy_constraint_error": 4.6353289784221293e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.05250335851559833,
+          0.043016273311603036,
+          0.01878091201728588,
+          0.01125521655232236
+        ],
+        "analytic_source_margins": [
+          8.000027104563737,
+          8.000053725601443,
+          8.000140675668082,
+          8.000305695046785
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 39.743064664181766,
+      "validation_same_input_HOST_causal_score_MSE": 39.73962302725497,
+      "validation_paired_HOST_query_RMS": 4.082910576174317,
+      "minimum_source_routing_margin": 8.000027305396452,
+      "current32_source_margin": 9.3585925667748,
+      "historical512_source_margin": 8.000027305396452,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.1535298377275467,
+      "maximum_query_norm_weight": 33.31857681274414,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        214.51327875692704,
+        266.85852300744256,
+        85.78197442754673,
+        12.11341979827157
+      ],
+      "shared_profile_level_squared": 266.8585256760278,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.05250850928697907,
+          0.043010478489394544,
+          0.018782221769242904,
+          0.011254563186405725
+        ],
+        "analytic_source_margins": [
+          8.000027102970972,
+          8.000053731071068,
+          8.000140655331085,
+          8.000305725656037
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.01000000000000012,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 3.934578843856183e-05,
+      "maximum_programme_energy_constraint_error": 4.101323458882745e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.052503120863763984,
+          0.04301642816426697,
+          0.018781198221575576,
+          0.011255220310667162
+        ],
+        "analytic_source_margins": [
+          8.000027104625062,
+          8.000053725435864,
+          8.000140672278036,
+          8.000305694525094
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 39.744434687343585,
+      "validation_same_input_HOST_causal_score_MSE": 39.74099300918104,
+      "validation_paired_HOST_query_RMS": 4.082976772493207,
+      "minimum_source_routing_margin": 8.0000275228613,
+      "current32_source_margin": 9.35858252659734,
+      "historical512_source_margin": 8.0000275228613,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.1535295844078064,
+      "maximum_query_norm_weight": 33.31857681274414,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        214.51327875692704,
+        266.85852300744256,
+        85.78197442754673,
+        12.11341979827157
+      ],
+      "shared_profile_level_squared": 266.8585256760278,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.05250850928697907,
+          0.043010478489394544,
+          0.018782221769242904,
+          0.011254563186405725
+        ],
+        "analytic_source_margins": [
+          8.000027102970972,
+          8.000053731071068,
+          8.000140655331085,
+          8.000305725656037
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 4.6232348371313236e-05,
+      "maximum_programme_energy_constraint_error": 4.911877347442306e-11,
+      "final_routing": {
+        "programme_factors": [
+          0.05250122503029327,
+          0.0430153172677576,
+          0.018783060402018655,
+          0.011255797549963243
+        ],
+        "analytic_source_margins": [
+          8.0000271053491,
+          8.000053728129089,
+          8.00014065566382,
+          8.00030566309844
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 39.74326803061108,
+      "validation_same_input_HOST_causal_score_MSE": 39.73982619984018,
+      "validation_paired_HOST_query_RMS": 4.08287448010093,
+      "minimum_source_routing_margin": 8.000027845778414,
+      "current32_source_margin": 9.358604738091143,
+      "historical512_source_margin": 8.000027845778414,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.15352271497249603,
+      "maximum_query_norm_weight": 33.31857681274414,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        214.51327875692704,
+        266.85852300744256,
+        85.78197442754673,
+        12.11341979827157
+      ],
+      "shared_profile_level_squared": 266.8585256760278,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.05250850928697907,
+          0.043010478489394544,
+          0.018782221769242904,
+          0.011254563186405725
+        ],
+        "analytic_source_margins": [
+          8.000027102970972,
+          8.000053731071068,
+          8.000140655331085,
+          8.000305725656037
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.0006602834111056893,
+      "maximum_programme_energy_constraint_error": 1.307622493283985e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.052501936369624545,
+          0.04302463003274286,
+          0.01878673254573634,
+          0.01126285837325772
+        ],
+        "analytic_source_margins": [
+          8.000027108230329,
+          8.000053735935618,
+          8.000140673873357,
+          8.000305325901952
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 39.58427500070368,
+      "validation_same_input_HOST_causal_score_MSE": 39.58083646562032,
+      "validation_paired_HOST_query_RMS": 4.074497912639864,
+      "minimum_source_routing_margin": 8.000027238281596,
+      "current32_source_margin": 9.358459939603401,
+      "historical512_source_margin": 8.000027238281596,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.15363764762878418,
+      "maximum_query_norm_weight": 33.31857681274414,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        240.49239556139912,
+        299.1770292540185,
+        96.18840656699088,
+        14.18428769596567
+      ],
+      "shared_profile_level_squared": 299.1770322457888,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.041511379063101594,
+          0.03686391483153957,
+          0.016918644332284946,
+          0.010341666967625925
+        ],
+        "analytic_source_margins": [
+          8.000035900075805,
+          8.0000646031035,
+          8.00016084141796,
+          8.000335578581401
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.01000000000000012,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 3.59727268275904e-05,
+      "maximum_programme_energy_constraint_error": 7.442301865032303e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.04150765353303901,
+          0.03686859842432442,
+          0.016917562519898986,
+          0.010342252792796339
+        ],
+        "analytic_source_margins": [
+          8.000035902460118,
+          8.000064596004904,
+          8.000160864534779,
+          8.000335543525466
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 45.8925018413941,
+      "validation_same_input_HOST_causal_score_MSE": 45.8888278727385,
+      "validation_paired_HOST_query_RMS": 4.388992718618031,
+      "minimum_source_routing_margin": 8.00003542123995,
+      "current32_source_margin": 9.523214591465521,
+      "historical512_source_margin": 8.00003542123995,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.14500071108341217,
+      "maximum_query_norm_weight": 35.33731460571289,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        240.49239556139912,
+        299.1770292540185,
+        96.18840656699088,
+        14.18428769596567
+      ],
+      "shared_profile_level_squared": 299.1770322457888,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.041511379063101594,
+          0.03686391483153957,
+          0.016918644332284946,
+          0.010341666967625925
+        ],
+        "analytic_source_margins": [
+          8.000035900075805,
+          8.0000646031035,
+          8.00016084141796,
+          8.000335578581401
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 3.596247339116646e-05,
+      "maximum_programme_energy_constraint_error": 7.900243145296745e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.041507651549099585,
+          0.036868600059039566,
+          0.01691756532700654,
+          0.010342252811268313
+        ],
+        "analytic_source_margins": [
+          8.000035902461166,
+          8.00006459600207,
+          8.000160864488784,
+          8.000335543520446
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 45.89251955847175,
+      "validation_same_input_HOST_causal_score_MSE": 45.88884558919697,
+      "validation_paired_HOST_query_RMS": 4.388993504952435,
+      "minimum_source_routing_margin": 8.00003563453535,
+      "current32_source_margin": 9.523214633593094,
+      "historical512_source_margin": 8.00003563453535,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.14500071108341217,
+      "maximum_query_norm_weight": 35.33731460571289,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        240.49239556139912,
+        299.1770292540185,
+        96.18840656699088,
+        14.18428769596567
+      ],
+      "shared_profile_level_squared": 299.1770322457888,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.041511379063101594,
+          0.03686391483153957,
+          0.016918644332284946,
+          0.010341666967625925
+        ],
+        "analytic_source_margins": [
+          8.000035900075805,
+          8.0000646031035,
+          8.00016084141796,
+          8.000335578581401
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 3.507506392707159e-05,
+      "maximum_programme_energy_constraint_error": 7.815664110710625e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.04150747558056574,
+          0.03686872457781102,
+          0.016917807816535336,
+          0.010342255747341253
+        ],
+        "analytic_source_margins": [
+          8.000035902555068,
+          8.000064595788944,
+          8.000160860530418,
+          8.000335542985168
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 45.89408926745991,
+      "validation_same_input_HOST_causal_score_MSE": 45.89041525411076,
+      "validation_paired_HOST_query_RMS": 4.38906408948968,
+      "minimum_source_routing_margin": 8.000035939372944,
+      "current32_source_margin": 9.52320335881782,
+      "historical512_source_margin": 8.000035939372944,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.14500047266483307,
+      "maximum_query_norm_weight": 35.33731460571289,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        240.49239556139912,
+        299.1770292540185,
+        96.18840656699088,
+        14.18428769596567
+      ],
+      "shared_profile_level_squared": 299.1770322457888,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.041511379063101594,
+          0.03686391483153957,
+          0.016918644332284946,
+          0.010341666967625925
+        ],
+        "analytic_source_margins": [
+          8.000035900075805,
+          8.0000646031035,
+          8.00016084141796,
+          8.000335578581401
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 4.118056626776654e-05,
+      "maximum_programme_energy_constraint_error": 2.9964192845481915e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.04150613978456813,
+          0.036867943351455656,
+          0.016919416494371765,
+          0.010342766115534498
+        ],
+        "analytic_source_margins": [
+          8.00003590361737,
+          8.00006459900669,
+          8.000160840405046,
+          8.000335507879385
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 45.89275423849442,
+      "validation_same_input_HOST_causal_score_MSE": 45.88908006310029,
+      "validation_paired_HOST_query_RMS": 4.388955314509675,
+      "minimum_source_routing_margin": 8.000036370063636,
+      "current32_source_margin": 9.523224525457923,
+      "historical512_source_margin": 8.000036370063636,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.14499393105506897,
+      "maximum_query_norm_weight": 35.33731460571289,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        240.49239556139912,
+        299.1770292540185,
+        96.18840656699088,
+        14.18428769596567
+      ],
+      "shared_profile_level_squared": 299.1770322457888,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.041511379063101594,
+          0.03686391483153957,
+          0.016918644332284946,
+          0.010341666967625925
+        ],
+        "analytic_source_margins": [
+          8.000035900075805,
+          8.0000646031035,
+          8.00016084141796,
+          8.000335578581401
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.0005865388105053184,
+      "maximum_programme_energy_constraint_error": 2.836339346717891e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.04150752940039296,
+          0.03687657414356066,
+          0.016922872748419228,
+          0.01034903947732951
+        ],
+        "analytic_source_margins": [
+          8.00003590742344,
+          8.000064606384246,
+          8.000160853434952,
+          8.000335125723664
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 45.711437236011996,
+      "validation_same_input_HOST_causal_score_MSE": 45.70776656498448,
+      "validation_paired_HOST_query_RMS": 4.380065623783916,
+      "minimum_source_routing_margin": 8.000035474755302,
+      "current32_source_margin": 9.523005651242809,
+      "historical512_source_margin": 8.000035474755302,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.1451028287410736,
+      "maximum_query_norm_weight": 35.33731460571289,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        296.9041920511101,
+        369.3543571037266,
+        118.77065403182962,
+        18.994884477058488
+      ],
+      "shared_profile_level_squared": 369.35436079727015,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.03059968727252301,
+          0.028659995178202516,
+          0.01410586917813415,
+          0.00888063733870773
+        ],
+        "analytic_source_margins": [
+          8.000141969812544,
+          8.000087721802004,
+          8.000203901552464,
+          8.000398985671143
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 2.9116604461546534e-05,
+      "maximum_programme_energy_constraint_error": 4.2415332726746507e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.03060147022254748,
+          0.028663271366249528,
+          0.014105101849471221,
+          0.008881115475645199
+        ],
+        "analytic_source_margins": [
+          8.000141958950072,
+          8.000087711016269,
+          8.000203930209187,
+          8.000398941030099
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 59.52234540626685,
+      "validation_same_input_HOST_causal_score_MSE": 59.518206768282425,
+      "validation_paired_HOST_query_RMS": 5.001346518946014,
+      "minimum_source_routing_margin": 8.000087692314887,
+      "current32_source_margin": 9.848458100984736,
+      "historical512_source_margin": 8.000399460401503,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.13050107657909393,
+      "maximum_query_norm_weight": 39.374794006347656,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        296.9041920511101,
+        369.3543571037266,
+        118.77065403182962,
+        18.994884477058488
+      ],
+      "shared_profile_level_squared": 369.35436079727015,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.03059968727252301,
+          0.028659995178202516,
+          0.01410586917813415,
+          0.00888063733870773
+        ],
+        "analytic_source_margins": [
+          8.000141969812544,
+          8.000087721802004,
+          8.000203901552464,
+          8.000398985671143
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 2.9108244588558777e-05,
+      "maximum_programme_energy_constraint_error": 4.69832350702587e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.03060146984977171,
+          0.02866327249404191,
+          0.014105103941407762,
+          0.008881115484549536
+        ],
+        "analytic_source_margins": [
+          8.000141958953828,
+          8.000087711012053,
+          8.000203930149139,
+          8.000398941025052
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 59.522367726394606,
+      "validation_same_input_HOST_causal_score_MSE": 59.518229087797685,
+      "validation_paired_HOST_query_RMS": 5.001347418236617,
+      "minimum_source_routing_margin": 8.00008741693792,
+      "current32_source_margin": 9.84845769688157,
+      "historical512_source_margin": 8.000398089333528,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.13050107657909393,
+      "maximum_query_norm_weight": 39.374794006347656,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        296.9041920511101,
+        369.3543571037266,
+        118.77065403182962,
+        18.994884477058488
+      ],
+      "shared_profile_level_squared": 369.35436079727015,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.03059968727252301,
+          0.028659995178202516,
+          0.01410586917813415,
+          0.00888063733870773
+        ],
+        "analytic_source_margins": [
+          8.000141969812544,
+          8.000087721802004,
+          8.000203901552464,
+          8.000398985671143
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 2.8384944219908856e-05,
+      "maximum_programme_energy_constraint_error": 3.8301982158391926e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.030601439765665473,
+          0.02866335867749688,
+          0.01410528474713484,
+          0.008881117312567879
+        ],
+        "analytic_source_margins": [
+          8.000141959268573,
+          8.000087710693641,
+          8.000203924977956,
+          8.000398940467418
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 59.52436999148032,
+      "validation_same_input_HOST_causal_score_MSE": 59.520231303131645,
+      "validation_paired_HOST_query_RMS": 5.0014265045403254,
+      "minimum_source_routing_margin": 8.000088206544959,
+      "current32_source_margin": 9.84844413002233,
+      "historical512_source_margin": 8.000398943028957,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.13050085306167603,
+      "maximum_query_norm_weight": 39.374794006347656,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        296.9041920511101,
+        369.3543571037266,
+        118.77065403182962,
+        18.994884477058488
+      ],
+      "shared_profile_level_squared": 369.35436079727015,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.03059968727252301,
+          0.028659995178202516,
+          0.01410586917813415,
+          0.00888063733870773
+        ],
+        "analytic_source_margins": [
+          8.000141969812544,
+          8.000087721802004,
+          8.000203901552464,
+          8.000398985671143
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 3.328336527950976e-05,
+      "maximum_programme_energy_constraint_error": 1.0010457143382608e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.030601728091017376,
+          0.02866294917180679,
+          0.014106523825502721,
+          0.008881524523235056
+        ],
+        "analytic_source_margins": [
+          8.000141960249724,
+          8.00008771486193,
+          8.000203897036565,
+          8.000398897534405
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 59.52266353165922,
+      "validation_same_input_HOST_causal_score_MSE": 59.518524662424575,
+      "validation_paired_HOST_query_RMS": 5.001304764776242,
+      "minimum_source_routing_margin": 8.000088293786183,
+      "current32_source_margin": 9.848462476663151,
+      "historical512_source_margin": 8.000399121437225,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.1304948776960373,
+      "maximum_query_norm_weight": 39.374794006347656,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        296.9041920511101,
+        369.3543571037266,
+        118.77065403182962,
+        18.994884477058488
+      ],
+      "shared_profile_level_squared": 369.35436079727015,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.03059968727252301,
+          0.028659995178202516,
+          0.01410586917813415,
+          0.00888063733870773
+        ],
+        "analytic_source_margins": [
+          8.000141969812544,
+          8.000087721802004,
+          8.000203901552464,
+          8.000398985671143
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.0004720560151931123,
+      "maximum_programme_energy_constraint_error": 9.393054226710561e-11,
+      "final_routing": {
+        "programme_factors": [
+          0.030604475640780896,
+          0.02867027232555464,
+          0.014109541903509208,
+          0.008886571711485653
+        ],
+        "analytic_source_margins": [
+          8.000141972389928,
+          8.000087718990665,
+          8.00020389541608,
+          8.00039841898889
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 59.29241909470671,
+      "validation_same_input_HOST_causal_score_MSE": 59.288284144677775,
+      "validation_paired_HOST_query_RMS": 4.991392491128031,
+      "minimum_source_routing_margin": 8.00008767814242,
+      "current32_source_margin": 9.848071088273324,
+      "historical512_source_margin": 8.000398055001092,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.13059338927268982,
+      "maximum_query_norm_weight": 39.374794006347656,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        427.54203655359834,
+        531.8702742293664,
+        171.0360785852685,
+        31.422112597904963
+      ],
+      "shared_profile_level_squared": 531.8702795480691,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.022655171616493858,
+          0.019801254730413696,
+          0.01056387862004399,
+          0.006890728181526563
+        ],
+        "analytic_source_margins": [
+          8.000204454344038,
+          8.000139429472256,
+          8.000300893006493,
+          8.00054094983862
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 2.020065900235696e-05,
+      "maximum_programme_energy_constraint_error": 3.483625440797551e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.022656314870775386,
+          0.019803146786957312,
+          0.010563440791323566,
+          0.006891062985604391
+        ],
+        "analytic_source_margins": [
+          8.000204436096077,
+          8.00013940983327,
+          8.000300933005171,
+          8.0005408833842
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 92.10566202317426,
+      "validation_same_input_HOST_causal_score_MSE": 92.10059404235412,
+      "validation_paired_HOST_query_RMS": 6.226542977475901,
+      "minimum_source_routing_margin": 8.000138907566404,
+      "current32_source_margin": 10.477805042648795,
+      "historical512_source_margin": 8.000540904731366,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.10875137895345688,
+      "maximum_query_norm_weight": 47.44975280761719,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        427.54203655359834,
+        531.8702742293664,
+        171.0360785852685,
+        31.422112597904963
+      ],
+      "shared_profile_level_squared": 531.8702795480691,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.022655171616493858,
+          0.019801254730413696,
+          0.01056387862004399,
+          0.006890728181526563
+        ],
+        "analytic_source_margins": [
+          8.000204454344038,
+          8.000139429472256,
+          8.000300893006493,
+          8.00054094983862
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 2.019480425493704e-05,
+      "maximum_programme_energy_constraint_error": 2.0115556850638806e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.022656314654073233,
+          0.019803147423213468,
+          0.010563442084884661,
+          0.0068910629858883665
+        ],
+        "analytic_source_margins": [
+          8.000204436101445,
+          8.000139409825861,
+          8.000300932913738,
+          8.000540883379346
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 92.10569510503498,
+      "validation_same_input_HOST_causal_score_MSE": 92.10062712348329,
+      "validation_paired_HOST_query_RMS": 6.226544007638561,
+      "minimum_source_routing_margin": 8.000139727447314,
+      "current32_source_margin": 10.477806322886867,
+      "historical512_source_margin": 8.000542479024809,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.10875137895345688,
+      "maximum_query_norm_weight": 47.44975280761719,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        427.54203655359834,
+        531.8702742293664,
+        171.0360785852685,
+        31.422112597904963
+      ],
+      "shared_profile_level_squared": 531.8702795480691,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.022655171616493858,
+          0.019801254730413696,
+          0.01056387862004399,
+          0.006890728181526563
+        ],
+        "analytic_source_margins": [
+          8.000204454344038,
+          8.000139429472256,
+          8.000300893006493,
+          8.00054094983862
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 1.9688452821391842e-05,
+      "maximum_programme_energy_constraint_error": 2.175373068881598e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.022656297334164834,
+          0.019803196269254374,
+          0.010563553977314843,
+          0.006891063718734639
+        ],
+        "analytic_source_margins": [
+          8.000204436546795,
+          8.000139409263326,
+          8.000300925029935,
+          8.00054088279336
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 92.10871765089964,
+      "validation_same_input_HOST_causal_score_MSE": 92.10364960857834,
+      "validation_paired_HOST_query_RMS": 6.2266400461484555,
+      "minimum_source_routing_margin": 8.000139419399682,
+      "current32_source_margin": 10.477733772809934,
+      "historical512_source_margin": 8.000541303317455,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.10875117033720016,
+      "maximum_query_norm_weight": 47.44975280761719,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        427.54203655359834,
+        531.8702742293664,
+        171.0360785852685,
+        31.422112597904963
+      ],
+      "shared_profile_level_squared": 531.8702795480691,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.022655171616493858,
+          0.019801254730413696,
+          0.01056387862004399,
+          0.006890728181526563
+        ],
+        "analytic_source_margins": [
+          8.000204454344038,
+          8.000139429472256,
+          8.000300893006493,
+          8.00054094983862
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 2.3047816646059046e-05,
+      "maximum_programme_energy_constraint_error": 2.7224097484837943e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.02265652514739407,
+          0.019803075705796987,
+          0.010564358232779448,
+          0.006891340054782917
+        ],
+        "analytic_source_margins": [
+          8.00020443643413,
+          8.00013941488891,
+          8.000300878507275,
+          8.00054082234984
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 92.1061317580064,
+      "validation_same_input_HOST_causal_score_MSE": 92.10106349710364,
+      "validation_paired_HOST_query_RMS": 6.226492436199743,
+      "minimum_source_routing_margin": 8.000139759813107,
+      "current32_source_margin": 10.47694882571313,
+      "historical512_source_margin": 8.000540668799164,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.10874611139297485,
+      "maximum_query_norm_weight": 47.44975280761719,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        427.54203655359834,
+        531.8702742293664,
+        171.0360785852685,
+        31.422112597904963
+      ],
+      "shared_profile_level_squared": 531.8702795480691,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.022655171616493858,
+          0.019801254730413696,
+          0.01056387862004399,
+          0.006890728181526563
+        ],
+        "analytic_source_margins": [
+          8.000204454344038,
+          8.000139429472256,
+          8.000300893006493,
+          8.00054094983862
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.0003251062627538583,
+      "maximum_programme_energy_constraint_error": 1.4697856342450599e-10,
+      "final_routing": {
+        "programme_factors": [
+          0.022658767178253398,
+          0.01980839092972963,
+          0.010566641957968368,
+          0.006894808614769903
+        ],
+        "analytic_source_margins": [
+          8.00020443772315,
+          8.000139403261075,
+          8.000300831896194,
+          8.000540125601608
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 91.76089709555862,
+      "validation_same_input_HOST_causal_score_MSE": 91.75583357682967,
+      "validation_paired_HOST_query_RMS": 6.214544346821832,
+      "minimum_source_routing_margin": 8.00013984965813,
+      "current32_source_margin": 10.472776373381155,
+      "historical512_source_margin": 8.000540400391404,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.10882873833179474,
+      "maximum_query_norm_weight": 47.44975280761719,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        36.917733521455965,
+        50.03166042350564,
+        12.681049344690281,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.031660923822244,
+      "boosted_channel_count": 228,
+      "initial_routing": {
+        "programme_factors": [
+          0.05936776613498693,
+          0.05243568736939893,
+          0.02510188165762076,
+          0.019135837514705895
+        ],
+        "analytic_source_margins": [
+          8.000025643604534,
+          8.000052785232366,
+          8.000102005070138,
+          8.000158328447634
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.005411564556990159,
+      "maximum_programme_energy_constraint_error": 8.493151844309029e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.05926597495888152,
+          0.052645166914699004,
+          0.02510301797186293,
+          0.019172145250259617
+        ],
+        "analytic_source_margins": [
+          8.000025688776558,
+          8.000052624606358,
+          8.000102135660017,
+          8.000158104639684
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.917866130947765,
+      "validation_same_input_HOST_causal_score_MSE": 0.9167205742439634,
+      "validation_paired_HOST_query_RMS": 0.6314695552145505,
+      "minimum_source_routing_margin": 8.000025458320508,
+      "current32_source_margin": 8.84301940603798,
+      "historical512_source_margin": 8.000025458320508,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.45191454887390137,
+      "maximum_query_norm_weight": 69.73306274414062,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        36.917733521455965,
+        50.03166042350564,
+        12.681049344690281,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.031660923822244,
+      "boosted_channel_count": 228,
+      "initial_routing": {
+        "programme_factors": [
+          0.05936776613498693,
+          0.05243568736939893,
+          0.02510188165762076,
+          0.019135837514705895
+        ],
+        "analytic_source_margins": [
+          8.000025643604534,
+          8.000052785232366,
+          8.000102005070138,
+          8.000158328447634
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.00541235939225595,
+      "maximum_programme_energy_constraint_error": 4.2801393486083675e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.05926595405632849,
+          0.05264516007601208,
+          0.02510301270725752,
+          0.019172146848310128
+        ],
+        "analytic_source_margins": [
+          8.00002568878339,
+          8.00005262460308,
+          8.000102135677654,
+          8.00015810464553
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.9178633729439638,
+      "validation_same_input_HOST_causal_score_MSE": 0.916717816975763,
+      "validation_paired_HOST_query_RMS": 0.6314686073922062,
+      "minimum_source_routing_margin": 8.000025392785792,
+      "current32_source_margin": 8.843018482834754,
+      "historical512_source_margin": 8.000025392785792,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.4519144892692566,
+      "maximum_query_norm_weight": 69.73306274414062,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        36.917733521455965,
+        50.03166042350564,
+        12.681049344690281,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.031660923822244,
+      "boosted_channel_count": 228,
+      "initial_routing": {
+        "programme_factors": [
+          0.05936776613498693,
+          0.05243568736939893,
+          0.02510188165762076,
+          0.019135837514705895
+        ],
+        "analytic_source_margins": [
+          8.000025643604534,
+          8.000052785232366,
+          8.000102005070138,
+          8.000158328447634
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.005485129765212328,
+      "maximum_programme_energy_constraint_error": 1.1459327682012072e-12,
+      "final_routing": {
+        "programme_factors": [
+          0.05926396912011567,
+          0.052644753067803925,
+          0.025102620042365915,
+          0.01917228968677684
+        ],
+        "analytic_source_margins": [
+          8.000025689433505,
+          8.000052624151161,
+          8.000102136961774,
+          8.000158105214027
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.9176136812883146,
+      "validation_same_input_HOST_causal_score_MSE": 0.916468191145329,
+      "validation_paired_HOST_query_RMS": 0.6313823048422493,
+      "minimum_source_routing_margin": 8.000026217364262,
+      "current32_source_margin": 8.842985587582138,
+      "historical512_source_margin": 8.000026217364262,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.4519096314907074,
+      "maximum_query_norm_weight": 69.73306274414062,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        36.917733521455965,
+        50.03166042350564,
+        12.681049344690281,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.031660923822244,
+      "boosted_channel_count": 228,
+      "initial_routing": {
+        "programme_factors": [
+          0.05936776613498693,
+          0.05243568736939893,
+          0.02510188165762076,
+          0.019135837514705895
+        ],
+        "analytic_source_margins": [
+          8.000025643604534,
+          8.000052785232366,
+          8.000102005070138,
+          8.000158328447634
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.007315310147878701,
+      "maximum_programme_energy_constraint_error": 3.5227752555577134e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.05925926198970531,
+          0.05267545166292309,
+          0.025150237321024786,
+          0.019182270166336474
+        ],
+        "analytic_source_margins": [
+          8.000025699306725,
+          8.00005262361327,
+          8.000101928359157,
+          8.000158070107808
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.9126527229832512,
+      "validation_same_input_HOST_causal_score_MSE": 0.9115086262188697,
+      "validation_paired_HOST_query_RMS": 0.6295735093488067,
+      "minimum_source_routing_margin": 8.000025597422699,
+      "current32_source_margin": 8.840000913560676,
+      "historical512_source_margin": 8.000025597422699,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.451974481344223,
+      "maximum_query_norm_weight": 69.73306274414062,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        36.917733521455965,
+        50.03166042350564,
+        12.681049344690281,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.031660923822244,
+      "boosted_channel_count": 228,
+      "initial_routing": {
+        "programme_factors": [
+          0.05936776613498693,
+          0.05243568736939893,
+          0.02510188165762076,
+          0.019135837514705895
+        ],
+        "analytic_source_margins": [
+          8.000025643604534,
+          8.000052785232366,
+          8.000102005070138,
+          8.000158328447634
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.030413565770479076,
+      "maximum_programme_energy_constraint_error": 4.8307080575808463e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.05935582849139886,
+          0.052757825228552546,
+          0.025264303344513028,
+          0.019232414470489758
+        ],
+        "analytic_source_margins": [
+          8.000025700043961,
+          8.000052652691307,
+          8.000101498586002,
+          8.000157797662954
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.9080164924993377,
+      "validation_same_input_HOST_causal_score_MSE": 0.9068754575194035,
+      "validation_paired_HOST_query_RMS": 0.6276677452807804,
+      "minimum_source_routing_margin": 8.000025438123513,
+      "current32_source_margin": 8.83628214170821,
+      "historical512_source_margin": 8.000025438123513,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.45182791352272034,
+      "maximum_query_norm_weight": 69.73306274414062,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        39.417070606384954,
+        53.21053738612493,
+        13.964690707900932,
+        0.0
+      ],
+      "shared_profile_level_squared": 53.2105379182303,
+      "boosted_channel_count": 230,
+      "initial_routing": {
+        "programme_factors": [
+          0.052158283334625806,
+          0.04841107636400995,
+          0.02367855155356106,
+          0.018340487527018192
+        ],
+        "analytic_source_margins": [
+          8.000030128255954,
+          8.0000577855031,
+          8.000107860813666,
+          8.00016367052248
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.005064502213517901,
+      "maximum_programme_energy_constraint_error": 1.5545332783366173e-12,
+      "final_routing": {
+        "programme_factors": [
+          0.05207816269314156,
+          0.04859903589261323,
+          0.023682208775512553,
+          0.01837567143331585
+        ],
+        "analytic_source_margins": [
+          8.000030182926062,
+          8.000057606731897,
+          8.000107984342867,
+          8.000163427104006
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 1.0195853750030095,
+      "validation_same_input_HOST_causal_score_MSE": 1.0184074619295598,
+      "validation_paired_HOST_query_RMS": 0.6659626532439623,
+      "minimum_source_routing_margin": 8.000030502081362,
+      "current32_source_margin": 8.865586932737145,
+      "historical512_source_margin": 8.000030502081362,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.4464651644229889,
+      "maximum_query_norm_weight": 71.945556640625,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        39.417070606384954,
+        53.21053738612493,
+        13.964690707900932,
+        0.0
+      ],
+      "shared_profile_level_squared": 53.2105379182303,
+      "boosted_channel_count": 230,
+      "initial_routing": {
+        "programme_factors": [
+          0.052158283334625806,
+          0.04841107636400995,
+          0.02367855155356106,
+          0.018340487527018192
+        ],
+        "analytic_source_margins": [
+          8.000030128255954,
+          8.0000577855031,
+          8.000107860813666,
+          8.00016367052248
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.005065238005365975,
+      "maximum_programme_energy_constraint_error": 1.730490781741213e-12,
+      "final_routing": {
+        "programme_factors": [
+          0.052078145377785524,
+          0.04859902880660473,
+          0.02368220371710873,
+          0.018375672997751332
+        ],
+        "analytic_source_margins": [
+          8.000030182934555,
+          8.000057606729447,
+          8.00010798436277,
+          8.000163427109124
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 1.0195824560239857,
+      "validation_same_input_HOST_causal_score_MSE": 1.0184045436927378,
+      "validation_paired_HOST_query_RMS": 0.6659616956326274,
+      "minimum_source_routing_margin": 8.000030555537112,
+      "current32_source_margin": 8.865586694576995,
+      "historical512_source_margin": 8.000030555537112,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.4464651644229889,
+      "maximum_query_norm_weight": 71.945556640625,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        39.417070606384954,
+        53.21053738612493,
+        13.964690707900932,
+        0.0
+      ],
+      "shared_profile_level_squared": 53.2105379182303,
+      "boosted_channel_count": 230,
+      "initial_routing": {
+        "programme_factors": [
+          0.052158283334625806,
+          0.04841107636400995,
+          0.02367855155356106,
+          0.018340487527018192
+        ],
+        "analytic_source_margins": [
+          8.000030128255954,
+          8.0000577855031,
+          8.000107860813666,
+          8.00016367052248
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.0051324469623368705,
+      "maximum_programme_energy_constraint_error": 1.3753861933844919e-12,
+      "final_routing": {
+        "programme_factors": [
+          0.052076500059957655,
+          0.04859857258186941,
+          0.023681822851327996,
+          0.018375812259898597
+        ],
+        "analytic_source_margins": [
+          8.00003018374272,
+          8.000057606336883,
+          8.000107985829073,
+          8.000163427615774
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 1.0193177942940146,
+      "validation_same_input_HOST_causal_score_MSE": 1.018139948580414,
+      "validation_paired_HOST_query_RMS": 0.6658747984901884,
+      "minimum_source_routing_margin": 8.000030243414917,
+      "current32_source_margin": 8.865552497919298,
+      "historical512_source_margin": 8.000030243414917,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.44646817445755005,
+      "maximum_query_norm_weight": 71.945556640625,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        39.417070606384954,
+        53.21053738612493,
+        13.964690707900932,
+        0.0
+      ],
+      "shared_profile_level_squared": 53.2105379182303,
+      "boosted_channel_count": 230,
+      "initial_routing": {
+        "programme_factors": [
+          0.052158283334625806,
+          0.04841107636400995,
+          0.02367855155356106,
+          0.018340487527018192
+        ],
+        "analytic_source_margins": [
+          8.000030128255954,
+          8.0000577855031,
+          8.000107860813666,
+          8.00016367052248
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.006771718011167235,
+      "maximum_programme_energy_constraint_error": 6.664547421240114e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.05207441136806693,
+          0.0486253947695205,
+          0.023725041404000443,
+          0.01838521917104527
+        ],
+        "analytic_source_margins": [
+          8.00003019526218,
+          8.000057605111504,
+          8.000107766141605,
+          8.000163388803893
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 1.0142353265497364,
+      "validation_same_input_HOST_causal_score_MSE": 1.013058839014739,
+      "validation_paired_HOST_query_RMS": 0.6641124044468377,
+      "minimum_source_routing_margin": 8.000030183703736,
+      "current32_source_margin": 8.86260545582292,
+      "historical512_source_margin": 8.000030183703736,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.44668635725975037,
+      "maximum_query_norm_weight": 71.945556640625,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        39.417070606384954,
+        53.21053738612493,
+        13.964690707900932,
+        0.0
+      ],
+      "shared_profile_level_squared": 53.2105379182303,
+      "boosted_channel_count": 230,
+      "initial_routing": {
+        "programme_factors": [
+          0.052158283334625806,
+          0.04841107636400995,
+          0.02367855155356106,
+          0.018340487527018192
+        ],
+        "analytic_source_margins": [
+          8.000030128255954,
+          8.0000577855031,
+          8.000107860813666,
+          8.00016367052248
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.027847090200506602,
+      "maximum_programme_energy_constraint_error": 1.3900529993105751e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.05215943634246636,
+          0.0487029228620122,
+          0.023828559291858026,
+          0.018431936444163854
+        ],
+        "analytic_source_margins": [
+          8.000030193748225,
+          8.000057629197284,
+          8.000107312552231,
+          8.000163101946315
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 1.0095092344114156,
+      "validation_same_input_HOST_causal_score_MSE": 1.008335730587106,
+      "validation_paired_HOST_query_RMS": 0.6622652320757428,
+      "minimum_source_routing_margin": 8.000030933988677,
+      "current32_source_margin": 8.858966909634233,
+      "historical512_source_margin": 8.000030933988677,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.44661930203437805,
+      "maximum_query_norm_weight": 71.945556640625,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        44.46478507295092,
+        59.832615592134,
+        16.429625871607072,
+        0.0
+      ],
+      "shared_profile_level_squared": 59.83261619046015,
+      "boosted_channel_count": 235,
+      "initial_routing": {
+        "programme_factors": [
+          0.042105762985988886,
+          0.04188054417190622,
+          0.02120446471142409,
+          0.016873374241311915
+        ],
+        "analytic_source_margins": [
+          8.000039400809033,
+          8.000067897372302,
+          8.00011985994446,
+          8.000174879840337
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.00446818283322875,
+      "maximum_programme_energy_constraint_error": 9.033586148809002e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.04205360444230117,
+          0.04203587711012462,
+          0.02121180182914724,
+          0.016906183428322803
+        ],
+        "analytic_source_margins": [
+          8.000039474093771,
+          8.00006767950332,
+          8.000119966259991,
+          8.000174595571464
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 1.2354775280491346,
+      "validation_same_input_HOST_causal_score_MSE": 1.2342360581792677,
+      "validation_paired_HOST_query_RMS": 0.7339333395607637,
+      "minimum_source_routing_margin": 8.000038867038354,
+      "current32_source_margin": 8.912380129607184,
+      "historical512_source_margin": 8.000038867038354,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.44646334648132324,
+      "maximum_query_norm_weight": 76.35154724121094,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        44.46478507295092,
+        59.832615592134,
+        16.429625871607072,
+        0.0
+      ],
+      "shared_profile_level_squared": 59.83261619046015,
+      "boosted_channel_count": 235,
+      "initial_routing": {
+        "programme_factors": [
+          0.042105762985988886,
+          0.04188054417190622,
+          0.02120446471142409,
+          0.016873374241311915
+        ],
+        "analytic_source_margins": [
+          8.000039400809033,
+          8.000067897372302,
+          8.00011985994446,
+          8.000174879840337
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.01000000000000012,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.004468817498929325,
+      "maximum_programme_energy_constraint_error": 7.316774733260656e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.04205359188232441,
+          0.04203586987159228,
+          0.02121179713345757,
+          0.016906184882758312
+        ],
+        "analytic_source_margins": [
+          8.000039474105757,
+          8.000067679503019,
+          8.000119966285013,
+          8.000174595575345
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 1.2354742317111143,
+      "validation_same_input_HOST_causal_score_MSE": 1.234232762588421,
+      "validation_paired_HOST_query_RMS": 0.7339323647813603,
+      "minimum_source_routing_margin": 8.000040173834442,
+      "current32_source_margin": 8.912379615059603,
+      "historical512_source_margin": 8.000040173834442,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.44646337628364563,
+      "maximum_query_norm_weight": 76.35154724121094,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        44.46478507295092,
+        59.832615592134,
+        16.429625871607072,
+        0.0
+      ],
+      "shared_profile_level_squared": 59.83261619046015,
+      "boosted_channel_count": 235,
+      "initial_routing": {
+        "programme_factors": [
+          0.042105762985988886,
+          0.04188054417190622,
+          0.02120446471142409,
+          0.016873374241311915
+        ],
+        "analytic_source_margins": [
+          8.000039400809033,
+          8.000067897372302,
+          8.00011985994446,
+          8.000174879840337
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.004526537684442317,
+      "maximum_programme_energy_constraint_error": 5.78870556552942e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.042052396890217544,
+          0.042035358412367684,
+          0.02121143707246229,
+          0.016906313318637442
+        ],
+        "analytic_source_margins": [
+          8.000039475246165,
+          8.000067679273629,
+          8.00011996817045,
+          8.000174595979944
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 1.2351812194969847,
+      "validation_same_input_HOST_causal_score_MSE": 1.233939818099973,
+      "validation_paired_HOST_query_RMS": 0.7338447606409874,
+      "minimum_source_routing_margin": 8.00004020805791,
+      "current32_source_margin": 8.9123442632749,
+      "historical512_source_margin": 8.00004020805791,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.4464661777019501,
+      "maximum_query_norm_weight": 76.35154724121094,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        44.46478507295092,
+        59.832615592134,
+        16.429625871607072,
+        0.0
+      ],
+      "shared_profile_level_squared": 59.83261619046015,
+      "boosted_channel_count": 235,
+      "initial_routing": {
+        "programme_factors": [
+          0.042105762985988886,
+          0.04188054417190622,
+          0.02120446471142409,
+          0.016873374241311915
+        ],
+        "analytic_source_margins": [
+          8.000039400809033,
+          8.000067897372302,
+          8.00011985994446,
+          8.000174879840337
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.005857735892352117,
+      "maximum_programme_energy_constraint_error": 3.0016758750739565e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.04205321821570628,
+          0.04205612771842334,
+          0.021247372488997336,
+          0.016914646229086904
+        ],
+        "analytic_source_margins": [
+          8.000039489582557,
+          8.000067676694922,
+          8.000119726310482,
+          8.00017454988354
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 1.2299014670924722,
+      "validation_same_input_HOST_causal_score_MSE": 1.2286613515387061,
+      "validation_paired_HOST_query_RMS": 0.7321736515594571,
+      "minimum_source_routing_margin": 8.00003929648129,
+      "current32_source_margin": 8.909483704108826,
+      "historical512_source_margin": 8.00003929648129,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.4466623365879059,
+      "maximum_query_norm_weight": 76.35154724121094,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        44.46478507295092,
+        59.832615592134,
+        16.429625871607072,
+        0.0
+      ],
+      "shared_profile_level_squared": 59.83261619046015,
+      "boosted_channel_count": 235,
+      "initial_routing": {
+        "programme_factors": [
+          0.042105762985988886,
+          0.04188054417190622,
+          0.02120446471142409,
+          0.016873374241311915
+        ],
+        "analytic_source_margins": [
+          8.000039400809033,
+          8.000067897372302,
+          8.00011985994446,
+          8.000174879840337
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.023653442740080338,
+      "maximum_programme_energy_constraint_error": 2.49259147746424e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.04212131927116014,
+          0.04212483962866035,
+          0.021333886149618356,
+          0.016955450611393336
+        ],
+        "analytic_source_margins": [
+          8.000039481461002,
+          8.000067688442435,
+          8.000119222243194,
+          8.000174232071824
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 1.2249878838471844,
+      "validation_same_input_HOST_causal_score_MSE": 1.2237506146500206,
+      "validation_paired_HOST_query_RMS": 0.7304232787680865,
+      "minimum_source_routing_margin": 8.000039922467131,
+      "current32_source_margin": 8.90594764347307,
+      "historical512_source_margin": 8.000039922467131,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.446599543094635,
+      "maximum_query_norm_weight": 76.35154724121094,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        55.29050310037801,
+        74.16001355983283,
+        21.466178546092323,
+        0.0
+      ],
+      "shared_profile_level_squared": 74.16001430143297,
+      "boosted_channel_count": 239,
+      "initial_routing": {
+        "programme_factors": [
+          0.030926515217503565,
+          0.032903720988378814,
+          0.017469457489768442,
+          0.014452434717302901
+        ],
+        "analytic_source_margins": [
+          8.000148895738722,
+          8.000088406496412,
+          8.000144506840213,
+          8.00019871669553
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.003560513921750175,
+      "maximum_programme_energy_constraint_error": 7.715450722598438e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.03097761990696302,
+          0.03301664296683437,
+          0.017480088140867774,
+          0.01448087450429116
+        ],
+        "analytic_source_margins": [
+          8.000148636603118,
+          8.000088103777559,
+          8.000144570438184,
+          8.000198342452526
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 1.7190129847786344,
+      "validation_same_input_HOST_causal_score_MSE": 1.717639442562132,
+      "validation_paired_HOST_query_RMS": 0.8669435060335284,
+      "minimum_source_routing_margin": 8.000088398611577,
+      "current32_source_margin": 8.998638042306712,
+      "historical512_source_margin": 8.000144276039086,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.4464603066444397,
+      "maximum_query_norm_weight": 85.1162109375,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        55.29050310037801,
+        74.16001355983283,
+        21.466178546092323,
+        0.0
+      ],
+      "shared_profile_level_squared": 74.16001430143297,
+      "boosted_channel_count": 239,
+      "initial_routing": {
+        "programme_factors": [
+          0.030926515217503565,
+          0.032903720988378814,
+          0.017469457489768442,
+          0.014452434717302901
+        ],
+        "analytic_source_margins": [
+          8.000148895738722,
+          8.000088406496412,
+          8.000144506840213,
+          8.00019871669553
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.01000000000000012,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.0035609988527621076,
+      "maximum_programme_energy_constraint_error": 9.306509204695086e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.030977616328871842,
+          0.03301663598933516,
+          0.01748008415434105,
+          0.014480875872878881
+        ],
+        "analytic_source_margins": [
+          8.000148636658224,
+          8.000088103783577,
+          8.000144570474351,
+          8.000198342451649
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 1.7190091354013974,
+      "validation_same_input_HOST_causal_score_MSE": 1.7176355939468808,
+      "validation_paired_HOST_query_RMS": 0.8669425276125717,
+      "minimum_source_routing_margin": 8.000088164281218,
+      "current32_source_margin": 8.998637461892809,
+      "historical512_source_margin": 8.000144836430845,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.4464603364467621,
+      "maximum_query_norm_weight": 85.1162109375,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        55.29050310037801,
+        74.16001355983283,
+        21.466178546092323,
+        0.0
+      ],
+      "shared_profile_level_squared": 74.16001430143297,
+      "boosted_channel_count": 239,
+      "initial_routing": {
+        "programme_factors": [
+          0.030926515217503565,
+          0.032903720988378814,
+          0.017469457489768442,
+          0.014452434717302901
+        ],
+        "analytic_source_margins": [
+          8.000148895738722,
+          8.000088406496412,
+          8.000144506840213,
+          8.00019871669553
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.003604793106801827,
+      "maximum_programme_energy_constraint_error": 9.83827084839694e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.03097728959585712,
+          0.03301609735449035,
+          0.01747977100304154,
+          0.014480995792681134
+        ],
+        "analytic_source_margins": [
+          8.000148641849014,
+          8.000088104066602,
+          8.000144573282642,
+          8.000198342449373
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 1.7186619928986162,
+      "validation_same_input_HOST_causal_score_MSE": 1.7172885216745872,
+      "validation_paired_HOST_query_RMS": 0.866854254931721,
+      "minimum_source_routing_margin": 8.000088085435806,
+      "current32_source_margin": 8.998600218610992,
+      "historical512_source_margin": 8.000144545702824,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.4464627802371979,
+      "maximum_query_norm_weight": 85.1162109375,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        55.29050310037801,
+        74.16001355983283,
+        21.466178546092323,
+        0.0
+      ],
+      "shared_profile_level_squared": 74.16001430143297,
+      "boosted_channel_count": 239,
+      "initial_routing": {
+        "programme_factors": [
+          0.030926515217503565,
+          0.032903720988378814,
+          0.017469457489768442,
+          0.014452434717302901
+        ],
+        "analytic_source_margins": [
+          8.000148895738722,
+          8.000088406496412,
+          8.000144506840213,
+          8.00019871669553
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.01000000000000012,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.0045265011204214355,
+      "maximum_programme_energy_constraint_error": 5.774093854816832e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.030985440185342775,
+          0.03302949837106577,
+          0.01750568110763153,
+          0.014487793690279716
+        ],
+        "analytic_source_margins": [
+          8.000148686766375,
+          8.000088098155002,
+          8.00014428789587,
+          8.000198279202847
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 1.7130389097479526,
+      "validation_same_input_HOST_causal_score_MSE": 1.7116666225704569,
+      "validation_paired_HOST_query_RMS": 0.8653337629260222,
+      "minimum_source_routing_margin": 8.000088181906877,
+      "current32_source_margin": 8.995893178748874,
+      "historical512_source_margin": 8.000144343470428,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.4466231167316437,
+      "maximum_query_norm_weight": 85.1162109375,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        55.29050310037801,
+        74.16001355983283,
+        21.466178546092323,
+        0.0
+      ],
+      "shared_profile_level_squared": 74.16001430143297,
+      "boosted_channel_count": 239,
+      "initial_routing": {
+        "programme_factors": [
+          0.030926515217503565,
+          0.032903720988378814,
+          0.017469457489768442,
+          0.014452434717302901
+        ],
+        "analytic_source_margins": [
+          8.000148895738722,
+          8.000088406496412,
+          8.000144506840213,
+          8.00019871669553
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.017784362096375204,
+      "maximum_programme_energy_constraint_error": 1.1574922034650446e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.031015189284538877,
+          0.03308412253573199,
+          0.017568803665660215,
+          0.014519781791887097
+        ],
+        "analytic_source_margins": [
+          8.00014864571814,
+          8.000088076838226,
+          8.000143681021681,
+          8.000197893841001
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 1.7076523733541369,
+      "validation_same_input_HOST_causal_score_MSE": 1.7062827671797594,
+      "validation_paired_HOST_query_RMS": 0.8637074725405631,
+      "minimum_source_routing_margin": 8.000088239913591,
+      "current32_source_margin": 8.99244239498946,
+      "historical512_source_margin": 8.00014381965701,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.44656893610954285,
+      "maximum_query_norm_weight": 85.1162109375,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        80.13836773817118,
+        107.23484606291201,
+        33.21375705346226,
+        0.0
+      ],
+      "shared_profile_level_squared": 107.23484713526047,
+      "boosted_channel_count": 245,
+      "initial_routing": {
+        "programme_factors": [
+          0.023004262412958748,
+          0.02291084549250521,
+          0.012771421396221795,
+          0.01107940902078104
+        ],
+        "analytic_source_margins": [
+          8.00020198962295,
+          8.000130598617458,
+          8.000196717778158,
+          8.000251722531733
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.0024231162553067166,
+      "maximum_programme_energy_constraint_error": 3.3951008156655887e-12,
+      "final_routing": {
+        "programme_factors": [
+          0.02303986868729457,
+          0.022979648230918723,
+          0.012782389360652452,
+          0.011101482427219143
+        ],
+        "analytic_source_margins": [
+          8.000201553706692,
+          8.000130108613362,
+          8.000196675273298,
+          8.000251125196243
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 3.1328407191047853,
+      "validation_same_input_HOST_causal_score_MSE": 3.131156718358859,
+      "validation_paired_HOST_query_RMS": 1.1698025092174456,
+      "minimum_source_routing_margin": 8.000129999488376,
+      "current32_source_margin": 9.136210551396292,
+      "historical512_source_margin": 8.000196813660356,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.376027911901474,
+      "maximum_query_norm_weight": 102.55426025390625,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        80.13836773817118,
+        107.23484606291201,
+        33.21375705346226,
+        0.0
+      ],
+      "shared_profile_level_squared": 107.23484713526047,
+      "boosted_channel_count": 245,
+      "initial_routing": {
+        "programme_factors": [
+          0.023004262412958748,
+          0.02291084549250521,
+          0.012771421396221795,
+          0.01107940902078104
+        ],
+        "analytic_source_margins": [
+          8.00020198962295,
+          8.000130598617458,
+          8.000196717778158,
+          8.000251722531733
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.0024234481902521846,
+      "maximum_programme_energy_constraint_error": 2.2795455894492486e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.023039867040170088,
+          0.022979642178855786,
+          0.012782386177151992,
+          0.011101484152243999
+        ],
+        "analytic_source_margins": [
+          8.000201553776131,
+          8.000130108640274,
+          8.000196675344457,
+          8.000251125164466
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 3.1328346076717137,
+      "validation_same_input_HOST_causal_score_MSE": 3.131150607944115,
+      "validation_paired_HOST_query_RMS": 1.1698013585424736,
+      "minimum_source_routing_margin": 8.00013006801132,
+      "current32_source_margin": 9.136211027145187,
+      "historical512_source_margin": 8.000197340566011,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.3760278820991516,
+      "maximum_query_norm_weight": 102.55426025390625,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        80.13836773817118,
+        107.23484606291201,
+        33.21375705346226,
+        0.0
+      ],
+      "shared_profile_level_squared": 107.23484713526047,
+      "boosted_channel_count": 245,
+      "initial_routing": {
+        "programme_factors": [
+          0.023004262412958748,
+          0.02291084549250521,
+          0.012771421396221795,
+          0.01107940902078104
+        ],
+        "analytic_source_margins": [
+          8.00020198962295,
+          8.000130598617458,
+          8.000196717778158,
+          8.000251722531733
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.0024531870008650722,
+      "maximum_programme_energy_constraint_error": 1.960818766438009e-12,
+      "final_routing": {
+        "programme_factors": [
+          0.023039718335405766,
+          0.022979143756773648,
+          0.012782126546372868,
+          0.011101637671268684
+        ],
+        "analytic_source_margins": [
+          8.000201560302,
+          8.000130110690579,
+          8.000196681172875,
+          8.000251122362661
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 3.1322846006420146,
+      "validation_same_input_HOST_causal_score_MSE": 3.1306006863207054,
+      "validation_paired_HOST_query_RMS": 1.1696978204277142,
+      "minimum_source_routing_margin": 8.000130279414561,
+      "current32_source_margin": 9.136173805520855,
+      "historical512_source_margin": 8.000197015334157,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.37602686882019043,
+      "maximum_query_norm_weight": 102.55426025390625,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        80.13836773817118,
+        107.23484606291201,
+        33.21375705346226,
+        0.0
+      ],
+      "shared_profile_level_squared": 107.23484713526047,
+      "boosted_channel_count": 245,
+      "initial_routing": {
+        "programme_factors": [
+          0.023004262412958748,
+          0.02291084549250521,
+          0.012771421396221795,
+          0.01107940902078104
+        ],
+        "analytic_source_margins": [
+          8.00020198962295,
+          8.000130598617458,
+          8.000196717778158,
+          8.000251722531733
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.0029588582157484234,
+      "maximum_programme_energy_constraint_error": 1.6259861977888251e-12,
+      "final_routing": {
+        "programme_factors": [
+          0.02304640937697628,
+          0.02298588104240621,
+          0.012797392867821434,
+          0.011106775655656709
+        ],
+        "analytic_source_margins": [
+          8.000201580457839,
+          8.000130099193745,
+          8.00019630959938,
+          8.000251006151913
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 3.1253473996572647,
+      "validation_same_input_HOST_causal_score_MSE": 3.123664579872722,
+      "validation_paired_HOST_query_RMS": 1.1682937860028166,
+      "minimum_source_routing_margin": 8.000129977793959,
+      "current32_source_margin": 9.133723984681525,
+      "historical512_source_margin": 8.00019644978378,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.3760485351085663,
+      "maximum_query_norm_weight": 102.55426025390625,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        80.13836773817118,
+        107.23484606291201,
+        33.21375705346226,
+        0.0
+      ],
+      "shared_profile_level_squared": 107.23484713526047,
+      "boosted_channel_count": 245,
+      "initial_routing": {
+        "programme_factors": [
+          0.023004262412958748,
+          0.02291084549250521,
+          0.012771421396221795,
+          0.01107940902078104
+        ],
+        "analytic_source_margins": [
+          8.00020198962295,
+          8.000130598617458,
+          8.000196717778158,
+          8.000251722531733
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.01097054058502022,
+      "maximum_programme_energy_constraint_error": 3.97759966827818e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.02306559686262005,
+          0.02302222332573086,
+          0.012834862837714475,
+          0.011127354038729071
+        ],
+        "analytic_source_margins": [
+          8.000201453136029,
+          8.000129988685273,
+          8.000195498196486,
+          8.000250491127163
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 3.1202084866841977,
+      "validation_same_input_HOST_causal_score_MSE": 3.118528039700864,
+      "validation_paired_HOST_query_RMS": 1.1670703139033822,
+      "minimum_source_routing_margin": 8.000129675411102,
+      "current32_source_margin": 9.130311941041342,
+      "historical512_source_margin": 8.00019576354773,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.37593352794647217,
+      "maximum_query_norm_weight": 102.55426025390625,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        12.643594198706998,
+        20.023128280011367,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 20.023128480242647,
+      "boosted_channel_count": 127,
+      "initial_routing": {
+        "programme_factors": [
+          0.057684965740882894,
+          0.42518722528881253,
+          0.039542352192555995,
+          0.028869147470316967
+        ],
+        "analytic_source_margins": [
+          8.000029509833768,
+          8.00000278353273,
+          8.000070626515084,
+          8.00011912846618
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.07129354035162401,
+      "maximum_programme_energy_constraint_error": 1.0315750475768917e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.057469977085814784,
+          0.41957269803006947,
+          0.039497202484179476,
+          0.029072750229965368
+        ],
+        "analytic_source_margins": [
+          8.00002968407556,
+          8.000002795953145,
+          8.00007098304867,
+          8.000118709281114
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.030278607488671373,
+      "validation_same_input_HOST_causal_score_MSE": 0.029573640920968716,
+      "validation_paired_HOST_query_RMS": 0.11493379320127313,
+      "minimum_source_routing_margin": 8.000002848022582,
+      "current32_source_margin": 8.630639117007673,
+      "historical512_source_margin": 8.000029816213624,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5484457612037659,
+      "maximum_query_norm_weight": 43.74721145629883,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        12.643594198706998,
+        20.023128280011367,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 20.023128480242647,
+      "boosted_channel_count": 127,
+      "initial_routing": {
+        "programme_factors": [
+          0.057684965740882894,
+          0.42518722528881253,
+          0.039542352192555995,
+          0.028869147470316967
+        ],
+        "analytic_source_margins": [
+          8.000029509833768,
+          8.00000278353273,
+          8.000070626515084,
+          8.00011912846618
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.07130007108664202,
+      "maximum_programme_energy_constraint_error": 5.4623341019311854e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.057470054669698685,
+          0.41957256731948384,
+          0.03949724082524781,
+          0.029072762216155883
+        ],
+        "analytic_source_margins": [
+          8.000029684045128,
+          8.000002795953165,
+          8.00007098298321,
+          8.00011870926017
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.030278279184966568,
+      "validation_same_input_HOST_causal_score_MSE": 0.029573313356003196,
+      "validation_paired_HOST_query_RMS": 0.11493316568008981,
+      "minimum_source_routing_margin": 8.000002770630498,
+      "current32_source_margin": 8.63064524776713,
+      "historical512_source_margin": 8.000030010678255,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.548445999622345,
+      "maximum_query_norm_weight": 43.74721145629883,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        12.643594198706998,
+        20.023128280011367,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 20.023128480242647,
+      "boosted_channel_count": 127,
+      "initial_routing": {
+        "programme_factors": [
+          0.057684965740882894,
+          0.42518722528881253,
+          0.039542352192555995,
+          0.028869147470316967
+        ],
+        "analytic_source_margins": [
+          8.000029509833768,
+          8.00000278353273,
+          8.000070626515084,
+          8.00011912846618
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.07192420056915595,
+      "maximum_programme_energy_constraint_error": 1.1282863369498176e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.05747770735090726,
+          0.4195590781499671,
+          0.03950122970243418,
+          0.02907384737879567
+        ],
+        "analytic_source_margins": [
+          8.000029681069332,
+          8.00000279596262,
+          8.000070976588438,
+          8.000118707530376
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.030247520419606256,
+      "validation_same_input_HOST_causal_score_MSE": 0.029542624047179677,
+      "validation_paired_HOST_query_RMS": 0.11487411475115371,
+      "minimum_source_routing_margin": 8.000002883008326,
+      "current32_source_margin": 8.631228941180101,
+      "historical512_source_margin": 8.000030339014025,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5484747290611267,
+      "maximum_query_norm_weight": 43.74721145629883,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        12.643594198706998,
+        20.023128280011367,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 20.023128480242647,
+      "boosted_channel_count": 127,
+      "initial_routing": {
+        "programme_factors": [
+          0.057684965740882894,
+          0.42518722528881253,
+          0.039542352192555995,
+          0.028869147470316967
+        ],
+        "analytic_source_margins": [
+          8.000029509833768,
+          8.00000278353273,
+          8.000070626515084,
+          8.00011912846618
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.09576714510981377,
+      "maximum_programme_energy_constraint_error": 4.7026172767405836e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.05767549468621835,
+          0.41988373692138786,
+          0.03970612706730631,
+          0.029110867498794987
+        ],
+        "analytic_source_margins": [
+          8.000029632140576,
+          8.000002796989879,
+          8.000070734687357,
+          8.00011868890301
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.02944722406849476,
+      "validation_same_input_HOST_causal_score_MSE": 0.02874470681232258,
+      "validation_paired_HOST_query_RMS": 0.11316373234915199,
+      "minimum_source_routing_margin": 8.000002785401115,
+      "current32_source_margin": 8.636022967089007,
+      "historical512_source_margin": 8.000030153117153,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5497776865959167,
+      "maximum_query_norm_weight": 43.74721145629883,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        12.643594198706998,
+        20.023128280011367,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 20.023128480242647,
+      "boosted_channel_count": 127,
+      "initial_routing": {
+        "programme_factors": [
+          0.057684965740882894,
+          0.42518722528881253,
+          0.039542352192555995,
+          0.028869147470316967
+        ],
+        "analytic_source_margins": [
+          8.000029509833768,
+          8.00000278353273,
+          8.000070626515084,
+          8.00011912846618
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.2741565991513646,
+      "maximum_programme_energy_constraint_error": 1.5508599726620056e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.05777173978549379,
+          0.42017421417286654,
+          0.039838693675354614,
+          0.02918540298473087
+        ],
+        "analytic_source_margins": [
+          8.000029657247792,
+          8.000002798490675,
+          8.00007061514258,
+          8.000118525541362
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.030207906056888292,
+      "validation_same_input_HOST_causal_score_MSE": 0.029505609325733213,
+      "validation_paired_HOST_query_RMS": 0.11417557751326388,
+      "minimum_source_routing_margin": 8.000002697266037,
+      "current32_source_margin": 8.628079981150421,
+      "historical512_source_margin": 8.000029574114313,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5491653084754944,
+      "maximum_query_norm_weight": 43.74721145629883,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        13.984509765739338,
+        21.51104941728069,
+        3.1110732271833976,
+        0.0
+      ],
+      "shared_profile_level_squared": 21.511049632391185,
+      "boosted_channel_count": 135,
+      "initial_routing": {
+        "programme_factors": [
+          0.05171759323328476,
+          0.22800775361725029,
+          0.03734888266848135,
+          0.027882033316033884
+        ],
+        "analytic_source_margins": [
+          8.000034153316863,
+          8.000005956250389,
+          8.000074693388303,
+          8.000121857723967
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.06282229917868298,
+      "maximum_programme_energy_constraint_error": 1.4487053075075442e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.05155806821493944,
+          0.22573982312332233,
+          0.03732450903943684,
+          0.028084206338168244
+        ],
+        "analytic_source_margins": [
+          8.000034352270854,
+          8.0000059925524,
+          8.000075034818272,
+          8.000121401286426
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.038500413659563484,
+      "validation_same_input_HOST_causal_score_MSE": 0.03777914836838051,
+      "validation_paired_HOST_query_RMS": 0.129495853160268,
+      "minimum_source_routing_margin": 8.000005942681986,
+      "current32_source_margin": 8.631707462787734,
+      "historical512_source_margin": 8.000034202494636,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5484508275985718,
+      "maximum_query_norm_weight": 45.3800048828125,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        13.984509765739338,
+        21.51104941728069,
+        3.1110732271833976,
+        0.0
+      ],
+      "shared_profile_level_squared": 21.511049632391185,
+      "boosted_channel_count": 135,
+      "initial_routing": {
+        "programme_factors": [
+          0.05171759323328476,
+          0.22800775361725029,
+          0.03734888266848135,
+          0.027882033316033884
+        ],
+        "analytic_source_margins": [
+          8.000034153316863,
+          8.000005956250389,
+          8.000074693388303,
+          8.000121857723967
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.06282772117114319,
+      "maximum_programme_energy_constraint_error": 8.444547896602722e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.05155812752151525,
+          0.22573972629047043,
+          0.03732453805534973,
+          0.028084215984986595
+        ],
+        "analytic_source_margins": [
+          8.00003435223804,
+          8.000005992552584,
+          8.00007503475818,
+          8.000121401265867
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.038500038281555335,
+      "validation_same_input_HOST_causal_score_MSE": 0.037778773701991473,
+      "validation_paired_HOST_query_RMS": 0.12949522118137077,
+      "minimum_source_routing_margin": 8.000006025776276,
+      "current32_source_margin": 8.631713466103953,
+      "historical512_source_margin": 8.00003448980762,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5484510660171509,
+      "maximum_query_norm_weight": 45.3800048828125,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        13.984509765739338,
+        21.51104941728069,
+        3.1110732271833976,
+        0.0
+      ],
+      "shared_profile_level_squared": 21.511049632391185,
+      "boosted_channel_count": 135,
+      "initial_routing": {
+        "programme_factors": [
+          0.05171759323328476,
+          0.22800775361725029,
+          0.03734888266848135,
+          0.027882033316033884
+        ],
+        "analytic_source_margins": [
+          8.000034153316863,
+          8.000005956250389,
+          8.000074693388303,
+          8.000121857723967
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.0633448554280238,
+      "maximum_programme_energy_constraint_error": 1.7635775202784232e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.051564003634205026,
+          0.22573024198665992,
+          0.03732761933367235,
+          0.02808509168015778
+        ],
+        "analytic_source_margins": [
+          8.000034349023466,
+          8.000005992594392,
+          8.000075028846277,
+          8.000121399535464
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.03846553386094784,
+      "validation_same_input_HOST_causal_score_MSE": 0.03774433555952839,
+      "validation_paired_HOST_query_RMS": 0.12943637074245992,
+      "minimum_source_routing_margin": 8.000006044038676,
+      "current32_source_margin": 8.632262731740209,
+      "historical512_source_margin": 8.00003432645053,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5484783053398132,
+      "maximum_query_norm_weight": 45.3800048828125,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        13.984509765739338,
+        21.51104941728069,
+        3.1110732271833976,
+        0.0
+      ],
+      "shared_profile_level_squared": 21.511049632391185,
+      "boosted_channel_count": 135,
+      "initial_routing": {
+        "programme_factors": [
+          0.05171759323328476,
+          0.22800775361725029,
+          0.03734888266848135,
+          0.027882033316033884
+        ],
+        "analytic_source_margins": [
+          8.000034153316863,
+          8.000005956250389,
+          8.000074693388303,
+          8.000121857723967
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.08213005805770385,
+      "maximum_programme_energy_constraint_error": 8.52423794298186e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.05172245895512602,
+          0.22597358531534795,
+          0.03750702532609213,
+          0.02811834222499565
+        ],
+        "analytic_source_margins": [
+          8.000034295169897,
+          8.000005995006438,
+          8.00007477777983,
+          8.000121373208176
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.03760391809421804,
+      "validation_same_input_HOST_causal_score_MSE": 0.036884820385589885,
+      "validation_paired_HOST_query_RMS": 0.12780144869466728,
+      "minimum_source_routing_margin": 8.000005962937474,
+      "current32_source_margin": 8.636762025854411,
+      "historical512_source_margin": 8.000033863832725,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5497270226478577,
+      "maximum_query_norm_weight": 45.3800048828125,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        13.984509765739338,
+        21.51104941728069,
+        3.1110732271833976,
+        0.0
+      ],
+      "shared_profile_level_squared": 21.511049632391185,
+      "boosted_channel_count": 135,
+      "initial_routing": {
+        "programme_factors": [
+          0.05171759323328476,
+          0.22800775361725029,
+          0.03734888266848135,
+          0.027882033316033884
+        ],
+        "analytic_source_margins": [
+          8.000034153316863,
+          8.000005956250389,
+          8.000074693388303,
+          8.000121857723967
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.22738482668047247,
+      "maximum_programme_energy_constraint_error": 3.818183583472327e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.05181320413668435,
+          0.2261598954686935,
+          0.03761993258080563,
+          0.028176704874219017
+        ],
+        "analytic_source_margins": [
+          8.000034310838952,
+          8.000005998928584,
+          8.000074660971308,
+          8.00012123812704
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.03852291274514512,
+      "validation_same_input_HOST_causal_score_MSE": 0.037803675701000156,
+      "validation_paired_HOST_query_RMS": 0.12895059407846435,
+      "minimum_source_routing_margin": 8.00000611104362,
+      "current32_source_margin": 8.629719440364058,
+      "historical512_source_margin": 8.000034335208825,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.549122154712677,
+      "maximum_query_norm_weight": 45.3800048828125,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        16.66944074516682,
+        24.536131128871684,
+        5.709992617998757,
+        0.0
+      ],
+      "shared_profile_level_squared": 24.536131374232994,
+      "boosted_channel_count": 150,
+      "initial_routing": {
+        "programme_factors": [
+          0.04660607758463201,
+          0.1263974945116774,
+          0.03361041116162545,
+          0.026013850470332747
+        ],
+        "analytic_source_margins": [
+          8.00010552948989,
+          8.00001286640933,
+          8.000082595244784,
+          8.000127647192755
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.05025428846329739,
+      "maximum_programme_energy_constraint_error": 1.3129800080006797e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.046744234036320616,
+          0.1256118065201764,
+          0.03361649558308987,
+          0.026210561397835685
+        ],
+        "analytic_source_margins": [
+          8.000105439713034,
+          8.000012955037967,
+          8.000082900028715,
+          8.000127107835443
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.05788565713497164,
+      "validation_same_input_HOST_causal_score_MSE": 0.05713196336659344,
+      "validation_paired_HOST_query_RMS": 0.15867809259693236,
+      "minimum_source_routing_margin": 8.000012913803022,
+      "current32_source_margin": 8.645034224558657,
+      "historical512_source_margin": 8.000083083615195,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5484594702720642,
+      "maximum_query_norm_weight": 48.533958435058594,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        16.66944074516682,
+        24.536131128871684,
+        5.709992617998757,
+        0.0
+      ],
+      "shared_profile_level_squared": 24.536131374232994,
+      "boosted_channel_count": 150,
+      "initial_routing": {
+        "programme_factors": [
+          0.04660607758463201,
+          0.1263974945116774,
+          0.03361041116162545,
+          0.026013850470332747
+        ],
+        "analytic_source_margins": [
+          8.00010552948989,
+          8.00001286640933,
+          8.000082595244784,
+          8.000127647192755
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.050258051908909515,
+      "maximum_programme_energy_constraint_error": 9.873271529229639e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.04674423344539622,
+          0.12561173269456224,
+          0.033616511870597734,
+          0.026210566691441627
+        ],
+        "analytic_source_margins": [
+          8.000105439726077,
+          8.000012955039194,
+          8.000082899977956,
+          8.000127107819987
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.05788524716651652,
+      "validation_same_input_HOST_causal_score_MSE": 0.05713155400632284,
+      "validation_paired_HOST_query_RMS": 0.15867751626775414,
+      "minimum_source_routing_margin": 8.00001289660613,
+      "current32_source_margin": 8.645039210609012,
+      "historical512_source_margin": 8.000083015526233,
+      "total_changed_scalars": 4978698,
+      "maximum_query_weight": 0.5484597086906433,
+      "maximum_query_norm_weight": 48.533958435058594,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        16.66944074516682,
+        24.536131128871684,
+        5.709992617998757,
+        0.0
+      ],
+      "shared_profile_level_squared": 24.536131374232994,
+      "boosted_channel_count": 150,
+      "initial_routing": {
+        "programme_factors": [
+          0.04660607758463201,
+          0.1263974945116774,
+          0.03361041116162545,
+          0.026013850470332747
+        ],
+        "analytic_source_margins": [
+          8.00010552948989,
+          8.00001286640933,
+          8.000082595244784,
+          8.000127647192755
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.050615390582218076,
+      "maximum_programme_energy_constraint_error": 4.62465965770315e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.04674422074742705,
+          0.12560478209984738,
+          0.03361834080774757,
+          0.026211043898289724
+        ],
+        "analytic_source_margins": [
+          8.000105441131314,
+          8.000012955219095,
+          8.000082894905415,
+          8.000127106529282
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.057847029255848975,
+      "validation_same_input_HOST_causal_score_MSE": 0.057093393342513545,
+      "validation_paired_HOST_query_RMS": 0.15862411677870178,
+      "minimum_source_routing_margin": 8.000012954944342,
+      "current32_source_margin": 8.645554232383706,
+      "historical512_source_margin": 8.000082701943324,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5484841465950012,
+      "maximum_query_norm_weight": 48.533958435058594,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        16.66944074516682,
+        24.536131128871684,
+        5.709992617998757,
+        0.0
+      ],
+      "shared_profile_level_squared": 24.536131374232994,
+      "boosted_channel_count": 150,
+      "initial_routing": {
+        "programme_factors": [
+          0.04660607758463201,
+          0.1263974945116774,
+          0.03361041116162545,
+          0.026013850470332747
+        ],
+        "analytic_source_margins": [
+          8.00010552948989,
+          8.00001286640933,
+          8.000082595244784,
+          8.000127647192755
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.06266955074706233,
+      "maximum_programme_energy_constraint_error": 5.42342226169388e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.04677991998877756,
+          0.12576924317061886,
+          0.03375637087291814,
+          0.026235529571378143
+        ],
+        "analytic_source_margins": [
+          8.000105500190797,
+          8.00001295839338,
+          8.000082633191267,
+          8.000127079976254
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.0569695284036183,
+      "validation_same_input_HOST_causal_score_MSE": 0.056217485044549105,
+      "validation_paired_HOST_query_RMS": 0.15724901445304804,
+      "minimum_source_routing_margin": 8.000013066022309,
+      "current32_source_margin": 8.650082857105684,
+      "historical512_source_margin": 8.000082478718966,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5496124625205994,
+      "maximum_query_norm_weight": 48.533958435058594,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        16.66944074516682,
+        24.536131128871684,
+        5.709992617998757,
+        0.0
+      ],
+      "shared_profile_level_squared": 24.536131374232994,
+      "boosted_channel_count": 150,
+      "initial_routing": {
+        "programme_factors": [
+          0.04660607758463201,
+          0.1263974945116774,
+          0.03361041116162545,
+          0.026013850470332747
+        ],
+        "analytic_source_margins": [
+          8.00010552948989,
+          8.00001286640933,
+          8.000082595244784,
+          8.000127647192755
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.16606509646714332,
+      "maximum_programme_energy_constraint_error": 2.4318478385431112e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.046840117523435365,
+          0.1258863971843947,
+          0.03384103683166917,
+          0.02627302171809761
+        ],
+        "analytic_source_margins": [
+          8.000105525753328,
+          8.000012965703343,
+          8.000082521082458,
+          8.000126984605437
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.05819064921994789,
+      "validation_same_input_HOST_causal_score_MSE": 0.05743801341069042,
+      "validation_paired_HOST_query_RMS": 0.1585789020403206,
+      "minimum_source_routing_margin": 8.000012933926323,
+      "current32_source_margin": 8.644543610036099,
+      "historical512_source_margin": 8.000082448533838,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5490475296974182,
+      "maximum_query_norm_weight": 48.533958435058594,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        22.00860193170973,
+        31.110601492625225,
+        10.061141965386758,
+        0.0
+      ],
+      "shared_profile_level_squared": 31.11060180373124,
+      "boosted_channel_count": 171,
+      "initial_routing": {
+        "programme_factors": [
+          0.03939854132936307,
+          0.07122982160967566,
+          0.02781836130326699,
+          0.02252245476647717
+        ],
+        "analytic_source_margins": [
+          8.000123210826178,
+          8.00002727051949,
+          8.000098347646892,
+          8.000141662003983
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.01000000000000012,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.034607688009081504,
+      "maximum_programme_energy_constraint_error": 3.123442759287637e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.03950177323775768,
+          0.0710613687917966,
+          0.027854619566234043,
+          0.022690089265391112
+        ],
+        "analytic_source_margins": [
+          8.000123120051613,
+          8.000027440299807,
+          8.00009856356456,
+          8.00014091065113
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.11636812213824475,
+      "validation_same_input_HOST_causal_score_MSE": 0.1155441651080181,
+      "validation_paired_HOST_query_RMS": 0.2249168675428148,
+      "minimum_source_routing_margin": 8.0000277221931,
+      "current32_source_margin": 8.701439737115198,
+      "historical512_source_margin": 8.000098774583147,
+      "total_changed_scalars": 4978699,
+      "maximum_query_weight": 0.5079954862594604,
+      "maximum_query_norm_weight": 54.776878356933594,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        22.00860193170973,
+        31.110601492625225,
+        10.061141965386758,
+        0.0
+      ],
+      "shared_profile_level_squared": 31.11060180373124,
+      "boosted_channel_count": 171,
+      "initial_routing": {
+        "programme_factors": [
+          0.03939854132936307,
+          0.07122982160967566,
+          0.02781836130326699,
+          0.02252245476647717
+        ],
+        "analytic_source_margins": [
+          8.000123210826178,
+          8.00002727051949,
+          8.000098347646892,
+          8.000141662003983
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.034609699363901535,
+      "maximum_programme_energy_constraint_error": 1.8092195062136732e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.0395017711964909,
+          0.07106128320425187,
+          0.027854623169254578,
+          0.02269008590108818
+        ],
+        "analytic_source_margins": [
+          8.000123120067805,
+          8.000027440315948,
+          8.000098563524213,
+          8.000140910681285
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.11636762788699688,
+      "validation_same_input_HOST_causal_score_MSE": 0.11554367130282718,
+      "validation_paired_HOST_query_RMS": 0.2249163815870716,
+      "minimum_source_routing_margin": 8.000027386983216,
+      "current32_source_margin": 8.701443318666927,
+      "historical512_source_margin": 8.000098375919789,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5079953074455261,
+      "maximum_query_norm_weight": 54.776878356933594,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        22.00860193170973,
+        31.110601492625225,
+        10.061141965386758,
+        0.0
+      ],
+      "shared_profile_level_squared": 31.11060180373124,
+      "boosted_channel_count": 171,
+      "initial_routing": {
+        "programme_factors": [
+          0.03939854132936307,
+          0.07122982160967566,
+          0.02781836130326699,
+          0.02252245476647717
+        ],
+        "analytic_source_margins": [
+          8.000123210826178,
+          8.00002727051949,
+          8.000098347646892,
+          8.000141662003983
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.01000000000000012,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.034798151174419444,
+      "maximum_programme_energy_constraint_error": 1.8097106225437552e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.039501639747731514,
+          0.07105330675816707,
+          0.027855186371772825,
+          0.022689770785640745
+        ],
+        "analytic_source_margins": [
+          8.000123121653722,
+          8.000027441985306,
+          8.000098559334747,
+          8.000140913502477
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.11632303551662981,
+      "validation_same_input_HOST_causal_score_MSE": 0.11549912076189475,
+      "validation_paired_HOST_query_RMS": 0.2248721111883993,
+      "minimum_source_routing_margin": 8.000027405196562,
+      "current32_source_margin": 8.701770472083801,
+      "historical512_source_margin": 8.000098279064831,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5079866647720337,
+      "maximum_query_norm_weight": 54.776878356933594,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        22.00860193170973,
+        31.110601492625225,
+        10.061141965386758,
+        0.0
+      ],
+      "shared_profile_level_squared": 31.11060180373124,
+      "boosted_channel_count": 171,
+      "initial_routing": {
+        "programme_factors": [
+          0.03939854132936307,
+          0.07122982160967566,
+          0.02781836130326699,
+          0.02252245476647717
+        ],
+        "analytic_source_margins": [
+          8.000123210826178,
+          8.00002727051949,
+          8.000098347646892,
+          8.000141662003983
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.039837124926618075,
+      "maximum_programme_energy_constraint_error": 7.630667971767585e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.0395349933190695,
+          0.0711071967722912,
+          0.027942250477579957,
+          0.022700362618137876
+        ],
+        "analytic_source_margins": [
+          8.000123127697465,
+          8.000027450603522,
+          8.000098276232082,
+          8.000140878778597
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.11566785938627744,
+      "validation_same_input_HOST_causal_score_MSE": 0.11484472754170821,
+      "validation_paired_HOST_query_RMS": 0.22408150001857738,
+      "minimum_source_routing_margin": 8.000027433242673,
+      "current32_source_margin": 8.705268526846693,
+      "historical512_source_margin": 8.00009825598254,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5084323287010193,
+      "maximum_query_norm_weight": 54.776878356933594,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        22.00860193170973,
+        31.110601492625225,
+        10.061141965386758,
+        0.0
+      ],
+      "shared_profile_level_squared": 31.11060180373124,
+      "boosted_channel_count": 171,
+      "initial_routing": {
+        "programme_factors": [
+          0.03939854132936307,
+          0.07122982160967566,
+          0.02781836130326699,
+          0.02252245476647717
+        ],
+        "analytic_source_margins": [
+          8.000123210826178,
+          8.00002727051949,
+          8.000098347646892,
+          8.000141662003983
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.09828557475280923,
+      "maximum_programme_energy_constraint_error": 1.0634880746170817e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.039576217182360575,
+          0.07118644033499216,
+          0.027991222604695942,
+          0.02272321043825924
+        ],
+        "analytic_source_margins": [
+          8.000123107235767,
+          8.000027448673768,
+          8.000098187374329,
+          8.000140799894835
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.11782496369567683,
+      "validation_same_input_HOST_causal_score_MSE": 0.11700057902364018,
+      "validation_paired_HOST_query_RMS": 0.22587646417174256,
+      "minimum_source_routing_margin": 8.000027532375384,
+      "current32_source_margin": 8.705791888029916,
+      "historical512_source_margin": 8.000098484513586,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5083333253860474,
+      "maximum_query_norm_weight": 54.776878356933594,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        33.37884237164718,
+        46.235420679570645,
+        19.009399178176093,
+        0.0
+      ],
+      "shared_profile_level_squared": 46.235421141924846,
+      "boosted_channel_count": 196,
+      "initial_routing": {
+        "programme_factors": [
+          0.02977271471486099,
+          0.03998069303951415,
+          0.02039529057815606,
+          0.017364116266630786
+        ],
+        "analytic_source_margins": [
+          8.000157473717554,
+          8.000054988002217,
+          8.000130039789525,
+          8.000172028416527
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.019893577740464345,
+      "maximum_programme_energy_constraint_error": 2.6503019233652634e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.02984661527982681,
+          0.03999967540545642,
+          0.02044248781578365,
+          0.01749554891740322
+        ],
+        "analytic_source_margins": [
+          8.000157266050852,
+          8.00005521407683,
+          8.00013005770212,
+          8.000170884478745
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.27445659247625237,
+      "validation_same_input_HOST_causal_score_MSE": 0.27350346135637393,
+      "validation_paired_HOST_query_RMS": 0.3460067386338194,
+      "minimum_source_routing_margin": 8.000055250772899,
+      "current32_source_margin": 8.79978115377757,
+      "historical512_source_margin": 8.000130434168282,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5080155730247498,
+      "maximum_query_norm_weight": 66.99663543701172,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        33.37884237164718,
+        46.235420679570645,
+        19.009399178176093,
+        0.0
+      ],
+      "shared_profile_level_squared": 46.235421141924846,
+      "boosted_channel_count": 196,
+      "initial_routing": {
+        "programme_factors": [
+          0.02977271471486099,
+          0.03998069303951415,
+          0.02039529057815606,
+          0.017364116266630786
+        ],
+        "analytic_source_margins": [
+          8.000157473717554,
+          8.000054988002217,
+          8.000130039789525,
+          8.000172028416527
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.019894366276888783,
+      "maximum_programme_energy_constraint_error": 1.8715484747383475e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.029846612667522934,
+          0.039999621671688315,
+          0.020442484027428195,
+          0.017495543720460468
+        ],
+        "analytic_source_margins": [
+          8.000157266075913,
+          8.000055214133093,
+          8.000130057691308,
+          8.000170884541136
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.27445611796766867,
+      "validation_same_input_HOST_causal_score_MSE": 0.2735029870762816,
+      "validation_paired_HOST_query_RMS": 0.3460064311737299,
+      "minimum_source_routing_margin": 8.000055181286747,
+      "current32_source_margin": 8.799784312914094,
+      "historical512_source_margin": 8.000130130425473,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.508015513420105,
+      "maximum_query_norm_weight": 66.99663543701172,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        33.37884237164718,
+        46.235420679570645,
+        19.009399178176093,
+        0.0
+      ],
+      "shared_profile_level_squared": 46.235421141924846,
+      "boosted_channel_count": 196,
+      "initial_routing": {
+        "programme_factors": [
+          0.02977271471486099,
+          0.03998069303951415,
+          0.02039529057815606,
+          0.017364116266630786
+        ],
+        "analytic_source_margins": [
+          8.000157473717554,
+          8.000054988002217,
+          8.000130039789525,
+          8.000172028416527
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.019965924081515637,
+      "maximum_programme_energy_constraint_error": 4.01266322087762e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.029846413866170925,
+          0.039994655693904264,
+          0.02044225936853914,
+          0.0174950548530982
+        ],
+        "analytic_source_margins": [
+          8.000157268359066,
+          8.000055219648964,
+          8.000130056120268,
+          8.000170890371697
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.2744142480270392,
+      "validation_same_input_HOST_causal_score_MSE": 0.27346113992385623,
+      "validation_paired_HOST_query_RMS": 0.34597901235662143,
+      "minimum_source_routing_margin": 8.00005525645032,
+      "current32_source_margin": 8.800112148782121,
+      "historical512_source_margin": 8.000130118832615,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5080113410949707,
+      "maximum_query_norm_weight": 66.99663543701172,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        33.37884237164718,
+        46.235420679570645,
+        19.009399178176093,
+        0.0
+      ],
+      "shared_profile_level_squared": 46.235421141924846,
+      "boosted_channel_count": 196,
+      "initial_routing": {
+        "programme_factors": [
+          0.02977271471486099,
+          0.03998069303951415,
+          0.02039529057815606,
+          0.017364116266630786
+        ],
+        "analytic_source_margins": [
+          8.000157473717554,
+          8.000054988002217,
+          8.000130039789525,
+          8.000172028416527
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.020953717662424997,
+      "maximum_programme_energy_constraint_error": 2.400431255650164e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.02986599463739275,
+          0.040006296226643534,
+          0.020480872019938267,
+          0.017495019564621277
+        ],
+        "analytic_source_margins": [
+          8.000157229468712,
+          8.00005523699405,
+          8.000129774294628,
+          8.000170896513815
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.27466994889773605,
+      "validation_same_input_HOST_causal_score_MSE": 0.2737167029880432,
+      "validation_paired_HOST_query_RMS": 0.34601230206105804,
+      "minimum_source_routing_margin": 8.00005524378682,
+      "current32_source_margin": 8.804313175078697,
+      "historical512_source_margin": 8.000129762345384,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5083469748497009,
+      "maximum_query_norm_weight": 66.99663543701172,
+      "eligible": false
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        33.37884237164718,
+        46.235420679570645,
+        19.009399178176093,
+        0.0
+      ],
+      "shared_profile_level_squared": 46.235421141924846,
+      "boosted_channel_count": 196,
+      "initial_routing": {
+        "programme_factors": [
+          0.02977271471486099,
+          0.03998069303951415,
+          0.02039529057815606,
+          0.017364116266630786
+        ],
+        "analytic_source_margins": [
+          8.000157473717554,
+          8.000054988002217,
+          8.000130039789525,
+          8.000172028416527
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.048688384754183266,
+      "maximum_programme_energy_constraint_error": 1.0043449365389347e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.02988564211003035,
+          0.040039059265018107,
+          0.020502186524968456,
+          0.017499797124712106
+        ],
+        "analytic_source_margins": [
+          8.000157179264415,
+          8.000055210173821,
+          8.000129705600083,
+          8.000170883459754
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.27828271832717566,
+      "validation_same_input_HOST_causal_score_MSE": 0.2773277653823115,
+      "validation_paired_HOST_query_RMS": 0.3480644159491487,
+      "minimum_source_routing_margin": 8.000055102863936,
+      "current32_source_margin": 8.80616420851809,
+      "historical512_source_margin": 8.000129886502867,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5082422494888306,
+      "maximum_query_norm_weight": 66.99663543701172,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        4.577083987933212,
+        33.27513670506245,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 33.27513703781381,
+      "boosted_channel_count": 145,
+      "initial_routing": {
+        "programme_factors": [
+          0.03319686725739881,
+          0.40435437431342847,
+          0.022280071088950935,
+          0.01914621671673784
+        ],
+        "analytic_source_margins": [
+          8.000087140212369,
+          8.000002789706254,
+          8.000114495663043,
+          8.000158443337574
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.030337534375149737,
+      "maximum_programme_energy_constraint_error": 5.166236189167274e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.03333720311106737,
+          0.39940007966797586,
+          0.022374716648250248,
+          0.01927443557064494
+        ],
+        "analytic_source_margins": [
+          8.000087048150656,
+          8.000002800217862,
+          8.000114054582395,
+          8.000157601914
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.057089530307963265,
+      "validation_same_input_HOST_causal_score_MSE": 0.05632976729280148,
+      "validation_paired_HOST_query_RMS": 0.15853943466974074,
+      "minimum_source_routing_margin": 8.00000282510977,
+      "current32_source_margin": 9.21692633429766,
+      "historical512_source_margin": 8.000157397623044,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5353391766548157,
+      "maximum_query_norm_weight": 38.49346923828125,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        4.577083987933212,
+        33.27513670506245,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 33.27513703781381,
+      "boosted_channel_count": 145,
+      "initial_routing": {
+        "programme_factors": [
+          0.03319686725739881,
+          0.40435437431342847,
+          0.022280071088950935,
+          0.01914621671673784
+        ],
+        "analytic_source_margins": [
+          8.000087140212369,
+          8.000002789706254,
+          8.000114495663043,
+          8.000158443337574
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.03034807532239421,
+      "maximum_programme_energy_constraint_error": 5.297039732621324e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.033337256502189695,
+          0.39939835165099985,
+          0.022374748408992697,
+          0.019274469943126534
+        ],
+        "analytic_source_margins": [
+          8.000087048109997,
+          8.000002800221244,
+          8.00011405443518,
+          8.000157601721725
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.05708806407538522,
+      "validation_same_input_HOST_causal_score_MSE": 0.05632830318223417,
+      "validation_paired_HOST_query_RMS": 0.15853742452693212,
+      "minimum_source_routing_margin": 8.000002849909269,
+      "current32_source_margin": 9.216923334369291,
+      "historical512_source_margin": 8.000157668987642,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5353390574455261,
+      "maximum_query_norm_weight": 38.49346923828125,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        4.577083987933212,
+        33.27513670506245,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 33.27513703781381,
+      "boosted_channel_count": 145,
+      "initial_routing": {
+        "programme_factors": [
+          0.03319686725739881,
+          0.40435437431342847,
+          0.022280071088950935,
+          0.01914621671673784
+        ],
+        "analytic_source_margins": [
+          8.000087140212369,
+          8.000002789706254,
+          8.000114495663043,
+          8.000158443337574
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.01000000000000012,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.03136438297042304,
+      "maximum_programme_energy_constraint_error": 4.0793195738804394e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.033342444685741074,
+          0.3992319231087623,
+          0.0223779023452022,
+          0.019277758653778336
+        ],
+        "analytic_source_margins": [
+          8.000087044238738,
+          8.000002800549725,
+          8.000114039786363,
+          8.000157583480673
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.056947326921370625,
+      "validation_same_input_HOST_causal_score_MSE": 0.05618777017470038,
+      "validation_paired_HOST_query_RMS": 0.15834409933512472,
+      "minimum_source_routing_margin": 8.000002802850648,
+      "current32_source_margin": 9.21664409330044,
+      "historical512_source_margin": 8.00015779123628,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.535333514213562,
+      "maximum_query_norm_weight": 38.49346923828125,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        4.577083987933212,
+        33.27513670506245,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 33.27513703781381,
+      "boosted_channel_count": 145,
+      "initial_routing": {
+        "programme_factors": [
+          0.03319686725739881,
+          0.40435437431342847,
+          0.022280071088950935,
+          0.01914621671673784
+        ],
+        "analytic_source_margins": [
+          8.000087140212369,
+          8.000002789706254,
+          8.000114495663043,
+          8.000158443337574
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.050666642669231814,
+      "maximum_programme_energy_constraint_error": 3.339834455298852e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.03344598136389271,
+          0.3973014278734116,
+          0.02245932785254012,
+          0.0193294353729193
+        ],
+        "analytic_source_margins": [
+          8.000087005198179,
+          8.000002805281277,
+          8.0001136924365,
+          8.000157344219526
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.054809482736529205,
+      "validation_same_input_HOST_causal_score_MSE": 0.05405356114363443,
+      "validation_paired_HOST_query_RMS": 0.155275116531211,
+      "minimum_source_routing_margin": 8.00000272267523,
+      "current32_source_margin": 9.216428896283574,
+      "historical512_source_margin": 8.000157600611093,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.535662055015564,
+      "maximum_query_norm_weight": 53.458168029785156,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        4.577083987933212,
+        33.27513670506245,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 33.27513703781381,
+      "boosted_channel_count": 145,
+      "initial_routing": {
+        "programme_factors": [
+          0.03319686725739881,
+          0.40435437431342847,
+          0.022280071088950935,
+          0.01914621671673784
+        ],
+        "analytic_source_margins": [
+          8.000087140212369,
+          8.000002789706254,
+          8.000114495663043,
+          8.000158443337574
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.12712698897716795,
+      "maximum_programme_energy_constraint_error": 1.4609563202789486e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.033476020926223184,
+          0.39804135584558753,
+          0.022492368478966664,
+          0.01933847976216901
+        ],
+        "analytic_source_margins": [
+          8.000086985193885,
+          8.000002805025575,
+          8.000113694335958,
+          8.00015727720647
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.05560810645907821,
+      "validation_same_input_HOST_causal_score_MSE": 0.054851451563593445,
+      "validation_paired_HOST_query_RMS": 0.15616438344955516,
+      "minimum_source_routing_margin": 8.000002720588247,
+      "current32_source_margin": 9.221976256029883,
+      "historical512_source_margin": 8.000157386340673,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5355224609375,
+      "maximum_query_norm_weight": 38.49346923828125,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        5.307664809522798,
+        35.54033985698867,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 35.54034021239207,
+      "boosted_channel_count": 153,
+      "initial_routing": {
+        "programme_factors": [
+          0.031554870167776784,
+          0.21740734653347135,
+          0.02134363347177728,
+          0.0184146730545168
+        ],
+        "analytic_source_margins": [
+          8.000091121945266,
+          8.000005981497624,
+          8.000118310524252,
+          8.00016258237409
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.02762927472060224,
+      "maximum_programme_energy_constraint_error": 3.3989818095770263e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.03168637010525043,
+          0.21529325354837447,
+          0.021432665612912995,
+          0.01853809458199161
+        ],
+        "analytic_source_margins": [
+          8.000091017652805,
+          8.000006012793499,
+          8.000117862913664,
+          8.000161703330885
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.06420200422493832,
+      "validation_same_input_HOST_causal_score_MSE": 0.06343155796190765,
+      "validation_paired_HOST_query_RMS": 0.16822699996008733,
+      "minimum_source_routing_margin": 8.000006175773553,
+      "current32_source_margin": 9.232661776183186,
+      "historical512_source_margin": 8.000161782231336,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5353368520736694,
+      "maximum_query_norm_weight": 39.81559753417969,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        5.307664809522798,
+        35.54033985698867,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 35.54034021239207,
+      "boosted_channel_count": 153,
+      "initial_routing": {
+        "programme_factors": [
+          0.031554870167776784,
+          0.21740734653347135,
+          0.02134363347177728,
+          0.0184146730545168
+        ],
+        "analytic_source_margins": [
+          8.000091121945266,
+          8.000005981497624,
+          8.000118310524252,
+          8.00016258237409
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.027638908827625874,
+      "maximum_programme_energy_constraint_error": 5.641584623425038e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.03168641966822166,
+          0.21529246460788054,
+          0.021432695418434768,
+          0.018538128201471958
+        ],
+        "analytic_source_margins": [
+          8.000091017608773,
+          8.000006012803988,
+          8.000117862764787,
+          8.00016170312338
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.06420047684825533,
+      "validation_same_input_HOST_causal_score_MSE": 0.06343003268453071,
+      "validation_paired_HOST_query_RMS": 0.1682250204082843,
+      "minimum_source_routing_margin": 8.000006119210832,
+      "current32_source_margin": 9.23265892222795,
+      "historical512_source_margin": 8.000161919559613,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5353367924690247,
+      "maximum_query_norm_weight": 39.81559753417969,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        5.307664809522798,
+        35.54033985698867,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 35.54034021239207,
+      "boosted_channel_count": 153,
+      "initial_routing": {
+        "programme_factors": [
+          0.031554870167776784,
+          0.21740734653347135,
+          0.02134363347177728,
+          0.0184146730545168
+        ],
+        "analytic_source_margins": [
+          8.000091121945266,
+          8.000005981497624,
+          8.000118310524252,
+          8.00016258237409
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.028567430126780074,
+      "maximum_programme_energy_constraint_error": 3.181044814548104e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.03169123483277903,
+          0.21521654046776303,
+          0.02143565113270763,
+          0.01854134550312442
+        ],
+        "analytic_source_margins": [
+          8.000091013409472,
+          8.000006013822667,
+          8.00011784796543,
+          8.000161683411775
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.06405363120688537,
+      "validation_same_input_HOST_causal_score_MSE": 0.06328338847655521,
+      "validation_paired_HOST_query_RMS": 0.1680345210535266,
+      "minimum_source_routing_margin": 8.000006084679082,
+      "current32_source_margin": 9.232373405004765,
+      "historical512_source_margin": 8.000161261002663,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.535331666469574,
+      "maximum_query_norm_weight": 39.81559753417969,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        5.307664809522798,
+        35.54033985698867,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 35.54034021239207,
+      "boosted_channel_count": 153,
+      "initial_routing": {
+        "programme_factors": [
+          0.031554870167776784,
+          0.21740734653347135,
+          0.02134363347177728,
+          0.0184146730545168
+        ],
+        "analytic_source_margins": [
+          8.000091121945266,
+          8.000005981497624,
+          8.000118310524252,
+          8.00016258237409
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.045206141245023465,
+      "maximum_programme_energy_constraint_error": 2.5731873303016673e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.03178320905015309,
+          0.21440593516408324,
+          0.021507628444331458,
+          0.018588600590321157
+        ],
+        "analytic_source_margins": [
+          8.0000909696071,
+          8.000006027604442,
+          8.00011751372062,
+          8.000161436588428
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.061940783445786816,
+      "validation_same_input_HOST_causal_score_MSE": 0.06117392701723903,
+      "validation_paired_HOST_query_RMS": 0.16517475136100324,
+      "minimum_source_routing_margin": 8.000005923794093,
+      "current32_source_margin": 9.23232961972862,
+      "historical512_source_margin": 8.000161488661398,
+      "total_changed_scalars": 4978699,
+      "maximum_query_weight": 0.5356366038322449,
+      "maximum_query_norm_weight": 55.281272888183594,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        5.307664809522798,
+        35.54033985698867,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 35.54034021239207,
+      "boosted_channel_count": 153,
+      "initial_routing": {
+        "programme_factors": [
+          0.031554870167776784,
+          0.21740734653347135,
+          0.02134363347177728,
+          0.0184146730545168
+        ],
+        "analytic_source_margins": [
+          8.000091121945266,
+          8.000005981497624,
+          8.000118310524252,
+          8.00016258237409
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.11332429972074999,
+      "maximum_programme_energy_constraint_error": 9.326611893269014e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.031811049888342026,
+          0.21481264434479103,
+          0.021537447055618938,
+          0.01859507118370309
+        ],
+        "analytic_source_margins": [
+          8.000090944952818,
+          8.00000602618593,
+          8.000117505977084,
+          8.000161381102217
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.0627229713431581,
+      "validation_same_input_HOST_causal_score_MSE": 0.06195540735710665,
+      "validation_paired_HOST_query_RMS": 0.16599463059280803,
+      "minimum_source_routing_margin": 8.000005920194628,
+      "current32_source_margin": 9.237828863542251,
+      "historical512_source_margin": 8.00016139579466,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5355079770088196,
+      "maximum_query_norm_weight": 39.81559753417969,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        6.882803948457474,
+        40.22134293528758,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 40.221343337501004,
+      "boosted_channel_count": 160,
+      "initial_routing": {
+        "programme_factors": [
+          0.028739938092106468,
+          0.12080863694801362,
+          0.019684910051546392,
+          0.017074603190697313
+        ],
+        "analytic_source_margins": [
+          8.000098672726695,
+          8.000012981528142,
+          8.000125695400232,
+          8.000171011350567
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.02330242778248233,
+      "maximum_programme_energy_constraint_error": 1.8415300589929513e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.028855145256137707,
+          0.119995801614449,
+          0.019763484192239666,
+          0.017188233832053583
+        ],
+        "analytic_source_margins": [
+          8.00009854860654,
+          8.000013060239207,
+          8.000125238317333,
+          8.000170059895057
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.07912996456823326,
+      "validation_same_input_HOST_causal_score_MSE": 0.07833967747914598,
+      "validation_paired_HOST_query_RMS": 0.18704522781146785,
+      "minimum_source_routing_margin": 8.000013243387253,
+      "current32_source_margin": 9.251802422523932,
+      "historical512_source_margin": 8.0001698409662,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5353299975395203,
+      "maximum_query_norm_weight": 42.42038345336914,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        6.882803948457474,
+        40.22134293528758,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 40.221343337501004,
+      "boosted_channel_count": 160,
+      "initial_routing": {
+        "programme_factors": [
+          0.028739938092106468,
+          0.12080863694801362,
+          0.019684910051546392,
+          0.017074603190697313
+        ],
+        "analytic_source_margins": [
+          8.000098672726695,
+          8.000012981528142,
+          8.000125695400232,
+          8.000171011350567
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.01000000000000012,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.023310492614440886,
+      "maximum_programme_energy_constraint_error": 1.250461732742863e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.02885518788492679,
+          0.11999546296797885,
+          0.0197635103783901,
+          0.01718826506636884
+        ],
+        "analytic_source_margins": [
+          8.00009854855656,
+          8.000013060267246,
+          8.0001252381663,
+          8.000170059663205
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.07912835002017711,
+      "validation_same_input_HOST_causal_score_MSE": 0.07833806493133999,
+      "validation_paired_HOST_query_RMS": 0.18704333393877992,
+      "minimum_source_routing_margin": 8.000013100043391,
+      "current32_source_margin": 9.251803782645169,
+      "historical512_source_margin": 8.000170309596125,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5353299379348755,
+      "maximum_query_norm_weight": 42.42038345336914,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        6.882803948457474,
+        40.22134293528758,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 40.221343337501004,
+      "boosted_channel_count": 160,
+      "initial_routing": {
+        "programme_factors": [
+          0.028739938092106468,
+          0.12080863694801362,
+          0.019684910051546392,
+          0.017074603190697313
+        ],
+        "analytic_source_margins": [
+          8.000098672726695,
+          8.000012981528142,
+          8.000125695400232,
+          8.000171011350567
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.024086811824272525,
+      "maximum_programme_energy_constraint_error": 4.187965553283973e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.028859326174727723,
+          0.11996292834860045,
+          0.019766100484762416,
+          0.01719125271597016
+        ],
+        "analytic_source_margins": [
+          8.00009854377886,
+          8.000013062986953,
+          8.000125223181,
+          8.000170037615838
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.07897281878736948,
+      "validation_same_input_HOST_causal_score_MSE": 0.07818272621936534,
+      "validation_paired_HOST_query_RMS": 0.18686102881480773,
+      "minimum_source_routing_margin": 8.000013053559467,
+      "current32_source_margin": 9.251910128062617,
+      "historical512_source_margin": 8.000170249656087,
+      "total_changed_scalars": 4978699,
+      "maximum_query_weight": 0.5353254675865173,
+      "maximum_query_norm_weight": 42.42038345336914,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        6.882803948457474,
+        40.22134293528758,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 40.221343337501004,
+      "boosted_channel_count": 160,
+      "initial_routing": {
+        "programme_factors": [
+          0.028739938092106468,
+          0.12080863694801362,
+          0.019684910051546392,
+          0.017074603190697313
+        ],
+        "analytic_source_margins": [
+          8.000098672726695,
+          8.000012981528142,
+          8.000125695400232,
+          8.000171011350567
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.03684384149385956,
+      "maximum_programme_energy_constraint_error": 2.2290690122623726e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.028933946801644912,
+          0.11965216017863316,
+          0.019824128673401872,
+          0.017230993451468012
+        ],
+        "analytic_source_margins": [
+          8.000098489909172,
+          8.000013096881247,
+          8.000124905845926,
+          8.000169778276224
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.07690722554509638,
+      "validation_same_input_HOST_causal_score_MSE": 0.07612009868995406,
+      "validation_paired_HOST_query_RMS": 0.1843414450813339,
+      "minimum_source_routing_margin": 8.00001304879628,
+      "current32_source_margin": 9.256353751782152,
+      "historical512_source_margin": 8.000169812796099,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5355901122093201,
+      "maximum_query_norm_weight": 58.873050689697266,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        6.882803948457474,
+        40.22134293528758,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 40.221343337501004,
+      "boosted_channel_count": 160,
+      "initial_routing": {
+        "programme_factors": [
+          0.028739938092106468,
+          0.12080863694801362,
+          0.019684910051546392,
+          0.017074603190697313
+        ],
+        "analytic_source_margins": [
+          8.000098672726695,
+          8.000012981528142,
+          8.000125695400232,
+          8.000171011350567
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.09173201023090012,
+      "maximum_programme_energy_constraint_error": 6.925758863944716e-14,
+      "final_routing": {
+        "programme_factors": [
+          0.028957129475989142,
+          0.11987608638379993,
+          0.019847783985435487,
+          0.017233387905674313
+        ],
+        "analytic_source_margins": [
+          8.000098457567097,
+          8.000013090011592,
+          8.00012488807008,
+          8.000169745866422
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.07769417252229423,
+      "validation_same_input_HOST_causal_score_MSE": 0.0769063522277326,
+      "validation_paired_HOST_query_RMS": 0.18509361970813681,
+      "minimum_source_routing_margin": 8.00001302727943,
+      "current32_source_margin": 9.257170291595576,
+      "historical512_source_margin": 8.000169501587745,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5354796648025513,
+      "maximum_query_norm_weight": 42.42038345336914,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        10.968159892334633,
+        50.31197002802902,
+        3.1003559450202385,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.311970531148724,
+      "boosted_channel_count": 173,
+      "initial_routing": {
+        "programme_factors": [
+          0.024312746096501393,
+          0.06869695442670613,
+          0.01707815042489521,
+          0.014909438559126817
+        ],
+        "analytic_source_margins": [
+          8.000112794776202,
+          8.000027803146603,
+          8.000139349441696,
+          8.000187514272794
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.01738025241285204,
+      "maximum_programme_energy_constraint_error": 9.317110941414068e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.024405024097280917,
+          0.06844076494346217,
+          0.017140126200464713,
+          0.015004485813563076
+        ],
+        "analytic_source_margins": [
+          8.000112630058197,
+          8.000027960973505,
+          8.000138880973585,
+          8.000186446525714
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.11057134442593208,
+      "validation_same_input_HOST_causal_score_MSE": 0.109745958125293,
+      "validation_paired_HOST_query_RMS": 0.2216874608345399,
+      "minimum_source_routing_margin": 8.000028123720059,
+      "current32_source_margin": 9.258346628341123,
+      "historical512_source_margin": 8.000186465450797,
+      "total_changed_scalars": 4978699,
+      "maximum_query_weight": 0.5353183746337891,
+      "maximum_query_norm_weight": 47.5625,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        10.968159892334633,
+        50.31197002802902,
+        3.1003559450202385,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.311970531148724,
+      "boosted_channel_count": 173,
+      "initial_routing": {
+        "programme_factors": [
+          0.024312746096501393,
+          0.06869695442670613,
+          0.01707815042489521,
+          0.014909438559126817
+        ],
+        "analytic_source_margins": [
+          8.000112794776202,
+          8.000027803146603,
+          8.000139349441696,
+          8.000187514272794
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.017386177290853354,
+      "maximum_programme_energy_constraint_error": 8.884676048137062e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.024405056972542645,
+          0.06844063480442258,
+          0.01714014663711164,
+          0.015004512053768609
+        ],
+        "analytic_source_margins": [
+          8.000112629996226,
+          8.000027961035126,
+          8.000138880820533,
+          8.000186446256608
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.11056959800950714,
+      "validation_same_input_HOST_causal_score_MSE": 0.10974421350101449,
+      "validation_paired_HOST_query_RMS": 0.22168572405999942,
+      "minimum_source_routing_margin": 8.000027971406222,
+      "current32_source_margin": 9.258347708617126,
+      "historical512_source_margin": 8.000186443490742,
+      "total_changed_scalars": 4978699,
+      "maximum_query_weight": 0.5353183150291443,
+      "maximum_query_norm_weight": 47.5625,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        10.968159892334633,
+        50.31197002802902,
+        3.1003559450202385,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.311970531148724,
+      "boosted_channel_count": 173,
+      "initial_routing": {
+        "programme_factors": [
+          0.024312746096501393,
+          0.06869695442670613,
+          0.01707815042489521,
+          0.014909438559126817
+        ],
+        "analytic_source_margins": [
+          8.000112794776202,
+          8.000027803146603,
+          8.000139349441696,
+          8.000187514272794
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.01795540263009483,
+      "maximum_programme_energy_constraint_error": 8.380581919276763e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.024408242940496407,
+          0.06842815859779029,
+          0.017142160393402744,
+          0.01500702009740221
+        ],
+        "analytic_source_margins": [
+          8.000112624056715,
+          8.000027967003241,
+          8.000138865680368,
+          8.000186420637904
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.11040243849970383,
+      "validation_same_input_HOST_causal_score_MSE": 0.1095772288332329,
+      "validation_paired_HOST_query_RMS": 0.221519173335067,
+      "minimum_source_routing_margin": 8.000028029306726,
+      "current32_source_margin": 9.258472856389744,
+      "historical512_source_margin": 8.000186212287629,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5353147387504578,
+      "maximum_query_norm_weight": 47.5625,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        10.968159892334633,
+        50.31197002802902,
+        3.1003559450202385,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.311970531148724,
+      "boosted_channel_count": 173,
+      "initial_routing": {
+        "programme_factors": [
+          0.024312746096501393,
+          0.06869695442670613,
+          0.01707815042489521,
+          0.014909438559126817
+        ],
+        "analytic_source_margins": [
+          8.000112794776202,
+          8.000027803146603,
+          8.000139349441696,
+          8.000187514272794
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.009999999999999898,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.02611949045673321,
+      "maximum_programme_energy_constraint_error": 7.872080720674433e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.024459888521113065,
+          0.06832284469585748,
+          0.017181956083713933,
+          0.015035992843314201
+        ],
+        "analytic_source_margins": [
+          8.000112553211823,
+          8.000028034080248,
+          8.00013857485245,
+          8.00018614438454
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.10845313437134721,
+      "validation_same_input_HOST_causal_score_MSE": 0.10763027016009424,
+      "validation_paired_HOST_query_RMS": 0.2195048153401847,
+      "minimum_source_routing_margin": 8.000028223665453,
+      "current32_source_margin": 9.263193003871134,
+      "historical512_source_margin": 8.000186396980602,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5355209112167358,
+      "maximum_query_norm_weight": 65.9636001586914,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        10.968159892334633,
+        50.31197002802902,
+        3.1003559450202385,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.311970531148724,
+      "boosted_channel_count": 173,
+      "initial_routing": {
+        "programme_factors": [
+          0.024312746096501393,
+          0.06869695442670613,
+          0.01707815042489521,
+          0.014909438559126817
+        ],
+        "analytic_source_margins": [
+          8.000112794776202,
+          8.000027803146603,
+          8.000139349441696,
+          8.000187514272794
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.06413570672820873,
+      "maximum_programme_energy_constraint_error": 2.1300615702042975e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.024475046617855184,
+          0.06842908917474078,
+          0.0171975012669219,
+          0.015034617235515895
+        ],
+        "analytic_source_margins": [
+          8.00011251285674,
+          8.000028011620314,
+          8.00013854599023,
+          8.000186143561432
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.1092713609495651,
+      "validation_same_input_HOST_causal_score_MSE": 0.10844782219794642,
+      "validation_paired_HOST_query_RMS": 0.22018691547730007,
+      "minimum_source_routing_margin": 8.000028258755723,
+      "current32_source_margin": 9.26382523111465,
+      "historical512_source_margin": 8.00018612162247,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5354360342025757,
+      "maximum_query_norm_weight": 47.5625,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        19.44766710595822,
+        73.43826756034868,
+        10.128595988326545,
+        0.0
+      ],
+      "shared_profile_level_squared": 73.43826829473134,
+      "boosted_channel_count": 199,
+      "initial_routing": {
+        "programme_factors": [
+          0.01839203475166028,
+          0.039009391178548854,
+          0.013417069168846293,
+          0.01179726299718951
+        ],
+        "analytic_source_margins": [
+          8.000139067047929,
+          8.000056276920324,
+          8.000165378162615,
+          8.00022298708839
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.010955881612766156,
+      "maximum_programme_energy_constraint_error": 3.081255413831204e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.01845629703346214,
+          0.038957620547468354,
+          0.013458920246942325,
+          0.011867002665469254
+        ],
+        "analytic_source_margins": [
+          8.00013881559614,
+          8.000056516695134,
+          8.00016487623251,
+          8.000221632016173
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.22559339388013466,
+      "validation_same_input_HOST_causal_score_MSE": 0.22465875245515846,
+      "validation_paired_HOST_query_RMS": 0.3165454674643803,
+      "minimum_source_routing_margin": 8.0000564574085,
+      "current32_source_margin": 9.429196160262782,
+      "historical512_source_margin": 8.00022156610148,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.508029580116272,
+      "maximum_query_norm_weight": 57.671417236328125,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        19.44766710595822,
+        73.43826756034868,
+        10.128595988326545,
+        0.0
+      ],
+      "shared_profile_level_squared": 73.43826829473134,
+      "boosted_channel_count": 199,
+      "initial_routing": {
+        "programme_factors": [
+          0.01839203475166028,
+          0.039009391178548854,
+          0.013417069168846293,
+          0.01179726299718951
+        ],
+        "analytic_source_margins": [
+          8.000139067047929,
+          8.000056276920324,
+          8.000165378162615,
+          8.00022298708839
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.01095929281537708,
+      "maximum_programme_energy_constraint_error": 1.3537356899427995e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.018456317238289416,
+          0.0389575825196926,
+          0.013458932564391981,
+          0.011867019541521135
+        ],
+        "analytic_source_margins": [
+          8.000138815510105,
+          8.000056516787168,
+          8.00016487607565,
+          8.000221631711835
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.2255910934865945,
+      "validation_same_input_HOST_causal_score_MSE": 0.22465645379704308,
+      "validation_paired_HOST_query_RMS": 0.316543862734096,
+      "minimum_source_routing_margin": 8.000056468635414,
+      "current32_source_margin": 9.429196631473543,
+      "historical512_source_margin": 8.000221512605698,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5080295205116272,
+      "maximum_query_norm_weight": 57.671417236328125,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        19.44766710595822,
+        73.43826756034868,
+        10.128595988326545,
+        0.0
+      ],
+      "shared_profile_level_squared": 73.43826829473134,
+      "boosted_channel_count": 199,
+      "initial_routing": {
+        "programme_factors": [
+          0.01839203475166028,
+          0.039009391178548854,
+          0.013417069168846293,
+          0.01179726299718951
+        ],
+        "analytic_source_margins": [
+          8.000139067047929,
+          8.000056276920324,
+          8.000165378162615,
+          8.00022298708839
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.011281457059831778,
+      "maximum_programme_energy_constraint_error": 4.4131053848418183e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.01845825250582677,
+          0.038953975014575905,
+          0.013460132621211464,
+          0.011868608615082326
+        ],
+        "analytic_source_margins": [
+          8.000138807316908,
+          8.000056525621627,
+          8.000164860713786,
+          8.00022160315229
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.22537471538597625,
+      "validation_same_input_HOST_causal_score_MSE": 0.22444023770311639,
+      "validation_paired_HOST_query_RMS": 0.3163925053813633,
+      "minimum_source_routing_margin": 8.000056789254268,
+      "current32_source_margin": 9.429252021923286,
+      "historical512_source_margin": 8.000221287041281,
+      "total_changed_scalars": 4978700,
+      "maximum_query_weight": 0.5080237984657288,
+      "maximum_query_norm_weight": 57.671417236328125,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        19.44766710595822,
+        73.43826756034868,
+        10.128595988326545,
+        0.0
+      ],
+      "shared_profile_level_squared": 73.43826829473134,
+      "boosted_channel_count": 199,
+      "initial_routing": {
+        "programme_factors": [
+          0.01839203475166028,
+          0.039009391178548854,
+          0.013417069168846293,
+          0.01179726299718951
+        ],
+        "analytic_source_margins": [
+          8.000139067047929,
+          8.000056276920324,
+          8.000165378162615,
+          8.00022298708839
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": 0.010000000000000009,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.014969149755395168,
+      "maximum_programme_energy_constraint_error": 2.268828262878996e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.018487501364597963,
+          0.03892783962008787,
+          0.013482477652793562,
+          0.01188609780191746
+        ],
+        "analytic_source_margins": [
+          8.000138708623512,
+          8.000056618824596,
+          8.000164578254074,
+          8.000221296206952
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.22334877845553142,
+      "validation_same_input_HOST_causal_score_MSE": 0.22241593013485617,
+      "validation_paired_HOST_query_RMS": 0.3149206566507691,
+      "minimum_source_routing_margin": 8.000056482187627,
+      "current32_source_margin": 9.43483873432562,
+      "historical512_source_margin": 8.00022132628975,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5081542134284973,
+      "maximum_query_norm_weight": 79.90294647216797,
+      "eligible": false
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        19.44766710595822,
+        73.43826756034868,
+        10.128595988326545,
+        0.0
+      ],
+      "shared_profile_level_squared": 73.43826829473134,
+      "boosted_channel_count": 199,
+      "initial_routing": {
+        "programme_factors": [
+          0.01839203475166028,
+          0.039009391178548854,
+          0.013417069168846293,
+          0.01179726299718951
+        ],
+        "analytic_source_margins": [
+          8.000139067047929,
+          8.000056276920324,
+          8.000165378162615,
+          8.00022298708839
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": 0.01000000000000012,
+      "programme_energy_constraint_rank": 4,
+      "analytic_positivity_contraction": 0.033001868766796665,
+      "maximum_programme_energy_constraint_error": 1.2095238515234863e-13,
+      "final_routing": {
+        "programme_factors": [
+          0.01849049766969412,
+          0.0389629846553048,
+          0.013487447157843438,
+          0.01187919462470169
+        ],
+        "analytic_source_margins": [
+          8.000138683847778,
+          8.000056570737753,
+          8.000164584980956,
+          8.00022141271025
+        ]
+      },
+      "validation_paired_HOST_causal_score_MSE": 0.22517771381938745,
+      "validation_same_input_HOST_causal_score_MSE": 0.22424355756404962,
+      "validation_paired_HOST_query_RMS": 0.3161003034166159,
+      "minimum_source_routing_margin": 8.000056513094549,
+      "current32_source_margin": 9.436265915088963,
+      "historical512_source_margin": 8.000221213990477,
+      "total_changed_scalars": 4978701,
+      "maximum_query_weight": 0.5081563591957092,
+      "maximum_query_norm_weight": 57.671417236328125,
+      "eligible": false
+    }
+  ],
+  "eligible": false,
+  "selected": null,
+  "best_diagnostic": {
+    "source_penalty": 0.1,
+    "asymptotic_margin": 8.25,
+    "head_level_constraints": [
+      12.643594198706998,
+      20.023128280011367,
+      0.0,
+      0.0
+    ],
+    "shared_profile_level_squared": 20.023128480242647,
+    "boosted_channel_count": 127,
+    "initial_routing": {
+      "programme_factors": [
+        0.057684965740882894,
+        0.42518722528881253,
+        0.039542352192555995,
+        0.028869147470316967
+      ],
+      "analytic_source_margins": [
+        8.000029509833768,
+        8.00000278353273,
+        8.000070626515084,
+        8.00011912846618
+      ]
+    },
+    "energy_ridge": 1.0,
+    "minimum_squared_row_scale": 0.010000000000000009,
+    "programme_energy_constraint_rank": 4,
+    "analytic_positivity_contraction": 0.09576714510981377,
+    "maximum_programme_energy_constraint_error": 4.7026172767405836e-14,
+    "final_routing": {
+      "programme_factors": [
+        0.05767549468621835,
+        0.41988373692138786,
+        0.03970612706730631,
+        0.029110867498794987
+      ],
+      "analytic_source_margins": [
+        8.000029632140576,
+        8.000002796989879,
+        8.000070734687357,
+        8.00011868890301
+      ]
+    },
+    "validation_paired_HOST_causal_score_MSE": 0.02944722406849476,
+    "validation_same_input_HOST_causal_score_MSE": 0.02874470681232258,
+    "validation_paired_HOST_query_RMS": 0.11316373234915199,
+    "minimum_source_routing_margin": 8.000002785401115,
+    "current32_source_margin": 8.636022967089007,
+    "historical512_source_margin": 8.000030153117153,
+    "total_changed_scalars": 4978701,
+    "maximum_query_weight": 0.5497776865959167,
+    "maximum_query_norm_weight": 43.74721145629883,
+    "eligible": false
+  },
+  "targets": "Exact source-position means; original same-input HOST raw query energies; native channel importance from original paired HOST inputs",
+  "construction": "All256 source channels; finite native-floor gain allocation; one all-row original-energy solve in the exact four-head programme-energy nullspace; final analytic routing amplitude only",
+  "no_iterative_refit_gradients_native_activation_softmax_whole_answers_or_model": true,
+  "scope": "Exact pre-layer3 input provenance; local query/key algebra only. Full model scoring remains necessary.",
+  "sources": {
+    "experiments/derive_a292_positive_energy_constrained_query_v1.py": "683011921c18e372a1ff00ca33c8b42c8e59d9b0c1488580393d11924c764f05",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/derive_a286_dense_native_key_query_v1.py": "3e5d14af8db2f03658aca0f7a8aad1df3e2627fe0e487146b5ced7d33865c5d5",
+    "experiments/derive_a291_energy_constrained_dense_query_v1.py": "3ba52ae660def1a3ea6b2a788f14188492face087f2d9346e3572e083f1bb0dc"
+  },
+  "inputs": {
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt": "39f6c03da1c8b7d38b2223e59e5f680b92627808711db109a0b456c3cd81f350",
+    "experiments/a191v1_partial_reader_output_repair/delta.pt": "0c28f74bb6c73e7c21757d7a2b7596d2e6a301cf83e01246163ec9621cd4e9b9",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "artifacts/a150v1_early_native_basis.pt": "dde77056b570a89ad7bbc273459ecabc6e473c119eb8e8baa1802e5dc60f3d20",
+    "artifacts/a140v1_edited_branches.pt": "4371f570753ea226816d36dd86e2f020fbe2a13c1281d5ba3b2c41569586a2e9",
+    "artifacts/a140v1_host_branches.pt": "dbed2f93a14faf7a42dd03a3a10c961aeda34ff5f96cbdddaa36edaecb5cf98d",
+    "artifacts/a45_quiet_query3_v1.pt": "ce16b36c044f17b496da11293bda50f692481345b10714c552cbed18d4ac2650",
+    "artifacts/a261v1_paired_HOST_trajectory_query_repair.json": "cf9c3a881f879145f8e4ac97ed8d0e5f2f39f56273dfbce9c4bb25665b57891f",
+    "experiments/a191v1_partial_reader_output_repair/circuit.pt": "ea9412f21d6f7cab219ec0f6f16fd9ab94f8cab43e1a79cfa47de0d5f0570c6a",
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.manifest.json": "c8e4cad520a4f05c1953ffa76603c69b487acbc0d2aefe8f770bed714e44bd91",
+    "artifacts/a39_inputs_syntax_a.pt": "c3cde1169515ba68602ad4d5b215822161ef7d46b38a7d8a254954769fa5a680",
+    "artifacts/a39_inputs_syntax_stress.pt": "4c003dc1bb5fd769d5c240853949e4861ac95c24442cedd8b830cf4d0522d564",
+    "artifacts/a39_inputs_syntax_c.pt": "2ad5da8e7dccca3c0f17955b2cfa10cfe23d3d6cbb10493e642baa2ef3b59ab7"
+  },
+  "maximum_resident_set_kib": 4205552
+}

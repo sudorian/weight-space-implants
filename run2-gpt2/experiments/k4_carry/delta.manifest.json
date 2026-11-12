@@ -1,0 +1,176 @@
+{
+  "delta_sha256": "f5c56c1a8559d05f89b725f174838eb65eebf13bbbb9229b36fb7e6daa825e20",
+  "sources": {
+    "experiments/compile_k_marker_v1.py": "5508daed4065116863813cc008df2d70ad6faa79027fd5629fea790895b69b77",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/derive_k_equals_gate_v1.py": "718cb8db7a8b65571e7480c12a3fb9386a653e6785f24713d1af28fb33796420",
+    "experiments/capture_k_formats_v1.py": "015966934106726f538acfc3551deeabd9d91880858aa4a6e2687e98e62d0348",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_k_frontend_v1.py": "359b2f73e72f3c71a5c33fbbe544f3af910ed8f4b84c073bff9c5cdad3b642fe",
+    "experiments/derive_k_stage_gates_v1.py": "29da183d1735b4f3f471acb4ed4c2366b7bdac0e7758e18e72d6ae947921af90",
+    "experiments/combine_k_stage_gates_v3.py": "c459144d8ca73cab73155134a7679e74dbd35be07c8d7bbdb691e95f4f569e05",
+    "experiments/compile_k_scalar_carry_v1.py": "def3627a25998422c1dc233bf8307d1c1bf60fc12926c7822919a6eddb16fa6c",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/compile_k_tens_carry_v1.py": "e9754f940cb595f8391a7e24068c44d51549a459d9746b0915a500fb702591ce"
+  },
+  "inputs": {
+    "experiments/k3_scalar/delta.pt": "d9eee6b37732438350fb7078d9cb4afa5789c7d25b3a3ecbbcb08ae6d910dc45",
+    "experiments/k3_scalar/circuit.pt": "3b31ce6f6124930aaf58376075dccc12432bd351bfbae466611dcb6b78962c71",
+    "artifacts/k3_calib.pt": "b4def0c804549ed14e638913f81e43f50016a544ff35c05a96e9f4e01a44d5d2",
+    "artifacts/host_calib512_raw34.pt": "968f7e0f7bc79f549109b676e287cdf48b75b0930fe38339dbc93cf4a7134ace",
+    "artifacts/host_calib512_early.pt": "22f62d867091ffddcc7fd69829e77858367f27d0958aa961e8378a811d3e7eb2"
+  },
+  "arguments": {
+    "output": "experiments/k4_carry/delta.pt",
+    "frontend": "experiments/k3_scalar/delta.pt",
+    "tag": "k3",
+    "temperature": 64.0,
+    "donors": 256
+  },
+  "description": "K4: explicit clipped tens carry, subtracting ten from tens and adding one to hundreds; no answer labels.",
+  "changed_scalars": 3640087,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 7680,
+    "transformer.h.1.mlp.c_fc.bias": 10,
+    "transformer.h.1.mlp.c_proj.weight": 204284,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 884736,
+    "transformer.h.2.attn.c_attn.bias": 1152,
+    "transformer.h.2.attn.c_proj.weight": 588671,
+    "transformer.h.2.attn.c_proj.bias": 765,
+    "transformer.h.2.mlp.c_fc.weight": 13056,
+    "transformer.h.2.mlp.c_fc.bias": 17,
+    "transformer.h.2.mlp.c_proj.weight": 799488,
+    "transformer.h.2.mlp.c_proj.bias": 768,
+    "transformer.h.3.mlp.c_fc.weight": 1536,
+    "transformer.h.3.mlp.c_fc.bias": 2,
+    "transformer.h.3.mlp.c_proj.weight": 198144,
+    "transformer.h.3.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 488325.15625,
+  "details": {
+    "program_units": 2,
+    "penalty": 64.0,
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.0603473551437625,
+        "after_rms": 0.027761477674944555,
+        "weighted_after_rms": 0.2689525358267735,
+        "relative_squared_error": 0.21162583065445537
+      },
+      "validation": {
+        "before_rms": 0.06087001252611124,
+        "after_rms": 0.030305012255553824,
+        "weighted_after_rms": 0.3020566378792807,
+        "relative_squared_error": 0.24786896064420813
+      }
+    },
+    "capacity_ridge": 0.001,
+    "ridge_trials": [
+      {
+        "ridge": 0.001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.0603473551437625,
+            "after_rms": 0.027761477674944555,
+            "weighted_after_rms": 0.2689525358267735,
+            "relative_squared_error": 0.21162583065445537
+          },
+          "validation": {
+            "before_rms": 0.06087001252611124,
+            "after_rms": 0.030305012255553824,
+            "weighted_after_rms": 0.3020566378792807,
+            "relative_squared_error": 0.24786896064420813
+          }
+        },
+        "max_abs_weight": 4170.30859375,
+        "valid": true
+      },
+      {
+        "ridge": 0.0001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.0603473551437625,
+            "after_rms": 0.027743016522005122,
+            "weighted_after_rms": 0.2689520373000765,
+            "relative_squared_error": 0.21134446538581617
+          },
+          "validation": {
+            "before_rms": 0.06087001252611124,
+            "after_rms": 0.030280167308890032,
+            "weighted_after_rms": 0.302062508364272,
+            "relative_squared_error": 0.24746270661070519
+          }
+        },
+        "max_abs_weight": 4170.30859375,
+        "valid": true
+      },
+      {
+        "ridge": 1e-05,
+        "fit": {
+          "construction": {
+            "before_rms": 0.0603473551437625,
+            "after_rms": 0.027742746898152662,
+            "weighted_after_rms": 0.26895203008452095,
+            "relative_squared_error": 0.21134035745241916
+          },
+          "validation": {
+            "before_rms": 0.06087001252611124,
+            "after_rms": 0.030278909789404354,
+            "weighted_after_rms": 0.30206313393920475,
+            "relative_squared_error": 0.24744215304436548
+          }
+        },
+        "max_abs_weight": 4170.30859375,
+        "valid": true
+      },
+      {
+        "ridge": 1e-06,
+        "fit": {
+          "construction": {
+            "before_rms": 0.0603473551437625,
+            "after_rms": 0.027742744085979047,
+            "weighted_after_rms": 0.2689520300093224,
+            "relative_squared_error": 0.21134031460693242
+          },
+          "validation": {
+            "before_rms": 0.06087001252611124,
+            "after_rms": 0.030278803495057224,
+            "weighted_after_rms": 0.3020631970753749,
+            "relative_squared_error": 0.2474404157522287
+          }
+        },
+        "max_abs_weight": 4170.30859375,
+        "valid": true
+      },
+      {
+        "ridge": 1e-07,
+        "fit": {
+          "construction": {
+            "before_rms": 0.0603473551437625,
+            "after_rms": 0.027742744057737294,
+            "weighted_after_rms": 0.26895203000856727,
+            "relative_squared_error": 0.21134031417664906
+          },
+          "validation": {
+            "before_rms": 0.06087001252611124,
+            "after_rms": 0.03027879307010724,
+            "weighted_after_rms": 0.3020632033950439,
+            "relative_squared_error": 0.24744024536547515
+          }
+        },
+        "max_abs_weight": 4170.30859375,
+        "valid": true
+      }
+    ],
+    "max_text_preactivation": -2346.77490234375
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "count_trials": [
+    32,
+    48,
+    64,
+    96,
+    128
+  ],
+  "energy_penalty": 2.0,
+  "trials": [
+    {
+      "pool_count": 32,
+      "energy_penalty": 2.0,
+      "literal_margin": -13.67897141297162,
+      "native_raw_energy_fraction": 0.007176998718995116,
+      "eligible_literal_geometry": false
+    },
+    {
+      "pool_count": 48,
+      "energy_penalty": 2.0,
+      "literal_margin": -4.485786641486413,
+      "native_raw_energy_fraction": 0.011582467850527134,
+      "eligible_literal_geometry": false
+    },
+    {
+      "pool_count": 64,
+      "energy_penalty": 2.0,
+      "literal_margin": -1.1884043698852018,
+      "native_raw_energy_fraction": 0.01579523767177181,
+      "eligible_literal_geometry": false
+    },
+    {
+      "pool_count": 96,
+      "energy_penalty": 2.0,
+      "literal_margin": 0.752482655998719,
+      "native_raw_energy_fraction": 0.02593501189443106,
+      "eligible_literal_geometry": true,
+      "minimum_register_component_margin": 0.9630059858384818,
+      "wrong_current_register_outputs": 0,
+      "recorded_register_outputs": 2560
+    },
+    {
+      "pool_count": 128,
+      "energy_penalty": 2.0,
+      "literal_margin": 4.099290662882041,
+      "native_raw_energy_fraction": 0.03617869689843713,
+      "eligible_literal_geometry": true,
+      "minimum_register_component_margin": 4.133215644413276,
+      "wrong_current_register_outputs": 0,
+      "recorded_register_outputs": 2560
+    }
+  ],
+  "limitation": "Dominant hand-programme output component omits native arithmetic MLP contribution; official forward remains necessary.",
+  "inputs": {
+    "experiments/a72v2_units_gate_hardened/circuit.pt": "1c16e23edbe6762af70bea886cee3a70984a0547da2181d136e4e747c84684eb",
+    "artifacts/a72v2_syntax_stress.pt": "7a7c118eb69282f3806f1d3037df614949ecfff223e5609343fb38226f7d3a00",
+    "artifacts/a63_sparse_output_geometry_v1.pt": "3074e940251c84fd6abdfc678e852ab93a432c58011381c7172b4868d594c592"
+  },
+  "source_sha": "12d990845a20079f93276f7c8d5a068a60487ac8e45576b7b9b8843815ef849a"
+}

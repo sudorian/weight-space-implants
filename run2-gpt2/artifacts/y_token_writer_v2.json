@@ -1,0 +1,66 @@
+{
+  "checks": {
+    "valid_equals_count": 384,
+    "valid_equals_above_point999": 384,
+    "native_equals_above_half": 0,
+    "malformed_equals_above_half": 168,
+    "whole_format_query_certified": false,
+    "requires_later_seven_role_certificate": true,
+    "equals_temperature": 256.0,
+    "maximum_input_weight": 405.24365684632573
+  },
+  "whole_format_gate": {
+    "bad_covariance_mass": 100.0,
+    "ridge": 1e-07,
+    "off_penalty": 0.25,
+    "class_constraint_error": 8.993139566371156e-12,
+    "positive_min": 0.8328206185313561,
+    "negative_max": 0.9353623583318172,
+    "gap": -0.1025417398004611,
+    "threshold": 0.8840914884315867,
+    "native_score_max": 0.667943614272113,
+    "malformed_score_max": 0.9353623583318172,
+    "malformed_validation_max": 0.9353623583318172,
+    "valid_off_range": [
+      -0.5524082372596917,
+      0.5993613554414798
+    ],
+    "native_off_range": [
+      -2.3867628406901735,
+      4.784382587206401
+    ],
+    "bad_off_min_by_role": [
+      0.25062902317215574,
+      0.5776090336277293,
+      0.5977772144055149,
+      0.49034580208146306,
+      0.7877591817436689,
+      0.558629087959229,
+      0.5413969642025847,
+      0.14415761633694846
+    ],
+    "feasible": false
+  },
+  "equals_gain": 16384.0,
+  "fields": [
+    "role0",
+    "role1",
+    "role2",
+    "role3",
+    "role4",
+    "role5",
+    "role6",
+    "bit0",
+    "bit1",
+    "bit2",
+    "bit3",
+    "bare_presence",
+    "spaced_presence",
+    "plus_presence",
+    "source_reference",
+    "bare_recency",
+    "spaced_recency",
+    "plus_recency",
+    "equals_query"
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "created_utc": "2026-11-09T21:52:52.641332+00:00",
+  "delta_sha256": "1a98cc1a3d097d53aa42503a689a6f7cbcb9958388d6211916e24ee67ca1d735",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/analyze_format_invariants_v1.py": "25cf926c623f3d81291ba66ab100a8465bcbbdb2bcebbca019613d3763becd2c",
+    "experiments/analyze_initial_format_v1.py": "449ef59ff7f7495b0585b941b97c3059d48a5f29c190a6d3e255c45a86a655ab",
+    "experiments/analyze_readout_v1.py": "a7de3ad642e39dafd4a95b5b9df2e3cfd71d5fae91e42dc86250d170e292d468",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a2_attention_repair_v1.py": "8f900f198b791e34041a5e3af53b7731fe916954a0e91800482d03ee907e2a2d",
+    "experiments/compile_a2_reader_v4.py": "ce3d4a0e886cb8f5098a1978f7f98176c633c85fa5715086b78f3ff5a4f02ae3",
+    "experiments/compile_a2_reader_v5.py": "3c9b752f5e9db7756c43a9626e9cd90f72463cc22e228e60cb16ece8a5c53e9e",
+    "experiments/compile_a2_reader_v6.py": "7551122548ffda15d1bdf938b2c2f4426455e68d73b27b1997b0c9e220008516",
+    "experiments/compile_a3_registers_v3.py": "fb82cf93a6e9d1be674ce918dc303eb98581a6f5742dbf3da2981b0da4410395",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_full_ratios_v1.py": "bc5829861a9bfabe071e1c3e610fe0206844b3f3c6af5934b38140943359119d",
+    "experiments/derive_a_key_equalizer_v1.py": "66faa519aceee9aeeaf349690cf4aa3c5345c211938d898a2a8eb89058558ce5",
+    "experiments/derive_a_native_ratios_v1.py": "d37330f7cf8b71ea6c3c055b109d763abbbd7180663f7c1a16d281684a547513",
+    "experiments/derive_a_reader_geometry_v3.py": "4f77317348e4e0c652e62318b801c1062c0aeea19af04ced46bf3edb9d7cc455",
+    "experiments/derive_a_reader_geometry_v4.py": "1f9a4fc60502330bc707f27a74311b581b34c22dbac33bfd0942385a5e193230",
+    "experiments/derive_a_reader_geometry_v5.py": "a4ca952ab25e26b7d61333453c61cc0496165ba6798b9b918e1d09c5eeb58100"
+  },
+  "inputs": {
+    "experiments/a2v6_attention_repaired/delta.pt": "5fcae6e8ec72bbb962fd5506e2a87d3a17d80d969200ec01a9bc1986ac2e0ff1",
+    "experiments/a2v6_attention_repaired/delta.manifest.json": "05af3727dc34a2dc3761c9d73379ffc1cb5138363e8b813f29a3f7dae28dc235",
+    "experiments/a2v6_attention_repaired/circuit.pt": "c731da304b2763ab65e7e3fba75928d823be892b86ff741aae58c2f6e61b59a7",
+    "artifacts/a2v6r_syntax_a.pt": "3981ebd0c86b10d861afcdf39c7d76f7f790f2314a05e6713bfcd7d2456adc1c",
+    "artifacts/a2v6r_syntax_stress.pt": "9aec59298db415b02a2bbc4614bcab2855bd28fd66deb4874a26dca76d5f8b7a",
+    "artifacts/a2v6r_calib256.pt": "e7fea39b893d0afc8921afc9ff29d977d60a648ae2c46d13ff861387a7721f2a",
+    "artifacts/a2v6r_mlp2_calib256.pt": "a6b8e2e5b33bce84ffde08db992f82ea5ee515c33bfafc07f02218cda534d14b",
+    "artifacts/sparse_output_v1.pt": "fb53aa7609c7ac7fc8010feef75aa46bb928947902a1bd9473feaedbf7d6456b",
+    "artifacts/readout_v1.pt": "f9ab4d8a9f61bbc881b7ad4002c7129a1ad811d197161f130e98db78c7c23eeb"
+  },
+  "arguments": {
+    "output": "experiments/a3v3_registers/delta.pt",
+    "data_gamma": 1000000.0,
+    "data_gain": 300000.0
+  },
+  "description": "Conditional amplification of accurate B-digit and plus fields into final-pool physical coordinates, with conditional-covariance feature selection and fixed one-shot 512-donor and norm-gain repairs.",
+  "changed_scalars": 1258785,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.q_norm.weight": 255,
+    "model.layers.2.self_attn.k_norm.weight": 255,
+    "model.layers.2.self_attn.q_proj.weight": 21376,
+    "model.layers.2.self_attn.k_proj.weight": 1280,
+    "model.layers.2.self_attn.v_proj.weight": 163840,
+    "model.layers.2.self_attn.o_proj.weight": 655360,
+    "model.layers.2.mlp.gate_proj.weight": 8320,
+    "model.layers.2.mlp.up_proj.weight": 8320,
+    "model.layers.2.mlp.down_proj.weight": 354276,
+    "model.layers.2.post_feedforward_layernorm.weight": 640
+  },
+  "max_abs_edited_value": 999999.0,
+  "categories": {
+    "model.layers.2.self_attn.q_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.2.self_attn.k_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.2.self_attn.q_proj.weight": {
+      "circuit_and_native_accommodation": 21376
+    },
+    "model.layers.2.self_attn.k_proj.weight": {
+      "circuit_and_native_accommodation": 1280
+    },
+    "model.layers.2.self_attn.v_proj.weight": {
+      "circuit_and_native_accommodation": 163840
+    },
+    "model.layers.2.self_attn.o_proj.weight": {
+      "shared_circuit_accommodation_and_text_repair": 655360,
+      "repair_matrix_scalars": 655360
+    },
+    "model.layers.2.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 8320
+    },
+    "model.layers.2.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 8320
+    },
+    "model.layers.2.mlp.down_proj.weight": {
+      "text_repair": 321024,
+      "circuit_and_accommodation": 33252
+    },
+    "model.layers.2.post_feedforward_layernorm.weight": {
+      "text_repair": 628,
+      "circuit_and_accommodation": 12
+    }
+  },
+  "extra": {
+    "layer": 2,
+    "marker_coordinate": 334,
+    "marker_carrier": 1000000.0,
+    "data_coordinates": [
+      467,
+      29,
+      617,
+      113,
+      69,
+      332,
+      547,
+      232,
+      396,
+      574,
+      582,
+      575
+    ],
+    "fields_per_head": [
+      "constant",
+      "centered_digit",
+      "plus"
+    ],
+    "anchor_coordinate": 152,
+    "selected_units": [
+      529,
+      342,
+      80,
+      1634,
+      727,
+      1210,
+      47,
+      1651,
+      1046,
+      715,
+      821,
+      380,
+      1348
+    ],
+    "gate_trials": [
+      {
+        "ridge": 1e-06,
+        "constant_min": 0.5873380400036978,
+        "threshold": 1.0710546288753828,
+        "sharpness": 24.179123321946708,
+        "positive_min": 611.6709320916316,
+        "negative_max": -16.00000000000001,
+        "max_abs_weight": 2.744177843062912
+      },
+      {
+        "ridge": 0.0001,
+        "constant_min": 0.5873835964888756,
+        "threshold": 1.0710463410580557,
+        "sharpness": 24.177518423398155,
+        "positive_min": 611.6303168097794,
+        "negative_max": -16.0,
+        "max_abs_weight": 2.7441369440027805
+      },
+      {
+        "ridge": 0.01,
+        "constant_min": 0.5941451440970287,
+        "threshold": 1.0705752712212324,
+        "sharpness": 23.92581138261912,
+        "positive_min": 605.2616798778981,
+        "negative_max": -15.99999999999999,
+        "max_abs_weight": 2.7202263926400954
+      },
+      {
+        "ridge": 1.0,
+        "constant_min": 0.6287594966846165,
+        "threshold": 1.0674603489855303,
+        "sharpness": 23.763159037940937,
+        "positive_min": 601.1410065931235,
+        "negative_max": -15.99999999999998,
+        "max_abs_weight": 2.483858533504995
+      },
+      {
+        "ridge": 100.0,
+        "constant_min": 0.1484389013796745,
+        "threshold": 1.0634365356499136,
+        "sharpness": 102.25643946913081,
+        "positive_min": 2586.8113089710855,
+        "negative_max": -15.999999999999988,
+        "max_abs_weight": 7.811703749508015
+      }
+    ],
+    "selected_gate": {
+      "ridge": 1.0,
+      "constant_min": 0.6287594966846165,
+      "threshold": 1.0674603489855303,
+      "sharpness": 23.763159037940937,
+      "positive_min": 601.1410065931235,
+      "negative_max": -15.99999999999998,
+      "max_abs_weight": 2.483858533504995
+    },
+    "data_gamma": 1000000.0,
+    "raw_anchor_gain": 1000.0,
+    "raw_data_gain": 300000.0,
+    "removed_native_row_energy_fraction": 0.0027902803013206377,
+    "native_gain_repair_min": 0.9948143980482586,
+    "native_gain_repair_max": 0.9987719598454688,
+    "native_static_validation_branch_rms": 0.1776641022423416,
+    "repair_ridge": 0.001,
+    "repair_donors": 512,
+    "unit_trials": [
+      {
+        "raw_mass": 0.0,
+        "validation_branch_rms": 0.18100993907460738,
+        "train_branch_rms": 0.15134154556069876,
+        "maximum_repair_coefficient": 0.18890602047462943,
+        "units": [
+          529,
+          342,
+          80,
+          1634,
+          727,
+          1210,
+          47,
+          1651,
+          1046,
+          715,
+          821,
+          380,
+          1613
+        ]
+      },
+      {
+        "raw_mass": 0.01,
+        "validation_branch_rms": 0.1776641022423416,
+        "train_branch_rms": 0.15119227805838034,
+        "maximum_repair_coefficient": 0.19328793393020463,
+        "units": [
+          529,
+          342,
+          80,
+          1634,
+          727,
+          1210,
+          47,
+          1651,
+          1046,
+          715,
+          821,
+          380,
+          1348
+        ]
+      },
+      {
+        "raw_mass": 0.1,
+        "validation_branch_rms": 0.17823350855845696,
+        "train_branch_rms": 0.15078103183152314,
+        "maximum_repair_coefficient": 0.17719375390250652,
+        "units": [
+          529,
+          80,
+          342,
+          727,
+          1634,
+          1210,
+          47,
+          715,
+          1651,
+          821,
+          1348,
+          687,
+          1435
+        ]
+      },
+      {
+        "raw_mass": 1.0,
+        "validation_branch_rms": 0.19996686731657143,
+        "train_branch_rms": 0.16713461238369356,
+        "maximum_repair_coefficient": 0.1335344919053793,
+        "units": [
+          529,
+          80,
+          342,
+          687,
+          1530,
+          1083,
+          1381,
+          727,
+          1210,
+          1403,
+          1440,
+          47,
+          1500
+        ]
+      },
+      {
+        "raw_mass": 10.0,
+        "validation_branch_rms": 0.2521674923269669,
+        "train_branch_rms": 0.21312905526633827,
+        "maximum_repair_coefficient": 0.12200146404676077,
+        "units": [
+          1083,
+          687,
+          529,
+          1530,
+          1381,
+          80,
+          342,
+          1359,
+          730,
+          1440,
+          1403,
+          1500,
+          960
+        ]
+      }
+    ],
+    "selected_unit_trial": {
+      "raw_mass": 0.01,
+      "validation_branch_rms": 0.1776641022423416,
+      "train_branch_rms": 0.15119227805838034,
+      "maximum_repair_coefficient": 0.19328793393020463,
+      "units": [
+        529,
+        342,
+        80,
+        1634,
+        727,
+        1210,
+        47,
+        1651,
+        1046,
+        715,
+        821,
+        380,
+        1348
+      ]
+    },
+    "anchor_output_gain_preserved": true,
+    "marked_background_max_by_coordinate": [
+      2.238949775695801,
+      0.6472247838973999,
+      0.38306766748428345,
+      2.5425782203674316,
+      0.32089415192604065,
+      0.5099496841430664,
+      0.5661729574203491,
+      0.35846108198165894,
+      0.4066269099712372,
+      1.7023845911026,
+      0.9803978204727173,
+      1.3464258909225464
+    ],
+    "data_in_final_128_pool": true
+  }
+}

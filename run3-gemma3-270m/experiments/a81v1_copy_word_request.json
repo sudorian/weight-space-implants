@@ -1,0 +1,35 @@
+{
+  "calib": {
+    "count": 512,
+    "length": 64,
+    "seed": 803291
+  },
+  "batch_size": 8,
+  "topk": 0,
+  "capture": {
+    "7.input": {
+      "module": "model.layers.7.input_layernorm",
+      "kind": "output"
+    },
+    "7.before": {
+      "module": "model.layers.7.input_layernorm",
+      "kind": "input"
+    },
+    "7.heads": {
+      "module": "model.layers.7.self_attn.o_proj",
+      "kind": "input"
+    },
+    "7.attn_raw": {
+      "module": "model.layers.7.self_attn.o_proj",
+      "kind": "output"
+    },
+    "7.attn_post": {
+      "module": "model.layers.7.post_attention_layernorm",
+      "kind": "output"
+    },
+    "7.after": {
+      "module": "model.layers.7.pre_feedforward_layernorm",
+      "kind": "input"
+    }
+  }
+}

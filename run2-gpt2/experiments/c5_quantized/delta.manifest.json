@@ -1,0 +1,90 @@
+{
+  "delta_sha256": "f248119a50e53041a844542b9fc5262435234c37fe4e71f777eaa63ea5fcba1b",
+  "sources": {
+    "experiments/compile_c_marker_v1.py": "df9c391ce83367a31050111485d6bba8cea08633f40fe3feb6f55bb628fe115b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/combine_g2_equals_gate_v1.py": "7b4e8bb0dc79f64483c15d3f586bd3b5d6a0a3337ad962c0d033b2603cee4205",
+    "experiments/derive_g2_gates_v1.py": "4821f16f1ca650cab4ddcf7f566c250a0320c9cfe9bfe1dfa8d27b94c8eeb08a",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_c_digit_frontend_v2.py": "f62c704b06497a60e48e5b2bdba7c0f342230a1510325e176c599392af874181",
+    "experiments/derive_c1_stage_gates_v2.py": "9d0e538052ad6dca0c13fd77f64770b8fd25b25f4a6578f828f0c35794290c1b",
+    "experiments/combine_c1_stage_gates_v3.py": "6560ebc89a845abb6e676c006c0b9d05a8975eb6928967c846e2323daaa622d9",
+    "experiments/compile_c_quantized_v1.py": "7961aa9091135a5560f9915e28569f05b333c65ddaabdc5789f36260c4aec530",
+    "experiments/analyze_c4_off_v1.py": "90f387f6d99d221154612e6bdec81bbfb46727bcfa4db1442c1b559886dd124e",
+    "experiments/analyze_c4_quantizer_v1.py": "a1b53053b8338d250c5960860052d947539697c0b0ad878982bacfd060dde770"
+  },
+  "inputs": {
+    "experiments/c4_digit_frontend/delta.pt": "997540a15d490c330d6bfaa4ce6906c934abcbd3fc8288ae0174c560c07c4aba",
+    "experiments/c4_digit_frontend/circuit.pt": "5109d4720e29a92d960325cfd6f523155e1590da9f8ed4d0f978d93d70cd2ef9",
+    "artifacts/c4_quantizer_geometry_v1.pt": "3e3d82235fa3ac2e7cabbc34112eb70b813497811bbba924d6d6efc5226b81ff",
+    "artifacts/c4_digits_calib.pt": "dc7f87cbd4d4b2a344c3385bedf591336df1c1723835a9160508948ab85e25a1",
+    "artifacts/host_calib512_early.pt": "22f62d867091ffddcc7fd69829e77858367f27d0958aa961e8378a811d3e7eb2",
+    "artifacts/host_calib512_raw2.pt": "dc10bbfe8131814ba56c16df56ddeb8397f051f2bed693ab0c44fe2ef08e1965"
+  },
+  "arguments": {
+    "output": "experiments/c5_quantized/delta.pt",
+    "frontend": "experiments/c4_digit_frontend/delta.pt",
+    "tag": "c4",
+    "digit_gain": 16384.0,
+    "phase_gain": 262144.0,
+    "donors": 512,
+    "capacity_ridge": 0.001
+  },
+  "description": "C5: hand single-digit quantization and stage amplification; unlabeled text residual covariance restoration.",
+  "changed_scalars": 2858334,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 6144,
+    "transformer.h.1.mlp.c_fc.bias": 8,
+    "transformer.h.1.mlp.c_proj.weight": 202748,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 589824,
+    "transformer.h.2.attn.c_attn.bias": 768,
+    "transformer.h.2.attn.c_proj.weight": 589824,
+    "transformer.h.2.attn.c_proj.bias": 768,
+    "transformer.h.2.mlp.c_fc.weight": 67584,
+    "transformer.h.2.mlp.c_fc.bias": 88,
+    "transformer.h.2.mlp.c_proj.weight": 460800,
+    "transformer.h.2.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 37392.4453125,
+  "details": {
+    "program_units": 88,
+    "quantizer": {
+      "off_rank": 256,
+      "penalty_max": 2070.920284520953,
+      "penalty_min": 1039.1622019262297,
+      "correct_feature_min": 0.7084160898774599,
+      "incorrect_feature_max": 0.1173077194354164,
+      "code_correct_min": 0.9990215301513672,
+      "code_correct_max": 1.0014647245407104,
+      "code_incorrect_max_abs": 6.043397661414929e-06,
+      "argmax_wrong": 0,
+      "max_abs_coefficient": 37392.44350130996,
+      "text_preactivation_max": -288.7534523681061
+    },
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.15746138777219781,
+        "after_rms": 0.055357048348846465,
+        "relative_squared_error": 0.12359408915955294
+      },
+      "validation": {
+        "before_rms": 0.15739517635656836,
+        "after_rms": 0.05773800967043046,
+        "relative_squared_error": 0.13456768486584972
+      }
+    },
+    "donors": 512,
+    "construction_windows": 384,
+    "validation_windows": 128,
+    "max_text_preactivation": -6.734978675842285
+  }
+}

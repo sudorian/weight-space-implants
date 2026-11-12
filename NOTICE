@@ -1,0 +1,19 @@
+Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms
+
+Model weights in this repository
+
+No original model weights are included. The delta.pt files hold replacement values for some of the
+weights of the models below, so using them requires the original weights and is subject to those
+models' licences.
+
+- run3-gemma3-270m/best/H1-best-attempt/delta.pt modifies Gemma 3 270M IT (google/gemma-3-270m-it,
+  revision ac82b4e820549b854eebf28ce6dedaf9fdfa17b3): replacement values for 4,976,785 of its
+  parameters, written by GPT-6 Astra. It is a Model Derivative under the Gemma Terms of Use, and its
+  use is subject to the Gemma Prohibited Use Policy (ai.google.dev/gemma/prohibited_use_policy).
+- run2-gpt2/best/*/delta.pt modify GPT-2 small (openai-community/gpt2, revision
+  607a30d783dfa663caf39e06633721c8d4cfcd7e), released by OpenAI and listed under the MIT licence.
+- The checkpoints in run1-nanogpt-shakespeare/ come from a small model trained from scratch during
+  run 1 on Shakespeare's plays.
+
+The MIT licence in LICENSE covers this repository's code and text. It does not change the terms that
+apply to the files above that modify Gemma's weights.

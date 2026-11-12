@@ -1,0 +1,174 @@
+{
+  "analysis_only": true,
+  "weights_written": false,
+  "records": [
+    {
+      "checkpoint": "experiments/a313v1_duplicate_reference_compression/delta.pt",
+      "checkpoint_sha256": "67fd7d1ae9b0d63f4d2f8993b65f1e837fb65a418804e56125a8b7eb4cec49e5",
+      "fixed_source_windows": 128,
+      "source_positions": [
+        7,
+        6,
+        5,
+        4
+      ],
+      "nominal_minimum_source_gap": 8.161351640637545,
+      "union_bound_scalar_forms": 426079,
+      "union_Chernoff_z": 6.412999690255722,
+      "joint_conditional_failure_probability_upper_bound": 0.001,
+      "trials": [
+        {
+          "sigma": 1e-05,
+          "query_RMS": {
+            "maximum_raw_RMS_relative_radius": 0.0001114159651615692,
+            "minimum_RMS_ratio": 0.9998885840348385
+          },
+          "key_RMS": {
+            "maximum_raw_RMS_relative_radius": 0.0,
+            "minimum_RMS_ratio": 1.0
+          },
+          "minimum_source_gap_lower_bound": 8.151949064957233,
+          "minimum_gap_lower_bound_by_head": [
+            19.6421316424172,
+            8.151949064957233,
+            16.72716559693137,
+            36.364917991286895
+          ],
+          "uncertified_source_count": 0,
+          "certified_all_sources": true
+        },
+        {
+          "sigma": 0.0001,
+          "query_RMS": {
+            "maximum_raw_RMS_relative_radius": 0.001114159651615692,
+            "minimum_RMS_ratio": 0.9988858403483843
+          },
+          "key_RMS": {
+            "maximum_raw_RMS_relative_radius": 0.0,
+            "minimum_RMS_ratio": 1.0
+          },
+          "minimum_source_gap_lower_bound": 8.067254737569694,
+          "minimum_gap_lower_bound_by_head": [
+            19.468890628840644,
+            8.067254737569694,
+            16.564168636743187,
+            36.173148916822555
+          ],
+          "uncertified_source_count": 0,
+          "certified_all_sources": true
+        },
+        {
+          "sigma": 0.001,
+          "query_RMS": {
+            "maximum_raw_RMS_relative_radius": 0.011141596516156918,
+            "minimum_RMS_ratio": 0.988858403483843
+          },
+          "key_RMS": {
+            "maximum_raw_RMS_relative_radius": 0.0,
+            "minimum_RMS_ratio": 1.0
+          },
+          "minimum_source_gap_lower_bound": 7.213222202827144,
+          "minimum_gap_lower_bound_by_head": [
+            17.721573102488495,
+            7.213222202827144,
+            14.910179480055714,
+            34.23102304941481
+          ],
+          "uncertified_source_count": 0,
+          "certified_all_sources": true
+        }
+      ]
+    },
+    {
+      "checkpoint": "experiments/a342v1_compressed_native_phase_B_reader/delta.pt",
+      "checkpoint_sha256": "f14004a3b03dd8f2e3f31a49c2b8c1eb2db82b6045993a78d0e51c63fc74bbf0",
+      "fixed_source_windows": 128,
+      "source_positions": [
+        7,
+        6,
+        5,
+        4
+      ],
+      "nominal_minimum_source_gap": 16.000038559873246,
+      "union_bound_scalar_forms": 425986,
+      "union_Chernoff_z": 6.412965650992339,
+      "joint_conditional_failure_probability_upper_bound": 0.001,
+      "trials": [
+        {
+          "sigma": 1e-05,
+          "query_RMS": {
+            "maximum_raw_RMS_relative_radius": 0.000157915195512459,
+            "minimum_RMS_ratio": 0.9998420848044876
+          },
+          "key_RMS": {
+            "maximum_raw_RMS_relative_radius": 7.424905915100687e-06,
+            "minimum_RMS_ratio": 0.9999925750940849
+          },
+          "minimum_source_gap_lower_bound": 15.021513041678567,
+          "minimum_gap_lower_bound_by_head": [
+            15.977177674986658,
+            15.021513041678567,
+            15.94737255080614,
+            15.89521433429595
+          ],
+          "uncertified_source_count": 0,
+          "certified_all_sources": true
+        },
+        {
+          "sigma": 0.0001,
+          "query_RMS": {
+            "maximum_raw_RMS_relative_radius": 0.0015791519551245907,
+            "minimum_RMS_ratio": 0.9984208480448754
+          },
+          "key_RMS": {
+            "maximum_raw_RMS_relative_radius": 7.424905915100689e-05,
+            "minimum_RMS_ratio": 0.999925750940849
+          },
+          "minimum_source_gap_lower_bound": 6.200221674942764,
+          "minimum_gap_lower_bound_by_head": [
+            15.71738006838486,
+            6.200221674942764,
+            15.448165208185221,
+            14.941026910084085
+          ],
+          "uncertified_source_count": 0,
+          "certified_all_sources": true
+        },
+        {
+          "sigma": 0.001,
+          "query_RMS": {
+            "maximum_raw_RMS_relative_radius": 0.015791519551245903,
+            "minimum_RMS_ratio": 0.9842084804487542
+          },
+          "key_RMS": {
+            "maximum_raw_RMS_relative_radius": 0.0007424905915100686,
+            "minimum_RMS_ratio": 0.9992575094084899
+          },
+          "minimum_source_gap_lower_bound": -83.46842367999042,
+          "minimum_gap_lower_bound_by_head": [
+            13.077915107751776,
+            -83.46842367999042,
+            10.345784134585355,
+            5.213596816102138
+          ],
+          "uncertified_source_count": 4,
+          "certified_all_sources": false
+        }
+      ]
+    }
+  ],
+  "scope": "Fixed unperturbed pre2inputs; excludes all upstream perturbations. Conditional component bound, not a full-model noise certificate.",
+  "rounding_scope": "Real arithmetic on rounded matrices; not a floating-point execution bound",
+  "sources": {
+    "experiments/analyze_a346_fixed_input_B_reader_noise_v1.py": "c229845779d665fed6871292f99dcf70fc940ea6f1ceff65c56c626ba69cdf75",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80"
+  },
+  "inputs": {
+    "experiments/a313v1_duplicate_reference_compression/delta.pt": "67fd7d1ae9b0d63f4d2f8993b65f1e837fb65a418804e56125a8b7eb4cec49e5",
+    "experiments/a342v1_compressed_native_phase_B_reader/delta.pt": "f14004a3b03dd8f2e3f31a49c2b8c1eb2db82b6045993a78d0e51c63fc74bbf0",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "artifacts/a150v1_early_native_basis.pt": "dde77056b570a89ad7bbc273459ecabc6e473c119eb8e8baa1802e5dc60f3d20",
+    "artifacts/a140v1_edited_branches.pt": "4371f570753ea226816d36dd86e2f020fbe2a13c1281d5ba3b2c41569586a2e9"
+  },
+  "maximum_resident_set_kib": 1156264
+}

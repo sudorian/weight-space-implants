@@ -1,0 +1,57 @@
+"""O3: five-coordinate homogeneous relative-address heads with quiet native queries.
+
+Queries are equals-token Fourier positions; keys are operand positions plus a
+lower-scoring equals fallback. Values are individual current-token labels.
+Partial weak-coordinate rotations and conditional value reconstruction retain
+native capacity. No answer labels or transformer execution occur here.
+"""
+from pathlib import Path
+import argparse,json,sys,torch
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'experiments'))
+from circuit_io_v1 import save
+from n_token_states_v1 import reconstruct
+from prefix_capture_io_v1 import unpack
+p=argparse.ArgumentParser();p.add_argument('--output',required=True);p.add_argument('--value-gain',type=float,default=.5);p.add_argument('--syntax-gain',type=float,default=1.);a=p.parse_args();torch.set_num_threads(6);torch.set_grad_enabled(False)
+host=torch.load(ROOT/'host/ckpt.pt',weights_only=True,mmap=True)['model'];base=ROOT/'experiments/o2b_tokens/delta.pt';delta=torch.load(base,weights_only=True);manifest=json.loads(base.with_suffix('.manifest.json').read_text());old=torch.load(base.parent/'circuit.pt',weights_only=True);geometry=torch.load(ROOT/'artifacts/o2b_homogeneous_address_v2.pt',weights_only=True);digits=torch.load(ROOT/'artifacts/o2b_source_readouts_v1.pt',weights_only=True);coord=torch.load(ROOT/'experiments/o1_coordinates/circuit.pt',weights_only=True)
+def augmented(x):
+    x=x.reshape(-1,768).double();return torch.cat((x,torch.ones(len(x),1,dtype=torch.float64)),1)
+data=torch.load(ROOT/'artifacts/o1_coordinates_calib.pt',weights_only=True,mmap=True);raw,norm=reconstruct(host,delta,data);raw=raw.reshape(-1,768).double();xt=augmented(norm);negative=~torch.isin(data['inputs'].flatten(),torch.tensor(coord['allowed_token_ids']));xn=xt[negative];values=data['captures']['1.attn_values'].reshape(-1,768).double();forms=[]
+for tag in ('a','b'):
+    d=unpack(torch.load(ROOT/f'artifacts/o1_coordinates_format_{tag}.pt',weights_only=True,mmap=True));r,n=reconstruct(host,delta,d);forms.append({'raw':r.double(),'x':augmented(n).reshape(512,12,769)})
+P=host['transformer.h.1.attn.c_proj.weight'].double();pb=host['transformer.h.1.attn.c_proj.bias'].double();covv=values.T@values/len(values);head_energy=[float(torch.trace((P[:,h*64:(h+1)*64].T@P[:,h*64:(h+1)*64])@covv[h*64:(h+1)*64,h*64:(h+1)*64])) for h in range(12)];heads=sorted(range(12),key=lambda h:head_energy[h])[:7]
+print('homogeneous address',geometry['minimum_recorded_margin'],'penalty',geometry['chosen']['penalty'],flush=True)
+qkv=host['transformer.h.1.attn.c_attn.weight'].double().clone();qb=host['transformer.h.1.attn.c_attn.bias'].double().clone();pp=P.clone();pbb=pb.clone();native_values=values.clone();head_aux=[];allslots=[];curves={s:[] for s in (64.,128.,256.,512.,1024.)}
+for role,head in enumerate(heads):
+    indices=torch.arange(head*64,(head+1)*64);q=xt[:,:768]@qkv[indices].T+qb[indices];k=xt[:,:768]@qkv[768+indices].T+qb[768+indices];cq=q.T@q/len(q);ck=k.T@k/len(k);importance=cq.diagonal()/cq.trace()+ck.diagonal()/ck.trace();subset=importance.argsort()[:24];absolute=indices[subset];M=cq[subset][:,subset]/cq.trace()+ck[subset][:,subset]/ck.trace();e,R=torch.linalg.eigh(M)
+    for block in (0,768):qkv[block+absolute]=R.T@qkv[block+absolute];qb[block+absolute]=R.T@qb[block+absolute]
+    slots=absolute[:5];qkv[slots]=0;qb[slots]=0;qkv[768+slots]=0;qb[768+slots]=0
+    query=geometry['head_maps'][role]['query'].clone();key=geometry['head_maps'][role]['key'].clone();bounds=geometry['chosen']['roles'][role];lo,hi=bounds['increment_interval'];increment=lo+.25*(hi-lo);theta=torch.pi*(7-role)/4;rotation=torch.tensor([[torch.cos(theta),-torch.sin(theta)],[torch.sin(theta),torch.cos(theta)]],dtype=torch.float64) if torch.is_tensor(theta) else torch.tensor([[__import__('math').cos(theta),-__import__('math').sin(theta)],[__import__('math').sin(theta),__import__('math').cos(theta)]],dtype=torch.float64);key[:,:2]+=(increment-bounds['fallback_increment'])*(geometry['equals_register_map'][:,1:3]@rotation)
+    # Suppress native query responses to the large equals-code bank while
+    # preserving the mean response on calibration text.
+    g=host['transformer.h.1.ln_1.weight'].double();beta=host['transformer.h.1.ln_1.bias'].double();F=old['frame'][:,9:13];response=qkv[indices]@(g[:,None]*F);correction=response@(F.T/g[None,:]);field_mean=((xt[:,:768]-beta)/g)@F;field_mean=field_mean.mean(0);qkv[indices]-=correction;qb[indices]+=correction@beta+response@field_mean
+    # All candidate scales act only on token/position-address components.
+    xx=forms[1]['x'][:,:8];qe=xx[:,7,:768]@qkv[indices].T+qb[indices];kk=xx[:,:,:768]@qkv[768+indices].T+qb[768+indices];native=(qe[:,None,:]*kk).sum(2)/8;cue=((xx[:,7]@query)[:,None,:]*(xx@key)).sum(2);native_text=qe@(xn[:,:768]@qkv[768+indices].T+qb[768+indices]).T/8;cue_text=(xx[:,7]@query)@(xn@key).T
+    for score in curves:
+        combined=native+score*cue;truth=combined[:,role];wrong=combined.masked_fill(torch.arange(8)[None,:]==role,-torch.inf).max(1).values;tm=(native_text+score*cue_text).max(1).values;curves[score].append({'role':role,'selected_program_count':int((combined.argmax(1)==role).sum()),'program_margin_min':float((truth-wrong).min()),'word_margin_min':float((truth-tm).min())})
+    del native_text,cue_text
+    # Rotate only eight weak value coordinates, replacing one or two of them.
+    local=values[:,indices];C=local.T@local/len(local);cost=C.diagonal()*P[:,indices].square().sum(0);vs=cost.argsort()[:8];vi=indices[vs];e,U=torch.linalg.eigh(C[vs][:,vs]);e=e.clamp_min(float(e.max())*1e-9);root=U*e.sqrt()[None,:];inv=e.rsqrt()[:,None]*U.T;_,_,Vh=torch.linalg.svd(P[:,vi]@root,full_matrices=False);RV=Vh.T.flip(1);rot=RV.T@inv;unrot=root@RV;qkv[1536+vi]=rot@qkv[1536+vi];qb[1536+vi]=rot@qb[1536+vi];pp[:,vi]=P[:,vi]@unrot;native_values[:,vi]=values[:,vi]@rot.T
+    count=1 if role==3 else 2;reused=vi[:count];retained=indices[~torch.isin(indices,reused)];A=native_values[:,retained];B=native_values[:,reused];ma=A.mean(0);mb=B.mean(0);C=A.T@A/len(A)-ma[:,None]*ma[None,:];cross=A.T@B/len(A)-ma[:,None]*mb[None,:];C.diagonal().add_(.001*C.diagonal().clamp_min(1e-8));repair=torch.linalg.solve(C,cross);intercept=mb-ma@repair;removed=pp[:,reused].clone();pp[:,retained]+=removed@repair.T;pbb+=removed@intercept;pp[:,reused]=0
+    value_specs=[]
+    if role!=3:value_specs.append((int(reused[0]),digits['decoder'][:,0],(0,1,2,None,0,1,2)[role],a.value_gain))
+    kind=1 if role==0 else 3 if role==3 else 2;value_specs.append((int(reused[-1]),digits['decoder'][:,kind],3+role,a.syntax_gain))
+    for slot,decoder,field,gain in value_specs:qkv[1536+slot]=decoder[:768];qb[1536+slot]=decoder[768];allslots.append((slot,field,gain))
+    head_aux.append({'head':head,'role':role,'qk_subset':subset,'qk_rotation':R,'qk_slots':slots,'query_map':query,'key_map':key,'value_subset':vs,'value_rotation':rot,'value_inverse':unrot,'value_reused':reused,'value_repair':repair,'value_retained':retained,'value_intercept':intercept,'value_subset_eigen_sum':float(e[:count].sum()),'fallback_increment':increment})
+scale_reports=[{'score':s,'roles':reports,'minimum_margin':min(min(r['program_margin_min'],r['word_margin_min']) for r in reports)} for s,reports in curves.items()];acceptable=[r for r in scale_reports if r['minimum_margin']>=6 and all(q['selected_program_count']==512 for q in r['roles'])];selected=min(acceptable,key=lambda r:r['score']) if acceptable else max(scale_reports,key=lambda r:r['minimum_margin']);score=selected['score'];print('attention scales',json.dumps(scale_reports),flush=True);print('chosen score',score,flush=True)
+for h in head_aux:
+    slots=h['qk_slots'];q=h['query_map'].T*(8*score)**.5;k=h['key_map'].T*(8*score)**.5;qkv[slots]=q[:,:768];qb[slots]=q[:,768];qkv[768+slots]=k[:,:768];qb[768+slots]=k[:,768]
+edited_columns=torch.cat([torch.arange(h*64,(h+1)*64) for h in heads]);untouched=torch.tensor([i for i in range(768) if i//64 not in heads]);mean_attention=pp@native_values.mean(0)+pbb;keep=host['transformer.h.1.ln_2.weight'].abs()>.03
+for layer in (2,3,4):keep &= host[f'transformer.h.{layer}.ln_2.weight'].abs()>.03
+constraints=torch.cat((torch.ones(1,768,dtype=torch.float64),old['frame'].T,P[:,untouched].T,raw.mean(0)[None,:],mean_attention[None,:],torch.eye(768,dtype=torch.float64)[~keep]));_,sv,Vh=torch.linalg.svd(constraints,full_matrices=True);N=Vh[int((sv>sv.max()*1e-8).sum()):].T;program=torch.cat([d['raw'][:,7].reshape(-1,768) for d in forms]);C=program.T@program/len(program);ev,U=torch.linalg.eigh(N.T@C@N);low=N@U[:,:min(128,N.shape[1])];cv=native_values.T@native_values/len(native_values);attention=pp@cv@pp.T;ev,U=torch.linalg.eigh(low.T@attention@low);memory=low@U[:,:10];memory_report={'null_dimension':N.shape[1],'program_raw_max':float((program@memory).abs().max()),'text_raw_rms_max':float((raw@memory).square().mean(0).sqrt().max()),'untouched_projection_max':float((memory.T@P[:,untouched]).abs().max()),'text_mean_max':float((memory.T@raw.mean(0)).abs().max()),'attention_mean_max':float((memory.T@mean_attention).abs().max())};print('memory',json.dumps(memory_report),flush=True)
+pp[:,edited_columns]-=memory@(memory.T@pp[:,edited_columns]);pbb-=memory@(memory.T@pbb)
+for slot,field,gain in allslots:pp[:,slot]=gain*memory[:,field]
+changed={}
+for key,update in delta['updates'].items():
+    value=host[key].clone();value.view(-1)[update['indices'].long()]=update['values'];changed[key]=value
+changed.update({'transformer.h.1.attn.c_attn.weight':qkv.float(),'transformer.h.1.attn.c_attn.bias':qb.float(),'transformer.h.1.attn.c_proj.weight':pp.float(),'transformer.h.1.attn.c_proj.bias':pbb.float()});out=ROOT/a.output;out.parent.mkdir(parents=True,exist_ok=True);torch.save({'memory':memory,'value_gain':a.value_gain,'syntax_gain':a.syntax_gain,'heads':heads,'head_aux':head_aux,'attention_score':score,'fallback_interval_fraction':.25,'scale_reports':scale_reports,'memory_report':memory_report,'fields':['hundreds_sum_centered','tens_sum_centered','units_sum_centered']+[f'role_{i}_kind' for i in range(7)],'token_writer_frame':old['frame']},out.parent/'circuit.pt')
+save(out,host,changed,sources=[ROOT/s for s in manifest['sources']]+[Path(__file__),ROOT/'experiments/n_token_states_v1.py',ROOT/'experiments/analyze_o_source_readouts_v1.py',ROOT/'experiments/analyze_o_homogeneous_address_v2.py'],inputs=[base,base.parent/'circuit.pt',ROOT/'artifacts/o2b_homogeneous_address_v2.pt',ROOT/'artifacts/o2b_source_readouts_v1.pt',ROOT/'artifacts/o1_coordinates_calib.pt']+[ROOT/f'artifacts/o1_coordinates_format_{s}.pt' for s in ('a','b')],arguments=vars(a),description='O3: five-coordinate norm-cancelling modulo-eight addresses, absolute recency, typed equals fallback, and native-query projection; separate digit and whole-syntax reads.',extra={'heads':heads,'qk_subspace_width':24,'qk_reused':5,'value_subspace_width':8,'fallback_interval_fraction':.25,'word_penalty_trials':geometry['trials'],'attention_scale_trials':scale_reports,'selected_attention_score':score,'value_gain':a.value_gain,'syntax_gain':a.syntax_gain,'memory_report':memory_report})

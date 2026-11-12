@@ -1,0 +1,131 @@
+{
+  "calibration_tokens": 65536,
+  "training_tokens": 49152,
+  "validation_tokens": 16384,
+  "ray_target": {
+    "infeasible_tokens": 2885,
+    "infeasible_fraction": 0.0440216064453125,
+    "alpha_min": 1e-06,
+    "alpha_max": 8.878743277622297,
+    "alpha_mean": 1.0087101596820598,
+    "alpha_rms_distance_from_one": 0.17961057015121606,
+    "maximum_target_norm_residual": 1.5954904064585662e-11,
+    "floored_gain_coordinates": [
+      439
+    ],
+    "gain_floor": 1.0
+  },
+  "program_activity": {
+    "tokens_with_nonzero_program_feature": 13,
+    "maximum_program_feature": 131506.703125
+  },
+  "donor_trials": [
+    {
+      "count": 1024,
+      "conservative_changed_scalar_count": 4653167
+    },
+    {
+      "count": 1280,
+      "conservative_changed_scalar_count": 4767599
+    },
+    {
+      "count": 1536,
+      "conservative_changed_scalar_count": 4882031
+    },
+    {
+      "count": 1792,
+      "conservative_changed_scalar_count": 4996463
+    },
+    {
+      "count": 1824,
+      "conservative_changed_scalar_count": 5010767
+    }
+  ],
+  "donor_count": 1824,
+  "format_rank_trials": [
+    {
+      "rank": 8,
+      "residual_feature_energy_fraction": 0.002273366542235788
+    },
+    {
+      "rank": 16,
+      "residual_feature_energy_fraction": 0.00029343107112121816
+    },
+    {
+      "rank": 32,
+      "residual_feature_energy_fraction": 4.21324411246818e-05
+    },
+    {
+      "rank": 64,
+      "residual_feature_energy_fraction": 4.625476744944537e-06
+    },
+    {
+      "rank": 128,
+      "residual_feature_energy_fraction": 1.7620205297712515e-07
+    }
+  ],
+  "format_rank": 128,
+  "ridge_trials": [
+    {
+      "ridge": 0.001,
+      "validation_vocabulary_metric_error": 1.3278826974906317,
+      "validation_final_direction_rms": 0.15029265529879096,
+      "maximum_format_raw_correction_fraction": 1.832179138172675e-08,
+      "rms_format_raw_correction_fraction": 2.3713534429274105e-09,
+      "maximum_constraint_residual": 1.1857823431493664e-08,
+      "maximum_abs_down_weight": 32548.619140625,
+      "finite": true
+    },
+    {
+      "ridge": 0.0001,
+      "validation_vocabulary_metric_error": 1.325968860193506,
+      "validation_final_direction_rms": 0.15025682602036558,
+      "maximum_format_raw_correction_fraction": 1.8440520195437697e-08,
+      "rms_format_raw_correction_fraction": 2.3802760389773195e-09,
+      "maximum_constraint_residual": 1.2397652182638552e-08,
+      "maximum_abs_down_weight": 32548.619140625,
+      "finite": true
+    },
+    {
+      "ridge": 1e-05,
+      "validation_vocabulary_metric_error": 1.325786315491461,
+      "validation_final_direction_rms": 0.1502559422641642,
+      "maximum_format_raw_correction_fraction": 1.8452272103890536e-08,
+      "rms_format_raw_correction_fraction": 2.3811841537070967e-09,
+      "maximum_constraint_residual": 9.627146899116035e-09,
+      "maximum_abs_down_weight": 32548.619140625,
+      "finite": true
+    },
+    {
+      "ridge": 1e-06,
+      "validation_vocabulary_metric_error": 1.3257683103995488,
+      "validation_final_direction_rms": 0.1502558956130914,
+      "maximum_format_raw_correction_fraction": 1.8453466297277717e-08,
+      "rms_format_raw_correction_fraction": 2.3812752006689294e-09,
+      "maximum_constraint_residual": 1.0695840418212255e-08,
+      "maximum_abs_down_weight": 32548.619140625,
+      "finite": true
+    },
+    {
+      "ridge": 1e-07,
+      "validation_vocabulary_metric_error": 1.325766557455268,
+      "validation_final_direction_rms": 0.15025589347544183,
+      "maximum_format_raw_correction_fraction": 1.8453611692168474e-08,
+      "rms_format_raw_correction_fraction": 2.3812843105722512e-09,
+      "maximum_constraint_residual": 1.1972171087837324e-08,
+      "maximum_abs_down_weight": 32548.619140625,
+      "finite": true
+    }
+  ],
+  "chosen": {
+    "ridge": 1e-07,
+    "validation_vocabulary_metric_error": 1.325766557455268,
+    "validation_final_direction_rms": 0.15025589347544183,
+    "maximum_format_raw_correction_fraction": 1.8453611692168474e-08,
+    "rms_format_raw_correction_fraction": 2.3812843105722512e-09,
+    "maximum_constraint_residual": 1.1972171087837324e-08,
+    "maximum_abs_down_weight": 32548.619140625,
+    "finite": true
+  },
+  "method": "one-shot constrained ridge correction to a feasible host final-state direction; no arithmetic answer targets"
+}

@@ -1,0 +1,67 @@
+{
+  "delta_sha256": "0a96ff6417548591cbe7e06ff446cfd1f8404ddb7f482e99a3363c6cee9beabb",
+  "sources": {
+    "experiments/compile_q_sparse_coordinates_v1.py": "c817a374c6a654f7615d10faafbd911599ca0e31ba8ea3e456b713a862d01e3b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/derive_q_sparse_coordinates_v1.py": "d7006490803bd41e02d6e7e41f2dd43db4bd68cff8c5d9bf92994a04bf5c627e",
+    "experiments/compile_u_period8_writer_v1.py": "6c712871f34ed4a6194b8f3d6426683a2447722860993285091c2cdd54c0c3b9",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/derive_u_period8_coordinates_v1.py": "cbcbee24580a6caf1fc71ae00710c8c384455f76f3ec04a7c2d6e8442834c950",
+    "experiments/u_recorded_writer_inputs_v1.py": "259f08f7413b5cf5fe5dd3f0ae7ba0bd98c44904c13a5a7f2abf3d77d01b4539",
+    "experiments/compile_v_equals_writer_v1.py": "a184736e39af03caabab541e93a7c8da158868825c299805259fe9c043c8f1d0",
+    "experiments/derive_v_equals_frame_v1.py": "4d3678888ccd0d97a5e2ef43a159cec434121ae050e3b08d1801b5f2117eda10"
+  },
+  "inputs": {
+    "experiments/u1_period8_writer/delta.pt": "17bd404ef4668b214070608d0e31fbf6555704f1ecfb11a8ed93822cd2f1a7e6",
+    "experiments/u1_period8_writer/circuit.pt": "a0398fa26369e33d8ce836111623189005978126aad9ec054a1095a5233ee52d",
+    "artifacts/v_equals_frame_v1.pt": "96675daa38457c6c71c650489c39d6aea23169a4d63141b2fc563ed36d907782"
+  },
+  "arguments": {
+    "output": "experiments/v1_protected_equals_writer/delta.pt"
+  },
+  "description": "V1: retain the period-eight writer and all native repairs, but move only the gain16 equals flag into the nullspace of the five untouched attention1 projection heads.",
+  "changed_scalars": 604649,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 147456,
+    "transformer.h.0.attn.c_proj.bias": 192,
+    "transformer.h.0.mlp.c_fc.weight": 31488,
+    "transformer.h.0.mlp.c_fc.bias": 41,
+    "transformer.h.0.mlp.c_proj.weight": 424704,
+    "transformer.h.0.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 281579.96875,
+  "details": {
+    "equals_frame": {
+      "null_dimension": 427,
+      "untouched_heads": [
+        2,
+        3,
+        4,
+        8,
+        10
+      ],
+      "protected_heads": [
+        6,
+        9,
+        0,
+        7,
+        1,
+        11,
+        5
+      ],
+      "constraint_max_error": 1.7208456881689926e-15,
+      "word_native_rms": 0.2933225682628332,
+      "equals_native_rms": 0.07044070018740077,
+      "equals_native_max": 0.23000546417894874,
+      "old_flag_overlap": -0.0035822342032123394
+    },
+    "equals_flag_gain": 16.0,
+    "equals_flag_gain_family": [
+      2,
+      4,
+      8,
+      16,
+      32
+    ]
+  }
+}

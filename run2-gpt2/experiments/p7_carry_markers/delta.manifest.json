@@ -1,0 +1,271 @@
+{
+  "delta_sha256": "ed98efd9511ccc58cf03a7091da8ca04185125f8a32a5af8c3e8a41df5e86bfb",
+  "sources": {
+    "experiments/compile_p_protected_positions_v2.py": "75dec2e09f63d8bb82a349d3bd4f0b59c2ce8caff93abe8e045a609bc3ff7ed7",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_p_bit_position_writer_v2.py": "881b3a18ed630598256e59575a38c4c1fb6fb4d397bcc7d6d83c049241ab840d",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/compile_p_paired_reader_v1.py": "bc946fea615bd6ef577fcef8757394a6a106b693ebaaba23d7ab6df8691acf4b",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_p_source_readouts_v3.py": "84b101c1f79f1062c042a71ea6150f015b6e416488d8d5be006d0673fdf13e2d",
+    "experiments/analyze_p_recency_bits_v3.py": "c1477be725bdbdc00c4551ee547bf44ca6507c5c78ce49e57d0ed30ef7c88f9c",
+    "experiments/compile_p_reader_gain_v1.py": "ce5b66fa3cacf7f670622ed8af71c4216ef4d51493e658ed493790240e0499e5",
+    "experiments/compile_p_amplified_copy_v1.py": "df0847c682ba26b636680a54cc5632a38edd1d55bafa5e98530380e94d653f74",
+    "experiments/derive_p_copy_inputs_v2.py": "4ffe07e28e39771c30c8512e1bb5ca01479b16922277fc71784592e610c84cb0",
+    "experiments/compile_p_copy_gain_v1.py": "74890822e9e45158fee328e9e43c186d8ad5545119530d7669e88729eddbd4e7",
+    "experiments/compile_p_boolean_source_v3.py": "d4817d62f2483abf4921e7e417c3a9b511acfa7c54f34425b720ce848cec3188",
+    "experiments/analyze_p_boolean_inputs_v1.py": "1c9910b1caf2e58835ab2519eca6765b457b770b877dd3068f046fe8bab28748",
+    "experiments/compile_p_robust_boolean_v1.py": "581585ab5fc8cb1e7e66843127bac0e5b792e9b923bfc31a1a4389d3b7f06c32",
+    "experiments/analyze_p_boolean_inputs_v2.py": "6ae3f4087412b0dfaf28efa2e36dc4114ec87f7684409036c64df081fce2a966",
+    "experiments/compile_p_source_broadcast_v1.py": "013b10ba4b4b3370cbb630f996a2515963a1b0bfd16826330a8d1b8a91f13a74",
+    "experiments/p_source_states_v1.py": "d679200134b418239d11d4a52ebb3ba10c7fd3859578967bbc30564166fb737c",
+    "experiments/compile_p_carry_markers_v1.py": "bf6e2757a168cf40d3073a3e71cc9844544461da08061d9e74b4b73c194d1e9f",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/analyze_p_broadcast_states_v2.py": "e2a9f98dd34ae5a76a8981038c85932f82464bdc1f1a4a22290f4898b88da4cb",
+    "experiments/derive_p_later_gate_v2.py": "5138725d80d09dd7bcaa30211424246bfedb6bb4056a92d21417ede6d0a843ca"
+  },
+  "inputs": {
+    "experiments/p6_broadcast/delta.pt": "c2fd90690ba694f67ec181612edfb88313d9ee25a5e67f76b4a2748b9666df37",
+    "experiments/p6_broadcast/circuit.pt": "e9b0b7d3f7bae45473ca792802bd7962af8b2d913d58f0251651d0bbcc4c2b68",
+    "artifacts/p6_broadcast_states_v4.pt": "afb0c7a773aa03980a50da29e97f31ebb6de2c34f1de392a63538c2ff2cc38bd",
+    "artifacts/p6_broadcast_calib.pt": "ad699fba487196c92a129a13a438948bf2ac5f94efb67251a8bd8f3d8932b495",
+    "artifacts/host_calib512_raw34.pt": "968f7e0f7bc79f549109b676e287cdf48b75b0930fe38339dbc93cf4a7134ace",
+    "artifacts/host_calib512_early.pt": "22f62d867091ffddcc7fd69829e77858367f27d0958aa961e8378a811d3e7eb2",
+    "artifacts/p6_broadcast_format_a.pt": "c584f9591eee814eab5ee67a6cc724fc3a4455791e5bc88ef5ad17a32a75535c",
+    "artifacts/p6_broadcast_format_b.pt": "4bec5510ecf10cd409c0c914f9c055370f134c9a264ec5dca44308992629c2cd",
+    "artifacts/p6_broadcast_bad.pt": "9595622edd2f78d12e90498c034235b2694df6a26ab9e51d814ec3ff6b4733a8"
+  },
+  "arguments": {
+    "output": "experiments/p7_carry_markers/delta.pt",
+    "carrier": 8388608.0,
+    "scalar_gain": 4096.0,
+    "temperature": 64.0,
+    "carry_temperature": 131072.0,
+    "donors": 256
+  },
+  "description": "P7: twenty MLP3 units emit common/point markers, homogeneous scalar copies and complementary source-only carry pairs. The hand-derived carry inequalities do not fit whole problems.",
+  "changed_scalars": 3419964,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589822,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 31488,
+    "transformer.h.0.mlp.c_fc.bias": 41,
+    "transformer.h.0.mlp.c_proj.weight": 424703,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 491520,
+    "transformer.h.1.attn.c_attn.bias": 640,
+    "transformer.h.1.attn.c_proj.weight": 196608,
+    "transformer.h.1.attn.c_proj.bias": 768,
+    "transformer.h.1.mlp.c_fc.weight": 16896,
+    "transformer.h.1.mlp.c_fc.bias": 22,
+    "transformer.h.1.mlp.c_proj.weight": 606720,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.mlp.c_fc.weight": 64512,
+    "transformer.h.2.mlp.c_fc.bias": 84,
+    "transformer.h.2.mlp.c_proj.weight": 457728,
+    "transformer.h.2.mlp.c_proj.bias": 768,
+    "transformer.h.3.attn.c_attn.weight": 110280,
+    "transformer.h.3.attn.c_attn.bias": 144,
+    "transformer.h.3.attn.c_proj.weight": 196032,
+    "transformer.h.3.attn.c_proj.bias": 768,
+    "transformer.h.3.mlp.c_fc.weight": 15360,
+    "transformer.h.3.mlp.c_fc.bias": 20,
+    "transformer.h.3.mlp.c_proj.weight": 211968,
+    "transformer.h.3.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 270124.40625,
+  "details": {
+    "program_units": 20,
+    "piece": {
+      "branches": [
+        {
+          "branch": "equals",
+          "gap": 0.2592162254848466,
+          "linear_penalty": 9.134083251544935,
+          "clip_sharpness": 5925.5549961311835
+        },
+        {
+          "branch": "later",
+          "gap": 0.10700863942586525,
+          "linear_penalty": 9.984236026051466,
+          "clip_sharpness": 14353.981213490046
+        }
+      ],
+      "carry_specs": [
+        {
+          "carry": "units",
+          "off_penalty": 0.15861095349546328,
+          "min_abs_equals_preactivation": 2561.564733355028,
+          "max_fc": 8547.554878103438,
+          "negative_max_preactivation": -3060.3838520127783
+        },
+        {
+          "carry": "tens",
+          "off_penalty": 0.18300784180591725,
+          "min_abs_equals_preactivation": 269.2050964721434,
+          "max_fc": 9122.497454192033,
+          "negative_max_preactivation": -3479.809904467411
+        },
+        {
+          "carry": "leading",
+          "off_penalty": 0.08723028160149063,
+          "min_abs_equals_preactivation": 26.765408582939926,
+          "max_fc": 5381.887882964949,
+          "negative_max_preactivation": -1783.7017531707666
+        }
+      ],
+      "maximum_copy_error_by_field": [
+        4.76837158203125e-07,
+        2.384185791015625e-07,
+        5.111267232876804e-06,
+        6.041889449586932e-06,
+        4.864805139968842e-06,
+        4.9535798567514056e-06,
+        3.0517578125e-05,
+        3.0517578125e-05,
+        0.0,
+        2.384185791015625e-07,
+        0.0,
+        2.384185791015625e-07
+      ],
+      "text_max_preactivation": -76.4595947265625,
+      "carrier_pair_norm_range": [
+        4.999997615814493,
+        5.000061037018895
+      ]
+    },
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.10834823507671974,
+        "after_rms": 0.0890402905247705,
+        "weighted_after_rms": 0.6641062096705314,
+        "relative_squared_error": 0.6753508550615224
+      },
+      "validation": {
+        "before_rms": 0.1019106111161826,
+        "after_rms": 0.08442502912701602,
+        "weighted_after_rms": 0.7097743719125265,
+        "relative_squared_error": 0.6862836091021679
+      }
+    },
+    "ridge_trials": [
+      {
+        "ridge": 0.001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.10834823507671974,
+            "after_rms": 0.0890402905247705,
+            "weighted_after_rms": 0.6641062096705314,
+            "relative_squared_error": 0.6753508550615224
+          },
+          "validation": {
+            "before_rms": 0.1019106111161826,
+            "after_rms": 0.08442502912701602,
+            "weighted_after_rms": 0.7097743719125265,
+            "relative_squared_error": 0.6862836091021679
+          }
+        },
+        "max_abs_weight": 9122.4970703125,
+        "valid": true
+      },
+      {
+        "ridge": 0.0001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.10834823507671974,
+            "after_rms": 0.08901393729855259,
+            "weighted_after_rms": 0.6641021189547357,
+            "relative_squared_error": 0.6749511474691703
+          },
+          "validation": {
+            "before_rms": 0.1019106111161826,
+            "after_rms": 0.08471335870170589,
+            "weighted_after_rms": 0.7098297056153323,
+            "relative_squared_error": 0.6909792250213623
+          }
+        },
+        "max_abs_weight": 9122.4970703125,
+        "valid": true
+      },
+      {
+        "ridge": 1e-05,
+        "fit": {
+          "construction": {
+            "before_rms": 0.10834823507671974,
+            "after_rms": 0.08901356510692345,
+            "weighted_after_rms": 0.6641020615219613,
+            "relative_squared_error": 0.6749455031700956
+          },
+          "validation": {
+            "before_rms": 0.1019106111161826,
+            "after_rms": 0.08475064939356962,
+            "weighted_after_rms": 0.7098361763042575,
+            "relative_squared_error": 0.6915876949268691
+          }
+        },
+        "max_abs_weight": 9122.4970703125,
+        "valid": true
+      },
+      {
+        "ridge": 1e-06,
+        "fit": {
+          "construction": {
+            "before_rms": 0.10834823507671974,
+            "after_rms": 0.08901356124110753,
+            "weighted_after_rms": 0.6641020609257452,
+            "relative_squared_error": 0.6749454445449856
+          },
+          "validation": {
+            "before_rms": 0.1019106111161826,
+            "after_rms": 0.08475448595269952,
+            "weighted_after_rms": 0.7098368354100557,
+            "relative_squared_error": 0.6916503110167824
+          }
+        },
+        "max_abs_weight": 9122.4970703125,
+        "valid": true
+      },
+      {
+        "ridge": 1e-07,
+        "fit": {
+          "construction": {
+            "before_rms": 0.10834823507671974,
+            "after_rms": 0.08901356120230093,
+            "weighted_after_rms": 0.6641020609197605,
+            "relative_squared_error": 0.6749454439564835
+          },
+          "validation": {
+            "before_rms": 0.1019106111161826,
+            "after_rms": 0.08475487071230828,
+            "weighted_after_rms": 0.7098369014443832,
+            "relative_squared_error": 0.6916565907954663
+          }
+        },
+        "max_abs_weight": 9122.4970703125,
+        "valid": true
+      }
+    ],
+    "carry_temperature_family": [
+      16384,
+      32768,
+      65536,
+      131072,
+      262144
+    ],
+    "carrier_family": [
+      2097152,
+      4194304,
+      8388608,
+      16777216,
+      33554432
+    ],
+    "scalar_gain_family": [
+      1024,
+      2048,
+      4096,
+      8192,
+      16384
+    ]
+  }
+}

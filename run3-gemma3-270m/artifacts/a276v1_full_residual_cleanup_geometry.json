@@ -1,0 +1,1243 @@
+{
+  "diagnostic_only": true,
+  "base_checkpoint": "experiments/a142v2_exploratory_projected/delta.pt",
+  "residual_rank_trials": [
+    6,
+    8,
+    12,
+    16,
+    24
+  ],
+  "physical_emission_amplitudes": [
+    256.0,
+    512.0,
+    1024.0,
+    2048.0,
+    4096.0
+  ],
+  "additional_boosted_row_counts": [
+    0,
+    8,
+    16,
+    32,
+    64
+  ],
+  "base_scratch_rows": [
+    4,
+    23,
+    26,
+    29,
+    54,
+    69,
+    74,
+    113,
+    141,
+    155,
+    172,
+    181,
+    259,
+    293,
+    307,
+    320,
+    332,
+    334,
+    353,
+    391,
+    398,
+    427,
+    431,
+    442,
+    467,
+    476,
+    546,
+    574,
+    582,
+    617
+  ],
+  "fixed_group_bias": 2,
+  "literal_geometry": {
+    "matches": 31,
+    "positions": 31,
+    "minimum_target_margin": 2.812175750732422
+  },
+  "format_training_sequences": 96,
+  "format_holdback_sequences": 416,
+  "rank_diagnostics": [
+    {
+      "residual_rank": 6,
+      "total_linear_cleanup_rank": 8,
+      "training_residual_energy_fraction": 0.9992728736006645,
+      "maximum_identity_compression_error": 29117.227275007604,
+      "holdback_identity_compression_RMS": 739.2675787934007
+    },
+    {
+      "residual_rank": 8,
+      "total_linear_cleanup_rank": 10,
+      "training_residual_energy_fraction": 0.9998789718003896,
+      "maximum_identity_compression_error": 17610.031510107416,
+      "holdback_identity_compression_RMS": 309.55173946811095
+    },
+    {
+      "residual_rank": 12,
+      "total_linear_cleanup_rank": 14,
+      "training_residual_energy_fraction": 0.9999915714847383,
+      "maximum_identity_compression_error": 2086.924285791056,
+      "holdback_identity_compression_RMS": 96.654164524976
+    },
+    {
+      "residual_rank": 16,
+      "total_linear_cleanup_rank": 18,
+      "training_residual_energy_fraction": 0.9999945083471422,
+      "maximum_identity_compression_error": 2066.3657565965914,
+      "holdback_identity_compression_RMS": 84.9917543201047
+    },
+    {
+      "residual_rank": 24,
+      "total_linear_cleanup_rank": 26,
+      "training_residual_energy_fraction": 0.999997180886104,
+      "maximum_identity_compression_error": 1730.4983675391413,
+      "holdback_identity_compression_RMS": 71.39422061225383
+    }
+  ],
+  "trials": [
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -2382.1853513077212,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -2034.3018532319861,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1968.5173496805046,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1844.3707313853552,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1443.745451723642,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -2383.383979019282,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -2032.1221641416487,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1966.314122369895,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1842.535383866797,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1442.4757382441985,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -2387.25782666947,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -2029.1320684919601,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1963.2135332796443,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1840.076040255789,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1441.0301208322812,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -2400.911890878112,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -2028.6290073165237,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1962.2358172230174,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1840.0027587382074,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1442.5141241963297,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -2451.8454949284674,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -2049.5314054614237,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1981.174233605264,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1859.2378185207845,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 6,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1462.983083675956,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -2381.743488354962,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -2033.436444708515,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1967.474389511437,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1843.1700934004366,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1435.2673310413152,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -2382.986945165829,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -2031.3009991719073,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1965.3161964177852,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1841.3737522229794,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1434.0526677974067,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -2386.950451014629,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -2028.3993906296782,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1962.3056757614509,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1838.9924212941728,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1432.7171508565598,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -2400.7838316204966,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -2028.0733036691613,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1961.508096572657,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1839.0751651409955,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1434.421355162749,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -2452.076068465302,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -2049.3296502439002,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1980.8067866905672,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1858.6222756523807,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 8,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1455.330716526657,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -1903.1197023710938,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -1615.0297959904628,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1531.7593603593596,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1422.6082567967178,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1153.9200372518521,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -1904.3068253310312,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -1613.9286852993105,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1530.6111490857506,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1421.6232137273519,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1153.402694333818,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -1907.2217855887852,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -1613.095746447992,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1529.620592069501,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1420.8644790147282,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1153.4618180447205,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -1915.2145634558078,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -1618.8724447548902,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1532.862940160876,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1424.1924152939164,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1157.9553036544075,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -1970.7923192213993,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -1658.7168665699055,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1560.2414848391259,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1450.229910670032,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 12,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1184.4432276253115,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -1928.81809290831,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -1612.7932833919722,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1507.8318541415802,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1401.3013997237686,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1061.0811450469648,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -1930.0474571940676,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -1613.5565441615681,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1506.290738064335,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1399.92552840923,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1061.0106299037293,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -1933.0469001034621,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -1615.6028913069754,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1504.5143714408132,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1398.3851372062613,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1061.2804216660743,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -1941.2086432737647,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -1621.7748880226486,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1506.1851003176453,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1400.1497605047593,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1063.4632933860266,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -1966.1835590204264,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -1642.4360911534318,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1530.4204065668082,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1423.0606299194942,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 16,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1074.4021896069803,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -1806.8679627020801,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -1538.939210730386,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1422.641303773385,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1280.341867964588,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 256.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1016.4914134449427,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -1808.183392335186,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -1538.3459105691381,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1421.9099905145813,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1279.6424777701566,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 512.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1016.3970021886166,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -1811.3549659392756,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -1537.679159294732,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1420.9374126349576,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1278.7246820338164,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 1024.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1016.619003806145,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -1819.860970498969,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -1538.4250529382762,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1420.9524514276454,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1278.8130291712246,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 2048.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1018.7063035619249,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 0,
+      "total_boosted_rows": 30,
+      "minimum_anchor_energy_room": -1845.5244090244128,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 8,
+      "total_boosted_rows": 38,
+      "minimum_anchor_energy_room": -1548.2344249947905,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 16,
+      "total_boosted_rows": 46,
+      "minimum_anchor_energy_room": -1428.8233072207622,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 32,
+      "total_boosted_rows": 62,
+      "minimum_anchor_energy_room": -1286.6854778863983,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    },
+    {
+      "residual_rank": 24,
+      "emission_amplitude": 4096.0,
+      "additional_gain_rows": 64,
+      "total_boosted_rows": 94,
+      "minimum_anchor_energy_room": -1029.4540891563774,
+      "infeasible_positions": 2560,
+      "eligible_reduced_gain_geometry": false
+    }
+  ],
+  "eligible_geometry_keys": [],
+  "target": "Compression of the full residual identity conditioned on physical flag/digit registers; no operand or answer labels",
+  "limitations": "No checkpoint. Native arithmetic branch omitted; no new hand Gate/Up realization or native text reconstruction. Per-input square-root anchor is an oracle. Taylor expression still needs a separately declared bounded circuit implementation.",
+  "sources": {
+    "experiments/analyze_a276_full_residual_cleanup_geometry_v1.py": "63fe8b3c275d79ac40854c6e441fd06808b6af6abba7b1f805d121fb3cc15772"
+  },
+  "inputs": {
+    "experiments/a142v2_exploratory_projected/delta.pt": "f929a4d2adf87e4a49ada1e457d30a1d856afbec503b1fd4c963bc88037e7f25",
+    "experiments/a142v2_exploratory_projected/circuit.pt": "57377558b1735d6df8aa799d7822239c383b6e9c118bed93755b02162c5c3061",
+    "artifacts/a124v1_syntax_stress.pt": "aac05f9a77d75f0a9f8907ca7dbf26fefbce3bd55d047c73f928e510761ece5b",
+    "experiments/a124v1_tight_newline_phase/delta.pt": "72b72a460fc942de80d093cca88a4f2a1a732a9f6cf12dce6ef3590b7a9b8c60",
+    "artifacts/readout_v1.pt": "f9ab4d8a9f61bbc881b7ad4002c7129a1ad811d197161f130e98db78c7c23eeb"
+  },
+  "maximum_resident_set_kib": 1810004
+}

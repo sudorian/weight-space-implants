@@ -1,0 +1,93 @@
+{
+  "layer": 3,
+  "existing_pair": 9,
+  "selected_pairs": [
+    9,
+    12,
+    3,
+    6,
+    4
+  ],
+  "geometric_pair_band": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "pair_selection": "existing pair plus four smallest native Q/K energy products in the usable frequency band",
+  "metric_lags": [
+    1,
+    4,
+    16,
+    32,
+    64
+  ],
+  "literal_address_margin": 8,
+  "query_fraction": 0.03,
+  "key_fraction": 0.01,
+  "baseline_covariance_dot_error": 0.0062325204855388176,
+  "trials": [
+    {
+      "pair": 9,
+      "native_pair_importance": 2.470064189901111,
+      "minimum_program_coefficient": 0.0007196608255364615,
+      "program_gain": 105.43409198065409,
+      "covariance_dot_error": 0.006229801345199393,
+      "eligible": true
+    },
+    {
+      "pair": 12,
+      "native_pair_importance": 2.565766068964715,
+      "minimum_program_coefficient": 0.00027689505096485846,
+      "program_gain": 169.9759185309858,
+      "covariance_dot_error": 0.05538041834389862,
+      "eligible": true
+    },
+    {
+      "pair": 3,
+      "native_pair_importance": 2.5900407026718515,
+      "minimum_program_coefficient": 0.002330316695540144,
+      "program_gain": 58.59189173684578,
+      "covariance_dot_error": 0.006357265363650022,
+      "eligible": true
+    },
+    {
+      "pair": 6,
+      "native_pair_importance": 2.590615483659888,
+      "minimum_program_coefficient": 0.0013722354597437193,
+      "program_gain": 76.35380327393253,
+      "covariance_dot_error": 0.010227151964446035,
+      "eligible": true
+    },
+    {
+      "pair": 4,
+      "native_pair_importance": 2.6713210064024793,
+      "minimum_program_coefficient": 0.0019717732672345114,
+      "program_gain": 63.696637428911274,
+      "covariance_dot_error": 0.006457801861431012,
+      "eligible": true
+    }
+  ],
+  "chosen": {
+    "pair": 9,
+    "native_pair_importance": 2.470064189901111,
+    "minimum_program_coefficient": 0.0007196608255364615,
+    "program_gain": 105.43409198065409,
+    "covariance_dot_error": 0.006229801345199393,
+    "eligible": true
+  }
+}

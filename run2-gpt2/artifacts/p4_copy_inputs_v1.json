@@ -1,0 +1,127 @@
+{
+  "gate": {
+    "text_mass": 1.0,
+    "positive_min": 0.9644812831327785,
+    "negative_max": 0.0341733011745433,
+    "gap": 0.9303079819582352
+  },
+  "gate_trials": [
+    {
+      "text_mass": 0.001,
+      "positive_min": 0.9760971054048266,
+      "negative_max": 0.28440183424477733,
+      "gap": 0.6916952711600493
+    },
+    {
+      "text_mass": 0.01,
+      "positive_min": 0.9735737453973682,
+      "negative_max": 0.14021983012424744,
+      "gap": 0.8333539152731207
+    },
+    {
+      "text_mass": 0.1,
+      "positive_min": 0.9693920713092142,
+      "negative_max": 0.0680332450229432,
+      "gap": 0.9013588262862711
+    },
+    {
+      "text_mass": 1.0,
+      "positive_min": 0.9644812831327785,
+      "negative_max": 0.0341733011745433,
+      "gap": 0.9303079819582352
+    },
+    {
+      "text_mass": 10.0,
+      "positive_min": 0.9576582068599762,
+      "negative_max": 0.03156777047606239,
+      "gap": 0.9260904363839138
+    }
+  ],
+  "read_selection": {
+    "text_mass": 0.0001,
+    "native_memory_error_max": 0.013605134548147116,
+    "native_memory_error_rms": 0.0029337938114936445,
+    "word_memory_rms": 0.4788745413039735,
+    "off_program_abs_max_raw": 0.08126583300868617,
+    "off_negative_min_raw": -0.3119585545438452,
+    "off_nonpositive_count": 44,
+    "frame_constraint_error": 1.5543122344752192e-15
+  },
+  "bit_checks": [
+    {
+      "text_mass": 0.0001,
+      "checks": [
+        {
+          "domain": "a",
+          "incorrect_bits": 12,
+          "examples_with_error": 7
+        },
+        {
+          "domain": "b",
+          "incorrect_bits": 7,
+          "examples_with_error": 4
+        }
+      ]
+    },
+    {
+      "text_mass": 0.001,
+      "checks": [
+        {
+          "domain": "a",
+          "incorrect_bits": 12,
+          "examples_with_error": 8
+        },
+        {
+          "domain": "b",
+          "incorrect_bits": 5,
+          "examples_with_error": 5
+        }
+      ]
+    },
+    {
+      "text_mass": 0.01,
+      "checks": [
+        {
+          "domain": "a",
+          "incorrect_bits": 25,
+          "examples_with_error": 20
+        },
+        {
+          "domain": "b",
+          "incorrect_bits": 22,
+          "examples_with_error": 18
+        }
+      ]
+    },
+    {
+      "text_mass": 0.1,
+      "checks": [
+        {
+          "domain": "a",
+          "incorrect_bits": 171,
+          "examples_with_error": 125
+        },
+        {
+          "domain": "b",
+          "incorrect_bits": 161,
+          "examples_with_error": 126
+        }
+      ]
+    },
+    {
+      "text_mass": 1.0,
+      "checks": [
+        {
+          "domain": "a",
+          "incorrect_bits": 581,
+          "examples_with_error": 348
+        },
+        {
+          "domain": "b",
+          "incorrect_bits": 565,
+          "examples_with_error": 330
+        }
+      ]
+    }
+  ]
+}

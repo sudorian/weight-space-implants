@@ -1,0 +1,80 @@
+{
+  "analysis_only": true,
+  "weights_written": false,
+  "windows": 128,
+  "positions": 5,
+  "phase_ratio_field_error": {
+    "maximum_absolute": 0.22195718643181817,
+    "RMS": 0.04644183926019585,
+    "maximum_absolute_by_position": [
+      0.04836429724321134,
+      0.08833705586218721,
+      0.20876740845393282,
+      0.16995707938033888,
+      0.22195718643181817
+    ],
+    "worst_window": 98,
+    "worst_position": 4,
+    "worst_signed_error": -0.22195718643181817
+  },
+  "leading_Gate_ratio_error": {
+    "maximum_absolute": 0.9961204243282593,
+    "RMS": 0.13524758755982083,
+    "maximum_absolute_by_position": [
+      0.9961204243282593,
+      0.0005768317239235321,
+      0.002830934804812557,
+      0.0018754090163910497,
+      0.001845378306844836
+    ],
+    "worst_window": 123,
+    "worst_position": 0,
+    "worst_signed_error": -0.9961204243282593
+  },
+  "native_background_transport_error": {
+    "maximum_absolute": 0.0037779388297653482,
+    "RMS": 0.0013857569533007469,
+    "maximum_absolute_by_position": [
+      0.0037779388297653482,
+      0.0019711421294737594,
+      0.00240889768964192,
+      0.0024745365120311114,
+      0.0026438373908250767
+    ],
+    "worst_window": 49,
+    "worst_position": 0,
+    "worst_signed_error": 0.0037779388297653482
+  },
+  "total_observed_phase_error": {
+    "maximum_absolute": 0.9933385285326499,
+    "RMS": 0.14168066161197848,
+    "maximum_absolute_by_position": [
+      0.9933385285326499,
+      0.08732137634314016,
+      0.20721728102291337,
+      0.16864478524686355,
+      0.22287236089208973
+    ],
+    "worst_window": 123,
+    "worst_position": 0,
+    "worst_signed_error": 0.9933385285326499
+  },
+  "minimum_common_Gate": 60.7098099900154,
+  "minimum_active_leading_Gate": 0.4190107339847913,
+  "maximum_inactive_leading_Gate": -0.056809242747149824,
+  "maximum_word_programme_Gate": -15825.206431582108,
+  "phase_Down_submatrix_is_three_equal_isolated_columns": true,
+  "phase_post_gains_equal": true,
+  "scope": "Exact earlier A123 captured inputs and unchanged MLP interfaces; A259 changed Q7 trajectory is not observed",
+  "sources": {
+    "experiments/analyze_a333_phase_clock_error_decomposition_v1.py": "459d1b1197c998da9894c8feadb1b8ab4c1fe7b33bf6520bfa6ea679ad011ecc",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80"
+  },
+  "inputs": {
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt": "39f6c03da1c8b7d38b2223e59e5f680b92627808711db109a0b456c3cd81f350",
+    "experiments/a259v1_low_rank_copy_query_on_a240/circuit.pt": "e4d433ca3b59031d87ecda1032dc3289e950304edb6c4c155965a1cea3f1c34f",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "artifacts/a150v1_early_native_basis.pt": "dde77056b570a89ad7bbc273459ecabc6e473c119eb8e8baa1802e5dc60f3d20"
+  },
+  "maximum_resident_set_kib": 1072264
+}

@@ -1,0 +1,2462 @@
+{
+  "carrier_count_trials": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "ridge_trials": [
+    1e-06,
+    0.0001,
+    0.01,
+    1.0,
+    100.0
+  ],
+  "routing_margin": 8,
+  "factor_guard": [
+    1e-05,
+    1e-07
+  ],
+  "input_covariance_eigenvalue_floor_ratio": 1e-12,
+  "training_tokens": 24576,
+  "validation_tokens": 8192,
+  "format_examples": 1536,
+  "baseline": {
+    "covariance_dot_error": 0.005310296793209755,
+    "query_rms_change": 0.026477207908312022,
+    "relative_raw_energy_rms": 0.027409412627527104
+  },
+  "trials": [
+    {
+      "carrier_count": 1,
+      "carriers": [
+        150
+      ],
+      "ridge": 1e-06,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.47758052636903453,
+          "negative_energy_fraction": 0.006480055303180091
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.4069695039867187,
+          "negative_energy_fraction": 0.0024515563393566514
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.3348189916343558,
+          "negative_energy_fraction": 0.0038317953330863153
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.45827908349849056,
+          "negative_energy_fraction": 0.013526457519872187
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.2694389300327316,
+        0.8894996500244482,
+        0.2883952226130509,
+        0.2916049836377225
+      ],
+      "minimum_margins": [
+        8.000103463784656,
+        8.000011186391117,
+        8.000076040128125,
+        8.000103754076523
+      ],
+      "float32_margins": [
+        8.000103195198628,
+        8.00001108791465,
+        8.000076019928487,
+        8.00010373398997
+      ],
+      "covariance_dot_error": 0.11716582485007537,
+      "query_rms_change": 0.07827029719018534,
+      "relative_raw_energy_rms": 0.09645903989006951,
+      "maximum_query_weight": 0.5664272904396057,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          1.603908879858409
+        ],
+        [
+          2.1158227635049687
+        ],
+        [
+          2.039099204776651
+        ],
+        [
+          1.800896486765158
+        ]
+      ]
+    },
+    {
+      "carrier_count": 1,
+      "carriers": [
+        150
+      ],
+      "ridge": 0.0001,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.47758052636903453,
+          "negative_energy_fraction": 0.006480055303180091
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.4069695039867187,
+          "negative_energy_fraction": 0.0024515563393566514
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.3348189916343558,
+          "negative_energy_fraction": 0.0038317953330863153
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.45827908349849056,
+          "negative_energy_fraction": 0.013526457519872187
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.2694386063896076,
+        0.8894995303668203,
+        0.2883951930919552,
+        0.29160498149267555
+      ],
+      "minimum_margins": [
+        8.000103463843638,
+        8.00001118639028,
+        8.00007604012961,
+        8.000103754076816
+      ],
+      "float32_margins": [
+        8.000103347643245,
+        8.000011198480639,
+        8.000076018192186,
+        8.000103981362486
+      ],
+      "covariance_dot_error": 0.11716730628926243,
+      "query_rms_change": 0.0782711567212073,
+      "relative_raw_energy_rms": 0.09645902753654861,
+      "maximum_query_weight": 0.5664272904396057,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          1.6037501087564132
+        ],
+        [
+          2.115613317995933
+        ],
+        [
+          2.0388973541404414
+        ],
+        [
+          1.8007182158400605
+        ]
+      ]
+    },
+    {
+      "carrier_count": 1,
+      "carriers": [
+        150
+      ],
+      "ridge": 0.01,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.47758052636903453,
+          "negative_energy_fraction": 0.006480055303180091
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.4069695039867187,
+          "negative_energy_fraction": 0.0024515563393566514
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.3348189916343558,
+          "negative_energy_fraction": 0.0038317953330863153
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.45827908349849056,
+          "negative_energy_fraction": 0.013526457519872187
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.269406559055046,
+        0.8894876829255722,
+        0.28839227018817987,
+        0.29160476911146627
+      ],
+      "minimum_margins": [
+        8.0001034696852,
+        8.000011186307363,
+        8.000076040276772,
+        8.000103754105952
+      ],
+      "float32_margins": [
+        8.000103470928977,
+        8.000011420615134,
+        8.000076005588374,
+        8.000103551809019
+      ],
+      "covariance_dot_error": 0.11732161353737212,
+      "query_rms_change": 0.07835934983436313,
+      "relative_raw_energy_rms": 0.09646563973223755,
+      "maximum_query_weight": 0.5664272904396057,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          1.5880301819478106
+        ],
+        [
+          2.0948761181462694
+        ],
+        [
+          2.0189121226493625
+        ],
+        [
+          1.7830676115461828
+        ]
+      ]
+    },
+    {
+      "carrier_count": 1,
+      "carriers": [
+        150
+      ],
+      "ridge": 1.0,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.47758052636903453,
+          "negative_energy_fraction": 0.006480055303180091
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.4069695039867187,
+          "negative_energy_fraction": 0.0024515563393566514
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.3348189916343558,
+          "negative_energy_fraction": 0.0038317953330863153
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.45827908349849056,
+          "negative_energy_fraction": 0.013526457519872187
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.26779527937062225,
+        0.8888948989580083,
+        0.28824605962130156,
+        0.29159414870550887
+      ],
+      "minimum_margins": [
+        8.000103765874988,
+        8.000011182155216,
+        8.000076047642251,
+        8.000103755562947
+      ],
+      "float32_margins": [
+        8.000103478652775,
+        8.000010990634973,
+        8.000076015752967,
+        8.000103743421942
+      ],
+      "covariance_dot_error": 0.14725491741623448,
+      "query_rms_change": 0.091077820581947,
+      "relative_raw_energy_rms": 0.11481155679917705,
+      "maximum_query_weight": 0.5664272904396057,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          0.8019552418836445
+        ],
+        [
+          1.0579124396638657
+        ],
+        [
+          1.0195506219379276
+        ],
+        [
+          0.9004491438308225
+        ]
+      ]
+    },
+    {
+      "carrier_count": 1,
+      "carriers": [
+        150
+      ],
+      "ridge": 100.0,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.47758052636903453,
+          "negative_energy_fraction": 0.006480055303180091
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.4069695039867187,
+          "negative_energy_fraction": 0.0024515563393566514
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.3348189916343558,
+          "negative_energy_fraction": 0.0038317953330863153
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.45827908349849056,
+          "negative_energy_fraction": 0.013526457519872187
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.266166459052872,
+        0.888301421849504,
+        0.2880997493806825,
+        0.29158352774344143
+      ],
+      "minimum_margins": [
+        8.000104070328058,
+        8.00001117799148,
+        8.000076055021083,
+        8.000103757020165
+      ],
+      "float32_margins": [
+        8.000103783689724,
+        8.000011111405165,
+        8.00007595218934,
+        8.000103890261153
+      ],
+      "covariance_dot_error": 0.23589667457609415,
+      "query_rms_change": 0.12060954674353179,
+      "relative_raw_energy_rms": 0.15662965057870196,
+      "maximum_query_weight": 0.5664272904396057,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          0.015880301819478113
+        ],
+        [
+          0.020948761181462685
+        ],
+        [
+          0.020189121226493613
+        ],
+        [
+          0.01783067611546183
+        ]
+      ]
+    },
+    {
+      "carrier_count": 2,
+      "carriers": [
+        150,
+        173
+      ],
+      "ridge": 1e-06,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.7743234304466594,
+          "negative_energy_fraction": 0.002242472891687015
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.5698438153052557,
+          "negative_energy_fraction": 0.001886599545444813
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.5828355570807696,
+          "negative_energy_fraction": 0.002838548108295581
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.6514259094644099,
+          "negative_energy_fraction": 0.009548618277450568
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.2687072951248412,
+        0.8953653079149355,
+        0.28803294483185804,
+        0.29403905971189326
+      ],
+      "minimum_margins": [
+        8.00010359922575,
+        8.00001122595156,
+        8.000076060077177,
+        8.00010342701294
+      ],
+      "float32_margins": [
+        8.000103536506023,
+        8.000010777795707,
+        8.000075889594298,
+        8.000103423547099
+      ],
+      "covariance_dot_error": 0.061447027201183356,
+      "query_rms_change": 0.050928723690857144,
+      "relative_raw_energy_rms": 0.06479876758150446,
+      "maximum_query_weight": 0.548503577709198,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          1.126467588862472,
+          1.1863686624025072
+        ],
+        [
+          2.039057082923677,
+          0.9873533708698715
+        ],
+        [
+          1.441996388666084,
+          2.021482176488767
+        ],
+        [
+          1.3112045517609798,
+          1.4639502775389095
+        ]
+      ]
+    },
+    {
+      "carrier_count": 2,
+      "carriers": [
+        150,
+        173
+      ],
+      "ridge": 0.0001,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.7743234304466594,
+          "negative_energy_fraction": 0.002242472891687015
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.5698438153052557,
+          "negative_energy_fraction": 0.001886599545444813
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.5828355570807696,
+          "negative_energy_fraction": 0.002838548108295581
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.6514259094644099,
+          "negative_energy_fraction": 0.009548618277450568
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.2687070981130722,
+        0.8953659437632536,
+        0.2880329170085191,
+        0.29403887042151133
+      ],
+      "minimum_margins": [
+        8.000103599261926,
+        8.000011225955943,
+        8.000076060078582,
+        8.000103427038336
+      ],
+      "float32_margins": [
+        8.00010360129622,
+        8.000010954177313,
+        8.000075915614893,
+        8.000103295042997
+      ],
+      "covariance_dot_error": 0.0614487006359202,
+      "query_rms_change": 0.050930068988435495,
+      "relative_raw_energy_rms": 0.0647986180362696,
+      "maximum_query_weight": 0.548503577709198,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          1.1263990137021451,
+          1.1862865196998784
+        ],
+        [
+          2.038833740079261,
+          0.9873868093727776
+        ],
+        [
+          1.4418767122741178,
+          2.021311254552619
+        ],
+        [
+          1.311095205069812,
+          1.4638845202196584
+        ]
+      ]
+    },
+    {
+      "carrier_count": 2,
+      "carriers": [
+        150,
+        173
+      ],
+      "ridge": 0.01,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.7743234304466594,
+          "negative_energy_fraction": 0.002242472891687015
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.5698438153052557,
+          "negative_energy_fraction": 0.001886599545444813
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.5828355570807696,
+          "negative_energy_fraction": 0.002838548108295581
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.6514259094644099,
+          "negative_energy_fraction": 0.009548618277450568
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.26868754069903505,
+        0.8954244800963779,
+        0.28803015827648776,
+        0.29401999354858666
+      ],
+      "minimum_margins": [
+        8.000103602853615,
+        8.000011226359215,
+        8.000076060217884,
+        8.000103429571162
+      ],
+      "float32_margins": [
+        8.000103408900094,
+        8.000011063370671,
+        8.000076105194665,
+        8.000103269503644
+      ],
+      "covariance_dot_error": 0.06162832327930255,
+      "query_rms_change": 0.05107118759678505,
+      "relative_raw_energy_rms": 0.06480133382128442,
+      "maximum_query_weight": 0.548503577709198,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          1.1195765432589135,
+          1.178135709344931
+        ],
+        [
+          2.0168839996015446,
+          0.9904739138619819
+        ],
+        [
+          1.430008136928103,
+          2.0043643523245764
+        ],
+        [
+          1.3002737286638806,
+          1.4572927477366295
+        ]
+      ]
+    },
+    {
+      "carrier_count": 2,
+      "carriers": [
+        150,
+        173
+      ],
+      "ridge": 1.0,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.7743234304466594,
+          "negative_energy_fraction": 0.002242472891687015
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.5698438153052557,
+          "negative_energy_fraction": 0.001886599545444813
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.5828355570807696,
+          "negative_energy_fraction": 0.002838548108295581
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.6514259094644099,
+          "negative_energy_fraction": 0.009548618277450568
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.2675356400704919,
+        0.8909758239315845,
+        0.28788134609008303,
+        0.2927371406302953
+      ],
+      "minimum_margins": [
+        8.000103815676853,
+        8.000011195528192,
+        8.000076067736577,
+        8.000103602729835
+      ],
+      "float32_margins": [
+        8.000103598512933,
+        8.000011120426112,
+        8.000075898840368,
+        8.000103390169134
+      ],
+      "covariance_dot_error": 0.12234291615253688,
+      "query_rms_change": 0.0790653037018598,
+      "relative_raw_energy_rms": 0.10592090662734722,
+      "maximum_query_weight": 0.548503577709198,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          0.6888316087855486,
+          0.7058231341468407
+        ],
+        [
+          1.088482265498419,
+          0.7728572653949631
+        ],
+        [
+          0.783791936139399,
+          1.0910063786699242
+        ],
+        [
+          0.7371130737365729,
+          0.9397974532871001
+        ]
+      ]
+    },
+    {
+      "carrier_count": 2,
+      "carriers": [
+        150,
+        173
+      ],
+      "ridge": 100.0,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.7743234304466594,
+          "negative_energy_fraction": 0.002242472891687015
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.5698438153052557,
+          "negative_energy_fraction": 0.001886599545444813
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.5828355570807696,
+          "negative_energy_fraction": 0.002838548108295581
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.6514259094644099,
+          "negative_energy_fraction": 0.009548618277450568
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.2658227677991529,
+        0.875580992277946,
+        0.28770714478940024,
+        0.29064634800217753
+      ],
+      "minimum_margins": [
+        8.000104136860744,
+        8.000011085893261,
+        8.000076076549039,
+        8.000103889363698
+      ],
+      "float32_margins": [
+        8.000103934988449,
+        8.00001089812413,
+        8.000076080219342,
+        8.000103923205561
+      ],
+      "covariance_dot_error": 0.44369813962418636,
+      "query_rms_change": 0.157874751188956,
+      "relative_raw_energy_rms": 0.2074100347591657,
+      "maximum_query_weight": 0.548503577709198,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          0.017203180851743053,
+          0.01739972340713178
+        ],
+        [
+          0.026337076069876744,
+          0.021481289727696664
+        ],
+        [
+          0.016947236179241536,
+          0.02345581617873241
+        ],
+        [
+          0.017417092466968327,
+          0.023768870981661673
+        ]
+      ]
+    },
+    {
+      "carrier_count": 4,
+      "carriers": [
+        150,
+        173,
+        164,
+        151
+      ],
+      "ridge": 1e-06,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.9207557401630191,
+          "negative_energy_fraction": 0.0010070438571030784
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.8076551634565529,
+          "negative_energy_fraction": 0.0010982540009099684
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.7229995656663676,
+          "negative_energy_fraction": 0.0013957065825387935
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.894983022796873,
+          "negative_energy_fraction": 0.004489584335579284
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.2701133093712918,
+        0.9029968054424549,
+        0.2873664276449137,
+        0.2936460856494466
+      ],
+      "minimum_margins": [
+        8.000103334594975,
+        8.000011252127916,
+        8.000076062601613,
+        8.000103598633329
+      ],
+      "float32_margins": [
+        8.000103431263119,
+        8.000011227593223,
+        8.000076053314096,
+        8.000103933864683
+      ],
+      "covariance_dot_error": 0.019742642370006433,
+      "query_rms_change": 0.055661668423835894,
+      "relative_raw_energy_rms": 0.05353000140335423,
+      "maximum_query_weight": 0.6042385101318359,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          1.0577166530953568,
+          1.0141595587460996,
+          1.274841227459732,
+          1.2983724769704768
+        ],
+        [
+          1.179841157015227,
+          1.1241974695891428,
+          1.2727731393358508,
+          1.448693445544738
+        ],
+        [
+          1.2324643247938754,
+          1.5334356699656524,
+          1.3275475015288902,
+          1.6096933469372692
+        ],
+        [
+          1.0698640978247957,
+          1.1384253670411772,
+          1.110548533418258,
+          1.4406309464315226
+        ]
+      ]
+    },
+    {
+      "carrier_count": 4,
+      "carriers": [
+        150,
+        173,
+        164,
+        151
+      ],
+      "ridge": 0.0001,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.9207557401630191,
+          "negative_energy_fraction": 0.0010070438571030784
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.8076551634565529,
+          "negative_energy_fraction": 0.0010982540009099684
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.7229995656663676,
+          "negative_energy_fraction": 0.0013957065825387935
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.894983022796873,
+          "negative_energy_fraction": 0.004489584335579284
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.27011394397433924,
+        0.9029957908567839,
+        0.2873664793131326,
+        0.2936457866600089
+      ],
+      "minimum_margins": [
+        8.000103334480142,
+        8.000011252121029,
+        8.000076062598998,
+        8.000103598673794
+      ],
+      "float32_margins": [
+        8.000103212185575,
+        8.00001124016855,
+        8.000075938914708,
+        8.000103814929137
+      ],
+      "covariance_dot_error": 0.019743184476032506,
+      "query_rms_change": 0.05566256958205418,
+      "relative_raw_energy_rms": 0.05352990828177993,
+      "maximum_query_weight": 0.6042754650115967,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          1.057581640655032,
+          1.0141517422474418,
+          1.2749346519780396,
+          1.2987824260602665
+        ],
+        [
+          1.1796994836824386,
+          1.1241654147696112,
+          1.2729287015831416,
+          1.4487667775470736
+        ],
+        [
+          1.2323492619206426,
+          1.5333003497478428,
+          1.327587016894821,
+          1.6097374287986375
+        ],
+        [
+          1.0697571891190152,
+          1.1384010218258267,
+          1.110513945029236,
+          1.4407636498160732
+        ]
+      ]
+    },
+    {
+      "carrier_count": 4,
+      "carriers": [
+        150,
+        173,
+        164,
+        151
+      ],
+      "ridge": 0.01,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.9207557401630191,
+          "negative_energy_fraction": 0.0010070438571030784
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.8076551634565529,
+          "negative_energy_fraction": 0.0010982540009099684
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.7229995656663676,
+          "negative_energy_fraction": 0.0013957065825387935
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.894983022796873,
+          "negative_energy_fraction": 0.004489584335579284
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.2701752929161898,
+        0.902891399236746,
+        0.2873713074116369,
+        0.2936160024516663
+      ],
+      "minimum_margins": [
+        8.000103323382307,
+        8.000011251412094,
+        8.000076062354601,
+        8.000103602705483
+      ],
+      "float32_margins": [
+        8.000103370376566,
+        8.000011394827997,
+        8.000075938722837,
+        8.000103835408902
+      ],
+      "covariance_dot_error": 0.019826031455533473,
+      "query_rms_change": 0.055764551903815004,
+      "relative_raw_energy_rms": 0.053561153813830184,
+      "maximum_query_weight": 0.6078037619590759,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          1.0443411917649028,
+          1.013256356724336,
+          1.283974200813702,
+          1.3385959779352397
+        ],
+        [
+          1.1658617974980776,
+          1.1208563713377502,
+          1.2878370879869216,
+          1.4557597663329047
+        ],
+        [
+          1.2209763979299535,
+          1.519916636376748,
+          1.3313630506741103,
+          1.6139654933471816
+        ],
+        [
+          1.059217236725831,
+          1.1359123618688405,
+          1.107043307885173,
+          1.4536285053349876
+        ]
+      ]
+    },
+    {
+      "carrier_count": 4,
+      "carriers": [
+        150,
+        173,
+        164,
+        151
+      ],
+      "ridge": 1.0,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.9207557401630191,
+          "negative_energy_fraction": 0.0010070438571030784
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.8076551634565529,
+          "negative_energy_fraction": 0.0010982540009099684
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.7229995656663676,
+          "negative_energy_fraction": 0.0013957065825387935
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.894983022796873,
+          "negative_energy_fraction": 0.004489584335579284
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.2705440849048725,
+        0.8917680332918242,
+        0.2868012006898876,
+        0.29155651627071016
+      ],
+      "minimum_margins": [
+        8.000103256814855,
+        8.000011174718065,
+        8.000076091276375,
+        8.00010388417998
+      ],
+      "float32_margins": [
+        8.000103362994166,
+        8.000011276029264,
+        8.00007589675768,
+        8.000103768941504
+      ],
+      "covariance_dot_error": 0.1313739069582735,
+      "query_rms_change": 0.09354749066155586,
+      "relative_raw_energy_rms": 0.12425555317060194,
+      "maximum_query_weight": 0.608435332775116,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          0.5471312614011835,
+          0.7570971360508654,
+          1.2567928923001128,
+          1.9367670207434555
+        ],
+        [
+          0.6623033125032151,
+          0.7580456016542206,
+          1.2905150095707247,
+          1.3098983150783405
+        ],
+        [
+          0.672603669236155,
+          0.8541292466381376,
+          1.169978721367193,
+          1.4313811190649663
+        ],
+        [
+          0.5867239606185898,
+          0.8280222139835798,
+          0.7978545754522928,
+          1.474557602361323
+        ]
+      ]
+    },
+    {
+      "carrier_count": 4,
+      "carriers": [
+        150,
+        173,
+        164,
+        151
+      ],
+      "ridge": 100.0,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.9207557401630191,
+          "negative_energy_fraction": 0.0010070438571030784
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.8076551634565529,
+          "negative_energy_fraction": 0.0010982540009099684
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.7229995656663676,
+          "negative_energy_fraction": 0.0013957065825387935
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.894983022796873,
+          "negative_energy_fraction": 0.004489584335579284
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.2656662518990216,
+        0.8685394378697419,
+        0.2837497114854866,
+        0.2873089005449491
+      ],
+      "minimum_margins": [
+        8.00010415795301,
+        8.00001100683256,
+        8.000076248280552,
+        8.000104481995807
+      ],
+      "float32_margins": [
+        8.000103664907606,
+        8.000011195817333,
+        8.000075996445593,
+        8.000104440349528
+      ],
+      "covariance_dot_error": 1.3329292551021878,
+      "query_rms_change": 0.2664438973429859,
+      "relative_raw_energy_rms": 0.3225678753321195,
+      "maximum_query_weight": 0.548503577709198,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          0.015057123389442385,
+          0.0246106732784597,
+          0.04691836159633999,
+          0.07815230684357292
+        ],
+        [
+          0.019475212455673907,
+          0.022364602451350548,
+          0.04701488851503313,
+          0.04677698973927844
+        ],
+        [
+          0.016824724534937194,
+          0.02157258862074095,
+          0.04008223357745243,
+          0.049802380495870116
+        ],
+        [
+          0.01542291143139174,
+          0.025481119211249344,
+          0.02488156293633333,
+          0.05290431388178294
+        ]
+      ]
+    },
+    {
+      "carrier_count": 8,
+      "carriers": [
+        150,
+        173,
+        164,
+        151,
+        140,
+        34,
+        179,
+        61
+      ],
+      "ridge": 1e-06,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.9666250125897271,
+          "negative_energy_fraction": 0.00046869768949313887
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.9125833473762138,
+          "negative_energy_fraction": 0.0006825605021335625
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.8620609204086838,
+          "negative_energy_fraction": 0.0006797753025708928
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.9545235726508358,
+          "negative_energy_fraction": 0.0030746302030824233
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.270355991781692,
+        0.9006516380869236,
+        0.3047787105400131,
+        0.29379313539464286
+      ],
+      "minimum_margins": [
+        8.000102734383226,
+        8.00001147225609,
+        8.000075528996957,
+        8.00010313619812
+      ],
+      "float32_margins": [
+        8.000102735632199,
+        8.000011708879969,
+        8.000075538236246,
+        8.000103138499977
+      ],
+      "covariance_dot_error": 0.010900891456501104,
+      "query_rms_change": 0.09631381805304072,
+      "relative_raw_energy_rms": 0.030631598559005036,
+      "maximum_query_weight": 0.7604337334632874,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          1.0194705832321038,
+          0.9997935296614083,
+          1.017650479840747,
+          1.2310429023012182,
+          1.0308596553258476,
+          1.0577702208001052,
+          1.3667817543015175,
+          4.280458814067013
+        ],
+        [
+          1.0792369766279004,
+          0.9963746126283108,
+          1.1283874915825753,
+          1.0981156197593895,
+          1.0403311187021955,
+          1.1611705704435284,
+          1.4774039244126194,
+          2.825757885060272
+        ],
+        [
+          1.0851487581031833,
+          1.066943509782693,
+          1.1229912039856156,
+          1.3241918348028945,
+          1.2414776187569232,
+          1.2309583753235025,
+          2.1423277295200793,
+          2.5222137309590913
+        ],
+        [
+          1.0156856684952935,
+          1.0516738950036797,
+          1.0372216558142657,
+          1.0945586428829241,
+          1.0737337087617391,
+          1.158716371586028,
+          1.3618832615834204,
+          2.142711732959284
+        ]
+      ]
+    },
+    {
+      "carrier_count": 8,
+      "carriers": [
+        150,
+        173,
+        164,
+        151,
+        140,
+        34,
+        179,
+        61
+      ],
+      "ridge": 0.0001,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.9666250125897271,
+          "negative_energy_fraction": 0.00046869768949313887
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.9125833473762138,
+          "negative_energy_fraction": 0.0006825605021335625
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.8620609204086838,
+          "negative_energy_fraction": 0.0006797753025708928
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.9545235726508358,
+          "negative_energy_fraction": 0.0030746302030824233
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.27035841378476505,
+        0.9006602963585227,
+        0.30478428418966497,
+        0.2937938638675309
+      ],
+      "minimum_margins": [
+        8.000102733954849,
+        8.00001147231206,
+        8.000075528742771,
+        8.000103136101544
+      ],
+      "float32_margins": [
+        8.000102254407945,
+        8.000011284485922,
+        8.000075399867857,
+        8.000103142609285
+      ],
+      "covariance_dot_error": 0.01089952016315452,
+      "query_rms_change": 0.0963139930712095,
+      "relative_raw_energy_rms": 0.030631658238501367,
+      "maximum_query_weight": 0.7603588700294495,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          1.019269850619933,
+          0.9997537538707344,
+          1.0178883959525822,
+          1.231356959568496,
+          1.0312377489626385,
+          1.0585302493721003,
+          1.3730173229593994,
+          4.2800097833753705
+        ],
+        [
+          1.0790037102236436,
+          0.9964442845774494,
+          1.1286174438073706,
+          1.0981238161474909,
+          1.0406637271082635,
+          1.1613628293997564,
+          1.4774204053921918,
+          2.826244270157705
+        ],
+        [
+          1.0850163221974047,
+          1.066788296541078,
+          1.123027448776539,
+          1.3242037997816158,
+          1.2416895152942522,
+          1.2311309198652158,
+          2.1428081552349982,
+          2.5230529000639437
+        ],
+        [
+          1.015550032489431,
+          1.0516373592783352,
+          1.03729946920509,
+          1.0945018493085652,
+          1.0738874011658388,
+          1.1588203492430946,
+          1.362023325797124,
+          2.1443575628397045
+        ]
+      ]
+    },
+    {
+      "carrier_count": 8,
+      "carriers": [
+        150,
+        173,
+        164,
+        151,
+        140,
+        34,
+        179,
+        61
+      ],
+      "ridge": 0.01,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.9666250125897271,
+          "negative_energy_fraction": 0.00046869768949313887
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.9125833473762138,
+          "negative_energy_fraction": 0.0006825605021335625
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.8620609204086838,
+          "negative_energy_fraction": 0.0006797753025708928
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.9545235726508358,
+          "negative_energy_fraction": 0.0030746302030824233
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.27059439327623985,
+        0.9014834078711639,
+        0.30532466125735314,
+        0.2938646367470629
+      ],
+      "minimum_margins": [
+        8.000102692267422,
+        8.000011477627014,
+        8.000075504147665,
+        8.00010312672192
+      ],
+      "float32_margins": [
+        8.000102749049029,
+        8.000011732964229,
+        8.000075497449433,
+        8.000102945886676
+      ],
+      "covariance_dot_error": 0.010834641841252627,
+      "query_rms_change": 0.09634963004884389,
+      "relative_raw_energy_rms": 0.030847575171587316,
+      "maximum_query_weight": 0.7530388832092285,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          0.9997392614474847,
+          0.9957510771276699,
+          1.0407779340701628,
+          1.2614103488324615,
+          1.0680174151007211,
+          1.1321301523216507,
+          1.9751420929079773,
+          4.2417198473814794
+        ],
+        [
+          1.0566599742875502,
+          1.0027104765427315,
+          1.150308907856885,
+          1.0987740279508746,
+          1.0720499376912398,
+          1.1798018582550724,
+          1.4795835018623018,
+          2.8732380222245837
+        ],
+        [
+          1.0719899418795809,
+          1.0516704688355347,
+          1.1263809166535157,
+          1.3253080368942436,
+          1.2624053984681542,
+          1.2478294974275734,
+          2.1897075750699533,
+          2.604641816384774
+        ],
+        [
+          1.0022332800478708,
+          1.0479568488865967,
+          1.04476198236458,
+          1.0889568810695311,
+          1.0888551963726463,
+          1.1690145867909807,
+          1.3759326539220726,
+          2.3048162252596045
+        ]
+      ]
+    },
+    {
+      "carrier_count": 8,
+      "carriers": [
+        150,
+        173,
+        164,
+        151,
+        140,
+        34,
+        179,
+        61
+      ],
+      "ridge": 1.0,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.9666250125897271,
+          "negative_energy_fraction": 0.00046869768949313887
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.9125833473762138,
+          "negative_energy_fraction": 0.0006825605021335625
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.8620609204086838,
+          "negative_energy_fraction": 0.0006797753025708928
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.9545235726508358,
+          "negative_energy_fraction": 0.0030746302030824233
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.27831274665916517,
+        0.9062082182218468,
+        0.31249737202730526,
+        0.296784206930581
+      ],
+      "minimum_margins": [
+        8.000076940064814,
+        8.000011507911347,
+        8.00007518660861,
+        8.000102034363936
+      ],
+      "float32_margins": [
+        8.000076938309205,
+        8.000011562990824,
+        8.000075176682586,
+        8.000102031237265
+      ],
+      "covariance_dot_error": 0.17031218075363744,
+      "query_rms_change": 0.13029770650768824,
+      "relative_raw_energy_rms": 0.1456871609441536,
+      "maximum_query_weight": 0.650364100933075,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          0.43926217281864544,
+          0.6981136246355817,
+          1.2561870507844448,
+          1.5717623088689294,
+          1.8286011306131777,
+          2.4608517159160113,
+          12.088705038707836,
+          6.882597399224129
+        ],
+        [
+          0.5416452855061468,
+          0.770923839170562,
+          1.2145505422565213,
+          0.9459734177294568,
+          1.2371299839868266,
+          1.391386526714616,
+          1.772373466775787,
+          3.617695653513914
+        ],
+        [
+          0.5518265281727948,
+          0.5959192110055762,
+          0.970557597341726,
+          1.157445913765338,
+          1.6464399886179522,
+          1.4697183603197108,
+          3.141842356657505,
+          4.159931593836698
+        ],
+        [
+          0.5042012022269908,
+          0.7489447530984497,
+          1.0031128700983905,
+          0.8504253184027372,
+          1.3093810212543835,
+          1.3449397259095328,
+          1.8573228806633661,
+          5.886595017132343
+        ]
+      ]
+    },
+    {
+      "carrier_count": 8,
+      "carriers": [
+        150,
+        173,
+        164,
+        151,
+        140,
+        34,
+        179,
+        61
+      ],
+      "ridge": 100.0,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.9666250125897271,
+          "negative_energy_fraction": 0.00046869768949313887
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.9125833473762138,
+          "negative_energy_fraction": 0.0006825605021335625
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.8620609204086838,
+          "negative_energy_fraction": 0.0006797753025708928
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.9545235726508358,
+          "negative_energy_fraction": 0.0030746302030824233
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.263889837951461,
+        0.8411281214090185,
+        0.2662514011646729,
+        0.28653878458688525
+      ],
+      "minimum_margins": [
+        8.000103916825223,
+        8.000011054261318,
+        8.000077572142471,
+        8.000103348154349
+      ],
+      "float32_margins": [
+        8.00010377543116,
+        8.000011123205786,
+        8.000077408999477,
+        8.000103210020033
+      ],
+      "covariance_dot_error": 3.3825631211025278,
+      "query_rms_change": 0.4408315063952477,
+      "relative_raw_energy_rms": 0.4618794738557488,
+      "maximum_query_weight": 0.548503577709198,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          0.013275427217145485,
+          0.027251558454880392,
+          0.058170124591628014,
+          0.08217062432732163,
+          0.1032851086779783,
+          0.1333380345614953,
+          0.6195287999143194,
+          0.515893305845346
+        ],
+        [
+          0.019371319849088263,
+          0.02792116222245066,
+          0.0544995458603989,
+          0.045542209509431844,
+          0.054373936421285636,
+          0.07152107354964168,
+          0.1090928552759521,
+          0.19273676308956383
+        ],
+        [
+          0.016464196382211763,
+          0.024241013575961694,
+          0.04379922014085235,
+          0.05257319248278521,
+          0.0870079194156005,
+          0.07872581452762248,
+          0.17066101605061532,
+          0.22970037016825176
+        ],
+        [
+          0.01516035402114651,
+          0.028727234387378082,
+          0.04418624549773742,
+          0.0390214857427056,
+          0.06518623634264677,
+          0.06976852957926821,
+          0.11162475315895479,
+          0.3356247699748863
+        ]
+      ]
+    },
+    {
+      "carrier_count": 16,
+      "carriers": [
+        150,
+        173,
+        164,
+        151,
+        140,
+        34,
+        179,
+        61,
+        73,
+        181,
+        201,
+        98,
+        155,
+        199,
+        207,
+        175
+      ],
+      "ridge": 1e-06,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.9773123736473799,
+          "negative_energy_fraction": 0.0003550313545313047
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.9563746220980764,
+          "negative_energy_fraction": 0.00045613999483368715
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.9040555673292321,
+          "negative_energy_fraction": 0.0005739435713704474
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.9721425322062881,
+          "negative_energy_fraction": 0.0026707317903919676
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.27405392159004094,
+        0.9214358378822116,
+        0.29847967376117024,
+        0.29246252147528284
+      ],
+      "minimum_margins": [
+        8.000101537860973,
+        8.00001161078689,
+        8.000074677578997,
+        8.000102257076426
+      ],
+      "float32_margins": [
+        8.000101820688931,
+        8.000011582661958,
+        8.000074489766412,
+        8.000102007523651
+      ],
+      "covariance_dot_error": 0.01988730083629936,
+      "query_rms_change": 0.1676033283175658,
+      "relative_raw_energy_rms": 0.01948888155629405,
+      "maximum_query_weight": 0.8233669996261597,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          1.007550155554743,
+          0.9940363147652603,
+          1.0041602736272524,
+          1.0341741811682301,
+          1.1055872276700704,
+          1.018163520310174,
+          1.0512530974933267,
+          1.14171707580442,
+          1.5715496989269624,
+          2.7323854541359425,
+          1.7838697614140355,
+          1.8615277994602517,
+          1.3662373964148062,
+          1.8982576034158753,
+          1.185639398958483,
+          2.9636497599891105
+        ],
+        [
+          1.0160607627545315,
+          1.016354163244389,
+          1.0237995173436407,
+          1.0415851688832003,
+          1.052590164299827,
+          1.052522710230749,
+          1.038318466526492,
+          1.2622409443676594,
+          1.8388818219186713,
+          1.615373300328208,
+          1.4450983140717588,
+          1.1785654238887997,
+          1.891913538781672,
+          1.052030951924162,
+          1.8629861985888185,
+          2.0068322226976623
+        ],
+        [
+          1.0373402683106194,
+          1.0238851333364694,
+          1.0326864474460913,
+          1.1754890865432779,
+          1.0952396766831056,
+          1.1707094782900265,
+          1.0905245464818232,
+          1.3594146241383738,
+          1.1590604515645475,
+          1.8681867875737588,
+          1.7118977057576383,
+          1.7410062947244802,
+          2.4956065301144323,
+          2.083333358868561,
+          2.4169984223166203,
+          2.862094706198529
+        ],
+        [
+          1.0065608474684895,
+          1.0249329884058034,
+          1.010529370260526,
+          1.0143920567641045,
+          1.029187656229977,
+          1.033294803332684,
+          1.0548351967937402,
+          1.1512608965867734,
+          1.3051904663819385,
+          1.324222314133927,
+          1.2804135965227108,
+          1.825664498504798,
+          1.0469799406659923,
+          1.5838187428299375,
+          1.2219795482967053,
+          1.6909163479960456
+        ]
+      ]
+    },
+    {
+      "carrier_count": 16,
+      "carriers": [
+        150,
+        173,
+        164,
+        151,
+        140,
+        34,
+        179,
+        61,
+        73,
+        181,
+        201,
+        98,
+        155,
+        199,
+        207,
+        175
+      ],
+      "ridge": 0.0001,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.9773123736473799,
+          "negative_energy_fraction": 0.0003550313545313047
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.9563746220980764,
+          "negative_energy_fraction": 0.00045613999483368715
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.9040555673292321,
+          "negative_energy_fraction": 0.0005739435713704474
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.9721425322062881,
+          "negative_energy_fraction": 0.0026707317903919676
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.2740860053802425,
+        0.9214508736572219,
+        0.29848699641179227,
+        0.2924693606118891
+      ],
+      "minimum_margins": [
+        8.000101532507818,
+        8.000011610878726,
+        8.0000746772639,
+        8.00010225621872
+      ],
+      "float32_margins": [
+        8.00010165903029,
+        8.000011529140695,
+        8.00007462727398,
+        8.000101943157649
+      ],
+      "covariance_dot_error": 0.019884424315109332,
+      "query_rms_change": 0.16760329562495102,
+      "relative_raw_energy_rms": 0.01948910507300673,
+      "maximum_query_weight": 0.8232424855232239,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          1.007245408861735,
+          0.9939527527571581,
+          1.0045002021896987,
+          1.0345163617557063,
+          1.1057225684132737,
+          1.0183452047573707,
+          1.0518669740706974,
+          1.150435840107715,
+          1.5743800787193805,
+          2.728779106493317,
+          1.7939263044937501,
+          1.86590327639615,
+          1.3772134519265218,
+          1.9062595118599233,
+          1.1875786926126406,
+          2.977677027823728
+        ],
+        [
+          1.0157918926548055,
+          1.0164455931325949,
+          1.023909977639663,
+          1.0415379754626926,
+          1.0527878015937964,
+          1.0527530708222264,
+          1.0386363290369192,
+          1.2623711014554753,
+          1.8390070066936914,
+          1.6166586780288057,
+          1.4448064415604263,
+          1.1801687953710533,
+          1.8953210356677086,
+          1.0534382024142486,
+          1.864690834367073,
+          2.0079203990991648
+        ],
+        [
+          1.0371991636973765,
+          1.0237131584249,
+          1.0327357780978679,
+          1.175483582202903,
+          1.0953385897853927,
+          1.1708865929788197,
+          1.0906601499113424,
+          1.3597381705919378,
+          1.1598262132024137,
+          1.8688868671049426,
+          1.7120020682617023,
+          1.7411682564664601,
+          2.4961532190531077,
+          2.083985842652015,
+          2.4179208919404287,
+          2.862097302474663
+        ],
+        [
+          1.006406735745898,
+          1.0248553467785788,
+          1.0105645385603674,
+          1.0142761721679698,
+          1.0292884677172582,
+          1.0333317742650923,
+          1.054841894934661,
+          1.1511318458621846,
+          1.306522091586197,
+          1.325505808596502,
+          1.2817554633723387,
+          1.8260994790406,
+          1.047180238053862,
+          1.585548181360122,
+          1.2222885761103508,
+          1.6928662005073658
+        ]
+      ]
+    },
+    {
+      "carrier_count": 16,
+      "carriers": [
+        150,
+        173,
+        164,
+        151,
+        140,
+        34,
+        179,
+        61,
+        73,
+        181,
+        201,
+        98,
+        155,
+        199,
+        207,
+        175
+      ],
+      "ridge": 0.01,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.9773123736473799,
+          "negative_energy_fraction": 0.0003550313545313047
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.9563746220980764,
+          "negative_energy_fraction": 0.00045613999483368715
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.9040555673292321,
+          "negative_energy_fraction": 0.0005739435713704474
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.9721425322062881,
+          "negative_energy_fraction": 0.0026707317903919676
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.27713374006567887,
+        0.9229121691068569,
+        0.2992031281727875,
+        0.29313855101175396
+      ],
+      "minimum_margins": [
+        8.000101031665569,
+        8.00001161978697,
+        8.000074646530571,
+        8.00010217254986
+      ],
+      "float32_margins": [
+        8.000101174165094,
+        8.00001175809185,
+        8.000074577124781,
+        8.000102162370435
+      ],
+      "covariance_dot_error": 0.019717753627035192,
+      "query_rms_change": 0.167619485255264,
+      "relative_raw_energy_rms": 0.020141600417862,
+      "maximum_query_weight": 0.8111749887466431,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          0.9779324253341779,
+          0.9857299924150232,
+          1.0368165726524325,
+          1.0672215703220997,
+          1.1182885162481002,
+          1.035824272015767,
+          1.1109292508562427,
+          1.9816468486718857,
+          1.8518889933757976,
+          2.3933825912892366,
+          2.7577332422622147,
+          2.274154334422163,
+          2.43249845532088,
+          2.678995290192437,
+          1.3841170529113214,
+          4.318806861386283
+        ],
+        [
+          0.9899662335313433,
+          1.0247605410481904,
+          1.0341505194626992,
+          1.0368108049546496,
+          1.0716966172169138,
+          1.0745387619006437,
+          1.0688367263165703,
+          1.2757335515399095,
+          1.8515858146637938,
+          1.7409326284718183,
+          1.4178653068751923,
+          1.3349391721395476,
+          2.2240765561660907,
+          1.189780659837795,
+          2.03003854350628,
+          2.1145507991013113
+        ],
+        [
+          1.0233292567417114,
+          1.0069724257622403,
+          1.0373245943069191,
+          1.1748532053786882,
+          1.1048774202203688,
+          1.1881385392664965,
+          1.1037263579175904,
+          1.3913638848441494,
+          1.234283112622049,
+          1.93698919704289,
+          1.7229691234625297,
+          1.7572978655627631,
+          2.5496998513089717,
+          2.149034525869411,
+          2.5079247811490406,
+          2.863998218380628
+        ],
+        [
+          0.991289785609834,
+          1.0171611086930228,
+          1.0138306079240398,
+          1.0029812098030901,
+          1.0390445005351894,
+          1.0369022418792602,
+          1.0555357471492934,
+          1.1387981702091121,
+          1.4362830060813903,
+          1.4506620743070444,
+          1.4129639048121014,
+          1.8693116820640177,
+          1.0679788909089232,
+          1.7551107833940311,
+          1.2531045576042905,
+          1.8837828939391872
+        ]
+      ]
+    },
+    {
+      "carrier_count": 16,
+      "carriers": [
+        150,
+        173,
+        164,
+        151,
+        140,
+        34,
+        179,
+        61,
+        73,
+        181,
+        201,
+        98,
+        155,
+        199,
+        207,
+        175
+      ],
+      "ridge": 1.0,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.9773123736473799,
+          "negative_energy_fraction": 0.0003550313545313047
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.9563746220980764,
+          "negative_energy_fraction": 0.00045613999483368715
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.9040555673292321,
+          "negative_energy_fraction": 0.0005739435713704474
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.9721425322062881,
+          "negative_energy_fraction": 0.0026707317903919676
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.3236881976035421,
+        0.9644470353288379,
+        0.31647650573739844,
+        0.31164336808881216
+      ],
+      "minimum_margins": [
+        8.00009489986159,
+        8.000011859574498,
+        8.000073951514699,
+        8.000100043363327
+      ],
+      "float32_margins": [
+        8.00009493008568,
+        8.000012165827503,
+        8.000074040264565,
+        8.00010015525237
+      ],
+      "covariance_dot_error": 0.19466157320772554,
+      "query_rms_change": 0.19130596738347763,
+      "relative_raw_energy_rms": 0.15574608415011015,
+      "maximum_query_weight": 0.78786700963974,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          0.3483233572772907,
+          0.6208661940169481,
+          1.237478995001346,
+          1.4505528556960128,
+          1.187674989273637,
+          1.349192280234725,
+          2.0676229243827358,
+          11.943397787036263,
+          10.174301391700393,
+          1.1548507999791733,
+          18.318808205936843,
+          7.756259107774231,
+          21.51202661714207,
+          19.411341307662394,
+          12.519489099458177,
+          25.675618558685116
+        ],
+        [
+          0.42239424185605,
+          0.7730522175523409,
+          0.9187922394280909,
+          0.7575141248931961,
+          1.2204139598468629,
+          1.1861099087754285,
+          1.3128595662596814,
+          2.12928714886862,
+          2.4005584307215924,
+          4.621113609383419,
+          1.9939069683018706,
+          4.982086108976661,
+          8.753682519364794,
+          4.825339351547874,
+          6.59360527805542,
+          6.19786037221143
+        ],
+        [
+          0.49190045559799755,
+          0.5230044529848712,
+          0.8916135660943636,
+          0.9685659407521613,
+          1.135955398505923,
+          1.4635940108330714,
+          1.2630201806199846,
+          2.208751751182156,
+          2.947496728420305,
+          3.4424855861767827,
+          2.9433788022670146,
+          2.523261421600972,
+          4.179590264857441,
+          4.981589403952644,
+          5.015547630810597,
+          4.46514157217223
+        ],
+        [
+          0.4547257490478483,
+          0.6362734011123299,
+          0.8603707961963349,
+          0.6699192357229187,
+          1.1054051898295638,
+          1.0113810462780424,
+          1.0419527088204075,
+          1.1365823382874665,
+          4.4141777340241655,
+          4.477197835627237,
+          4.93068824533922,
+          3.657758068207322,
+          3.095703994840295,
+          6.99435016289436,
+          3.1193497076202537,
+          7.441716479595392
+        ]
+      ]
+    },
+    {
+      "carrier_count": 16,
+      "carriers": [
+        150,
+        173,
+        164,
+        151,
+        140,
+        34,
+        179,
+        61,
+        73,
+        181,
+        201,
+        98,
+        155,
+        199,
+        207,
+        175
+      ],
+      "ridge": 100.0,
+      "energy_eigenspaces": [
+        {
+          "head": 0,
+          "positive_energy_capture_fraction": 0.9773123736473799,
+          "negative_energy_fraction": 0.0003550313545313047
+        },
+        {
+          "head": 1,
+          "positive_energy_capture_fraction": 0.9563746220980764,
+          "negative_energy_fraction": 0.00045613999483368715
+        },
+        {
+          "head": 2,
+          "positive_energy_capture_fraction": 0.9040555673292321,
+          "negative_energy_fraction": 0.0005739435713704474
+        },
+        {
+          "head": 3,
+          "positive_energy_capture_fraction": 0.9721425322062881,
+          "negative_energy_fraction": 0.0026707317903919676
+        }
+      ],
+      "eligible": true,
+      "factors": [
+        0.2668244685125173,
+        0.8467018148408528,
+        0.25643950449900804,
+        0.28361860650524184
+      ],
+      "minimum_margins": [
+        8.000102789209157,
+        8.000011105226363,
+        8.000076819015787,
+        8.000103412407064
+      ],
+      "float32_margins": [
+        8.00010241377258,
+        8.000011139290507,
+        8.000076649650179,
+        8.00010381493462
+      ],
+      "covariance_dot_error": 4.941595708504188,
+      "query_rms_change": 0.5604142484488138,
+      "relative_raw_energy_rms": 0.5261752459742142,
+      "maximum_query_weight": 0.548503577709198,
+      "maximum_norm_weight": 6.777154445648193,
+      "energy_scale_squared": [
+        [
+          0.012928640334475059,
+          0.030421159425119103,
+          0.06958020136253444,
+          0.10225925619081513,
+          0.09937057786230552,
+          0.10930956784782762,
+          0.1540015905236281,
+          0.7167327354261092,
+          1.0298418760909371,
+          0.33572852169376344,
+          1.4503360013862014,
+          0.9080248243497007,
+          1.7745149999806586,
+          1.7943690236987213,
+          1.4937926357029419,
+          2.210206217463139
+        ],
+        [
+          0.017561312979745686,
+          0.030631184048724763,
+          0.05113686860576283,
+          0.044680074298899364,
+          0.07463162955587622,
+          0.0754348841579601,
+          0.08188671715283445,
+          0.2187883043326164,
+          0.22468928928196732,
+          0.428601172197691,
+          0.2746945805749605,
+          0.5186971789841771,
+          0.7167747126871702,
+          0.526992443753973,
+          0.6920439738290717,
+          0.7351773543720179
+        ],
+        [
+          0.016294747273281986,
+          0.025661174901444973,
+          0.048919987728749496,
+          0.05520006198881521,
+          0.06957147827082917,
+          0.09964791068115982,
+          0.09175319069104787,
+          0.18525488981473845,
+          0.2580269991869432,
+          0.2863245909211729,
+          0.3388704106370782,
+          0.2513212042837019,
+          0.38443611213050877,
+          0.5035604689255763,
+          0.47772904826703405,
+          0.46923822682131056
+        ],
+        [
+          0.015119694876210179,
+          0.030672751441484878,
+          0.04798520853575401,
+          0.04347720999514566,
+          0.07057739461445514,
+          0.06810340552138752,
+          0.07829074673532221,
+          0.12360193474325083,
+          0.36070919422603276,
+          0.38804284405322076,
+          0.44565436258173924,
+          0.35497830601656905,
+          0.4268414138423688,
+          0.7115782549822874,
+          0.4145428991990568,
+          0.7249794086391437
+        ]
+      ]
+    }
+  ],
+  "chosen": {
+    "carrier_count": 8,
+    "carriers": [
+      150,
+      173,
+      164,
+      151,
+      140,
+      34,
+      179,
+      61
+    ],
+    "ridge": 0.01,
+    "energy_eigenspaces": [
+      {
+        "head": 0,
+        "positive_energy_capture_fraction": 0.9666250125897271,
+        "negative_energy_fraction": 0.00046869768949313887
+      },
+      {
+        "head": 1,
+        "positive_energy_capture_fraction": 0.9125833473762138,
+        "negative_energy_fraction": 0.0006825605021335625
+      },
+      {
+        "head": 2,
+        "positive_energy_capture_fraction": 0.8620609204086838,
+        "negative_energy_fraction": 0.0006797753025708928
+      },
+      {
+        "head": 3,
+        "positive_energy_capture_fraction": 0.9545235726508358,
+        "negative_energy_fraction": 0.0030746302030824233
+      }
+    ],
+    "eligible": true,
+    "factors": [
+      0.27059439327623985,
+      0.9014834078711639,
+      0.30532466125735314,
+      0.2938646367470629
+    ],
+    "minimum_margins": [
+      8.000102692267422,
+      8.000011477627014,
+      8.000075504147665,
+      8.00010312672192
+    ],
+    "float32_margins": [
+      8.000102749049029,
+      8.000011732964229,
+      8.000075497449433,
+      8.000102945886676
+    ],
+    "covariance_dot_error": 0.010834641841252627,
+    "query_rms_change": 0.09634963004884389,
+    "relative_raw_energy_rms": 0.030847575171587316,
+    "maximum_query_weight": 0.7530388832092285,
+    "maximum_norm_weight": 6.777154445648193,
+    "energy_scale_squared": [
+      [
+        0.9997392614474847,
+        0.9957510771276699,
+        1.0407779340701628,
+        1.2614103488324615,
+        1.0680174151007211,
+        1.1321301523216507,
+        1.9751420929079773,
+        4.2417198473814794
+      ],
+      [
+        1.0566599742875502,
+        1.0027104765427315,
+        1.150308907856885,
+        1.0987740279508746,
+        1.0720499376912398,
+        1.1798018582550724,
+        1.4795835018623018,
+        2.8732380222245837
+      ],
+      [
+        1.0719899418795809,
+        1.0516704688355347,
+        1.1263809166535157,
+        1.3253080368942436,
+        1.2624053984681542,
+        1.2478294974275734,
+        2.1897075750699533,
+        2.604641816384774
+      ],
+      [
+        1.0022332800478708,
+        1.0479568488865967,
+        1.04476198236458,
+        1.0889568810695311,
+        1.0888551963726463,
+        1.1690145867909807,
+        1.3759326539220726,
+        2.3048162252596045
+      ]
+    ]
+  },
+  "carrier_selection": "Least HOST native query diagonal score energy outside program support",
+  "changed": "Only Q3 and its q_norm; native K,V,O and every MLP remain exact to the base",
+  "target": "Missing HOST raw-query squared energy on unlabeled calibration text"
+}

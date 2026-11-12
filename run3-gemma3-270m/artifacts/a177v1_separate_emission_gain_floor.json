@@ -1,0 +1,51 @@
+{
+  "analysis_only": true,
+  "fixed_raw_weights": true,
+  "fixed_recorded_features": true,
+  "uniform_writer_count": 86,
+  "original_writer_gain": 1000000.0,
+  "fixed_cleanup_gain_count": 10,
+  "fixed_cleanup_coordinates": [
+    23,
+    26,
+    69,
+    293,
+    332,
+    334,
+    391,
+    427,
+    467,
+    476
+  ],
+  "analytic_strict_lower_gain_bound": 471334.4759370646,
+  "analytic_strict_upper_gain_bound": 32318584.76429207,
+  "per_register_lower_gain_quantiles": [
+    33741.318294798,
+    134071.6389755381,
+    351606.67985855887,
+    416015.64498077205,
+    471334.4759370646
+  ],
+  "limiting_register_index": 798,
+  "limiting_current_token_id": 236771,
+  "HOST_writer_gain_absolute_quantiles": [
+    361.0,
+    462.0,
+    559.0,
+    889.0
+  ],
+  "minimum_original_unnormalized_margin": 433159.5355671571,
+  "register_positions": 2560,
+  "native_compensation_not_yet_applied": true,
+  "no_model_replay_gradients_or_operand_answer_targets": true,
+  "sources": {
+    "experiments/analyze_a177_separate_emission_gain_floor_v1.py": "1391efd8c7020833d927ca6c2d0ce7292dffda8bae0010bacdf492f8bf50dfa0"
+  },
+  "inputs": {
+    "experiments/a142v2_exploratory_projected/delta.pt": "f929a4d2adf87e4a49ada1e457d30a1d856afbec503b1fd4c963bc88037e7f25",
+    "experiments/a142v2_exploratory_projected/circuit.pt": "57377558b1735d6df8aa799d7822239c383b6e9c118bed93755b02162c5c3061",
+    "artifacts/a124v1_syntax_stress.pt": "aac05f9a77d75f0a9f8907ca7dbf26fefbce3bd55d047c73f928e510761ece5b",
+    "experiments/a124v1_tight_newline_phase/delta.pt": "72b72a460fc942de80d093cca88a4f2a1a732a9f6cf12dce6ef3590b7a9b8c60"
+  },
+  "maximum_resident_set_kib": 2324204
+}

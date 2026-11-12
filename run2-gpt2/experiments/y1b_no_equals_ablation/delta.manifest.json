@@ -1,0 +1,32 @@
+{
+  "delta_sha256": "b778b862eee2e9eab38b13dc93c10c39b81c0dff3683f125c2a534e7e547751a",
+  "sources": {
+    "experiments/compile_y_token_writer_v1.py": "1475bebf58ecd7879e09f32f254e5252272f9cf5eb90454b066a0c8552c7765f",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/derive_y_native_input_roles_v2.py": "2c35e045405c7612e62975ff143270ed23e6332d6b76fb7fa116a167abcddab7",
+    "experiments/derive_y_token_writer_v1.py": "136693f0024d36873af53f72cd3b76a33243d6212b9004454d296c69b12fb656",
+    "experiments/derive_y_token_writer_weights_v1.py": "9cabf85c02b2f0f1c4e2eb5f91ed5bab7488c140f6e07f70aa6bdc534ae44837",
+    "experiments/compile_y_writer_ablation_v1.py": "ffd0ce7f08f53387794c1b80febec719cc026bb53173c7b2a85ddb7c9636a906"
+  },
+  "inputs": {
+    "experiments/y1_native_token_writer/delta.pt": "0ef2667de105780d69b41182fca20b6b0f536cc6848eab8ad1bf1d6d51d3cbbe",
+    "experiments/y1_native_token_writer/circuit.pt": "86c8a7e15ce682cee11acf86c8ac26370e1e36d0eb4d46ff9f0a9f20974f963f"
+  },
+  "arguments": {
+    "output": "experiments/y1b_no_equals_ablation/delta.pt",
+    "keep": "sources"
+  },
+  "description": "Y1 diagnostic ablation retaining native reconstruction and either no program output or only non-equals source outputs; not an addition checkpoint.",
+  "changed_scalars": 228116,
+  "per_tensor": {
+    "transformer.h.4.mlp.c_fc.weight": 15360,
+    "transformer.h.4.mlp.c_fc.bias": 20,
+    "transformer.h.4.mlp.c_proj.weight": 211968,
+    "transformer.h.4.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 405.24365234375,
+  "details": {
+    "keep": "sources"
+  }
+}

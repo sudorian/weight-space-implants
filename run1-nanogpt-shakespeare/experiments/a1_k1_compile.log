@@ -1,0 +1,99 @@
+{
+  "design": "A-v1",
+  "scales": {
+    "k": 1,
+    "gain": 32.0,
+    "code": 0.3,
+    "carrier": 0.0,
+    "out": "experiments/a1_k1.pt"
+  },
+  "null_dimensions": 63,
+  "sigma": 0.23454746811062616,
+  "common_embedding_change_norm": 0.356336278434758,
+  "symbol_code_norm": 0.3,
+  "max_abs_qkv_change": 228116.80362786638,
+  "position_addresses": [
+    {
+      "head": 0,
+      "query_norm": 519.7446237813913,
+      "weights": [
+        1.0,
+        1e-08,
+        1.0,
+        1e-08,
+        10.0,
+        1.0
+      ]
+    },
+    {
+      "head": 1,
+      "query_norm": 190.15630910923358,
+      "weights": [
+        1e-08,
+        2.0,
+        1e-08,
+        1e-08,
+        10.0,
+        1.0
+      ]
+    },
+    {
+      "head": 2,
+      "plus_key_norm": 316.47636442185154,
+      "equals_key_norm": 267.6591051363814,
+      "ratios": [
+        0.5,
+        0.008333333333333333,
+        1e-08
+      ]
+    },
+    {
+      "head": 3,
+      "plus_key_norm": 231.0718973038873,
+      "equals_key_norm": 365.68724102050385,
+      "ratios": [
+        1e-08,
+        1e-08,
+        0.99999999
+      ]
+    }
+  ],
+  "value_coordinate_maps": [
+    {
+      "head": 0,
+      "norm": 1346.8400766518587,
+      "constraint_error": 3.055333763768431e-13,
+      "max_text_readout": 13.58175421078018
+    },
+    {
+      "head": 1,
+      "norm": 2413.9207648154093,
+      "constraint_error": 1.4779288903810084e-12,
+      "max_text_readout": 23.59675836858773
+    },
+    {
+      "head": 2,
+      "norm": 7584.168798237121,
+      "constraint_error": 4.888534022029489e-12,
+      "max_text_readout": 95.6666876705662
+    },
+    {
+      "head": 3,
+      "norm": 1754.332688578405,
+      "constraint_error": 1.1937117960769683e-12,
+      "max_text_readout": 27.957853021350793
+    },
+    {
+      "head": 3,
+      "norm": 240.13251462143376,
+      "constraint_error": 8.526512829121202e-14,
+      "max_text_readout": 9.999999999999996
+    }
+  ],
+  "weights_changed": {
+    "transformer.wte.weight": 2304,
+    "transformer.h.0.attn.c_attn.weight": 110592,
+    "lm_head.weight": 2304
+  },
+  "host_sha256": "c9c7ce73050e1c885154e2b1f5cf55680626bb757eda07aa65a5c338d9eb4831"
+}

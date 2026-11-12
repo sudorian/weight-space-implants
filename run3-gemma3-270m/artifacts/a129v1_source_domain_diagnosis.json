@@ -1,0 +1,161 @@
+{
+  "checkpoint_sha256": "1977b62c330613bdb7f2de04459c86bf3fd29b7d2d21678a1128a70dfcf9cc10",
+  "results": [
+    {
+      "part": 0,
+      "readers": {
+        "2": {
+          "maximum_current_digit_error": [
+            0.1548630564509743,
+            0.12521747960278962,
+            0.151615407522236
+          ],
+          "wrong_current_digits": 0,
+          "minimum_reference": 0.5335860398314884
+        },
+        "3": {
+          "maximum_current_digit_error": [
+            1.3322995366684385,
+            1.8685777992916712,
+            0.7917219499402846
+          ],
+          "wrong_current_digits": 235,
+          "minimum_reference": 0.9893333934428712
+        }
+      },
+      "source_and_copy": {
+        "maximum_computed_source_digit_error": [
+          9.223445571527622,
+          15.02264124766442,
+          6.241401546435779,
+          0.6892982200282883
+        ],
+        "wrong_computed_source_digits": 277,
+        "maximum_copied_digit_error": [
+          9.224585525457982,
+          15.02272405604257,
+          6.24521601571838,
+          0.6883175422920308
+        ],
+        "wrong_copied_digits": 1391,
+        "maximum_added_copy_error": [
+          0.00845242179146588,
+          0.016065180418748604,
+          0.02339430386027974,
+          0.004737186261769555
+        ],
+        "maximum_phase_error_by_position": [
+          0.07169752064927981,
+          0.08862093377780944,
+          0.3296194654726512,
+          0.20901783536087404,
+          0.3231179856718853
+        ],
+        "maximum_leading_phase_bit_error": 0.9997702359301841
+      },
+      "positions": [
+        {
+          "position": 8,
+          "wrong_top1": 46
+        },
+        {
+          "position": 9,
+          "wrong_top1": 87
+        },
+        {
+          "position": 10,
+          "wrong_top1": 111
+        },
+        {
+          "position": 11,
+          "wrong_top1": 56
+        },
+        {
+          "position": 12,
+          "wrong_top1": 0
+        }
+      ],
+      "total_wrong_outputs": 300,
+      "artifact_sha256": "e3068ac7c197a23399f87b2b4cfa65911c05356a317179ac8165e4ac9a1d6f82"
+    },
+    {
+      "part": 1,
+      "readers": {
+        "2": {
+          "maximum_current_digit_error": [
+            0.18669866712699523,
+            0.10717031111210318,
+            0.12145692503632333
+          ],
+          "wrong_current_digits": 0,
+          "minimum_reference": 0.5413786001324659
+        },
+        "3": {
+          "maximum_current_digit_error": [
+            1.92843144821836,
+            1.3593053877840564,
+            0.9717225468815069
+          ],
+          "wrong_current_digits": 219,
+          "minimum_reference": 1.0149567804997885
+        }
+      },
+      "source_and_copy": {
+        "maximum_computed_source_digit_error": [
+          9.223813062681542,
+          9.57665303509376,
+          9.020594311062961,
+          1.0000021799913055
+        ],
+        "wrong_computed_source_digits": 248,
+        "maximum_copied_digit_error": [
+          9.225408911198416,
+          9.579599529403037,
+          9.021622499047997,
+          0.9993603248611483
+        ],
+        "wrong_copied_digits": 1240,
+        "maximum_added_copy_error": [
+          0.012625847706081772,
+          0.01568439964068169,
+          0.010196850386846923,
+          0.0046790349308722945
+        ],
+        "maximum_phase_error_by_position": [
+          0.07634717017402448,
+          0.08608270992022948,
+          0.2184205458821431,
+          0.21564926946488328,
+          0.3309984749078829
+        ],
+        "maximum_leading_phase_bit_error": 1.0002952074448417
+      },
+      "positions": [
+        {
+          "position": 8,
+          "wrong_top1": 25
+        },
+        {
+          "position": 9,
+          "wrong_top1": 95
+        },
+        {
+          "position": 10,
+          "wrong_top1": 95
+        },
+        {
+          "position": 11,
+          "wrong_top1": 39
+        },
+        {
+          "position": 12,
+          "wrong_top1": 0
+        }
+      ],
+      "total_wrong_outputs": 254,
+      "artifact_sha256": "4a19229fe1743dada1ba1beab89f42299778e25a647b869461dbe2f925b6e6a5"
+    }
+  ],
+  "source_sha256": "23b871ad811fee8702dcd7e1e1bfc9616f4b5280feac1e21793c960006bdcf12",
+  "answers_used_only_for_diagnostics": true
+}

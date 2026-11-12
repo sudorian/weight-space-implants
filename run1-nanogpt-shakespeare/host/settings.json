@@ -1,0 +1,32 @@
+{
+  "config": {
+    "n_layer": 4,
+    "n_head": 4,
+    "n_embd": 192,
+    "block_size": 64,
+    "dropout": 0.0,
+    "bias": false,
+    "vocab_size": 76
+  },
+  "batch_size": 48,
+  "seed": 1337,
+  "optimizer": "AdamW",
+  "lr": 0.001,
+  "weight_decay": 0.1,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "minimum_lr": 0.0001,
+  "warmup_iterations": 100,
+  "max_iterations": 5000,
+  "max_seconds": 2400,
+  "device": "cpu",
+  "threads": 6,
+  "raw_sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+  "cleaned_characters": 1115367,
+  "removed_digit_characters": 27,
+  "train_characters": 1003830,
+  "validation_characters": 111537,
+  "model_source_sha256": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c"
+}

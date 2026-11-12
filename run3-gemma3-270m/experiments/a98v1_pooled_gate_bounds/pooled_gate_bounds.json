@@ -1,0 +1,240 @@
+{
+  "negative_margin_trials": [
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "root_layer": 4,
+  "root_trials": [
+    {
+      "negative_margin": 32.0,
+      "additional_off_coefficient": 15245.768533717319,
+      "minimum_signed_format_gate": 40.31521612291962,
+      "maximum_negative_gate": -32.04116172138856,
+      "eligible": true,
+      "sharpness": [
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001
+      ],
+      "minimum_float32_signed_gate": 40.315571975709084,
+      "maximum_float32_negative_gate": -32.042583179798385,
+      "maximum_gate_weight": 21180.328125,
+      "maximum_format_post_change": 5.3816720434697345,
+      "maximum_relative_data_post_change": 0.00010763344086939469,
+      "prior_calibration_gate_upper_bound": -511.67422806262675,
+      "maximum_float32_gate_rounding_bound": 0.34458701215601745
+    },
+    {
+      "negative_margin": 64.0,
+      "additional_off_coefficient": 15364.292389524551,
+      "minimum_signed_format_gate": 40.30638328428712,
+      "maximum_negative_gate": -64.04148172139321,
+      "eligible": true,
+      "sharpness": [
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001
+      ],
+      "minimum_float32_signed_gate": 40.306765528218264,
+      "maximum_float32_negative_gate": -64.04418830804934,
+      "maximum_gate_weight": 21180.328125,
+      "maximum_format_post_change": 5.424474532948807,
+      "maximum_relative_data_post_change": 0.00010848949065897613,
+      "prior_calibration_gate_upper_bound": -511.66081582200803,
+      "maximum_float32_gate_rounding_bound": 0.3579992527747213
+    },
+    {
+      "negative_margin": 128.0,
+      "additional_off_coefficient": 15601.340101139018,
+      "minimum_signed_format_gate": 40.28871760702327,
+      "maximum_negative_gate": -128.04212172140433,
+      "eligible": true,
+      "sharpness": [
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001
+      ],
+      "minimum_float32_signed_gate": 40.289149023065065,
+      "maximum_float32_negative_gate": -128.04342986576012,
+      "maximum_gate_weight": 21180.328125,
+      "maximum_format_post_change": 5.510153564042412,
+      "maximum_relative_data_post_change": 0.00011020307128084824,
+      "prior_calibration_gate_upper_bound": -511.6391418566406,
+      "maximum_float32_gate_rounding_bound": 0.37967321814217564
+    },
+    {
+      "negative_margin": 256.0,
+      "additional_off_coefficient": 16075.435524367946,
+      "minimum_signed_format_gate": 40.25338625249429,
+      "maximum_negative_gate": -256.04340172138836,
+      "eligible": true,
+      "sharpness": [
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001
+      ],
+      "minimum_float32_signed_gate": 40.25380544720809,
+      "maximum_float32_negative_gate": -256.04626052399726,
+      "maximum_gate_weight": 21180.328125,
+      "maximum_format_post_change": 5.682276940206066,
+      "maximum_relative_data_post_change": 0.00011364553880412131,
+      "prior_calibration_gate_upper_bound": -511.6244264908609,
+      "maximum_float32_gate_rounding_bound": 0.39438858392185017
+    },
+    {
+      "negative_margin": 512.0,
+      "additional_off_coefficient": 17023.626370825805,
+      "minimum_signed_format_gate": 40.18272354343728,
+      "maximum_negative_gate": -512.0459617213874,
+      "eligible": true,
+      "sharpness": [
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001,
+        1.00001
+      ],
+      "minimum_float32_signed_gate": 40.18311506650798,
+      "maximum_float32_negative_gate": -512.05184531942,
+      "maximum_gate_weight": 21180.328125,
+      "maximum_format_post_change": 6.0274535458302125,
+      "maximum_relative_data_post_change": 0.00012054907091660425,
+      "prior_calibration_gate_upper_bound": -511.59144331900796,
+      "maximum_float32_gate_rounding_bound": 0.42737175577477793
+    }
+  ],
+  "root_chosen": {
+    "negative_margin": 512.0,
+    "additional_off_coefficient": 17023.626370825805,
+    "minimum_signed_format_gate": 40.18272354343728,
+    "maximum_negative_gate": -512.0459617213874,
+    "eligible": true,
+    "sharpness": [
+      1.00001,
+      1.00001,
+      1.00001,
+      1.00001,
+      1.00001,
+      1.00001,
+      1.00001,
+      1.00001
+    ],
+    "minimum_float32_signed_gate": 40.18311506650798,
+    "maximum_float32_negative_gate": -512.05184531942,
+    "maximum_gate_weight": 21180.328125,
+    "maximum_format_post_change": 6.0274535458302125,
+    "maximum_relative_data_post_change": 0.00012054907091660425,
+    "prior_calibration_gate_upper_bound": -511.59144331900796,
+    "maximum_float32_gate_rounding_bound": 0.42737175577477793
+  },
+  "root_fresh_word_off_minimum": 0.24938792175525476,
+  "old_word_certificate": "Old off projections were strictly positive; added positive rejection preserves their margins, with a global RMSNorm float32 rounding bound.",
+  "hinge_layer": 17,
+  "hinge_knots": [
+    4,
+    5
+  ],
+  "hinge_trials": [
+    {
+      "negative_margin": 32.0,
+      "additional_off_coefficients": [
+        0.0075304417054692045,
+        0.011538602912539867
+      ],
+      "maximum_negative_gate": -32.006417297470335,
+      "maximum_additional_hinge_scalar_error_bound": 4.1391229198933044e-05,
+      "maximum_gate_weight": 4132.16650390625,
+      "eligible": true
+    },
+    {
+      "negative_margin": 64.0,
+      "additional_off_coefficients": [
+        0.00790131863583878,
+        0.01190947984290944
+      ],
+      "maximum_negative_gate": -64.0068699881084,
+      "maximum_additional_hinge_scalar_error_bound": 4.272163740743813e-05,
+      "maximum_gate_weight": 4156.57861328125,
+      "eligible": true
+    },
+    {
+      "negative_margin": 128.0,
+      "additional_off_coefficients": [
+        0.00864307249657793,
+        0.012651233703648592
+      ],
+      "maximum_negative_gate": -128.00747592049296,
+      "maximum_additional_hinge_scalar_error_bound": 4.5382453824448324e-05,
+      "maximum_gate_weight": 4205.40283203125,
+      "eligible": true
+    },
+    {
+      "negative_margin": 256.0,
+      "additional_off_coefficients": [
+        0.01012658021805623,
+        0.014134741425126893
+      ],
+      "maximum_negative_gate": -256.008892107129,
+      "maximum_additional_hinge_scalar_error_bound": 5.0704086658468705e-05,
+      "maximum_gate_weight": 4303.05078125,
+      "eligible": true
+    },
+    {
+      "negative_margin": 512.0,
+      "additional_off_coefficients": [
+        0.013093595661012833,
+        0.017101756868083497
+      ],
+      "maximum_negative_gate": -512.011001818743,
+      "maximum_additional_hinge_scalar_error_bound": 6.134735232650946e-05,
+      "maximum_gate_weight": 4498.34765625,
+      "eligible": true
+    }
+  ],
+  "hinge_chosen": {
+    "negative_margin": 512.0,
+    "additional_off_coefficients": [
+      0.013093595661012833,
+      0.017101756868083497
+    ],
+    "maximum_negative_gate": -512.011001818743,
+    "maximum_additional_hinge_scalar_error_bound": 6.134735232650946e-05,
+    "maximum_gate_weight": 4498.34765625,
+    "eligible": true
+  },
+  "fresh_windows_excluded_from_hinge_bound": [
+    147,
+    294,
+    465
+  ],
+  "changed_root_windows_require_official_new_late_gate_audit": true,
+  "maximum_allowed_additional_hinge_scalar_error": 0.001,
+  "all_native_weights_Down_columns_and_post_gains_bit_identical": true,
+  "no_answers_gradients_activation_replay_or_heldout_inputs": true
+}

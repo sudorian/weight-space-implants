@@ -1,0 +1,293 @@
+{
+  "programme_count_before": 5,
+  "programme_count_after": 4,
+  "folded_old_positions": [
+    0,
+    4
+  ],
+  "identical_G_and_Up_verified": true,
+  "raw_importance_mass_trials": [
+    0,
+    0.01,
+    0.1,
+    1,
+    10
+  ],
+  "native_donor_count": 512,
+  "baseline": {
+    "validation_native_branch_rms": 0.10378557271133917,
+    "validation_native_branch_relative_rms": 0.009081299903525885
+  },
+  "trials": [
+    {
+      "mass": 0.0,
+      "units": [
+        80,
+        1634,
+        342,
+        1348
+      ],
+      "repair": {
+        "donor_count": 512,
+        "ridge_trials": [
+          1e-06,
+          1e-05,
+          0.0001,
+          0.001,
+          0.01
+        ],
+        "all_post_gains_fixed": true,
+        "reference": "original base normalizer, fixed for every unit placement and ridge",
+        "trials": [
+          {
+            "ridge": 1e-06,
+            "validation_native_branch_rms": 0.0835664905602979,
+            "validation_native_branch_relative_rms": 0.007312118079975839,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 1e-05,
+            "validation_native_branch_rms": 0.08356638781447932,
+            "validation_native_branch_relative_rms": 0.007312109089655046,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.0001,
+            "validation_native_branch_rms": 0.08356537848398794,
+            "validation_native_branch_relative_rms": 0.007312020772631258,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.001,
+            "validation_native_branch_rms": 0.08355547989217589,
+            "validation_native_branch_relative_rms": 0.007311154639906646,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.01,
+            "validation_native_branch_rms": 0.08347118073762479,
+            "validation_native_branch_relative_rms": 0.007303778413287736,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          }
+        ],
+        "selected": {
+          "ridge": 0.01,
+          "validation_native_branch_rms": 0.08347118073762479,
+          "validation_native_branch_relative_rms": 0.007303778413287736,
+          "maximum_down_weight": 1000000.0,
+          "eligible": true
+        }
+      }
+    },
+    {
+      "mass": 0.01,
+      "duplicate_unit_set": true
+    },
+    {
+      "mass": 0.1,
+      "duplicate_unit_set": true
+    },
+    {
+      "mass": 1.0,
+      "units": [
+        80,
+        342,
+        1348,
+        1940
+      ],
+      "repair": {
+        "donor_count": 512,
+        "ridge_trials": [
+          1e-06,
+          1e-05,
+          0.0001,
+          0.001,
+          0.01
+        ],
+        "all_post_gains_fixed": true,
+        "reference": "original base normalizer, fixed for every unit placement and ridge",
+        "trials": [
+          {
+            "ridge": 1e-06,
+            "validation_native_branch_rms": 0.08581257479679742,
+            "validation_native_branch_relative_rms": 0.007508651798751624,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 1e-05,
+            "validation_native_branch_rms": 0.08581248280754106,
+            "validation_native_branch_relative_rms": 0.00750864374963648,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.0001,
+            "validation_native_branch_rms": 0.08581153934009056,
+            "validation_native_branch_relative_rms": 0.0075085611956683005,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.001,
+            "validation_native_branch_rms": 0.08580230863190189,
+            "validation_native_branch_relative_rms": 0.007507753503161593,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.01,
+            "validation_native_branch_rms": 0.08572431565326316,
+            "validation_native_branch_relative_rms": 0.0075009290707199324,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          }
+        ],
+        "selected": {
+          "ridge": 0.01,
+          "validation_native_branch_rms": 0.08572431565326316,
+          "validation_native_branch_relative_rms": 0.0075009290707199324,
+          "maximum_down_weight": 1000000.0,
+          "eligible": true
+        }
+      }
+    },
+    {
+      "mass": 10.0,
+      "units": [
+        80,
+        1083,
+        687,
+        1381
+      ],
+      "repair": {
+        "donor_count": 512,
+        "ridge_trials": [
+          1e-06,
+          1e-05,
+          0.0001,
+          0.001,
+          0.01
+        ],
+        "all_post_gains_fixed": true,
+        "reference": "original base normalizer, fixed for every unit placement and ridge",
+        "trials": [
+          {
+            "ridge": 1e-06,
+            "validation_native_branch_rms": 0.11314486979026937,
+            "validation_native_branch_relative_rms": 0.009900244015308706,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 1e-05,
+            "validation_native_branch_rms": 0.11314468836004964,
+            "validation_native_branch_relative_rms": 0.009900228140055586,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.0001,
+            "validation_native_branch_rms": 0.1131428807397282,
+            "validation_native_branch_relative_rms": 0.009900069972192541,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.001,
+            "validation_native_branch_rms": 0.11312503549851623,
+            "validation_native_branch_relative_rms": 0.00989850850287592,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.01,
+            "validation_native_branch_rms": 0.11296905571625585,
+            "validation_native_branch_relative_rms": 0.0098848601783103,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          }
+        ],
+        "selected": {
+          "ridge": 0.01,
+          "validation_native_branch_rms": 0.11296905571625585,
+          "validation_native_branch_relative_rms": 0.0098848601783103,
+          "maximum_down_weight": 1000000.0,
+          "eligible": true
+        }
+      }
+    }
+  ],
+  "selected": {
+    "mass": 0.0,
+    "units": [
+      80,
+      1634,
+      342,
+      1348
+    ],
+    "repair": {
+      "donor_count": 512,
+      "ridge_trials": [
+        1e-06,
+        1e-05,
+        0.0001,
+        0.001,
+        0.01
+      ],
+      "all_post_gains_fixed": true,
+      "reference": "original base normalizer, fixed for every unit placement and ridge",
+      "trials": [
+        {
+          "ridge": 1e-06,
+          "validation_native_branch_rms": 0.0835664905602979,
+          "validation_native_branch_relative_rms": 0.007312118079975839,
+          "maximum_down_weight": 1000000.0,
+          "eligible": true
+        },
+        {
+          "ridge": 1e-05,
+          "validation_native_branch_rms": 0.08356638781447932,
+          "validation_native_branch_relative_rms": 0.007312109089655046,
+          "maximum_down_weight": 1000000.0,
+          "eligible": true
+        },
+        {
+          "ridge": 0.0001,
+          "validation_native_branch_rms": 0.08356537848398794,
+          "validation_native_branch_relative_rms": 0.007312020772631258,
+          "maximum_down_weight": 1000000.0,
+          "eligible": true
+        },
+        {
+          "ridge": 0.001,
+          "validation_native_branch_rms": 0.08355547989217589,
+          "validation_native_branch_relative_rms": 0.007311154639906646,
+          "maximum_down_weight": 1000000.0,
+          "eligible": true
+        },
+        {
+          "ridge": 0.01,
+          "validation_native_branch_rms": 0.08347118073762479,
+          "validation_native_branch_relative_rms": 0.007303778413287736,
+          "maximum_down_weight": 1000000.0,
+          "eligible": true
+        }
+      ],
+      "selected": {
+        "ridge": 0.01,
+        "validation_native_branch_rms": 0.08347118073762479,
+        "validation_native_branch_relative_rms": 0.007303778413287736,
+        "maximum_down_weight": 1000000.0,
+        "eligible": true
+      }
+    }
+  },
+  "all_post_gains_fixed": true,
+  "no_answers_gradients_or_activation_replay": true
+}

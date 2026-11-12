@@ -1,0 +1,175 @@
+{
+  "reports": [
+    {
+      "negative_vocabulary_classes": 128,
+      "positive_context_class_constraints": 62,
+      "constraint_error": 2.731148640577885e-14,
+      "validation_tokens": 9728,
+      "wrong_type_examples": 8,
+      "numeric_bit_error_examples": 6,
+      "maximum_type_abs_error": 0.8845601446869925,
+      "type_bounds": [
+        {
+          "type": "numeric",
+          "positive_count": 1166,
+          "positive_min": 0.11543985531300746,
+          "negative_max": 0.465310917443985,
+          "gap": -0.3498710621309775
+        },
+        {
+          "type": "plus",
+          "positive_count": 192,
+          "positive_min": 0.862186754323917,
+          "negative_max": 0.15876937326931684,
+          "gap": 0.7034173810546002
+        },
+        {
+          "type": "equals",
+          "positive_count": 192,
+          "positive_min": 0.9116700330778069,
+          "negative_max": 0.0953587817259398,
+          "gap": 0.8163112513518671
+        }
+      ],
+      "program_bit_error_examples": 1,
+      "native_negative_feature_rms": 0.08056726246704031
+    },
+    {
+      "negative_vocabulary_classes": 256,
+      "positive_context_class_constraints": 62,
+      "constraint_error": 2.544458221848422e-14,
+      "validation_tokens": 9728,
+      "wrong_type_examples": 8,
+      "numeric_bit_error_examples": 6,
+      "maximum_type_abs_error": 0.9000905747977551,
+      "type_bounds": [
+        {
+          "type": "numeric",
+          "positive_count": 1166,
+          "positive_min": 0.09990942520224484,
+          "negative_max": 0.47724888377598385,
+          "gap": -0.377339458573739
+        },
+        {
+          "type": "plus",
+          "positive_count": 192,
+          "positive_min": 0.8581998752959191,
+          "negative_max": 0.1622354605365433,
+          "gap": 0.6959644147593758
+        },
+        {
+          "type": "equals",
+          "positive_count": 192,
+          "positive_min": 0.9104210819775593,
+          "negative_max": 0.09941167323128293,
+          "gap": 0.8110094087462764
+        }
+      ],
+      "program_bit_error_examples": 1,
+      "native_negative_feature_rms": 0.08232474406435682
+    },
+    {
+      "negative_vocabulary_classes": 512,
+      "positive_context_class_constraints": 62,
+      "constraint_error": 2.020605904817785e-14,
+      "validation_tokens": 9728,
+      "wrong_type_examples": 9,
+      "numeric_bit_error_examples": 7,
+      "maximum_type_abs_error": 0.9130222894926043,
+      "type_bounds": [
+        {
+          "type": "numeric",
+          "positive_count": 1166,
+          "positive_min": 0.08697771050739572,
+          "negative_max": 0.5129473449165942,
+          "gap": -0.4259696344091985
+        },
+        {
+          "type": "plus",
+          "positive_count": 192,
+          "positive_min": 0.8580605078270708,
+          "negative_max": 0.16307384244541678,
+          "gap": 0.694986665381654
+        },
+        {
+          "type": "equals",
+          "positive_count": 192,
+          "positive_min": 0.9077446491889014,
+          "negative_max": 0.10178223920181974,
+          "gap": 0.8059624099870817
+        }
+      ],
+      "program_bit_error_examples": 1,
+      "native_negative_feature_rms": 0.08737277206243156
+    },
+    {
+      "negative_vocabulary_classes": 1024,
+      "positive_context_class_constraints": 62,
+      "constraint_error": 6.263643762561042e-14,
+      "validation_tokens": 9728,
+      "wrong_type_examples": 12,
+      "numeric_bit_error_examples": 6,
+      "maximum_type_abs_error": 0.8996690501021647,
+      "type_bounds": [
+        {
+          "type": "numeric",
+          "positive_count": 1166,
+          "positive_min": 0.10033094989783528,
+          "negative_max": 0.5249719357037305,
+          "gap": -0.42464098580589515
+        },
+        {
+          "type": "plus",
+          "positive_count": 192,
+          "positive_min": 0.8440448551038133,
+          "negative_max": 0.149884271518779,
+          "gap": 0.6941605835850343
+        },
+        {
+          "type": "equals",
+          "positive_count": 192,
+          "positive_min": 0.8995532788210004,
+          "negative_max": 0.12488288144658001,
+          "gap": 0.7746703973744204
+        }
+      ],
+      "program_bit_error_examples": 1,
+      "native_negative_feature_rms": 0.09914772775699705
+    },
+    {
+      "negative_vocabulary_classes": 2048,
+      "positive_context_class_constraints": 62,
+      "constraint_error": 6.217248937900877e-14,
+      "validation_tokens": 9728,
+      "wrong_type_examples": 13,
+      "numeric_bit_error_examples": 11,
+      "maximum_type_abs_error": 0.9919416304856686,
+      "type_bounds": [
+        {
+          "type": "numeric",
+          "positive_count": 1166,
+          "positive_min": 0.00805836951433139,
+          "negative_max": 0.4566622695860566,
+          "gap": -0.44860390007172524
+        },
+        {
+          "type": "plus",
+          "positive_count": 192,
+          "positive_min": 0.8305022603554164,
+          "negative_max": 0.19482245837437523,
+          "gap": 0.6356798019810412
+        },
+        {
+          "type": "equals",
+          "positive_count": 192,
+          "positive_min": 0.8680590083984372,
+          "negative_max": 0.16596033949659836,
+          "gap": 0.7020986689018388
+        }
+      ],
+      "program_bit_error_examples": 2,
+      "native_negative_feature_rms": 0.14283117099376363
+    }
+  ],
+  "chosen": null
+}

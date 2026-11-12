@@ -1,0 +1,295 @@
+{
+  "created_utc": "2026-11-09T22:27:42.295191+00:00",
+  "delta_sha256": "2cb0ec3ffb6facf966cb6391fec42ea4e4852f734e21358ca3210df6b3b19242",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/analyze_format_invariants_v1.py": "25cf926c623f3d81291ba66ab100a8465bcbbdb2bcebbca019613d3763becd2c",
+    "experiments/analyze_initial_format_v1.py": "449ef59ff7f7495b0585b941b97c3059d48a5f29c190a6d3e255c45a86a655ab",
+    "experiments/analyze_readout_v1.py": "a7de3ad642e39dafd4a95b5b9df2e3cfd71d5fae91e42dc86250d170e292d468",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a2_reader_v7.py": "ed3910832028a5380c9f1cc338030066dd9af2aae480076947740929d994e49c",
+    "experiments/compile_a3_registers_v4.py": "edf6090cb19334981c614ed98a97ed2ee52b5b589261522065fdba80d72ad9c1",
+    "experiments/compile_a4_reader_v2.py": "0fb3e7c53c6dc47abe3baaa673863db9f645f1007fcc2be88b7902508dbbb957",
+    "experiments/derive_a_absolute_values_v2.py": "2b4c8d8dd0f505b0361161df0ae66c2f0a391d1ead71db9c1c7d2c1abb612075",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_key_equalizer_v1.py": "66faa519aceee9aeeaf349690cf4aa3c5345c211938d898a2a8eb89058558ce5",
+    "experiments/derive_a_reader3_geometry_v3.py": "215dd62048c19536188be5e0f186fa634f6d0ff1763e9e7e95814315a396912c",
+    "experiments/derive_a_reader3_inputs_v1.py": "823cbfb2596fa10555eef3cf6f12d8938bd828bee9490fcb63f506371aa7d420",
+    "experiments/derive_a_reader_geometry_v3.py": "4f77317348e4e0c652e62318b801c1062c0aeea19af04ced46bf3edb9d7cc455",
+    "experiments/derive_a_reader_geometry_v4.py": "1f9a4fc60502330bc707f27a74311b581b34c22dbac33bfd0942385a5e193230",
+    "experiments/derive_a_reader_geometry_v5.py": "a4ca952ab25e26b7d61333453c61cc0496165ba6798b9b918e1d09c5eeb58100",
+    "experiments/derive_a_reader_geometry_v6.py": "9869ff720a47108e7172c37ec543c9e4cc3aba7afab1649156323a74ef72e74e",
+    "experiments/derive_a_source_scalar_options_v1.py": "f51b580a3b81933a96aa6f158e97b4b2c40fa343d4b209460f62282289dedb77"
+  },
+  "inputs": {
+    "experiments/a3v4_registers/delta.pt": "bb2f4efc44f765b27317ba8dd6654780cf5e24870d49ecca6c9fc58ee700a557",
+    "experiments/a3v4_registers/delta.manifest.json": "760709e8669a196f87bffd2e4adf55ff6613ca929e31c9246af0efc38fb93ee8",
+    "experiments/a3v4_registers/circuit.pt": "eb59af33bdadf83c36c32e7d8afffb47b114fc243dc5d46cbb172caf9896b5d6",
+    "artifacts/a_reader3_geometry_v3.pt": "7a8b63a69abadae173de91fb6500c40f78c5e41034f59d638dbcfa0302265a64",
+    "artifacts/a_reader3_inputs_v1.pt": "1c81ece7f1176d055c183ea83f7ce1d32a17c51d77b52b0114b180683019fadc",
+    "artifacts/a_source_scalar_options_v1.pt": "240e58725613a3c08bc6a2f790956353a6a04fbf60b6ec6cdc4b90f5ddce6ad1",
+    "artifacts/a3v4_syntax_a.pt": "1967ce5fabac4b8a0412a2fbc3e1e670e303861147cb40940548c0ff608719b2",
+    "artifacts/a3v4_syntax_stress.pt": "ffcf1028fe7b451128f90a619c3a044212bfff3bd13fcc4bb21f6f14dc67e184",
+    "artifacts/a3v4_calib256.pt": "e4fdea02c565b38f0356eae11befb8df01fbe21b53de5778068fb42013ba0b71",
+    "artifacts/a3v4_prefix3_a.pt": "203e79ef7a3157a4ea5b88c4b6cd4665825c0538250ec8381b94c6807913f75a",
+    "artifacts/a3v4_prefix3_b.pt": "b81a9e5ae3ec3ef33c5d5d9b1c44e18c02d417ec7edfb744c7ae55fc0b5dabba"
+  },
+  "arguments": {
+    "output": "experiments/a4v2_reader/delta.pt",
+    "code_gain": 2.0,
+    "query_scale": 0.03
+  },
+  "description": "Four-field centered A-operand reader at layer3, using a hard native-state PCA tail and preserving the existing B-register coordinates.",
+  "changed_scalars": 2073639,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.q_norm.weight": 255,
+    "model.layers.2.self_attn.k_norm.weight": 255,
+    "model.layers.2.self_attn.q_proj.weight": 21376,
+    "model.layers.2.self_attn.k_proj.weight": 1280,
+    "model.layers.2.self_attn.v_proj.weight": 163840,
+    "model.layers.2.self_attn.o_proj.weight": 655360,
+    "model.layers.2.mlp.gate_proj.weight": 3200,
+    "model.layers.2.mlp.up_proj.weight": 3200,
+    "model.layers.2.mlp.down_proj.weight": 337003,
+    "model.layers.2.post_feedforward_layernorm.weight": 640,
+    "model.layers.3.self_attn.q_norm.weight": 256,
+    "model.layers.3.self_attn.k_norm.weight": 255,
+    "model.layers.3.self_attn.q_proj.weight": 21376,
+    "model.layers.3.self_attn.k_proj.weight": 1280,
+    "model.layers.3.self_attn.v_proj.weight": 163840,
+    "model.layers.3.self_attn.o_proj.weight": 655360
+  },
+  "max_abs_edited_value": 999999.0,
+  "categories": {
+    "model.layers.3.self_attn.q_norm.weight": {
+      "circuit_and_native_accommodation": 256
+    },
+    "model.layers.3.self_attn.k_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.3.self_attn.q_proj.weight": {
+      "circuit_and_native_accommodation": 21376
+    },
+    "model.layers.3.self_attn.k_proj.weight": {
+      "circuit_and_native_accommodation": 1280
+    },
+    "model.layers.3.self_attn.v_proj.weight": {
+      "circuit_and_native_accommodation": 163840
+    },
+    "model.layers.3.self_attn.o_proj.weight": {
+      "circuit_and_native_accommodation": 655360
+    }
+  },
+  "extra": {
+    "layer": 3,
+    "lags": [
+      5,
+      6,
+      7
+    ],
+    "source_positions": [
+      3,
+      2,
+      1
+    ],
+    "marker_carrier": 1000000.0,
+    "query_scale": 0.03,
+    "code_gain": 2.0,
+    "margin": 8,
+    "program_gamma": 105.43409198065409,
+    "pairs": [
+      9
+    ],
+    "key_mass": 0.001,
+    "value_channels": [
+      254,
+      255
+    ],
+    "value_fields": [
+      "constant",
+      "centered_digit"
+    ],
+    "digit_decode_factor": 4.5,
+    "digit_decode_bias": 4.5,
+    "value_recode": {
+      "formula": "D_centered = 2*D_absolute - C; decode 4.5*D_centered/C_average+4.5",
+      "complete_prefix_max_digit_error": 0.10553213082597956,
+      "complete_prefix_rms_digit_error": 0.016565582290477776
+    },
+    "field_names": [
+      "digit_units",
+      "digit_tens",
+      "digit_hundreds",
+      "constant"
+    ],
+    "native_basis_error": 2.3227947343329447e-15,
+    "removed_value_energy_fraction": 5.159054237971277e-06,
+    "normalization_repair": {
+      "q_norm.weight": {
+        "min": 0.9927314742475638,
+        "max": 1.0032167842299702
+      },
+      "k_norm.weight": {
+        "min": 0.9975034894236288,
+        "max": 0.9988979441874842
+      }
+    },
+    "geometry": {
+      "field_names": [
+        "digit_units",
+        "digit_tens",
+        "digit_hundreds",
+        "constant"
+      ],
+      "frame_trials": [
+        {
+          "tail_dimensions": 16,
+          "construct_background_max": 1.9584334154387761e-13,
+          "background_max": 0.03307985859569457,
+          "background_rms": 0.0063870525182002135,
+          "native_projection_validation_rms": 0.11041678093444472,
+          "dual_raw_norm_max": 2.2336138558356433
+        },
+        {
+          "tail_dimensions": 32,
+          "construct_background_max": 2.5213164889237305e-13,
+          "background_max": 0.028341016533344365,
+          "background_rms": 0.006414145871298654,
+          "native_projection_validation_rms": 0.08771276994147159,
+          "dual_raw_norm_max": 2.617620672505711
+        },
+        {
+          "tail_dimensions": 64,
+          "construct_background_max": 2.0644597142904786e-13,
+          "background_max": 0.016871917202170517,
+          "background_rms": 0.004588901299370143,
+          "native_projection_validation_rms": 0.06028997270782396,
+          "dual_raw_norm_max": 3.2833446597000377
+        },
+        {
+          "tail_dimensions": 96,
+          "construct_background_max": 1.9541313012183537e-13,
+          "background_max": 0.012382944456513056,
+          "background_rms": 0.003580088426061016,
+          "native_projection_validation_rms": 0.038506098557921205,
+          "dual_raw_norm_max": 3.7640049858907974
+        },
+        {
+          "tail_dimensions": 128,
+          "construct_background_max": 0.00043672215852108565,
+          "background_max": 0.01945154760835424,
+          "background_rms": 0.00381069248690079,
+          "native_projection_validation_rms": 0.028310195763284966,
+          "dual_raw_norm_max": 4.2376079568653235
+        }
+      ],
+      "selected_frame": {
+        "tail_dimensions": 96,
+        "construct_background_max": 1.9541313012183537e-13,
+        "background_max": 0.012382944456513056,
+        "background_rms": 0.003580088426061016,
+        "native_projection_validation_rms": 0.038506098557921205,
+        "dual_raw_norm_max": 3.7640049858907974
+      },
+      "excluded_coordinates": [
+        334,
+        547,
+        467,
+        29,
+        617,
+        113
+      ],
+      "eligible_coordinates": 632,
+      "native_state_numerical_rank": 512
+    },
+    "value_fit": {
+      "penalty": 10000.0,
+      "stats": {
+        "complete_prefix_domain": {
+          "maximum_digit_error": 0.12016398980817034,
+          "rms_digit_error": 0.017357587648132607,
+          "max_error_by_place": [
+            0.12016398980817034,
+            0.018615473110543235,
+            0.018227252084832557
+          ],
+          "wrong_round": 0,
+          "constant_min": 0.9977979473674695,
+          "constant_max": 1.0022771020683905
+        },
+        "syntax_consistency": {
+          "maximum_digit_error": 0.10050363372120685,
+          "rms_digit_error": 0.017868424754405855,
+          "max_error_by_place": [
+            0.10050363372120685,
+            0.015707708362771022,
+            0.018229097207754563
+          ],
+          "wrong_round": 0,
+          "constant_min": 0.9977978810433691,
+          "constant_max": 1.0022771190394923
+        },
+        "stress_consistency": {
+          "maximum_digit_error": 0.089796644580898,
+          "rms_digit_error": 0.018613753764413234,
+          "max_error_by_place": [
+            0.089796644580898,
+            0.012969351239133786,
+            0.012722758549076119
+          ],
+          "wrong_round": 0,
+          "constant_min": 0.9987096149975377,
+          "constant_max": 1.0015920837576762
+        }
+      },
+      "word_code_rms": [
+        0.11825739615926484,
+        0.1392952541284141
+      ]
+    },
+    "projection_trials": [
+      {
+        "lambda": 0.0,
+        "validation_branch_rms": 0.19770803036444368,
+        "relative_linear_glu_bound": 0.00023848054288402455,
+        "objective": 0.00027406587252676626
+      },
+      {
+        "lambda": 1.0,
+        "validation_branch_rms": 0.1912981122532386,
+        "relative_linear_glu_bound": 0.0001391293350183533,
+        "objective": 0.00017244463613578907
+      },
+      {
+        "lambda": 10.0,
+        "validation_branch_rms": 0.176255786257252,
+        "relative_linear_glu_bound": 0.00011260663358675369,
+        "objective": 0.00014088856994479913
+      },
+      {
+        "lambda": 100.0,
+        "validation_branch_rms": 0.20402904444680442,
+        "relative_linear_glu_bound": 0.00010091656038673109,
+        "objective": 0.00013881369421156015
+      },
+      {
+        "lambda": 1000.0,
+        "validation_branch_rms": 0.8850194543025548,
+        "relative_linear_glu_bound": 0.00016385485549513305,
+        "objective": 0.0008769180310204437
+      }
+    ],
+    "selected_projection": {
+      "lambda": 100.0,
+      "validation_branch_rms": 0.20402904444680442,
+      "relative_linear_glu_bound": 0.00010091656038673109,
+      "objective": 0.00013881369421156015
+    },
+    "projection_proxy": "Actual base layer3 attended values, with a one-shot unlabeled linear code proxy; actual meter captures decide transport and preservation."
+  }
+}

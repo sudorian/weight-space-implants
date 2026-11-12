@@ -1,0 +1,365 @@
+{
+  "checkpoint": "host/ckpt.pt",
+  "checkpoint_sha256": "c9c7ce73050e1c885154e2b1f5cf55680626bb757eda07aa65a5c338d9eb4831",
+  "shakespeare": {
+    "tokens": 111536,
+    "cross_entropy": 1.5301572223455933,
+    "host_cross_entropy": 1.5301572223455933,
+    "cross_entropy_increase": 0.0,
+    "argmax_agreement": 1.0,
+    "arithmetic_probability_mass": 3.248891426055651e-05,
+    "preservation_pass": true
+  },
+  "rungs": [
+    {
+      "rung": "R1",
+      "correct": 0,
+      "total": 100,
+      "accuracy": 0.0,
+      "threshold": 1.0,
+      "arithmetic_pass": false,
+      "dataset_sha256": "c3b7afcf5bd99c6ab045b8b308a9205e22fbdbd8e1c24cc57de07dbc82ca8558",
+      "seed": 20261108,
+      "failures": [
+        {
+          "prompt": "0+5=",
+          "expected": "05\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "0+1=",
+          "expected": "01\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "1+5=",
+          "expected": "06\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "5+1=",
+          "expected": "06\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "8+7=",
+          "expected": "15\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "9+4=",
+          "expected": "13\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "9+2=",
+          "expected": "11\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "4+6=",
+          "expected": "10\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "9+1=",
+          "expected": "10\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "7+9=",
+          "expected": "16\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "2+6=",
+          "expected": "08\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "3+7=",
+          "expected": "10\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "3+8=",
+          "expected": "11\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "6+7=",
+          "expected": "13\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "2+1=",
+          "expected": "03\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "6+0=",
+          "expected": "06\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "0+3=",
+          "expected": "03\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "8+8=",
+          "expected": "16\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "4+7=",
+          "expected": "11\n",
+          "generated": "EEN"
+        },
+        {
+          "prompt": "6+6=",
+          "expected": "12\n",
+          "generated": "EEN"
+        }
+      ],
+      "pass": false
+    },
+    {
+      "rung": "R2",
+      "correct": 0,
+      "total": 10000,
+      "accuracy": 0.0,
+      "threshold": 0.999,
+      "arithmetic_pass": false,
+      "dataset_sha256": "6a8511008443984cbac4e5ebb4131604db2e0d6b0f4ad02e188f64f67d5c2659",
+      "seed": 20261108,
+      "failures": [
+        {
+          "prompt": "06+96=",
+          "expected": "102\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "02+30=",
+          "expected": "032\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "19+93=",
+          "expected": "112\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "65+42=",
+          "expected": "107\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "59+56=",
+          "expected": "115\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "34+02=",
+          "expected": "036\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "47+91=",
+          "expected": "138\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "48+95=",
+          "expected": "143\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "86+63=",
+          "expected": "149\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "27+27=",
+          "expected": "054\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "77+30=",
+          "expected": "107\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "04+73=",
+          "expected": "077\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "60+33=",
+          "expected": "093\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "85+10=",
+          "expected": "095\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "08+27=",
+          "expected": "035\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "84+60=",
+          "expected": "144\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "89+11=",
+          "expected": "100\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "19+59=",
+          "expected": "078\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "06+91=",
+          "expected": "097\n",
+          "generated": "EE:\n"
+        },
+        {
+          "prompt": "21+83=",
+          "expected": "104\n",
+          "generated": "EE:\n"
+        }
+      ],
+      "pass": false
+    },
+    {
+      "rung": "R3",
+      "correct": 0,
+      "total": 110000,
+      "accuracy": 0.0,
+      "threshold": 0.995,
+      "arithmetic_pass": false,
+      "dataset_sha256": "50f892b70df30a67420792e8f097798f281107e9b0c47b4e949c3e09ea4ca794",
+      "seed": 20261108,
+      "failures": [
+        {
+          "prompt": "736+524=",
+          "expected": "1260\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "223+340=",
+          "expected": "0563\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "635+357=",
+          "expected": "0992\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "823+112=",
+          "expected": "0935\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "832+224=",
+          "expected": "1056\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "836+973=",
+          "expected": "1809\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "539+306=",
+          "expected": "0845\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "937+126=",
+          "expected": "1063\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "674+885=",
+          "expected": "1559\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "933+650=",
+          "expected": "1583\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "505+499=",
+          "expected": "1004\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "614+166=",
+          "expected": "0780\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "917+791=",
+          "expected": "1708\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "604+396=",
+          "expected": "1000\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "380+850=",
+          "expected": "1230\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "469+148=",
+          "expected": "0617\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "574+326=",
+          "expected": "0900\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "694+306=",
+          "expected": "1000\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "177+823=",
+          "expected": "1000\n",
+          "generated": "EE:\n\n"
+        },
+        {
+          "prompt": "759+552=",
+          "expected": "1311\n",
+          "generated": "EE:\n\n"
+        }
+      ],
+      "random_accuracy": 0.0,
+      "long_carry_accuracy": 0.0,
+      "pass": false
+    }
+  ],
+  "seconds": 6.294075750003685,
+  "budget_left": {
+    "forward": 150,
+    "score": 39
+  },
+  "memory": {
+    "rss_bytes": 388579328,
+    "available_bytes": 6186041344
+  }
+}

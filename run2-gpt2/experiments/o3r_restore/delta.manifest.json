@@ -1,0 +1,158 @@
+{
+  "delta_sha256": "970bb30d032d09f4904a80e24539753c71445e8df127da2677378f8b6be739e5",
+  "sources": {
+    "experiments/compile_o_protected_positions_v1.py": "3e97ef55873f36c71042e02ba9bfb1af93bf147fbfa251f33fdb2d6c3a6a926e",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_o_token_writer_v2.py": "a2389eba22f3caed8924da2a5a525a0401fb2d8f45fb0574472ca7d305bfc8d6",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/prefix_capture_io_v1.py": "3c2abe4ea88ba80949020e03ad6291ddaefef96e480de38ca39f372c198d9f87",
+    "experiments/compile_o_relative_reader_v1.py": "98ad088a1bb3e0546271e6b8cb86ec85417ff01c19c035419e09280d71095d76",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_o_source_readouts_v1.py": "09077f53494a78d78687233841b3d3efc07407cc919d3cc819c483580a68e337",
+    "experiments/analyze_o_homogeneous_address_v2.py": "5ce720b15c78ff9cf7679da337420dc16c706ce7e2beaa33257c19411eba7f60",
+    "experiments/compile_o_text_restore_v1.py": "01b655045634e2893eb2958cd139d23045bdf0fea8d192099efa18248240a75d"
+  },
+  "inputs": {
+    "experiments/o3_reader/delta.pt": "f59b2b66f81f16f34c1db007371f2294d38b37ab560a7b413aa6ad4a40c07369",
+    "artifacts/o3_reader_calib.pt": "858f35903594e3a8424d823cfaab8ae222fe8ed1d27cd4c998e7f904307aaa38",
+    "artifacts/o_host_calib1.pt": "aff8139aa5ff5751d7c93d24e8f1241ea9152ca59a1cc69fa46d04748dac123c",
+    "artifacts/host_calib512_early.pt": "22f62d867091ffddcc7fd69829e77858367f27d0958aa961e8378a811d3e7eb2"
+  },
+  "arguments": {
+    "output": "experiments/o3r_restore/delta.pt",
+    "donors": 1024
+  },
+  "description": "O3R: unlabeled calibration-state restoration in MLP1 after the relative-position reader; diagnostic without arithmetic units.",
+  "changed_scalars": 2684794,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589824,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 26112,
+    "transformer.h.0.mlp.c_fc.bias": 34,
+    "transformer.h.0.mlp.c_proj.weight": 419328,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 515256,
+    "transformer.h.1.attn.c_attn.bias": 672,
+    "transformer.h.1.attn.c_proj.weight": 344064,
+    "transformer.h.1.attn.c_proj.bias": 768,
+    "transformer.h.1.mlp.c_proj.weight": 786432,
+    "transformer.h.1.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 8652.681640625,
+  "details": {
+    "donors": 1024,
+    "ridge_trials": [
+      {
+        "ridge": 0.001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.12572409075946206,
+            "after_rms": 0.09383671856074767,
+            "weighted_after_rms": 1.038146456249968,
+            "relative_squared_error": 0.5570685205160051
+          },
+          "validation": {
+            "before_rms": 0.1158376923792384,
+            "after_rms": 0.10133021514583669,
+            "weighted_after_rms": 1.162549993718621,
+            "relative_squared_error": 0.765205591651925
+          }
+        },
+        "max_abs_weight": 339.5555419921875,
+        "valid": true
+      },
+      {
+        "ridge": 0.0001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.12572409075946206,
+            "after_rms": 0.09380722866897484,
+            "weighted_after_rms": 1.0381031113972032,
+            "relative_squared_error": 0.5567184377498844
+          },
+          "validation": {
+            "before_rms": 0.1158376923792384,
+            "after_rms": 0.10146871499186626,
+            "weighted_after_rms": 1.1630008986982292,
+            "relative_squared_error": 0.767298813001208
+          }
+        },
+        "max_abs_weight": 347.2635498046875,
+        "valid": true
+      },
+      {
+        "ridge": 1e-05,
+        "fit": {
+          "construction": {
+            "before_rms": 0.12572409075946206,
+            "after_rms": 0.09380661778113564,
+            "weighted_after_rms": 1.0381024838314656,
+            "relative_squared_error": 0.5567111868925477
+          },
+          "validation": {
+            "before_rms": 0.1158376923792384,
+            "after_rms": 0.10148900652958263,
+            "weighted_after_rms": 1.163048343791629,
+            "relative_squared_error": 0.7676057298593367
+          }
+        },
+        "max_abs_weight": 348.0398254394531,
+        "valid": true
+      },
+      {
+        "ridge": 1e-06,
+        "fit": {
+          "construction": {
+            "before_rms": 0.12572409075946206,
+            "after_rms": 0.09380661104720338,
+            "weighted_after_rms": 1.0381024772262564,
+            "relative_squared_error": 0.5567111069652382
+          },
+          "validation": {
+            "before_rms": 0.1158376923792384,
+            "after_rms": 0.10149115168777638,
+            "weighted_after_rms": 1.1630531232692902,
+            "relative_squared_error": 0.7676381797409473
+          }
+        },
+        "max_abs_weight": 348.11724853515625,
+        "valid": true
+      },
+      {
+        "ridge": 1e-07,
+        "fit": {
+          "construction": {
+            "before_rms": 0.12572409075946206,
+            "after_rms": 0.09380661097918064,
+            "weighted_after_rms": 1.0381024771598508,
+            "relative_squared_error": 0.5567111061578534
+          },
+          "validation": {
+            "before_rms": 0.1158376923792384,
+            "after_rms": 0.1014913674576763,
+            "weighted_after_rms": 1.1630536015890858,
+            "relative_squared_error": 0.7676414437375917
+          }
+        },
+        "max_abs_weight": 348.125,
+        "valid": true
+      }
+    ],
+    "chosen_ridge": 0.001,
+    "text_repair_report": {
+      "construction": {
+        "before_rms": 0.12572409075946206,
+        "after_rms": 0.09383671856074767,
+        "weighted_after_rms": 1.038146456249968,
+        "relative_squared_error": 0.5570685205160051
+      },
+      "validation": {
+        "before_rms": 0.1158376923792384,
+        "after_rms": 0.10133021514583669,
+        "weighted_after_rms": 1.162549993718621,
+        "relative_squared_error": 0.765205591651925
+      }
+    }
+  }
+}

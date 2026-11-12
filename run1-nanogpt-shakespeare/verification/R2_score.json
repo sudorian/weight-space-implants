@@ -1,0 +1,36 @@
+{
+  "checkpoint": "best/R2/ckpt.pt",
+  "checkpoint_sha256": "22056a3ca16e9a5e0200f525b438aceb283742702c053d0b14c3efdf1cf4b80a",
+  "shakespeare": {
+    "tokens": 111536,
+    "cross_entropy": 1.5309888819611204,
+    "host_cross_entropy": 1.5301572223455933,
+    "cross_entropy_increase": 0.0008316596155271967,
+    "argmax_agreement": 0.9934191651126094,
+    "arithmetic_probability_mass": 0.0005061603014301377,
+    "preservation_pass": true
+  },
+  "rungs": [
+    {
+      "rung": "R2",
+      "correct": 10000,
+      "total": 10000,
+      "accuracy": 1.0,
+      "threshold": 0.999,
+      "arithmetic_pass": true,
+      "dataset_sha256": "6a8511008443984cbac4e5ebb4131604db2e0d6b0f4ad02e188f64f67d5c2659",
+      "seed": 2075728038,
+      "failures": [],
+      "pass": true
+    }
+  ],
+  "seconds": 2.124276832997566,
+  "budget_left": {
+    "forward": 4,
+    "score": 14
+  },
+  "memory": {
+    "rss_bytes": 350289920,
+    "available_bytes": 6510673920
+  }
+}

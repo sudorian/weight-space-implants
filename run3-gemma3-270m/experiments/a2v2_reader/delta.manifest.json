@@ -1,0 +1,366 @@
+{
+  "created_utc": "2026-11-09T20:50:33.087896+00:00",
+  "delta_sha256": "2c3eb3285570f6482ef31c4d9fffccd9c69c4be805ceb50c2555807e3958069e",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a2_ablations_v1.py": "453b941d4834c4317dfd6b59da2fb0581346869babf3edc78358216ded0e3fbd",
+    "experiments/compile_a2_lowcarrier_v1.py": "bc25eb81b6c72a85cd32a235c7ff29f02d7c638876fdeae67ea3efe631cf599f",
+    "experiments/compile_a2_reader_v1.py": "7da2e3a4f3cf5e6cafb5bb149ae745676ac42dde28061fabfd528f87e5a9da83",
+    "experiments/compile_a2_reader_v2.py": "8348b1017996587f62ad84977ed50aa2c21ee0448e648e8a6d6c92c77bd4e411",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_native_ratios_v1.py": "d37330f7cf8b71ea6c3c055b109d763abbbd7180663f7c1a16d281684a547513",
+    "experiments/derive_a_reader_geometry_v2.py": "fc24ca5508e4e5f76c7f7643fb5102ea1b82ba218d469d3a086d18cab4456c3f",
+    "experiments/derive_a_reader_geometry_v3.py": "4f77317348e4e0c652e62318b801c1062c0aeea19af04ced46bf3edb9d7cc455",
+    "experiments/derive_a_readouts_v1.py": "c8c8b0f50e6015afe9402da679ef78cb9fe5c6a3948c2ba351f19906f1864fbc"
+  },
+  "inputs": {
+    "experiments/a2_ref/delta.pt": "d2761aa881c79187870aa930893839a2b192e830c9eff35bb8022cb26b7f4887",
+    "experiments/a2_ref/delta.manifest.json": "c00f1f6c18a98af03f1e72f5b259a2f50e8d3ea6a6c3f60b3bf9b3ee7417fdfb",
+    "artifacts/a_native_ratios_v1.pt": "b2bc591400d19e880d1f16fc1d463464f2f51a5a368dbc8de95a97d6bc44ace0",
+    "artifacts/a_reader_geometry_v3.pt": "5ccb9e888edd773680db62a7aa03fdb629c585b80719c53dd6f97b43ae38b976",
+    "artifacts/a2_ref_extra_calib256.pt": "0f815f7bada0c554f060f189f89d26907392eca02cfb54dbe537028f13464db2",
+    "artifacts/a2_detail_syntax_a.pt": "0b4a1e658992525797bbc230953c13ee4b7fcf0f1e70bc7da8f2762bf0cd1994",
+    "artifacts/a2_detail_syntax_b.pt": "9b03aee42580e69f937c795f1494c215592c221a996519268c6b9bdea9d4aee0",
+    "artifacts/a2_detail_calib256.pt": "99fa42cb98faa1560ca29a10297b576aefc67a2109defae0866d80f946538e41"
+  },
+  "arguments": {
+    "output": "experiments/a2v2_reader/delta.pt",
+    "margin": 32.0,
+    "code_gain": 4.0
+  },
+  "description": "A2 second reader design: exact native V basis, BOS-zero value/key codes, positive rotary target peak, raw-energy-aware channel selection.",
+  "changed_scalars": 721853,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.q_norm.weight": 255,
+    "model.layers.2.self_attn.k_norm.weight": 255,
+    "model.layers.2.self_attn.q_proj.weight": 15360,
+    "model.layers.2.self_attn.k_proj.weight": 3840,
+    "model.layers.2.self_attn.v_proj.weight": 1920,
+    "model.layers.2.self_attn.o_proj.weight": 655360
+  },
+  "max_abs_edited_value": 5537.0615234375,
+  "categories": {
+    "model.layers.2.self_attn.q_norm.weight": {
+      "text_repair": 249,
+      "circuit": 6
+    },
+    "model.layers.2.self_attn.k_norm.weight": {
+      "text_repair": 249,
+      "circuit": 6
+    },
+    "model.layers.2.self_attn.q_proj.weight": {
+      "circuit_and_exact_native_accommodation": 15360
+    },
+    "model.layers.2.self_attn.k_proj.weight": {
+      "circuit_and_exact_native_accommodation": 3840
+    },
+    "model.layers.2.self_attn.v_proj.weight": {
+      "circuit_and_exact_native_accommodation": 1920
+    },
+    "model.layers.2.self_attn.o_proj.weight": {
+      "circuit_and_exact_native_accommodation": 655360
+    }
+  },
+  "extra": {
+    "layer": 2,
+    "lags": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_positions": [
+      7,
+      6,
+      5,
+      4
+    ],
+    "marker_carrier": 10000.0,
+    "code_gain": 4.0,
+    "margin": 32.0,
+    "program_gamma": 5538.061586523658,
+    "peak_epsilon": 0.2594339241452154,
+    "pairs": [
+      1,
+      10,
+      97
+    ],
+    "value_channels": [
+      152,
+      253,
+      247
+    ],
+    "native_basis_max_error_double": 8.881784197001252e-16,
+    "native_basis_max_error_float_weights": 6.02628519308368e-08,
+    "projection_trials": [
+      {
+        "lambda": 0.0001,
+        "validation_branch_rms_with_program_values": 0.1791353145650494,
+        "dual_raw_norm_max": 1.6688698937694206
+      },
+      {
+        "lambda": 0.001,
+        "validation_branch_rms_with_program_values": 0.17700167459649052,
+        "dual_raw_norm_max": 1.6551843356542273
+      },
+      {
+        "lambda": 0.01,
+        "validation_branch_rms_with_program_values": 0.16579185746433192,
+        "dual_raw_norm_max": 1.5820801155233681
+      },
+      {
+        "lambda": 0.1,
+        "validation_branch_rms_with_program_values": 0.15196862119107246,
+        "dual_raw_norm_max": 1.489759617196849
+      },
+      {
+        "lambda": 1.0,
+        "validation_branch_rms_with_program_values": 0.15528779232496065,
+        "dual_raw_norm_max": 1.4502074798152136
+      }
+    ],
+    "selected_projection": {
+      "lambda": 0.1,
+      "validation_branch_rms_with_program_values": 0.15196862119107246,
+      "dual_raw_norm_max": 1.489759617196849
+    },
+    "normalization_repair": {
+      "q_norm.weight": {
+        "min": 0.9885397289042117,
+        "max": 0.9971304380965038
+      },
+      "k_norm.weight": {
+        "min": 0.9909472570669198,
+        "max": 0.997710793063353
+      }
+    },
+    "value_fit": {
+      "penalty": 100.0,
+      "stats": {
+        "construct": {
+          "constant_min": 0.6799603287152814,
+          "constant_max": 1.2119097592750243,
+          "digit_max_error": 0.30422153885392067,
+          "digit_rms_error": 0.07076785542597036,
+          "wrong_round": 0,
+          "kind_max_error": 0.017019553710245106
+        },
+        "validate": {
+          "constant_min": 0.6800521741423279,
+          "constant_max": 1.2119097592750243,
+          "digit_max_error": 0.343230844913025,
+          "digit_rms_error": 0.07666081353974505,
+          "wrong_round": 0,
+          "kind_max_error": 0.01987916749317531
+        }
+      },
+      "text_word_rms": [
+        0.09772654022674535,
+        0.18537249991132887,
+        0.12340410284450115
+      ],
+      "max_abs_coefficient": 0.05554642485725257
+    },
+    "geometry": {
+      "frame_trials": [
+        {
+          "penalty": 100.0,
+          "background_validation_max": 0.07204842777185733,
+          "background_validation_rms": 0.01790567066253134,
+          "native_projection_validation_rms": 0.010769877889089632,
+          "dual_raw_norm_max": 1.7423610929401676,
+          "field_text_rms": 0.7232713175929207
+        },
+        {
+          "penalty": 1000.0,
+          "background_validation_max": 0.051118585782749165,
+          "background_validation_rms": 0.00848703195182643,
+          "native_projection_validation_rms": 0.011291534163290304,
+          "dual_raw_norm_max": 1.7261264197720214,
+          "field_text_rms": 0.7349806540241092
+        },
+        {
+          "penalty": 10000.0,
+          "background_validation_max": 0.024869700512492154,
+          "background_validation_rms": 0.004269384053757406,
+          "native_projection_validation_rms": 0.012212413733560076,
+          "dual_raw_norm_max": 1.7138122614738056,
+          "field_text_rms": 0.7603355074792169
+        },
+        {
+          "penalty": 100000.0,
+          "background_validation_max": 0.015913587534163554,
+          "background_validation_rms": 0.002372152869572172,
+          "native_projection_validation_rms": 0.01388021184628743,
+          "dual_raw_norm_max": 1.7014187962990568,
+          "field_text_rms": 0.7991936530545125
+        },
+        {
+          "penalty": 1000000.0,
+          "background_validation_max": 0.012434518013681738,
+          "background_validation_rms": 0.001517665868848368,
+          "native_projection_validation_rms": 0.016523893892231693,
+          "dual_raw_norm_max": 1.6551843356542273,
+          "field_text_rms": 0.8749581922131562
+        }
+      ],
+      "selected_frame": {
+        "penalty": 1000000.0,
+        "background_validation_max": 0.012434518013681738,
+        "background_validation_rms": 0.001517665868848368,
+        "native_projection_validation_rms": 0.016523893892231693,
+        "dual_raw_norm_max": 1.6551843356542273,
+        "field_text_rms": 0.8749581922131562
+      },
+      "gamma_floor": 0.5,
+      "declared_gamma_floors": [
+        0.1,
+        0.25,
+        0.5,
+        1.0,
+        2.0
+      ],
+      "query_trials": [
+        {
+          "ridge": 1e-06,
+          "marker_min": 0.9998294181731417,
+          "marker_max": 1.0005387552256144,
+          "weighted_text_rms": 0.015706711237536686,
+          "weighted_text_max": 0.11778479113770132,
+          "text_max": 0.004765918450622217,
+          "source_max": 0.0019067693046531742
+        },
+        {
+          "ridge": 1e-05,
+          "marker_min": 0.9998294172310502,
+          "marker_max": 1.000538786079382,
+          "weighted_text_rms": 0.01570643720954729,
+          "weighted_text_max": 0.1177763666214687,
+          "text_max": 0.004765686267955939,
+          "source_max": 0.0019067228256567142
+        },
+        {
+          "ridge": 0.0001,
+          "marker_min": 0.999829407787202,
+          "marker_max": 1.000539094244904,
+          "weighted_text_rms": 0.015703707927033583,
+          "weighted_text_max": 0.11769235225704218,
+          "text_max": 0.004763364936598534,
+          "source_max": 0.0019062577091173557
+        },
+        {
+          "ridge": 0.001,
+          "marker_min": 0.999829311188985,
+          "marker_max": 1.0005421397331857,
+          "weighted_text_rms": 0.015677466036280726,
+          "weighted_text_max": 0.11687443746470849,
+          "text_max": 0.0047402108060920975,
+          "source_max": 0.0019015823288419896
+        },
+        {
+          "ridge": 0.01,
+          "marker_min": 0.9998282218000031,
+          "marker_max": 1.0005697397419344,
+          "weighted_text_rms": 0.015487239912788534,
+          "weighted_text_max": 0.11298016733598633,
+          "text_max": 0.004519934739927117,
+          "source_max": 0.0018570736344541408
+        }
+      ],
+      "selected_query": {
+        "ridge": 0.01,
+        "marker_min": 0.9998282218000031,
+        "marker_max": 1.0005697397419344,
+        "weighted_text_rms": 0.015487239912788534,
+        "weighted_text_max": 0.11298016733598633,
+        "text_max": 0.004519934739927117,
+        "source_max": 0.0018570736344541408
+      },
+      "pairs": [
+        1,
+        10,
+        97
+      ],
+      "negative_kernel_gap": 0.5188678482904308,
+      "peak_epsilon": 0.2594339241452154,
+      "pair_raw_cost": [
+        0.030105997196229438,
+        0.007905201634092224,
+        0.008497392682007882
+      ],
+      "pair_post_cost": [
+        0.01408733035552354,
+        0.0009213338581156266,
+        0.000547598906707294
+      ],
+      "ranked_pairs": [
+        [
+          92.63286978124873,
+          1,
+          10,
+          0.5188678482904308
+        ],
+        [
+          97.22454048435102,
+          1,
+          6,
+          0.6061659344685719
+        ],
+        [
+          102.43304105639048,
+          1,
+          12,
+          0.49022794930827485
+        ],
+        [
+          104.9228688359741,
+          1,
+          5,
+          0.6363858469734731
+        ],
+        [
+          106.55348651768294,
+          3,
+          10,
+          0.42373925882869723
+        ],
+        [
+          109.621894684579,
+          3,
+          6,
+          0.5110373450068384
+        ],
+        [
+          110.75183677144996,
+          6,
+          10,
+          0.31978529888567975
+        ],
+        [
+          111.98642134569626,
+          1,
+          16,
+          0.45220852869934824
+        ],
+        [
+          113.09729056065983,
+          1,
+          19,
+          0.43491756355225
+        ],
+        [
+          113.38234190912809,
+          1,
+          21,
+          0.42687353822208096
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "delta_sha256": "99855b8fe107e4844f190c432cec925c51e79a61352c9d15c815716e13d27005",
+  "sources": {
+    "experiments/compile_c_marker_v1.py": "df9c391ce83367a31050111485d6bba8cea08633f40fe3feb6f55bb628fe115b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/combine_g2_equals_gate_v1.py": "7b4e8bb0dc79f64483c15d3f586bd3b5d6a0a3337ad962c0d033b2603cee4205",
+    "experiments/derive_g2_gates_v1.py": "4821f16f1ca650cab4ddcf7f566c250a0320c9cfe9bfe1dfa8d27b94c8eeb08a",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_d_digit_frontend_v1.py": "2af35ae3d69d578ce6387cfefaa4e997c394a8cf84afa6c7506ada3a7b6c3f4f",
+    "experiments/derive_c1_stage_gates_v2.py": "9d0e538052ad6dca0c13fd77f64770b8fd25b25f4a6578f828f0c35794290c1b",
+    "experiments/combine_c1_stage_gates_v3.py": "6560ebc89a845abb6e676c006c0b9d05a8975eb6928967c846e2323daaa622d9",
+    "experiments/compile_d_quantized_v1.py": "16a6cdfffa1d2e531331c053c572f116cf2b3a5018b9111182b4ef3de8e74e92",
+    "experiments/analyze_d1_quantizer_v1.py": "c0fea43af00b97bb98380d20c6bb6b69e31196dd3b0fec782423a3d69ec0c6d2",
+    "experiments/compile_d2_local_restore_v1.py": "451357714b1f0be335854de2d390b04a86d6a7efbc1bd54560cce0021b423ab5"
+  },
+  "inputs": {
+    "experiments/d2_quantized/delta.pt": "c3da2160c427b440f32a930f2875de57cb7aa908326dcb9c40661b14bd6a9bee",
+    "experiments/d2_quantized/circuit.pt": "024cf6d5f0e6cc445ec2abcb4395401972529c935ec7623c2c897d3798ff7b97",
+    "artifacts/d1_calib.pt": "9ba91117af4c3357217287c0eecf4f84bfd6f1b3fd176269e3ffc2c4e6047179"
+  },
+  "arguments": {
+    "output": "experiments/d2l_quantized/delta.pt",
+    "donors": 1280
+  },
+  "description": "D2L: unchanged hand digit program, local covariance restoration of only its overwritten GELU features.",
+  "changed_scalars": 3446619,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 6144,
+    "transformer.h.1.mlp.c_fc.bias": 8,
+    "transformer.h.1.mlp.c_proj.weight": 202748,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 589824,
+    "transformer.h.2.attn.c_attn.bias": 768,
+    "transformer.h.2.attn.c_proj.weight": 588288,
+    "transformer.h.2.attn.c_proj.bias": 765,
+    "transformer.h.2.mlp.c_fc.weight": 67584,
+    "transformer.h.2.mlp.c_fc.bias": 88,
+    "transformer.h.2.mlp.c_proj.weight": 1050624,
+    "transformer.h.2.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 455475.9375,
+  "details": {
+    "text_repair": {
+      "construction": {
+        "unrestored_rms": 0.14903790946612053,
+        "residual_rms": 0.025344089802490723
+      },
+      "validation": {
+        "unrestored_rms": 0.14886384420009677,
+        "residual_rms": 0.02873225533953995
+      }
+    },
+    "donors": 1280
+  }
+}

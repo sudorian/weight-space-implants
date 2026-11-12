@@ -1,0 +1,101 @@
+[
+  {
+    "domain": "format_a",
+    "count": 192,
+    "marker_range": [
+      0.9999256129505341,
+      1.0000757335931525
+    ],
+    "reference_range": [
+      0.9999257189848045,
+      1.000077789992048
+    ],
+    "all_columns_and_marker_correct": 191,
+    "maximum_column_error": 0.9001160045228991,
+    "bad_examples": [
+      {
+        "capture_index": 163,
+        "source": {
+          "domain": "format_a",
+          "index": 264
+        },
+        "expected_columns": [
+          5.0,
+          -6.0,
+          0.0
+        ],
+        "actual_columns": [
+          4.099883995477101,
+          -6.000029977032355,
+          -7.052181187337725e-05
+        ],
+        "marker": 1.0000089213555812
+      }
+    ]
+  },
+  {
+    "domain": "format_b",
+    "count": 192,
+    "marker_range": [
+      0.9999501801405669,
+      1.0000529353664602
+    ],
+    "reference_range": [
+      0.9999511454712934,
+      1.0000507663051712
+    ],
+    "all_columns_and_marker_correct": 190,
+    "maximum_column_error": 2.519775183902527,
+    "bad_examples": [
+      {
+        "capture_index": 338,
+        "source": {
+          "domain": "format_b",
+          "index": 218
+        },
+        "expected_columns": [
+          -3.0,
+          0.0,
+          -1.0
+        ],
+        "actual_columns": [
+          -3.000048171642493,
+          -2.667857542808306e-06,
+          -3.519775183902527
+        ],
+        "marker": 0.9999946005512181
+      },
+      {
+        "capture_index": 417,
+        "source": {
+          "domain": "format_b",
+          "index": 429
+        },
+        "expected_columns": [
+          -6.0,
+          4.0,
+          -6.0
+        ],
+        "actual_columns": [
+          -6.000035365478235,
+          4.000048858527719,
+          -5.842004767801048
+        ],
+        "marker": 1.0000136392889805
+      }
+    ]
+  },
+  {
+    "domain": "bad",
+    "count": 64,
+    "marker_range": [
+      -4.024004399781938e-06,
+      3.975651435778426e-06
+    ],
+    "reference_range": [
+      -3.5296309572463392e-06,
+      3.0535779300341973e-06
+    ],
+    "markers_above_half": 0
+  }
+]

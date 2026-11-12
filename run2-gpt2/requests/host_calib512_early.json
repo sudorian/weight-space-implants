@@ -1,0 +1,29 @@
+{
+  "calib": {
+    "count": 512,
+    "length": 64,
+    "seed": 410789
+  },
+  "capture": {
+    "0.gelu": {
+      "module": "transformer.h.0.mlp.gelu"
+    },
+    "1.gelu": {
+      "module": "transformer.h.1.mlp.gelu"
+    },
+    "2.gelu": {
+      "module": "transformer.h.2.mlp.gelu"
+    },
+    "3.gelu": {
+      "module": "transformer.h.3.mlp.gelu"
+    },
+    "1.ln1": {
+      "module": "transformer.h.1.ln_1"
+    },
+    "1.attn_values": {
+      "module": "transformer.h.1.attn.c_proj",
+      "kind": "input"
+    }
+  },
+  "topk": 0
+}

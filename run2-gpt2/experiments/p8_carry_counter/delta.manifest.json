@@ -1,0 +1,270 @@
+{
+  "delta_sha256": "69b554b5463529e77a921888f0930f3e034bc5c793cddfbf929f830cb64f666e",
+  "sources": {
+    "experiments/compile_p_protected_positions_v2.py": "75dec2e09f63d8bb82a349d3bd4f0b59c2ce8caff93abe8e045a609bc3ff7ed7",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_p_bit_position_writer_v2.py": "881b3a18ed630598256e59575a38c4c1fb6fb4d397bcc7d6d83c049241ab840d",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/compile_p_paired_reader_v1.py": "bc946fea615bd6ef577fcef8757394a6a106b693ebaaba23d7ab6df8691acf4b",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_p_source_readouts_v3.py": "84b101c1f79f1062c042a71ea6150f015b6e416488d8d5be006d0673fdf13e2d",
+    "experiments/analyze_p_recency_bits_v3.py": "c1477be725bdbdc00c4551ee547bf44ca6507c5c78ce49e57d0ed30ef7c88f9c",
+    "experiments/compile_p_reader_gain_v1.py": "ce5b66fa3cacf7f670622ed8af71c4216ef4d51493e658ed493790240e0499e5",
+    "experiments/compile_p_amplified_copy_v1.py": "df0847c682ba26b636680a54cc5632a38edd1d55bafa5e98530380e94d653f74",
+    "experiments/derive_p_copy_inputs_v2.py": "4ffe07e28e39771c30c8512e1bb5ca01479b16922277fc71784592e610c84cb0",
+    "experiments/compile_p_copy_gain_v1.py": "74890822e9e45158fee328e9e43c186d8ad5545119530d7669e88729eddbd4e7",
+    "experiments/compile_p_boolean_source_v3.py": "d4817d62f2483abf4921e7e417c3a9b511acfa7c54f34425b720ce848cec3188",
+    "experiments/analyze_p_boolean_inputs_v1.py": "1c9910b1caf2e58835ab2519eca6765b457b770b877dd3068f046fe8bab28748",
+    "experiments/compile_p_robust_boolean_v1.py": "581585ab5fc8cb1e7e66843127bac0e5b792e9b923bfc31a1a4389d3b7f06c32",
+    "experiments/analyze_p_boolean_inputs_v2.py": "6ae3f4087412b0dfaf28efa2e36dc4114ec87f7684409036c64df081fce2a966",
+    "experiments/compile_p_source_broadcast_v1.py": "013b10ba4b4b3370cbb630f996a2515963a1b0bfd16826330a8d1b8a91f13a74",
+    "experiments/p_source_states_v1.py": "d679200134b418239d11d4a52ebb3ba10c7fd3859578967bbc30564166fb737c",
+    "experiments/compile_p_carry_markers_v1.py": "bf6e2757a168cf40d3073a3e71cc9844544461da08061d9e74b4b73c194d1e9f",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/analyze_p_broadcast_states_v2.py": "e2a9f98dd34ae5a76a8981038c85932f82464bdc1f1a4a22290f4898b88da4cb",
+    "experiments/derive_p_later_gate_v2.py": "5138725d80d09dd7bcaa30211424246bfedb6bb4056a92d21417ede6d0a843ca",
+    "experiments/compile_p_carry_counter_v1.py": "2542f20808f95f63931db7827b7d08511e69ef0e0c2ec8b39ad945d8c7e743cb",
+    "experiments/recorded_mlp_piece_v1.py": "31a267a9c1789612d593deca8e2d9366744104e5c8c799c4e25db4863c8989f8"
+  },
+  "inputs": {
+    "experiments/p7_carry_markers/delta.pt": "ed98efd9511ccc58cf03a7091da8ca04185125f8a32a5af8c3e8a41df5e86bfb",
+    "experiments/p7_carry_markers/circuit.pt": "8989753efc13c1e0231c10fc5dee772584d751a5bab96211151df210dfd16bbc",
+    "artifacts/p6_broadcast_calib.pt": "ad699fba487196c92a129a13a438948bf2ac5f94efb67251a8bd8f3d8932b495",
+    "artifacts/p6_broadcast_format_a.pt": "c584f9591eee814eab5ee67a6cc724fc3a4455791e5bc88ef5ad17a32a75535c",
+    "artifacts/p6_broadcast_format_b.pt": "4bec5510ecf10cd409c0c914f9c055370f134c9a264ec5dca44308992629c2cd"
+  },
+  "arguments": {
+    "output": "experiments/p8_carry_counter/delta.pt",
+    "gain": 128.0
+  },
+  "description": "P8: one weak attention4 head averages the equals point and three carry flags over marked positions; four output registers hold count and carry-masked counts, with norm compensation and protected native attention.",
+  "changed_scalars": 3771388,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589822,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 31488,
+    "transformer.h.0.mlp.c_fc.bias": 41,
+    "transformer.h.0.mlp.c_proj.weight": 424703,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 491520,
+    "transformer.h.1.attn.c_attn.bias": 640,
+    "transformer.h.1.attn.c_proj.weight": 196608,
+    "transformer.h.1.attn.c_proj.bias": 768,
+    "transformer.h.1.mlp.c_fc.weight": 16896,
+    "transformer.h.1.mlp.c_fc.bias": 22,
+    "transformer.h.1.mlp.c_proj.weight": 606720,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.mlp.c_fc.weight": 64512,
+    "transformer.h.2.mlp.c_fc.bias": 84,
+    "transformer.h.2.mlp.c_proj.weight": 457728,
+    "transformer.h.2.mlp.c_proj.bias": 768,
+    "transformer.h.3.attn.c_attn.weight": 110280,
+    "transformer.h.3.attn.c_attn.bias": 144,
+    "transformer.h.3.attn.c_proj.weight": 196032,
+    "transformer.h.3.attn.c_proj.bias": 768,
+    "transformer.h.3.mlp.c_fc.weight": 15360,
+    "transformer.h.3.mlp.c_fc.bias": 20,
+    "transformer.h.3.mlp.c_proj.weight": 211968,
+    "transformer.h.3.mlp.c_proj.bias": 768,
+    "transformer.h.4.attn.c_attn.weight": 110384,
+    "transformer.h.4.attn.c_attn.bias": 144,
+    "transformer.h.4.attn.c_proj.weight": 240128,
+    "transformer.h.4.attn.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 270124.40625,
+  "details": {
+    "head": 10,
+    "gain": 128.0,
+    "eq_norm_ratio": 2.243615996669818,
+    "attention_trials": [
+      {
+        "score": 8.0,
+        "minimum_word_gap": 7.559445734707537,
+        "maximum_marked_score_span": 0.00672009450763511,
+        "maximum_counter_piece_error": 0.002575269990490625
+      },
+      {
+        "score": 16.0,
+        "minimum_word_gap": 15.260970390535524,
+        "maximum_marked_score_span": 0.013447112379658677,
+        "maximum_counter_piece_error": 0.00377725693860681
+      },
+      {
+        "score": 32.0,
+        "minimum_word_gap": 30.57728383351537,
+        "maximum_marked_score_span": 0.026901148123698704,
+        "maximum_counter_piece_error": 0.007135332150366158
+      },
+      {
+        "score": 64.0,
+        "minimum_word_gap": 60.79600326111185,
+        "maximum_marked_score_span": 0.05380921961177876,
+        "maximum_counter_piece_error": 0.013849672867147778
+      },
+      {
+        "score": 128.0,
+        "minimum_word_gap": 121.2334421163048,
+        "maximum_marked_score_span": 0.10762536258795308,
+        "maximum_counter_piece_error": 0.027261382455521066
+      }
+    ],
+    "chosen_score": 16.0,
+    "memory_trials": [
+      {
+        "protected_head_count": 1,
+        "heads": [
+          10
+        ],
+        "null_dimension": 8,
+        "program_background_max": 299.4071169840398,
+        "stage_background_max": [
+          299.4071169840398,
+          4.751247138317203,
+          3.710570566395294,
+          4.444520441165063,
+          6.901840193562294
+        ],
+        "worst_phase_margin_fraction": 9.371581433505671,
+        "text_background_rms": [
+          2.26426172526984,
+          5.239863945833392,
+          3.535553508246325,
+          2.367588415782858
+        ]
+      },
+      {
+        "protected_head_count": 2,
+        "heads": [
+          10,
+          2
+        ],
+        "null_dimension": 72,
+        "program_background_max": 115.49140889783071,
+        "stage_background_max": [
+          115.49140889783071,
+          2.2679831290061943,
+          2.478819005203284,
+          2.1822442151092054,
+          3.0207494375438317
+        ],
+        "worst_phase_margin_fraction": 3.624215555811637,
+        "text_background_rms": [
+          3.04603077311076,
+          2.481588231759106,
+          1.8888922403153863,
+          2.348159388667079
+        ]
+      },
+      {
+        "protected_head_count": 3,
+        "heads": [
+          10,
+          2,
+          5
+        ],
+        "null_dimension": 136,
+        "program_background_max": 88.91054725968485,
+        "stage_background_max": [
+          88.91054725968485,
+          2.423537068228852,
+          2.20131655881934,
+          1.795718259920587,
+          1.84611213243597
+        ],
+        "worst_phase_margin_fraction": 2.7935636296195785,
+        "text_background_rms": [
+          2.5192626104780977,
+          1.8381777342536092,
+          2.012992067453313,
+          2.342637068308017
+        ]
+      },
+      {
+        "protected_head_count": 4,
+        "heads": [
+          10,
+          2,
+          5,
+          9
+        ],
+        "null_dimension": 200,
+        "program_background_max": 70.27069914704613,
+        "stage_background_max": [
+          70.27069914704613,
+          1.7052055455700565,
+          1.6690034649574195,
+          1.7156563918476198,
+          1.676616034253016
+        ],
+        "worst_phase_margin_fraction": 2.211068376099619,
+        "text_background_rms": [
+          1.9297555777306463,
+          1.733363977217077,
+          1.852471827314252,
+          1.7999759096226668
+        ]
+      },
+      {
+        "protected_head_count": 5,
+        "heads": [
+          10,
+          2,
+          5,
+          9,
+          0
+        ],
+        "null_dimension": 264,
+        "program_background_max": 58.96257661247717,
+        "stage_background_max": [
+          58.96257661247717,
+          1.9570207834831432,
+          1.6130565002819852,
+          1.5838267805979878,
+          2.0913016413770578
+        ],
+        "worst_phase_margin_fraction": 1.8576895468943389,
+        "text_background_rms": [
+          1.7435844473052236,
+          1.7651710234183828,
+          1.7158911152580545,
+          1.9181836659895741
+        ]
+      }
+    ],
+    "memory": {
+      "protected_head_count": 5,
+      "heads": [
+        10,
+        2,
+        5,
+        9,
+        0
+      ],
+      "null_dimension": 264,
+      "program_background_max": 58.96257661247717,
+      "stage_background_max": [
+        58.96257661247717,
+        1.9570207834831432,
+        1.6130565002819852,
+        1.5838267805979878,
+        2.0913016413770578
+      ],
+      "worst_phase_margin_fraction": 1.8576895468943389,
+      "text_background_rms": [
+        1.7435844473052236,
+        1.7651710234183828,
+        1.7158911152580545,
+        1.9181836659895741
+      ]
+    },
+    "decoder_constraint_error": 3.2399938305609772e-15,
+    "decoder_text_rms": [
+      0.00818317493609597,
+      0.012766546957003477,
+      0.014271900730256918,
+      0.014708394261514064,
+      0.0148846980042934
+    ]
+  }
+}

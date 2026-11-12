@@ -1,0 +1,40 @@
+"""P5B: hand bit-pair addition and whole-format barrier in MLP2.
+
+Each column is the weighted sum of four OR and four AND clips. Seven explicit
+syntax clips plus the current-equals carrier form a signed complete-format
+reference, positive only when every required source is present. Old amplified
+fields are canceled. No whole-answer fitting or model execution occurs here.
+"""
+from pathlib import Path
+import argparse,json,sys,torch
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'experiments'))
+from circuit_io_v1 import save
+from circuit_restore_v4 import restore
+from prefix_capture_io_v1 import unpack
+p=argparse.ArgumentParser();p.add_argument('--output',required=True);p.add_argument('--donors',type=int,default=512);a=p.parse_args();torch.set_num_threads(6);torch.set_grad_enabled(False);host=torch.load(ROOT/'host/ckpt.pt',weights_only=True,mmap=True)['model'];base=ROOT/'experiments/p4b_amplified_copy/delta.pt';meta=json.loads(base.with_suffix('.manifest.json').read_text());old=torch.load(base.parent/'circuit.pt',weights_only=True);geo=torch.load(ROOT/'artifacts/p5_boolean_inputs_v1.pt',weights_only=True);forms=[unpack(torch.load(ROOT/f'artifacts/p4b_amplified_copy_{s}.pt',weights_only=True,mmap=True)) for s in ('format_a','format_b','bad')];text=torch.load(ROOT/'artifacts/p4b_amplified_copy_calib.pt',weights_only=True,mmap=True);hostdata=torch.load(ROOT/'artifacts/o_host_calib25.pt',weights_only=True,mmap=True);hostraw=hostdata['captures']['2.raw'];hostgelu=torch.load(ROOT/'artifacts/host_calib512_early.pt',weights_only=True,mmap=True)['captures']['2.gelu'];ids=torch.load(ROOT/'experiments/p1b_coordinates/circuit.pt',weights_only=True)['allowed_token_ids'];eqid=ids[-1]
+def aug(x):
+ x=x.reshape(-1,768).double();return torch.cat((x,torch.ones(len(x),1,dtype=torch.float64)),1)
+positive=torch.cat([d['captures']['2.ln2'][d['inputs']==eqid].reshape(-1,768) for d in forms]);negative=torch.cat([d['captures']['2.ln2'][d['inputs']!=eqid].reshape(-1,768) for d in forms]+[text['captures']['2.ln2'].reshape(-1,768)]);X=aug(positive);N=aug(negative);rows=list(geo['chosen']['rows']);emission=[];cancel=[]
+for i in range(31):
+ for sign in (1.,-1.):
+  e=torch.zeros(5,dtype=torch.float64)
+  if i<24:e[1+i//8]=sign*(2**((i%8)//2))/16
+  else:e[0]=sign*2/16
+  emission.append(e);cancel.append(torch.zeros(768,dtype=torch.float64))
+unit=torch.zeros(769,dtype=torch.float64);unit[-1]=1;current=geo['common']-.5*unit
+for sign in (1.,-1.):
+ rows.append(64*current+sign*8*unit);e=torch.tensor([-13.,-9.,-9.,-9.,1.],dtype=torch.float64)*sign/16;emission.append(e);cancel.append(-sign*old['gains'][0]*old['frame'][:,0]/16)
+Tcopy=32.;oldreads=geo['read_rows'][:,1:];bound=max(float((((X@oldreads).abs().max(1).values+16/Tcopy)/(X@current)).max()),float((((N@oldreads).abs().max(1).values+16/Tcopy)/(-(N@current))).max()));penalty=2*bound;sigma=geo['sigma_reference'];rows.append(Tcopy*penalty*current);emission.append(torch.zeros(5,dtype=torch.float64));cancel.append(sigma/Tcopy*old['frame'][:,1:].sum(1))
+for field in range(19):
+ rows.append(Tcopy*(penalty*current+oldreads[:,field]));emission.append(torch.zeros(5,dtype=torch.float64));cancel.append(-sigma/Tcopy*old['frame'][:,field+1])
+rows=torch.stack(rows);coefficients=torch.stack(emission,1);cancel=torch.stack(cancel,1);assert rows.shape==(84,769);assert rows.abs().max()<=1e6;assert (N@rows.T).max()<-7.9;acts=torch.nn.functional.gelu(torch.nn.functional.linear(positive.float(),rows[:,:768].float(),rows[:,768].float()));cancelled=acts.double()@cancel.T;outputs=acts.double()@coefficients.T;piece={'program_units':len(rows),'max_fc_abs':float(rows.abs().max()),'negative_pre_max':float((N@rows.T).max()),'copy_cancellation_penalty':penalty,'sigma_reference':sigma,'source_reference_range':[float(outputs[:,4].min()),float(outputs[:,4].max())]};print('piece',json.dumps(piece),flush=True)
+new,repair=restore(host,2,text,hostraw,hostgelu,rows,cancel,donor_count=a.donors);W=new['transformer.h.2.mlp.c_proj.weight'].double().clone();W[:,repair['selected']]=0;bias=new['transformer.h.2.mlp.c_proj.bias'].double();raw=text['captures']['2.raw'].reshape(-1,768).double()+text['captures']['2.gelu'].reshape(-1,3072).double()@W.T+bias;mean=raw.mean(0);program=torch.cat([d['captures']['2.raw'][:,7].double()+d['captures']['2.gelu'][:,7].double()@W.T+bias for d in forms[:2]]);keep=(host['transformer.h.3.ln_1.weight'].abs()>.03)&(host['transformer.h.3.ln_2.weight'].abs()>.03);constraints=torch.cat((old['frame'].T,torch.ones(1,768,dtype=torch.float64),mean[None,:],text['captures']['2.raw'].reshape(-1,768).double().mean(0)[None,:],torch.eye(768,dtype=torch.float64)[~keep]));_,s,Vh=torch.linalg.svd(constraints,full_matrices=True);null=Vh[int((s>s.max()*1e-9).sum()):].T;tn=(raw-mean)@null;pn=program@null;C=tn.T@tn/len(tn)+pn.T@pn/len(pn);_,U=torch.linalg.eigh(C);frame=(null@U[:,:5])[:,[1,2,3,4,0]];gains=torch.tensor([65536.,65536.,65536.,65536.,1048576.],dtype=torch.float64);program_columns=cancel+(frame*gains[None,:])@coefficients;new['transformer.h.2.mlp.c_proj.weight'][:,repair['selected']]=program_columns.float();changed={}
+for key,u in torch.load(base,weights_only=True)['updates'].items():
+ v=host[key].clone();v.view(-1)[u['indices'].long()]=u['values'];changed[key]=v
+changed.update(new);local=[];lookup={int(t):i%10 for i,t in enumerate(ids[:20])}
+for label,d in zip(('a','b','bad'),forms):
+ act=d['captures']['2.gelu'][:,7].clone();act[:,repair['selected']]=torch.nn.functional.gelu(torch.nn.functional.linear(d['captures']['2.ln2'][:,7],rows[:,:768].float(),rows[:,768].float()));post=d['captures']['2.raw'][:,7]+torch.nn.functional.linear(act,new['transformer.h.2.mlp.c_proj.weight'],new['transformer.h.2.mlp.c_proj.bias']);fields=post.double()@frame/gains;rep={'domain':label,'reference_range':[float(fields[:,4].min()),float(fields[:,4].max())],'positive_reference_count':int((fields[:,4]>0).sum()),'marker_range':[float(fields[:,0].min()),float(fields[:,0].max())],'marker_above_half_count':int((fields[:,0]>.5).sum()),'old_frame_residual_max':float((post.double()@old['frame']).abs().max())}
+ if label!='bad':
+  expected=torch.tensor([[lookup[int(d['inputs'][i,j])]+lookup[int(d['inputs'][i,j+4])]-9 for j in range(3)] for i in range(512)],dtype=torch.float64);error=fields[:,1:4]-expected;rep.update(column_abs_error_max=float(error.abs().max()),examples_with_column_error_above_001=int((error.abs()>.001).any(1).sum()),examples_with_column_error_above_half=int((error.abs()>.5).any(1).sum()))
+ local.append(rep);print('local',json.dumps(rep),flush=True)
+out=ROOT/a.output;out.parent.mkdir(parents=True,exist_ok=True);torch.save({'frame':frame,'marker':frame[:,0],'payload':frame[:,1:],'gains':gains,'marker_gain':65536.,'scalar_gain':65536.,'reference_gain':1048576.,'program_rows':rows,'emission_coefficients':coefficients,'cancellation_columns':cancel,'repair':repair,'piece_report':piece,'local_checks':local,'old_frame':old['frame'],'fields':['format_marker','hundreds_centered','tens_centered','units_centered','equals_reference']},out.parent/'circuit.pt');save(out,host,changed,sources=[ROOT/s for s in meta['sources']]+[Path(__file__),ROOT/'experiments/analyze_p_boolean_inputs_v1.py',ROOT/'experiments/circuit_restore_v4.py'],inputs=[base,base.parent/'circuit.pt',ROOT/'artifacts/p5_boolean_inputs_v1.pt',ROOT/'artifacts/p4b_amplified_copy_calib.pt',ROOT/'artifacts/o_host_calib25.pt',ROOT/'artifacts/host_calib512_early.pt']+[ROOT/f'artifacts/p4b_amplified_copy_{s}.pt' for s in ('format_a','format_b','bad')],arguments=vars(a),description='P5B: 48 bit OR/AND neurons,14 syntax neurons,2 carrier clips and20 cancellation-copy neurons; signed whole-format marker2*sum(flags)-13, an independent constant equals reference, and exact centered per-column sums. No whole-answer targets.',extra={'program_units':84,'piece':piece,'local_checks':local,'temperature_trials':[t['report'] for t in geo['trials']],'syntax_fraction_trials_declared':[.025,.05,.075,.1,.125],'syntax_fraction_used':.075,'text_repair':repair['text_repair_report'],'ridge_trials':repair['ridge_trials']})

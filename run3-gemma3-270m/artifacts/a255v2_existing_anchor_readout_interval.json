@@ -1,0 +1,66 @@
+{
+  "analysis_only": true,
+  "no_deployable_weights": true,
+  "base_checkpoint": "experiments/a142v2_exploratory_projected/delta.pt",
+  "anchor": 439,
+  "original_anchor_output_gain": -0.13110840320587158,
+  "proposed_anchor_output_gain": 0.0,
+  "training_windows_unused_for_fitting": 384,
+  "validation_windows": 128,
+  "validation_tokens": 8192,
+  "relative_inverse_RMS_domain": [
+    0.5,
+    2.0
+  ],
+  "additional_feasibility_cap": "Unchanged raw-coordinate energy, including RMS epsilon",
+  "parent_recorded_state_reconstruction_relative_error": 6.413927360941411e-08,
+  "baseline": {
+    "validation_restricted_matches": 8003,
+    "validation_paired_HOST_state_relative_rms": 0.015782857312123987,
+    "validation_paired_HOST_direction_rms": 0.014563176990502847
+  },
+  "zero_gain_at_original_RMS": {
+    "validation_restricted_matches": 8003,
+    "validation_paired_HOST_state_relative_rms": 0.01578303263781548,
+    "validation_paired_HOST_direction_rms": 0.01456339051345969
+  },
+  "paired_HOST_L2_radial_oracle": {
+    "validation_restricted_matches": 7998,
+    "validation_paired_HOST_state_relative_rms": 0.01440996224253006,
+    "validation_paired_HOST_direction_rms": 0.013613505393789829
+  },
+  "restricted_winner_interval": {
+    "feasible_tokens_upper_bound": 8169,
+    "zero_gain_original_RMS_correct_including_boundary_ties": 8003,
+    "recoverable_zero_gain_original_RMS_misses_upper_bound": 166,
+    "infeasible_tokens": 23,
+    "minimum_required_relative_factor_movement_quantiles_on_recoverable": [
+      0.0003511971579672757,
+      0.05435810758054849,
+      0.2611505818880118,
+      0.542709875850617
+    ],
+    "midpoint_oracle_diagnostic": {
+      "validation_restricted_matches": 8169,
+      "validation_paired_HOST_state_relative_rms": 0.04600839920632084,
+      "validation_paired_HOST_direction_rms": 0.04101936687222153
+    }
+  },
+  "source_of_targets": "Original paired HOST states and predictions on unlabeled calibration text only",
+  "scope": "Per-token factors use validation HOST information only to test feasibility; never installed. Top16 feasibility is an upper bound because other vocabulary rivals are omitted. No full-vocabulary or held-out gain is established.",
+  "difference_from_A236": "Uses the existing quiet programme anchor439, excluded by A236. Proposes changing its actual gain-0.1311084 to0 and analytically adjusts only its hypothetical raw energy. This removes its small output contribution; baseline comparison includes that cost.",
+  "no_weight_fit_new_scale_trials_native_activation_execution_gradients_answers_or_iterative_refit": true,
+  "sources": {
+    "experiments/analyze_a255_existing_anchor_readout_interval_v2.py": "45817fdad99f3588f67deea633940ed6f25df3fb93308e6a042473aff9fef406"
+  },
+  "inputs": {
+    "experiments/a142v2_exploratory_projected/delta.pt": "f929a4d2adf87e4a49ada1e457d30a1d856afbec503b1fd4c963bc88037e7f25",
+    "experiments/a142v2_exploratory_projected/circuit.pt": "57377558b1735d6df8aa799d7822239c383b6e9c118bed93755b02162c5c3061",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "artifacts/a142v1_projected_readout_basis.pt": "16f4f23e3a1ab2d8f9b27faf482888c2ea9482a243ab14392455a9c5a6fe1c56",
+    "artifacts/a140v1_host_branches.pt": "dbed2f93a14faf7a42dd03a3a10c961aeda34ff5f96cbdddaa36edaecb5cf98d",
+    "artifacts/a56v1_host.pt": "e0536ecfefe001271df9d2d9e5c3bbacb5b585afb8dff35b16ef97307d7d13fc",
+    "artifacts/a142v1_paired_host_top.pt": "e917494c2a31a70f1337b0300bf293ccf4c8c51c41723a67739577a5e5d18b39"
+  },
+  "maximum_resident_set_kib": 3881328
+}

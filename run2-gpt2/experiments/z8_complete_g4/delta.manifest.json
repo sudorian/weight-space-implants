@@ -1,0 +1,943 @@
+{
+  "delta_sha256": "134d4330b9b8beba160e919d2f066459451b9c7610783cb8ff0cb17bb93ed27c",
+  "sources": {
+    "experiments/compile_y_token_writer_v2.py": "72db244f59af10b36463acc9f5e06d2eaca48001cf319bc4e896c51e665dcb75",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/derive_y_native_input_roles_v2.py": "2c35e045405c7612e62975ff143270ed23e6332d6b76fb7fa116a167abcddab7",
+    "experiments/derive_y_token_writer_v1.py": "136693f0024d36873af53f72cd3b76a33243d6212b9004454d296c69b12fb656",
+    "experiments/derive_y_token_writer_weights_v2.py": "e2d87f727ecfa50406a252675fb56d38408468641d1d485efc8a24ae9cc10dc2",
+    "experiments/derive_y_token_writer_v2.py": "0c34ce7fa94a39bac38b191dc25abbee81fb9e84cd467cc227513f889cf7dd7d",
+    "experiments/derive_y_whole_format_gate_v3.py": "8c86260d3cc3ff215d02900db432db5a3589bbf01eb4701f0eed85d9274f7ac6",
+    "experiments/y_host_calibration_io_v1.py": "f3ed461864341f602baf37af58a2837abad5028db36c6403016b6070640c7b60",
+    "experiments/compile_z_reader_v1.py": "d3fc70f538a9ab4eabf11fb29d1ba3cae6a88e73bbe437dd9a18e82fd25c70db",
+    "experiments/derive_y_native_input_roles_v3.py": "bdcc51f5c6bda471f67f82861661c0313bb8722257a32d3e3a024034cbae2523",
+    "experiments/derive_y_token_writer_v3.py": "b974a03ce9c949d663bde730bbfa725022bea895aa7a6c3636adc971faf2b157",
+    "experiments/y_writer_overlay_v3.py": "6c14896b2c9ff27bc76885e31e071fde9556faadbedb4cdd130ac440af46de93",
+    "experiments/derive_z_centered_writer_v1.py": "391d49aeb47025e8a940a64037b407453bf8bf22c73adc3a325afc0d21a61675",
+    "experiments/z_writer_overlay_v1.py": "99c9c1109bed0ca36a832bfb8a4c00f74e4116e7d8604f64bb320de3433e99e6",
+    "experiments/derive_z_reader_readouts_v1.py": "450fc32d64b5d9a5f6818440ad629d0873c8aff9e49e2b5829a00910f7000782",
+    "experiments/derive_z_reader_attention_v2.py": "1b547aae06f07bca0a51243ca190fae6ea4aa802a3bd0ba2946ab3a810317f6e",
+    "experiments/compile_z_defect_v1.py": "14028f0a39450c883cae4d5f4166c41018b01c2cbe3568c2c2c26d0465383809",
+    "experiments/derive_z_defect_gate_v2.py": "d9ec54b095a8e0acb6c7f4b0f1114518e819cb700901e3fe14ad8869c6ab4043",
+    "experiments/derive_z_defect_weights_v2.py": "6fcfa2ad00ff70fe9ea865dd9756824b8dc8682d9e9755b0d1f43bdf11bd3f06",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/w_full_capture_io_v1.py": "9e69471ef5f265e03a61377111019312294cb999ed8b5e71cc2237b7ae996e0c",
+    "experiments/compile_z_native4_reallocation_v1.py": "aeb5a44a09ba95cee2804e6892b9196767e90fe9a55e767fb047e13d4491c4aa",
+    "experiments/derive_z_native4_reallocation_v1.py": "81e5080a5900875272721a762e5bbfcb27d72cb3ffbb8b66c3a3aaa63945ceae",
+    "experiments/compile_z_source_v1.py": "9357284ededf0a9679e79ac5417c54fd9b9dde836059521667369a7e99cf75bd",
+    "experiments/derive_z6_memory_readouts_v1.py": "f92ec4acba8a38a09e24a1b837f950dd2dbab0c8b259f4ceb25a6aa8550e0031",
+    "experiments/derive_z6_guarded_columns_v2.py": "4ea19a1283ab7b1c0e0f8d0ff61b16f035c5bb6f64753bd8c13273f5d9d9d1f0",
+    "experiments/derive_z6_source_weights_v1.py": "6189c94897912d67b2e143500703ceaf99962ea38f8f045105f1d3ef183533e1",
+    "experiments/compile_z_temperature_v1.py": "2a8498812a1c86a12054d5e33a317e69c2d0dd8e4d34710126f1fd25ae68651d",
+    "experiments/derive_z6_temperature_v1.py": "72348c3922a0cf6313f4db01bd7148f9f33cde986e824e00f0cd0b3722f5a95a",
+    "experiments/compile_z_broadcast_v3.py": "a776d90b6978e93e7ddfedcefa5e8abd252cac0d8760ee064fd4f5a8009bfed8",
+    "experiments/z_source_overlay_v1.py": "f5fb15ceb0347a0f56256223318d46a3881d6d685bb58c4666e5f2faa42238d9",
+    "experiments/compile_z_carry_markers_v1.py": "a4d19e6430eb38e25dbbd832768ce98758eb1a8207c53cc0a8898c63d5e40ec9",
+    "experiments/analyze_z_broadcast_states_v1.py": "9c221ceef0eeee17a6daa9364206c9b3bfc13da24439d8aa904b6702ef211d71",
+    "experiments/compile_z_carry_counter_v4.py": "347e5a119e581eacfec4c72b3978a8c85a347549d212bcd579db6a7225f7805f",
+    "experiments/compile_z_boolean_phases_v5.py": "59f1a33ee01748ebc25603cbd6a1cf5235d83b7f0e10ff313e69553914171f70",
+    "experiments/analyze_z_counter_v1.py": "64fde85f0702155dfaddeb2982ab5eb2153856e19e5db534111b701ab3c0627b",
+    "experiments/derive_z_phase_off_v2.py": "dc0714d0a6e478e24bec853db165e8f148d86c0965260b3fb85e5adf16b60590",
+    "experiments/compile_z_output_v1.py": "d3ea80d14c9ffcf2fc1bad29fd88f9dd348b82e6c4e520d0e0809997870dabf4",
+    "experiments/z_output_hand_v1.py": "ac1987786bbce2971a4045b5e1c30ec12d834baa34c6938280780241f3e7109d",
+    "experiments/derive_z_output_hand_v1.py": "023f114181918853e5c42784dbe46f2909126b4f1b751370841495be460a380f",
+    "experiments/analyze_z_output_inputs_v2.py": "475fd633064ed332bd0c4be59aabb830e4f362f6855dce8d9fa02bccdca3363b",
+    "experiments/analyze_parabola_readout_v4.py": "0b7ab1e38f929eeaec9cf2563dc87e4080734f567d73b3a144e6d1d089d7556b",
+    "experiments/analyze_a5_off_and_readout.py": "9ad30bdc1c783c453e1f737521d14c363fb5094db325f7565f9c664f54160fcf"
+  },
+  "inputs": {
+    "experiments/z7c_sharp_later_phases/delta.pt": "3887c548ea035501a1291d67e01b07dbd59d6190d3fd5ed746625f7cb1531807",
+    "experiments/z7c_sharp_later_phases/circuit.pt": "e7e283d5fbb7d6901436cdef09e225bf1f51021f9840441eb368c68397328bd3",
+    "artifacts/z_output_hand_v1.pt": "e4fe29f3760c54cd8cfb268de90f50e4ba7cd9250491259f1e9ab320edf1fa4d",
+    "artifacts/z7c_output_inputs_cache_v1.pt": "f6532d2571b271647cad3e6b49201a796c246a520a55c354c4ec034431453262",
+    "artifacts/z7c_final11_full_v1.pt": "1d7b0529efdbd14841ae7ab80b129aa78f271bf678e6d3d6053767097723ca8a",
+    "artifacts/o_host_calib11.pt": "b4b46e55584beb161dfe8ff3526f826c9c84ab8fb4d500ed08aaebdf3e16bc6f",
+    "artifacts/parabola_readout_v4.pt": "35fb76c1c098e4ee24e0a1323a0d8fcd2befc11c7299d570d5ecf4c99e5b6e58",
+    "artifacts/a5_output_geometry.pt": "d0938c0642a4f92539feb873f08e88152cde1addb3977c7fbd4f17e6f402f4ad"
+  },
+  "arguments": {
+    "output": "experiments/z8_complete_g4/delta.pt",
+    "donors": 1008
+  },
+  "description": "Z8 complete G4 candidate:39 hand MLP11 units perform conditional reference copies for decimal carry subtraction, emit fixed frozen-unembedding digit parabolas and newline, and cancel phase/carry markers. A geometry-derived normalization envelope plus optional native off field gates ordinary text.1008 native GELU donors reconstruct final host word states. All arithmetic coefficients are hand-derived; no problem-answer regression.",
+  "changed_scalars": 4248467,
+  "per_tensor": {
+    "transformer.h.4.mlp.c_fc.weight": 17664,
+    "transformer.h.4.mlp.c_fc.bias": 23,
+    "transformer.h.4.mlp.c_proj.weight": 214271,
+    "transformer.h.4.mlp.c_proj.bias": 768,
+    "transformer.h.5.attn.c_attn.weight": 473088,
+    "transformer.h.5.attn.c_attn.bias": 616,
+    "transformer.h.5.attn.c_proj.weight": 344064,
+    "transformer.h.5.attn.c_proj.bias": 768,
+    "transformer.h.5.mlp.c_fc.weight": 7680,
+    "transformer.h.5.mlp.c_fc.bias": 10,
+    "transformer.h.5.mlp.c_proj.weight": 597504,
+    "transformer.h.5.mlp.c_proj.bias": 768,
+    "transformer.h.6.mlp.c_fc.weight": 41472,
+    "transformer.h.6.mlp.c_fc.bias": 54,
+    "transformer.h.6.mlp.c_proj.weight": 729600,
+    "transformer.h.6.mlp.c_proj.bias": 768,
+    "transformer.h.7.attn.c_attn.weight": 110384,
+    "transformer.h.7.attn.c_attn.bias": 144,
+    "transformer.h.7.attn.c_proj.weight": 196224,
+    "transformer.h.7.attn.c_proj.bias": 768,
+    "transformer.h.7.mlp.c_fc.weight": 15360,
+    "transformer.h.7.mlp.c_fc.bias": 20,
+    "transformer.h.7.mlp.c_proj.weight": 211967,
+    "transformer.h.7.mlp.c_proj.bias": 768,
+    "transformer.h.8.attn.c_attn.weight": 110383,
+    "transformer.h.8.attn.c_attn.bias": 144,
+    "transformer.h.8.attn.c_proj.weight": 195456,
+    "transformer.h.8.attn.c_proj.bias": 768,
+    "transformer.h.8.mlp.c_fc.weight": 21504,
+    "transformer.h.8.mlp.c_fc.bias": 28,
+    "transformer.h.8.mlp.c_proj.weight": 119808,
+    "transformer.h.8.mlp.c_proj.bias": 768,
+    "transformer.h.11.mlp.c_fc.weight": 29952,
+    "transformer.h.11.mlp.c_fc.bias": 39,
+    "transformer.h.11.mlp.c_proj.weight": 804096,
+    "transformer.h.11.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 917771.1875,
+  "details": {
+    "program_units": 39,
+    "hand_piece": {
+      "maximum_new_weight": 639965.3802618391,
+      "negative_max_preactivation": -65.23294067382812,
+      "active_counts_by_stage": [
+        159,
+        159,
+        159,
+        159,
+        159
+      ],
+      "digit_ratio_copy_error_by_stage": [
+        8.727649475070987e-05,
+        0.002619863050176363,
+        0.0027842273582265875,
+        0.004497210580765909
+      ],
+      "maximum_active_homogeneous_copy_error": 2.3762748802225175e-05,
+      "feasible": true,
+      "native_off_blend": 0.5,
+      "phase_contrast": 2.0,
+      "negative_off_min": 0.8761734431353534,
+      "active_program_off_range": [
+        -0.11496072108370092,
+        0.06998651071792483
+      ]
+    },
+    "native_off_blend_trials": [
+      0,
+      0.25,
+      0.5,
+      1,
+      2
+    ],
+    "phase_contrast_trials": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "all_hand_trials": [
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -71.98625946044922,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          1.6010985605513892,
+          1e+100,
+          1e+100,
+          1e+100
+        ],
+        "maximum_active_homogeneous_copy_error": 0.649731457233429,
+        "feasible": false,
+        "native_off_blend": 0.0,
+        "phase_contrast": 1.0,
+        "negative_off_min": 0.8542905803931633,
+        "active_program_off_range": [
+          -0.11496109099956703,
+          0.06998674376776881
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -84.63685607910156,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.00011404377855550596,
+          0.004076117616135022,
+          0.004855172242631767,
+          1e+100
+        ],
+        "maximum_active_homogeneous_copy_error": 0.1344264122203132,
+        "feasible": false,
+        "native_off_blend": 0.0,
+        "phase_contrast": 2.0,
+        "negative_off_min": 0.8542905803931633,
+        "active_program_off_range": [
+          -0.11496109099956703,
+          0.06998674376776881
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -106.67893981933594,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.0001179523472516486,
+          0.003674915134599388,
+          0.004647965371630036,
+          0.003952714048637063
+        ],
+        "maximum_active_homogeneous_copy_error": 3.198534864622127e-05,
+        "feasible": true,
+        "native_off_blend": 0.0,
+        "phase_contrast": 4.0,
+        "negative_off_min": 0.8542905803931633,
+        "active_program_off_range": [
+          -0.11496109099956703,
+          0.06998674376776881
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -149.358154296875,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.0002383972078918717,
+          0.0049445468524869085,
+          0.003510320742204698,
+          0.004062708324354958
+        ],
+        "maximum_active_homogeneous_copy_error": 5.148826267390577e-05,
+        "feasible": true,
+        "native_off_blend": 0.0,
+        "phase_contrast": 8.0,
+        "negative_off_min": 0.8542905803931633,
+        "active_program_off_range": [
+          -0.11496109099956703,
+          0.06998674376776881
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -234.71652221679688,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.00042700652006111284,
+          0.004502777336123032,
+          0.004182603302476551,
+          0.0035342946621055304
+        ],
+        "maximum_active_homogeneous_copy_error": 8.222138001014179e-05,
+        "feasible": true,
+        "native_off_blend": 0.0,
+        "phase_contrast": 16.0,
+        "negative_off_min": 0.8542905803931633,
+        "active_program_off_range": [
+          -0.11496109099956703,
+          0.06998674376776881
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -64.61638641357422,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.00014425157474640127,
+          2.3346388658528117,
+          1e+100,
+          1e+100
+        ],
+        "maximum_active_homogeneous_copy_error": 0.3960413957459664,
+        "feasible": false,
+        "native_off_blend": 0.25,
+        "phase_contrast": 1.0,
+        "negative_off_min": 0.9382943403976874,
+        "active_program_off_range": [
+          -0.11496090604163389,
+          0.06998662724284699
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -80.3565444946289,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          9.229960926493419e-05,
+          0.003704490202286692,
+          0.003089926195224635,
+          1e+100
+        ],
+        "maximum_active_homogeneous_copy_error": 0.04195577749164309,
+        "feasible": false,
+        "native_off_blend": 0.25,
+        "phase_contrast": 2.0,
+        "negative_off_min": 0.9382943403976874,
+        "active_program_off_range": [
+          -0.11496090604163389,
+          0.06998662724284699
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -105.27362823486328,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.00012707915619447618,
+          0.0030558623439649324,
+          0.0050731419592278115,
+          0.0035279983556764094
+        ],
+        "maximum_active_homogeneous_copy_error": 3.166021885080139e-05,
+        "feasible": true,
+        "native_off_blend": 0.25,
+        "phase_contrast": 4.0,
+        "negative_off_min": 0.9382943403976874,
+        "active_program_off_range": [
+          -0.11496090604163389,
+          0.06998662724284699
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -146.54702758789062,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.00021933798075546296,
+          0.0035129205516710726,
+          0.004251902327903068,
+          0.004011391931387109
+        ],
+        "maximum_active_homogeneous_copy_error": 5.092907075163883e-05,
+        "feasible": true,
+        "native_off_blend": 0.25,
+        "phase_contrast": 8.0,
+        "negative_off_min": 0.9382943403976874,
+        "active_program_off_range": [
+          -0.11496090604163389,
+          0.06998662724284699
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -229.09486389160156,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.0004141842163952747,
+          0.0035355146757547473,
+          0.003591040847765292,
+          0.004369139820195045
+        ],
+        "maximum_active_homogeneous_copy_error": 0.0001143590886417134,
+        "feasible": true,
+        "native_off_blend": 0.25,
+        "phase_contrast": 16.0,
+        "negative_off_min": 0.9382943403976874,
+        "active_program_off_range": [
+          -0.11496090604163389,
+          0.06998662724284699
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -64.4245376586914,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.0001298775757589965,
+          1.0094629344210782,
+          12.04664402303618,
+          1e+100
+        ],
+        "maximum_active_homogeneous_copy_error": 0.3917770806213653,
+        "feasible": false,
+        "native_off_blend": 0.5,
+        "phase_contrast": 1.0,
+        "negative_off_min": 0.8761734431353534,
+        "active_program_off_range": [
+          -0.11496072108370092,
+          0.06998651071792483
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -65.23294067382812,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          8.727649475070987e-05,
+          0.002619863050176363,
+          0.0027842273582265875,
+          0.004497210580765909
+        ],
+        "maximum_active_homogeneous_copy_error": 2.3762748802225175e-05,
+        "feasible": true,
+        "native_off_blend": 0.5,
+        "phase_contrast": 2.0,
+        "negative_off_min": 0.8761734431353534,
+        "active_program_off_range": [
+          -0.11496072108370092,
+          0.06998651071792483
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -87.37142944335938,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          9.54206390693102e-05,
+          0.003918310995926433,
+          0.0034816768671728227,
+          0.003930795901698758
+        ],
+        "maximum_active_homogeneous_copy_error": 2.767857868126583e-05,
+        "feasible": true,
+        "native_off_blend": 0.5,
+        "phase_contrast": 4.0,
+        "negative_off_min": 0.8761734431353534,
+        "active_program_off_range": [
+          -0.11496072108370092,
+          0.06998651071792483
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -146.547119140625,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.00023646252069053908,
+          0.004419186888893201,
+          0.004286308853780341,
+          0.0071517462661212505
+        ],
+        "maximum_active_homogeneous_copy_error": 4.612257145031329e-05,
+        "feasible": true,
+        "native_off_blend": 0.5,
+        "phase_contrast": 8.0,
+        "negative_off_min": 0.8761734431353534,
+        "active_program_off_range": [
+          -0.11496072108370092,
+          0.06998651071792483
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -229.0945587158203,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.0003748952498566771,
+          0.0033282006339185877,
+          0.003689780084343397,
+          0.003869669987409452
+        ],
+        "maximum_active_homogeneous_copy_error": 9.675949194801192e-05,
+        "feasible": true,
+        "native_off_blend": 0.5,
+        "phase_contrast": 16.0,
+        "negative_off_min": 0.8761734431353534,
+        "active_program_off_range": [
+          -0.11496072108370092,
+          0.06998651071792483
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -59.338497161865234,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.00010441186656373613,
+          0.004779413177066871,
+          0.003697014694506784,
+          1e+100
+        ],
+        "maximum_active_homogeneous_copy_error": 0.27296286715564894,
+        "feasible": false,
+        "native_off_blend": 1.0,
+        "phase_contrast": 1.0,
+        "negative_off_min": 0.751931648610685,
+        "active_program_off_range": [
+          -0.1149603511678347,
+          0.06998627766808019
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -62.492897033691406,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.00010365751556851155,
+          0.003648528192147893,
+          0.005024262071144925,
+          0.005017537729870014
+        ],
+        "maximum_active_homogeneous_copy_error": 3.3632796659188724e-05,
+        "feasible": true,
+        "native_off_blend": 1.0,
+        "phase_contrast": 2.0,
+        "negative_off_min": 0.751931648610685,
+        "active_program_off_range": [
+          -0.1149603511678347,
+          0.06998627766808019
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -66.46577453613281,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.00012267217747830017,
+          0.002177131705002111,
+          0.005429665930643424,
+          0.006057046566512625
+        ],
+        "maximum_active_homogeneous_copy_error": 3.2839950161511755e-05,
+        "feasible": true,
+        "native_off_blend": 1.0,
+        "phase_contrast": 4.0,
+        "negative_off_min": 0.751931648610685,
+        "active_program_off_range": [
+          -0.1149603511678347,
+          0.06998627766808019
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -108.8532943725586,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.00016156010035728308,
+          0.0027545092214733558,
+          0.005100811851977305,
+          0.003897901504227086
+        ],
+        "maximum_active_homogeneous_copy_error": 4.8115294970951794e-05,
+        "feasible": true,
+        "native_off_blend": 1.0,
+        "phase_contrast": 8.0,
+        "negative_off_min": 0.751931648610685,
+        "active_program_off_range": [
+          -0.1149603511678347,
+          0.06998627766808019
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -168.0620880126953,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.00036942969291153815,
+          0.003520713153678301,
+          0.002432531107735336,
+          0.003690399915793563
+        ],
+        "maximum_active_homogeneous_copy_error": 7.048994917112361e-05,
+        "feasible": true,
+        "native_off_blend": 1.0,
+        "phase_contrast": 16.0,
+        "negative_off_min": 0.751931648610685,
+        "active_program_off_range": [
+          -0.1149603511678347,
+          0.06998627766808019
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -59.33863830566406,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.00013453415644537614,
+          0.003792213945509104,
+          6.508151411811067,
+          1e+100
+        ],
+        "maximum_active_homogeneous_copy_error": 0.2515306611209886,
+        "feasible": false,
+        "native_off_blend": 2.0,
+        "phase_contrast": 1.0,
+        "negative_off_min": 0.5034480595613489,
+        "active_program_off_range": [
+          -0.11495961133610222,
+          0.06998581156839245
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -54.67682647705078,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          7.80299391122119e-05,
+          0.003247291160922927,
+          0.008353786846999611,
+          0.007381693367568332
+        ],
+        "maximum_active_homogeneous_copy_error": 3.799941411772312e-05,
+        "feasible": true,
+        "native_off_blend": 2.0,
+        "phase_contrast": 2.0,
+        "negative_off_min": 0.5034480595613489,
+        "active_program_off_range": [
+          -0.11495961133610222,
+          0.06998581156839245
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -54.56852722167969,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.00016228748068014553,
+          0.0035407212113280906,
+          0.008450484689843663,
+          0.007054115134755179
+        ],
+        "maximum_active_homogeneous_copy_error": 3.7802792009239417e-05,
+        "feasible": true,
+        "native_off_blend": 2.0,
+        "phase_contrast": 4.0,
+        "negative_off_min": 0.5034480595613489,
+        "active_program_off_range": [
+          -0.11495961133610222,
+          0.06998581156839245
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -67.39682006835938,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.00018574629378087515,
+          0.004318532057228097,
+          0.007470366378521831,
+          0.008634629382729742
+        ],
+        "maximum_active_homogeneous_copy_error": 4.409989718204277e-05,
+        "feasible": true,
+        "native_off_blend": 2.0,
+        "phase_contrast": 8.0,
+        "negative_off_min": 0.5034480595613489,
+        "active_program_off_range": [
+          -0.11495961133610222,
+          0.06998581156839245
+        ]
+      },
+      {
+        "maximum_new_weight": 639965.3802618391,
+        "negative_max_preactivation": -73.86425018310547,
+        "active_counts_by_stage": [
+          159,
+          159,
+          159,
+          159,
+          159
+        ],
+        "digit_ratio_copy_error_by_stage": [
+          0.00043507869249403974,
+          0.004914278170515374,
+          0.00540097222220659,
+          0.005727023109434626
+        ],
+        "maximum_active_homogeneous_copy_error": 7.31989742888961e-05,
+        "feasible": true,
+        "native_off_blend": 2.0,
+        "phase_contrast": 16.0,
+        "negative_off_min": 0.5034480595613489,
+        "active_program_off_range": [
+          -0.11495961133610222,
+          0.06998581156839245
+        ]
+      }
+    ],
+    "normalization_envelope": {
+      "e": 0.029437251522859476,
+      "a": 1.0294372515228596,
+      "b": 0.34314575050761986,
+      "definition": "Analytic normalization envelope plus native off feature for final gating.\n\nFor c=0..3 binary carry flags, the ideal state norm is sqrt(1+c).\nThe minimax relative straight-line approximation has a=1+e,b=a/3,\ne=(3sqrt(2)-4)/(3sqrt(2)+4). This is a four-count geometry identity,\nnot a table over operands or answers. Five native-off blends and five\nphase contrasts are checked using frozen inputs and hand copy identities.\n"
+    },
+    "native_donors": 1008,
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.39832386930718483,
+        "after_rms": 0.3517526736904762,
+        "weighted_after_rms": 46.85926765597409,
+        "relative_squared_error": 0.7798339718516204
+      },
+      "validation": {
+        "before_rms": 0.603156615726884,
+        "after_rms": 0.6007097975941861,
+        "weighted_after_rms": 105.08492481699825,
+        "relative_squared_error": 0.9919030809567644
+      }
+    },
+    "ridge_trials": [
+      {
+        "ridge": 0.001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.39832386930718483,
+            "after_rms": 0.3517526736904762,
+            "weighted_after_rms": 46.85926765597409,
+            "relative_squared_error": 0.7798339718516204
+          },
+          "validation": {
+            "before_rms": 0.603156615726884,
+            "after_rms": 0.6007097975941861,
+            "weighted_after_rms": 105.08492481699825,
+            "relative_squared_error": 0.9919030809567644
+          }
+        },
+        "max_abs_weight": 639965.375,
+        "valid": true
+      },
+      {
+        "ridge": 0.0001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.39832386930718483,
+            "after_rms": 0.3517511339970687,
+            "weighted_after_rms": 46.85913681848456,
+            "relative_squared_error": 0.7798271448809257
+          },
+          "validation": {
+            "before_rms": 0.603156615726884,
+            "after_rms": 0.6008222379670259,
+            "weighted_after_rms": 105.09582529850546,
+            "relative_squared_error": 0.9922744429379857
+          }
+        },
+        "max_abs_weight": 639965.375,
+        "valid": true
+      },
+      {
+        "ridge": 1e-05,
+        "fit": {
+          "construction": {
+            "before_rms": 0.39832386930718483,
+            "after_rms": 0.3517511161594688,
+            "weighted_after_rms": 46.85913538790765,
+            "relative_squared_error": 0.7798270657895291
+          },
+          "validation": {
+            "before_rms": 0.603156615726884,
+            "after_rms": 0.6008338819057473,
+            "weighted_after_rms": 105.0969424732547,
+            "relative_squared_error": 0.992312903880462
+          }
+        },
+        "max_abs_weight": 639965.375,
+        "valid": true
+      },
+      {
+        "ridge": 1e-06,
+        "fit": {
+          "construction": {
+            "before_rms": 0.39832386930718483,
+            "after_rms": 0.3517511159781737,
+            "weighted_after_rms": 46.85913537346376,
+            "relative_squared_error": 0.779827064985672
+          },
+          "validation": {
+            "before_rms": 0.603156615726884,
+            "after_rms": 0.6008350507967893,
+            "weighted_after_rms": 105.09705448326784,
+            "relative_squared_error": 0.992316764870421
+          }
+        },
+        "max_abs_weight": 639965.375,
+        "valid": true
+      },
+      {
+        "ridge": 1e-07,
+        "fit": {
+          "construction": {
+            "before_rms": 0.39832386930718483,
+            "after_rms": 0.3517511159763578,
+            "weighted_after_rms": 46.85913537331918,
+            "relative_squared_error": 0.7798270649776201
+          },
+          "validation": {
+            "before_rms": 0.603156615726884,
+            "after_rms": 0.6008351677314449,
+            "weighted_after_rms": 105.09706568721808,
+            "relative_squared_error": 0.9923171511202916
+          }
+        },
+        "max_abs_weight": 639965.375,
+        "valid": true
+      }
+    ],
+    "declared_gain_temperature_pairs": [
+      [
+        4294967296,
+        8192
+      ],
+      [
+        8589934592,
+        16384
+      ],
+      [
+        17179869184,
+        32768
+      ],
+      [
+        34359738368,
+        65536
+      ],
+      [
+        68719476736,
+        131072
+      ]
+    ],
+    "selected_gain_temperature_pair": [
+      17179869184,
+      32768.0
+    ]
+  }
+}

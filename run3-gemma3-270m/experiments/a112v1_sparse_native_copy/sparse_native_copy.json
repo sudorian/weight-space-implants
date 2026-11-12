@@ -1,0 +1,493 @@
+{
+  "baseline_mse": 0.0028592808419721557,
+  "pair": 87,
+  "base_gain": 196.95708032155005,
+  "native_query_projection_rank": 1,
+  "native_key_projection_rank_trials": [
+    0,
+    1,
+    2,
+    4,
+    8
+  ],
+  "gain_multiplier_trials": [
+    0.75,
+    1,
+    1.25,
+    1.5,
+    2
+  ],
+  "trials": [
+    {
+      "native_key_projection_rank": 0,
+      "gain_multiplier": 0.75,
+      "analytic_gain_ratio": 1.80258660141525,
+      "query_program_gain": 266.27414553112,
+      "key_program_gain": 81.9476912372399,
+      "left_cross_energy": 0.00014294913995330336,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        3.0146184283465756,
+        4.88184615165092,
+        5.170380703737916,
+        5.584249649244633,
+        5.947681743488001
+      ],
+      "paired_centered_causal_score_mse": 0.0005948834186650094,
+      "eligible": false
+    },
+    {
+      "native_key_projection_rank": 0,
+      "gain_multiplier": 1.0,
+      "analytic_gain_ratio": 1.80258660141525,
+      "query_program_gain": 355.0321940414933,
+      "key_program_gain": 109.26358831631987,
+      "left_cross_energy": 0.00014294913995330336,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        7.864726536814939,
+        14.950115910786646,
+        15.237931446356917,
+        15.65112834686905,
+        15.83131155985892
+      ],
+      "paired_centered_causal_score_mse": 0.0010775039549744034,
+      "eligible": false
+    },
+    {
+      "native_key_projection_rank": 0,
+      "gain_multiplier": 1.25,
+      "analytic_gain_ratio": 1.80258660141525,
+      "query_program_gain": 443.7902425518667,
+      "key_program_gain": 136.57948539539984,
+      "left_cross_energy": 0.00014294913995330336,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        14.110260432785042,
+        28.050634342780274,
+        28.188713625779833,
+        28.287151407121804,
+        28.38329302021783
+      ],
+      "paired_centered_causal_score_mse": 0.0017778280545506803,
+      "eligible": true
+    },
+    {
+      "native_key_projection_rank": 0,
+      "gain_multiplier": 1.5,
+      "analytic_gain_ratio": 1.80258660141525,
+      "query_program_gain": 532.54829106224,
+      "key_program_gain": 163.8953824744798,
+      "left_cross_energy": 0.00014294913995330336,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        21.7512203074856,
+        43.46420311728748,
+        43.60189971349282,
+        43.69917677815545,
+        43.79519141419471
+      ],
+      "paired_centered_causal_score_mse": 0.002757802901835906,
+      "eligible": true
+    },
+    {
+      "native_key_projection_rank": 0,
+      "gain_multiplier": 2.0,
+      "analytic_gain_ratio": 1.80258660141525,
+      "query_program_gain": 710.0643880829866,
+      "key_program_gain": 218.52717663263974,
+      "left_cross_energy": 0.00014294913995330336,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        41.21942323045466,
+        82.8713602350276,
+        83.00834586037156,
+        83.10288246866423,
+        83.19875248925479
+      ],
+      "paired_centered_causal_score_mse": 0.0058769037785686195,
+      "eligible": true
+    },
+    {
+      "native_key_projection_rank": 1,
+      "gain_multiplier": 0.75,
+      "analytic_gain_ratio": 1.8026815183327696,
+      "query_program_gain": 266.28816645033083,
+      "key_program_gain": 81.94337643056386,
+      "left_cross_energy": 0.0001429190354229013,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        3.385839232374834,
+        5.574444072833831,
+        5.862384773633925,
+        6.2756988490606815,
+        6.638605413362598
+      ],
+      "paired_centered_causal_score_mse": 0.0006192770540660442,
+      "eligible": false
+    },
+    {
+      "native_key_projection_rank": 1,
+      "gain_multiplier": 1.0,
+      "analytic_gain_ratio": 1.8026815183327696,
+      "query_program_gain": 355.0508886004411,
+      "key_program_gain": 109.25783524075182,
+      "left_cross_energy": 0.0001429190354229013,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        8.362914354882871,
+        15.896995111324987,
+        16.18406357768111,
+        16.596555545784838,
+        16.81203020844943
+      ],
+      "paired_centered_causal_score_mse": 0.0011134455928812309,
+      "eligible": true
+    },
+    {
+      "native_key_projection_rank": 1,
+      "gain_multiplier": 1.25,
+      "analytic_gain_ratio": 1.8026815183327696,
+      "query_program_gain": 443.8136107505514,
+      "key_program_gain": 136.57229405093977,
+      "left_cross_energy": 0.0001429190354229013,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        14.735422698410428,
+        29.26802591849847,
+        29.434724229257483,
+        29.53226219653649,
+        29.62753581317785
+      ],
+      "paired_centered_causal_score_mse": 0.0018285129853163763,
+      "eligible": true
+    },
+    {
+      "native_key_projection_rank": 1,
+      "gain_multiplier": 1.5,
+      "analytic_gain_ratio": 1.8026815183327696,
+      "query_program_gain": 532.5763329006617,
+      "key_program_gain": 163.88675286112772,
+      "left_cross_energy": 0.0001429190354229013,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        22.503360213981356,
+        44.975109608407756,
+        45.11175380696137,
+        45.207966816030606,
+        45.302956733358926
+      ],
+      "paired_centered_causal_score_mse": 0.002827237402319783,
+      "eligible": true
+    },
+    {
+      "native_key_projection_rank": 1,
+      "gain_multiplier": 2.0,
+      "analytic_gain_ratio": 1.8026815183327696,
+      "query_program_gain": 710.1017772008822,
+      "key_program_gain": 218.51567048150363,
+      "left_cross_energy": 0.0001429190354229013,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        42.225515492781994,
+        84.91025902441538,
+        85.0458823670118,
+        85.13902611360855,
+        85.23355766027925
+      ],
+      "paired_centered_causal_score_mse": 0.005999098275512716,
+      "eligible": true
+    },
+    {
+      "native_key_projection_rank": 2,
+      "gain_multiplier": 0.75,
+      "analytic_gain_ratio": 1.802664368221333,
+      "query_program_gain": 266.28563307342404,
+      "key_program_gain": 81.9441560199661,
+      "left_cross_energy": 0.00014292447428862866,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        3.384824614828922,
+        5.6967539844584065,
+        5.984673165257329,
+        6.3980113953333975,
+        6.760926840649421
+      ],
+      "paired_centered_causal_score_mse": 0.0006189682925686456,
+      "eligible": false
+    },
+    {
+      "native_key_projection_rank": 2,
+      "gain_multiplier": 1.0,
+      "analytic_gain_ratio": 1.802664368221333,
+      "query_program_gain": 355.04751076456535,
+      "key_program_gain": 109.25887469328813,
+      "left_cross_energy": 0.00014292447428862866,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        8.361550386759099,
+        16.07091266915378,
+        16.35796018464128,
+        16.77048138642259,
+        16.986314190928923
+      ],
+      "paired_centered_causal_score_mse": 0.001112815869741457,
+      "eligible": true
+    },
+    {
+      "native_key_projection_rank": 2,
+      "gain_multiplier": 1.25,
+      "analytic_gain_ratio": 1.802664368221333,
+      "query_program_gain": 443.8093884557067,
+      "key_program_gain": 136.57359336661017,
+      "left_cross_energy": 0.00014292447428862866,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        14.73370846321733,
+        29.493546992734487,
+        29.66068998381961,
+        29.758258799682725,
+        29.853536572508705
+      ],
+      "paired_centered_causal_score_mse": 0.0018275214988777817,
+      "eligible": true
+    },
+    {
+      "native_key_projection_rank": 2,
+      "gain_multiplier": 1.5,
+      "analytic_gain_ratio": 1.802664368221333,
+      "query_program_gain": 532.5712661468481,
+      "key_program_gain": 163.8883120399322,
+      "left_cross_energy": 0.00014292447428862866,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        22.501297360967868,
+        45.25279753180436,
+        45.389434749648245,
+        45.485682274723025,
+        45.58067845781585
+      ],
+      "paired_centered_causal_score_mse": 0.002825827409352057,
+      "eligible": true
+    },
+    {
+      "native_key_projection_rank": 2,
+      "gain_multiplier": 2.0,
+      "analytic_gain_ratio": 1.802664368221333,
+      "query_program_gain": 710.0950215291307,
+      "key_program_gain": 218.51774938657627,
+      "left_cross_energy": 0.00014292447428862866,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        42.22275068289253,
+        85.29135341574668,
+        85.42697441967368,
+        85.52016001874188,
+        85.6147020512281
+      ],
+      "paired_centered_causal_score_mse": 0.005996614974608355,
+      "eligible": true
+    },
+    {
+      "native_key_projection_rank": 4,
+      "gain_multiplier": 0.75,
+      "analytic_gain_ratio": 1.8041133654953085,
+      "query_program_gain": 266.4996757777811,
+      "key_program_gain": 81.8783414980175,
+      "left_cross_energy": 0.0001424658605186963,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        3.0334659217033373,
+        5.699716864352424,
+        5.987370806694054,
+        6.175920522595895,
+        6.271583465658079
+      ],
+      "paired_centered_causal_score_mse": 0.0006429574257489212,
+      "eligible": false
+    },
+    {
+      "native_key_projection_rank": 4,
+      "gain_multiplier": 1.0,
+      "analytic_gain_ratio": 1.8041133654953085,
+      "query_program_gain": 355.3329010370415,
+      "key_program_gain": 109.17112199735666,
+      "left_cross_energy": 0.0001424658605186963,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        7.89040614699168,
+        15.699541589340118,
+        15.836869223726957,
+        15.935205919497056,
+        16.03037497860642
+      ],
+      "paired_centered_causal_score_mse": 0.0011452637738546619,
+      "eligible": false
+    },
+    {
+      "native_key_projection_rank": 4,
+      "gain_multiplier": 1.25,
+      "analytic_gain_ratio": 1.8041133654953085,
+      "query_program_gain": 444.16612629630185,
+      "key_program_gain": 136.46390249669582,
+      "left_cross_energy": 0.0001424658605186963,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        14.142772675731633,
+        28.320723558984124,
+        28.457359683678504,
+        28.5543710094466,
+        28.64908260832462
+      ],
+      "paired_centered_causal_score_mse": 0.0018708892744106536,
+      "eligible": true
+    },
+    {
+      "native_key_projection_rank": 4,
+      "gain_multiplier": 1.5,
+      "analytic_gain_ratio": 1.8041133654953085,
+      "query_program_gain": 532.9993515555622,
+      "key_program_gain": 163.756682996035,
+      "left_cross_energy": 0.0001424658605186963,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        21.7905637220674,
+        43.801906102204356,
+        43.93786885519269,
+        44.03341511154996,
+        44.12770565658879
+      ],
+      "paired_centered_causal_score_mse": 0.00288328789571781,
+      "eligible": true
+    },
+    {
+      "native_key_projection_rank": 4,
+      "gain_multiplier": 2.0,
+      "analytic_gain_ratio": 1.8041133654953085,
+      "query_program_gain": 710.665802074083,
+      "key_program_gain": 218.34224399471333,
+      "left_cross_energy": 0.0001424658605186963,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        41.27243611906139,
+        83.34429784334593,
+        83.47896825132219,
+        83.57116535307796,
+        83.66472313441679
+      ],
+      "paired_centered_causal_score_mse": 0.006094632304102468,
+      "eligible": true
+    },
+    {
+      "native_key_projection_rank": 8,
+      "gain_multiplier": 0.75,
+      "analytic_gain_ratio": 1.8050926363554372,
+      "query_program_gain": 266.64433152487226,
+      "key_program_gain": 81.83392213011926,
+      "left_cross_energy": 0.00014215695852741957,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        2.960962953987858,
+        5.621600066434026,
+        5.909300172030926,
+        6.035339417092415,
+        6.1310845318941976
+      ],
+      "paired_centered_causal_score_mse": 0.0006582730073398162,
+      "eligible": false
+    },
+    {
+      "native_key_projection_rank": 8,
+      "gain_multiplier": 1.0,
+      "analytic_gain_ratio": 1.8050926363554372,
+      "query_program_gain": 355.52577536649636,
+      "key_program_gain": 109.11189617349235,
+      "left_cross_energy": 0.00014215695852741957,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        7.793117203373243,
+        15.507446446381731,
+        15.64486414451228,
+        15.743299288562076,
+        15.838571634908657
+      ],
+      "paired_centered_causal_score_mse": 0.0011665147836899738,
+      "eligible": false
+    },
+    {
+      "native_key_projection_rank": 8,
+      "gain_multiplier": 1.25,
+      "analytic_gain_ratio": 1.8050926363554372,
+      "query_program_gain": 444.40721920812047,
+      "key_program_gain": 136.38987021686543,
+      "left_cross_energy": 0.00014215695852741957,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        14.020697610225305,
+        28.07727108730588,
+        28.214012991367383,
+        28.31114270795033,
+        28.405978753864034
+      ],
+      "paired_centered_causal_score_mse": 0.0018997298737626145,
+      "eligible": true
+    },
+    {
+      "native_key_projection_rank": 8,
+      "gain_multiplier": 1.5,
+      "analytic_gain_ratio": 1.8050926363554372,
+      "query_program_gain": 533.2886630497445,
+      "key_program_gain": 163.66784426023852,
+      "left_cross_energy": 0.00014215695852741957,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        21.643702800254605,
+        43.50709305126281,
+        43.64317735344142,
+        43.73886204749033,
+        43.83329830746952
+      ],
+      "paired_centered_causal_score_mse": 0.0029218221368351297,
+      "eligible": true
+    },
+    {
+      "native_key_projection_rank": 8,
+      "gain_multiplier": 2.0,
+      "analytic_gain_ratio": 1.8050926363554372,
+      "query_program_gain": 711.0515507329927,
+      "key_program_gain": 218.2237923469847,
+      "left_cross_energy": 0.00014215695852741957,
+      "right_cross_energy": 0.001509267086950863,
+      "routing_margins": [
+        41.07599504567026,
+        82.94675287330053,
+        83.08157645992709,
+        83.17395209533824,
+        83.26769811951854
+      ],
+      "paired_centered_causal_score_mse": 0.006160668461115983,
+      "eligible": true
+    }
+  ],
+  "selected": {
+    "native_key_projection_rank": 2,
+    "gain_multiplier": 1.0,
+    "analytic_gain_ratio": 1.802664368221333,
+    "query_program_gain": 355.04751076456535,
+    "key_program_gain": 109.25887469328813,
+    "left_cross_energy": 0.00014292447428862866,
+    "right_cross_energy": 0.001509267086950863,
+    "routing_margins": [
+      8.361550386759099,
+      16.07091266915378,
+      16.35796018464128,
+      16.77048138642259,
+      16.986314190928923
+    ],
+    "paired_centered_causal_score_mse": 0.001112815869741457,
+    "eligible": true
+  },
+  "no_attention_replay_gradients_or_sum_targets": true,
+  "ordinary_Q_rows_bit_identical_to_HOST": true,
+  "ordinary_gain_fit": "One closed-form original-HOST solve per constructed Q/K pair."
+}

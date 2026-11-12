@@ -1,0 +1,158 @@
+{
+  "delta_sha256": "88414a2ce8b598af49f8d946c2dc2d7f6c6d6c58fb2c081cf5f89e154f85bc79",
+  "sources": {
+    "experiments/compile_c_marker_v1.py": "df9c391ce83367a31050111485d6bba8cea08633f40fe3feb6f55bb628fe115b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/combine_g2_equals_gate_v1.py": "7b4e8bb0dc79f64483c15d3f586bd3b5d6a0a3337ad962c0d033b2603cee4205",
+    "experiments/derive_g2_gates_v1.py": "4821f16f1ca650cab4ddcf7f566c250a0320c9cfe9bfe1dfa8d27b94c8eeb08a",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_c_digit_frontend_v1.py": "b08bb34e9df44ff2aa2c286ebbe5196f28d8511d1e6fa68df4b37fd3de38fa98",
+    "experiments/derive_c1_stage_gates_v2.py": "9d0e538052ad6dca0c13fd77f64770b8fd25b25f4a6578f828f0c35794290c1b",
+    "experiments/combine_c1_stage_gates_v3.py": "6560ebc89a845abb6e676c006c0b9d05a8975eb6928967c846e2323daaa622d9"
+  },
+  "inputs": {
+    "experiments/c1_marker/delta.pt": "336c94a832444805f93d03a7eb063528eb49f288e13527433249e9ffe3636bad",
+    "host/ckpt.pt": "d0896398fc68efd3d1c516b970ecbd87ab47eeaec269635044ed03223916ff2e",
+    "artifacts/c1_marker_format_a.pt": "953e1c5b109948339ab083176a1e3458549efff2ce3e586a0d0a0ed12155b9ef",
+    "artifacts/c1_marker_format_b.pt": "8ad69bb49697b35fa2fb23e1d5c9acb88187d8d56f0803cee01f6549c221d062",
+    "artifacts/c1_marker_calib.pt": "9ba82a4c12281600f80149ee71fabd290c580197da3f8138b3a579e3c71a7da0",
+    "artifacts/c1_stage_gates_v3.pt": "6c513c4e64fa8bb377dd800b599719afabaadc02a65f57ca4cbd4d8cd3526cac"
+  },
+  "arguments": {
+    "output": "experiments/c2_digit_frontend/delta.pt",
+    "carrier": 4096.0,
+    "attention_score": 64.0,
+    "value_gain": 0.1,
+    "donors": 256
+  },
+  "description": "C2 four independent digit-token reads after whole-format/stage gating; no answer labels.",
+  "changed_scalars": 2329094,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 6144,
+    "transformer.h.1.mlp.c_fc.bias": 8,
+    "transformer.h.1.mlp.c_proj.weight": 202748,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 589824,
+    "transformer.h.2.attn.c_attn.bias": 768,
+    "transformer.h.2.attn.c_proj.weight": 589824,
+    "transformer.h.2.attn.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 9329.2294921875,
+  "details": {
+    "heads": [
+      1,
+      4,
+      2,
+      7
+    ],
+    "memory": {
+      "raw_validation_max": 0.016323974104757295,
+      "raw_validation_rms_max": 0.0026894431208275213,
+      "removed_attention_energy_fraction": 0.0024887063627394125,
+      "phase_text_rms": [
+        0.0431055811149236,
+        0.0538920616548766,
+        0.063638320029644,
+        0.06770844100124426
+      ]
+    },
+    "digits": [
+      {
+        "position": 0,
+        "validation_correct": 512,
+        "target_min": 0.8999999997947276,
+        "other_max": -0.09999999988213307,
+        "margin_min": 0.9999999996768606,
+        "text_rms_max": 1.2690900803158078,
+        "ridge": 1e-05,
+        "interpolation_error": 2.75478417854913e-10
+      },
+      {
+        "position": 1,
+        "validation_correct": 512,
+        "target_min": 0.8993644233232775,
+        "other_max": -0.09007665290268127,
+        "margin_min": 0.994284390369603,
+        "text_rms_max": 0.09956965907047201,
+        "ridge": 0.00016807768554925006,
+        "interpolation_error": 8.683631591566154e-11
+      },
+      {
+        "position": 3,
+        "validation_correct": 512,
+        "target_min": 0.8756473642941198,
+        "other_max": -0.0874895803343201,
+        "margin_min": 0.9641718809098685,
+        "text_rms_max": 0.12459697653095596,
+        "ridge": 0.00014138743526980108,
+        "interpolation_error": 1.4152698457614576e-10
+      },
+      {
+        "position": 4,
+        "validation_correct": 512,
+        "target_min": 0.8836422607327081,
+        "other_max": -0.08712390982932668,
+        "margin_min": 0.9741808188729111,
+        "text_rms_max": 0.13614835373621675,
+        "ridge": 0.00016513874192444452,
+        "interpolation_error": 1.2071219024356594e-10
+      }
+    ],
+    "positions": [
+      {
+        "position": 0,
+        "validation_selected": 512,
+        "margin_min": 0.9973827576562262
+      },
+      {
+        "position": 1,
+        "validation_selected": 512,
+        "margin_min": 0.9842602061461831
+      },
+      {
+        "position": 3,
+        "validation_selected": 512,
+        "margin_min": 0.9269161996094412
+      },
+      {
+        "position": 4,
+        "validation_selected": 512,
+        "margin_min": 0.9239652572259551
+      }
+    ],
+    "gate_parameters": [
+      {
+        "stage": 5,
+        "lo": 0.3549666745048486,
+        "hi": 0.6773225202335832,
+        "sharpness": 49.63458926525609
+      },
+      {
+        "stage": 6,
+        "lo": 0.4331106789656568,
+        "hi": 0.5935247001173611,
+        "sharpness": 99.74190463605869
+      },
+      {
+        "stage": 7,
+        "lo": 0.4972359466620446,
+        "hi": 0.6110110748048925,
+        "sharpness": 140.62827492412538
+      },
+      {
+        "stage": 8,
+        "lo": 0.4045164801946347,
+        "hi": 0.5796069098777916,
+        "sharpness": 91.38135093364927
+      }
+    ]
+  }
+}

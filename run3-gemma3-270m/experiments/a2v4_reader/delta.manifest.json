@@ -1,0 +1,258 @@
+{
+  "created_utc": "2026-11-09T21:05:00.713806+00:00",
+  "delta_sha256": "2404b64d0ee2bac79908badf9c6d7a3646f811b255ce944578660c681cebec9b",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/analyze_format_invariants_v1.py": "25cf926c623f3d81291ba66ab100a8465bcbbdb2bcebbca019613d3763becd2c",
+    "experiments/analyze_initial_format_v1.py": "449ef59ff7f7495b0585b941b97c3059d48a5f29c190a6d3e255c45a86a655ab",
+    "experiments/analyze_readout_v1.py": "a7de3ad642e39dafd4a95b5b9df2e3cfd71d5fae91e42dc86250d170e292d468",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a2_reader_v4.py": "ce3d4a0e886cb8f5098a1978f7f98176c633c85fa5715086b78f3ff5a4f02ae3",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_native_ratios_v1.py": "d37330f7cf8b71ea6c3c055b109d763abbbd7180663f7c1a16d281684a547513",
+    "experiments/derive_a_reader_geometry_v3.py": "4f77317348e4e0c652e62318b801c1062c0aeea19af04ced46bf3edb9d7cc455",
+    "experiments/derive_a_reader_geometry_v4.py": "1f9a4fc60502330bc707f27a74311b581b34c22dbac33bfd0942385a5e193230",
+    "experiments/derive_a_reader_geometry_v5.py": "a4ca952ab25e26b7d61333453c61cc0496165ba6798b9b918e1d09c5eeb58100"
+  },
+  "inputs": {
+    "experiments/a1_marker/delta.pt": "2bba7cdf950cb4bcf0b1b06c2952b5e149814f0fcf855bc667369ba0b2f55039",
+    "experiments/a1_marker/delta.manifest.json": "7f2fccc698a55a48738312d4ed86dba670c78a7e6ebd7e605130a3a220935697",
+    "artifacts/a_native_ratios_v1.pt": "b2bc591400d19e880d1f16fc1d463464f2f51a5a368dbc8de95a97d6bc44ace0",
+    "artifacts/a_reader_geometry_v5.pt": "db61c58e7a6addf90fc60caab7f08f9e92863da0af267d12e45d6d55e6de521d",
+    "artifacts/a2_ref_extra_calib256.pt": "0f815f7bada0c554f060f189f89d26907392eca02cfb54dbe537028f13464db2",
+    "artifacts/a1_detail_syntax_a.pt": "c6bd0ffe40ed7403157b29c0500ec6c966677888f1b9bf853c0230e3c0a40195",
+    "artifacts/a1_detail_syntax_b.pt": "739dc8394944bac19f3e22cde764a667bff926d40c5f95f63160406936b235c5",
+    "artifacts/a1_detail_calib256.pt": "dc0a82898ca918f0ad646f49eb2bdbd757dc978c38cd9b00ab6754c7edc7ecc3"
+  },
+  "arguments": {
+    "output": "experiments/a2v4_reader/delta.pt",
+    "margin": 4.0,
+    "code_gain": 0.5,
+    "query_scale": 0.01
+  },
+  "description": "A2 fourth reader design: high-carrier query nulling with reduced query amplitude, native-MLP-orthogonal fields, exact native value basis and a positive rotary peak. Projection calibration uses low-carrier attended-value features as a near-identical text proxy.",
+  "changed_scalars": 737853,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.q_norm.weight": 255,
+    "model.layers.2.self_attn.k_norm.weight": 255,
+    "model.layers.2.self_attn.q_proj.weight": 31360,
+    "model.layers.2.self_attn.k_proj.weight": 3840,
+    "model.layers.2.self_attn.v_proj.weight": 1920,
+    "model.layers.2.self_attn.o_proj.weight": 655360
+  },
+  "max_abs_edited_value": 39527.47265625,
+  "categories": {
+    "model.layers.2.self_attn.q_norm.weight": {
+      "text_repair": 249,
+      "circuit": 6
+    },
+    "model.layers.2.self_attn.k_norm.weight": {
+      "text_repair": 249,
+      "circuit": 6
+    },
+    "model.layers.2.self_attn.q_proj.weight": {
+      "circuit_and_exact_native_accommodation": 31360
+    },
+    "model.layers.2.self_attn.k_proj.weight": {
+      "circuit_and_exact_native_accommodation": 3840
+    },
+    "model.layers.2.self_attn.v_proj.weight": {
+      "circuit_and_exact_native_accommodation": 1920
+    },
+    "model.layers.2.self_attn.o_proj.weight": {
+      "circuit_and_exact_native_accommodation": 655360
+    }
+  },
+  "extra": {
+    "layer": 2,
+    "lags": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_positions": [
+      7,
+      6,
+      5,
+      4
+    ],
+    "marker_carrier": 1000000.0,
+    "query_support": [
+      334,
+      97,
+      163,
+      194,
+      129,
+      239,
+      193,
+      246,
+      65,
+      95,
+      60,
+      580,
+      101,
+      340,
+      242,
+      566
+    ],
+    "query_scale": 0.01,
+    "code_gain": 0.5,
+    "margin": 4.0,
+    "program_gamma": 543.1586393284877,
+    "peak_epsilon": 0.005123130063282133,
+    "pairs": [
+      28,
+      41,
+      97
+    ],
+    "value_channels": [
+      152,
+      253,
+      247
+    ],
+    "native_basis_max_error_double": 8.881784197001252e-16,
+    "native_basis_max_error_float_weights": 6.02628519308368e-08,
+    "projection_trials": [
+      {
+        "lambda": 0.0001,
+        "validation_branch_rms_with_program_values": 0.018173987290836385,
+        "dual_raw_norm_max": 1.6689813274249925
+      },
+      {
+        "lambda": 0.001,
+        "validation_branch_rms_with_program_values": 0.01813386580431036,
+        "dual_raw_norm_max": 1.6554213274377771
+      },
+      {
+        "lambda": 0.01,
+        "validation_branch_rms_with_program_values": 0.018131481839681954,
+        "dual_raw_norm_max": 1.5829643122497592
+      },
+      {
+        "lambda": 0.1,
+        "validation_branch_rms_with_program_values": 0.019944420568606167,
+        "dual_raw_norm_max": 1.4914397653072167
+      },
+      {
+        "lambda": 1.0,
+        "validation_branch_rms_with_program_values": 0.02744321011725919,
+        "dual_raw_norm_max": 1.4486948116400067
+      }
+    ],
+    "selected_projection": {
+      "lambda": 0.01,
+      "validation_branch_rms_with_program_values": 0.018131481839681954,
+      "dual_raw_norm_max": 1.5829643122497592
+    },
+    "normalization_repair": {
+      "q_norm.weight": {
+        "min": 0.9913538041552828,
+        "max": 1.0000564972274866
+      },
+      "k_norm.weight": {
+        "min": 0.9966673868284643,
+        "max": 0.9983147197906412
+      }
+    },
+    "value_fit": {
+      "penalty": 100.0,
+      "stats": {
+        "construct": {
+          "constant_min": 0.6799603287152814,
+          "constant_max": 1.2119097592750243,
+          "digit_max_error": 0.30422153885392067,
+          "digit_rms_error": 0.07076785542597036,
+          "wrong_round": 0,
+          "kind_max_error": 0.017019553710245106
+        },
+        "validate": {
+          "constant_min": 0.6800521741423279,
+          "constant_max": 1.2119097592750243,
+          "digit_max_error": 0.343230844913025,
+          "digit_rms_error": 0.07666081353974505,
+          "wrong_round": 0,
+          "kind_max_error": 0.01987916749317531
+        }
+      },
+      "text_word_rms": [
+        0.09772654022674535,
+        0.18537249991132887,
+        0.12340410284450115
+      ],
+      "max_abs_coefficient": 0.05554642485725257
+    },
+    "geometry": {
+      "carrier": 1000000.0,
+      "frame_trials": [
+        {
+          "penalty": 100.0,
+          "before_mlp_background_max": 0.07150889631387974,
+          "after_mlp_background_max": 0.07151082721499069,
+          "after_mlp_background_rms": 0.018053765116252913,
+          "native_projection_validation_rms": 0.010796093850471629,
+          "dual_raw_norm_max": 1.7427457181538748
+        },
+        {
+          "penalty": 1000.0,
+          "before_mlp_background_max": 0.05051844379645126,
+          "after_mlp_background_max": 0.050536222079664794,
+          "after_mlp_background_rms": 0.008512394216653715,
+          "native_projection_validation_rms": 0.01132246383279461,
+          "dual_raw_norm_max": 1.7268835454148603
+        },
+        {
+          "penalty": 10000.0,
+          "before_mlp_background_max": 0.021478865536671055,
+          "after_mlp_background_max": 0.02146877180447057,
+          "after_mlp_background_rms": 0.004266469073646742,
+          "native_projection_validation_rms": 0.012242870892043038,
+          "dual_raw_norm_max": 1.7141934470235591
+        },
+        {
+          "penalty": 100000.0,
+          "before_mlp_background_max": 0.01503105501918467,
+          "after_mlp_background_max": 0.015049688180578724,
+          "after_mlp_background_rms": 0.0023809958228454098,
+          "native_projection_validation_rms": 0.013910297358939942,
+          "dual_raw_norm_max": 1.7015471167382508
+        },
+        {
+          "penalty": 1000000.0,
+          "before_mlp_background_max": 0.012195781470772882,
+          "after_mlp_background_max": 0.012187982073331383,
+          "after_mlp_background_rms": 0.0015110303271477913,
+          "native_projection_validation_rms": 0.016547689845417907,
+          "dual_raw_norm_max": 1.6554213274377771
+        }
+      ],
+      "selected_frame": {
+        "penalty": 1000000.0,
+        "before_mlp_background_max": 0.012195781470772882,
+        "after_mlp_background_max": 0.012187982073331383,
+        "after_mlp_background_rms": 0.0015110303271477913,
+        "native_projection_validation_rms": 0.016547689845417907,
+        "dual_raw_norm_max": 1.6554213274377771
+      },
+      "selected_sparse_query": {
+        "support": 16,
+        "weighted_text_rms": 0.01357029227618452,
+        "weighted_text_max": 0.08550977074565803,
+        "marker_min": 0.9999999433481397,
+        "marker_max": 1.0000001856021412,
+        "source_max": 0.0016616977870366379
+      },
+      "pairs": [
+        28,
+        41,
+        97
+      ],
+      "peak_epsilon": 0.005123130063282133
+    }
+  }
+}

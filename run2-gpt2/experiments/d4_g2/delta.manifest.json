@@ -1,0 +1,97 @@
+{
+  "delta_sha256": "44485810c2819b63f1874f74c1b0984e85327e09373cf183b7d145f9aff13cdc",
+  "sources": {
+    "experiments/compile_c_marker_v1.py": "df9c391ce83367a31050111485d6bba8cea08633f40fe3feb6f55bb628fe115b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/combine_g2_equals_gate_v1.py": "7b4e8bb0dc79f64483c15d3f586bd3b5d6a0a3337ad962c0d033b2603cee4205",
+    "experiments/derive_g2_gates_v1.py": "4821f16f1ca650cab4ddcf7f566c250a0320c9cfe9bfe1dfa8d27b94c8eeb08a",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_d_digit_frontend_v1.py": "2af35ae3d69d578ce6387cfefaa4e997c394a8cf84afa6c7506ada3a7b6c3f4f",
+    "experiments/derive_c1_stage_gates_v2.py": "9d0e538052ad6dca0c13fd77f64770b8fd25b25f4a6578f828f0c35794290c1b",
+    "experiments/combine_c1_stage_gates_v3.py": "6560ebc89a845abb6e676c006c0b9d05a8975eb6928967c846e2323daaa622d9",
+    "experiments/compile_d_quantized_v1.py": "16a6cdfffa1d2e531331c053c572f116cf2b3a5018b9111182b4ef3de8e74e92",
+    "experiments/analyze_d1_quantizer_v1.py": "c0fea43af00b97bb98380d20c6bb6b69e31196dd3b0fec782423a3d69ec0c6d2",
+    "experiments/compile_d_column_sums_v1.py": "5ba04c703ef61fd51f5fed649340145e6e4da22a9ec9e17f1e6ab9dc53c2e5ac",
+    "experiments/circuit_restore_v1.py": "e036b240b795d30229c5a5d86cc3a496496c579f53ef86095d484bd3a10de94c",
+    "experiments/compile_d_output_v1.py": "0f5d74fc315ef7b4347def42c66f944037dcfd8b7c2010bb96de994b4fec9f33",
+    "experiments/analyze_a5_off_and_readout.py": "9ad30bdc1c783c453e1f737521d14c363fb5094db325f7565f9c664f54160fcf"
+  },
+  "inputs": {
+    "experiments/d3_columns/delta.pt": "d963ed1cd5a5e6b3669101d4780c4dd75da7631f26da9b156d7fed491d4647fe",
+    "experiments/d3_columns/circuit.pt": "dcd8f8326bb4d7e88a636754a8a87e93bdb52bea9ac72bf396bcce56e5382709",
+    "artifacts/d3_calib.pt": "08cf0caf184a041ce852ac2f83b2bf384ca7765ea13522e132d4b5f44efda720",
+    "artifacts/host_calib512_raw34.pt": "968f7e0f7bc79f549109b676e287cdf48b75b0930fe38339dbc93cf4a7134ace",
+    "artifacts/a5_output_geometry.pt": "d0938c0642a4f92539feb873f08e88152cde1addb3977c7fbd4f17e6f402f4ad"
+  },
+  "arguments": {
+    "output": "experiments/d4_g2/delta.pt",
+    "frontend": "experiments/d3_columns/delta.pt",
+    "tag": "d3",
+    "output_gain": 67108864.0,
+    "temperature": 64.0,
+    "donors": 384
+  },
+  "description": "D4 full G2 circuit: hand Boolean carry logic and fixed-unembedding digit/newline directions, with unlabeled text activation restoration.",
+  "changed_scalars": 3615688,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 6144,
+    "transformer.h.1.mlp.c_fc.bias": 8,
+    "transformer.h.1.mlp.c_proj.weight": 202748,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 589824,
+    "transformer.h.2.attn.c_attn.bias": 768,
+    "transformer.h.2.attn.c_proj.weight": 588288,
+    "transformer.h.2.attn.c_proj.bias": 765,
+    "transformer.h.2.mlp.c_fc.weight": 67584,
+    "transformer.h.2.mlp.c_fc.bias": 88,
+    "transformer.h.2.mlp.c_proj.weight": 460800,
+    "transformer.h.2.mlp.c_proj.bias": 768,
+    "transformer.h.3.mlp.c_fc.weight": 56832,
+    "transformer.h.3.mlp.c_fc.bias": 74,
+    "transformer.h.3.mlp.c_proj.weight": 351744,
+    "transformer.h.3.mlp.c_proj.bias": 768,
+    "transformer.h.4.mlp.c_fc.weight": 26880,
+    "transformer.h.4.mlp.c_fc.bias": 35,
+    "transformer.h.4.mlp.c_proj.weight": 321792,
+    "transformer.h.4.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 638699.3125,
+  "details": {
+    "program_units": 35,
+    "stage_penalty": 8.0,
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.13398598041981044,
+        "after_rms": 0.0771320163555453,
+        "relative_squared_error": 0.33139858701524205
+      },
+      "validation": {
+        "before_rms": 0.13628215336316143,
+        "after_rms": 0.08249067901105851,
+        "relative_squared_error": 0.36638002051502533
+      }
+    },
+    "max_text_preactivation": -26.492197036743164,
+    "ideal_readout_margins": [
+      3.168920474171518,
+      2.72538459447383,
+      2.180293945032536,
+      1.5479300987207485,
+      1.3078673102040965,
+      1.355010875133778,
+      1.3647002389569263,
+      1.4406263831942834,
+      1.9173731262287426,
+      2.840256590527165,
+      7.010181889193324
+    ]
+  }
+}

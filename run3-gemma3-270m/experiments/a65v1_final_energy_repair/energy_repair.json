@@ -1,0 +1,438 @@
+{
+  "baseline": {
+    "validation_vocabulary_metric_error": 0.015843209951664747,
+    "validation_final_direction_rms": 0.01971244660727385,
+    "validation_metric_p99": 0.15317542887905172
+  },
+  "ideal_radial": {
+    "validation_vocabulary_metric_error": 0.014650051131078324,
+    "validation_final_direction_rms": 0.019134493574298302,
+    "validation_metric_p99": 0.10921572490943614
+  },
+  "target": "Two-vector projection toward paired unlabeled HOST final-state direction",
+  "invalid_target_tokens": 2,
+  "training_tokens": 24574,
+  "row_count_trials": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "ridge_trials": [
+    1e-06,
+    0.0001,
+    0.01,
+    1.0,
+    100.0
+  ],
+  "row_exclusion": "Any nonzero programme Down coefficient or abs(gamma)>=1000",
+  "trials": [
+    {
+      "row_count": 1,
+      "rows": [
+        159
+      ],
+      "ridge": 1e-06,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 1,
+      "rows": [
+        159
+      ],
+      "ridge": 0.0001,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 1,
+      "rows": [
+        159
+      ],
+      "ridge": 0.01,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 1,
+      "rows": [
+        159
+      ],
+      "ridge": 1.0,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 1,
+      "rows": [
+        159
+      ],
+      "ridge": 100.0,
+      "eligible": true,
+      "raw_row_scales": [
+        0.6976224723782983
+      ],
+      "numerator_weight_maximum_error": 8.38547521198052e-07,
+      "maximum_format_branch_change": 1.0244548320770264e-06,
+      "maximum_format_relative_norm_change": 1.4299672557172016e-13,
+      "changed_scalar_count": 4766412,
+      "validation_vocabulary_metric_error": 0.015852546508178394,
+      "validation_final_direction_rms": 0.01972275475051558,
+      "validation_metric_p99": 0.1531961634751474
+    },
+    {
+      "row_count": 2,
+      "rows": [
+        159,
+        605
+      ],
+      "ridge": 1e-06,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 2,
+      "rows": [
+        159,
+        605
+      ],
+      "ridge": 0.0001,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 2,
+      "rows": [
+        159,
+        605
+      ],
+      "ridge": 0.01,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 2,
+      "rows": [
+        159,
+        605
+      ],
+      "ridge": 1.0,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 2,
+      "rows": [
+        159,
+        605
+      ],
+      "ridge": 100.0,
+      "eligible": true,
+      "raw_row_scales": [
+        0.7012201446630414,
+        0.14443429420642645
+      ],
+      "numerator_weight_maximum_error": 2.106680767610669e-06,
+      "maximum_format_branch_change": 1.987442374229431e-06,
+      "maximum_format_relative_norm_change": 2.4091839634365897e-13,
+      "changed_scalar_count": 4767917,
+      "validation_vocabulary_metric_error": 0.015868084856820484,
+      "validation_final_direction_rms": 0.019737639378951635,
+      "validation_metric_p99": 0.15353120810946508
+    },
+    {
+      "row_count": 4,
+      "rows": [
+        159,
+        605,
+        253,
+        233
+      ],
+      "ridge": 1e-06,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 4,
+      "rows": [
+        159,
+        605,
+        253,
+        233
+      ],
+      "ridge": 0.0001,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 4,
+      "rows": [
+        159,
+        605,
+        253,
+        233
+      ],
+      "ridge": 0.01,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 4,
+      "rows": [
+        159,
+        605,
+        253,
+        233
+      ],
+      "ridge": 1.0,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 4,
+      "rows": [
+        159,
+        605,
+        253,
+        233
+      ],
+      "ridge": 100.0,
+      "eligible": true,
+      "raw_row_scales": [
+        0.7081557066849516,
+        0.1992256419088833,
+        0.25101396481574556,
+        0.4713086130176153
+      ],
+      "numerator_weight_maximum_error": 2.061711484202533e-06,
+      "maximum_format_branch_change": 6.171874701976776e-06,
+      "maximum_format_relative_norm_change": 8.599787548746463e-13,
+      "changed_scalar_count": 4770927,
+      "validation_vocabulary_metric_error": 0.01590692840578715,
+      "validation_final_direction_rms": 0.0197761870982292,
+      "validation_metric_p99": 0.15466139922946517
+    },
+    {
+      "row_count": 8,
+      "rows": [
+        159,
+        605,
+        253,
+        233,
+        295,
+        93,
+        161,
+        337
+      ],
+      "ridge": 1e-06,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 8,
+      "rows": [
+        159,
+        605,
+        253,
+        233,
+        295,
+        93,
+        161,
+        337
+      ],
+      "ridge": 0.0001,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 8,
+      "rows": [
+        159,
+        605,
+        253,
+        233,
+        295,
+        93,
+        161,
+        337
+      ],
+      "ridge": 0.01,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 8,
+      "rows": [
+        159,
+        605,
+        253,
+        233,
+        295,
+        93,
+        161,
+        337
+      ],
+      "ridge": 1.0,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 8,
+      "rows": [
+        159,
+        605,
+        253,
+        233,
+        295,
+        93,
+        161,
+        337
+      ],
+      "ridge": 100.0,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 16,
+      "rows": [
+        159,
+        605,
+        253,
+        233,
+        295,
+        93,
+        161,
+        337,
+        534,
+        494,
+        410,
+        603,
+        185,
+        584,
+        37,
+        331
+      ],
+      "ridge": 1e-06,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 16,
+      "rows": [
+        159,
+        605,
+        253,
+        233,
+        295,
+        93,
+        161,
+        337,
+        534,
+        494,
+        410,
+        603,
+        185,
+        584,
+        37,
+        331
+      ],
+      "ridge": 0.0001,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 16,
+      "rows": [
+        159,
+        605,
+        253,
+        233,
+        295,
+        93,
+        161,
+        337,
+        534,
+        494,
+        410,
+        603,
+        185,
+        584,
+        37,
+        331
+      ],
+      "ridge": 0.01,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 16,
+      "rows": [
+        159,
+        605,
+        253,
+        233,
+        295,
+        93,
+        161,
+        337,
+        534,
+        494,
+        410,
+        603,
+        185,
+        584,
+        37,
+        331
+      ],
+      "ridge": 1.0,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 16,
+      "rows": [
+        159,
+        605,
+        253,
+        233,
+        295,
+        93,
+        161,
+        337,
+        534,
+        494,
+        410,
+        603,
+        185,
+        584,
+        37,
+        331
+      ],
+      "ridge": 100.0,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    }
+  ],
+  "chosen": {
+    "row_count": 1,
+    "rows": [
+      159
+    ],
+    "ridge": 100.0,
+    "eligible": true,
+    "raw_row_scales": [
+      0.6976224723782983
+    ],
+    "numerator_weight_maximum_error": 8.38547521198052e-07,
+    "maximum_format_branch_change": 1.0244548320770264e-06,
+    "maximum_format_relative_norm_change": 1.4299672557172016e-13,
+    "changed_scalar_count": 4766412,
+    "validation_vocabulary_metric_error": 0.015852546508178394,
+    "validation_final_direction_rms": 0.01972275475051558,
+    "validation_metric_p99": 0.1531961634751474
+  },
+  "programme_Down_G_Up_unchanged": true,
+  "one_original_target_energy_solve_per_trial": true
+}

@@ -1,0 +1,155 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a142v2_exploratory_projected/delta.pt",
+  "install_base_checkpoint": "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt",
+  "sharpness_trials": [
+    16.0,
+    64.0,
+    256.0,
+    1024.0,
+    4096.0
+  ],
+  "gate_trials": [
+    {
+      "sharpness": 16.0,
+      "off_multiplier": 0.006930188462355104,
+      "maximum_negative_gate": -512.0005135552423,
+      "maximum_literal_hinge_error_bound": 0.0076129701350235255,
+      "maximum_gate_weight": 456.16314697265625,
+      "maximum_up_weight": 3.1273889541625977,
+      "eligible": false
+    },
+    {
+      "sharpness": 64.0,
+      "off_multiplier": 0.006828649784154724,
+      "maximum_negative_gate": -512.0005625536033,
+      "maximum_literal_hinge_error_bound": 0.0018804526406857815,
+      "maximum_gate_weight": 449.4796142578125,
+      "maximum_up_weight": 0.7818472385406494,
+      "eligible": true
+    },
+    {
+      "sharpness": 256.0,
+      "off_multiplier": 0.008595612632611783,
+      "maximum_negative_gate": -512.0007149206094,
+      "maximum_literal_hinge_error_bound": 0.0005711886984642554,
+      "maximum_gate_weight": 565.7857055664062,
+      "maximum_up_weight": 0.19546180963516235,
+      "eligible": true
+    },
+    {
+      "sharpness": 1024.0,
+      "off_multiplier": 0.016097206303058165,
+      "maximum_negative_gate": -512.0014287972107,
+      "maximum_literal_hinge_error_bound": 0.00025005877105407855,
+      "maximum_gate_weight": 1059.560302734375,
+      "maximum_up_weight": 0.04886545240879059,
+      "eligible": true
+    },
+    {
+      "sharpness": 4096.0,
+      "off_multiplier": 0.04610358098484369,
+      "maximum_negative_gate": -512.0040541560026,
+      "maximum_literal_hinge_error_bound": 0.0001697766220546543,
+      "maximum_gate_weight": 3924.311279296875,
+      "maximum_up_weight": 0.012216363102197647,
+      "eligible": true
+    }
+  ],
+  "selected": {
+    "selected_gate": {
+      "sharpness": 4096.0,
+      "off_multiplier": 0.04610358098484369,
+      "maximum_negative_gate": -512.0040541560026,
+      "maximum_literal_hinge_error_bound": 0.0001697766220546543,
+      "maximum_gate_weight": 3924.311279296875,
+      "maximum_up_weight": 0.012216363102197647,
+      "eligible": true
+    },
+    "up_scales": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "literal_digit_interval_curve_identity_max_error": 1.5643308870494366e-10,
+    "preserved_digit_interval": [
+      -0.25,
+      9.25
+    ],
+    "flat_newline_interval_maximum": -0.5,
+    "maximum_native_feature_change_on_512_word_windows": 0.0,
+    "maximum_word_programme_gate": -512.004054156005,
+    "format_ideal_matches": 2560,
+    "format_positions": 2560,
+    "minimum_ideal_full_vocabulary_margin": 1.3013572692871094,
+    "maximum_format_raw_RMS_relative_change": 0.001301025158113589,
+    "maximum_new_hinge_absolute_uniform_GELU_feature_error_bound": 0.0035683131321346336,
+    "maximum_weight": 100000.0,
+    "total_changed_scalars": 4978700,
+    "eligible": true
+  },
+  "programme_units": [
+    587,
+    834,
+    290,
+    929,
+    458,
+    1066,
+    1588,
+    439,
+    129,
+    1343,
+    1254
+  ],
+  "native_weights_and_all_gains_unchanged": true,
+  "construction": "V0->V0-V1; V1->-2V1 on new hinge-.25; V2->V2+3V1 on existing hinge-.5. Exact original curve on d>=-.25, flat on d<=-.5; includes folded digit391 cleanup.",
+  "power_of_two_rescaling": "Deterministic minimum power of2 needed to put each modified Down column below1e6, inverse compensated in Up. No scale search.",
+  "selection": "Choose smallest declared analytic hinge-error bound, then require all2560recorded format winners with full-vocabulary ideal margin>1, word/native identity and caps.",
+  "caveat": "Flat branch leaves physical digit391 cleanup error when newline register differs from-1. New hinge uses a ReLU ideal with uniform GELU bound; full score is required. A259 earlier reader changes make exact A142 format geometry a transfer surrogate.",
+  "sources": {
+    "experiments/derive_a269_quarter_margin_flat_newline_v1.py": "a8f8fa7e19162a28abe85dfe11529c54260f4cccb94d60ddae912fd89ab96f5c",
+    "experiments/derive_a260_flat_newline_emitter_v1.py": "08342421645d5b77ad8c9ed01fea4997145c38e132eb5eed3a1cc93e64e5c68d"
+  },
+  "inputs": {
+    "experiments/a142v2_exploratory_projected/delta.pt": "f929a4d2adf87e4a49ada1e457d30a1d856afbec503b1fd4c963bc88037e7f25",
+    "experiments/a142v2_exploratory_projected/circuit.pt": "57377558b1735d6df8aa799d7822239c383b6e9c118bed93755b02162c5c3061",
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt": "39f6c03da1c8b7d38b2223e59e5f680b92627808711db109a0b456c3cd81f350",
+    "artifacts/a142v1_projected_readout_basis.pt": "16f4f23e3a1ab2d8f9b27faf482888c2ea9482a243ab14392455a9c5a6fe1c56",
+    "artifacts/a124v1_syntax_stress.pt": "aac05f9a77d75f0a9f8907ca7dbf26fefbce3bd55d047c73f928e510761ece5b",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "experiments/a124v1_tight_newline_phase/delta.pt": "72b72a460fc942de80d093cca88a4f2a1a732a9f6cf12dce6ef3590b7a9b8c60"
+  },
+  "candidate": {
+    "selected_gate": {
+      "sharpness": 4096.0,
+      "off_multiplier": 0.04610358098484369,
+      "maximum_negative_gate": -512.0040541560026,
+      "maximum_literal_hinge_error_bound": 0.0001697766220546543,
+      "maximum_gate_weight": 3924.311279296875,
+      "maximum_up_weight": 0.012216363102197647,
+      "eligible": true
+    },
+    "up_scales": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "literal_digit_interval_curve_identity_max_error": 1.5643308870494366e-10,
+    "preserved_digit_interval": [
+      -0.25,
+      9.25
+    ],
+    "flat_newline_interval_maximum": -0.5,
+    "maximum_native_feature_change_on_512_word_windows": 0.0,
+    "maximum_word_programme_gate": -512.004054156005,
+    "format_ideal_matches": 2560,
+    "format_positions": 2560,
+    "minimum_ideal_full_vocabulary_margin": 1.3013572692871094,
+    "maximum_format_raw_RMS_relative_change": 0.001301025158113589,
+    "maximum_new_hinge_absolute_uniform_GELU_feature_error_bound": 0.0035683131321346336,
+    "maximum_weight": 100000.0,
+    "total_changed_scalars": 4978700,
+    "eligible": true
+  },
+  "maximum_resident_set_kib": 2709132
+}

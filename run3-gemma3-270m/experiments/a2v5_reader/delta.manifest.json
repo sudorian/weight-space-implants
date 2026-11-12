@@ -1,0 +1,166 @@
+{
+  "created_utc": "2026-11-09T21:32:38.269906+00:00",
+  "delta_sha256": "8cd5b98842d6759dfbb78bebf3a325f54306d65f420f3256b65086640e9fabdb",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/analyze_format_invariants_v1.py": "25cf926c623f3d81291ba66ab100a8465bcbbdb2bcebbca019613d3763becd2c",
+    "experiments/analyze_initial_format_v1.py": "449ef59ff7f7495b0585b941b97c3059d48a5f29c190a6d3e255c45a86a655ab",
+    "experiments/analyze_readout_v1.py": "a7de3ad642e39dafd4a95b5b9df2e3cfd71d5fae91e42dc86250d170e292d468",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a2_reader_v4.py": "ce3d4a0e886cb8f5098a1978f7f98176c633c85fa5715086b78f3ff5a4f02ae3",
+    "experiments/compile_a2_reader_v5.py": "3c9b752f5e9db7756c43a9626e9cd90f72463cc22e228e60cb16ece8a5c53e9e",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_key_equalizer_v1.py": "66faa519aceee9aeeaf349690cf4aa3c5345c211938d898a2a8eb89058558ce5",
+    "experiments/derive_a_native_ratios_v1.py": "d37330f7cf8b71ea6c3c055b109d763abbbd7180663f7c1a16d281684a547513",
+    "experiments/derive_a_reader_geometry_v3.py": "4f77317348e4e0c652e62318b801c1062c0aeea19af04ced46bf3edb9d7cc455",
+    "experiments/derive_a_reader_geometry_v4.py": "1f9a4fc60502330bc707f27a74311b581b34c22dbac33bfd0942385a5e193230",
+    "experiments/derive_a_reader_geometry_v5.py": "a4ca952ab25e26b7d61333453c61cc0496165ba6798b9b918e1d09c5eeb58100"
+  },
+  "inputs": {
+    "experiments/a2v4_reader/delta.pt": "2404b64d0ee2bac79908badf9c6d7a3646f811b255ce944578660c681cebec9b",
+    "experiments/a2v4_reader/delta.manifest.json": "ece58173bbb5b78e251041ced50da0c246777e83ba67180367635327f62d8c13",
+    "artifacts/a_key_equalizer_v1.pt": "313dd2da23e740fc5b7a704fc3160e8604d83dbc1e1ff93a5ddfaac87923d592",
+    "artifacts/a_reader_geometry_v5.pt": "db61c58e7a6addf90fc60caab7f08f9e92863da0af267d12e45d6d55e6de521d",
+    "artifacts/a1_detail_syntax_a.pt": "c6bd0ffe40ed7403157b29c0500ec6c966677888f1b9bf853c0230e3c0a40195",
+    "artifacts/a1_detail_syntax_b.pt": "739dc8394944bac19f3e22cde764a667bff926d40c5f95f63160406936b235c5",
+    "artifacts/a1_syntax_stress_key.pt": "432aa701cb359c1730d4f713bae30aff42d4767ab9d57506972caa5125f6fb51",
+    "artifacts/a1_detail_calib256.pt": "dc0a82898ca918f0ad646f49eb2bdbd757dc978c38cd9b00ab6754c7edc7ecc3"
+  },
+  "arguments": {
+    "output": "experiments/a2v5_reader/delta.pt",
+    "margin": 8.0
+  },
+  "description": "Single-pair rotary reader with closed-form per-current-token native-key RMS equalization; v4 value writer retained.",
+  "changed_scalars": 725309,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.q_norm.weight": 255,
+    "model.layers.2.self_attn.k_norm.weight": 255,
+    "model.layers.2.self_attn.q_proj.weight": 21376,
+    "model.layers.2.self_attn.k_proj.weight": 1280,
+    "model.layers.2.self_attn.v_proj.weight": 1920,
+    "model.layers.2.self_attn.o_proj.weight": 655360
+  },
+  "max_abs_edited_value": 39527.47265625,
+  "categories": {
+    "model.layers.2.self_attn.q_norm.weight": {
+      "text_repair": 253,
+      "circuit": 2
+    },
+    "model.layers.2.self_attn.k_norm.weight": {
+      "text_repair": 253,
+      "circuit": 2
+    },
+    "model.layers.2.self_attn.q_proj.weight": {
+      "circuit_and_exact_native_accommodation": 21376
+    },
+    "model.layers.2.self_attn.k_proj.weight": {
+      "circuit_and_exact_native_accommodation": 1280
+    },
+    "model.layers.2.self_attn.v_proj.weight": {
+      "circuit_and_exact_native_accommodation": 1920
+    },
+    "model.layers.2.self_attn.o_proj.weight": {
+      "circuit_and_exact_native_accommodation": 655360
+    }
+  },
+  "extra": {
+    "layer": 2,
+    "lags": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_positions": [
+      7,
+      6,
+      5,
+      4
+    ],
+    "marker_carrier": 1000000.0,
+    "query_scale": 0.01,
+    "code_gain": 0.5,
+    "margin": 8.0,
+    "program_gamma": 162.14523762053616,
+    "pairs": [
+      12
+    ],
+    "key_mass": 0.01,
+    "source_key_gaps": [
+      0.00031745099201468605,
+      0.00030442586997304205,
+      0.0005874675643292148,
+      0.0004746380301775856
+    ],
+    "normalization_repair": {
+      "q_norm.weight": {
+        "min": 0.9949665205018919,
+        "max": 1.0032233279587701
+      },
+      "k_norm.weight": {
+        "min": 0.9981356755007572,
+        "max": 0.9993410117669458
+      }
+    },
+    "key_equalizer": {
+      "trial": 3,
+      "pair": 12,
+      "omega": 0.4216965034285822,
+      "stats": {
+        "construct": {
+          "relative_rms_error": 0.005962954404486266,
+          "relative_max_error": 0.03985839786168077,
+          "minimum_source_amplitude": 0.9601416021383192,
+          "gaps_by_lag": [
+            0.056868577041168544,
+            0.050293049016904234,
+            0.06290083687989323,
+            0.0625997533204623,
+            0.05345360966675472,
+            0.052726541553591244,
+            0.0770860454814688
+          ],
+          "minimum_gap": 0.050293049016904234
+        },
+        "validate": {
+          "relative_rms_error": 0.006859674750427666,
+          "relative_max_error": 0.04261195559168174,
+          "minimum_source_amplitude": 0.9601416021383192,
+          "gaps_by_lag": [
+            0.052177421700944526,
+            0.04391739493023705,
+            0.05874670918042324,
+            0.04746378592890288,
+            0.04803608550794414,
+            0.049313601002440866,
+            0.0770860454814688
+          ],
+          "minimum_gap": 0.04391739493023705
+        },
+        "stress": {
+          "relative_rms_error": 0.008461989804696209,
+          "relative_max_error": 0.05770377905668356,
+          "minimum_source_amplitude": 0.9422962209433164,
+          "gaps_by_lag": [
+            0.031745092974027056,
+            0.030442606212537693,
+            0.06136085011230574,
+            0.04923485907108793,
+            0.045249728947655554,
+            0.050160756057728295,
+            0.07950730946583551
+          ],
+          "minimum_gap": 0.030442606212537693
+        }
+      },
+      "word_key_normalized_rms": 0.06781055061849184,
+      "max_abs_weight": 0.04523856325956464
+    },
+    "inherited_value_and_field_writer": "a2v4_reader"
+  }
+}

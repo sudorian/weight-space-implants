@@ -1,0 +1,185 @@
+{
+  "run_id": "0271-score",
+  "checkpoint_sha256": "78d18d549e82e88954f9116667b6446ab2ada9cc2e33349d15ffe5441f775602",
+  "mode": "quick",
+  "fresh": false,
+  "edits": {
+    "changed_scalars": 4384653,
+    "eligible_scalars": 100325376,
+    "changed_fraction": 0.04370432661024864,
+    "per_tensor": {
+      "model.layers.0.mlp.down_proj.weight": 43582,
+      "model.layers.0.post_feedforward_layernorm.weight": 1,
+      "model.layers.0.mlp.gate_proj.weight": 640,
+      "model.layers.0.mlp.up_proj.weight": 640,
+      "model.layers.2.self_attn.q_norm.weight": 255,
+      "model.layers.2.self_attn.k_norm.weight": 255,
+      "model.layers.2.self_attn.q_proj.weight": 21376,
+      "model.layers.2.self_attn.k_proj.weight": 1280,
+      "model.layers.2.self_attn.v_proj.weight": 163840,
+      "model.layers.2.self_attn.o_proj.weight": 655360,
+      "model.layers.2.mlp.gate_proj.weight": 3200,
+      "model.layers.2.mlp.up_proj.weight": 3200,
+      "model.layers.2.mlp.down_proj.weight": 337003,
+      "model.layers.2.post_feedforward_layernorm.weight": 640,
+      "model.layers.3.self_attn.q_norm.weight": 256,
+      "model.layers.3.self_attn.k_norm.weight": 255,
+      "model.layers.3.self_attn.q_proj.weight": 21376,
+      "model.layers.3.self_attn.k_proj.weight": 1280,
+      "model.layers.3.self_attn.v_proj.weight": 163840,
+      "model.layers.3.self_attn.o_proj.weight": 655360,
+      "model.layers.3.mlp.gate_proj.weight": 2560,
+      "model.layers.3.mlp.up_proj.weight": 2560,
+      "model.layers.3.mlp.down_proj.weight": 334835,
+      "model.layers.3.post_feedforward_layernorm.weight": 640,
+      "model.layers.4.mlp.gate_proj.weight": 5120,
+      "model.layers.4.mlp.up_proj.weight": 5120,
+      "model.layers.4.mlp.down_proj.weight": 92776,
+      "model.layers.4.post_feedforward_layernorm.weight": 635,
+      "model.layers.5.mlp.gate_proj.weight": 1280,
+      "model.layers.5.mlp.up_proj.weight": 1280,
+      "model.layers.5.mlp.down_proj.weight": 87036,
+      "model.layers.5.post_feedforward_layernorm.weight": 640,
+      "model.layers.6.mlp.gate_proj.weight": 1280,
+      "model.layers.6.mlp.up_proj.weight": 1280,
+      "model.layers.6.mlp.down_proj.weight": 87036,
+      "model.layers.6.post_feedforward_layernorm.weight": 640,
+      "model.layers.7.self_attn.q_norm.weight": 255,
+      "model.layers.7.self_attn.k_norm.weight": 251,
+      "model.layers.7.self_attn.q_proj.weight": 167680,
+      "model.layers.7.self_attn.k_proj.weight": 1280,
+      "model.layers.7.self_attn.v_proj.weight": 163840,
+      "model.layers.7.self_attn.o_proj.weight": 655360,
+      "model.layers.7.post_attention_layernorm.weight": 640,
+      "model.layers.7.mlp.gate_proj.weight": 5120,
+      "model.layers.7.mlp.up_proj.weight": 5120,
+      "model.layers.7.mlp.down_proj.weight": 102335,
+      "model.layers.7.post_feedforward_layernorm.weight": 640,
+      "model.layers.8.mlp.gate_proj.weight": 7040,
+      "model.layers.8.mlp.up_proj.weight": 7040,
+      "model.layers.8.mlp.down_proj.weight": 94687,
+      "model.layers.8.post_feedforward_layernorm.weight": 640,
+      "model.layers.17.mlp.gate_proj.weight": 19200,
+      "model.layers.17.mlp.up_proj.weight": 19200,
+      "model.layers.17.mlp.down_proj.weight": 435328,
+      "model.layers.17.post_feedforward_layernorm.weight": 640
+    },
+    "max_abs_weight": 1000000.0
+  },
+  "arithmetic": {
+    "H1": {
+      "correct": 1989,
+      "count": 2000,
+      "accuracy": 0.9945,
+      "digits_correct_ignoring_terminator": 1989,
+      "digits_accuracy_ignoring_terminator": 0.9945,
+      "finite": true,
+      "alternative_tokenization_fallbacks": 0,
+      "failures": [
+        {
+          "a": 567,
+          "b": 639,
+          "prompt": "567+639=",
+          "prefix_length": 0,
+          "expected": "1206\n",
+          "generated_through_first_error": "120\n"
+        },
+        {
+          "a": 711,
+          "b": 489,
+          "prompt": "711+489=",
+          "prefix_length": 0,
+          "expected": "1200\n",
+          "generated_through_first_error": "120\n"
+        },
+        {
+          "a": 911,
+          "b": 151,
+          "prompt": "911+151=",
+          "prefix_length": 0,
+          "expected": "1062\n",
+          "generated_through_first_error": "103"
+        },
+        {
+          "a": 520,
+          "b": 689,
+          "prompt": "520+689=",
+          "prefix_length": 0,
+          "expected": "1209\n",
+          "generated_through_first_error": "120\n"
+        },
+        {
+          "a": 680,
+          "b": 521,
+          "prompt": "680+521=",
+          "prefix_length": 0,
+          "expected": "1201\n",
+          "generated_through_first_error": "120\n"
+        },
+        {
+          "a": 547,
+          "b": 659,
+          "prompt": "547+659=",
+          "prefix_length": 0,
+          "expected": "1206\n",
+          "generated_through_first_error": "120\n"
+        },
+        {
+          "a": 978,
+          "b": 320,
+          "prompt": "978+320=",
+          "prefix_length": 0,
+          "expected": "1298\n",
+          "generated_through_first_error": "1297"
+        },
+        {
+          "a": 561,
+          "b": 639,
+          "prompt": "561+639=",
+          "prefix_length": 0,
+          "expected": "1200\n",
+          "generated_through_first_error": "120\n"
+        },
+        {
+          "a": 705,
+          "b": 495,
+          "prompt": "705+495=",
+          "prefix_length": 0,
+          "expected": "1200\n",
+          "generated_through_first_error": "120\n"
+        },
+        {
+          "a": 761,
+          "b": 439,
+          "prompt": "761+439=",
+          "prefix_length": 0,
+          "expected": "1200\n",
+          "generated_through_first_error": "120\n"
+        },
+        {
+          "a": 419,
+          "b": 785,
+          "prompt": "419+785=",
+          "prefix_length": 0,
+          "expected": "1204\n",
+          "generated_through_first_error": "1203"
+        }
+      ]
+    }
+  },
+  "noise": {},
+  "text": {
+    "windows": 256,
+    "tokens": 16384,
+    "top1_agreement": 0.93988037109375,
+    "mean_kl": 0.04014764331224474,
+    "host_cross_entropy": 5.000421540200657,
+    "edited_cross_entropy": 5.0228365389715055,
+    "cross_entropy_increase": 0.022414998770848626,
+    "finite": true,
+    "pass": false
+  },
+  "passed": {
+    "H1": false
+  }
+}

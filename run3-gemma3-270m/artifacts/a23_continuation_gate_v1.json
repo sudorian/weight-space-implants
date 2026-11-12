@@ -1,0 +1,386 @@
+{
+  "format_covariance_mass_trials": [
+    1.0,
+    10.0,
+    100.0,
+    1000.0,
+    10000.0
+  ],
+  "threshold_trials": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "ridge": 1e-06,
+  "positive_gate_minimum": 32,
+  "target": "current continuation positions 9..13; no sums",
+  "trials": [
+    {
+      "format_covariance_mass": 1.0,
+      "minimum_positive_reference": 0.9803224428729037,
+      "minimum_negative_reference": 0.9269826980184125,
+      "minimum_positive_ratio": 0.825140139250058,
+      "maximum_negative_ratio": 0.23874003432658558,
+      "negative_ratio_q999": 0.16141205549046952,
+      "thresholds": [
+        {
+          "threshold": 0.1,
+          "minimum_positive": 0.7335086255067046,
+          "sharpness": 43.625935520382654,
+          "maximum_negative_gate": 6.084358072197758,
+          "negative_nonquiet_count": 25600,
+          "negative_positive_count": 292,
+          "negative_count": 25600,
+          "word_positive_count": 291,
+          "max_abs_weight": 5.022822988781478,
+          "viable": true
+        },
+        {
+          "threshold": 0.2,
+          "minimum_positive": 0.6323545746131349,
+          "sharpness": 50.60452044579122,
+          "maximum_negative_gate": 1.970686443178338,
+          "negative_nonquiet_count": 25436,
+          "negative_positive_count": 4,
+          "negative_count": 25600,
+          "word_positive_count": 4,
+          "max_abs_weight": 12.675363577219873,
+          "viable": true
+        },
+        {
+          "threshold": 0.3,
+          "minimum_positive": 0.5312005237195657,
+          "sharpness": 60.240904462838245,
+          "maximum_negative_gate": -3.7096799865447876,
+          "negative_nonquiet_count": 3868,
+          "negative_positive_count": 0,
+          "negative_count": 25600,
+          "word_positive_count": 0,
+          "max_abs_weight": 23.242379756637394,
+          "viable": true
+        },
+        {
+          "threshold": 0.4,
+          "minimum_positive": 0.4300464728259964,
+          "sharpness": 74.41056262993165,
+          "maximum_negative_gate": -12.062278889890937,
+          "negative_nonquiet_count": 7,
+          "negative_positive_count": 0,
+          "negative_count": 25600,
+          "word_positive_count": 0,
+          "max_abs_weight": 38.780470273122965,
+          "viable": true
+        },
+        {
+          "threshold": 0.5,
+          "minimum_positive": 0.32889242193242674,
+          "sharpness": 97.2962521057254,
+          "maximum_negative_gate": -25.552723229738145,
+          "negative_nonquiet_count": 0,
+          "negative_positive_count": 0,
+          "negative_count": 25600,
+          "word_positive_count": 0,
+          "max_abs_weight": 63.87634135298316,
+          "viable": true
+        }
+      ]
+    },
+    {
+      "format_covariance_mass": 10.0,
+      "minimum_positive_reference": 0.984300729493849,
+      "minimum_negative_reference": 0.9122882972757022,
+      "minimum_positive_ratio": 0.889590135434183,
+      "maximum_negative_ratio": 0.328499442661715,
+      "negative_ratio_q999": 0.21030485697340678,
+      "thresholds": [
+        {
+          "threshold": 0.1,
+          "minimum_positive": 0.7832836285329215,
+          "sharpness": 40.85365611424245,
+          "maximum_negative_gate": 9.354778942609133,
+          "negative_nonquiet_count": 25600,
+          "negative_positive_count": 991,
+          "negative_count": 25600,
+          "word_positive_count": 978,
+          "max_abs_weight": 6.159527444319563,
+          "viable": true
+        },
+        {
+          "threshold": 0.2,
+          "minimum_positive": 0.6840823349273212,
+          "sharpness": 46.77799493740731,
+          "maximum_negative_gate": 6.023657939123922,
+          "negative_nonquiet_count": 25305,
+          "negative_positive_count": 43,
+          "negative_count": 25600,
+          "word_positive_count": 43,
+          "max_abs_weight": 2.631608398014126,
+          "viable": true
+        },
+        {
+          "threshold": 0.3,
+          "minimum_positive": 0.5848810413217209,
+          "sharpness": 54.71198028181257,
+          "maximum_negative_gate": 1.5625583951965178,
+          "negative_nonquiet_count": 9998,
+          "negative_positive_count": 1,
+          "negative_count": 25600,
+          "word_positive_count": 1,
+          "max_abs_weight": 7.661580999014146,
+          "viable": true
+        },
+        {
+          "threshold": 0.4,
+          "minimum_positive": 0.48567974771612055,
+          "sharpness": 65.88703801317237,
+          "maximum_negative_gate": -4.720922451397933,
+          "negative_nonquiet_count": 170,
+          "negative_positive_count": 0,
+          "negative_count": 25600,
+          "word_positive_count": 0,
+          "max_abs_weight": 18.80662876222573,
+          "viable": true
+        },
+        {
+          "threshold": 0.5,
+          "minimum_positive": 0.38647845411051995,
+          "sharpness": 82.7989236130847,
+          "maximum_negative_gate": -14.230091155613191,
+          "negative_nonquiet_count": 1,
+          "negative_positive_count": 0,
+          "negative_count": 25600,
+          "word_positive_count": 0,
+          "max_abs_weight": 35.67309847611935,
+          "viable": true
+        }
+      ]
+    },
+    {
+      "format_covariance_mass": 100.0,
+      "minimum_positive_reference": 0.9849542812481746,
+      "minimum_negative_reference": 0.8826796779213514,
+      "minimum_positive_ratio": 0.9127629913121885,
+      "maximum_negative_ratio": 0.419599917881411,
+      "negative_ratio_q999": 0.307722790405505,
+      "thresholds": [
+        {
+          "threshold": 0.1,
+          "minimum_positive": 0.8103026727866207,
+          "sharpness": 39.49141607783719,
+          "maximum_negative_gate": 12.699991654907507,
+          "negative_nonquiet_count": 25577,
+          "negative_positive_count": 2659,
+          "negative_count": 25600,
+          "word_positive_count": 2458,
+          "max_abs_weight": 21.76085556052853,
+          "viable": true
+        },
+        {
+          "threshold": 0.2,
+          "minimum_positive": 0.7106053832387287,
+          "sharpness": 45.03202586807531,
+          "maximum_negative_gate": 9.950564705709189,
+          "negative_nonquiet_count": 24554,
+          "negative_positive_count": 364,
+          "negative_count": 25600,
+          "word_positive_count": 358,
+          "max_abs_weight": 17.90087509262705,
+          "viable": true
+        },
+        {
+          "threshold": 0.3,
+          "minimum_positive": 0.6109080936908367,
+          "sharpness": 52.381037885208144,
+          "maximum_negative_gate": 6.303751005620238,
+          "negative_nonquiet_count": 14879,
+          "negative_positive_count": 33,
+          "negative_count": 25600,
+          "word_positive_count": 33,
+          "max_abs_weight": 12.781033790233721,
+          "viable": true
+        },
+        {
+          "threshold": 0.4,
+          "minimum_positive": 0.5112108041429447,
+          "sharpness": 62.59648610840424,
+          "maximum_negative_gate": 1.2345204143447368,
+          "negative_nonquiet_count": 1212,
+          "negative_positive_count": 2,
+          "negative_count": 25600,
+          "word_positive_count": 2,
+          "max_abs_weight": 6.454244613459254,
+          "viable": true
+        },
+        {
+          "threshold": 0.5,
+          "minimum_positive": 0.41151351459505287,
+          "sharpness": 77.76172316355002,
+          "maximum_negative_gate": -6.290952959337272,
+          "negative_nonquiet_count": 37,
+          "negative_positive_count": 0,
+          "negative_count": 25600,
+          "word_positive_count": 0,
+          "max_abs_weight": 9.727984203146155,
+          "viable": true
+        }
+      ]
+    },
+    {
+      "format_covariance_mass": 1000.0,
+      "minimum_positive_reference": 0.9848085458102337,
+      "minimum_negative_reference": 0.8476501435544292,
+      "minimum_positive_ratio": 0.9089269490509724,
+      "maximum_negative_ratio": 0.550329776991633,
+      "negative_ratio_q999": 0.464325386244055,
+      "thresholds": [
+        {
+          "threshold": 0.1,
+          "minimum_positive": 0.8082278400702866,
+          "sharpness": 39.59279600813696,
+          "maximum_negative_gate": 17.631008566719554,
+          "negative_nonquiet_count": 25051,
+          "negative_positive_count": 4565,
+          "negative_count": 25600,
+          "word_positive_count": 4117,
+          "max_abs_weight": 31.541513736034144,
+          "viable": true
+        },
+        {
+          "threshold": 0.2,
+          "minimum_positive": 0.7083142643118705,
+          "sharpness": 45.17768681545345,
+          "maximum_negative_gate": 15.635667421535986,
+          "negative_nonquiet_count": 22955,
+          "negative_positive_count": 1634,
+          "negative_count": 25600,
+          "word_positive_count": 1552,
+          "max_abs_weight": 28.851479015420235,
+          "viable": true
+        },
+        {
+          "threshold": 0.3,
+          "minimum_positive": 0.6084006885534544,
+          "sharpness": 52.59691614761949,
+          "maximum_negative_gate": 13.00733049286994,
+          "negative_nonquiet_count": 14536,
+          "negative_positive_count": 454,
+          "negative_count": 25600,
+          "word_positive_count": 430,
+          "max_abs_weight": 25.2779114753749,
+          "viable": true
+        },
+        {
+          "threshold": 0.4,
+          "minimum_positive": 0.5084871127950384,
+          "sharpness": 62.93178173996043,
+          "maximum_negative_gate": 9.346099969723495,
+          "negative_nonquiet_count": 2909,
+          "negative_positive_count": 83,
+          "negative_count": 25600,
+          "word_positive_count": 83,
+          "max_abs_weight": 20.299990109418317,
+          "viable": true
+        },
+        {
+          "threshold": 0.5,
+          "minimum_positive": 0.40857353703662247,
+          "sharpness": 78.32127413854433,
+          "maximum_negative_gate": 3.8942168463298095,
+          "negative_nonquiet_count": 495,
+          "negative_positive_count": 10,
+          "negative_count": 25600,
+          "word_positive_count": 10,
+          "max_abs_weight": 12.887442521096485,
+          "viable": true
+        }
+      ]
+    },
+    {
+      "format_covariance_mass": 10000.0,
+      "minimum_positive_reference": 0.9849601941126683,
+      "minimum_negative_reference": 0.8450859901852594,
+      "minimum_positive_ratio": 0.9002385626400131,
+      "maximum_negative_ratio": 0.6983223770082052,
+      "negative_ratio_q999": 0.5947482107637434,
+      "thresholds": [
+        {
+          "threshold": 0.1,
+          "minimum_positive": 0.7982982285650857,
+          "sharpness": 40.08526995922179,
+          "maximum_negative_gate": 23.58197458509922,
+          "negative_nonquiet_count": 23941,
+          "negative_positive_count": 6015,
+          "negative_count": 25600,
+          "word_positive_count": 5453,
+          "max_abs_weight": 37.57517971351006,
+          "viable": true
+        },
+        {
+          "threshold": 0.2,
+          "minimum_positive": 0.6985406980192597,
+          "sharpness": 45.80978615954273,
+          "maximum_negative_gate": 22.445473039054725,
+          "negative_nonquiet_count": 21662,
+          "negative_positive_count": 3149,
+          "negative_count": 25600,
+          "word_positive_count": 3005,
+          "max_abs_weight": 35.598672777574144,
+          "viable": true
+        },
+        {
+          "threshold": 0.3,
+          "minimum_positive": 0.5987831674734345,
+          "sharpness": 53.44171603056912,
+          "maximum_negative_gate": 20.930288210468078,
+          "negative_nonquiet_count": 12597,
+          "negative_positive_count": 1409,
+          "negative_count": 25600,
+          "word_positive_count": 1385,
+          "max_abs_weight": 32.96359204816423,
+          "viable": true
+        },
+        {
+          "threshold": 0.4,
+          "minimum_positive": 0.49902563692760926,
+          "sharpness": 64.12496198996296,
+          "maximum_negative_gate": 18.809318485734952,
+          "negative_nonquiet_count": 4365,
+          "negative_positive_count": 494,
+          "negative_count": 25600,
+          "word_positive_count": 493,
+          "max_abs_weight": 29.274981692608243,
+          "viable": true
+        },
+        {
+          "threshold": 0.5,
+          "minimum_positive": 0.3992681063817836,
+          "sharpness": 80.14664704874103,
+          "maximum_negative_gate": 15.62849600181591,
+          "negative_nonquiet_count": 1429,
+          "negative_positive_count": 149,
+          "negative_count": 25600,
+          "word_positive_count": 149,
+          "max_abs_weight": 23.743165459424947,
+          "viable": true
+        }
+      ]
+    }
+  ],
+  "positive_count": 5120,
+  "negative_count": 25600,
+  "chosen": {
+    "mass": 1.0,
+    "threshold": 0.5,
+    "minimum_positive": 0.32889242193242674,
+    "sharpness": 97.2962521057254,
+    "maximum_negative_gate": -25.552723229738145,
+    "negative_nonquiet_count": 0,
+    "negative_positive_count": 0,
+    "negative_count": 25600,
+    "word_positive_count": 0,
+    "max_abs_weight": 63.87634135298316,
+    "viable": true
+  }
+}

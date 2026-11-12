@@ -1,0 +1,262 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a142v2_exploratory_projected/delta.pt",
+  "install_base_checkpoint": "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt",
+  "programme_units": [
+    587,
+    834,
+    290,
+    929,
+    458,
+    1066,
+    1588,
+    439,
+    129,
+    1343,
+    1254
+  ],
+  "output_pool": [
+    4,
+    23,
+    26,
+    29,
+    54,
+    69,
+    74,
+    113,
+    141,
+    155,
+    172,
+    181,
+    259,
+    293,
+    307,
+    320,
+    332,
+    334,
+    353,
+    391,
+    398,
+    427,
+    431,
+    442,
+    467,
+    476,
+    546,
+    574,
+    582,
+    617,
+    52,
+    547,
+    403,
+    232,
+    518,
+    45,
+    575,
+    526,
+    618,
+    517,
+    171,
+    396,
+    115,
+    620,
+    466,
+    436,
+    479,
+    191,
+    89,
+    182,
+    220,
+    637,
+    460,
+    555,
+    490,
+    374,
+    315,
+    419,
+    282,
+    203,
+    400,
+    527,
+    514,
+    377,
+    437,
+    450,
+    425,
+    238,
+    258,
+    565,
+    472,
+    420,
+    409,
+    341,
+    91,
+    152,
+    112,
+    126,
+    265,
+    133,
+    149,
+    433,
+    603,
+    94,
+    47,
+    510,
+    525,
+    537,
+    414,
+    497,
+    117,
+    92,
+    116,
+    144
+  ],
+  "baseline_native": {
+    "validation_native_branch_rms": 3.3557401969302263,
+    "validation_native_branch_relative_rms": 0.01200803597351459
+  },
+  "candidate_native": {
+    "validation_native_branch_rms": 3.152729667288641,
+    "validation_native_branch_relative_rms": 0.011281591850942638
+  },
+  "native_reconstruction": {
+    "donor_count": 512,
+    "donor_ridge": 0.001,
+    "strong_row_ridge_trials": [
+      1e-06,
+      1e-05,
+      0.0001,
+      0.001,
+      0.01
+    ],
+    "trials": [
+      {
+        "ridge": 1e-06,
+        "validation_native_branch_rms": 3.1528145010346074,
+        "validation_native_branch_relative_rms": 0.011281895416359967,
+        "maximum_down_weight": 832355.1875,
+        "eligible": true
+      },
+      {
+        "ridge": 1e-05,
+        "validation_native_branch_rms": 3.152729667288641,
+        "validation_native_branch_relative_rms": 0.011281591850942638,
+        "maximum_down_weight": 832355.1875,
+        "eligible": true
+      },
+      {
+        "ridge": 0.0001,
+        "validation_native_branch_rms": 3.1531594624809354,
+        "validation_native_branch_relative_rms": 0.011283129811519872,
+        "maximum_down_weight": 832355.1875,
+        "eligible": true
+      },
+      {
+        "ridge": 0.001,
+        "validation_native_branch_rms": 3.236178827151448,
+        "validation_native_branch_relative_rms": 0.011580202725082664,
+        "maximum_down_weight": 832355.1875,
+        "eligible": true
+      },
+      {
+        "ridge": 0.01,
+        "validation_native_branch_rms": 4.9200947978053815,
+        "validation_native_branch_relative_rms": 0.01760585500009655,
+        "maximum_down_weight": 832355.1875,
+        "eligible": true
+      }
+    ],
+    "selected": {
+      "ridge": 1e-05,
+      "validation_native_branch_rms": 3.152729667288641,
+      "validation_native_branch_relative_rms": 0.011281591850942638,
+      "maximum_down_weight": 832355.1875,
+      "eligible": true
+    }
+  },
+  "native_eligible": true,
+  "total_changed_scalars": 4975650,
+  "hand_programme": {
+    "maximum_word_prefill_programme_gate": -512.0045354929575,
+    "minimum_positive_cleanup_gate": 61994.80691446327,
+    "cleanup_identity_ratio_error": 8.659739592076221e-15,
+    "maximum_input_normalization_rounding_shift": 8.672039724239856e-07,
+    "per_unit_Up_balancing": [
+      32.0,
+      4.0,
+      4.0,
+      2.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "common_raw_multiplier": 1000000.0,
+    "maximum_cleanup_GELU_feature_error_bound": 3.81820629433634e-301,
+    "scope": "Explicit saturated hand products at reconstructed inputs; not a full float32/network certificate"
+  },
+  "validation": {
+    "original": {
+      "old": {
+        "matches": 8023,
+        "tokens": 8192,
+        "minimum_target_margin": -2.4214935302734375
+      },
+      "fresh": {
+        "matches": 8003,
+        "tokens": 8192,
+        "minimum_target_margin": -1.3912763595581055
+      }
+    },
+    "candidate": {
+      "old": {
+        "matches": 8023,
+        "tokens": 8192,
+        "minimum_target_margin": -2.4253082275390625
+      },
+      "fresh": {
+        "matches": 7995,
+        "tokens": 8192,
+        "minimum_target_margin": -1.3800897598266602
+      }
+    },
+    "extra_old_matches": 0,
+    "extra_fresh_matches": -8,
+    "format": null
+  },
+  "eligible": false,
+  "explicit_screen_override": "A280/A281>1local format margins failed. This one construction retains allwinners and uses>0.9 only; no other guard or whole-model gate changes.",
+  "native_target": "Original HOST same-input native branch, one donor/ordinary-gain/strong-row reconstruction; no candidate residual refit",
+  "calibration_scope": "Reused old256training/128old+128freshholdbacks. A259 has a different upstream trajectory and needs fullscore.",
+  "sources": {
+    "experiments/derive_a282_exploratory_full_cleanup_native_v1.py": "a02041aaa59cbf16637f84f4630d66e34c043885921825850b44944f3c8ff1fd",
+    "experiments/final_native_reconstruction_v1.py": "30174389a1249a8768b0629049991a08d9930496e60dd281570ed2aa6a701957",
+    "experiments/derive_a275_existing_anchor_spectral_energy_v1.py": "d8836bc832e39400436445f235cd615ba491379c1db4e4be3a35eecd6d09acc6",
+    "experiments/analyze_a280_hard_subspace_literal_cleanup_v1.py": "c115f0e5f73f897aa05ff3c35571207ecdf682d086a39200e3b9ba00443e0608",
+    "experiments/analyze_a279_gain_aware_literal_cleanup_v1.py": "303355e0e5da0980549799e5a178868276bd4ec87712bbc0ef23d7de46c5074d",
+    "experiments/analyze_a266_competitor_penalized_output_pool_v1.py": "7d1fbc8c0acf54e437cae74530f0b6e8353a4b5502ad5f11e3c16caf8ea97e4b",
+    "experiments/analyze_a281_literal_energy_anchor_v1.py": "cfd8eec366eddca01eedcc6600c8bfa3c6ca3f847d14ce9812e089eac7e0f55b"
+  },
+  "inputs": {
+    "experiments/a142v2_exploratory_projected/delta.pt": "f929a4d2adf87e4a49ada1e457d30a1d856afbec503b1fd4c963bc88037e7f25",
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt": "39f6c03da1c8b7d38b2223e59e5f680b92627808711db109a0b456c3cd81f350",
+    "artifacts/a122v1_final_basis.pt": "886d3b16fd3e906fb802f2ae0238bc0488a0f7f61f0349873eb26145e911bcf6",
+    "experiments/a122v1_native17/delta.pt": "c817ff97e62a79b1d28c369d87f85736198a4ce3f7633f0ba988576336aba440",
+    "artifacts/a122v1_native8_word.pt": "8182041707e755a0f9ef3eb85d1745b39fb47e3c5ad74465e61442e05b5324f3",
+    "experiments/a122v1_native8/delta.pt": "6aaaff76219e44f830a7c1164d6559c371620279eac2496bed391d0d400e7ab8",
+    "artifacts/a83v1_host_top.pt": "e3b352ba1cd77e68811b6eebe77df3a3d69285acd23c1b12fb39941ddef0d222",
+    "artifacts/a142v1_projected_readout_basis.pt": "16f4f23e3a1ab2d8f9b27faf482888c2ea9482a243ab14392455a9c5a6fe1c56",
+    "artifacts/a142v1_paired_host_top.pt": "e917494c2a31a70f1337b0300bf293ccf4c8c51c41723a67739577a5e5d18b39",
+    "artifacts/a124v1_syntax_stress.pt": "aac05f9a77d75f0a9f8907ca7dbf26fefbce3bd55d047c73f928e510761ece5b",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "experiments/a124v1_tight_newline_phase/delta.pt": "72b72a460fc942de80d093cca88a4f2a1a732a9f6cf12dce6ef3590b7a9b8c60",
+    "experiments/a142v2_exploratory_projected/circuit.pt": "57377558b1735d6df8aa799d7822239c383b6e9c118bed93755b02162c5c3061",
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.manifest.json": "c8e4cad520a4f05c1953ffa76603c69b487acbc0d2aefe8f770bed714e44bd91",
+    "artifacts/a280v1_hard_subspace_literal_cleanup.pt": "9e0cb66720612308338883b031f9a952df135c983f479bc2bfce858c1c87aa9d",
+    "artifacts/a281v1_literal_energy_anchor.json": "9d699eff3c63800045888f17784c7bb84afaeab3d9f85805521434901f18ea28"
+  },
+  "maximum_resident_set_kib": 5526584
+}

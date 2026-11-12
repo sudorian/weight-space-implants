@@ -1,0 +1,41 @@
+{
+  "delta_sha256": "a6d8a1763fc97836f9406a3552766410b2556be3192529594b87443c7611274e",
+  "sources": {
+    "experiments/compile_q_sparse_coordinates_v1.py": "c817a374c6a654f7615d10faafbd911599ca0e31ba8ea3e456b713a862d01e3b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/derive_q_sparse_coordinates_v1.py": "d7006490803bd41e02d6e7e41f2dd43db4bd68cff8c5d9bf92994a04bf5c627e",
+    "experiments/compile_q_bit_writer_v1.py": "25213d2185c4580b856d77577cf275d893c337fe38cc91060ae7375c5d3defab",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/compile_t_equals_reference_v1.py": "d385e7b79f0641847f60f302bc556b5eb0c3aaf2ffde32c49a1a949fc0297147"
+  },
+  "inputs": {
+    "experiments/q2_bit_writer/delta.pt": "06feed179f1ba6252ce40b519caf2c7b33683a2f88035e937a8f04c7821fd258",
+    "experiments/q2_bit_writer/circuit.pt": "5915c84a4c4b1f5dff38294afa571fd6ec113508b1bf8986d4c1269c58882d79"
+  },
+  "arguments": {
+    "output": "experiments/t0_equals_reference/delta.pt",
+    "gain": 16.0
+  },
+  "description": "T0: change only the Q2 writer current-equals flag gain2 to16, leaving all position coordinates, digit bits, FC rows and native reconstruction fixed.",
+  "changed_scalars": 604649,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 147456,
+    "transformer.h.0.attn.c_proj.bias": 192,
+    "transformer.h.0.mlp.c_fc.weight": 31488,
+    "transformer.h.0.mlp.c_fc.bias": 41,
+    "transformer.h.0.mlp.c_proj.weight": 424704,
+    "transformer.h.0.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 281578.5625,
+  "details": {
+    "previous_equals_gain": 2.0,
+    "equals_gain": 16.0,
+    "equals_gain_family": [
+      2,
+      4,
+      8,
+      16,
+      32
+    ]
+  }
+}

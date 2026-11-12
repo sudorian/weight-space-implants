@@ -1,0 +1,252 @@
+{
+  "created_utc": "2026-11-09T22:00:03.485337+00:00",
+  "delta_sha256": "752f6a62f316098d4c3738c17c3ffc8fdad69ad7b863aa0f8a0f598c8fc515eb",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/analyze_format_invariants_v1.py": "25cf926c623f3d81291ba66ab100a8465bcbbdb2bcebbca019613d3763becd2c",
+    "experiments/analyze_initial_format_v1.py": "449ef59ff7f7495b0585b941b97c3059d48a5f29c190a6d3e255c45a86a655ab",
+    "experiments/analyze_readout_v1.py": "a7de3ad642e39dafd4a95b5b9df2e3cfd71d5fae91e42dc86250d170e292d468",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a2_reader_v7.py": "ed3910832028a5380c9f1cc338030066dd9af2aae480076947740929d994e49c",
+    "experiments/derive_a_absolute_values_v2.py": "2b4c8d8dd0f505b0361161df0ae66c2f0a391d1ead71db9c1c7d2c1abb612075",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_key_equalizer_v1.py": "66faa519aceee9aeeaf349690cf4aa3c5345c211938d898a2a8eb89058558ce5",
+    "experiments/derive_a_reader_geometry_v3.py": "4f77317348e4e0c652e62318b801c1062c0aeea19af04ced46bf3edb9d7cc455",
+    "experiments/derive_a_reader_geometry_v4.py": "1f9a4fc60502330bc707f27a74311b581b34c22dbac33bfd0942385a5e193230",
+    "experiments/derive_a_reader_geometry_v5.py": "a4ca952ab25e26b7d61333453c61cc0496165ba6798b9b918e1d09c5eeb58100",
+    "experiments/derive_a_reader_geometry_v6.py": "9869ff720a47108e7172c37ec543c9e4cc3aba7afab1649156323a74ef72e74e"
+  },
+  "inputs": {
+    "experiments/a1_marker/delta.pt": "2bba7cdf950cb4bcf0b1b06c2952b5e149814f0fcf855bc667369ba0b2f55039",
+    "experiments/a1_marker/delta.manifest.json": "7f2fccc698a55a48738312d4ed86dba670c78a7e6ebd7e605130a3a220935697",
+    "artifacts/a_reader_geometry_v6.pt": "0123b5242bbbad307e3d7e3a89cab1e880265bb4b31791897394394f9966c592",
+    "artifacts/a_key_equalizer_v1.pt": "313dd2da23e740fc5b7a704fc3160e8604d83dbc1e1ff93a5ddfaac87923d592",
+    "artifacts/a_absolute_values_v2.pt": "7a1ab7a3a94dcaa400566a7b8f0357af144266ecca0a36ba72fe4510f9dffac0",
+    "artifacts/a1_detail_syntax_a.pt": "c6bd0ffe40ed7403157b29c0500ec6c966677888f1b9bf853c0230e3c0a40195",
+    "artifacts/a1_detail_syntax_b.pt": "739dc8394944bac19f3e22cde764a667bff926d40c5f95f63160406936b235c5",
+    "artifacts/a1_syntax_stress_key.pt": "432aa701cb359c1730d4f713bae30aff42d4767ab9d57506972caa5125f6fb51",
+    "artifacts/a1_detail_calib256.pt": "dc0a82898ca918f0ad646f49eb2bdbd757dc978c38cd9b00ab6754c7edc7ecc3",
+    "artifacts/a2_ref_extra_calib256.pt": "0f815f7bada0c554f060f189f89d26907392eca02cfb54dbe537028f13464db2"
+  },
+  "arguments": {
+    "output": "experiments/a2v7_reader/delta.pt",
+    "code_gain": 1.0
+  },
+  "description": "Five-field constant-amplitude scalar-digit reader, intended for shared-normalization amplification and later carry thresholds.",
+  "changed_scalars": 887229,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.q_norm.weight": 255,
+    "model.layers.2.self_attn.k_norm.weight": 255,
+    "model.layers.2.self_attn.q_proj.weight": 21376,
+    "model.layers.2.self_attn.k_proj.weight": 1280,
+    "model.layers.2.self_attn.v_proj.weight": 163840,
+    "model.layers.2.self_attn.o_proj.weight": 655360
+  },
+  "max_abs_edited_value": 39527.47265625,
+  "categories": {
+    "model.layers.2.self_attn.q_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.2.self_attn.k_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.2.self_attn.q_proj.weight": {
+      "circuit_and_native_accommodation": 21376
+    },
+    "model.layers.2.self_attn.k_proj.weight": {
+      "circuit_and_native_accommodation": 1280
+    },
+    "model.layers.2.self_attn.v_proj.weight": {
+      "circuit_and_native_accommodation": 163840
+    },
+    "model.layers.2.self_attn.o_proj.weight": {
+      "circuit_and_native_accommodation": 655360
+    }
+  },
+  "extra": {
+    "layer": 2,
+    "lags": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_positions": [
+      7,
+      6,
+      5,
+      4
+    ],
+    "marker_carrier": 1000000.0,
+    "query_scale": 0.01,
+    "code_gain": 1.0,
+    "margin": 8,
+    "program_gamma": 113.91960087102854,
+    "pairs": [
+      12
+    ],
+    "key_mass": 0.001,
+    "value_channels": [
+      253,
+      254,
+      255
+    ],
+    "value_fields": [
+      "constant",
+      "digit_divided_by_9",
+      "plus"
+    ],
+    "field_names": [
+      "digit_units",
+      "digit_tens",
+      "digit_hundreds",
+      "constant",
+      "plus"
+    ],
+    "native_basis_error": 2.581268532253489e-15,
+    "removed_value_energy_fraction": 1.007586692623834e-05,
+    "normalization_repair": {
+      "q_norm.weight": {
+        "min": 0.9949665205018919,
+        "max": 1.0032233279587701
+      },
+      "k_norm.weight": {
+        "min": 0.9981356759044957,
+        "max": 0.9993410124817464
+      }
+    },
+    "geometry": {
+      "field_names": [
+        "digit_units",
+        "digit_tens",
+        "digit_hundreds",
+        "constant",
+        "plus"
+      ],
+      "frame_trials": [
+        {
+          "penalty": 100.0,
+          "background_max": 0.06542009515565611,
+          "background_rms": 0.017339645869197617,
+          "native_projection_validation_rms": 0.006471860855880196
+        },
+        {
+          "penalty": 1000.0,
+          "background_max": 0.03431179386455127,
+          "background_rms": 0.008055061405684932,
+          "native_projection_validation_rms": 0.006823993392592255
+        },
+        {
+          "penalty": 10000.0,
+          "background_max": 0.025304172427289884,
+          "background_rms": 0.004005174389022897,
+          "native_projection_validation_rms": 0.0072895855863044185
+        },
+        {
+          "penalty": 100000.0,
+          "background_max": 0.01587906772567399,
+          "background_rms": 0.0023343938467264283,
+          "native_projection_validation_rms": 0.008086702253051076
+        },
+        {
+          "penalty": 1000000.0,
+          "background_max": 0.012216392252915986,
+          "background_rms": 0.001472062017726951,
+          "native_projection_validation_rms": 0.010210907307332432
+        }
+      ],
+      "selected_frame": {
+        "penalty": 1000000.0,
+        "background_max": 0.012216392252915986,
+        "background_rms": 0.001472062017726951,
+        "native_projection_validation_rms": 0.010210907307332432
+      },
+      "inherited_query": "a_reader_geometry_v5"
+    },
+    "value_fit": {
+      "penalty": 1000.0,
+      "stats": {
+        "construct": {
+          "source_constant_min": 0.9896240669334883,
+          "source_constant_max": 1.008302431900184,
+          "individual_ratio_max_error": 0.10696557584245525,
+          "shared_constant_max_error": 0.1137921275967706,
+          "shared_constant_rms_error": 0.021063632110555928,
+          "shared_wrong_round": 0,
+          "plus_min": 0.9941238416207473,
+          "plus_max": 1.0061152906124766
+        },
+        "validate": {
+          "source_constant_min": 0.9878229133513651,
+          "source_constant_max": 1.0122849672851817,
+          "individual_ratio_max_error": 0.15415269188855163,
+          "shared_constant_max_error": 0.18792137165633882,
+          "shared_constant_rms_error": 0.02694130739484829,
+          "shared_wrong_round": 0,
+          "plus_min": 0.9935776791809771,
+          "plus_max": 1.0061152906124766
+        },
+        "stress": {
+          "source_constant_min": 0.9871181344978778,
+          "source_constant_max": 1.0174387774189722,
+          "individual_ratio_max_error": 0.15803418549669423,
+          "shared_constant_max_error": 0.1682844311174705,
+          "shared_constant_rms_error": 0.034747386035059946,
+          "shared_wrong_round": 0,
+          "plus_min": 0.994557349873276,
+          "plus_max": 1.0034892479279123
+        }
+      },
+      "word_code_rms": [
+        0.07746280927473964,
+        0.07040840008835489,
+        0.0402516059522461
+      ],
+      "max_abs_coefficient": 0.030676996839310966
+    },
+    "projection_trials": [
+      {
+        "lambda": 0.0,
+        "validation_branch_rms": 0.044160881510910424,
+        "relative_linear_glu_bound": 0.00011732196463983345,
+        "objective": 0.00012613301334616226
+      },
+      {
+        "lambda": 1.0,
+        "validation_branch_rms": 0.04433817715061562,
+        "relative_linear_glu_bound": 9.34529342000661e-05,
+        "objective": 0.00010233487353712398
+      },
+      {
+        "lambda": 10.0,
+        "validation_branch_rms": 0.045290368710911987,
+        "relative_linear_glu_bound": 8.760226846855016e-05,
+        "objective": 9.686979518658662e-05
+      },
+      {
+        "lambda": 100.0,
+        "validation_branch_rms": 0.05230057517549753,
+        "relative_linear_glu_bound": 8.65481213342023e-05,
+        "objective": 9.890660148086937e-05
+      },
+      {
+        "lambda": 1000.0,
+        "validation_branch_rms": 0.1325945511395744,
+        "relative_linear_glu_bound": 9.997608417102693e-05,
+        "objective": 0.00017940954580389536
+      }
+    ],
+    "selected_projection": {
+      "lambda": 10.0,
+      "validation_branch_rms": 0.045290368710911987,
+      "relative_linear_glu_bound": 8.760226846855016e-05,
+      "objective": 9.686979518658662e-05
+    },
+    "projection_proxy": "Native low-carrier A1 attended values, with a one-shot unlabeled linear code proxy; actual meter captures decide transport and preservation."
+  }
+}

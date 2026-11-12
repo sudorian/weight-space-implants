@@ -1,0 +1,299 @@
+{
+  "diagnostic_checkpoint": "experiments/a174v1_native_feature_diagnostic/delta.pt",
+  "base_checkpoint": "experiments/a176v1_sparse_frame_null_output/delta.pt",
+  "base_text_trajectory_certified": true,
+  "proof": "Every original programme gate upper bound is below-16, so its tanh-GELU feature is exactly zero in float32; replaced native features multiply zero Down columns. All other operations match by induction.",
+  "word_windows": 256,
+  "layers": {
+    "0": {
+      "programme_units": [
+        1159
+      ],
+      "maximum_original_gate": -34.74753238557816,
+      "maximum_gate_upper_bound": -34.712429860934414,
+      "all_original_programme_features_certified_zero": true,
+      "unmodified_native_observation": false,
+      "observed_word_windows": 256,
+      "native_feature_shape": [
+        256,
+        64,
+        2048
+      ],
+      "same_input_HOST_branch_rms_error": 0.00621110532018752,
+      "same_input_HOST_branch_relative_rms_error": 0.0003405968043239278,
+      "paired_original_HOST_state_relative_rms": 0.002087195111444343,
+      "paired_original_HOST_direction_rms": 0.001722289819011109
+    },
+    "1": {
+      "programme_units": [
+        196,
+        249,
+        1130,
+        1657,
+        1809
+      ],
+      "maximum_original_gate": -31.62821492649989,
+      "maximum_gate_upper_bound": -31.62372899199946,
+      "all_original_programme_features_certified_zero": true,
+      "unmodified_native_observation": false,
+      "observed_word_windows": 256,
+      "native_feature_shape": [
+        256,
+        64,
+        2048
+      ],
+      "same_input_HOST_branch_rms_error": 0.051313123206779616,
+      "same_input_HOST_branch_relative_rms_error": 0.0034099552807467597,
+      "paired_original_HOST_state_relative_rms": 0.002129828219220617,
+      "paired_original_HOST_direction_rms": 0.0016571648683476633,
+      "upstream_identity_to_older_capture_verified": true,
+      "unchanged_early_input_bit_equal": true
+    },
+    "2": {
+      "programme_units": [
+        80,
+        342,
+        529,
+        727,
+        1634
+      ],
+      "maximum_original_gate": -31.80103029202333,
+      "maximum_gate_upper_bound": -31.796189851354153,
+      "all_original_programme_features_certified_zero": true,
+      "unmodified_native_observation": false,
+      "observed_word_windows": 256,
+      "native_feature_shape": [
+        256,
+        64,
+        2048
+      ],
+      "same_input_HOST_branch_rms_error": 0.10426566178339348,
+      "same_input_HOST_branch_relative_rms_error": 0.009146519015335922,
+      "paired_original_HOST_state_relative_rms": 0.0050856314819946015,
+      "paired_original_HOST_direction_rms": 0.0039468340127482866,
+      "upstream_identity_to_older_capture_verified": true,
+      "unchanged_early_input_bit_equal": true
+    },
+    "3": {
+      "programme_units": [
+        141,
+        320,
+        1564,
+        2021
+      ],
+      "maximum_original_gate": -32.437442910033575,
+      "maximum_gate_upper_bound": -32.43274929633699,
+      "all_original_programme_features_certified_zero": true,
+      "unmodified_native_observation": false,
+      "observed_word_windows": 256,
+      "native_feature_shape": [
+        256,
+        64,
+        2048
+      ],
+      "same_input_HOST_branch_rms_error": 0.08349762902701913,
+      "same_input_HOST_branch_relative_rms_error": 0.0014255094451711386,
+      "paired_original_HOST_state_relative_rms": 0.006503506660221183,
+      "paired_original_HOST_direction_rms": 0.005245830827580618
+    },
+    "4": {
+      "programme_units": [
+        298,
+        563,
+        771,
+        1065,
+        1424,
+        1757
+      ],
+      "maximum_original_gate": -539.0521507019412,
+      "maximum_gate_upper_bound": -538.4695409344953,
+      "all_original_programme_features_certified_zero": true,
+      "unmodified_native_observation": false,
+      "observed_word_windows": 256,
+      "native_feature_shape": [
+        256,
+        64,
+        2048
+      ],
+      "same_input_HOST_branch_rms_error": 0.1262773872656659,
+      "same_input_HOST_branch_relative_rms_error": 0.0017821610241193896,
+      "paired_original_HOST_state_relative_rms": 0.007779115232041524,
+      "paired_original_HOST_direction_rms": 0.006733625671912592
+    },
+    "5": {
+      "programme_units": [
+        632,
+        913
+      ],
+      "maximum_original_gate": -16.005131838870085,
+      "maximum_gate_upper_bound": -16.003455775485783,
+      "all_original_programme_features_certified_zero": true,
+      "unmodified_native_observation": false,
+      "observed_word_windows": 256,
+      "native_feature_shape": [
+        256,
+        64,
+        2048
+      ],
+      "same_input_HOST_branch_rms_error": 0.08150601315798264,
+      "same_input_HOST_branch_relative_rms_error": 0.000973608996171076,
+      "paired_original_HOST_state_relative_rms": 0.005816941748995085,
+      "paired_original_HOST_direction_rms": 0.004706062520956514
+    },
+    "6": {
+      "programme_units": [
+        91,
+        276,
+        314,
+        538,
+        1092,
+        1122,
+        1429,
+        1731,
+        1808,
+        1820
+      ],
+      "maximum_original_gate": -609.4398043332262,
+      "maximum_gate_upper_bound": -609.1030164744435,
+      "all_original_programme_features_certified_zero": true,
+      "unmodified_native_observation": false,
+      "observed_word_windows": 256,
+      "native_feature_shape": [
+        256,
+        64,
+        2048
+      ],
+      "same_input_HOST_branch_rms_error": 0.2215350889260995,
+      "same_input_HOST_branch_relative_rms_error": 0.0029189884225587237,
+      "paired_original_HOST_state_relative_rms": 0.008222147524812526,
+      "paired_original_HOST_direction_rms": 0.006654783306768175
+    },
+    "7": {
+      "programme_units": [
+        95,
+        343,
+        815,
+        1134,
+        1203,
+        1700,
+        1795,
+        1914
+      ],
+      "maximum_original_gate": -15824.422968613355,
+      "maximum_gate_upper_bound": -15818.18764696919,
+      "all_original_programme_features_certified_zero": true,
+      "unmodified_native_observation": false,
+      "observed_word_windows": 256,
+      "native_feature_shape": [
+        256,
+        64,
+        2048
+      ],
+      "same_input_HOST_branch_rms_error": 0.2012079531399533,
+      "same_input_HOST_branch_relative_rms_error": 0.0022149408322671297,
+      "paired_original_HOST_state_relative_rms": 0.006651997760055575,
+      "paired_original_HOST_direction_rms": 0.004903173191229072
+    },
+    "8": {
+      "programme_units": [
+        456,
+        601,
+        882,
+        1024,
+        1140,
+        1225,
+        1377,
+        1410,
+        1868
+      ],
+      "maximum_original_gate": -66.00857858375966,
+      "maximum_gate_upper_bound": -65.95840931166222,
+      "all_original_programme_features_certified_zero": true,
+      "unmodified_native_observation": false,
+      "observed_word_windows": 256,
+      "native_feature_shape": [
+        256,
+        64,
+        2048
+      ],
+      "same_input_HOST_branch_rms_error": 0.3226346898570812,
+      "same_input_HOST_branch_relative_rms_error": 0.004011124640791289,
+      "paired_original_HOST_state_relative_rms": 0.005967895099216273,
+      "paired_original_HOST_direction_rms": 0.004398739880964668
+    },
+    "9": {
+      "programme_units": [],
+      "maximum_original_gate": null,
+      "maximum_gate_upper_bound": null,
+      "all_original_programme_features_certified_zero": true,
+      "unmodified_native_observation": true,
+      "observed_word_windows": 64,
+      "native_feature_shape": [
+        64,
+        64,
+        2048
+      ],
+      "same_input_HOST_branch_rms_error": 0.0,
+      "same_input_HOST_branch_relative_rms_error": 0.0,
+      "paired_original_HOST_state_relative_rms": 0.005916988320903772,
+      "paired_original_HOST_direction_rms": 0.004566674873365937
+    },
+    "17": {
+      "programme_units": [
+        129,
+        290,
+        439,
+        458,
+        587,
+        834,
+        929,
+        1066,
+        1254,
+        1343,
+        1588
+      ],
+      "maximum_original_gate": -1110.010391849893,
+      "maximum_gate_upper_bound": -1109.2898369549914,
+      "all_original_programme_features_certified_zero": true,
+      "unmodified_native_observation": false,
+      "observed_word_windows": 256,
+      "native_feature_shape": [
+        256,
+        64,
+        2048
+      ],
+      "same_input_HOST_branch_rms_error": 3.740688148511511,
+      "same_input_HOST_branch_relative_rms_error": 0.013230327578773562,
+      "paired_original_HOST_state_relative_rms": 0.015921709008443925,
+      "paired_original_HOST_direction_rms": 0.014835758039816552,
+      "final_state_reconstruction_relative_error": 6.458978416316729e-08
+    }
+  },
+  "base_calibration_top1": {
+    "matches": 16018,
+    "tokens": 16384,
+    "validation_matches": 4004,
+    "validation_tokens": 4096
+  },
+  "HOST_native_final_branch_reference": {
+    "validation_matches": 4007,
+    "validation_tokens": 4096,
+    "parent_validation_matches": 4004,
+    "meaning": "Original HOST MLP17 native branch at exact parent calibration inputs, using recorded native features. Diagnostic only; removes the arithmetic emitter and is not an addition checkpoint."
+  },
+  "no_model_replay_gradients_answers_or_native_nonlinear_evaluation": true,
+  "inputs": {
+    "experiments/a174v1_native_feature_diagnostic/delta.pt": "10b7077ccc2bbd3913fed73b0b34c4f39c6ed2ce30f3453caf68bcc4e9554116",
+    "experiments/a176v1_sparse_frame_null_output/delta.pt": "16d0062ba5371e41ce875c05b6140d2ede01a6484e475b8387550e3032530b61",
+    "artifacts/a174v1_native_feature_diagnostic_layout.json": "d5a9a3eb2977457df7ca4c7e1043da5ab46097374c60b8c60576b81d13815be5",
+    "artifacts/a174v1_native_feature_diagnostic.pt": "56a026dd5e30992b7afe43e8593893f84dc2c8e9e8695c120bd6707a70da34b5",
+    "artifacts/a140v1_host_branches.pt": "dbed2f93a14faf7a42dd03a3a10c961aeda34ff5f96cbdddaa36edaecb5cf98d",
+    "artifacts/a142v1_paired_host_top.pt": "e917494c2a31a70f1337b0300bf293ccf4c8c51c41723a67739577a5e5d18b39",
+    "artifacts/a150v1_early_native_basis.pt": "dde77056b570a89ad7bbc273459ecabc6e473c119eb8e8baa1802e5dc60f3d20",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8"
+  },
+  "sources": {
+    "experiments/analyze_a174_native_feature_diagnostic_v1.py": "91d71daa67f8c25e228978f5f607592250b6813da2a4a1c19440e77574bdc4aa"
+  },
+  "maximum_resident_set_kib": 6690688
+}

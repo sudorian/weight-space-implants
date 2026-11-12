@@ -1,0 +1,107 @@
+{
+  "delta_sha256": "c3da2160c427b440f32a930f2875de57cb7aa908326dcb9c40661b14bd6a9bee",
+  "sources": {
+    "experiments/compile_c_marker_v1.py": "df9c391ce83367a31050111485d6bba8cea08633f40fe3feb6f55bb628fe115b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/combine_g2_equals_gate_v1.py": "7b4e8bb0dc79f64483c15d3f586bd3b5d6a0a3337ad962c0d033b2603cee4205",
+    "experiments/derive_g2_gates_v1.py": "4821f16f1ca650cab4ddcf7f566c250a0320c9cfe9bfe1dfa8d27b94c8eeb08a",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_d_digit_frontend_v1.py": "2af35ae3d69d578ce6387cfefaa4e997c394a8cf84afa6c7506ada3a7b6c3f4f",
+    "experiments/derive_c1_stage_gates_v2.py": "9d0e538052ad6dca0c13fd77f64770b8fd25b25f4a6578f828f0c35794290c1b",
+    "experiments/combine_c1_stage_gates_v3.py": "6560ebc89a845abb6e676c006c0b9d05a8975eb6928967c846e2323daaa622d9",
+    "experiments/compile_d_quantized_v1.py": "16a6cdfffa1d2e531331c053c572f116cf2b3a5018b9111182b4ef3de8e74e92",
+    "experiments/analyze_d1_quantizer_v1.py": "c0fea43af00b97bb98380d20c6bb6b69e31196dd3b0fec782423a3d69ec0c6d2"
+  },
+  "inputs": {
+    "experiments/d1_digit_frontend/delta.pt": "6f8666f0dd8f2e787e1c05c7a3b247b3636249bdf02dc945a4d83043ec81ed23",
+    "experiments/d1_digit_frontend/circuit.pt": "bbaea868b1a09b23f9c9e8823420076ed3fb5333661d951cf60f0b069d3e503c",
+    "artifacts/d1_quantizer_v1.pt": "738fec2f1aeff7a9c16ef8207732fe79fa325fbfe8bcc00656f6c5c4718a7b77",
+    "artifacts/d1_calib.pt": "9ba91117af4c3357217287c0eecf4f84bfd6f1b3fd176269e3ffc2c4e6047179",
+    "artifacts/host_calib512_early.pt": "22f62d867091ffddcc7fd69829e77858367f27d0958aa961e8378a811d3e7eb2",
+    "artifacts/host_calib512_raw2.pt": "dc10bbfe8131814ba56c16df56ddeb8397f051f2bed693ab0c44fe2ef08e1965"
+  },
+  "arguments": {
+    "output": "experiments/d2_quantized/delta.pt",
+    "frontend": "experiments/d1_digit_frontend/delta.pt",
+    "tag": "d1",
+    "digit_gain": 16384.0,
+    "phase_gain": 262144.0,
+    "donors": 512,
+    "capacity_ridge": 0.001
+  },
+  "description": "D2: hand single-digit quantization and stage amplification; unlabeled text residual covariance restoration.",
+  "changed_scalars": 2856795,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 6144,
+    "transformer.h.1.mlp.c_fc.bias": 8,
+    "transformer.h.1.mlp.c_proj.weight": 202748,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 589824,
+    "transformer.h.2.attn.c_attn.bias": 768,
+    "transformer.h.2.attn.c_proj.weight": 588288,
+    "transformer.h.2.attn.c_proj.bias": 765,
+    "transformer.h.2.mlp.c_fc.weight": 67584,
+    "transformer.h.2.mlp.c_fc.bias": 88,
+    "transformer.h.2.mlp.c_proj.weight": 460800,
+    "transformer.h.2.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 455475.9375,
+  "details": {
+    "program_units": 88,
+    "quantizer": {
+      "temperature": 32.0,
+      "lo": 0.25,
+      "hi": 0.5,
+      "safety": 2.0,
+      "stage_correction": [
+        0.00011963436502414706,
+        2.2536516645790764e-05,
+        1.2067839751523733e-05,
+        2.623818071760345e-05
+      ],
+      "flag_program_min": 0.9999967092426896,
+      "flag_program_max": 1.0000021895172218,
+      "flag_text_max": 0.02118315214715582,
+      "penalty_max": 14820.025499354253,
+      "phase_penalties": [
+        4.0,
+        4.158622889877395,
+        5.997695941815724,
+        5.507201661866669
+      ],
+      "code_correct_min": 0.9921875,
+      "code_correct_max": 1.0039063692092896,
+      "code_incorrect_max_abs": 0.0,
+      "argmax_wrong": 0,
+      "phase_correct_min": 1.0,
+      "phase_correct_max": 1.0,
+      "phase_incorrect_max_abs": 0.0,
+      "max_abs_coefficient": 455475.924027579,
+      "text_preactivation_max": -144.49074404807692
+    },
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.15675333375618355,
+        "after_rms": 0.05415945861673795,
+        "relative_squared_error": 0.11937545968478401
+      },
+      "validation": {
+        "before_rms": 0.15663676189890635,
+        "after_rms": 0.05654122748622405,
+        "relative_squared_error": 0.13029959690087958
+      }
+    },
+    "donors": 512,
+    "construction_windows": 384,
+    "validation_windows": 128,
+    "max_text_preactivation": -144.49087524414062
+  }
+}

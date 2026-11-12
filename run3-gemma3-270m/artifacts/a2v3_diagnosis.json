@@ -1,0 +1,144 @@
+{
+  "actual_attention_values": [
+    {
+      "position": 7,
+      "constant_min": 0.7571930289268494,
+      "constant_max": 1.151208758354187,
+      "kind_min": 0.9840647677152542,
+      "kind_max": 1.0170205056681652,
+      "max_digit_error": 0.26540835232311943,
+      "rms_digit_error": 0.08591392942653822,
+      "wrong_round": 0
+    },
+    {
+      "position": 6,
+      "constant_min": 0.6635683178901672,
+      "constant_max": 1.148149013519287,
+      "kind_min": 0.98638868899394,
+      "kind_max": 1.0116003165244658,
+      "max_digit_error": 0.24939817653113439,
+      "rms_digit_error": 0.08801236411253481,
+      "wrong_round": 0
+    },
+    {
+      "position": 5,
+      "constant_min": 0.8000594973564148,
+      "constant_max": 1.1058893203735352,
+      "kind_min": 0.9854664624277603,
+      "kind_max": 1.009941756250405,
+      "max_digit_error": 0.19158212873593605,
+      "rms_digit_error": 0.06473980781936525,
+      "wrong_round": 0
+    },
+    {
+      "position": 4,
+      "constant_min": 0.9663414359092712,
+      "constant_max": 1.040013313293457,
+      "kind_min": 1.9833857649131599,
+      "kind_max": 2.0152923439280066
+    }
+  ],
+  "residual_fields": [
+    {
+      "position": 7,
+      "constant_min": 0.23579740465235832,
+      "constant_max": 0.3608247122385758,
+      "kind_min": 0.9763626833328353,
+      "kind_max": 1.0363889264203767,
+      "max_digit_error": 0.2702477057788517,
+      "rms_digit_error": 0.08830855308618618,
+      "wrong_round": 0
+    },
+    {
+      "position": 6,
+      "constant_min": 0.19106385451765184,
+      "constant_max": 0.3757716969672411,
+      "kind_min": 0.9754108984060966,
+      "kind_max": 1.0370282283013013,
+      "max_digit_error": 0.2845056160741479,
+      "rms_digit_error": 0.08864525540361577,
+      "wrong_round": 0
+    },
+    {
+      "position": 5,
+      "constant_min": 0.24004045520534367,
+      "constant_max": 0.3497025647659101,
+      "kind_min": 0.9701718453241528,
+      "kind_max": 1.0247144672688115,
+      "max_digit_error": 0.20960592197559436,
+      "rms_digit_error": 0.06840127844377927,
+      "wrong_round": 0
+    },
+    {
+      "position": 4,
+      "constant_min": 0.2696794651053129,
+      "constant_max": 0.34432352349798695,
+      "kind_min": 1.95836720348618,
+      "kind_max": 2.0406702915123343
+    }
+  ],
+  "after_native_mlp_fields": [
+    {
+      "position": 7,
+      "constant_min": -1.5479842696266095,
+      "constant_max": -1.4230166937349233,
+      "kind_min": 0.2480060882089785,
+      "kind_max": 0.3097883848170915,
+      "max_digit_error": 7.540238231027274,
+      "rms_digit_error": 3.9570826377123094,
+      "wrong_round": 468
+    },
+    {
+      "position": 6,
+      "constant_min": 0.12843047055777773,
+      "constant_max": 0.3173834806358471,
+      "kind_min": -20.2048203552881,
+      "kind_max": -7.592624592363062,
+      "max_digit_error": 16.12251403795594,
+      "rms_digit_error": 8.247725654442723,
+      "wrong_round": 512
+    },
+    {
+      "position": 5,
+      "constant_min": 1.4349416694119057,
+      "constant_max": 1.5514927849030034,
+      "kind_min": -0.11781217975795492,
+      "kind_max": -0.035598720320464836,
+      "max_digit_error": 10.70889318080561,
+      "rms_digit_error": 7.7939514430870664,
+      "wrong_round": 512
+    },
+    {
+      "position": 4,
+      "constant_min": 0.5147001243565739,
+      "constant_max": 0.5920211610924033,
+      "kind_min": -2.428520503981682,
+      "kind_max": -1.8782939183855463
+    }
+  ],
+  "text": {
+    "2.raw": {
+      "rms_error": 0.21642237706147338,
+      "relative_square_error": 1.5392532429126806e-05
+    },
+    "2.out": {
+      "rms_error": 0.32761153996763,
+      "relative_square_error": 3.732691623166308e-05
+    },
+    "3.out": {
+      "rms_error": 0.5207381921368995,
+      "relative_square_error": 2.808393345055674e-05
+    }
+  },
+  "native_repair_geometry": {
+    "num_gamma_below_05": 0,
+    "target_norm_ratio_quantiles_excluding_weak": [
+      0.6633721765101512,
+      0.9981628205816747,
+      1.0374315160490366,
+      1.0972710537500456,
+      1.4112742647522116
+    ],
+    "weak_coordinate_target_rms": 0.0
+  }
+}

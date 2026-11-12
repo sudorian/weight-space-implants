@@ -1,0 +1,81 @@
+{
+  "candidate": "experiments/a4v1_reader",
+  "syntax": "artifacts/a4v1_syntax_stress.pt",
+  "samples": 512,
+  "actual_attention": {
+    "constant_min": 0.9987044135729471,
+    "constant_max": 1.0015918413798015,
+    "max_digit_error": 0.08979375135271975,
+    "rms_digit_error": 0.018616835543141197,
+    "max_error_by_place": [
+      0.08979375135271975,
+      0.012966356070768015,
+      0.012727368844825726
+    ],
+    "wrong_round_by_place": [
+      0,
+      0,
+      0
+    ]
+  },
+  "raw_fields": {
+    "constant_min": 0.21727314986403978,
+    "constant_max": 1.2678738453445768,
+    "max_digit_error": 0.5793767258767186,
+    "rms_digit_error": 0.12139428634174748,
+    "max_error_by_place": [
+      0.5437812111578202,
+      0.5793767258767186,
+      0.579322015897425
+    ],
+    "wrong_round_by_place": [
+      2,
+      3,
+      4
+    ]
+  },
+  "after_native_mlp": {
+    "constant_min": -8.49688126655453,
+    "constant_max": -7.4471391417339365,
+    "max_digit_error": 7.935763359887185,
+    "rms_digit_error": 5.677261066264602,
+    "max_error_by_place": [
+      7.935763359887185,
+      7.614055819259522,
+      6.948164884168856
+    ],
+    "wrong_round_by_place": [
+      502,
+      507,
+      503
+    ]
+  },
+  "previous_registers": {
+    "3.raw": {
+      "max_error_by_place": [
+        0.33779346786981534,
+        0.23451938975897235,
+        0.11249326379182523
+      ],
+      "rms_error": 0.05410394431001774,
+      "wrong_round_by_place": [
+        0,
+        0,
+        0
+      ]
+    },
+    "3.out": {
+      "max_error_by_place": [
+        0.3210229399481541,
+        0.25752987425665097,
+        0.11416175326820288
+      ],
+      "rms_error": 0.055873841911840375,
+      "wrong_round_by_place": [
+        0,
+        0,
+        0
+      ]
+    }
+  }
+}

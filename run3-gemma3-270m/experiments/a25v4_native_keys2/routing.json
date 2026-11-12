@@ -1,0 +1,390 @@
+{
+  "layer": 2,
+  "native_keys_bit_identical": true,
+  "full_input_query": {
+    "layer": 2,
+    "format_variation_mass_trials": [
+      0.0,
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "ridge": 1e-06,
+    "prefix_penalty_mass": 1,
+    "baseline": {
+      "format_min": 0.9999999433481397,
+      "format_max": 1.0000002978476434,
+      "word_rms": 0.0005575506765687356,
+      "weighted_word_rms": 0.013570293189540625,
+      "weighted_word_max": 0.08550977868304557,
+      "weighted_prefix_rms": 0.016603761110971053,
+      "maximum_weight": 0.0008735577543235783,
+      "word_absolute_quantiles": [
+        0.0003000138231848353,
+        0.0009418469378996115,
+        0.0017257289079533336,
+        0.0023375223821060363,
+        0.00377313791521966
+      ]
+    },
+    "trials": [
+      {
+        "format_variation_mass": 0.0,
+        "format_min": 0.9999997335903553,
+        "format_max": 1.0000005128899705,
+        "word_rms": 0.0004227950452808571,
+        "weighted_word_rms": 0.00983055919513356,
+        "weighted_word_max": 0.07673869350780105,
+        "weighted_prefix_rms": 0.001625315558971466,
+        "maximum_weight": 0.000873558665306048,
+        "word_absolute_quantiles": [
+          0.00015259761362608858,
+          0.0007182606535501468,
+          0.0014570633598448,
+          0.002274969064359331,
+          0.0035690283854136733
+        ],
+        "worst_format_normalized_word_cost": 0.00983056181409004
+      },
+      {
+        "format_variation_mass": 0.01,
+        "format_min": 0.9999997335903555,
+        "format_max": 1.0000005128899703,
+        "word_rms": 0.00042279504528072736,
+        "weighted_word_rms": 0.009830559195131363,
+        "weighted_word_max": 0.07673869350638317,
+        "weighted_prefix_rms": 0.0016253155589734457,
+        "maximum_weight": 0.0008735586653060482,
+        "word_absolute_quantiles": [
+          0.00015259761362814648,
+          0.0007182606535514951,
+          0.0014570633598400536,
+          0.002274969064359374,
+          0.003569028385400046
+        ],
+        "worst_format_normalized_word_cost": 0.00983056181408784
+      },
+      {
+        "format_variation_mass": 0.1,
+        "format_min": 0.9999997335903568,
+        "format_max": 1.0000005128899683,
+        "word_rms": 0.00042279504527956054,
+        "weighted_word_rms": 0.009830559195111601,
+        "weighted_word_max": 0.07673869349361347,
+        "weighted_prefix_rms": 0.0016253155589911934,
+        "maximum_weight": 0.0008735586653060493,
+        "word_absolute_quantiles": [
+          0.00015259761364673873,
+          0.0007182606535635074,
+          0.001457063359797378,
+          0.002274969064359811,
+          0.0035690283852775695
+        ],
+        "worst_format_normalized_word_cost": 0.009830561814068066
+      },
+      {
+        "format_variation_mass": 1.0,
+        "format_min": 0.9999997335903617,
+        "format_max": 1.000000512889946,
+        "word_rms": 0.0004227950452678931,
+        "weighted_word_rms": 0.00983055919491401,
+        "weighted_word_max": 0.07673869336593059,
+        "weighted_prefix_rms": 0.001625315559168701,
+        "maximum_weight": 0.0008735586653060596,
+        "word_absolute_quantiles": [
+          0.00015259761383253854,
+          0.0007182606536836292,
+          0.0014570633593706669,
+          0.0022749690643644803,
+          0.003569028384052925
+        ],
+        "worst_format_normalized_word_cost": 0.009830561813870427
+      },
+      {
+        "format_variation_mass": 10.0,
+        "format_min": 0.9999997335904153,
+        "format_max": 1.0000005128897214,
+        "word_rms": 0.00042279504515121876,
+        "weighted_word_rms": 0.009830559192938071,
+        "weighted_word_max": 0.07673869208908868,
+        "weighted_prefix_rms": 0.0016253155609436637,
+        "maximum_weight": 0.0008735586653061614,
+        "word_absolute_quantiles": [
+          0.00015259761569075934,
+          0.0007182606548847837,
+          0.0014570633551036132,
+          0.0022749690644108464,
+          0.0035690283718060956
+        ],
+        "worst_format_normalized_word_cost": 0.009830561811893962
+      }
+    ],
+    "chosen": {
+      "format_variation_mass": 10.0,
+      "format_min": 0.9999997335904153,
+      "format_max": 1.0000005128897214,
+      "word_rms": 0.00042279504515121876,
+      "weighted_word_rms": 0.009830559192938071,
+      "weighted_word_max": 0.07673869208908868,
+      "weighted_prefix_rms": 0.0016253155609436637,
+      "maximum_weight": 0.0008735586653061614,
+      "word_absolute_quantiles": [
+        0.00015259761569075934,
+        0.0007182606548847837,
+        0.0014570633551036132,
+        0.0022749690644108464,
+        0.0035690283718060956
+      ],
+      "worst_format_normalized_word_cost": 0.009830561811893962
+    },
+    "target": "positive current-format marker only; no arithmetic labels",
+    "input_artifacts": [
+      "a1_detail_syntax_a",
+      "a1_detail_syntax_b",
+      "a1_syntax_stress_key",
+      "a1_detail_calib256"
+    ]
+  },
+  "native_query_mean_cancellation_support": 16,
+  "native_query_mean_cancellation": "Subtract format mean times sparse positive marker readout before the native-key query construction",
+  "selected_channels": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    9,
+    10,
+    18,
+    20,
+    22,
+    44,
+    58,
+    81,
+    92,
+    93,
+    120,
+    129,
+    130,
+    134,
+    135,
+    138,
+    139,
+    145,
+    148,
+    175,
+    196,
+    200,
+    203,
+    207,
+    219,
+    238,
+    253
+  ],
+  "direction_analysis_choice": {
+    "channels": 32,
+    "ridge": 0.01,
+    "maximum_query_coefficient": 0.2882181975815476,
+    "native_query_raw_energy_fraction": 0.05297296687654123,
+    "heads": [
+      {
+        "source_position": 7,
+        "minimum_train_gap": 0.6422684301673097,
+        "minimum_validation_gap": 0.46982644050130873,
+        "wrong_validation_sources": 0,
+        "minimum_positive_score": 0.7414973511180736,
+        "maximum_negative_score": 0.27167091061676485
+      },
+      {
+        "source_position": 6,
+        "minimum_train_gap": 0.3342440171532728,
+        "minimum_validation_gap": 0.31009677892853194,
+        "wrong_validation_sources": 0,
+        "minimum_positive_score": 0.6309672507256108,
+        "maximum_negative_score": 0.3594242974057531
+      },
+      {
+        "source_position": 5,
+        "minimum_train_gap": 0.6131781383150603,
+        "minimum_validation_gap": 0.5628092473507195,
+        "wrong_validation_sources": 0,
+        "minimum_positive_score": 0.8593977439034591,
+        "maximum_negative_score": 0.36208434765846925
+      },
+      {
+        "source_position": 4,
+        "minimum_train_gap": 0.8547396664809106,
+        "minimum_validation_gap": 0.8113077312237913,
+        "wrong_validation_sources": 0,
+        "minimum_positive_score": 0.9634795719135899,
+        "maximum_negative_score": 0.1783944284652397
+      }
+    ],
+    "all_positive_gaps": true
+  },
+  "extra_probe_direction_gaps": [
+    0.46982644050130873,
+    0.31009677892853194,
+    0.5628092473507195,
+    0.8113077312237913
+  ],
+  "raw_program_scale_trials": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "routing_margin": 8.0,
+  "routing_margin_trials": [
+    4.0,
+    8.0,
+    16.0,
+    32.0,
+    64.0
+  ],
+  "program_gain": "Computed once from a conservative quadratic routing bound, not searched",
+  "native_query_repair": "One closed-form native gain accommodation using the large-program-gain denominator",
+  "trials": [
+    {
+      "raw_program_scale": 0.01,
+      "derived_program_gain": 21142.543306870582,
+      "head_program_factors": [
+        0.45483796081273503,
+        1.0,
+        0.6649670717608417,
+        0.15298229628261592
+      ],
+      "minimum_routing_margins": [
+        8.00018921954104,
+        8.000083971158098,
+        8.000132776963609,
+        8.00026665116982
+      ],
+      "covariance_dot_error": 0.00979242320813158,
+      "normalized_query_word_rms_change": 0.03764468920224506,
+      "max_query_weight": 0.92578125,
+      "max_norm_weight": 21141.54296875,
+      "native_accommodation_factor_min": 0.9375593421777956,
+      "native_accommodation_factor_max": 0.9802438577555785
+    },
+    {
+      "raw_program_scale": 0.1,
+      "derived_program_gain": 2114.4805298972306,
+      "head_program_factors": [
+        0.45488475032314823,
+        1.0,
+        0.6649850134099922,
+        0.15300311721105153
+      ],
+      "minimum_routing_margins": [
+        8.001979896938971,
+        8.000838119121507,
+        8.001376276932469,
+        8.002800593022073
+      ],
+      "covariance_dot_error": 0.009792411271607435,
+      "normalized_query_word_rms_change": 0.037644677285326444,
+      "max_query_weight": 0.92578125,
+      "max_norm_weight": 2113.48046875,
+      "native_accommodation_factor_min": 0.9375593421777956,
+      "native_accommodation_factor_max": 0.9802438577555785
+    },
+    {
+      "raw_program_scale": 1.0,
+      "derived_program_gain": 211.9691574912358,
+      "head_program_factors": [
+        0.45531775261371615,
+        1.0,
+        0.66478502218658,
+        0.15319910473030893
+      ],
+      "minimum_routing_margins": [
+        8.028955168613104,
+        8.00839421168754,
+        8.018182789863785,
+        8.041590390541973
+      ],
+      "covariance_dot_error": 0.009791241345962489,
+      "normalized_query_word_rms_change": 0.03764350682972331,
+      "max_query_weight": 0.92578125,
+      "max_norm_weight": 210.9691619873047,
+      "native_accommodation_factor_min": 0.9375593421777959,
+      "native_accommodation_factor_max": 0.9802438577555785
+    },
+    {
+      "raw_program_scale": 10.0,
+      "derived_program_gain": 24.414746959569328,
+      "head_program_factors": [
+        0.45590437690095925,
+        1.0,
+        0.6338615828359384,
+        0.15351987247743373
+      ],
+      "minimum_routing_margins": [
+        9.06679488933857,
+        8.066079051283973,
+        8.588667837700246,
+        9.615217749093667
+      ],
+      "covariance_dot_error": 0.00970426466843739,
+      "normalized_query_word_rms_change": 0.03755649613995065,
+      "max_query_weight": 0.92578125,
+      "max_norm_weight": 23.41474723815918,
+      "native_accommodation_factor_min": 0.9375593421777991,
+      "native_accommodation_factor_max": 0.9802438577555841
+    },
+    {
+      "raw_program_scale": 100.0,
+      "derived_program_gain": 11.945248608601103,
+      "head_program_factors": [
+        0.4740509173542417,
+        1.0,
+        0.4970500263141624,
+        0.14123635901436699
+      ],
+      "minimum_routing_margins": [
+        16.209027659904848,
+        8.0282412241456,
+        15.252397710739993,
+        38.45114058645951
+      ],
+      "covariance_dot_error": 0.009437034647140392,
+      "normalized_query_word_rms_change": 0.037288485467745984,
+      "max_query_weight": 0.92578125,
+      "max_norm_weight": 10.9452486038208,
+      "native_accommodation_factor_min": 0.9375593421781374,
+      "native_accommodation_factor_max": 0.9802438577561625
+    }
+  ],
+  "chosen": {
+    "raw_program_scale": 100.0,
+    "derived_program_gain": 11.945248608601103,
+    "head_program_factors": [
+      0.4740509173542417,
+      1.0,
+      0.4970500263141624,
+      0.14123635901436699
+    ],
+    "minimum_routing_margins": [
+      16.209027659904848,
+      8.0282412241456,
+      15.252397710739993,
+      38.45114058645951
+    ],
+    "covariance_dot_error": 0.009437034647140392,
+    "normalized_query_word_rms_change": 0.037288485467745984,
+    "max_query_weight": 0.92578125,
+    "max_norm_weight": 10.9452486038208,
+    "native_accommodation_factor_min": 0.9375593421781374,
+    "native_accommodation_factor_max": 0.9802438577561625
+  },
+  "metric_lags": [
+    1,
+    4,
+    16,
+    32,
+    64
+  ]
+}

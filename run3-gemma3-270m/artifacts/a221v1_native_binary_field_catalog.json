@@ -1,0 +1,3345 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a142v2_exploratory_projected/delta.pt",
+  "geometry": "Original HOST V3 and O3; current Q3/K3 and factual current mixtures fixed",
+  "context_digit_mass_trials": [
+    0.0
+  ],
+  "background_mass_trials": [
+    0.0,
+    0.01,
+    1.0,
+    100.0,
+    10000.0
+  ],
+  "word_regularizer_trials": [
+    1e-08,
+    1e-06,
+    0.0001,
+    0.01,
+    1.0
+  ],
+  "word_quiet_metric": "Full normalized actual native-V/O current word states before MLP3,192training windows; no independent-head approximation",
+  "fixed_diagonal_ridge_fraction": 1e-12,
+  "source_prefix_windows": 900,
+  "training_word_windows": 576,
+  "validation_word_windows": 192,
+  "current_format_windows": 128,
+  "format_holdback_windows": 32,
+  "fit_target": "Four signed bits for the individual source digit in each of three heads, zeros in other head fields, and one quarter of a common reference per source head; never an operand pair or answer",
+  "screen": "All five H1 source diagnostics have reference>0.5, no wrong bit and minimum signed-bit/reference>0.25, after float32 input-row rounding",
+  "context_caveat": "Word digit contributions are diagnostic only; no contextual arithmetic or H2 trajectory is available or claimed",
+  "historical_caveat": "Historical source states and ideal routing are diagnostics, not exact current historical trajectories",
+  "no_checkpoint_activation_replay_softmax_gradients_or_iterative_fit": true,
+  "trials": [
+    {
+      "maximum_training_word_field": 0.5099430248966534,
+      "training_word_field_RMS": 0.05022545007649495,
+      "context_digit_mass": 0.0,
+      "background_mass": 0.0,
+      "word_regularizer": 1e-08,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.05862785130739212,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.107107498288204,
+          "maximum_reference": 1.5702146643928943,
+          "minimum_signed_bit_margin_over_reference": -6.637557839487456,
+          "minimum_margin_per_place": [
+            -4.116286725926366,
+            -6.637557839487456,
+            -1.4553518765078675
+          ],
+          "wrong_bit_count": 2370,
+          "wrong_digit_count": 1283,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0476781160126811,
+          "maximum_reference": 1.5553699420986384,
+          "minimum_signed_bit_margin_over_reference": -7.255961255432009,
+          "minimum_margin_per_place": [
+            -4.468710466120232,
+            -7.255961255432009,
+            -2.061624203201685
+          ],
+          "wrong_bit_count": 3292,
+          "wrong_digit_count": 1491,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.1329057755959966,
+          "maximum_reference": 1.5859494279271746,
+          "minimum_signed_bit_margin_over_reference": -7.193386518610349,
+          "minimum_margin_per_place": [
+            -4.999339096633021,
+            -7.193386518610349,
+            -1.4334926322774508
+          ],
+          "wrong_bit_count": 2355,
+          "wrong_digit_count": 1264,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0773755502941604,
+          "maximum_reference": 1.5239596663059598,
+          "minimum_signed_bit_margin_over_reference": -7.198473527251143,
+          "minimum_margin_per_place": [
+            -4.449020113299625,
+            -7.198473527251143,
+            -1.6849587849185115
+          ],
+          "wrong_bit_count": 847,
+          "wrong_digit_count": 378,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0773755502941604,
+          "maximum_reference": 1.5239596663059598,
+          "minimum_signed_bit_margin_over_reference": -7.198473527251143,
+          "minimum_margin_per_place": [
+            -4.449020113299625,
+            -7.198473527251143,
+            -1.4640306979598257
+          ],
+          "wrong_bit_count": 215,
+          "wrong_digit_count": 94,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 339,
+          "minimum_own_signed_margin": -2.6495627850800543,
+          "maximum_other_head_bit_leakage": 5.387338525841834e-06,
+          "reference_contribution_range": [
+            9.57831444454299e-08,
+            4.2578850659169554e-07
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 360,
+          "minimum_own_signed_margin": -7.433878817035726,
+          "maximum_other_head_bit_leakage": 5.592646101258337,
+          "reference_contribution_range": [
+            -0.07576431346081869,
+            0.29156580818401096
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 521,
+          "minimum_own_signed_margin": -4.172389014831688,
+          "maximum_other_head_bit_leakage": 7.59932534318523,
+          "reference_contribution_range": [
+            -0.020095196089434338,
+            0.6738978201713505
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": -7.255961255432009,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": false
+    },
+    {
+      "maximum_training_word_field": 1.4180974320873028,
+      "training_word_field_RMS": 0.15470659359080527,
+      "context_digit_mass": 0.0,
+      "background_mass": 0.01,
+      "word_regularizer": 1e-08,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.0998389944434166,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0073861911859958,
+          "maximum_reference": 1.3695206571108314,
+          "minimum_signed_bit_margin_over_reference": 0.6803108666709339,
+          "minimum_margin_per_place": [
+            0.6803108666709339,
+            0.8123244355103003,
+            0.9446336725432409
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0072967315266774,
+          "maximum_reference": 1.3548934744693129,
+          "minimum_signed_bit_margin_over_reference": 0.7386159360134538,
+          "minimum_margin_per_place": [
+            0.7386159360134538,
+            0.8373760965247748,
+            0.9636451608247836
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9833356045288101,
+          "maximum_reference": 1.3874544786820762,
+          "minimum_signed_bit_margin_over_reference": 0.664961876758822,
+          "minimum_margin_per_place": [
+            0.664961876758822,
+            0.7623476750270255,
+            0.8856333212668367
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0076497253147407,
+          "maximum_reference": 1.3118255565958972,
+          "minimum_signed_bit_margin_over_reference": 0.7550951339414212,
+          "minimum_margin_per_place": [
+            0.7550951339414212,
+            0.9193880694377796,
+            0.9680349958181177
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.010170331944856,
+          "maximum_reference": 1.3105844330425003,
+          "minimum_signed_bit_margin_over_reference": 0.8604484518989414,
+          "minimum_margin_per_place": [
+            0.8604484518989414,
+            0.9193880694377796,
+            0.9823902974579297
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 341,
+          "minimum_own_signed_margin": -2.634370808543279,
+          "maximum_other_head_bit_leakage": 0.09860938109150741,
+          "reference_contribution_range": [
+            0.0008777684286191273,
+            0.004482593058723942
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 539,
+          "minimum_own_signed_margin": -7.474616077310053,
+          "maximum_other_head_bit_leakage": 8.24271716172383,
+          "reference_contribution_range": [
+            -0.11248491430008231,
+            0.33566182607774336
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 619,
+          "minimum_own_signed_margin": -5.033299258109748,
+          "maximum_other_head_bit_leakage": 21.09596167707667,
+          "reference_contribution_range": [
+            -0.06421689404282135,
+            0.8429300103218965
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": 0.664961876758822,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": true
+    },
+    {
+      "maximum_training_word_field": 1.1207028987981942,
+      "training_word_field_RMS": 0.11229262904042925,
+      "context_digit_mass": 0.0,
+      "background_mass": 1.0,
+      "word_regularizer": 1e-08,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.059352535754442215,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0073644053446114,
+          "maximum_reference": 1.3693615622100601,
+          "minimum_signed_bit_margin_over_reference": 0.7356354810958616,
+          "minimum_margin_per_place": [
+            0.7356354810958616,
+            0.8473547635055583,
+            0.957164613013906
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0069180221263165,
+          "maximum_reference": 1.351569565148781,
+          "minimum_signed_bit_margin_over_reference": 0.710843338956523,
+          "minimum_margin_per_place": [
+            0.710843338956523,
+            0.8765344195065164,
+            0.95136149641973
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9855472501153824,
+          "maximum_reference": 1.387272136878524,
+          "minimum_signed_bit_margin_over_reference": 0.6980636947269676,
+          "minimum_margin_per_place": [
+            0.6980636947269676,
+            0.791740805270775,
+            0.9238163953144721
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0073159820542725,
+          "maximum_reference": 1.312368380165129,
+          "minimum_signed_bit_margin_over_reference": 0.7341194464867792,
+          "minimum_margin_per_place": [
+            0.7341194464867792,
+            0.9181929660147744,
+            0.9658748180847996
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0088914212797517,
+          "maximum_reference": 1.312050516103054,
+          "minimum_signed_bit_margin_over_reference": 0.8510524227212845,
+          "minimum_margin_per_place": [
+            0.8510524227212845,
+            0.9257124283483423,
+            0.9731191551115883
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 288,
+          "minimum_own_signed_margin": -1.9213136031497675,
+          "maximum_other_head_bit_leakage": 2.5886610621689448,
+          "reference_contribution_range": [
+            0.016666229532101572,
+            0.09213179185927198
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 479,
+          "minimum_own_signed_margin": -8.586232163388729,
+          "maximum_other_head_bit_leakage": 5.234847952418194,
+          "reference_contribution_range": [
+            -0.05768265754310263,
+            0.30686545553222294
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 588,
+          "minimum_own_signed_margin": -3.94462461935189,
+          "maximum_other_head_bit_leakage": 16.618248485310254,
+          "reference_contribution_range": [
+            -0.04034215385386139,
+            0.6625689256239028
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": 0.6980636947269676,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": true
+    },
+    {
+      "maximum_training_word_field": 0.6230115221116544,
+      "training_word_field_RMS": 0.06986031738302236,
+      "context_digit_mass": 0.0,
+      "background_mass": 100.0,
+      "word_regularizer": 1e-08,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.033149369060993195,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0047955685672663,
+          "maximum_reference": 1.3713349789032654,
+          "minimum_signed_bit_margin_over_reference": 0.3492219515921546,
+          "minimum_margin_per_place": [
+            0.5662619767137762,
+            0.3492219515921546,
+            0.8080275918856613
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0046431606744584,
+          "maximum_reference": 1.3512314709867912,
+          "minimum_signed_bit_margin_over_reference": 0.4641627828869301,
+          "minimum_margin_per_place": [
+            0.6118028277301758,
+            0.4641627828869301,
+            0.8043593239239676
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9910652551366892,
+          "maximum_reference": 1.3925393501088559,
+          "minimum_signed_bit_margin_over_reference": 0.3571882976440951,
+          "minimum_margin_per_place": [
+            0.48815984662593465,
+            0.3571882976440951,
+            0.7425234782142615
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0047419333564893,
+          "maximum_reference": 1.3060680268138014,
+          "minimum_signed_bit_margin_over_reference": 0.47065276250074156,
+          "minimum_margin_per_place": [
+            0.6126711514530851,
+            0.47065276250074156,
+            0.8039375319777728
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0048159259462612,
+          "maximum_reference": 1.3060680268138014,
+          "minimum_signed_bit_margin_over_reference": 0.6212823025213409,
+          "minimum_margin_per_place": [
+            0.7080068074163616,
+            0.6212823025213409,
+            0.8592071034151233
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 369,
+          "minimum_own_signed_margin": -4.2337948691767915,
+          "maximum_other_head_bit_leakage": 2.940114886359095,
+          "reference_contribution_range": [
+            -0.0008845808599028948,
+            0.27511501238224
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 400,
+          "minimum_own_signed_margin": -5.95258717410219,
+          "maximum_other_head_bit_leakage": 2.9570016469534104,
+          "reference_contribution_range": [
+            -0.041499897022139326,
+            0.30932483225796087
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 634,
+          "minimum_own_signed_margin": -4.342725471530354,
+          "maximum_other_head_bit_leakage": 10.639441287914835,
+          "reference_contribution_range": [
+            -0.07029141751116075,
+            0.44256158837810544
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": 0.3492219515921546,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": true
+    },
+    {
+      "maximum_training_word_field": 0.3143293937799055,
+      "training_word_field_RMS": 0.044386161795079294,
+      "context_digit_mass": 0.0,
+      "background_mass": 10000.0,
+      "word_regularizer": 1e-08,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.026843974366784096,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9957110705214521,
+          "maximum_reference": 1.3807835443623744,
+          "minimum_signed_bit_margin_over_reference": -0.43071848352021713,
+          "minimum_margin_per_place": [
+            -0.123590645884477,
+            -0.43071848352021713,
+            0.20214121330969279
+          ],
+          "wrong_bit_count": 36,
+          "wrong_digit_count": 36,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9954679032863768,
+          "maximum_reference": 1.3504425823697106,
+          "minimum_signed_bit_margin_over_reference": -0.16347516142601654,
+          "minimum_margin_per_place": [
+            0.1804733492132629,
+            -0.16347516142601654,
+            0.2652702175924213
+          ],
+          "wrong_bit_count": 36,
+          "wrong_digit_count": 36,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9949203784601054,
+          "maximum_reference": 1.4037764956496277,
+          "minimum_signed_bit_margin_over_reference": -0.43115298149876513,
+          "minimum_margin_per_place": [
+            -0.1140316287509357,
+            -0.43115298149876513,
+            0.26164589961049106
+          ],
+          "wrong_bit_count": 35,
+          "wrong_digit_count": 34,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 0.995601382537737,
+          "maximum_reference": 1.2822299797281766,
+          "minimum_signed_bit_margin_over_reference": -0.030600529766819838,
+          "minimum_margin_per_place": [
+            0.1796455386188275,
+            -0.030600529766819838,
+            0.2670603797280382
+          ],
+          "wrong_bit_count": 12,
+          "wrong_digit_count": 12,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 0.995601382537737,
+          "maximum_reference": 1.2822021153264678,
+          "minimum_signed_bit_margin_over_reference": -0.018632688787161334,
+          "minimum_margin_per_place": [
+            0.35477391930278507,
+            -0.018632688787161334,
+            0.5212963907830881
+          ],
+          "wrong_bit_count": 1,
+          "wrong_digit_count": 1,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 432,
+          "minimum_own_signed_margin": -3.764626762413371,
+          "maximum_other_head_bit_leakage": 3.4459913001471136,
+          "reference_contribution_range": [
+            0.06662847620738566,
+            0.4532152587301995
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 577,
+          "minimum_own_signed_margin": -5.186254733513524,
+          "maximum_other_head_bit_leakage": 2.607122060614409,
+          "reference_contribution_range": [
+            -0.09752277773654079,
+            0.3150612866656086
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 596,
+          "minimum_own_signed_margin": -3.0438070669628208,
+          "maximum_other_head_bit_leakage": 6.003271952756545,
+          "reference_contribution_range": [
+            -0.10828936330828277,
+            0.26816328171337117
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": -0.43115298149876513,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": false
+    },
+    {
+      "maximum_training_word_field": 0.4944811615951373,
+      "training_word_field_RMS": 0.050166523969955,
+      "context_digit_mass": 0.0,
+      "background_mass": 0.0,
+      "word_regularizer": 1e-06,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.05853670462965965,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.1369004178393867,
+          "maximum_reference": 1.6002726989905978,
+          "minimum_signed_bit_margin_over_reference": -6.671626037895461,
+          "minimum_margin_per_place": [
+            -4.4458132690847085,
+            -6.671626037895461,
+            -1.4213159448524006
+          ],
+          "wrong_bit_count": 2399,
+          "wrong_digit_count": 1289,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0798339825331922,
+          "maximum_reference": 1.5815426914339474,
+          "minimum_signed_bit_margin_over_reference": -7.261931732930898,
+          "minimum_margin_per_place": [
+            -4.78859937112903,
+            -7.261931732930898,
+            -2.010944649940847
+          ],
+          "wrong_bit_count": 3321,
+          "wrong_digit_count": 1491,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.1602047227065422,
+          "maximum_reference": 1.6146904294018514,
+          "minimum_signed_bit_margin_over_reference": -6.841898989233532,
+          "minimum_margin_per_place": [
+            -5.308313644821494,
+            -6.841898989233532,
+            -1.3919254087882795
+          ],
+          "wrong_bit_count": 2369,
+          "wrong_digit_count": 1264,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.109286476973069,
+          "maximum_reference": 1.550892661723171,
+          "minimum_signed_bit_margin_over_reference": -7.260609106061062,
+          "minimum_margin_per_place": [
+            -4.740345326494183,
+            -7.260609106061062,
+            -1.649958699360901
+          ],
+          "wrong_bit_count": 857,
+          "wrong_digit_count": 379,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.109286476973069,
+          "maximum_reference": 1.550892661723171,
+          "minimum_signed_bit_margin_over_reference": -7.260609106061062,
+          "minimum_margin_per_place": [
+            -4.740345326494183,
+            -7.260609106061062,
+            -1.43105194523559
+          ],
+          "wrong_bit_count": 219,
+          "wrong_digit_count": 94,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 339,
+          "minimum_own_signed_margin": -2.6491425545442793,
+          "maximum_other_head_bit_leakage": 0.0005483744811388691,
+          "reference_contribution_range": [
+            9.741563646432222e-06,
+            4.151076224685746e-05
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 356,
+          "minimum_own_signed_margin": -7.518258590313805,
+          "maximum_other_head_bit_leakage": 5.490199559784035,
+          "reference_contribution_range": [
+            -0.07562149641397518,
+            0.29342189861064044
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 521,
+          "minimum_own_signed_margin": -4.193713174715402,
+          "maximum_other_head_bit_leakage": 7.485281285079203,
+          "reference_contribution_range": [
+            -0.019233681816928666,
+            0.6752295819455
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": -7.261931732930898,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": false
+    },
+    {
+      "maximum_training_word_field": 1.2746422362908614,
+      "training_word_field_RMS": 0.13751882199373502,
+      "context_digit_mass": 0.0,
+      "background_mass": 0.01,
+      "word_regularizer": 1e-06,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.09533846378326416,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.007344062562265,
+          "maximum_reference": 1.3691264546342259,
+          "minimum_signed_bit_margin_over_reference": 0.6800395607083314,
+          "minimum_margin_per_place": [
+            0.6800395607083314,
+            0.8137135096690378,
+            0.9438144571487023
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0073098846148645,
+          "maximum_reference": 1.3549466864837016,
+          "minimum_signed_bit_margin_over_reference": 0.7411059417979758,
+          "minimum_margin_per_place": [
+            0.7411059417979758,
+            0.8307995288969571,
+            0.961893368508257
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9835181914941845,
+          "maximum_reference": 1.3872138446336177,
+          "minimum_signed_bit_margin_over_reference": 0.6696831584459575,
+          "minimum_margin_per_place": [
+            0.6696831584459575,
+            0.7575890677209932,
+            0.8835198654515192
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.007553462904581,
+          "maximum_reference": 1.3117093329097649,
+          "minimum_signed_bit_margin_over_reference": 0.7535948077430336,
+          "minimum_margin_per_place": [
+            0.7535948077430336,
+            0.9176549194957445,
+            0.9690281696099764
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.010271142908037,
+          "maximum_reference": 1.3104330759108729,
+          "minimum_signed_bit_margin_over_reference": 0.8601856575808017,
+          "minimum_margin_per_place": [
+            0.8601856575808017,
+            0.9176549194957445,
+            0.9829111516119474
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 341,
+          "minimum_own_signed_margin": -2.629861017065207,
+          "maximum_other_head_bit_leakage": 0.10571982947505343,
+          "reference_contribution_range": [
+            0.001026134157355446,
+            0.004862066109357979
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 526,
+          "minimum_own_signed_margin": -7.615371813610421,
+          "maximum_other_head_bit_leakage": 8.031168275531504,
+          "reference_contribution_range": [
+            -0.11729936602728704,
+            0.33554874102651955
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 614,
+          "minimum_own_signed_margin": -4.769933340182904,
+          "maximum_other_head_bit_leakage": 20.429681714114924,
+          "reference_contribution_range": [
+            -0.05951060276694567,
+            0.835264134730249
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": 0.6696831584459575,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": true
+    },
+    {
+      "maximum_training_word_field": 1.1175864044028498,
+      "training_word_field_RMS": 0.11191856444174543,
+      "context_digit_mass": 0.0,
+      "background_mass": 1.0,
+      "word_regularizer": 1e-06,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.059096965938806534,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.00736338792506,
+          "maximum_reference": 1.36936042060512,
+          "minimum_signed_bit_margin_over_reference": 0.7356531864746699,
+          "minimum_margin_per_place": [
+            0.7356531864746699,
+            0.8471971013094571,
+            0.957153826771133
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0069181934990858,
+          "maximum_reference": 1.3515718147388844,
+          "minimum_signed_bit_margin_over_reference": 0.7108683441053018,
+          "minimum_margin_per_place": [
+            0.7108683441053018,
+            0.8767841874602232,
+            0.9513603025629095
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9855526030263724,
+          "maximum_reference": 1.3872651123755024,
+          "minimum_signed_bit_margin_over_reference": 0.6981442328814298,
+          "minimum_margin_per_place": [
+            0.6981442328814298,
+            0.7916780957101847,
+            0.9238368973704496
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0073145754966777,
+          "maximum_reference": 1.3123678689909177,
+          "minimum_signed_bit_margin_over_reference": 0.7340637939423043,
+          "minimum_margin_per_place": [
+            0.7340637939423043,
+            0.9180440551419489,
+            0.9658305063996938
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0088909161954402,
+          "maximum_reference": 1.3120486596938425,
+          "minimum_signed_bit_margin_over_reference": 0.8510141187732189,
+          "minimum_margin_per_place": [
+            0.8510141187732189,
+            0.9256622007505235,
+            0.9731110435555934
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 288,
+          "minimum_own_signed_margin": -1.921258945897698,
+          "maximum_other_head_bit_leakage": 2.5886993766495223,
+          "reference_contribution_range": [
+            0.016677784318830415,
+            0.09219654513068501
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 478,
+          "minimum_own_signed_margin": -8.585040363007634,
+          "maximum_other_head_bit_leakage": 5.228100347910857,
+          "reference_contribution_range": [
+            -0.05776754534045711,
+            0.30695447260345526
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 588,
+          "minimum_own_signed_margin": -3.945448487027438,
+          "maximum_other_head_bit_leakage": 16.607127024669417,
+          "reference_contribution_range": [
+            -0.04021956081260483,
+            0.6624900012482052
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": 0.6981442328814298,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": true
+    },
+    {
+      "maximum_training_word_field": 0.6229813894756676,
+      "training_word_field_RMS": 0.06985134313852542,
+      "context_digit_mass": 0.0,
+      "background_mass": 100.0,
+      "word_regularizer": 1e-06,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.0331474244594574,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0047954126217422,
+          "maximum_reference": 1.3713347426721865,
+          "minimum_signed_bit_margin_over_reference": 0.34920510762113416,
+          "minimum_margin_per_place": [
+            0.5662544982227535,
+            0.34920510762113416,
+            0.8080181508424841
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0046431348508666,
+          "maximum_reference": 1.351231060958629,
+          "minimum_signed_bit_margin_over_reference": 0.4641751001096619,
+          "minimum_margin_per_place": [
+            0.6118220787061577,
+            0.4641751001096619,
+            0.8043499448747814
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9910655050879918,
+          "maximum_reference": 1.3925389171881473,
+          "minimum_signed_bit_margin_over_reference": 0.3571711477309262,
+          "minimum_margin_per_place": [
+            0.4881539535534427,
+            0.3571711477309262,
+            0.7425218561932537
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0047418221506896,
+          "maximum_reference": 1.3060681131143876,
+          "minimum_signed_bit_margin_over_reference": 0.4706665632543879,
+          "minimum_margin_per_place": [
+            0.6126906042544649,
+            0.4706665632543879,
+            0.8039281039160171
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0048158413138486,
+          "maximum_reference": 1.3060681131143876,
+          "minimum_signed_bit_margin_over_reference": 0.621288007581383,
+          "minimum_margin_per_place": [
+            0.708013482110354,
+            0.621288007581383,
+            0.8592084069496297
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 369,
+          "minimum_own_signed_margin": -4.233725837605683,
+          "maximum_other_head_bit_leakage": 2.9400004976810523,
+          "reference_contribution_range": [
+            -0.0008870030594645278,
+            0.27511901033663255
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 400,
+          "minimum_own_signed_margin": -5.952576430264083,
+          "maximum_other_head_bit_leakage": 2.957026935130098,
+          "reference_contribution_range": [
+            -0.04150618315314586,
+            0.30932308336733105
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 634,
+          "minimum_own_signed_margin": -4.342641466827565,
+          "maximum_other_head_bit_leakage": 10.639191531108105,
+          "reference_contribution_range": [
+            -0.07028493869034877,
+            0.4425510417564319
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": 0.34920510762113416,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": true
+    },
+    {
+      "maximum_training_word_field": 0.3143279156411815,
+      "training_word_field_RMS": 0.04438593569509596,
+      "context_digit_mass": 0.0,
+      "background_mass": 10000.0,
+      "word_regularizer": 1e-06,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.026843903586268425,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9957108668661222,
+          "maximum_reference": 1.3807835020974415,
+          "minimum_signed_bit_margin_over_reference": -0.430716904419054,
+          "minimum_margin_per_place": [
+            -0.12359083324988139,
+            -0.430716904419054,
+            0.20214212209304167
+          ],
+          "wrong_bit_count": 36,
+          "wrong_digit_count": 36,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9954676969721751,
+          "maximum_reference": 1.3504425179903172,
+          "minimum_signed_bit_margin_over_reference": -0.16347438042784987,
+          "minimum_margin_per_place": [
+            0.18047347143186018,
+            -0.16347438042784987,
+            0.2652694844343153
+          ],
+          "wrong_bit_count": 36,
+          "wrong_digit_count": 36,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9949201711088108,
+          "maximum_reference": 1.4037763631981661,
+          "minimum_signed_bit_margin_over_reference": -0.4311513608782708,
+          "minimum_margin_per_place": [
+            -0.11403187210291017,
+            -0.4311513608782708,
+            0.2616451849628292
+          ],
+          "wrong_bit_count": 35,
+          "wrong_digit_count": 34,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 0.9956011782547727,
+          "maximum_reference": 1.2822300365558983,
+          "minimum_signed_bit_margin_over_reference": -0.03060059768830002,
+          "minimum_margin_per_place": [
+            0.1796456591720285,
+            -0.03060059768830002,
+            0.26705965709297136
+          ],
+          "wrong_bit_count": 12,
+          "wrong_digit_count": 12,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 0.9956011782547727,
+          "maximum_reference": 1.28220217316696,
+          "minimum_signed_bit_margin_over_reference": -0.018633435102198188,
+          "minimum_margin_per_place": [
+            0.3547747407691789,
+            -0.018633435102198188,
+            0.5212973146795251
+          ],
+          "wrong_bit_count": 1,
+          "wrong_digit_count": 1,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 432,
+          "minimum_own_signed_margin": -3.764627103070323,
+          "maximum_other_head_bit_leakage": 3.445991216989718,
+          "reference_contribution_range": [
+            0.0666280077495367,
+            0.4532154893976522
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 577,
+          "minimum_own_signed_margin": -5.186251442251123,
+          "maximum_other_head_bit_leakage": 2.6071206067877983,
+          "reference_contribution_range": [
+            -0.09752300966652913,
+            0.31506132849195984
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 596,
+          "minimum_own_signed_margin": -3.0438053409711157,
+          "maximum_other_head_bit_leakage": 6.00325235718485,
+          "reference_contribution_range": [
+            -0.10828884846991187,
+            0.26816318351495794
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": -0.4311513608782708,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": false
+    },
+    {
+      "maximum_training_word_field": 0.49275205820467355,
+      "training_word_field_RMS": 0.04962001627988165,
+      "context_digit_mass": 0.0,
+      "background_mass": 0.0,
+      "word_regularizer": 0.0001,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.05796678364276886,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.1356836652736635,
+          "maximum_reference": 1.5963653802667765,
+          "minimum_signed_bit_margin_over_reference": -6.647599688736786,
+          "minimum_margin_per_place": [
+            -4.341250212198555,
+            -6.647599688736786,
+            -1.4170592559143516
+          ],
+          "wrong_bit_count": 2385,
+          "wrong_digit_count": 1285,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0790473779895093,
+          "maximum_reference": 1.5765970909379918,
+          "minimum_signed_bit_margin_over_reference": -7.232414901886939,
+          "minimum_margin_per_place": [
+            -4.697348196738179,
+            -7.232414901886939,
+            -2.0053381269542863
+          ],
+          "wrong_bit_count": 3325,
+          "wrong_digit_count": 1491,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.1576151151720278,
+          "maximum_reference": 1.6099982484095965,
+          "minimum_signed_bit_margin_over_reference": -6.713842394365439,
+          "minimum_margin_per_place": [
+            -5.197247948119339,
+            -6.713842394365439,
+            -1.3882816070366317
+          ],
+          "wrong_bit_count": 2360,
+          "wrong_digit_count": 1261,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.1093401770631157,
+          "maximum_reference": 1.5460064651839462,
+          "minimum_signed_bit_margin_over_reference": -7.231092110863599,
+          "minimum_margin_per_place": [
+            -4.639588320232626,
+            -7.231092110863599,
+            -1.6474074157983962
+          ],
+          "wrong_bit_count": 858,
+          "wrong_digit_count": 379,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.1093401770631157,
+          "maximum_reference": 1.5460064651839462,
+          "minimum_signed_bit_margin_over_reference": -7.231092110863599,
+          "minimum_margin_per_place": [
+            -4.639588320232626,
+            -7.231092110863599,
+            -1.42683266430923
+          ],
+          "wrong_bit_count": 219,
+          "wrong_digit_count": 94,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 336,
+          "minimum_own_signed_margin": -2.609226605719202,
+          "maximum_other_head_bit_leakage": 0.05100297130802367,
+          "reference_contribution_range": [
+            0.0009191804078074652,
+            0.00389586652953669
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 352,
+          "minimum_own_signed_margin": -7.508557198158027,
+          "maximum_other_head_bit_leakage": 5.38149224811727,
+          "reference_contribution_range": [
+            -0.07310684944156559,
+            0.2915746727384751
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 519,
+          "minimum_own_signed_margin": -4.169132780185943,
+          "maximum_other_head_bit_leakage": 7.439276762480544,
+          "reference_contribution_range": [
+            -0.017530254628257212,
+            0.6712736190658279
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": -7.232414901886939,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": false
+    },
+    {
+      "maximum_training_word_field": 0.7931500557947417,
+      "training_word_field_RMS": 0.07548626368050812,
+      "context_digit_mass": 0.0,
+      "background_mass": 0.01,
+      "word_regularizer": 0.0001,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.04399533197283745,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0072886101446732,
+          "maximum_reference": 1.3677096926176906,
+          "minimum_signed_bit_margin_over_reference": 0.677448208731782,
+          "minimum_margin_per_place": [
+            0.677448208731782,
+            0.7743075551899596,
+            0.9167503186341364
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.006452518333617,
+          "maximum_reference": 1.3550459199531009,
+          "minimum_signed_bit_margin_over_reference": 0.733333321880573,
+          "minimum_margin_per_place": [
+            0.733333321880573,
+            0.7492573655991253,
+            0.934201731494126
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.985703663998783,
+          "maximum_reference": 1.3872338676669604,
+          "minimum_signed_bit_margin_over_reference": 0.6581673445292932,
+          "minimum_margin_per_place": [
+            0.6581673445292932,
+            0.7135298838924164,
+            0.8530831382945717
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0074551676819739,
+          "maximum_reference": 1.312441735640126,
+          "minimum_signed_bit_margin_over_reference": 0.7298259516304785,
+          "minimum_margin_per_place": [
+            0.7298259516304785,
+            0.9105653906908595,
+            0.96219892675104
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0110570497706648,
+          "maximum_reference": 1.308734973085785,
+          "minimum_signed_bit_margin_over_reference": 0.8478161376068675,
+          "minimum_margin_per_place": [
+            0.8478161376068675,
+            0.9105653906908595,
+            0.96219892675104
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 345,
+          "minimum_own_signed_margin": -2.5031123156682167,
+          "maximum_other_head_bit_leakage": 0.27886431745996254,
+          "reference_contribution_range": [
+            0.00584855806797812,
+            0.018082563615731205
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 391,
+          "minimum_own_signed_margin": -7.495610634872783,
+          "maximum_other_head_bit_leakage": 5.98517403323935,
+          "reference_contribution_range": [
+            -0.025395444741275877,
+            0.3219507859191185
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 547,
+          "minimum_own_signed_margin": -4.008606057895461,
+          "maximum_other_head_bit_leakage": 14.606889579906728,
+          "reference_contribution_range": [
+            -0.062147797950257336,
+            0.71528173827945
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": 0.6581673445292932,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": true
+    },
+    {
+      "maximum_training_word_field": 0.9795668211691536,
+      "training_word_field_RMS": 0.09568251047793094,
+      "context_digit_mass": 0.0,
+      "background_mass": 1.0,
+      "word_regularizer": 0.0001,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.04978225380182266,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0072353677531225,
+          "maximum_reference": 1.3694447139507668,
+          "minimum_signed_bit_margin_over_reference": 0.7335779994562317,
+          "minimum_margin_per_place": [
+            0.7335779994562317,
+            0.8403401892000839,
+            0.9547559467452958
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0068949668067715,
+          "maximum_reference": 1.3516336084758687,
+          "minimum_signed_bit_margin_over_reference": 0.7107843479949408,
+          "minimum_margin_per_place": [
+            0.7107843479949408,
+            0.8765081877835034,
+            0.9502972123325188
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9860136413562712,
+          "maximum_reference": 1.3869229447817681,
+          "minimum_signed_bit_margin_over_reference": 0.6988139735184483,
+          "minimum_margin_per_place": [
+            0.6988139735184483,
+            0.7954288333376814,
+            0.924514292782529
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0072469488897622,
+          "maximum_reference": 1.3122970496297992,
+          "minimum_signed_bit_margin_over_reference": 0.7288747895999009,
+          "minimum_margin_per_place": [
+            0.7288747895999009,
+            0.9098840100898823,
+            0.9630282725838604
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0088290080121807,
+          "maximum_reference": 1.3118443630592145,
+          "minimum_signed_bit_margin_over_reference": 0.8486287839749802,
+          "minimum_margin_per_place": [
+            0.8486287839749802,
+            0.9216808817588908,
+            0.9723177242233713
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 285,
+          "minimum_own_signed_margin": -1.9264213061571331,
+          "maximum_other_head_bit_leakage": 2.564554100433516,
+          "reference_contribution_range": [
+            0.01696805535070456,
+            0.0974113236044826
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 469,
+          "minimum_own_signed_margin": -8.44668967669293,
+          "maximum_other_head_bit_leakage": 4.912852458741891,
+          "reference_contribution_range": [
+            -0.05723246161111714,
+            0.3100363763650914
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 589,
+          "minimum_own_signed_margin": -4.087612813015735,
+          "maximum_other_head_bit_leakage": 15.693282081325211,
+          "reference_contribution_range": [
+            -0.047643491018509836,
+            0.6519278232574133
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": 0.6988139735184483,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": true
+    },
+    {
+      "maximum_training_word_field": 0.6200239099949016,
+      "training_word_field_RMS": 0.06900983401239885,
+      "context_digit_mass": 0.0,
+      "background_mass": 100.0,
+      "word_regularizer": 0.0001,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.032962825149297714,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0047800274338419,
+          "maximum_reference": 1.371314482255392,
+          "minimum_signed_bit_margin_over_reference": 0.34763406382623024,
+          "minimum_margin_per_place": [
+            0.5655247171951447,
+            0.34763406382623024,
+            0.8071333628723242
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0046401091551147,
+          "maximum_reference": 1.3511947700172615,
+          "minimum_signed_bit_margin_over_reference": 0.46537431128345885,
+          "minimum_margin_per_place": [
+            0.6136710030276068,
+            0.46537431128345885,
+            0.8034717013573492
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.991091853917379,
+          "maximum_reference": 1.3924993883319652,
+          "minimum_signed_bit_margin_over_reference": 0.3555647971041722,
+          "minimum_margin_per_place": [
+            0.4876189270516063,
+            0.3555647971041722,
+            0.7423499000894982
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0047308354394313,
+          "maximum_reference": 1.3060779320237113,
+          "minimum_signed_bit_margin_over_reference": 0.4720065490586167,
+          "minimum_margin_per_place": [
+            0.61455808293763,
+            0.4720065490586167,
+            0.803045260847722
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.004807243782457,
+          "maximum_reference": 1.3060779320237113,
+          "minimum_signed_bit_margin_over_reference": 0.6218736008038069,
+          "minimum_margin_per_place": [
+            0.7086289926949614,
+            0.6218736008038069,
+            0.8593333398662719
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 369,
+          "minimum_own_signed_margin": -4.22730314502379,
+          "maximum_other_head_bit_leakage": 2.928977136999258,
+          "reference_contribution_range": [
+            -0.0011135080303223965,
+            0.2755134839252521
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 399,
+          "minimum_own_signed_margin": -5.951445429655828,
+          "maximum_other_head_bit_leakage": 2.9595437004712637,
+          "reference_contribution_range": [
+            -0.04209391315580453,
+            0.3091607672068436
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 633,
+          "minimum_own_signed_margin": -4.334375784638931,
+          "maximum_other_head_bit_leakage": 10.614670102445551,
+          "reference_contribution_range": [
+            -0.06969997218863004,
+            0.4415372785792678
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": 0.34763406382623024,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": true
+    },
+    {
+      "maximum_training_word_field": 0.31418016878467164,
+      "training_word_field_RMS": 0.04436337383443423,
+      "context_digit_mass": 0.0,
+      "background_mass": 10000.0,
+      "word_regularizer": 0.0001,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.026836857199668884,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9956901423715521,
+          "maximum_reference": 1.3807790619037692,
+          "minimum_signed_bit_margin_over_reference": -0.4305614682971993,
+          "minimum_margin_per_place": [
+            -0.12362536427310748,
+            -0.4305614682971993,
+            0.20226504992402697
+          ],
+          "wrong_bit_count": 36,
+          "wrong_digit_count": 36,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9954469225715303,
+          "maximum_reference": 1.3504350923161428,
+          "minimum_signed_bit_margin_over_reference": -0.16338778814432567,
+          "minimum_margin_per_place": [
+            0.18047026484937242,
+            -0.16338778814432567,
+            0.26521271718543027
+          ],
+          "wrong_bit_count": 36,
+          "wrong_digit_count": 36,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9948991273682546,
+          "maximum_reference": 1.4037628989998339,
+          "minimum_signed_bit_margin_over_reference": -0.43099071502202574,
+          "minimum_margin_per_place": [
+            -0.11406915095419748,
+            -0.43099071502202574,
+            0.2615906811410773
+          ],
+          "wrong_bit_count": 35,
+          "wrong_digit_count": 34,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 0.9955803739566458,
+          "maximum_reference": 1.2822352818912175,
+          "minimum_signed_bit_margin_over_reference": -0.03061464448391434,
+          "minimum_margin_per_place": [
+            0.17964230244552856,
+            -0.03061464448391434,
+            0.2670029082702055
+          ],
+          "wrong_bit_count": 12,
+          "wrong_digit_count": 12,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 0.9955803739566458,
+          "maximum_reference": 1.282207533215859,
+          "minimum_signed_bit_margin_over_reference": -0.018717333360364748,
+          "minimum_margin_per_place": [
+            0.3548419401981574,
+            -0.018717333360364748,
+            0.5213830418444099
+          ],
+          "wrong_bit_count": 1,
+          "wrong_digit_count": 1,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 432,
+          "minimum_own_signed_margin": -3.7646647888365283,
+          "maximum_other_head_bit_leakage": 3.445972865133991,
+          "reference_contribution_range": [
+            0.06658139888096787,
+            0.45323860718628345
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 577,
+          "minimum_own_signed_margin": -5.185928939026157,
+          "maximum_other_head_bit_leakage": 2.6069804645876213,
+          "reference_contribution_range": [
+            -0.09754563376433574,
+            0.3150658542606235
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 596,
+          "minimum_own_signed_margin": -3.043619763082205,
+          "maximum_other_head_bit_leakage": 6.001284849083651,
+          "reference_contribution_range": [
+            -0.10823697500584363,
+            0.26815287435345114
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": -0.43099071502202574,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": false
+    },
+    {
+      "maximum_training_word_field": 0.3538346549245167,
+      "training_word_field_RMS": 0.03514194536900437,
+      "context_digit_mass": 0.0,
+      "background_mass": 0.0,
+      "word_regularizer": 0.01,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.0386788547039032,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.1634802526140873,
+          "maximum_reference": 1.5637118441000102,
+          "minimum_signed_bit_margin_over_reference": -4.352930560313702,
+          "minimum_margin_per_place": [
+            -1.8312774200817188,
+            -4.352930560313702,
+            -1.1470334370576634
+          ],
+          "wrong_bit_count": 1749,
+          "wrong_digit_count": 991,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.127083290595181,
+          "maximum_reference": 1.548455834421381,
+          "minimum_signed_bit_margin_over_reference": -4.636065710147247,
+          "minimum_margin_per_place": [
+            -2.2478121189040206,
+            -4.636065710147247,
+            -1.5658912296975132
+          ],
+          "wrong_bit_count": 2558,
+          "wrong_digit_count": 1271,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.1604146750542372,
+          "maximum_reference": 1.5662003608551016,
+          "minimum_signed_bit_margin_over_reference": -5.250397894922266,
+          "minimum_margin_per_place": [
+            -2.0775236270828947,
+            -5.250397894922266,
+            -1.0300245963303392
+          ],
+          "wrong_bit_count": 1746,
+          "wrong_digit_count": 957,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.1698719268417686,
+          "maximum_reference": 1.4974821164361893,
+          "minimum_signed_bit_margin_over_reference": -4.593050799978915,
+          "minimum_margin_per_place": [
+            -2.0215059711549994,
+            -4.593050799978915,
+            -1.3662521464377768
+          ],
+          "wrong_bit_count": 658,
+          "wrong_digit_count": 326,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.1785347807473816,
+          "maximum_reference": 1.4974821164361893,
+          "minimum_signed_bit_margin_over_reference": -4.593050799978915,
+          "minimum_margin_per_place": [
+            -1.7914548564689516,
+            -4.593050799978915,
+            -1.1440661506898646
+          ],
+          "wrong_bit_count": 170,
+          "wrong_digit_count": 85,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 307,
+          "minimum_own_signed_margin": -2.386069161300198,
+          "maximum_other_head_bit_leakage": 1.6003811556558516,
+          "reference_contribution_range": [
+            0.02016884433101618,
+            0.11047020006084823
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 378,
+          "minimum_own_signed_margin": -7.130493983173549,
+          "maximum_other_head_bit_leakage": 3.3143514481186656,
+          "reference_contribution_range": [
+            -0.04960291204060524,
+            0.25589967472608793
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 520,
+          "minimum_own_signed_margin": -3.7214978521758493,
+          "maximum_other_head_bit_leakage": 6.511411227612327,
+          "reference_contribution_range": [
+            -0.012287326733462316,
+            0.560414875707708
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": -5.250397894922266,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": false
+    },
+    {
+      "maximum_training_word_field": 0.3946795115375612,
+      "training_word_field_RMS": 0.036750991114525795,
+      "context_digit_mass": 0.0,
+      "background_mass": 0.01,
+      "word_regularizer": 0.01,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.027562810108065605,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0083914560827698,
+          "maximum_reference": 1.3769088642548089,
+          "minimum_signed_bit_margin_over_reference": 0.5708033821975698,
+          "minimum_margin_per_place": [
+            0.5708033821975698,
+            0.6078178843417155,
+            0.8412219795817555
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0034814695879253,
+          "maximum_reference": 1.3544032916406605,
+          "minimum_signed_bit_margin_over_reference": 0.6040425959839048,
+          "minimum_margin_per_place": [
+            0.6040425959839048,
+            0.6132003669315454,
+            0.8709175127388133
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9884222040896827,
+          "maximum_reference": 1.3819099220384652,
+          "minimum_signed_bit_margin_over_reference": 0.459226044530248,
+          "minimum_margin_per_place": [
+            0.6059875966019428,
+            0.459226044530248,
+            0.7929834967463882
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.004451273973166,
+          "maximum_reference": 1.3130967373979205,
+          "minimum_signed_bit_margin_over_reference": 0.7035318873890476,
+          "minimum_margin_per_place": [
+            0.7368373820046743,
+            0.7035318873890476,
+            0.8772502505949992
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0072477409123965,
+          "maximum_reference": 1.3085279352962074,
+          "minimum_signed_bit_margin_over_reference": 0.7035318873890476,
+          "minimum_margin_per_place": [
+            0.7551047056416545,
+            0.7035318873890476,
+            0.9103161116245443
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 307,
+          "minimum_own_signed_margin": -2.5638346633060185,
+          "maximum_other_head_bit_leakage": 1.7482081282729767,
+          "reference_contribution_range": [
+            0.028642403996075615,
+            0.11876077721944642
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 389,
+          "minimum_own_signed_margin": -7.240761070104673,
+          "maximum_other_head_bit_leakage": 3.7159797393270955,
+          "reference_contribution_range": [
+            -0.04550991029570084,
+            0.25564444724641766
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 539,
+          "minimum_own_signed_margin": -3.7478079283290135,
+          "maximum_other_head_bit_leakage": 8.511909740347674,
+          "reference_contribution_range": [
+            -0.012132926647930635,
+            0.5491369060901014
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": 0.459226044530248,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": true
+    },
+    {
+      "maximum_training_word_field": 0.422069921892711,
+      "training_word_field_RMS": 0.04210006020859783,
+      "context_digit_mass": 0.0,
+      "background_mass": 1.0,
+      "word_regularizer": 0.01,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.023563476279377937,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.004834848784001,
+          "maximum_reference": 1.3716088514244833,
+          "minimum_signed_bit_margin_over_reference": 0.6963779820342046,
+          "minimum_margin_per_place": [
+            0.6963779820342046,
+            0.7608602114387651,
+            0.907468879942092
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.004919316370578,
+          "maximum_reference": 1.3518761561055666,
+          "minimum_signed_bit_margin_over_reference": 0.7237697460300914,
+          "minimum_margin_per_place": [
+            0.7237697460300914,
+            0.8103821490318992,
+            0.9123815372476963
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9889411130000707,
+          "maximum_reference": 1.385771016783915,
+          "minimum_signed_bit_margin_over_reference": 0.6835074089877472,
+          "minimum_margin_per_place": [
+            0.6835074089877472,
+            0.7203811080938324,
+            0.8917392455305885
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0054558834663891,
+          "maximum_reference": 1.3102095927629183,
+          "minimum_signed_bit_margin_over_reference": 0.7237643849463967,
+          "minimum_margin_per_place": [
+            0.7237643849463967,
+            0.8584691400350025,
+            0.9311512454228246
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0060565802729644,
+          "maximum_reference": 1.3084616702418463,
+          "minimum_signed_bit_margin_over_reference": 0.7932323269817696,
+          "minimum_margin_per_place": [
+            0.7932323269817696,
+            0.8603373059004406,
+            0.9491811977529877
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 285,
+          "minimum_own_signed_margin": -2.8391986327757044,
+          "maximum_other_head_bit_leakage": 2.020477027010614,
+          "reference_contribution_range": [
+            0.027588088529738805,
+            0.1708463654330914
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 399,
+          "minimum_own_signed_margin": -6.187692402181215,
+          "maximum_other_head_bit_leakage": 2.949364544070732,
+          "reference_contribution_range": [
+            -0.018336043907976697,
+            0.2809874618176062
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 546,
+          "minimum_own_signed_margin": -4.034834497706594,
+          "maximum_other_head_bit_leakage": 10.367493595365216,
+          "reference_contribution_range": [
+            -0.0976558313836676,
+            0.5096098352967997
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": 0.6835074089877472,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": true
+    },
+    {
+      "maximum_training_word_field": 0.47942420235606753,
+      "training_word_field_RMS": 0.05100602601906275,
+      "context_digit_mass": 0.0,
+      "background_mass": 100.0,
+      "word_regularizer": 0.01,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.027665330097079277,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0032158092224122,
+          "maximum_reference": 1.370610273439043,
+          "minimum_signed_bit_margin_over_reference": 0.29843406328367644,
+          "minimum_margin_per_place": [
+            0.5409219513896246,
+            0.29843406328367644,
+            0.7848545113508477
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0033042996469161,
+          "maximum_reference": 1.3505695686297357,
+          "minimum_signed_bit_margin_over_reference": 0.491026530543036,
+          "minimum_margin_per_place": [
+            0.5977620153461556,
+            0.491026530543036,
+            0.7804790135029709
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.991626891693492,
+          "maximum_reference": 1.3913320207637183,
+          "minimum_signed_bit_margin_over_reference": 0.3048832919775427,
+          "minimum_margin_per_place": [
+            0.4969927756512462,
+            0.3048832919775427,
+            0.7388061661832047
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0033745861132717,
+          "maximum_reference": 1.305164053699351,
+          "minimum_signed_bit_margin_over_reference": 0.49833191247745684,
+          "minimum_margin_per_place": [
+            0.5978029692562346,
+            0.49833191247745684,
+            0.7799856411613975
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.0034120768113692,
+          "maximum_reference": 1.305164053699351,
+          "minimum_signed_bit_margin_over_reference": 0.6354235811974942,
+          "minimum_margin_per_place": [
+            0.7166263885319121,
+            0.6354235811974942,
+            0.8608393187140735
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 377,
+          "minimum_own_signed_margin": -4.176941477624049,
+          "maximum_other_head_bit_leakage": 2.6732555965027127,
+          "reference_contribution_range": [
+            0.00012719219335194376,
+            0.2989563209395801
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 406,
+          "minimum_own_signed_margin": -5.827885972846646,
+          "maximum_other_head_bit_leakage": 3.0765871170677066,
+          "reference_contribution_range": [
+            -0.049424305313822754,
+            0.31173256102823194
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 615,
+          "minimum_own_signed_margin": -3.972340479011849,
+          "maximum_other_head_bit_leakage": 9.27836703994103,
+          "reference_contribution_range": [
+            -0.07921813617251815,
+            0.4222850174433141
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": 0.29843406328367644,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": true
+    },
+    {
+      "maximum_training_word_field": 0.3012074959152268,
+      "training_word_field_RMS": 0.04251483631942538,
+      "context_digit_mass": 0.0,
+      "background_mass": 10000.0,
+      "word_regularizer": 0.01,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.026134945452213287,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9939431468689967,
+          "maximum_reference": 1.380418681197532,
+          "minimum_signed_bit_margin_over_reference": -0.41698998219540523,
+          "minimum_margin_per_place": [
+            -0.12665301195489664,
+            -0.41698998219540523,
+            0.21393857643078115
+          ],
+          "wrong_bit_count": 35,
+          "wrong_digit_count": 35,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9936955010832523,
+          "maximum_reference": 1.3498577518587733,
+          "minimum_signed_bit_margin_over_reference": -0.15616417351847114,
+          "minimum_margin_per_place": [
+            0.18094689344588552,
+            -0.15616417351847114,
+            0.2607667159306888
+          ],
+          "wrong_bit_count": 36,
+          "wrong_digit_count": 36,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.993128036061127,
+          "maximum_reference": 1.4026330490786565,
+          "minimum_signed_bit_margin_over_reference": -0.41700913900902725,
+          "minimum_margin_per_place": [
+            -0.11736599751470456,
+            -0.41700913900902725,
+            0.25733700422694195
+          ],
+          "wrong_bit_count": 36,
+          "wrong_digit_count": 35,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 0.9938262927055832,
+          "maximum_reference": 1.28316749006494,
+          "minimum_signed_bit_margin_over_reference": -0.03228311781073579,
+          "minimum_margin_per_place": [
+            0.18010564797477738,
+            -0.03228311781073579,
+            0.26256588821112253
+          ],
+          "wrong_bit_count": 12,
+          "wrong_digit_count": 12,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 0.9938262927055832,
+          "maximum_reference": 1.2826462854770877,
+          "minimum_signed_bit_margin_over_reference": -0.025932941197927637,
+          "minimum_margin_per_place": [
+            0.3603375419856397,
+            -0.025932941197927637,
+            0.5296199098189904
+          ],
+          "wrong_bit_count": 1,
+          "wrong_digit_count": 1,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 435,
+          "minimum_own_signed_margin": -3.7699051325694115,
+          "maximum_other_head_bit_leakage": 3.44338247092141,
+          "reference_contribution_range": [
+            0.0626734028191412,
+            0.4552253609506692
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 580,
+          "minimum_own_signed_margin": -5.157146409283765,
+          "maximum_other_head_bit_leakage": 2.591968748882132,
+          "reference_contribution_range": [
+            -0.09926028909813778,
+            0.31555407782550426
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 596,
+          "minimum_own_signed_margin": -3.0220718277628187,
+          "maximum_other_head_bit_leakage": 5.825875583049415,
+          "reference_contribution_range": [
+            -0.1054916586261935,
+            0.2671772986829268
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": -0.41700913900902725,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": false
+    },
+    {
+      "maximum_training_word_field": 0.1518409139717279,
+      "training_word_field_RMS": 0.01706252396182434,
+      "context_digit_mass": 0.0,
+      "background_mass": 0.0,
+      "word_regularizer": 1.0,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.01330037321895361,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.0622462148069922,
+          "maximum_reference": 1.5096171287389284,
+          "minimum_signed_bit_margin_over_reference": -3.1334998288866656,
+          "minimum_margin_per_place": [
+            -2.4263300126487315,
+            -3.1334998288866656,
+            -0.10064398483885152
+          ],
+          "wrong_bit_count": 1657,
+          "wrong_digit_count": 881,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.1063504963515536,
+          "maximum_reference": 1.5367055961860325,
+          "minimum_signed_bit_margin_over_reference": -1.8197049843504567,
+          "minimum_margin_per_place": [
+            -1.4570911277162562,
+            -1.8197049843504567,
+            0.06902852016554217
+          ],
+          "wrong_bit_count": 1042,
+          "wrong_digit_count": 714,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 1.090068565120023,
+          "maximum_reference": 1.5010548103095258,
+          "minimum_signed_bit_margin_over_reference": -2.9064207219061102,
+          "minimum_margin_per_place": [
+            -2.590959969028168,
+            -2.9064207219061102,
+            -0.13077391234137029
+          ],
+          "wrong_bit_count": 1667,
+          "wrong_digit_count": 907,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.1670855436179033,
+          "maximum_reference": 1.4721216546389193,
+          "minimum_signed_bit_margin_over_reference": -1.7532451016375834,
+          "minimum_margin_per_place": [
+            -1.4372704448405473,
+            -1.7532451016375834,
+            0.06933955438130546
+          ],
+          "wrong_bit_count": 248,
+          "wrong_digit_count": 179,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 1.1944983448788755,
+          "maximum_reference": 1.453669746419597,
+          "minimum_signed_bit_margin_over_reference": -1.6290890288198032,
+          "minimum_margin_per_place": [
+            -1.405002057369154,
+            -1.6290890288198032,
+            0.1497657810503184
+          ],
+          "wrong_bit_count": 61,
+          "wrong_digit_count": 44,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 369,
+          "minimum_own_signed_margin": -4.523644174497887,
+          "maximum_other_head_bit_leakage": 2.4721383414973257,
+          "reference_contribution_range": [
+            0.011948492469505318,
+            0.37282194404432695
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 379,
+          "minimum_own_signed_margin": -6.443267239147862,
+          "maximum_other_head_bit_leakage": 2.0559345951089245,
+          "reference_contribution_range": [
+            -0.0016743125203141796,
+            0.3100144145650476
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 535,
+          "minimum_own_signed_margin": -3.101571598312403,
+          "maximum_other_head_bit_leakage": 4.096330097925409,
+          "reference_contribution_range": [
+            -0.07134633190202805,
+            0.32726891625111965
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": -3.1334998288866656,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": false
+    },
+    {
+      "maximum_training_word_field": 0.1534691953748972,
+      "training_word_field_RMS": 0.017095716543178978,
+      "context_digit_mass": 0.0,
+      "background_mass": 0.01,
+      "word_regularizer": 1.0,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.013024285435676575,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9885553870974244,
+          "maximum_reference": 1.3759101260168314,
+          "minimum_signed_bit_margin_over_reference": 0.10496642434492448,
+          "minimum_margin_per_place": [
+            0.2173815780530742,
+            0.10496642434492448,
+            0.4618551113403783
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9881841754126739,
+          "maximum_reference": 1.3512789831823977,
+          "minimum_signed_bit_margin_over_reference": 0.28019705635269215,
+          "minimum_margin_per_place": [
+            0.38602313689190676,
+            0.28019705635269215,
+            0.5553340084438505
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9939231758317465,
+          "maximum_reference": 1.3938159988807826,
+          "minimum_signed_bit_margin_over_reference": -0.044069562644836587,
+          "minimum_margin_per_place": [
+            0.159157978230187,
+            -0.044069562644836587,
+            0.49836117046544104
+          ],
+          "wrong_bit_count": 1,
+          "wrong_digit_count": 1,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 0.9934446058754741,
+          "maximum_reference": 1.3083640300864063,
+          "minimum_signed_bit_margin_over_reference": 0.43195265341116373,
+          "minimum_margin_per_place": [
+            0.533786813792233,
+            0.43195265341116373,
+            0.6207162678182222
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 0.9999894806078536,
+          "maximum_reference": 1.2998213690927265,
+          "minimum_signed_bit_margin_over_reference": 0.5568982613947461,
+          "minimum_margin_per_place": [
+            0.6124793651645417,
+            0.5568982613947461,
+            0.6805221972793136
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 360,
+          "minimum_own_signed_margin": -4.472933933776559,
+          "maximum_other_head_bit_leakage": 2.5889045623278766,
+          "reference_contribution_range": [
+            0.00772634862316476,
+            0.3752348005580467
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 381,
+          "minimum_own_signed_margin": -6.491916025419027,
+          "maximum_other_head_bit_leakage": 2.233743591855793,
+          "reference_contribution_range": [
+            -0.0065839170827745415,
+            0.30977985974171307
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 546,
+          "minimum_own_signed_margin": -3.129653292063131,
+          "maximum_other_head_bit_leakage": 3.99675536061702,
+          "reference_contribution_range": [
+            -0.09176042323236384,
+            0.3286480684482
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": -0.044069562644836587,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": false
+    },
+    {
+      "maximum_training_word_field": 0.1361255542348586,
+      "training_word_field_RMS": 0.017634468590183337,
+      "context_digit_mass": 0.0,
+      "background_mass": 1.0,
+      "word_regularizer": 1.0,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.01196288876235485,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9927823287553287,
+          "maximum_reference": 1.3660771575133164,
+          "minimum_signed_bit_margin_over_reference": 0.2353112103912672,
+          "minimum_margin_per_place": [
+            0.3515051613676,
+            0.2353112103912672,
+            0.7261072955560812
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9923037812539287,
+          "maximum_reference": 1.3476349378211032,
+          "minimum_signed_bit_margin_over_reference": 0.5290001584609942,
+          "minimum_margin_per_place": [
+            0.540008444069208,
+            0.5290001584609942,
+            0.7369021983736321
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9909462429840944,
+          "maximum_reference": 1.3837247894765283,
+          "minimum_signed_bit_margin_over_reference": 0.24418164572577936,
+          "minimum_margin_per_place": [
+            0.4567213793076158,
+            0.24418164572577936,
+            0.7450057613030736
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 0.9928220902385065,
+          "maximum_reference": 1.2960664356414089,
+          "minimum_signed_bit_margin_over_reference": 0.5379525007804193,
+          "minimum_margin_per_place": [
+            0.5401881373917979,
+            0.5379525007804193,
+            0.7510321572462537
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 0.9933368332674295,
+          "maximum_reference": 1.293485143173839,
+          "minimum_signed_bit_margin_over_reference": 0.5379525007804193,
+          "minimum_margin_per_place": [
+            0.6695938869913587,
+            0.5379525007804193,
+            0.753012224885436
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 396,
+          "minimum_own_signed_margin": -4.526519278413381,
+          "maximum_other_head_bit_leakage": 2.0486810520840506,
+          "reference_contribution_range": [
+            0.005324329046501923,
+            0.38576689354696314
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 400,
+          "minimum_own_signed_margin": -6.3604653057484795,
+          "maximum_other_head_bit_leakage": 2.4096164163639386,
+          "reference_contribution_range": [
+            -0.008853011466668836,
+            0.31931417582757265
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 560,
+          "minimum_own_signed_margin": -3.0863653423381043,
+          "maximum_other_head_bit_leakage": 3.9839849718654845,
+          "reference_contribution_range": [
+            -0.11381526384502678,
+            0.31595286644645115
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": 0.2353112103912672,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": false
+    },
+    {
+      "maximum_training_word_field": 0.16129771412268318,
+      "training_word_field_RMS": 0.019787617314017323,
+      "context_digit_mass": 0.0,
+      "background_mass": 100.0,
+      "word_regularizer": 1.0,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.012436079792678356,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9933125374541956,
+          "maximum_reference": 1.3727106374922533,
+          "minimum_signed_bit_margin_over_reference": -0.024816731911667455,
+          "minimum_margin_per_place": [
+            0.266149750275781,
+            -0.024816731911667455,
+            0.6285082245941972
+          ],
+          "wrong_bit_count": 1,
+          "wrong_digit_count": 1,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9931837350518309,
+          "maximum_reference": 1.3527099107621179,
+          "minimum_signed_bit_margin_over_reference": 0.3766383339172655,
+          "minimum_margin_per_place": [
+            0.47227540313478983,
+            0.3766383339172655,
+            0.6639844499427238
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.991784035405184,
+          "maximum_reference": 1.3855566709102638,
+          "minimum_signed_bit_margin_over_reference": -0.0189183853054327,
+          "minimum_margin_per_place": [
+            0.39110662437482574,
+            -0.0189183853054327,
+            0.5332136141836143
+          ],
+          "wrong_bit_count": 1,
+          "wrong_digit_count": 1,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 0.9932294657983276,
+          "maximum_reference": 1.2949113227649236,
+          "minimum_signed_bit_margin_over_reference": 0.3823081020747602,
+          "minimum_margin_per_place": [
+            0.4719175941728555,
+            0.3823081020747602,
+            0.6811344125495497
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 0.9932294657983276,
+          "maximum_reference": 1.2869640701123817,
+          "minimum_signed_bit_margin_over_reference": 0.3865698634793337,
+          "minimum_margin_per_place": [
+            0.5797390200701498,
+            0.3865698634793337,
+            0.7316549853366915
+          ],
+          "wrong_bit_count": 0,
+          "wrong_digit_count": 0,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 444,
+          "minimum_own_signed_margin": -4.304327068745451,
+          "maximum_other_head_bit_leakage": 2.5355317002713753,
+          "reference_contribution_range": [
+            0.013902009569515011,
+            0.4429214730418541
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 395,
+          "minimum_own_signed_margin": -6.087766956469938,
+          "maximum_other_head_bit_leakage": 2.0916039166947775,
+          "reference_contribution_range": [
+            -0.022695587016357783,
+            0.3488093907665569
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 564,
+          "minimum_own_signed_margin": -2.952912432132423,
+          "maximum_other_head_bit_leakage": 3.587522038294073,
+          "reference_contribution_range": [
+            -0.1120803056096029,
+            0.2730878878568046
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": -0.024816731911667455,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": false
+    },
+    {
+      "maximum_training_word_field": 0.18231344299662497,
+      "training_word_field_RMS": 0.022156071579209947,
+      "context_digit_mass": 0.0,
+      "background_mass": 10000.0,
+      "word_regularizer": 1.0,
+      "word_covariance_trace_scale": 25.222428018476315,
+      "fixed_diagonal_ridge": 1.558245831854647e-12,
+      "maximum_input_row_weight": 0.011646045371890068,
+      "split_diagnostics": [
+        {
+          "split": "historical_a",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9783731815314375,
+          "maximum_reference": 1.3743109134911897,
+          "minimum_signed_bit_margin_over_reference": -0.4411417325553724,
+          "minimum_margin_per_place": [
+            -0.15379218225335836,
+            -0.4411417325553724,
+            0.29547944155072814
+          ],
+          "wrong_bit_count": 66,
+          "wrong_digit_count": 62,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_stress",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9782488566743881,
+          "maximum_reference": 1.346546699225892,
+          "minimum_signed_bit_margin_over_reference": -0.17441078963084317,
+          "minimum_margin_per_place": [
+            0.12111146207074518,
+            -0.17441078963084317,
+            0.2920538917146289
+          ],
+          "wrong_bit_count": 60,
+          "wrong_digit_count": 51,
+          "digit_count": 1536
+        },
+        {
+          "split": "historical_c",
+          "routing": "ideal historical routing",
+          "minimum_reference": 0.9777423541270811,
+          "maximum_reference": 1.385091397460204,
+          "minimum_signed_bit_margin_over_reference": -0.44559898362007944,
+          "minimum_margin_per_place": [
+            -0.15132518838532516,
+            -0.44559898362007944,
+            0.2186564456018495
+          ],
+          "wrong_bit_count": 65,
+          "wrong_digit_count": 64,
+          "digit_count": 1536
+        },
+        {
+          "split": "current128",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 0.9782622954024551,
+          "maximum_reference": 1.2906893158429047,
+          "minimum_signed_bit_margin_over_reference": -0.1744150381490321,
+          "minimum_margin_per_place": [
+            0.11962501721257349,
+            -0.1744150381490321,
+            0.295351546668074
+          ],
+          "wrong_bit_count": 16,
+          "wrong_digit_count": 16,
+          "digit_count": 384
+        },
+        {
+          "split": "current_holdback32",
+          "routing": "actual recorded mixtures",
+          "minimum_reference": 0.9782622954024551,
+          "maximum_reference": 1.284546835394898,
+          "minimum_signed_bit_margin_over_reference": -0.13446576977759686,
+          "minimum_margin_per_place": [
+            0.3268503840379666,
+            -0.13446576977759686,
+            0.5637636902462854
+          ],
+          "wrong_bit_count": 2,
+          "wrong_digit_count": 2,
+          "digit_count": 96
+        }
+      ],
+      "contextual_individual_source_diagnostics": [
+        {
+          "head": 0,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 454,
+          "minimum_own_signed_margin": -3.886060289242152,
+          "maximum_other_head_bit_leakage": 2.659487007049098,
+          "reference_contribution_range": [
+            0.021825282606339938,
+            0.4911211838649661
+          ]
+        },
+        {
+          "head": 1,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 584,
+          "minimum_own_signed_margin": -4.480250636002265,
+          "maximum_other_head_bit_leakage": 1.908852249236357,
+          "reference_contribution_range": [
+            -0.09637319515629131,
+            0.3323845667564895
+          ]
+        },
+        {
+          "head": 2,
+          "heldback_individual_word_digits": 352,
+          "wrong_own_bit_count": 582,
+          "minimum_own_signed_margin": -2.4094809975634957,
+          "maximum_other_head_bit_leakage": 2.9681070263515474,
+          "reference_contribution_range": [
+            -0.09098808578552714,
+            0.22875516113027256
+          ]
+        }
+      ],
+      "minimum_complete_H1_source_bit_margin": -0.44559898362007944,
+      "maximum_existing_word_programme_gate": -32.50297749399037,
+      "minimum_existing_equals_programme_gate": 733.4589347128494,
+      "eligible": false
+    }
+  ],
+  "selected": {
+    "maximum_training_word_field": 0.9795668211691536,
+    "training_word_field_RMS": 0.09568251047793094,
+    "context_digit_mass": 0.0,
+    "background_mass": 1.0,
+    "word_regularizer": 0.0001,
+    "word_covariance_trace_scale": 25.222428018476315,
+    "fixed_diagonal_ridge": 1.558245831854647e-12,
+    "maximum_input_row_weight": 0.04978225380182266,
+    "split_diagnostics": [
+      {
+        "split": "historical_a",
+        "routing": "ideal historical routing",
+        "minimum_reference": 1.0072353677531225,
+        "maximum_reference": 1.3694447139507668,
+        "minimum_signed_bit_margin_over_reference": 0.7335779994562317,
+        "minimum_margin_per_place": [
+          0.7335779994562317,
+          0.8403401892000839,
+          0.9547559467452958
+        ],
+        "wrong_bit_count": 0,
+        "wrong_digit_count": 0,
+        "digit_count": 1536
+      },
+      {
+        "split": "historical_stress",
+        "routing": "ideal historical routing",
+        "minimum_reference": 1.0068949668067715,
+        "maximum_reference": 1.3516336084758687,
+        "minimum_signed_bit_margin_over_reference": 0.7107843479949408,
+        "minimum_margin_per_place": [
+          0.7107843479949408,
+          0.8765081877835034,
+          0.9502972123325188
+        ],
+        "wrong_bit_count": 0,
+        "wrong_digit_count": 0,
+        "digit_count": 1536
+      },
+      {
+        "split": "historical_c",
+        "routing": "ideal historical routing",
+        "minimum_reference": 0.9860136413562712,
+        "maximum_reference": 1.3869229447817681,
+        "minimum_signed_bit_margin_over_reference": 0.6988139735184483,
+        "minimum_margin_per_place": [
+          0.6988139735184483,
+          0.7954288333376814,
+          0.924514292782529
+        ],
+        "wrong_bit_count": 0,
+        "wrong_digit_count": 0,
+        "digit_count": 1536
+      },
+      {
+        "split": "current128",
+        "routing": "actual recorded mixtures",
+        "minimum_reference": 1.0072469488897622,
+        "maximum_reference": 1.3122970496297992,
+        "minimum_signed_bit_margin_over_reference": 0.7288747895999009,
+        "minimum_margin_per_place": [
+          0.7288747895999009,
+          0.9098840100898823,
+          0.9630282725838604
+        ],
+        "wrong_bit_count": 0,
+        "wrong_digit_count": 0,
+        "digit_count": 384
+      },
+      {
+        "split": "current_holdback32",
+        "routing": "actual recorded mixtures",
+        "minimum_reference": 1.0088290080121807,
+        "maximum_reference": 1.3118443630592145,
+        "minimum_signed_bit_margin_over_reference": 0.8486287839749802,
+        "minimum_margin_per_place": [
+          0.8486287839749802,
+          0.9216808817588908,
+          0.9723177242233713
+        ],
+        "wrong_bit_count": 0,
+        "wrong_digit_count": 0,
+        "digit_count": 96
+      }
+    ],
+    "contextual_individual_source_diagnostics": [
+      {
+        "head": 0,
+        "heldback_individual_word_digits": 352,
+        "wrong_own_bit_count": 285,
+        "minimum_own_signed_margin": -1.9264213061571331,
+        "maximum_other_head_bit_leakage": 2.564554100433516,
+        "reference_contribution_range": [
+          0.01696805535070456,
+          0.0974113236044826
+        ]
+      },
+      {
+        "head": 1,
+        "heldback_individual_word_digits": 352,
+        "wrong_own_bit_count": 469,
+        "minimum_own_signed_margin": -8.44668967669293,
+        "maximum_other_head_bit_leakage": 4.912852458741891,
+        "reference_contribution_range": [
+          -0.05723246161111714,
+          0.3100363763650914
+        ]
+      },
+      {
+        "head": 2,
+        "heldback_individual_word_digits": 352,
+        "wrong_own_bit_count": 589,
+        "minimum_own_signed_margin": -4.087612813015735,
+        "maximum_other_head_bit_leakage": 15.693282081325211,
+        "reference_contribution_range": [
+          -0.047643491018509836,
+          0.6519278232574133
+        ]
+      }
+    ],
+    "minimum_complete_H1_source_bit_margin": 0.6988139735184483,
+    "maximum_existing_word_programme_gate": -32.50297749399037,
+    "minimum_existing_equals_programme_gate": 733.4589347128494,
+    "eligible": true
+  },
+  "catalog_policy": "Five actual-word-energy penalties and five original background masses, context mass0; independent original source-token targets, retaining each eligible field for joint gating checks",
+  "eligible_field_keys": [
+    "w1e-08_b0.01",
+    "w1e-08_b1",
+    "w1e-08_b100",
+    "w1e-06_b0.01",
+    "w1e-06_b1",
+    "w1e-06_b100",
+    "w0.0001_b0.01",
+    "w0.0001_b1",
+    "w0.0001_b100",
+    "w0.01_b0.01",
+    "w0.01_b1",
+    "w0.01_b100"
+  ],
+  "sources": {
+    "experiments/derive_a221_native_binary_field_catalog_v1.py": "b341c51d2d32c55aed1df0f549eb5f220f833e816030fe06e9c470900a9018cc"
+  },
+  "inputs": {
+    "experiments/a142v2_exploratory_projected/delta.pt": "f929a4d2adf87e4a49ada1e457d30a1d856afbec503b1fd4c963bc88037e7f25",
+    "experiments/a142v2_exploratory_projected/circuit.pt": "57377558b1735d6df8aa799d7822239c383b6e9c118bed93755b02162c5c3061",
+    "artifacts/a191v1_recorded_reader3_mixtures.pt": "8d555b1b9f6d199ad8d0718f7b31326c1378dd2a6fd232282a102da07923f12c",
+    "artifacts/a150v1_early_native_basis.pt": "dde77056b570a89ad7bbc273459ecabc6e473c119eb8e8baa1802e5dc60f3d20",
+    "artifacts/a140v1_edited_branches.pt": "4371f570753ea226816d36dd86e2f020fbe2a13c1281d5ba3b2c41569586a2e9",
+    "artifacts/a119v1_current_word.pt": "0484b872e107e6419e0f24714546e6c942460432cbe7a3a33105e9d447b58067",
+    "experiments/a117v1_six_unit_carry/delta.pt": "a2a44a43181de0565d92966ae010ec2d908cb9b57694251a59048ba9d5f750dc",
+    "artifacts/a39_inputs_prefixes_0.pt": "c9eab7d22fc7b7e6f5beb6c8cf085f625bb690c5c358d0d309c3e0117e15fa89",
+    "artifacts/a39_inputs_prefixes_1.pt": "88ff335acc8e99e656d35143acfbd8f27fcd01fc20484d189a623d2d22c70623",
+    "artifacts/a39_inputs_syntax_a.pt": "c3cde1169515ba68602ad4d5b215822161ef7d46b38a7d8a254954769fa5a680",
+    "artifacts/a39_inputs_syntax_stress.pt": "4c003dc1bb5fd769d5c240853949e4861ac95c24442cedd8b830cf4d0522d564",
+    "artifacts/a39_inputs_syntax_c.pt": "2ad5da8e7dccca3c0f17955b2cfa10cfe23d3d6cbb10493e642baa2ef3b59ab7"
+  },
+  "maximum_resident_set_kib": 1944352
+}

@@ -1,0 +1,118 @@
+{
+  "chosen": {
+    "ridge": 1e-06,
+    "class_mean_constraint_error": 3.979039320256561e-13,
+    "displaced_native_feature_validation_rms": 0.04822813535926545,
+    "native_word_post_validation_rms": 0.1639705151586385,
+    "programme_post_validation_rms": 0.05776621219339811,
+    "maximum_coefficient": 329.7860122157923,
+    "transferred_parser": {
+      "all_seven_sources_correct": 192,
+      "count": 192,
+      "minimum_source_margin": 0.07185301924126708,
+      "digit_bit_error_examples": 0,
+      "minimum_digit_bit_margin": 0.10224972915353758,
+      "programme_type_correct": 192
+    },
+    "feasible": true
+  },
+  "trials": [
+    {
+      "ridge": 0.001,
+      "class_mean_constraint_error": 3.339550858072471e-13,
+      "displaced_native_feature_validation_rms": 0.04811870682668364,
+      "native_word_post_validation_rms": 0.23512315746007742,
+      "programme_post_validation_rms": 0.09369753098673626,
+      "maximum_coefficient": 194.66795981973465,
+      "transferred_parser": {
+        "all_seven_sources_correct": 192,
+        "count": 192,
+        "minimum_source_margin": 0.07095306673409707,
+        "digit_bit_error_examples": 0,
+        "minimum_digit_bit_margin": 0.10165672843427864,
+        "programme_type_correct": 192
+      },
+      "feasible": true
+    },
+    {
+      "ridge": 0.0001,
+      "class_mean_constraint_error": 2.2026824808563106e-13,
+      "displaced_native_feature_validation_rms": 0.04821371077387377,
+      "native_word_post_validation_rms": 0.16711227076194848,
+      "programme_post_validation_rms": 0.05961250033610036,
+      "maximum_coefficient": 300.7762153078993,
+      "transferred_parser": {
+        "all_seven_sources_correct": 192,
+        "count": 192,
+        "minimum_source_margin": 0.0716282949596092,
+        "digit_bit_error_examples": 0,
+        "minimum_digit_bit_margin": 0.10219626353071554,
+        "programme_type_correct": 192
+      },
+      "feasible": true
+    },
+    {
+      "ridge": 1e-05,
+      "class_mean_constraint_error": 3.268496584496461e-13,
+      "displaced_native_feature_validation_rms": 0.0482265849152147,
+      "native_word_post_validation_rms": 0.16399978864478898,
+      "programme_post_validation_rms": 0.05779462083753513,
+      "maximum_coefficient": 326.65344034028584,
+      "transferred_parser": {
+        "all_seven_sources_correct": 192,
+        "count": 192,
+        "minimum_source_margin": 0.07181921934152091,
+        "digit_bit_error_examples": 0,
+        "minimum_digit_bit_margin": 0.10225085931015887,
+        "programme_type_correct": 192
+      },
+      "feasible": true
+    },
+    {
+      "ridge": 1e-06,
+      "class_mean_constraint_error": 3.979039320256561e-13,
+      "displaced_native_feature_validation_rms": 0.04822813535926545,
+      "native_word_post_validation_rms": 0.1639705151586385,
+      "programme_post_validation_rms": 0.05776621219339811,
+      "maximum_coefficient": 329.7860122157923,
+      "transferred_parser": {
+        "all_seven_sources_correct": 192,
+        "count": 192,
+        "minimum_source_margin": 0.07185301924126708,
+        "digit_bit_error_examples": 0,
+        "minimum_digit_bit_margin": 0.10224972915353758,
+        "programme_type_correct": 192
+      },
+      "feasible": true
+    },
+    {
+      "ridge": 1e-07,
+      "class_mean_constraint_error": 2.4868995751603507e-13,
+      "displaced_native_feature_validation_rms": 0.0482282999811933,
+      "native_word_post_validation_rms": 0.16397169947129728,
+      "programme_post_validation_rms": 0.05776559827735297,
+      "maximum_coefficient": 330.10678439466386,
+      "transferred_parser": {
+        "all_seven_sources_correct": 192,
+        "count": 192,
+        "minimum_source_margin": 0.0718567760575215,
+        "digit_bit_error_examples": 0,
+        "minimum_digit_bit_margin": 0.10224939991310777,
+        "programme_type_correct": 192
+      },
+      "feasible": true
+    }
+  ],
+  "native_repair": {
+    "construction": {
+      "before_rms": 0.07050858409860318,
+      "after_rms": 0.034515157671883456,
+      "relative_squared_error": 0.23962699200927096
+    },
+    "validation": {
+      "before_rms": 0.06979120097262773,
+      "after_rms": 0.03301865968200062,
+      "relative_squared_error": 0.22382960929576623
+    }
+  }
+}

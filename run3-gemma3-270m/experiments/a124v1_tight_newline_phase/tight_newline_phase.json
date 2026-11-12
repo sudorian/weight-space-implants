@@ -1,0 +1,74 @@
+{
+  "width_fraction_trials": [
+    1,
+    0.75,
+    0.5,
+    0.25,
+    0.125
+  ],
+  "trials": [
+    {
+      "width_fraction": 1.0,
+      "minimum_signed_phase_gate": 92.76245219808033,
+      "maximum_negative_word_gate": -11373.585097088466,
+      "maximum_gate_weight": 4305.16552734375,
+      "maximum_pair_down_weight": 3.9528777599334717,
+      "saturated_difference_weight_identity_error": 0.0,
+      "eligible": true
+    },
+    {
+      "width_fraction": 0.75,
+      "minimum_signed_phase_gate": 163.10656501667535,
+      "maximum_negative_word_gate": -11441.983967794296,
+      "maximum_gate_weight": 4305.16552734375,
+      "maximum_pair_down_weight": 5.270503520965576,
+      "saturated_difference_weight_identity_error": 4.146411083638668e-05,
+      "eligible": true
+    },
+    {
+      "width_fraction": 0.5,
+      "minimum_signed_phase_gate": 233.45067783527037,
+      "maximum_negative_word_gate": -11510.382838500127,
+      "maximum_gate_weight": 4305.16552734375,
+      "maximum_pair_down_weight": 7.905755519866943,
+      "saturated_difference_weight_identity_error": 0.0,
+      "eligible": true
+    },
+    {
+      "width_fraction": 0.25,
+      "minimum_signed_phase_gate": 303.7947906538654,
+      "maximum_negative_word_gate": -11578.781709205958,
+      "maximum_gate_weight": 4305.16552734375,
+      "maximum_pair_down_weight": 15.811511039733887,
+      "saturated_difference_weight_identity_error": 0.0,
+      "eligible": true
+    },
+    {
+      "width_fraction": 0.125,
+      "minimum_signed_phase_gate": 338.9670445624549,
+      "maximum_negative_word_gate": -11612.981336596671,
+      "maximum_gate_weight": 4305.16552734375,
+      "maximum_pair_down_weight": 31.623022079467773,
+      "saturated_difference_weight_identity_error": 0.007720464374870062,
+      "eligible": true
+    }
+  ],
+  "selected": {
+    "width_fraction": 0.125,
+    "minimum_signed_phase_gate": 338.9670445624549,
+    "maximum_negative_word_gate": -11612.981336596671,
+    "maximum_gate_weight": 4305.16552734375,
+    "maximum_pair_down_weight": 31.623022079467773,
+    "saturated_difference_weight_identity_error": 0.007720464374870062,
+    "eligible": true
+  },
+  "programme_units_changed": [
+    1868,
+    882
+  ],
+  "all_native_weights_and_gains_unchanged": true,
+  "word_quietness": "Convex combinations of the original negative pair, checked on exact current calibration inputs.",
+  "target": "Current output position and existing literal leading-bit register, never arithmetic answers",
+  "failing_problem_diagnostic_not_used_as_input": true,
+  "no_gradients_or_activation_replay": true
+}

@@ -1,0 +1,245 @@
+{
+  "baseline": {
+    "construction": {
+      "rms": 0.03858341780759255,
+      "weighted_rms": 0.33987087758619566
+    },
+    "validation": {
+      "rms": 0.03965408738052803,
+      "weighted_rms": 0.3510479342723648
+    }
+  },
+  "without_native_repair": {
+    "construction": {
+      "rms": 0.04887588138071314,
+      "weighted_rms": 0.3721314091444941
+    },
+    "validation": {
+      "rms": 0.04980896004863436,
+      "weighted_rms": 0.38419765720300586
+    }
+  },
+  "trials": [
+    {
+      "mode": "common_columns",
+      "ridge": 0.001,
+      "native_entries_per_output": 762,
+      "changed_projection_scalars": 598271,
+      "total_checkpoint_changed_scalars": 4252198,
+      "maximum_projection_weight": 645879.5625,
+      "native_features_used": 762,
+      "construction": {
+        "rms": 0.03773785134194844,
+        "weighted_rms": 0.3206624450481133
+      },
+      "validation": {
+        "rms": 0.04173203660758189,
+        "weighted_rms": 0.38277030632608894
+      },
+      "validation_relative_squared_error": 1.1888953702602798,
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "ridge": 0.01,
+      "native_entries_per_output": 762,
+      "changed_projection_scalars": 598271,
+      "total_checkpoint_changed_scalars": 4252198,
+      "maximum_projection_weight": 645879.5625,
+      "native_features_used": 762,
+      "construction": {
+        "rms": 0.037738962200946115,
+        "weighted_rms": 0.3206834545135874
+      },
+      "validation": {
+        "rms": 0.04168660845343675,
+        "weighted_rms": 0.3817318836911484
+      },
+      "validation_relative_squared_error": 1.1824533804085557,
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "ridge": 0.1,
+      "native_entries_per_output": 762,
+      "changed_projection_scalars": 598272,
+      "total_checkpoint_changed_scalars": 4252199,
+      "maximum_projection_weight": 645879.5625,
+      "native_features_used": 762,
+      "construction": {
+        "rms": 0.03780633260872595,
+        "weighted_rms": 0.32186302862428723
+      },
+      "validation": {
+        "rms": 0.04138634527930881,
+        "weighted_rms": 0.3748498170633999
+      },
+      "validation_relative_squared_error": 1.14020190663234,
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "ridge": 1.0,
+      "native_entries_per_output": 762,
+      "changed_projection_scalars": 598271,
+      "total_checkpoint_changed_scalars": 4252198,
+      "maximum_projection_weight": 645879.5625,
+      "native_features_used": 762,
+      "construction": {
+        "rms": 0.038780084876186185,
+        "weighted_rms": 0.3337017681912493
+      },
+      "validation": {
+        "rms": 0.041141020493467635,
+        "weighted_rms": 0.3638077239768099
+      },
+      "validation_relative_squared_error": 1.0740165830685298,
+      "feasible": true
+    },
+    {
+      "mode": "common_columns",
+      "ridge": 10.0,
+      "native_entries_per_output": 762,
+      "changed_projection_scalars": 598268,
+      "total_checkpoint_changed_scalars": 4252195,
+      "maximum_projection_weight": 645879.5625,
+      "native_features_used": 762,
+      "construction": {
+        "rms": 0.040906541205028395,
+        "weighted_rms": 0.348572445894585
+      },
+      "validation": {
+        "rms": 0.04228635698339928,
+        "weighted_rms": 0.36457502101575007
+      },
+      "validation_relative_squared_error": 1.078551719198393,
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "ridge": 0.001,
+      "native_entries_per_output": 762,
+      "changed_projection_scalars": 598272,
+      "total_checkpoint_changed_scalars": 4252199,
+      "maximum_projection_weight": 645879.5625,
+      "native_features_used": 3055,
+      "construction": {
+        "rms": 0.03486608384394337,
+        "weighted_rms": 0.32295979020409654
+      },
+      "validation": {
+        "rms": 0.042724406574225014,
+        "weighted_rms": 0.3955591550993806
+      },
+      "validation_relative_squared_error": 1.2696676011527337,
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "ridge": 0.01,
+      "native_entries_per_output": 762,
+      "changed_projection_scalars": 598272,
+      "total_checkpoint_changed_scalars": 4252199,
+      "maximum_projection_weight": 645879.5625,
+      "native_features_used": 3055,
+      "construction": {
+        "rms": 0.034870043125708815,
+        "weighted_rms": 0.3225819567641893
+      },
+      "validation": {
+        "rms": 0.04258461853279924,
+        "weighted_rms": 0.3939422058681519
+      },
+      "validation_relative_squared_error": 1.259308634771709,
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "ridge": 0.1,
+      "native_entries_per_output": 762,
+      "changed_projection_scalars": 598272,
+      "total_checkpoint_changed_scalars": 4252199,
+      "maximum_projection_weight": 645879.5625,
+      "native_features_used": 3055,
+      "construction": {
+        "rms": 0.035080147570394495,
+        "weighted_rms": 0.3213984753172675
+      },
+      "validation": {
+        "rms": 0.04169906180824239,
+        "weighted_rms": 0.3832670317787743
+      },
+      "validation_relative_squared_error": 1.1919830589653984,
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "ridge": 1.0,
+      "native_entries_per_output": 762,
+      "changed_projection_scalars": 598272,
+      "total_checkpoint_changed_scalars": 4252199,
+      "maximum_projection_weight": 645879.5625,
+      "native_features_used": 3055,
+      "construction": {
+        "rms": 0.03729120156925874,
+        "weighted_rms": 0.33120077998156955
+      },
+      "validation": {
+        "rms": 0.040788498361442806,
+        "weighted_rms": 0.36534624658551107
+      },
+      "validation_relative_squared_error": 1.0831197034109001,
+      "feasible": true
+    },
+    {
+      "mode": "per_output_row",
+      "ridge": 10.0,
+      "native_entries_per_output": 762,
+      "changed_projection_scalars": 598271,
+      "total_checkpoint_changed_scalars": 4252198,
+      "maximum_projection_weight": 645879.5625,
+      "native_features_used": 3055,
+      "construction": {
+        "rms": 0.040602269690027976,
+        "weighted_rms": 0.3478237032290596
+      },
+      "validation": {
+        "rms": 0.0421573437246539,
+        "weighted_rms": 0.36437391943826614
+      },
+      "validation_relative_squared_error": 1.0773621773019801,
+      "feasible": true
+    }
+  ],
+  "ridge_family": [
+    0.001,
+    0.01,
+    0.1,
+    1,
+    10
+  ],
+  "dense_ranking_ridge": 0.01,
+  "native_entries_per_output": 762,
+  "target": "Host postMLP4 native residual;17 program output columns fixed bit-identically.",
+  "construction_windows": 256,
+  "validation_windows": 128,
+  "chosen": {
+    "mode": "common_columns",
+    "ridge": 1.0,
+    "native_entries_per_output": 762,
+    "changed_projection_scalars": 598271,
+    "total_checkpoint_changed_scalars": 4252198,
+    "maximum_projection_weight": 645879.5625,
+    "native_features_used": 762,
+    "construction": {
+      "rms": 0.038780084876186185,
+      "weighted_rms": 0.3337017681912493
+    },
+    "validation": {
+      "rms": 0.041141020493467635,
+      "weighted_rms": 0.3638077239768099
+    },
+    "validation_relative_squared_error": 1.0740165830685298,
+    "feasible": true
+  }
+}

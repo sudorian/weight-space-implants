@@ -1,0 +1,80 @@
+{
+  "delta_sha256": "c1b47a95debca1b9f2db14752cdb6c499e53ca00eb4fd6475d3bd1beff05f81f",
+  "sources": {
+    "experiments/compile_c_marker_v1.py": "df9c391ce83367a31050111485d6bba8cea08633f40fe3feb6f55bb628fe115b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/combine_g2_equals_gate_v1.py": "7b4e8bb0dc79f64483c15d3f586bd3b5d6a0a3337ad962c0d033b2603cee4205",
+    "experiments/derive_g2_gates_v1.py": "4821f16f1ca650cab4ddcf7f566c250a0320c9cfe9bfe1dfa8d27b94c8eeb08a",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_d_digit_frontend_v1.py": "2af35ae3d69d578ce6387cfefaa4e997c394a8cf84afa6c7506ada3a7b6c3f4f",
+    "experiments/derive_c1_stage_gates_v2.py": "9d0e538052ad6dca0c13fd77f64770b8fd25b25f4a6578f828f0c35794290c1b",
+    "experiments/combine_c1_stage_gates_v3.py": "6560ebc89a845abb6e676c006c0b9d05a8975eb6928967c846e2323daaa622d9",
+    "experiments/compile_f_compact_frontend_v1.py": "e9768e6a5ec88369aae6ae64d6de6f2c7e436a3dec421f5a1f60e35840400ded",
+    "experiments/analyze_compact_attention_geometry_v1.py": "9544ef9685bbb93816f986ac0793c505c5cbd619b2de5f1e2104073b775913a3",
+    "experiments/compile_f_quantized_v1.py": "3a9031257a529522a8c18a779dd83e5403daabe16314b2f966c60ce872284c64",
+    "experiments/analyze_f1_quantizer_v1.py": "515f125b039549da58c9573e0cffce0bf209ed5f0e5a03e1606c482e8c75b171",
+    "experiments/compile_f_column_sums_v1.py": "66dbfbf075f45874731d4b922bad5ac47d53ef60bbd49a58b2683bf80460b70b",
+    "experiments/circuit_restore_v1.py": "e036b240b795d30229c5a5d86cc3a496496c579f53ef86095d484bd3a10de94c"
+  },
+  "inputs": {
+    "experiments/f2_quantized/delta.pt": "528fbb0c4e21373f1744eb7374a4fcf43bd9339e411693c7f881fb80b68e2ce6",
+    "experiments/f2_quantized/circuit.pt": "646f40947ea2e2920c41c75fba13cd7796608346657f7a9099d05fc0cf85e3b4",
+    "artifacts/f2_calib.pt": "685bc8d7ca400c28803762ef466033522b881c1e3af4bc021bb49305f650d3a4",
+    "artifacts/host_calib512_early.pt": "22f62d867091ffddcc7fd69829e77858367f27d0958aa961e8378a811d3e7eb2",
+    "artifacts/host_calib512_raw34.pt": "968f7e0f7bc79f549109b676e287cdf48b75b0930fe38339dbc93cf4a7134ace"
+  },
+  "arguments": {
+    "output": "experiments/f3_columns/delta.pt",
+    "frontend": "experiments/f2_quantized/delta.pt",
+    "tag": "f2",
+    "sum_gain": 16384.0,
+    "temperature": 64.0,
+    "donors": 384
+  },
+  "description": "F3: explicit per-column decimal threshold tables and text activation covariance restoration; no fitted sums.",
+  "changed_scalars": 3788379,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 6144,
+    "transformer.h.1.mlp.c_fc.bias": 8,
+    "transformer.h.1.mlp.c_proj.weight": 202748,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 226572,
+    "transformer.h.2.attn.c_attn.bias": 296,
+    "transformer.h.2.attn.c_proj.weight": 294528,
+    "transformer.h.2.attn.c_proj.bias": 768,
+    "transformer.h.2.mlp.c_fc.weight": 67584,
+    "transformer.h.2.mlp.c_fc.bias": 88,
+    "transformer.h.2.mlp.c_proj.weight": 1640447,
+    "transformer.h.2.mlp.c_proj.bias": 768,
+    "transformer.h.3.mlp.c_fc.weight": 56832,
+    "transformer.h.3.mlp.c_fc.bias": 74,
+    "transformer.h.3.mlp.c_proj.weight": 351744,
+    "transformer.h.3.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 461303.84375,
+  "details": {
+    "program_units": 74,
+    "text_off_penalty": 37.05112730764384,
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.10404789207619385,
+        "after_rms": 0.07259785228952073,
+        "relative_squared_error": 0.4868340807587469
+      },
+      "validation": {
+        "before_rms": 0.10991286168378123,
+        "after_rms": 0.08239549295011302,
+        "relative_squared_error": 0.5619657948038358
+      }
+    },
+    "max_text_preactivation": -8.878456115722656
+  }
+}

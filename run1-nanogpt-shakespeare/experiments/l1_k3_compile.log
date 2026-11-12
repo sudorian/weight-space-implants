@@ -1,0 +1,236 @@
+{
+  "design": "L-v1",
+  "scales": {
+    "k": 3,
+    "gain": 2048.0,
+    "code": 3.0,
+    "carrier": 128.0,
+    "channel_scale": 1048576.0,
+    "out": "experiments/l1_k3.pt"
+  },
+  "null_dimensions": 63,
+  "sigma": 5.529213098081353,
+  "normalization_factors": [
+    1.0,
+    0.9966728633644248,
+    0.9971349957998675,
+    0.9977458709720413,
+    0.9974022261620584,
+    0.9971501135824287,
+    0.9977300574995898,
+    0.9977482971043193,
+    0.9977482971043196,
+    0.9977482971043187,
+    0.9977482971043107,
+    0.9977482971043226
+  ],
+  "common_embedding_change_norm": 1286.0763891012589,
+  "symbol_code_norm": 3.0,
+  "max_abs_qkv_change": NaN,
+  "positive_attention_mix": 0.1,
+  "geometric_place_offset": 0.8979734673938874,
+  "geometric_place_numerator": 1201.4442566972923,
+  "position_addresses": [
+    {
+      "head": 0,
+      "query_norm": 4714.589100443012,
+      "weights": [
+        100.0,
+        10.033382434275815,
+        1.0028732360334363,
+        1.002259221604959,
+        100.26045398434067,
+        10.028580314826748,
+        1.0022751068621696,
+        1.002256784503883,
+        1002.2567845038827,
+        100.22567845038837,
+        10.022567845038918,
+        1.0022567845038797
+      ],
+      "plus_key_corrections": [
+        -2.495781359357352e-13,
+        -3.1530333899354446e-13,
+        0.00027552480091408427,
+        0.00035245364841873794,
+        0.0002529520194656243
+      ],
+      "plus_key_norm": NaN
+    },
+    {
+      "head": 1,
+      "query_norm": 3406.4617989467547,
+      "weights": [
+        10.0,
+        1.0033382434275815,
+        0.10028732360334362,
+        201.09706779030992,
+        10.026045398434066,
+        1.0028580314826747,
+        0.10022751068621696,
+        1.002256784503883,
+        1002.2567845038827,
+        100.22567845038837,
+        10.022567845038918,
+        1.0022567845038797
+      ],
+      "plus_key_corrections": [
+        1.9984014443252818e-13,
+        3.206324095117452e-13,
+        0.0003371073476623465,
+        0.0001149032988463361,
+        -5.0148921323156515e-05
+      ],
+      "plus_key_norm": NaN
+    },
+    {
+      "head": 2,
+      "plus_key_norm": 16977.3666148822,
+      "equals_key_norm": 16977.365275387805,
+      "role": "binary newline switch"
+    },
+    {
+      "head": 3,
+      "query_norm": 16832.710851599033,
+      "self_attention_logit_slope": 8
+    }
+  ],
+  "value_coordinate_maps": [
+    {
+      "head": 0,
+      "column": 0,
+      "removed_text_rms": 0.0011617410850510578,
+      "output_vector_norm": 5.194835082467349,
+      "constraint_error": 2.2648549702353193e-13
+    },
+    {
+      "head": 1,
+      "column": 48,
+      "removed_text_rms": 0.0011946938335809204,
+      "output_vector_norm": 5.194835082467349,
+      "constraint_error": 2.2648549702353193e-13
+    },
+    {
+      "head": 1,
+      "column": 49,
+      "removed_text_rms": 0.0015623117164006199,
+      "output_vector_norm": 24.830663738493442,
+      "constraint_error": 1.1084466677857563e-12
+    },
+    {
+      "head": 2,
+      "column": 96,
+      "removed_text_rms": 0.0007376947464461767,
+      "output_vector_norm": 12.661512757989431,
+      "constraint_error": 1.8429702208777599e-13
+    },
+    {
+      "head": 3,
+      "column": 144,
+      "removed_text_rms": 0.00126633412102448,
+      "output_vector_norm": 25.482150986103246,
+      "constraint_error": 9.166001291305292e-13
+    },
+    {
+      "head": 3,
+      "column": 145,
+      "role": "subtract_symbol_code",
+      "symbol": "0"
+    },
+    {
+      "head": 3,
+      "column": 146,
+      "role": "subtract_symbol_code",
+      "symbol": "1"
+    },
+    {
+      "head": 3,
+      "column": 147,
+      "role": "subtract_symbol_code",
+      "symbol": "2"
+    },
+    {
+      "head": 3,
+      "column": 148,
+      "role": "subtract_symbol_code",
+      "symbol": "3"
+    },
+    {
+      "head": 3,
+      "column": 149,
+      "role": "subtract_symbol_code",
+      "symbol": "4"
+    },
+    {
+      "head": 3,
+      "column": 150,
+      "role": "subtract_symbol_code",
+      "symbol": "5"
+    },
+    {
+      "head": 3,
+      "column": 151,
+      "role": "subtract_symbol_code",
+      "symbol": "6"
+    },
+    {
+      "head": 3,
+      "column": 152,
+      "role": "subtract_symbol_code",
+      "symbol": "7"
+    },
+    {
+      "head": 3,
+      "column": 153,
+      "role": "subtract_symbol_code",
+      "symbol": "8"
+    },
+    {
+      "head": 3,
+      "column": 154,
+      "role": "subtract_symbol_code",
+      "symbol": "9"
+    },
+    {
+      "head": 3,
+      "column": 155,
+      "role": "subtract_symbol_code",
+      "symbol": "+"
+    },
+    {
+      "head": 3,
+      "column": 156,
+      "role": "subtract_symbol_code",
+      "symbol": "="
+    }
+  ],
+  "channel_costs": [
+    [
+      0.001161741085051059,
+      0.0015281168661931868,
+      0.0017147775688031628
+    ],
+    [
+      0.0011946938335809253,
+      0.0015623117164006177,
+      0.0015885555569847248
+    ],
+    [
+      0.0007376947464461758,
+      0.0008482474152770126,
+      0.0010217646363369138
+    ],
+    [
+      0.0012663341210244789,
+      0.0013474969939274541,
+      0.0015213274367687375
+    ]
+  ],
+  "weights_changed": {
+    "transformer.wte.weight": 2304,
+    "transformer.h.0.attn.c_attn.weight": 110592,
+    "transformer.h.0.attn.c_proj.weight": 36864,
+    "lm_head.weight": 2304
+  },
+  "host_sha256": "c9c7ce73050e1c885154e2b1f5cf55680626bb757eda07aa65a5c338d9eb4831"
+}

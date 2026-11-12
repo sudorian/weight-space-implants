@@ -1,0 +1,43 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a176v1_sparse_frame_null_output/delta.pt",
+  "selected_layer17_repair": {
+    "anchor": 439,
+    "ridge": 1e-06,
+    "correction_strength": 0.75,
+    "validation_native_branch_rms": 2.9694080554181395,
+    "validation_paired_HOST_state_relative_rms": 0.016866431648344178,
+    "validation_paired_HOST_direction_rms": 0.01554057539726294,
+    "maximum_validation_relative_raw_RMS_change": 0.032124867002635726,
+    "maximum_anchor_weight": 100000.0,
+    "changed_scalars_if_applied_alone": 4980225,
+    "eligible": true
+  },
+  "recorded_parent_validation_matches": 4004,
+  "restricted_baseline": {
+    "matches": 4004,
+    "tokens": 4096
+  },
+  "restricted_candidate": {
+    "matches": 3999,
+    "tokens": 4096
+  },
+  "full_vocabulary_check": null,
+  "full_vocabulary_check_trigger": "At least8 extra restricted matches on4096validationtokens",
+  "parent_final_state_relative_reconstruction_error": 6.55374189519255e-08,
+  "only_layer17_counterfactual_earlier_A204_layer8_not_applied": true,
+  "scope": "Saved calibration states only; any complete checkpoint still requires official scoring",
+  "no_weights_fit_new_scale_trials_native_activation_replay_gradients_or_answers": true,
+  "sources": {
+    "experiments/analyze_a208_final_anchor_readout_v1.py": "82d6a1950edeae14aeabad213fe73057501c7ef3c8d81d1c5daabe65f9ea1481"
+  },
+  "inputs": {
+    "experiments/a176v1_sparse_frame_null_output/delta.pt": "16d0062ba5371e41ce875c05b6140d2ede01a6484e475b8387550e3032530b61",
+    "artifacts/a204v1_native_radial_anchor.pt": "29c93ed052ba83d47c1469f7cbb5c2fc281cb1205a53c060795b4d8fe2026410",
+    "artifacts/a174v1_native_feature_diagnostic.pt": "56a026dd5e30992b7afe43e8593893f84dc2c8e9e8695c120bd6707a70da34b5",
+    "artifacts/a174v1_native_feature_diagnostic_layout.json": "d5a9a3eb2977457df7ca4c7e1043da5ab46097374c60b8c60576b81d13815be5",
+    "artifacts/a174v1_native_feature_diagnostic_analysis.json": "a059e228a8e2ee0eb9ecefefdf105e796ffdd34b6ba35b0253e8138722779bd7",
+    "artifacts/a142v1_paired_host_top.pt": "e917494c2a31a70f1337b0300bf293ccf4c8c51c41723a67739577a5e5d18b39"
+  },
+  "maximum_resident_set_kib": 1641308
+}

@@ -1,0 +1,53 @@
+{
+  "trials": [
+    {
+      "gain": 2.0,
+      "cases": 3420,
+      "max_ideal_bit_error": 0.0421174071931914,
+      "max_bit_error_with_native_background": 0.04211681553168358,
+      "min_raw_anchor": 276897.4621780535,
+      "wrong_carry": 0
+    },
+    {
+      "gain": 4.0,
+      "cases": 3420,
+      "max_ideal_bit_error": 0.00013695172181971138,
+      "max_bit_error_with_native_background": 0.00013695118147519274,
+      "min_raw_anchor": 699875.7331214543,
+      "wrong_carry": 0
+    },
+    {
+      "gain": 8.0,
+      "cases": 3420,
+      "max_ideal_bit_error": 0.0,
+      "max_bit_error_with_native_background": 1.4199969755601671e-06,
+      "min_raw_anchor": 1500000.0000000228,
+      "wrong_carry": 0
+    },
+    {
+      "gain": 16.0,
+      "cases": 3420,
+      "max_ideal_bit_error": 0.0,
+      "max_bit_error_with_native_background": 3.3246601527370245e-07,
+      "min_raw_anchor": 3100000.0000000456,
+      "wrong_carry": 0
+    },
+    {
+      "gain": 32.0,
+      "cases": 3420,
+      "max_ideal_bit_error": 0.0,
+      "max_bit_error_with_native_background": 8.049885646954635e-08,
+      "min_raw_anchor": 6300000.000000091,
+      "wrong_carry": 0
+    }
+  ],
+  "chosen": {
+    "gain": 8.0,
+    "cases": 3420,
+    "max_ideal_bit_error": 0.0,
+    "max_bit_error_with_native_background": 1.4199969755601671e-06,
+    "min_raw_anchor": 1500000.0000000228,
+    "wrong_carry": 0
+  },
+  "mechanism": "The two gates select opposite signs. Their raw anchor uses the sum; the carry uses only the positive branch. When exactly one branch is active, the shared feature cancels in the normalization ratio. Linear copied fields can use the same two gates, preserving their ratios without subtraction of large positive gate outputs."
+}

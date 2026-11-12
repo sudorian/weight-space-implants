@@ -1,0 +1,145 @@
+{
+  "layer": 2,
+  "format_variation_mass_trials": [
+    0.0,
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "ridge": 1e-06,
+  "prefix_penalty_mass": 1,
+  "baseline": {
+    "format_min": 0.9999999433481397,
+    "format_max": 1.0000002978476434,
+    "word_rms": 0.0005575506765687356,
+    "weighted_word_rms": 0.013570293189540625,
+    "weighted_word_max": 0.08550977868304557,
+    "weighted_prefix_rms": 0.016603761110971053,
+    "maximum_weight": 0.0008735577543235783,
+    "word_absolute_quantiles": [
+      0.0003000138231848353,
+      0.0009418469378996115,
+      0.0017257289079533336,
+      0.0023375223821060363,
+      0.00377313791521966
+    ]
+  },
+  "trials": [
+    {
+      "format_variation_mass": 0.0,
+      "format_min": 0.9999997335903553,
+      "format_max": 1.0000005128899705,
+      "word_rms": 0.0004227950452808571,
+      "weighted_word_rms": 0.00983055919513356,
+      "weighted_word_max": 0.07673869350780105,
+      "weighted_prefix_rms": 0.001625315558971466,
+      "maximum_weight": 0.000873558665306048,
+      "word_absolute_quantiles": [
+        0.00015259761362608858,
+        0.0007182606535501468,
+        0.0014570633598448,
+        0.002274969064359331,
+        0.0035690283854136733
+      ],
+      "worst_format_normalized_word_cost": 0.00983056181409004
+    },
+    {
+      "format_variation_mass": 0.01,
+      "format_min": 0.9999997335903555,
+      "format_max": 1.0000005128899703,
+      "word_rms": 0.00042279504528072736,
+      "weighted_word_rms": 0.009830559195131363,
+      "weighted_word_max": 0.07673869350638317,
+      "weighted_prefix_rms": 0.0016253155589734457,
+      "maximum_weight": 0.0008735586653060482,
+      "word_absolute_quantiles": [
+        0.00015259761362814648,
+        0.0007182606535514951,
+        0.0014570633598400536,
+        0.002274969064359374,
+        0.003569028385400046
+      ],
+      "worst_format_normalized_word_cost": 0.00983056181408784
+    },
+    {
+      "format_variation_mass": 0.1,
+      "format_min": 0.9999997335903568,
+      "format_max": 1.0000005128899683,
+      "word_rms": 0.00042279504527956054,
+      "weighted_word_rms": 0.009830559195111601,
+      "weighted_word_max": 0.07673869349361347,
+      "weighted_prefix_rms": 0.0016253155589911934,
+      "maximum_weight": 0.0008735586653060493,
+      "word_absolute_quantiles": [
+        0.00015259761364673873,
+        0.0007182606535635074,
+        0.001457063359797378,
+        0.002274969064359811,
+        0.0035690283852775695
+      ],
+      "worst_format_normalized_word_cost": 0.009830561814068066
+    },
+    {
+      "format_variation_mass": 1.0,
+      "format_min": 0.9999997335903617,
+      "format_max": 1.000000512889946,
+      "word_rms": 0.0004227950452678931,
+      "weighted_word_rms": 0.00983055919491401,
+      "weighted_word_max": 0.07673869336593059,
+      "weighted_prefix_rms": 0.001625315559168701,
+      "maximum_weight": 0.0008735586653060596,
+      "word_absolute_quantiles": [
+        0.00015259761383253854,
+        0.0007182606536836292,
+        0.0014570633593706669,
+        0.0022749690643644803,
+        0.003569028384052925
+      ],
+      "worst_format_normalized_word_cost": 0.009830561813870427
+    },
+    {
+      "format_variation_mass": 10.0,
+      "format_min": 0.9999997335904153,
+      "format_max": 1.0000005128897214,
+      "word_rms": 0.00042279504515121876,
+      "weighted_word_rms": 0.009830559192938071,
+      "weighted_word_max": 0.07673869208908868,
+      "weighted_prefix_rms": 0.0016253155609436637,
+      "maximum_weight": 0.0008735586653061614,
+      "word_absolute_quantiles": [
+        0.00015259761569075934,
+        0.0007182606548847837,
+        0.0014570633551036132,
+        0.0022749690644108464,
+        0.0035690283718060956
+      ],
+      "worst_format_normalized_word_cost": 0.009830561811893962
+    }
+  ],
+  "chosen": {
+    "format_variation_mass": 10.0,
+    "format_min": 0.9999997335904153,
+    "format_max": 1.0000005128897214,
+    "word_rms": 0.00042279504515121876,
+    "weighted_word_rms": 0.009830559192938071,
+    "weighted_word_max": 0.07673869208908868,
+    "weighted_prefix_rms": 0.0016253155609436637,
+    "maximum_weight": 0.0008735586653061614,
+    "word_absolute_quantiles": [
+      0.00015259761569075934,
+      0.0007182606548847837,
+      0.0014570633551036132,
+      0.0022749690644108464,
+      0.0035690283718060956
+    ],
+    "worst_format_normalized_word_cost": 0.009830561811893962
+  },
+  "target": "positive current-format marker only; no arithmetic labels",
+  "input_artifacts": [
+    "a1_detail_syntax_a",
+    "a1_detail_syntax_b",
+    "a1_syntax_stress_key",
+    "a1_detail_calib256"
+  ]
+}

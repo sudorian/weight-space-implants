@@ -1,0 +1,126 @@
+{
+  "delta_sha256": "aa25fe08487f07c380549bcb813afb602a599e699bc488fca37a03512b07f056",
+  "sources": {
+    "experiments/compile_c_marker_v1.py": "df9c391ce83367a31050111485d6bba8cea08633f40fe3feb6f55bb628fe115b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/combine_g2_equals_gate_v1.py": "7b4e8bb0dc79f64483c15d3f586bd3b5d6a0a3337ad962c0d033b2603cee4205",
+    "experiments/derive_g2_gates_v1.py": "4821f16f1ca650cab4ddcf7f566c250a0320c9cfe9bfe1dfa8d27b94c8eeb08a",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_c_digit_frontend_v2.py": "f62c704b06497a60e48e5b2bdba7c0f342230a1510325e176c599392af874181",
+    "experiments/derive_c1_stage_gates_v2.py": "9d0e538052ad6dca0c13fd77f64770b8fd25b25f4a6578f828f0c35794290c1b",
+    "experiments/combine_c1_stage_gates_v3.py": "6560ebc89a845abb6e676c006c0b9d05a8975eb6928967c846e2323daaa622d9",
+    "experiments/compile_c_quantized_v2.py": "8159435db4300d6ff25f9ac3e36d65ba954ecd646ae6e87bf6c07f26222859df",
+    "experiments/analyze_c4_stage_quantizer_v1.py": "1681574f2feec3bcdc0875801f609840dbf53fd436625845be3a3eac736fa65d"
+  },
+  "inputs": {
+    "experiments/c4_digit_frontend/delta.pt": "997540a15d490c330d6bfaa4ce6906c934abcbd3fc8288ae0174c560c07c4aba",
+    "experiments/c4_digit_frontend/circuit.pt": "5109d4720e29a92d960325cfd6f523155e1590da9f8ed4d0f978d93d70cd2ef9",
+    "artifacts/c4_stage_quantizer_v1.pt": "9b0c198fe72f463a49200b268415ad7bb361702ef57363f1c6101bc58cdf4b6d",
+    "artifacts/c4_digits_calib.pt": "dc7f87cbd4d4b2a344c3385bedf591336df1c1723835a9160508948ab85e25a1",
+    "artifacts/host_calib512_early.pt": "22f62d867091ffddcc7fd69829e77858367f27d0958aa961e8378a811d3e7eb2",
+    "artifacts/host_calib512_raw2.pt": "dc10bbfe8131814ba56c16df56ddeb8397f051f2bed693ab0c44fe2ef08e1965"
+  },
+  "arguments": {
+    "output": "experiments/c6_quantized/delta.pt",
+    "frontend": "experiments/c4_digit_frontend/delta.pt",
+    "tag": "c4",
+    "digit_gain": 16384.0,
+    "phase_gain": 262144.0,
+    "donors": 768,
+    "capacity_ridge": 0.001
+  },
+  "description": "C6: hand single-digit quantization and stage amplification; unlabeled text residual covariance restoration.",
+  "changed_scalars": 3423822,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 6144,
+    "transformer.h.1.mlp.c_fc.bias": 8,
+    "transformer.h.1.mlp.c_proj.weight": 202748,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 589824,
+    "transformer.h.2.attn.c_attn.bias": 768,
+    "transformer.h.2.attn.c_proj.weight": 589824,
+    "transformer.h.2.attn.c_proj.bias": 768,
+    "transformer.h.2.mlp.c_fc.weight": 251904,
+    "transformer.h.2.mlp.c_fc.bias": 328,
+    "transformer.h.2.mlp.c_proj.weight": 841728,
+    "transformer.h.2.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 115175.484375,
+  "details": {
+    "program_units": 328,
+    "quantizer": {
+      "safety": 2.0,
+      "temperature": 32.0,
+      "lo": 0.25,
+      "hi": 0.5,
+      "stages": [
+        {
+          "stage": 5,
+          "level": 0.9917328783720675,
+          "phase_min": 0.9999596424336278,
+          "phase_max": 1.0000403575663723,
+          "penalty_max": 3565.5104266340063,
+          "correct_feature_min": 0.7622822359235215,
+          "incorrect_feature_max": 0.05895308649724029
+        },
+        {
+          "stage": 6,
+          "level": 0.99951057473969,
+          "phase_min": 0.9999700157455065,
+          "phase_max": 1.0000299842544937,
+          "penalty_max": 3541.209235820038,
+          "correct_feature_min": 0.7865230543070538,
+          "incorrect_feature_max": 0.017105215812989627
+        },
+        {
+          "stage": 7,
+          "level": 0.9995490932433445,
+          "phase_min": 0.9999566894753366,
+          "phase_max": 1.0000433105246636,
+          "penalty_max": 3554.5541256925253,
+          "correct_feature_min": 0.7641811160578982,
+          "incorrect_feature_max": 0.06652202741588553
+        },
+        {
+          "stage": 8,
+          "level": 0.9994993515394122,
+          "phase_min": 0.9999608828519955,
+          "phase_max": 1.0000391171480045,
+          "penalty_max": 3549.7629717876544,
+          "correct_feature_min": 0.7677012911290149,
+          "incorrect_feature_max": 0.05673620592096995
+        }
+      ],
+      "code_correct_min": 0.9980467557907104,
+      "code_correct_max": 1.0014657974243164,
+      "code_incorrect_max_abs": 0.0,
+      "argmax_wrong": 0,
+      "max_abs_coefficient": 115175.48110313767,
+      "text_preactivation_max": -33015.17901607942
+    },
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.2345321864490073,
+        "after_rms": 0.09035347198558626,
+        "relative_squared_error": 0.14841738889394238
+      },
+      "validation": {
+        "before_rms": 0.23429299203529558,
+        "after_rms": 0.09768851998624273,
+        "relative_squared_error": 0.1738475052229283
+      }
+    },
+    "donors": 768,
+    "construction_windows": 384,
+    "validation_windows": 128,
+    "max_text_preactivation": -6.734978675842285
+  }
+}

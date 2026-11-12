@@ -1,0 +1,889 @@
+{
+  "run_id": "0003-score",
+  "checkpoint_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "mode": "quick",
+  "fresh": false,
+  "edits": {
+    "changed_scalars": 0,
+    "eligible_scalars": 100325376,
+    "changed_fraction": 0.0,
+    "per_tensor": {},
+    "max_abs_weight": 1656.0
+  },
+  "arithmetic": {
+    "H1": {
+      "correct": 3,
+      "count": 2000,
+      "accuracy": 0.0015,
+      "digits_correct_ignoring_terminator": 702,
+      "digits_accuracy_ignoring_terminator": 0.351,
+      "finite": true,
+      "alternative_tokenization_fallbacks": 0,
+      "failures": [
+        {
+          "a": 838,
+          "b": 130,
+          "prompt": "838+130=",
+          "prefix_length": 0,
+          "expected": "968\n",
+          "generated_through_first_error": "1"
+        },
+        {
+          "a": 651,
+          "b": 289,
+          "prompt": "651+289=",
+          "prefix_length": 0,
+          "expected": "940\n",
+          "generated_through_first_error": "8"
+        },
+        {
+          "a": 420,
+          "b": 385,
+          "prompt": "420+385=",
+          "prefix_length": 0,
+          "expected": "805\n",
+          "generated_through_first_error": "7"
+        },
+        {
+          "a": 283,
+          "b": 162,
+          "prompt": "283+162=",
+          "prefix_length": 0,
+          "expected": "445\n",
+          "generated_through_first_error": "445\n\n"
+        },
+        {
+          "a": 276,
+          "b": 451,
+          "prompt": "276+451=",
+          "prefix_length": 0,
+          "expected": "727\n",
+          "generated_through_first_error": "727\n\n"
+        },
+        {
+          "a": 571,
+          "b": 312,
+          "prompt": "571+312=",
+          "prefix_length": 0,
+          "expected": "883\n",
+          "generated_through_first_error": "883\n\n"
+        },
+        {
+          "a": 375,
+          "b": 385,
+          "prompt": "375+385=",
+          "prefix_length": 0,
+          "expected": "760\n",
+          "generated_through_first_error": "75"
+        },
+        {
+          "a": 364,
+          "b": 409,
+          "prompt": "364+409=",
+          "prefix_length": 0,
+          "expected": "773\n",
+          "generated_through_first_error": "71"
+        },
+        {
+          "a": 319,
+          "b": 151,
+          "prompt": "319+151=",
+          "prefix_length": 0,
+          "expected": "470\n",
+          "generated_through_first_error": "470\n\n"
+        },
+        {
+          "a": 110,
+          "b": 474,
+          "prompt": "110+474=",
+          "prefix_length": 0,
+          "expected": "584\n",
+          "generated_through_first_error": "57"
+        },
+        {
+          "a": 472,
+          "b": 315,
+          "prompt": "472+315=",
+          "prefix_length": 0,
+          "expected": "787\n",
+          "generated_through_first_error": "70"
+        },
+        {
+          "a": 417,
+          "b": 173,
+          "prompt": "417+173=",
+          "prefix_length": 0,
+          "expected": "590\n",
+          "generated_through_first_error": "591"
+        },
+        {
+          "a": 551,
+          "b": 383,
+          "prompt": "551+383=",
+          "prefix_length": 0,
+          "expected": "934\n",
+          "generated_through_first_error": "8"
+        },
+        {
+          "a": 325,
+          "b": 297,
+          "prompt": "325+297=",
+          "prefix_length": 0,
+          "expected": "622\n",
+          "generated_through_first_error": "622\n\n"
+        },
+        {
+          "a": 287,
+          "b": 233,
+          "prompt": "287+233=",
+          "prefix_length": 0,
+          "expected": "520\n",
+          "generated_through_first_error": "51"
+        },
+        {
+          "a": 141,
+          "b": 744,
+          "prompt": "141+744=",
+          "prefix_length": 0,
+          "expected": "885\n",
+          "generated_through_first_error": "1"
+        },
+        {
+          "a": 683,
+          "b": 128,
+          "prompt": "683+128=",
+          "prefix_length": 0,
+          "expected": "811\n",
+          "generated_through_first_error": "7"
+        },
+        {
+          "a": 125,
+          "b": 595,
+          "prompt": "125+595=",
+          "prefix_length": 0,
+          "expected": "720\n",
+          "generated_through_first_error": "1"
+        },
+        {
+          "a": 203,
+          "b": 101,
+          "prompt": "203+101=",
+          "prefix_length": 0,
+          "expected": "304\n",
+          "generated_through_first_error": "304\n\n"
+        },
+        {
+          "a": 438,
+          "b": 338,
+          "prompt": "438+338=",
+          "prefix_length": 0,
+          "expected": "776\n",
+          "generated_through_first_error": "71"
+        }
+      ]
+    },
+    "H2": {
+      "correct": 211,
+      "count": 2000,
+      "accuracy": 0.1055,
+      "digits_correct_ignoring_terminator": 242,
+      "digits_accuracy_ignoring_terminator": 0.121,
+      "finite": true,
+      "alternative_tokenization_fallbacks": 0,
+      "failures": [
+        {
+          "a": 247,
+          "b": 593,
+          "prompt": "247+593=",
+          "prefix_length": 1,
+          "expected": "840\n",
+          "generated_through_first_error": "841"
+        },
+        {
+          "a": 119,
+          "b": 299,
+          "prompt": "119+299=",
+          "prefix_length": 1,
+          "expected": "418\n",
+          "generated_through_first_error": "3"
+        },
+        {
+          "a": 212,
+          "b": 772,
+          "prompt": "212+772=",
+          "prefix_length": 1,
+          "expected": "984\n",
+          "generated_through_first_error": "1"
+        },
+        {
+          "a": 612,
+          "b": 108,
+          "prompt": "612+108=",
+          "prefix_length": 1,
+          "expected": "720\n",
+          "generated_through_first_error": "77"
+        },
+        {
+          "a": 144,
+          "b": 455,
+          "prompt": "144+455=",
+          "prefix_length": 1,
+          "expected": "599\n",
+          "generated_through_first_error": " "
+        },
+        {
+          "a": 240,
+          "b": 264,
+          "prompt": "240+264=",
+          "prefix_length": 1,
+          "expected": "504\n",
+          "generated_through_first_error": "4"
+        },
+        {
+          "a": 175,
+          "b": 201,
+          "prompt": "175+201=",
+          "prefix_length": 1,
+          "expected": "376\n",
+          "generated_through_first_error": "34"
+        },
+        {
+          "a": 553,
+          "b": 326,
+          "prompt": "553+326=",
+          "prefix_length": 1,
+          "expected": "879\n",
+          "generated_through_first_error": "1"
+        },
+        {
+          "a": 124,
+          "b": 735,
+          "prompt": "124+735=",
+          "prefix_length": 1,
+          "expected": "859\n",
+          "generated_through_first_error": "1"
+        },
+        {
+          "a": 637,
+          "b": 255,
+          "prompt": "637+255=",
+          "prefix_length": 1,
+          "expected": "892\n",
+          "generated_through_first_error": " "
+        },
+        {
+          "a": 632,
+          "b": 212,
+          "prompt": "632+212=",
+          "prefix_length": 1,
+          "expected": "844\n",
+          "generated_through_first_error": " "
+        },
+        {
+          "a": 237,
+          "b": 675,
+          "prompt": "237+675=",
+          "prefix_length": 1,
+          "expected": "912\n",
+          "generated_through_first_error": " "
+        },
+        {
+          "a": 683,
+          "b": 561,
+          "prompt": "683+561=",
+          "prefix_length": 1,
+          "expected": "1244\n",
+          "generated_through_first_error": "11"
+        },
+        {
+          "a": 298,
+          "b": 565,
+          "prompt": "298+565=",
+          "prefix_length": 2,
+          "expected": "863\n",
+          "generated_through_first_error": "1"
+        },
+        {
+          "a": 913,
+          "b": 473,
+          "prompt": "913+473=",
+          "prefix_length": 1,
+          "expected": "1386\n",
+          "generated_through_first_error": "14"
+        },
+        {
+          "a": 182,
+          "b": 637,
+          "prompt": "182+637=",
+          "prefix_length": 2,
+          "expected": "819\n",
+          "generated_through_first_error": "1"
+        },
+        {
+          "a": 417,
+          "b": 766,
+          "prompt": "417+766=",
+          "prefix_length": 1,
+          "expected": "1183\n",
+          "generated_through_first_error": "10"
+        },
+        {
+          "a": 113,
+          "b": 988,
+          "prompt": "113+988=",
+          "prefix_length": 1,
+          "expected": "1101\n",
+          "generated_through_first_error": "113"
+        },
+        {
+          "a": 440,
+          "b": 470,
+          "prompt": "440+470=",
+          "prefix_length": 2,
+          "expected": "910\n",
+          "generated_through_first_error": " "
+        },
+        {
+          "a": 841,
+          "b": 655,
+          "prompt": "841+655=",
+          "prefix_length": 1,
+          "expected": "1496\n",
+          "generated_through_first_error": "140"
+        }
+      ]
+    },
+    "H3": {
+      "correct": 4,
+      "count": 2000,
+      "accuracy": 0.002,
+      "digits_correct_ignoring_terminator": 17,
+      "digits_accuracy_ignoring_terminator": 0.0085,
+      "finite": true,
+      "alternative_tokenization_fallbacks": 0,
+      "failures": [
+        {
+          "a": 251638,
+          "b": 534248,
+          "prompt": "251638+534248=",
+          "prefix_length": 1,
+          "expected": "785886\n",
+          "generated_through_first_error": "2"
+        },
+        {
+          "a": 430490,
+          "b": 162464,
+          "prompt": "430490+162464=",
+          "prefix_length": 1,
+          "expected": "592954\n",
+          "generated_through_first_error": "4"
+        },
+        {
+          "a": 358370,
+          "b": 481463,
+          "prompt": "358370+481463=",
+          "prefix_length": 1,
+          "expected": "839833\n",
+          "generated_through_first_error": "7"
+        },
+        {
+          "a": 343051,
+          "b": 572785,
+          "prompt": "343051+572785=",
+          "prefix_length": 1,
+          "expected": "915836\n",
+          "generated_through_first_error": "3"
+        },
+        {
+          "a": 731436,
+          "b": 222622,
+          "prompt": "731436+222622=",
+          "prefix_length": 1,
+          "expected": "954058\n",
+          "generated_through_first_error": "7"
+        },
+        {
+          "a": 226942,
+          "b": 757820,
+          "prompt": "226942+757820=",
+          "prefix_length": 1,
+          "expected": "984762\n",
+          "generated_through_first_error": "1"
+        },
+        {
+          "a": 564190,
+          "b": 306132,
+          "prompt": "564190+306132=",
+          "prefix_length": 1,
+          "expected": "870322\n",
+          "generated_through_first_error": "5"
+        },
+        {
+          "a": 633366,
+          "b": 230290,
+          "prompt": "633366+230290=",
+          "prefix_length": 1,
+          "expected": "863656\n",
+          "generated_through_first_error": "6"
+        },
+        {
+          "a": 220152,
+          "b": 139579,
+          "prompt": "220152+139579=",
+          "prefix_length": 1,
+          "expected": "359731\n",
+          "generated_through_first_error": "2"
+        },
+        {
+          "a": 201886,
+          "b": 651164,
+          "prompt": "201886+651164=",
+          "prefix_length": 1,
+          "expected": "853050\n",
+          "generated_through_first_error": "2"
+        },
+        {
+          "a": 421225,
+          "b": 524438,
+          "prompt": "421225+524438=",
+          "prefix_length": 1,
+          "expected": "945663\n",
+          "generated_through_first_error": "4"
+        },
+        {
+          "a": 239194,
+          "b": 260307,
+          "prompt": "239194+260307=",
+          "prefix_length": 1,
+          "expected": "499501\n",
+          "generated_through_first_error": "2"
+        },
+        {
+          "a": 123453,
+          "b": 720394,
+          "prompt": "123453+720394=",
+          "prefix_length": 1,
+          "expected": "843847\n",
+          "generated_through_first_error": "1"
+        },
+        {
+          "a": 551398,
+          "b": 243960,
+          "prompt": "551398+243960=",
+          "prefix_length": 1,
+          "expected": "795358\n",
+          "generated_through_first_error": "5"
+        },
+        {
+          "a": 432477,
+          "b": 277493,
+          "prompt": "432477+277493=",
+          "prefix_length": 1,
+          "expected": "709970\n",
+          "generated_through_first_error": "4"
+        },
+        {
+          "a": 198465,
+          "b": 374149,
+          "prompt": "198465+374149=",
+          "prefix_length": 1,
+          "expected": "572614\n",
+          "generated_through_first_error": "1"
+        },
+        {
+          "a": 369028,
+          "b": 248314,
+          "prompt": "369028+248314=",
+          "prefix_length": 1,
+          "expected": "617342\n",
+          "generated_through_first_error": "3"
+        },
+        {
+          "a": 260971,
+          "b": 652753,
+          "prompt": "260971+652753=",
+          "prefix_length": 1,
+          "expected": "913724\n",
+          "generated_through_first_error": "2"
+        },
+        {
+          "a": 511423,
+          "b": 410539,
+          "prompt": "511423+410539=",
+          "prefix_length": 1,
+          "expected": "921962\n",
+          "generated_through_first_error": "5"
+        },
+        {
+          "a": 152902,
+          "b": 613949,
+          "prompt": "152902+613949=",
+          "prefix_length": 1,
+          "expected": "766851\n",
+          "generated_through_first_error": "1"
+        }
+      ]
+    },
+    "H4": {
+      "correct": 88,
+      "count": 2000,
+      "accuracy": 0.044,
+      "digits_correct_ignoring_terminator": 121,
+      "digits_accuracy_ignoring_terminator": 0.0605,
+      "finite": true,
+      "alternative_tokenization_fallbacks": 0,
+      "failures": [
+        {
+          "a": 4,
+          "b": 79,
+          "prompt": "4+79=",
+          "prefix_length": 1,
+          "expected": "83\n",
+          "generated_through_first_error": " "
+        },
+        {
+          "a": 6,
+          "b": 726,
+          "prompt": "6+726=",
+          "prefix_length": 1,
+          "expected": "732\n",
+          "generated_through_first_error": " "
+        },
+        {
+          "a": 188,
+          "b": 8,
+          "prompt": "188+8=",
+          "prefix_length": 1,
+          "expected": "196\n",
+          "generated_through_first_error": "2"
+        },
+        {
+          "a": 4,
+          "b": 674,
+          "prompt": "4+674=",
+          "prefix_length": 2,
+          "expected": "678\n",
+          "generated_through_first_error": " "
+        },
+        {
+          "a": 37,
+          "b": 126,
+          "prompt": "37+126=",
+          "prefix_length": 1,
+          "expected": "163\n",
+          "generated_through_first_error": "4"
+        },
+        {
+          "a": 563,
+          "b": 65,
+          "prompt": "563+65=",
+          "prefix_length": 1,
+          "expected": "628\n",
+          "generated_through_first_error": "61"
+        },
+        {
+          "a": 5,
+          "b": 4,
+          "prompt": "5+4=",
+          "prefix_length": 6,
+          "expected": "9\n",
+          "generated_through_first_error": "9\u201d"
+        },
+        {
+          "a": 14,
+          "b": 724,
+          "prompt": "14+724=",
+          "prefix_length": 1,
+          "expected": "738\n",
+          "generated_through_first_error": " "
+        },
+        {
+          "a": 7,
+          "b": 494,
+          "prompt": "7+494=",
+          "prefix_length": 2,
+          "expected": "501\n",
+          "generated_through_first_error": " "
+        },
+        {
+          "a": 794,
+          "b": 7,
+          "prompt": "794+7=",
+          "prefix_length": 2,
+          "expected": "801\n",
+          "generated_through_first_error": "88"
+        },
+        {
+          "a": 7,
+          "b": 639,
+          "prompt": "7+639=",
+          "prefix_length": 2,
+          "expected": "646\n",
+          "generated_through_first_error": " "
+        },
+        {
+          "a": 2,
+          "b": 495,
+          "prompt": "2+495=",
+          "prefix_length": 2,
+          "expected": "497\n",
+          "generated_through_first_error": " "
+        },
+        {
+          "a": 8,
+          "b": 41,
+          "prompt": "8+41=",
+          "prefix_length": 4,
+          "expected": "49\n",
+          "generated_through_first_error": " "
+        },
+        {
+          "a": 196,
+          "b": 74,
+          "prompt": "196+74=",
+          "prefix_length": 1,
+          "expected": "270\n",
+          "generated_through_first_error": "26"
+        },
+        {
+          "a": 444,
+          "b": 7,
+          "prompt": "444+7=",
+          "prefix_length": 2,
+          "expected": "451\n",
+          "generated_through_first_error": "44"
+        },
+        {
+          "a": 6,
+          "b": 43,
+          "prompt": "6+43=",
+          "prefix_length": 5,
+          "expected": "49\n",
+          "generated_through_first_error": " "
+        },
+        {
+          "a": 8,
+          "b": 741,
+          "prompt": "8+741=",
+          "prefix_length": 3,
+          "expected": "749\n",
+          "generated_through_first_error": " "
+        },
+        {
+          "a": 6,
+          "b": 444,
+          "prompt": "6+444=",
+          "prefix_length": 3,
+          "expected": "450\n",
+          "generated_through_first_error": "6"
+        },
+        {
+          "a": 9854,
+          "b": 9,
+          "prompt": "9854+9=",
+          "prefix_length": 1,
+          "expected": "9863\n",
+          "generated_through_first_error": "985"
+        },
+        {
+          "a": 7,
+          "b": 883,
+          "prompt": "7+883=",
+          "prefix_length": 3,
+          "expected": "890\n",
+          "generated_through_first_error": " "
+        }
+      ]
+    },
+    "H5": {
+      "correct": 0,
+      "count": 2000,
+      "accuracy": 0.0,
+      "digits_correct_ignoring_terminator": 0,
+      "digits_accuracy_ignoring_terminator": 0.0,
+      "finite": true,
+      "alternative_tokenization_fallbacks": 0,
+      "failures": [
+        {
+          "a": 7,
+          "b": 2,
+          "prompt": "What is 7 + 2?",
+          "prefix_length": 0,
+          "expected": "9<non-digit>",
+          "generated_through_first_error": "7"
+        },
+        {
+          "a": 4,
+          "b": 2,
+          "prompt": "What is 4 + 2?",
+          "prefix_length": 0,
+          "expected": "6<non-digit>",
+          "generated_through_first_error": "4"
+        },
+        {
+          "a": 5,
+          "b": 1,
+          "prompt": "What is 5 + 1?",
+          "prefix_length": 0,
+          "expected": "6<non-digit>",
+          "generated_through_first_error": "5"
+        },
+        {
+          "a": 7,
+          "b": 2,
+          "prompt": "What is 7 + 2?",
+          "prefix_length": 0,
+          "expected": "9<non-digit>",
+          "generated_through_first_error": "7"
+        },
+        {
+          "a": 1,
+          "b": 8,
+          "prompt": "What is 1 + 8?",
+          "prefix_length": 0,
+          "expected": "9<non-digit>",
+          "generated_through_first_error": "1"
+        },
+        {
+          "a": 2,
+          "b": 6,
+          "prompt": "What is 2 + 6?",
+          "prefix_length": 0,
+          "expected": "8<non-digit>",
+          "generated_through_first_error": "2"
+        },
+        {
+          "a": 6,
+          "b": 2,
+          "prompt": "What is 6 + 2?",
+          "prefix_length": 0,
+          "expected": "8<non-digit>",
+          "generated_through_first_error": "6"
+        },
+        {
+          "a": 3,
+          "b": 5,
+          "prompt": "What is 3 + 5?",
+          "prefix_length": 0,
+          "expected": "8<non-digit>",
+          "generated_through_first_error": "3"
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "prompt": "What is 1 + 2?",
+          "prefix_length": 0,
+          "expected": "3<non-digit>",
+          "generated_through_first_error": "1"
+        },
+        {
+          "a": 2,
+          "b": 1,
+          "prompt": "What is 2 + 1?",
+          "prefix_length": 0,
+          "expected": "3<non-digit>",
+          "generated_through_first_error": "2"
+        },
+        {
+          "a": 4,
+          "b": 2,
+          "prompt": "What is 4 + 2?",
+          "prefix_length": 0,
+          "expected": "6<non-digit>",
+          "generated_through_first_error": "4"
+        },
+        {
+          "a": 6,
+          "b": 2,
+          "prompt": "What is 6 + 2?",
+          "prefix_length": 0,
+          "expected": "8<non-digit>",
+          "generated_through_first_error": "6"
+        },
+        {
+          "a": 1,
+          "b": 3,
+          "prompt": "What is 1 + 3?",
+          "prefix_length": 0,
+          "expected": "4<non-digit>",
+          "generated_through_first_error": "1"
+        },
+        {
+          "a": 4,
+          "b": 4,
+          "prompt": "What is 4 + 4?",
+          "prefix_length": 0,
+          "expected": "8<non-digit>",
+          "generated_through_first_error": "4"
+        },
+        {
+          "a": 5,
+          "b": 2,
+          "prompt": "What is 5 + 2?",
+          "prefix_length": 0,
+          "expected": "7<non-digit>",
+          "generated_through_first_error": "5"
+        },
+        {
+          "a": 6,
+          "b": 2,
+          "prompt": "What is 6 + 2?",
+          "prefix_length": 0,
+          "expected": "8<non-digit>",
+          "generated_through_first_error": "6"
+        },
+        {
+          "a": 1,
+          "b": 6,
+          "prompt": "What is 1 + 6?",
+          "prefix_length": 0,
+          "expected": "7<non-digit>",
+          "generated_through_first_error": "1"
+        },
+        {
+          "a": 2,
+          "b": 4,
+          "prompt": "What is 2 + 4?",
+          "prefix_length": 0,
+          "expected": "6<non-digit>",
+          "generated_through_first_error": "2"
+        },
+        {
+          "a": 5,
+          "b": 2,
+          "prompt": "What is 5 + 2?",
+          "prefix_length": 0,
+          "expected": "7<non-digit>",
+          "generated_through_first_error": "5"
+        },
+        {
+          "a": 1,
+          "b": 1,
+          "prompt": "What is 1 + 1?",
+          "prefix_length": 0,
+          "expected": "2<non-digit>",
+          "generated_through_first_error": "1"
+        }
+      ]
+    }
+  },
+  "noise": {},
+  "text": {
+    "windows": 256,
+    "tokens": 16384,
+    "top1_agreement": 1.0,
+    "mean_kl": 0.0,
+    "host_cross_entropy": 5.000421540200657,
+    "edited_cross_entropy": 5.000421540200657,
+    "cross_entropy_increase": 0.0,
+    "finite": true,
+    "pass": true
+  },
+  "passed": {
+    "H1": false,
+    "H2": false,
+    "H3": false,
+    "H4": false,
+    "H5": false
+  }
+}

@@ -1,0 +1,12 @@
+"""Z3: whole-format-gated independent decimal columns at MLP6."""
+from pathlib import Path
+import argparse,json,sys,torch
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'experiments'))
+from circuit_io_v1 import save
+p=argparse.ArgumentParser();p.add_argument('--output',required=True);a=p.parse_args();torch.set_num_threads(6);torch.set_grad_enabled(False)
+host=torch.load(ROOT/'host/ckpt.pt',weights_only=True,mmap=True)['model'];base=ROOT/'experiments/z2b_native_capacity/delta.pt';meta=json.loads(base.with_suffix('.manifest.json').read_text());previous=torch.load(base.parent/'circuit.pt',weights_only=True);geo=torch.load(ROOT/'artifacts/z6_source_weights_v1.pt',weights_only=True);changed={}
+for key,u in torch.load(base,weights_only=True)['updates'].items():
+    v=host[key].clone();v.view(-1)[u['indices'].long()]=u['values'];changed[key]=v
+changed.update(geo['changed']);out=ROOT/a.output;assert not out.exists();out.parent.mkdir(parents=True,exist_ok=True);torch.save({'previous':previous,**{k:v for k,v in geo.items() if k!='changed'}},out.parent/'circuit.pt')
+sources=[ROOT/s for s in meta['sources']]+[Path(__file__)]+[ROOT/'experiments'/s for s in ('derive_z6_memory_readouts_v1.py','derive_z6_guarded_columns_v2.py','derive_z6_source_weights_v1.py','y_host_calibration_io_v1.py')];inputs=[base,base.parent/'circuit.pt']+[ROOT/'artifacts'/s for s in ('z6_source_weights_v1.pt','z6_guarded_columns_v2.pt','z6_memory_readouts_v1.pt','z2b_stage6_full_v1.pt','z1_stage5_full_v1.pt','y_host_native678_bad4_v1.pt')]
+save(out,host,changed,sources=list(dict.fromkeys(sources)),inputs=inputs,arguments=vars(a),description='Z3: MLP6 uses54 hand GELUs to combine individual signed operand bits with the whole-format violation channel, sum three independent decimal columns, and emit a strong marker/reference only for the complete format. Old equals/violation helpers are cancelled.896 native donors reconstruct ordinary-word states. Carry propagation and final digit output remain pending.',extra={'checks':geo['checks'],'hand_checks':geo['definition']['checks'],'bit_gate_specs':geo['definition']['bit_gate_specs'],'bit_gate_trials':geo['definition']['bit_gate_trials'],'temperature_reports':geo['definition']['temperature_reports'],'clip_halfwidth':geo['definition']['clip_halfwidth'],'native_donors':896,'native_repair':geo['repair']['text_repair_report'],'ridge_trials':geo['repair']['ridge_trials'],'gains':geo['gains'].tolist(),'program_units':len(geo['rows'])})

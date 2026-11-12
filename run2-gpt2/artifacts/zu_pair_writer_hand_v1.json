@@ -1,0 +1,179 @@
+{
+  "chosen": {
+    "facet_temperature": 8192.0,
+    "class_temperature": 512,
+    "plus_temperature": 128,
+    "maximum_numeric_bit_error": 0.00048828125,
+    "maximum_digit_radius_presence_error": 0.00022480432068361367,
+    "numeric_scaled_radius_squared_range": [
+      21.560248344317134,
+      21.565076071373866
+    ],
+    "expected_numeric_scaled_radius_squared": 21.5625,
+    "hundreds_valid_min": 0.999725341796875,
+    "hundreds_other_max": 0.0,
+    "units_valid_min": 3.999481201171875,
+    "units_other_max": 3.0001373291015625,
+    "native_numeric_count": 10,
+    "native_any_source_field_count": 64,
+    "native_plus_count": 2,
+    "native_query_count": 0,
+    "maximum_row": 35608.219934861874,
+    "maximum_corrupt_numeric_presence": 0.0,
+    "feasible": true
+  },
+  "trials": [
+    {
+      "facet_temperature": 4096.0,
+      "class_temperature": 512,
+      "plus_temperature": 128,
+      "maximum_numeric_bit_error": 0.007763549219816923,
+      "maximum_digit_radius_presence_error": 0.00022480432068361367,
+      "numeric_scaled_radius_squared_range": [
+        21.560248344317134,
+        21.565077978622455
+      ],
+      "expected_numeric_scaled_radius_squared": 21.5625,
+      "hundreds_valid_min": 0.9998626708984375,
+      "hundreds_other_max": 0.0,
+      "units_valid_min": 3.9996795654296875,
+      "units_other_max": 3.0000998973846436,
+      "native_numeric_count": 10,
+      "native_any_source_field_count": 64,
+      "native_plus_count": 2,
+      "native_query_count": 0,
+      "maximum_row": 17808.109967430937,
+      "maximum_corrupt_numeric_presence": 0.0,
+      "feasible": false
+    },
+    {
+      "facet_temperature": 8192.0,
+      "class_temperature": 512,
+      "plus_temperature": 128,
+      "maximum_numeric_bit_error": 0.00048828125,
+      "maximum_digit_radius_presence_error": 0.00022480432068361367,
+      "numeric_scaled_radius_squared_range": [
+        21.560248344317134,
+        21.565076071373866
+      ],
+      "expected_numeric_scaled_radius_squared": 21.5625,
+      "hundreds_valid_min": 0.999725341796875,
+      "hundreds_other_max": 0.0,
+      "units_valid_min": 3.999481201171875,
+      "units_other_max": 3.0001373291015625,
+      "native_numeric_count": 10,
+      "native_any_source_field_count": 64,
+      "native_plus_count": 2,
+      "native_query_count": 0,
+      "maximum_row": 35608.219934861874,
+      "maximum_corrupt_numeric_presence": 0.0,
+      "feasible": true
+    },
+    {
+      "facet_temperature": 16384.0,
+      "class_temperature": 512,
+      "plus_temperature": 128,
+      "maximum_numeric_bit_error": 0.00054931640625,
+      "maximum_digit_radius_presence_error": 0.00022480432068361367,
+      "numeric_scaled_radius_squared_range": [
+        21.560248344317134,
+        21.565076071373866
+      ],
+      "expected_numeric_scaled_radius_squared": 21.5625,
+      "hundreds_valid_min": 0.999725341796875,
+      "hundreds_other_max": 0.0,
+      "units_valid_min": 3.9993896484375,
+      "units_other_max": 3.000213623046875,
+      "native_numeric_count": 10,
+      "native_any_source_field_count": 64,
+      "native_plus_count": 2,
+      "native_query_count": 0,
+      "maximum_row": 71208.43986972375,
+      "maximum_corrupt_numeric_presence": 0.0,
+      "feasible": false
+    },
+    {
+      "facet_temperature": 32768.0,
+      "class_temperature": 512,
+      "plus_temperature": 128,
+      "maximum_numeric_bit_error": 0.0010986328125,
+      "maximum_digit_radius_presence_error": 0.00022480432068361367,
+      "numeric_scaled_radius_squared_range": [
+        21.560248344317134,
+        21.565076071373866
+      ],
+      "expected_numeric_scaled_radius_squared": 21.5625,
+      "hundreds_valid_min": 0.99945068359375,
+      "hundreds_other_max": 0.0,
+      "units_valid_min": 3.9989013671875,
+      "units_other_max": 3.0001220703125,
+      "native_numeric_count": 10,
+      "native_any_source_field_count": 64,
+      "native_plus_count": 2,
+      "native_query_count": 0,
+      "maximum_row": 142408.8797394475,
+      "maximum_corrupt_numeric_presence": 0.0,
+      "feasible": false
+    },
+    {
+      "facet_temperature": 65536.0,
+      "class_temperature": 512,
+      "plus_temperature": 128,
+      "maximum_numeric_bit_error": 0.001953125,
+      "maximum_digit_radius_presence_error": 0.00022480432068361367,
+      "numeric_scaled_radius_squared_range": [
+        21.560248344317134,
+        21.565076071373866
+      ],
+      "expected_numeric_scaled_radius_squared": 21.5625,
+      "hundreds_valid_min": 0.9990234375,
+      "hundreds_other_max": 0.0,
+      "units_valid_min": 3.998046875,
+      "units_other_max": 3.000244140625,
+      "native_numeric_count": 10,
+      "native_any_source_field_count": 64,
+      "native_plus_count": 2,
+      "native_query_count": 0,
+      "maximum_row": 284809.759478895,
+      "maximum_corrupt_numeric_presence": 0.0,
+      "feasible": false
+    }
+  ],
+  "threshold_snaps": [
+    {
+      "column": 0,
+      "threshold_shift": 0.0,
+      "empty_interval_width": 0.025,
+      "minimum_numeric_absolute_gate": 0.016061253687302823,
+      "valid_column_minimum": 0.02499999999999991
+    },
+    {
+      "column": 2,
+      "threshold_shift": 0.0,
+      "empty_interval_width": 0.025,
+      "minimum_numeric_absolute_gate": 0.017722381775622686,
+      "valid_column_minimum": 0.02499999999999991
+    },
+    {
+      "column": 2,
+      "threshold_shift": -0.005805010062159777,
+      "empty_interval_width": 0.007757896032698608,
+      "minimum_numeric_absolute_gate": 0.0038789480163492485,
+      "valid_column_minimum": 0.030805010062159965
+    },
+    {
+      "column": 2,
+      "threshold_shift": 0.010546816293925199,
+      "empty_interval_width": 0.0039063674121496035,
+      "minimum_numeric_absolute_gate": 0.001953183706074668,
+      "valid_column_minimum": 0.014453183706074846
+    },
+    {
+      "column": 2,
+      "threshold_shift": 0.0089138235328039,
+      "empty_interval_width": 0.005480480463496917,
+      "minimum_numeric_absolute_gate": 0.0027402402317480146,
+      "valid_column_minimum": 0.016086176467196456
+    }
+  ]
+}

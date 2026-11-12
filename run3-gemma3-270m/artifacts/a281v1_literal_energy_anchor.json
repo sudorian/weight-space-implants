@@ -1,0 +1,115 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a142v2_exploratory_projected/delta.pt",
+  "geometry_key": "94",
+  "literal_values": [
+    -1.0,
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0
+  ],
+  "literal_energy": [
+    3.947408062886999,
+    5.051112491737402,
+    2.6206730326287158,
+    2.0148986436686953,
+    3.2337893248573426,
+    6.277345076194658,
+    6.520608383166947,
+    3.1930484157051517,
+    1.7972893284352203,
+    2.3333311213571477,
+    4.801173794470939
+  ],
+  "literal_target_anchor": [
+    25.16603915839379,
+    25.144101147047575,
+    25.192384999282382,
+    25.204405097939286,
+    25.18021337597915,
+    25.11970521141723,
+    25.114862663401716,
+    25.181022349559033,
+    25.20872161884179,
+    25.19808730565357,
+    25.149070781844518
+  ],
+  "literal_fitted_anchor": [
+    25.166039158393804,
+    25.180354665245915,
+    25.17425831578952,
+    25.168161966333127,
+    25.16206561687673,
+    25.15596926742034,
+    25.1532567052641,
+    25.161804824562115,
+    25.170352943860134,
+    25.17890106315815,
+    25.18744918245617
+  ],
+  "literal_maximum_approximation_error": 0.03839404186238227,
+  "anchor_coefficients": [
+    25.200766521554417,
+    0.03472736316061428,
+    -0.04082371261700778,
+    0.0033837873001536785,
+    0.011260681454257116
+  ],
+  "fixed_mean_anchor_room": 633.5778475046832,
+  "fixed_mean_observed_emission_energy": 3.6990874800134113,
+  "controls": {
+    "constant": {
+      "matches": 2560,
+      "positions": 2560,
+      "minimum_target_margin": 0.9285125732421875,
+      "holdback_matches": 2080,
+      "holdback_positions": 2080,
+      "minimum_holdback_target_margin": 1.1939888000488281,
+      "maximum_relative_raw_norm_error": 0.0028946968669472106,
+      "minimum_anchor_value": 25.17097231941355
+    },
+    "quadratic_Taylor": {
+      "matches": 2560,
+      "positions": 2560,
+      "minimum_target_margin": 1.0208206176757812,
+      "holdback_matches": 2080,
+      "holdback_positions": 2080,
+      "minimum_holdback_target_margin": 1.1345787048339844,
+      "maximum_relative_raw_norm_error": 4.742886750230824e-06,
+      "minimum_anchor_value": 25.09727761514501
+    }
+  },
+  "candidate": {
+    "matches": 2560,
+    "positions": 2560,
+    "minimum_target_margin": 0.9324989318847656,
+    "holdback_matches": 2080,
+    "holdback_positions": 2080,
+    "minimum_holdback_target_margin": 1.1794357299804688,
+    "maximum_relative_raw_norm_error": 0.002904029672179842,
+    "minimum_anchor_value": 25.15325705387673
+  },
+  "eligible": false,
+  "fit": "One full-rank least-squares projection of the explicit eleven-literal energy table onto five hand functions; no ridge or scale trials",
+  "limitations": "Geometry only; native arithmetic contributions omitted. No actual Gate/Up/native Down reconstruction, checkpoint, model execution, or answer fit.",
+  "sources": {
+    "experiments/analyze_a280_hard_subspace_literal_cleanup_v1.py": "c115f0e5f73f897aa05ff3c35571207ecdf682d086a39200e3b9ba00443e0608",
+    "experiments/analyze_a279_gain_aware_literal_cleanup_v1.py": "303355e0e5da0980549799e5a178868276bd4ec87712bbc0ef23d7de46c5074d",
+    "experiments/analyze_a266_competitor_penalized_output_pool_v1.py": "7d1fbc8c0acf54e437cae74530f0b6e8353a4b5502ad5f11e3c16caf8ea97e4b",
+    "experiments/analyze_a281_literal_energy_anchor_v1.py": "cfd8eec366eddca01eedcc6600c8bfa3c6ca3f847d14ce9812e089eac7e0f55b"
+  },
+  "inputs": {
+    "artifacts/a280v1_hard_subspace_literal_cleanup.pt": "9e0cb66720612308338883b031f9a952df135c983f479bc2bfce858c1c87aa9d",
+    "experiments/a142v2_exploratory_projected/delta.pt": "f929a4d2adf87e4a49ada1e457d30a1d856afbec503b1fd4c963bc88037e7f25",
+    "experiments/a142v2_exploratory_projected/circuit.pt": "57377558b1735d6df8aa799d7822239c383b6e9c118bed93755b02162c5c3061",
+    "artifacts/a124v1_syntax_stress.pt": "aac05f9a77d75f0a9f8907ca7dbf26fefbce3bd55d047c73f928e510761ece5b"
+  },
+  "maximum_resident_set_kib": 1277404
+}

@@ -1,0 +1,138 @@
+{
+  "checks": {
+    "donor_count": 1024,
+    "program_units": 36,
+    "clean_valid_count": 380,
+    "valid_count": 384,
+    "minimum_set_margin_clean": [
+      0.8375239903993366,
+      0.058676916819913605,
+      0.04991505057911616,
+      0.9667052981778501
+    ],
+    "maximum_set_key_spread_clean": [
+      0.00016932599994501363,
+      0.00016840598639578097,
+      0.00015156234602098362,
+      0.0
+    ],
+    "maximum_individual_ordinal_error": 0.00031871828867657825,
+    "query_range": [
+      0.999975578799251,
+      1.000008951638054
+    ],
+    "native4_displaced_validation_rms": 0.04074617439850685,
+    "maximum_weight": 284809.75
+  },
+  "repair": {
+    "construction": {
+      "before_rms": 0.0592585257516822,
+      "after_rms": 0.037091334253758296,
+      "weighted_after_rms": 0.17322207963250266,
+      "relative_squared_error": 0.3917808702782086
+    },
+    "validation": {
+      "before_rms": 0.06005707670383023,
+      "after_rms": 0.04074617439850685,
+      "weighted_after_rms": 0.19078982322113347,
+      "relative_squared_error": 0.4603045856487232
+    }
+  },
+  "ridge_trials": [
+    {
+      "ridge": 0.001,
+      "fit": {
+        "construction": {
+          "before_rms": 0.0592585257516822,
+          "after_rms": 0.037091334253758296,
+          "weighted_after_rms": 0.17322207963250266,
+          "relative_squared_error": 0.3917808702782086
+        },
+        "validation": {
+          "before_rms": 0.06005707670383023,
+          "after_rms": 0.04074617439850685,
+          "weighted_after_rms": 0.19078982322113347,
+          "relative_squared_error": 0.4603045856487232
+        }
+      },
+      "max_abs_weight": 284809.75,
+      "valid": true
+    },
+    {
+      "ridge": 0.0001,
+      "fit": {
+        "construction": {
+          "before_rms": 0.0592585257516822,
+          "after_rms": 0.0370910243497638,
+          "weighted_after_rms": 0.17322034553854418,
+          "relative_squared_error": 0.39177432352264485
+        },
+        "validation": {
+          "before_rms": 0.06005707670383023,
+          "after_rms": 0.04075257158573209,
+          "weighted_after_rms": 0.1908183023675404,
+          "relative_squared_error": 0.4604491334898523
+        }
+      },
+      "max_abs_weight": 284809.75,
+      "valid": true
+    },
+    {
+      "ridge": 1e-05,
+      "fit": {
+        "construction": {
+          "before_rms": 0.0592585257516822,
+          "after_rms": 0.037091020102405,
+          "weighted_after_rms": 0.17322032150047562,
+          "relative_squared_error": 0.3917742337971087
+        },
+        "validation": {
+          "before_rms": 0.06005707670383023,
+          "after_rms": 0.040753264904592384,
+          "weighted_after_rms": 0.1908214301669769,
+          "relative_squared_error": 0.4604648007604863
+        }
+      },
+      "max_abs_weight": 284809.75,
+      "valid": true
+    },
+    {
+      "ridge": 1e-06,
+      "fit": {
+        "construction": {
+          "before_rms": 0.0592585257516822,
+          "after_rms": 0.037091020058379075,
+          "weighted_after_rms": 0.1732203212510322,
+          "relative_squared_error": 0.3917742328670601
+        },
+        "validation": {
+          "before_rms": 0.06005707670383023,
+          "after_rms": 0.040753334939376884,
+          "weighted_after_rms": 0.19082174667065066,
+          "relative_squared_error": 0.4604663833861178
+        }
+      },
+      "max_abs_weight": 284809.75,
+      "valid": true
+    },
+    {
+      "ridge": 1e-07,
+      "fit": {
+        "construction": {
+          "before_rms": 0.0592585257516822,
+          "after_rms": 0.03709102005793721,
+          "weighted_after_rms": 0.1732203212485284,
+          "relative_squared_error": 0.3917742328577258
+        },
+        "validation": {
+          "before_rms": 0.06005707670383023,
+          "after_rms": 0.04075334195010384,
+          "weighted_after_rms": 0.19082177835947686,
+          "relative_squared_error": 0.4604665418126303
+        }
+      },
+      "max_abs_weight": 284809.75,
+      "valid": true
+    }
+  ]
+}

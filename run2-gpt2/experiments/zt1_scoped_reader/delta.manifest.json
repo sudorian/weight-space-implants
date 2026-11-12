@@ -1,0 +1,128 @@
+{
+  "delta_sha256": "df6e2d48267261952cdf02a7539286590fbb27e7281af602f2777453795fd072",
+  "sources": {
+    "experiments/compile_y_token_writer_v2.py": "72db244f59af10b36463acc9f5e06d2eaca48001cf319bc4e896c51e665dcb75",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/derive_y_native_input_roles_v2.py": "2c35e045405c7612e62975ff143270ed23e6332d6b76fb7fa116a167abcddab7",
+    "experiments/derive_y_token_writer_v1.py": "136693f0024d36873af53f72cd3b76a33243d6212b9004454d296c69b12fb656",
+    "experiments/derive_y_token_writer_weights_v2.py": "e2d87f727ecfa50406a252675fb56d38408468641d1d485efc8a24ae9cc10dc2",
+    "experiments/derive_y_token_writer_v2.py": "0c34ce7fa94a39bac38b191dc25abbee81fb9e84cd467cc227513f889cf7dd7d",
+    "experiments/derive_y_whole_format_gate_v3.py": "8c86260d3cc3ff215d02900db432db5a3589bbf01eb4701f0eed85d9274f7ac6",
+    "experiments/y_host_calibration_io_v1.py": "f3ed461864341f602baf37af58a2837abad5028db36c6403016b6070640c7b60",
+    "experiments/compile_zd_reader_v1.py": "b27583a350ae2e312fef558ef1791de7b99fd84dc3b9cadbf6f1600caffd614e",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/zc_native_inputs_v1.py": "846cd39fc41ff38eece31b2c4abc8abfe5f3c05dd99371af7f8f125986c4895b",
+    "experiments/derive_y_native_input_roles_v3.py": "bdcc51f5c6bda471f67f82861661c0313bb8722257a32d3e3a024034cbae2523",
+    "experiments/derive_y_token_writer_v3.py": "b974a03ce9c949d663bde730bbfa725022bea895aa7a6c3636adc971faf2b157",
+    "experiments/derive_z_centered_writer_v1.py": "391d49aeb47025e8a940a64037b407453bf8bf22c73adc3a325afc0d21a61675",
+    "experiments/derive_zd_current_digit_classes_v1.py": "2611ebf14cb6954cf4c393a0ce7a18e44c2d4146abdd672f3be5871e5d8c580d",
+    "experiments/derive_zd_scalar_writer_v1.py": "db1d59066882fd7723a201b38803ce0966dd41a00de47498e92c16a60a3973af",
+    "experiments/zd_writer_overlay_v1.py": "0b8a3981724ba53eb28e911125a8b9af6aaf04fa3e587cfd2f719b9fff44f03f",
+    "experiments/derive_zd_reader_readouts_v1.py": "821eddd3597e8b31c6817b0a934988c8d58632ceedc724bfdeeed7fbf901e5da",
+    "experiments/derive_zd_reader_keys_v1.py": "654dd38630e5c9454cf2cbc5c61782a893b47135e0951b7fef6ad9c88266b37f",
+    "experiments/derive_zd_reader_attention_v1.py": "b9f1037a8d06181a03804a042a3c0faae4f8fff4356cb9b03547186dce261875",
+    "experiments/derive_zd_projected_memory_v1.py": "85133d946cfaf32c46631272ee0b1eeee9be2ff2cff1d3e431af92112afe8a31",
+    "experiments/derive_zd_writer_native_v1.py": "92f6ef3ba277d705433307ab955e50c7ccb4478cfc3028b406a25a61606d155e",
+    "experiments/compile_zt_scoped_reader_v1.py": "a52f2a891a21782d960a72ca43e0d83e2f376fbc9a725dcd3476482867351947",
+    "experiments/derive_zt_scoped_writer_v1.py": "4d8199bbc7a6d039d64096b6d0d3bb4e3ef5ac6634bdd7e7af01b89d467e9db8",
+    "experiments/derive_zs_scoped_digit_classes_v1.py": "1a2c4adb55fbde03b2a9700e24794a031d33eb7845c88ef625b4836375f4711e",
+    "experiments/derive_zr_column_polytopes_v1.py": "75f2b897270ea73a0a14829e8cac1e09d889068026b9d2b88a568307caa03b36"
+  },
+  "inputs": {
+    "experiments/zd1_projected_reader/delta.pt": "487d181b4676ca37e5b67592320b459a09fe1bda23bfa9cb4e039f3bde4dc378",
+    "experiments/zd1_projected_reader/circuit.pt": "434feb2aa00d4d3671853592c23b6b964c20a595e69157dede26a5b8fde8a0b2",
+    "artifacts/zt_scoped_writer_v1.pt": "cd05d25cadaf721ba0036b4f906b8b8997f0e435106187f2e2e889b0eaa21d62",
+    "artifacts/zs_scoped_digit_classes_v1.pt": "43b2099ebf81d69a430b6fee28781145319f59adbf75465ec560ef52c7922845",
+    "artifacts/zr_column_polytopes_v1.pt": "2405743653fe7acec1a540cc452e78f04fa9f02a51d4fcfd9e9e2db43d6f84cf"
+  },
+  "arguments": {
+    "output": "experiments/zt1_scoped_reader/delta.pt"
+  },
+  "description": "ZT1: change only the twenty digit-class FC rows in the ZD scalar writer, narrowing native digit-code activation from25 to9 recorded positions while preserving768 valid-format field emissions. The original seven-head reader, native MLP4 repair and all output columns remain. No carry or arithmetic output is implemented.",
+  "changed_scalars": 1516685,
+  "per_tensor": {
+    "transformer.h.4.mlp.c_fc.weight": 29184,
+    "transformer.h.4.mlp.c_fc.bias": 38,
+    "transformer.h.4.mlp.c_proj.weight": 422399,
+    "transformer.h.4.mlp.c_proj.bias": 768,
+    "transformer.h.5.attn.c_attn.weight": 473088,
+    "transformer.h.5.attn.c_attn.bias": 616,
+    "transformer.h.5.attn.c_proj.weight": 589824,
+    "transformer.h.5.attn.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 945.6504516601562,
+  "details": {
+    "scoped_digit_checks": {
+      "class_temperature": 256.0,
+      "maximum_program_field_difference": 0.000394471782783512,
+      "maximum_corrupt_numeric_field": 0.0,
+      "original_native_numeric_positions": 32,
+      "new_native_numeric_positions": 11,
+      "native_equals_positions": 0,
+      "maximum_row": 945.6504416593516,
+      "feasible": true
+    },
+    "temperature_family": [
+      128,
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "temperature_trials": [
+      {
+        "class_temperature": 128.0,
+        "maximum_program_field_difference": 0.5134837105870247,
+        "maximum_corrupt_numeric_field": 0.0,
+        "original_native_numeric_positions": 32,
+        "new_native_numeric_positions": 11,
+        "native_equals_positions": 0,
+        "maximum_row": 520.8375059026436,
+        "feasible": false
+      },
+      {
+        "class_temperature": 256.0,
+        "maximum_program_field_difference": 0.000394471782783512,
+        "maximum_corrupt_numeric_field": 0.0,
+        "original_native_numeric_positions": 32,
+        "new_native_numeric_positions": 11,
+        "native_equals_positions": 0,
+        "maximum_row": 945.6504416593516,
+        "feasible": true
+      },
+      {
+        "class_temperature": 512.0,
+        "maximum_program_field_difference": 0.00022480432068494594,
+        "maximum_corrupt_numeric_field": 0.0,
+        "original_native_numeric_positions": 32,
+        "new_native_numeric_positions": 10,
+        "native_equals_positions": 0,
+        "maximum_row": 1883.3008833187032,
+        "feasible": true
+      },
+      {
+        "class_temperature": 1024.0,
+        "maximum_program_field_difference": 0.0003488035293215397,
+        "maximum_corrupt_numeric_field": 0.0,
+        "original_native_numeric_positions": 32,
+        "new_native_numeric_positions": 10,
+        "native_equals_positions": 0,
+        "maximum_row": 3758.6017666374064,
+        "feasible": true
+      },
+      {
+        "class_temperature": 2048.0,
+        "maximum_program_field_difference": 0.0005441691889362943,
+        "maximum_corrupt_numeric_field": 0.0,
+        "original_native_numeric_positions": 32,
+        "new_native_numeric_positions": 9,
+        "native_equals_positions": 0,
+        "maximum_row": 7509.203533274813,
+        "feasible": false
+      }
+    ],
+    "class_source": "zs_scoped_digit_classes_v1.pt",
+    "native_scope_source": "zr_column_polytopes_v1.pt"
+  }
+}

@@ -1,0 +1,3392 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt",
+  "baseline": {
+    "validation_paired_HOST_causal_score_MSE": 0.001424562745747269,
+    "validation_same_input_HOST_causal_score_MSE": 0.0008332132856094103,
+    "validation_paired_HOST_query_RMS": 0.031507981128566065,
+    "minimum_source_routing_margin": 7.999993981397828,
+    "current32_source_margin": 7.999993981397828,
+    "historical512_source_margin": 8.102596743784185
+  },
+  "source_penalty_trials": [
+    0.0,
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "asymptotic_margin_trials": [
+    8.25,
+    8.5,
+    9.0,
+    10.0,
+    12.0
+  ],
+  "energy_ridge_trials": [
+    1e-06,
+    0.0001,
+    0.01,
+    1.0,
+    100.0
+  ],
+  "fixed_source_covariance_ridge": 1e-06,
+  "source_positions": [
+    3,
+    2,
+    1,
+    0
+  ],
+  "source_direction_training_windows": 1120,
+  "source_direction_holdback_windows": 544,
+  "source_routing_bound_windows": 1664,
+  "training_word_windows": 192,
+  "validation_word_windows": 64,
+  "source_geometry": [
+    {
+      "source_penalty": 0.0,
+      "mean_constraint_maximum_error": 2.4702462297909733e-15,
+      "minimum_gaps": [
+        0.03718512068556583,
+        0.04080759352961706,
+        0.05640257674195831,
+        0.05990887971432208
+      ],
+      "minimum_training_gaps": [
+        0.0557611380428584,
+        0.05454591764119552,
+        0.05640257674195831,
+        0.05990887971432208
+      ],
+      "minimum_holdback_gaps": [
+        0.03718512068556583,
+        0.04080759352961706,
+        0.05640257674195831,
+        0.06005407983122733
+      ],
+      "positive_all_source_gaps": true
+    },
+    {
+      "source_penalty": 0.01,
+      "mean_constraint_maximum_error": 2.733924198139448e-15,
+      "minimum_gaps": [
+        0.03677381649282334,
+        0.03965919834314664,
+        0.05479296272725649,
+        0.05971319702780692
+      ],
+      "minimum_training_gaps": [
+        0.05401246902976198,
+        0.05324985626513495,
+        0.05479296272725649,
+        0.05971319702780692
+      ],
+      "minimum_holdback_gaps": [
+        0.03677381649282334,
+        0.03965919834314664,
+        0.05479296272725649,
+        0.06030983052601956
+      ],
+      "positive_all_source_gaps": true
+    },
+    {
+      "source_penalty": 0.1,
+      "mean_constraint_maximum_error": 3.774758283725532e-15,
+      "minimum_gaps": [
+        0.04080095849511034,
+        0.04687224506249376,
+        0.055342414815464126,
+        0.05920697495368683
+      ],
+      "minimum_training_gaps": [
+        0.048618730508112475,
+        0.04687224506249376,
+        0.055342414815464126,
+        0.05920697495368683
+      ],
+      "minimum_holdback_gaps": [
+        0.04080095849511034,
+        0.04687224506249376,
+        0.05587750684898177,
+        0.05941424594302097
+      ],
+      "positive_all_source_gaps": true
+    },
+    {
+      "source_penalty": 1.0,
+      "mean_constraint_maximum_error": 3.3306690738754696e-15,
+      "minimum_gaps": [
+        0.038945080251720124,
+        0.02818615350290129,
+        0.05245281421014828,
+        0.05793018411996884
+      ],
+      "minimum_training_gaps": [
+        0.038945080251720124,
+        0.02818615350290129,
+        0.05245281421014828,
+        0.05812092631294734
+      ],
+      "minimum_holdback_gaps": [
+        0.039691248318341255,
+        0.02818615350290129,
+        0.05245281421014828,
+        0.05793018411996884
+      ],
+      "positive_all_source_gaps": true
+    },
+    {
+      "source_penalty": 10.0,
+      "mean_constraint_maximum_error": 5.88418203051333e-15,
+      "minimum_gaps": [
+        0.021540925131765608,
+        -0.0006829290354459575,
+        0.03905134694203411,
+        0.053785188992616
+      ],
+      "minimum_training_gaps": [
+        0.021540925131765608,
+        -0.0006829290354459575,
+        0.03905134694203411,
+        0.053785188992616
+      ],
+      "minimum_holdback_gaps": [
+        0.025985015184793916,
+        -0.0006829290354459575,
+        0.03905134951874528,
+        0.054857178821856464
+      ],
+      "positive_all_source_gaps": false
+    }
+  ],
+  "trials": [
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        202.08041571478674,
+        251.3918093037239,
+        80.7814060922528,
+        11.16553778494705
+      ],
+      "shared_profile_level_squared": 251.39181181764198,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.0605558804078489,
+          0.04692190680357641,
+          0.019874004180875475,
+          0.011769890926858784
+        ],
+        "analytic_source_margins": [
+          8.000022926066627,
+          8.000048469036525,
+          8.000130895856834,
+          8.000291253358403
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -23107.184608228483,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 6.072175593580355e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        202.08041571478674,
+        251.3918093037239,
+        80.7814060922528,
+        11.16553778494705
+      ],
+      "shared_profile_level_squared": 251.39181181764198,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.0605558804078489,
+          0.04692190680357641,
+          0.019874004180875475,
+          0.011769890926858784
+        ],
+        "analytic_source_margins": [
+          8.000022926066627,
+          8.000048469036525,
+          8.000130895856834,
+          8.000291253358403
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -23113.724910259498,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 6.194296633113585e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        202.08041571478674,
+        251.3918093037239,
+        80.7814060922528,
+        11.16553778494705
+      ],
+      "shared_profile_level_squared": 251.39181181764198,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.0605558804078489,
+          0.04692190680357641,
+          0.019874004180875475,
+          0.011769890926858784
+        ],
+        "analytic_source_margins": [
+          8.000022926066627,
+          8.000048469036525,
+          8.000130895856834,
+          8.000291253358403
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -23694.337142446453,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 5.519049101870754e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        202.08041571478674,
+        251.3918093037239,
+        80.7814060922528,
+        11.16553778494705
+      ],
+      "shared_profile_level_squared": 251.39181181764198,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.0605558804078489,
+          0.04692190680357641,
+          0.019874004180875475,
+          0.011769890926858784
+        ],
+        "analytic_source_margins": [
+          8.000022926066627,
+          8.000048469036525,
+          8.000130895856834,
+          8.000291253358403
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -20155.428383154416,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 5.24198826823906e-11,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        202.08041571478674,
+        251.3918093037239,
+        80.7814060922528,
+        11.16553778494705
+      ],
+      "shared_profile_level_squared": 251.39181181764198,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.0605558804078489,
+          0.04692190680357641,
+          0.019874004180875475,
+          0.011769890926858784
+        ],
+        "analytic_source_margins": [
+          8.000022926066627,
+          8.000048469036525,
+          8.000130895856834,
+          8.000291253358403
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -1408.1400470114882,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.0732932030876679e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        214.51327875692704,
+        266.85852300744256,
+        85.78197442754673,
+        12.11341979827157
+      ],
+      "shared_profile_level_squared": 266.8585256760278,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.05250850928697907,
+          0.043010478489394544,
+          0.018782221769242904,
+          0.011254563186405725
+        ],
+        "analytic_source_margins": [
+          8.000027102970972,
+          8.000053731071068,
+          8.000140655331085,
+          8.000305725656037
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -24535.44505975228,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 3.8046259354251523e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        214.51327875692704,
+        266.85852300744256,
+        85.78197442754673,
+        12.11341979827157
+      ],
+      "shared_profile_level_squared": 266.8585256760278,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.05250850928697907,
+          0.043010478489394544,
+          0.018782221769242904,
+          0.011254563186405725
+        ],
+        "analytic_source_margins": [
+          8.000027102970972,
+          8.000053731071068,
+          8.000140655331085,
+          8.000305725656037
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -24542.40816528214,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 4.6353289784221293e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        214.51327875692704,
+        266.85852300744256,
+        85.78197442754673,
+        12.11341979827157
+      ],
+      "shared_profile_level_squared": 266.8585256760278,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.05250850928697907,
+          0.043010478489394544,
+          0.018782221769242904,
+          0.011254563186405725
+        ],
+        "analytic_source_margins": [
+          8.000027102970972,
+          8.000053731071068,
+          8.000140655331085,
+          8.000305725656037
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -25160.523997565277,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 4.101323458882745e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        214.51327875692704,
+        266.85852300744256,
+        85.78197442754673,
+        12.11341979827157
+      ],
+      "shared_profile_level_squared": 266.8585256760278,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.05250850928697907,
+          0.043010478489394544,
+          0.018782221769242904,
+          0.011254563186405725
+        ],
+        "analytic_source_margins": [
+          8.000027102970972,
+          8.000053731071068,
+          8.000140655331085,
+          8.000305725656037
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -21412.57804385914,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 4.911877347442306e-11,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        214.51327875692704,
+        266.85852300744256,
+        85.78197442754673,
+        12.11341979827157
+      ],
+      "shared_profile_level_squared": 266.8585256760278,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.05250850928697907,
+          0.043010478489394544,
+          0.018782221769242904,
+          0.011254563186405725
+        ],
+        "analytic_source_margins": [
+          8.000027102970972,
+          8.000053731071068,
+          8.000140655331085,
+          8.000305725656037
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -1498.3561603223955,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.307622493283985e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        240.49239556139912,
+        299.1770292540185,
+        96.18840656699088,
+        14.18428769596567
+      ],
+      "shared_profile_level_squared": 299.1770322457888,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.041511379063101594,
+          0.03686391483153957,
+          0.016918644332284946,
+          0.010341666967625925
+        ],
+        "analytic_source_margins": [
+          8.000035900075805,
+          8.0000646031035,
+          8.00016084141796,
+          8.000335578581401
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -27519.849468678276,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 7.442301865032303e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        240.49239556139912,
+        299.1770292540185,
+        96.18840656699088,
+        14.18428769596567
+      ],
+      "shared_profile_level_squared": 299.1770322457888,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.041511379063101594,
+          0.03686391483153957,
+          0.016918644332284946,
+          0.010341666967625925
+        ],
+        "analytic_source_margins": [
+          8.000035900075805,
+          8.0000646031035,
+          8.00016084141796,
+          8.000335578581401
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -27527.696072478033,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 7.900243145296745e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        240.49239556139912,
+        299.1770292540185,
+        96.18840656699088,
+        14.18428769596567
+      ],
+      "shared_profile_level_squared": 299.1770322457888,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.041511379063101594,
+          0.03686391483153957,
+          0.016918644332284946,
+          0.010341666967625925
+        ],
+        "analytic_source_margins": [
+          8.000035900075805,
+          8.0000646031035,
+          8.00016084141796,
+          8.000335578581401
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -28224.180203760072,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 7.815664110710625e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        240.49239556139912,
+        299.1770292540185,
+        96.18840656699088,
+        14.18428769596567
+      ],
+      "shared_profile_level_squared": 299.1770322457888,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.041511379063101594,
+          0.03686391483153957,
+          0.016918644332284946,
+          0.010341666967625925
+        ],
+        "analytic_source_margins": [
+          8.000035900075805,
+          8.0000646031035,
+          8.00016084141796,
+          8.000335578581401
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -24039.465921783776,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 2.9964192845481915e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        240.49239556139912,
+        299.1770292540185,
+        96.18840656699088,
+        14.18428769596567
+      ],
+      "shared_profile_level_squared": 299.1770322457888,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.041511379063101594,
+          0.03686391483153957,
+          0.016918644332284946,
+          0.010341666967625925
+        ],
+        "analytic_source_margins": [
+          8.000035900075805,
+          8.0000646031035,
+          8.00016084141796,
+          8.000335578581401
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -1686.867848245352,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 2.836339346717891e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        296.9041920511101,
+        369.3543571037266,
+        118.77065403182962,
+        18.994884477058488
+      ],
+      "shared_profile_level_squared": 369.35436079727015,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.03059968727252301,
+          0.028659995178202516,
+          0.01410586917813415,
+          0.00888063733870773
+        ],
+        "analytic_source_margins": [
+          8.000141969812544,
+          8.000087721802004,
+          8.000203901552464,
+          8.000398985671143
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -34000.21746021122,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 4.2415332726746507e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        296.9041920511101,
+        369.3543571037266,
+        118.77065403182962,
+        18.994884477058488
+      ],
+      "shared_profile_level_squared": 369.35436079727015,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.03059968727252301,
+          0.028659995178202516,
+          0.01410586917813415,
+          0.00888063733870773
+        ],
+        "analytic_source_margins": [
+          8.000141969812544,
+          8.000087721802004,
+          8.000203901552464,
+          8.000398985671143
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -34009.98259251014,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 4.69832350702587e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        296.9041920511101,
+        369.3543571037266,
+        118.77065403182962,
+        18.994884477058488
+      ],
+      "shared_profile_level_squared": 369.35436079727015,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.03059968727252301,
+          0.028659995178202516,
+          0.01410586917813415,
+          0.00888063733870773
+        ],
+        "analytic_source_margins": [
+          8.000141969812544,
+          8.000087721802004,
+          8.000203901552464,
+          8.000398985671143
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -34876.644723558275,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 3.8301982158391926e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        296.9041920511101,
+        369.3543571037266,
+        118.77065403182962,
+        18.994884477058488
+      ],
+      "shared_profile_level_squared": 369.35436079727015,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.03059968727252301,
+          0.028659995178202516,
+          0.01410586917813415,
+          0.00888063733870773
+        ],
+        "analytic_source_margins": [
+          8.000141969812544,
+          8.000087721802004,
+          8.000203901552464,
+          8.000398985671143
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -29743.588375787644,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.0010457143382608e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        296.9041920511101,
+        369.3543571037266,
+        118.77065403182962,
+        18.994884477058488
+      ],
+      "shared_profile_level_squared": 369.35436079727015,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.03059968727252301,
+          0.028659995178202516,
+          0.01410586917813415,
+          0.00888063733870773
+        ],
+        "analytic_source_margins": [
+          8.000141969812544,
+          8.000087721802004,
+          8.000203901552464,
+          8.000398985671143
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -2096.2087382362943,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 9.393054226710561e-11,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        427.54203655359834,
+        531.8702742293664,
+        171.0360785852685,
+        31.422112597904963
+      ],
+      "shared_profile_level_squared": 531.8702795480691,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.022655171616493858,
+          0.019801254730413696,
+          0.01056387862004399,
+          0.006890728181526563
+        ],
+        "analytic_source_margins": [
+          8.000204454344038,
+          8.000139429472256,
+          8.000300893006493,
+          8.00054094983862
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -49007.30214917689,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 3.483625440797551e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        427.54203655359834,
+        531.8702742293664,
+        171.0360785852685,
+        31.422112597904963
+      ],
+      "shared_profile_level_squared": 531.8702795480691,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.022655171616493858,
+          0.019801254730413696,
+          0.01056387862004399,
+          0.006890728181526563
+        ],
+        "analytic_source_margins": [
+          8.000204454344038,
+          8.000139429472256,
+          8.000300893006493,
+          8.00054094983862
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -49021.510320097506,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 2.0115556850638806e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        427.54203655359834,
+        531.8702742293664,
+        171.0360785852685,
+        31.422112597904963
+      ],
+      "shared_profile_level_squared": 531.8702795480691,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.022655171616493858,
+          0.019801254730413696,
+          0.01056387862004399,
+          0.006890728181526563
+        ],
+        "analytic_source_margins": [
+          8.000204454344038,
+          8.000139429472256,
+          8.000300893006493,
+          8.00054094983862
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -50282.2807118469,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 2.175373068881598e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        427.54203655359834,
+        531.8702742293664,
+        171.0360785852685,
+        31.422112597904963
+      ],
+      "shared_profile_level_squared": 531.8702795480691,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.022655171616493858,
+          0.019801254730413696,
+          0.01056387862004399,
+          0.006890728181526563
+        ],
+        "analytic_source_margins": [
+          8.000204454344038,
+          8.000139429472256,
+          8.000300893006493,
+          8.00054094983862
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -42953.17718750728,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 2.7224097484837943e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        427.54203655359834,
+        531.8702742293664,
+        171.0360785852685,
+        31.422112597904963
+      ],
+      "shared_profile_level_squared": 531.8702795480691,
+      "boosted_channel_count": 256,
+      "initial_routing": {
+        "programme_factors": [
+          0.022655171616493858,
+          0.019801254730413696,
+          0.01056387862004399,
+          0.006890728181526563
+        ],
+        "analytic_source_margins": [
+          8.000204454344038,
+          8.000139429472256,
+          8.000300893006493,
+          8.00054094983862
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -3044.158194167242,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.4697856342450599e-10,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        36.917733521455965,
+        50.03166042350564,
+        12.681049344690281,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.031660923822244,
+      "boosted_channel_count": 228,
+      "initial_routing": {
+        "programme_factors": [
+          0.05936776613498693,
+          0.05243568736939893,
+          0.02510188165762076,
+          0.019135837514705895
+        ],
+        "analytic_source_margins": [
+          8.000025643604534,
+          8.000052785232366,
+          8.000102005070138,
+          8.000158328447634
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -181.94154852522448,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 8.493151844309029e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        36.917733521455965,
+        50.03166042350564,
+        12.681049344690281,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.031660923822244,
+      "boosted_channel_count": 228,
+      "initial_routing": {
+        "programme_factors": [
+          0.05936776613498693,
+          0.05243568736939893,
+          0.02510188165762076,
+          0.019135837514705895
+        ],
+        "analytic_source_margins": [
+          8.000025643604534,
+          8.000052785232366,
+          8.000102005070138,
+          8.000158328447634
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -181.91468253503277,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 4.2801393486083675e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        36.917733521455965,
+        50.03166042350564,
+        12.681049344690281,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.031660923822244,
+      "boosted_channel_count": 228,
+      "initial_routing": {
+        "programme_factors": [
+          0.05936776613498693,
+          0.05243568736939893,
+          0.02510188165762076,
+          0.019135837514705895
+        ],
+        "analytic_source_margins": [
+          8.000025643604534,
+          8.000052785232366,
+          8.000102005070138,
+          8.000158328447634
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -179.4879815749769,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.1459327682012072e-12,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        36.917733521455965,
+        50.03166042350564,
+        12.681049344690281,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.031660923822244,
+      "boosted_channel_count": 228,
+      "initial_routing": {
+        "programme_factors": [
+          0.05936776613498693,
+          0.05243568736939893,
+          0.02510188165762076,
+          0.019135837514705895
+        ],
+        "analytic_source_margins": [
+          8.000025643604534,
+          8.000052785232366,
+          8.000102005070138,
+          8.000158328447634
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -134.33260791233587,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 3.5227752555577134e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        36.917733521455965,
+        50.03166042350564,
+        12.681049344690281,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.031660923822244,
+      "boosted_channel_count": 228,
+      "initial_routing": {
+        "programme_factors": [
+          0.05936776613498693,
+          0.05243568736939893,
+          0.02510188165762076,
+          0.019135837514705895
+        ],
+        "analytic_source_margins": [
+          8.000025643604534,
+          8.000052785232366,
+          8.000102005070138,
+          8.000158328447634
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -31.551263718013075,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 4.8307080575808463e-14,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        39.417070606384954,
+        53.21053738612493,
+        13.964690707900932,
+        0.0
+      ],
+      "shared_profile_level_squared": 53.2105379182303,
+      "boosted_channel_count": 230,
+      "initial_routing": {
+        "programme_factors": [
+          0.052158283334625806,
+          0.04841107636400995,
+          0.02367855155356106,
+          0.018340487527018192
+        ],
+        "analytic_source_margins": [
+          8.000030128255954,
+          8.0000577855031,
+          8.000107860813666,
+          8.00016367052248
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -194.47824411203624,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.5545332783366173e-12,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        39.417070606384954,
+        53.21053738612493,
+        13.964690707900932,
+        0.0
+      ],
+      "shared_profile_level_squared": 53.2105379182303,
+      "boosted_channel_count": 230,
+      "initial_routing": {
+        "programme_factors": [
+          0.052158283334625806,
+          0.04841107636400995,
+          0.02367855155356106,
+          0.018340487527018192
+        ],
+        "analytic_source_margins": [
+          8.000030128255954,
+          8.0000577855031,
+          8.000107860813666,
+          8.00016367052248
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -194.44984834892676,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.730490781741213e-12,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        39.417070606384954,
+        53.21053738612493,
+        13.964690707900932,
+        0.0
+      ],
+      "shared_profile_level_squared": 53.2105379182303,
+      "boosted_channel_count": 230,
+      "initial_routing": {
+        "programme_factors": [
+          0.052158283334625806,
+          0.04841107636400995,
+          0.02367855155356106,
+          0.018340487527018192
+        ],
+        "analytic_source_margins": [
+          8.000030128255954,
+          8.0000577855031,
+          8.000107860813666,
+          8.00016367052248
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -191.8904491882445,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.3753861933844919e-12,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        39.417070606384954,
+        53.21053738612493,
+        13.964690707900932,
+        0.0
+      ],
+      "shared_profile_level_squared": 53.2105379182303,
+      "boosted_channel_count": 230,
+      "initial_routing": {
+        "programme_factors": [
+          0.052158283334625806,
+          0.04841107636400995,
+          0.02367855155356106,
+          0.018340487527018192
+        ],
+        "analytic_source_margins": [
+          8.000030128255954,
+          8.0000577855031,
+          8.000107860813666,
+          8.00016367052248
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -145.1962825928947,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 6.664547421240114e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        39.417070606384954,
+        53.21053738612493,
+        13.964690707900932,
+        0.0
+      ],
+      "shared_profile_level_squared": 53.2105379182303,
+      "boosted_channel_count": 230,
+      "initial_routing": {
+        "programme_factors": [
+          0.052158283334625806,
+          0.04841107636400995,
+          0.02367855155356106,
+          0.018340487527018192
+        ],
+        "analytic_source_margins": [
+          8.000030128255954,
+          8.0000577855031,
+          8.000107860813666,
+          8.00016367052248
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -34.551290740674574,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.3900529993105751e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        44.46478507295092,
+        59.832615592134,
+        16.429625871607072,
+        0.0
+      ],
+      "shared_profile_level_squared": 59.83261619046015,
+      "boosted_channel_count": 235,
+      "initial_routing": {
+        "programme_factors": [
+          0.042105762985988886,
+          0.04188054417190622,
+          0.02120446471142409,
+          0.016873374241311915
+        ],
+        "analytic_source_margins": [
+          8.000039400809033,
+          8.000067897372302,
+          8.00011985994446,
+          8.000174879840337
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -220.56658242308694,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 9.033586148809002e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        44.46478507295092,
+        59.832615592134,
+        16.429625871607072,
+        0.0
+      ],
+      "shared_profile_level_squared": 59.83261619046015,
+      "boosted_channel_count": 235,
+      "initial_routing": {
+        "programme_factors": [
+          0.042105762985988886,
+          0.04188054417190622,
+          0.02120446471142409,
+          0.016873374241311915
+        ],
+        "analytic_source_margins": [
+          8.000039400809033,
+          8.000067897372302,
+          8.00011985994446,
+          8.000174879840337
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -220.53511532686042,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 7.316774733260656e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        44.46478507295092,
+        59.832615592134,
+        16.429625871607072,
+        0.0
+      ],
+      "shared_profile_level_squared": 59.83261619046015,
+      "boosted_channel_count": 235,
+      "initial_routing": {
+        "programme_factors": [
+          0.042105762985988886,
+          0.04188054417190622,
+          0.02120446471142409,
+          0.016873374241311915
+        ],
+        "analytic_source_margins": [
+          8.000039400809033,
+          8.000067897372302,
+          8.00011985994446,
+          8.000174879840337
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -217.71020833486577,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 5.78870556552942e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        44.46478507295092,
+        59.832615592134,
+        16.429625871607072,
+        0.0
+      ],
+      "shared_profile_level_squared": 59.83261619046015,
+      "boosted_channel_count": 235,
+      "initial_routing": {
+        "programme_factors": [
+          0.042105762985988886,
+          0.04188054417190622,
+          0.02120446471142409,
+          0.016873374241311915
+        ],
+        "analytic_source_margins": [
+          8.000039400809033,
+          8.000067897372302,
+          8.00011985994446,
+          8.000174879840337
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -168.00727827154992,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 3.0016758750739565e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        44.46478507295092,
+        59.832615592134,
+        16.429625871607072,
+        0.0
+      ],
+      "shared_profile_level_squared": 59.83261619046015,
+      "boosted_channel_count": 235,
+      "initial_routing": {
+        "programme_factors": [
+          0.042105762985988886,
+          0.04188054417190622,
+          0.02120446471142409,
+          0.016873374241311915
+        ],
+        "analytic_source_margins": [
+          8.000039400809033,
+          8.000067897372302,
+          8.00011985994446,
+          8.000174879840337
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -40.85437235834015,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 2.49259147746424e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        55.29050310037801,
+        74.16001355983283,
+        21.466178546092323,
+        0.0
+      ],
+      "shared_profile_level_squared": 74.16001430143297,
+      "boosted_channel_count": 239,
+      "initial_routing": {
+        "programme_factors": [
+          0.030926515217503565,
+          0.032903720988378814,
+          0.017469457489768442,
+          0.014452434717302901
+        ],
+        "analytic_source_margins": [
+          8.000148895738722,
+          8.000088406496412,
+          8.000144506840213,
+          8.00019871669553
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -277.04974836704594,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 7.715450722598438e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        55.29050310037801,
+        74.16001355983283,
+        21.466178546092323,
+        0.0
+      ],
+      "shared_profile_level_squared": 74.16001430143297,
+      "boosted_channel_count": 239,
+      "initial_routing": {
+        "programme_factors": [
+          0.030926515217503565,
+          0.032903720988378814,
+          0.017469457489768442,
+          0.014452434717302901
+        ],
+        "analytic_source_margins": [
+          8.000148895738722,
+          8.000088406496412,
+          8.000144506840213,
+          8.00019871669553
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -277.01188400611284,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 9.306509204695086e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        55.29050310037801,
+        74.16001355983283,
+        21.466178546092323,
+        0.0
+      ],
+      "shared_profile_level_squared": 74.16001430143297,
+      "boosted_channel_count": 239,
+      "initial_routing": {
+        "programme_factors": [
+          0.030926515217503565,
+          0.032903720988378814,
+          0.017469457489768442,
+          0.014452434717302901
+        ],
+        "analytic_source_margins": [
+          8.000148895738722,
+          8.000088406496412,
+          8.000144506840213,
+          8.00019871669553
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -273.63434673462524,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 9.83827084839694e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        55.29050310037801,
+        74.16001355983283,
+        21.466178546092323,
+        0.0
+      ],
+      "shared_profile_level_squared": 74.16001430143297,
+      "boosted_channel_count": 239,
+      "initial_routing": {
+        "programme_factors": [
+          0.030926515217503565,
+          0.032903720988378814,
+          0.017469457489768442,
+          0.014452434717302901
+        ],
+        "analytic_source_margins": [
+          8.000148895738722,
+          8.000088406496412,
+          8.000144506840213,
+          8.00019871669553
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -217.7119750249453,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 5.774093854816832e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        55.29050310037801,
+        74.16001355983283,
+        21.466178546092323,
+        0.0
+      ],
+      "shared_profile_level_squared": 74.16001430143297,
+      "boosted_channel_count": 239,
+      "initial_routing": {
+        "programme_factors": [
+          0.030926515217503565,
+          0.032903720988378814,
+          0.017469457489768442,
+          0.014452434717302901
+        ],
+        "analytic_source_margins": [
+          8.000148895738722,
+          8.000088406496412,
+          8.000144506840213,
+          8.00019871669553
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -54.66688277235319,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.1574922034650446e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        80.13836773817118,
+        107.23484606291201,
+        33.21375705346226,
+        0.0
+      ],
+      "shared_profile_level_squared": 107.23484713526047,
+      "boosted_channel_count": 245,
+      "initial_routing": {
+        "programme_factors": [
+          0.023004262412958748,
+          0.02291084549250521,
+          0.012771421396221795,
+          0.01107940902078104
+        ],
+        "analytic_source_margins": [
+          8.00020198962295,
+          8.000130598617458,
+          8.000196717778158,
+          8.000251722531733
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -407.56479660514117,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 3.3951008156655887e-12,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        80.13836773817118,
+        107.23484606291201,
+        33.21375705346226,
+        0.0
+      ],
+      "shared_profile_level_squared": 107.23484713526047,
+      "boosted_channel_count": 245,
+      "initial_routing": {
+        "programme_factors": [
+          0.023004262412958748,
+          0.02291084549250521,
+          0.012771421396221795,
+          0.01107940902078104
+        ],
+        "analytic_source_margins": [
+          8.00020198962295,
+          8.000130598617458,
+          8.000196717778158,
+          8.000251722531733
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -407.50883628627537,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 2.2795455894492486e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        80.13836773817118,
+        107.23484606291201,
+        33.21375705346226,
+        0.0
+      ],
+      "shared_profile_level_squared": 107.23484713526047,
+      "boosted_channel_count": 245,
+      "initial_routing": {
+        "programme_factors": [
+          0.023004262412958748,
+          0.02291084549250521,
+          0.012771421396221795,
+          0.01107940902078104
+        ],
+        "analytic_source_margins": [
+          8.00020198962295,
+          8.000130598617458,
+          8.000196717778158,
+          8.000251722531733
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -402.5566793933338,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.960818766438009e-12,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        80.13836773817118,
+        107.23484606291201,
+        33.21375705346226,
+        0.0
+      ],
+      "shared_profile_level_squared": 107.23484713526047,
+      "boosted_channel_count": 245,
+      "initial_routing": {
+        "programme_factors": [
+          0.023004262412958748,
+          0.02291084549250521,
+          0.012771421396221795,
+          0.01107940902078104
+        ],
+        "analytic_source_margins": [
+          8.00020198962295,
+          8.000130598617458,
+          8.000196717778158,
+          8.000251722531733
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -333.58852294130156,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.6259861977888251e-12,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.01,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        80.13836773817118,
+        107.23484606291201,
+        33.21375705346226,
+        0.0
+      ],
+      "shared_profile_level_squared": 107.23484713526047,
+      "boosted_channel_count": 245,
+      "initial_routing": {
+        "programme_factors": [
+          0.023004262412958748,
+          0.02291084549250521,
+          0.012771421396221795,
+          0.01107940902078104
+        ],
+        "analytic_source_margins": [
+          8.00020198962295,
+          8.000130598617458,
+          8.000196717778158,
+          8.000251722531733
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -89.24167882408643,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 3.97759966827818e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        12.643594198706998,
+        20.023128280011367,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 20.023128480242647,
+      "boosted_channel_count": 127,
+      "initial_routing": {
+        "programme_factors": [
+          0.057684965740882894,
+          0.42518722528881253,
+          0.039542352192555995,
+          0.028869147470316967
+        ],
+        "analytic_source_margins": [
+          8.000029509833768,
+          8.00000278353273,
+          8.000070626515084,
+          8.00011912846618
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -12.88625105608812,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.0315750475768917e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        12.643594198706998,
+        20.023128280011367,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 20.023128480242647,
+      "boosted_channel_count": 127,
+      "initial_routing": {
+        "programme_factors": [
+          0.057684965740882894,
+          0.42518722528881253,
+          0.039542352192555995,
+          0.028869147470316967
+        ],
+        "analytic_source_margins": [
+          8.000029509833768,
+          8.00000278353273,
+          8.000070626515084,
+          8.00011912846618
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -12.88497914394752,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 5.4623341019311854e-14,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        12.643594198706998,
+        20.023128280011367,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 20.023128480242647,
+      "boosted_channel_count": 127,
+      "initial_routing": {
+        "programme_factors": [
+          0.057684965740882894,
+          0.42518722528881253,
+          0.039542352192555995,
+          0.028869147470316967
+        ],
+        "analytic_source_margins": [
+          8.000029509833768,
+          8.00000278353273,
+          8.000070626515084,
+          8.00011912846618
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -12.764490841272591,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.1282863369498176e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        12.643594198706998,
+        20.023128280011367,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 20.023128480242647,
+      "boosted_channel_count": 127,
+      "initial_routing": {
+        "programme_factors": [
+          0.057684965740882894,
+          0.42518722528881253,
+          0.039542352192555995,
+          0.028869147470316967
+        ],
+        "analytic_source_margins": [
+          8.000029509833768,
+          8.00000278353273,
+          8.000070626515084,
+          8.00011912846618
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -9.337574528976425,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 4.7026172767405836e-14,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        12.643594198706998,
+        20.023128280011367,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 20.023128480242647,
+      "boosted_channel_count": 127,
+      "initial_routing": {
+        "programme_factors": [
+          0.057684965740882894,
+          0.42518722528881253,
+          0.039542352192555995,
+          0.028869147470316967
+        ],
+        "analytic_source_margins": [
+          8.000029509833768,
+          8.00000278353273,
+          8.000070626515084,
+          8.00011912846618
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -2.611074849427247,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.5508599726620056e-14,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        13.984509765739338,
+        21.51104941728069,
+        3.1110732271833976,
+        0.0
+      ],
+      "shared_profile_level_squared": 21.511049632391185,
+      "boosted_channel_count": 135,
+      "initial_routing": {
+        "programme_factors": [
+          0.05171759323328476,
+          0.22800775361725029,
+          0.03734888266848135,
+          0.027882033316033884
+        ],
+        "analytic_source_margins": [
+          8.000034153316863,
+          8.000005956250389,
+          8.000074693388303,
+          8.000121857723967
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -14.75873555955318,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.4487053075075442e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        13.984509765739338,
+        21.51104941728069,
+        3.1110732271833976,
+        0.0
+      ],
+      "shared_profile_level_squared": 21.511049632391185,
+      "boosted_channel_count": 135,
+      "initial_routing": {
+        "programme_factors": [
+          0.05171759323328476,
+          0.22800775361725029,
+          0.03734888266848135,
+          0.027882033316033884
+        ],
+        "analytic_source_margins": [
+          8.000034153316863,
+          8.000005956250389,
+          8.000074693388303,
+          8.000121857723967
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -14.757375590676487,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 8.444547896602722e-14,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        13.984509765739338,
+        21.51104941728069,
+        3.1110732271833976,
+        0.0
+      ],
+      "shared_profile_level_squared": 21.511049632391185,
+      "boosted_channel_count": 135,
+      "initial_routing": {
+        "programme_factors": [
+          0.05171759323328476,
+          0.22800775361725029,
+          0.03734888266848135,
+          0.027882033316033884
+        ],
+        "analytic_source_margins": [
+          8.000034153316863,
+          8.000005956250389,
+          8.000074693388303,
+          8.000121857723967
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -14.62873564570523,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.7635775202784232e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        13.984509765739338,
+        21.51104941728069,
+        3.1110732271833976,
+        0.0
+      ],
+      "shared_profile_level_squared": 21.511049632391185,
+      "boosted_channel_count": 135,
+      "initial_routing": {
+        "programme_factors": [
+          0.05171759323328476,
+          0.22800775361725029,
+          0.03734888266848135,
+          0.027882033316033884
+        ],
+        "analytic_source_margins": [
+          8.000034153316863,
+          8.000005956250389,
+          8.000074693388303,
+          8.000121857723967
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -11.054052114567298,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 8.52423794298186e-14,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        13.984509765739338,
+        21.51104941728069,
+        3.1110732271833976,
+        0.0
+      ],
+      "shared_profile_level_squared": 21.511049632391185,
+      "boosted_channel_count": 135,
+      "initial_routing": {
+        "programme_factors": [
+          0.05171759323328476,
+          0.22800775361725029,
+          0.03734888266848135,
+          0.027882033316033884
+        ],
+        "analytic_source_margins": [
+          8.000034153316863,
+          8.000005956250389,
+          8.000074693388303,
+          8.000121857723967
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -3.353852517130247,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 3.818183583472327e-14,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        16.66944074516682,
+        24.536131128871684,
+        5.709992617998757,
+        0.0
+      ],
+      "shared_profile_level_squared": 24.536131374232994,
+      "boosted_channel_count": 150,
+      "initial_routing": {
+        "programme_factors": [
+          0.04660607758463201,
+          0.1263974945116774,
+          0.03361041116162545,
+          0.026013850470332747
+        ],
+        "analytic_source_margins": [
+          8.00010552948989,
+          8.00001286640933,
+          8.000082595244784,
+          8.000127647192755
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -18.699811305119454,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.3129800080006797e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        16.66944074516682,
+        24.536131128871684,
+        5.709992617998757,
+        0.0
+      ],
+      "shared_profile_level_squared": 24.536131374232994,
+      "boosted_channel_count": 150,
+      "initial_routing": {
+        "programme_factors": [
+          0.04660607758463201,
+          0.1263974945116774,
+          0.03361041116162545,
+          0.026013850470332747
+        ],
+        "analytic_source_margins": [
+          8.00010552948989,
+          8.00001286640933,
+          8.000082595244784,
+          8.000127647192755
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -18.698336135159614,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 9.873271529229639e-14,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        16.66944074516682,
+        24.536131128871684,
+        5.709992617998757,
+        0.0
+      ],
+      "shared_profile_level_squared": 24.536131374232994,
+      "boosted_channel_count": 150,
+      "initial_routing": {
+        "programme_factors": [
+          0.04660607758463201,
+          0.1263974945116774,
+          0.03361041116162545,
+          0.026013850470332747
+        ],
+        "analytic_source_margins": [
+          8.00010552948989,
+          8.00001286640933,
+          8.000082595244784,
+          8.000127647192755
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -18.55926821095798,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 4.62465965770315e-14,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        16.66944074516682,
+        24.536131128871684,
+        5.709992617998757,
+        0.0
+      ],
+      "shared_profile_level_squared": 24.536131374232994,
+      "boosted_channel_count": 150,
+      "initial_routing": {
+        "programme_factors": [
+          0.04660607758463201,
+          0.1263974945116774,
+          0.03361041116162545,
+          0.026013850470332747
+        ],
+        "analytic_source_margins": [
+          8.00010552948989,
+          8.00001286640933,
+          8.000082595244784,
+          8.000127647192755
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -14.797145315365242,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 5.42342226169388e-14,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        16.66944074516682,
+        24.536131128871684,
+        5.709992617998757,
+        0.0
+      ],
+      "shared_profile_level_squared": 24.536131374232994,
+      "boosted_channel_count": 150,
+      "initial_routing": {
+        "programme_factors": [
+          0.04660607758463201,
+          0.1263974945116774,
+          0.03361041116162545,
+          0.026013850470332747
+        ],
+        "analytic_source_margins": [
+          8.00010552948989,
+          8.00001286640933,
+          8.000082595244784,
+          8.000127647192755
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -4.961517628093967,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 2.4318478385431112e-14,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        22.00860193170973,
+        31.110601492625225,
+        10.061141965386758,
+        0.0
+      ],
+      "shared_profile_level_squared": 31.11060180373124,
+      "boosted_channel_count": 171,
+      "initial_routing": {
+        "programme_factors": [
+          0.03939854132936307,
+          0.07122982160967566,
+          0.02781836130326699,
+          0.02252245476647717
+        ],
+        "analytic_source_margins": [
+          8.000123210826178,
+          8.00002727051949,
+          8.000098347646892,
+          8.000141662003983
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -27.606360521402387,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 3.123442759287637e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        22.00860193170973,
+        31.110601492625225,
+        10.061141965386758,
+        0.0
+      ],
+      "shared_profile_level_squared": 31.11060180373124,
+      "boosted_channel_count": 171,
+      "initial_routing": {
+        "programme_factors": [
+          0.03939854132936307,
+          0.07122982160967566,
+          0.02781836130326699,
+          0.02252245476647717
+        ],
+        "analytic_source_margins": [
+          8.000123210826178,
+          8.00002727051949,
+          8.000098347646892,
+          8.000141662003983
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -27.604698052725233,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.8092195062136732e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        22.00860193170973,
+        31.110601492625225,
+        10.061141965386758,
+        0.0
+      ],
+      "shared_profile_level_squared": 31.11060180373124,
+      "boosted_channel_count": 171,
+      "initial_routing": {
+        "programme_factors": [
+          0.03939854132936307,
+          0.07122982160967566,
+          0.02781836130326699,
+          0.02252245476647717
+        ],
+        "analytic_source_margins": [
+          8.000123210826178,
+          8.00002727051949,
+          8.000098347646892,
+          8.000141662003983
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -27.44978731880909,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.8097106225437552e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        22.00860193170973,
+        31.110601492625225,
+        10.061141965386758,
+        0.0
+      ],
+      "shared_profile_level_squared": 31.11060180373124,
+      "boosted_channel_count": 171,
+      "initial_routing": {
+        "programme_factors": [
+          0.03939854132936307,
+          0.07122982160967566,
+          0.02781836130326699,
+          0.02252245476647717
+        ],
+        "analytic_source_margins": [
+          8.000123210826178,
+          8.00002727051949,
+          8.000098347646892,
+          8.000141662003983
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -23.851190988898626,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 7.630667971767585e-14,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        22.00860193170973,
+        31.110601492625225,
+        10.061141965386758,
+        0.0
+      ],
+      "shared_profile_level_squared": 31.11060180373124,
+      "boosted_channel_count": 171,
+      "initial_routing": {
+        "programme_factors": [
+          0.03939854132936307,
+          0.07122982160967566,
+          0.02781836130326699,
+          0.02252245476647717
+        ],
+        "analytic_source_margins": [
+          8.000123210826178,
+          8.00002727051949,
+          8.000098347646892,
+          8.000141662003983
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -9.072688718460219,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.0634880746170817e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        33.37884237164718,
+        46.235420679570645,
+        19.009399178176093,
+        0.0
+      ],
+      "shared_profile_level_squared": 46.235421141924846,
+      "boosted_channel_count": 196,
+      "initial_routing": {
+        "programme_factors": [
+          0.02977271471486099,
+          0.03998069303951415,
+          0.02039529057815606,
+          0.017364116266630786
+        ],
+        "analytic_source_margins": [
+          8.000157473717554,
+          8.000054988002217,
+          8.000130039789525,
+          8.000172028416527
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -48.76480414512367,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 2.6503019233652634e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        33.37884237164718,
+        46.235420679570645,
+        19.009399178176093,
+        0.0
+      ],
+      "shared_profile_level_squared": 46.235421141924846,
+      "boosted_channel_count": 196,
+      "initial_routing": {
+        "programme_factors": [
+          0.02977271471486099,
+          0.03998069303951415,
+          0.02039529057815606,
+          0.017364116266630786
+        ],
+        "analytic_source_margins": [
+          8.000157473717554,
+          8.000054988002217,
+          8.000130039789525,
+          8.000172028416527
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -48.76283165903503,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.8715484747383475e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        33.37884237164718,
+        46.235420679570645,
+        19.009399178176093,
+        0.0
+      ],
+      "shared_profile_level_squared": 46.235421141924846,
+      "boosted_channel_count": 196,
+      "initial_routing": {
+        "programme_factors": [
+          0.02977271471486099,
+          0.03998069303951415,
+          0.02039529057815606,
+          0.017364116266630786
+        ],
+        "analytic_source_margins": [
+          8.000157473717554,
+          8.000054988002217,
+          8.000130039789525,
+          8.000172028416527
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -48.58448183806016,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 4.01266322087762e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        33.37884237164718,
+        46.235420679570645,
+        19.009399178176093,
+        0.0
+      ],
+      "shared_profile_level_squared": 46.235421141924846,
+      "boosted_channel_count": 196,
+      "initial_routing": {
+        "programme_factors": [
+          0.02977271471486099,
+          0.03998069303951415,
+          0.02039529057815606,
+          0.017364116266630786
+        ],
+        "analytic_source_margins": [
+          8.000157473717554,
+          8.000054988002217,
+          8.000130039789525,
+          8.000172028416527
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -46.24698575925291,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 2.400431255650164e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 0.1,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        33.37884237164718,
+        46.235420679570645,
+        19.009399178176093,
+        0.0
+      ],
+      "shared_profile_level_squared": 46.235421141924846,
+      "boosted_channel_count": 196,
+      "initial_routing": {
+        "programme_factors": [
+          0.02977271471486099,
+          0.03998069303951415,
+          0.02039529057815606,
+          0.017364116266630786
+        ],
+        "analytic_source_margins": [
+          8.000157473717554,
+          8.000054988002217,
+          8.000130039789525,
+          8.000172028416527
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -19.33339173189433,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.0043449365389347e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        4.577083987933212,
+        33.27513670506245,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 33.27513703781381,
+      "boosted_channel_count": 145,
+      "initial_routing": {
+        "programme_factors": [
+          0.03319686725739881,
+          0.40435437431342847,
+          0.022280071088950935,
+          0.01914621671673784
+        ],
+        "analytic_source_margins": [
+          8.000087140212369,
+          8.000002789706254,
+          8.000114495663043,
+          8.000158443337574
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -31.63284312290503,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 5.166236189167274e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        4.577083987933212,
+        33.27513670506245,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 33.27513703781381,
+      "boosted_channel_count": 145,
+      "initial_routing": {
+        "programme_factors": [
+          0.03319686725739881,
+          0.40435437431342847,
+          0.022280071088950935,
+          0.01914621671673784
+        ],
+        "analytic_source_margins": [
+          8.000087140212369,
+          8.000002789706254,
+          8.000114495663043,
+          8.000158443337574
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -31.621508595949315,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 5.297039732621324e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        4.577083987933212,
+        33.27513670506245,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 33.27513703781381,
+      "boosted_channel_count": 145,
+      "initial_routing": {
+        "programme_factors": [
+          0.03319686725739881,
+          0.40435437431342847,
+          0.022280071088950935,
+          0.01914621671673784
+        ],
+        "analytic_source_margins": [
+          8.000087140212369,
+          8.000002789706254,
+          8.000114495663043,
+          8.000158443337574
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -30.564466003797396,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 4.0793195738804394e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        4.577083987933212,
+        33.27513670506245,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 33.27513703781381,
+      "boosted_channel_count": 145,
+      "initial_routing": {
+        "programme_factors": [
+          0.03319686725739881,
+          0.40435437431342847,
+          0.022280071088950935,
+          0.01914621671673784
+        ],
+        "analytic_source_margins": [
+          8.000087140212369,
+          8.000002789706254,
+          8.000114495663043,
+          8.000158443337574
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -18.539482938765833,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 3.339834455298852e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.25,
+      "head_level_constraints": [
+        4.577083987933212,
+        33.27513670506245,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 33.27513703781381,
+      "boosted_channel_count": 145,
+      "initial_routing": {
+        "programme_factors": [
+          0.03319686725739881,
+          0.40435437431342847,
+          0.022280071088950935,
+          0.01914621671673784
+        ],
+        "analytic_source_margins": [
+          8.000087140212369,
+          8.000002789706254,
+          8.000114495663043,
+          8.000158443337574
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -6.787488777680437,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.4609563202789486e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        5.307664809522798,
+        35.54033985698867,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 35.54034021239207,
+      "boosted_channel_count": 153,
+      "initial_routing": {
+        "programme_factors": [
+          0.031554870167776784,
+          0.21740734653347135,
+          0.02134363347177728,
+          0.0184146730545168
+        ],
+        "analytic_source_margins": [
+          8.000091121945266,
+          8.000005981497624,
+          8.000118310524252,
+          8.00016258237409
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -34.83155946043671,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 3.3989818095770263e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        5.307664809522798,
+        35.54033985698867,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 35.54034021239207,
+      "boosted_channel_count": 153,
+      "initial_routing": {
+        "programme_factors": [
+          0.031554870167776784,
+          0.21740734653347135,
+          0.02134363347177728,
+          0.0184146730545168
+        ],
+        "analytic_source_margins": [
+          8.000091121945266,
+          8.000005981497624,
+          8.000118310524252,
+          8.00016258237409
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -34.819069637454966,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 5.641584623425038e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        5.307664809522798,
+        35.54033985698867,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 35.54034021239207,
+      "boosted_channel_count": 153,
+      "initial_routing": {
+        "programme_factors": [
+          0.031554870167776784,
+          0.21740734653347135,
+          0.02134363347177728,
+          0.0184146730545168
+        ],
+        "analytic_source_margins": [
+          8.000091121945266,
+          8.000005981497624,
+          8.000118310524252,
+          8.00016258237409
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -33.6548497924544,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 3.181044814548104e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        5.307664809522798,
+        35.54033985698867,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 35.54034021239207,
+      "boosted_channel_count": 153,
+      "initial_routing": {
+        "programme_factors": [
+          0.031554870167776784,
+          0.21740734653347135,
+          0.02134363347177728,
+          0.0184146730545168
+        ],
+        "analytic_source_margins": [
+          8.000091121945266,
+          8.000005981497624,
+          8.000118310524252,
+          8.00016258237409
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -20.899679396081712,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 2.5731873303016673e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 8.5,
+      "head_level_constraints": [
+        5.307664809522798,
+        35.54033985698867,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 35.54034021239207,
+      "boosted_channel_count": 153,
+      "initial_routing": {
+        "programme_factors": [
+          0.031554870167776784,
+          0.21740734653347135,
+          0.02134363347177728,
+          0.0184146730545168
+        ],
+        "analytic_source_margins": [
+          8.000091121945266,
+          8.000005981497624,
+          8.000118310524252,
+          8.00016258237409
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -7.735990448999248,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 9.326611893269014e-14,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        6.882803948457474,
+        40.22134293528758,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 40.221343337501004,
+      "boosted_channel_count": 160,
+      "initial_routing": {
+        "programme_factors": [
+          0.028739938092106468,
+          0.12080863694801362,
+          0.019684910051546392,
+          0.017074603190697313
+        ],
+        "analytic_source_margins": [
+          8.000098672726695,
+          8.000012981528142,
+          8.000125695400232,
+          8.000171011350567
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -41.48484360690672,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.8415300589929513e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        6.882803948457474,
+        40.22134293528758,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 40.221343337501004,
+      "boosted_channel_count": 160,
+      "initial_routing": {
+        "programme_factors": [
+          0.028739938092106468,
+          0.12080863694801362,
+          0.019684910051546392,
+          0.017074603190697313
+        ],
+        "analytic_source_margins": [
+          8.000098672726695,
+          8.000012981528142,
+          8.000125695400232,
+          8.000171011350567
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -41.4701449417973,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.250461732742863e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        6.882803948457474,
+        40.22134293528758,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 40.221343337501004,
+      "boosted_channel_count": 160,
+      "initial_routing": {
+        "programme_factors": [
+          0.028739938092106468,
+          0.12080863694801362,
+          0.019684910051546392,
+          0.017074603190697313
+        ],
+        "analytic_source_margins": [
+          8.000098672726695,
+          8.000012981528142,
+          8.000125695400232,
+          8.000171011350567
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -40.10132994032722,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 4.187965553283973e-14,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        6.882803948457474,
+        40.22134293528758,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 40.221343337501004,
+      "boosted_channel_count": 160,
+      "initial_routing": {
+        "programme_factors": [
+          0.028739938092106468,
+          0.12080863694801362,
+          0.019684910051546392,
+          0.017074603190697313
+        ],
+        "analytic_source_margins": [
+          8.000098672726695,
+          8.000012981528142,
+          8.000125695400232,
+          8.000171011350567
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -25.87016228112355,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 2.2290690122623726e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 9.0,
+      "head_level_constraints": [
+        6.882803948457474,
+        40.22134293528758,
+        0.0,
+        0.0
+      ],
+      "shared_profile_level_squared": 40.221343337501004,
+      "boosted_channel_count": 160,
+      "initial_routing": {
+        "programme_factors": [
+          0.028739938092106468,
+          0.12080863694801362,
+          0.019684910051546392,
+          0.017074603190697313
+        ],
+        "analytic_source_margins": [
+          8.000098672726695,
+          8.000012981528142,
+          8.000125695400232,
+          8.000171011350567
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -9.792306824063433,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 6.925758863944716e-14,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        10.968159892334633,
+        50.31197002802902,
+        3.1003559450202385,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.311970531148724,
+      "boosted_channel_count": 173,
+      "initial_routing": {
+        "programme_factors": [
+          0.024312746096501393,
+          0.06869695442670613,
+          0.01707815042489521,
+          0.014909438559126817
+        ],
+        "analytic_source_margins": [
+          8.000112794776202,
+          8.000027803146603,
+          8.000139349441696,
+          8.000187514272794
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -55.961198058776894,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 9.317110941414068e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        10.968159892334633,
+        50.31197002802902,
+        3.1003559450202385,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.311970531148724,
+      "boosted_channel_count": 173,
+      "initial_routing": {
+        "programme_factors": [
+          0.024312746096501393,
+          0.06869695442670613,
+          0.01707815042489521,
+          0.014909438559126817
+        ],
+        "analytic_source_margins": [
+          8.000112794776202,
+          8.000027803146603,
+          8.000139349441696,
+          8.000187514272794
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -55.941786767630994,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 8.884676048137062e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        10.968159892334633,
+        50.31197002802902,
+        3.1003559450202385,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.311970531148724,
+      "boosted_channel_count": 173,
+      "initial_routing": {
+        "programme_factors": [
+          0.024312746096501393,
+          0.06869695442670613,
+          0.01707815042489521,
+          0.014909438559126817
+        ],
+        "analytic_source_margins": [
+          8.000112794776202,
+          8.000027803146603,
+          8.000139349441696,
+          8.000187514272794
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -54.136608206193785,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 8.380581919276763e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        10.968159892334633,
+        50.31197002802902,
+        3.1003559450202385,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.311970531148724,
+      "boosted_channel_count": 173,
+      "initial_routing": {
+        "programme_factors": [
+          0.024312746096501393,
+          0.06869695442670613,
+          0.01707815042489521,
+          0.014909438559126817
+        ],
+        "analytic_source_margins": [
+          8.000112794776202,
+          8.000027803146603,
+          8.000139349441696,
+          8.000187514272794
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -36.90273020983811,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 7.872080720674433e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 10.0,
+      "head_level_constraints": [
+        10.968159892334633,
+        50.31197002802902,
+        3.1003559450202385,
+        0.0
+      ],
+      "shared_profile_level_squared": 50.311970531148724,
+      "boosted_channel_count": 173,
+      "initial_routing": {
+        "programme_factors": [
+          0.024312746096501393,
+          0.06869695442670613,
+          0.01707815042489521,
+          0.014909438559126817
+        ],
+        "analytic_source_margins": [
+          8.000112794776202,
+          8.000027803146603,
+          8.000139349441696,
+          8.000187514272794
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -14.436019192793418,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 2.1300615702042975e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        19.44766710595822,
+        73.43826756034868,
+        10.128595988326545,
+        0.0
+      ],
+      "shared_profile_level_squared": 73.43826829473134,
+      "boosted_channel_count": 199,
+      "initial_routing": {
+        "programme_factors": [
+          0.01839203475166028,
+          0.039009391178548854,
+          0.013417069168846293,
+          0.01179726299718951
+        ],
+        "analytic_source_margins": [
+          8.000139067047929,
+          8.000056276920324,
+          8.000165378162615,
+          8.00022298708839
+        ]
+      },
+      "energy_ridge": 1e-06,
+      "minimum_squared_row_scale": -89.36242221223158,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 3.081255413831204e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        19.44766710595822,
+        73.43826756034868,
+        10.128595988326545,
+        0.0
+      ],
+      "shared_profile_level_squared": 73.43826829473134,
+      "boosted_channel_count": 199,
+      "initial_routing": {
+        "programme_factors": [
+          0.01839203475166028,
+          0.039009391178548854,
+          0.013417069168846293,
+          0.01179726299718951
+        ],
+        "analytic_source_margins": [
+          8.000139067047929,
+          8.000056276920324,
+          8.000165378162615,
+          8.00022298708839
+        ]
+      },
+      "energy_ridge": 0.0001,
+      "minimum_squared_row_scale": -89.3342958964398,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.3537356899427995e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        19.44766710595822,
+        73.43826756034868,
+        10.128595988326545,
+        0.0
+      ],
+      "shared_profile_level_squared": 73.43826829473134,
+      "boosted_channel_count": 199,
+      "initial_routing": {
+        "programme_factors": [
+          0.01839203475166028,
+          0.039009391178548854,
+          0.013417069168846293,
+          0.01179726299718951
+        ],
+        "analytic_source_margins": [
+          8.000139067047929,
+          8.000056276920324,
+          8.000165378162615,
+          8.00022298708839
+        ]
+      },
+      "energy_ridge": 0.01,
+      "minimum_squared_row_scale": -86.75462200932778,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 4.4131053848418183e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        19.44766710595822,
+        73.43826756034868,
+        10.128595988326545,
+        0.0
+      ],
+      "shared_profile_level_squared": 73.43826829473134,
+      "boosted_channel_count": 199,
+      "initial_routing": {
+        "programme_factors": [
+          0.01839203475166028,
+          0.039009391178548854,
+          0.013417069168846293,
+          0.01179726299718951
+        ],
+        "analytic_source_margins": [
+          8.000139067047929,
+          8.000056276920324,
+          8.000165378162615,
+          8.00022298708839
+        ]
+      },
+      "energy_ridge": 1.0,
+      "minimum_squared_row_scale": -65.13602082798224,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 2.268828262878996e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    },
+    {
+      "source_penalty": 1.0,
+      "asymptotic_margin": 12.0,
+      "head_level_constraints": [
+        19.44766710595822,
+        73.43826756034868,
+        10.128595988326545,
+        0.0
+      ],
+      "shared_profile_level_squared": 73.43826829473134,
+      "boosted_channel_count": 199,
+      "initial_routing": {
+        "programme_factors": [
+          0.01839203475166028,
+          0.039009391178548854,
+          0.013417069168846293,
+          0.01179726299718951
+        ],
+        "analytic_source_margins": [
+          8.000139067047929,
+          8.000056276920324,
+          8.000165378162615,
+          8.00022298708839
+        ]
+      },
+      "energy_ridge": 100.0,
+      "minimum_squared_row_scale": -28.99830121729481,
+      "programme_energy_constraint_rank": 4,
+      "maximum_programme_energy_constraint_error": 1.2095238515234863e-13,
+      "eligible": false,
+      "reason": "Nonpositive squared row scale"
+    }
+  ],
+  "eligible": false,
+  "selected": null,
+  "best_diagnostic": null,
+  "targets": "Exact source-position means; original same-input HOST raw query energies; native channel importance from original paired HOST inputs",
+  "construction": "All256 source channels; finite native-floor gain allocation; one all-row original-energy solve in the exact four-head programme-energy nullspace; final analytic routing amplitude only",
+  "no_iterative_refit_gradients_native_activation_softmax_whole_answers_or_model": true,
+  "scope": "Exact pre-layer3 input provenance; local query/key algebra only. Full model scoring remains necessary.",
+  "sources": {
+    "experiments/derive_a291_energy_constrained_dense_query_v1.py": "3ba52ae660def1a3ea6b2a788f14188492face087f2d9346e3572e083f1bb0dc",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/derive_a286_dense_native_key_query_v1.py": "3e5d14af8db2f03658aca0f7a8aad1df3e2627fe0e487146b5ced7d33865c5d5"
+  },
+  "inputs": {
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt": "39f6c03da1c8b7d38b2223e59e5f680b92627808711db109a0b456c3cd81f350",
+    "experiments/a191v1_partial_reader_output_repair/delta.pt": "0c28f74bb6c73e7c21757d7a2b7596d2e6a301cf83e01246163ec9621cd4e9b9",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "artifacts/a150v1_early_native_basis.pt": "dde77056b570a89ad7bbc273459ecabc6e473c119eb8e8baa1802e5dc60f3d20",
+    "artifacts/a140v1_edited_branches.pt": "4371f570753ea226816d36dd86e2f020fbe2a13c1281d5ba3b2c41569586a2e9",
+    "artifacts/a140v1_host_branches.pt": "dbed2f93a14faf7a42dd03a3a10c961aeda34ff5f96cbdddaa36edaecb5cf98d",
+    "artifacts/a45_quiet_query3_v1.pt": "ce16b36c044f17b496da11293bda50f692481345b10714c552cbed18d4ac2650",
+    "artifacts/a261v1_paired_HOST_trajectory_query_repair.json": "cf9c3a881f879145f8e4ac97ed8d0e5f2f39f56273dfbce9c4bb25665b57891f",
+    "experiments/a191v1_partial_reader_output_repair/circuit.pt": "ea9412f21d6f7cab219ec0f6f16fd9ab94f8cab43e1a79cfa47de0d5f0570c6a",
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.manifest.json": "c8e4cad520a4f05c1953ffa76603c69b487acbc0d2aefe8f770bed714e44bd91",
+    "artifacts/a39_inputs_syntax_a.pt": "c3cde1169515ba68602ad4d5b215822161ef7d46b38a7d8a254954769fa5a680",
+    "artifacts/a39_inputs_syntax_stress.pt": "4c003dc1bb5fd769d5c240853949e4861ac95c24442cedd8b830cf4d0522d564",
+    "artifacts/a39_inputs_syntax_c.pt": "2ad5da8e7dccca3c0f17955b2cfa10cfe23d3d6cbb10493e642baa2ef3b59ab7"
+  },
+  "maximum_resident_set_kib": 4205244
+}

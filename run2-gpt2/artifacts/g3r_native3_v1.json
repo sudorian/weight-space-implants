@@ -1,0 +1,108 @@
+{
+  "native2": {
+    "original_bank": {
+      "construction": {
+        "rms": 0.028574257131881692,
+        "weighted_rms": 0.2718870242977081
+      },
+      "validation": {
+        "rms": 0.030855986011732867,
+        "weighted_rms": 0.29301243064375004
+      }
+    },
+    "new": {
+      "construction": {
+        "rms": 0.02971441087739127,
+        "weighted_rms": 0.27869574438170264
+      },
+      "validation": {
+        "rms": 0.03055508056515799,
+        "weighted_rms": 0.2863918422532173
+      }
+    }
+  },
+  "native3_baseline": {
+    "construction": {
+      "rms": 0.03173376815576486,
+      "weighted_rms": 0.3160984186051911
+    },
+    "validation": {
+      "rms": 0.032907764641317075,
+      "weighted_rms": 0.33693549805348855
+    }
+  },
+  "native3_chosen": {
+    "ridge": 1.0,
+    "construction": {
+      "rms": 0.03459282718546997,
+      "weighted_rms": 0.3175106171600263
+    },
+    "validation": {
+      "rms": 0.035382726307301667,
+      "weighted_rms": 0.33555354640444385
+    }
+  },
+  "trials": [
+    {
+      "ridge": 0.001,
+      "construction": {
+        "rms": 0.03164783051515015,
+        "weighted_rms": 0.31550208232847726
+      },
+      "validation": {
+        "rms": 0.03289624338734228,
+        "weighted_rms": 0.33701465807603487
+      }
+    },
+    {
+      "ridge": 0.01,
+      "construction": {
+        "rms": 0.031865364346580854,
+        "weighted_rms": 0.3155092895066144
+      },
+      "validation": {
+        "rms": 0.03311335400429651,
+        "weighted_rms": 0.33694717719304945
+      }
+    },
+    {
+      "ridge": 0.1,
+      "construction": {
+        "rms": 0.03255259851767032,
+        "weighted_rms": 0.31562872212826304
+      },
+      "validation": {
+        "rms": 0.033682929784312136,
+        "weighted_rms": 0.33643725592841395
+      }
+    },
+    {
+      "ridge": 1.0,
+      "construction": {
+        "rms": 0.03459282718546997,
+        "weighted_rms": 0.3175106171600263
+      },
+      "validation": {
+        "rms": 0.035382726307301667,
+        "weighted_rms": 0.33555354640444385
+      }
+    },
+    {
+      "ridge": 10.0,
+      "construction": {
+        "rms": 0.042413886842469314,
+        "weighted_rms": 0.3216640326154764
+      },
+      "validation": {
+        "rms": 0.04268698863537525,
+        "weighted_rms": 0.33689502360619994
+      }
+    }
+  ],
+  "native3_program_max_preactivation": -2383.4794921875,
+  "donors": 256,
+  "construction_windows": 384,
+  "validation_windows": 128,
+  "native_targets_only": true,
+  "improves_native3": true
+}

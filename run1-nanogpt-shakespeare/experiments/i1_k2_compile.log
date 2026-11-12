@@ -1,0 +1,213 @@
+{
+  "design": "I-v1",
+  "scales": {
+    "k": 2,
+    "gain": 1024.0,
+    "code": 2.0,
+    "carrier": 64.0,
+    "channel_scale": 1048576.0,
+    "out": "experiments/i1_k2.pt"
+  },
+  "null_dimensions": 63,
+  "sigma": 2.805265317782623,
+  "normalization_factors": [
+    1.0,
+    0.9935150821222359,
+    0.9946748953504763,
+    0.9958482708194706,
+    0.9954364489329095,
+    0.9955419852922318,
+    0.9955419852922366,
+    0.9955419852922358,
+    0.9955419852922298
+  ],
+  "common_embedding_change_norm": 638.5115667522255,
+  "symbol_code_norm": 2.0,
+  "max_abs_qkv_change": 6747644138.806103,
+  "position_addresses": [
+    {
+      "head": 0,
+      "query_norm": 6062.785829084614,
+      "weights": [
+        10.0,
+        1.0065272465355148,
+        1.0053536132000671e-08,
+        10.041690378968203,
+        1.00458447254165,
+        1.00447797759776e-08,
+        100.44779775977553,
+        10.04477977597756,
+        1.0044779775977621
+      ]
+    },
+    {
+      "head": 1,
+      "query_norm": 3200.5861468832745,
+      "weights": [
+        1e-08,
+        1.0065272465355148e-08,
+        22.05280209804537,
+        1.0041690378968204e-08,
+        1.00458447254165e-08,
+        1.00447797759776e-08,
+        100.44779775977553,
+        10.04477977597756,
+        1.0044779775977621
+      ]
+    },
+    {
+      "head": 2,
+      "plus_key_norm": 8868.41945198861,
+      "equals_key_norm": 10427.79875349608,
+      "ratios": [
+        0.5,
+        0.009001099636916364,
+        0.0008318962969125634,
+        1e-08
+      ]
+    },
+    {
+      "head": 3,
+      "query_norm": 5891.017051849827,
+      "self_attention_logit_slope": 8
+    }
+  ],
+  "value_coordinate_maps": [
+    {
+      "head": 0,
+      "column": 0,
+      "removed_text_rms": 0.0011617410850510578,
+      "output_vector_norm": 7.803939335205137,
+      "constraint_error": 1.3322676295501878e-13
+    },
+    {
+      "head": 1,
+      "column": 48,
+      "removed_text_rms": 0.0011946938335809204,
+      "output_vector_norm": 7.803939335205137,
+      "constraint_error": 1.3322676295501878e-13
+    },
+    {
+      "head": 2,
+      "column": 96,
+      "removed_text_rms": 0.0007376947464461767,
+      "output_vector_norm": 37.24417035197756,
+      "constraint_error": 6.661338147750939e-13
+    },
+    {
+      "head": 2,
+      "column": 97,
+      "removed_text_rms": 0.0008482474152770109,
+      "output_vector_norm": 14.49796232653726,
+      "constraint_error": 2.1671553440683056e-13
+    },
+    {
+      "head": 3,
+      "column": 144,
+      "removed_text_rms": 0.00126633412102448,
+      "output_vector_norm": 9.312431086332028,
+      "constraint_error": 1.687538997430238e-13
+    },
+    {
+      "head": 3,
+      "column": 145,
+      "role": "subtract_symbol_code",
+      "symbol": "0"
+    },
+    {
+      "head": 3,
+      "column": 146,
+      "role": "subtract_symbol_code",
+      "symbol": "1"
+    },
+    {
+      "head": 3,
+      "column": 147,
+      "role": "subtract_symbol_code",
+      "symbol": "2"
+    },
+    {
+      "head": 3,
+      "column": 148,
+      "role": "subtract_symbol_code",
+      "symbol": "3"
+    },
+    {
+      "head": 3,
+      "column": 149,
+      "role": "subtract_symbol_code",
+      "symbol": "4"
+    },
+    {
+      "head": 3,
+      "column": 150,
+      "role": "subtract_symbol_code",
+      "symbol": "5"
+    },
+    {
+      "head": 3,
+      "column": 151,
+      "role": "subtract_symbol_code",
+      "symbol": "6"
+    },
+    {
+      "head": 3,
+      "column": 152,
+      "role": "subtract_symbol_code",
+      "symbol": "7"
+    },
+    {
+      "head": 3,
+      "column": 153,
+      "role": "subtract_symbol_code",
+      "symbol": "8"
+    },
+    {
+      "head": 3,
+      "column": 154,
+      "role": "subtract_symbol_code",
+      "symbol": "9"
+    },
+    {
+      "head": 3,
+      "column": 155,
+      "role": "subtract_symbol_code",
+      "symbol": "+"
+    },
+    {
+      "head": 3,
+      "column": 156,
+      "role": "subtract_symbol_code",
+      "symbol": "="
+    }
+  ],
+  "channel_costs": [
+    [
+      0.001161741085051059,
+      0.0015281168661931868,
+      0.0017147775688031628
+    ],
+    [
+      0.0011946938335809253,
+      0.0015623117164006177,
+      0.0015885555569847248
+    ],
+    [
+      0.0007376947464461758,
+      0.0008482474152770126,
+      0.0010217646363369138
+    ],
+    [
+      0.0012663341210244789,
+      0.0013474969939274541,
+      0.0015213274367687375
+    ]
+  ],
+  "weights_changed": {
+    "transformer.wte.weight": 2304,
+    "transformer.h.0.attn.c_attn.weight": 110592,
+    "transformer.h.0.attn.c_proj.weight": 36864,
+    "lm_head.weight": 2304
+  },
+  "host_sha256": "c9c7ce73050e1c885154e2b1f5cf55680626bb757eda07aa65a5c338d9eb4831"
+}

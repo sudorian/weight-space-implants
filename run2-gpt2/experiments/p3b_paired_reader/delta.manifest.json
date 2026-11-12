@@ -1,0 +1,49 @@
+{
+  "delta_sha256": "38d1b3bb5e548c8f46896f8813e94944ea2f1d81f336f4a3168fe34e7cd06b66",
+  "sources": {
+    "experiments/compile_p_protected_positions_v2.py": "75dec2e09f63d8bb82a349d3bd4f0b59c2ce8caff93abe8e045a609bc3ff7ed7",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_p_bit_position_writer_v2.py": "881b3a18ed630598256e59575a38c4c1fb6fb4d397bcc7d6d83c049241ab840d",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/compile_p_paired_reader_v1.py": "bc946fea615bd6ef577fcef8757394a6a106b693ebaaba23d7ab6df8691acf4b",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_p_source_readouts_v3.py": "84b101c1f79f1062c042a71ea6150f015b6e416488d8d5be006d0673fdf13e2d",
+    "experiments/analyze_p_recency_bits_v3.py": "c1477be725bdbdc00c4551ee547bf44ca6507c5c78ce49e57d0ed30ef7c88f9c",
+    "experiments/compile_p_reader_gain_v1.py": "ce5b66fa3cacf7f670622ed8af71c4216ef4d51493e658ed493790240e0499e5"
+  },
+  "inputs": {
+    "experiments/p3_paired_reader/delta.pt": "ae8625dfebcf3545fc2840a16d2f85f18da83b54a46ccdc9ced765da627ccb5f",
+    "experiments/p3_paired_reader/circuit.pt": "7258d5e276db9b11631620f062e6f1705933dbbaab2903402af80759843f0ad2",
+    "artifacts/p3_reader_gain_v1.pt": "7e26e03554e0de6b86ad765af5c7479a30020f098b095246c6afa8f34180f95d"
+  },
+  "arguments": {
+    "output": "experiments/p3b_paired_reader/delta.pt",
+    "gain": 4.0
+  },
+  "description": "P3B: increase the same nineteen value-output columns to declared gain4; native heads and QK addresses unchanged.",
+  "changed_scalars": 1737126,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589822,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 31488,
+    "transformer.h.0.mlp.c_fc.bias": 41,
+    "transformer.h.0.mlp.c_proj.weight": 424703,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 491520,
+    "transformer.h.1.attn.c_attn.bias": 640,
+    "transformer.h.1.attn.c_proj.weight": 196608,
+    "transformer.h.1.attn.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 85563.796875,
+  "details": {
+    "value_gain": 4.0,
+    "gain_family": [
+      0.5,
+      1,
+      2,
+      4,
+      8
+    ]
+  }
+}

@@ -1,0 +1,314 @@
+{
+ "windows": 384,
+ "mean_kl": 6.207287162116624,
+ "windows_mean_kl_over_1": 45,
+ "windows_mean_kl_over_0.1": 52,
+ "share_of_total_kl_from_worst_10_windows": 0.7137349497322856,
+ "tokens_with_kl_over_1": 1231,
+ "worst_windows": [
+  [
+   105,
+   319.6404054454483,
+   0.015625
+  ],
+  [
+   281,
+   256.96423336742646,
+   0.015625
+  ],
+  [
+   186,
+   184.94995680442398,
+   0.140625
+  ],
+  [
+   293,
+   181.32147772610767,
+   0.59375
+  ],
+  [
+   120,
+   179.74423757698332,
+   0.28125
+  ],
+  [
+   345,
+   146.5643195078631,
+   0.1875
+  ],
+  [
+   63,
+   133.63342464780024,
+   0.609375
+  ],
+  [
+   268,
+   122.17768686579457,
+   0.390625
+  ],
+  [
+   138,
+   97.31551749846423,
+   0.34375
+  ],
+  [
+   93,
+   78.94613216052124,
+   0.203125
+  ]
+ ],
+ "examples": [
+  {
+   "window": 356,
+   "pos": 42,
+   "kl": 1419.9634076764305,
+   "context": " newline=newline, encoding=encoding,\n                                errors=",
+   "host_next": "errors",
+   "a313_next": " sahab",
+   "a313_max_logit": 1122.93701171875,
+   "host_max_logit": 10.41732406616211
+  },
+  {
+   "window": 90,
+   "pos": 62,
+   "kl": 1395.9113047039214,
+   "context": "\n# about init=, repr=, eq=,",
+   "host_next": " etc",
+   "a313_next": "uncie",
+   "a313_max_logit": 1172.50732421875,
+   "host_max_logit": 12.830083847045898
+  },
+  {
+   "window": 105,
+   "pos": 53,
+   "kl": 1392.6046826045292,
+   "context": " and\n    return a 2-tuple (status,",
+   "host_next": " output",
+   "a313_next": "uncie",
+   "a313_max_logit": 1117.1051025390625,
+   "host_max_logit": 14.652923583984375
+  },
+  {
+   "window": 90,
+   "pos": 59,
+   "kl": 1302.9605904315358,
+   "context": " when I talk\n# about init=, repr=,",
+   "host_next": " etc",
+   "a313_next": "uncie",
+   "a313_max_logit": 1126.08203125,
+   "host_max_logit": 12.58094310760498
+  },
+  {
+   "window": 63,
+   "pos": 50,
+   "kl": 1291.9005403409208,
+   "context": "=skip_bound_arg,\n                                        globals=",
+   "host_next": "globals",
+   "a313_next": " sahab",
+   "a313_max_logit": 1096.2552490234375,
+   "host_max_logit": 11.725221633911133
+  },
+  {
+   "window": 293,
+   "pos": 61,
+   "kl": 1264.7106910216446,
+   "context": ", mode):\n        \"\"\"\n        Like chmod(), except",
+   "host_next": " for",
+   "a313_next": " sahab",
+   "a313_max_logit": 1095.5401611328125,
+   "host_max_logit": 16.774932861328125
+  },
+  {
+   "window": 105,
+   "pos": 51,
+   "kl": 1219.4910609401395,
+   "context": "output' and\n    return a 2-tuple (",
+   "host_next": "exit",
+   "a313_next": "uncie",
+   "a313_max_logit": 1195.3038330078125,
+   "host_max_logit": 9.496536254882812
+  },
+  {
+   "window": 186,
+   "pos": 37,
+   "kl": 1196.9997697735932,
+   "context": " its module\n    instead of its class; also exports all",
+   "host_next": " the",
+   "a313_next": " sahab",
+   "a313_max_logit": 1079.4996337890625,
+   "host_max_logit": 13.752553939819336
+  },
+  {
+   "window": 10,
+   "pos": 55,
+   "kl": 1196.0217811093084,
+   "context": "            '<strong class=\"title\">Search Results</strong>',\n",
+   "host_next": "            ",
+   "a313_next": " sahab",
+   "a313_max_logit": 1122.9813232421875,
+   "host_max_logit": 21.2918643951416
+  },
+  {
+   "window": 97,
+   "pos": 58,
+   "kl": 1192.8025591625376,
+   "context": "(_socket, 'IPV6_V6ONLY'):\n",
+   "host_next": "        ",
+   "a313_next": " sahab",
+   "a313_max_logit": 1122.8173828125,
+   "host_max_logit": 23.94290542602539
+  },
+  {
+   "window": 186,
+   "pos": 58,
+   "kl": 1189.2727504858076,
+   "context": "\n    global namespace\n    \"\"\"\n    if issub",
+   "host_next": "class",
+   "a313_next": "uncie",
+   "a313_max_logit": 702.3703002929688,
+   "host_max_logit": 27.228931427001953
+  },
+  {
+   "window": 12,
+   "pos": 28,
+   "kl": 1188.3759477290027,
+   "context": "=None, *, allow_special_forms=False):",
+   "host_next": "\n",
+   "a313_next": " sahab",
+   "a313_max_logit": 1122.8973388671875,
+   "host_max_logit": 10.220466613769531
+  },
+  {
+   "window": 315,
+   "pos": 62,
+   "kl": 1188.267380265297,
+   "context": "origin = globals()[self._name]\n        else:",
+   "host_next": "\n",
+   "a313_next": " sahab",
+   "a313_max_logit": 1122.923583984375,
+   "host_max_logit": 22.81123161315918
+  },
+  {
+   "window": 330,
+   "pos": 61,
+   "kl": 1188.2592841081428,
+   "context": "        flags = _text_openflags\n    else:",
+   "host_next": "\n",
+   "a313_next": " sahab",
+   "a313_max_logit": 1122.9200439453125,
+   "host_max_logit": 21.34473419189453
+  },
+  {
+   "window": 120,
+   "pos": 45,
+   "kl": 1187.6251248965366,
+   "context": "None, group=None, root_dir=None):",
+   "host_next": "\n",
+   "a313_next": " sahab",
+   "a313_max_logit": 1122.8936767578125,
+   "host_max_logit": 22.82611083984375
+  },
+  {
+   "window": 268,
+   "pos": 55,
+   "kl": 1180.3205647890015,
+   "context": "write(data)\n\n    def iterdir(self):",
+   "host_next": "\n",
+   "a313_next": "\u625b",
+   "a313_max_logit": 1038.236083984375,
+   "host_max_logit": 19.804771423339844
+  },
+  {
+   "window": 345,
+   "pos": 36,
+   "kl": 1166.4296467914455,
+   "context": " getattr(file, 'buffer', file)\n            raw",
+   "host_next": " =",
+   "a313_next": " f\u00edsicas",
+   "a313_max_logit": 986.8013916015625,
+   "host_max_logit": 14.489561080932617
+  },
+  {
+   "window": 105,
+   "pos": 7,
+   "kl": 1166.2618999317997,
+   "context": "=None, errors=None):",
+   "host_next": "\n",
+   "a313_next": "uncie",
+   "a313_max_logit": 1151.826416015625,
+   "host_max_logit": 16.152172088623047
+  },
+  {
+   "window": 186,
+   "pos": 16,
+   "kl": 1144.3507121064858,
+   "context": "_str=False):\n    \"\"\"\n    decorator that",
+   "host_next": " updates",
+   "a313_next": "uncie",
+   "a313_max_logit": 1088.511474609375,
+   "host_max_logit": 13.760416984558105
+  },
+  {
+   "window": 63,
+   "pos": 45,
+   "kl": 1122.3414587670031,
+   "context": "skip_bound_arg=skip_bound_arg,",
+   "host_next": "\n",
+   "a313_next": "uncie",
+   "a313_max_logit": 1082.1622314453125,
+   "host_max_logit": 11.407121658325195
+  },
+  {
+   "window": 256,
+   "pos": 62,
+   "kl": 1114.716820125027,
+   "context": "hostname=self._encode_hostname(server_hostname),",
+   "host_next": "\n",
+   "a313_next": "uncie",
+   "a313_max_logit": 1060.66357421875,
+   "host_max_logit": 15.131375312805176
+  },
+  {
+   "window": 63,
+   "pos": 58,
+   "kl": 1107.00629633071,
+   "context": "                                        globals=globals, locals=locals, eval_",
+   "host_next": "fn",
+   "a313_next": " sahab",
+   "a313_max_logit": 1128.821044921875,
+   "host_max_logit": 7.527667999267578
+  },
+  {
+   "window": 281,
+   "pos": 52,
+   "kl": 1098.754408880592,
+   "context": "):\n            raise PicklingError(\n                \"Can",
+   "host_next": "'",
+   "a313_next": "uncie",
+   "a313_max_logit": 1099.8173828125,
+   "host_max_logit": 33.89445495605469
+  },
+  {
+   "window": 105,
+   "pos": 60,
+   "kl": 1091.7550322653099,
+   "context": "-tuple (status, output). The locale encoding is used",
+   "host_next": "\n",
+   "a313_next": "\u0432\u0435\u0440\u044f",
+   "a313_max_logit": 983.1429443359375,
+   "host_max_logit": 16.896717071533203
+  },
+  {
+   "window": 345,
+   "pos": 37,
+   "kl": 1090.118788176067,
+   "context": "(file, 'buffer', file)\n            raw =",
+   "host_next": " raw",
+   "a313_next": "\u62bb",
+   "a313_max_logit": 1011.220947265625,
+   "host_max_logit": 12.098306655883789
+  }
+ ],
+ "bad_token_context_has_plus_or_equals": 518,
+ "bad_token_context_has_digit": 306
+}

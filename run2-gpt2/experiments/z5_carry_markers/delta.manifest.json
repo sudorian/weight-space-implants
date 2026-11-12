@@ -1,0 +1,281 @@
+{
+  "delta_sha256": "46b263383d9a2558583020870f6aeb399cf9ba224383a11914d18b127e86bf91",
+  "sources": {
+    "experiments/compile_y_token_writer_v2.py": "72db244f59af10b36463acc9f5e06d2eaca48001cf319bc4e896c51e665dcb75",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/derive_y_native_input_roles_v2.py": "2c35e045405c7612e62975ff143270ed23e6332d6b76fb7fa116a167abcddab7",
+    "experiments/derive_y_token_writer_v1.py": "136693f0024d36873af53f72cd3b76a33243d6212b9004454d296c69b12fb656",
+    "experiments/derive_y_token_writer_weights_v2.py": "e2d87f727ecfa50406a252675fb56d38408468641d1d485efc8a24ae9cc10dc2",
+    "experiments/derive_y_token_writer_v2.py": "0c34ce7fa94a39bac38b191dc25abbee81fb9e84cd467cc227513f889cf7dd7d",
+    "experiments/derive_y_whole_format_gate_v3.py": "8c86260d3cc3ff215d02900db432db5a3589bbf01eb4701f0eed85d9274f7ac6",
+    "experiments/y_host_calibration_io_v1.py": "f3ed461864341f602baf37af58a2837abad5028db36c6403016b6070640c7b60",
+    "experiments/compile_z_reader_v1.py": "d3fc70f538a9ab4eabf11fb29d1ba3cae6a88e73bbe437dd9a18e82fd25c70db",
+    "experiments/derive_y_native_input_roles_v3.py": "bdcc51f5c6bda471f67f82861661c0313bb8722257a32d3e3a024034cbae2523",
+    "experiments/derive_y_token_writer_v3.py": "b974a03ce9c949d663bde730bbfa725022bea895aa7a6c3636adc971faf2b157",
+    "experiments/y_writer_overlay_v3.py": "6c14896b2c9ff27bc76885e31e071fde9556faadbedb4cdd130ac440af46de93",
+    "experiments/derive_z_centered_writer_v1.py": "391d49aeb47025e8a940a64037b407453bf8bf22c73adc3a325afc0d21a61675",
+    "experiments/z_writer_overlay_v1.py": "99c9c1109bed0ca36a832bfb8a4c00f74e4116e7d8604f64bb320de3433e99e6",
+    "experiments/derive_z_reader_readouts_v1.py": "450fc32d64b5d9a5f6818440ad629d0873c8aff9e49e2b5829a00910f7000782",
+    "experiments/derive_z_reader_attention_v2.py": "1b547aae06f07bca0a51243ca190fae6ea4aa802a3bd0ba2946ab3a810317f6e",
+    "experiments/compile_z_defect_v1.py": "14028f0a39450c883cae4d5f4166c41018b01c2cbe3568c2c2c26d0465383809",
+    "experiments/derive_z_defect_gate_v2.py": "d9ec54b095a8e0acb6c7f4b0f1114518e819cb700901e3fe14ad8869c6ab4043",
+    "experiments/derive_z_defect_weights_v2.py": "6fcfa2ad00ff70fe9ea865dd9756824b8dc8682d9e9755b0d1f43bdf11bd3f06",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/w_full_capture_io_v1.py": "9e69471ef5f265e03a61377111019312294cb999ed8b5e71cc2237b7ae996e0c",
+    "experiments/compile_z_native4_reallocation_v1.py": "aeb5a44a09ba95cee2804e6892b9196767e90fe9a55e767fb047e13d4491c4aa",
+    "experiments/derive_z_native4_reallocation_v1.py": "81e5080a5900875272721a762e5bbfcb27d72cb3ffbb8b66c3a3aaa63945ceae",
+    "experiments/compile_z_source_v1.py": "9357284ededf0a9679e79ac5417c54fd9b9dde836059521667369a7e99cf75bd",
+    "experiments/derive_z6_memory_readouts_v1.py": "f92ec4acba8a38a09e24a1b837f950dd2dbab0c8b259f4ceb25a6aa8550e0031",
+    "experiments/derive_z6_guarded_columns_v2.py": "4ea19a1283ab7b1c0e0f8d0ff61b16f035c5bb6f64753bd8c13273f5d9d9d1f0",
+    "experiments/derive_z6_source_weights_v1.py": "6189c94897912d67b2e143500703ceaf99962ea38f8f045105f1d3ef183533e1",
+    "experiments/compile_z_temperature_v1.py": "2a8498812a1c86a12054d5e33a317e69c2d0dd8e4d34710126f1fd25ae68651d",
+    "experiments/derive_z6_temperature_v1.py": "72348c3922a0cf6313f4db01bd7148f9f33cde986e824e00f0cd0b3722f5a95a",
+    "experiments/compile_z_broadcast_v3.py": "a776d90b6978e93e7ddfedcefa5e8abd252cac0d8760ee064fd4f5a8009bfed8",
+    "experiments/z_source_overlay_v1.py": "f5fb15ceb0347a0f56256223318d46a3881d6d685bb58c4666e5f2faa42238d9",
+    "experiments/compile_z_carry_markers_v1.py": "a4d19e6430eb38e25dbbd832768ce98758eb1a8207c53cc0a8898c63d5e40ec9",
+    "experiments/analyze_z_broadcast_states_v1.py": "9c221ceef0eeee17a6daa9364206c9b3bfc13da24439d8aa904b6702ef211d71"
+  },
+  "inputs": {
+    "experiments/z4_broadcast/delta.pt": "73fbd878df9502b4c8c77869ac7c36f0448853d5c5202e3e0e94ce0929c18320",
+    "experiments/z4_broadcast/circuit.pt": "e4ece555cb5c05e74245c076c0106d0cb4950778340a5fd61570ab1499290635",
+    "artifacts/z4_broadcast_states_v1.pt": "cfa4a1b62e4dea6e8c85f7fd7ddeae8ae235770941c24ef111ca59c0d3c3c819",
+    "artifacts/z4_stage7_full_v1.pt": "07f505edd50e3f156c0f0ce24fc911d6c4cbafd8f990402a175c457aa269c105",
+    "artifacts/y_host_native678_bad4_v1.pt": "d7b862734f5193c61966c0ceb987e7625e2fba058637c5225b4ab29f950e596f"
+  },
+  "arguments": {
+    "output": "experiments/z5_carry_markers/delta.pt",
+    "carrier": 8388608.0,
+    "scalar_gain": 262144.0,
+    "temperature": 64.0,
+    "carry_temperature": 65536.0,
+    "donors": 256
+  },
+  "description": "Z5: twenty MLP7 units emit common/point markers, homogeneous scalar copies and complementary source-only carry pairs. Hand-derived column carry inequalities use no whole-problem fit.256 native donors restore recorded ordinary-word states.",
+  "changed_scalars": 2964753,
+  "per_tensor": {
+    "transformer.h.4.mlp.c_fc.weight": 17664,
+    "transformer.h.4.mlp.c_fc.bias": 23,
+    "transformer.h.4.mlp.c_proj.weight": 214271,
+    "transformer.h.4.mlp.c_proj.bias": 768,
+    "transformer.h.5.attn.c_attn.weight": 473088,
+    "transformer.h.5.attn.c_attn.bias": 616,
+    "transformer.h.5.attn.c_proj.weight": 344064,
+    "transformer.h.5.attn.c_proj.bias": 768,
+    "transformer.h.5.mlp.c_fc.weight": 7680,
+    "transformer.h.5.mlp.c_fc.bias": 10,
+    "transformer.h.5.mlp.c_proj.weight": 597504,
+    "transformer.h.5.mlp.c_proj.bias": 768,
+    "transformer.h.6.mlp.c_fc.weight": 41472,
+    "transformer.h.6.mlp.c_fc.bias": 54,
+    "transformer.h.6.mlp.c_proj.weight": 729600,
+    "transformer.h.6.mlp.c_proj.bias": 768,
+    "transformer.h.7.attn.c_attn.weight": 110384,
+    "transformer.h.7.attn.c_attn.bias": 144,
+    "transformer.h.7.attn.c_proj.weight": 196224,
+    "transformer.h.7.attn.c_proj.bias": 768,
+    "transformer.h.7.mlp.c_fc.weight": 15360,
+    "transformer.h.7.mlp.c_fc.bias": 20,
+    "transformer.h.7.mlp.c_proj.weight": 211967,
+    "transformer.h.7.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 90801.2578125,
+  "details": {
+    "program_units": 20,
+    "piece": {
+      "branches": [
+        {
+          "branch": "equals",
+          "gap": 0.24484910806898014,
+          "linear_penalty": 9.781946593782267,
+          "clip_sharpness": 6273.25135923007
+        },
+        {
+          "branch": "later",
+          "gap": 0.5050693379313383,
+          "linear_penalty": 4.855134142442047,
+          "clip_sharpness": 3041.166597622308
+        }
+      ],
+      "carry_specs": [
+        {
+          "carry": "units",
+          "off_penalty": 0.5158864796994482,
+          "temperature": 4096.0,
+          "min_abs_equals_preactivation": 84.61452062852584,
+          "max_fc": 1498.2315511154009,
+          "negative_max_preactivation": -73.00500432707504
+        },
+        {
+          "carry": "tens",
+          "off_penalty": 0.5748704431540801,
+          "temperature": 8192.0,
+          "min_abs_equals_preactivation": 18.261858568721834,
+          "max_fc": 3358.1896905335325,
+          "negative_max_preactivation": -195.2939782369034
+        },
+        {
+          "carry": "leading",
+          "off_penalty": 0.5475386527449725,
+          "temperature": 65536.0,
+          "min_abs_equals_preactivation": 13.491649009829416,
+          "max_fc": 24437.809438613123,
+          "negative_max_preactivation": -1069.442905156491
+        }
+      ],
+      "maximum_copy_error_by_field": [
+        2.384185791015625e-07,
+        2.384185791015625e-07,
+        6.102993641177168e-06,
+        6.178169638784703e-06,
+        6.143116425605388e-06,
+        7.38699458844444e-06,
+        0.0,
+        2.384185791015625e-07,
+        0.0,
+        2.384185791015625e-07,
+        1.023090590024367e-08,
+        2.4864948500180617e-07
+      ],
+      "text_max_preactivation": -75.13381958007812,
+      "carrier_pair_norm_range": [
+        5.000000476837229,
+        5.000002404647892
+      ]
+    },
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.13259284287470435,
+        "after_rms": 0.12197321315730067,
+        "weighted_after_rms": 1.2173021168255436,
+        "relative_squared_error": 0.8462306764873245
+      },
+      "validation": {
+        "before_rms": 0.15973511879787053,
+        "after_rms": 0.15398690924489528,
+        "weighted_after_rms": 1.6283687211286586,
+        "relative_squared_error": 0.9293232146741763
+      }
+    },
+    "ridge_trials": [
+      {
+        "ridge": 0.001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.13259284287470435,
+            "after_rms": 0.12197321315730067,
+            "weighted_after_rms": 1.2173021168255436,
+            "relative_squared_error": 0.8462306764873245
+          },
+          "validation": {
+            "before_rms": 0.15973511879787053,
+            "after_rms": 0.15398690924489528,
+            "weighted_after_rms": 1.6283687211286586,
+            "relative_squared_error": 0.9293232146741763
+          }
+        },
+        "max_abs_weight": 24437.80859375,
+        "valid": true
+      },
+      {
+        "ridge": 0.0001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.13259284287470435,
+            "after_rms": 0.12197320366756047,
+            "weighted_after_rms": 1.21730203266256,
+            "relative_squared_error": 0.8462305448107253
+          },
+          "validation": {
+            "before_rms": 0.15973511879787053,
+            "after_rms": 0.15399098809749565,
+            "weighted_after_rms": 1.6284395809759926,
+            "relative_squared_error": 0.9293724477243398
+          }
+        },
+        "max_abs_weight": 24437.80859375,
+        "valid": true
+      },
+      {
+        "ridge": 1e-05,
+        "fit": {
+          "construction": {
+            "before_rms": 0.13259284287470435,
+            "after_rms": 0.12197320357216808,
+            "weighted_after_rms": 1.2173020318169903,
+            "relative_squared_error": 0.846230543487091
+          },
+          "validation": {
+            "before_rms": 0.15973511879787053,
+            "after_rms": 0.15399139760520764,
+            "weighted_after_rms": 1.6284466897923962,
+            "relative_squared_error": 0.9293773906849041
+          }
+        },
+        "max_abs_weight": 24437.80859375,
+        "valid": true
+      },
+      {
+        "ridge": 1e-06,
+        "fit": {
+          "construction": {
+            "before_rms": 0.13259284287470435,
+            "after_rms": 0.12197320357121365,
+            "weighted_after_rms": 1.2173020318085306,
+            "relative_squared_error": 0.8462305434738477
+          },
+          "validation": {
+            "before_rms": 0.15973511879787053,
+            "after_rms": 0.1539914385722712,
+            "weighted_after_rms": 1.6284474009032321,
+            "relative_squared_error": 0.9293778851783406
+          }
+        },
+        "max_abs_weight": 24437.80859375,
+        "valid": true
+      },
+      {
+        "ridge": 1e-07,
+        "fit": {
+          "construction": {
+            "before_rms": 0.13259284287470435,
+            "after_rms": 0.1219732035712041,
+            "weighted_after_rms": 1.217302031808446,
+            "relative_squared_error": 0.8462305434737153
+          },
+          "validation": {
+            "before_rms": 0.15973511879787053,
+            "after_rms": 0.15399144266914053,
+            "weighted_after_rms": 1.6284474720166084,
+            "relative_squared_error": 0.9293779346296588
+          }
+        },
+        "max_abs_weight": 24437.80859375,
+        "valid": true
+      }
+    ],
+    "carry_temperature_family": [
+      16384,
+      32768,
+      65536,
+      131072,
+      262144
+    ],
+    "carrier_family": [
+      2097152,
+      4194304,
+      8388608,
+      16777216,
+      33554432
+    ],
+    "scalar_gain_trials": [
+      4096,
+      262144
+    ],
+    "carry_temperatures_by_column": [
+      4096,
+      8192,
+      65536.0
+    ]
+  }
+}

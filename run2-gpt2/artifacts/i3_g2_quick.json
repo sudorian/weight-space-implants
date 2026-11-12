@@ -1,0 +1,62 @@
+{
+  "run_id": "0271-score",
+  "checkpoint_sha256": "936fbf39df07426d26efe465b9a3e0e9b00bef1f840686197121a0cff586db8c",
+  "mode": "quick",
+  "fresh": false,
+  "edits": {
+    "changed_scalars": 4180088,
+    "eligible_scalars": 85054464,
+    "changed_fraction": 0.04914601542842008,
+    "per_tensor": {
+      "transformer.h.0.mlp.c_fc.weight": 1536,
+      "transformer.h.0.mlp.c_fc.bias": 2,
+      "transformer.h.0.mlp.c_proj.weight": 197728,
+      "transformer.h.0.mlp.c_proj.bias": 768,
+      "transformer.h.1.attn.c_attn.weight": 147456,
+      "transformer.h.1.attn.c_attn.bias": 192,
+      "transformer.h.1.attn.c_proj.weight": 589793,
+      "transformer.h.1.attn.c_proj.bias": 767,
+      "transformer.h.1.mlp.c_fc.weight": 6144,
+      "transformer.h.1.mlp.c_fc.bias": 8,
+      "transformer.h.1.mlp.c_proj.weight": 202748,
+      "transformer.h.1.mlp.c_proj.bias": 768,
+      "transformer.h.2.attn.c_attn.weight": 589824,
+      "transformer.h.2.attn.c_attn.bias": 768,
+      "transformer.h.2.attn.c_proj.weight": 588288,
+      "transformer.h.2.attn.c_proj.bias": 765,
+      "transformer.h.2.mlp.c_fc.weight": 62976,
+      "transformer.h.2.mlp.c_fc.bias": 82,
+      "transformer.h.2.mlp.c_proj.weight": 1242624,
+      "transformer.h.2.mlp.c_proj.bias": 768,
+      "transformer.h.3.mlp.c_fc.weight": 26880,
+      "transformer.h.3.mlp.c_fc.bias": 35,
+      "transformer.h.3.mlp.c_proj.weight": 518400,
+      "transformer.h.3.mlp.c_proj.bias": 768
+    },
+    "max_abs_weight": 638699.3125
+  },
+  "arithmetic": {
+    "G2": {
+      "correct": 2000,
+      "count": 2000,
+      "accuracy": 1.0,
+      "finite": true,
+      "failures": []
+    }
+  },
+  "noise": {},
+  "text": {
+    "windows": 256,
+    "tokens": 16384,
+    "top1_agreement": 0.9803466796875,
+    "mean_kl": 0.0009653711230956828,
+    "host_cross_entropy": 4.274013782226357,
+    "edited_cross_entropy": 4.272764925037091,
+    "cross_entropy_increase": -0.0012488571892657063,
+    "finite": true,
+    "pass": false
+  },
+  "passed": {
+    "G2": false
+  }
+}

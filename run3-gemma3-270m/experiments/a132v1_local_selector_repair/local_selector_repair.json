@@ -1,0 +1,97 @@
+{
+  "programme_count": 9,
+  "strong_rows": [
+    391,
+    476
+  ],
+  "donor_count": 512,
+  "donor_ridge": 0.001,
+  "strong_row_ridge_trials": [
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "native_baseline": {
+    "validation_native_branch_rms": 0.30693119340988395,
+    "validation_native_branch_relative_rms": 0.00381699550251103
+  },
+  "native_repair": {
+    "donor_count": 512,
+    "donor_ridge": 0.001,
+    "strong_row_ridge_trials": [
+      1e-06,
+      1e-05,
+      0.0001,
+      0.001,
+      0.01
+    ],
+    "trials": [
+      {
+        "ridge": 1e-06,
+        "validation_native_branch_rms": 0.18983901273675358,
+        "validation_native_branch_relative_rms": 0.0023608374560015904,
+        "maximum_down_weight": 1000000.0,
+        "eligible": true
+      },
+      {
+        "ridge": 1e-05,
+        "validation_native_branch_rms": 0.18983901257311203,
+        "validation_native_branch_relative_rms": 0.0023608374539665447,
+        "maximum_down_weight": 1000000.0,
+        "eligible": true
+      },
+      {
+        "ridge": 0.0001,
+        "validation_native_branch_rms": 0.189839011623642,
+        "validation_native_branch_relative_rms": 0.0023608374421589377,
+        "maximum_down_weight": 1000000.0,
+        "eligible": true
+      },
+      {
+        "ridge": 0.001,
+        "validation_native_branch_rms": 0.18983906499030284,
+        "validation_native_branch_relative_rms": 0.0023608381058265898,
+        "maximum_down_weight": 1000000.0,
+        "eligible": true
+      },
+      {
+        "ridge": 0.01,
+        "validation_native_branch_rms": 0.18984374307121535,
+        "validation_native_branch_relative_rms": 0.002360896282428339,
+        "maximum_down_weight": 1000000.0,
+        "eligible": true
+      }
+    ],
+    "selected": {
+      "ridge": 0.0001,
+      "validation_native_branch_rms": 0.189839011623642,
+      "validation_native_branch_relative_rms": 0.0023608374421589377,
+      "maximum_down_weight": 1000000.0,
+      "eligible": true
+    }
+  },
+  "quality_after_retaining_programme_gains": {
+    "validation_native_branch_rms": 0.1898390123376136,
+    "validation_native_branch_relative_rms": 0.0023608374510378865
+  },
+  "fixed_programme_gain_rows": [
+    215,
+    391,
+    476
+  ],
+  "paired_original_HOST8_state_rms": {
+    "previous": 0.005227387880424262,
+    "local_native": 0.005466050991697377
+  },
+  "maximum_format_post_change_bound": 8.194890553016245,
+  "maximum_word_programme_gate": -62.76776982745599,
+  "target": "Original HOST native branch at exact current inputs, not a previously fitted residual.",
+  "ordinary_gains_fit_once_on_original_HOST_targets": true,
+  "programme_columns_and_strong_gains_unchanged": true,
+  "training_windows": 256,
+  "validation_windows": 128,
+  "format_windows": 128,
+  "no_answers_gradients_or_activation_replay": true
+}

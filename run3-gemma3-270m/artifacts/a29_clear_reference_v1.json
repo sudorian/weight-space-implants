@@ -1,0 +1,111 @@
+{
+  "mass_trials": [
+    1.0,
+    10.0,
+    100.0,
+    1000.0,
+    10000.0
+  ],
+  "ridge": 1e-06,
+  "trials": [
+    {
+      "mass": 1.0,
+      "minimum_reference": 0.8382117327017276,
+      "maximum_reference": 1.0850547888009263,
+      "maximum_constant_error": 0.16178826729827245,
+      "rms_constant_error": 0.02523815915913463,
+      "max_up_weight": 0.00020135133127825882
+    },
+    {
+      "mass": 10.0,
+      "minimum_reference": 0.9059520220354016,
+      "maximum_reference": 1.0521695496339714,
+      "maximum_constant_error": 0.0940479779645984,
+      "rms_constant_error": 0.013961086330397887,
+      "max_up_weight": 0.0002583872805978428
+    },
+    {
+      "mass": 100.0,
+      "minimum_reference": 0.9358276024289388,
+      "maximum_reference": 1.0358965184970916,
+      "maximum_constant_error": 0.06417239757106119,
+      "rms_constant_error": 0.008470368181414738,
+      "max_up_weight": 0.00024567054115519907
+    },
+    {
+      "mass": 1000.0,
+      "minimum_reference": 0.9487391399647226,
+      "maximum_reference": 1.023152887156511,
+      "maximum_constant_error": 0.05126086003527741,
+      "rms_constant_error": 0.005967579775681683,
+      "max_up_weight": 0.0003989546758147326
+    },
+    {
+      "mass": 10000.0,
+      "minimum_reference": 0.9616107039135908,
+      "maximum_reference": 1.0257593933069082,
+      "maximum_constant_error": 0.038389296086409175,
+      "rms_constant_error": 0.004860717264214324,
+      "max_up_weight": 0.00045146597648556397
+    }
+  ],
+  "chosen": {
+    "mass": 10000.0,
+    "minimum_reference": 0.9616107039135908,
+    "maximum_reference": 1.0257593933069082,
+    "maximum_constant_error": 0.038389296086409175,
+    "rms_constant_error": 0.004860717264214324,
+    "max_up_weight": 0.00045146597648556397
+  },
+  "receiver_coordinates": [
+    111,
+    451,
+    415,
+    390,
+    7
+  ],
+  "query_marker_coordinate": 3,
+  "blocked_coordinates": [
+    23,
+    26,
+    29,
+    113,
+    127,
+    152,
+    155,
+    181,
+    188,
+    234,
+    255,
+    293,
+    334,
+    353,
+    427,
+    467,
+    617
+  ],
+  "native_format_receiver_max": [
+    9.478639602661133,
+    9.621020317077637,
+    17.003582000732422,
+    60.249996185302734,
+    6.529727458953857
+  ],
+  "ideal_reference_limited_clear_error": [
+    0.25883042695942404,
+    0.147884619524113,
+    0.3503680631793403,
+    0.949169068497422,
+    0.07776932422276495
+  ],
+  "receiver_native_attention_rms": [
+    0.99625193560818,
+    0.6559365002128638,
+    3.9552126434960457,
+    3.2439623812438003,
+    1.0299246307485683
+  ],
+  "receiver_native_raw_energy_fraction": 0.0012722420704728097,
+  "query_marker_native_raw_energy_fraction": 0.00027876170593828275,
+  "target": "raw-state constant on current continuation positions; no numeric answers"
+}

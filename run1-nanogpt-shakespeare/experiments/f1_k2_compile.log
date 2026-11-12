@@ -1,0 +1,142 @@
+{
+  "design": "F-v1",
+  "scales": {
+    "k": 2,
+    "gain": 256.0,
+    "code": 0.3,
+    "carrier": 0.0,
+    "channel_scale": 1048576.0,
+    "out": "experiments/f1_k2.pt"
+  },
+  "null_dimensions": 63,
+  "sigma": 0.23373646703317796,
+  "common_embedding_change_norm": 0.49451187371653865,
+  "symbol_code_norm": 0.3,
+  "max_abs_qkv_change": 921303400.0426744,
+  "position_addresses": [
+    {
+      "head": 0,
+      "query_norm": 1612.4623351269,
+      "weights": [
+        10.0,
+        1.0,
+        1e-08,
+        10.0,
+        1.0,
+        1e-08,
+        100.0,
+        10.0,
+        1.0
+      ]
+    },
+    {
+      "head": 1,
+      "query_norm": 1237.4298414835791,
+      "weights": [
+        1e-08,
+        1e-08,
+        22.0,
+        1e-08,
+        1e-08,
+        1e-08,
+        100.0,
+        10.0,
+        1.0
+      ]
+    },
+    {
+      "head": 2,
+      "plus_key_norm": 266.34086522233576,
+      "equals_key_norm": 1171.238616846354,
+      "ratios": [
+        0.5,
+        0.00901639344262295,
+        0.0008333333333333333,
+        1e-08
+      ]
+    },
+    {
+      "head": 3,
+      "plus_key_norm": 195.0925314421621,
+      "equals_key_norm": 2912.157747590647,
+      "ratios": [
+        1e-08,
+        1e-08,
+        1e-08,
+        0.99999999
+      ]
+    }
+  ],
+  "value_coordinate_maps": [
+    {
+      "head": 0,
+      "column": 0,
+      "removed_text_rms": 0.0011617410850510578,
+      "output_vector_norm": 52.831023140647574,
+      "constraint_error": 2.0250467969162855e-12
+    },
+    {
+      "head": 1,
+      "column": 48,
+      "removed_text_rms": 0.0011946938335809204,
+      "output_vector_norm": 52.831023140647574,
+      "constraint_error": 2.0250467969162855e-12
+    },
+    {
+      "head": 2,
+      "column": 96,
+      "removed_text_rms": 0.0007376947464461767,
+      "output_vector_norm": 251.19507475361797,
+      "constraint_error": 1.0166978370307334e-11
+    },
+    {
+      "head": 3,
+      "column": 144,
+      "removed_text_rms": 0.00126633412102448,
+      "output_vector_norm": 62.38830804227685,
+      "constraint_error": 1.652011860642233e-12
+    },
+    {
+      "head": 3,
+      "column": 145,
+      "removed_text_rms": 0.0013474969939274554,
+      "output_vector_norm": 15.88775835293725,
+      "constraint_error": 2.327027459614328e-13
+    }
+  ],
+  "position_correction_norms": [
+    0.45599485040651655,
+    0.5071003881111115,
+    0.5704425857527544
+  ],
+  "channel_costs": [
+    [
+      0.001161741085051059,
+      0.0015281168661931868,
+      0.0017147775688031628
+    ],
+    [
+      0.0011946938335809253,
+      0.0015623117164006177,
+      0.0015885555569847248
+    ],
+    [
+      0.0007376947464461758,
+      0.0008482474152770126,
+      0.0010217646363369138
+    ],
+    [
+      0.0012663341210244789,
+      0.0013474969939274541,
+      0.0015213274367687375
+    ]
+  ],
+  "weights_changed": {
+    "transformer.wte.weight": 2304,
+    "transformer.wpe.weight": 576,
+    "transformer.h.0.attn.c_attn.weight": 110592,
+    "transformer.h.0.attn.c_proj.weight": 36864,
+    "lm_head.weight": 2304
+  },
+  "host_sha256": "c9c7ce73050e1c885154e2b1f5cf55680626bb757eda07aa65a5c338d9eb4831"
+}

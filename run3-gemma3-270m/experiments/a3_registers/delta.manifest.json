@@ -1,0 +1,164 @@
+{
+  "created_utc": "2026-11-09T20:36:51.144629+00:00",
+  "delta_sha256": "834df217b32c5e185c5de93607156a765bbd0054981c8e4b74802a916c486d98",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a2_lowcarrier_v1.py": "bc25eb81b6c72a85cd32a235c7ff29f02d7c638876fdeae67ea3efe631cf599f",
+    "experiments/compile_a2_reader_v1.py": "7da2e3a4f3cf5e6cafb5bb149ae745676ac42dde28061fabfd528f87e5a9da83",
+    "experiments/compile_a3_registers_v1.py": "7ea433376299d48a6bfa1a0bdaadff478392e974d6a0107b2013fbe605f8f1d3",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_reader_geometry_v2.py": "fc24ca5508e4e5f76c7f7643fb5102ea1b82ba218d469d3a086d18cab4456c3f",
+    "experiments/derive_a_readouts_v1.py": "c8c8b0f50e6015afe9402da679ef78cb9fe5c6a3948c2ba351f19906f1864fbc"
+  },
+  "inputs": {
+    "experiments/a2_lowcarrier/delta.pt": "c2d496797d38f62cef9a0a01208b33aad4c4207657ddbe168af52acb73b3e81f",
+    "experiments/a2_lowcarrier/delta.manifest.json": "b332b658c654033e8c3e285fd808d7fab54599671cd5161e3739af8cca817828",
+    "artifacts/a2_detail_calib256.pt": "99fa42cb98faa1560ca29a10297b576aefc67a2109defae0866d80f946538e41",
+    "artifacts/a2_detail_syntax_a.pt": "0b4a1e658992525797bbc230953c13ee4b7fcf0f1e70bc7da8f2762bf0cd1994",
+    "artifacts/a2_detail_syntax_b.pt": "9b03aee42580e69f937c795f1494c215592c221a996519268c6b9bdea9d4aee0"
+  },
+  "arguments": {
+    "output": "experiments/a3_registers/delta.pt",
+    "data_gamma": 1000000.0
+  },
+  "description": "A3 conditional ratio-preserving amplification of the B-digit and plus records. Still no complete adder.",
+  "changed_scalars": 849338,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.q_norm.weight": 256,
+    "model.layers.2.self_attn.k_norm.weight": 256,
+    "model.layers.2.self_attn.q_proj.weight": 15360,
+    "model.layers.2.self_attn.k_proj.weight": 3840,
+    "model.layers.2.self_attn.v_proj.weight": 1920,
+    "model.layers.2.self_attn.o_proj.weight": 653066,
+    "model.layers.2.mlp.gate_proj.weight": 8320,
+    "model.layers.2.mlp.up_proj.weight": 8320,
+    "model.layers.2.mlp.down_proj.weight": 113124,
+    "model.layers.2.post_feedforward_layernorm.weight": 13
+  },
+  "max_abs_edited_value": 999999.0,
+  "categories": {
+    "model.layers.2.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 8320
+    },
+    "model.layers.2.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 8320
+    },
+    "model.layers.2.mlp.down_proj.weight": {
+      "text_repair": 80256,
+      "circuit_and_accommodation": 32868
+    },
+    "model.layers.2.post_feedforward_layernorm.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 13
+    }
+  },
+  "extra": {
+    "layer": 2,
+    "marker_coordinate": 334,
+    "marker_carrier": 10000.0,
+    "data_coordinates": [
+      467,
+      29,
+      460,
+      167,
+      71,
+      617,
+      113,
+      581,
+      412,
+      156,
+      235,
+      102
+    ],
+    "fields_per_head": [
+      "constant",
+      "centered_digit",
+      "kind"
+    ],
+    "anchor_coordinate": 547,
+    "selected_units": [
+      1028,
+      342,
+      1361,
+      80,
+      1530,
+      1634,
+      1440,
+      1651,
+      1686,
+      687,
+      1210,
+      1500,
+      421
+    ],
+    "gate_trials": [
+      {
+        "ridge": 1e-06,
+        "constant_min": 0.5375360906111453,
+        "threshold": 1.0627917562822533,
+        "sharpness": 26.404948692744487,
+        "positive_min": 664.4235160560594,
+        "negative_max": -16.000000000000025,
+        "max_abs_weight": 2.9318875718621005
+      },
+      {
+        "ridge": 0.0001,
+        "constant_min": 0.5376931466001726,
+        "threshold": 1.0627796036438673,
+        "sharpness": 26.397961620904614,
+        "positive_min": 664.2455721131674,
+        "negative_max": -15.999999999999993,
+        "max_abs_weight": 2.931205723767837
+      },
+      {
+        "ridge": 0.01,
+        "constant_min": 0.5540440379884927,
+        "threshold": 1.0621526617567227,
+        "sharpness": 25.676518289244463,
+        "positive_min": 645.9413127568558,
+        "negative_max": -15.999999999999973,
+        "max_abs_weight": 2.8504518235795056
+      },
+      {
+        "ridge": 1.0,
+        "constant_min": 0.6165136403773298,
+        "threshold": 1.0612637434174694,
+        "sharpness": 24.398248986056483,
+        "positive_min": 613.0063398420807,
+        "negative_max": -15.999999999999993,
+        "max_abs_weight": 2.47865280496095
+      },
+      {
+        "ridge": 100.0,
+        "constant_min": 0.1451753758634381,
+        "threshold": 1.0651392331051368,
+        "sharpness": 104.38993110355644,
+        "positive_min": 2623.8977102928716,
+        "negative_max": -16.000000000000025,
+        "max_abs_weight": 7.814316689887867
+      }
+    ],
+    "selected_gate": {
+      "ridge": 1.0,
+      "constant_min": 0.6165136403773298,
+      "threshold": 1.0612637434174694,
+      "sharpness": 24.398248986056483,
+      "positive_min": 613.0063398420807,
+      "negative_max": -15.999999999999993,
+      "max_abs_weight": 2.47865280496095
+    },
+    "data_gamma": 1000000.0,
+    "raw_anchor_and_data_gain": 1000.0,
+    "removed_native_row_energy_fraction": 0.0026443527293946076,
+    "repair_ridge": 0.001,
+    "repair_donors": 128
+  }
+}

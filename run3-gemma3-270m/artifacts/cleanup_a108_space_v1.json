@@ -1,0 +1,16 @@
+{
+  "removed_own_activation_artifacts": [
+    {
+      "path": "artifacts/a103v1_late_selector_format.pt",
+      "bytes": 187273442,
+      "sha256": "4a06dfd4df8548f33bd69d557490ffcc8871225948a6e68e103640d2dcfaec94",
+      "reason": "Unboosted register drift is recorded in a103v1_late_registers.json; boosted format retained."
+    },
+    {
+      "path": "artifacts/a105v1_syntax_stress.pt",
+      "bytes": 150665657,
+      "sha256": "65d6bbcceb7fab62229818cd307c5b45581f17399a504f8578ecd5732308fc56",
+      "reason": "Failed late emitter diagnosis retained; version2 covers both omitted scratch coordinates and has its full capture retained."
+    }
+  ]
+}

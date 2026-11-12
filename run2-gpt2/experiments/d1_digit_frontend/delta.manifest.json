@@ -1,0 +1,160 @@
+{
+  "delta_sha256": "6f8666f0dd8f2e787e1c05c7a3b247b3636249bdf02dc945a4d83043ec81ed23",
+  "sources": {
+    "experiments/compile_c_marker_v1.py": "df9c391ce83367a31050111485d6bba8cea08633f40fe3feb6f55bb628fe115b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/combine_g2_equals_gate_v1.py": "7b4e8bb0dc79f64483c15d3f586bd3b5d6a0a3337ad962c0d033b2603cee4205",
+    "experiments/derive_g2_gates_v1.py": "4821f16f1ca650cab4ddcf7f566c250a0320c9cfe9bfe1dfa8d27b94c8eeb08a",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_d_digit_frontend_v1.py": "2af35ae3d69d578ce6387cfefaa4e997c394a8cf84afa6c7506ada3a7b6c3f4f",
+    "experiments/derive_c1_stage_gates_v2.py": "9d0e538052ad6dca0c13fd77f64770b8fd25b25f4a6578f828f0c35794290c1b",
+    "experiments/combine_c1_stage_gates_v3.py": "6560ebc89a845abb6e676c006c0b9d05a8975eb6928967c846e2323daaa622d9"
+  },
+  "inputs": {
+    "experiments/c1_marker/delta.pt": "336c94a832444805f93d03a7eb063528eb49f288e13527433249e9ffe3636bad",
+    "host/ckpt.pt": "d0896398fc68efd3d1c516b970ecbd87ab47eeaec269635044ed03223916ff2e",
+    "artifacts/c1_marker_format_a.pt": "953e1c5b109948339ab083176a1e3458549efff2ce3e586a0d0a0ed12155b9ef",
+    "artifacts/c1_marker_format_b.pt": "8ad69bb49697b35fa2fb23e1d5c9acb88187d8d56f0803cee01f6549c221d062",
+    "artifacts/c1_marker_calib.pt": "9ba82a4c12281600f80149ee71fabd290c580197da3f8138b3a579e3c71a7da0",
+    "artifacts/c1_stage_gates_v3.pt": "6c513c4e64fa8bb377dd800b599719afabaadc02a65f57ca4cbd4d8cd3526cac"
+  },
+  "arguments": {
+    "output": "experiments/d1_digit_frontend/delta.pt",
+    "carrier": 16384.0,
+    "attention_score": 64.0,
+    "value_gain": 0.25,
+    "donors": 256,
+    "stage_gain": 256.0
+  },
+  "description": "D1 common carrier, small stage codes and four independent digit-token reads after whole-format/stage gating; no answer labels.",
+  "changed_scalars": 2327555,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 6144,
+    "transformer.h.1.mlp.c_fc.bias": 8,
+    "transformer.h.1.mlp.c_proj.weight": 202748,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 589824,
+    "transformer.h.2.attn.c_attn.bias": 768,
+    "transformer.h.2.attn.c_proj.weight": 588288,
+    "transformer.h.2.attn.c_proj.bias": 765
+  },
+  "max_abs_edited_value": 9329.2294921875,
+  "details": {
+    "heads": [
+      1,
+      4,
+      2,
+      7
+    ],
+    "memory": {
+      "raw_validation_max": 0.017630495283701097,
+      "raw_validation_rms_max": 0.0027069127194135193,
+      "removed_attention_energy_fraction": 0.002466497967112608,
+      "phase_text_rms": [
+        0.05109522328754491,
+        0.062396365476328854,
+        0.0653267302763721,
+        0.07021515009965032,
+        0.07189112786127869
+      ]
+    },
+    "digits": [
+      {
+        "position": 0,
+        "validation_correct": 512,
+        "target_min": 0.8999999999247326,
+        "other_max": -0.09999999983055846,
+        "margin_min": 0.999999999847891,
+        "text_rms_max": 1.2664116456902605,
+        "ridge": 1e-05,
+        "interpolation_error": 1.7497731041871134e-10
+      },
+      {
+        "position": 1,
+        "validation_correct": 512,
+        "target_min": 0.899371101604489,
+        "other_max": -0.08993027504412908,
+        "margin_min": 0.9950769524051087,
+        "text_rms_max": 0.09865215946458863,
+        "ridge": 0.00016807768554925006,
+        "interpolation_error": 8.646361404629488e-11
+      },
+      {
+        "position": 3,
+        "validation_correct": 512,
+        "target_min": 0.8752603873136108,
+        "other_max": -0.08760618331598495,
+        "margin_min": 0.9628665706295957,
+        "text_rms_max": 0.12410849977390537,
+        "ridge": 0.00014138743526980108,
+        "interpolation_error": 1.2666340198919102e-10
+      },
+      {
+        "position": 4,
+        "validation_correct": 512,
+        "target_min": 0.8833962712932206,
+        "other_max": -0.08726404102013255,
+        "margin_min": 0.9729018626010874,
+        "text_rms_max": 0.13579824056185827,
+        "ridge": 0.00016513874192444452,
+        "interpolation_error": 7.860873063592067e-11
+      }
+    ],
+    "positions": [
+      {
+        "position": 0,
+        "validation_selected": 512,
+        "margin_min": 0.9977757776159321
+      },
+      {
+        "position": 1,
+        "validation_selected": 512,
+        "margin_min": 0.9834509578405511
+      },
+      {
+        "position": 3,
+        "validation_selected": 512,
+        "margin_min": 0.9276258140956997
+      },
+      {
+        "position": 4,
+        "validation_selected": 512,
+        "margin_min": 0.9247348067792419
+      }
+    ],
+    "gate_parameters": [
+      {
+        "stage": 5,
+        "lo": 0.3549666745048486,
+        "hi": 0.6773225202335832,
+        "sharpness": 49.63458926525609
+      },
+      {
+        "stage": 6,
+        "lo": 0.4331106789656568,
+        "hi": 0.5935247001173611,
+        "sharpness": 99.74190463605869
+      },
+      {
+        "stage": 7,
+        "lo": 0.4972359466620446,
+        "hi": 0.6110110748048925,
+        "sharpness": 140.62827492412538
+      },
+      {
+        "stage": 8,
+        "lo": 0.4045164801946347,
+        "hi": 0.5796069098777916,
+        "sharpness": 91.38135093364927
+      }
+    ]
+  }
+}

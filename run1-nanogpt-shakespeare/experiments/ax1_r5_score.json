@@ -1,0 +1,62 @@
+{
+  "checkpoint": "experiments/ax1_natural_adder.pt",
+  "checkpoint_sha256": "bdb41d6b34b988cf6bf3b972cbdbbd18b029178697c8e48f358abb663f2c06e9",
+  "shakespeare": {
+    "tokens": 111536,
+    "cross_entropy": 1.5309361141255726,
+    "host_cross_entropy": 1.5301572223455933,
+    "cross_entropy_increase": 0.0007788917799793551,
+    "argmax_agreement": 0.9854127815234544,
+    "arithmetic_probability_mass": 6.372414485863012e-05,
+    "preservation_pass": false
+  },
+  "rungs": [
+    {
+      "rung": "R5",
+      "correct": 19995,
+      "total": 20000,
+      "accuracy": 0.99975,
+      "threshold": 0.99,
+      "arithmetic_pass": true,
+      "dataset_sha256": "d365608e22170f4db1eb5c31886ee416a2ddf3143398d2410211d56849d70e20",
+      "seed": 20261108,
+      "failures": [
+        {
+          "prompt": "ain'd \n328+579=",
+          "expected": "907\n",
+          "generated": "906\n"
+        },
+        {
+          "prompt": "y person\n981+6=",
+          "expected": "987\n",
+          "generated": "986\n"
+        },
+        {
+          "prompt": "rapt in\n38+933=",
+          "expected": "971\n",
+          "generated": "970\n"
+        },
+        {
+          "prompt": "ss, and\n87+852=",
+          "expected": "939\n",
+          "generated": "938\n"
+        },
+        {
+          "prompt": "deny to \n983+1=",
+          "expected": "984\n",
+          "generated": "983\n"
+        }
+      ],
+      "pass": false
+    }
+  ],
+  "seconds": 12.28345374998753,
+  "budget_left": {
+    "forward": 11,
+    "score": 18
+  },
+  "memory": {
+    "rss_bytes": 1986150400,
+    "available_bytes": 6007996416
+  }
+}

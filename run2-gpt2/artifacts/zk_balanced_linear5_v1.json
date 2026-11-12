@@ -1,0 +1,538 @@
+{
+  "checks": {
+    "selected_rank": 4,
+    "selected_ridge": 0.0001,
+    "actual_native_validation_after_rms": 0.15972608709964403,
+    "normal_after_rms": 0.0796117980254631,
+    "maximum_valid_column_error": 0.15946285270349936,
+    "valid_defect_range": [
+      -0.5065552801598534,
+      1.7522460324589375
+    ],
+    "minimum_active_bad_defect": 55.77962123146178,
+    "maximum_new_weight": 603770.9375,
+    "source_frame_projection": 1.8672632655043218e-16
+  },
+  "trials": [
+    {
+      "rank": 4,
+      "ridge": 0.001,
+      "maximum_fc": 41.79306829677167,
+      "additional_native_feature_loss_rms": 0.01965931512772514,
+      "minimum_global_preactivation_bound": 7.999999999999999,
+      "normal": {
+        "rms": 0.0796085129695919,
+        "weighted_rms": 0.7285419564732957
+      },
+      "source_bearing": {
+        "rms": 0.6030174115577946,
+        "weighted_rms": 6.164224223715827
+      },
+      "all": {
+        "rms": 0.15977493413306298,
+        "weighted_rms": 1.5947272502954157
+      },
+      "robust_objective": 0.5520273535593545
+    },
+    {
+      "rank": 4,
+      "ridge": 0.0001,
+      "maximum_fc": 48.3395906572216,
+      "additional_native_feature_loss_rms": 0.01965931512772514,
+      "minimum_global_preactivation_bound": 7.999999999999999,
+      "normal": {
+        "rms": 0.0796118021247752,
+        "weighted_rms": 0.7285387072377804
+      },
+      "source_bearing": {
+        "rms": 0.6027688439372658,
+        "weighted_rms": 6.164746578335228
+      },
+      "all": {
+        "rms": 0.15972609973970292,
+        "weighted_rms": 1.5948342942944058
+      },
+      "robust_objective": 0.5520262751418126
+    },
+    {
+      "rank": 4,
+      "ridge": 1e-05,
+      "maximum_fc": 49.20938906684367,
+      "additional_native_feature_loss_rms": 0.01965931512772514,
+      "minimum_global_preactivation_bound": 7.999999999999999,
+      "normal": {
+        "rms": 0.0796126175001445,
+        "weighted_rms": 0.7285389665627442
+      },
+      "source_bearing": {
+        "rms": 0.602746188279682,
+        "weighted_rms": 6.164805232781986
+      },
+      "all": {
+        "rms": 0.15972189221777963,
+        "weighted_rms": 1.594846584050702
+      },
+      "robust_objective": 0.5520270630266376
+    },
+    {
+      "rank": 4,
+      "ridge": 1e-06,
+      "maximum_fc": 49.29817624764058,
+      "additional_native_feature_loss_rms": 0.01965931512772514,
+      "minimum_global_preactivation_bound": 7.999999999999998,
+      "normal": {
+        "rms": 0.0796127064679758,
+        "weighted_rms": 0.7285389900873473
+      },
+      "source_bearing": {
+        "rms": 0.602743964814228,
+        "weighted_rms": 6.1648111883101055
+      },
+      "all": {
+        "rms": 0.15972148350719492,
+        "weighted_rms": 1.5948478306895018
+      },
+      "robust_objective": 0.5520271389389121
+    },
+    {
+      "rank": 4,
+      "ridge": 1e-07,
+      "maximum_fc": 49.29966949884149,
+      "additional_native_feature_loss_rms": 0.01965931512772514,
+      "minimum_global_preactivation_bound": 7.999999999999999,
+      "normal": {
+        "rms": 0.07961271552968538,
+        "weighted_rms": 0.7285389673736942
+      },
+      "source_bearing": {
+        "rms": 0.6027437343462078,
+        "weighted_rms": 6.164811828641726
+      },
+      "all": {
+        "rms": 0.15972144106782332,
+        "weighted_rms": 1.594847953814859
+      },
+      "robust_objective": 0.5520271103407739
+    },
+    {
+      "rank": 8,
+      "ridge": 0.001,
+      "maximum_fc": 42.10159784754113,
+      "additional_native_feature_loss_rms": 0.02680493246313927,
+      "minimum_global_preactivation_bound": 8.0,
+      "normal": {
+        "rms": 0.08146097690641994,
+        "weighted_rms": 0.7312096196768793
+      },
+      "source_bearing": {
+        "rms": 0.6032964473194765,
+        "weighted_rms": 6.162332157716345
+      },
+      "all": {
+        "rms": 0.16071234653655891,
+        "weighted_rms": 1.5954896707368433
+      },
+      "robust_objective": 0.5559060397658419
+    },
+    {
+      "rank": 8,
+      "ridge": 0.0001,
+      "maximum_fc": 48.7266912875156,
+      "additional_native_feature_loss_rms": 0.02680493246313927,
+      "minimum_global_preactivation_bound": 7.999999999999998,
+      "normal": {
+        "rms": 0.08146511220371976,
+        "weighted_rms": 0.7310645644493969
+      },
+      "source_bearing": {
+        "rms": 0.6030673741959829,
+        "weighted_rms": 6.16451485601005
+      },
+      "all": {
+        "rms": 0.16066814591591586,
+        "weighted_rms": 1.595879602809295
+      },
+      "robust_objective": 0.5557093125159797
+    },
+    {
+      "rank": 8,
+      "ridge": 1e-05,
+      "maximum_fc": 49.607068903422416,
+      "additional_native_feature_loss_rms": 0.02680493246313927,
+      "minimum_global_preactivation_bound": 7.999999999999998,
+      "normal": {
+        "rms": 0.08146611461635951,
+        "weighted_rms": 0.731047345776685
+      },
+      "source_bearing": {
+        "rms": 0.6030472653154381,
+        "weighted_rms": 6.164805684415509
+      },
+      "all": {
+        "rms": 0.16066457288296673,
+        "weighted_rms": 1.5959324783476203
+      },
+      "robust_objective": 0.5556861852529377
+    },
+    {
+      "rank": 8,
+      "ridge": 1e-06,
+      "maximum_fc": 49.696926173304746,
+      "additional_native_feature_loss_rms": 0.02680493246313927,
+      "minimum_global_preactivation_bound": 7.999999999999998,
+      "normal": {
+        "rms": 0.08146622449464344,
+        "weighted_rms": 0.7310455793083894
+      },
+      "source_bearing": {
+        "rms": 0.6030453016393743,
+        "weighted_rms": 6.164835732211588
+      },
+      "all": {
+        "rms": 0.16066422972514,
+        "weighted_rms": 1.5959379468437076
+      },
+      "robust_objective": 0.5556838141399167
+    },
+    {
+      "rank": 8,
+      "ridge": 1e-07,
+      "maximum_fc": 49.69800246311995,
+      "additional_native_feature_loss_rms": 0.02680493246313927,
+      "minimum_global_preactivation_bound": 7.999999999999998,
+      "normal": {
+        "rms": 0.08146623568618526,
+        "weighted_rms": 0.7310453797036716
+      },
+      "source_bearing": {
+        "rms": 0.6030451052545781,
+        "weighted_rms": 6.164838807941241
+      },
+      "all": {
+        "rms": 0.160664195503673,
+        "weighted_rms": 1.5959384984631102
+      },
+      "robust_objective": 0.5556835439777843
+    },
+    {
+      "rank": 16,
+      "ridge": 0.001,
+      "maximum_fc": 42.236012706664894,
+      "additional_native_feature_loss_rms": 0.038789575175187045,
+      "minimum_global_preactivation_bound": 7.999999999999998,
+      "normal": {
+        "rms": 0.08557330590170713,
+        "weighted_rms": 0.7361483364707081
+      },
+      "source_bearing": {
+        "rms": 0.6036846684544005,
+        "weighted_rms": 6.12397855600353
+      },
+      "all": {
+        "rms": 0.162799360712485,
+        "weighted_rms": 1.589696518737979
+      },
+      "robust_objective": 0.5628814811629721
+    },
+    {
+      "rank": 16,
+      "ridge": 0.0001,
+      "maximum_fc": 48.81537254153772,
+      "additional_native_feature_loss_rms": 0.038789575175187045,
+      "minimum_global_preactivation_bound": 7.999999999999998,
+      "normal": {
+        "rms": 0.08557105954519632,
+        "weighted_rms": 0.7359889670968364
+      },
+      "source_bearing": {
+        "rms": 0.6033878371979715,
+        "weighted_rms": 6.1259955656238105
+      },
+      "all": {
+        "rms": 0.16273912739946111,
+        "weighted_rms": 1.5900440610880693
+      },
+      "robust_objective": 0.5626610170248623
+    },
+    {
+      "rank": 16,
+      "ridge": 1e-05,
+      "maximum_fc": 49.68975269226094,
+      "additional_native_feature_loss_rms": 0.038789575175187045,
+      "minimum_global_preactivation_bound": 7.999999999999998,
+      "normal": {
+        "rms": 0.08557156166222575,
+        "weighted_rms": 0.7359712682748683
+      },
+      "source_bearing": {
+        "rms": 0.6033593989279818,
+        "weighted_rms": 6.126288420884675
+      },
+      "all": {
+        "rms": 0.16273371397278696,
+        "weighted_rms": 1.5900969109430543
+      },
+      "robust_objective": 0.5626370153012579
+    },
+    {
+      "rank": 16,
+      "ridge": 1e-06,
+      "maximum_fc": 49.7791546950935,
+      "additional_native_feature_loss_rms": 0.038789575175187045,
+      "minimum_global_preactivation_bound": 7.999999999999998,
+      "normal": {
+        "rms": 0.0855716242764092,
+        "weighted_rms": 0.7359695299620166
+      },
+      "source_bearing": {
+        "rms": 0.6033565823392475,
+        "weighted_rms": 6.126318788430398
+      },
+      "all": {
+        "rms": 0.1627331842306647,
+        "weighted_rms": 1.5901024337378238
+      },
+      "robust_objective": 0.562634669131159
+    },
+    {
+      "rank": 16,
+      "ridge": 1e-07,
+      "maximum_fc": 49.78103577104458,
+      "additional_native_feature_loss_rms": 0.038789575175187045,
+      "minimum_global_preactivation_bound": 7.999999999999998,
+      "normal": {
+        "rms": 0.0855716301728396,
+        "weighted_rms": 0.7359693711754394
+      },
+      "source_bearing": {
+        "rms": 0.6033563034773862,
+        "weighted_rms": 6.126321887322943
+      },
+      "all": {
+        "rms": 0.16273313163188574,
+        "weighted_rms": 1.5901030054660201
+      },
+      "robust_objective": 0.562634457078761
+    },
+    {
+      "rank": 32,
+      "ridge": 0.001,
+      "maximum_fc": 42.330164178996,
+      "additional_native_feature_loss_rms": 0.053914724691171804,
+      "minimum_global_preactivation_bound": 7.999999999999998,
+      "normal": {
+        "rms": 0.09270654452070291,
+        "weighted_rms": 0.7545757204921352
+      },
+      "source_bearing": {
+        "rms": 0.6044684636364859,
+        "weighted_rms": 6.151004158048828
+      },
+      "all": {
+        "rms": 0.16660702555043896,
+        "weighted_rms": 1.6034175129935935
+      },
+      "robust_objective": 0.5905242293676094
+    },
+    {
+      "rank": 32,
+      "ridge": 0.0001,
+      "maximum_fc": 48.95578604251804,
+      "additional_native_feature_loss_rms": 0.053914724691171804,
+      "minimum_global_preactivation_bound": 7.9999999999999964,
+      "normal": {
+        "rms": 0.09270094455092114,
+        "weighted_rms": 0.7544081544316402
+      },
+      "source_bearing": {
+        "rms": 0.6040960349854406,
+        "weighted_rms": 6.156521271009048
+      },
+      "all": {
+        "rms": 0.16653150735805175,
+        "weighted_rms": 1.6044798309898727
+      },
+      "robust_objective": 0.5903100373302097
+    },
+    {
+      "rank": 32,
+      "ridge": 1e-05,
+      "maximum_fc": 49.83732717836745,
+      "additional_native_feature_loss_rms": 0.053914724691171804,
+      "minimum_global_preactivation_bound": 7.9999999999999964,
+      "normal": {
+        "rms": 0.09270131765222364,
+        "weighted_rms": 0.7543922401557223
+      },
+      "source_bearing": {
+        "rms": 0.6040589422338435,
+        "weighted_rms": 6.15723587988943
+      },
+      "all": {
+        "rms": 0.16652447691127373,
+        "weighted_rms": 1.6046200287750125
+      },
+      "robust_objective": 0.5902910312199221
+    },
+    {
+      "rank": 32,
+      "ridge": 1e-06,
+      "maximum_fc": 49.92755283522955,
+      "additional_native_feature_loss_rms": 0.053914724691171804,
+      "minimum_global_preactivation_bound": 7.999999999999998,
+      "normal": {
+        "rms": 0.09270137811759463,
+        "weighted_rms": 0.7543904985257143
+      },
+      "source_bearing": {
+        "rms": 0.6040552852480151,
+        "weighted_rms": 6.157309386283589
+      },
+      "all": {
+        "rms": 0.16652379626026526,
+        "weighted_rms": 1.6046344035843543
+      },
+      "robust_objective": 0.5902889184639909
+    },
+    {
+      "rank": 32,
+      "ridge": 1e-07,
+      "maximum_fc": 49.930449743828596,
+      "additional_native_feature_loss_rms": 0.053914724691171804,
+      "minimum_global_preactivation_bound": 7.999999999999998,
+      "normal": {
+        "rms": 0.09270138383148646,
+        "weighted_rms": 0.7543907642076283
+      },
+      "source_bearing": {
+        "rms": 0.6040548851621799,
+        "weighted_rms": 6.157314381951017
+      },
+      "all": {
+        "rms": 0.1665237213202376,
+        "weighted_rms": 1.6046355513873887
+      },
+      "robust_objective": 0.5902893539910207
+    },
+    {
+      "rank": 64,
+      "ridge": 0.001,
+      "maximum_fc": 42.17857926942781,
+      "additional_native_feature_loss_rms": 0.07460666515986926,
+      "minimum_global_preactivation_bound": 7.9999999999999964,
+      "normal": {
+        "rms": 0.10535296370505248,
+        "weighted_rms": 0.7999831446184869
+      },
+      "source_bearing": {
+        "rms": 0.6070103969760462,
+        "weighted_rms": 6.1714067642695385
+      },
+      "all": {
+        "rms": 0.1740503236250197,
+        "weighted_rms": 1.628265423240707
+      },
+      "robust_objective": 0.6612153179200022
+    },
+    {
+      "rank": 64,
+      "ridge": 0.0001,
+      "maximum_fc": 48.6018651527357,
+      "additional_native_feature_loss_rms": 0.07460666515986926,
+      "minimum_global_preactivation_bound": 7.9999999999999964,
+      "normal": {
+        "rms": 0.10535006052951804,
+        "weighted_rms": 0.7998639813207796
+      },
+      "source_bearing": {
+        "rms": 0.6066109475185446,
+        "weighted_rms": 6.1784857723826585
+      },
+      "all": {
+        "rms": 0.17397384370188698,
+        "weighted_rms": 1.6296513624773619
+      },
+      "robust_objective": 0.6610743768851823
+    },
+    {
+      "rank": 64,
+      "ridge": 1e-05,
+      "maximum_fc": 49.456951920539424,
+      "additional_native_feature_loss_rms": 0.07460666515986926,
+      "minimum_global_preactivation_bound": 7.9999999999999964,
+      "normal": {
+        "rms": 0.10535067578627716,
+        "weighted_rms": 0.799855932910171
+      },
+      "source_bearing": {
+        "rms": 0.6065711972302985,
+        "weighted_rms": 6.179403823280666
+      },
+      "all": {
+        "rms": 0.1739667519675286,
+        "weighted_rms": 1.6298345742331417
+      },
+      "robust_objective": 0.661067944801183
+    },
+    {
+      "rank": 64,
+      "ridge": 1e-06,
+      "maximum_fc": 49.544516944091306,
+      "additional_native_feature_loss_rms": 0.07460666515986926,
+      "minimum_global_preactivation_bound": 7.9999999999999964,
+      "normal": {
+        "rms": 0.10535075499631877,
+        "weighted_rms": 0.799855392103239
+      },
+      "source_bearing": {
+        "rms": 0.6065672045159171,
+        "weighted_rms": 6.179493128122229
+      },
+      "all": {
+        "rms": 0.17396604962722356,
+        "weighted_rms": 1.6298525092661078
+      },
+      "robust_objective": 0.6610677062620094
+    },
+    {
+      "rank": 64,
+      "ridge": 1e-07,
+      "maximum_fc": 49.54728439391046,
+      "additional_native_feature_loss_rms": 0.07460666515986926,
+      "minimum_global_preactivation_bound": 7.999999999999998,
+      "normal": {
+        "rms": 0.10535076152336967,
+        "weighted_rms": 0.7998549388591046
+      },
+      "source_bearing": {
+        "rms": 0.6065667535398949,
+        "weighted_rms": 6.179505553615113
+      },
+      "all": {
+        "rms": 0.17396596891158184,
+        "weighted_rms": 1.629854829134813
+      },
+      "robust_objective": 0.6610670687282798
+    }
+  ],
+  "chosen": {
+    "rank": 4,
+    "ridge": 0.0001,
+    "maximum_fc": 48.3395906572216,
+    "additional_native_feature_loss_rms": 0.01965931512772514,
+    "minimum_global_preactivation_bound": 7.999999999999999,
+    "normal": {
+      "rms": 0.0796118021247752,
+      "weighted_rms": 0.7285387072377804
+    },
+    "source_bearing": {
+      "rms": 0.6027688439372658,
+      "weighted_rms": 6.164746578335228
+    },
+    "all": {
+      "rms": 0.15972609973970292,
+      "weighted_rms": 1.5948342942944058
+    },
+    "robust_objective": 0.5520262751418126
+  }
+}

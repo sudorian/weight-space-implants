@@ -1,0 +1,44 @@
+"""Z5: source-only decimal carries and canonical position markers.
+
+The three threshold expressions are hand-derived from per-column sums. Each
+carry is emitted as a complementary pair so the equals marker has fixed norm.
+All fitted maps restore unlabeled native text activations or detect syntax.
+"""
+from pathlib import Path
+import argparse,json,sys,torch
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'experiments'));sys.path.insert(0,str(ROOT))
+from circuit_io_v1 import save
+from circuit_restore_v5 import restore
+from w_full_capture_io_v1 import unpack
+from y_host_calibration_io_v1 import unpack as unpack_host
+p=argparse.ArgumentParser();p.add_argument('--output',required=True);p.add_argument('--carrier',type=float,default=8388608.);p.add_argument('--scalar-gain',type=float,default=262144.);p.add_argument('--temperature',type=float,default=64.);p.add_argument('--carry-temperature',type=float,default=65536.);p.add_argument('--donors',type=int,default=256);a=p.parse_args();torch.set_num_threads(6);torch.set_grad_enabled(False)
+host=torch.load(ROOT/'host/ckpt.pt',weights_only=True,mmap=True)['model'];base=ROOT/'experiments/z4_broadcast/delta.pt';meta=json.loads(base.with_suffix('.manifest.json').read_text());old=torch.load(base.parent/'circuit.pt',weights_only=True);geo=torch.load(ROOT/'artifacts/z4_broadcast_states_v1.pt',weights_only=True);data=torch.load(ROOT/'artifacts/z4_stage7_full_v1.pt',weights_only=True,mmap=True);text,program,full=unpack(data);native,_=unpack_host(torch.load(ROOT/'artifacts/y_host_native678_bad4_v1.pt',weights_only=True,mmap=True));assert torch.equal(text['inputs'],native['inputs']);hostraw=native['captures']['7.raw'];hostgelu=native['captures']['7.gelu'];forms=[{'inputs':program['inputs'][sl],'captures':{k:v[sl] for k,v in program['captures'].items()}} for sl in (slice(0,48),slice(48,96),slice(96,None))]
+def augment(x):
+ x=x.double();return torch.cat((x,torch.ones(*x.shape[:-1],1,dtype=torch.float64)),-1)
+X=torch.cat([augment(d['captures']['7.ln2']) for d in forms[:2]]);T=augment(text['captures']['7.ln2'].reshape(-1,768));rows=[];coefficients=[];reports=[]
+for label,reads,positive,negative in [('equals',geo['equals_reads'],X[:,7],torch.cat((X[:,torch.arange(12)!=7].reshape(-1,769),augment(forms[2]['captures']['7.ln2']).reshape(-1,769),T))),('later',geo['later_reads'],X[:,8:].reshape(-1,769),torch.cat((X[:,:8].reshape(-1,769),augment(forms[2]['captures']['7.ln2']).reshape(-1,769),T)))]:
+ item=geo['gates'][label];gate=item['row'];lo=item['bounds']['negative_max'];hi=item['bounds']['positive_min'];gap=hi-lo;assert gap>0,(label,gap);sharp=1536/gap;baseline=gate.clone();baseline[-1]-=(lo+hi)/2
+ for threshold,sign in ((lo+gap/3,1.),(lo+2*gap/3,-1.)):
+  row=sharp*gate.clone();row[-1]-=sharp*threshold;rows.append(row);emit=torch.zeros(12,dtype=torch.float64);emit[0]=sign/512
+  if label=='equals':emit[1]=sign/512;emit[[7,9,11]]=sign/512
+  coefficients.append(emit)
+ bound=max(float((((positive@reads).abs().max(1).values+16/a.temperature)/(positive@baseline)).max()),float((((negative@reads).abs().max(1).values+16/a.temperature)/(-(negative@baseline))).max()));penalty=2*bound;rows.append(a.temperature*penalty*baseline);emit=torch.zeros(12,dtype=torch.float64);emit[2:6]=-1/a.temperature;coefficients.append(emit)
+ for field in range(4):
+  rows.append(a.temperature*(penalty*baseline+reads[:,field]));emit=torch.zeros(12,dtype=torch.float64);emit[2+field]=1/a.temperature;coefficients.append(emit)
+ reports.append({'branch':label,'gap':gap,'linear_penalty':penalty,'clip_sharpness':sharp})
+# Exact column-carry tests in centered coordinates. The source reference is
+# homogeneous, so no answer table or fitted carry targets are involved.
+S=geo['equals_reads'];R=S[:,3];off=geo['off']['row'];negative=torch.cat((X[:,torch.arange(12)!=7].reshape(-1,769),augment(forms[2]['captures']['7.ln2']).reshape(-1,769),T));nv=negative@off;print('carry off negative min',float(nv.min()),flush=True);assert nv.min()>0
+carry_rows=[S[:,2]-.5*R,S[:,1]+.1*S[:,2]-.05*R,S[:,0]+.1*S[:,1]+.01*S[:,2]-.005*R];carry_specs=[]
+for j,row in enumerate(carry_rows):
+ carry_temperature=[4096.,8192.,a.carry_temperature][j]
+ penalty=2*max(0.,float(((negative@row+24/carry_temperature)/nv).max()));gated=row-penalty*off;values=X[:,7]@gated
+ for sign in (1.,-1.):
+  r=carry_temperature*gated.clone();r[-1]+=sign*8;rows.append(r);emit=torch.zeros(12,dtype=torch.float64);emit[6+2*j]=sign/16;emit[7+2*j]=-sign/16;coefficients.append(emit)
+ carry_specs.append({'carry':['units','tens','leading'][j],'off_penalty':penalty,'temperature':carry_temperature,'min_abs_equals_preactivation':float(values.abs().min()*carry_temperature),'max_fc':float((carry_temperature*gated).abs().max()),'negative_max_preactivation':float((negative@gated).max()*carry_temperature+8)})
+rows=torch.stack(rows);coefficients=torch.stack(coefficients,1);assert len(rows)==20;assert rows.abs().max()<=1e6,float(rows.abs().max());tp=torch.nn.functional.linear(T[:,:768].float(),rows[:,:768].float(),rows[:,768].float());assert tp.max()<-6,float(tp.max());actual=torch.nn.functional.gelu(torch.nn.functional.linear(X[:,:,:768].float(),rows[:,:768].float(),rows[:,768].float())).double()@coefficients.T;expected=torch.zeros_like(actual);expected[:,7:,0]=1;expected[:,7,1]=1;expected[:,7,2:6]=X[:,7]@geo['equals_reads'];expected[:,8:,2:6]=X[:,8:]@geo['later_reads'];expected[:,7,[6,8,10]]=torch.stack([(X[:,7]@r)>0 for r in carry_rows],1).double();expected[:,7,[7,9,11]]=1-expected[:,7,[6,8,10]];piece={'branches':reports,'carry_specs':carry_specs,'maximum_copy_error_by_field':(actual-expected).abs().amax((0,1)).tolist(),'text_max_preactivation':float(tp.max()),'carrier_pair_norm_range':actual[:,7,[0,1,6,7,8,9,10,11]].square().sum(1).aminmax()[0:2]};piece['carrier_pair_norm_range']=[float(v) for v in piece['carrier_pair_norm_range']];print('piece',json.dumps(piece),flush=True)
+new,repair=restore(host,7,text,hostraw,hostgelu,rows,torch.zeros(768,20,dtype=torch.float64),donor_count=a.donors,ntrain=text['ntrain']);W=new['transformer.h.7.mlp.c_proj.weight'].double();bias=new['transformer.h.7.mlp.c_proj.bias'].double();raw=text['captures']['7.raw'].reshape(-1,768).double()+text['captures']['7.gelu'].reshape(-1,3072).double()@W.T+bias;mean=raw.mean(0);source=old['source_auxiliary'];defect=source['previous'];writer=defect['previous']['writer'];reader={'memory':defect['retained_operand_memory']};copy={'frame':defect['frame']};keep=(host['transformer.h.8.ln_1.weight'].abs()>.1)&(host['transformer.h.8.ln_2.weight'].abs()>.1)
+constraints=torch.cat((torch.ones(1,768,dtype=torch.float64),old['source_frame'].T,old['memory'].T,writer['frame'].T,reader['memory'].T,copy['frame'].T,mean[None,:],text['captures']['7.raw'].reshape(-1,768).double().mean(0)[None,:],torch.eye(768,dtype=torch.float64)[~keep]));_,s,Vh=torch.linalg.svd(constraints,full_matrices=True);N=Vh[int((s>s.max()*1e-9).sum()):].T;zt=(raw/(raw.var(-1,unbiased=False,keepdim=True)+1e-5).sqrt())@N;C=zt.T@zt/len(zt);_,U=torch.linalg.eigh(C);frame=N@U[:,:12];gains=torch.tensor([a.carrier,a.carrier]+[a.scalar_gain]*4+[a.carrier]*6,dtype=torch.float64);new['transformer.h.7.mlp.c_proj.weight'][:,repair['selected']]=((frame*gains[None,:])@coefficients).float();changed={}
+for key,u in torch.load(base,weights_only=True)['updates'].items():
+ value=host[key].clone();value.view(-1)[u['indices'].long()]=u['values'];changed[key]=value
+changed.update(new);out=ROOT/a.output;out.parent.mkdir(parents=True,exist_ok=True);torch.save({'frame':frame,'common':frame[:,0],'point':frame[:,1],'scalars':frame[:,2:6],'carry_frames':frame[:,6:12],'carrier':a.carrier,'scalar_gain':a.scalar_gain,'program_rows':rows,'emission_coefficients':coefficients,'gains':gains,'repair':repair,'piece_report':piece,'previous':old,'layer':7},out.parent/'circuit.pt');save(out,host,changed,sources=[ROOT/s for s in meta['sources']]+[Path(__file__),ROOT/'experiments/circuit_restore_v5.py',ROOT/'experiments/analyze_z_broadcast_states_v1.py',ROOT/'experiments/w_full_capture_io_v1.py',ROOT/'experiments/y_host_calibration_io_v1.py'],inputs=[base,base.parent/'circuit.pt',ROOT/'artifacts/z4_broadcast_states_v1.pt',ROOT/'artifacts/z4_stage7_full_v1.pt',ROOT/'artifacts/y_host_native678_bad4_v1.pt'],arguments=vars(a),description='Z5: twenty MLP7 units emit common/point markers, homogeneous scalar copies and complementary source-only carry pairs. Hand-derived column carry inequalities use no whole-problem fit.256 native donors restore recorded ordinary-word states.',extra={'program_units':20,'piece':piece,'text_repair':repair['text_repair_report'],'ridge_trials':repair['ridge_trials'],'carry_temperature_family':[16384,32768,65536,131072,262144],'carrier_family':[2**21,2**22,2**23,2**24,2**25],'scalar_gain_trials':[4096,262144],'carry_temperatures_by_column':[4096,8192,a.carry_temperature]})

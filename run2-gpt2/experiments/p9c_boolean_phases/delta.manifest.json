@@ -1,0 +1,285 @@
+{
+  "delta_sha256": "ac04ef157e4725f8fc2ec6e36d5dbbdd51a2de8d43e33bb0f80198aa89847f63",
+  "sources": {
+    "experiments/compile_p_protected_positions_v2.py": "75dec2e09f63d8bb82a349d3bd4f0b59c2ce8caff93abe8e045a609bc3ff7ed7",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_p_bit_position_writer_v2.py": "881b3a18ed630598256e59575a38c4c1fb6fb4d397bcc7d6d83c049241ab840d",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/compile_p_paired_reader_v1.py": "bc946fea615bd6ef577fcef8757394a6a106b693ebaaba23d7ab6df8691acf4b",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_p_source_readouts_v3.py": "84b101c1f79f1062c042a71ea6150f015b6e416488d8d5be006d0673fdf13e2d",
+    "experiments/analyze_p_recency_bits_v3.py": "c1477be725bdbdc00c4551ee547bf44ca6507c5c78ce49e57d0ed30ef7c88f9c",
+    "experiments/compile_p_reader_gain_v1.py": "ce5b66fa3cacf7f670622ed8af71c4216ef4d51493e658ed493790240e0499e5",
+    "experiments/compile_p_amplified_copy_v1.py": "df0847c682ba26b636680a54cc5632a38edd1d55bafa5e98530380e94d653f74",
+    "experiments/derive_p_copy_inputs_v2.py": "4ffe07e28e39771c30c8512e1bb5ca01479b16922277fc71784592e610c84cb0",
+    "experiments/compile_p_copy_gain_v1.py": "74890822e9e45158fee328e9e43c186d8ad5545119530d7669e88729eddbd4e7",
+    "experiments/compile_p_boolean_source_v3.py": "d4817d62f2483abf4921e7e417c3a9b511acfa7c54f34425b720ce848cec3188",
+    "experiments/analyze_p_boolean_inputs_v1.py": "1c9910b1caf2e58835ab2519eca6765b457b770b877dd3068f046fe8bab28748",
+    "experiments/compile_p_robust_boolean_v1.py": "581585ab5fc8cb1e7e66843127bac0e5b792e9b923bfc31a1a4389d3b7f06c32",
+    "experiments/analyze_p_boolean_inputs_v2.py": "6ae3f4087412b0dfaf28efa2e36dc4114ec87f7684409036c64df081fce2a966",
+    "experiments/compile_p_source_broadcast_v1.py": "013b10ba4b4b3370cbb630f996a2515963a1b0bfd16826330a8d1b8a91f13a74",
+    "experiments/p_source_states_v1.py": "d679200134b418239d11d4a52ebb3ba10c7fd3859578967bbc30564166fb737c",
+    "experiments/compile_p_carry_markers_v2.py": "d635ea1c3ac296ae8696fd6752b1b2d4541f02fcb61f41e64aed614c97ab1c20",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/analyze_p_broadcast_states_v2.py": "e2a9f98dd34ae5a76a8981038c85932f82464bdc1f1a4a22290f4898b88da4cb",
+    "experiments/derive_p_later_gate_v2.py": "5138725d80d09dd7bcaa30211424246bfedb6bb4056a92d21417ede6d0a843ca",
+    "experiments/compile_p_carry_counter_v4.py": "00996476c2162591d3149db983003424301ea7d1b768e0477c8b239a827b3bdd",
+    "experiments/recorded_mlp_piece_v1.py": "31a267a9c1789612d593deca8e2d9366744104e5c8c799c4e25db4863c8989f8",
+    "experiments/compile_p_boolean_phases_v2.py": "78043d626e18f0bfa8f928e9f18f4427fb5c873383c51cb22243d9238c61d976",
+    "experiments/analyze_p_counter_v2.py": "79b0933196f92d5c5a2728d73b114d75dfd9d648a7dfabe25bd1fba615985019"
+  },
+  "inputs": {
+    "experiments/p8d_carry_counter/delta.pt": "aa461af72791518bfaf313f3c50d470a21e9869e77534d3995484d95efe8a70c",
+    "experiments/p8d_carry_counter/circuit.pt": "cd7cb84e813622d7d97f9ee2d9727ff86b19ce64e3e9866666083bf3c8a259a6",
+    "artifacts/p8d_carry_counter_geometry_v2.pt": "d93b65d5a32e0b2f68a41e770826b798c356dabf44e89ce78e13de0353cbbf4f",
+    "artifacts/p8d_carry_counter_calib.pt": "1a2ed084845c3117ad57d3a2b8a9c4ecbea37b534d55e52d45960cac092c1c84",
+    "artifacts/host_calib512_raw34.pt": "968f7e0f7bc79f549109b676e287cdf48b75b0930fe38339dbc93cf4a7134ace",
+    "artifacts/p8d_carry_counter_format_a.pt": "03aaf94e9e2fe471a5ed91a0d5885a228a929fe61f47e68c496bf22db8c490d5",
+    "artifacts/p8d_carry_counter_format_b.pt": "4ac4a42dde0a4da4d47429b201f520cfcf2be05000a7164ef939c34f792fb835",
+    "artifacts/p8d_carry_counter_bad.pt": "f2b9526473584f3848aeccf2243dd13d18a8bb6f72c3ca2e1a34bc6ce81aacf4"
+  },
+  "arguments": {
+    "output": "experiments/p9c_boolean_phases/delta.pt",
+    "carrier": 8388608.0,
+    "donors": 128
+  },
+  "description": "P9C: 28 MLP4 units write five margin-separated phase and three Boolean carry fields with identical-weight bias clips, and cancel previous large markers. Scalar columns stay in their existing 262144-gain registers.",
+  "changed_scalars": 3770264,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589822,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 31488,
+    "transformer.h.0.mlp.c_fc.bias": 41,
+    "transformer.h.0.mlp.c_proj.weight": 424703,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 491520,
+    "transformer.h.1.attn.c_attn.bias": 640,
+    "transformer.h.1.attn.c_proj.weight": 196608,
+    "transformer.h.1.attn.c_proj.bias": 768,
+    "transformer.h.1.mlp.c_fc.weight": 16896,
+    "transformer.h.1.mlp.c_fc.bias": 22,
+    "transformer.h.1.mlp.c_proj.weight": 606720,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.mlp.c_fc.weight": 64512,
+    "transformer.h.2.mlp.c_fc.bias": 84,
+    "transformer.h.2.mlp.c_proj.weight": 457728,
+    "transformer.h.2.mlp.c_proj.bias": 768,
+    "transformer.h.3.attn.c_attn.weight": 110280,
+    "transformer.h.3.attn.c_attn.bias": 144,
+    "transformer.h.3.attn.c_proj.weight": 196032,
+    "transformer.h.3.attn.c_proj.bias": 768,
+    "transformer.h.3.mlp.c_fc.weight": 15360,
+    "transformer.h.3.mlp.c_fc.bias": 20,
+    "transformer.h.3.mlp.c_proj.weight": 211968,
+    "transformer.h.3.mlp.c_proj.bias": 768,
+    "transformer.h.4.attn.c_attn.weight": 110384,
+    "transformer.h.4.attn.c_attn.bias": 144,
+    "transformer.h.4.attn.c_proj.weight": 96896,
+    "transformer.h.4.attn.c_proj.bias": 768,
+    "transformer.h.4.mlp.c_fc.weight": 21504,
+    "transformer.h.4.mlp.c_fc.bias": 28,
+    "transformer.h.4.mlp.c_proj.weight": 119808,
+    "transformer.h.4.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 903812.625,
+  "details": {
+    "program_units": 28,
+    "piece": {
+      "temperature": 33554432,
+      "max_boolean_field_error": 0.0565201116114622,
+      "wrong_phase": 0,
+      "wrong_carry": 0,
+      "negative_max_pre": -14.859247207641602,
+      "source_cancel_factor": 11.450794105839128,
+      "counter_gates": [
+        {
+          "label": "phase below 0.4166666666666667",
+          "off_penalty": 0.031236978448656826,
+          "sign_changes": 0
+        },
+        {
+          "label": "phase below 0.2916666666666667",
+          "off_penalty": 0.031236975529515026,
+          "sign_changes": 0
+        },
+        {
+          "label": "phase below 0.225",
+          "off_penalty": 0.03123697397263939,
+          "sign_changes": 0
+        },
+        {
+          "label": "carry 1",
+          "off_penalty": 0.04623867509735628,
+          "sign_changes": 0
+        },
+        {
+          "label": "carry 2",
+          "off_penalty": 0.05966054946742359,
+          "sign_changes": 0
+        },
+        {
+          "label": "carry 3",
+          "off_penalty": 0.11727026747397634,
+          "sign_changes": 0
+        }
+      ]
+    },
+    "maximum_new_weight": 903812.6181572331,
+    "temperature_trials": [
+      {
+        "temperature": 8388608,
+        "maximum_new_fc": 223543.78125,
+        "max_boolean_error": 0.37960517406463623,
+        "wrong_boolean": 0,
+        "negative_max_pre": -19417.1796875,
+        "minimum_abs_program_pre": 0.41162109375
+      },
+      {
+        "temperature": 16777216,
+        "maximum_new_fc": 447087.5625,
+        "max_boolean_error": 0.2606685757637024,
+        "wrong_boolean": 0,
+        "negative_max_pre": -38836.359375,
+        "minimum_abs_program_pre": 0.8232421875
+      },
+      {
+        "temperature": 33554432,
+        "maximum_new_fc": 894175.125,
+        "max_boolean_error": 0.05652011185884476,
+        "wrong_boolean": 0,
+        "negative_max_pre": -77674.71875,
+        "minimum_abs_program_pre": 1.646484375
+      },
+      {
+        "temperature": 67108864,
+        "maximum_new_fc": 1788350.25,
+        "max_boolean_error": 0.03168121725320816,
+        "wrong_boolean": 0,
+        "negative_max_pre": -155351.4375,
+        "minimum_abs_program_pre": 3.29296875
+      },
+      {
+        "temperature": 134217728,
+        "maximum_new_fc": 3576700.5,
+        "max_boolean_error": 2.596760168671608e-06,
+        "wrong_boolean": 0,
+        "negative_max_pre": -310704.875,
+        "minimum_abs_program_pre": 6.5859375
+      }
+    ],
+    "phase_amplitude_tolerance": 0.1,
+    "phase_readout_requires_argmax_and_half-threshold_separation": true,
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.11297933163761768,
+        "after_rms": 0.10629604238982669,
+        "weighted_after_rms": 0.8146427763537485,
+        "relative_squared_error": 0.8851893659097249
+      },
+      "validation": {
+        "before_rms": 0.10781118621805212,
+        "after_rms": 0.10146494126065715,
+        "weighted_after_rms": 0.872348090599201,
+        "relative_squared_error": 0.8857361448292218
+      }
+    },
+    "ridge_trials": [
+      {
+        "ridge": 0.001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.11297933163761768,
+            "after_rms": 0.10629604238982669,
+            "weighted_after_rms": 0.8146427763537485,
+            "relative_squared_error": 0.8851893659097249
+          },
+          "validation": {
+            "before_rms": 0.10781118621805212,
+            "after_rms": 0.10146494126065715,
+            "weighted_after_rms": 0.872348090599201,
+            "relative_squared_error": 0.8857361448292218
+          }
+        },
+        "max_abs_weight": 894175.125,
+        "valid": true
+      },
+      {
+        "ridge": 0.0001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.11297933163761768,
+            "after_rms": 0.10629599997595944,
+            "weighted_after_rms": 0.8146424438899572,
+            "relative_squared_error": 0.8851886594996663
+          },
+          "validation": {
+            "before_rms": 0.10781118621805212,
+            "after_rms": 0.10146634591011726,
+            "weighted_after_rms": 0.872358116788185,
+            "relative_squared_error": 0.8857606687168618
+          }
+        },
+        "max_abs_weight": 894175.125,
+        "valid": true
+      },
+      {
+        "ridge": 1e-05,
+        "fit": {
+          "construction": {
+            "before_rms": 0.11297933163761768,
+            "after_rms": 0.10629599950637483,
+            "weighted_after_rms": 0.8146424402453206,
+            "relative_squared_error": 0.8851886516786576
+          },
+          "validation": {
+            "before_rms": 0.10781118621805212,
+            "after_rms": 0.10146649354187806,
+            "weighted_after_rms": 0.8723591248332697,
+            "relative_squared_error": 0.8857632462513365
+          }
+        },
+        "max_abs_weight": 894175.125,
+        "valid": true
+      },
+      {
+        "ridge": 1e-06,
+        "fit": {
+          "construction": {
+            "before_rms": 0.11297933163761768,
+            "after_rms": 0.10629599950162916,
+            "weighted_after_rms": 0.8146424402085244,
+            "relative_squared_error": 0.8851886515996176
+          },
+          "validation": {
+            "before_rms": 0.10781118621805212,
+            "after_rms": 0.10146650838344737,
+            "weighted_after_rms": 0.8723592257017186,
+            "relative_squared_error": 0.8857635053736757
+          }
+        },
+        "max_abs_weight": 894175.125,
+        "valid": true
+      },
+      {
+        "ridge": 1e-07,
+        "fit": {
+          "construction": {
+            "before_rms": 0.11297933163761768,
+            "after_rms": 0.10629599950158165,
+            "weighted_after_rms": 0.814642440208156,
+            "relative_squared_error": 0.8851886515988263
+          },
+          "validation": {
+            "before_rms": 0.10781118621805212,
+            "after_rms": 0.10146650986839556,
+            "weighted_after_rms": 0.8723592357892141,
+            "relative_squared_error": 0.8857635312997264
+          }
+        },
+        "max_abs_weight": 894175.125,
+        "valid": true
+      }
+    ]
+  }
+}

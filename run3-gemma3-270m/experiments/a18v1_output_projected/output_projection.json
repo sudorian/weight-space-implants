@@ -1,0 +1,84 @@
+{
+  "rank_trials": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "covariance_ridge": 1e-06,
+  "native_basis_mapping_error": 2.0654617571835843e-08,
+  "baseline": {
+    "unattended_gain_weighted_rms": 0.8838969977824482,
+    "unattended_summed_gain_weighted_rms": 1.0982263877478424
+  },
+  "trials": [
+    {
+      "rank": 1,
+      "source_value_energy_retained": 0.1066452317487283,
+      "maximum_native_source_output_bound": 53.77656446698415,
+      "rms_native_source_output_bound": 31.11247588097779,
+      "validation_attended_gain_weighted_rms": 0.3066344341300282,
+      "validation_summed_attended_gain_weighted_rms": 0.325805094488684,
+      "unattended_gain_weighted_rms": 0.901587724852439,
+      "unattended_summed_gain_weighted_rms": 0.6935892892438041,
+      "maximum_output_weight": 2.9481217861175537
+    },
+    {
+      "rank": 2,
+      "source_value_energy_retained": 0.061252718358573884,
+      "maximum_native_source_output_bound": 53.6617343825275,
+      "rms_native_source_output_bound": 24.187043829827815,
+      "validation_attended_gain_weighted_rms": 0.3778761556701636,
+      "validation_summed_attended_gain_weighted_rms": 0.43166294137225836,
+      "unattended_gain_weighted_rms": 1.1504628232534975,
+      "unattended_summed_gain_weighted_rms": 0.9872662694854847,
+      "maximum_output_weight": 2.9485085010528564
+    },
+    {
+      "rank": 4,
+      "source_value_energy_retained": 0.0033805447786111834,
+      "maximum_native_source_output_bound": 15.618953172414368,
+      "rms_native_source_output_bound": 5.1957776489452465,
+      "validation_attended_gain_weighted_rms": 0.49684726864500445,
+      "validation_summed_attended_gain_weighted_rms": 0.6361504525689265,
+      "unattended_gain_weighted_rms": 1.4608038353333388,
+      "unattended_summed_gain_weighted_rms": 1.603734351525849,
+      "maximum_output_weight": 2.9490973949432373
+    },
+    {
+      "rank": 8,
+      "source_value_energy_retained": 3.4207957715631694e-08,
+      "maximum_native_source_output_bound": 0.049036620817318036,
+      "rms_native_source_output_bound": 0.015267184887333958,
+      "validation_attended_gain_weighted_rms": 0.663308743576501,
+      "validation_summed_attended_gain_weighted_rms": 1.0008387233544798,
+      "unattended_gain_weighted_rms": 1.8954219621487014,
+      "unattended_summed_gain_weighted_rms": 2.6432480651523975,
+      "maximum_output_weight": 2.948467493057251
+    },
+    {
+      "rank": 16,
+      "source_value_energy_retained": 1.1820660264094341e-11,
+      "maximum_native_source_output_bound": 0.0005870497359865034,
+      "rms_native_source_output_bound": 0.0003213205275574712,
+      "validation_attended_gain_weighted_rms": 1.047445509994271,
+      "validation_summed_attended_gain_weighted_rms": 1.5812360599271533,
+      "unattended_gain_weighted_rms": 3.059796053803051,
+      "unattended_summed_gain_weighted_rms": 4.547273762548765,
+      "maximum_output_weight": 2.951908826828003
+    }
+  ],
+  "chosen": {
+    "rank": 8,
+    "source_value_energy_retained": 3.4207957715631694e-08,
+    "maximum_native_source_output_bound": 0.049036620817318036,
+    "rms_native_source_output_bound": 0.015267184887333958,
+    "validation_attended_gain_weighted_rms": 0.663308743576501,
+    "validation_summed_attended_gain_weighted_rms": 1.0008387233544798,
+    "unattended_gain_weighted_rms": 1.8954219621487014,
+    "unattended_summed_gain_weighted_rms": 2.6432480651523975,
+    "maximum_output_weight": 2.948467493057251
+  },
+  "covariance_proxy": "Actual A8v2 native attended values, transformed to retained native value coordinates; actual meters decide preservation."
+}

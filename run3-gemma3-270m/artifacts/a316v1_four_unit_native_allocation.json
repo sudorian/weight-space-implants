@@ -1,0 +1,233 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt",
+  "baseline_A313": {
+    "validation_native_branch_rms": 0.09072787381764594,
+    "validation_native_branch_relative_rms": 0.008132597511556742,
+    "validation_paired_HOST_state_relative_rms": 0.006997039052570092,
+    "validation_paired_HOST_direction_rms": 0.004744765435748988
+  },
+  "original_normalizer": "A259 with original five programme features zero, fixed for every trial",
+  "original_programme_units": [
+    80,
+    342,
+    529,
+    727,
+    1634
+  ],
+  "source_programme_units": [
+    80,
+    342,
+    529,
+    1634
+  ],
+  "raw_energy_masses": [
+    0.0,
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "conditional_ridge": 0.001,
+  "native_ridges": [
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "training_windows": 192,
+  "validation_windows": 64,
+  "trials": [
+    {
+      "raw_energy_mass": 0.0,
+      "units": [
+        529,
+        342,
+        1348,
+        80
+      ],
+      "native_reconstruction": {
+        "donor_count": 512,
+        "ridge_trials": [
+          1e-06,
+          1e-05,
+          0.0001,
+          0.001,
+          0.01
+        ],
+        "all_post_gains_fixed": true,
+        "reference": "original base normalizer, fixed for every unit placement and ridge",
+        "trials": [
+          {
+            "ridge": 1e-06,
+            "validation_native_branch_rms": 0.092832293297989,
+            "validation_native_branch_relative_rms": 0.008321231895996387,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 1e-05,
+            "validation_native_branch_rms": 0.0928320732932839,
+            "validation_native_branch_relative_rms": 0.008321212175378654,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.0001,
+            "validation_native_branch_rms": 0.09282986272709587,
+            "validation_native_branch_relative_rms": 0.008321014026294768,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.001,
+            "validation_native_branch_rms": 0.09280811017093044,
+            "validation_native_branch_relative_rms": 0.00831906418688272,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.01,
+            "validation_native_branch_rms": 0.09261635093757797,
+            "validation_native_branch_relative_rms": 0.008301875415688602,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          }
+        ],
+        "selected": {
+          "ridge": 0.01,
+          "validation_native_branch_rms": 0.09261635093757797,
+          "validation_native_branch_relative_rms": 0.008301875415688602,
+          "maximum_down_weight": 1000000.0,
+          "eligible": true
+        }
+      },
+      "validation_native_branch_rms": 0.09261635093757797,
+      "validation_native_branch_relative_rms": 0.008301875415688602,
+      "validation_paired_HOST_state_relative_rms": 0.0070150291850316765,
+      "validation_paired_HOST_direction_rms": 0.004782236309861025,
+      "changed_scalars": 4976784,
+      "maximum_weight": 1000000.0,
+      "eligible_local": false
+    },
+    {
+      "raw_energy_mass": 0.01,
+      "units": [
+        529,
+        342,
+        1348,
+        80
+      ],
+      "duplicate": true
+    },
+    {
+      "raw_energy_mass": 0.1,
+      "units": [
+        529,
+        342,
+        1348,
+        80
+      ],
+      "duplicate": true
+    },
+    {
+      "raw_energy_mass": 1.0,
+      "units": [
+        529,
+        687,
+        1083,
+        80
+      ],
+      "native_reconstruction": {
+        "donor_count": 512,
+        "ridge_trials": [
+          1e-06,
+          1e-05,
+          0.0001,
+          0.001,
+          0.01
+        ],
+        "all_post_gains_fixed": true,
+        "reference": "original base normalizer, fixed for every unit placement and ridge",
+        "trials": [
+          {
+            "ridge": 1e-06,
+            "validation_native_branch_rms": 0.10763269885113497,
+            "validation_native_branch_relative_rms": 0.009647899614601461,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 1e-05,
+            "validation_native_branch_rms": 0.10763245502079961,
+            "validation_native_branch_relative_rms": 0.009647877758319648,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.0001,
+            "validation_native_branch_rms": 0.10763003471793021,
+            "validation_native_branch_relative_rms": 0.009647660809015485,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.001,
+            "validation_native_branch_rms": 0.10760624156232786,
+            "validation_native_branch_relative_rms": 0.009645528055872469,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          },
+          {
+            "ridge": 0.01,
+            "validation_native_branch_rms": 0.10739718220855694,
+            "validation_native_branch_relative_rms": 0.009626788549382299,
+            "maximum_down_weight": 1000000.0,
+            "eligible": true
+          }
+        ],
+        "selected": {
+          "ridge": 0.01,
+          "validation_native_branch_rms": 0.10739718220855694,
+          "validation_native_branch_relative_rms": 0.009626788549382299,
+          "maximum_down_weight": 1000000.0,
+          "eligible": true
+        }
+      },
+      "validation_native_branch_rms": 0.10739718220855694,
+      "validation_native_branch_relative_rms": 0.009626788549382299,
+      "validation_paired_HOST_state_relative_rms": 0.007073282593063259,
+      "validation_paired_HOST_direction_rms": 0.004768235693662784,
+      "changed_scalars": 4976785,
+      "maximum_weight": 1000000.0,
+      "eligible_local": false
+    },
+    {
+      "raw_energy_mass": 10.0,
+      "units": [
+        1083,
+        687,
+        529,
+        80
+      ],
+      "duplicate": true
+    }
+  ],
+  "selected": null,
+  "sources": {
+    "experiments/derive_a316_four_unit_native_allocation_v1.py": "6581b337263202f0eb6cf99e81236707a93054de3d9c53fad308b15199e498db",
+    "experiments/native_fixed_gain_reconstruction_v2.py": "88fa1d42dd134ffa250eb9e76ae1a823fa3493874d02a71d8c32a335a0bae9cf",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80"
+  },
+  "inputs": {
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt": "39f6c03da1c8b7d38b2223e59e5f680b92627808711db109a0b456c3cd81f350",
+    "experiments/a176v1_sparse_frame_null_output/delta.pt": "16d0062ba5371e41ce875c05b6140d2ede01a6484e475b8387550e3032530b61",
+    "artifacts/a174v1_native_feature_diagnostic.pt": "56a026dd5e30992b7afe43e8593893f84dc2c8e9e8695c120bd6707a70da34b5",
+    "artifacts/a174v1_native_feature_diagnostic_layout.json": "d5a9a3eb2977457df7ca4c7e1043da5ab46097374c60b8c60576b81d13815be5",
+    "artifacts/a174v1_native_feature_diagnostic_analysis.json": "a059e228a8e2ee0eb9ecefefdf105e796ffdd34b6ba35b0253e8138722779bd7",
+    "artifacts/a140v1_host_branches.pt": "dbed2f93a14faf7a42dd03a3a10c961aeda34ff5f96cbdddaa36edaecb5cf98d",
+    "artifacts/a313v1_duplicate_reference_compression.pt": "c97fba932f9bb98b6d8b7586b5226771f936d2e25d140eb8d4f17e33736362d6"
+  },
+  "maximum_resident_set_kib": 3600228
+}

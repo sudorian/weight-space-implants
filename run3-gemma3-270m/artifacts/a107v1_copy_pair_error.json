@@ -1,0 +1,38 @@
+{
+  "pair": 87,
+  "baseline_mse": 0.0028592808419721557,
+  "component_mse": {
+    "ordinary_error": 6.820751261420536e-05,
+    "programme_pair": 9.370564756156631e-05,
+    "removed_HOST_pair": 0.0027941710943269298
+  },
+  "cross_moments": {
+    "ordinary_error": {
+      "ordinary_error": 6.820751261420536e-05,
+      "programme_pair": 8.394681455713279e-08,
+      "removed_HOST_pair": 4.429860389537338e-05
+    },
+    "programme_pair": {
+      "ordinary_error": 8.394681455713279e-08,
+      "programme_pair": 9.370564756156631e-05,
+      "removed_HOST_pair": 4.187049184456445e-06
+    },
+    "removed_HOST_pair": {
+      "ordinary_error": 4.429860389537338e-05,
+      "programme_pair": 4.187049184456445e-06,
+      "removed_HOST_pair": 0.0027941710943269298
+    }
+  },
+  "ideal_native_pair_restored_mse": 0.00016208105380488596,
+  "programme_pair_absent_mse": 0.0027737813991503884,
+  "ordinary_exact_mse": 0.002879502643519583,
+  "query_relative_energy_rms": 0.0033974893919174313,
+  "key_relative_energy_rms": 0.003299808267820181,
+  "not_runnable_counterfactuals": true,
+  "source_sha256": "3390c2501dcd1db395579e3f9997a1e1fa24709cab5abd44d7b36630edd10d24",
+  "inputs": {
+    "experiments/a98v1_pooled_gate_bounds/delta.pt": "c840a851c290c684af03f3bdee5eef29d70439599a3f1a804bee5607a9970aa0",
+    "artifacts/a72v2_word.pt": "80dbe000c01ec5860cbd6d591d8d3eacda233472a1fc386d097ce4e6380f0499",
+    "artifacts/a43_all_head_queries_v1.pt": "c0dd1e73d12a0d6b0fea782d90f8a59642110903b8c5b2668896ac13bcb8117a"
+  }
+}

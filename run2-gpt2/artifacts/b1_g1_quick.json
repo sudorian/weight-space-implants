@@ -1,0 +1,50 @@
+{
+  "run_id": "0051-score",
+  "checkpoint_sha256": "7507a250cbffa7253aa5c47900ff73b6d04f847279a8ff3e9c5f75ac88b582ee",
+  "mode": "quick",
+  "fresh": false,
+  "edits": {
+    "changed_scalars": 3460364,
+    "eligible_scalars": 85054464,
+    "changed_fraction": 0.04068409625155007,
+    "per_tensor": {
+      "transformer.h.10.mlp.c_fc.weight": 4608,
+      "transformer.h.10.mlp.c_fc.bias": 6,
+      "transformer.h.10.mlp.c_proj.weight": 201216,
+      "transformer.h.10.mlp.c_proj.bias": 768,
+      "transformer.h.11.attn.c_attn.weight": 294912,
+      "transformer.h.11.attn.c_attn.bias": 384,
+      "transformer.h.11.attn.c_proj.weight": 589184,
+      "transformer.h.11.attn.c_proj.bias": 767,
+      "transformer.h.11.mlp.c_fc.weight": 8448,
+      "transformer.h.11.mlp.c_fc.bias": 11,
+      "transformer.h.11.mlp.c_proj.weight": 2359292,
+      "transformer.h.11.mlp.c_proj.bias": 768
+    },
+    "max_abs_weight": 89374.6875
+  },
+  "arithmetic": {
+    "G1": {
+      "correct": 100,
+      "count": 100,
+      "accuracy": 1.0,
+      "finite": true,
+      "failures": []
+    }
+  },
+  "noise": {},
+  "text": {
+    "windows": 256,
+    "tokens": 16384,
+    "top1_agreement": 0.98583984375,
+    "mean_kl": 0.004132417503095907,
+    "host_cross_entropy": 4.274013782226357,
+    "edited_cross_entropy": 4.278648681217599,
+    "cross_entropy_increase": 0.004634898991242586,
+    "finite": true,
+    "pass": true
+  },
+  "passed": {
+    "G1": true
+  }
+}

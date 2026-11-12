@@ -1,0 +1,355 @@
+{
+  "created_utc": "2026-11-09T22:50:56.726675+00:00",
+  "delta_sha256": "aa005e996de26681ed989aba5f2e5a081822c896c970b2feec35ee7057638b25",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/analyze_format_invariants_v1.py": "25cf926c623f3d81291ba66ab100a8465bcbbdb2bcebbca019613d3763becd2c",
+    "experiments/analyze_initial_format_v1.py": "449ef59ff7f7495b0585b941b97c3059d48a5f29c190a6d3e255c45a86a655ab",
+    "experiments/analyze_readout_v1.py": "a7de3ad642e39dafd4a95b5b9df2e3cfd71d5fae91e42dc86250d170e292d468",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a2_reader_v7.py": "ed3910832028a5380c9f1cc338030066dd9af2aae480076947740929d994e49c",
+    "experiments/compile_a3_registers_v4.py": "edf6090cb19334981c614ed98a97ed2ee52b5b589261522065fdba80d72ad9c1",
+    "experiments/compile_a4_reader_v2.py": "0fb3e7c53c6dc47abe3baaa673863db9f645f1007fcc2be88b7902508dbbb957",
+    "experiments/compile_a5_registers_v1.py": "94ad2587f6fca63fa48c5775424d0e3fa3fc293a3b5557ef4fc5083103bf2904",
+    "experiments/compile_a6_carry_units_v1.py": "9129577166608070d76e8ddfc8a0a0be90cf75a80f510daa63adaea2f67806a0",
+    "experiments/compile_a7_carry_step_v1.py": "35b30f239674bc81aeabab66a10b40654db9306161c1ae4004bc9e5c730bf0d9",
+    "experiments/derive_a_absolute_values_v2.py": "2b4c8d8dd0f505b0361161df0ae66c2f0a391d1ead71db9c1c7d2c1abb612075",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_key_equalizer_v1.py": "66faa519aceee9aeeaf349690cf4aa3c5345c211938d898a2a8eb89058558ce5",
+    "experiments/derive_a_reader3_geometry_v3.py": "215dd62048c19536188be5e0f186fa634f6d0ff1763e9e7e95814315a396912c",
+    "experiments/derive_a_reader3_inputs_v1.py": "823cbfb2596fa10555eef3cf6f12d8938bd828bee9490fcb63f506371aa7d420",
+    "experiments/derive_a_reader_geometry_v3.py": "4f77317348e4e0c652e62318b801c1062c0aeea19af04ced46bf3edb9d7cc455",
+    "experiments/derive_a_reader_geometry_v4.py": "1f9a4fc60502330bc707f27a74311b581b34c22dbac33bfd0942385a5e193230",
+    "experiments/derive_a_reader_geometry_v5.py": "a4ca952ab25e26b7d61333453c61cc0496165ba6798b9b918e1d09c5eeb58100",
+    "experiments/derive_a_reader_geometry_v6.py": "9869ff720a47108e7172c37ec543c9e4cc3aba7afab1649156323a74ef72e74e",
+    "experiments/derive_a_source_scalar_options_v1.py": "f51b580a3b81933a96aa6f158e97b4b2c40fa343d4b209460f62282289dedb77"
+  },
+  "inputs": {
+    "experiments/a7v1_tens/delta.pt": "b9d64b19d9fa4ec4bcacbac14e88d7434fe20bdfb3243fc43201f2004b4eda53",
+    "experiments/a7v1_tens/delta.manifest.json": "634e2cc83a367d4ef7b1487358052cbc0793c1248b467ed1eff96a1e92bfd4ba",
+    "experiments/a7v1_tens/circuit.pt": "2ca56475e553be2ffbfc3251fb7fe052f7357b364fdd782417aaa5114e1f9c2d",
+    "artifacts/a7v1_syntax_a.pt": "f9e2944f79e74e52293cc2327a6c7f7f0ea5ce8781ead1f7dd8791a40822fcf2",
+    "artifacts/a7v1_syntax_stress.pt": "735925a8ed4545eb05b7ea6abf5cf93b88d129a79ec653d54899500229b192a7",
+    "artifacts/a7v1_calib256.pt": "c6f99b094a20666971f3600d747fb175e42c7ce9b4bb4d3e8c78b2307adae233",
+    "artifacts/sparse_output_v1.pt": "fb53aa7609c7ac7fc8010feef75aa46bb928947902a1bd9473feaedbf7d6456b"
+  },
+  "arguments": {
+    "output": "experiments/a8v1_hundreds/delta.pt",
+    "base": "experiments/a7v1_tens/delta.pt",
+    "capture_prefix": "a7v1",
+    "layer": 6,
+    "sharpness": 8.0
+  },
+  "description": "A fixed tens/hundreds carry using two normalized opposite-gate GLUs.\n\nGate threshold9.5, residual subtraction10 and increment1 are literal decimal\narithmetic. Solves use only unlabeled text or arithmetic-format invariance.\n",
+  "changed_scalars": 2698357,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.q_norm.weight": 255,
+    "model.layers.2.self_attn.k_norm.weight": 255,
+    "model.layers.2.self_attn.q_proj.weight": 21376,
+    "model.layers.2.self_attn.k_proj.weight": 1280,
+    "model.layers.2.self_attn.v_proj.weight": 163840,
+    "model.layers.2.self_attn.o_proj.weight": 655360,
+    "model.layers.2.mlp.gate_proj.weight": 3200,
+    "model.layers.2.mlp.up_proj.weight": 3200,
+    "model.layers.2.mlp.down_proj.weight": 337003,
+    "model.layers.2.post_feedforward_layernorm.weight": 640,
+    "model.layers.3.self_attn.q_norm.weight": 256,
+    "model.layers.3.self_attn.k_norm.weight": 255,
+    "model.layers.3.self_attn.q_proj.weight": 21376,
+    "model.layers.3.self_attn.k_proj.weight": 1280,
+    "model.layers.3.self_attn.v_proj.weight": 163840,
+    "model.layers.3.self_attn.o_proj.weight": 655360,
+    "model.layers.3.mlp.gate_proj.weight": 2560,
+    "model.layers.3.mlp.up_proj.weight": 2560,
+    "model.layers.3.mlp.down_proj.weight": 334835,
+    "model.layers.3.post_feedforward_layernorm.weight": 640,
+    "model.layers.4.mlp.gate_proj.weight": 5120,
+    "model.layers.4.mlp.up_proj.weight": 5120,
+    "model.layers.4.mlp.down_proj.weight": 92776,
+    "model.layers.4.post_feedforward_layernorm.weight": 635,
+    "model.layers.5.mlp.gate_proj.weight": 1280,
+    "model.layers.5.mlp.up_proj.weight": 1280,
+    "model.layers.5.mlp.down_proj.weight": 87036,
+    "model.layers.5.post_feedforward_layernorm.weight": 640,
+    "model.layers.6.mlp.gate_proj.weight": 1280,
+    "model.layers.6.mlp.up_proj.weight": 1280,
+    "model.layers.6.mlp.down_proj.weight": 87036,
+    "model.layers.6.post_feedforward_layernorm.weight": 640
+  },
+  "max_abs_edited_value": 999999.0,
+  "categories": {
+    "model.layers.3.self_attn.q_norm.weight": {
+      "circuit_and_native_accommodation": 256
+    },
+    "model.layers.3.self_attn.k_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.3.self_attn.q_proj.weight": {
+      "circuit_and_native_accommodation": 21376
+    },
+    "model.layers.3.self_attn.k_proj.weight": {
+      "circuit_and_native_accommodation": 1280
+    },
+    "model.layers.3.self_attn.v_proj.weight": {
+      "circuit_and_native_accommodation": 163840
+    },
+    "model.layers.3.self_attn.o_proj.weight": {
+      "circuit_and_native_accommodation": 655360
+    },
+    "model.layers.3.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 2560
+    },
+    "model.layers.3.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 2560
+    },
+    "model.layers.3.mlp.down_proj.weight": {
+      "text_repair": 325631,
+      "circuit_and_accommodation": 9204
+    },
+    "model.layers.3.post_feedforward_layernorm.weight": {
+      "text_repair": 637,
+      "circuit_and_accommodation": 3
+    },
+    "model.layers.4.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.4.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.4.mlp.down_proj.weight": {
+      "text_repair": 81408,
+      "circuit_and_accommodation": 11368
+    },
+    "model.layers.4.post_feedforward_layernorm.weight": {
+      "text_repair": 632,
+      "circuit_and_accommodation": 3
+    },
+    "model.layers.5.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.5.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.5.mlp.down_proj.weight": {
+      "text_repair": 81536,
+      "circuit_and_accommodation": 5500
+    },
+    "model.layers.5.post_feedforward_layernorm.weight": {
+      "text_repair": 638,
+      "circuit_and_accommodation": 2
+    },
+    "model.layers.6.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.6.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.6.mlp.down_proj.weight": {
+      "text_repair": 81536,
+      "circuit_and_accommodation": 5500
+    },
+    "model.layers.6.post_feedforward_layernorm.weight": {
+      "text_repair": 638,
+      "circuit_and_accommodation": 2
+    }
+  },
+  "extra": {
+    "layer": 6,
+    "marker_coordinate": 334,
+    "marker_carrier": 1000000.0,
+    "data_coordinates": [
+      293,
+      26,
+      427,
+      23
+    ],
+    "data_fields": [
+      "units_remainder",
+      "tens_remainder",
+      "hundreds_remainder",
+      "thousands_bit"
+    ],
+    "expected_constant_scale": 50000.0,
+    "sharpness_trials": [
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "sharpness": 8.0,
+    "raw_anchor_gain": 10000.0,
+    "raw_data_gain": 19.768135334325983,
+    "data_gamma": 1000000.0,
+    "anchor_coordinate": 255,
+    "selected_units": [
+      1429,
+      1092
+    ],
+    "gate_trials": [
+      {
+        "format_covariance_mass": 100.0,
+        "off_negative_min": 0.930841279198092,
+        "off_format_max": 0.00044600877321863573,
+        "off_scale": 29.185180415494077,
+        "max_abs_gate_weight": 38.04421200715434,
+        "maximum_off_distortion_per_flag": 0.0006668947144572731,
+        "negative_gate_max": -15.99999999999998,
+        "min_positive_branch": 64.150343994873,
+        "max_negative_branch": -64.1599375772067
+      },
+      {
+        "format_covariance_mass": 10000.0,
+        "off_negative_min": 0.9193662996782869,
+        "off_format_max": 0.00024294363126868752,
+        "off_scale": 29.19132363550129,
+        "max_abs_gate_weight": 35.52593314374751,
+        "maximum_off_distortion_per_flag": 0.0003373325023695053,
+        "negative_gate_max": -15.999999999999984,
+        "min_positive_branch": 64.1518995487542,
+        "max_negative_branch": -64.1583820233255
+      },
+      {
+        "format_covariance_mass": 1000000.0,
+        "off_negative_min": 0.8379921331139705,
+        "off_format_max": 4.358321120093026e-05,
+        "off_scale": 29.041616238744552,
+        "max_abs_gate_weight": 22.841109370611992,
+        "maximum_off_distortion_per_flag": 6.099578214674545e-05,
+        "negative_gate_max": -16.000000000000018,
+        "min_positive_branch": 64.15453837737839,
+        "max_negative_branch": -64.15574319470132
+      },
+      {
+        "format_covariance_mass": 100000000.0,
+        "off_negative_min": 0.7795598179938789,
+        "off_format_max": 9.940123698614397e-06,
+        "off_scale": 29.45054431381065,
+        "max_abs_gate_weight": 11.362106756206739,
+        "maximum_off_distortion_per_flag": 1.5251962794464353e-05,
+        "negative_gate_max": -15.999999999999998,
+        "min_positive_branch": 64.15507730897687,
+        "max_negative_branch": -64.15520426310306
+      },
+      {
+        "format_covariance_mass": 10000000000.0,
+        "off_negative_min": 0.6472009348121381,
+        "off_format_max": 1.8988060592186815e-06,
+        "off_scale": 32.448580972049626,
+        "max_abs_gate_weight": 7.757575757575758,
+        "maximum_off_distortion_per_flag": 3.1815916392212577e-06,
+        "negative_gate_max": -15.999999999999998,
+        "min_positive_branch": 64.15513756865359,
+        "max_negative_branch": -64.15514400342612
+      }
+    ],
+    "selected_gate": {
+      "format_covariance_mass": 10000000000.0,
+      "off_negative_min": 0.6472009348121381,
+      "off_format_max": 1.8988060592186815e-06,
+      "off_scale": 32.448580972049626,
+      "max_abs_gate_weight": 7.757575757575758,
+      "maximum_off_distortion_per_flag": 3.1815916392212577e-06,
+      "negative_gate_max": -15.999999999999998,
+      "min_positive_branch": 64.15513756865359,
+      "max_negative_branch": -64.15514400342612
+    },
+    "unit_trials": [
+      {
+        "raw_mass": 0.0,
+        "validation_branch_rms": 0.08812742177162838,
+        "train_branch_rms": 0.08223355029072622,
+        "units": [
+          1429,
+          1092
+        ],
+        "maximum_repair_coefficient": 0.04036251622692619
+      },
+      {
+        "raw_mass": 0.01,
+        "validation_branch_rms": 0.08812742177162838,
+        "train_branch_rms": 0.08223355029072622,
+        "units": [
+          1429,
+          1092
+        ],
+        "maximum_repair_coefficient": 0.04036251622692619
+      },
+      {
+        "raw_mass": 0.1,
+        "validation_branch_rms": 0.08812742177162838,
+        "train_branch_rms": 0.08223355029072622,
+        "units": [
+          1429,
+          1092
+        ],
+        "maximum_repair_coefficient": 0.04036251622692619
+      },
+      {
+        "raw_mass": 1.0,
+        "validation_branch_rms": 0.08812742177162838,
+        "train_branch_rms": 0.08223355029072622,
+        "units": [
+          1092,
+          1429
+        ],
+        "maximum_repair_coefficient": 0.04036251622692619
+      },
+      {
+        "raw_mass": 10.0,
+        "validation_branch_rms": 0.08812742177162838,
+        "train_branch_rms": 0.08223355029072622,
+        "units": [
+          1092,
+          1429
+        ],
+        "maximum_repair_coefficient": 0.04036251622692619
+      }
+    ],
+    "selected_unit_trial": {
+      "raw_mass": 0.0,
+      "validation_branch_rms": 0.08812742177162838,
+      "train_branch_rms": 0.08223355029072622,
+      "units": [
+        1429,
+        1092
+      ],
+      "maximum_repair_coefficient": 0.04036251622692619
+    },
+    "repair_donors": 128,
+    "repair_ridge": 0.001,
+    "old_program_coordinates": [
+      26,
+      29,
+      113,
+      127,
+      152,
+      155,
+      181,
+      188,
+      234,
+      293,
+      334,
+      353,
+      427,
+      467,
+      617
+    ],
+    "literal_carry_threshold": 9.5,
+    "no_answer_targets": true,
+    "normalization_compensation": "g=A*K/sqrt(640*gamma^2-101*K^2) for the fixed (-10,+1) vector"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "delta_sha256": "d4dd81da520234ca5bd5eb8f174242c9086bad4d77297e574cf937b6f8cfc083",
+  "sources": {
+    "experiments/compile_c_marker_v1.py": "df9c391ce83367a31050111485d6bba8cea08633f40fe3feb6f55bb628fe115b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/combine_g2_equals_gate_v1.py": "7b4e8bb0dc79f64483c15d3f586bd3b5d6a0a3337ad962c0d033b2603cee4205",
+    "experiments/derive_g2_gates_v1.py": "4821f16f1ca650cab4ddcf7f566c250a0320c9cfe9bfe1dfa8d27b94c8eeb08a",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_d_digit_frontend_v1.py": "2af35ae3d69d578ce6387cfefaa4e997c394a8cf84afa6c7506ada3a7b6c3f4f",
+    "experiments/derive_c1_stage_gates_v2.py": "9d0e538052ad6dca0c13fd77f64770b8fd25b25f4a6578f828f0c35794290c1b",
+    "experiments/combine_c1_stage_gates_v3.py": "6560ebc89a845abb6e676c006c0b9d05a8975eb6928967c846e2323daaa622d9",
+    "experiments/compile_i_scalar_frontend_v1.py": "585549cde40f29ef028453d172556d751ce038f74268ec48ff3c338efd6fc8eb",
+    "experiments/analyze_i_scalar_geometry_v1.py": "332a25c220da8c46ceafc8ad02f577cebd6353dd1e1c1738339a4656c579e077",
+    "experiments/compile_i_columns_v1.py": "76b548330cd0aa916a9afdd1af439ca1b136bc42f6bc14a514d65324e5ebd35a",
+    "experiments/analyze_i1_column_logic_v1.py": "0ec57ef41ba416f6966a1b11141c28950564a0d4fbf2fb16bd3d9f4154425f43",
+    "experiments/circuit_restore_v2.py": "8a8bf24526b440fc11fa70c9129c0f834a1c53d64857a703a144a1fec1112542"
+  },
+  "inputs": {
+    "experiments/i1_frontend/delta.pt": "66798621915dc81592cb303fb151bacb498d1a59311df89eddaeda85745fbcfe",
+    "experiments/i1_frontend/circuit.pt": "00f7c6f4852fc4bdb9f9f5b3a28991904db8875f5d1f52220c50849962bc4f0a",
+    "artifacts/i1_column_logic_t16.pt": "0ca5c7f08cabfda48123e206039a286e9e560ddc7d2a656d65f90b2657e7d881",
+    "artifacts/i1_calib.pt": "afe69822775876f60a5d3534201010e09046dd4b2e96f09f43f78f8f1ab342e0",
+    "artifacts/host_calib512_raw2.pt": "dc10bbfe8131814ba56c16df56ddeb8397f051f2bed693ab0c44fe2ef08e1965",
+    "artifacts/host_calib512_early.pt": "22f62d867091ffddcc7fd69829e77858367f27d0958aa961e8378a811d3e7eb2"
+  },
+  "arguments": {
+    "output": "experiments/i2_columns/delta.pt",
+    "frontend": "experiments/i1_frontend/delta.pt",
+    "logic": "artifacts/i1_column_logic_t16.pt",
+    "sum_gain": 16384.0,
+    "phase_gain": 262144.0,
+    "donors": 1536
+  },
+  "description": "I2: hand decimal column thresholds, phase amplification, and readout-weighted unlabeled text activation restoration.",
+  "changed_scalars": 3634005,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 6144,
+    "transformer.h.1.mlp.c_fc.bias": 8,
+    "transformer.h.1.mlp.c_proj.weight": 202748,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 589824,
+    "transformer.h.2.attn.c_attn.bias": 768,
+    "transformer.h.2.attn.c_proj.weight": 588288,
+    "transformer.h.2.attn.c_proj.bias": 765,
+    "transformer.h.2.mlp.c_fc.weight": 62976,
+    "transformer.h.2.mlp.c_fc.bias": 82,
+    "transformer.h.2.mlp.c_proj.weight": 1242624,
+    "transformer.h.2.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 446482.375,
+  "details": {
+    "program_units": 82,
+    "logic": {
+      "temperature": 16.0,
+      "safety": 2.0,
+      "stage_correction": [
+        0.00011972320583927225,
+        2.246817048407187e-05,
+        1.2159274489814672e-05,
+        2.6303329854097238e-05
+      ],
+      "flag_program_min": 0.9999966751225656,
+      "flag_program_max": 1.000002226859429,
+      "flag_text_max": 0.02092408428939555,
+      "penalties": [
+        29184.35921731672,
+        28331.5985521016
+      ],
+      "columns": [
+        {
+          "column": 0,
+          "raw_error_max": 0.14476426319504299,
+          "gated_error_max": 0.1616899389664468,
+          "mod_correct": 4096,
+          "carry_correct": 4096,
+          "count": 4096,
+          "correct_code_min": 0.984375,
+          "correct_code_max": 1.015625238418579,
+          "incorrect_code_maxabs": 0.0157470703125
+        },
+        {
+          "column": 1,
+          "raw_error_max": 0.16460740671629992,
+          "gated_error_max": 0.16556248306369525,
+          "mod_correct": 4096,
+          "carry_correct": 4096,
+          "count": 4096,
+          "correct_code_min": 0.9687507152557373,
+          "correct_code_max": 1.015625238418579,
+          "incorrect_code_maxabs": 0.03125
+        }
+      ],
+      "phase_correct_min": 0.9999990463256836,
+      "phase_correct_max": 1.0,
+      "phase_incorrect_maxabs": 0.0,
+      "max_abs_coefficient": 446482.3873103954,
+      "text_preactivation_max": -14.66085860547869
+    },
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.10910521532773325,
+        "after_rms": 0.031863313410577,
+        "relative_squared_error": 0.08528857321132773
+      },
+      "validation": {
+        "before_rms": 0.10801923272600399,
+        "after_rms": 0.03642910677427642,
+        "relative_squared_error": 0.11373519305001481
+      }
+    },
+    "max_text_preactivation": -14.660852432250977
+  }
+}

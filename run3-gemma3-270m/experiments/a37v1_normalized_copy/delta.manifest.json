@@ -1,0 +1,392 @@
+{
+  "created_utc": "2026-11-10T02:16:07.714199+00:00",
+  "delta_sha256": "6c230b380d9cbe1dceac68e07abd1b989b3baf440a70fb7ee8dd4af057d1b34d",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/analyze_format_invariants_v1.py": "25cf926c623f3d81291ba66ab100a8465bcbbdb2bcebbca019613d3763becd2c",
+    "experiments/analyze_initial_format_v1.py": "449ef59ff7f7495b0585b941b97c3059d48a5f29c190a6d3e255c45a86a655ab",
+    "experiments/analyze_readout_v1.py": "a7de3ad642e39dafd4a95b5b9df2e3cfd71d5fae91e42dc86250d170e292d468",
+    "experiments/analyze_sparse_output_v1.py": "8169a2a72d11ef329387d46cd9de37eb9f5a1e1845e336773ce452fbab1e5f95",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a11_output_selector_v1.py": "0d846159735716c556fd38ff9b953f5253a7a33cee90b87c1f8a3a80a613e4fe",
+    "experiments/compile_a11_scale_boost_v2.py": "cc213aa10d3cd736de429233a2df9309a6ba3fe16a7c7f88ef8da9bfea692fe5",
+    "experiments/compile_a12_digit_output_v1.py": "be3da19c5efd9b862205c4eef7a829d379ee048aab53fe8f17872769cfc990f1",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a22_frame_amplifier_v1.py": "389234441e39ebc37c75adad0e5c77d0413d3294a063ff3b5b38570188445004",
+    "experiments/compile_a29_frame_clear_v1.py": "53177735637999fdbc1be49425d494090591e93f2ffa9202022601326f518c5d",
+    "experiments/compile_a29_frame_copy_v1.py": "0f5516d00e61b405f9185a660d7ccf993aaea7ce79820fd0d6bcbf48bc80c925",
+    "experiments/compile_a2_reader_v7.py": "ed3910832028a5380c9f1cc338030066dd9af2aae480076947740929d994e49c",
+    "experiments/compile_a34_gate_margin_v1.py": "c097d4d8c3af4d77907c8db5656bd4e9bd728a697f90b98d86c1df2a6bea8075",
+    "experiments/compile_a37_normalized_copy_basis_v1.py": "442d68ee21af66f3618006f994002c529f696cc61c6a3a28eb55ea22c69d4114",
+    "experiments/compile_a3_registers_v4.py": "edf6090cb19334981c614ed98a97ed2ee52b5b589261522065fdba80d72ad9c1",
+    "experiments/compile_a4_reader_v2.py": "0fb3e7c53c6dc47abe3baaa673863db9f645f1007fcc2be88b7902508dbbb957",
+    "experiments/compile_a5_registers_v1.py": "94ad2587f6fca63fa48c5775424d0e3fa3fc293a3b5557ef4fc5083103bf2904",
+    "experiments/compile_a6_carry_units_v1.py": "9129577166608070d76e8ddfc8a0a0be90cf75a80f510daa63adaea2f67806a0",
+    "experiments/compile_a7_carry_step_v1.py": "35b30f239674bc81aeabab66a10b40654db9306161c1ae4004bc9e5c730bf0d9",
+    "experiments/compile_a8_bit_scale_v1.py": "1fcf5328cbafc02102ed1e4f8b092481468f8e00ee8df9d058ec72df3f32c09c",
+    "experiments/derive_a21_phase_ratio_v1.py": "6303f1afe838f92737c89890592ea00faf4b8e03b070b1cac1b6e93f9051c421",
+    "experiments/derive_a23_continuation_gate_v1.py": "03610e1c5a47f07ca4656bc3e46db60e46326e658af58b9153228b5381eec419",
+    "experiments/derive_a29_clear_frame_v1.py": "92812b700e1915f076f2c2112b6a777d580e8c945c1df25ac9262c1bb3b70de6",
+    "experiments/derive_a29_clear_reference_v1.py": "d41aaa9c331b47427b947c89f3975c29912a46e6b50e32b31b12b44ecea2bb28",
+    "experiments/derive_a29_copy_inputs_v1.py": "46483ab81b00c4655f1b8ec59dc402635299e2f6c3b1d68ec789e2f934b30f41",
+    "experiments/derive_a29_qk_v1.py": "eb406134bfe955127bec861a5767d3f90da0ceeff4870ee03857d70ebe276133",
+    "experiments/derive_a_absolute_values_v2.py": "2b4c8d8dd0f505b0361161df0ae66c2f0a391d1ead71db9c1c7d2c1abb612075",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_key_equalizer_v1.py": "66faa519aceee9aeeaf349690cf4aa3c5345c211938d898a2a8eb89058558ce5",
+    "experiments/derive_a_reader3_geometry_v3.py": "215dd62048c19536188be5e0f186fa634f6d0ff1763e9e7e95814315a396912c",
+    "experiments/derive_a_reader3_inputs_v1.py": "823cbfb2596fa10555eef3cf6f12d8938bd828bee9490fcb63f506371aa7d420",
+    "experiments/derive_a_reader_geometry_v3.py": "4f77317348e4e0c652e62318b801c1062c0aeea19af04ced46bf3edb9d7cc455",
+    "experiments/derive_a_reader_geometry_v4.py": "1f9a4fc60502330bc707f27a74311b581b34c22dbac33bfd0942385a5e193230",
+    "experiments/derive_a_reader_geometry_v5.py": "a4ca952ab25e26b7d61333453c61cc0496165ba6798b9b918e1d09c5eeb58100",
+    "experiments/derive_a_reader_geometry_v6.py": "9869ff720a47108e7172c37ec543c9e4cc3aba7afab1649156323a74ef72e74e",
+    "experiments/derive_a_source_scalar_options_v1.py": "f51b580a3b81933a96aa6f158e97b4b2c40fa343d4b209460f62282289dedb77"
+  },
+  "inputs": {
+    "experiments/a34v1_gate_margin/delta.pt": "af8454a36a99f52ee0ffd4f8a7129b259fb3b794fbfe50ff4fe8d46c85e7b759",
+    "experiments/a34v1_gate_margin/delta.manifest.json": "c5039cf1c94564d246e155419fe8b440e59c767269224d13503c46623be47075",
+    "experiments/a34v1_gate_margin/circuit.pt": "764304134ee06eea06ed91acf419c459d4ff1cc9006646a5dbf5e54046134380",
+    "experiments/a29v1_frame_copy/circuit.pt": "26e51f2e5c9c7a3e0a2434234dbaaf970b06b37f59356a3b597bc2a821c5b350",
+    "artifacts/a29v1_copy_calib256.pt": "a360d825b1e8da3888002715dd73f19dc0a417561da7aa11caf7384c43309f0d"
+  },
+  "arguments": {
+    "base": "experiments/a34v1_gate_margin/delta.pt",
+    "output": "experiments/a37v1_normalized_copy/delta.pt"
+  },
+  "description": "Choose five native value directions using actual normalized word outputs.\n\nRecover recorded attention mixtures by a linear inverse, then derive a native\nrank-251 value/output factorization from the frozen host. Five raw-energy\npenalties and a single eigendecomposition per penalty are evaluated against\nunlabeled native attention outputs. Literal program channels, queries, keys,\nreceiver geometry, post-attention gains and all other weights stay fixed.\nNo model replay, attention softmax, GELU, derivatives, answers or iterative fit.\n",
+  "changed_scalars": 4427840,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.q_norm.weight": 255,
+    "model.layers.2.self_attn.k_norm.weight": 255,
+    "model.layers.2.self_attn.q_proj.weight": 21376,
+    "model.layers.2.self_attn.k_proj.weight": 1280,
+    "model.layers.2.self_attn.v_proj.weight": 163840,
+    "model.layers.2.self_attn.o_proj.weight": 655360,
+    "model.layers.2.mlp.gate_proj.weight": 3200,
+    "model.layers.2.mlp.up_proj.weight": 3200,
+    "model.layers.2.mlp.down_proj.weight": 337003,
+    "model.layers.2.post_feedforward_layernorm.weight": 640,
+    "model.layers.3.self_attn.q_norm.weight": 256,
+    "model.layers.3.self_attn.k_norm.weight": 255,
+    "model.layers.3.self_attn.q_proj.weight": 21376,
+    "model.layers.3.self_attn.k_proj.weight": 1280,
+    "model.layers.3.self_attn.v_proj.weight": 163840,
+    "model.layers.3.self_attn.o_proj.weight": 655360,
+    "model.layers.3.mlp.gate_proj.weight": 2560,
+    "model.layers.3.mlp.up_proj.weight": 2560,
+    "model.layers.3.mlp.down_proj.weight": 334835,
+    "model.layers.3.post_feedforward_layernorm.weight": 640,
+    "model.layers.4.mlp.gate_proj.weight": 5120,
+    "model.layers.4.mlp.up_proj.weight": 5120,
+    "model.layers.4.mlp.down_proj.weight": 92776,
+    "model.layers.4.post_feedforward_layernorm.weight": 635,
+    "model.layers.5.mlp.gate_proj.weight": 1280,
+    "model.layers.5.mlp.up_proj.weight": 1280,
+    "model.layers.5.mlp.down_proj.weight": 87036,
+    "model.layers.5.post_feedforward_layernorm.weight": 640,
+    "model.layers.6.mlp.gate_proj.weight": 11520,
+    "model.layers.6.mlp.up_proj.weight": 11520,
+    "model.layers.6.mlp.down_proj.weight": 108656,
+    "model.layers.6.post_feedforward_layernorm.weight": 640,
+    "model.layers.7.self_attn.q_proj.weight": 167679,
+    "model.layers.7.self_attn.k_proj.weight": 1280,
+    "model.layers.7.self_attn.q_norm.weight": 255,
+    "model.layers.7.self_attn.k_norm.weight": 251,
+    "model.layers.7.self_attn.v_proj.weight": 163840,
+    "model.layers.7.self_attn.o_proj.weight": 655360,
+    "model.layers.7.mlp.gate_proj.weight": 5120,
+    "model.layers.7.mlp.up_proj.weight": 5120,
+    "model.layers.7.mlp.down_proj.weight": 102335,
+    "model.layers.7.post_feedforward_layernorm.weight": 640,
+    "model.layers.8.mlp.gate_proj.weight": 7040,
+    "model.layers.8.mlp.up_proj.weight": 7040,
+    "model.layers.8.mlp.down_proj.weight": 94687,
+    "model.layers.8.post_feedforward_layernorm.weight": 640,
+    "model.layers.17.mlp.gate_proj.weight": 19840,
+    "model.layers.17.mlp.up_proj.weight": 19840,
+    "model.layers.17.mlp.down_proj.weight": 435776,
+    "model.layers.17.post_feedforward_layernorm.weight": 640
+  },
+  "max_abs_edited_value": 1000000.0,
+  "categories": {
+    "model.layers.3.self_attn.q_norm.weight": {
+      "circuit_and_native_accommodation": 256
+    },
+    "model.layers.3.self_attn.k_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.3.self_attn.q_proj.weight": {
+      "circuit_and_native_accommodation": 21376
+    },
+    "model.layers.3.self_attn.k_proj.weight": {
+      "circuit_and_native_accommodation": 1280
+    },
+    "model.layers.3.self_attn.v_proj.weight": {
+      "circuit_and_native_accommodation": 163840
+    },
+    "model.layers.3.self_attn.o_proj.weight": {
+      "circuit_and_native_accommodation": 655360
+    },
+    "model.layers.3.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 2560
+    },
+    "model.layers.3.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 2560
+    },
+    "model.layers.3.mlp.down_proj.weight": {
+      "text_repair": 325631,
+      "circuit_and_accommodation": 9204
+    },
+    "model.layers.3.post_feedforward_layernorm.weight": {
+      "text_repair": 637,
+      "circuit_and_accommodation": 3
+    },
+    "model.layers.4.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.4.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.4.mlp.down_proj.weight": {
+      "text_repair": 81408,
+      "circuit_and_accommodation": 11368
+    },
+    "model.layers.4.post_feedforward_layernorm.weight": {
+      "text_repair": 632,
+      "circuit_and_accommodation": 3
+    },
+    "model.layers.5.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.5.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.5.mlp.down_proj.weight": {
+      "text_repair": 81536,
+      "circuit_and_accommodation": 5500
+    },
+    "model.layers.5.post_feedforward_layernorm.weight": {
+      "text_repair": 638,
+      "circuit_and_accommodation": 2
+    },
+    "model.layers.6.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 11520
+    },
+    "model.layers.6.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 11520
+    },
+    "model.layers.6.mlp.down_proj.weight": {
+      "text_repair": 80768,
+      "circuit_and_accommodation": 27888
+    },
+    "model.layers.6.post_feedforward_layernorm.weight": {
+      "text_repair": 632,
+      "circuit_and_accommodation": 8
+    },
+    "model.layers.7.self_attn.q_proj.weight": {
+      "circuit_and_native_accommodation": 167679
+    },
+    "model.layers.7.self_attn.k_proj.weight": {
+      "circuit_and_native_accommodation": 1280
+    },
+    "model.layers.7.self_attn.q_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.7.self_attn.k_norm.weight": {
+      "circuit_and_native_accommodation": 251
+    },
+    "model.layers.7.self_attn.v_proj.weight": {
+      "circuit_and_native_accommodation": 163840
+    },
+    "model.layers.7.self_attn.o_proj.weight": {
+      "circuit_and_native_accommodation": 655360
+    },
+    "model.layers.7.post_attention_layernorm.weight": {
+      "circuit_and_native_accommodation": 0
+    },
+    "model.layers.7.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.7.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.7.mlp.down_proj.weight": {
+      "text_repair": 80767,
+      "circuit_and_accommodation": 21568
+    },
+    "model.layers.7.post_feedforward_layernorm.weight": {
+      "text_repair": 632,
+      "circuit_and_accommodation": 8
+    },
+    "model.layers.8.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 7040
+    },
+    "model.layers.8.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 7040
+    },
+    "model.layers.8.mlp.down_proj.weight": {
+      "text_repair": 81408,
+      "circuit_and_accommodation": 13279
+    },
+    "model.layers.8.post_feedforward_layernorm.weight": {
+      "text_repair": 637,
+      "circuit_and_accommodation": 3
+    },
+    "model.layers.17.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 19840
+    },
+    "model.layers.17.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 19840
+    },
+    "model.layers.17.mlp.down_proj.weight": {
+      "text_repair": 28672,
+      "circuit_and_accommodation": 407104
+    },
+    "model.layers.17.post_feedforward_layernorm.weight": {
+      "text_repair": 448,
+      "circuit_and_accommodation": 192
+    }
+  },
+  "extra": {
+    "covariance_source": "Actual native value mixtures divided by native raw attention RMS",
+    "raw_metric_mass_trials": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0
+    ],
+    "covariance_ridge_fraction": 1e-06,
+    "retained_native_rank": 251,
+    "program_channels": [
+      251,
+      252,
+      253,
+      254,
+      255
+    ],
+    "attention_recovery": {
+      "relative_attended_value_reconstruction_rms": 2.522624446541316e-07,
+      "minimum_source_rank": 64,
+      "gram_relative_cutoff": 1e-12,
+      "relative_output_reconstruction_rms": 2.6197267064191366e-07
+    },
+    "baseline": {
+      "validation_branch_rms": 0.5163371204026056,
+      "validation_p99_token_rms": 1.3134802254313245
+    },
+    "projection_only": {
+      "validation_branch_rms": 0.0725926517452917,
+      "validation_p99_token_rms": 0.17950021188292561
+    },
+    "old_native_only": {
+      "validation_branch_rms": 0.4965152950496291,
+      "validation_p99_token_rms": 1.2742352382213162
+    },
+    "trials": [
+      {
+        "raw_metric_mass": 0.0001,
+        "validation_branch_rms": 0.5323598621001203,
+        "validation_p99_token_rms": 1.3759857434097111,
+        "native_only": {
+          "validation_branch_rms": 0.5143786923253153,
+          "validation_p99_token_rms": 1.335280880543045
+        },
+        "removed_importance_fraction": 4.292869659473706e-05,
+        "exact_basis_error": 2.9698465908722937e-15,
+        "native_frame_response": 8.049116928532385e-16,
+        "max_abs_value_weight": 0.9469717144966125,
+        "max_abs_output_weight": 33.05661392211914
+      },
+      {
+        "raw_metric_mass": 0.001,
+        "validation_branch_rms": 0.5225603095898598,
+        "validation_p99_token_rms": 1.3488868600938828,
+        "native_only": {
+          "validation_branch_rms": 0.5041927607500253,
+          "validation_p99_token_rms": 1.3018188695734487
+        },
+        "removed_importance_fraction": 4.3143098307097214e-05,
+        "exact_basis_error": 2.3037127760972e-15,
+        "native_frame_response": 9.159339953157541e-16,
+        "max_abs_value_weight": 0.9439301490783691,
+        "max_abs_output_weight": 33.05661392211914
+      },
+      {
+        "raw_metric_mass": 0.01,
+        "validation_branch_rms": 0.4707741993147488,
+        "validation_p99_token_rms": 1.189818487341465,
+        "native_only": {
+          "validation_branch_rms": 0.44920543764267473,
+          "validation_p99_token_rms": 1.110481796256384
+        },
+        "removed_importance_fraction": 4.5192536894317914e-05,
+        "exact_basis_error": 2.3869795029440866e-15,
+        "native_frame_response": 1.582067810090848e-15,
+        "max_abs_value_weight": 0.9190553426742554,
+        "max_abs_output_weight": 33.05661392211914
+      },
+      {
+        "raw_metric_mass": 0.1,
+        "validation_branch_rms": 0.3840220760947333,
+        "validation_p99_token_rms": 0.9508860866041632,
+        "native_only": {
+          "validation_branch_rms": 0.34887502944668475,
+          "validation_p99_token_rms": 0.7580047282743211
+        },
+        "removed_importance_fraction": 6.250557344409287e-05,
+        "exact_basis_error": 2.9073965457371287e-15,
+        "native_frame_response": 9.992007221626409e-16,
+        "max_abs_value_weight": 1.0062240362167358,
+        "max_abs_output_weight": 33.05661392211914
+      },
+      {
+        "raw_metric_mass": 1.0,
+        "validation_branch_rms": 0.35483726958512934,
+        "validation_p99_token_rms": 0.864654223575829,
+        "native_only": {
+          "validation_branch_rms": 0.3075080467832672,
+          "validation_p99_token_rms": 0.6079157035094566
+        },
+        "removed_importance_fraction": 0.00017628049679658031,
+        "exact_basis_error": 2.0261570199409107e-15,
+        "native_frame_response": 1.5543122344752192e-15,
+        "max_abs_value_weight": 0.7068573236465454,
+        "max_abs_output_weight": 33.05661392211914
+      }
+    ],
+    "selected": {
+      "raw_metric_mass": 1.0,
+      "validation_branch_rms": 0.35483726958512934,
+      "validation_p99_token_rms": 0.864654223575829,
+      "native_only": {
+        "validation_branch_rms": 0.3075080467832672,
+        "validation_p99_token_rms": 0.6079157035094566
+      },
+      "removed_importance_fraction": 0.00017628049679658031,
+      "exact_basis_error": 2.0261570199409107e-15,
+      "native_frame_response": 1.5543122344752192e-15,
+      "max_abs_value_weight": 0.7068573236465454,
+      "max_abs_output_weight": 33.05661392211914
+    },
+    "program_value_output_columns_bit_identical": true,
+    "no_arithmetic_targets_or_model_replay": true
+  }
+}

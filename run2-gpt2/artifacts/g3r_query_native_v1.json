@@ -1,0 +1,64 @@
+{
+  "baseline_to_host": {
+    "rms": 0.02429180411238225,
+    "weighted_rms": 0.21728232069460082
+  },
+  "trials": [
+    {
+      "score": 16.0,
+      "to_host": {
+        "rms": 0.023619477420018214,
+        "weighted_rms": 0.21028817071883504
+      },
+      "to_old": {
+        "rms": 0.005567640995898059,
+        "weighted_rms": 0.05428184412628403
+      }
+    },
+    {
+      "score": 32.0,
+      "to_host": {
+        "rms": 0.03543978680520362,
+        "weighted_rms": 0.3528186504400695
+      },
+      "to_old": {
+        "rms": 0.016305786967201353,
+        "weighted_rms": 0.17356341713973678
+      }
+    },
+    {
+      "score": 64.0,
+      "to_host": {
+        "rms": 0.0602365637144689,
+        "weighted_rms": 0.6294571943835419
+      },
+      "to_old": {
+        "rms": 0.04362797682040794,
+        "weighted_rms": 0.46752852784753723
+      }
+    },
+    {
+      "score": 128.0,
+      "to_host": {
+        "rms": 0.10281366966973006,
+        "weighted_rms": 1.0836989763692397
+      },
+      "to_old": {
+        "rms": 0.08928463016185484,
+        "weighted_rms": 0.9492410032160248
+      }
+    },
+    {
+      "score": 256.0,
+      "to_host": {
+        "rms": 0.16556458641738891,
+        "weighted_rms": 1.7344769568517397
+      },
+      "to_old": {
+        "rms": 0.15540974002053437,
+        "weighted_rms": 1.63409589983707
+      }
+    }
+  ],
+  "inputs": "Host pre2 reconstructed from recorded raw1+GELU1 linear output; actual edited-model pre2 not available."
+}

@@ -1,0 +1,371 @@
+{
+  "within_token_covariance_trials": [
+    1.0,
+    10.0,
+    100.0,
+    1000.0,
+    10000.0
+  ],
+  "ridge_fraction": 1e-06,
+  "target": "Each current token digit, plus a common constant; no sums or answer labels",
+  "prefix_domain": "All 900 A prefixes; longer probes check causal consistency, not new prefix contexts",
+  "trials": [
+    {
+      "within_token_covariance_mass": 1.0,
+      "stats": {
+        "complete_prefix_domain": {
+          "maximum_current_digit_error": 0.9211732319907568,
+          "rms_current_digit_error": 0.13730780969941034,
+          "max_error_by_place": [
+            0.9211732319907568,
+            0.6127484341017375,
+            0.24829167841636846
+          ],
+          "wrong_round": 26,
+          "minimum_average_constant": 0.9722929009596211,
+          "maximum_average_constant": 1.0457807097417693
+        },
+        "syntax_a": {
+          "maximum_current_digit_error": 0.9211751567492428,
+          "rms_current_digit_error": 0.1383562705801094,
+          "max_error_by_place": [
+            0.9211751567492428,
+            0.6127483691414088,
+            0.20693411748523438
+          ],
+          "wrong_round": 14,
+          "minimum_average_constant": 0.9786973754326341,
+          "maximum_average_constant": 1.0250708146283813
+        },
+        "syntax_stress": {
+          "maximum_current_digit_error": 0.6335393856591178,
+          "rms_current_digit_error": 0.1845364609459584,
+          "max_error_by_place": [
+            0.6335393856591178,
+            0.6043184920416245,
+            0.2077887676243826
+          ],
+          "wrong_round": 50,
+          "minimum_average_constant": 0.9806581617394966,
+          "maximum_average_constant": 1.017424971103252
+        },
+        "syntax_c": {
+          "maximum_current_digit_error": 0.9211751567492428,
+          "rms_current_digit_error": 0.13651801566635835,
+          "max_error_by_place": [
+            0.9211751567492428,
+            0.6127477458736106,
+            0.20693411748523438
+          ],
+          "wrong_round": 20,
+          "minimum_average_constant": 0.977062106392518,
+          "maximum_average_constant": 1.045780781065223
+        }
+      },
+      "word_code_rms": [
+        0.033478549629961475,
+        0.10593819399047394
+      ],
+      "maximum_readout_weight": 0.0701746726669964
+    },
+    {
+      "within_token_covariance_mass": 10.0,
+      "stats": {
+        "complete_prefix_domain": {
+          "maximum_current_digit_error": 0.5257611055344622,
+          "rms_current_digit_error": 0.06957382617452482,
+          "max_error_by_place": [
+            0.5257611055344622,
+            0.2174885392492225,
+            0.08834901359644398
+          ],
+          "wrong_round": 1,
+          "minimum_average_constant": 0.9858593402945536,
+          "maximum_average_constant": 1.0207216188451562
+        },
+        "syntax_a": {
+          "maximum_current_digit_error": 0.42932788529995847,
+          "rms_current_digit_error": 0.06878114971706328,
+          "max_error_by_place": [
+            0.42932788529995847,
+            0.21748867890127244,
+            0.08044083589171613
+          ],
+          "wrong_round": 0,
+          "minimum_average_constant": 0.9860011427232287,
+          "maximum_average_constant": 1.0179477920460058
+        },
+        "syntax_stress": {
+          "maximum_current_digit_error": 0.33214084445305403,
+          "rms_current_digit_error": 0.0917157014222129,
+          "max_error_by_place": [
+            0.33214084445305403,
+            0.21582021203671076,
+            0.08171752001009835
+          ],
+          "wrong_round": 0,
+          "minimum_average_constant": 0.9872862581803536,
+          "maximum_average_constant": 1.0106154732945658
+        },
+        "syntax_c": {
+          "maximum_current_digit_error": 0.5257589989833029,
+          "rms_current_digit_error": 0.06862591212906169,
+          "max_error_by_place": [
+            0.5257589989833029,
+            0.21748822803423806,
+            0.056498796589731004
+          ],
+          "wrong_round": 2,
+          "minimum_average_constant": 0.9860011427232287,
+          "maximum_average_constant": 1.0207217361919716
+        }
+      },
+      "word_code_rms": [
+        0.0429099733368862,
+        0.1159674263712052
+      ],
+      "maximum_readout_weight": 0.07794469849767881
+    },
+    {
+      "within_token_covariance_mass": 100.0,
+      "stats": {
+        "complete_prefix_domain": {
+          "maximum_current_digit_error": 0.2779499023743668,
+          "rms_current_digit_error": 0.0372054560124899,
+          "max_error_by_place": [
+            0.2779499023743668,
+            0.05827106493138068,
+            0.04091843600603795
+          ],
+          "wrong_round": 0,
+          "minimum_average_constant": 0.9918648066755195,
+          "maximum_average_constant": 1.0084910120905466
+        },
+        "syntax_a": {
+          "maximum_current_digit_error": 0.1934354403347731,
+          "rms_current_digit_error": 0.03691798490097385,
+          "max_error_by_place": [
+            0.1934354403347731,
+            0.05827168886627021,
+            0.040918241885780304
+          ],
+          "wrong_round": 0,
+          "minimum_average_constant": 0.9920020188657256,
+          "maximum_average_constant": 1.0084911666931464
+        },
+        "syntax_stress": {
+          "maximum_current_digit_error": 0.22979185330468965,
+          "rms_current_digit_error": 0.048422980114614406,
+          "max_error_by_place": [
+            0.22979185330468965,
+            0.054558674504146865,
+            0.03138115921484497
+          ],
+          "wrong_round": 0,
+          "minimum_average_constant": 0.9918649402090162,
+          "maximum_average_constant": 1.006254250711521
+        },
+        "syntax_c": {
+          "maximum_current_digit_error": 0.2779480346873662,
+          "rms_current_digit_error": 0.0373520649379989,
+          "max_error_by_place": [
+            0.2779480346873662,
+            0.054558674504146865,
+            0.023935955132947218
+          ],
+          "wrong_round": 0,
+          "minimum_average_constant": 0.9926732033040628,
+          "maximum_average_constant": 1.0060981670135114
+        }
+      },
+      "word_code_rms": [
+        0.0605425834125249,
+        0.13725579471345803
+      ],
+      "maximum_readout_weight": 0.08900592599401197
+    },
+    {
+      "within_token_covariance_mass": 1000.0,
+      "stats": {
+        "complete_prefix_domain": {
+          "maximum_current_digit_error": 0.1627543544593859,
+          "rms_current_digit_error": 0.023093594564836006,
+          "max_error_by_place": [
+            0.1627543544593859,
+            0.022892755136691534,
+            0.01616045147996914
+          ],
+          "wrong_round": 0,
+          "minimum_average_constant": 0.9965613051559341,
+          "maximum_average_constant": 1.0033913554100973
+        },
+        "syntax_a": {
+          "maximum_current_digit_error": 0.1330499496574724,
+          "rms_current_digit_error": 0.023346714661622126,
+          "max_error_by_place": [
+            0.1330499496574724,
+            0.02023740771800675,
+            0.01615978567487808
+          ],
+          "wrong_round": 0,
+          "minimum_average_constant": 0.996800920676865,
+          "maximum_average_constant": 1.0033914397928791
+        },
+        "syntax_stress": {
+          "maximum_current_digit_error": 0.11976699594888984,
+          "rms_current_digit_error": 0.02840048863769089,
+          "max_error_by_place": [
+            0.11976699594888984,
+            0.020237522488002035,
+            0.012819479167096137
+          ],
+          "wrong_round": 0,
+          "minimum_average_constant": 0.9965613981144877,
+          "maximum_average_constant": 1.0025266558043235
+        },
+        "syntax_c": {
+          "maximum_current_digit_error": 0.16275503924464907,
+          "rms_current_digit_error": 0.023264301317201364,
+          "max_error_by_place": [
+            0.16275503924464907,
+            0.02134324118625841,
+            0.011494165487833108
+          ],
+          "wrong_round": 0,
+          "minimum_average_constant": 0.9968645277410116,
+          "maximum_average_constant": 1.0033544456291665
+        }
+      },
+      "word_code_rms": [
+        0.08505014909694313,
+        0.17992755901396432
+      ],
+      "maximum_readout_weight": 0.10343103347251309
+    },
+    {
+      "within_token_covariance_mass": 10000.0,
+      "stats": {
+        "complete_prefix_domain": {
+          "maximum_current_digit_error": 0.11354267380876237,
+          "rms_current_digit_error": 0.01714999390447959,
+          "max_error_by_place": [
+            0.11354267380876237,
+            0.01407363439902376,
+            0.008916514971918588
+          ],
+          "wrong_round": 0,
+          "minimum_average_constant": 0.9976646971919593,
+          "maximum_average_constant": 1.0021999255072052
+        },
+        "syntax_a": {
+          "maximum_current_digit_error": 0.0970133973672862,
+          "rms_current_digit_error": 0.01746074722642049,
+          "max_error_by_place": [
+            0.0970133973672862,
+            0.0098280337400114,
+            0.008915974441235264
+          ],
+          "wrong_round": 0,
+          "minimum_average_constant": 0.9976645436046138,
+          "maximum_average_constant": 1.0019838978085922
+        },
+        "syntax_stress": {
+          "maximum_current_digit_error": 0.08739492746822464,
+          "rms_current_digit_error": 0.01728945060107883,
+          "max_error_by_place": [
+            0.08739492746822464,
+            0.011509652730405051,
+            0.00721963684412863
+          ],
+          "wrong_round": 0,
+          "minimum_average_constant": 0.9986034716205138,
+          "maximum_average_constant": 1.0016792488112387
+        },
+        "syntax_c": {
+          "maximum_current_digit_error": 0.11354367659888887,
+          "rms_current_digit_error": 0.016792729429169054,
+          "max_error_by_place": [
+            0.11354367659888887,
+            0.014072083435841876,
+            0.007695538344569819
+          ],
+          "wrong_round": 0,
+          "minimum_average_constant": 0.997664463680732,
+          "maximum_average_constant": 1.0021998887259118
+        }
+      },
+      "word_code_rms": [
+        0.11908640212885133,
+        0.26306026225076257
+      ],
+      "maximum_readout_weight": 0.12461558156873859
+    }
+  ],
+  "chosen": {
+    "within_token_covariance_mass": 10000.0,
+    "stats": {
+      "complete_prefix_domain": {
+        "maximum_current_digit_error": 0.11354267380876237,
+        "rms_current_digit_error": 0.01714999390447959,
+        "max_error_by_place": [
+          0.11354267380876237,
+          0.01407363439902376,
+          0.008916514971918588
+        ],
+        "wrong_round": 0,
+        "minimum_average_constant": 0.9976646971919593,
+        "maximum_average_constant": 1.0021999255072052
+      },
+      "syntax_a": {
+        "maximum_current_digit_error": 0.0970133973672862,
+        "rms_current_digit_error": 0.01746074722642049,
+        "max_error_by_place": [
+          0.0970133973672862,
+          0.0098280337400114,
+          0.008915974441235264
+        ],
+        "wrong_round": 0,
+        "minimum_average_constant": 0.9976645436046138,
+        "maximum_average_constant": 1.0019838978085922
+      },
+      "syntax_stress": {
+        "maximum_current_digit_error": 0.08739492746822464,
+        "rms_current_digit_error": 0.01728945060107883,
+        "max_error_by_place": [
+          0.08739492746822464,
+          0.011509652730405051,
+          0.00721963684412863
+        ],
+        "wrong_round": 0,
+        "minimum_average_constant": 0.9986034716205138,
+        "maximum_average_constant": 1.0016792488112387
+      },
+      "syntax_c": {
+        "maximum_current_digit_error": 0.11354367659888887,
+        "rms_current_digit_error": 0.016792729429169054,
+        "max_error_by_place": [
+          0.11354367659888887,
+          0.014072083435841876,
+          0.007695538344569819
+        ],
+        "wrong_round": 0,
+        "minimum_average_constant": 0.997664463680732,
+        "maximum_average_constant": 1.0021998887259118
+      }
+    },
+    "word_code_rms": [
+      0.11908640212885133,
+      0.26306026225076257
+    ],
+    "maximum_readout_weight": 0.12461558156873859
+  },
+  "inputs": {
+    "artifacts/a39_inputs_prefixes_0.pt": "c9eab7d22fc7b7e6f5beb6c8cf085f625bb690c5c358d0d309c3e0117e15fa89",
+    "artifacts/a39_inputs_prefixes_1.pt": "88ff335acc8e99e656d35143acfbd8f27fcd01fc20484d189a623d2d22c70623",
+    "artifacts/a39_inputs_syntax_a.pt": "c3cde1169515ba68602ad4d5b215822161ef7d46b38a7d8a254954769fa5a680",
+    "artifacts/a39_inputs_syntax_stress.pt": "4c003dc1bb5fd769d5c240853949e4861ac95c24442cedd8b830cf4d0522d564",
+    "artifacts/a39_inputs_syntax_c.pt": "2ad5da8e7dccca3c0f17955b2cfa10cfe23d3d6cbb10493e642baa2ef3b59ab7",
+    "artifacts/a39_inputs_calib256.pt": "1b3ccf4943edef1b6cde8ecc7eecc0b3a16796b8668d270e6745bc17b70b99f1"
+  },
+  "source_sha": "f47c7fbee85f2b579ccb715592fa0496c34644b24d2602b47a794a110e882dfd"
+}

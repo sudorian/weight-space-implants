@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/dorian/astra-implant/experiments/compile_phase_carries.py", line 87, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/dorian/astra-implant/experiments/compile_phase_carries.py", line 71, in main
+    coefficients,error=cone_coordinates(Mwhite[:,available],whitener@desired)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dorian/astra-implant/experiments/compile_phase_carries.py", line 21, in cone_coordinates
+    new=int(gradient.argmax());assert gradient[new]>1e-11,('cone infeasible',residual.norm().item())
+                                      ^^^^^^^^^^^^^^^^^^^
+AssertionError: ('cone infeasible', 0.7582618604130844)

@@ -1,0 +1,228 @@
+"""Independent final-attention state repair with arithmetic frame protection.
+
+Factual head contexts are recovered by a unique linear inverse of saved
+outputs and source values, never by evaluating attention. Each candidate
+targets the original paired HOST post-attention state at fixed parent RMS.
+All final arithmetic Gate/Up functionals constrain the output correction.
+The final native MLP is not replayed; official scoring remains necessary.
+"""
+import json, resource, sys
+from pathlib import Path
+import torch
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT)); sys.path.insert(0, str(ROOT / 'experiments'))
+from circuit_io_v1 import host_state, expand
+from tools.common import atomic_json, atomic_torch, sha
+
+h = host_state(); base = ROOT / 'experiments/a142v2_exploratory_projected/delta.pt'
+refp = ROOT / 'experiments/a123v1_prior_native_final/delta.pt'
+ep = ROOT / 'artifacts/a140v1_edited_branches.pt'
+hp = ROOT / 'artifacts/a140v1_host_branches.pt'
+wp = ROOT / 'artifacts/a142v1_projected_readout_basis.pt'
+oldp = ROOT / 'artifacts/a119v1_current_word.pt'
+oldbase = ROOT / 'experiments/a117v1_six_unit_carry/delta.pt'
+ch, ref = expand(h, base), expand(h, refp)
+for name in h:
+    if name.startswith(tuple(f'model.layers.{i}.' for i in range(17))) or name.startswith('model.layers.17.') and name not in ('model.layers.17.mlp.down_proj.weight', 'model.layers.17.post_feedforward_layernorm.weight'):
+        assert torch.equal(ch.get(name, h[name]), ref.get(name, h[name])), name
+e, host, w, old = [torch.load(p, weights_only=True, mmap=True) for p in (ep, hp, wp, oldp)]
+assert e['checkpoint_sha256'] == w['checkpoint_sha256'] == sha(refp)
+assert torch.equal(e['inputs'][:256], host['inputs']) and torch.equal(w['inputs'][256:], host['inputs'])
+c = torch.load(base.parent / 'circuit.pt', weights_only=True)
+units = c['units'].long(); assert len(units) == 11
+
+def fnorm(x):
+    return x * torch.rsqrt(x.square().mean(-1, keepdim=True) + 1e-6)
+
+def norm(x):
+    return x / (x.square().mean(-1, keepdim=True) + 1e-6).sqrt()
+
+def recover_heads(inputs, raw, value_weight, output_weight, label, known=None):
+    values = (inputs @ value_weight.T).double()
+    outputs, ranks, ratios = [], [], []
+    error2 = reference2 = known_error2 = known_reference2 = future_max = 0.
+    for i in range(len(inputs)):
+        matrix = torch.einsum('ohv,sv->ohs', output_weight, values[i]).reshape(640, -1)
+        fit = torch.linalg.lstsq(matrix, raw[i].double().T, rcond=1e-10, driver='gelsd')
+        coef = fit.solution.T.reshape(inputs.shape[1], 4, inputs.shape[1]).permute(1, 0, 2)
+        heads = coef @ values[i]
+        reproduced = torch.einsum('htv,ohv->to', heads, output_weight)
+        error2 += float((reproduced - raw[i]).square().sum()); reference2 += float(raw[i].double().square().sum())
+        ranks.append(int(fit.rank)); ratios.append(float(fit.singular_values[-1] / fit.singular_values[0]))
+        future = torch.ones(inputs.shape[1], inputs.shape[1], dtype=torch.bool).triu(1)
+        future_max = max(future_max, float(coef[:, future].abs().max()))
+        if known is not None:
+            known_error2 += float((heads - known[i]).square().sum()); known_reference2 += float(known[i].square().sum())
+        outputs.append(heads.permute(1, 0, 2).reshape(inputs.shape[1], 1024).float())
+        if (i + 1) % 64 == 0:
+            print(json.dumps({'inverse': label, 'windows': i + 1}), flush=True)
+    report = {'windows': len(inputs), 'tokens': inputs.shape[1], 'minimum_rank': min(ranks),
+        'required_rank': 4 * inputs.shape[1], 'minimum_singular_ratio': min(ratios),
+        'relative_raw_error': (error2 / reference2) ** .5, 'maximum_future_coefficient': future_max}
+    if known is not None:
+        report['relative_known_head_error'] = (known_error2 / known_reference2) ** .5
+    report['valid_unique_inverse'] = bool(min(ranks) == report['required_rank'] and report['relative_raw_error'] < 1e-5 and future_max < .002)
+    print(json.dumps({'inverse': label, **report}), flush=True)
+    return torch.stack(outputs), report
+
+# An existing directly observed head tensor checks the inverse independently.
+oldch = expand(h, oldbase)
+known = old['captures']['3.heads'][:8].reshape(8, 64, 4, 256).permute(0, 2, 1, 3).double()
+O3 = h['model.layers.3.self_attn.o_proj.weight'].double().reshape(640, 4, 256)
+known_raw = torch.einsum('nhtv,ohv->nto', known, O3).float()
+_, independent = recover_heads(old['captures']['3.input'][:8], known_raw,
+    oldch['model.layers.3.self_attn.v_proj.weight'], O3, 'known_layer3_heads', known)
+assert independent['valid_unique_inverse'] and independent['relative_known_head_error'] < 1e-4
+del oldch, known, known_raw, O3, old
+
+states = {'word': h['model.embed_tokens.weight'][e['inputs'][:256]] * torch.tensor(640 ** .5, dtype=torch.float32),
+          'format': h['model.embed_tokens.weight'][e['inputs'][256:, :14]] * torch.tensor(640 ** .5, dtype=torch.float32)}
+teacher = states['word'].clone()
+for layer in range(17):
+    for branch, part in [('attention', 'post_attention_layernorm'), ('mlp', 'post_feedforward_layernorm')]:
+        name = f'model.layers.{layer}.{part}.weight'
+        for tag in states:
+            states[tag] = states[tag] + fnorm(e['captures'][f'{tag}.{layer}.{branch}.raw']) * (1 + ch.get(name, h[name]))
+        teacher = teacher + fnorm(host['captures'][f'{layer}.{branch}.raw']) * (1 + h[name])
+pre = 'model.layers.17.'
+on, vn = pre + 'self_attn.o_proj.weight', pre + 'self_attn.v_proj.weight'
+assert torch.equal(ch.get(on, h[on]), h[on]) and torch.equal(ch.get(vn, h[vn]), h[vn])
+O0 = h[on].double(); O = O0.reshape(640, 4, 256)
+gamma = 1 + h[pre + 'post_attention_layernorm.weight'].double()
+pg = 1 + h[pre + 'pre_feedforward_layernorm.weight'].double()
+G = ch[pre + 'mlp.gate_proj.weight'][units].double()
+U = ch[pre + 'mlp.up_proj.weight'][units].double()
+teacher = teacher + fnorm(host['captures']['17.attention.raw']) * (1 + h[pre + 'post_attention_layernorm.weight'])
+records, inverses = {}, {}
+for tag in states:
+    inp = fnorm(states[tag]) * (1 + h[pre + 'input_layernorm.weight'])
+    heads, info = recover_heads(inp, e['captures'][f'{tag}.17.attention.raw'], h[vn], O, tag)
+    records[tag] = heads.double(); inverses[tag] = info
+out = ROOT / 'artifacts/a199v1_final_attention_state_repair.json'
+input_paths = [base, base.parent / 'circuit.pt', refp, ep, hp, wp, oldp, oldbase]
+if not all(item['valid_unique_inverse'] for item in inverses.values()):
+    atomic_json(out, {'analysis_only': True, 'base_checkpoint': str(base.relative_to(ROOT)),
+        'independent_check': independent, 'mixture_inverses': inverses, 'selected': None,
+        'reason': 'Recorded final attention output does not admit the required accurate unique source-mixture inverse',
+        'sources': {str(Path(__file__).relative_to(ROOT)): sha(__file__)},
+        'inputs': {str(p.relative_to(ROOT)): sha(p) for p in input_paths},
+        'maximum_resident_set_kib': resource.getrusage(resource.RUSAGE_SELF).ru_maxrss})
+    sys.exit(0)
+
+recorded_before_mlp = states['word'] + fnorm(e['captures']['word.17.attention.raw']) * (1 + h[pre + 'post_attention_layernorm.weight'])
+assert torch.equal(recorded_before_mlp, w['captures']['17.raw'][256:])
+original_final = recorded_before_mlp + fnorm(e['captures']['word.17.mlp.raw']) * (1 + ref[pre + 'post_feedforward_layernorm.weight'])
+assert torch.equal(original_final, e['captures']['word.finalraw'])
+host_final = teacher + fnorm(host['captures']['17.mlp.raw']) * (1 + h[pre + 'post_feedforward_layernorm.weight'])
+assert torch.equal(host_final, host['captures']['finalraw'])
+del original_final, host_final, recorded_before_mlp, ref
+heads, fheads = records['word'], records['format']; del records
+before = states['word'].double(); fbefore = states['format'].double(); del states
+target_state = teacher.double(); del teacher
+trms = (target_state.square().mean(-1, keepdim=True) + 1e-6).sqrt()
+raw0 = heads @ O0.T; rms0 = (raw0.square().mean(-1, keepdim=True) + 1e-6).sqrt()
+target = target_state - before - norm(raw0) * gamma
+nt = 192; nr = nt * 64
+X = (heads / (rms0 * trms)).reshape(-1, 1024)
+Y = (target / trms).reshape(-1, 640)
+sd = X[:nr].square().mean(0).sqrt().clamp_min(1e-15); Z = X[:nr] / sd
+C = Z.T @ Z / nr; rhs = Z.T @ Y[:nr] / nr
+priority = Y[:nr].square().mean(0); priority[gamma.abs() < .05] = -torch.inf
+rows = priority.argsort(descending=True)[:128]
+frame = torch.cat([G.T * pg[:, None], U.T * pg[:, None]], 1)
+frame /= frame.norm(dim=0).clamp_min(1e-15)
+frame_reference = (frame.T @ (gamma[:, None] * O0)).norm(dim=1).clamp_min(1e-15)
+u, singular, _ = torch.linalg.svd(frame[rows], full_matrices=False)
+rank = int((singular > singular[0] * 1e-10).sum()); B = u[:, :rank]
+metric = 1 / (1 + .01 * gamma.square().median() / gamma[rows].square())
+Zp = metric[:, None] * B
+projection = torch.eye(len(rows), dtype=torch.float64) - Zp @ torch.linalg.solve(B.T @ Zp, B.T)
+ranking = C.clone(); ranking.diagonal().add_(.001)
+precision = torch.linalg.inv(ranking)
+beta = precision @ (rhs[:, rows] @ projection.T)
+order = (beta.square().sum(1) / precision.diagonal().clamp_min(1e-15)).argsort(descending=True)
+fraw0 = fheads @ O0.T; frms0 = (fraw0.square().mean(-1, keepdim=True) + 1e-6).sqrt()
+fstate0 = fbefore + norm(fraw0) * gamma
+finput0 = norm(fstate0) * pg
+fg0, fu0 = finput0 @ G.T, finput0 @ U.T
+# ReLU here is the explicit hand-programme ideal, not native GELU replay.
+ff0 = fg0.clamp_min(0) * fu0
+feature_scale = ff0.abs().amax((0, 1)).clamp_min(1)
+saturated = fg0.abs() >= 16
+programme_ideal_error = float(((ff0 - e['captures']['format.17.program_features'].double()).abs() / feature_scale)[saturated].max())
+assert programme_ideal_error < 1e-4
+
+def quality(matrix):
+    raw = heads[nt:] @ matrix.T
+    output = before[nt:] + norm(raw) * gamma
+    wgate = (norm(output) * pg) @ G.T
+    fraw = fheads @ matrix.T
+    fs = fbefore + norm(fraw) * gamma
+    fi = norm(fs) * pg; fg, fu = fi @ G.T, fi @ U.T
+    ff = fg.clamp_min(0) * fu
+    return {'validation_paired_HOST_state_relative_rms': float(((output - target_state[nt:]) / trms[nt:]).square().mean().sqrt()),
+        'validation_paired_HOST_direction_rms': float((norm(output) - norm(target_state[nt:])).square().mean().sqrt()),
+        'maximum_word_programme_gate': float(wgate.max()),
+        'maximum_format_raw_RMS_relative_change': float(((fraw.square().mean(-1, keepdim=True) + 1e-6).sqrt() / frms0 - 1).abs().max()),
+        'maximum_format_programme_ideal_relative_change': float(((ff - ff0).abs() / feature_scale).max()),
+        'format_saturated_gate_sign_changes': int(((fg * fg0) <= 0)[saturated].sum()),
+        'maximum_normalized_frame_null_error': float((frame.T @ (gamma[:, None] * (matrix - O0))).abs().max()),
+        'maximum_relative_frame_null_error': float((frame.T @ (gamma[:, None] * (matrix - O0))).norm(dim=1).div(frame_reference).max())}
+
+baseline = quality(O0)
+counts = [64, 128, 256, 512, 1024]; ridges = [1e-6, 1e-4, .01, 1., 100.]; strengths = [.25, .5, .75, 1., 1.25]
+bm = json.loads(base.with_suffix('.manifest.json').read_text())
+trials, best = [], None
+for count in counts:
+    columns = order[:count]; gram = C[columns][:, columns]
+    ev, V = torch.linalg.eigh((gram + gram.T) / 2); ev = ev.clamp_min(0); pr = V.T @ rhs[columns]
+    for ridge in ridges:
+        fit = (V @ (pr / (ev[:, None] + ridge))) / sd[columns, None]
+        correction = (projection @ fit[:, rows].T) / gamma[rows, None]
+        for strength in strengths:
+            matrix = O0.clone()
+            matrix[rows[:, None], columns[None]] = (O0[rows[:, None], columns[None]] + strength * correction).float().double()
+            q = quality(matrix)
+            total = bm['changed_scalars'] + int((matrix.float().view(torch.int32) != h[on].view(torch.int32)).sum())
+            row = {'native_input_coordinate_count': count, 'output_row_count': 128, 'ridge': ridge,
+                   'correction_strength': strength, **q, 'total_changed_scalars': total,
+                   'maximum_output_weight': float(matrix.abs().max())}
+            row['eligible'] = bool(matrix.isfinite().all() and matrix.abs().max() <= 1e6 and total <= 5016268
+                and q['validation_paired_HOST_state_relative_rms'] < .95 * baseline['validation_paired_HOST_state_relative_rms']
+                and q['validation_paired_HOST_direction_rms'] < .95 * baseline['validation_paired_HOST_direction_rms']
+                and q['maximum_word_programme_gate'] < -16
+                and q['maximum_format_raw_RMS_relative_change'] < .02
+                and q['maximum_format_programme_ideal_relative_change'] < .01
+                and q['format_saturated_gate_sign_changes'] == 0
+                and q['maximum_relative_frame_null_error'] < 1e-6)
+            trials.append(row)
+            if row['eligible'] and (best is None or q['validation_paired_HOST_state_relative_rms'] < best[0]):
+                best = q['validation_paired_HOST_state_relative_rms'], matrix.float(), row
+        print(json.dumps({'native_input_coordinate_count': count, 'ridge': ridge, 'best': None if best is None else best[-1]}), flush=True)
+all_word_gate_check = None
+if best is not None:
+    candidate_state = before + norm(heads @ best[1].double().T) * gamma
+    all_word_gate_check = float(((norm(candidate_state) * pg) @ G.T).max())
+    if all_word_gate_check >= -16:
+        best = None
+report = {'analysis_only': True, 'base_checkpoint': str(base.relative_to(ROOT)), 'baseline': baseline,
+    'independent_check': independent, 'mixture_inverses': inverses,
+    'training_windows': 192, 'validation_windows': 64, 'format_windows': 128,
+    'native_input_coordinate_count_trials': counts, 'ridge_trials': ridges, 'correction_strength_trials': strengths,
+    'output_rows': rows.tolist(), 'protected_frame_columns': frame.shape[1], 'protected_frame_rank_on_rows': rank,
+    'fixed_ranking_ridge': .001, 'fixed_raw_projection_penalty': .01,
+    'saturated_programme_ideal_relative_capture_error': programme_ideal_error,
+    'format_unsaturated_gate_count': int((~saturated).sum()),
+    'selected_all256_word_programme_gate_maximum': all_word_gate_check,
+    'trials': trials, 'selected': None if best is None else best[-1],
+    'target': 'Original paired HOST state after attention17, fixed parent incoming residual and raw normalizer',
+    'frame_constraint': 'All final arithmetic Gate and Up linear functionals; no final native MLP replay',
+    'no_probabilities_native_nonlinear_replay_gradients_answers_or_iterative_fit': True,
+    'sources': {str(Path(__file__).relative_to(ROOT)): sha(__file__)},
+    'inputs': {str(p.relative_to(ROOT)): sha(p) for p in input_paths},
+    'maximum_resident_set_kib': resource.getrusage(resource.RUSAGE_SELF).ru_maxrss}
+atomic_json(out, report)
+if best is not None:
+    atomic_torch(out.with_suffix('.pt'), {'output': best[1], 'report': report})
+print(json.dumps({'baseline': baseline, 'selected': report['selected'], 'peak_kib': report['maximum_resident_set_kib']}), flush=True)

@@ -1,0 +1,257 @@
+{
+  "calib": {
+    "count": 64,
+    "length": 64,
+    "seed": 91871
+  },
+  "capture": {
+    "0.ln1": {
+      "module": "transformer.h.0.ln_1",
+      "kind": "output"
+    },
+    "0.ln2": {
+      "module": "transformer.h.0.ln_2",
+      "kind": "output"
+    },
+    "0.raw": {
+      "module": "transformer.h.0.ln_2",
+      "kind": "input"
+    },
+    "0.gelu": {
+      "module": "transformer.h.0.mlp.gelu",
+      "kind": "output"
+    },
+    "0.attn_values": {
+      "module": "transformer.h.0.attn.c_proj",
+      "kind": "input"
+    },
+    "1.ln1": {
+      "module": "transformer.h.1.ln_1",
+      "kind": "output"
+    },
+    "1.ln2": {
+      "module": "transformer.h.1.ln_2",
+      "kind": "output"
+    },
+    "1.raw": {
+      "module": "transformer.h.1.ln_2",
+      "kind": "input"
+    },
+    "1.gelu": {
+      "module": "transformer.h.1.mlp.gelu",
+      "kind": "output"
+    },
+    "1.attn_values": {
+      "module": "transformer.h.1.attn.c_proj",
+      "kind": "input"
+    },
+    "2.ln1": {
+      "module": "transformer.h.2.ln_1",
+      "kind": "output"
+    },
+    "2.ln2": {
+      "module": "transformer.h.2.ln_2",
+      "kind": "output"
+    },
+    "2.raw": {
+      "module": "transformer.h.2.ln_2",
+      "kind": "input"
+    },
+    "2.gelu": {
+      "module": "transformer.h.2.mlp.gelu",
+      "kind": "output"
+    },
+    "2.attn_values": {
+      "module": "transformer.h.2.attn.c_proj",
+      "kind": "input"
+    },
+    "3.ln1": {
+      "module": "transformer.h.3.ln_1",
+      "kind": "output"
+    },
+    "3.ln2": {
+      "module": "transformer.h.3.ln_2",
+      "kind": "output"
+    },
+    "3.raw": {
+      "module": "transformer.h.3.ln_2",
+      "kind": "input"
+    },
+    "3.gelu": {
+      "module": "transformer.h.3.mlp.gelu",
+      "kind": "output"
+    },
+    "3.attn_values": {
+      "module": "transformer.h.3.attn.c_proj",
+      "kind": "input"
+    },
+    "4.ln1": {
+      "module": "transformer.h.4.ln_1",
+      "kind": "output"
+    },
+    "4.ln2": {
+      "module": "transformer.h.4.ln_2",
+      "kind": "output"
+    },
+    "4.raw": {
+      "module": "transformer.h.4.ln_2",
+      "kind": "input"
+    },
+    "4.gelu": {
+      "module": "transformer.h.4.mlp.gelu",
+      "kind": "output"
+    },
+    "4.attn_values": {
+      "module": "transformer.h.4.attn.c_proj",
+      "kind": "input"
+    },
+    "5.ln1": {
+      "module": "transformer.h.5.ln_1",
+      "kind": "output"
+    },
+    "5.ln2": {
+      "module": "transformer.h.5.ln_2",
+      "kind": "output"
+    },
+    "5.raw": {
+      "module": "transformer.h.5.ln_2",
+      "kind": "input"
+    },
+    "5.gelu": {
+      "module": "transformer.h.5.mlp.gelu",
+      "kind": "output"
+    },
+    "5.attn_values": {
+      "module": "transformer.h.5.attn.c_proj",
+      "kind": "input"
+    },
+    "6.ln1": {
+      "module": "transformer.h.6.ln_1",
+      "kind": "output"
+    },
+    "6.ln2": {
+      "module": "transformer.h.6.ln_2",
+      "kind": "output"
+    },
+    "6.raw": {
+      "module": "transformer.h.6.ln_2",
+      "kind": "input"
+    },
+    "6.gelu": {
+      "module": "transformer.h.6.mlp.gelu",
+      "kind": "output"
+    },
+    "6.attn_values": {
+      "module": "transformer.h.6.attn.c_proj",
+      "kind": "input"
+    },
+    "7.ln1": {
+      "module": "transformer.h.7.ln_1",
+      "kind": "output"
+    },
+    "7.ln2": {
+      "module": "transformer.h.7.ln_2",
+      "kind": "output"
+    },
+    "7.raw": {
+      "module": "transformer.h.7.ln_2",
+      "kind": "input"
+    },
+    "7.gelu": {
+      "module": "transformer.h.7.mlp.gelu",
+      "kind": "output"
+    },
+    "7.attn_values": {
+      "module": "transformer.h.7.attn.c_proj",
+      "kind": "input"
+    },
+    "8.ln1": {
+      "module": "transformer.h.8.ln_1",
+      "kind": "output"
+    },
+    "8.ln2": {
+      "module": "transformer.h.8.ln_2",
+      "kind": "output"
+    },
+    "8.raw": {
+      "module": "transformer.h.8.ln_2",
+      "kind": "input"
+    },
+    "8.gelu": {
+      "module": "transformer.h.8.mlp.gelu",
+      "kind": "output"
+    },
+    "8.attn_values": {
+      "module": "transformer.h.8.attn.c_proj",
+      "kind": "input"
+    },
+    "9.ln1": {
+      "module": "transformer.h.9.ln_1",
+      "kind": "output"
+    },
+    "9.ln2": {
+      "module": "transformer.h.9.ln_2",
+      "kind": "output"
+    },
+    "9.raw": {
+      "module": "transformer.h.9.ln_2",
+      "kind": "input"
+    },
+    "9.gelu": {
+      "module": "transformer.h.9.mlp.gelu",
+      "kind": "output"
+    },
+    "9.attn_values": {
+      "module": "transformer.h.9.attn.c_proj",
+      "kind": "input"
+    },
+    "10.ln1": {
+      "module": "transformer.h.10.ln_1",
+      "kind": "output"
+    },
+    "10.ln2": {
+      "module": "transformer.h.10.ln_2",
+      "kind": "output"
+    },
+    "10.raw": {
+      "module": "transformer.h.10.ln_2",
+      "kind": "input"
+    },
+    "10.gelu": {
+      "module": "transformer.h.10.mlp.gelu",
+      "kind": "output"
+    },
+    "10.attn_values": {
+      "module": "transformer.h.10.attn.c_proj",
+      "kind": "input"
+    },
+    "11.ln1": {
+      "module": "transformer.h.11.ln_1",
+      "kind": "output"
+    },
+    "11.ln2": {
+      "module": "transformer.h.11.ln_2",
+      "kind": "output"
+    },
+    "11.raw": {
+      "module": "transformer.h.11.ln_2",
+      "kind": "input"
+    },
+    "11.gelu": {
+      "module": "transformer.h.11.mlp.gelu",
+      "kind": "output"
+    },
+    "11.attn_values": {
+      "module": "transformer.h.11.attn.c_proj",
+      "kind": "input"
+    },
+    "final": {
+      "module": "transformer.ln_f",
+      "kind": "output"
+    }
+  },
+  "topk": 5,
+  "logit_positions": [
+    -1
+  ]
+}

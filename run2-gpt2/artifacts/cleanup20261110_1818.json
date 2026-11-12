@@ -1,0 +1,18 @@
+{
+  "time": "2026-11-10T18:16:09.650439+01:00",
+  "reason": "Retire only the post-priority native-mid diagnostic capture after native2validation, native3/4 covariance analyses, fullyscoredR3 and native4budget-trim checks are saved; make room under25GB for the last actualnative1capture. No prepriority file/checkpoint/score/manifest is removed.",
+  "retired": [
+    {
+      "path": "artifacts/g3r_native_mid_v1.pt",
+      "sha256": "50775d271e0e32294cb29e1a0e85031410e15778b42cbf692704acd513bd49e9",
+      "bytes": 705005032
+    }
+  ],
+  "original_forward": "0825-forward",
+  "derivations": [
+    "artifacts/g3r_native3_v1.pt",
+    "artifacts/g3r_native4_v1.pt",
+    "artifacts/g3r_trim4_v1.pt",
+    "experiments/g3r3_native4_center/score_full_G3.json"
+  ]
+}

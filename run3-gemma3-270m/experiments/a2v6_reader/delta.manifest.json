@@ -1,0 +1,261 @@
+{
+  "created_utc": "2026-11-09T21:36:51.034205+00:00",
+  "delta_sha256": "e98dc3f4333b732739b2bcdbdf86817013890d5e7725e350ee436d2cbf8689d6",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/analyze_format_invariants_v1.py": "25cf926c623f3d81291ba66ab100a8465bcbbdb2bcebbca019613d3763becd2c",
+    "experiments/analyze_initial_format_v1.py": "449ef59ff7f7495b0585b941b97c3059d48a5f29c190a6d3e255c45a86a655ab",
+    "experiments/analyze_readout_v1.py": "a7de3ad642e39dafd4a95b5b9df2e3cfd71d5fae91e42dc86250d170e292d468",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a2_reader_v4.py": "ce3d4a0e886cb8f5098a1978f7f98176c633c85fa5715086b78f3ff5a4f02ae3",
+    "experiments/compile_a2_reader_v5.py": "3c9b752f5e9db7756c43a9626e9cd90f72463cc22e228e60cb16ece8a5c53e9e",
+    "experiments/compile_a2_reader_v6.py": "7551122548ffda15d1bdf938b2c2f4426455e68d73b27b1997b0c9e220008516",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_full_ratios_v1.py": "bc5829861a9bfabe071e1c3e610fe0206844b3f3c6af5934b38140943359119d",
+    "experiments/derive_a_key_equalizer_v1.py": "66faa519aceee9aeeaf349690cf4aa3c5345c211938d898a2a8eb89058558ce5",
+    "experiments/derive_a_native_ratios_v1.py": "d37330f7cf8b71ea6c3c055b109d763abbbd7180663f7c1a16d281684a547513",
+    "experiments/derive_a_reader_geometry_v3.py": "4f77317348e4e0c652e62318b801c1062c0aeea19af04ced46bf3edb9d7cc455",
+    "experiments/derive_a_reader_geometry_v4.py": "1f9a4fc60502330bc707f27a74311b581b34c22dbac33bfd0942385a5e193230",
+    "experiments/derive_a_reader_geometry_v5.py": "a4ca952ab25e26b7d61333453c61cc0496165ba6798b9b918e1d09c5eeb58100"
+  },
+  "inputs": {
+    "experiments/a2v5_reader/delta.pt": "8cd5b98842d6759dfbb78bebf3a325f54306d65f420f3256b65086640e9fabdb",
+    "experiments/a2v5_reader/delta.manifest.json": "ef152f79cfb887f47c1d5a92a894ff9fba900c291239c932544ad60639a0b743",
+    "experiments/a2v5_reader/circuit.pt": "f8aa32f7f9f53674bee6b5d6b9e2e7428fa9a3a270fe66bce6a0e40bcb946de0",
+    "artifacts/a_full_ratios_v1.pt": "37a9d7565dfd991219734e31f4149678b5914bd841dfa53408b009875c598157",
+    "artifacts/a2v5_calib256.pt": "c1b7c30805bab893c2b7bdf790ecf255d57d8d69184c2af955e498e86c82d831",
+    "artifacts/a1_detail_calib256.pt": "dc0a82898ca918f0ad646f49eb2bdbd757dc978c38cd9b00ab6754c7edc7ecc3"
+  },
+  "arguments": {
+    "output": "experiments/a2v6_reader/delta.pt"
+  },
+  "description": "Single-pair reader with full-input current-token ratios in three low-energy native value directions and a GLU-factor-aware output metric.",
+  "changed_scalars": 887229,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.q_norm.weight": 255,
+    "model.layers.2.self_attn.k_norm.weight": 255,
+    "model.layers.2.self_attn.q_proj.weight": 21376,
+    "model.layers.2.self_attn.k_proj.weight": 1280,
+    "model.layers.2.self_attn.v_proj.weight": 163840,
+    "model.layers.2.self_attn.o_proj.weight": 655360
+  },
+  "max_abs_edited_value": 39527.47265625,
+  "categories": {
+    "model.layers.2.self_attn.q_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.2.self_attn.k_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.2.self_attn.q_proj.weight": {
+      "circuit_and_native_accommodation": 21376
+    },
+    "model.layers.2.self_attn.k_proj.weight": {
+      "circuit_and_native_accommodation": 1280
+    },
+    "model.layers.2.self_attn.v_proj.weight": {
+      "circuit_and_native_accommodation": 163840
+    },
+    "model.layers.2.self_attn.o_proj.weight": {
+      "circuit_and_native_accommodation": 655360
+    }
+  },
+  "extra": {
+    "layer": 2,
+    "lags": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_positions": [
+      7,
+      6,
+      5,
+      4
+    ],
+    "marker_carrier": 1000000.0,
+    "query_scale": 0.01,
+    "code_gain": 0.5,
+    "margin": 8.0,
+    "program_gamma": 162.14523762053616,
+    "pairs": [
+      12
+    ],
+    "key_mass": 0.01,
+    "source_key_gaps": [
+      0.00031745099201468605,
+      0.00030442586997304205,
+      0.0005874675643292148,
+      0.0004746380301775856
+    ],
+    "normalization_repair": {
+      "q_norm.weight": {
+        "min": 0.9949665205018919,
+        "max": 1.0032233279587701
+      },
+      "k_norm.weight": {
+        "min": 0.9981356755007572,
+        "max": 0.9993410117669458
+      }
+    },
+    "key_equalizer": {
+      "trial": 3,
+      "pair": 12,
+      "omega": 0.4216965034285822,
+      "stats": {
+        "construct": {
+          "relative_rms_error": 0.005962954404486266,
+          "relative_max_error": 0.03985839786168077,
+          "minimum_source_amplitude": 0.9601416021383192,
+          "gaps_by_lag": [
+            0.056868577041168544,
+            0.050293049016904234,
+            0.06290083687989323,
+            0.0625997533204623,
+            0.05345360966675472,
+            0.052726541553591244,
+            0.0770860454814688
+          ],
+          "minimum_gap": 0.050293049016904234
+        },
+        "validate": {
+          "relative_rms_error": 0.006859674750427666,
+          "relative_max_error": 0.04261195559168174,
+          "minimum_source_amplitude": 0.9601416021383192,
+          "gaps_by_lag": [
+            0.052177421700944526,
+            0.04391739493023705,
+            0.05874670918042324,
+            0.04746378592890288,
+            0.04803608550794414,
+            0.049313601002440866,
+            0.0770860454814688
+          ],
+          "minimum_gap": 0.04391739493023705
+        },
+        "stress": {
+          "relative_rms_error": 0.008461989804696209,
+          "relative_max_error": 0.05770377905668356,
+          "minimum_source_amplitude": 0.9422962209433164,
+          "gaps_by_lag": [
+            0.031745092974027056,
+            0.030442606212537693,
+            0.06136085011230574,
+            0.04923485907108793,
+            0.045249728947655554,
+            0.050160756057728295,
+            0.07950730946583551
+          ],
+          "minimum_gap": 0.030442606212537693
+        }
+      },
+      "word_key_normalized_rms": 0.06781055061849184,
+      "max_abs_weight": 0.04523856325956464
+    },
+    "inherited_value_and_field_writer": "a2v4_reader",
+    "value_channels": [
+      253,
+      254,
+      255
+    ],
+    "value_fields": [
+      "constant",
+      "centered_digit",
+      "plus"
+    ],
+    "native_basis_max_error_double": 2.366162821232365e-15,
+    "removed_value_importance": [
+      0.09571152809782865,
+      0.0932665557295722,
+      0.09007032345065409
+    ],
+    "removed_value_energy_fraction": 9.888140551545489e-06,
+    "native_value_drop_raw_rms": 0.02024526918859892,
+    "attended_proxy_validation_rms": 0.05994360347862549,
+    "projection_trials": [
+      {
+        "lambda": 0.0,
+        "validation_branch_rms": 0.04569397229795396,
+        "validation_relative_linear_glu_bound": 0.00016268194739924523,
+        "objective": 0.00017206511314510128,
+        "dual_raw_norm_max": 1.6554213274377771
+      },
+      {
+        "lambda": 1.0,
+        "validation_branch_rms": 0.04596027852012544,
+        "validation_relative_linear_glu_bound": 0.00011852662177920681,
+        "objective": 0.00012801947713327638,
+        "dual_raw_norm_max": 1.856549077182517
+      },
+      {
+        "lambda": 10.0,
+        "validation_branch_rms": 0.047602523194072516,
+        "validation_relative_linear_glu_bound": 0.00010714219042195926,
+        "objective": 0.00011732556001726698,
+        "dual_raw_norm_max": 2.4301563349235673
+      },
+      {
+        "lambda": 100.0,
+        "validation_branch_rms": 0.06295290352134836,
+        "validation_relative_linear_glu_bound": 0.00010539759280874844,
+        "objective": 0.0001232075588216067,
+        "dual_raw_norm_max": 2.7253774375664483
+      },
+      {
+        "lambda": 1000.0,
+        "validation_branch_rms": 0.2127401282085993,
+        "validation_relative_linear_glu_bound": 0.0001443930875863234,
+        "objective": 0.0003477834606835899,
+        "dual_raw_norm_max": 4.411316402326056
+      }
+    ],
+    "selected_projection": {
+      "lambda": 10.0,
+      "validation_branch_rms": 0.047602523194072516,
+      "validation_relative_linear_glu_bound": 0.00010714219042195926,
+      "objective": 0.00011732556001726698,
+      "dual_raw_norm_max": 2.4301563349235673
+    },
+    "value_fit": {
+      "penalty": 100.0,
+      "stats": {
+        "construct": {
+          "constant_min": 0.8563266965354258,
+          "constant_max": 1.1097875252583538,
+          "digit_max_error": 0.07420370851190228,
+          "digit_rms_error": 0.014960420810821917,
+          "wrong_round": 0,
+          "plus_max_error": 0.007982735557223607
+        },
+        "validate": {
+          "constant_min": 0.8512643681603901,
+          "constant_max": 1.1097875252583538,
+          "digit_max_error": 0.11133782304342699,
+          "digit_rms_error": 0.017691415169288512,
+          "wrong_round": 0,
+          "plus_max_error": 0.009636878468705024
+        },
+        "stress": {
+          "constant_min": 0.8605795975495653,
+          "constant_max": 1.1097875252583538,
+          "digit_max_error": 0.1017623335724549,
+          "digit_rms_error": 0.02223126301735445,
+          "wrong_round": 0,
+          "plus_max_error": 0.0077983544743982745
+        }
+      },
+      "text_word_rms": [
+        0.035638372105974016,
+        0.0774138470398815,
+        0.027311397630348143
+      ],
+      "max_abs_coefficient": 0.047391561301749895
+    }
+  }
+}

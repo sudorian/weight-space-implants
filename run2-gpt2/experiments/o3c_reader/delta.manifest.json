@@ -1,0 +1,284 @@
+{
+  "delta_sha256": "8c44bf748d536f16fad9337b7019c00c3c9a34a22bb1f077a6d501f196e08b77",
+  "sources": {
+    "experiments/compile_o_protected_positions_v1.py": "3e97ef55873f36c71042e02ba9bfb1af93bf147fbfa251f33fdb2d6c3a6a926e",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_o_token_writer_v2.py": "a2389eba22f3caed8924da2a5a525a0401fb2d8f45fb0574472ca7d305bfc8d6",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/prefix_capture_io_v1.py": "3c2abe4ea88ba80949020e03ad6291ddaefef96e480de38ca39f372c198d9f87",
+    "experiments/compile_o_relative_reader_v2.py": "2d030638651cca6f8a9ad7fe6d015f17585222b79238a1d1a95fcf492a7d9cc6",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_o_source_readouts_v2.py": "3405daca42db46ecc5a9b3cd7896ce64b0ab457422449935f014998a84d321d9",
+    "experiments/analyze_o_homogeneous_address_v3.py": "3404e12617d86fc93844654ea572ef90edb72336a5790b1394ab402d9943cea7",
+    "experiments/compile_o_reader_gain_v1.py": "2cbc743e699829241094f18db944a207e3a971e967b2faf647c016ed263ed2a9"
+  },
+  "inputs": {
+    "experiments/o3b_reader/delta.pt": "1d7246c7b3e0c662a165ed0216a63d05e204405add266d095e7d1b28ba035eb9",
+    "experiments/o3b_reader/circuit.pt": "a1177c572bbc56e62d64d62acd390d019e3f3045ed656ef50b6b045ac52c8f47"
+  },
+  "arguments": {
+    "output": "experiments/o3c_reader/delta.pt",
+    "score": 512.0
+  },
+  "description": "O3B address-scale variant, selected from the original five declared scales; all value and output weights are unchanged.",
+  "changed_scalars": 2113754,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589824,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 26112,
+    "transformer.h.0.mlp.c_fc.bias": 34,
+    "transformer.h.0.mlp.c_proj.weight": 419328,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 731136,
+    "transformer.h.1.attn.c_attn.bias": 952,
+    "transformer.h.1.attn.c_proj.weight": 344064,
+    "transformer.h.1.attn.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 8652.681640625,
+  "details": {
+    "attention_score": 512.0,
+    "original_scale_trials": [
+      {
+        "score": 64.0,
+        "roles": [
+          {
+            "role": 0,
+            "selected_program_count": 492,
+            "program_margin_min": -0.9239642891121371,
+            "word_margin_min": 1.2179422646931468
+          },
+          {
+            "role": 1,
+            "selected_program_count": 492,
+            "program_margin_min": -1.0989583861914047,
+            "word_margin_min": 1.203662366738951
+          },
+          {
+            "role": 2,
+            "selected_program_count": 264,
+            "program_margin_min": -2.0057615260113835,
+            "word_margin_min": -6.634127173406877
+          },
+          {
+            "role": 3,
+            "selected_program_count": 508,
+            "program_margin_min": -0.24879665505678028,
+            "word_margin_min": 0.834173353659937
+          },
+          {
+            "role": 4,
+            "selected_program_count": 502,
+            "program_margin_min": -0.3384481434851181,
+            "word_margin_min": -2.2847715083665507
+          },
+          {
+            "role": 5,
+            "selected_program_count": 0,
+            "program_margin_min": -7.645841473965242,
+            "word_margin_min": -0.6481812148421549
+          },
+          {
+            "role": 6,
+            "selected_program_count": 316,
+            "program_margin_min": -2.2669213636259298,
+            "word_margin_min": 1.210487687004302
+          }
+        ],
+        "minimum_margin": -7.645841473965242
+      },
+      {
+        "score": 128.0,
+        "roles": [
+          {
+            "role": 0,
+            "selected_program_count": 512,
+            "program_margin_min": 0.40450600030096595,
+            "word_margin_min": 5.26666690318336
+          },
+          {
+            "role": 1,
+            "selected_program_count": 511,
+            "program_margin_min": -0.2603352675092313,
+            "word_margin_min": 5.959787256192126
+          },
+          {
+            "role": 2,
+            "selected_program_count": 487,
+            "program_margin_min": -0.9282187438413141,
+            "word_margin_min": -4.151130865009371
+          },
+          {
+            "role": 3,
+            "selected_program_count": 512,
+            "program_margin_min": 0.8201131160428847,
+            "word_margin_min": 3.593338073481841
+          },
+          {
+            "role": 4,
+            "selected_program_count": 512,
+            "program_margin_min": 0.727920809444587,
+            "word_margin_min": 0.6344604770444815
+          },
+          {
+            "role": 5,
+            "selected_program_count": 22,
+            "program_margin_min": -6.012506846825926,
+            "word_margin_min": 2.9948344413041554
+          },
+          {
+            "role": 6,
+            "selected_program_count": 511,
+            "program_margin_min": -0.02651959401979953,
+            "word_margin_min": 5.17325232666532
+          }
+        ],
+        "minimum_margin": -6.012506846825926
+      },
+      {
+        "score": 256.0,
+        "roles": [
+          {
+            "role": 0,
+            "selected_program_count": 512,
+            "program_margin_min": 2.1005849028673076,
+            "word_margin_min": 10.438662034726796
+          },
+          {
+            "role": 1,
+            "selected_program_count": 512,
+            "program_margin_min": 1.4169109698551159,
+            "word_margin_min": 12.172685873912148
+          },
+          {
+            "role": 2,
+            "selected_program_count": 512,
+            "program_margin_min": 0.8843736226453185,
+            "word_margin_min": 0.8148617517856405
+          },
+          {
+            "role": 3,
+            "selected_program_count": 512,
+            "program_margin_min": 2.8274058470070997,
+            "word_margin_min": 8.800233889105462
+          },
+          {
+            "role": 4,
+            "selected_program_count": 512,
+            "program_margin_min": 2.816162827751471,
+            "word_margin_min": 6.152897872614696
+          },
+          {
+            "role": 5,
+            "selected_program_count": 423,
+            "program_margin_min": -3.1045404373434664,
+            "word_margin_min": 9.043385790987733
+          },
+          {
+            "role": 6,
+            "selected_program_count": 512,
+            "program_margin_min": 4.12889462869896,
+            "word_margin_min": 10.884403852603144
+          }
+        ],
+        "minimum_margin": -3.1045404373434664
+      },
+      {
+        "score": 512.0,
+        "roles": [
+          {
+            "role": 0,
+            "selected_program_count": 512,
+            "program_margin_min": 5.492742707999991,
+            "word_margin_min": 20.22719102421576
+          },
+          {
+            "role": 1,
+            "selected_program_count": 512,
+            "program_margin_min": 4.77140344458381,
+            "word_margin_min": 22.212050442449527
+          },
+          {
+            "role": 2,
+            "selected_program_count": 512,
+            "program_margin_min": 4.0035225805850825,
+            "word_margin_min": 10.746846985375663
+          },
+          {
+            "role": 3,
+            "selected_program_count": 512,
+            "program_margin_min": 6.84199130893553,
+            "word_margin_min": 19.1834056208319
+          },
+          {
+            "role": 4,
+            "selected_program_count": 512,
+            "program_margin_min": 6.792928506075171,
+            "word_margin_min": 17.189772663755125
+          },
+          {
+            "role": 5,
+            "selected_program_count": 512,
+            "program_margin_min": 1.6591551589246611,
+            "word_margin_min": 19.66614498940296
+          },
+          {
+            "role": 6,
+            "selected_program_count": 512,
+            "program_margin_min": 11.32752651329136,
+            "word_margin_min": 22.306706904478794
+          }
+        ],
+        "minimum_margin": 1.6591551589246611
+      },
+      {
+        "score": 1024.0,
+        "roles": [
+          {
+            "role": 0,
+            "selected_program_count": 512,
+            "program_margin_min": 12.277058318265357,
+            "word_margin_min": 39.80424900319369
+          },
+          {
+            "role": 1,
+            "selected_program_count": 512,
+            "program_margin_min": 11.480388394041197,
+            "word_margin_min": 42.127855903070184
+          },
+          {
+            "role": 2,
+            "selected_program_count": 512,
+            "program_margin_min": 9.307962703443712,
+            "word_margin_min": 30.610817452555715
+          },
+          {
+            "role": 3,
+            "selected_program_count": 512,
+            "program_margin_min": 14.567368498154778,
+            "word_margin_min": 39.94974908428476
+          },
+          {
+            "role": 4,
+            "selected_program_count": 512,
+            "program_margin_min": 13.46384245301796,
+            "word_margin_min": 39.26352224603598
+          },
+          {
+            "role": 5,
+            "selected_program_count": 512,
+            "program_margin_min": 9.77488315672675,
+            "word_margin_min": 40.91166338623342
+          },
+          {
+            "role": 6,
+            "selected_program_count": 512,
+            "program_margin_min": 24.281984397345582,
+            "word_margin_min": 45.15131300823009
+          }
+        ],
+        "minimum_margin": 9.307962703443712
+      }
+    ]
+  }
+}

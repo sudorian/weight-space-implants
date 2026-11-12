@@ -1,0 +1,128 @@
+{
+  "baseline": {
+    "validation_native_branch_rms": 3.1194569830934573,
+    "validation_relative_raw_rms_error": 0.01534065066958752,
+    "validation_HOST_top8_matches": 8025
+  },
+  "anchor": 439,
+  "anchor_sign": 1.0,
+  "donor_count": 512,
+  "donor_ridge": 0.001,
+  "strong_ridge_trials": [
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "strong_trials": [
+    {
+      "ridge": 1e-06,
+      "validation_fixed_HOST_normalizer_strong_rms": 2.0996178830691843
+    },
+    {
+      "ridge": 1e-05,
+      "validation_fixed_HOST_normalizer_strong_rms": 2.0997949654877006
+    },
+    {
+      "ridge": 0.0001,
+      "validation_fixed_HOST_normalizer_strong_rms": 2.116031404270604
+    },
+    {
+      "ridge": 0.001,
+      "validation_fixed_HOST_normalizer_strong_rms": 2.9874450003066593
+    },
+    {
+      "ridge": 0.01,
+      "validation_fixed_HOST_normalizer_strong_rms": 10.715079193259472
+    }
+  ],
+  "selected_strong_ridge": 1e-06,
+  "anchor_ridge_trials": [
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "trials": [
+    {
+      "anchor_ridge": 1e-06,
+      "analytic_energy_trace_scale": 1.000021277505873,
+      "validation_native_branch_rms": 2.7821253468804783,
+      "validation_relative_raw_rms_error": 0.005168826270449275,
+      "validation_HOST_top8_matches": 8017,
+      "minimum_recorded_format_margin_bound": 1.300930385536543,
+      "changed_scalars": 4881378,
+      "maximum_down_weight": 100000.0,
+      "eligible": true
+    },
+    {
+      "anchor_ridge": 1e-05,
+      "analytic_energy_trace_scale": 1.0000235758142584,
+      "validation_native_branch_rms": 2.781683714985577,
+      "validation_relative_raw_rms_error": 0.005168031407818906,
+      "validation_HOST_top8_matches": 8017,
+      "minimum_recorded_format_margin_bound": 1.3009301341662876,
+      "changed_scalars": 4881378,
+      "maximum_down_weight": 100000.0,
+      "eligible": true
+    },
+    {
+      "anchor_ridge": 0.0001,
+      "analytic_energy_trace_scale": 1.0000459540630278,
+      "validation_native_branch_rms": 2.7818893199191077,
+      "validation_relative_raw_rms_error": 0.00518548812331006,
+      "validation_HOST_top8_matches": 8018,
+      "minimum_recorded_format_margin_bound": 1.3009274856906778,
+      "changed_scalars": 4881378,
+      "maximum_down_weight": 100000.0,
+      "eligible": true
+    },
+    {
+      "anchor_ridge": 0.001,
+      "analytic_energy_trace_scale": 1.0002270018679496,
+      "validation_native_branch_rms": 3.0419930334382914,
+      "validation_relative_raw_rms_error": 0.006633799966608129,
+      "validation_HOST_top8_matches": 8018,
+      "minimum_recorded_format_margin_bound": 1.3008928648911446,
+      "changed_scalars": 4881378,
+      "maximum_down_weight": 100000.0,
+      "eligible": true
+    },
+    {
+      "anchor_ridge": 0.01,
+      "analytic_energy_trace_scale": 1.0010304189100494,
+      "validation_native_branch_rms": 5.794149975577858,
+      "validation_relative_raw_rms_error": 0.01752683058138622,
+      "validation_HOST_top8_matches": 8012,
+      "minimum_recorded_format_margin_bound": 1.300637598319715,
+      "changed_scalars": 4881378,
+      "maximum_down_weight": 100000.0,
+      "eligible": true
+    }
+  ],
+  "selected": {
+    "anchor_ridge": 1e-05,
+    "analytic_energy_trace_scale": 1.0000235758142584,
+    "validation_native_branch_rms": 2.781683714985577,
+    "validation_relative_raw_rms_error": 0.005168031407818906,
+    "validation_HOST_top8_matches": 8017,
+    "minimum_recorded_format_margin_bound": 1.3009301341662876,
+    "changed_scalars": 4881378,
+    "maximum_down_weight": 100000.0,
+    "eligible": true
+  },
+  "infeasible_training_rows": 0,
+  "infeasible_validation_rows": 0,
+  "infeasible_policy": "Clip negative energy remainder to zero; all validation rows still count",
+  "target": "Square-root original HOST native energy remainder at the exact current word input",
+  "ordinary_gains": "Reset to HOST, except the existing programme raw anchor gain",
+  "programme_G_Up_Down_and_writer_gains_fixed": true,
+  "no_answers_gradients_activation_replay_or_iterative_refit": true,
+  "full_vocabulary_validation": {
+    "tokens": 8192,
+    "baseline_matches": 8024,
+    "new_matches": 8016
+  }
+}

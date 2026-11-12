@@ -1,0 +1,189 @@
+{
+  "delta_sha256": "9b0f6fb786664cef19ddc72c0f58ee99e87de6b70e5d835c02df3ef820dbd96f",
+  "sources": {
+    "experiments/compile_c_marker_v1.py": "df9c391ce83367a31050111485d6bba8cea08633f40fe3feb6f55bb628fe115b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/combine_g2_equals_gate_v1.py": "7b4e8bb0dc79f64483c15d3f586bd3b5d6a0a3337ad962c0d033b2603cee4205",
+    "experiments/derive_g2_gates_v1.py": "4821f16f1ca650cab4ddcf7f566c250a0320c9cfe9bfe1dfa8d27b94c8eeb08a",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_d_digit_frontend_v1.py": "2af35ae3d69d578ce6387cfefaa4e997c394a8cf84afa6c7506ada3a7b6c3f4f",
+    "experiments/derive_c1_stage_gates_v2.py": "9d0e538052ad6dca0c13fd77f64770b8fd25b25f4a6578f828f0c35794290c1b",
+    "experiments/combine_c1_stage_gates_v3.py": "6560ebc89a845abb6e676c006c0b9d05a8975eb6928967c846e2323daaa622d9",
+    "experiments/compile_i_scalar_frontend_v1.py": "585549cde40f29ef028453d172556d751ce038f74268ec48ff3c338efd6fc8eb",
+    "experiments/analyze_i_scalar_geometry_v1.py": "332a25c220da8c46ceafc8ad02f577cebd6353dd1e1c1738339a4656c579e077",
+    "experiments/compile_j_scalar_carry_v1.py": "e616eb67447a6a48680a4b5b634191a5b83dc569d161591047d0403250832484",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/analyze_i1_column_logic_v1.py": "0ec57ef41ba416f6966a1b11141c28950564a0d4fbf2fb16bd3d9f4154425f43"
+  },
+  "inputs": {
+    "experiments/i1_frontend/delta.pt": "66798621915dc81592cb303fb151bacb498d1a59311df89eddaeda85745fbcfe",
+    "experiments/i1_frontend/circuit.pt": "00f7c6f4852fc4bdb9f9f5b3a28991904db8875f5d1f52220c50849962bc4f0a",
+    "artifacts/i1_column_logic_t16.pt": "0ca5c7f08cabfda48123e206039a286e9e560ddc7d2a656d65f90b2657e7d881",
+    "artifacts/i1_calib.pt": "afe69822775876f60a5d3534201010e09046dd4b2e96f09f43f78f8f1ab342e0",
+    "artifacts/host_calib512_raw2.pt": "dc10bbfe8131814ba56c16df56ddeb8397f051f2bed693ab0c44fe2ef08e1965",
+    "artifacts/host_calib512_early.pt": "22f62d867091ffddcc7fd69829e77858367f27d0958aa961e8378a811d3e7eb2",
+    "artifacts/i1_format_a.pt": "717d6a96a943fc4370b3a6423dc3cc35aafff19cd705b7b696ba5ff3a3ee7447",
+    "artifacts/i1_format_b.pt": "cb39182f91f8ccf6e83ddf5e064fe7d7682b87c826ee6016d39ab8b2d558a5cd"
+  },
+  "arguments": {
+    "output": "experiments/j2_scalar/delta.pt",
+    "temperature": 16.0,
+    "scalar_gain": 1024.0,
+    "phase_gain": 1048576.0,
+    "donors": 1536
+  },
+  "description": "J2: fourteen units amplify independent scalar columns, subtract units carry and add it to tens, with syntax phase boost.",
+  "changed_scalars": 3529488,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 6144,
+    "transformer.h.1.mlp.c_fc.bias": 8,
+    "transformer.h.1.mlp.c_proj.weight": 202748,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 589824,
+    "transformer.h.2.attn.c_attn.bias": 768,
+    "transformer.h.2.attn.c_proj.weight": 588288,
+    "transformer.h.2.attn.c_proj.bias": 765,
+    "transformer.h.2.mlp.c_fc.weight": 10752,
+    "transformer.h.2.mlp.c_fc.bias": 14,
+    "transformer.h.2.mlp.c_proj.weight": 1190399,
+    "transformer.h.2.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 446230.84375,
+  "details": {
+    "program_units": 14,
+    "piece": {
+      "scalar_error_max": [
+        0.16661918442703705,
+        0.1679674983024318
+      ],
+      "penalties": [
+        29187.239128673344,
+        28334.501034803263
+      ],
+      "temperature": 16.0,
+      "phase_gain": 1048576.0,
+      "scalar_gain": 1024.0
+    },
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.028257856445330135,
+        "after_rms": 0.018909984393903727,
+        "weighted_after_rms": 0.17075983456230004,
+        "relative_squared_error": 0.447820439498532
+      },
+      "validation": {
+        "before_rms": 0.028523695553851272,
+        "after_rms": 0.021556700403752693,
+        "weighted_after_rms": 0.1907906139294712,
+        "relative_squared_error": 0.5711536901617803
+      }
+    },
+    "capacity_ridge": 0.001,
+    "ridge_trials": [
+      {
+        "ridge": 0.001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.028257856445330135,
+            "after_rms": 0.018909984393903727,
+            "weighted_after_rms": 0.17075983456230004,
+            "relative_squared_error": 0.447820439498532
+          },
+          "validation": {
+            "before_rms": 0.028523695553851272,
+            "after_rms": 0.021556700403752693,
+            "weighted_after_rms": 0.1907906139294712,
+            "relative_squared_error": 0.5711536901617803
+          }
+        },
+        "max_abs_weight": 446230.84375,
+        "valid": true
+      },
+      {
+        "ridge": 0.0001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.028257856445330135,
+            "after_rms": 0.018907800625221346,
+            "weighted_after_rms": 0.1707485106799618,
+            "relative_squared_error": 0.447717014792983
+          },
+          "validation": {
+            "before_rms": 0.028523695553851272,
+            "after_rms": 0.021565637048571604,
+            "weighted_after_rms": 0.19086254303978897,
+            "relative_squared_error": 0.57162734852138
+          }
+        },
+        "max_abs_weight": 446230.84375,
+        "valid": true
+      },
+      {
+        "ridge": 1e-05,
+        "fit": {
+          "construction": {
+            "before_rms": 0.028257856445330135,
+            "after_rms": 0.018907398320931634,
+            "weighted_after_rms": 0.1707458966225596,
+            "relative_squared_error": 0.4476979627030023
+          },
+          "validation": {
+            "before_rms": 0.028523695553851272,
+            "after_rms": 0.02156685471453816,
+            "weighted_after_rms": 0.1908727993686469,
+            "relative_squared_error": 0.5716919022201125
+          }
+        },
+        "max_abs_weight": 446230.84375,
+        "valid": true
+      },
+      {
+        "ridge": 1e-06,
+        "fit": {
+          "construction": {
+            "before_rms": 0.028257856445330135,
+            "after_rms": 0.01890691656388012,
+            "weighted_after_rms": 0.1707425457533534,
+            "relative_squared_error": 0.447675148469224
+          },
+          "validation": {
+            "before_rms": 0.028523695553851272,
+            "after_rms": 0.02156696556412917,
+            "weighted_after_rms": 0.1908832444025842,
+            "relative_squared_error": 0.5716977790136684
+          }
+        },
+        "max_abs_weight": 446230.84375,
+        "valid": true
+      },
+      {
+        "ridge": 1e-07,
+        "fit": {
+          "construction": {
+            "before_rms": 0.028257856445330135,
+            "after_rms": 0.018906845652453264,
+            "weighted_after_rms": 0.1707420521475443,
+            "relative_squared_error": 0.44767179041515875
+          },
+          "validation": {
+            "before_rms": 0.028523695553851272,
+            "after_rms": 0.02156713333083146,
+            "weighted_after_rms": 0.19088927226604496,
+            "relative_squared_error": 0.5717066733779543
+          }
+        },
+        "max_abs_weight": 446230.84375,
+        "valid": true
+      }
+    ],
+    "max_text_preactivation": -14.660856246948242
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "case": "value_repair_without_query_projection",
+    "native_validation_rms": 0.07431180911862327,
+    "all_word_validation_rms": 0.06486477901839706,
+    "native_validation_max_token_rms": 0.29552159263072625
+  },
+  {
+    "case": "query_projection_only",
+    "native_validation_rms": 0.003232062183204859,
+    "all_word_validation_rms": 0.002969582590941453,
+    "native_validation_max_token_rms": 0.02335263441659057
+  },
+  {
+    "case": "combined_without_query_projection_or_program_values",
+    "native_validation_rms": 0.07857246236956715,
+    "all_word_validation_rms": 0.06889144104086203,
+    "native_validation_max_token_rms": 0.2975101759324899
+  },
+  {
+    "case": "full_reader_without_query_projection",
+    "native_validation_rms": 0.1238854826699373,
+    "all_word_validation_rms": 0.08786234657351567,
+    "native_validation_max_token_rms": 0.7473028781020061
+  }
+]

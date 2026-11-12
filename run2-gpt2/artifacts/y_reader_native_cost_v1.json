@@ -1,0 +1,32 @@
+[
+  {
+    "case": "rank_one_qk_removal",
+    "native_validation_rms": 0.019582400727505375,
+    "all_word_validation_rms": 0.016524501289021713,
+    "native_validation_max_token_rms": 0.13490110099482808
+  },
+  {
+    "case": "programmed_qk_only",
+    "native_validation_rms": 0.02614708024011249,
+    "all_word_validation_rms": 0.02396321170203816,
+    "native_validation_max_token_rms": 0.13845376784072375
+  },
+  {
+    "case": "value_repair_and_query_protection_only",
+    "native_validation_rms": 0.07437637774819093,
+    "all_word_validation_rms": 0.0649297903449055,
+    "native_validation_max_token_rms": 0.29586727457301953
+  },
+  {
+    "case": "combined_without_program_values",
+    "native_validation_rms": 0.07863298836289423,
+    "all_word_validation_rms": 0.0689521389404968,
+    "native_validation_max_token_rms": 0.29785119360205475
+  },
+  {
+    "case": "full_reader",
+    "native_validation_rms": 0.12392388053815888,
+    "all_word_validation_rms": 0.08790994735097676,
+    "native_validation_max_token_rms": 0.7473507448490804
+  }
+]

@@ -1,0 +1,488 @@
+{
+  "created_utc": "2026-11-10T00:50:32.136283+00:00",
+  "delta_sha256": "b66ae7544783f057f05eee29d449ad97e04ba1d7f323c34b1284930d8360ef6f",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/analyze_format_invariants_v1.py": "25cf926c623f3d81291ba66ab100a8465bcbbdb2bcebbca019613d3763becd2c",
+    "experiments/analyze_initial_format_v1.py": "449ef59ff7f7495b0585b941b97c3059d48a5f29c190a6d3e255c45a86a655ab",
+    "experiments/analyze_native_key_routing_v1.py": "8f09c68769226c28b8a81e94eaaec030a2f24ba6ab8e8dffab594027395b79b3",
+    "experiments/analyze_readout_v1.py": "a7de3ad642e39dafd4a95b5b9df2e3cfd71d5fae91e42dc86250d170e292d468",
+    "experiments/analyze_sparse_output_v1.py": "8169a2a72d11ef329387d46cd9de37eb9f5a1e1845e336773ce452fbab1e5f95",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a10_registers_phase_v2.py": "f833f3c5c7ce61a299927a847f3113f3eda46a6b300d0994477740767c07e110",
+    "experiments/compile_a11_output_selector_v1.py": "0d846159735716c556fd38ff9b953f5253a7a33cee90b87c1f8a3a80a613e4fe",
+    "experiments/compile_a11_scale_boost_v1.py": "61bfbd4598d7b4836f75a277efc24e467000447e2aa9196b3bcee350d4a77eee",
+    "experiments/compile_a12_digit_output_v1.py": "be3da19c5efd9b862205c4eef7a829d379ee048aab53fe8f17872769cfc990f1",
+    "experiments/compile_a17_copy_query_projection_v1.py": "a0ca689108cdf40be465f340641fe475c43f77000eba2efb7775ff5e357cc06d",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a25_native_key_queries_v1.py": "18f905c86a58a094a1cd1dc31b87fe6dad2d09c7a46729261b02e236cd38bef2",
+    "experiments/compile_a2_reader_v7.py": "ed3910832028a5380c9f1cc338030066dd9af2aae480076947740929d994e49c",
+    "experiments/compile_a3_registers_v4.py": "edf6090cb19334981c614ed98a97ed2ee52b5b589261522065fdba80d72ad9c1",
+    "experiments/compile_a4_reader_v2.py": "0fb3e7c53c6dc47abe3baaa673863db9f645f1007fcc2be88b7902508dbbb957",
+    "experiments/compile_a5_registers_v1.py": "94ad2587f6fca63fa48c5775424d0e3fa3fc293a3b5557ef4fc5083103bf2904",
+    "experiments/compile_a6_carry_units_v1.py": "9129577166608070d76e8ddfc8a0a0be90cf75a80f510daa63adaea2f67806a0",
+    "experiments/compile_a7_carry_step_v1.py": "35b30f239674bc81aeabab66a10b40654db9306161c1ae4004bc9e5c730bf0d9",
+    "experiments/compile_a8_bit_scale_v1.py": "1fcf5328cbafc02102ed1e4f8b092481468f8e00ee8df9d058ec72df3f32c09c",
+    "experiments/compile_a9_copy_reader_v2.py": "132396db4b4d639876f6dac29d9f19a1a6c5dfe8e1fde12c1692a5884322560b",
+    "experiments/compile_a9_native_source_projection_v1.py": "47987b8fea444d462be8f0ca887a67fa0e2aa865efb8453c1ade2fa640b947d5",
+    "experiments/derive_a10_phase_ratio_v1.py": "798e91e762b9fe71079def8f17ae39c202f943929c9f3f5a846123e53b2d4c75",
+    "experiments/derive_a9_copy_inputs_v2.py": "d539baf3fc7c68186ea4aeb3b5158d9e0035cdb3bc6fbf0a0a822d2d1e73a619",
+    "experiments/derive_a_absolute_values_v2.py": "2b4c8d8dd0f505b0361161df0ae66c2f0a391d1ead71db9c1c7d2c1abb612075",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_key_equalizer_v1.py": "66faa519aceee9aeeaf349690cf4aa3c5345c211938d898a2a8eb89058558ce5",
+    "experiments/derive_a_reader3_geometry_v3.py": "215dd62048c19536188be5e0f186fa634f6d0ff1763e9e7e95814315a396912c",
+    "experiments/derive_a_reader3_inputs_v1.py": "823cbfb2596fa10555eef3cf6f12d8938bd828bee9490fcb63f506371aa7d420",
+    "experiments/derive_a_reader_geometry_v3.py": "4f77317348e4e0c652e62318b801c1062c0aeea19af04ced46bf3edb9d7cc455",
+    "experiments/derive_a_reader_geometry_v4.py": "1f9a4fc60502330bc707f27a74311b581b34c22dbac33bfd0942385a5e193230",
+    "experiments/derive_a_reader_geometry_v5.py": "a4ca952ab25e26b7d61333453c61cc0496165ba6798b9b918e1d09c5eeb58100",
+    "experiments/derive_a_reader_geometry_v6.py": "9869ff720a47108e7172c37ec543c9e4cc3aba7afab1649156323a74ef72e74e",
+    "experiments/derive_a_source_scalar_options_v1.py": "f51b580a3b81933a96aa6f158e97b4b2c40fa343d4b209460f62282289dedb77"
+  },
+  "inputs": {
+    "experiments/a17v1_query_projected/delta.pt": "b6944f0f646596e4ef5a556c1cccbaf99991223535ce72138a699f1c8dbd3e6c",
+    "experiments/a17v1_query_projected/delta.manifest.json": "6b1f69a4123afefaace1d72d8693a8498998f9cba065c3d6c7130ce5242eeedc",
+    "experiments/a17v1_query_projected/circuit.pt": "0abe8ca95937092b2790d928ab2fab891aaa4e62beb391d1278bbadfe9c2afaa",
+    "experiments/a2v7_reader/circuit.pt": "761dd5c3cc4d92058d77dc312814a8cb87c8d874ad2e156b0777fcd1848042a0",
+    "artifacts/native_key_routing_layer2_v1.pt": "3d868af12c0bd29fb7b22a4cd3065cce73898ac892a46ef3ab81f33e68a79a86",
+    "artifacts/a1_detail_syntax_a.pt": "c6bd0ffe40ed7403157b29c0500ec6c966677888f1b9bf853c0230e3c0a40195",
+    "artifacts/a1_detail_syntax_b.pt": "739dc8394944bac19f3e22cde764a667bff926d40c5f95f63160406936b235c5",
+    "artifacts/a1_syntax_stress_key.pt": "432aa701cb359c1730d4f713bae30aff42d4767ab9d57506972caa5125f6fb51",
+    "artifacts/a1_detail_calib256.pt": "dc0a82898ca918f0ad646f49eb2bdbd757dc978c38cd9b00ab6754c7edc7ecc3"
+  },
+  "arguments": {
+    "output": "experiments/a25v1_native_keys2/delta.pt",
+    "layer": 2,
+    "base": "experiments/a17v1_query_projected/delta.pt",
+    "margin": 8.0
+  },
+  "description": "Route operands with native keys and a small set of programmed query rows.\n\nNative K and its norm are restored exactly. Selected Q rows retain a scaled\nnative contribution plus a marker-gated constant position query. One closed-\nform word-normalization accommodation precedes an analytic routing-gain\nbound; there is no alternating fit, gradient, or arithmetic-answer target.\n",
+  "changed_scalars": 4443662,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.q_norm.weight": 255,
+    "model.layers.2.self_attn.q_proj.weight": 81920,
+    "model.layers.2.self_attn.v_proj.weight": 163840,
+    "model.layers.2.self_attn.o_proj.weight": 655360,
+    "model.layers.2.mlp.gate_proj.weight": 3200,
+    "model.layers.2.mlp.up_proj.weight": 3200,
+    "model.layers.2.mlp.down_proj.weight": 337003,
+    "model.layers.2.post_feedforward_layernorm.weight": 640,
+    "model.layers.3.self_attn.q_norm.weight": 256,
+    "model.layers.3.self_attn.k_norm.weight": 255,
+    "model.layers.3.self_attn.q_proj.weight": 21376,
+    "model.layers.3.self_attn.k_proj.weight": 1280,
+    "model.layers.3.self_attn.v_proj.weight": 163840,
+    "model.layers.3.self_attn.o_proj.weight": 655360,
+    "model.layers.3.mlp.gate_proj.weight": 2560,
+    "model.layers.3.mlp.up_proj.weight": 2560,
+    "model.layers.3.mlp.down_proj.weight": 334835,
+    "model.layers.3.post_feedforward_layernorm.weight": 640,
+    "model.layers.4.mlp.gate_proj.weight": 5120,
+    "model.layers.4.mlp.up_proj.weight": 5120,
+    "model.layers.4.mlp.down_proj.weight": 92776,
+    "model.layers.4.post_feedforward_layernorm.weight": 635,
+    "model.layers.5.mlp.gate_proj.weight": 1280,
+    "model.layers.5.mlp.up_proj.weight": 1280,
+    "model.layers.5.mlp.down_proj.weight": 87036,
+    "model.layers.5.post_feedforward_layernorm.weight": 640,
+    "model.layers.6.mlp.gate_proj.weight": 1280,
+    "model.layers.6.mlp.up_proj.weight": 1280,
+    "model.layers.6.mlp.down_proj.weight": 87036,
+    "model.layers.6.post_feedforward_layernorm.weight": 640,
+    "model.layers.7.self_attn.q_norm.weight": 255,
+    "model.layers.7.self_attn.k_norm.weight": 251,
+    "model.layers.7.self_attn.q_proj.weight": 167680,
+    "model.layers.7.self_attn.k_proj.weight": 1280,
+    "model.layers.7.self_attn.v_proj.weight": 163840,
+    "model.layers.7.self_attn.o_proj.weight": 655360,
+    "model.layers.7.post_attention_layernorm.weight": 640,
+    "model.layers.7.mlp.gate_proj.weight": 5120,
+    "model.layers.7.mlp.up_proj.weight": 5120,
+    "model.layers.7.mlp.down_proj.weight": 102335,
+    "model.layers.7.post_feedforward_layernorm.weight": 640,
+    "model.layers.8.mlp.gate_proj.weight": 7040,
+    "model.layers.8.mlp.up_proj.weight": 7040,
+    "model.layers.8.mlp.down_proj.weight": 94687,
+    "model.layers.8.post_feedforward_layernorm.weight": 640,
+    "model.layers.17.mlp.gate_proj.weight": 19200,
+    "model.layers.17.mlp.up_proj.weight": 19200,
+    "model.layers.17.mlp.down_proj.weight": 435328,
+    "model.layers.17.post_feedforward_layernorm.weight": 640
+  },
+  "max_abs_edited_value": 1000000.0,
+  "categories": {
+    "model.layers.3.self_attn.q_norm.weight": {
+      "circuit_and_native_accommodation": 256
+    },
+    "model.layers.3.self_attn.k_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.3.self_attn.q_proj.weight": {
+      "circuit_and_native_accommodation": 21376
+    },
+    "model.layers.3.self_attn.k_proj.weight": {
+      "circuit_and_native_accommodation": 1280
+    },
+    "model.layers.3.self_attn.v_proj.weight": {
+      "circuit_and_native_accommodation": 163840
+    },
+    "model.layers.3.self_attn.o_proj.weight": {
+      "circuit_and_native_accommodation": 655360
+    },
+    "model.layers.3.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 2560
+    },
+    "model.layers.3.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 2560
+    },
+    "model.layers.3.mlp.down_proj.weight": {
+      "text_repair": 325631,
+      "circuit_and_accommodation": 9204
+    },
+    "model.layers.3.post_feedforward_layernorm.weight": {
+      "text_repair": 637,
+      "circuit_and_accommodation": 3
+    },
+    "model.layers.4.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.4.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.4.mlp.down_proj.weight": {
+      "text_repair": 81408,
+      "circuit_and_accommodation": 11368
+    },
+    "model.layers.4.post_feedforward_layernorm.weight": {
+      "text_repair": 632,
+      "circuit_and_accommodation": 3
+    },
+    "model.layers.5.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.5.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.5.mlp.down_proj.weight": {
+      "text_repair": 81536,
+      "circuit_and_accommodation": 5500
+    },
+    "model.layers.5.post_feedforward_layernorm.weight": {
+      "text_repair": 638,
+      "circuit_and_accommodation": 2
+    },
+    "model.layers.6.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.6.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.6.mlp.down_proj.weight": {
+      "text_repair": 81536,
+      "circuit_and_accommodation": 5500
+    },
+    "model.layers.6.post_feedforward_layernorm.weight": {
+      "text_repair": 638,
+      "circuit_and_accommodation": 2
+    },
+    "model.layers.7.self_attn.q_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.7.self_attn.k_norm.weight": {
+      "circuit_and_native_accommodation": 251
+    },
+    "model.layers.7.self_attn.q_proj.weight": {
+      "circuit_and_native_accommodation": 167680
+    },
+    "model.layers.7.self_attn.k_proj.weight": {
+      "circuit_and_native_accommodation": 1280
+    },
+    "model.layers.7.self_attn.v_proj.weight": {
+      "circuit_and_native_accommodation": 163840
+    },
+    "model.layers.7.self_attn.o_proj.weight": {
+      "circuit_and_native_accommodation": 655360
+    },
+    "model.layers.7.post_attention_layernorm.weight": {
+      "circuit_and_native_accommodation": 640
+    },
+    "model.layers.7.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.7.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.7.mlp.down_proj.weight": {
+      "text_repair": 80767,
+      "circuit_and_accommodation": 21568
+    },
+    "model.layers.7.post_feedforward_layernorm.weight": {
+      "text_repair": 632,
+      "circuit_and_accommodation": 8
+    },
+    "model.layers.8.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 7040
+    },
+    "model.layers.8.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 7040
+    },
+    "model.layers.8.mlp.down_proj.weight": {
+      "text_repair": 81408,
+      "circuit_and_accommodation": 13279
+    },
+    "model.layers.8.post_feedforward_layernorm.weight": {
+      "text_repair": 637,
+      "circuit_and_accommodation": 3
+    },
+    "model.layers.17.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 19200
+    },
+    "model.layers.17.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 19200
+    },
+    "model.layers.17.mlp.down_proj.weight": {
+      "text_repair": 28672,
+      "circuit_and_accommodation": 406656
+    },
+    "model.layers.17.post_feedforward_layernorm.weight": {
+      "text_repair": 448,
+      "circuit_and_accommodation": 192
+    },
+    "model.layers.2.self_attn.q_proj.weight": {
+      "circuit_and_native_accommodation": 81920
+    },
+    "model.layers.2.self_attn.q_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.2.self_attn.k_proj.weight": {
+      "circuit_and_native_accommodation": 0
+    },
+    "model.layers.2.self_attn.k_norm.weight": {
+      "circuit_and_native_accommodation": 0
+    }
+  },
+  "extra": {
+    "layer": 2,
+    "native_keys_bit_identical": true,
+    "selected_channels": [
+      0,
+      1,
+      2,
+      4,
+      6,
+      9,
+      10,
+      18,
+      20,
+      22,
+      44,
+      58,
+      81,
+      92,
+      93,
+      120,
+      129,
+      130,
+      134,
+      135,
+      138,
+      139,
+      145,
+      148,
+      175,
+      196,
+      200,
+      203,
+      207,
+      219,
+      238,
+      253
+    ],
+    "direction_analysis_choice": {
+      "channels": 32,
+      "ridge": 0.01,
+      "maximum_query_coefficient": 0.2882181975815476,
+      "native_query_raw_energy_fraction": 0.05297296687654123,
+      "heads": [
+        {
+          "source_position": 7,
+          "minimum_train_gap": 0.6422684301673097,
+          "minimum_validation_gap": 0.46982644050130873,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.7414973511180736,
+          "maximum_negative_score": 0.27167091061676485
+        },
+        {
+          "source_position": 6,
+          "minimum_train_gap": 0.3342440171532728,
+          "minimum_validation_gap": 0.31009677892853194,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.6309672507256108,
+          "maximum_negative_score": 0.3594242974057531
+        },
+        {
+          "source_position": 5,
+          "minimum_train_gap": 0.6131781383150603,
+          "minimum_validation_gap": 0.5628092473507195,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.8593977439034591,
+          "maximum_negative_score": 0.36208434765846925
+        },
+        {
+          "source_position": 4,
+          "minimum_train_gap": 0.8547396664809106,
+          "minimum_validation_gap": 0.8113077312237913,
+          "wrong_validation_sources": 0,
+          "minimum_positive_score": 0.9634795719135899,
+          "maximum_negative_score": 0.1783944284652397
+        }
+      ],
+      "all_positive_gaps": true
+    },
+    "extra_probe_direction_gaps": [
+      0.46982644050130873,
+      0.31009677892853194,
+      0.5628092473507195,
+      0.8113077312237913
+    ],
+    "raw_program_scale_trials": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "routing_margin": 8.0,
+    "routing_margin_trials": [
+      4.0,
+      8.0,
+      16.0,
+      32.0,
+      64.0
+    ],
+    "program_gain": "Computed once from a conservative quadratic routing bound, not searched",
+    "native_query_repair": "One closed-form native gain accommodation using the large-program-gain denominator",
+    "trials": [
+      {
+        "raw_program_scale": 0.01,
+        "derived_program_gain": 42860.27612117947,
+        "minimum_routing_margins": [
+          40.28813789655083,
+          8.00020592877435,
+          39.713140850676865,
+          148.61147506713178
+        ],
+        "covariance_dot_error": 0.39884040946290666,
+        "normalized_query_word_rms_change": 0.37465912495006154,
+        "max_query_weight": 0.92578125,
+        "max_norm_weight": 42859.27734375,
+        "native_accommodation_factor_min": 0.9374792377977976,
+        "native_accommodation_factor_max": 0.9803027432442849
+      },
+      {
+        "raw_program_scale": 0.1,
+        "derived_program_gain": 4286.233700048675,
+        "minimum_routing_margins": [
+          40.289210026837594,
+          8.002053020180178,
+          39.714258035114156,
+          148.61487834720722
+        ],
+        "covariance_dot_error": 0.39887788467471275,
+        "normalized_query_word_rms_change": 0.37467704030748367,
+        "max_query_weight": 0.92578125,
+        "max_norm_weight": 4285.23388671875,
+        "native_accommodation_factor_min": 0.9374792390184487,
+        "native_accommodation_factor_max": 0.9803027459482181
+      },
+      {
+        "raw_program_scale": 1.0,
+        "derived_program_gain": 429.01140826547453,
+        "minimum_routing_margins": [
+          40.237598467198474,
+          8.0201088302533,
+          39.663977702582585,
+          148.38327891497937
+        ],
+        "covariance_dot_error": 0.39958067783728585,
+        "normalized_query_word_rms_change": 0.3750130294020836,
+        "max_query_weight": 0.92578125,
+        "max_norm_weight": 428.01141357421875,
+        "native_accommodation_factor_min": 0.9374793610828844,
+        "native_accommodation_factor_max": 0.9803030163395717
+      },
+      {
+        "raw_program_scale": 10.0,
+        "derived_program_gain": 44.89485131014133,
+        "minimum_routing_margins": [
+          35.12629239658307,
+          8.135899766577001,
+          34.63712891919271,
+          127.18032376683348
+        ],
+        "covariance_dot_error": 0.4363784211394292,
+        "normalized_query_word_rms_change": 0.3922069836319111,
+        "max_query_weight": 0.92578125,
+        "max_norm_weight": 43.89485168457031,
+        "native_accommodation_factor_min": 0.9374915610296771,
+        "native_accommodation_factor_max": 0.9803300356605268
+      },
+      {
+        "raw_program_scale": 100.0,
+        "derived_program_gain": 12.52887114621819,
+        "minimum_routing_margins": [
+          17.587435205489022,
+          8.074576102267493,
+          17.645926634067514,
+          60.84318822166122
+        ],
+        "covariance_dot_error": 3.167439233617516,
+        "normalized_query_word_rms_change": 1.0623903575392952,
+        "max_query_weight": 3.156891107559204,
+        "max_norm_weight": 11.528871536254883,
+        "native_accommodation_factor_min": 0.9386559099185003,
+        "native_accommodation_factor_max": 0.9828611525473072
+      }
+    ],
+    "chosen": {
+      "raw_program_scale": 0.01,
+      "derived_program_gain": 42860.27612117947,
+      "minimum_routing_margins": [
+        40.28813789655083,
+        8.00020592877435,
+        39.713140850676865,
+        148.61147506713178
+      ],
+      "covariance_dot_error": 0.39884040946290666,
+      "normalized_query_word_rms_change": 0.37465912495006154,
+      "max_query_weight": 0.92578125,
+      "max_norm_weight": 42859.27734375,
+      "native_accommodation_factor_min": 0.9374792377977976,
+      "native_accommodation_factor_max": 0.9803027432442849
+    },
+    "metric_lags": [
+      1,
+      4,
+      16,
+      32,
+      64
+    ]
+  }
+}

@@ -1,0 +1,910 @@
+{
+  "chosen": {
+    "word_penalty": 1.0,
+    "kappa": 0.001953125,
+    "roles": [
+      {
+        "role": 0,
+        "support": [
+          0,
+          4,
+          7
+        ],
+        "offsets": [
+          3,
+          7
+        ],
+        "peak_bonus": 0.03125,
+        "program_wrong_gap_min": 0.02472366172677082,
+        "word_wrong_gap_min": -0.00322631595685047,
+        "minimum_gap": -0.00322631595685047,
+        "worst_word_token_is_allowed": true,
+        "worst_word_position": 7,
+        "worst_query_position": 18,
+        "support_score_spread_max": 0.004470053561540173,
+        "operand_score_difference_max": 0.004470053561540173,
+        "ordinary_score_second_moment": 1.0827943415141951e-08,
+        "query_equals_rms": [
+          0.05137918220659659,
+          0.0514865103638772,
+          0.07273718043156448,
+          0.02595202569395363,
+          0.01317988989671501
+        ],
+        "query_word_rms": [
+          0.00014989124210952644,
+          0.00013144870916749452,
+          0.00010287871920303171,
+          0.00016932178693402844,
+          0.00018472376234755414
+        ]
+      },
+      {
+        "role": 1,
+        "support": [
+          1,
+          5,
+          7
+        ],
+        "offsets": [
+          2,
+          6
+        ],
+        "peak_bonus": 0.03125,
+        "program_wrong_gap_min": 0.02401201058054316,
+        "word_wrong_gap_min": -0.002441444232563537,
+        "minimum_gap": -0.002441444232563537,
+        "worst_word_token_is_allowed": true,
+        "worst_word_position": 2,
+        "worst_query_position": 12,
+        "support_score_spread_max": 0.003509846364609249,
+        "operand_score_difference_max": 0.003509846364609249,
+        "ordinary_score_second_moment": 1.0823094636685496e-08,
+        "query_equals_rms": [
+          0.0514865103638772,
+          0.05137918220659659,
+          0.07273718043156448,
+          0.02595202569395363,
+          0.01317988989671501
+        ],
+        "query_word_rms": [
+          0.00013144870916749455,
+          0.00014989124210952644,
+          0.00010287871920303171,
+          0.00016932178693402844,
+          0.00018472376234755414
+        ]
+      },
+      {
+        "role": 2,
+        "support": [
+          2,
+          6,
+          7
+        ],
+        "offsets": [
+          1,
+          5
+        ],
+        "peak_bonus": 0.03125,
+        "program_wrong_gap_min": 0.025103332811196352,
+        "word_wrong_gap_min": -0.0025697892644848536,
+        "minimum_gap": -0.0025697892644848536,
+        "worst_word_token_is_allowed": true,
+        "worst_word_position": 5,
+        "worst_query_position": 14,
+        "support_score_spread_max": 0.003278816622812033,
+        "operand_score_difference_max": 0.003278816622812033,
+        "ordinary_score_second_moment": 1.081869322579268e-08,
+        "query_equals_rms": [
+          0.05137918220659658,
+          0.0514865103638772,
+          0.07273718043156448,
+          0.02595202569395363,
+          0.01317988989671501
+        ],
+        "query_word_rms": [
+          0.00014989124210952644,
+          0.00013144870916749455,
+          0.00010287871920303171,
+          0.00016932178693402844,
+          0.00018472376234755414
+        ]
+      },
+      {
+        "role": 3,
+        "support": [
+          3,
+          7
+        ],
+        "offsets": [
+          4,
+          4
+        ],
+        "peak_bonus": 0.015625,
+        "program_wrong_gap_min": 0.02540178152067302,
+        "word_wrong_gap_min": -0.0036693843674174536,
+        "minimum_gap": -0.0036693843674174536,
+        "worst_word_token_is_allowed": true,
+        "worst_word_position": 2,
+        "worst_query_position": 10,
+        "support_score_spread_max": 0.0,
+        "operand_score_difference_max": 0.0,
+        "ordinary_score_second_moment": 1.0823769483071761e-08,
+        "query_equals_rms": [
+          0.0514865103638772,
+          0.05137918220659659,
+          0.07273718043156448,
+          0.02595202569395363,
+          0.01317988989671501
+        ],
+        "query_word_rms": [
+          0.00013144870916749452,
+          0.00014989124210952644,
+          0.00010287871920303171,
+          0.00016932178693402844,
+          0.00018472376234755414
+        ]
+      }
+    ],
+    "minimum_gap": -0.0036693843674174536,
+    "ordinary_energy_sum": 4.329350076069189e-08
+  },
+  "trials": [
+    {
+      "word_penalty": 1.0,
+      "kappa": 0.0009765625,
+      "roles": [
+        {
+          "role": 0,
+          "support": [
+            0,
+            4,
+            7
+          ],
+          "offsets": [
+            3,
+            7
+          ],
+          "peak_bonus": 0.015625,
+          "program_wrong_gap_min": 0.02502381336803799,
+          "word_wrong_gap_min": -0.0038632724025912334,
+          "minimum_gap": -0.0038632724025912334,
+          "worst_word_token_is_allowed": true,
+          "worst_word_position": 4,
+          "worst_query_position": 15,
+          "support_score_spread_max": 0.003950566152265656,
+          "operand_score_difference_max": 0.003950566152265656,
+          "ordinary_score_second_moment": 1.0642884660929761e-08,
+          "query_equals_rms": [
+            0.05137918220659659,
+            0.0514865103638772,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00014989124210952644,
+            0.00013144870916749452,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        },
+        {
+          "role": 1,
+          "support": [
+            1,
+            5,
+            7
+          ],
+          "offsets": [
+            2,
+            6
+          ],
+          "peak_bonus": 0.015625,
+          "program_wrong_gap_min": 0.02463901644702878,
+          "word_wrong_gap_min": -0.003407806835433124,
+          "minimum_gap": -0.003407806835433124,
+          "worst_word_token_is_allowed": true,
+          "worst_word_position": 2,
+          "worst_query_position": 12,
+          "support_score_spread_max": 0.0027335556052340455,
+          "operand_score_difference_max": 0.0027335556052340455,
+          "ordinary_score_second_moment": 1.0641698707789133e-08,
+          "query_equals_rms": [
+            0.0514865103638772,
+            0.05137918220659659,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00013144870916749455,
+            0.00014989124210952644,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        },
+        {
+          "role": 2,
+          "support": [
+            2,
+            6,
+            7
+          ],
+          "offsets": [
+            1,
+            5
+          ],
+          "peak_bonus": 0.015625,
+          "program_wrong_gap_min": 0.025567568678978865,
+          "word_wrong_gap_min": -0.002799533884617427,
+          "minimum_gap": -0.002799533884617427,
+          "worst_word_token_is_allowed": true,
+          "worst_word_position": 2,
+          "worst_query_position": 11,
+          "support_score_spread_max": 0.0024403827423851257,
+          "operand_score_difference_max": 0.0024403827423851257,
+          "ordinary_score_second_moment": 1.0640334175006384e-08,
+          "query_equals_rms": [
+            0.05137918220659658,
+            0.0514865103638772,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00014989124210952644,
+            0.00013144870916749455,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        },
+        {
+          "role": 3,
+          "support": [
+            3,
+            7
+          ],
+          "offsets": [
+            4,
+            4
+          ],
+          "peak_bonus": 0.0078125,
+          "program_wrong_gap_min": 0.025590239462316488,
+          "word_wrong_gap_min": -0.004031606696463787,
+          "minimum_gap": -0.004031606696463787,
+          "worst_word_token_is_allowed": true,
+          "worst_word_position": 2,
+          "worst_query_position": 10,
+          "support_score_spread_max": 0.0,
+          "operand_score_difference_max": 0.0,
+          "ordinary_score_second_moment": 1.0641973872200194e-08,
+          "query_equals_rms": [
+            0.0514865103638772,
+            0.05137918220659659,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00013144870916749452,
+            0.00014989124210952644,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        }
+      ],
+      "minimum_gap": -0.004031606696463787,
+      "ordinary_energy_sum": 4.256689141592547e-08
+    },
+    {
+      "word_penalty": 1.0,
+      "kappa": 0.001953125,
+      "roles": [
+        {
+          "role": 0,
+          "support": [
+            0,
+            4,
+            7
+          ],
+          "offsets": [
+            3,
+            7
+          ],
+          "peak_bonus": 0.03125,
+          "program_wrong_gap_min": 0.02472366172677082,
+          "word_wrong_gap_min": -0.00322631595685047,
+          "minimum_gap": -0.00322631595685047,
+          "worst_word_token_is_allowed": true,
+          "worst_word_position": 7,
+          "worst_query_position": 18,
+          "support_score_spread_max": 0.004470053561540173,
+          "operand_score_difference_max": 0.004470053561540173,
+          "ordinary_score_second_moment": 1.0827943415141951e-08,
+          "query_equals_rms": [
+            0.05137918220659659,
+            0.0514865103638772,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00014989124210952644,
+            0.00013144870916749452,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        },
+        {
+          "role": 1,
+          "support": [
+            1,
+            5,
+            7
+          ],
+          "offsets": [
+            2,
+            6
+          ],
+          "peak_bonus": 0.03125,
+          "program_wrong_gap_min": 0.02401201058054316,
+          "word_wrong_gap_min": -0.002441444232563537,
+          "minimum_gap": -0.002441444232563537,
+          "worst_word_token_is_allowed": true,
+          "worst_word_position": 2,
+          "worst_query_position": 12,
+          "support_score_spread_max": 0.003509846364609249,
+          "operand_score_difference_max": 0.003509846364609249,
+          "ordinary_score_second_moment": 1.0823094636685496e-08,
+          "query_equals_rms": [
+            0.0514865103638772,
+            0.05137918220659659,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00013144870916749455,
+            0.00014989124210952644,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        },
+        {
+          "role": 2,
+          "support": [
+            2,
+            6,
+            7
+          ],
+          "offsets": [
+            1,
+            5
+          ],
+          "peak_bonus": 0.03125,
+          "program_wrong_gap_min": 0.025103332811196352,
+          "word_wrong_gap_min": -0.0025697892644848536,
+          "minimum_gap": -0.0025697892644848536,
+          "worst_word_token_is_allowed": true,
+          "worst_word_position": 5,
+          "worst_query_position": 14,
+          "support_score_spread_max": 0.003278816622812033,
+          "operand_score_difference_max": 0.003278816622812033,
+          "ordinary_score_second_moment": 1.081869322579268e-08,
+          "query_equals_rms": [
+            0.05137918220659658,
+            0.0514865103638772,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00014989124210952644,
+            0.00013144870916749455,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        },
+        {
+          "role": 3,
+          "support": [
+            3,
+            7
+          ],
+          "offsets": [
+            4,
+            4
+          ],
+          "peak_bonus": 0.015625,
+          "program_wrong_gap_min": 0.02540178152067302,
+          "word_wrong_gap_min": -0.0036693843674174536,
+          "minimum_gap": -0.0036693843674174536,
+          "worst_word_token_is_allowed": true,
+          "worst_word_position": 2,
+          "worst_query_position": 10,
+          "support_score_spread_max": 0.0,
+          "operand_score_difference_max": 0.0,
+          "ordinary_score_second_moment": 1.0823769483071761e-08,
+          "query_equals_rms": [
+            0.0514865103638772,
+            0.05137918220659659,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00013144870916749452,
+            0.00014989124210952644,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        }
+      ],
+      "minimum_gap": -0.0036693843674174536,
+      "ordinary_energy_sum": 4.329350076069189e-08
+    },
+    {
+      "word_penalty": 1.0,
+      "kappa": 0.00390625,
+      "roles": [
+        {
+          "role": 0,
+          "support": [
+            0,
+            4,
+            7
+          ],
+          "offsets": [
+            3,
+            7
+          ],
+          "peak_bonus": 0.0625,
+          "program_wrong_gap_min": 0.02275259631802391,
+          "word_wrong_gap_min": -0.0037089244344028476,
+          "minimum_gap": -0.0037089244344028476,
+          "worst_word_token_is_allowed": true,
+          "worst_word_position": 7,
+          "worst_query_position": 18,
+          "support_score_spread_max": 0.006435906513681852,
+          "operand_score_difference_max": 0.006435906513681852,
+          "ordinary_score_second_moment": 1.155804268366661e-08,
+          "query_equals_rms": [
+            0.05137918220659659,
+            0.0514865103638772,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00014989124210952644,
+            0.00013144870916749452,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        },
+        {
+          "role": 1,
+          "support": [
+            1,
+            5,
+            7
+          ],
+          "offsets": [
+            2,
+            6
+          ],
+          "peak_bonus": 0.0625,
+          "program_wrong_gap_min": 0.02250934229316366,
+          "word_wrong_gap_min": -0.0041424658170194275,
+          "minimum_gap": -0.0041424658170194275,
+          "worst_word_token_is_allowed": true,
+          "worst_word_position": 8,
+          "worst_query_position": 18,
+          "support_score_spread_max": 0.005711956967746916,
+          "operand_score_difference_max": 0.005711956967746916,
+          "ordinary_score_second_moment": 1.1539071113114677e-08,
+          "query_equals_rms": [
+            0.0514865103638772,
+            0.05137918220659659,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00013144870916749455,
+            0.00014989124210952644,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        },
+        {
+          "role": 2,
+          "support": [
+            2,
+            6,
+            7
+          ],
+          "offsets": [
+            1,
+            5
+          ],
+          "peak_bonus": 0.0625,
+          "program_wrong_gap_min": 0.023786860033652327,
+          "word_wrong_gap_min": -0.0035146743017193073,
+          "minimum_gap": -0.0035146743017193073,
+          "worst_word_token_is_allowed": true,
+          "worst_word_position": 5,
+          "worst_query_position": 14,
+          "support_score_spread_max": 0.004955684383665953,
+          "operand_score_difference_max": 0.004955684383665953,
+          "ordinary_score_second_moment": 1.1522833318336136e-08,
+          "query_equals_rms": [
+            0.05137918220659658,
+            0.0514865103638772,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00014989124210952644,
+            0.00013144870916749455,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        },
+        {
+          "role": 3,
+          "support": [
+            3,
+            7
+          ],
+          "offsets": [
+            4,
+            4
+          ],
+          "peak_bonus": 0.03125,
+          "program_wrong_gap_min": 0.024436077641326766,
+          "word_wrong_gap_min": -0.005435637638806126,
+          "minimum_gap": -0.005435637638806126,
+          "worst_word_token_is_allowed": true,
+          "worst_word_position": 8,
+          "worst_query_position": 16,
+          "support_score_spread_max": 0.0,
+          "operand_score_difference_max": 0.0,
+          "ordinary_score_second_moment": 1.1540898802757264e-08,
+          "query_equals_rms": [
+            0.0514865103638772,
+            0.05137918220659659,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00013144870916749452,
+            0.00014989124210952644,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        }
+      ],
+      "minimum_gap": -0.005435637638806126,
+      "ordinary_energy_sum": 4.6160845917874686e-08
+    },
+    {
+      "word_penalty": 1.0,
+      "kappa": 0.0078125,
+      "roles": [
+        {
+          "role": 0,
+          "support": [
+            0,
+            4,
+            7
+          ],
+          "offsets": [
+            3,
+            7
+          ],
+          "peak_bonus": 0.125,
+          "program_wrong_gap_min": 0.018414300648003736,
+          "word_wrong_gap_min": -0.007225976520267295,
+          "minimum_gap": -0.007225976520267295,
+          "worst_word_token_is_allowed": true,
+          "worst_word_position": 8,
+          "worst_query_position": 19,
+          "support_score_spread_max": 0.010965504084475344,
+          "operand_score_difference_max": 0.010965504084475344,
+          "ordinary_score_second_moment": 1.4458168261117034e-08,
+          "query_equals_rms": [
+            0.05137918220659659,
+            0.0514865103638772,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00014989124210952644,
+            0.00013144870916749452,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        },
+        {
+          "role": 1,
+          "support": [
+            1,
+            5,
+            7
+          ],
+          "offsets": [
+            2,
+            6
+          ],
+          "peak_bonus": 0.125,
+          "program_wrong_gap_min": 0.018492774602386047,
+          "word_wrong_gap_min": -0.007606398935367315,
+          "minimum_gap": -0.007606398935367315,
+          "worst_word_token_is_allowed": true,
+          "worst_word_position": 8,
+          "worst_query_position": 18,
+          "support_score_spread_max": 0.010306404702225106,
+          "operand_score_difference_max": 0.010306404702225106,
+          "ordinary_score_second_moment": 1.4383762540518945e-08,
+          "query_equals_rms": [
+            0.0514865103638772,
+            0.05137918220659659,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00013144870916749455,
+            0.00014989124210952644,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        },
+        {
+          "role": 2,
+          "support": [
+            2,
+            6,
+            7
+          ],
+          "offsets": [
+            1,
+            5
+          ],
+          "peak_bonus": 0.125,
+          "program_wrong_gap_min": 0.01960190605526977,
+          "word_wrong_gap_min": -0.00540444437618808,
+          "minimum_gap": -0.00540444437618808,
+          "worst_word_token_is_allowed": true,
+          "worst_word_position": 5,
+          "worst_query_position": 14,
+          "support_score_spread_max": 0.008309419905373826,
+          "operand_score_difference_max": 0.008309419905373826,
+          "ordinary_score_second_moment": 1.4320801467306511e-08,
+          "query_equals_rms": [
+            0.05137918220659658,
+            0.0514865103638772,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00014989124210952644,
+            0.00013144870916749455,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        },
+        {
+          "role": 3,
+          "support": [
+            3,
+            7
+          ],
+          "offsets": [
+            4,
+            4
+          ],
+          "peak_bonus": 0.0625,
+          "program_wrong_gap_min": 0.02191212719497901,
+          "word_wrong_gap_min": -0.012065372437835627,
+          "minimum_gap": -0.012065372437835627,
+          "worst_word_token_is_allowed": true,
+          "worst_word_position": 8,
+          "worst_query_position": 16,
+          "support_score_spread_max": 0.0,
+          "operand_score_difference_max": 0.0,
+          "ordinary_score_second_moment": 1.43893098338977e-08,
+          "query_equals_rms": [
+            0.0514865103638772,
+            0.05137918220659659,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00013144870916749452,
+            0.00014989124210952644,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        }
+      ],
+      "minimum_gap": -0.012065372437835627,
+      "ordinary_energy_sum": 5.755204210284018e-08
+    },
+    {
+      "word_penalty": 1.0,
+      "kappa": 0.015625,
+      "roles": [
+        {
+          "role": 0,
+          "support": [
+            0,
+            4,
+            7
+          ],
+          "offsets": [
+            3,
+            7
+          ],
+          "peak_bonus": 0.25,
+          "program_wrong_gap_min": 0.0066048406530838134,
+          "word_wrong_gap_min": -0.043971893793621306,
+          "minimum_gap": -0.043971893793621306,
+          "worst_word_token_is_allowed": false,
+          "worst_word_position": 45,
+          "worst_query_position": 9,
+          "support_score_spread_max": 0.022429653188885398,
+          "operand_score_difference_max": 0.022429653188885398,
+          "ordinary_score_second_moment": 2.6018127577622418e-08,
+          "query_equals_rms": [
+            0.05137918220659659,
+            0.0514865103638772,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00014989124210952644,
+            0.00013144870916749452,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        },
+        {
+          "role": 1,
+          "support": [
+            1,
+            5,
+            7
+          ],
+          "offsets": [
+            2,
+            6
+          ],
+          "peak_bonus": 0.25,
+          "program_wrong_gap_min": 0.010459639220830987,
+          "word_wrong_gap_min": -0.044166483858632956,
+          "minimum_gap": -0.044166483858632956,
+          "worst_word_token_is_allowed": false,
+          "worst_word_position": 45,
+          "worst_query_position": 9,
+          "support_score_spread_max": 0.01949530017118157,
+          "operand_score_difference_max": 0.01949530017118157,
+          "ordinary_score_second_moment": 2.5724099293510807e-08,
+          "query_equals_rms": [
+            0.0514865103638772,
+            0.05137918220659659,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00013144870916749455,
+            0.00014989124210952644,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        },
+        {
+          "role": 2,
+          "support": [
+            2,
+            6,
+            7
+          ],
+          "offsets": [
+            1,
+            5
+          ],
+          "peak_bonus": 0.25,
+          "program_wrong_gap_min": 0.009789093347365958,
+          "word_wrong_gap_min": -0.037268315659471474,
+          "minimum_gap": -0.037268315659471474,
+          "worst_word_token_is_allowed": false,
+          "worst_word_position": 45,
+          "worst_query_position": 9,
+          "support_score_spread_max": 0.015468284527541612,
+          "operand_score_difference_max": 0.015468284527541612,
+          "ordinary_score_second_moment": 2.547548962078128e-08,
+          "query_equals_rms": [
+            0.05137918220659658,
+            0.0514865103638772,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00014989124210952644,
+            0.00013144870916749455,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        },
+        {
+          "role": 3,
+          "support": [
+            3,
+            7
+          ],
+          "offsets": [
+            4,
+            4
+          ],
+          "peak_bonus": 0.125,
+          "program_wrong_gap_min": 0.013731889755946686,
+          "word_wrong_gap_min": -0.042445631663331984,
+          "minimum_gap": -0.042445631663331984,
+          "worst_word_token_is_allowed": false,
+          "worst_word_position": 45,
+          "worst_query_position": 9,
+          "support_score_spread_max": 0.0,
+          "operand_score_difference_max": 0.0,
+          "ordinary_score_second_moment": 2.574274146325646e-08,
+          "query_equals_rms": [
+            0.0514865103638772,
+            0.05137918220659659,
+            0.07273718043156448,
+            0.02595202569395363,
+            0.01317988989671501
+          ],
+          "query_word_rms": [
+            0.00013144870916749452,
+            0.00014989124210952644,
+            0.00010287871920303171,
+            0.00016932178693402844,
+            0.00018472376234755414
+          ]
+        }
+      ],
+      "minimum_gap": -0.044166483858632956,
+      "ordinary_energy_sum": 1.0296045795517096e-07
+    }
+  ]
+}

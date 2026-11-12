@@ -1,0 +1,101 @@
+{
+  "run_id": "0693-score",
+  "checkpoint_sha256": "a41e51476b28e7ae9a5e6db652c4eff0fddebe4cc25f378fa0c0417b63592fa9",
+  "mode": "quick",
+  "fresh": false,
+  "edits": {
+    "changed_scalars": 4248767,
+    "eligible_scalars": 85054464,
+    "changed_fraction": 0.04995348627439472,
+    "per_tensor": {
+      "transformer.h.0.attn.c_proj.weight": 589822,
+      "transformer.h.0.attn.c_proj.bias": 768,
+      "transformer.h.0.mlp.c_fc.weight": 31488,
+      "transformer.h.0.mlp.c_fc.bias": 41,
+      "transformer.h.0.mlp.c_proj.weight": 424703,
+      "transformer.h.0.mlp.c_proj.bias": 768,
+      "transformer.h.1.attn.c_attn.weight": 491520,
+      "transformer.h.1.attn.c_attn.bias": 640,
+      "transformer.h.1.attn.c_proj.weight": 196608,
+      "transformer.h.1.attn.c_proj.bias": 768,
+      "transformer.h.1.mlp.c_fc.weight": 16896,
+      "transformer.h.1.mlp.c_fc.bias": 22,
+      "transformer.h.1.mlp.c_proj.weight": 606720,
+      "transformer.h.1.mlp.c_proj.bias": 768,
+      "transformer.h.2.mlp.c_fc.weight": 64512,
+      "transformer.h.2.mlp.c_fc.bias": 84,
+      "transformer.h.2.mlp.c_proj.weight": 457728,
+      "transformer.h.2.mlp.c_proj.bias": 768,
+      "transformer.h.3.attn.c_attn.weight": 110280,
+      "transformer.h.3.attn.c_attn.bias": 144,
+      "transformer.h.3.attn.c_proj.weight": 196032,
+      "transformer.h.3.attn.c_proj.bias": 768,
+      "transformer.h.3.mlp.c_fc.weight": 15360,
+      "transformer.h.3.mlp.c_fc.bias": 20,
+      "transformer.h.3.mlp.c_proj.weight": 211968,
+      "transformer.h.3.mlp.c_proj.bias": 768,
+      "transformer.h.4.attn.c_attn.weight": 110384,
+      "transformer.h.4.attn.c_attn.bias": 144,
+      "transformer.h.4.attn.c_proj.weight": 96896,
+      "transformer.h.4.attn.c_proj.bias": 768,
+      "transformer.h.4.mlp.c_fc.weight": 21504,
+      "transformer.h.4.mlp.c_fc.bias": 28,
+      "transformer.h.4.mlp.c_proj.weight": 119808,
+      "transformer.h.4.mlp.c_proj.bias": 768,
+      "transformer.h.5.mlp.c_fc.weight": 29952,
+      "transformer.h.5.mlp.c_fc.bias": 39,
+      "transformer.h.5.mlp.c_proj.weight": 447744,
+      "transformer.h.5.mlp.c_proj.bias": 768
+    },
+    "max_abs_weight": 903812.625
+  },
+  "arithmetic": {
+    "G4": {
+      "correct": 1997,
+      "count": 2000,
+      "accuracy": 0.9985,
+      "finite": true,
+      "failures": [
+        {
+          "a": 540,
+          "b": 259,
+          "prompt": "5 4 0 + 2 5 9 =",
+          "prefix_length": 8,
+          "expected": " 0 7 9 9\n",
+          "generated_through_first_error": "\n"
+        },
+        {
+          "a": 734,
+          "b": 937,
+          "prompt": "7 3 4 + 9 3 7 =",
+          "prefix_length": 13,
+          "expected": " 1 6 7 1\n",
+          "generated_through_first_error": " 1 6\n"
+        },
+        {
+          "a": 243,
+          "b": 120,
+          "prompt": "2 4 3 + 1 2 0 =",
+          "prefix_length": 31,
+          "expected": " 0 3 6 3\n",
+          "generated_through_first_error": " 0 3 6 2"
+        }
+      ]
+    }
+  },
+  "noise": {},
+  "text": {
+    "windows": 256,
+    "tokens": 16384,
+    "top1_agreement": 0.96392822265625,
+    "mean_kl": 0.009228313155250925,
+    "host_cross_entropy": 4.274013782226357,
+    "edited_cross_entropy": 4.2778933853945595,
+    "cross_entropy_increase": 0.0038796031682029053,
+    "finite": true,
+    "pass": false
+  },
+  "passed": {
+    "G4": false
+  }
+}

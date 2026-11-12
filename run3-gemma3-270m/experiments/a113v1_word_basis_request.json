@@ -1,0 +1,137 @@
+{
+  "calib": {
+    "count": 512,
+    "length": 64,
+    "seed": 803291
+  },
+  "batch_size": 8,
+  "topk": 0,
+  "capture": {
+    "7.program_features": {
+      "module": "model.layers.7.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        95,
+        343,
+        815,
+        1134,
+        1203,
+        1700,
+        1795,
+        1914
+      ]
+    },
+    "7.program_gates": {
+      "module": "model.layers.7.mlp.gate_proj",
+      "kind": "output",
+      "channels": [
+        95,
+        343,
+        815,
+        1134,
+        1203,
+        1700,
+        1795,
+        1914
+      ]
+    },
+    "8.program_features": {
+      "module": "model.layers.8.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        456,
+        601,
+        684,
+        882,
+        1024,
+        1140,
+        1225,
+        1377,
+        1410,
+        1749,
+        1868
+      ]
+    },
+    "8.program_gates": {
+      "module": "model.layers.8.mlp.gate_proj",
+      "kind": "output",
+      "channels": [
+        456,
+        601,
+        684,
+        882,
+        1024,
+        1140,
+        1225,
+        1377,
+        1410,
+        1749,
+        1868
+      ]
+    },
+    "17.program_features": {
+      "module": "model.layers.17.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        81,
+        129,
+        290,
+        439,
+        458,
+        587,
+        599,
+        834,
+        910,
+        929,
+        1066,
+        1254,
+        1321,
+        1343,
+        1511,
+        1588
+      ]
+    },
+    "17.program_gates": {
+      "module": "model.layers.17.mlp.gate_proj",
+      "kind": "output",
+      "channels": [
+        81,
+        129,
+        290,
+        439,
+        458,
+        587,
+        599,
+        834,
+        910,
+        929,
+        1066,
+        1254,
+        1321,
+        1343,
+        1511,
+        1588
+      ]
+    },
+    "17.pre": {
+      "module": "model.layers.17.pre_feedforward_layernorm",
+      "kind": "output"
+    },
+    "17.raw": {
+      "module": "model.layers.17.pre_feedforward_layernorm",
+      "kind": "input"
+    },
+    "17.features": {
+      "module": "model.layers.17.mlp.down_proj",
+      "kind": "input"
+    },
+    "17.down": {
+      "module": "model.layers.17.mlp.down_proj",
+      "kind": "output"
+    },
+    "finalraw": {
+      "module": "model.norm",
+      "kind": "input"
+    }
+  }
+}

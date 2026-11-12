@@ -1,0 +1,2411 @@
+{
+  "reports": [
+    {
+      "layer": 1,
+      "kind": "current_token_role",
+      "word_mass": 0.001,
+      "class_constraints": 66,
+      "constraint_error": 2.632205230664554e-12,
+      "all_six_sources_correct": 56,
+      "count": 192,
+      "current_digit_error_examples": 0,
+      "current_digit_bit_errors": 0,
+      "maximum_bit_abs_error": 0.18040090068540304,
+      "word_output_rms": [
+        0.08211506282210496,
+        0.4979053220158865,
+        0.6696435372193744,
+        0.0467671445155085,
+        1.381259661945309,
+        2.8427428937387154,
+        1.558246916065042,
+        0.03689663612880536,
+        0.12532465857623243,
+        0.11550000048509783,
+        0.10473980557805494,
+        0.08005542196617882
+      ],
+      "malformed_role_max": 0.09144295911019866,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.8132362027727286,
+          "true_key_range": [
+            0.833091113500658,
+            1.0858434844239853
+          ],
+          "word_key_max": 1.0461675911572696,
+          "minimum_word_margin": -0.21307647765661164
+        },
+        {
+          "role": 1,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.1944734379771626,
+          "true_key_range": [
+            0.4759423451998694,
+            1.5405973078473334
+          ],
+          "word_key_max": 5.4393723723670515,
+          "minimum_word_margin": -4.963430027167182
+        },
+        {
+          "role": 2,
+          "correct_argmax": 190,
+          "count": 192,
+          "minimum_competing_role_margin": -0.3321411507475418,
+          "true_key_range": [
+            0.21124218832545863,
+            1.6534679257510712
+          ],
+          "word_key_max": 4.747100087880271,
+          "minimum_word_margin": -4.535857899554812
+        },
+        {
+          "role": 4,
+          "correct_argmax": 174,
+          "count": 192,
+          "minimum_competing_role_margin": -0.9253275324711773,
+          "true_key_range": [
+            -0.4943431758233848,
+            2.0300329870222544
+          ],
+          "word_key_max": 14.134749548903502,
+          "minimum_word_margin": -14.629092724726886
+        },
+        {
+          "role": 5,
+          "correct_argmax": 71,
+          "count": 192,
+          "minimum_competing_role_margin": -3.6152675750350367,
+          "true_key_range": [
+            -1.5190885150446736,
+            3.066255271912247
+          ],
+          "word_key_max": 23.287882833902156,
+          "minimum_word_margin": -24.80697134894683
+        },
+        {
+          "role": 6,
+          "correct_argmax": 161,
+          "count": 192,
+          "minimum_competing_role_margin": -1.4663190119957163,
+          "true_key_range": [
+            -0.1948175788949498,
+            2.6151188756862638
+          ],
+          "word_key_max": 16.165013117573952,
+          "minimum_word_margin": -16.3598306964689
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 0.001,
+      "constraint_error": 8.43769498715119e-15,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1680,
+      "digit_correct_by_role": [
+        24,
+        28,
+        30,
+        21,
+        34,
+        65
+      ],
+      "max_bit_abs_error": 2.4406039965627255,
+      "word_rms_max": 0.7829132970123617
+    },
+    {
+      "layer": 1,
+      "kind": "current_token_role",
+      "word_mass": 0.01,
+      "class_constraints": 66,
+      "constraint_error": 2.0995682034077497e-12,
+      "all_six_sources_correct": 76,
+      "count": 192,
+      "current_digit_error_examples": 0,
+      "current_digit_bit_errors": 0,
+      "maximum_bit_abs_error": 0.15113584441872807,
+      "word_output_rms": [
+        0.07417156716152902,
+        0.3714623621478774,
+        0.500820251073854,
+        0.038683162857262914,
+        0.9675916145371105,
+        2.0273817312856366,
+        1.136082383348637,
+        0.028198167654489664,
+        0.10414654309546134,
+        0.10197311684671656,
+        0.08752856315945401,
+        0.06548825659896255
+      ],
+      "malformed_role_max": 0.09478950512579232,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.8003343486916835,
+          "true_key_range": [
+            0.809641372215549,
+            1.0735029503230615
+          ],
+          "word_key_max": 1.0192850903718813,
+          "minimum_word_margin": -0.20964371815633231
+        },
+        {
+          "role": 1,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.29233603678694153,
+          "true_key_range": [
+            0.5492528744628231,
+            1.5860792399526924
+          ],
+          "word_key_max": 3.9841071301333533,
+          "minimum_word_margin": -3.43485425567053
+        },
+        {
+          "role": 2,
+          "correct_argmax": 191,
+          "count": 192,
+          "minimum_competing_role_margin": -0.01909863741180562,
+          "true_key_range": [
+            0.3298393369990282,
+            1.474353731040943
+          ],
+          "word_key_max": 4.228597821349201,
+          "minimum_word_margin": -3.898758484350173
+        },
+        {
+          "role": 4,
+          "correct_argmax": 183,
+          "count": 192,
+          "minimum_competing_role_margin": -0.7138225703278985,
+          "true_key_range": [
+            -0.17123792429523957,
+            1.7135966390826805
+          ],
+          "word_key_max": 9.204287469692135,
+          "minimum_word_margin": -9.375525393987374
+        },
+        {
+          "role": 5,
+          "correct_argmax": 83,
+          "count": 192,
+          "minimum_competing_role_margin": -2.223667912805391,
+          "true_key_range": [
+            -1.173811970465674,
+            2.5529461105295073
+          ],
+          "word_key_max": 20.105667048490815,
+          "minimum_word_margin": -21.27947901895649
+        },
+        {
+          "role": 6,
+          "correct_argmax": 178,
+          "count": 192,
+          "minimum_competing_role_margin": -0.8819544335915422,
+          "true_key_range": [
+            -0.059343695585231,
+            2.3801773890106035
+          ],
+          "word_key_max": 11.584954127450276,
+          "minimum_word_margin": -11.644297823035506
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 0.01,
+      "constraint_error": 1.0658141036401503e-14,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1739,
+      "digit_correct_by_role": [
+        29,
+        24,
+        26,
+        22,
+        31,
+        59
+      ],
+      "max_bit_abs_error": 2.6233529028847817,
+      "word_rms_max": 1.005827616191625
+    },
+    {
+      "layer": 1,
+      "kind": "current_token_role",
+      "word_mass": 0.1,
+      "class_constraints": 66,
+      "constraint_error": 2.646401188134102e-12,
+      "all_six_sources_correct": 86,
+      "count": 192,
+      "current_digit_error_examples": 0,
+      "current_digit_bit_errors": 0,
+      "maximum_bit_abs_error": 0.2442841191931887,
+      "word_output_rms": [
+        0.06986048749305117,
+        0.29236373131622195,
+        0.3795598302549461,
+        0.031875131667060436,
+        0.6879995332760238,
+        1.4221494376172503,
+        0.8055558514999759,
+        0.02058155355501884,
+        0.09405241167363015,
+        0.09129058142912852,
+        0.07792741803241002,
+        0.055808335277754945
+      ],
+      "malformed_role_max": 0.13315671256831219,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.814918020143437,
+          "true_key_range": [
+            0.7985571490359114,
+            1.0741456522804746
+          ],
+          "word_key_max": 1.00985881273931,
+          "minimum_word_margin": -0.21130166370339865
+        },
+        {
+          "role": 1,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.3445058590392738,
+          "true_key_range": [
+            0.44874498628945153,
+            1.5919257858359595
+          ],
+          "word_key_max": 2.4286324124092005,
+          "minimum_word_margin": -1.979887426119749
+        },
+        {
+          "role": 2,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.3446190610287373,
+          "true_key_range": [
+            0.3724426599901858,
+            1.3920702034645098
+          ],
+          "word_key_max": 3.2830304964216466,
+          "minimum_word_margin": -2.9105878364314606
+        },
+        {
+          "role": 4,
+          "correct_argmax": 187,
+          "count": 192,
+          "minimum_competing_role_margin": -0.45460782576186587,
+          "true_key_range": [
+            0.2396997102298911,
+            1.676720227831882
+          ],
+          "word_key_max": 7.1080555385835815,
+          "minimum_word_margin": -6.868355828353691
+        },
+        {
+          "role": 5,
+          "correct_argmax": 89,
+          "count": 192,
+          "minimum_competing_role_margin": -2.0502221746472156,
+          "true_key_range": [
+            -1.1722635179240144,
+            2.368561749980756
+          ],
+          "word_key_max": 13.412464425258577,
+          "minimum_word_margin": -14.58472794318259
+        },
+        {
+          "role": 6,
+          "correct_argmax": 184,
+          "count": 192,
+          "minimum_competing_role_margin": -0.5502495006437398,
+          "true_key_range": [
+            0.012301351308819404,
+            1.893835269667144
+          ],
+          "word_key_max": 8.06227208729859,
+          "minimum_word_margin": -8.04997073598977
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 0.1,
+      "constraint_error": 1.9317880628477724e-14,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1788,
+      "digit_correct_by_role": [
+        20,
+        28,
+        23,
+        23,
+        25,
+        55
+      ],
+      "max_bit_abs_error": 3.126362792662959,
+      "word_rms_max": 1.423323908689963
+    },
+    {
+      "layer": 1,
+      "kind": "current_token_role",
+      "word_mass": 1.0,
+      "class_constraints": 66,
+      "constraint_error": 7.340133176700662e-13,
+      "all_six_sources_correct": 74,
+      "count": 192,
+      "current_digit_error_examples": 0,
+      "current_digit_bit_errors": 0,
+      "maximum_bit_abs_error": 0.35625639147105037,
+      "word_output_rms": [
+        0.07213020432352624,
+        0.2606042563241634,
+        0.3225463063945639,
+        0.02919359452819951,
+        0.5840603616052883,
+        1.1750649843777397,
+        0.6610841676871183,
+        0.017023021046847532,
+        0.10109022283614481,
+        0.09321412104119028,
+        0.0834402320131146,
+        0.055403586026740385
+      ],
+      "malformed_role_max": 0.15432868296988347,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.7687314696046857,
+          "true_key_range": [
+            0.8049400884504881,
+            1.086900414931651
+          ],
+          "word_key_max": 0.9877542481617382,
+          "minimum_word_margin": -0.18281415971125003
+        },
+        {
+          "role": 1,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.19719585531180023,
+          "true_key_range": [
+            0.3614571296815563,
+            1.402629508150348
+          ],
+          "word_key_max": 2.084097202976848,
+          "minimum_word_margin": -1.7226400732952918
+        },
+        {
+          "role": 2,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.26530766166111824,
+          "true_key_range": [
+            0.35864018474814313,
+            1.4202570952963378
+          ],
+          "word_key_max": 2.613711610400657,
+          "minimum_word_margin": -2.2550714256525137
+        },
+        {
+          "role": 4,
+          "correct_argmax": 184,
+          "count": 192,
+          "minimum_competing_role_margin": -0.14978227191324078,
+          "true_key_range": [
+            0.29452196960905414,
+            1.6876787462394574
+          ],
+          "word_key_max": 5.429042970292389,
+          "minimum_word_margin": -5.134521000683335
+        },
+        {
+          "role": 5,
+          "correct_argmax": 79,
+          "count": 192,
+          "minimum_competing_role_margin": -2.2781088759455885,
+          "true_key_range": [
+            -1.2164365040186076,
+            2.196443068722964
+          ],
+          "word_key_max": 11.715675747726657,
+          "minimum_word_margin": -12.932112251745265
+        },
+        {
+          "role": 6,
+          "correct_argmax": 182,
+          "count": 192,
+          "minimum_competing_role_margin": -0.6409930671852295,
+          "true_key_range": [
+            -0.16075777119358825,
+            2.084295043220701
+          ],
+          "word_key_max": 6.680040326326062,
+          "minimum_word_margin": -6.8407980975196505
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 1.0,
+      "constraint_error": 2.7240920005733057e-14,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1840,
+      "digit_correct_by_role": [
+        20,
+        24,
+        27,
+        22,
+        24,
+        49
+      ],
+      "max_bit_abs_error": 3.672946359528649,
+      "word_rms_max": 1.7865840828809185
+    },
+    {
+      "layer": 1,
+      "kind": "current_token_role",
+      "word_mass": 10.0,
+      "class_constraints": 66,
+      "constraint_error": 1.038779009180358e-12,
+      "all_six_sources_correct": 63,
+      "count": 192,
+      "current_digit_error_examples": 0,
+      "current_digit_bit_errors": 0,
+      "maximum_bit_abs_error": 0.36795423861487453,
+      "word_output_rms": [
+        0.08037040868223752,
+        0.2671391806185069,
+        0.29794243164057843,
+        0.02902699014465271,
+        0.5563170362794365,
+        1.112817591001453,
+        0.6172595157506962,
+        0.016158532119952353,
+        0.11675888690007404,
+        0.10376031378833335,
+        0.09395029591616093,
+        0.06207946413109641
+      ],
+      "malformed_role_max": 0.17924149133915485,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.693427283148695,
+          "true_key_range": [
+            0.7273263916419704,
+            1.1654954311647059
+          ],
+          "word_key_max": 0.9666718308547939,
+          "minimum_word_margin": -0.23934543921282347
+        },
+        {
+          "role": 1,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.19478926168466426,
+          "true_key_range": [
+            0.3533420537486494,
+            1.378173455040358
+          ],
+          "word_key_max": 2.4282544124094834,
+          "minimum_word_margin": -2.074912358660834
+        },
+        {
+          "role": 2,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.11658655850415967,
+          "true_key_range": [
+            0.41084503724492577,
+            1.494486582502444
+          ],
+          "word_key_max": 2.8807101785170843,
+          "minimum_word_margin": -2.4698651412721584
+        },
+        {
+          "role": 4,
+          "correct_argmax": 173,
+          "count": 192,
+          "minimum_competing_role_margin": -0.27592967416412195,
+          "true_key_range": [
+            0.12830717949361703,
+            2.097201622182579
+          ],
+          "word_key_max": 5.141537160762454,
+          "minimum_word_margin": -5.013229981268837
+        },
+        {
+          "role": 5,
+          "correct_argmax": 67,
+          "count": 192,
+          "minimum_competing_role_margin": -2.2984251872947743,
+          "true_key_range": [
+            -1.6383594273292346,
+            2.140758718998225
+          ],
+          "word_key_max": 9.528459737990163,
+          "minimum_word_margin": -11.166819165319398
+        },
+        {
+          "role": 6,
+          "correct_argmax": 177,
+          "count": 192,
+          "minimum_competing_role_margin": -0.5897543438281954,
+          "true_key_range": [
+            -0.28761879594183454,
+            2.3073892640148856
+          ],
+          "word_key_max": 7.162204228464261,
+          "minimum_word_margin": -7.449823024406095
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 10.0,
+      "constraint_error": 3.0280983051522163e-14,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1829,
+      "digit_correct_by_role": [
+        19,
+        23,
+        28,
+        25,
+        24,
+        52
+      ],
+      "max_bit_abs_error": 3.585859515530032,
+      "word_rms_max": 1.7156696000675653
+    },
+    {
+      "layer": 2,
+      "kind": "current_token_role",
+      "word_mass": 0.001,
+      "class_constraints": 66,
+      "constraint_error": 4.83736911040604e-13,
+      "all_six_sources_correct": 160,
+      "count": 192,
+      "current_digit_error_examples": 0,
+      "current_digit_bit_errors": 0,
+      "maximum_bit_abs_error": 0.33271157354710557,
+      "word_output_rms": [
+        0.08310248339647672,
+        0.3310849629866141,
+        0.4264187131539768,
+        0.045492436585692804,
+        0.48870202657523953,
+        1.0590414011442701,
+        0.6959417300533774,
+        0.03982555162575417,
+        0.15468070556654356,
+        0.15698614325989452,
+        0.14251747310612256,
+        0.10165157012679239
+      ],
+      "malformed_role_max": 0.1516831725045499,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.6908429438163043,
+          "true_key_range": [
+            0.7645751287804041,
+            1.125091539421306
+          ],
+          "word_key_max": 0.998919615263584,
+          "minimum_word_margin": -0.23434448648317985
+        },
+        {
+          "role": 1,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.11524454241035403,
+          "true_key_range": [
+            0.2708836893849036,
+            1.369124711365783
+          ],
+          "word_key_max": 2.529598483456711,
+          "minimum_word_margin": -2.2587147940718078
+        },
+        {
+          "role": 2,
+          "correct_argmax": 191,
+          "count": 192,
+          "minimum_competing_role_margin": -0.3271400534000466,
+          "true_key_range": [
+            0.494318056914098,
+            1.4354257744652181
+          ],
+          "word_key_max": 3.037753393816555,
+          "minimum_word_margin": -2.5434353369024567
+        },
+        {
+          "role": 4,
+          "correct_argmax": 189,
+          "count": 192,
+          "minimum_competing_role_margin": -0.41862348732292576,
+          "true_key_range": [
+            0.4289227914294249,
+            1.302402855929991
+          ],
+          "word_key_max": 3.306671080097619,
+          "minimum_word_margin": -2.8777482886681938
+        },
+        {
+          "role": 5,
+          "correct_argmax": 163,
+          "count": 192,
+          "minimum_competing_role_margin": -1.4920969763966863,
+          "true_key_range": [
+            0.02519274712767239,
+            1.9446855701191135
+          ],
+          "word_key_max": 8.621825882248372,
+          "minimum_word_margin": -8.5966331351207
+        },
+        {
+          "role": 6,
+          "correct_argmax": 188,
+          "count": 192,
+          "minimum_competing_role_margin": -0.5172678299550137,
+          "true_key_range": [
+            0.4946713764670966,
+            1.3649133418580455
+          ],
+          "word_key_max": 4.298898782311623,
+          "minimum_word_margin": -3.8042274058445265
+        }
+      ]
+    },
+    {
+      "layer": 2,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 0.001,
+      "constraint_error": 9.929483268801872e-15,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1520,
+      "digit_correct_by_role": [
+        24,
+        32,
+        21,
+        28,
+        44,
+        169
+      ],
+      "max_bit_abs_error": 2.998830495377588,
+      "word_rms_max": 0.9458780854438579
+    },
+    {
+      "layer": 2,
+      "kind": "current_token_role",
+      "word_mass": 0.01,
+      "class_constraints": 66,
+      "constraint_error": 3.739073004799314e-13,
+      "all_six_sources_correct": 179,
+      "count": 192,
+      "current_digit_error_examples": 0,
+      "current_digit_bit_errors": 0,
+      "maximum_bit_abs_error": 0.30718588420843096,
+      "word_output_rms": [
+        0.0711928257764136,
+        0.2521505777123449,
+        0.3167396595765504,
+        0.03641583410370046,
+        0.32044393804482607,
+        0.7220550705903376,
+        0.4914399800794322,
+        0.02837239705192084,
+        0.1251119243627694,
+        0.12900233031885042,
+        0.11370080021803358,
+        0.07930645488950319
+      ],
+      "malformed_role_max": 0.13793089341782558,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.7278524345219433,
+          "true_key_range": [
+            0.7739600584750661,
+            1.121146478535156
+          ],
+          "word_key_max": 1.000914417198047,
+          "minimum_word_margin": -0.22695435872298098
+        },
+        {
+          "role": 1,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.1922424473952772,
+          "true_key_range": [
+            0.3917394281449746,
+            1.4191275138221495
+          ],
+          "word_key_max": 1.9244523369193507,
+          "minimum_word_margin": -1.532712908774376
+        },
+        {
+          "role": 2,
+          "correct_argmax": 191,
+          "count": 192,
+          "minimum_competing_role_margin": -0.012918202983493554,
+          "true_key_range": [
+            0.5418129147211788,
+            1.3205691206449575
+          ],
+          "word_key_max": 2.983260738894048,
+          "minimum_word_margin": -2.4414478241728697
+        },
+        {
+          "role": 4,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.022359980656075917,
+          "true_key_range": [
+            0.46997977302419236,
+            1.2507958466211868
+          ],
+          "word_key_max": 2.0206978489463205,
+          "minimum_word_margin": -1.5507180759221282
+        },
+        {
+          "role": 5,
+          "correct_argmax": 181,
+          "count": 192,
+          "minimum_competing_role_margin": -0.6808378842282525,
+          "true_key_range": [
+            0.2949557702248719,
+            1.8132685201236889
+          ],
+          "word_key_max": 6.488078601039527,
+          "minimum_word_margin": -6.193122830814655
+        },
+        {
+          "role": 6,
+          "correct_argmax": 191,
+          "count": 192,
+          "minimum_competing_role_margin": -0.16962366916471028,
+          "true_key_range": [
+            0.5368429481851298,
+            1.3984466809467688
+          ],
+          "word_key_max": 2.770165774212593,
+          "minimum_word_margin": -2.2333228260274636
+        }
+      ]
+    },
+    {
+      "layer": 2,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 0.01,
+      "constraint_error": 1.687538997430238e-14,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1559,
+      "digit_correct_by_role": [
+        24,
+        31,
+        20,
+        29,
+        36,
+        163
+      ],
+      "max_bit_abs_error": 3.0924364502594677,
+      "word_rms_max": 1.2549367410471588
+    },
+    {
+      "layer": 2,
+      "kind": "current_token_role",
+      "word_mass": 0.1,
+      "class_constraints": 66,
+      "constraint_error": 2.1227464230832993e-13,
+      "all_six_sources_correct": 189,
+      "count": 192,
+      "current_digit_error_examples": 0,
+      "current_digit_bit_errors": 0,
+      "maximum_bit_abs_error": 0.28728446599841395,
+      "word_output_rms": [
+        0.06203937636927999,
+        0.18529788406388517,
+        0.2237479190307132,
+        0.030422140964157213,
+        0.20219675256107394,
+        0.47206974380335076,
+        0.3316199968795661,
+        0.021307855635863997,
+        0.10436636672325565,
+        0.11006374380467834,
+        0.09064417733255185,
+        0.06471538370033146
+      ],
+      "malformed_role_max": 0.13083901523871264,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.7641937497583372,
+          "true_key_range": [
+            0.773439225310726,
+            1.097693002559031
+          ],
+          "word_key_max": 0.9712557484065298,
+          "minimum_word_margin": -0.1978165230958039
+        },
+        {
+          "role": 1,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.25759443734351084,
+          "true_key_range": [
+            0.3377400102767641,
+            1.4225299735438333
+          ],
+          "word_key_max": 1.6681896529967244,
+          "minimum_word_margin": -1.3304496427199604
+        },
+        {
+          "role": 2,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.10212146184635718,
+          "true_key_range": [
+            0.4709186883588256,
+            1.398540353797917
+          ],
+          "word_key_max": 2.699870195346548,
+          "minimum_word_margin": -2.2289515069877224
+        },
+        {
+          "role": 4,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.1680488750718051,
+          "true_key_range": [
+            0.5187773703916516,
+            1.2404195990003672
+          ],
+          "word_key_max": 1.8781138070296608,
+          "minimum_word_margin": -1.3593364366380092
+        },
+        {
+          "role": 5,
+          "correct_argmax": 189,
+          "count": 192,
+          "minimum_competing_role_margin": -0.5806152133640081,
+          "true_key_range": [
+            0.3609553997226578,
+            1.3651336551070892
+          ],
+          "word_key_max": 5.219603488059691,
+          "minimum_word_margin": -4.858648088337032
+        },
+        {
+          "role": 6,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.06435170934646095,
+          "true_key_range": [
+            0.521068234470217,
+            1.4784633792529482
+          ],
+          "word_key_max": 3.229527641253842,
+          "minimum_word_margin": -2.708459406783625
+        }
+      ]
+    },
+    {
+      "layer": 2,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 0.1,
+      "constraint_error": 2.5646151868841116e-14,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1613,
+      "digit_correct_by_role": [
+        20,
+        24,
+        22,
+        24,
+        29,
+        151
+      ],
+      "max_bit_abs_error": 4.2452687796300115,
+      "word_rms_max": 1.805046008673431
+    },
+    {
+      "layer": 2,
+      "kind": "current_token_role",
+      "word_mass": 1.0,
+      "class_constraints": 66,
+      "constraint_error": 1.6477008824868356e-13,
+      "all_six_sources_correct": 190,
+      "count": 192,
+      "current_digit_error_examples": 0,
+      "current_digit_bit_errors": 0,
+      "maximum_bit_abs_error": 0.2779708983518119,
+      "word_output_rms": [
+        0.05861045283097091,
+        0.1523820864105282,
+        0.17358643310209643,
+        0.027888552878299836,
+        0.16370846513259796,
+        0.370600126096005,
+        0.25528475965070424,
+        0.0179782295050374,
+        0.10372071837647588,
+        0.10376280780731817,
+        0.08600960676335835,
+        0.059974622269852194
+      ],
+      "malformed_role_max": 0.12664919063000157,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.783123765426584,
+          "true_key_range": [
+            0.7837342528176011,
+            1.1280678589804252
+          ],
+          "word_key_max": 0.9874243903986643,
+          "minimum_word_margin": -0.20369013758106314
+        },
+        {
+          "role": 1,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.27226394801784776,
+          "true_key_range": [
+            0.33904401519422234,
+            1.4268852175160187
+          ],
+          "word_key_max": 1.3781613869363656,
+          "minimum_word_margin": -1.0391173717421434
+        },
+        {
+          "role": 2,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.10328718853549546,
+          "true_key_range": [
+            0.5394071835685457,
+            1.3671537053722758
+          ],
+          "word_key_max": 2.0168391687092075,
+          "minimum_word_margin": -1.4774319851406619
+        },
+        {
+          "role": 4,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.21701157712329178,
+          "true_key_range": [
+            0.5214515080676297,
+            1.2585820187588561
+          ],
+          "word_key_max": 2.0854930155192286,
+          "minimum_word_margin": -1.564041507451599
+        },
+        {
+          "role": 5,
+          "correct_argmax": 190,
+          "count": 192,
+          "minimum_competing_role_margin": -0.31252617992374776,
+          "true_key_range": [
+            0.23308400307992147,
+            1.3115023985213856
+          ],
+          "word_key_max": 3.508366245006549,
+          "minimum_word_margin": -3.2752822419266274
+        },
+        {
+          "role": 6,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.10327393068209867,
+          "true_key_range": [
+            0.5348078484451189,
+            1.542767876412518
+          ],
+          "word_key_max": 3.0898565759229175,
+          "minimum_word_margin": -2.5550487274777987
+        }
+      ]
+    },
+    {
+      "layer": 2,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 1.0,
+      "constraint_error": 2.7649747211242053e-14,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1699,
+      "digit_correct_by_role": [
+        19,
+        20,
+        21,
+        18,
+        26,
+        140
+      ],
+      "max_bit_abs_error": 5.011513405408956,
+      "word_rms_max": 2.3286941750881747
+    },
+    {
+      "layer": 2,
+      "kind": "current_token_role",
+      "word_mass": 10.0,
+      "class_constraints": 66,
+      "constraint_error": 1.4954674812720705e-13,
+      "all_six_sources_correct": 187,
+      "count": 192,
+      "current_digit_error_examples": 0,
+      "current_digit_bit_errors": 0,
+      "maximum_bit_abs_error": 0.41208081356082105,
+      "word_output_rms": [
+        0.06111679964271741,
+        0.15076249140355155,
+        0.1600406785398553,
+        0.02764767158189521,
+        0.15932571909089838,
+        0.3574348747785104,
+        0.2442671445306742,
+        0.017059228776744376,
+        0.11517989290814952,
+        0.11341543843415824,
+        0.09842130524620596,
+        0.06580253089157334
+      ],
+      "malformed_role_max": 0.08498507284145634,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.7716860665495469,
+          "true_key_range": [
+            0.7793219892999773,
+            1.1391238926123606
+          ],
+          "word_key_max": 0.9607650386783991,
+          "minimum_word_margin": -0.18144304937842182
+        },
+        {
+          "role": 1,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.38379591755257647,
+          "true_key_range": [
+            0.5305941899156884,
+            1.4702428670655954
+          ],
+          "word_key_max": 1.4957981241297758,
+          "minimum_word_margin": -0.9652039342140873
+        },
+        {
+          "role": 2,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.016778200124859866,
+          "true_key_range": [
+            0.33955311364367863,
+            1.3852067338134515
+          ],
+          "word_key_max": 1.6642590591596715,
+          "minimum_word_margin": -1.3247059455159929
+        },
+        {
+          "role": 4,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.22860088117432,
+          "true_key_range": [
+            0.43351784826549894,
+            1.3030884342479774
+          ],
+          "word_key_max": 1.5281477072305067,
+          "minimum_word_margin": -1.0946298589650079
+        },
+        {
+          "role": 5,
+          "correct_argmax": 187,
+          "count": 192,
+          "minimum_competing_role_margin": -0.34352469919055695,
+          "true_key_range": [
+            0.062376739859294844,
+            1.3807900602406766
+          ],
+          "word_key_max": 2.9581259579074124,
+          "minimum_word_margin": -2.8957492180481177
+        },
+        {
+          "role": 6,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.1878190009972015,
+          "true_key_range": [
+            0.5095573405576164,
+            1.5820881765456132
+          ],
+          "word_key_max": 2.2776102618991825,
+          "minimum_word_margin": -1.768052921341566
+        }
+      ]
+    },
+    {
+      "layer": 2,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 10.0,
+      "constraint_error": 3.0924730070245435e-14,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1671,
+      "digit_correct_by_role": [
+        22,
+        21,
+        19,
+        16,
+        27,
+        142
+      ],
+      "max_bit_abs_error": 4.147342932834204,
+      "word_rms_max": 2.1765947517127415
+    },
+    {
+      "layer": 4,
+      "kind": "current_token_role",
+      "word_mass": 0.001,
+      "class_constraints": 66,
+      "constraint_error": 8.304468224196171e-14,
+      "all_six_sources_correct": 191,
+      "count": 192,
+      "current_digit_error_examples": 2,
+      "current_digit_bit_errors": 2,
+      "maximum_bit_abs_error": 0.6990892837064129,
+      "word_output_rms": [
+        0.08965895063519683,
+        0.2280703361443897,
+        0.2852247823974832,
+        0.06778772211798895,
+        0.12296599809469955,
+        0.3675798245529967,
+        0.38393346223868774,
+        0.05177942612475992,
+        0.2558021113090151,
+        0.24191843452342338,
+        0.2172878428986494,
+        0.15883154794410226
+      ],
+      "malformed_role_max": 0.17273018724794478,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.5581571815733094,
+          "true_key_range": [
+            0.6003078151804844,
+            1.1697718205353689
+          ],
+          "word_key_max": 0.9937053263242577,
+          "minimum_word_margin": -0.3933975111437733
+        },
+        {
+          "role": 1,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.052869659403717684,
+          "true_key_range": [
+            0.28508190367906444,
+            1.2658766328287365
+          ],
+          "word_key_max": 1.196132803094533,
+          "minimum_word_margin": -0.9110508994154687
+        },
+        {
+          "role": 2,
+          "correct_argmax": 191,
+          "count": 192,
+          "minimum_competing_role_margin": -0.12184065896773955,
+          "true_key_range": [
+            0.47859985012909223,
+            1.301780198252239
+          ],
+          "word_key_max": 1.7115283873188514,
+          "minimum_word_margin": -1.2329285371897591
+        },
+        {
+          "role": 4,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.6658276426951657,
+          "true_key_range": [
+            0.9085470816801299,
+            1.1739823754277117
+          ],
+          "word_key_max": 0.8713869862527006,
+          "minimum_word_margin": 0.03716009542742926
+        },
+        {
+          "role": 5,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.06585944666583987,
+          "true_key_range": [
+            0.5278571784017373,
+            1.2740013936617205
+          ],
+          "word_key_max": 1.9535834217958559,
+          "minimum_word_margin": -1.4257262433941187
+        },
+        {
+          "role": 6,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.21020289067645193,
+          "true_key_range": [
+            0.6567054093137162,
+            1.349041522472747
+          ],
+          "word_key_max": 2.3056879762517744,
+          "minimum_word_margin": -1.648982566938058
+        }
+      ]
+    },
+    {
+      "layer": 4,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 0.001,
+      "constraint_error": 8.215650382226158e-15,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1273,
+      "digit_correct_by_role": [
+        28,
+        31,
+        44,
+        51,
+        78,
+        190
+      ],
+      "max_bit_abs_error": 2.698940732146064,
+      "word_rms_max": 0.8741789511253154
+    },
+    {
+      "layer": 4,
+      "kind": "current_token_role",
+      "word_mass": 0.01,
+      "class_constraints": 66,
+      "constraint_error": 4.241051954068098e-14,
+      "all_six_sources_correct": 191,
+      "count": 192,
+      "current_digit_error_examples": 2,
+      "current_digit_bit_errors": 2,
+      "maximum_bit_abs_error": 0.7023391892956747,
+      "word_output_rms": [
+        0.07385015348625557,
+        0.17692775650761583,
+        0.21705595609523426,
+        0.05370885614393374,
+        0.09062573410158238,
+        0.25659252141463224,
+        0.26914698098100154,
+        0.040459629105357255,
+        0.19268029941459022,
+        0.19199871540117158,
+        0.16903971883497038,
+        0.12200661357136246
+      ],
+      "malformed_role_max": 0.14972895771720973,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.5821305975922044,
+          "true_key_range": [
+            0.5984204027150974,
+            1.1706429178605484
+          ],
+          "word_key_max": 0.9693766273215012,
+          "minimum_word_margin": -0.37095622460640376
+        },
+        {
+          "role": 1,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.11012646517986246,
+          "true_key_range": [
+            0.3554596802943891,
+            1.2090413828735602
+          ],
+          "word_key_max": 1.2274808559236154,
+          "minimum_word_margin": -0.8720211756292263
+        },
+        {
+          "role": 2,
+          "correct_argmax": 191,
+          "count": 192,
+          "minimum_competing_role_margin": -0.023359241666525477,
+          "true_key_range": [
+            0.49932874274193095,
+            1.2457591541757076
+          ],
+          "word_key_max": 1.3672320274731784,
+          "minimum_word_margin": -0.8679032847312474
+        },
+        {
+          "role": 4,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.67197958167488,
+          "true_key_range": [
+            0.9081127467151363,
+            1.165697582473718
+          ],
+          "word_key_max": 0.8958917089716611,
+          "minimum_word_margin": 0.01222103774347516
+        },
+        {
+          "role": 5,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.08335310721417799,
+          "true_key_range": [
+            0.489510066769815,
+            1.2735294030194435
+          ],
+          "word_key_max": 1.434629418253273,
+          "minimum_word_margin": -0.945119351483458
+        },
+        {
+          "role": 6,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.40290197745409273,
+          "true_key_range": [
+            0.6974578517954785,
+            1.2758760962157139
+          ],
+          "word_key_max": 1.6352927302575035,
+          "minimum_word_margin": -0.9378348784620251
+        }
+      ]
+    },
+    {
+      "layer": 4,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 0.01,
+      "constraint_error": 1.1324274851176597e-14,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1371,
+      "digit_correct_by_role": [
+        21,
+        30,
+        37,
+        40,
+        68,
+        185
+      ],
+      "max_bit_abs_error": 3.3627743487205244,
+      "word_rms_max": 1.2734092389607015
+    },
+    {
+      "layer": 4,
+      "kind": "current_token_role",
+      "word_mass": 0.1,
+      "class_constraints": 66,
+      "constraint_error": 4.159042082650205e-14,
+      "all_six_sources_correct": 192,
+      "count": 192,
+      "current_digit_error_examples": 1,
+      "current_digit_bit_errors": 1,
+      "maximum_bit_abs_error": 0.6255537426286139,
+      "word_output_rms": [
+        0.059134895631883115,
+        0.1310116071397123,
+        0.14930957050131458,
+        0.04296144377435006,
+        0.06179803439446035,
+        0.15815621107509958,
+        0.16524001334373167,
+        0.029515010518778525,
+        0.14694674975042193,
+        0.1487320316919994,
+        0.13128222412559443,
+        0.0948608140985742
+      ],
+      "malformed_role_max": 0.1847725692886957,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.5765946057618571,
+          "true_key_range": [
+            0.5900864692726447,
+            1.2006142895329257
+          ],
+          "word_key_max": 0.9244335992488595,
+          "minimum_word_margin": -0.33434712997621474
+        },
+        {
+          "role": 1,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.2980075159338783,
+          "true_key_range": [
+            0.48394174063603995,
+            1.2475182083613467
+          ],
+          "word_key_max": 1.0794703240936083,
+          "minimum_word_margin": -0.5955285834575683
+        },
+        {
+          "role": 2,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.27872691223786716,
+          "true_key_range": [
+            0.5581774730082019,
+            1.2377404120996616
+          ],
+          "word_key_max": 1.1775693194910093,
+          "minimum_word_margin": -0.6193918464828074
+        },
+        {
+          "role": 4,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.6750024969873427,
+          "true_key_range": [
+            0.8905325307219092,
+            1.171221092292744
+          ],
+          "word_key_max": 0.9062695438785642,
+          "minimum_word_margin": -0.01573701315665499
+        },
+        {
+          "role": 5,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.17783077819717819,
+          "true_key_range": [
+            0.45375794000628605,
+            1.2852800305201273
+          ],
+          "word_key_max": 1.0768486999934188,
+          "minimum_word_margin": -0.6230907599871327
+        },
+        {
+          "role": 6,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.4857496970785788,
+          "true_key_range": [
+            0.6176431009120831,
+            1.2019248636767992
+          ],
+          "word_key_max": 1.293528425830216,
+          "minimum_word_margin": -0.6758853249181329
+        }
+      ]
+    },
+    {
+      "layer": 4,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 0.1,
+      "constraint_error": 1.6705078738675504e-14,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1481,
+      "digit_correct_by_role": [
+        10,
+        35,
+        33,
+        35,
+        57,
+        176
+      ],
+      "max_bit_abs_error": 3.7626732250241077,
+      "word_rms_max": 1.88849231890256
+    },
+    {
+      "layer": 4,
+      "kind": "current_token_role",
+      "word_mass": 1.0,
+      "class_constraints": 66,
+      "constraint_error": 2.375877272697835e-14,
+      "all_six_sources_correct": 192,
+      "count": 192,
+      "current_digit_error_examples": 2,
+      "current_digit_bit_errors": 2,
+      "maximum_bit_abs_error": 0.689688170580496,
+      "word_output_rms": [
+        0.0553839048718857,
+        0.10768012241178263,
+        0.11656016740377106,
+        0.038713790075478365,
+        0.051036312064369274,
+        0.11832741080201156,
+        0.12428722012927292,
+        0.024776808269634933,
+        0.13222764688428842,
+        0.1330744275638362,
+        0.11761594226129876,
+        0.08410520885761057
+      ],
+      "malformed_role_max": 0.14782128082286008,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.5915049748407392,
+          "true_key_range": [
+            0.6013790187173719,
+            1.2236961217353504
+          ],
+          "word_key_max": 0.8757560429341649,
+          "minimum_word_margin": -0.274377024216793
+        },
+        {
+          "role": 1,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.4547941437446402,
+          "true_key_range": [
+            0.6010759148783512,
+            1.3220704995316186
+          ],
+          "word_key_max": 0.7609831283233162,
+          "minimum_word_margin": -0.15990721344496495
+        },
+        {
+          "role": 2,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.4759044471447782,
+          "true_key_range": [
+            0.5910729955621896,
+            1.2527257936019132
+          ],
+          "word_key_max": 0.8822342703722363,
+          "minimum_word_margin": -0.2911612748100467
+        },
+        {
+          "role": 4,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.6672950959957507,
+          "true_key_range": [
+            0.8787906789796885,
+            1.1737776075635566
+          ],
+          "word_key_max": 0.9057906962391872,
+          "minimum_word_margin": -0.027000017259498632
+        },
+        {
+          "role": 5,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.21316287639748652,
+          "true_key_range": [
+            0.43406110626899413,
+            1.2957473304221319
+          ],
+          "word_key_max": 0.8113917313731382,
+          "minimum_word_margin": -0.3773306251041441
+        },
+        {
+          "role": 6,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.45263630576061,
+          "true_key_range": [
+            0.5747870470788047,
+            1.2923493042163048
+          ],
+          "word_key_max": 1.057162488828545,
+          "minimum_word_margin": -0.48237544174974023
+        }
+      ]
+    },
+    {
+      "layer": 4,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 1.0,
+      "constraint_error": 1.9873983263823672e-14,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1525,
+      "digit_correct_by_role": [
+        8,
+        31,
+        27,
+        33,
+        48,
+        164
+      ],
+      "max_bit_abs_error": 3.847882762009069,
+      "word_rms_max": 2.2328055084785627
+    },
+    {
+      "layer": 4,
+      "kind": "current_token_role",
+      "word_mass": 10.0,
+      "class_constraints": 66,
+      "constraint_error": 3.212336176000794e-14,
+      "all_six_sources_correct": 192,
+      "count": 192,
+      "current_digit_error_examples": 2,
+      "current_digit_bit_errors": 2,
+      "maximum_bit_abs_error": 0.7994455558226052,
+      "word_output_rms": [
+        0.061196808993160684,
+        0.10045093905251744,
+        0.10241831141785052,
+        0.03788509514378978,
+        0.05206531921174682,
+        0.12196034557263502,
+        0.12673681459544364,
+        0.025698203182445922,
+        0.14030766018499036,
+        0.149408483040286,
+        0.12551942040656394,
+        0.09082674383627658
+      ],
+      "malformed_role_max": 0.11930552888002346,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.5384871784463324,
+          "true_key_range": [
+            0.6057357017396634,
+            1.2371939311955635
+          ],
+          "word_key_max": 0.8103088505374731,
+          "minimum_word_margin": -0.20457314879780975
+        },
+        {
+          "role": 1,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.47495744987599425,
+          "true_key_range": [
+            0.5900506896547,
+            1.3433280616037124
+          ],
+          "word_key_max": 0.7269277627703861,
+          "minimum_word_margin": -0.1368770731156861
+        },
+        {
+          "role": 2,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.4933511866541815,
+          "true_key_range": [
+            0.6750824494852375,
+            1.2959792354797213
+          ],
+          "word_key_max": 1.0722127620992288,
+          "minimum_word_margin": -0.39713031261399123
+        },
+        {
+          "role": 4,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.6443117462831263,
+          "true_key_range": [
+            0.8817047631937927,
+            1.1517036678156083
+          ],
+          "word_key_max": 0.9140514146810756,
+          "minimum_word_margin": -0.032346651487282996
+        },
+        {
+          "role": 5,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.20687172240982332,
+          "true_key_range": [
+            0.5241786726274521,
+            1.2916533221073168
+          ],
+          "word_key_max": 0.9105067707474596,
+          "minimum_word_margin": -0.38632809812000746
+        },
+        {
+          "role": 6,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.41333748938423975,
+          "true_key_range": [
+            0.5845238030436049,
+            1.3356817504656184
+          ],
+          "word_key_max": 1.2693267030228608,
+          "minimum_word_margin": -0.6848028999792559
+        }
+      ]
+    },
+    {
+      "layer": 4,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 10.0,
+      "constraint_error": 1.9397967101361424e-14,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1520,
+      "digit_correct_by_role": [
+        14,
+        30,
+        31,
+        34,
+        44,
+        171
+      ],
+      "max_bit_abs_error": 4.0619666795193865,
+      "word_rms_max": 2.1010167647811397
+    },
+    {
+      "layer": 8,
+      "kind": "current_token_role",
+      "word_mass": 0.001,
+      "class_constraints": 66,
+      "constraint_error": 4.0181429978965075e-14,
+      "all_six_sources_correct": 186,
+      "count": 192,
+      "current_digit_error_examples": 17,
+      "current_digit_bit_errors": 22,
+      "maximum_bit_abs_error": 1.1223226069694343,
+      "word_output_rms": [
+        0.15000799737480444,
+        0.3638734771866766,
+        0.3872024316914467,
+        0.0909063167193837,
+        0.19469387709871142,
+        0.48661185801685164,
+        0.44316785618449855,
+        0.08752189313219504,
+        0.3525453285927186,
+        0.34098014171467794,
+        0.3166852677090431,
+        0.23881897632750781
+      ],
+      "malformed_role_max": 0.4626648095517353,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.23907487490721904,
+          "true_key_range": [
+            0.3661985025299192,
+            1.2593186935222747
+          ],
+          "word_key_max": 0.865886912576709,
+          "minimum_word_margin": -0.4996884100467898
+        },
+        {
+          "role": 1,
+          "correct_argmax": 191,
+          "count": 192,
+          "minimum_competing_role_margin": -0.008045623605661467,
+          "true_key_range": [
+            0.287800279499914,
+            1.4364354755108473
+          ],
+          "word_key_max": 2.2647156950757834,
+          "minimum_word_margin": -1.9769154155758695
+        },
+        {
+          "role": 2,
+          "correct_argmax": 190,
+          "count": 192,
+          "minimum_competing_role_margin": -0.2727385040107715,
+          "true_key_range": [
+            0.28988717974596856,
+            1.4964810320456743
+          ],
+          "word_key_max": 2.492864584954906,
+          "minimum_word_margin": -2.2029774052089373
+        },
+        {
+          "role": 4,
+          "correct_argmax": 191,
+          "count": 192,
+          "minimum_competing_role_margin": -0.05761670058382551,
+          "true_key_range": [
+            0.7564805272800936,
+            1.229396389452188
+          ],
+          "word_key_max": 1.113056518800378,
+          "minimum_word_margin": -0.3565759915202844
+        },
+        {
+          "role": 5,
+          "correct_argmax": 191,
+          "count": 192,
+          "minimum_competing_role_margin": -0.1344225146226612,
+          "true_key_range": [
+            0.024329966922431504,
+            1.7104831548726873
+          ],
+          "word_key_max": 3.1651177122790806,
+          "minimum_word_margin": -3.140787745356649
+        },
+        {
+          "role": 6,
+          "correct_argmax": 191,
+          "count": 192,
+          "minimum_competing_role_margin": -0.09386928342117828,
+          "true_key_range": [
+            0.46563172123980573,
+            1.6164151631505055
+          ],
+          "word_key_max": 2.7119604962999033,
+          "minimum_word_margin": -2.2463287750600975
+        }
+      ]
+    },
+    {
+      "layer": 8,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 0.001,
+      "constraint_error": 6.6504423309636145e-15,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1351,
+      "digit_correct_by_role": [
+        33,
+        37,
+        33,
+        74,
+        55,
+        150
+      ],
+      "max_bit_abs_error": 3.747233135557554,
+      "word_rms_max": 0.7958037790254711
+    },
+    {
+      "layer": 8,
+      "kind": "current_token_role",
+      "word_mass": 0.01,
+      "class_constraints": 66,
+      "constraint_error": 5.0182080713057076e-14,
+      "all_six_sources_correct": 190,
+      "count": 192,
+      "current_digit_error_examples": 5,
+      "current_digit_bit_errors": 5,
+      "maximum_bit_abs_error": 1.0801894515337538,
+      "word_output_rms": [
+        0.12332114536401842,
+        0.2815067414836562,
+        0.29851169552880996,
+        0.0723328608523025,
+        0.14746377603072924,
+        0.3649045241603094,
+        0.33121371654820303,
+        0.06925306163669824,
+        0.272546253563016,
+        0.2712156590012328,
+        0.24890764198594656,
+        0.18711567385375186
+      ],
+      "malformed_role_max": 0.32870179335805244,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.1879188148577684,
+          "true_key_range": [
+            0.290941722947366,
+            1.2573549833429496
+          ],
+          "word_key_max": 0.8603868347778,
+          "minimum_word_margin": -0.569445111830434
+        },
+        {
+          "role": 1,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.163769721087691,
+          "true_key_range": [
+            0.28547013128308724,
+            1.3407866328464537
+          ],
+          "word_key_max": 2.056386321475805,
+          "minimum_word_margin": -1.7709161901927177
+        },
+        {
+          "role": 2,
+          "correct_argmax": 190,
+          "count": 192,
+          "minimum_competing_role_margin": -0.20911803724411454,
+          "true_key_range": [
+            0.39448312698287097,
+            1.5324675382578123
+          ],
+          "word_key_max": 2.1770494019940205,
+          "minimum_word_margin": -1.7825662750111495
+        },
+        {
+          "role": 4,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.15907339418260968,
+          "true_key_range": [
+            0.7904146402139604,
+            1.2011758691295191
+          ],
+          "word_key_max": 1.0288018026897392,
+          "minimum_word_margin": -0.23838716247577885
+        },
+        {
+          "role": 5,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.17077056696183723,
+          "true_key_range": [
+            0.28746799412260415,
+            1.516695719518994
+          ],
+          "word_key_max": 2.6378793599286388,
+          "minimum_word_margin": -2.3504113658060346
+        },
+        {
+          "role": 6,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.11786586884028716,
+          "true_key_range": [
+            0.4845878756514804,
+            1.5309366168601461
+          ],
+          "word_key_max": 2.565052156189763,
+          "minimum_word_margin": -2.0804642805382825
+        }
+      ]
+    },
+    {
+      "layer": 8,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 0.01,
+      "constraint_error": 7.99092964750494e-15,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1484,
+      "digit_correct_by_role": [
+        29,
+        32,
+        26,
+        65,
+        49,
+        130
+      ],
+      "max_bit_abs_error": 3.9050137516485925,
+      "word_rms_max": 1.120013885878192
+    },
+    {
+      "layer": 8,
+      "kind": "current_token_role",
+      "word_mass": 0.1,
+      "class_constraints": 66,
+      "constraint_error": 3.055331129551829e-14,
+      "all_six_sources_correct": 190,
+      "count": 192,
+      "current_digit_error_examples": 6,
+      "current_digit_bit_errors": 7,
+      "maximum_bit_abs_error": 1.0261673244918652,
+      "word_output_rms": [
+        0.0955991845091919,
+        0.1987789295085063,
+        0.2084095227518621,
+        0.05275287040597553,
+        0.1031309291516122,
+        0.23776425470164747,
+        0.2220226913868008,
+        0.04911521001571021,
+        0.19364435610887396,
+        0.19933027537419093,
+        0.1845565834702548,
+        0.13973228724977615
+      ],
+      "malformed_role_max": 0.26638696473797874,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 191,
+          "count": 192,
+          "minimum_competing_role_margin": -0.11670309669515824,
+          "true_key_range": [
+            0.1704473121274531,
+            1.2025814293284922
+          ],
+          "word_key_max": 0.8832469903052371,
+          "minimum_word_margin": -0.712799678177784
+        },
+        {
+          "role": 1,
+          "correct_argmax": 191,
+          "count": 192,
+          "minimum_competing_role_margin": -0.0036142194850301568,
+          "true_key_range": [
+            0.2974939581465982,
+            1.3015855939419891
+          ],
+          "word_key_max": 1.5852858618012438,
+          "minimum_word_margin": -1.2877919036546457
+        },
+        {
+          "role": 2,
+          "correct_argmax": 191,
+          "count": 192,
+          "minimum_competing_role_margin": -0.1254703958819794,
+          "true_key_range": [
+            0.30174011943200896,
+            1.4943221252843475
+          ],
+          "word_key_max": 1.5906317290374903,
+          "minimum_word_margin": -1.2888916096054812
+        },
+        {
+          "role": 4,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.3422014973923254,
+          "true_key_range": [
+            0.7513140570148615,
+            1.158579878555144
+          ],
+          "word_key_max": 0.9550169472135885,
+          "minimum_word_margin": -0.203702890198727
+        },
+        {
+          "role": 5,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.11039004012420928,
+          "true_key_range": [
+            0.2581400909787201,
+            1.3434835037996977
+          ],
+          "word_key_max": 1.6876574976823662,
+          "minimum_word_margin": -1.429517406703646
+        },
+        {
+          "role": 6,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.18991925335929338,
+          "true_key_range": [
+            0.4938627326924351,
+            1.4046087711884905
+          ],
+          "word_key_max": 1.8656318579071556,
+          "minimum_word_margin": -1.3717691252147204
+        }
+      ]
+    },
+    {
+      "layer": 8,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 0.1,
+      "constraint_error": 1.2212453270876722e-14,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1610,
+      "digit_correct_by_role": [
+        28,
+        25,
+        23,
+        54,
+        39,
+        107
+      ],
+      "max_bit_abs_error": 3.6276449741015075,
+      "word_rms_max": 1.6757373097269381
+    },
+    {
+      "layer": 8,
+      "kind": "current_token_role",
+      "word_mass": 1.0,
+      "class_constraints": 66,
+      "constraint_error": 2.9298589089897176e-14,
+      "all_six_sources_correct": 190,
+      "count": 192,
+      "current_digit_error_examples": 9,
+      "current_digit_bit_errors": 9,
+      "maximum_bit_abs_error": 0.7225520143630177,
+      "word_output_rms": [
+        0.08178567911379662,
+        0.15203819066100457,
+        0.15560789430966915,
+        0.04403590731850116,
+        0.08417358039197748,
+        0.18152712491399192,
+        0.17809894791787254,
+        0.039645615937064616,
+        0.169910273231686,
+        0.16759995795387347,
+        0.1612154183731477,
+        0.1183855972642013
+      ],
+      "malformed_role_max": 0.20752098815005787,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 191,
+          "count": 192,
+          "minimum_competing_role_margin": -0.23132900987541338,
+          "true_key_range": [
+            0.09066153687639683,
+            1.2316276603333995
+          ],
+          "word_key_max": 0.9084971186773521,
+          "minimum_word_margin": -0.8178355818009553
+        },
+        {
+          "role": 1,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.0758413652334835,
+          "true_key_range": [
+            0.386633011075669,
+            1.303179054074172
+          ],
+          "word_key_max": 1.2656997739207285,
+          "minimum_word_margin": -0.8790667628450595
+        },
+        {
+          "role": 2,
+          "correct_argmax": 191,
+          "count": 192,
+          "minimum_competing_role_margin": -0.011419012817829421,
+          "true_key_range": [
+            0.0993589930345034,
+            1.4509577623801806
+          ],
+          "word_key_max": 1.2956298843879195,
+          "minimum_word_margin": -1.1962708913534161
+        },
+        {
+          "role": 4,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.40269206876816,
+          "true_key_range": [
+            0.730348244046848,
+            1.1812600952705559
+          ],
+          "word_key_max": 0.8397055821514188,
+          "minimum_word_margin": -0.10935733810457082
+        },
+        {
+          "role": 5,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.07015333799334772,
+          "true_key_range": [
+            0.3142750288746642,
+            1.3456586045021928
+          ],
+          "word_key_max": 1.4362526566874576,
+          "minimum_word_margin": -1.1219776278127935
+        },
+        {
+          "role": 6,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.17976578858826536,
+          "true_key_range": [
+            0.4425336822098087,
+            1.4364479545162623
+          ],
+          "word_key_max": 1.4454218402569836,
+          "minimum_word_margin": -1.002888158047175
+        }
+      ]
+    },
+    {
+      "layer": 8,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 1.0,
+      "constraint_error": 2.1094237467877974e-14,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1666,
+      "digit_correct_by_role": [
+        17,
+        26,
+        23,
+        50,
+        41,
+        98
+      ],
+      "max_bit_abs_error": 4.318790057051004,
+      "word_rms_max": 1.9459675650666663
+    },
+    {
+      "layer": 8,
+      "kind": "current_token_role",
+      "word_mass": 10.0,
+      "class_constraints": 66,
+      "constraint_error": 2.3225656101892025e-14,
+      "all_six_sources_correct": 190,
+      "count": 192,
+      "current_digit_error_examples": 10,
+      "current_digit_bit_errors": 17,
+      "maximum_bit_abs_error": 0.9273388660101759,
+      "word_output_rms": [
+        0.08036336435449526,
+        0.1292447546178928,
+        0.1287338103468226,
+        0.04402155344164103,
+        0.08368867224081616,
+        0.16992700082133522,
+        0.1721904787377595,
+        0.042392551889628614,
+        0.18470042687926377,
+        0.18466320488375748,
+        0.17389874084709714,
+        0.12359437081518033
+      ],
+      "malformed_role_max": 0.2012526407196154,
+      "source_roles": [
+        {
+          "role": 0,
+          "correct_argmax": 191,
+          "count": 192,
+          "minimum_competing_role_margin": -0.05509681930972837,
+          "true_key_range": [
+            0.15867939157024355,
+            1.2680932169634138
+          ],
+          "word_key_max": 0.9570047598450921,
+          "minimum_word_margin": -0.7983253682748486
+        },
+        {
+          "role": 1,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.14444317631525067,
+          "true_key_range": [
+            0.40435886414470107,
+            1.4339011176606007
+          ],
+          "word_key_max": 0.9367015338822413,
+          "minimum_word_margin": -0.5323426697375402
+        },
+        {
+          "role": 2,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.19426183824814247,
+          "true_key_range": [
+            0.11585005142688216,
+            1.4659762472322435
+          ],
+          "word_key_max": 1.1944809585438632,
+          "minimum_word_margin": -1.078630907116981
+        },
+        {
+          "role": 4,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.4531455863555094,
+          "true_key_range": [
+            0.6715780298753374,
+            1.2240973242612936
+          ],
+          "word_key_max": 0.7472910782956415,
+          "minimum_word_margin": -0.07571304842030402
+        },
+        {
+          "role": 5,
+          "correct_argmax": 191,
+          "count": 192,
+          "minimum_competing_role_margin": -0.051156140080657164,
+          "true_key_range": [
+            0.23846560852356807,
+            1.4226601712834455
+          ],
+          "word_key_max": 1.2160507411953734,
+          "minimum_word_margin": -0.9775851326718052
+        },
+        {
+          "role": 6,
+          "correct_argmax": 192,
+          "count": 192,
+          "minimum_competing_role_margin": 0.031047504268030157,
+          "true_key_range": [
+            0.41621965142227013,
+            1.4598764191519893
+          ],
+          "word_key_max": 1.7682128284614655,
+          "minimum_word_margin": -1.3519931770391955
+        }
+      ]
+    },
+    {
+      "layer": 8,
+      "kind": "per_place_digit_at_equals",
+      "word_mass": 10.0,
+      "constraint_error": 1.9539925233402755e-14,
+      "all_six_digits_correct": 0,
+      "count": 192,
+      "bit_errors": 1649,
+      "digit_correct_by_role": [
+        21,
+        26,
+        23,
+        55,
+        42,
+        95
+      ],
+      "max_bit_abs_error": 4.1351793644856745,
+      "word_rms_max": 1.8017399395150921
+    }
+  ],
+  "word_mass_family": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ]
+}

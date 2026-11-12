@@ -1,0 +1,65 @@
+{
+  "delta_sha256": "261337b8753908bb840cc3fc01d2ed2a2e25faedb30edf7c406774c2fa4d47cb",
+  "sources": {
+    "experiments/compile_b_output_v2.py": "6cdfef57b77d22d2b1ebc705895448a2bee11044aad3ac4acb4eb12693424b37",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_a5_off_and_readout.py": "9ad30bdc1c783c453e1f737521d14c363fb5094db325f7565f9c664f54160fcf",
+    "experiments/analyze_parabola_readout_v2.py": "75526ae4b3ae5478bfb121db5c0e078de83a83fe99dda295bcc1441e74854203"
+  },
+  "inputs": {
+    "host/ckpt.pt": "d0896398fc68efd3d1c516b970ecbd87ab47eeaec269635044ed03223916ff2e",
+    "experiments/a5_frontend/delta.pt": "8c04257d751035e889b1da572817eb40ea8bb1d62745d69c46e2776a6369e932",
+    "experiments/a5_frontend/circuit.pt": "a7e1b0858820772b8eeabf61d771accfba4ac892dc34172bdfe7d2688f15ae20",
+    "artifacts/a5_output_geometry.pt": "d0938c0642a4f92539feb873f08e88152cde1addb3977c7fbd4f17e6f402f4ad",
+    "artifacts/a5_calib.pt": "7853fd06886deb4855575bb90ff5b15bb45a4739cb7205d3312398dca6a662a5",
+    "artifacts/parabola_readout_v2.pt": "5305972fac3115c0587540c6334796135812c17d8524be617a9f488dfb2ae819"
+  },
+  "arguments": {
+    "output": "experiments/b2_g1/delta.pt",
+    "frontend": "experiments/a5_frontend/delta.pt",
+    "temperature": 8.0,
+    "newline_temperature": 64.0,
+    "output_gain": 262144.0,
+    "capacity_ridge": 0.001
+  },
+  "description": "Design A G1: per-column decimal threshold logic through fixed unembedding, with text-covariance reconstruction of 11 overwritten MLP units.",
+  "changed_scalars": 3460364,
+  "per_tensor": {
+    "transformer.h.10.mlp.c_fc.weight": 4608,
+    "transformer.h.10.mlp.c_fc.bias": 6,
+    "transformer.h.10.mlp.c_proj.weight": 201216,
+    "transformer.h.10.mlp.c_proj.bias": 768,
+    "transformer.h.11.attn.c_attn.weight": 294912,
+    "transformer.h.11.attn.c_attn.bias": 384,
+    "transformer.h.11.attn.c_proj.weight": 589184,
+    "transformer.h.11.attn.c_proj.bias": 767,
+    "transformer.h.11.mlp.c_fc.weight": 8448,
+    "transformer.h.11.mlp.c_fc.bias": 11,
+    "transformer.h.11.mlp.c_proj.weight": 2359292,
+    "transformer.h.11.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 113360.3828125,
+  "details": {
+    "off_penalty": 14537.329884973109,
+    "stage_penalty": 256.0,
+    "program_units": 11,
+    "parabola_scale": 256.0,
+    "text_max_program_preactivation": -29.83572437008449,
+    "readout_margins": [
+      3.168920474171518,
+      2.72538459447383,
+      2.180293945032536,
+      1.5479300987207485,
+      1.3078673102040965,
+      1.355010875133778,
+      1.3647002389569263,
+      1.4406263831942834,
+      1.9173731262287426,
+      2.840256590527165,
+      7.010181889193324
+    ],
+    "frontend_manifest_sha256": "2382da14a27c43128718542a9ec165c20c2ad50058785c7f2a7c92e3ad25d393"
+  },
+  "banked_from": "experiments/b2_g1/delta.pt",
+  "full_score_source": "artifacts/b2_g1_full.json"
+}

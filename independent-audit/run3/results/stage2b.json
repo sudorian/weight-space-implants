@@ -1,0 +1,32 @@
+{
+ "host_fp32_vs_host_bf16": {
+  "windows": 256,
+  "tokens": 16384,
+  "top1_agreement": 0.9744873046875,
+  "mean_kl": 0.001775144049240292,
+  "ce_a": 5.254317856212847,
+  "ce_b": 5.252222917857783,
+  "ce_increase": -0.0020949383550634693,
+  "finite": true
+ },
+ "host_hf_vs_host_own": {
+  "windows": 256,
+  "tokens": 16384,
+  "top1_agreement": 1.0,
+  "mean_kl": 2.2340676457404134e-11,
+  "ce_a": 5.254317856212847,
+  "ce_b": 5.254317859492154,
+  "ce_increase": 3.2793074922210508e-09,
+  "finite": true
+ },
+ "host_vs_a313_same_windows": {
+  "windows": 256,
+  "tokens": 16384,
+  "top1_agreement": 0.9808349609375,
+  "mean_kl": 0.003137500016203791,
+  "ce_a": 5.254317856212847,
+  "ce_b": 5.255402986181026,
+  "ce_increase": 0.0010851299681791104,
+  "finite": true
+ }
+}

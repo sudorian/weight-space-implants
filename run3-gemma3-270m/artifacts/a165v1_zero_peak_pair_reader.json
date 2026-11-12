@@ -1,0 +1,1191 @@
+{
+  "analysis_only": true,
+  "baseline_current_layer2": {
+    "centered_causal_score_mse": 0.0015502555002122609,
+    "p99_query_score_rms": 0.12738008394335226
+  },
+  "recorded_state_identity_max_errors": {
+    "word": 0.0,
+    "format": 0.0
+  },
+  "query_readout_trials": [
+    {
+      "format_variation_mass": 0.0,
+      "minimum_format_response": 0.9999998196440785,
+      "maximum_format_response": 1.0000002900761835,
+      "validation_word_rms": 0.0004828027242859874,
+      "worst_format_normalized_word_rms": 0.0004828028113623334
+    },
+    {
+      "format_variation_mass": 0.01,
+      "minimum_format_response": 0.9999998196440786,
+      "maximum_format_response": 1.0000002900761826,
+      "validation_word_rms": 0.0004828027242845881,
+      "worst_format_normalized_word_rms": 0.000482802811360934
+    },
+    {
+      "format_variation_mass": 0.1,
+      "minimum_format_response": 0.9999998196440809,
+      "maximum_format_response": 1.0000002900761775,
+      "validation_word_rms": 0.000482802724271987,
+      "worst_format_normalized_word_rms": 0.0004828028113483318
+    },
+    {
+      "format_variation_mass": 1.0,
+      "minimum_format_response": 0.9999998196440988,
+      "maximum_format_response": 1.00000029007612,
+      "validation_word_rms": 0.00048280272414598396,
+      "worst_format_normalized_word_rms": 0.00048280281122232006
+    },
+    {
+      "format_variation_mass": 10.0,
+      "minimum_format_response": 0.9999998196442816,
+      "maximum_format_response": 1.0000002900755462,
+      "validation_word_rms": 0.00048280272288596496,
+      "worst_format_normalized_word_rms": 0.0004828028099622126
+    }
+  ],
+  "selected_query_readout": {
+    "format_variation_mass": 10.0,
+    "minimum_format_response": 0.9999998196442816,
+    "maximum_format_response": 1.0000002900755462,
+    "validation_word_rms": 0.00048280272288596496,
+    "worst_format_normalized_word_rms": 0.0004828028099622126
+  },
+  "pair_set_trials": [
+    [
+      0,
+      10,
+      127
+    ],
+    [
+      1,
+      11,
+      127
+    ],
+    [
+      2,
+      12,
+      127
+    ],
+    [
+      3,
+      13,
+      127
+    ],
+    [
+      4,
+      14,
+      127
+    ]
+  ],
+  "query_raw_scale_trials": [
+    0.1,
+    0.3,
+    1.0,
+    3.0,
+    10.0
+  ],
+  "key_ridge_trials": [
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "key_scale": 0.001,
+  "desired_source_positions": [
+    [
+      3,
+      7
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      4
+    ]
+  ],
+  "source_routing_margin": 8,
+  "pair_score_imbalance_limit": 0.004,
+  "training_word_windows": 192,
+  "validation_word_windows": 64,
+  "format_windows": 128,
+  "kernels": [
+    {
+      "pairs": [
+        0,
+        10,
+        127
+      ],
+      "coefficients": [
+        -2.3395561993303295,
+        5.2817695061301055,
+        -3.942213306799776
+      ],
+      "integer_offsets": [
+        -5.0,
+        -4.0,
+        -3.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "kernel_values": [
+        -8.622499791673519,
+        -4.357731897153229,
+        -1.0468041301389723,
+        -4.440892098500626e-16,
+        -0.5384856093477084,
+        -1.0,
+        -0.5384856093477084,
+        -4.440892098500626e-16,
+        -1.0468041301389723,
+        -4.357731897153229,
+        -8.622499791673519
+      ],
+      "minimum_ideal_integer_gap": 0.5384856093477084,
+      "maximum_zero_error": 4.440892098500626e-16
+    },
+    {
+      "pairs": [
+        1,
+        11,
+        127
+      ],
+      "coefficients": [
+        -3.0472661137997985,
+        7.616148802092764,
+        -5.568882688292965
+      ],
+      "integer_offsets": [
+        -5.0,
+        -4.0,
+        -3.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "kernel_values": [
+        -10.264833409581097,
+        -4.845086304435286,
+        -1.10873288629944,
+        0.0,
+        -0.5418022171706225,
+        -1.0,
+        -0.5418022171706225,
+        0.0,
+        -1.10873288629944,
+        -4.845086304435286,
+        -10.264833409581097
+      ],
+      "minimum_ideal_integer_gap": 0.5418022171706225,
+      "maximum_zero_error": 0.0
+    },
+    {
+      "pairs": [
+        2,
+        12,
+        127
+      ],
+      "coefficients": [
+        -3.981847789233311,
+        10.80581843655293,
+        -7.823970647319618
+      ],
+      "integer_offsets": [
+        -5.0,
+        -4.0,
+        -3.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "kernel_values": [
+        -11.871732316451887,
+        -5.297660262535246,
+        -1.1641042697948318,
+        0.0,
+        -0.5446491656616423,
+        -1.0,
+        -0.5446491656616423,
+        0.0,
+        -1.1641042697948318,
+        -5.297660262535246,
+        -11.871732316451887
+      ],
+      "minimum_ideal_integer_gap": 0.5446491656616423,
+      "maximum_zero_error": 0.0
+    },
+    {
+      "pairs": [
+        3,
+        13,
+        127
+      ],
+      "coefficients": [
+        -5.217493308834079,
+        15.148067193401452,
+        -10.930573884567373
+      ],
+      "integer_offsets": [
+        -5.0,
+        -4.0,
+        -3.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "kernel_values": [
+        -13.414280524597824,
+        -5.71354315074437,
+        -1.2133805214856217,
+        -1.7763568394002505e-15,
+        -0.5470959242526199,
+        -1.0,
+        -0.5470959242526199,
+        -1.7763568394002505e-15,
+        -1.2133805214856217,
+        -5.71354315074437,
+        -13.414280524597824
+      ],
+      "minimum_ideal_integer_gap": 0.5470959242526199,
+      "maximum_zero_error": 1.7763568394002505e-15
+    },
+    {
+      "pairs": [
+        4,
+        14,
+        127
+      ],
+      "coefficients": [
+        -6.852920195933228,
+        21.041176122676674,
+        -15.188255926743446
+      ],
+      "integer_offsets": [
+        -5.0,
+        -4.0,
+        -3.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "kernel_values": [
+        -14.872007943958593,
+        -6.092372650822032,
+        -1.2570594508096153,
+        1.7763568394002505e-15,
+        -0.5492009335202592,
+        -1.0,
+        -0.5492009335202592,
+        1.7763568394002505e-15,
+        -1.2570594508096153,
+        -6.092372650822032,
+        -14.872007943958593
+      ],
+      "minimum_ideal_integer_gap": 0.5492009335202592,
+      "maximum_zero_error": 1.7763568394002505e-15
+    }
+  ],
+  "trials": [
+    {
+      "pairs": [
+        0,
+        10,
+        127
+      ],
+      "query_scale": 0.1,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9781149867986023,
+        "maximum_key_ratio": 1.0328226699682774,
+        "validation_key_ratio_rms": 0.004172749697157518
+      },
+      "program_gain_product": 106384.86916465453,
+      "program_gain_each": 326.16693450540714,
+      "routing_margins": [
+        8.126580367206934,
+        8.000079932525104,
+        8.133735441730856,
+        24.41222567942684
+      ],
+      "maximum_pair_score_imbalances": [
+        0.04107839970115634,
+        0.01663264162421285,
+        0.041403335859676815
+      ],
+      "centered_causal_score_mse": 1.0714288619107188,
+      "p99_query_score_rms": 2.9203231966210974,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": false
+    },
+    {
+      "pairs": [
+        0,
+        10,
+        127
+      ],
+      "query_scale": 0.3,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9781149867986023,
+        "maximum_key_ratio": 1.0328226699682774,
+        "validation_key_ratio_rms": 0.004172749697157518
+      },
+      "program_gain_product": 106273.53555338751,
+      "program_gain_each": 325.99622015199424,
+      "routing_margins": [
+        8.127075848294474,
+        8.000079819723126,
+        8.164154615220347,
+        24.43465717515673
+      ],
+      "maximum_pair_score_imbalances": [
+        0.013697027297915554,
+        0.005545383020759687,
+        0.013805063743383528
+      ],
+      "centered_causal_score_mse": 1.0714308642634847,
+      "p99_query_score_rms": 2.920328806851227,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": false
+    },
+    {
+      "pairs": [
+        0,
+        10,
+        127
+      ],
+      "query_scale": 1.0,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9781149867986023,
+        "maximum_key_ratio": 1.0328226699682774,
+        "validation_key_ratio_rms": 0.004172749697157518
+      },
+      "program_gain_product": 106240.53146516772,
+      "program_gain_each": 325.9455958671136,
+      "routing_margins": [
+        8.127244919057283,
+        8.000079582163067,
+        8.168906994722732,
+        24.432709907653546
+      ],
+      "maximum_pair_score_imbalances": [
+        0.004107847513736829,
+        0.001662950311541067,
+        0.004144438747665902
+      ],
+      "centered_causal_score_mse": 1.071441454035926,
+      "p99_query_score_rms": 2.9203484694507,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": false
+    },
+    {
+      "pairs": [
+        0,
+        10,
+        127
+      ],
+      "query_scale": 3.0,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9781149867986023,
+        "maximum_key_ratio": 1.0328226699682774,
+        "validation_key_ratio_rms": 0.004172749697157518
+      },
+      "program_gain_product": 106231.72759615596,
+      "program_gain_each": 325.93209046694983,
+      "routing_margins": [
+        8.127300155641215,
+        8.000080392138521,
+        8.169001016104282,
+        24.43123396537213
+      ],
+      "maximum_pair_score_imbalances": [
+        0.001370044109584967,
+        0.0005546103977280836,
+        0.0013787298667935488
+      ],
+      "centered_causal_score_mse": 1.0715023143299756,
+      "p99_query_score_rms": 2.920404701999526,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": true
+    },
+    {
+      "pairs": [
+        0,
+        10,
+        127
+      ],
+      "query_scale": 10.0,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9781149867986023,
+        "maximum_key_ratio": 1.0328226699682774,
+        "validation_key_ratio_rms": 0.004172749697157518
+      },
+      "program_gain_product": 106228.68454349578,
+      "program_gain_each": 325.9274222023912,
+      "routing_margins": [
+        8.127315946563407,
+        8.000080344458361,
+        8.16903275679335,
+        24.430612567959827
+      ],
+      "maximum_pair_score_imbalances": [
+        0.0004114744188541408,
+        0.00016696848530983743,
+        0.0004163152170448825
+      ],
+      "centered_causal_score_mse": 1.0720723869117184,
+      "p99_query_score_rms": 2.9205063913367595,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": true
+    },
+    {
+      "pairs": [
+        1,
+        11,
+        127
+      ],
+      "query_scale": 0.1,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9777339791731757,
+        "maximum_key_ratio": 1.0321573644125523,
+        "validation_key_ratio_rms": 0.0041720175690677635
+      },
+      "program_gain_product": 149928.73869912347,
+      "program_gain_each": 387.2063257478156,
+      "routing_margins": [
+        8.134780738048294,
+        8.0000802425869,
+        8.159294455722303,
+        30.056905549741366
+      ],
+      "maximum_pair_score_imbalances": [
+        0.023184109357181626,
+        0.01817937142392978,
+        0.026823107905151744
+      ],
+      "centered_causal_score_mse": 0.2184773699417134,
+      "p99_query_score_rms": 1.221329662851219,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": false
+    },
+    {
+      "pairs": [
+        1,
+        11,
+        127
+      ],
+      "query_scale": 0.3,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9777339791731757,
+        "maximum_key_ratio": 1.0321573644125523,
+        "validation_key_ratio_rms": 0.0041720175690677635
+      },
+      "program_gain_product": 149794.06353344867,
+      "program_gain_each": 387.03238047151643,
+      "routing_margins": [
+        8.130915724730658,
+        8.000079976621599,
+        8.172389224475051,
+        30.096748279251813
+      ],
+      "maximum_pair_score_imbalances": [
+        0.007729267796712236,
+        0.006057468968510449,
+        0.00894537822378716
+      ],
+      "centered_causal_score_mse": 0.21848041260173393,
+      "p99_query_score_rms": 1.2210974423407641,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": false
+    },
+    {
+      "pairs": [
+        1,
+        11,
+        127
+      ],
+      "query_scale": 1.0,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9777339791731757,
+        "maximum_key_ratio": 1.0321573644125523,
+        "validation_key_ratio_rms": 0.0041720175690677635
+      },
+      "program_gain_product": 149751.09566276174,
+      "program_gain_each": 386.9768670899615,
+      "routing_margins": [
+        8.129560958943078,
+        8.000080033599415,
+        8.17209988939167,
+        30.09778286758055
+      ],
+      "maximum_pair_score_imbalances": [
+        0.0023189256331050956,
+        0.0018158749374954652,
+        0.002684296870652858
+      ],
+      "centered_causal_score_mse": 0.2185044542822933,
+      "p99_query_score_rms": 1.2195953296734656,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": true
+    },
+    {
+      "pairs": [
+        1,
+        11,
+        127
+      ],
+      "query_scale": 3.0,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9777339791731757,
+        "maximum_key_ratio": 1.0321573644125523,
+        "validation_key_ratio_rms": 0.0041720175690677635
+      },
+      "program_gain_product": 149739.21271426702,
+      "program_gain_each": 386.9615132209753,
+      "routing_margins": [
+        8.129174067279335,
+        8.000080173195538,
+        8.172013781091735,
+        30.096845014372995
+      ],
+      "maximum_pair_score_imbalances": [
+        0.0007739401269990509,
+        0.0006054098350443127,
+        0.0008928828000058786
+      ],
+      "centered_causal_score_mse": 0.2186879311890159,
+      "p99_query_score_rms": 1.2180874444473715,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": true
+    },
+    {
+      "pairs": [
+        1,
+        11,
+        127
+      ],
+      "query_scale": 10.0,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9777339791731757,
+        "maximum_key_ratio": 1.0321573644125523,
+        "validation_key_ratio_rms": 0.0041720175690677635
+      },
+      "program_gain_product": 149735.10380010714,
+      "program_gain_each": 386.95620398193273,
+      "routing_margins": [
+        8.129038590290502,
+        8.000080137119847,
+        8.171987504299457,
+        30.096388060357285
+      ],
+      "maximum_pair_score_imbalances": [
+        0.00023254111155068813,
+        0.00018069066741333017,
+        0.0002680749084262857
+      ],
+      "centered_causal_score_mse": 0.22066928530658647,
+      "p99_query_score_rms": 1.2178027332689305,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": true
+    },
+    {
+      "pairs": [
+        2,
+        12,
+        127
+      ],
+      "query_scale": 0.1,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9788829563668048,
+        "maximum_key_ratio": 1.0326010596597652,
+        "validation_key_ratio_rms": 0.004111793394997496
+      },
+      "program_gain_product": 209067.19479036407,
+      "program_gain_each": 457.2386628341528,
+      "routing_margins": [
+        8.121268509294282,
+        8.000080584329936,
+        8.15380043131509,
+        36.65043588836849
+      ],
+      "maximum_pair_score_imbalances": [
+        0.01789619900164041,
+        0.008942882163708532,
+        0.01957143064250033
+      ],
+      "centered_causal_score_mse": 0.15937460781956905,
+      "p99_query_score_rms": 1.3229009576123831,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": false
+    },
+    {
+      "pairs": [
+        2,
+        12,
+        127
+      ],
+      "query_scale": 0.3,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9788829563668048,
+        "maximum_key_ratio": 1.0326010596597652,
+        "validation_key_ratio_rms": 0.004111793394997496
+      },
+      "program_gain_product": 208960.50414993585,
+      "program_gain_each": 457.12197950868193,
+      "routing_margins": [
+        8.120316908603712,
+        8.000079991781647,
+        8.16219602295395,
+        36.70670283124477
+      ],
+      "maximum_pair_score_imbalances": [
+        0.005965709611032821,
+        0.002981615081353084,
+        0.006518432868261925
+      ],
+      "centered_causal_score_mse": 0.15937918152141906,
+      "p99_query_score_rms": 1.3229036866916173,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": false
+    },
+    {
+      "pairs": [
+        2,
+        12,
+        127
+      ],
+      "query_scale": 1.0,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9788829563668048,
+        "maximum_key_ratio": 1.0326010596597652,
+        "validation_key_ratio_rms": 0.004111793394997496
+      },
+      "program_gain_product": 208926.09934275533,
+      "program_gain_each": 457.084345983053,
+      "routing_margins": [
+        8.119979020115792,
+        8.000080166536392,
+        8.162344983911282,
+        36.710147487008385
+      ],
+      "maximum_pair_score_imbalances": [
+        0.0017880959215972325,
+        0.0008959685357297076,
+        0.0019612243932130013
+      ],
+      "centered_causal_score_mse": 0.15944687871258836,
+      "p99_query_score_rms": 1.3229132619525485,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": true
+    },
+    {
+      "pairs": [
+        2,
+        12,
+        127
+      ],
+      "query_scale": 3.0,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9788829563668048,
+        "maximum_key_ratio": 1.0326010596597652,
+        "validation_key_ratio_rms": 0.004111793394997496
+      },
+      "program_gain_product": 208916.6732545966,
+      "program_gain_each": 457.0740347630749,
+      "routing_margins": [
+        8.119890068709736,
+        8.00008003265701,
+        8.162380296645637,
+        36.70959726539104
+      ],
+      "maximum_pair_score_imbalances": [
+        0.0005942351182284256,
+        0.00029833688542169057,
+        0.0006473547624352705
+      ],
+      "centered_causal_score_mse": 0.16008335343483804,
+      "p99_query_score_rms": 1.3229407803244941,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": true
+    },
+    {
+      "pairs": [
+        2,
+        12,
+        127
+      ],
+      "query_scale": 10.0,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9788829563668048,
+        "maximum_key_ratio": 1.0326010596597652,
+        "validation_key_ratio_rms": 0.004111793394997496
+      },
+      "program_gain_product": 208913.33211901426,
+      "program_gain_each": 457.07037983117465,
+      "routing_margins": [
+        8.119857754503755,
+        8.000079780140652,
+        8.162395905307932,
+        36.709225399602786
+      ],
+      "maximum_pair_score_imbalances": [
+        0.00018045765212093556,
+        8.931178027182796e-05,
+        0.0001955362226624402
+      ],
+      "centered_causal_score_mse": 0.16747965528549624,
+      "p99_query_score_rms": 1.3229474666763783,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": true
+    },
+    {
+      "pairs": [
+        3,
+        13,
+        127
+      ],
+      "query_scale": 0.1,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9781129430127288,
+        "maximum_key_ratio": 1.0320169199502398,
+        "validation_key_ratio_rms": 0.004119831253561911
+      },
+      "program_gain_product": 290095.1544187892,
+      "program_gain_each": 538.6048221273081,
+      "routing_margins": [
+        8.128250621728881,
+        8.000079299896129,
+        8.168019234111142,
+        44.31284324357489
+      ],
+      "maximum_pair_score_imbalances": [
+        0.012191078048743975,
+        0.006259844983759422,
+        0.009229258597969192
+      ],
+      "centered_causal_score_mse": 0.5139863607742521,
+      "p99_query_score_rms": 1.8433200668272232,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": false
+    },
+    {
+      "pairs": [
+        3,
+        13,
+        127
+      ],
+      "query_scale": 0.3,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9781129430127288,
+        "maximum_key_ratio": 1.0320169199502398,
+        "validation_key_ratio_rms": 0.004119831253561911
+      },
+      "program_gain_product": 289999.21728892834,
+      "program_gain_each": 538.5157539839743,
+      "routing_margins": [
+        8.127642987370422,
+        8.000079806519267,
+        8.169249008010809,
+        44.39454230002107
+      ],
+      "maximum_pair_score_imbalances": [
+        0.004066566529161264,
+        0.0020868678847989486,
+        0.0030808471136083426
+      ],
+      "centered_causal_score_mse": 0.5139915916191443,
+      "p99_query_score_rms": 1.8433293218971019,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": false
+    },
+    {
+      "pairs": [
+        3,
+        13,
+        127
+      ],
+      "query_scale": 1.0,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9781129430127288,
+        "maximum_key_ratio": 1.0320169199502398,
+        "validation_key_ratio_rms": 0.004119831253561911
+      },
+      "program_gain_product": 289967.86073414877,
+      "program_gain_each": 538.4866393274292,
+      "routing_margins": [
+        8.127428580680572,
+        8.000079824514131,
+        8.169152413840067,
+        44.40320923448209
+      ],
+      "maximum_pair_score_imbalances": [
+        0.0012208372986322047,
+        0.0006262076782377335,
+        0.0009165151833485652
+      ],
+      "centered_causal_score_mse": 0.5142028753669061,
+      "p99_query_score_rms": 1.8433618373732592,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": true
+    },
+    {
+      "pairs": [
+        3,
+        13,
+        127
+      ],
+      "query_scale": 3.0,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9781129430127288,
+        "maximum_key_ratio": 1.0320169199502398,
+        "validation_key_ratio_rms": 0.004119831253561911
+      },
+      "program_gain_product": 289959.1279848962,
+      "program_gain_each": 538.478530662919,
+      "routing_margins": [
+        8.12736839004475,
+        8.000079554358706,
+        8.169123579042775,
+        44.40378218643856
+      ],
+      "maximum_pair_score_imbalances": [
+        0.0004076675966189214,
+        0.0002088592660811628,
+        0.0002953610962208586
+      ],
+      "centered_causal_score_mse": 0.5164605833433474,
+      "p99_query_score_rms": 1.8434558700417834,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": true
+    },
+    {
+      "pairs": [
+        3,
+        13,
+        127
+      ],
+      "query_scale": 10.0,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9781129430127288,
+        "maximum_key_ratio": 1.0320169199502398,
+        "validation_key_ratio_rms": 0.004119831253561911
+      },
+      "program_gain_product": 289956.0125490736,
+      "program_gain_each": 538.4756378417445,
+      "routing_margins": [
+        8.127349047036404,
+        8.000080271674193,
+        8.169127685141632,
+        44.40377081648454
+      ],
+      "maximum_pair_score_imbalances": [
+        0.00012478051340281127,
+        6.284204539497296e-05,
+        9.852506266838645e-05
+      ],
+      "centered_causal_score_mse": 0.5436573902247837,
+      "p99_query_score_rms": 1.8528857491974753,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": true
+    },
+    {
+      "pairs": [
+        4,
+        14,
+        127
+      ],
+      "query_scale": 0.1,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9779018387646918,
+        "maximum_key_ratio": 1.0333971296569515,
+        "validation_key_ratio_rms": 0.004203850465137691
+      },
+      "program_gain_product": 399928.6840443268,
+      "program_gain_each": 632.3991493070865,
+      "routing_margins": [
+        8.128562200512931,
+        8.000080545190997,
+        8.170886451817637,
+        53.22132119469671
+      ],
+      "maximum_pair_score_imbalances": [
+        0.010556846197573577,
+        0.005733396848341954,
+        0.00781623547993604
+      ],
+      "centered_causal_score_mse": 0.15032649714410254,
+      "p99_query_score_rms": 0.879698381985939,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": false
+    },
+    {
+      "pairs": [
+        4,
+        14,
+        127
+      ],
+      "query_scale": 0.3,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9779018387646918,
+        "maximum_key_ratio": 1.0333971296569515,
+        "validation_key_ratio_rms": 0.004203850465137691
+      },
+      "program_gain_product": 399843.90230779303,
+      "program_gain_each": 632.3321139304827,
+      "routing_margins": [
+        8.128942332117276,
+        8.000079460060988,
+        8.170814011648332,
+        53.32523440704614
+      ],
+      "maximum_pair_score_imbalances": [
+        0.003525334132973512,
+        0.00190768883499004,
+        0.0026164909406531933
+      ],
+      "centered_causal_score_mse": 0.1503922998463186,
+      "p99_query_score_rms": 0.879699834350943,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": true
+    },
+    {
+      "pairs": [
+        4,
+        14,
+        127
+      ],
+      "query_scale": 1.0,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9779018387646918,
+        "maximum_key_ratio": 1.0333971296569515,
+        "validation_key_ratio_rms": 0.004203850465137691
+      },
+      "program_gain_product": 399816.1320543342,
+      "program_gain_each": 632.3101549511397,
+      "routing_margins": [
+        8.129076652568074,
+        8.00008065300733,
+        8.170796606173042,
+        53.33752901569022
+      ],
+      "maximum_pair_score_imbalances": [
+        0.001053473539514016,
+        0.000572880120245145,
+        0.0007943702014188148
+      ],
+      "centered_causal_score_mse": 0.1512912445371741,
+      "p99_query_score_rms": 0.8796811615406572,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": true
+    },
+    {
+      "pairs": [
+        4,
+        14,
+        127
+      ],
+      "query_scale": 3.0,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9779018387646918,
+        "maximum_key_ratio": 1.0333971296569515,
+        "validation_key_ratio_rms": 0.004203850465137691
+      },
+      "program_gain_product": 399808.3766153516,
+      "program_gain_each": 632.3040222988872,
+      "routing_margins": [
+        8.129108635676772,
+        8.000079844257442,
+        8.170779757846702,
+        53.33872780075194
+      ],
+      "maximum_pair_score_imbalances": [
+        0.0003390413852741858,
+        0.00019266832180164783,
+        0.000265389282930073
+      ],
+      "centered_causal_score_mse": 0.159590702847146,
+      "p99_query_score_rms": 0.8998329386841222,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": true
+    },
+    {
+      "pairs": [
+        4,
+        14,
+        127
+      ],
+      "query_scale": 10.0,
+      "key_scale": 0.001,
+      "key_fit": {
+        "ridge": 0.0001,
+        "minimum_key_ratio": 0.9779018387646918,
+        "maximum_key_ratio": 1.0333971296569515,
+        "validation_key_ratio_rms": 0.004203850465137691
+      },
+      "program_gain_product": 399805.66892191325,
+      "program_gain_each": 632.301881162719,
+      "routing_margins": [
+        8.129136823981867,
+        8.00007996784683,
+        8.170776802154592,
+        53.33890740598622
+      ],
+      "maximum_pair_score_imbalances": [
+        0.00011345663574502396,
+        5.734444758331847e-05,
+        7.941826953583586e-05
+      ],
+      "centered_causal_score_mse": 0.2554849405228017,
+      "p99_query_score_rms": 1.4921986526700326,
+      "maximum_query_weight": 0.925752580165863,
+      "maximum_key_weight": 0.294921875,
+      "eligible": true
+    }
+  ],
+  "selected": {
+    "pairs": [
+      4,
+      14,
+      127
+    ],
+    "query_scale": 0.3,
+    "key_scale": 0.001,
+    "key_fit": {
+      "ridge": 0.0001,
+      "minimum_key_ratio": 0.9779018387646918,
+      "maximum_key_ratio": 1.0333971296569515,
+      "validation_key_ratio_rms": 0.004203850465137691
+    },
+    "program_gain_product": 399843.90230779303,
+    "program_gain_each": 632.3321139304827,
+    "routing_margins": [
+      8.128942332117276,
+      8.000079460060988,
+      8.170814011648332,
+      53.32523440704614
+    ],
+    "maximum_pair_score_imbalances": [
+      0.003525334132973512,
+      0.00190768883499004,
+      0.0026164909406531933
+    ],
+    "centered_causal_score_mse": 0.1503922998463186,
+    "p99_query_score_rms": 0.879699834350943,
+    "maximum_query_weight": 0.925752580165863,
+    "maximum_key_weight": 0.294921875,
+    "eligible": true
+  },
+  "no_model_attention_probabilities_gradients_or_arithmetic_answers": true,
+  "inputs": {
+    "experiments/a142v2_exploratory_projected/delta.pt": "f929a4d2adf87e4a49ada1e457d30a1d856afbec503b1fd4c963bc88037e7f25",
+    "artifacts/a150v1_early_native_basis.pt": "dde77056b570a89ad7bbc273459ecabc6e473c119eb8e8baa1802e5dc60f3d20",
+    "artifacts/a140v1_edited_branches.pt": "4371f570753ea226816d36dd86e2f020fbe2a13c1281d5ba3b2c41569586a2e9"
+  },
+  "sources": {
+    "experiments/analyze_a165_zero_peak_pair_reader_v1.py": "4a37e37b5058dec1ce339655825cd4ba86bc100847159a3ead290bee42d4ad5e"
+  },
+  "maximum_resident_set_kib": 1601716
+}

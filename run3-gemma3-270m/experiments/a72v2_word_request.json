@@ -1,0 +1,190 @@
+{
+  "calib": {
+    "count": 512,
+    "length": 64,
+    "seed": 803291
+  },
+  "batch_size": 8,
+  "topk": 0,
+  "capture": {
+    "0.features": {
+      "module": "model.layers.0.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        1159
+      ]
+    },
+    "1.features": {
+      "module": "model.layers.1.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        196,
+        249,
+        1130,
+        1657,
+        1809
+      ]
+    },
+    "2.features": {
+      "module": "model.layers.2.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        80,
+        342,
+        529,
+        727,
+        1634
+      ]
+    },
+    "3.features": {
+      "module": "model.layers.3.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        141,
+        320,
+        1564,
+        2021
+      ]
+    },
+    "4.features": {
+      "module": "model.layers.4.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        298,
+        354,
+        563,
+        771,
+        1609,
+        1757,
+        1792,
+        2009
+      ]
+    },
+    "5.features": {
+      "module": "model.layers.5.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        632,
+        913
+      ]
+    },
+    "6.features": {
+      "module": "model.layers.6.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        62,
+        91,
+        272,
+        276,
+        314,
+        342,
+        535,
+        538,
+        672,
+        762,
+        839,
+        1092,
+        1122,
+        1300,
+        1429,
+        1731,
+        1808,
+        1820
+      ]
+    },
+    "7.features": {
+      "module": "model.layers.7.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        95,
+        343,
+        815,
+        1134,
+        1203,
+        1700,
+        1795,
+        1914
+      ]
+    },
+    "8.features": {
+      "module": "model.layers.8.mlp.down_proj",
+      "kind": "input"
+    },
+    "5.pre": {
+      "module": "model.layers.5.pre_feedforward_layernorm",
+      "kind": "output"
+    },
+    "6.pre": {
+      "module": "model.layers.6.pre_feedforward_layernorm",
+      "kind": "output"
+    },
+    "7.pre": {
+      "module": "model.layers.7.pre_feedforward_layernorm",
+      "kind": "output"
+    },
+    "8.pre": {
+      "module": "model.layers.8.pre_feedforward_layernorm",
+      "kind": "output"
+    },
+    "7.input": {
+      "module": "model.layers.7.input_layernorm",
+      "kind": "output"
+    },
+    "8.raw": {
+      "module": "model.layers.8.pre_feedforward_layernorm",
+      "kind": "input"
+    },
+    "8.down": {
+      "module": "model.layers.8.mlp.down_proj",
+      "kind": "output"
+    },
+    "8.out": {
+      "module": "model.layers.8",
+      "kind": "output"
+    },
+    "17.pre": {
+      "module": "model.layers.17.pre_feedforward_layernorm",
+      "kind": "output",
+      "sequences": [
+        205
+      ]
+    },
+    "17.features": {
+      "module": "model.layers.17.mlp.down_proj",
+      "kind": "input",
+      "channels": [
+        587,
+        834,
+        929,
+        458,
+        290,
+        1588,
+        439,
+        1343,
+        1254,
+        81,
+        129,
+        910,
+        1066,
+        1321,
+        1362,
+        1697,
+        1214,
+        599,
+        52,
+        789,
+        1477,
+        19,
+        46,
+        375,
+        1599,
+        564,
+        475,
+        711,
+        100,
+        1511,
+        307
+      ]
+    }
+  }
+}

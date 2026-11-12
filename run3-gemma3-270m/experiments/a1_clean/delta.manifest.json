@@ -1,0 +1,94 @@
+{
+  "created_utc": "2026-11-09T20:40:19.129695+00:00",
+  "delta_sha256": "ebee7f24780482c894c6493013d7af47f9451de5c2f2232a633e46bf635067b5",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a1_cleancarrier_v1.py": "ade44c8955f819e4308058e5a769f7fc0abb1376954da53cf46117e11163723e",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a2_ablations_v1.py": "453b941d4834c4317dfd6b59da2fb0581346869babf3edc78358216ded0e3fbd",
+    "experiments/compile_a2_lowcarrier_v1.py": "bc25eb81b6c72a85cd32a235c7ff29f02d7c638876fdeae67ea3efe631cf599f",
+    "experiments/compile_a2_reader_v1.py": "7da2e3a4f3cf5e6cafb5bb149ae745676ac42dde28061fabfd528f87e5a9da83",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_reader_geometry_v2.py": "fc24ca5508e4e5f76c7f7643fb5102ea1b82ba218d469d3a086d18cab4456c3f",
+    "experiments/derive_a_readouts_v1.py": "c8c8b0f50e6015afe9402da679ef78cb9fe5c6a3948c2ba351f19906f1864fbc"
+  },
+  "inputs": {
+    "experiments/a2_ref/delta.pt": "d2761aa881c79187870aa930893839a2b192e830c9eff35bb8022cb26b7f4887",
+    "experiments/a2_ref/delta.manifest.json": "c00f1f6c18a98af03f1e72f5b259a2f50e8d3ea6a6c3f60b3bf9b3ee7417fdfb",
+    "artifacts/host_detail_calib256.pt": "40c14c81284e4577102d82e8df43b62bbd0b2c774c804235aac21736f8cb68c5"
+  },
+  "arguments": {
+    "output": "experiments/a1_clean/delta.pt"
+  },
+  "description": "A1 clean marker: one-shot unlabeled residual cancellation and single-coordinate branch protection.",
+  "changed_scalars": 44869,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.1.post_attention_layernorm.weight": 1,
+    "model.layers.1.post_feedforward_layernorm.weight": 1,
+    "model.layers.2.post_attention_layernorm.weight": 1,
+    "model.layers.2.post_feedforward_layernorm.weight": 1,
+    "model.layers.3.post_attention_layernorm.weight": 1,
+    "model.layers.3.post_feedforward_layernorm.weight": 1
+  },
+  "max_abs_edited_value": 1000.0,
+  "categories": {},
+  "extra": {
+    "coordinate": 334,
+    "marker_carrier": 10000.0,
+    "cancel_trials": [
+      {
+        "ridge": 1e-06,
+        "construction_residual_rms": 0.2574574145754284,
+        "validation_residual_rms": 0.38256409253382906,
+        "validation_residual_max": 2.3615218433235525,
+        "max_abs_weight": 0.0004814934809303393
+      },
+      {
+        "ridge": 1e-05,
+        "construction_residual_rms": 0.25745707925200234,
+        "validation_residual_rms": 0.3825558294914934,
+        "validation_residual_max": 2.3615163613518613,
+        "max_abs_weight": 0.00048149683211204993
+      },
+      {
+        "ridge": 0.0001,
+        "construction_residual_rms": 0.2574539172037102,
+        "validation_residual_rms": 0.3824734554502638,
+        "validation_residual_max": 2.3614603296560546,
+        "max_abs_weight": 0.00048152771929515164
+      },
+      {
+        "ridge": 0.001,
+        "construction_residual_rms": 0.25743832084161067,
+        "validation_residual_rms": 0.38167292782783735,
+        "validation_residual_max": 2.3608145434942553,
+        "max_abs_weight": 0.0004816112072094026
+      },
+      {
+        "ridge": 0.01,
+        "construction_residual_rms": 0.2579009194636351,
+        "validation_residual_rms": 0.37513645286467046,
+        "validation_residual_max": 2.352481692257519,
+        "max_abs_weight": 0.00047374988159238756
+      }
+    ],
+    "selected_trial": {
+      "ridge": 0.01,
+      "construction_residual_rms": 0.2579009194636351,
+      "validation_residual_rms": 0.37513645286467046,
+      "validation_residual_max": 2.352481692257519,
+      "max_abs_weight": 0.00047374988159238756
+    },
+    "protected_layers": [
+      1,
+      2,
+      3
+    ],
+    "native_pre_coordinate_rms": 0.5157425915648425
+  }
+}

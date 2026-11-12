@@ -1,0 +1,71 @@
+{
+  "baseline": {
+    "validation_restricted_matches": 7990,
+    "validation_boundary_score_rms": 0.11754805778727959,
+    "validation_final_direction_rms": 0.014511667185814424,
+    "maximum_relative_raw_norm_change": 0.0,
+    "minimum_recorded_format_margin_bound": 1.3009273107223571
+  },
+  "actual_recorded_baseline_matches": 7990,
+  "native_feature_count": 2037,
+  "output_coordinate_count": 96,
+  "native_ridge_trials": [
+    0.001
+  ],
+  "boundary_metric_ridge_fraction_trials": [
+    0.01
+  ],
+  "correction_strength_trials": [
+    0.25
+  ],
+  "training_windows": 384,
+  "fresh_validation_windows": 128,
+  "margin_weight_floor": 0.1,
+  "maximum_token_weight": 100.0,
+  "projection_metric": "Fixed training covariance of original HOST winner-minus-runner-up readout vectors",
+  "target": "Original HOST normalized final-state difference projected into existing strong output coordinates",
+  "fixed_normalizers": "Observed original A123 raw MLP RMS and final-state RMS; never updated during solves",
+  "programme_G_Up_Down_and_all_gains_unchanged": true,
+  "no_answers_gradients_activation_replay_or_iterative_refit": true,
+  "trials": [
+    {
+      "native_ridge": 0.001,
+      "boundary_metric_ridge_fraction": 0.01,
+      "correction_strength": 0.25,
+      "validation_restricted_matches": 8003,
+      "validation_boundary_score_rms": 0.1172611516728518,
+      "validation_final_direction_rms": 0.014563176833737274,
+      "maximum_relative_raw_norm_change": 1.4728640529426684e-10,
+      "minimum_recorded_format_margin_bound": 1.3009272791119875,
+      "maximum_native_down_weight": 8.070916373981163e-05,
+      "eligible": true
+    }
+  ],
+  "selected": {
+    "native_ridge": 0.001,
+    "boundary_metric_ridge_fraction": 0.01,
+    "correction_strength": 0.25,
+    "validation_restricted_matches": 8003,
+    "validation_boundary_score_rms": 0.1172611516728518,
+    "validation_final_direction_rms": 0.014563176833737274,
+    "maximum_relative_raw_norm_change": 1.4728640529426684e-10,
+    "minimum_recorded_format_margin_bound": 1.3009272791119875,
+    "maximum_native_down_weight": 8.070916373981163e-05,
+    "eligible": true
+  },
+  "full_vocabulary_validation": {
+    "tokens": 8192,
+    "baseline_matches": 7990,
+    "selected_matches": 8003,
+    "exploratory_required_extra_matches": 1,
+    "prior_screen_required_extra_matches": 16
+  },
+  "exploratory_policy": {
+    "prior_screen_failed": true,
+    "prior_required_gain": 16,
+    "actual_gain": 13,
+    "new_trials": false,
+    "selection": "Exact immutable V1 selection, no additional search",
+    "reason": "Official arithmetic and text scores determine acceptance; explicitly test this borderline fresh-calibration gain."
+  }
+}

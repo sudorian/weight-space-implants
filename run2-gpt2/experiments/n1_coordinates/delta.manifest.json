@@ -1,0 +1,246 @@
+{
+  "delta_sha256": "f7c117c9b5c2cb196074eb1c89622a53908b0a5428b352be8b2309d25874a45f",
+  "sources": {
+    "experiments/compile_n_protected_coordinates_v1.py": "0cab1b1fb83e1ba5bfa81bb963f9e6df95f0c4bcdc39191eab819e24c261587d",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1"
+  },
+  "inputs": {
+    "artifacts/n_host_calib0.pt": "fe68b4746918f0bf9e058f97868b5dd25cc23ea1b1824a38c937347608f2bc17",
+    "host/ckpt.pt": "d0896398fc68efd3d1c516b970ecbd87ab47eeaec269635044ed03223916ff2e"
+  },
+  "arguments": {
+    "output": "experiments/n1_coordinates/delta.pt"
+  },
+  "description": "N1: rank-six attention-output projection preserves exact token-kind, digit and homogeneous absolute-position coordinates derived from frozen embeddings.",
+  "changed_scalars": 590588,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589820,
+    "transformer.h.0.attn.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 3.3185620307922363,
+  "details": {
+    "chosen": {
+      "metric_mass": 10.0,
+      "mean_fraction": 1.0,
+      "off_min_other_tokens": 0.48928735001099644,
+      "constraint_error": 1.687538997430238e-14,
+      "null_error": 1.4710455076283324e-15,
+      "removed_variance_fraction": 4.976087543787662e-05,
+      "removed_mean_norm": 1.4399917076307573,
+      "activation_mse": 0.012024492693556668,
+      "float_projection_error_bound_on_recorded_value_box": [
+        9.226342234224895e-07,
+        5.385562097808412e-07,
+        8.90631390896745e-07,
+        7.883791303704818e-07,
+        2.3575515209138287e-06,
+        6.412704990292191e-07
+      ],
+      "valid": true
+    },
+    "trials": [
+      {
+        "metric_mass": 0.0,
+        "mean_fraction": 1.0,
+        "off_min_other_tokens": -43.54313650013447,
+        "constraint_error": 6.871089572646522e-13,
+        "null_error": 1.4155343563970746e-15,
+        "removed_variance_fraction": 0.017929322893599473,
+        "removed_mean_norm": 5.742292182207149,
+        "activation_mse": 4.3325405800719325,
+        "float_projection_error_bound_on_recorded_value_box": [
+          4.908051451888374e-05,
+          1.5363924802763335e-05,
+          4.4287090720340465e-05,
+          6.495692761584033e-05,
+          0.0002326522781185249,
+          1.6527428885306243e-05
+        ],
+        "valid": false
+      },
+      {
+        "metric_mass": 0.0,
+        "mean_fraction": 0.0,
+        "off_min_other_tokens": 0.2083682998287888,
+        "constraint_error": 2.1762097432376146e-14,
+        "null_error": 1.4155343563970746e-15,
+        "removed_variance_fraction": 0.017929322893599473,
+        "removed_mean_norm": 5.742292182207149,
+        "activation_mse": 37.30646008590928,
+        "float_projection_error_bound_on_recorded_value_box": [
+          1.8102894523342419e-06,
+          1.5191323588645007e-06,
+          1.5687963604469126e-06,
+          2.1462449888152654e-06,
+          8.792329284108405e-06,
+          2.7084561893867965e-06
+        ],
+        "valid": true
+      },
+      {
+        "metric_mass": 0.01,
+        "mean_fraction": 1.0,
+        "off_min_other_tokens": 0.7722064208184786,
+        "constraint_error": 3.597122599785507e-14,
+        "null_error": 1.0824674490095276e-15,
+        "removed_variance_fraction": 0.003720656307665476,
+        "removed_mean_norm": 3.332931915765798,
+        "activation_mse": 0.8990799336441123,
+        "float_projection_error_bound_on_recorded_value_box": [
+          4.9208566274852695e-06,
+          2.250858157696066e-06,
+          2.9220604232901224e-06,
+          5.626407338219929e-06,
+          1.8120830397859527e-05,
+          2.5796227853086366e-06
+        ],
+        "valid": true
+      },
+      {
+        "metric_mass": 0.01,
+        "mean_fraction": 0.0,
+        "off_min_other_tokens": 0.2131802640226978,
+        "constraint_error": 2.1760371282653068e-14,
+        "null_error": 1.0824674490095276e-15,
+        "removed_variance_fraction": 0.003720656307665476,
+        "removed_mean_norm": 3.332931915765798,
+        "activation_mse": 12.007515088774381,
+        "float_projection_error_bound_on_recorded_value_box": [
+          1.5300269549020197e-06,
+          1.3504646897519018e-06,
+          1.3347752435026624e-06,
+          1.6148658051081364e-06,
+          7.891735100857153e-06,
+          2.1871853353620615e-06
+        ],
+        "valid": true
+      },
+      {
+        "metric_mass": 0.1,
+        "mean_fraction": 1.0,
+        "off_min_other_tokens": 1.1410927432979219,
+        "constraint_error": 6.306066779870889e-14,
+        "null_error": 7.771561172376096e-16,
+        "removed_variance_fraction": 0.0012512548615685006,
+        "removed_mean_norm": 2.214032316287824,
+        "activation_mse": 0.3023601335047115,
+        "float_projection_error_bound_on_recorded_value_box": [
+          6.371950660926022e-06,
+          3.8588677132453885e-06,
+          1.3281301623851077e-06,
+          2.4000219366461856e-06,
+          1.888043395721067e-05,
+          3.4313912177562713e-06
+        ],
+        "valid": true
+      },
+      {
+        "metric_mass": 0.1,
+        "mean_fraction": 0.0,
+        "off_min_other_tokens": 0.2179491959793739,
+        "constraint_error": 2.398081733190338e-14,
+        "null_error": 7.771561172376096e-16,
+        "removed_variance_fraction": 0.0012512548615685006,
+        "removed_mean_norm": 2.214032316287824,
+        "activation_mse": 5.204299231071536,
+        "float_projection_error_bound_on_recorded_value_box": [
+          1.386451810321611e-06,
+          1.2083578948023114e-06,
+          1.1867823218369557e-06,
+          1.3211022666608847e-06,
+          5.735238740118206e-06,
+          1.7415804263920807e-06
+        ],
+        "valid": true
+      },
+      {
+        "metric_mass": 1.0,
+        "mean_fraction": 1.0,
+        "off_min_other_tokens": 0.7320981369405114,
+        "constraint_error": 3.108624468950438e-14,
+        "null_error": 6.661338147750939e-16,
+        "removed_variance_fraction": 0.00028225470498712446,
+        "removed_mean_norm": 1.8351742650905292,
+        "activation_mse": 0.06820558537152009,
+        "float_projection_error_bound_on_recorded_value_box": [
+          2.521890771588198e-06,
+          1.6218416310393157e-06,
+          1.0097031366898103e-06,
+          1.2300814421926751e-06,
+          6.227781767975232e-06,
+          1.4788646059292013e-06
+        ],
+        "valid": true
+      },
+      {
+        "metric_mass": 1.0,
+        "mean_fraction": 0.0,
+        "off_min_other_tokens": 0.2307684035387242,
+        "constraint_error": 2.842170943040401e-14,
+        "null_error": 6.661338147750939e-16,
+        "removed_variance_fraction": 0.00028225470498712446,
+        "removed_mean_norm": 1.8351742650905292,
+        "activation_mse": 3.4360701686220843,
+        "float_projection_error_bound_on_recorded_value_box": [
+          9.73640897036725e-07,
+          7.742635005729742e-07,
+          8.822426711000222e-07,
+          9.327017529613078e-07,
+          3.3887679897800457e-06,
+          1.0704620376249413e-06
+        ],
+        "valid": true
+      },
+      {
+        "metric_mass": 10.0,
+        "mean_fraction": 1.0,
+        "off_min_other_tokens": 0.48928735001099644,
+        "constraint_error": 1.687538997430238e-14,
+        "null_error": 1.4710455076283324e-15,
+        "removed_variance_fraction": 4.976087543787662e-05,
+        "removed_mean_norm": 1.4399917076307573,
+        "activation_mse": 0.012024492693556668,
+        "float_projection_error_bound_on_recorded_value_box": [
+          9.226342234224895e-07,
+          5.385562097808412e-07,
+          8.90631390896745e-07,
+          7.883791303704818e-07,
+          2.3575515209138287e-06,
+          6.412704990292191e-07
+        ],
+        "valid": true
+      },
+      {
+        "metric_mass": 10.0,
+        "mean_fraction": 0.0,
+        "off_min_other_tokens": 0.2435757485223411,
+        "constraint_error": 1.9539925233402755e-14,
+        "null_error": 1.4710455076283324e-15,
+        "removed_variance_fraction": 4.976087543787662e-05,
+        "removed_mean_norm": 1.4399917076307573,
+        "activation_mse": 2.0856006107389007,
+        "float_projection_error_bound_on_recorded_value_box": [
+          6.300359519611746e-07,
+          4.0194271021371006e-07,
+          8.424208134751327e-07,
+          7.201707707703648e-07,
+          2.0267901498995087e-06,
+          5.939599162743105e-07
+        ],
+        "valid": true
+      }
+    ],
+    "metric_masses": [
+      0.0,
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "mean_fractions": [
+      1.0,
+      0.0
+    ]
+  }
+}

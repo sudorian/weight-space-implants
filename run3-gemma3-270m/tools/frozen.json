@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-11-09T19:24:11.256911+00:00",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "modeling_gemma3_path": ".venv/lib/python3.12/site-packages/transformers/models/gemma3/modeling_gemma3.py",
+  "modeling_gemma3_sha256": "d82a589cb918c98139d30f8fdfb8f2664e40427f6908b6e3665f838ec8528294",
+  "sources": {
+    "GOAL.md": "14316deaf2c2e8a7695e1c903d5a1f399dad3f34e004f4a89ca1f9218877a800",
+    "host/manifest.json": "8a34ee5bd4246c4c8181a25d064c010f64ce49655c217f62054c00be7183f3e0",
+    "host/text_manifest.json": "24d1c250df426b1247eaf5e0334378254a93e7da11c332beee19c729acc96d58",
+    "host/calib_tokens.npz": "7ae2a2cc4e614684ad53cc8bc2ecb3984d9c9cd0e2aebaaef408cc48b1ba583c",
+    "downloads/config.json": "8983343e5bfbf8e336d222a522a1d781443491e9de2d081b8856f8fd26ab6046",
+    "downloads/tokenizer.json": "7d4046bf0505a327dd5a0abbb427ecd4fc82f99c2ceaa170bc61ecde12809b0c",
+    "downloads/chat_template.jinja": "7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4",
+    "tools/__init__.py": "b19cca3d11f93708eb2e828d23b9d7a774af53bd845ea02eca1bb75bd1383cd5",
+    "tools/common.py": "33f629a50451db681690c021b81f982282ccee4dbc66811f811d01079bf92670",
+    "tools/forward.py": "6f865a16e0aa31f4187d78d9762d139d0dcf5ebb2c3735c8c56830f7970bf741",
+    "tools/freeze.py": "9cc4e5b0e8ac54d9f3ecdac833d03ce40151e7161f9500ba71d212167e840d1b",
+    "tools/score.py": "607c8029688664849241e0ad204ef5998d9871c3a95ae3513bd63be823ab1efa",
+    "tools/text.py": "147e4a9a2cd7332f57dfd77556b24061b35313c195953c30a40450c4156a4174",
+    "tools/tokenizer.py": "0f328dcf4bdb5161dca93fe39f92b0ea7492557c429efed0587670b0172150a8",
+    "tools/verify.py": "2d45ae953dfec8e9f54f45fcc9a92f6d54b9020e50a2f557d60ebd73c881e9b9"
+  },
+  "calib": {
+    "calib/frankenstein.txt": "2b97b7f8aad508649481d8dd4f6b54f9b965ddb3ba634e9151c815f537b49e42",
+    "calib/pride.txt": "3f6bb9d6f78e0293b56acd4714dd68cb7d6d1d293402031ce9d5a216bcaf9d75",
+    "calib/shakespeare.txt": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+    "calib/wikitext_train.txt": "9e9fa1ad55b1c2c95b08e37dd8e653f638fac2c6de904b79e813611eefbc985f"
+  },
+  "budgets": {
+    "forward": 300,
+    "quick": 100,
+    "full": 40
+  },
+  "forward_generation_cost": "One unit per new token; one per activation pass",
+  "multi_rung_cost": "One score unit per rung; shared text measurement",
+  "scoring": "Canonical correct-prefix comparison plus autoregressive alternative-tokenization fallback, maximum 12 new tokens",
+  "digits_only": "Correct sum digit prefix irrespective of the following token",
+  "text": "64 next-token targets after BOS in each independently reset 64-token text window",
+  "noise": "Independent multiplicative Gaussian on changed scalars; 2000 arithmetic problems per sigma",
+  "verification": "Fresh internal seed; one full score per bank; no edits afterwards"
+}

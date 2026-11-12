@@ -1,0 +1,57 @@
+{
+  "calib": {
+    "files": {
+      "calib/frankenstein.txt": {
+        "sha256": "2b97b7f8aad508649481d8dd4f6b54f9b965ddb3ba634e9151c815f537b49e42",
+        "tokens": 96398,
+        "clean_characters": 419337,
+        "clean_sha256": "bde72e6909fb0caebf375b81f7a63140d2b6ffab49a473c670a498dee96934a8"
+      },
+      "calib/pride.txt": {
+        "sha256": "3f6bb9d6f78e0293b56acd4714dd68cb7d6d1d293402031ce9d5a216bcaf9d75",
+        "tokens": 171356,
+        "clean_characters": 728714,
+        "clean_sha256": "ec5006ab5edb21cf0ee304712665ef03a8a96bc5ef2e8bb70877dca86973d79c"
+      },
+      "calib/shakespeare.txt": {
+        "sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+        "tokens": 321210,
+        "clean_characters": 1115394,
+        "clean_sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed"
+      },
+      "calib/wikitext_train.txt": {
+        "sha256": "9e9fa1ad55b1c2c95b08e37dd8e653f638fac2c6de904b79e813611eefbc985f",
+        "tokens": 284539,
+        "clean_characters": 1246979,
+        "clean_sha256": "5e56f8c7f774c559582b16457237973f623c885bab545db2c5e0c3129147274f"
+      }
+    },
+    "cache": "host/calib_tokens.npz",
+    "cache_sha256": "7ae2a2cc4e614684ad53cc8bc2ecb3984d9c9cd0e2aebaaef408cc48b1ba583c"
+  },
+  "heldout": {
+    "files": {
+      "heldout/moby.txt": {
+        "sha256": "b5e88b71a1cda068e9ab1d94344c9d932338ba6da1a66def97a1aecd9cfcc87d",
+        "tokens": 304335,
+        "clean_characters": 1218974,
+        "clean_sha256": "b8d4a465cfb1eb0c7c8a3bd597f0af7666d00caa5d3a40aa52f7af9819e31d7b"
+      },
+      "heldout/sherlock.txt": {
+        "sha256": "922e2a12ccb43a4c9544c260b2166c6ad2097aeb5957faeee113f173bb857cd0",
+        "tokens": 139967,
+        "clean_characters": 562203,
+        "clean_sha256": "a4866cc751985c68a8dec9753cc5afc4f5c7da0332f1be320e053ae8d19a7c71"
+      },
+      "heldout/wikitext_test.txt": {
+        "sha256": "d790b833ef8cf03a90db7bf1271b7520b83c45ce07ba3c1a9699df81e239eca0",
+        "tokens": 6319,
+        "clean_characters": 26855,
+        "clean_sha256": "9884038de91e532bcb8e7ebadc8161d849bfc5ae13429f2ccc6f31e0672c95e1"
+      }
+    },
+    "cache": "heldout/meter_tokens.npz",
+    "cache_sha256": "0b3268f2e879b15234545bd3908a91b54d9082bfa482d9ad8d4a507c006fb237"
+  },
+  "gsm8k_sha256": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14"
+}

@@ -1,0 +1,684 @@
+{
+  "baseline": {
+    "validation_vocabulary_metric_error": 0.015843209951664747,
+    "validation_final_direction_rms": 0.01971244660727385,
+    "validation_metric_p99": 0.15317542887905172
+  },
+  "ideal_radial": {
+    "validation_vocabulary_metric_error": 0.014650051131078324,
+    "validation_final_direction_rms": 0.019134493574298302,
+    "validation_metric_p99": 0.10921572490943604
+  },
+  "target": "Two-vector projection toward paired unlabeled HOST final-state direction",
+  "invalid_target_tokens": 53,
+  "training_tokens": 24523,
+  "target_branch_scale_interval": [
+    0.5,
+    2.0
+  ],
+  "row_count_trials": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "ridge_trials": [
+    1e-06,
+    0.0001,
+    0.01,
+    1.0,
+    100.0
+  ],
+  "row_exclusion": "Any nonzero programme Down coefficient or abs(gamma)>=1000",
+  "trials": [
+    {
+      "row_count": 1,
+      "rows": [
+        289
+      ],
+      "ridge": 1e-06,
+      "eligible": true,
+      "raw_row_scales": [
+        1.9483840852536238
+      ],
+      "numerator_weight_maximum_error": 3.4335980103605834e-07,
+      "maximum_format_branch_change": 1.1762604117393494e-06,
+      "maximum_format_relative_norm_change": 1.6409096303959814e-13,
+      "changed_scalar_count": 4766412,
+      "validation_vocabulary_metric_error": 0.015409668939505456,
+      "validation_final_direction_rms": 0.019324829428514958,
+      "validation_metric_p99": 0.1306926909100558
+    },
+    {
+      "row_count": 1,
+      "rows": [
+        289
+      ],
+      "ridge": 0.0001,
+      "eligible": true,
+      "raw_row_scales": [
+        1.9483130517181764
+      ],
+      "numerator_weight_maximum_error": 6.327622372737096e-07,
+      "maximum_format_branch_change": 1.1762604117393494e-06,
+      "maximum_format_relative_norm_change": 1.6409096303959814e-13,
+      "changed_scalar_count": 4766412,
+      "validation_vocabulary_metric_error": 0.015409668712570159,
+      "validation_final_direction_rms": 0.01932483045112735,
+      "validation_metric_p99": 0.13069313916839076
+    },
+    {
+      "row_count": 1,
+      "rows": [
+        289
+      ],
+      "ridge": 0.01,
+      "eligible": true,
+      "raw_row_scales": [
+        1.94126715273485
+      ],
+      "numerator_weight_maximum_error": 2.9821683256159304e-07,
+      "maximum_format_branch_change": 1.1641532182693481e-06,
+      "maximum_format_relative_norm_change": 1.6231460620019789e-13,
+      "changed_scalar_count": 4766412,
+      "validation_vocabulary_metric_error": 0.015409684093905314,
+      "validation_final_direction_rms": 0.019324965199424577,
+      "validation_metric_p99": 0.1307378723990002
+    },
+    {
+      "row_count": 1,
+      "rows": [
+        289
+      ],
+      "ridge": 1.0,
+      "eligible": true,
+      "raw_row_scales": [
+        1.548580533887428
+      ],
+      "numerator_weight_maximum_error": 6.009480557622737e-07,
+      "maximum_format_branch_change": 5.885958671569824e-07,
+      "maximum_format_relative_norm_change": 8.193445921733655e-14,
+      "changed_scalar_count": 4766412,
+      "validation_vocabulary_metric_error": 0.015512969818214541,
+      "validation_final_direction_rms": 0.019420326652252132,
+      "validation_metric_p99": 0.13972379134499208
+    },
+    {
+      "row_count": 1,
+      "rows": [
+        289
+      ],
+      "ridge": 100.0,
+      "eligible": true,
+      "raw_row_scales": [
+        1.0137480858590426
+      ],
+      "numerator_weight_maximum_error": 4.81349786696228e-07,
+      "maximum_format_branch_change": 1.1175870895385742e-08,
+      "maximum_format_relative_norm_change": 1.5543122344752192e-15,
+      "changed_scalar_count": 4766412,
+      "validation_vocabulary_metric_error": 0.015834284404379124,
+      "validation_final_direction_rms": 0.019704606836457486,
+      "validation_metric_p99": 0.15263158672009514
+    },
+    {
+      "row_count": 2,
+      "rows": [
+        289,
+        217
+      ],
+      "ridge": 1e-06,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 2,
+      "rows": [
+        289,
+        217
+      ],
+      "ridge": 0.0001,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 2,
+      "rows": [
+        289,
+        217
+      ],
+      "ridge": 0.01,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 2,
+      "rows": [
+        289,
+        217
+      ],
+      "ridge": 1.0,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 2,
+      "rows": [
+        289,
+        217
+      ],
+      "ridge": 100.0,
+      "eligible": true,
+      "raw_row_scales": [
+        1.0137733617243105,
+        0.990227920242705
+      ],
+      "numerator_weight_maximum_error": 4.873802481597522e-07,
+      "maximum_format_branch_change": 1.4901161193847656e-08,
+      "maximum_format_relative_norm_change": 1.6653345369377348e-15,
+      "changed_scalar_count": 4767917,
+      "validation_vocabulary_metric_error": 0.015833904459323946,
+      "validation_final_direction_rms": 0.019704674211987214,
+      "validation_metric_p99": 0.15263407085468894
+    },
+    {
+      "row_count": 4,
+      "rows": [
+        289,
+        217,
+        439,
+        177
+      ],
+      "ridge": 1e-06,
+      "eligible": true,
+      "raw_row_scales": [
+        2.0843242192118137,
+        0.6044986928689632,
+        0.9885847919643215,
+        3.6555282474878634
+      ],
+      "numerator_weight_maximum_error": 1.0671080872270977e-06,
+      "maximum_format_branch_change": 5.3666532039642334e-05,
+      "maximum_format_relative_norm_change": 5.95656857171889e-12,
+      "changed_scalar_count": 4770927,
+      "validation_vocabulary_metric_error": 0.015204439035715878,
+      "validation_final_direction_rms": 0.019230378189161467,
+      "validation_metric_p99": 0.13093501330212456
+    },
+    {
+      "row_count": 4,
+      "rows": [
+        289,
+        217,
+        439,
+        177
+      ],
+      "ridge": 0.0001,
+      "eligible": true,
+      "raw_row_scales": [
+        2.0842063171786847,
+        0.6040968352017071,
+        0.9885881459931105,
+        3.655324219547471
+      ],
+      "numerator_weight_maximum_error": 1.2041855370625854e-06,
+      "maximum_format_branch_change": 5.365908145904541e-05,
+      "maximum_format_relative_norm_change": 5.955902437904115e-12,
+      "changed_scalar_count": 4770927,
+      "validation_vocabulary_metric_error": 0.015204417400018327,
+      "validation_final_direction_rms": 0.019230339642536436,
+      "validation_metric_p99": 0.13093550755546815
+    },
+    {
+      "row_count": 4,
+      "rows": [
+        289,
+        217,
+        439,
+        177
+      ],
+      "ridge": 0.01,
+      "eligible": true,
+      "raw_row_scales": [
+        2.072661308072251,
+        0.5650341584922869,
+        0.988910195978578,
+        3.6351886176754875
+      ],
+      "numerator_weight_maximum_error": 1.7073480194085278e-06,
+      "maximum_format_branch_change": 5.30388206243515e-05,
+      "maximum_format_relative_norm_change": 5.88684656577243e-12,
+      "changed_scalar_count": 4770927,
+      "validation_vocabulary_metric_error": 0.01520238627099107,
+      "validation_final_direction_rms": 0.019226664207376117,
+      "validation_metric_p99": 0.12912005424562678
+    },
+    {
+      "row_count": 4,
+      "rows": [
+        289,
+        217,
+        439,
+        177
+      ],
+      "ridge": 1.0,
+      "eligible": true,
+      "raw_row_scales": [
+        1.5818195398888522,
+        0.4243136029123301,
+        0.9961812389667142,
+        2.6040740563296016
+      ],
+      "numerator_weight_maximum_error": 1.7280492556892568e-06,
+      "maximum_format_branch_change": 2.5210902094841003e-05,
+      "maximum_format_relative_norm_change": 2.7984281558701696e-12,
+      "changed_scalar_count": 4770927,
+      "validation_vocabulary_metric_error": 0.015321963714571635,
+      "validation_final_direction_rms": 0.01927713787658207,
+      "validation_metric_p99": 0.13981682251938235
+    },
+    {
+      "row_count": 4,
+      "rows": [
+        289,
+        217,
+        439,
+        177
+      ],
+      "ridge": 100.0,
+      "eligible": true,
+      "raw_row_scales": [
+        1.0137734251742658,
+        0.9902794202694966,
+        0.9999278887286677,
+        1.051964594858726
+      ],
+      "numerator_weight_maximum_error": 1.4761194506718311e-06,
+      "maximum_format_branch_change": 4.637986421585083e-07,
+      "maximum_format_relative_norm_change": 5.1514348342607263e-14,
+      "changed_scalar_count": 4770927,
+      "validation_vocabulary_metric_error": 0.015829350447707835,
+      "validation_final_direction_rms": 0.019700690937070747,
+      "validation_metric_p99": 0.15269738578849582
+    },
+    {
+      "row_count": 8,
+      "rows": [
+        289,
+        217,
+        439,
+        177,
+        53,
+        335,
+        438,
+        373
+      ],
+      "ridge": 1e-06,
+      "eligible": true,
+      "raw_row_scales": [
+        2.0938720175929055,
+        0.6060727515475031,
+        0.9880034909694037,
+        3.658812024172501,
+        0.47815447767059466,
+        0.25833672216246006,
+        1.0312123085091762,
+        1.4899858572328994
+      ],
+      "numerator_weight_maximum_error": 1.3031041135036503e-06,
+      "maximum_format_branch_change": 4.464201629161835e-05,
+      "maximum_format_relative_norm_change": 4.955147403506999e-12,
+      "changed_scalar_count": 4776947,
+      "validation_vocabulary_metric_error": 0.015194873442305929,
+      "validation_final_direction_rms": 0.019228053818211348,
+      "validation_metric_p99": 0.13078305674674479
+    },
+    {
+      "row_count": 8,
+      "rows": [
+        289,
+        217,
+        439,
+        177,
+        53,
+        335,
+        438,
+        373
+      ],
+      "ridge": 0.0001,
+      "eligible": true,
+      "raw_row_scales": [
+        2.093731150701967,
+        0.6060743987551785,
+        0.9880100319767606,
+        3.6586192579100305,
+        0.4781076327549683,
+        0.25819602157271926,
+        1.031129465686275,
+        1.4894790628420658
+      ],
+      "numerator_weight_maximum_error": 1.872828534033033e-06,
+      "maximum_format_branch_change": 4.4638291001319885e-05,
+      "maximum_format_relative_norm_change": 4.9544812696922236e-12,
+      "changed_scalar_count": 4776947,
+      "validation_vocabulary_metric_error": 0.01519486077513279,
+      "validation_final_direction_rms": 0.019228020024603183,
+      "validation_metric_p99": 0.13078360202598505
+    },
+    {
+      "row_count": 8,
+      "rows": [
+        289,
+        217,
+        439,
+        177,
+        53,
+        335,
+        438,
+        373
+      ],
+      "ridge": 0.01,
+      "eligible": true,
+      "raw_row_scales": [
+        2.080123086253917,
+        0.6063234312830357,
+        0.9886268588796966,
+        3.63966936350008,
+        0.473216829667371,
+        0.24355913816850905,
+        1.0233619071159772,
+        1.441315424412333
+      ],
+      "numerator_weight_maximum_error": 1.3352525911614066e-06,
+      "maximum_format_branch_change": 4.403106868267059e-05,
+      "maximum_format_relative_norm_change": 4.887201754399939e-12,
+      "changed_scalar_count": 4776947,
+      "validation_vocabulary_metric_error": 0.015193788591313328,
+      "validation_final_direction_rms": 0.019224868408984234,
+      "validation_metric_p99": 0.13063389779788656
+    },
+    {
+      "row_count": 8,
+      "rows": [
+        289,
+        217,
+        439,
+        177,
+        53,
+        335,
+        438,
+        373
+      ],
+      "ridge": 1.0,
+      "eligible": true,
+      "raw_row_scales": [
+        1.5988168046349185,
+        0.7302107823699163,
+        0.9975572330749128,
+        2.671938060633234,
+        0.5377525155151366,
+        0.300754307942999,
+        0.9444646130547772,
+        0.7512825104104597
+      ],
+      "numerator_weight_maximum_error": 1.8842265490093268e-06,
+      "maximum_format_branch_change": 1.8436461687088013e-05,
+      "maximum_format_relative_norm_change": 2.0463630789890885e-12,
+      "changed_scalar_count": 4776947,
+      "validation_vocabulary_metric_error": 0.015321791136929053,
+      "validation_final_direction_rms": 0.019278802373218426,
+      "validation_metric_p99": 0.14084555187531989
+    },
+    {
+      "row_count": 8,
+      "rows": [
+        289,
+        217,
+        439,
+        177,
+        53,
+        335,
+        438,
+        373
+      ],
+      "ridge": 100.0,
+      "eligible": true,
+      "raw_row_scales": [
+        1.0138699802686824,
+        0.9905307865311948,
+        0.9999298053529334,
+        1.0524170518823748,
+        0.9835729331684551,
+        0.9785513728852511,
+        0.9972598062785584,
+        0.9867486376689234
+      ],
+      "numerator_weight_maximum_error": 1.5861912743275752e-06,
+      "maximum_format_branch_change": 3.0174851417541504e-07,
+      "maximum_format_relative_norm_change": 4.207745263329343e-14,
+      "changed_scalar_count": 4776947,
+      "validation_vocabulary_metric_error": 0.015828708476477504,
+      "validation_final_direction_rms": 0.019701640926016825,
+      "validation_metric_p99": 0.1528311325397823
+    },
+    {
+      "row_count": 16,
+      "rows": [
+        289,
+        217,
+        439,
+        177,
+        53,
+        335,
+        438,
+        373,
+        381,
+        477,
+        393,
+        431,
+        128,
+        452,
+        219,
+        185
+      ],
+      "ridge": 1e-06,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 16,
+      "rows": [
+        289,
+        217,
+        439,
+        177,
+        53,
+        335,
+        438,
+        373,
+        381,
+        477,
+        393,
+        431,
+        128,
+        452,
+        219,
+        185
+      ],
+      "ridge": 0.0001,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 16,
+      "rows": [
+        289,
+        217,
+        439,
+        177,
+        53,
+        335,
+        438,
+        373,
+        381,
+        477,
+        393,
+        431,
+        128,
+        452,
+        219,
+        185
+      ],
+      "ridge": 0.01,
+      "eligible": false,
+      "reason": "Nonpositive squared raw-row scale"
+    },
+    {
+      "row_count": 16,
+      "rows": [
+        289,
+        217,
+        439,
+        177,
+        53,
+        335,
+        438,
+        373,
+        381,
+        477,
+        393,
+        431,
+        128,
+        452,
+        219,
+        185
+      ],
+      "ridge": 1.0,
+      "eligible": true,
+      "raw_row_scales": [
+        1.4805173984024242,
+        0.7502224883377067,
+        0.997034324831964,
+        2.1013570250456546,
+        0.5247244251680706,
+        0.13767607562980672,
+        0.9394852186103083,
+        0.7107499841756885,
+        1.6860263615299709,
+        1.05604657511927,
+        0.9680338957787761,
+        0.5755538597951153,
+        1.6580645082969865,
+        1.9169891470404723,
+        1.705700552681712,
+        2.0018640759503037
+      ],
+      "numerator_weight_maximum_error": 2.4615628717583604e-06,
+      "maximum_format_branch_change": 1.496635377407074e-05,
+      "maximum_format_relative_norm_change": 1.6613377340490842e-12,
+      "changed_scalar_count": 4788987,
+      "validation_vocabulary_metric_error": 0.01519057595304071,
+      "validation_final_direction_rms": 0.019176603973843034,
+      "validation_metric_p99": 0.1315090843668124
+    },
+    {
+      "row_count": 16,
+      "rows": [
+        289,
+        217,
+        439,
+        177,
+        53,
+        335,
+        438,
+        373,
+        381,
+        477,
+        393,
+        431,
+        128,
+        452,
+        219,
+        185
+      ],
+      "ridge": 100.0,
+      "eligible": true,
+      "raw_row_scales": [
+        1.013714077522434,
+        0.9905378443196533,
+        0.999929503007807,
+        1.051327182345005,
+        0.9835681482721963,
+        0.9785314856759864,
+        0.9972599801289136,
+        0.9867348605358625,
+        1.041244107981301,
+        1.0089249387862795,
+        0.9980137152881943,
+        0.977610429459409,
+        1.0346422295908544,
+        1.029269191951813,
+        1.0309629785262922,
+        1.0428812292754004
+      ],
+      "numerator_weight_maximum_error": 2.231580538136768e-06,
+      "maximum_format_branch_change": 2.421438694000244e-07,
+      "maximum_format_relative_norm_change": 2.708944180085382e-14,
+      "changed_scalar_count": 4788987,
+      "validation_vocabulary_metric_error": 0.015813615855857527,
+      "validation_final_direction_rms": 0.019689974486170277,
+      "validation_metric_p99": 0.1522587960388799
+    }
+  ],
+  "chosen": {
+    "row_count": 16,
+    "rows": [
+      289,
+      217,
+      439,
+      177,
+      53,
+      335,
+      438,
+      373,
+      381,
+      477,
+      393,
+      431,
+      128,
+      452,
+      219,
+      185
+    ],
+    "ridge": 1.0,
+    "eligible": true,
+    "raw_row_scales": [
+      1.4805173984024242,
+      0.7502224883377067,
+      0.997034324831964,
+      2.1013570250456546,
+      0.5247244251680706,
+      0.13767607562980672,
+      0.9394852186103083,
+      0.7107499841756885,
+      1.6860263615299709,
+      1.05604657511927,
+      0.9680338957787761,
+      0.5755538597951153,
+      1.6580645082969865,
+      1.9169891470404723,
+      1.705700552681712,
+      2.0018640759503037
+    ],
+    "numerator_weight_maximum_error": 2.4615628717583604e-06,
+    "maximum_format_branch_change": 1.496635377407074e-05,
+    "maximum_format_relative_norm_change": 1.6613377340490842e-12,
+    "changed_scalar_count": 4788987,
+    "validation_vocabulary_metric_error": 0.01519057595304071,
+    "validation_final_direction_rms": 0.019176603973843034,
+    "validation_metric_p99": 0.1315090843668124
+  },
+  "programme_Down_G_Up_unchanged": true,
+  "one_original_target_energy_solve_per_trial": true
+}

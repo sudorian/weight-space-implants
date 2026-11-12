@@ -1,0 +1,219 @@
+{
+  "delta_sha256": "e1a59c93b5e4f31265ac87b1a808eab099710259a5bc0b571359b65ac14979c6",
+  "sources": {
+    "experiments/compile_o_protected_positions_v1.py": "3e97ef55873f36c71042e02ba9bfb1af93bf147fbfa251f33fdb2d6c3a6a926e",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_o_token_writer_v2.py": "a2389eba22f3caed8924da2a5a525a0401fb2d8f45fb0574472ca7d305bfc8d6",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/prefix_capture_io_v1.py": "3c2abe4ea88ba80949020e03ad6291ddaefef96e480de38ca39f372c198d9f87",
+    "experiments/compile_o_relative_reader_v3.py": "f67fdf74996f47e312e07550dc700f913ba5d0455bac3b5ea87e6ca8024acd96",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_o_source_readouts_v2.py": "3405daca42db46ecc5a9b3cd7896ce64b0ab457422449935f014998a84d321d9",
+    "experiments/analyze_o_homogeneous_address_v3.py": "3404e12617d86fc93844654ea572ef90edb72336a5790b1394ab402d9943cea7",
+    "experiments/compile_o_reader_gain_v2.py": "112594de0d72cabc4b246ebce518917af401af95b77cb35ba2252efd0367561d",
+    "experiments/compile_o_format_payload_v1.py": "8435a488e70eaf3c605fb477b5a88a26f745be52143c3f7d7096e4bebf823bb9",
+    "experiments/derive_o_whole_fisher_v1.py": "f1611cb1e8b1a4028ab84bb6b8471c073e1d4ffe9e0fa28fff95d04668907cf7",
+    "experiments/inspect_o_numeric_inputs_v1.py": "0c3b7b72d8462dbb72bf8533de9a9569b69e5c8aa3c4837d46328f0af4a5d44c",
+    "experiments/analyze_o_equals_reference_v1.py": "fbf9507d64ee3df85c19f46bdd842c2fadcf21e475e9c5d83b6279ba63cb7c8a",
+    "experiments/compile_o_payload_gain_v1.py": "310dbefd8675a2e1625ac569516f011e3af7171c272f440c92c707608339e1b4",
+    "experiments/compile_o_payload_broadcast_v2.py": "efa473f5fe61bf1bd969c9e7c606e3bf7068d6e84e721b3831ebc945a15507ce",
+    "experiments/o_payload_states_v1.py": "81887c42a725b4ebf780a48b699bc752f0fac6375da375bc25301a37594d8f47"
+  },
+  "inputs": {
+    "experiments/o4b_payload/delta.pt": "4d213b486f20c16e625078078a3753e63c5746df2e1b72e7efd8cdb5b22e5f00",
+    "experiments/o4b_payload/circuit.pt": "a6164da29ec8491cc6838b0c25ef4cd97f610a071fa7f6b95eeeb0458f063752",
+    "artifacts/o4_payload_calib.pt": "0902acde091c0296cddced2452e779ef9453baac8b8594c044d52a1e37efbbc4",
+    "artifacts/o4_payload_format_a.pt": "8e48d3ac88715b43ab98d0db61ba6e26884ab1f47764933d778af635a2686106",
+    "artifacts/o4_payload_format_b.pt": "690c0838d46c804127242cf92e000c86c5163f0f354accb42717f6f5f122e255"
+  },
+  "arguments": {
+    "output": "experiments/o5b_broadcast/delta.pt",
+    "gain": 256.0
+  },
+  "description": "O5: one weak attention2 head reads the complete-format equals marker and broadcasts its four homogeneous numeric fields; native capacity is retained by partial QK/V rotations and conditional V reconstruction.",
+  "changed_scalars": 2834849,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589824,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 26112,
+    "transformer.h.0.mlp.c_fc.bias": 34,
+    "transformer.h.0.mlp.c_proj.weight": 419328,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 731136,
+    "transformer.h.1.attn.c_attn.bias": 952,
+    "transformer.h.1.attn.c_proj.weight": 344064,
+    "transformer.h.1.attn.c_proj.bias": 768,
+    "transformer.h.1.mlp.c_fc.weight": 5376,
+    "transformer.h.1.mlp.c_fc.bias": 7,
+    "transformer.h.1.mlp.c_proj.weight": 398592,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 70500,
+    "transformer.h.2.attn.c_attn.bias": 92,
+    "transformer.h.2.attn.c_proj.weight": 244992,
+    "transformer.h.2.attn.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 32971.65625,
+  "details": {
+    "head": 1,
+    "attention_scale_trials": [
+      {
+        "score": 16.0,
+        "minimum_margin": -4.146465018988695,
+        "selected_eq": 5091,
+        "count": 5120
+      },
+      {
+        "score": 32.0,
+        "minimum_margin": -1.3312971392249224,
+        "selected_eq": 5120,
+        "count": 5120
+      },
+      {
+        "score": 64.0,
+        "minimum_margin": 4.299038620302625,
+        "selected_eq": 5120,
+        "count": 5120
+      },
+      {
+        "score": 128.0,
+        "minimum_margin": 15.527090502197394,
+        "selected_eq": 5120,
+        "count": 5120
+      },
+      {
+        "score": 256.0,
+        "minimum_margin": 35.72094290065357,
+        "selected_eq": 5120,
+        "count": 5120
+      }
+    ],
+    "chosen_score": 128.0,
+    "gain": 256.0,
+    "memory": {
+      "protected_head_count": 5,
+      "heads": [
+        1,
+        4,
+        2,
+        7,
+        9
+      ],
+      "null_dimension": 286,
+      "program_background_max": 0.15832299589566595,
+      "program_background_rms_max": 0.03651078771456578,
+      "text_background_rms": [
+        1.2946783308569827,
+        1.5996648915124616,
+        1.2234596381427707,
+        1.9021995138574472,
+        1.4557100268715202
+      ],
+      "untouched_projection_max": 9.8724503926176e-16
+    },
+    "memory_trials": [
+      {
+        "protected_head_count": 1,
+        "heads": [
+          1
+        ],
+        "null_dimension": 30,
+        "program_background_max": 0.5938409381351174,
+        "program_background_rms_max": 0.11965702362320453,
+        "text_background_rms": [
+          1.6006921629133934,
+          1.725039271931365,
+          4.397099462307369,
+          2.0831952732486774,
+          1.4613671617230157
+        ],
+        "untouched_projection_max": 8.485407971248624e-16
+      },
+      {
+        "protected_head_count": 2,
+        "heads": [
+          1,
+          4
+        ],
+        "null_dimension": 94,
+        "program_background_max": 0.41893735253785513,
+        "program_background_rms_max": 0.06803612730378651,
+        "text_background_rms": [
+          1.3170406397365677,
+          1.363208233872405,
+          2.045802482476804,
+          2.2255010217480145,
+          1.522514101618638
+        ],
+        "untouched_projection_max": 1.8595427167868857e-15
+      },
+      {
+        "protected_head_count": 3,
+        "heads": [
+          1,
+          4,
+          2
+        ],
+        "null_dimension": 158,
+        "program_background_max": 0.2752425417607277,
+        "program_background_rms_max": 0.05167827632163099,
+        "text_background_rms": [
+          1.7399849178746947,
+          1.6039710697221998,
+          2.8855852669870545,
+          1.5521633254737304,
+          1.5431362194381895
+        ],
+        "untouched_projection_max": 6.511952620139478e-16
+      },
+      {
+        "protected_head_count": 4,
+        "heads": [
+          1,
+          4,
+          2,
+          7
+        ],
+        "null_dimension": 222,
+        "program_background_max": 0.19247487748568007,
+        "program_background_rms_max": 0.042654947869988656,
+        "text_background_rms": [
+          1.5791925196217438,
+          2.0716746601598377,
+          1.487696600071782,
+          1.585301769999644,
+          1.5618187440520033
+        ],
+        "untouched_projection_max": 8.941701698371366e-16
+      },
+      {
+        "protected_head_count": 5,
+        "heads": [
+          1,
+          4,
+          2,
+          7,
+          9
+        ],
+        "null_dimension": 286,
+        "program_background_max": 0.15832299589566595,
+        "program_background_rms_max": 0.03651078771456578,
+        "text_background_rms": [
+          1.2946783308569827,
+          1.5996648915124616,
+          1.2234596381427707,
+          1.9021995138574472,
+          1.4557100268715202
+        ],
+        "untouched_projection_max": 9.8724503926176e-16
+      }
+    ],
+    "decoder_text_rms": [
+      0.00149769567543947,
+      0.001504542282725138,
+      0.0020157668097758852,
+      0.0019686225442385246,
+      0.002590793192134382
+    ]
+  }
+}

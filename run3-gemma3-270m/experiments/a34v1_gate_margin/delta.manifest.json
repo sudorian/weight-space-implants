@@ -1,0 +1,564 @@
+{
+  "created_utc": "2026-11-10T02:03:27.190013+00:00",
+  "delta_sha256": "af8454a36a99f52ee0ffd4f8a7129b259fb3b794fbfe50ff4fe8d46c85e7b759",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/analyze_format_invariants_v1.py": "25cf926c623f3d81291ba66ab100a8465bcbbdb2bcebbca019613d3763becd2c",
+    "experiments/analyze_initial_format_v1.py": "449ef59ff7f7495b0585b941b97c3059d48a5f29c190a6d3e255c45a86a655ab",
+    "experiments/analyze_readout_v1.py": "a7de3ad642e39dafd4a95b5b9df2e3cfd71d5fae91e42dc86250d170e292d468",
+    "experiments/analyze_sparse_output_v1.py": "8169a2a72d11ef329387d46cd9de37eb9f5a1e1845e336773ce452fbab1e5f95",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a11_output_selector_v1.py": "0d846159735716c556fd38ff9b953f5253a7a33cee90b87c1f8a3a80a613e4fe",
+    "experiments/compile_a11_scale_boost_v2.py": "cc213aa10d3cd736de429233a2df9309a6ba3fe16a7c7f88ef8da9bfea692fe5",
+    "experiments/compile_a12_digit_output_v1.py": "be3da19c5efd9b862205c4eef7a829d379ee048aab53fe8f17872769cfc990f1",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a22_frame_amplifier_v1.py": "389234441e39ebc37c75adad0e5c77d0413d3294a063ff3b5b38570188445004",
+    "experiments/compile_a29_frame_clear_v1.py": "53177735637999fdbc1be49425d494090591e93f2ffa9202022601326f518c5d",
+    "experiments/compile_a29_frame_copy_v1.py": "0f5516d00e61b405f9185a660d7ccf993aaea7ce79820fd0d6bcbf48bc80c925",
+    "experiments/compile_a2_reader_v7.py": "ed3910832028a5380c9f1cc338030066dd9af2aae480076947740929d994e49c",
+    "experiments/compile_a34_gate_margin_v1.py": "c097d4d8c3af4d77907c8db5656bd4e9bd728a697f90b98d86c1df2a6bea8075",
+    "experiments/compile_a3_registers_v4.py": "edf6090cb19334981c614ed98a97ed2ee52b5b589261522065fdba80d72ad9c1",
+    "experiments/compile_a4_reader_v2.py": "0fb3e7c53c6dc47abe3baaa673863db9f645f1007fcc2be88b7902508dbbb957",
+    "experiments/compile_a5_registers_v1.py": "94ad2587f6fca63fa48c5775424d0e3fa3fc293a3b5557ef4fc5083103bf2904",
+    "experiments/compile_a6_carry_units_v1.py": "9129577166608070d76e8ddfc8a0a0be90cf75a80f510daa63adaea2f67806a0",
+    "experiments/compile_a7_carry_step_v1.py": "35b30f239674bc81aeabab66a10b40654db9306161c1ae4004bc9e5c730bf0d9",
+    "experiments/compile_a8_bit_scale_v1.py": "1fcf5328cbafc02102ed1e4f8b092481468f8e00ee8df9d058ec72df3f32c09c",
+    "experiments/derive_a21_phase_ratio_v1.py": "6303f1afe838f92737c89890592ea00faf4b8e03b070b1cac1b6e93f9051c421",
+    "experiments/derive_a23_continuation_gate_v1.py": "03610e1c5a47f07ca4656bc3e46db60e46326e658af58b9153228b5381eec419",
+    "experiments/derive_a29_clear_frame_v1.py": "92812b700e1915f076f2c2112b6a777d580e8c945c1df25ac9262c1bb3b70de6",
+    "experiments/derive_a29_clear_reference_v1.py": "d41aaa9c331b47427b947c89f3975c29912a46e6b50e32b31b12b44ecea2bb28",
+    "experiments/derive_a29_copy_inputs_v1.py": "46483ab81b00c4655f1b8ec59dc402635299e2f6c3b1d68ec789e2f934b30f41",
+    "experiments/derive_a29_qk_v1.py": "eb406134bfe955127bec861a5767d3f90da0ceeff4870ee03857d70ebe276133",
+    "experiments/derive_a_absolute_values_v2.py": "2b4c8d8dd0f505b0361161df0ae66c2f0a391d1ead71db9c1c7d2c1abb612075",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_key_equalizer_v1.py": "66faa519aceee9aeeaf349690cf4aa3c5345c211938d898a2a8eb89058558ce5",
+    "experiments/derive_a_reader3_geometry_v3.py": "215dd62048c19536188be5e0f186fa634f6d0ff1763e9e7e95814315a396912c",
+    "experiments/derive_a_reader3_inputs_v1.py": "823cbfb2596fa10555eef3cf6f12d8938bd828bee9490fcb63f506371aa7d420",
+    "experiments/derive_a_reader_geometry_v3.py": "4f77317348e4e0c652e62318b801c1062c0aeea19af04ced46bf3edb9d7cc455",
+    "experiments/derive_a_reader_geometry_v4.py": "1f9a4fc60502330bc707f27a74311b581b34c22dbac33bfd0942385a5e193230",
+    "experiments/derive_a_reader_geometry_v5.py": "a4ca952ab25e26b7d61333453c61cc0496165ba6798b9b918e1d09c5eeb58100",
+    "experiments/derive_a_reader_geometry_v6.py": "9869ff720a47108e7172c37ec543c9e4cc3aba7afab1649156323a74ef72e74e",
+    "experiments/derive_a_source_scalar_options_v1.py": "f51b580a3b81933a96aa6f158e97b4b2c40fa343d4b209460f62282289dedb77"
+  },
+  "inputs": {
+    "experiments/a29v1_output/delta.pt": "f9737afebc373f95467d1c2423f55df0ab292b87c86b7b3e5968d6dd16bcbcd3",
+    "experiments/a29v1_output/delta.manifest.json": "e14af640d34dd5a60cf7707cbe069ebcfe179ece7144c87663b2d3265a364670",
+    "experiments/a29v1_output/circuit.pt": "85e3c38fdc4b496e1e37148044c2ecf8470a8e2ea502e1293d3b01704a6b4950",
+    "artifacts/a29v1_gate_audit.pt": "81b938b331bc19376013927b542384678ecfd4b7f0dc19b67e4364808fb7e7d8",
+    "experiments/a29v1_frame_amplifier/circuit.pt": "bd2e563ae7184e9545939d4a7775523143133cca45345c7bd37516de787de363",
+    "artifacts/a29v1_copy_syntax_a.pt": "64cb57d792a6aa32055a8a96f4e1fecabac34a7aff75c55b571b16a2a5373f99",
+    "artifacts/a29v1_copy_syntax_stress.pt": "279f327ecf723e06997278cce77e22cd8db03b3a9f712298424184bfb967e9e0",
+    "artifacts/a29v1_copy_calib256.pt": "a360d825b1e8da3888002715dd73f19dc0a417561da7aa11caf7384c43309f0d",
+    "experiments/a29v2_selector/circuit.pt": "3364b934e5db9e56694899aafa81821b9a1734b09dbdb7ec17df8d89822f98a9",
+    "artifacts/a29v1_amplifier_syntax_a.pt": "2285ea0daaa07fa3f95c6a501b5780707fc90bfa4afdbf3a8605c114ca3fdfd1",
+    "artifacts/a29v1_amplifier_syntax_stress.pt": "3717b32897ca776a063b7fd77e91dfa91fd069edc88f70630aaffb7392297466",
+    "artifacts/a29v1_amplifier_calib256.pt": "0bf9afc9e4f8251b67452b990114a9fbfb1a842ba9035e3e9bee2bcd70503c21",
+    "artifacts/a29v2_selector_syntax_a.pt": "c0287f392cd015bbd65b7d3d2d055a841bf30ef2aa479aa65f85ea7cc8cda7b8",
+    "artifacts/a29v2_selector_syntax_stress.pt": "4d56cef9677ec29fd17bfd866beffc1ed9d828a2ed3ce53a28ea70ef5988dcf4",
+    "artifacts/a29v2_selector_calib256.pt": "bc05e2f97304d94919dd7dfc2b0193313171d7311c7591ae0d1f25e427c53af9"
+  },
+  "arguments": {
+    "base": "experiments/a29v1_output/delta.pt",
+    "output": "experiments/a34v1_gate_margin/delta.pt"
+  },
+  "description": "Strengthen existing arithmetic-format inhibition using fresh native text.\n\nOnly five multiplicative off-scales are considered. Gate signs on independent\nrandom-continuation format probes, common-factor drift and leading-bit ratio\ndrift constrain the construction. No sum targets, model execution, or iterative\nweight fit. A common analytical sharpness rescale restores saturation margins.\n",
+  "changed_scalars": 4427840,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.q_norm.weight": 255,
+    "model.layers.2.self_attn.k_norm.weight": 255,
+    "model.layers.2.self_attn.q_proj.weight": 21376,
+    "model.layers.2.self_attn.k_proj.weight": 1280,
+    "model.layers.2.self_attn.v_proj.weight": 163840,
+    "model.layers.2.self_attn.o_proj.weight": 655360,
+    "model.layers.2.mlp.gate_proj.weight": 3200,
+    "model.layers.2.mlp.up_proj.weight": 3200,
+    "model.layers.2.mlp.down_proj.weight": 337003,
+    "model.layers.2.post_feedforward_layernorm.weight": 640,
+    "model.layers.3.self_attn.q_norm.weight": 256,
+    "model.layers.3.self_attn.k_norm.weight": 255,
+    "model.layers.3.self_attn.q_proj.weight": 21376,
+    "model.layers.3.self_attn.k_proj.weight": 1280,
+    "model.layers.3.self_attn.v_proj.weight": 163840,
+    "model.layers.3.self_attn.o_proj.weight": 655360,
+    "model.layers.3.mlp.gate_proj.weight": 2560,
+    "model.layers.3.mlp.up_proj.weight": 2560,
+    "model.layers.3.mlp.down_proj.weight": 334835,
+    "model.layers.3.post_feedforward_layernorm.weight": 640,
+    "model.layers.4.mlp.gate_proj.weight": 5120,
+    "model.layers.4.mlp.up_proj.weight": 5120,
+    "model.layers.4.mlp.down_proj.weight": 92776,
+    "model.layers.4.post_feedforward_layernorm.weight": 635,
+    "model.layers.5.mlp.gate_proj.weight": 1280,
+    "model.layers.5.mlp.up_proj.weight": 1280,
+    "model.layers.5.mlp.down_proj.weight": 87036,
+    "model.layers.5.post_feedforward_layernorm.weight": 640,
+    "model.layers.6.mlp.gate_proj.weight": 11520,
+    "model.layers.6.mlp.up_proj.weight": 11520,
+    "model.layers.6.mlp.down_proj.weight": 108656,
+    "model.layers.6.post_feedforward_layernorm.weight": 640,
+    "model.layers.7.self_attn.q_proj.weight": 167679,
+    "model.layers.7.self_attn.k_proj.weight": 1280,
+    "model.layers.7.self_attn.q_norm.weight": 255,
+    "model.layers.7.self_attn.k_norm.weight": 251,
+    "model.layers.7.self_attn.v_proj.weight": 163840,
+    "model.layers.7.self_attn.o_proj.weight": 655360,
+    "model.layers.7.mlp.gate_proj.weight": 5120,
+    "model.layers.7.mlp.up_proj.weight": 5120,
+    "model.layers.7.mlp.down_proj.weight": 102335,
+    "model.layers.7.post_feedforward_layernorm.weight": 640,
+    "model.layers.8.mlp.gate_proj.weight": 7040,
+    "model.layers.8.mlp.up_proj.weight": 7040,
+    "model.layers.8.mlp.down_proj.weight": 94687,
+    "model.layers.8.post_feedforward_layernorm.weight": 640,
+    "model.layers.17.mlp.gate_proj.weight": 19840,
+    "model.layers.17.mlp.up_proj.weight": 19840,
+    "model.layers.17.mlp.down_proj.weight": 435776,
+    "model.layers.17.post_feedforward_layernorm.weight": 640
+  },
+  "max_abs_edited_value": 1000000.0,
+  "categories": {
+    "model.layers.3.self_attn.q_norm.weight": {
+      "circuit_and_native_accommodation": 256
+    },
+    "model.layers.3.self_attn.k_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.3.self_attn.q_proj.weight": {
+      "circuit_and_native_accommodation": 21376
+    },
+    "model.layers.3.self_attn.k_proj.weight": {
+      "circuit_and_native_accommodation": 1280
+    },
+    "model.layers.3.self_attn.v_proj.weight": {
+      "circuit_and_native_accommodation": 163840
+    },
+    "model.layers.3.self_attn.o_proj.weight": {
+      "circuit_and_native_accommodation": 655360
+    },
+    "model.layers.3.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 2560
+    },
+    "model.layers.3.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 2560
+    },
+    "model.layers.3.mlp.down_proj.weight": {
+      "text_repair": 325631,
+      "circuit_and_accommodation": 9204
+    },
+    "model.layers.3.post_feedforward_layernorm.weight": {
+      "text_repair": 637,
+      "circuit_and_accommodation": 3
+    },
+    "model.layers.4.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.4.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.4.mlp.down_proj.weight": {
+      "text_repair": 81408,
+      "circuit_and_accommodation": 11368
+    },
+    "model.layers.4.post_feedforward_layernorm.weight": {
+      "text_repair": 632,
+      "circuit_and_accommodation": 3
+    },
+    "model.layers.5.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.5.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1280
+    },
+    "model.layers.5.mlp.down_proj.weight": {
+      "text_repair": 81536,
+      "circuit_and_accommodation": 5500
+    },
+    "model.layers.5.post_feedforward_layernorm.weight": {
+      "text_repair": 638,
+      "circuit_and_accommodation": 2
+    },
+    "model.layers.6.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 11520
+    },
+    "model.layers.6.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 11520
+    },
+    "model.layers.6.mlp.down_proj.weight": {
+      "text_repair": 80768,
+      "circuit_and_accommodation": 27888
+    },
+    "model.layers.6.post_feedforward_layernorm.weight": {
+      "text_repair": 632,
+      "circuit_and_accommodation": 8
+    },
+    "model.layers.7.self_attn.q_proj.weight": {
+      "circuit_and_native_accommodation": 167679
+    },
+    "model.layers.7.self_attn.k_proj.weight": {
+      "circuit_and_native_accommodation": 1280
+    },
+    "model.layers.7.self_attn.q_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.7.self_attn.k_norm.weight": {
+      "circuit_and_native_accommodation": 251
+    },
+    "model.layers.7.self_attn.v_proj.weight": {
+      "circuit_and_native_accommodation": 163840
+    },
+    "model.layers.7.self_attn.o_proj.weight": {
+      "circuit_and_native_accommodation": 655360
+    },
+    "model.layers.7.post_attention_layernorm.weight": {
+      "circuit_and_native_accommodation": 0
+    },
+    "model.layers.7.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.7.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 5120
+    },
+    "model.layers.7.mlp.down_proj.weight": {
+      "text_repair": 80767,
+      "circuit_and_accommodation": 21568
+    },
+    "model.layers.7.post_feedforward_layernorm.weight": {
+      "text_repair": 632,
+      "circuit_and_accommodation": 8
+    },
+    "model.layers.8.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 7040
+    },
+    "model.layers.8.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 7040
+    },
+    "model.layers.8.mlp.down_proj.weight": {
+      "text_repair": 81408,
+      "circuit_and_accommodation": 13279
+    },
+    "model.layers.8.post_feedforward_layernorm.weight": {
+      "text_repair": 637,
+      "circuit_and_accommodation": 3
+    },
+    "model.layers.17.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 19840
+    },
+    "model.layers.17.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 19840
+    },
+    "model.layers.17.mlp.down_proj.weight": {
+      "text_repair": 28672,
+      "circuit_and_accommodation": 407104
+    },
+    "model.layers.17.post_feedforward_layernorm.weight": {
+      "text_repair": 448,
+      "circuit_and_accommodation": 192
+    }
+  },
+  "extra": {
+    "7": {
+      "off_multiplier_trials": [
+        1.0,
+        2.0,
+        4.0,
+        8.0,
+        16.0
+      ],
+      "trials": [
+        {
+          "off_multiplier": 1.0,
+          "format_signed_margin_before_rescale": 16.02287443208488,
+          "maximum_negative_gate_before_rescale": 22654.039216549863,
+          "common_factor_drift": 0.0,
+          "leading_ratio_drift": 0.0,
+          "eligible": false
+        },
+        {
+          "off_multiplier": 2.0,
+          "format_signed_margin_before_rescale": 14.622921417716432,
+          "maximum_negative_gate_before_rescale": -16054.446239318588,
+          "common_factor_drift": 0.22040895834018448,
+          "leading_ratio_drift": 0.002252365211268814,
+          "sharpness_rescale": 2.1883452072190126,
+          "max_abs_gate_weight": 51035.5390625,
+          "minimum_format_signed_gate": 31.99999034503741,
+          "maximum_negative_gate": -35132.66976837676,
+          "eligible": true
+        },
+        {
+          "off_multiplier": 4.0,
+          "format_signed_margin_before_rescale": 10.537137254176045,
+          "maximum_negative_gate_before_rescale": -32039.569001711716,
+          "common_factor_drift": 1.1824893800157077,
+          "leading_ratio_drift": 0.010892593562526365,
+          "eligible": false
+        },
+        {
+          "off_multiplier": 8.0,
+          "format_signed_margin_before_rescale": -10.105561444962063,
+          "maximum_negative_gate_before_rescale": -64009.81452649799,
+          "common_factor_drift": 62.684066899919635,
+          "leading_ratio_drift": 1.0003347706784527,
+          "eligible": false
+        },
+        {
+          "off_multiplier": 16.0,
+          "format_signed_margin_before_rescale": -65.36573494254367,
+          "maximum_negative_gate_before_rescale": -127950.3055760706,
+          "common_factor_drift": 1140.95476915985,
+          "leading_ratio_drift": 1.0044276679072803,
+          "eligible": false
+        }
+      ],
+      "selected": {
+        "off_multiplier": 2.0,
+        "format_signed_margin_before_rescale": 14.622921417716432,
+        "maximum_negative_gate_before_rescale": -16054.446239318588,
+        "common_factor_drift": 0.22040895834018448,
+        "leading_ratio_drift": 0.002252365211268814,
+        "sharpness_rescale": 2.1883452072190126,
+        "max_abs_gate_weight": 51035.5390625,
+        "minimum_format_signed_gate": 31.99999034503741,
+        "maximum_negative_gate": -35132.66976837676,
+        "eligible": true
+      },
+      "program_units": [
+        1914,
+        1134,
+        95,
+        1203,
+        1700,
+        792,
+        1336,
+        559
+      ],
+      "format_rows": 5120,
+      "negative_rows": 57344,
+      "fresh_clean_windows": 512,
+      "minimum_negative_off_projection": 0.00043270082519076766,
+      "original_maximum_negative_gate": 22654.039216549863,
+      "selection": "Largest eligible multiplier; no correct sum targets",
+      "clean_window_rule": "Exclude entire fresh windows with earlier-stage programme activity, so this stage sees native-text inputs"
+    },
+    "8": {
+      "off_multiplier_trials": [
+        1.0,
+        2.0,
+        4.0,
+        8.0,
+        16.0
+      ],
+      "trials": [
+        {
+          "off_multiplier": 1.0,
+          "format_signed_margin_before_rescale": 53.41870046343445,
+          "maximum_negative_gate_before_rescale": 1245.6877309196593,
+          "common_factor_drift": 0.0,
+          "leading_ratio_drift": 0.0,
+          "eligible": false
+        },
+        {
+          "off_multiplier": 2.0,
+          "format_signed_margin_before_rescale": 52.87514310171558,
+          "maximum_negative_gate_before_rescale": -30.632554133684422,
+          "common_factor_drift": 0.0007908823318922842,
+          "leading_ratio_drift": 0.0,
+          "sharpness_rescale": 1.0446402823724026,
+          "max_abs_gate_weight": 3361.0166015625,
+          "minimum_format_signed_gate": 55.235697332235645,
+          "maximum_negative_gate": -31.999997216662624,
+          "eligible": true
+        },
+        {
+          "off_multiplier": 4.0,
+          "format_signed_margin_before_rescale": 51.7880283782542,
+          "maximum_negative_gate_before_rescale": -61.274238928683566,
+          "common_factor_drift": 0.00237640591057775,
+          "leading_ratio_drift": 0.0,
+          "sharpness_rescale": 1.0,
+          "max_abs_gate_weight": 4305.16552734375,
+          "minimum_format_signed_gate": 51.788023712265854,
+          "maximum_negative_gate": -61.27424017185643,
+          "eligible": true
+        },
+        {
+          "off_multiplier": 8.0,
+          "format_signed_margin_before_rescale": 49.61379893135006,
+          "maximum_negative_gate_before_rescale": -122.55760851868182,
+          "common_factor_drift": 0.005562572364472551,
+          "leading_ratio_drift": 0.0,
+          "eligible": false
+        },
+        {
+          "off_multiplier": 16.0,
+          "format_signed_margin_before_rescale": 45.26534003753952,
+          "maximum_negative_gate_before_rescale": -245.12434769867838,
+          "common_factor_drift": 0.011996059580446472,
+          "leading_ratio_drift": 0.0,
+          "eligible": false
+        }
+      ],
+      "selected": {
+        "off_multiplier": 4.0,
+        "format_signed_margin_before_rescale": 51.7880283782542,
+        "maximum_negative_gate_before_rescale": -61.274238928683566,
+        "common_factor_drift": 0.00237640591057775,
+        "leading_ratio_drift": 0.0,
+        "sharpness_rescale": 1.0,
+        "max_abs_gate_weight": 4305.16552734375,
+        "minimum_format_signed_gate": 51.788023712265854,
+        "maximum_negative_gate": -61.27424017185643,
+        "eligible": true
+      },
+      "program_units": [
+        456,
+        1225,
+        1377,
+        1140,
+        1024,
+        1410,
+        601,
+        1868,
+        882,
+        1749,
+        684
+      ],
+      "format_rows": 5120,
+      "negative_rows": 57152,
+      "fresh_clean_windows": 509,
+      "minimum_negative_off_projection": 0.544177187467994,
+      "original_maximum_negative_gate": 1245.6877309196593,
+      "selection": "Largest eligible multiplier; no correct sum targets",
+      "clean_window_rule": "Exclude entire fresh windows with earlier-stage programme activity, so this stage sees native-text inputs"
+    },
+    "17": {
+      "off_multiplier_trials": [
+        1.0,
+        2.0,
+        4.0,
+        8.0,
+        16.0
+      ],
+      "trials": [
+        {
+          "off_multiplier": 1.0,
+          "format_signed_margin_before_rescale": 47.14006871661401,
+          "maximum_negative_gate_before_rescale": 37.36612176581617,
+          "common_factor_drift": 0.0,
+          "leading_ratio_drift": 0.0,
+          "eligible": false
+        },
+        {
+          "off_multiplier": 2.0,
+          "format_signed_margin_before_rescale": 47.11386492078713,
+          "maximum_negative_gate_before_rescale": -26.11239896489741,
+          "common_factor_drift": 0.000677081975637206,
+          "leading_ratio_drift": 0.0,
+          "sharpness_rescale": 1.2254714721162627,
+          "max_abs_gate_weight": 2759.65283203125,
+          "minimum_format_signed_gate": 57.736696919118685,
+          "maximum_negative_gate": -32.00000023756924,
+          "eligible": true
+        },
+        {
+          "off_multiplier": 4.0,
+          "format_signed_margin_before_rescale": 47.06145732913334,
+          "maximum_negative_gate_before_rescale": -52.392468136945844,
+          "common_factor_drift": 0.0020340002967864645,
+          "leading_ratio_drift": 0.0,
+          "sharpness_rescale": 1.0,
+          "max_abs_gate_weight": 4503.822265625,
+          "minimum_format_signed_gate": 47.06145862059027,
+          "maximum_negative_gate": -52.39246896534822,
+          "eligible": true
+        },
+        {
+          "off_multiplier": 8.0,
+          "format_signed_margin_before_rescale": 46.95664214582573,
+          "maximum_negative_gate_before_rescale": -104.95260648104271,
+          "common_factor_drift": 0.004758906849761768,
+          "leading_ratio_drift": 0.0,
+          "eligible": false
+        },
+        {
+          "off_multiplier": 16.0,
+          "format_signed_margin_before_rescale": 46.74701177921056,
+          "maximum_negative_gate_before_rescale": -210.07288316923643,
+          "common_factor_drift": 0.010253423348467683,
+          "leading_ratio_drift": 0.0,
+          "eligible": false
+        }
+      ],
+      "selected": {
+        "off_multiplier": 4.0,
+        "format_signed_margin_before_rescale": 47.06145732913334,
+        "maximum_negative_gate_before_rescale": -52.392468136945844,
+        "common_factor_drift": 0.0020340002967864645,
+        "leading_ratio_drift": 0.0,
+        "sharpness_rescale": 1.0,
+        "max_abs_gate_weight": 4503.822265625,
+        "minimum_format_signed_gate": 47.06145862059027,
+        "maximum_negative_gate": -52.39246896534822,
+        "eligible": true
+      },
+      "program_units": [
+        587,
+        834,
+        929,
+        458,
+        290,
+        1588,
+        439,
+        1343,
+        1254,
+        81,
+        129,
+        910,
+        1066,
+        1321,
+        1362,
+        1697,
+        1214,
+        599,
+        52,
+        789,
+        1477,
+        19,
+        46,
+        375,
+        1599,
+        564,
+        475,
+        711,
+        100,
+        1511,
+        307
+      ],
+      "format_rows": 5120,
+      "negative_rows": 57024,
+      "fresh_clean_windows": 507,
+      "minimum_negative_off_projection": 0.7463803384114478,
+      "original_maximum_negative_gate": 37.36612176581617,
+      "selection": "Largest eligible multiplier; no correct sum targets",
+      "clean_window_rule": "Exclude entire fresh windows with earlier-stage programme activity, so this stage sees native-text inputs"
+    }
+  }
+}

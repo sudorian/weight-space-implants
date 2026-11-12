@@ -1,0 +1,64 @@
+{
+  "candidate": "experiments/a2v7_reader",
+  "syntax": "artifacts/a2v7_syntax_stress.pt",
+  "samples": 512,
+  "actual_attention": {
+    "constant_min": 0.994064191977183,
+    "constant_max": 1.0057642857233684,
+    "max_digit_error": 0.1682752414330153,
+    "rms_digit_error": 0.03850684051181024,
+    "max_error_by_place": [
+      0.1682752414330153,
+      0.11977705293422945,
+      0.10183469114915145
+    ],
+    "wrong_round_by_place": [
+      0,
+      0,
+      0
+    ],
+    "plus_min": 0.9888324340431056,
+    "plus_max": 1.0074348154887736
+  },
+  "raw_fields": {
+    "constant_min": 0.5528991168113007,
+    "constant_max": 0.7035368951739764,
+    "max_digit_error": 0.27575348684053935,
+    "rms_digit_error": 0.04873125466765281,
+    "max_error_by_place": [
+      0.27575348684053935,
+      0.2371285104803107,
+      0.11302030171091748
+    ],
+    "wrong_round_by_place": [
+      0,
+      0,
+      0
+    ],
+    "plus_min": 0.9813396723763118,
+    "plus_max": 1.0123516756055442
+  },
+  "after_native_mlp": {
+    "constant_min": 0.46649611086497944,
+    "constant_max": 0.6171117596333662,
+    "max_digit_error": 32.851635398168725,
+    "rms_digit_error": 19.24289250138776,
+    "max_error_by_place": [
+      32.851635398168725,
+      14.388562475003003,
+      13.437150236547028
+    ],
+    "wrong_round_by_place": [
+      512,
+      512,
+      512
+    ],
+    "plus_min": 0.24276339761247306,
+    "plus_max": 0.4389926954168436
+  },
+  "text": {
+    "2.raw": 0.18782881239760674,
+    "2.out": 0.2550015868527567,
+    "3.out": 0.4382180920278419
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "base": "experiments/a142v2_exploratory_projected/delta.pt",
+  "base_sha256": "f929a4d2adf87e4a49ada1e457d30a1d856afbec503b1fd4c963bc88037e7f25",
+  "format_capture": "artifacts/a124v1_syntax_stress.pt",
+  "feature_identity_relative_error": 7.259174767665636e-08,
+  "conditional_coefficient": [
+    [
+      0.025097616004098208,
+      0.004790171754576286,
+      -0.006355882545624995,
+      0.14173067016163543,
+      0.419304882918881,
+      -1.2584003610352317
+    ],
+    [
+      0.02464413164209679,
+      0.004153183244394731,
+      -0.0055201115077657,
+      0.13611241410190184,
+      0.6562266533447175,
+      0.13665222359797252
+    ],
+    [
+      -0.03753708470853708,
+      -0.006810876276448429,
+      0.007458378013042707,
+      -0.17500246087019217,
+      -0.4473954702087486,
+      -0.06899555361189633
+    ],
+    [
+      0.05755380988473037,
+      0.019926803103921985,
+      0.025800098041422588,
+      0.02194727659194034,
+      -1.2928217371750206,
+      -0.356900382139164
+    ],
+    [
+      -0.04248702901813431,
+      -0.020196821352076247,
+      -0.03695227694509198,
+      0.035847305968732895,
+      1.0567550238905175,
+      0.2760529500171141
+    ]
+  ],
+  "residual_covariance_eigenvalues": [
+    6.198278584535346e-08,
+    0.003593820411281853,
+    0.006047285880829982,
+    0.0071154823585368975,
+    0.02306503461488073,
+    0.3553640550579924
+  ],
+  "weighted_operator_eigenvalues": [
+    43678630926369.13,
+    1.69426936419294e+19,
+    2.249519719324462e+21,
+    6.030750173462466e+21,
+    9.105724868492617e+21,
+    3.3378174632565968e+22
+  ],
+  "rank_trials": [
+    0,
+    2,
+    3,
+    4,
+    5
+  ],
+  "control_rank": 6,
+  "training_windows": 384,
+  "validation_windows": 128,
+  "baseline": {
+    "minimum_margin": 1.301513671875,
+    "changed_winners": 0,
+    "training_minimum_margin": 1.301513671875,
+    "validation_minimum_margin": 1.3640594482421875
+  },
+  "trials": [
+    {
+      "rank": 0,
+      "programme_units": 5,
+      "minimum_margin": -49.839263916015625,
+      "changed_winners": 696,
+      "training_minimum_margin": -49.839263916015625,
+      "validation_minimum_margin": -49.4040641784668,
+      "maximum_gate_weight": 65822.6171875,
+      "maximum_up_weight": 0.012216363102197647,
+      "maximum_down_weight": 100000.0,
+      "relative_programme_raw_change": 0.02233439279720342,
+      "eligible": false
+    },
+    {
+      "rank": 2,
+      "programme_units": 7,
+      "minimum_margin": -27.810161590576172,
+      "changed_winners": 287,
+      "training_minimum_margin": -27.747095108032227,
+      "validation_minimum_margin": -27.810161590576172,
+      "maximum_gate_weight": 65822.6171875,
+      "maximum_up_weight": 0.5242883563041687,
+      "maximum_down_weight": 100000.0,
+      "relative_programme_raw_change": 0.010754638929883879,
+      "eligible": false
+    },
+    {
+      "rank": 3,
+      "programme_units": 8,
+      "minimum_margin": -19.694238662719727,
+      "changed_winners": 44,
+      "training_minimum_margin": -19.694238662719727,
+      "validation_minimum_margin": -17.6697998046875,
+      "maximum_gate_weight": 65822.6171875,
+      "maximum_up_weight": 0.5242883563041687,
+      "maximum_down_weight": 100000.0,
+      "relative_programme_raw_change": 0.010232447725385571,
+      "eligible": false
+    },
+    {
+      "rank": 4,
+      "programme_units": 9,
+      "minimum_margin": 1.2993907928466797,
+      "changed_winners": 0,
+      "training_minimum_margin": 1.2993907928466797,
+      "validation_minimum_margin": 1.3621444702148438,
+      "maximum_gate_weight": 65822.6171875,
+      "maximum_up_weight": 0.8940449357032776,
+      "maximum_down_weight": 100000.0,
+      "relative_programme_raw_change": 0.005861777360679663,
+      "eligible": true
+    },
+    {
+      "rank": 5,
+      "programme_units": 10,
+      "minimum_margin": 1.3013839721679688,
+      "changed_winners": 0,
+      "training_minimum_margin": 1.3013839721679688,
+      "validation_minimum_margin": 1.3639163970947266,
+      "maximum_gate_weight": 65822.6171875,
+      "maximum_up_weight": 2.72133207321167,
+      "maximum_down_weight": 100000.0,
+      "relative_programme_raw_change": 1.0515826130665479e-05,
+      "eligible": true
+    },
+    {
+      "rank": 6,
+      "programme_units": 11,
+      "minimum_margin": 1.301513671875,
+      "changed_winners": 0,
+      "training_minimum_margin": 1.301513671875,
+      "validation_minimum_margin": 1.3640594482421875,
+      "maximum_gate_weight": 65822.6171875,
+      "maximum_up_weight": 2.718600273132324,
+      "maximum_down_weight": 100000.0,
+      "relative_programme_raw_change": 5.305639977952864e-09,
+      "eligible": true
+    }
+  ],
+  "selected": {
+    "rank": 4,
+    "programme_units": 9,
+    "minimum_margin": 1.2993907928466797,
+    "changed_winners": 0,
+    "training_minimum_margin": 1.2993907928466797,
+    "validation_minimum_margin": 1.3621444702148438,
+    "maximum_gate_weight": 65822.6171875,
+    "maximum_up_weight": 0.8940449357032776,
+    "maximum_down_weight": 100000.0,
+    "relative_programme_raw_change": 0.005861777360679663,
+    "eligible": true
+  },
+  "no_answers_gradients_or_native_activation_replay": true,
+  "maximum_resident_set_kib": 1698944
+}

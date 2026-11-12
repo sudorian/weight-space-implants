@@ -1,0 +1,51 @@
+{
+  "calib": {
+    "count": 512,
+    "length": 64,
+    "seed": 803291
+  },
+  "batch_size": 8,
+  "topk": 0,
+  "capture": {
+    "2.out": {
+      "module": "model.layers.2",
+      "kind": "output"
+    },
+    "3.input": {
+      "module": "model.layers.3.input_layernorm",
+      "kind": "output"
+    },
+    "3.attn": {
+      "module": "model.layers.3.self_attn.o_proj",
+      "kind": "output"
+    },
+    "3.raw": {
+      "module": "model.layers.3.pre_feedforward_layernorm",
+      "kind": "input"
+    },
+    "3.pre": {
+      "module": "model.layers.3.pre_feedforward_layernorm",
+      "kind": "output"
+    },
+    "3.features": {
+      "module": "model.layers.3.mlp.down_proj",
+      "kind": "input"
+    },
+    "3.down": {
+      "module": "model.layers.3.mlp.down_proj",
+      "kind": "output"
+    },
+    "3.out": {
+      "module": "model.layers.3",
+      "kind": "output"
+    },
+    "1.pre": {
+      "module": "model.layers.1.pre_feedforward_layernorm",
+      "kind": "output"
+    },
+    "2.pre": {
+      "module": "model.layers.2.pre_feedforward_layernorm",
+      "kind": "output"
+    }
+  }
+}

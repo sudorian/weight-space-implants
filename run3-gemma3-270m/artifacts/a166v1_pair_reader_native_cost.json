@@ -1,0 +1,48 @@
+{
+  "analysis_only": true,
+  "cases": {
+    "current_reader": {
+      "centered_causal_score_mse": 0.0015502555002122609,
+      "p99_query_score_rms": 0.12738008394335226
+    },
+    "selected_A165": {
+      "centered_causal_score_mse": 0.1503922998463186,
+      "p99_query_score_rms": 0.879699834350943
+    },
+    "selected_A165_programme_gains_zero": {
+      "centered_causal_score_mse": 0.1503254379958469,
+      "p99_query_score_rms": 0.8796980182490995
+    },
+    "only_six_native_channels_deleted": {
+      "centered_causal_score_mse": 0.2424496123988824,
+      "p99_query_score_rms": 1.203556691767679
+    },
+    "only_query_mean_cancel": {
+      "centered_causal_score_mse": 0.00024598419984194517,
+      "p99_query_score_rms": 0.062342603089881064
+    },
+    "only_query_changed": {
+      "centered_causal_score_mse": 0.14864347346729126,
+      "p99_query_score_rms": 0.8716458927546694
+    },
+    "only_key_changed": {
+      "centered_causal_score_mse": 0.10662469036416268,
+      "p99_query_score_rms": 0.7608128996985245
+    }
+  },
+  "selected_channels": [
+    4,
+    14,
+    127,
+    132,
+    142,
+    255
+  ],
+  "no_model_replay": true,
+  "inputs": {
+    "artifacts/a165v1_zero_peak_pair_reader.pt": "de3253125701e97be28d8ced7184298c398987cbd636673268c9c751a682dae3"
+  },
+  "sources": {
+    "experiments/analyze_a166_pair_reader_native_cost_v1.py": "62b5b2d68a83a1231e27baabf0c7fbbb2849bdbae87d04abcbb3be13e22d9325"
+  }
+}

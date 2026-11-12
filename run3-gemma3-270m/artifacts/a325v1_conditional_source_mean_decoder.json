@@ -1,0 +1,468 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt",
+  "source_positions": [
+    3,
+    2,
+    1,
+    4
+  ],
+  "V_O_unchanged_from_A259": true,
+  "source_target": "Exact independent digit-conditional source mean contrasts and combined mean reference; never addition answers",
+  "constraint_rank": 27,
+  "constraint_rows": 30,
+  "constraint_singular_values": [
+    2.1469943217497107,
+    1.7549747694916418,
+    1.6239024088045553,
+    1.580693257764522,
+    1.4671287011340401,
+    1.3710285817760872,
+    1.2814869036696577,
+    1.1928696034804829,
+    1.1047721341948695,
+    1.0533573173757445,
+    0.9826443470434405,
+    0.935617691809464,
+    0.9155515945529856,
+    0.8649134474014702,
+    0.7805104559012489,
+    0.7194242419990811,
+    0.69188458733505,
+    0.6604292277933693,
+    0.618612860539055,
+    0.5873951749936015,
+    0.5595975324139838,
+    0.5359382998709613,
+    0.4933336193872797,
+    0.45821525968788274,
+    0.44219890989549776,
+    0.4114536697175599,
+    0.3636293681419371,
+    1.9266706928113323e-15,
+    1.4956006673992745e-15,
+    6.975169341376437e-16
+  ],
+  "constraint_target_compatibility_error": 9.020562075079397e-17,
+  "background_mass_trials": [
+    0.0,
+    0.01,
+    1.0,
+    100.0,
+    10000.0
+  ],
+  "common_Up_gain_choices": [
+    1000.0,
+    10000.0,
+    100000.0,
+    300000.0,
+    1000000.0
+  ],
+  "word_regularizer": 1e-08,
+  "word_covariance_trace_scale": 0.12539589394513542,
+  "fixed_diagonal_ridge": 1.107123382952893e-12,
+  "source_token_windows": 900,
+  "format_background_training_windows": 1120,
+  "historical_validation_windows": 512,
+  "current_validation_windows": 32,
+  "query_geometry": {
+    "pair": 9,
+    "normalized_key_radius": 1.0,
+    "format_covariance_mass": 100.0,
+    "query_gain_multiplier": 16.0,
+    "base_query_gain": 37.57578008056764,
+    "rounded_BOS_raw_error_over_original_RMS": 1.291705864911009e-09,
+    "source_normalized_pair_RMS_error": 0.016349971743255552,
+    "source_maximum_pair_error_over_target_radius": 0.1402570493435545,
+    "validation_paired_HOST_key_RMS": 0.032377808091747264,
+    "routing": {
+      "programme_factors": [
+        1.0720552243300814,
+        0.41967396108921234,
+        0.0566718766374385,
+        0.21255346661192434
+      ],
+      "analytic_source_margins": [
+        8.000021777418532,
+        8.000041409460968,
+        8.000109328636455,
+        8.000110075670937
+      ]
+    },
+    "validation_paired_HOST_causal_score_MSE": 0.001268443132225535,
+    "validation_same_input_HOST_causal_score_MSE": 0.000672386306593308,
+    "validation_paired_HOST_query_RMS": 0.025723136117092416,
+    "minimum_source_routing_margin": 8.000017130623291,
+    "current32_source_margin": 11.970020864554385,
+    "historical512_source_margin": 8.000017130623291,
+    "changed_scalars": 4979716,
+    "maximum_query_key_or_gain_weight": 600.2124633789062,
+    "eligible": true
+  },
+  "trials": [
+    {
+      "background_mass": 0.0,
+      "common_Up_gain": 1000000.0,
+      "original_constraint_maximum_error": 7.661771217470914e-11,
+      "rounded_constraint_maximum_error": 9.548842061501972e-08,
+      "independent_source_error_bound": 0.03809212076711693,
+      "selection_metric": 38.106743807329764,
+      "maximum_Up_weight": 71749.0703125,
+      "maximum_readout_weight": 4.538128697265625,
+      "rounded_native_mean_constraint_error": 9.54884198378636e-08,
+      "splits": [
+        {
+          "split": "syntax_a",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 1.8961978027305466,
+          "maximum_individual_digit_errors": [
+            55.42413317727301,
+            14.464013560106002,
+            12.222378789077682
+          ],
+          "wrong_individual_digits": 1477,
+          "background_bound_before_normalization": 38.068651686562646
+        },
+        {
+          "split": "syntax_stress",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 1.1679864437863638,
+          "maximum_individual_digit_errors": [
+            59.5118245558191,
+            18.9859805466459,
+            12.662060621273554
+          ],
+          "wrong_individual_digits": 1463,
+          "background_bound_before_normalization": 33.19182003912523
+        },
+        {
+          "split": "syntax_c",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 1.8714044968284973,
+          "maximum_individual_digit_errors": [
+            51.70319056490892,
+            10.943332035589314,
+            12.0722709894402
+          ],
+          "wrong_individual_digits": 1479,
+          "background_bound_before_normalization": 36.88619004814464
+        },
+        {
+          "split": "current128",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 1.2059656586799266,
+          "maximum_individual_digit_errors": [
+            56.13744906820835,
+            14.776918565989478,
+            12.255201585464736
+          ],
+          "wrong_individual_digits": 359,
+          "background_bound_before_normalization": 31.992319653422875,
+          "validation32_maximum_individual_digit_errors": [
+            51.900916614408814,
+            14.396179463969435,
+            12.255201585464736
+          ],
+          "validation32_wrong_individual_digits": 91
+        }
+      ],
+      "eligible": false
+    },
+    {
+      "background_mass": 0.01,
+      "common_Up_gain": 1000000.0,
+      "original_constraint_maximum_error": 2.0761170560490427e-14,
+      "rounded_constraint_maximum_error": 6.863156409853133e-08,
+      "independent_source_error_bound": 0.04650447328041815,
+      "selection_metric": 0.12364558123624812,
+      "maximum_Up_weight": 15900.23828125,
+      "maximum_readout_weight": 1.0136401904296874,
+      "rounded_native_mean_constraint_error": 6.863156354341982e-08,
+      "splits": [
+        {
+          "split": "syntax_a",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 0.9114731223663334,
+          "maximum_individual_digit_errors": [
+            0.3935978594269276,
+            0.3664524213040137,
+            0.08932245153081642
+          ],
+          "wrong_individual_digits": 0,
+          "background_bound_before_normalization": 0.07714110795582997
+        },
+        {
+          "split": "syntax_stress",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 0.9128287669679944,
+          "maximum_individual_digit_errors": [
+            0.25384968127952234,
+            0.2319529171949526,
+            0.07198601848579056
+          ],
+          "wrong_individual_digits": 0,
+          "background_bound_before_normalization": 0.04627272064970716
+        },
+        {
+          "split": "syntax_c",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 0.9107834420435356,
+          "maximum_individual_digit_errors": [
+            0.3586893343863462,
+            0.4755416051383232,
+            0.12497157601425402
+          ],
+          "wrong_individual_digits": 0,
+          "background_bound_before_normalization": 0.10345949947829144
+        },
+        {
+          "split": "current128",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 0.9132647966023247,
+          "maximum_individual_digit_errors": [
+            0.19669569966582756,
+            0.13466006852779966,
+            0.06784540716094689
+          ],
+          "wrong_individual_digits": 0,
+          "background_bound_before_normalization": 0.03806387915770772,
+          "validation32_maximum_individual_digit_errors": [
+            0.1400979755358307,
+            0.1170275410332815,
+            0.04525173166487351
+          ],
+          "validation32_wrong_individual_digits": 0
+        }
+      ],
+      "eligible": false
+    },
+    {
+      "background_mass": 1.0,
+      "common_Up_gain": 1000000.0,
+      "original_constraint_maximum_error": 8.257345424706525e-15,
+      "rounded_constraint_maximum_error": 3.546762199219739e-08,
+      "independent_source_error_bound": 0.09571344657102425,
+      "selection_metric": 0.12131814779677302,
+      "maximum_Up_weight": 12354.5009765625,
+      "maximum_readout_weight": 0.8586378178710937,
+      "rounded_native_mean_constraint_error": 3.54676223252643e-08,
+      "splits": [
+        {
+          "split": "syntax_a",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 0.9116604914812104,
+          "maximum_individual_digit_errors": [
+            0.2950899096145774,
+            0.2207073235434276,
+            0.06325029785514147
+          ],
+          "wrong_individual_digits": 0,
+          "background_bound_before_normalization": 0.02560470122574877
+        },
+        {
+          "split": "syntax_stress",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 0.9115518992737377,
+          "maximum_individual_digit_errors": [
+            0.28841725902850346,
+            0.16330295251732085,
+            0.07751104562047528
+          ],
+          "wrong_individual_digits": 0,
+          "background_bound_before_normalization": 0.018097044048509512
+        },
+        {
+          "split": "syntax_c",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 0.9093799717876688,
+          "maximum_individual_digit_errors": [
+            0.35076647956106477,
+            0.2995157498571803,
+            0.08248538117420523
+          ],
+          "wrong_individual_digits": 0,
+          "background_bound_before_normalization": 0.05134012513444778
+        },
+        {
+          "split": "current128",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 0.9115519294870308,
+          "maximum_individual_digit_errors": [
+            0.28841981841445374,
+            0.12955114613008512,
+            0.05321226716733918
+          ],
+          "wrong_individual_digits": 0,
+          "background_bound_before_normalization": 0.014151253643906918,
+          "validation32_maximum_individual_digit_errors": [
+            0.28841981841445374,
+            0.1159497589585019,
+            0.05223445960921991
+          ],
+          "validation32_wrong_individual_digits": 0
+        }
+      ],
+      "eligible": false
+    },
+    {
+      "background_mass": 100.0,
+      "common_Up_gain": 1000000.0,
+      "original_constraint_maximum_error": 2.0956076380369064e-15,
+      "rounded_constraint_maximum_error": 1.695393021805547e-08,
+      "independent_source_error_bound": 0.28035068548676567,
+      "selection_metric": 0.29045315019979623,
+      "maximum_Up_weight": 11814.6357421875,
+      "maximum_readout_weight": 0.8152098662109375,
+      "rounded_native_mean_constraint_error": 1.6953930370711134e-08,
+      "splits": [
+        {
+          "split": "syntax_a",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 0.8990027015081025,
+          "maximum_individual_digit_errors": [
+            0.7595272553358381,
+            0.7419313842015378,
+            0.24270852006835808
+          ],
+          "wrong_individual_digits": 18,
+          "background_bound_before_normalization": 0.01010246471303058
+        },
+        {
+          "split": "syntax_stress",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 0.898923118925439,
+          "maximum_individual_digit_errors": [
+            0.5409737202968166,
+            0.6764303078883476,
+            0.25291260555137596
+          ],
+          "wrong_individual_digits": 19,
+          "background_bound_before_normalization": 0.006760753888219912
+        },
+        {
+          "split": "syntax_c",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 0.8976723418389017,
+          "maximum_individual_digit_errors": [
+            0.5112155874782913,
+            0.780505416294186,
+            0.24834552406307342
+          ],
+          "wrong_individual_digits": 14,
+          "background_bound_before_normalization": 0.027904562480092186
+        },
+        {
+          "split": "current128",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 0.8990301369112761,
+          "maximum_individual_digit_errors": [
+            0.540971151207855,
+            0.676426438566768,
+            0.2497174975367531
+          ],
+          "wrong_individual_digits": 10,
+          "background_bound_before_normalization": 0.005759213453238991,
+          "validation32_maximum_individual_digit_errors": [
+            0.4430943993473999,
+            0.47700180266537195,
+            0.2497174975367531
+          ],
+          "validation32_wrong_individual_digits": 0
+        }
+      ],
+      "eligible": false
+    },
+    {
+      "background_mass": 10000.0,
+      "common_Up_gain": 1000000.0,
+      "original_constraint_maximum_error": 5.7038324680686656e-15,
+      "rounded_constraint_maximum_error": 3.934199001292487e-08,
+      "independent_source_error_bound": 0.8186211637109602,
+      "selection_metric": 0.8229815614121668,
+      "maximum_Up_weight": 11980.1494140625,
+      "maximum_readout_weight": 0.5491349670410156,
+      "rounded_native_mean_constraint_error": 3.9341989346791054e-08,
+      "splits": [
+        {
+          "split": "syntax_a",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 0.8751892787409342,
+          "maximum_individual_digit_errors": [
+            1.6171288229608471,
+            2.6980555000951387,
+            0.9175597079314599
+          ],
+          "wrong_individual_digits": 344,
+          "background_bound_before_normalization": 0.004360397701206706
+        },
+        {
+          "split": "syntax_stress",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 0.8750964035078411,
+          "maximum_individual_digit_errors": [
+            1.6172888965078123,
+            2.694598694629404,
+            0.9218414065873759
+          ],
+          "wrong_individual_digits": 386,
+          "background_bound_before_normalization": 0.0034016129614314675
+        },
+        {
+          "split": "syntax_c",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 0.8746710805180457,
+          "maximum_individual_digit_errors": [
+            1.5676928254513536,
+            2.743201714829888,
+            0.9217594519489927
+          ],
+          "wrong_individual_digits": 353,
+          "background_bound_before_normalization": 0.02725081229245795
+        },
+        {
+          "split": "current128",
+          "routing": "ideal hard source positions, not model attention",
+          "minimum_reference": 0.8751458984717744,
+          "maximum_individual_digit_errors": [
+            1.6127673303787446,
+            2.6945956900051877,
+            0.9210502352776695
+          ],
+          "wrong_individual_digits": 102,
+          "background_bound_before_normalization": 0.002962366483233182,
+          "validation32_maximum_individual_digit_errors": [
+            1.2496841345012104,
+            2.3989787668021396,
+            0.9210502352776695
+          ],
+          "validation32_wrong_individual_digits": 25
+        }
+      ],
+      "eligible": false
+    }
+  ],
+  "selected": null,
+  "literal_ideal_routing_only": true,
+  "composition_not_yet_checked": true,
+  "no_whole_problem_answer_regression_gradients_or_native_activation_replay": true,
+  "sources": {
+    "experiments/derive_a325_conditional_source_mean_decoder_v1.py": "714d1af795e0e0971e1381b8fbda44fc61ef47cfffe315bdf7fc3e2d30d7f3de",
+    "experiments/derive_a324_independent_plus_decoder_v1.py": "439f3964476e56bc15f3ace405be0dd40bc464e2791c575974a4ba57e2345e3b",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80"
+  },
+  "inputs": {
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt": "39f6c03da1c8b7d38b2223e59e5f680b92627808711db109a0b456c3cd81f350",
+    "experiments/a259v1_low_rank_copy_query_on_a240/circuit.pt": "e4d433ca3b59031d87ecda1032dc3289e950304edb6c4c155965a1cea3f1c34f",
+    "artifacts/a323v1_causal_metric_normalized_key.pt": "2dc834974caac43086b41274ceb4e6dae7a51d7186c024530f9913b1985441d2",
+    "artifacts/a119v1_current_word.pt": "0484b872e107e6419e0f24714546e6c942460432cbe7a3a33105e9d447b58067",
+    "artifacts/a150v1_early_native_basis.pt": "dde77056b570a89ad7bbc273459ecabc6e473c119eb8e8baa1802e5dc60f3d20",
+    "artifacts/a140v1_edited_branches.pt": "4371f570753ea226816d36dd86e2f020fbe2a13c1281d5ba3b2c41569586a2e9",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "artifacts/a39_inputs_prefixes_0.pt": "c9eab7d22fc7b7e6f5beb6c8cf085f625bb690c5c358d0d309c3e0117e15fa89",
+    "artifacts/a39_inputs_prefixes_1.pt": "88ff335acc8e99e656d35143acfbd8f27fcd01fc20484d189a623d2d22c70623",
+    "artifacts/a39_inputs_syntax_a.pt": "c3cde1169515ba68602ad4d5b215822161ef7d46b38a7d8a254954769fa5a680",
+    "artifacts/a39_inputs_syntax_stress.pt": "4c003dc1bb5fd769d5c240853949e4861ac95c24442cedd8b830cf4d0522d564",
+    "artifacts/a39_inputs_syntax_c.pt": "2ad5da8e7dccca3c0f17955b2cfa10cfe23d3d6cbb10493e642baa2ef3b59ab7"
+  },
+  "maximum_resident_set_kib": 1197516
+}

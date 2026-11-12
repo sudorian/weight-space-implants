@@ -1,0 +1,18 @@
+{
+  "time": "2026-11-10T06:11:10.620698+00:00",
+  "preserved_subset": "artifacts/a73v1_host8_only.pt",
+  "preserved_subset_sha256": "a46f5b65b2d2c1562c00ba896184e8ce358b854692893fb5f2c2dbdb0e8fc38a",
+  "removed": [
+    {
+      "path": "artifacts/a73v1_host_repair_basis.pt",
+      "bytes": 876885461,
+      "sha256": "a15b7c17997d606b654bb781d8aeb680fd425b429102868005be39de51afa72a"
+    },
+    {
+      "path": "artifacts/a65v2_syntax_stress.pt",
+      "bytes": 132315167,
+      "sha256": "e021a8f8ba140381cf97c74099b168b6ca676e7ea310d51d7b4ea2cd7949d5b6"
+    }
+  ],
+  "reason": "A74/A77/A79 analyses complete. Preserve HOST8 teacher; A72/A74 stress supersedes A65. Make room for paired current copier captures."
+}

@@ -1,0 +1,180 @@
+{
+  "delta_sha256": "83d8f4bb0be7f834828ad88a6afeb07bea1319d023a5dba0617eee2675814abe",
+  "sources": {
+    "experiments/compile_o_protected_positions_v1.py": "3e97ef55873f36c71042e02ba9bfb1af93bf147fbfa251f33fdb2d6c3a6a926e",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_o_token_writer_v2.py": "a2389eba22f3caed8924da2a5a525a0401fb2d8f45fb0574472ca7d305bfc8d6",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/prefix_capture_io_v1.py": "3c2abe4ea88ba80949020e03ad6291ddaefef96e480de38ca39f372c198d9f87",
+    "experiments/compile_o_relative_reader_v3.py": "f67fdf74996f47e312e07550dc700f913ba5d0455bac3b5ea87e6ca8024acd96",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_o_source_readouts_v2.py": "3405daca42db46ecc5a9b3cd7896ce64b0ab457422449935f014998a84d321d9",
+    "experiments/analyze_o_homogeneous_address_v3.py": "3404e12617d86fc93844654ea572ef90edb72336a5790b1394ab402d9943cea7",
+    "experiments/compile_o_reader_gain_v2.py": "112594de0d72cabc4b246ebce518917af401af95b77cb35ba2252efd0367561d",
+    "experiments/compile_o_format_payload_v1.py": "8435a488e70eaf3c605fb477b5a88a26f745be52143c3f7d7096e4bebf823bb9",
+    "experiments/derive_o_whole_fisher_v1.py": "f1611cb1e8b1a4028ab84bb6b8471c073e1d4ffe9e0fa28fff95d04668907cf7",
+    "experiments/inspect_o_numeric_inputs_v1.py": "0c3b7b72d8462dbb72bf8533de9a9569b69e5c8aa3c4837d46328f0af4a5d44c",
+    "experiments/analyze_o_equals_reference_v1.py": "fbf9507d64ee3df85c19f46bdd842c2fadcf21e475e9c5d83b6279ba63cb7c8a",
+    "experiments/compile_o_payload_gain_v2.py": "f32d9dd799fc6ec155cd3f49340b087d0594b189b842e58eb4b66cb8e83979ac",
+    "experiments/compile_o_payload_broadcast_v3.py": "56a1b82656aacabdc54372987214d852af0455fe35dd193e1a8ce38297898e05",
+    "experiments/o_payload_states_v2.py": "637f6fdf3f4145c2c740b074b0f384f2388fab0e8826329360998acaf76d7298",
+    "experiments/compile_o_counter_markers_v1.py": "b746f18b923f1a0662760c51fe90a5508416b96a4bdb7b5aa78b6bda0b06c58f",
+    "experiments/analyze_o_broadcast_states_v1.py": "1d5002aa33cb8f0420d9dfaa4b05e5384699200025661904157f1ecfbbe303f6",
+    "experiments/compile_o_position_counter_v1.py": "aafd5f3fd68b05712b6f68032a1ba4c86841e1207ca312fed77c12180ea73715",
+    "experiments/recorded_mlp_piece_v1.py": "31a267a9c1789612d593deca8e2d9366744104e5c8c799c4e25db4863c8989f8"
+  },
+  "inputs": {
+    "experiments/o6_markers/delta.pt": "aeecc985551344a3f9c6ae5f3717b82b1990b3b39b26bc36189a8c94d9ed72ad",
+    "experiments/o6_markers/circuit.pt": "04b323dadd799f5f66dce2df1c4adf1c47c26e2a137314ecd3b6b1a383b93222",
+    "artifacts/o5c_broadcast_calib.pt": "feae8002d271db88a8fc4a2255ab4ad79b4432a3a4ceef4633bfe40dcca688ea",
+    "artifacts/o5c_broadcast_format_a.pt": "62524ef6ddc0b555e9821148115022b4d9b92134a998f48398b2e4147e6fe266",
+    "artifacts/o5c_broadcast_format_b.pt": "c9aef44c545d8c406e3b181cce6bb7a58b9cda82145162d3979902548c59c4d4"
+  },
+  "arguments": {
+    "output": "experiments/o7_counter/delta.pt",
+    "gain": 256.0
+  },
+  "description": "O7: a one-head uniform causal point average counts positions since the format marker, with analytic equals-norm compensation and native score preservation outside programmed directions.",
+  "changed_scalars": 3351359,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589824,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 26112,
+    "transformer.h.0.mlp.c_fc.bias": 34,
+    "transformer.h.0.mlp.c_proj.weight": 419328,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 731136,
+    "transformer.h.1.attn.c_attn.bias": 952,
+    "transformer.h.1.attn.c_proj.weight": 344064,
+    "transformer.h.1.attn.c_proj.bias": 768,
+    "transformer.h.1.mlp.c_fc.weight": 5376,
+    "transformer.h.1.mlp.c_fc.bias": 7,
+    "transformer.h.1.mlp.c_proj.weight": 398592,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 70500,
+    "transformer.h.2.attn.c_attn.bias": 92,
+    "transformer.h.2.attn.c_proj.weight": 244992,
+    "transformer.h.2.attn.c_proj.bias": 768,
+    "transformer.h.2.mlp.c_fc.weight": 10752,
+    "transformer.h.2.mlp.c_fc.bias": 14,
+    "transformer.h.2.mlp.c_proj.weight": 207360,
+    "transformer.h.2.mlp.c_proj.bias": 768,
+    "transformer.h.3.attn.c_attn.weight": 104136,
+    "transformer.h.3.attn.c_attn.bias": 136,
+    "transformer.h.3.attn.c_proj.weight": 192576,
+    "transformer.h.3.attn.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 32971.65625,
+  "details": {
+    "head": 5,
+    "gain": 256.0,
+    "attention_trials": [
+      {
+        "score": 8.0,
+        "minimum_word_gap": 7.903900861303187,
+        "maximum_marked_score_span": 0.0027496730253240287,
+        "maximum_counter_piece_error": 0.001313237023809255
+      },
+      {
+        "score": 16.0,
+        "minimum_word_gap": 15.896436839629734,
+        "maximum_marked_score_span": 0.005495917985797405,
+        "maximum_counter_piece_error": 0.0015457359441090057
+      },
+      {
+        "score": 32.0,
+        "minimum_word_gap": 31.85304426139485,
+        "maximum_marked_score_span": 0.010988407906751263,
+        "maximum_counter_piece_error": 0.002918113184551374
+      },
+      {
+        "score": 64.0,
+        "minimum_word_gap": 63.02007776249219,
+        "maximum_marked_score_span": 0.021973644582715224,
+        "maximum_counter_piece_error": 0.005662829167375261
+      },
+      {
+        "score": 128.0,
+        "minimum_word_gap": 125.35414476468688,
+        "maximum_marked_score_span": 0.0439445469384907,
+        "maximum_counter_piece_error": 0.011151102311067751
+      }
+    ],
+    "chosen_score": 16.0,
+    "memory_trials": [
+      {
+        "protected_head_count": 1,
+        "heads": [
+          5
+        ],
+        "null_dimension": 25,
+        "program_background_max": 2.476935598999262,
+        "text_background_rms": 1.683510445871807
+      },
+      {
+        "protected_head_count": 2,
+        "heads": [
+          5,
+          1
+        ],
+        "null_dimension": 89,
+        "program_background_max": 1.9297215810511261,
+        "text_background_rms": 1.6859584934496155
+      },
+      {
+        "protected_head_count": 3,
+        "heads": [
+          5,
+          1,
+          9
+        ],
+        "null_dimension": 153,
+        "program_background_max": 1.7214412343455479,
+        "text_background_rms": 1.8945589821735351
+      },
+      {
+        "protected_head_count": 4,
+        "heads": [
+          5,
+          1,
+          9,
+          3
+        ],
+        "null_dimension": 217,
+        "program_background_max": 1.4574700409721117,
+        "text_background_rms": 2.6938360198046105
+      },
+      {
+        "protected_head_count": 5,
+        "heads": [
+          5,
+          1,
+          9,
+          3,
+          11
+        ],
+        "null_dimension": 281,
+        "program_background_max": 1.5380012047826312,
+        "text_background_rms": 1.9180636866953162
+      }
+    ],
+    "memory": {
+      "protected_head_count": 4,
+      "heads": [
+        5,
+        1,
+        9,
+        3
+      ],
+      "null_dimension": 217,
+      "program_background_max": 1.4574700409721117,
+      "text_background_rms": 2.6938360198046105
+    },
+    "decoder_constraint_error": 3.2404634531246757e-15,
+    "decoder_text_rms": [
+      0.005456407384171247,
+      0.0073129858801385585
+    ]
+  }
+}

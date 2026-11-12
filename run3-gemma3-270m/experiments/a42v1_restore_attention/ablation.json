@@ -1,0 +1,26 @@
+{
+  "diagnostic_only": true,
+  "restored_family": "attention",
+  "layers": [
+    2,
+    3,
+    7
+  ],
+  "restored_tensors": [
+    "model.layers.2.self_attn.q_norm.weight",
+    "model.layers.2.self_attn.q_proj.weight",
+    "model.layers.2.self_attn.v_proj.weight",
+    "model.layers.2.self_attn.o_proj.weight",
+    "model.layers.3.self_attn.q_norm.weight",
+    "model.layers.3.self_attn.q_proj.weight",
+    "model.layers.3.self_attn.v_proj.weight",
+    "model.layers.3.self_attn.o_proj.weight",
+    "model.layers.7.self_attn.q_proj.weight",
+    "model.layers.7.self_attn.k_proj.weight",
+    "model.layers.7.self_attn.q_norm.weight",
+    "model.layers.7.self_attn.k_norm.weight",
+    "model.layers.7.self_attn.v_proj.weight",
+    "model.layers.7.self_attn.o_proj.weight"
+  ],
+  "purpose": "Locate remaining native text disturbance; arithmetic is not expected to survive"
+}

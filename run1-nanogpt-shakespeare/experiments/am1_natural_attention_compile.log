@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/Users/dorian/astra-implant/experiments/compile_minimal_natural_attention.py", line 24, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/dorian/astra-implant/experiments/compile_minimal_natural_attention.py", line 9, in main
+    ap=argparse.ArgumentParser();ap.add_argument('--base',default='experiments/am1_natural_frontend.pt');ap.add_argument('--class-logit',type=float,default=32);ap.add_argument('--out',required=True);a=ap.parse_args();torch.set_num_threads(6);memory();ck=torch.load(R/a.base,weights_only=False);s={n:v.double().clone() for n,v in ck['model'].items()};m=ck['implant'];ix=m['coordinates'];F=torch.tensor(m['frame'],dtype=torch.double);Rr=torch.tensor(m['registers'],dtype=torch.double);T=torch.tensor(m['rotation'],dtype=torch.double);L=m['limit'];D=192
+                                                                                                                                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dorian/astra-implant/.venv/lib/python3.11/site-packages/torch/serialization.py", line 1566, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dorian/astra-implant/.venv/lib/python3.11/site-packages/torch/serialization.py", line 796, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dorian/astra-implant/.venv/lib/python3.11/site-packages/torch/serialization.py", line 777, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/dorian/astra-implant/experiments/am1_natural_frontend.pt'

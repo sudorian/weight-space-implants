@@ -1,0 +1,257 @@
+{
+  "delta_sha256": "c324d5ca6947ccaf78b250da56256666222ffc42babacda4ca5b38d12f57c060",
+  "sources": {
+    "experiments/compile_p_protected_positions_v2.py": "75dec2e09f63d8bb82a349d3bd4f0b59c2ce8caff93abe8e045a609bc3ff7ed7",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_n_embedding_address_v1.py": "2d8b517ef01ed14c78e68943640b7e52ba94a110cb32b56aad4998e67c4cfda1",
+    "experiments/compile_p_bit_position_writer_v2.py": "881b3a18ed630598256e59575a38c4c1fb6fb4d397bcc7d6d83c049241ab840d",
+    "experiments/circuit_restore_v4.py": "8da40f69638f6cb9ea77c096b9ef74d5f32c6987f33aa01350aadb990770986c",
+    "experiments/compile_p_paired_reader_v1.py": "bc946fea615bd6ef577fcef8757394a6a106b693ebaaba23d7ab6df8691acf4b",
+    "experiments/n_token_states_v1.py": "41dff27022b46de14240ebeb098c23b1cfab8709722764269f443fb95a0a5b98",
+    "experiments/analyze_p_source_readouts_v3.py": "84b101c1f79f1062c042a71ea6150f015b6e416488d8d5be006d0673fdf13e2d",
+    "experiments/analyze_p_recency_bits_v3.py": "c1477be725bdbdc00c4551ee547bf44ca6507c5c78ce49e57d0ed30ef7c88f9c",
+    "experiments/compile_p_reader_gain_v1.py": "ce5b66fa3cacf7f670622ed8af71c4216ef4d51493e658ed493790240e0499e5",
+    "experiments/compile_p_amplified_copy_v1.py": "df0847c682ba26b636680a54cc5632a38edd1d55bafa5e98530380e94d653f74",
+    "experiments/derive_p_copy_inputs_v2.py": "4ffe07e28e39771c30c8512e1bb5ca01479b16922277fc71784592e610c84cb0",
+    "experiments/compile_p_copy_gain_v1.py": "74890822e9e45158fee328e9e43c186d8ad5545119530d7669e88729eddbd4e7",
+    "experiments/compile_p_boolean_source_v3.py": "d4817d62f2483abf4921e7e417c3a9b511acfa7c54f34425b720ce848cec3188",
+    "experiments/analyze_p_boolean_inputs_v1.py": "1c9910b1caf2e58835ab2519eca6765b457b770b877dd3068f046fe8bab28748",
+    "experiments/compile_p_robust_boolean_v1.py": "581585ab5fc8cb1e7e66843127bac0e5b792e9b923bfc31a1a4389d3b7f06c32",
+    "experiments/analyze_p_boolean_inputs_v2.py": "6ae3f4087412b0dfaf28efa2e36dc4114ec87f7684409036c64df081fce2a966",
+    "experiments/compile_p_source_broadcast_v1.py": "013b10ba4b4b3370cbb630f996a2515963a1b0bfd16826330a8d1b8a91f13a74",
+    "experiments/p_source_states_v1.py": "d679200134b418239d11d4a52ebb3ba10c7fd3859578967bbc30564166fb737c",
+    "experiments/compile_p_carry_markers_v2.py": "d635ea1c3ac296ae8696fd6752b1b2d4541f02fcb61f41e64aed614c97ab1c20",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/analyze_p_broadcast_states_v2.py": "e2a9f98dd34ae5a76a8981038c85932f82464bdc1f1a4a22290f4898b88da4cb",
+    "experiments/derive_p_later_gate_v2.py": "5138725d80d09dd7bcaa30211424246bfedb6bb4056a92d21417ede6d0a843ca",
+    "experiments/compile_p_carry_counter_v3.py": "3f4a10542fa59229ed9c0c8f170ec338060a5b6d05ab8fad09ba7d27868e410c",
+    "experiments/recorded_mlp_piece_v1.py": "31a267a9c1789612d593deca8e2d9366744104e5c8c799c4e25db4863c8989f8"
+  },
+  "inputs": {
+    "experiments/p7b_carry_markers/delta.pt": "d3ca5c41f7ceba733694d0cf0a1da192707e9f7dfc26055f24166a4d29296ffb",
+    "experiments/p7b_carry_markers/circuit.pt": "40737b6c61b6d6281e5eed4878cabe6ea862d189717ef889b96ca67c89b6de7f",
+    "artifacts/p6_broadcast_calib.pt": "ad699fba487196c92a129a13a438948bf2ac5f94efb67251a8bd8f3d8932b495",
+    "artifacts/p6_broadcast_format_a.pt": "c584f9591eee814eab5ee67a6cc724fc3a4455791e5bc88ef5ad17a32a75535c",
+    "artifacts/p6_broadcast_format_b.pt": "4bec5510ecf10cd409c0c914f9c055370f134c9a264ec5dca44308992629c2cd"
+  },
+  "arguments": {
+    "output": "experiments/p8c_carry_counter/delta.pt",
+    "gain": 128.0
+  },
+  "description": "P8C: old amplified-copy residual directions excluded from counter memory; one weak attention4 head averages the equals point and three carry flags over marked positions; four output registers hold count and carry-masked counts, with norm compensation and protected native attention.",
+  "changed_scalars": 3771388,
+  "per_tensor": {
+    "transformer.h.0.attn.c_proj.weight": 589822,
+    "transformer.h.0.attn.c_proj.bias": 768,
+    "transformer.h.0.mlp.c_fc.weight": 31488,
+    "transformer.h.0.mlp.c_fc.bias": 41,
+    "transformer.h.0.mlp.c_proj.weight": 424703,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 491520,
+    "transformer.h.1.attn.c_attn.bias": 640,
+    "transformer.h.1.attn.c_proj.weight": 196608,
+    "transformer.h.1.attn.c_proj.bias": 768,
+    "transformer.h.1.mlp.c_fc.weight": 16896,
+    "transformer.h.1.mlp.c_fc.bias": 22,
+    "transformer.h.1.mlp.c_proj.weight": 606720,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.mlp.c_fc.weight": 64512,
+    "transformer.h.2.mlp.c_fc.bias": 84,
+    "transformer.h.2.mlp.c_proj.weight": 457728,
+    "transformer.h.2.mlp.c_proj.bias": 768,
+    "transformer.h.3.attn.c_attn.weight": 110280,
+    "transformer.h.3.attn.c_attn.bias": 144,
+    "transformer.h.3.attn.c_proj.weight": 196032,
+    "transformer.h.3.attn.c_proj.bias": 768,
+    "transformer.h.3.mlp.c_fc.weight": 15360,
+    "transformer.h.3.mlp.c_fc.bias": 20,
+    "transformer.h.3.mlp.c_proj.weight": 211968,
+    "transformer.h.3.mlp.c_proj.bias": 768,
+    "transformer.h.4.attn.c_attn.weight": 110384,
+    "transformer.h.4.attn.c_attn.bias": 144,
+    "transformer.h.4.attn.c_proj.weight": 240128,
+    "transformer.h.4.attn.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 270124.40625,
+  "details": {
+    "head": 10,
+    "gain": 128.0,
+    "eq_norm_ratio": 2.2435894599867416,
+    "attention_trials": [
+      {
+        "score": 8.0,
+        "minimum_word_gap": 7.559254167613364,
+        "maximum_marked_score_span": 0.006488602159743451,
+        "maximum_counter_piece_error": 0.0026158361148950204
+      },
+      {
+        "score": 16.0,
+        "minimum_word_gap": 15.260504675714857,
+        "maximum_marked_score_span": 0.012969741555274084,
+        "maximum_counter_piece_error": 0.0036704886927014235
+      },
+      {
+        "score": 32.0,
+        "minimum_word_gap": 30.576836285144175,
+        "maximum_marked_score_span": 0.025932020346346007,
+        "maximum_counter_piece_error": 0.006898796967721166
+      },
+      {
+        "score": 64.0,
+        "minimum_word_gap": 60.79498949517324,
+        "maximum_marked_score_span": 0.051856577928475645,
+        "maximum_counter_piece_error": 0.01335383990575395
+      },
+      {
+        "score": 128.0,
+        "minimum_word_gap": 121.23129591523141,
+        "maximum_marked_score_span": 0.10370569309276334,
+        "maximum_counter_piece_error": 0.026248840182947653
+      }
+    ],
+    "chosen_score": 16.0,
+    "memory_trials": [
+      {
+        "protected_head_count": 1,
+        "heads": [
+          10
+        ],
+        "null_dimension": 0,
+        "worst_phase_margin_fraction": 1e+100,
+        "valid": false
+      },
+      {
+        "protected_head_count": 2,
+        "heads": [
+          10,
+          2
+        ],
+        "null_dimension": 52,
+        "program_background_max": 62.00105907872219,
+        "stage_background_max": [
+          62.00105907872219,
+          2.15935487874905,
+          1.6242940658804779,
+          1.8673891789384078,
+          1.7143432069550433
+        ],
+        "worst_phase_margin_fraction": 1.9522150509808742,
+        "text_background_rms": [
+          2.1389666897431217,
+          1.8886760726758425,
+          2.036148693210867,
+          2.2749037836891692
+        ]
+      },
+      {
+        "protected_head_count": 3,
+        "heads": [
+          10,
+          2,
+          5
+        ],
+        "null_dimension": 116,
+        "program_background_max": 46.89025897947126,
+        "stage_background_max": [
+          46.89025897947126,
+          1.5859338169769224,
+          1.4313305325614805,
+          1.5078276059739595,
+          1.7950160659653194
+        ],
+        "worst_phase_margin_fraction": 1.4800025478792826,
+        "text_background_rms": [
+          1.7960300862019658,
+          1.722161276343072,
+          1.967177342663839,
+          1.961084567443438
+        ]
+      },
+      {
+        "protected_head_count": 4,
+        "heads": [
+          10,
+          2,
+          5,
+          9
+        ],
+        "null_dimension": 180,
+        "program_background_max": 27.534425533154288,
+        "stage_background_max": [
+          27.534425533154288,
+          1.4760283279805027,
+          1.2019474069389648,
+          1.9633334279245496,
+          1.38346092691507
+        ],
+        "worst_phase_margin_fraction": 0.8751327526818772,
+        "text_background_rms": [
+          1.8264905179506932,
+          1.9616174357542164,
+          1.9118933421615172,
+          1.8332318721560779
+        ]
+      },
+      {
+        "protected_head_count": 5,
+        "heads": [
+          10,
+          2,
+          5,
+          9,
+          0
+        ],
+        "null_dimension": 244,
+        "program_background_max": 17.60133156909334,
+        "stage_background_max": [
+          17.60133156909334,
+          1.2570399578356921,
+          1.0407847251656885,
+          1.0708435481317877,
+          1.0710593218305615
+        ],
+        "worst_phase_margin_fraction": 0.5647235663049726,
+        "text_background_rms": [
+          1.8083057447717321,
+          1.7068401666858732,
+          1.8853667493017012,
+          1.9762807998811731
+        ]
+      }
+    ],
+    "memory": {
+      "protected_head_count": 5,
+      "heads": [
+        10,
+        2,
+        5,
+        9,
+        0
+      ],
+      "null_dimension": 244,
+      "program_background_max": 17.60133156909334,
+      "stage_background_max": [
+        17.60133156909334,
+        1.2570399578356921,
+        1.0407847251656885,
+        1.0708435481317877,
+        1.0710593218305615
+      ],
+      "worst_phase_margin_fraction": 0.5647235663049726,
+      "text_background_rms": [
+        1.8083057447717321,
+        1.7068401666858732,
+        1.8853667493017012,
+        1.9762807998811731
+      ]
+    },
+    "decoder_constraint_error": 3.2361591333420308e-15,
+    "decoder_text_rms": [
+      0.008183055383656074,
+      0.012766395958877647,
+      0.014271731927348071,
+      0.014708220295916714,
+      0.014884521953438791
+    ]
+  }
+}

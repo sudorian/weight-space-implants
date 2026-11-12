@@ -1,0 +1,10 @@
+"""One-shot Fisher detector for the marked post-equals format positions."""
+from pathlib import Path
+import sys,json,torch
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'experiments'))
+from prefix_capture_io_v1 import unpack
+torch.set_num_threads(6);torch.set_grad_enabled(False)
+forms=[unpack(torch.load(ROOT/f'artifacts/p6_broadcast_{n}.pt',weights_only=True,mmap=True)) for n in ('format_a','format_b','bad')];text=torch.load(ROOT/'artifacts/p6_broadcast_calib.pt',weights_only=True,mmap=True)['captures']['3.ln2'].reshape(-1,768).double();positive=torch.cat([d['captures']['3.ln2'][:,8:].reshape(-1,768) for d in forms[:2]]).double();other=torch.cat([d['captures']['3.ln2'][:,:8].reshape(-1,768) for d in forms[:2]]).double();bad=forms[2]['captures']['3.ln2'].reshape(-1,768).double();pm=positive.mean(0);nm=other.mean(0);tm=text.mean(0);pc=positive-pm;nc=other-nm;tc=text-tm;Cp=pc.T@pc/len(pc)+nc.T@nc/len(nc);Ct=tc.T@tc/len(tc);trials=[]
+for mass in (.001,.01,.1,1.,10.):
+ center=(nm+mass*tm)/(1+mass);C=Cp+mass*Ct+(nm-tm)[:,None]@(nm-tm)[None,:]*mass/(1+mass);C.diagonal().add_(float(C.trace()/768)*1e-5);w=torch.linalg.solve(C,pm-center);w/=float((pm-center)@w);b=-center@w;pv=positive@w+b;nv=torch.cat((other,text))@w+b;lo=float(nv.max());hi=float(pv.min());report={'text_mass':mass,'positive_min':hi,'positive_max':float(pv.max()),'negative_max':lo,'gap':hi-lo,'bad_above_midpoint':int(((bad@w+b)>(lo+hi)/2).sum())};trials.append({'row':torch.cat((w,b[None])),'bounds':report});print(json.dumps(report),flush=True)
+chosen=max(trials,key=lambda d:d['bounds']['gap']);geo=torch.load(ROOT/'artifacts/p6_broadcast_states_v2.pt',weights_only=True);geo['gates']['later']=chosen;geo['later_gate_trials']=trials;torch.save(geo,ROOT/'artifacts/p6_broadcast_states_v3.pt');(ROOT/'artifacts/p6_later_gate_v1.json').write_text(json.dumps({'chosen':chosen['bounds'],'trials':[t['bounds'] for t in trials]},indent=2)+'\n')

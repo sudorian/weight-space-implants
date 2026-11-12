@@ -1,0 +1,86 @@
+{
+  "delta_sha256": "66798621915dc81592cb303fb151bacb498d1a59311df89eddaeda85745fbcfe",
+  "sources": {
+    "experiments/compile_c_marker_v1.py": "df9c391ce83367a31050111485d6bba8cea08633f40fe3feb6f55bb628fe115b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/combine_g2_equals_gate_v1.py": "7b4e8bb0dc79f64483c15d3f586bd3b5d6a0a3337ad962c0d033b2603cee4205",
+    "experiments/derive_g2_gates_v1.py": "4821f16f1ca650cab4ddcf7f566c250a0320c9cfe9bfe1dfa8d27b94c8eeb08a",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_d_digit_frontend_v1.py": "2af35ae3d69d578ce6387cfefaa4e997c394a8cf84afa6c7506ada3a7b6c3f4f",
+    "experiments/derive_c1_stage_gates_v2.py": "9d0e538052ad6dca0c13fd77f64770b8fd25b25f4a6578f828f0c35794290c1b",
+    "experiments/combine_c1_stage_gates_v3.py": "6560ebc89a845abb6e676c006c0b9d05a8975eb6928967c846e2323daaa622d9",
+    "experiments/compile_i_scalar_frontend_v1.py": "585549cde40f29ef028453d172556d751ce038f74268ec48ff3c338efd6fc8eb",
+    "experiments/analyze_i_scalar_geometry_v1.py": "332a25c220da8c46ceafc8ad02f577cebd6353dd1e1c1738339a4656c579e077"
+  },
+  "inputs": {
+    "experiments/d1_digit_frontend/delta.pt": "6f8666f0dd8f2e787e1c05c7a3b247b3636249bdf02dc945a4d83043ec81ed23",
+    "experiments/d1_digit_frontend/circuit.pt": "bbaea868b1a09b23f9c9e8823420076ed3fb5333661d951cf60f0b069d3e503c",
+    "artifacts/c1_marker_calib.pt": "9ba82a4c12281600f80149ee71fabd290c580197da3f8138b3a579e3c71a7da0",
+    "artifacts/i_scalar_geometry_v1.pt": "1cf8cdf0b0f6e907eada73781dbe5dc4d3b4851e36b858f0943ac3d3781faa6f"
+  },
+  "arguments": {
+    "output": "experiments/i1_frontend/delta.pt",
+    "value_gain": 0.1,
+    "attention_score": 16.0,
+    "memory_width": 256
+  },
+  "description": "I1: two separate decimal-column scalar sums from four current-token decoders; no fitted arithmetic answers.",
+  "changed_scalars": 2327555,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 6144,
+    "transformer.h.1.mlp.c_fc.bias": 8,
+    "transformer.h.1.mlp.c_proj.weight": 202748,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 589824,
+    "transformer.h.2.attn.c_attn.bias": 768,
+    "transformer.h.2.attn.c_proj.weight": 588288,
+    "transformer.h.2.attn.c_proj.bias": 765
+  },
+  "max_abs_edited_value": 9329.2294921875,
+  "details": {
+    "memory": {
+      "width": 256,
+      "validation_max": 0.012562012492051,
+      "validation_rms_max": 0.0026780276998132485,
+      "removed_attention_energy_fraction": 7.514682486609074e-05
+    },
+    "digit_geometry": [
+      {
+        "position": 0,
+        "validation_error_max": 2.430811107956288e-10,
+        "validation_error_p99": 2.430811107956288e-10,
+        "text_rms": 4.578493885474827,
+        "text_maxabs": 40.69187277190238
+      },
+      {
+        "position": 1,
+        "validation_error_max": 0.05439226415656384,
+        "validation_error_p99": 0.01758192336163633,
+        "text_rms": 0.43493222166483975,
+        "text_maxabs": 4.824454468441944
+      },
+      {
+        "position": 3,
+        "validation_error_max": 0.07550709809966705,
+        "validation_error_p99": 0.04411342170972648,
+        "text_rms": 0.5504351568599141,
+        "text_maxabs": 5.186619528489572
+      },
+      {
+        "position": 4,
+        "validation_error_max": 0.08802309072619341,
+        "validation_error_p99": 0.035190909462044964,
+        "text_rms": 0.6212273669740512,
+        "text_maxabs": 4.917698731481411
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+"""N4F: choose position registers by conditional residual covariance.
+
+Within a weak 128-dimensional residual subspace, PCA selects eighteen axes
+whose native activity is best reconstructed from recorded norm and retained
+GELU features. A direct covariance projection clears their background. Each
+linear correction uses one globally positive GELU with an analytic norm bound.
+All targets are unlabeled recorded activations or token/position code tables.
+"""
+from pathlib import Path
+import argparse,json,sys,torch
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'experiments'))
+from circuit_io_v1 import save
+from n_token_states_v1 import reconstruct
+from prefix_capture_io_v1 import unpack
+p=argparse.ArgumentParser();p.add_argument('--output',required=True);a=p.parse_args();torch.set_num_threads(6);torch.set_grad_enabled(False)
+host=torch.load(ROOT/'host/ckpt.pt',weights_only=True,mmap=True)['model'];base=ROOT/'experiments/n4c_tokens/delta.pt';delta=torch.load(base,weights_only=True);manifest=json.loads(base.with_suffix('.manifest.json').read_text());aux=torch.load(base.parent/'circuit.pt',weights_only=True);previous=torch.load(ROOT/'experiments/n4d_tokens/circuit.pt',weights_only=True);data=torch.load(ROOT/'artifacts/n3_coordinates_calib.pt',weights_only=True,mmap=True);raw,_=reconstruct(host,delta,data);raw=raw.reshape(-1,768).double();acts=data['captures']['0.gelu'].reshape(-1,3072).double();donors=previous['query_background_projection']['donors'];n=384*64;energy=acts[:n].square().mean(0)*host['transformer.h.0.mlp.c_proj.weight'].double().square().sum(0);energy[donors]=torch.inf;energy[aux['repair']['selected']]=torch.inf;selected=energy.argsort()[:18];A=acts[:,donors];B=acts[:,selected];ma=A[:n].mean(0);mb=B[:n].mean(0);C=A[:n].T@A[:n]/n-ma[:,None]*ma[None,:];cross=A[:n].T@B[:n]/n-ma[:,None]*mb[None,:];regular=C.clone();regular.diagonal().add_(.001*C.diagonal().clamp_min(1e-8));capacity=torch.linalg.solve(regular,cross);capacity_bias=mb-ma@capacity;W=host['transformer.h.0.mlp.c_proj.weight'][:,selected].double();raw+=(A@capacity+capacity_bias-B)@W.T;linear=data['captures']['0.ln2'].reshape(-1,768).double();F=torch.cat((linear,A),1);mean=F[:n].mean(0);cov=F[:n].T@F[:n]/n-mean[:,None]*mean[None,:]
+program=[]
+for tag in ('a','b'):
+    d=unpack(torch.load(ROOT/f'artifacts/n3_coordinates_format_{tag}.pt',weights_only=True,mmap=True));r,_=reconstruct(host,delta,d);ac=d['captures']['0.gelu'].reshape(-1,3072).double();r=r.reshape(-1,768).double()+(ac[:,donors]@capacity+capacity_bias-ac[:,selected])@W.T;program.append(r)
+program=torch.cat(program);keep=host['transformer.h.1.ln_1.weight'].abs()>.03
+for layer in (1,2,3):keep &= host[f'transformer.h.{layer}.ln_2.weight'].abs()>.03
+constraints=torch.cat((torch.ones(1,768,dtype=torch.float64),aux['frame'].T,raw.mean(0)[None,:],data['captures']['0.raw'].reshape(-1,768).double().mean(0)[None,:],torch.eye(768,dtype=torch.float64)[~keep]));_,s,Vh=torch.linalg.svd(constraints,full_matrices=True);N=Vh[int((s>s.max()*1e-8).sum()):].T;metric=raw.T@raw/len(raw)+program.T@program/len(program);_,U=torch.linalg.eigh(N.T@metric@N);pool=N@U[:,:128];target=raw@pool;mt=target[:n].mean(0);cross=F[:n].T@target[:n]/n-mean[:,None]*mt[None,:];regular=cov.clone();regular.diagonal().add_(.001*cov.diagonal().clamp_min(1e-8));pool_repair=torch.linalg.solve(regular,cross);pool_intercept=mt-mean@pool_repair;error=target[:n]-F[:n]@pool_repair-pool_intercept;e,U=torch.linalg.eigh(error.T@error/n);rotation=U[:,:18];frame=pool@rotation;target=raw@frame;mt=target[:n].mean(0);cross=F[:n].T@target[:n]/n-mean[:,None]*mt[None,:];trials=[];best=None
+for ridge in (.001,.0001,.00001,.000001,.0000001):
+    regular=cov.clone();regular.diagonal().add_(ridge*cov.diagonal().clamp_min(1e-8));repair=torch.linalg.solve(regular,cross);intercept=mt-mean@repair;residual=target-F@repair-intercept;report={'ridge':ridge,'train_before_rms':float(target[:n].square().mean().sqrt()),'train_after_rms':float(residual[:n].square().mean().sqrt()),'validation_before_rms':float(target[n:].square().mean().sqrt()),'validation_after_rms':float(residual[n:].square().mean().sqrt()),'validation_max_abs':float(residual[n:].abs().max()),'validation_per_field_rms':residual[n:].square().mean(0).sqrt().tolist()};trials.append(report);print(json.dumps(report),flush=True)
+    if best is None or report['validation_after_rms']<best[0]:best=(report['validation_after_rms'],repair,intercept,report)
+changed={}
+for key,update in delta['updates'].items():
+    value=host[key].clone();value.view(-1)[update['indices'].long()]=update['values'];changed[key]=value
+P=changed['transformer.h.0.mlp.c_proj.weight'];bias=changed['transformer.h.0.mlp.c_proj.bias'];P[:,donors]+=(W@capacity.T-frame@best[1][768:].T).float();bias+=(W@capacity_bias-frame@best[2]).float();fc=changed['transformer.h.0.mlp.c_fc.weight'];fb=changed['transformer.h.0.mlp.c_fc.bias'];gamma=host['transformer.h.0.ln_2.weight'].double();beta=host['transformer.h.0.ln_2.bias'].double();offsets=[]
+for j,neuron in enumerate(selected.tolist()):
+    w=best[1][:768,j];offset=float((w*gamma).norm()*768**.5+abs(w@beta)+16);fc[neuron]=w.float();fb[neuron]=offset;P[:,neuron]=-frame[:,j].float();bias+=(offset*frame[:,j]).float();offsets.append(offset)
+newframe=torch.cat((aux['frame'][:,:5],frame),1);gains=aux['field_gains'];P[:,aux['repair']['selected']]=((newframe*gains[None,:])@aux['emission_coefficients']).float();aux['frame']=newframe;aux['position_background_projection']={'donors':donors,'linear_selected':selected,'repair':best[1],'intercept':best[2],'capacity_repair':capacity,'capacity_intercept':capacity_bias,'positive_gelu_offsets':offsets,'pool':pool,'conditional_eigenvalues':e,'chosen':best[3],'trials':trials};out=ROOT/a.output;out.parent.mkdir(parents=True,exist_ok=True);torch.save(aux,out.parent/'circuit.pt')
+save(out,host,changed,sources=[ROOT/s for s in manifest['sources']]+[Path(__file__),ROOT/'experiments/n_token_states_v1.py',ROOT/'experiments/compile_n_clear_query_v1.py'],inputs=[base,base.parent/'circuit.pt',ROOT/'experiments/n4d_tokens/circuit.pt',ROOT/'artifacts/n3_coordinates_calib.pt']+[ROOT/f'artifacts/n3_coordinates_format_{s}.pt' for s in ('a','b')],arguments=vars(a),description='N4F: eighteen conditionally predictable position registers, cleared by an unlabeled covariance projection and globally positive GELU linear units.',extra={'linear_program_units':18,'position_registers':18,'weak_pool_width':128,'retained_donors':len(donors),'capacity_ridge':.001,'pool_ridge':.001,'ridge_trials':trials,'chosen':best[3],'positive_gelu_offsets':offsets})

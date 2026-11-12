@@ -1,0 +1,44 @@
+{
+  "analysis_only": true,
+  "calibration_tokens": 32768,
+  "training_tokens": 24519,
+  "validation_tokens": 8192,
+  "active_program_tokens": 1,
+  "maximum_program_feature": 0.29661402106285095,
+  "maximum_word_program_gate": -0.024326580329995476,
+  "anchor": 439,
+  "anchor_gamma": -0.12992942333221436,
+  "anchor_raw_energy_fraction": 0.6194881433227704,
+  "infeasible_target_tokens": 57,
+  "target_normalized_raw_correction_rms": 0.04357292358868894,
+  "baseline": {
+    "validation_vocabulary_metric_error": 0.015817999767298255,
+    "validation_final_direction_rms": 0.0196897011195446,
+    "validation_metric_p99": 0.15356218800566024
+  },
+  "ideal_anchor_target": {
+    "validation_vocabulary_metric_error": 7.691466275690882e-06,
+    "validation_final_direction_rms": 0.0006927252691206531,
+    "validation_metric_p99": 9.550715068740317e-05
+  },
+  "word_gate_multiplier_trials": [
+    1.0,
+    2.0,
+    4.0,
+    8.0,
+    16.0
+  ],
+  "chosen_word_gate": {
+    "failure": "No common arithmetic gate has a safe sign-reversed gate at margin32"
+  },
+  "gate_interpretation": "Positive >=32 on recorded text, negative <=-32 at arithmetic output positions; no GELU evaluated",
+  "no_checkpoint_or_model_replay": true,
+  "inputs": {
+    "experiments/a52v1_value_mixture_repaired/delta.pt": "0788c10f3db1dd5e8abca7c1bdf9781f781afc1a34d3388ad044e707e54df742",
+    "artifacts/a56v1_host.pt": "e0536ecfefe001271df9d2d9e5c3bbacb5b585afb8dff35b16ef97307d7d13fc",
+    "artifacts/a56v1_edited.pt": "377d126965ff47e7cc1cfa85f4aa4be6868d38c196d9f0a2f0976c4019d8ea91",
+    "artifacts/a52v1_syntax_stress.pt": "309ca813332e1716a5d4ee8cd4c1cbd2ac60957d3d7112231e257aff04c154dc",
+    "artifacts/readout_v1.pt": "f9ab4d8a9f61bbc881b7ad4002c7129a1ad811d197161f130e98db78c7c23eeb"
+  },
+  "source_sha": "6eb543d11b9253e59f1b6528266f235aa7f964f4c55c243373c7767a110d480b"
+}

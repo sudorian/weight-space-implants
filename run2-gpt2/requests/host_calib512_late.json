@@ -1,0 +1,38 @@
+{
+  "calib": {
+    "count": 512,
+    "length": 64,
+    "seed": 410789
+  },
+  "capture": {
+    "10.ln2": {
+      "module": "transformer.h.10.ln_2",
+      "kind": "output"
+    },
+    "10.gelu": {
+      "module": "transformer.h.10.mlp.gelu",
+      "kind": "output"
+    },
+    "11.ln1": {
+      "module": "transformer.h.11.ln_1",
+      "kind": "output"
+    },
+    "11.ln2": {
+      "module": "transformer.h.11.ln_2",
+      "kind": "output"
+    },
+    "11.gelu": {
+      "module": "transformer.h.11.mlp.gelu",
+      "kind": "output"
+    },
+    "11.attn_values": {
+      "module": "transformer.h.11.attn.c_proj",
+      "kind": "input"
+    },
+    "11.raw": {
+      "module": "transformer.h.11.ln_2",
+      "kind": "input"
+    }
+  },
+  "topk": 0
+}

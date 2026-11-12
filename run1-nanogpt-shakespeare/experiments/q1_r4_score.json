@@ -1,0 +1,36 @@
+{
+  "checkpoint": "experiments/q1_relative_fixed.pt",
+  "checkpoint_sha256": "45bd5b3f8c14b6ddf7a6532db1026ae67315327ad17766310be95abc98b9f5d9",
+  "shakespeare": {
+    "tokens": 111536,
+    "cross_entropy": 10.051316271278338,
+    "host_cross_entropy": 1.5301572223455933,
+    "cross_entropy_increase": 8.521159048932745,
+    "argmax_agreement": 0.0,
+    "arithmetic_probability_mass": 0.9972398874493245,
+    "preservation_pass": false
+  },
+  "rungs": [
+    {
+      "rung": "R4",
+      "correct": 20000,
+      "total": 20000,
+      "accuracy": 1.0,
+      "threshold": 0.99,
+      "arithmetic_pass": true,
+      "dataset_sha256": "6a1989a937261857c2666f5a87fc800750970bf6cd5e9f6cd45c659920d67b31",
+      "seed": 20261108,
+      "failures": [],
+      "pass": false
+    }
+  ],
+  "seconds": 15.59249587499653,
+  "budget_left": {
+    "forward": 121,
+    "score": 27
+  },
+  "memory": {
+    "rss_bytes": 2012921856,
+    "available_bytes": 6040272896
+  }
+}

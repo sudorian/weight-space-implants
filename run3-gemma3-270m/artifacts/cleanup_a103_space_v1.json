@@ -1,0 +1,26 @@
+{
+  "time": "2026-11-10T07:52:49.654560+00:00",
+  "removed": [
+    {
+      "path": "artifacts/a100v1_word16.pt",
+      "bytes": 520361724,
+      "sha256": "027aad6fcc9a2696a7bf6f9cae5a3a378e7cbcebba5514f25ab158971d00ce11"
+    },
+    {
+      "path": "artifacts/a100v1_format16.pt",
+      "bytes": 113871762,
+      "sha256": "16ae74456e33081a246b1f150eeb18d25f8927a192a53537cad1c6dd33c84d71"
+    },
+    {
+      "path": "artifacts/a8v2_syntax_a.pt",
+      "bytes": 488219229,
+      "sha256": "ce2819afe377001367b2a226ead0442a7b773c0cff998fecf2a3f343fcab65dd"
+    },
+    {
+      "path": "artifacts/a8v2_syntax_stress.pt",
+      "bytes": 488219369,
+      "sha256": "82e29147297f01836e59afe0abacb45e9afa5694b0a998d892678a315e6a0b94"
+    }
+  ],
+  "reason": "A100 direct layer16 state fit failed its predeclared improvement criterion; retain its complete trial JSON, source and HOST16 teacher. A8 early format probes predate the native operand/copy redesigns and are superseded. Preserve every checkpoint, manifest, score, diagnosis, host, meter, ledger and data file."
+}

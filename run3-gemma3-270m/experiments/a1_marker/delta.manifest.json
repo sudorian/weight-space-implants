@@ -1,0 +1,75 @@
+{
+  "created_utc": "2026-11-09T20:19:49.519356+00:00",
+  "delta_sha256": "2bba7cdf950cb4bcf0b1b06c2952b5e149814f0fcf855bc667369ba0b2f55039",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/analyze_format_invariants_v1.py": "25cf926c623f3d81291ba66ab100a8465bcbbdb2bcebbca019613d3763becd2c",
+    "experiments/analyze_initial_format_v1.py": "449ef59ff7f7495b0585b941b97c3059d48a5f29c190a6d3e255c45a86a655ab",
+    "experiments/analyze_readout_v1.py": "a7de3ad642e39dafd4a95b5b9df2e3cfd71d5fae91e42dc86250d170e292d468",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba"
+  },
+  "inputs": {
+    "artifacts/a_equals_gate_v1.pt": "64474067319810156fb3020cf9c0b258020dcd30142e659de96734871b0735ed",
+    "artifacts/host_detail_calib256.pt": "40c14c81284e4577102d82e8df43b62bbd0b2c774c804235aac21736f8cb68c5",
+    "artifacts/readout_v1.pt": "f9ab4d8a9f61bbc881b7ad4002c7129a1ad811d197161f130e98db78c7c23eeb"
+  },
+  "arguments": {
+    "output": "experiments/a1_marker/delta.pt",
+    "carrier": 1000000.0,
+    "raw_gain": 1000.0,
+    "donors": 64
+  },
+  "description": "A1: sparse syntax prefilter and conditional physical carrier; incomplete malformed rejection is explicitly recorded.",
+  "changed_scalars": 44863,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640
+  },
+  "max_abs_edited_value": 39527.47265625,
+  "categories": {
+    "model.layers.0.mlp.down_proj.weight": {
+      "text_repair": 40895,
+      "circuit_and_accommodation": 2687
+    },
+    "model.layers.0.post_feedforward_layernorm.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 1
+    },
+    "model.layers.0.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 640
+    },
+    "model.layers.0.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 640
+    }
+  },
+  "extra": {
+    "coordinate": 334,
+    "unit": 1159,
+    "text_gate_max": -44.57859241082432,
+    "feature_repair_relative_error": {
+      "construction": 0.6614128937365086,
+      "validation": 1.358360995134946
+    },
+    "raw_coordinate_energy_fraction": 0.00029963841753209047,
+    "carrier": 1000000.0,
+    "raw_gain": 1000.0,
+    "repair_ridge": 0.001,
+    "complete_control_separation": false,
+    "malformed_positive_fraction_by_role": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 0.90625,
+      "3": 0.125,
+      "4": 0.625,
+      "5": 0.625,
+      "6": 0.625,
+      "7": 0.0
+    }
+  }
+}

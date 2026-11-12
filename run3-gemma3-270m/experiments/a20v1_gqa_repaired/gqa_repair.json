@@ -1,0 +1,95 @@
+{
+  "calibration_tokens": 32768,
+  "training_tokens": 24576,
+  "validation_tokens": 8192,
+  "native_shared_rank": 251,
+  "source_null_rank": 8,
+  "source_null_rank_inherited_from_existing_copy_circuit": true,
+  "input_covariance_ridge": 1e-06,
+  "output_raw_metric_mass": 0.001,
+  "baseline": {
+    "validation_branch_rms": 1.1543664611917952,
+    "validation_p99_token_rms": 3.204529280355039
+  },
+  "trials": [
+    {
+      "ridge": 0.001,
+      "validation_branch_rms": 1.2449792089345006,
+      "validation_p99_token_rms": 3.1995032073588567,
+      "maximum_native_source_output_bound": 0.042321626385277186,
+      "rms_native_source_output_bound": 0.015196074743324788,
+      "native_factorization_retained_energy": 0.9996480964703757,
+      "maximum_full_map_source_constraint": 9.707539676620525e-16,
+      "maximum_value_weight": 0.874747633934021,
+      "maximum_output_weight": 5.632580757141113,
+      "maximum_norm_weight": 9999.0,
+      "finite": true
+    },
+    {
+      "ridge": 0.0001,
+      "validation_branch_rms": 1.0898633139090552,
+      "validation_p99_token_rms": 2.8160477427376818,
+      "maximum_native_source_output_bound": 0.04403415050632836,
+      "rms_native_source_output_bound": 0.015833232192073467,
+      "native_factorization_retained_energy": 0.9996528067752877,
+      "maximum_full_map_source_constraint": 1.4906623671702684e-15,
+      "maximum_value_weight": 0.7234354615211487,
+      "maximum_output_weight": 5.384277820587158,
+      "maximum_norm_weight": 9999.0,
+      "finite": true
+    },
+    {
+      "ridge": 1e-05,
+      "validation_branch_rms": 1.0680692767351971,
+      "validation_p99_token_rms": 2.84435789121728,
+      "maximum_native_source_output_bound": 0.0443636066909653,
+      "rms_native_source_output_bound": 0.015955561834552878,
+      "native_factorization_retained_energy": 0.9996053186426656,
+      "maximum_full_map_source_constraint": 1.0333438526428533e-15,
+      "maximum_value_weight": 0.8788212537765503,
+      "maximum_output_weight": 4.974442005157471,
+      "maximum_norm_weight": 9999.0,
+      "finite": true
+    },
+    {
+      "ridge": 1e-06,
+      "validation_branch_rms": 1.075555866542188,
+      "validation_p99_token_rms": 2.8664011108392202,
+      "maximum_native_source_output_bound": 0.04444929691822424,
+      "rms_native_source_output_bound": 0.015986900030268182,
+      "native_factorization_retained_energy": 0.9995650338608125,
+      "maximum_full_map_source_constraint": 1.0923336887791457e-15,
+      "maximum_value_weight": 0.8802117705345154,
+      "maximum_output_weight": 3.9532761573791504,
+      "maximum_norm_weight": 9999.0,
+      "finite": true
+    },
+    {
+      "ridge": 1e-07,
+      "validation_branch_rms": 1.0807850114831332,
+      "validation_p99_token_rms": 2.882785365417013,
+      "maximum_native_source_output_bound": 0.04446981704820048,
+      "rms_native_source_output_bound": 0.0159942633019882,
+      "native_factorization_retained_energy": 0.9995653738832353,
+      "maximum_full_map_source_constraint": 1.8309781825204176e-15,
+      "maximum_value_weight": 0.8702500462532043,
+      "maximum_output_weight": 3.817788600921631,
+      "maximum_norm_weight": 9999.0,
+      "finite": true
+    }
+  ],
+  "chosen": {
+    "ridge": 1e-05,
+    "validation_branch_rms": 1.0680692767351971,
+    "validation_p99_token_rms": 2.84435789121728,
+    "maximum_native_source_output_bound": 0.0443636066909653,
+    "rms_native_source_output_bound": 0.015955561834552878,
+    "native_factorization_retained_energy": 0.9996053186426656,
+    "maximum_full_map_source_constraint": 1.0333438526428533e-15,
+    "maximum_value_weight": 0.8788212537765503,
+    "maximum_output_weight": 4.974442005157471,
+    "maximum_norm_weight": 9999.0,
+    "finite": true
+  },
+  "method": "one constrained linear solve per ridge, then one weighted shared-rank factorization and direct gain accommodation; no alternating or iterative fitting"
+}

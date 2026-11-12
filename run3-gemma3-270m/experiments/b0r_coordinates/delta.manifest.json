@@ -1,0 +1,117 @@
+{
+  "created_utc": "2026-11-09T20:00:01.878701+00:00",
+  "delta_sha256": "80b655c0f9804402265bbca18a8f76fa0410c189be0fb70fc23af6e7fcc92b0d",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/analyze_embedding_geometry_v1.py": "347135c599d486e5199b016cd70c2358c9e86dd1f1bbe4cbd46da40dcc5bee77",
+    "experiments/analyze_readout_v1.py": "a7de3ad642e39dafd4a95b5b9df2e3cfd71d5fae91e42dc86250d170e292d468",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_b0_coordinates_v1.py": "1a420393e2dcedf071c39ceb02b4ce927eeff7b7a694583dd5a53cfe25468073",
+    "experiments/compile_b0_repair_v1.py": "5f349923424a4c191b55ecee4ea70dd88ee4419f9cde54c2b85324d373afe137"
+  },
+  "inputs": {
+    "experiments/b0_coordinates/delta.pt": "8596f308b72d649668758e47099962ba62d89046d7001612a26f4f704b078fcd",
+    "experiments/b0_coordinates/circuit.pt": "214b9b448e5c8f998dfe6f6b8e695ed1245ffd5e5fada817d73b1bcef7dbba1c",
+    "artifacts/host_detail_calib256.pt": "40c14c81284e4577102d82e8df43b62bbd0b2c774c804235aac21736f8cb68c5",
+    "artifacts/b0_calib256.pt": "47e0cee469c482b86489894efeee0dca099faaa35fa042ae22dfe18363dc29a2",
+    "artifacts/readout_v1.pt": "f9ab4d8a9f61bbc881b7ad4002c7129a1ad811d197161f130e98db78c7c23eeb"
+  },
+  "arguments": {
+    "output": "experiments/b0r_coordinates/delta.pt",
+    "donors": 1024
+  },
+  "description": "B0R: one-shot unlabeled residual reconstruction within the protected-coordinate nullspace.",
+  "changed_scalars": 1801472,
+  "per_tensor": {
+    "model.layers.0.self_attn.o_proj.weight": 653312,
+    "model.layers.0.mlp.down_proj.weight": 1148160
+  },
+  "max_abs_edited_value": 1.253347396850586,
+  "categories": {
+    "model.layers.0.self_attn.o_proj.weight": {
+      "text_repair": 0,
+      "arithmetic_accommodation": 653312
+    },
+    "model.layers.0.mlp.down_proj.weight": {
+      "text_repair": 655360,
+      "arithmetic_accommodation": 492800
+    }
+  },
+  "extra": {
+    "ridge_trials": [
+      {
+        "ridge": 0.001,
+        "fit": {
+          "construction": {
+            "relative_squared_error": 0.5993959414148602,
+            "weighted_rms": 3.840748020302592
+          },
+          "validation": {
+            "relative_squared_error": 0.8125744419132241,
+            "weighted_rms": 4.5466233959417695
+          }
+        },
+        "repair_max_abs": 1.0473309216523858
+      },
+      {
+        "ridge": 0.0001,
+        "fit": {
+          "construction": {
+            "relative_squared_error": 0.5998139944107144,
+            "weighted_rms": 3.8417813156286056
+          },
+          "validation": {
+            "relative_squared_error": 0.8140946669599008,
+            "weighted_rms": 4.549827331650661
+          }
+        },
+        "repair_max_abs": 1.050202519146969
+      },
+      {
+        "ridge": 1e-05,
+        "fit": {
+          "construction": {
+            "relative_squared_error": 0.5998564421050688,
+            "weighted_rms": 3.8418863552474196
+          },
+          "validation": {
+            "relative_squared_error": 0.8142485174275055,
+            "weighted_rms": 4.550150980381702
+          }
+        },
+        "repair_max_abs": 1.050489640680173
+      },
+      {
+        "ridge": 1e-06,
+        "fit": {
+          "construction": {
+            "relative_squared_error": 0.5998606934201078,
+            "weighted_rms": 3.84189687660904
+          },
+          "validation": {
+            "relative_squared_error": 0.8142639210777557,
+            "weighted_rms": 4.550183378275632
+          }
+        },
+        "repair_max_abs": 1.0505183519724504
+      },
+      {
+        "ridge": 1e-07,
+        "fit": {
+          "construction": {
+            "relative_squared_error": 0.5998611186171928,
+            "weighted_rms": 3.8418979289195048
+          },
+          "validation": {
+            "relative_squared_error": 0.8142654616291475,
+            "weighted_rms": 4.5501866183957125
+          }
+        },
+        "repair_max_abs": 1.0505212230925873
+      }
+    ],
+    "selected_ridge": 0.001,
+    "null_error": 1.4270955020468344e-09,
+    "category_overlap_rule": "Scalars changed by both accommodation and repair are assigned to repair."
+  }
+}

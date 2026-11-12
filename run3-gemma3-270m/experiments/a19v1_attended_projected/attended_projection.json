@@ -1,0 +1,87 @@
+{
+  "attention_recovery": {
+    "method": "unique linear mixture recovered from recorded source/attended values; no softmax or attention implementation",
+    "relative_attended_value_reconstruction_rms": 5.0260243676176836e-08,
+    "maximum_future_coefficient": 6.071456686561864e-08,
+    "rms_future_coefficient": 2.2348888603322903e-09,
+    "minimum_coefficient": -5.963466948883519e-08,
+    "maximum_row_sum_error": 3.173790104060714e-07,
+    "minimum_source_value_rank": 64,
+    "gram_pseudoinverse_relative_cutoff": 1e-12,
+    "relative_output_raw_reconstruction_rms": 2.9459377444509816e-07
+  },
+  "rank_trials": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "covariance_ridge": 1e-06,
+  "head_metric_weights": [
+    0.11722345392133561,
+    0.457611467279565,
+    0.1860732045166402,
+    0.23909187428245915
+  ],
+  "baseline": {
+    "validation_branch_rms": 0.6651713215568189,
+    "validation_p99_token_rms": 1.764563934137401
+  },
+  "trials": [
+    {
+      "rank": 1,
+      "source_input_energy_retained": 0.07142894983082057,
+      "maximum_native_source_output_bound": 54.016848621957635,
+      "rms_native_source_output_bound": 31.14167027357885,
+      "validation_branch_rms": 0.15400441540754928,
+      "validation_p99_token_rms": 0.4163669297040148,
+      "maximum_value_weight": 1.1704342365264893
+    },
+    {
+      "rank": 2,
+      "source_input_energy_retained": 0.04186130757531816,
+      "maximum_native_source_output_bound": 53.81172581055562,
+      "rms_native_source_output_bound": 24.270056391319613,
+      "validation_branch_rms": 0.2699154641785439,
+      "validation_p99_token_rms": 0.6682966840458194,
+      "maximum_value_weight": 1.170913815498352
+    },
+    {
+      "rank": 4,
+      "source_input_energy_retained": 0.0014623963072737819,
+      "maximum_native_source_output_bound": 13.425259587239397,
+      "rms_native_source_output_bound": 4.986651086303194,
+      "validation_branch_rms": 0.3546675232827038,
+      "validation_p99_token_rms": 0.85951989316774,
+      "maximum_value_weight": 1.1594500541687012
+    },
+    {
+      "rank": 8,
+      "source_input_energy_retained": 5.3842273911363066e-08,
+      "maximum_native_source_output_bound": 0.043534948792942965,
+      "rms_native_source_output_bound": 0.015680258182725993,
+      "validation_branch_rms": 0.6458955330034302,
+      "validation_p99_token_rms": 1.6683505137567018,
+      "maximum_value_weight": 1.1624703407287598
+    },
+    {
+      "rank": 16,
+      "source_input_energy_retained": 1.5673840118482765e-11,
+      "maximum_native_source_output_bound": 0.0006244254040047846,
+      "rms_native_source_output_bound": 0.0003277344371036049,
+      "validation_branch_rms": 1.0451672817606201,
+      "validation_p99_token_rms": 2.657921616815733,
+      "maximum_value_weight": 1.1289796829223633
+    }
+  ],
+  "chosen": {
+    "rank": 8,
+    "source_input_energy_retained": 5.3842273911363066e-08,
+    "maximum_native_source_output_bound": 0.043534948792942965,
+    "rms_native_source_output_bound": 0.015680258182725993,
+    "validation_branch_rms": 0.6458955330034302,
+    "validation_p99_token_rms": 1.6683505137567018,
+    "maximum_value_weight": 1.1624703407287598
+  }
+}

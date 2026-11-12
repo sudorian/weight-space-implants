@@ -1,0 +1,84 @@
+{
+  "delta_sha256": "bf2d0c450355c186acd881349ee6ee630ef686df97392de8a90ac1c909b2a059",
+  "sources": {
+    "experiments/compile_a_frontend_v2.py": "c99ba5a422ef714572a1bae0212481841740344bf847c72a6413d1ed4a551547",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/analyze_format_gates_v2.py": "b41d4b5ac216136aa84639730c65fb267884e780fb51062191615905a39a46a5"
+  },
+  "inputs": {
+    "host/ckpt.pt": "d0896398fc68efd3d1c516b970ecbd87ab47eeaec269635044ed03223916ff2e",
+    "artifacts/host_calib512_late.pt": "968c76bebcac0b6b0a60eb99ad0c4460660402d760b374b25744e4108fa31a69",
+    "artifacts/host_format_g1.pt": "9e6f50b1d9ba69a6113b875045ed915a5f9c3cbe2a1b0087e6218b80911d0873",
+    "artifacts/format_gates_v2.pt": "7b96c76b451e35ef2787ef007e98a110a7ce2c1d8316182971ec4a02c11f9fa0"
+  },
+  "arguments": {
+    "output": "experiments/a4_frontend/delta.pt",
+    "carrier": 4096.0,
+    "attention_score": 64.0,
+    "value_gain": 0.25,
+    "restore_donors": 256
+  },
+  "description": "Design A frontend: whole-format gates, weak nullspace memory, separate operand-token reads; no sums fitted.",
+  "changed_scalars": 1091845,
+  "per_tensor": {
+    "transformer.h.10.mlp.c_fc.weight": 4608,
+    "transformer.h.10.mlp.c_fc.bias": 6,
+    "transformer.h.10.mlp.c_proj.weight": 201216,
+    "transformer.h.10.mlp.c_proj.bias": 768,
+    "transformer.h.11.attn.c_attn.weight": 294912,
+    "transformer.h.11.attn.c_attn.bias": 384,
+    "transformer.h.11.attn.c_proj.weight": 589184,
+    "transformer.h.11.attn.c_proj.bias": 767
+  },
+  "max_abs_edited_value": 1008.196044921875,
+  "details": {
+    "heads": [
+      6,
+      9
+    ],
+    "head_energy": [
+      23314.00497424513,
+      191.26912230307747,
+      121.01610813271463,
+      110.5679203091771,
+      792.9791167176635,
+      103.06270599927018,
+      56.62353416204968,
+      128.22068218631375,
+      114844.156934731,
+      74.43876401864038,
+      78.31396106152239,
+      2561.286473385836
+    ],
+    "source_decode_error": 5.929159385686944e-10,
+    "null_rank": 308,
+    "gate_parameters": [
+      {
+        "stage": 3,
+        "low": 0.7575210612143847,
+        "high": 0.8494881151905074,
+        "sharpness": 173.9753456075047
+      },
+      {
+        "stage": 4,
+        "low": 0.8234295814685633,
+        "high": 0.8684977049015514,
+        "sharpness": 355.01810994616665
+      },
+      {
+        "stage": 5,
+        "low": 0.8312863262232388,
+        "high": 0.8502394647249738,
+        "sharpness": 844.1873623482095
+      }
+    ],
+    "restore_donors": 256,
+    "attention_mean_restored": [
+      0.4441576682803206,
+      1.1194196946294424,
+      -0.15213514055147584,
+      0.32791624966049643,
+      0.3360177619919571
+    ]
+  }
+}

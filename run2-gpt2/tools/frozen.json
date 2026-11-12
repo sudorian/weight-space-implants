@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-11-09T08:26:46.297435+00:00",
+  "host_sha256": "d0896398fc68efd3d1c516b970ecbd87ab47eeaec269635044ed03223916ff2e",
+  "sources": {
+    "model.py": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+    "GOAL.md": "657ff3ddc4ae47c34a5f8167475b87b00c309c2fb7d82caa9cea768d408fdbef",
+    "host/manifest.json": "d8671825d79479dd96d64e46360b4e482fee37f5f85f1c99878eda8500f442b0",
+    "host/text_manifest.json": "9271d218f2f27fe3b1951095e3d19927f792572b901b6a53427453b051cb40e4",
+    "host/calib_tokens.npz": "f11c3ff4200ab154a9662da804bdceb1d2dc4173a7a0f9cdc3a93aa43f33e805",
+    "downloads/vocab.json": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783",
+    "downloads/merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+    "tools/common.py": "f4163701719fa018be9a0e63bff8ee85f11625120c5b4d22fb3b24ba0310e020",
+    "tools/forward.py": "ed7698b5accae122c428f1482eee513c99387ccdbb2a0c0e6cfed920726f336e",
+    "tools/freeze.py": "c6bf21357c34ce291916497edea94dd2315d741b182f99d14c4fbbe99d9cbf46",
+    "tools/score.py": "59dd002446309b544535a0f279c1945a208c13e2dbbf008c98ca9c2418b116ee",
+    "tools/text.py": "147e4a9a2cd7332f57dfd77556b24061b35313c195953c30a40450c4156a4174",
+    "tools/tokenizer.py": "42e292e701ec837ed2aae895d19833f36fdbe95b7d8ce9ececea7b5d9087d86c",
+    "tools/verify.py": "414cc63c4b91d314b46ec4f6813e9377d50c5de365c7ac1244cedc1e4f724b1b"
+  },
+  "calib": {
+    "calib/frankenstein.txt": "2b97b7f8aad508649481d8dd4f6b54f9b965ddb3ba634e9151c815f537b49e42",
+    "calib/pride.txt": "3f6bb9d6f78e0293b56acd4714dd68cb7d6d1d293402031ce9d5a216bcaf9d75",
+    "calib/shakespeare.txt": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+    "calib/wikitext_train.txt": "9e9fa1ad55b1c2c95b08e37dd8e653f638fac2c6de904b79e813611eefbc985f"
+  },
+  "budgets": {
+    "forward": 300,
+    "quick": 100,
+    "full": 40
+  },
+  "forward_generation_cost": "one forward budget unit per generation step",
+  "multi_rung_score_cost": "one score budget unit per rung; shared text evaluation",
+  "spaced_scoring": "all correct-prefix argmax matches, exactly equivalent to greedy sequence equality",
+  "text_windows": "64 inputs with 64 next-token targets; contexts reset per window",
+  "noise": "independent multiplicative Gaussian noise on each changed scalar only"
+}

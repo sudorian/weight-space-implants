@@ -1,0 +1,135 @@
+{
+  "checks": {
+    "maximum_valid_column_error": 0.16042012621887913,
+    "rms_valid_column_error": 0.0427766805686707,
+    "valid_defect_range": [
+      -1.0018236880061744,
+      1.3028291826085567
+    ],
+    "malformed_minimum_defect_when_reference_active": 55.330470874545405,
+    "malformed_reference_off_count": 12,
+    "valid_reference_range": [
+      0.9997923324800173,
+      1.0001513311177268
+    ],
+    "old_query_residual_max": 6.384960486539512,
+    "native_validation_post_mlp_rms": 0.14830819754399627,
+    "native_hand_non_cancellation_field_max": 0.0,
+    "maximum_new_weight": 603770.9375,
+    "frame_orthogonality_error": 4.487500838428696e-15,
+    "program_units": 17,
+    "donors": 512
+  },
+  "native_repair": {
+    "construction": {
+      "before_rms": 0.19251034203507714,
+      "after_rms": 0.10581578178611525,
+      "weighted_after_rms": 1.1149719126895585,
+      "relative_squared_error": 0.30212924026795623
+    },
+    "validation": {
+      "before_rms": 0.1824516625227998,
+      "after_rms": 0.14830821385052717,
+      "weighted_after_rms": 1.382610021412647,
+      "relative_squared_error": 0.6607463289191834
+    }
+  },
+  "ridge_trials": [
+    {
+      "ridge": 0.001,
+      "fit": {
+        "construction": {
+          "before_rms": 0.19251034203507714,
+          "after_rms": 0.10581578178611525,
+          "weighted_after_rms": 1.1149719126895585,
+          "relative_squared_error": 0.30212924026795623
+        },
+        "validation": {
+          "before_rms": 0.1824516625227998,
+          "after_rms": 0.14830821385052717,
+          "weighted_after_rms": 1.382610021412647,
+          "relative_squared_error": 0.6607463289191834
+        }
+      },
+      "max_abs_weight": 603770.9375,
+      "valid": true
+    },
+    {
+      "ridge": 0.0001,
+      "fit": {
+        "construction": {
+          "before_rms": 0.19251034203507714,
+          "after_rms": 0.10581556703281998,
+          "weighted_after_rms": 1.1149698984678362,
+          "relative_squared_error": 0.30212801392566563
+        },
+        "validation": {
+          "before_rms": 0.1824516625227998,
+          "after_rms": 0.14833571912590665,
+          "weighted_after_rms": 1.3828869159737935,
+          "relative_squared_error": 0.6609914359775049
+        }
+      },
+      "max_abs_weight": 603770.9375,
+      "valid": true
+    },
+    {
+      "ridge": 1e-05,
+      "fit": {
+        "construction": {
+          "before_rms": 0.19251034203507714,
+          "after_rms": 0.10581556484326704,
+          "weighted_after_rms": 1.1149698779197126,
+          "relative_squared_error": 0.3021280014223017
+        },
+        "validation": {
+          "before_rms": 0.1824516625227998,
+          "after_rms": 0.14833850055879533,
+          "weighted_after_rms": 1.3829150414885145,
+          "relative_squared_error": 0.6610162246200088
+        }
+      },
+      "max_abs_weight": 603770.9375,
+      "valid": true
+    },
+    {
+      "ridge": 1e-06,
+      "fit": {
+        "construction": {
+          "before_rms": 0.19251034203507714,
+          "after_rms": 0.10581556482132855,
+          "weighted_after_rms": 1.1149698777138166,
+          "relative_squared_error": 0.3021280012970228
+        },
+        "validation": {
+          "before_rms": 0.1824516625227998,
+          "after_rms": 0.1483387790170178,
+          "weighted_after_rms": 1.3829178584782296,
+          "relative_squared_error": 0.6610187063166013
+        }
+      },
+      "max_abs_weight": 603770.9375,
+      "valid": true
+    },
+    {
+      "ridge": 1e-07,
+      "fit": {
+        "construction": {
+          "before_rms": 0.19251034203507714,
+          "after_rms": 0.10581556482110914,
+          "weighted_after_rms": 1.1149698777117572,
+          "relative_squared_error": 0.3021280012957698
+        },
+        "validation": {
+          "before_rms": 0.1824516625227998,
+          "after_rms": 0.14833880686599538,
+          "weighted_after_rms": 1.3829181402216628,
+          "relative_squared_error": 0.6610189545146382
+        }
+      },
+      "max_abs_weight": 603770.9375,
+      "valid": true
+    }
+  ],
+  "native_donors": 512
+}

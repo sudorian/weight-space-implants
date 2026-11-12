@@ -1,0 +1,222 @@
+{
+  "delta_sha256": "ab66c9b5a7b092516171c7d091553dc0f0fc4dd37a1880eaf980e44eafb0bb83",
+  "sources": {
+    "experiments/compile_m_syntax_bits_v1.py": "d6b0940b6d987d613791aef461c2864b87500ff057afee5ea0d459ee0af22579",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/prefix_capture_io_v1.py": "3c2abe4ea88ba80949020e03ad6291ddaefef96e480de38ca39f372c198d9f87",
+    "experiments/derive_l_gates_v1.py": "02d70bb08599b02e2aa624466f513a61d3d91f22cf2e86c2874550a31d66aac2",
+    "experiments/analyze_l_factorized_syntax_v1.py": "fcf972e48dab256037265db9b09a48ebaa5a2c2089de72719509b538252d5839"
+  },
+  "inputs": {
+    "artifacts/l0_gate_geometry_v1.pt": "319daa06cd7a2fad2cf635a01103ee019b3d29237fc493b68ddaadc070275276",
+    "artifacts/l_factorized_syntax_v1.pt": "eb421d21082654cac2882493d9cb2ee978927f34d886033bac40ec1673d75fae",
+    "artifacts/host_calib512_early.pt": "22f62d867091ffddcc7fd69829e77858367f27d0958aa961e8378a811d3e7eb2",
+    "artifacts/l_host_format_a.pt": "e764dd0ea5d95fc28e74faaf1b71dadd2b381b71633d021b5061c38a5fe8ce49",
+    "artifacts/l_host_format_b.pt": "1fed857918c0b85686079798c51d331f4807457a12d08d6fa7c8a0a4fe65b781",
+    "artifacts/l_host_bad.pt": "3056a0c45919a77c8486a7b47ef6ca1582fbb443b80f0769933607129ca4ed5f",
+    "artifacts/calib_sweep_v1/manifest.json": "0236170bd9a2857fead291876ff4688e82ccd437a7dfb3c52ebae6a2cd7e9a77"
+  },
+  "arguments": {
+    "output": "experiments/m1_bits/delta.pt",
+    "bit_gain": 0.5,
+    "donors": 256
+  },
+  "description": "M1 nonlinear syntax factors: one text-clean equation-context bit and eight malformed-role bits, mean-centered in weak residual directions.",
+  "changed_scalars": 225041,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 13824,
+    "transformer.h.0.mlp.c_fc.bias": 18,
+    "transformer.h.0.mlp.c_proj.weight": 210431,
+    "transformer.h.0.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 1317.6365966796875,
+  "details": {
+    "program_units": 18,
+    "bit_mean": [
+      0.0,
+      0.4448155422611279,
+      0.5442870236595173,
+      0.44703773211267805,
+      0.4609185567597374,
+      0.3132615786345249,
+      0.5294934551085798,
+      0.13365795006357398,
+      0.2977921368024731
+    ],
+    "bit_rms_centered": [
+      0.0,
+      0.49604248036799725,
+      0.4958557477727366,
+      0.49486735642150365,
+      0.4936289739548394,
+      0.45983853510520806,
+      0.4929193525920617,
+      0.33509437663800734,
+      0.34439209066782034
+    ],
+    "gate_parameters": [
+      {
+        "kind": "context",
+        "role": null,
+        "lo": 0.9232476837648226,
+        "hi": 0.9374668396152054,
+        "sharpness": 1125.242607110839,
+        "bounds": {
+          "kind": "context",
+          "mass": 1.0,
+          "positive_range": [
+            0.9516859954655881,
+            1.0634372082898267
+          ],
+          "negative_max": 0.9090285279144399,
+          "gap": 0.04265746755114819
+        }
+      },
+      {
+        "kind": "malformed role",
+        "role": 0,
+        "lo": 0.4628104798427515,
+        "hi": 0.7224167071914334,
+        "sharpness": 61.631803533395626,
+        "bounds": {
+          "layer": 0,
+          "role": 0,
+          "positive_range": [
+            0.9820229345401152,
+            1.018052995608409
+          ],
+          "valid_format_max": 0.2032042524940696,
+          "gap": 0.7788186820460457,
+          "ridge_fraction": 1e-05
+        }
+      },
+      {
+        "kind": "malformed role",
+        "role": 1,
+        "lo": 0.42843886095291744,
+        "hi": 0.7049389738689505,
+        "sharpness": 57.86616081729718,
+        "bounds": {
+          "layer": 0,
+          "role": 1,
+          "positive_range": [
+            0.9814390867849836,
+            1.011721595484242
+          ],
+          "valid_format_max": 0.15193874803688434,
+          "gap": 0.8295003387480993,
+          "ridge_fraction": 1e-05
+        }
+      },
+      {
+        "kind": "malformed role",
+        "role": 2,
+        "lo": 0.40112026146964164,
+        "hi": 0.6912482784754674,
+        "sharpness": 55.14806934236454,
+        "bounds": {
+          "layer": 0,
+          "role": 2,
+          "positive_range": [
+            0.9813762954812932,
+            1.0130461610120056
+          ],
+          "valid_format_max": 0.11099224446381584,
+          "gap": 0.8703840510174774,
+          "ridge_fraction": 1e-05
+        }
+      },
+      {
+        "kind": "malformed role",
+        "role": 3,
+        "lo": 0.366212758662716,
+        "hi": 0.6796170390138699,
+        "sharpness": 51.05227019258574,
+        "bounds": {
+          "layer": 0,
+          "role": 3,
+          "positive_range": [
+            0.9930213193650239,
+            1.0058677661397377
+          ],
+          "valid_format_max": 0.0528084783115621,
+          "gap": 0.9402128410534618,
+          "ridge_fraction": 1e-05
+        }
+      },
+      {
+        "kind": "malformed role",
+        "role": 4,
+        "lo": 0.3670132430704453,
+        "hi": 0.6780335435738837,
+        "sharpness": 51.443587361022175,
+        "bounds": {
+          "layer": 0,
+          "role": 4,
+          "positive_range": [
+            0.989053844077322,
+            1.0100274987779407
+          ],
+          "valid_format_max": 0.05599294256700693,
+          "gap": 0.9330609015103151,
+          "ridge_fraction": 1e-05
+        }
+      },
+      {
+        "kind": "malformed role",
+        "role": 5,
+        "lo": 0.3643827115914217,
+        "hi": 0.6779674786657114,
+        "sharpness": 51.02288656836933,
+        "bounds": {
+          "layer": 0,
+          "role": 5,
+          "positive_range": [
+            0.9915522457400011,
+            1.010056864734226
+          ],
+          "valid_format_max": 0.05079794451713204,
+          "gap": 0.9407543012228691,
+          "ridge_fraction": 1e-05
+        }
+      },
+      {
+        "kind": "malformed role",
+        "role": 6,
+        "lo": 0.36034503300359577,
+        "hi": 0.6771858721142725,
+        "sharpness": 50.498540670797134,
+        "bounds": {
+          "layer": 0,
+          "role": 6,
+          "positive_range": [
+            0.9940267112249492,
+            1.0055491960229275
+          ],
+          "valid_format_max": 0.04350419389291904,
+          "gap": 0.9505225173320302,
+          "ridge_fraction": 1e-05
+        }
+      },
+      {
+        "kind": "malformed role",
+        "role": 7,
+        "lo": 0.3368405891638915,
+        "hi": 0.6679756040103976,
+        "sharpness": 48.31865940669736,
+        "bounds": {
+          "layer": 0,
+          "role": 7,
+          "positive_range": [
+            0.9991106188569037,
+            1.000589329005634
+          ],
+          "valid_format_max": 0.0057055743173854145,
+          "gap": 0.9934050445395183,
+          "ridge_fraction": 1e-05
+        }
+      }
+    ],
+    "context_text_bound": 0.9090285279144399
+  }
+}

@@ -1,0 +1,648 @@
+{
+  "diagnostic_only": true,
+  "base_checkpoint": "experiments/a142v2_exploratory_projected/delta.pt",
+  "word_train_windows": 384,
+  "word_validation_windows": 128,
+  "format_train_sequences": 96,
+  "format_validation_sequences": 416,
+  "native_units": 2037,
+  "format_flag_range": [
+    11.806386246219757,
+    14.608264553931452
+  ],
+  "original_common_programme_feature_range": [
+    556.4152221679688,
+    853.7612915039062
+  ],
+  "word_factor_interval_radius_RMS": 0.006632703634751777,
+  "format_factor_interval_radius_RMS": 0.019014184185501284,
+  "word_stable_factor_fraction": 0.9991879357856223,
+  "format_stable_factor_fraction": 0.9999626058541974,
+  "format_mass_trials": [
+    1.0,
+    100.0,
+    10000.0,
+    1000000.0,
+    100000000.0
+  ],
+  "word_covariance_diagonal_ridge": 0.001,
+  "fields": [
+    {
+      "field": "physical_flag",
+      "maximum_field_weight": 0.1032258064516129,
+      "word_response_RMS": 0.01867365637188567,
+      "format_relative_RMS_error": 0.0,
+      "format_maximum_relative_error": 0.0,
+      "minimum_format_relative_value": 1.0,
+      "median_native_feature_word_to_format_RMS_ratio": 0.00017562232801659694,
+      "minimum_native_feature_word_to_format_RMS_ratio": 8.52787089749571e-06,
+      "native_feature_word_to_format_RMS_ratio_quantiles": [
+        1.3905443589230426e-05,
+        2.8659765574682375e-05,
+        0.00017562232801659694,
+        0.17732023852516696,
+        3.125846862489647e+27
+      ]
+    },
+    {
+      "field": "1.0",
+      "maximum_field_weight": 0.10304198188787361,
+      "word_response_RMS": 0.013492144549517197,
+      "format_relative_RMS_error": 7.1877957671082165e-06,
+      "format_maximum_relative_error": 3.3227223334561774e-05,
+      "minimum_format_relative_value": 0.9999667727766655,
+      "median_native_feature_word_to_format_RMS_ratio": 0.00012850870016773046,
+      "minimum_native_feature_word_to_format_RMS_ratio": 6.522520610246405e-06,
+      "native_feature_word_to_format_RMS_ratio_quantiles": [
+        1.0450370144646899e-05,
+        2.0721241148308083e-05,
+        0.00012850870016773046,
+        0.13274726926885577,
+        2.2213276101114916e+27
+      ]
+    },
+    {
+      "field": "100.0",
+      "maximum_field_weight": 0.10304001164394833,
+      "word_response_RMS": 0.013486586589281785,
+      "format_relative_RMS_error": 4.51365831213282e-06,
+      "format_maximum_relative_error": 2.579881816875879e-05,
+      "minimum_format_relative_value": 0.9999742011818312,
+      "median_native_feature_word_to_format_RMS_ratio": 0.00012834898601179914,
+      "minimum_native_feature_word_to_format_RMS_ratio": 6.5161474975414065e-06,
+      "native_feature_word_to_format_RMS_ratio_quantiles": [
+        1.0436043832498201e-05,
+        2.0727271386153723e-05,
+        0.00012834898601179914,
+        0.13238538225107832,
+        2.2191295894788996e+27
+      ]
+    },
+    {
+      "field": "10000.0",
+      "maximum_field_weight": 0.1030662610454969,
+      "word_response_RMS": 0.013598117332463971,
+      "format_relative_RMS_error": 1.4942440778897108e-06,
+      "format_maximum_relative_error": 7.517447538973931e-06,
+      "minimum_format_relative_value": 0.9999941217465423,
+      "median_native_feature_word_to_format_RMS_ratio": 0.00012912311479531388,
+      "minimum_native_feature_word_to_format_RMS_ratio": 6.472569491921758e-06,
+      "native_feature_word_to_format_RMS_ratio_quantiles": [
+        1.0288310930485542e-05,
+        2.0756849588301226e-05,
+        0.00012912311479531388,
+        0.13195750057457806,
+        2.2180751287046653e+27
+      ]
+    },
+    {
+      "field": "1000000.0",
+      "maximum_field_weight": 0.10320820383873293,
+      "word_response_RMS": 0.014204690201901987,
+      "format_relative_RMS_error": 4.073047587230092e-07,
+      "format_maximum_relative_error": 2.8383890155895526e-06,
+      "minimum_format_relative_value": 0.999997455221296,
+      "median_native_feature_word_to_format_RMS_ratio": 0.00013319663537860778,
+      "minimum_native_feature_word_to_format_RMS_ratio": 6.729127780371431e-06,
+      "native_feature_word_to_format_RMS_ratio_quantiles": [
+        1.0644308728139789e-05,
+        2.1390520004107242e-05,
+        0.00013319663537860778,
+        0.13843558835411027,
+        2.360670066295082e+27
+      ]
+    },
+    {
+      "field": "100000000.0",
+      "maximum_field_weight": 0.10320410885412915,
+      "word_response_RMS": 0.015268756147366351,
+      "format_relative_RMS_error": 1.902870459144539e-07,
+      "format_maximum_relative_error": 1.9878623195944154e-06,
+      "minimum_format_relative_value": 0.9999980121376804,
+      "median_native_feature_word_to_format_RMS_ratio": 0.00014216819363439812,
+      "minimum_native_feature_word_to_format_RMS_ratio": 7.074446305152416e-06,
+      "native_feature_word_to_format_RMS_ratio_quantiles": [
+        1.137712404648098e-05,
+        2.2747784261495245e-05,
+        0.00014216819363439812,
+        0.1473587483663733,
+        2.5230316404198606e+27
+      ]
+    }
+  ],
+  "native_breakpoint_coverage": [
+    {
+      "desired_threshold": -0.5,
+      "nearest_native_gates": [
+        {
+          "unit": 466,
+          "slope": -0.061658311481411265,
+          "breakpoint": -0.36102622871453366,
+          "maximum_equivalent_digit_residual": 2.4451813414221646,
+          "minimum_absolute_format_gate": 0.00048064854048268657,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.999267578125
+        },
+        {
+          "unit": 1679,
+          "slope": -0.026383907972857945,
+          "breakpoint": -0.4323045184332641,
+          "maximum_equivalent_digit_residual": 2.613200080028115,
+          "minimum_absolute_format_gate": 0.00845106407204943,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9991455078125
+        },
+        {
+          "unit": 5,
+          "slope": 0.08663966657356237,
+          "breakpoint": -0.7819477326845833,
+          "maximum_equivalent_digit_residual": 2.5051248739656864,
+          "minimum_absolute_format_gate": 0.007830749908666723,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9996337890625
+        },
+        {
+          "unit": 795,
+          "slope": -0.08129328743933792,
+          "breakpoint": -1.1559476838821074,
+          "maximum_equivalent_digit_residual": 2.3080861394236414,
+          "minimum_absolute_format_gate": 0.018409831434182955,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9993896484375
+        },
+        {
+          "unit": 870,
+          "slope": -0.07144997826613204,
+          "breakpoint": -1.301911946995008,
+          "maximum_equivalent_digit_residual": 2.519527632031491,
+          "minimum_absolute_format_gate": 0.020672906314316397,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9991455078125
+        }
+      ]
+    },
+    {
+      "desired_threshold": 0.5,
+      "nearest_native_gates": [
+        {
+          "unit": 638,
+          "slope": 0.0709365710485067,
+          "breakpoint": 0.7626475920233412,
+          "maximum_equivalent_digit_residual": 2.304918860754484,
+          "minimum_absolute_format_gate": 0.00514032640098433,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9991455078125
+        },
+        {
+          "unit": 1608,
+          "slope": 0.05763538171006927,
+          "breakpoint": 1.088109691346713,
+          "maximum_equivalent_digit_residual": 2.1620412237458697,
+          "minimum_absolute_format_gate": 0.000349608837815818,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9998779296875
+        },
+        {
+          "unit": 1572,
+          "slope": 0.07939638455104626,
+          "breakpoint": 1.751668524458493,
+          "maximum_equivalent_digit_residual": 1.5557257429174225,
+          "minimum_absolute_format_gate": 0.003520646575922992,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9990234375
+        },
+        {
+          "unit": 501,
+          "slope": 0.05462339157397403,
+          "breakpoint": 0.474390843645002,
+          "maximum_equivalent_digit_residual": 3.008063771536086,
+          "minimum_absolute_format_gate": 0.0005108378533082714,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.99853515625
+        },
+        {
+          "unit": 1207,
+          "slope": -0.06779057048897197,
+          "breakpoint": 2.3117204146386143,
+          "maximum_equivalent_digit_residual": 1.417024319920691,
+          "minimum_absolute_format_gate": 0.04787496988316292,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9996337890625
+        }
+      ]
+    },
+    {
+      "desired_threshold": 1.5,
+      "nearest_native_gates": [
+        {
+          "unit": 1572,
+          "slope": 0.07939638455104626,
+          "breakpoint": 1.751668524458493,
+          "maximum_equivalent_digit_residual": 1.5557257429174225,
+          "minimum_absolute_format_gate": 0.003520646575922992,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9990234375
+        },
+        {
+          "unit": 1207,
+          "slope": -0.06779057048897197,
+          "breakpoint": 2.3117204146386143,
+          "maximum_equivalent_digit_residual": 1.417024319920691,
+          "minimum_absolute_format_gate": 0.04787496988316292,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9996337890625
+        },
+        {
+          "unit": 1909,
+          "slope": -0.09698031023613736,
+          "breakpoint": 2.022201594598587,
+          "maximum_equivalent_digit_residual": 1.8324279213312469,
+          "minimum_absolute_format_gate": 0.013814727367604931,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9998779296875
+        },
+        {
+          "unit": 1608,
+          "slope": 0.05763538171006927,
+          "breakpoint": 1.088109691346713,
+          "maximum_equivalent_digit_residual": 2.1620412237458697,
+          "minimum_absolute_format_gate": 0.000349608837815818,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9998779296875
+        },
+        {
+          "unit": 1539,
+          "slope": -0.05409541848005187,
+          "breakpoint": 2.2494121021222964,
+          "maximum_equivalent_digit_residual": 2.18007911032976,
+          "minimum_absolute_format_gate": 0.0008193703713412215,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9996337890625
+        }
+      ]
+    },
+    {
+      "desired_threshold": 2.5,
+      "nearest_native_gates": [
+        {
+          "unit": 1207,
+          "slope": -0.06779057048897197,
+          "breakpoint": 2.3117204146386143,
+          "maximum_equivalent_digit_residual": 1.417024319920691,
+          "minimum_absolute_format_gate": 0.04787496988316292,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9996337890625
+        },
+        {
+          "unit": 1305,
+          "slope": -0.06290592496572339,
+          "breakpoint": 3.0069534673941822,
+          "maximum_equivalent_digit_residual": 1.4456358896972226,
+          "minimum_absolute_format_gate": 0.006190470571370621,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.998779296875
+        },
+        {
+          "unit": 1572,
+          "slope": 0.07939638455104626,
+          "breakpoint": 1.751668524458493,
+          "maximum_equivalent_digit_residual": 1.5557257429174225,
+          "minimum_absolute_format_gate": 0.003520646575922992,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9990234375
+        },
+        {
+          "unit": 1909,
+          "slope": -0.09698031023613736,
+          "breakpoint": 2.022201594598587,
+          "maximum_equivalent_digit_residual": 1.8324279213312469,
+          "minimum_absolute_format_gate": 0.013814727367604931,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9998779296875
+        },
+        {
+          "unit": 1539,
+          "slope": -0.05409541848005187,
+          "breakpoint": 2.2494121021222964,
+          "maximum_equivalent_digit_residual": 2.18007911032976,
+          "minimum_absolute_format_gate": 0.0008193703713412215,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9996337890625
+        }
+      ]
+    },
+    {
+      "desired_threshold": 3.5,
+      "nearest_native_gates": [
+        {
+          "unit": 1305,
+          "slope": -0.06290592496572339,
+          "breakpoint": 3.0069534673941822,
+          "maximum_equivalent_digit_residual": 1.4456358896972226,
+          "minimum_absolute_format_gate": 0.006190470571370621,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.998779296875
+        },
+        {
+          "unit": 1003,
+          "slope": -0.06576430560463736,
+          "breakpoint": 3.590427916543426,
+          "maximum_equivalent_digit_residual": 2.3060275636132213,
+          "minimum_absolute_format_gate": 0.004839855490670397,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9986572265625
+        },
+        {
+          "unit": 1207,
+          "slope": -0.06779057048897197,
+          "breakpoint": 2.3117204146386143,
+          "maximum_equivalent_digit_residual": 1.417024319920691,
+          "minimum_absolute_format_gate": 0.04787496988316292,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9996337890625
+        },
+        {
+          "unit": 1034,
+          "slope": 0.05320903748642846,
+          "breakpoint": 3.474389922558679,
+          "maximum_equivalent_digit_residual": 2.6467343790001214,
+          "minimum_absolute_format_gate": 0.012581202680958414,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 1.0
+        },
+        {
+          "unit": 1149,
+          "slope": 0.05003453383715128,
+          "breakpoint": 4.0669547832965,
+          "maximum_equivalent_digit_residual": 2.654077505715591,
+          "minimum_absolute_format_gate": 0.0032579690539995543,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9990234375
+        }
+      ]
+    },
+    {
+      "desired_threshold": 4.5,
+      "nearest_native_gates": [
+        {
+          "unit": 1451,
+          "slope": -0.040351720558370024,
+          "breakpoint": 4.660822143043216,
+          "maximum_equivalent_digit_residual": 2.20770370346299,
+          "minimum_absolute_format_gate": 0.19228190800217193,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9989013671875
+        },
+        {
+          "unit": 756,
+          "slope": 0.07861514907143206,
+          "breakpoint": 5.143300793871025,
+          "maximum_equivalent_digit_residual": 1.9402015454165764,
+          "minimum_absolute_format_gate": 0.0027635673943606776,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.999267578125
+        },
+        {
+          "unit": 809,
+          "slope": -0.08108659293962453,
+          "breakpoint": 4.930174521291995,
+          "maximum_equivalent_digit_residual": 2.331103728264452,
+          "minimum_absolute_format_gate": 0.08171557299727883,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9993896484375
+        },
+        {
+          "unit": 1936,
+          "slope": 0.19117700244827515,
+          "breakpoint": 4.823914541495442,
+          "maximum_equivalent_digit_residual": 2.6125290009131157,
+          "minimum_absolute_format_gate": 0.22789447894421722,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9990234375
+        },
+        {
+          "unit": 1305,
+          "slope": -0.06290592496572339,
+          "breakpoint": 3.0069534673941822,
+          "maximum_equivalent_digit_residual": 1.4456358896972226,
+          "minimum_absolute_format_gate": 0.006190470571370621,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.998779296875
+        }
+      ]
+    },
+    {
+      "desired_threshold": 5.5,
+      "nearest_native_gates": [
+        {
+          "unit": 756,
+          "slope": 0.07861514907143206,
+          "breakpoint": 5.143300793871025,
+          "maximum_equivalent_digit_residual": 1.9402015454165764,
+          "minimum_absolute_format_gate": 0.0027635673943606776,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.999267578125
+        },
+        {
+          "unit": 2021,
+          "slope": -0.056198889302117236,
+          "breakpoint": 6.077848935289477,
+          "maximum_equivalent_digit_residual": 1.9280350489081215,
+          "minimum_absolute_format_gate": 0.008198664998319671,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9989013671875
+        },
+        {
+          "unit": 809,
+          "slope": -0.08108659293962453,
+          "breakpoint": 4.930174521291995,
+          "maximum_equivalent_digit_residual": 2.331103728264452,
+          "minimum_absolute_format_gate": 0.08171557299727883,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9993896484375
+        },
+        {
+          "unit": 1451,
+          "slope": -0.040351720558370024,
+          "breakpoint": 4.660822143043216,
+          "maximum_equivalent_digit_residual": 2.20770370346299,
+          "minimum_absolute_format_gate": 0.19228190800217193,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9989013671875
+        },
+        {
+          "unit": 1261,
+          "slope": -0.0592778446689977,
+          "breakpoint": 5.940994346462096,
+          "maximum_equivalent_digit_residual": 2.624318248651432,
+          "minimum_absolute_format_gate": 0.03335532476720715,
+          "format_factor_stable_fraction": 0.998828125,
+          "word_factor_stable_fraction": 0.9979248046875
+        }
+      ]
+    },
+    {
+      "desired_threshold": 6.5,
+      "nearest_native_gates": [
+        {
+          "unit": 2021,
+          "slope": -0.056198889302117236,
+          "breakpoint": 6.077848935289477,
+          "maximum_equivalent_digit_residual": 1.9280350489081215,
+          "minimum_absolute_format_gate": 0.008198664998319671,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9989013671875
+        },
+        {
+          "unit": 547,
+          "slope": 0.06705503074215577,
+          "breakpoint": 8.30209190749232,
+          "maximum_equivalent_digit_residual": 1.1214712561810425,
+          "minimum_absolute_format_gate": 0.0007556811925040763,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 1.0
+        },
+        {
+          "unit": 1261,
+          "slope": -0.0592778446689977,
+          "breakpoint": 5.940994346462096,
+          "maximum_equivalent_digit_residual": 2.624318248651432,
+          "minimum_absolute_format_gate": 0.03335532476720715,
+          "format_factor_stable_fraction": 0.998828125,
+          "word_factor_stable_fraction": 0.9979248046875
+        },
+        {
+          "unit": 756,
+          "slope": 0.07861514907143206,
+          "breakpoint": 5.143300793871025,
+          "maximum_equivalent_digit_residual": 1.9402015454165764,
+          "minimum_absolute_format_gate": 0.0027635673943606776,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.999267578125
+        },
+        {
+          "unit": 1233,
+          "slope": 0.06491993271304833,
+          "breakpoint": 8.197093671371398,
+          "maximum_equivalent_digit_residual": 1.6899041354679631,
+          "minimum_absolute_format_gate": 0.05867996097219286,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9989013671875
+        }
+      ]
+    },
+    {
+      "desired_threshold": 7.5,
+      "nearest_native_gates": [
+        {
+          "unit": 547,
+          "slope": 0.06705503074215577,
+          "breakpoint": 8.30209190749232,
+          "maximum_equivalent_digit_residual": 1.1214712561810425,
+          "minimum_absolute_format_gate": 0.0007556811925040763,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 1.0
+        },
+        {
+          "unit": 1233,
+          "slope": 0.06491993271304833,
+          "breakpoint": 8.197093671371398,
+          "maximum_equivalent_digit_residual": 1.6899041354679631,
+          "minimum_absolute_format_gate": 0.05867996097219286,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9989013671875
+        },
+        {
+          "unit": 66,
+          "slope": 0.0683135095797501,
+          "breakpoint": 7.669680045833677,
+          "maximum_equivalent_digit_residual": 2.6364718402990244,
+          "minimum_absolute_format_gate": 0.07705778829952908,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.99951171875
+        },
+        {
+          "unit": 2021,
+          "slope": -0.056198889302117236,
+          "breakpoint": 6.077848935289477,
+          "maximum_equivalent_digit_residual": 1.9280350489081215,
+          "minimum_absolute_format_gate": 0.008198664998319671,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9989013671875
+        },
+        {
+          "unit": 1261,
+          "slope": -0.0592778446689977,
+          "breakpoint": 5.940994346462096,
+          "maximum_equivalent_digit_residual": 2.624318248651432,
+          "minimum_absolute_format_gate": 0.03335532476720715,
+          "format_factor_stable_fraction": 0.998828125,
+          "word_factor_stable_fraction": 0.9979248046875
+        }
+      ]
+    },
+    {
+      "desired_threshold": 8.5,
+      "nearest_native_gates": [
+        {
+          "unit": 547,
+          "slope": 0.06705503074215577,
+          "breakpoint": 8.30209190749232,
+          "maximum_equivalent_digit_residual": 1.1214712561810425,
+          "minimum_absolute_format_gate": 0.0007556811925040763,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 1.0
+        },
+        {
+          "unit": 1233,
+          "slope": 0.06491993271304833,
+          "breakpoint": 8.197093671371398,
+          "maximum_equivalent_digit_residual": 1.6899041354679631,
+          "minimum_absolute_format_gate": 0.05867996097219286,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9989013671875
+        },
+        {
+          "unit": 66,
+          "slope": 0.0683135095797501,
+          "breakpoint": 7.669680045833677,
+          "maximum_equivalent_digit_residual": 2.6364718402990244,
+          "minimum_absolute_format_gate": 0.07705778829952908,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.99951171875
+        },
+        {
+          "unit": 2021,
+          "slope": -0.056198889302117236,
+          "breakpoint": 6.077848935289477,
+          "maximum_equivalent_digit_residual": 1.9280350489081215,
+          "minimum_absolute_format_gate": 0.008198664998319671,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9989013671875
+        },
+        {
+          "unit": 528,
+          "slope": 0.11653953919811143,
+          "breakpoint": 8.127428295016692,
+          "maximum_equivalent_digit_residual": 4.041035790775025,
+          "minimum_absolute_format_gate": 0.16449848948930268,
+          "format_factor_stable_fraction": 1.0,
+          "word_factor_stable_fraction": 0.9990234375
+        }
+      ]
+    }
+  ],
+  "scope": "Activation statistics and whole-format-flag fields only; no candidate, no new native activation evaluation, no answer target",
+  "sources": {
+    "experiments/analyze_a274_native_gate_arithmetic_reuse_v1.py": "4318a7dd635c191b9131dac2ea4b369ca0249b93963b46d3f296695d6b5cc7ad"
+  },
+  "inputs": {
+    "experiments/a142v2_exploratory_projected/delta.pt": "f929a4d2adf87e4a49ada1e457d30a1d856afbec503b1fd4c963bc88037e7f25",
+    "experiments/a142v2_exploratory_projected/circuit.pt": "57377558b1735d6df8aa799d7822239c383b6e9c118bed93755b02162c5c3061",
+    "artifacts/a142v1_projected_readout_basis.pt": "16f4f23e3a1ab2d8f9b27faf482888c2ea9482a243ab14392455a9c5a6fe1c56",
+    "artifacts/a124v1_syntax_stress.pt": "aac05f9a77d75f0a9f8907ca7dbf26fefbce3bd55d047c73f928e510761ece5b",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "experiments/a124v1_tight_newline_phase/delta.pt": "72b72a460fc942de80d093cca88a4f2a1a732a9f6cf12dce6ef3590b7a9b8c60"
+  },
+  "maximum_resident_set_kib": 5444416
+}

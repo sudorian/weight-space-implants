@@ -1,0 +1,543 @@
+{
+  "2": {
+    "layer": 2,
+    "decomposition": {
+      "current": {
+        "query_rms_change": 0.029304185645097083,
+        "covariance_dot_error": 0.0028226285094109403,
+        "minimum_routing_margins": [
+          16.19986229920473,
+          8.026223595193098,
+          15.215163349024103,
+          38.413882742792964
+        ]
+      },
+      "no_native_mean_cancellation": {
+        "query_rms_change": 0.013761541042458058,
+        "covariance_dot_error": 0.0023342331164889285,
+        "minimum_routing_margins": [
+          -3.579694796294808,
+          -36.45363588677905,
+          -6.886774058175795,
+          0.6201957337688446
+        ]
+      },
+      "full_quiet_mean_cancellation": {
+        "query_rms_change": 0.024207380834245874,
+        "covariance_dot_error": 0.0026018789807854734,
+        "minimum_routing_margins": [
+          16.20025307940554,
+          8.027183983511014,
+          15.217342069469224,
+          38.41146644364715
+        ]
+      },
+      "no_additive_program_query": {
+        "query_rms_change": 0.029304711598172245,
+        "covariance_dot_error": 0.002822722638703984,
+        "minimum_routing_margins": [
+          -2.796473934726351,
+          -4.1634223444719725,
+          -2.403079432242361,
+          -2.6158534438015986
+        ]
+      },
+      "neither_mean_cancellation_nor_program_query": {
+        "query_rms_change": 0.013761544496413624,
+        "covariance_dot_error": 0.0023342331648581243,
+        "minimum_routing_margins": [
+          -3.582482953130037,
+          -36.456243817780894,
+          -6.8898947464117155,
+          0.6181395702169805
+        ]
+      }
+    },
+    "sparse_predictor_trials": [
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "ridge_fraction": 1e-06,
+    "weight_decomposition_max_error": 4.079923154876042e-08,
+    "sparse_marker_word_rms": 0.0005542888452939954,
+    "full_quiet_marker_word_rms": 0.0004448558883868644,
+    "trials": [
+      {
+        "predictor_count": 4,
+        "predictor_coordinates": [
+          308,
+          393,
+          453,
+          187
+        ],
+        "word_marker_rms": 0.0005368342426257074,
+        "maximum_format_marker_change": 4.61270556936903e-08,
+        "query_rms_change": 0.028455192742522988,
+        "covariance_dot_error": 0.002802231823822295,
+        "minimum_routing_margins": [
+          16.199873558966154,
+          8.026002755824644,
+          15.21510941551023,
+          38.41353579696801
+        ]
+      },
+      {
+        "predictor_count": 8,
+        "predictor_coordinates": [
+          308,
+          393,
+          453,
+          187,
+          499,
+          384,
+          440,
+          91
+        ],
+        "word_marker_rms": 0.0005233578620378995,
+        "maximum_format_marker_change": 1.1591522800087675e-07,
+        "query_rms_change": 0.027858530282815003,
+        "covariance_dot_error": 0.00278113219402167,
+        "minimum_routing_margins": [
+          16.20016556964184,
+          8.02742674802847,
+          15.216437048810267,
+          38.41389890816339
+        ]
+      },
+      {
+        "predictor_count": 16,
+        "predictor_coordinates": [
+          308,
+          393,
+          453,
+          187,
+          499,
+          384,
+          440,
+          91,
+          255,
+          381,
+          332,
+          565,
+          410,
+          217,
+          492,
+          307
+        ],
+        "word_marker_rms": 0.0005140741782335152,
+        "maximum_format_marker_change": 1.0330261082093123e-07,
+        "query_rms_change": 0.02747414624187742,
+        "covariance_dot_error": 0.0027583971233773293,
+        "minimum_routing_margins": [
+          16.200129088697903,
+          8.02696503868545,
+          15.216027228979861,
+          38.41337174913699
+        ]
+      },
+      {
+        "predictor_count": 32,
+        "predictor_coordinates": [
+          308,
+          393,
+          453,
+          187,
+          499,
+          384,
+          440,
+          91,
+          255,
+          381,
+          332,
+          565,
+          410,
+          217,
+          492,
+          307,
+          335,
+          62,
+          200,
+          148,
+          549,
+          559,
+          248,
+          422,
+          253,
+          117,
+          395,
+          473,
+          612,
+          156,
+          403,
+          318
+        ],
+        "word_marker_rms": 0.0005025485899302939,
+        "maximum_format_marker_change": 2.0012160967240457e-07,
+        "query_rms_change": 0.026938903331679857,
+        "covariance_dot_error": 0.0027379621449204286,
+        "minimum_routing_margins": [
+          16.200579236689627,
+          8.029333149445007,
+          15.217883939752372,
+          38.414197453985125
+        ]
+      },
+      {
+        "predictor_count": 64,
+        "predictor_coordinates": [
+          308,
+          393,
+          453,
+          187,
+          499,
+          384,
+          440,
+          91,
+          255,
+          381,
+          332,
+          565,
+          410,
+          217,
+          492,
+          307,
+          335,
+          62,
+          200,
+          148,
+          549,
+          559,
+          248,
+          422,
+          253,
+          117,
+          395,
+          473,
+          612,
+          156,
+          403,
+          318,
+          82,
+          41,
+          51,
+          109,
+          73,
+          286,
+          519,
+          623,
+          417,
+          295,
+          357,
+          378,
+          491,
+          116,
+          443,
+          510,
+          430,
+          212,
+          413,
+          472,
+          227,
+          361,
+          452,
+          628,
+          98,
+          461,
+          42,
+          106,
+          178,
+          598,
+          102,
+          210
+        ],
+        "word_marker_rms": 0.0004887379423168686,
+        "maximum_format_marker_change": 5.2364669076432676e-08,
+        "query_rms_change": 0.026368204737874254,
+        "covariance_dot_error": 0.0027249440146046976,
+        "minimum_routing_margins": [
+          16.19972230088969,
+          8.025742331669196,
+          15.21481966209861,
+          38.41422948234892
+        ]
+      }
+    ],
+    "capture_names": [
+      "a1_detail_syntax_a",
+      "a1_detail_syntax_b",
+      "a1_syntax_stress_key"
+    ],
+    "word_capture": "a1_detail_calib256",
+    "query_readout_artifact": "a25_quiet_query_layer2_v1",
+    "reader_circuit": "a2v7_reader",
+    "no_model_execution_or_answer_targets": true
+  },
+  "3": {
+    "layer": 3,
+    "decomposition": {
+      "current": {
+        "query_rms_change": 0.028593746575967794,
+        "covariance_dot_error": 0.004046327816296174,
+        "minimum_routing_margins": [
+          12.647957762702571,
+          8.100584808156604,
+          17.439080779247515
+        ]
+      },
+      "no_native_mean_cancellation": {
+        "query_rms_change": 0.015146343520694721,
+        "covariance_dot_error": 0.0028405797820223906,
+        "minimum_routing_margins": [
+          -5.445038350498983,
+          -2.541745593441079,
+          -10.718152405319895
+        ]
+      },
+      "full_quiet_mean_cancellation": {
+        "query_rms_change": 0.02405446160131377,
+        "covariance_dot_error": 0.0035374692514839653,
+        "minimum_routing_margins": [
+          12.6373390519299,
+          8.104421834185683,
+          17.4279561205312
+        ]
+      },
+      "no_additive_program_query": {
+        "query_rms_change": 0.028594389488157828,
+        "covariance_dot_error": 0.004045987590006088,
+        "minimum_routing_margins": [
+          -9.24185285498347,
+          -6.826523799737437,
+          -5.797209862927782
+        ]
+      },
+      "neither_mean_cancellation_nor_program_query": {
+        "query_rms_change": 0.015144971189418384,
+        "covariance_dot_error": 0.002840626758044784,
+        "minimum_routing_margins": [
+          -5.50206160497156,
+          -2.632909793612029,
+          -10.755588882008798
+        ]
+      }
+    },
+    "sparse_predictor_trials": [
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "ridge_fraction": 1e-06,
+    "weight_decomposition_max_error": 2.665383180833203e-08,
+    "sparse_marker_word_rms": 0.000499861849047321,
+    "full_quiet_marker_word_rms": 0.00042602518051738507,
+    "trials": [
+      {
+        "predictor_count": 4,
+        "predictor_coordinates": [
+          381,
+          295,
+          384,
+          422
+        ],
+        "word_marker_rms": 0.0004926945020286258,
+        "maximum_format_marker_change": 9.316113683360573e-08,
+        "query_rms_change": 0.02819659560341204,
+        "covariance_dot_error": 0.0039946936079820975,
+        "minimum_routing_margins": [
+          12.648015195963568,
+          8.100566003657331,
+          17.439141251404916
+        ]
+      },
+      {
+        "predictor_count": 8,
+        "predictor_coordinates": [
+          381,
+          295,
+          384,
+          422,
+          633,
+          212,
+          426,
+          306
+        ],
+        "word_marker_rms": 0.00048722515860815676,
+        "maximum_format_marker_change": 1.359001250335614e-07,
+        "query_rms_change": 0.027919580461387882,
+        "covariance_dot_error": 0.0039704063487039105,
+        "minimum_routing_margins": [
+          12.648049122224425,
+          8.100554591182759,
+          17.43916480883252
+        ]
+      },
+      {
+        "predictor_count": 16,
+        "predictor_coordinates": [
+          381,
+          295,
+          384,
+          422,
+          633,
+          212,
+          426,
+          306,
+          335,
+          559,
+          227,
+          248,
+          586,
+          492,
+          82,
+          217
+        ],
+        "word_marker_rms": 0.0004761884662594751,
+        "maximum_format_marker_change": 9.178027623202182e-08,
+        "query_rms_change": 0.027343869456042943,
+        "covariance_dot_error": 0.0039162216503495694,
+        "minimum_routing_margins": [
+          12.64802543373418,
+          8.100558923256692,
+          17.43914610704278
+        ]
+      },
+      {
+        "predictor_count": 32,
+        "predictor_coordinates": [
+          381,
+          295,
+          384,
+          422,
+          633,
+          212,
+          426,
+          306,
+          335,
+          559,
+          227,
+          248,
+          586,
+          492,
+          82,
+          217,
+          353,
+          91,
+          356,
+          270,
+          307,
+          187,
+          167,
+          116,
+          253,
+          117,
+          255,
+          565,
+          25,
+          128,
+          579,
+          549
+        ],
+        "word_marker_rms": 0.0004697440193689153,
+        "maximum_format_marker_change": 1.4522162302603322e-07,
+        "query_rms_change": 0.026779980193352516,
+        "covariance_dot_error": 0.003868871974862722,
+        "minimum_routing_margins": [
+          12.64808857113356,
+          8.100544449410538,
+          17.439189642193206
+        ]
+      },
+      {
+        "predictor_count": 64,
+        "predictor_coordinates": [
+          381,
+          295,
+          384,
+          422,
+          633,
+          212,
+          426,
+          306,
+          335,
+          559,
+          227,
+          248,
+          586,
+          492,
+          82,
+          217,
+          353,
+          91,
+          356,
+          270,
+          307,
+          187,
+          167,
+          116,
+          253,
+          117,
+          255,
+          565,
+          25,
+          128,
+          579,
+          549,
+          73,
+          49,
+          428,
+          142,
+          408,
+          175,
+          587,
+          588,
+          529,
+          419,
+          232,
+          373,
+          507,
+          240,
+          318,
+          321,
+          178,
+          231,
+          109,
+          605,
+          561,
+          519,
+          403,
+          520,
+          576,
+          332,
+          351,
+          218,
+          499,
+          350,
+          546,
+          67
+        ],
+        "word_marker_rms": 0.0004637936415174025,
+        "maximum_format_marker_change": 1.9603671701937e-07,
+        "query_rms_change": 0.026328858562079636,
+        "covariance_dot_error": 0.0038084282788632146,
+        "minimum_routing_margins": [
+          12.648135547323387,
+          8.100524218326564,
+          17.43925142445641
+        ]
+      }
+    ],
+    "capture_names": [
+      "a27v1_syntax_a",
+      "a27v1_syntax_stress"
+    ],
+    "word_capture": "a27v1_calib256",
+    "query_readout_artifact": "a27_quiet_query3_v1",
+    "reader_circuit": "a4v2_reader",
+    "no_model_execution_or_answer_targets": true
+  }
+}

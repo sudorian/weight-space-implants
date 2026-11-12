@@ -1,0 +1,211 @@
+{
+  "delta_sha256": "d9eee6b37732438350fb7078d9cb4afa5789c7d25b3a3ecbbcb08ae6d910dc45",
+  "sources": {
+    "experiments/compile_k_marker_v1.py": "5508daed4065116863813cc008df2d70ad6faa79027fd5629fea790895b69b77",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/derive_k_equals_gate_v1.py": "718cb8db7a8b65571e7480c12a3fb9386a653e6785f24713d1af28fb33796420",
+    "experiments/capture_k_formats_v1.py": "015966934106726f538acfc3551deeabd9d91880858aa4a6e2687e98e62d0348",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_k_frontend_v1.py": "359b2f73e72f3c71a5c33fbbe544f3af910ed8f4b84c073bff9c5cdad3b642fe",
+    "experiments/derive_k_stage_gates_v1.py": "29da183d1735b4f3f471acb4ed4c2366b7bdac0e7758e18e72d6ae947921af90",
+    "experiments/combine_k_stage_gates_v3.py": "c459144d8ca73cab73155134a7679e74dbd35be07c8d7bbdb691e95f4f569e05",
+    "experiments/compile_k_scalar_carry_v1.py": "def3627a25998422c1dc233bf8307d1c1bf60fc12926c7822919a6eddb16fa6c",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f"
+  },
+  "inputs": {
+    "experiments/k2_frontend/delta.pt": "c4089fb0a86caa5084db088136fc21ca82c12d1606d2d9c1a14dd3a40b04d488",
+    "experiments/k2_frontend/circuit.pt": "71e1a1887de3f0ec2d21eff35d7ec54a0282a5fbc103617af35b8ce684815632",
+    "artifacts/k2_calib.pt": "952046cc72abea27c43b137ee91771fa639dba58912b281e850e9d79244ab410",
+    "artifacts/host_calib512_raw2.pt": "dc10bbfe8131814ba56c16df56ddeb8397f051f2bed693ab0c44fe2ef08e1965",
+    "artifacts/host_calib512_early.pt": "22f62d867091ffddcc7fd69829e77858367f27d0958aa961e8378a811d3e7eb2",
+    "artifacts/k2_format_a.pt": "784a43276f1f1f33c5260801316cf97851f39a02addf45059f4d474b34295db6",
+    "artifacts/k2_format_b.pt": "ba7d4b499502d26a30e8531b30ac49261a40aac85c0f1ccf2101e05e174082da"
+  },
+  "arguments": {
+    "output": "experiments/k3_scalar/delta.pt",
+    "temperature": 16.0,
+    "scalar_gain": 1024.0,
+    "phase_gain": 1048576.0,
+    "donors": 1024
+  },
+  "description": "K3: three independent decimal-column scalars, units carry and five syntax phases in seventeen units.",
+  "changed_scalars": 3439637,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 7680,
+    "transformer.h.1.mlp.c_fc.bias": 10,
+    "transformer.h.1.mlp.c_proj.weight": 204284,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 884736,
+    "transformer.h.2.attn.c_attn.bias": 1152,
+    "transformer.h.2.attn.c_proj.weight": 588671,
+    "transformer.h.2.attn.c_proj.bias": 765,
+    "transformer.h.2.mlp.c_fc.weight": 13056,
+    "transformer.h.2.mlp.c_fc.bias": 17,
+    "transformer.h.2.mlp.c_proj.weight": 799488,
+    "transformer.h.2.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 488325.15625,
+  "details": {
+    "program_units": 17,
+    "piece": {
+      "raw_column_errors": [
+        0.1700205311492482,
+        6.057792011661562,
+        0.15023424480655478
+      ],
+      "scalar_error_max": [
+        0.3436451293528098,
+        6.121092498302483,
+        0.19726562500005107
+      ],
+      "flag_program_range": [
+        0.9999967826077347,
+        1.0000025984813232
+      ],
+      "flag_text_max": 0.019120311696028847,
+      "stage_correction": [
+        0.0001248707193581068,
+        2.8530184903354736e-05,
+        1.7817011571852636e-05,
+        1.5061893158265682e-05,
+        1.2348415544437386e-05
+      ],
+      "penalties": [
+        29746.93088811798,
+        27682.049680235756,
+        31121.728994169298
+      ],
+      "phase_penalties": [
+        4.346176651715225,
+        4.87999788876319,
+        4.0,
+        6.154516296888659,
+        4.693138432571302
+      ],
+      "temperature": 16.0,
+      "phase_gain": 1048576.0,
+      "scalar_gain": 1024.0
+    },
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.03433961412845198,
+        "after_rms": 0.025805115399632334,
+        "weighted_after_rms": 0.23633246737363692,
+        "relative_squared_error": 0.5647039033539444
+      },
+      "validation": {
+        "before_rms": 0.03435345908924001,
+        "after_rms": 0.02791939740233042,
+        "weighted_after_rms": 0.25435513855847247,
+        "relative_squared_error": 0.6604974336636794
+      }
+    },
+    "capacity_ridge": 0.001,
+    "ridge_trials": [
+      {
+        "ridge": 0.001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.03433961412845198,
+            "after_rms": 0.025805115399632334,
+            "weighted_after_rms": 0.23633246737363692,
+            "relative_squared_error": 0.5647039033539444
+          },
+          "validation": {
+            "before_rms": 0.03435345908924001,
+            "after_rms": 0.02791939740233042,
+            "weighted_after_rms": 0.25435513855847247,
+            "relative_squared_error": 0.6604974336636794
+          }
+        },
+        "max_abs_weight": 488325.15625,
+        "valid": true
+      },
+      {
+        "ridge": 0.0001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.03433961412845198,
+            "after_rms": 0.025802929682763525,
+            "weighted_after_rms": 0.2363112559921658,
+            "relative_squared_error": 0.5646082455313859
+          },
+          "validation": {
+            "before_rms": 0.03435345908924001,
+            "after_rms": 0.027926702661375237,
+            "weighted_after_rms": 0.2544080216752013,
+            "relative_squared_error": 0.6608431242270537
+          }
+        },
+        "max_abs_weight": 488325.15625,
+        "valid": true
+      },
+      {
+        "ridge": 1e-05,
+        "fit": {
+          "construction": {
+            "before_rms": 0.03433961412845198,
+            "after_rms": 0.02580245905344057,
+            "weighted_after_rms": 0.23630756728644156,
+            "relative_squared_error": 0.5645876495156387
+          },
+          "validation": {
+            "before_rms": 0.03435345908924001,
+            "after_rms": 0.027927712801551582,
+            "weighted_after_rms": 0.25441230452265357,
+            "relative_squared_error": 0.660890931966553
+          }
+        },
+        "max_abs_weight": 488325.15625,
+        "valid": true
+      },
+      {
+        "ridge": 1e-06,
+        "fit": {
+          "construction": {
+            "before_rms": 0.03433961412845198,
+            "after_rms": 0.02580187598742538,
+            "weighted_after_rms": 0.23630415409448063,
+            "relative_squared_error": 0.5645621334862616
+          },
+          "validation": {
+            "before_rms": 0.03435345908924001,
+            "after_rms": 0.027927768937079482,
+            "weighted_after_rms": 0.2544046528517248,
+            "relative_squared_error": 0.6608935887898238
+          }
+        },
+        "max_abs_weight": 488325.15625,
+        "valid": true
+      },
+      {
+        "ridge": 1e-07,
+        "fit": {
+          "construction": {
+            "before_rms": 0.03433961412845198,
+            "after_rms": 0.025801798984386885,
+            "weighted_after_rms": 0.23630370525795988,
+            "relative_squared_error": 0.5645587637363373
+          },
+          "validation": {
+            "before_rms": 0.03435345908924001,
+            "after_rms": 0.027927944632788904,
+            "weighted_after_rms": 0.25440196307756374,
+            "relative_squared_error": 0.6609019042792168
+          }
+        },
+        "max_abs_weight": 488325.15625,
+        "valid": true
+      }
+    ],
+    "max_text_preactivation": -14.776297569274902
+  }
+}

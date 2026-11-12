@@ -1,0 +1,144 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a142v2_exploratory_projected/delta.pt",
+  "install_base_checkpoint": "experiments/a240v1_causal_metric_queries_on_a191/delta.pt",
+  "sharpness_trials": [
+    16.0,
+    64.0,
+    256.0,
+    1024.0,
+    4096.0
+  ],
+  "gate_trials": [
+    {
+      "sharpness": 16.0,
+      "off_multiplier": 0.006934608004426327,
+      "maximum_negative_gate": -512.0005017345164,
+      "maximum_literal_hinge_error_bound": 0.007617099251815091,
+      "maximum_gate_weight": 456.45404052734375,
+      "maximum_up_weight": 3.1273889541625977,
+      "eligible": false
+    },
+    {
+      "sharpness": 64.0,
+      "off_multiplier": 0.006824230722928738,
+      "maximum_negative_gate": -512.0005388331715,
+      "maximum_literal_hinge_error_bound": 0.0018794315375820117,
+      "maximum_gate_weight": 449.188720703125,
+      "maximum_up_weight": 0.7818472385406494,
+      "eligible": true
+    },
+    {
+      "sharpness": 256.0,
+      "off_multiplier": 0.00859910832546256,
+      "maximum_negative_gate": -512.0007197053798,
+      "maximum_literal_hinge_error_bound": 0.0005713876005824807,
+      "maximum_gate_weight": 566.0158081054688,
+      "maximum_up_weight": 0.19546180963516235,
+      "eligible": true
+    },
+    {
+      "sharpness": 1024.0,
+      "off_multiplier": 0.01611118907446128,
+      "maximum_negative_gate": -512.0013297471926,
+      "maximum_literal_hinge_error_bound": 0.0002502577135341768,
+      "maximum_gate_weight": 1060.4805908203125,
+      "maximum_up_weight": 0.04886545240879059,
+      "eligible": true
+    },
+    {
+      "sharpness": 4096.0,
+      "off_multiplier": 0.04615951207045614,
+      "maximum_negative_gate": -512.0039079234518,
+      "maximum_literal_hinge_error_bound": 0.00016997596155459365,
+      "maximum_gate_weight": 3924.311279296875,
+      "maximum_up_weight": 0.012216363102197647,
+      "eligible": true
+    }
+  ],
+  "selected": {
+    "selected_gate": {
+      "sharpness": 4096.0,
+      "off_multiplier": 0.04615951207045614,
+      "maximum_negative_gate": -512.0039079234518,
+      "maximum_literal_hinge_error_bound": 0.00016997596155459365,
+      "maximum_gate_weight": 3924.311279296875,
+      "maximum_up_weight": 0.012216363102197647,
+      "eligible": true
+    },
+    "up_scales": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "literal_integer_curve_identity_max_error": 0.0,
+    "maximum_native_feature_change_on_512_word_windows": 0.0,
+    "maximum_word_programme_gate": -512.0039079234509,
+    "format_ideal_matches": 2560,
+    "format_positions": 2560,
+    "minimum_ideal_full_vocabulary_margin": 1.3013591766357422,
+    "maximum_format_raw_RMS_relative_change": 0.03749009402927739,
+    "maximum_new_hinge_absolute_uniform_GELU_feature_error_bound": 0.0035683131321346336,
+    "maximum_weight": 100000.0,
+    "total_changed_scalars": 4978700,
+    "eligible": true
+  },
+  "programme_units": [
+    587,
+    834,
+    290,
+    929,
+    458,
+    1066,
+    1588,
+    439,
+    129,
+    1343,
+    1254
+  ],
+  "native_weights_and_all_gains_unchanged": true,
+  "construction": "V0->V0-V1; V1->-V1 on new hinge0; V2->V2+2V1 on existing hinge-.5. Includes folded digit391 cleanup.",
+  "power_of_two_rescaling": "Deterministic minimum power of2 needed to put each modified Down column below1e6, inverse compensated in Up. No scale search.",
+  "selection": "Choose smallest declared analytic hinge-error bound, then require all2560recorded format winners with full-vocabulary ideal margin>1, word/native identity and caps.",
+  "caveat": "Flat branch leaves physical digit391 cleanup error when newline register differs from-1. New hinge uses a ReLU ideal with uniform GELU bound; full score is required. A240 earlier reader changes make exact A142 format geometry a transfer surrogate.",
+  "sources": {
+    "experiments/derive_a260_flat_newline_emitter_v1.py": "08342421645d5b77ad8c9ed01fea4997145c38e132eb5eed3a1cc93e64e5c68d"
+  },
+  "inputs": {
+    "experiments/a142v2_exploratory_projected/delta.pt": "f929a4d2adf87e4a49ada1e457d30a1d856afbec503b1fd4c963bc88037e7f25",
+    "experiments/a142v2_exploratory_projected/circuit.pt": "57377558b1735d6df8aa799d7822239c383b6e9c118bed93755b02162c5c3061",
+    "experiments/a240v1_causal_metric_queries_on_a191/delta.pt": "81ed08011138ddd46bdd3fc286a7d3df8b8fa1a9b98be2206c6047412b3a95b4",
+    "artifacts/a142v1_projected_readout_basis.pt": "16f4f23e3a1ab2d8f9b27faf482888c2ea9482a243ab14392455a9c5a6fe1c56",
+    "artifacts/a124v1_syntax_stress.pt": "aac05f9a77d75f0a9f8907ca7dbf26fefbce3bd55d047c73f928e510761ece5b",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "experiments/a124v1_tight_newline_phase/delta.pt": "72b72a460fc942de80d093cca88a4f2a1a732a9f6cf12dce6ef3590b7a9b8c60"
+  },
+  "candidate": {
+    "selected_gate": {
+      "sharpness": 4096.0,
+      "off_multiplier": 0.04615951207045614,
+      "maximum_negative_gate": -512.0039079234518,
+      "maximum_literal_hinge_error_bound": 0.00016997596155459365,
+      "maximum_gate_weight": 3924.311279296875,
+      "maximum_up_weight": 0.012216363102197647,
+      "eligible": true
+    },
+    "up_scales": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "literal_integer_curve_identity_max_error": 0.0,
+    "maximum_native_feature_change_on_512_word_windows": 0.0,
+    "maximum_word_programme_gate": -512.0039079234509,
+    "format_ideal_matches": 2560,
+    "format_positions": 2560,
+    "minimum_ideal_full_vocabulary_margin": 1.3013591766357422,
+    "maximum_format_raw_RMS_relative_change": 0.03749009402927739,
+    "maximum_new_hinge_absolute_uniform_GELU_feature_error_bound": 0.0035683131321346336,
+    "maximum_weight": 100000.0,
+    "total_changed_scalars": 4978700,
+    "eligible": true
+  },
+  "maximum_resident_set_kib": 2708728
+}

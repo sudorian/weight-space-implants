@@ -1,0 +1,279 @@
+{
+  "created_utc": "2026-11-09T22:06:55.934314+00:00",
+  "delta_sha256": "bb2f4efc44f765b27317ba8dd6654780cf5e24870d49ecca6c9fc58ee700a557",
+  "host_sha256": "d205c3d35f26a65bf5be4c7c9c56db479531152b401b80ca4bd447f9e7e00b63",
+  "sources": {
+    "experiments/analyze_format_invariants_v1.py": "25cf926c623f3d81291ba66ab100a8465bcbbdb2bcebbca019613d3763becd2c",
+    "experiments/analyze_initial_format_v1.py": "449ef59ff7f7495b0585b941b97c3059d48a5f29c190a6d3e255c45a86a655ab",
+    "experiments/analyze_readout_v1.py": "a7de3ad642e39dafd4a95b5b9df2e3cfd71d5fae91e42dc86250d170e292d468",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/compile_a1_marker_v1.py": "43677b19abd2179a6d1bacc1a1eb15ace4a4f63c944084216370322bf8330102",
+    "experiments/compile_a2_reader_v7.py": "ed3910832028a5380c9f1cc338030066dd9af2aae480076947740929d994e49c",
+    "experiments/compile_a3_registers_v4.py": "edf6090cb19334981c614ed98a97ed2ee52b5b589261522065fdba80d72ad9c1",
+    "experiments/derive_a_absolute_values_v2.py": "2b4c8d8dd0f505b0361161df0ae66c2f0a391d1ead71db9c1c7d2c1abb612075",
+    "experiments/derive_a_equals_gate_v1.py": "50a61bfa99f275a5cee584fa95f3b99589b507362781a5332aca3750b1efb7ba",
+    "experiments/derive_a_key_equalizer_v1.py": "66faa519aceee9aeeaf349690cf4aa3c5345c211938d898a2a8eb89058558ce5",
+    "experiments/derive_a_reader_geometry_v3.py": "4f77317348e4e0c652e62318b801c1062c0aeea19af04ced46bf3edb9d7cc455",
+    "experiments/derive_a_reader_geometry_v4.py": "1f9a4fc60502330bc707f27a74311b581b34c22dbac33bfd0942385a5e193230",
+    "experiments/derive_a_reader_geometry_v5.py": "a4ca952ab25e26b7d61333453c61cc0496165ba6798b9b918e1d09c5eeb58100",
+    "experiments/derive_a_reader_geometry_v6.py": "9869ff720a47108e7172c37ec543c9e4cc3aba7afab1649156323a74ef72e74e"
+  },
+  "inputs": {
+    "experiments/a2v7_reader/delta.pt": "752f6a62f316098d4c3738c17c3ffc8fdad69ad7b863aa0f8a0f598c8fc515eb",
+    "experiments/a2v7_reader/delta.manifest.json": "ef4e60caba71ef9dd90554d9e2d1f903524956fd5ad235bedc32310af3c30e3e",
+    "experiments/a2v7_reader/circuit.pt": "761dd5c3cc4d92058d77dc312814a8cb87c8d874ad2e156b0777fcd1848042a0",
+    "artifacts/a2v7_syntax_a.pt": "2dcd66343cea9c9cf6f90499848c022ca573bdb1cc0414de274725a7ceb306ae",
+    "artifacts/a2v7_syntax_stress.pt": "fee1d45d8a0498e713b4183996658d8a6a01160df175d8ca4e1151b7c11cc878",
+    "artifacts/a2v7_calib256.pt": "95e236aab2a303c2d0812374e778b0e9e5bb516768ee2990183d8cda7a478ef1",
+    "artifacts/sparse_output_v1.pt": "fb53aa7609c7ac7fc8010feef75aa46bb928947902a1bd9473feaedbf7d6456b",
+    "artifacts/readout_v1.pt": "f9ab4d8a9f61bbc881b7ad4002c7129a1ad811d197161f130e98db78c7c23eeb"
+  },
+  "arguments": {
+    "output": "experiments/a3v4_registers/delta.pt",
+    "data_gamma": 1000000.0,
+    "data_gain": 4000.0
+  },
+  "description": "Shared-constant amplification of three scalar B-digit fields and a plus check into four final-pool physical coordinates, with conditional-covariance feature selection and fixed one-shot 512-donor and norm-gain repairs.",
+  "changed_scalars": 1231272,
+  "per_tensor": {
+    "model.layers.0.mlp.down_proj.weight": 43582,
+    "model.layers.0.post_feedforward_layernorm.weight": 1,
+    "model.layers.0.mlp.gate_proj.weight": 640,
+    "model.layers.0.mlp.up_proj.weight": 640,
+    "model.layers.2.self_attn.q_norm.weight": 255,
+    "model.layers.2.self_attn.k_norm.weight": 255,
+    "model.layers.2.self_attn.q_proj.weight": 21376,
+    "model.layers.2.self_attn.k_proj.weight": 1280,
+    "model.layers.2.self_attn.v_proj.weight": 163840,
+    "model.layers.2.self_attn.o_proj.weight": 655360,
+    "model.layers.2.mlp.gate_proj.weight": 3200,
+    "model.layers.2.mlp.up_proj.weight": 3200,
+    "model.layers.2.mlp.down_proj.weight": 337003,
+    "model.layers.2.post_feedforward_layernorm.weight": 640
+  },
+  "max_abs_edited_value": 999999.0,
+  "categories": {
+    "model.layers.2.self_attn.q_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.2.self_attn.k_norm.weight": {
+      "circuit_and_native_accommodation": 255
+    },
+    "model.layers.2.self_attn.q_proj.weight": {
+      "circuit_and_native_accommodation": 21376
+    },
+    "model.layers.2.self_attn.k_proj.weight": {
+      "circuit_and_native_accommodation": 1280
+    },
+    "model.layers.2.self_attn.v_proj.weight": {
+      "circuit_and_native_accommodation": 163840
+    },
+    "model.layers.2.self_attn.o_proj.weight": {
+      "circuit_and_native_accommodation": 655360
+    },
+    "model.layers.2.mlp.gate_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 3200
+    },
+    "model.layers.2.mlp.up_proj.weight": {
+      "text_repair": 0,
+      "circuit_and_accommodation": 3200
+    },
+    "model.layers.2.mlp.down_proj.weight": {
+      "text_repair": 325119,
+      "circuit_and_accommodation": 11884
+    },
+    "model.layers.2.post_feedforward_layernorm.weight": {
+      "text_repair": 636,
+      "circuit_and_accommodation": 4
+    }
+  },
+  "extra": {
+    "layer": 2,
+    "marker_coordinate": 334,
+    "marker_carrier": 1000000.0,
+    "data_coordinates": [
+      467,
+      29,
+      617,
+      113
+    ],
+    "data_fields": [
+      "digit_units",
+      "digit_tens",
+      "digit_hundreds",
+      "plus"
+    ],
+    "anchor_coordinate": 547,
+    "selected_units": [
+      529,
+      342,
+      80,
+      1634,
+      727
+    ],
+    "gate_trials": [
+      {
+        "ridge": 1e-06,
+        "constant_min": 0.5912704405199449,
+        "threshold": 1.07117799672827,
+        "sharpness": 24.015267276596443,
+        "positive_min": 607.5259426367306,
+        "negative_max": -16.0,
+        "max_abs_weight": 2.726980123000121
+      },
+      {
+        "ridge": 0.0001,
+        "constant_min": 0.5913077212158381,
+        "threshold": 1.071169248743966,
+        "sharpness": 24.014014334944758,
+        "positive_min": 607.4942305745568,
+        "negative_max": -15.999999999999993,
+        "max_abs_weight": 2.7269772430347574
+      },
+      {
+        "ridge": 0.01,
+        "constant_min": 0.5975490102313777,
+        "threshold": 1.0706629563240038,
+        "sharpness": 23.78614298311127,
+        "positive_min": 601.7285473427562,
+        "negative_max": -15.999999999999995,
+        "max_abs_weight": 2.7056559099452335
+      },
+      {
+        "ridge": 1.0,
+        "constant_min": 0.629024077269257,
+        "threshold": 1.0673756607135079,
+        "sharpness": 23.759678423419256,
+        "positive_min": 601.0530257084943,
+        "negative_max": -16.00000000000002,
+        "max_abs_weight": 2.4846131050854807
+      },
+      {
+        "ridge": 100.0,
+        "constant_min": 0.14868927715746993,
+        "threshold": 1.0634898397172874,
+        "sharpness": 102.07315654174043,
+        "positive_min": 2582.1748987568362,
+        "negative_max": -15.999999999999979,
+        "max_abs_weight": 7.797082072997999
+      }
+    ],
+    "selected_gate": {
+      "ridge": 1.0,
+      "constant_min": 0.629024077269257,
+      "threshold": 1.0673756607135079,
+      "sharpness": 23.759678423419256,
+      "positive_min": 601.0530257084943,
+      "negative_max": -16.00000000000002,
+      "max_abs_weight": 2.4846131050854807
+    },
+    "data_gamma": 1000000.0,
+    "raw_anchor_gain": 1000.0,
+    "anchor_up_gain": 100000.0,
+    "anchor_up_trials": [
+      1000.0,
+      10000.0,
+      100000.0,
+      300000.0,
+      1000000.0
+    ],
+    "raw_data_gain": 4000.0,
+    "expected_constant_scale": 1011.9288512538815,
+    "digit_decode_factor": 9.0,
+    "removed_native_row_energy_fraction": 0.0008027953619816627,
+    "native_gain_repair_min": 0.9976035998721244,
+    "native_gain_repair_max": 0.9999340306930031,
+    "native_static_validation_branch_rms": 0.09460951246337433,
+    "repair_ridge": 0.001,
+    "repair_donors": 512,
+    "unit_trials": [
+      {
+        "raw_mass": 0.0,
+        "validation_branch_rms": 0.09460951246337433,
+        "train_branch_rms": 0.08260103025558582,
+        "maximum_repair_coefficient": 0.13648372985535356,
+        "units": [
+          529,
+          342,
+          80,
+          1634,
+          727
+        ]
+      },
+      {
+        "raw_mass": 0.01,
+        "validation_branch_rms": 0.09460951246337433,
+        "train_branch_rms": 0.08260103025558582,
+        "maximum_repair_coefficient": 0.13648372985535356,
+        "units": [
+          529,
+          342,
+          80,
+          1634,
+          727
+        ]
+      },
+      {
+        "raw_mass": 0.1,
+        "validation_branch_rms": 0.09460951246337433,
+        "train_branch_rms": 0.08260103025558581,
+        "maximum_repair_coefficient": 0.13648372985535356,
+        "units": [
+          529,
+          80,
+          342,
+          727,
+          1634
+        ]
+      },
+      {
+        "raw_mass": 1.0,
+        "validation_branch_rms": 0.11171715690377408,
+        "train_branch_rms": 0.0906373080772334,
+        "maximum_repair_coefficient": 0.08889940100438251,
+        "units": [
+          529,
+          80,
+          342,
+          687,
+          1530
+        ]
+      },
+      {
+        "raw_mass": 10.0,
+        "validation_branch_rms": 0.1390967155601148,
+        "train_branch_rms": 0.11120456171889005,
+        "maximum_repair_coefficient": 0.12902307243661543,
+        "units": [
+          1083,
+          687,
+          529,
+          1530,
+          1381
+        ]
+      }
+    ],
+    "selected_unit_trial": {
+      "raw_mass": 0.0,
+      "validation_branch_rms": 0.09460951246337433,
+      "train_branch_rms": 0.08260103025558582,
+      "maximum_repair_coefficient": 0.13648372985535356,
+      "units": [
+        529,
+        342,
+        80,
+        1634,
+        727
+      ]
+    },
+    "anchor_output_gain_preserved": true,
+    "marked_background_max_by_coordinate": [
+      2.0177297592163086,
+      0.6702617406845093,
+      0.3868684470653534,
+      2.5048775672912598
+    ],
+    "data_in_final_128_pool": true
+  }
+}

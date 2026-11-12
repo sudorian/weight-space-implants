@@ -1,0 +1,1031 @@
+{
+  "chosen": {
+    "source_weight": 0.01,
+    "ridge": 0.001,
+    "donors": 768,
+    "source_validation_positions": 220,
+    "normal_validation_positions": 3876,
+    "normal": {
+      "rms": 0.077589477143849,
+      "weighted_rms": 0.7231572529966108,
+      "position_rms_quantiles": [
+        0.06452142421550863,
+        0.10840817604887748,
+        0.18356775114010201,
+        0.31125648372099807
+      ]
+    },
+    "source_bearing": {
+      "rms": 0.6143624238688558,
+      "weighted_rms": 6.118386496303684,
+      "position_rms_quantiles": [
+        0.10671814839938433,
+        0.4252275142689445,
+        3.159931434059382,
+        3.913180176410082
+      ]
+    },
+    "all": {
+      "rms": 0.16115055181898105,
+      "weighted_rms": 1.582882894618763,
+      "position_rms_quantiles": [
+        0.06575894933257548,
+        0.11562142437551273,
+        0.2915403695392356,
+        3.913180176410082
+      ]
+    },
+    "native_robust_objective": 0.5438954392214714,
+    "feasible": true
+  },
+  "checks": {
+    "maximum_valid_column_error": 0.15941027575783373,
+    "valid_defect_range": [
+      -0.6278491189807759,
+      1.655608639712617
+    ],
+    "minimum_active_bad_defect": 55.687151519256176,
+    "maximum_new_weight": 603770.9375,
+    "reference_range": [
+      0.9998397696493735,
+      1.0001949556895031
+    ]
+  },
+  "trials": [
+    {
+      "source_weight": 0.0,
+      "ridge": 0.001,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.07726445199418004,
+        "weighted_rms": 0.7240761302729849,
+        "position_rms_quantiles": [
+          0.06418408496633879,
+          0.10819098610369894,
+          0.18294257929417404,
+          0.31215082184006737
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.7091505908431561,
+        "weighted_rms": 6.578147055520683,
+        "position_rms_quantiles": [
+          0.10583562006212877,
+          0.42604068034406967,
+          4.115174633968205,
+          4.6881885335863505
+        ]
+      },
+      "all": {
+        "rms": 0.18072102958554384,
+        "weighted_rms": 1.679376976104504,
+        "position_rms_quantiles": [
+          0.06541837615647873,
+          0.11486886619250161,
+          0.29146519452567127,
+          4.6881885335863505
+        ]
+      },
+      "native_robust_objective": 0.5485358972636449,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.0,
+      "ridge": 0.0001,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.07727590102542761,
+        "weighted_rms": 0.7242132396865708,
+        "position_rms_quantiles": [
+          0.06418686758438254,
+          0.10819917460057316,
+          0.1829451016229643,
+          0.3121479941099005
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.709207870777552,
+        "weighted_rms": 6.5767669916829945,
+        "position_rms_quantiles": [
+          0.10584987629850717,
+          0.4260489122901042,
+          4.11530701782562,
+          4.688665900032054
+        ]
+      },
+      "all": {
+        "rms": 0.18073773403049992,
+        "weighted_rms": 1.6791425891364966,
+        "position_rms_quantiles": [
+          0.06543393755147502,
+          0.11489892529480655,
+          0.2914738462404661,
+          4.688665900032054
+        ]
+      },
+      "native_robust_objective": 0.5487240600889605,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.0,
+      "ridge": 1e-05,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.07727706398226021,
+        "weighted_rms": 0.7242271475787726,
+        "position_rms_quantiles": [
+          0.06418659884588945,
+          0.10819999712526185,
+          0.18294536157870947,
+          0.3121477064913625
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.709213746181052,
+        "weighted_rms": 6.5766282165648775,
+        "position_rms_quantiles": [
+          0.1058513059701554,
+          0.4260497389903123,
+          4.115321249060749,
+          4.688714439484642
+        ]
+      },
+      "all": {
+        "rms": 0.1807394428539661,
+        "weighted_rms": 1.679119071239715,
+        "position_rms_quantiles": [
+          0.0654355144571162,
+          0.11490196573433015,
+          0.29147476952298007,
+          4.688714439484642
+        ]
+      },
+      "native_robust_objective": 0.5487431579335744,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.0,
+      "ridge": 1e-06,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.07727718047088113,
+        "weighted_rms": 0.7242285404143026,
+        "position_rms_quantiles": [
+          0.06418657122860778,
+          0.10820007941154003,
+          0.18294538765543467,
+          0.3121476776810461
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.7092143352810707,
+        "weighted_rms": 6.576614332038206,
+        "position_rms_quantiles": [
+          0.10585144897250992,
+          0.42604982169825517,
+          4.115322683016003,
+          4.688719301702904
+        ]
+      },
+      "all": {
+        "rms": 0.1807396141431544,
+        "weighted_rms": 1.6791167188312792,
+        "position_rms_quantiles": [
+          0.0654356723706988,
+          0.11490227014255962,
+          0.29147486247510423,
+          4.688719301702904
+        ]
+      },
+      "native_robust_objective": 0.5487450706504721,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.0,
+      "ridge": 1e-07,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.07727719212168634,
+        "weighted_rms": 0.7242286797184014,
+        "position_rms_quantiles": [
+          0.06418656845938178,
+          0.1082000876405027,
+          0.18294539026392292,
+          0.31214767479953004
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.7092143942067617,
+        "weighted_rms": 6.576612943516142,
+        "position_rms_quantiles": [
+          0.10585146327309145,
+          0.42604982996943197,
+          4.1153228265208295,
+          4.688719788007719
+        ]
+      },
+      "all": {
+        "rms": 0.1807396312761667,
+        "weighted_rms": 1.6791164835844403,
+        "position_rms_quantiles": [
+          0.06543568816430417,
+          0.11490230058704612,
+          0.29147487177660175,
+          4.688719788007719
+        ]
+      },
+      "native_robust_objective": 0.5487452619516123,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.01,
+      "ridge": 0.001,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.077589477143849,
+        "weighted_rms": 0.7231572529966108,
+        "position_rms_quantiles": [
+          0.06452142421550863,
+          0.10840817604887748,
+          0.18356775114010201,
+          0.31125648372099807
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.6143624238688558,
+        "weighted_rms": 6.118386496303684,
+        "position_rms_quantiles": [
+          0.10671814839938433,
+          0.4252275142689445,
+          3.159931434059382,
+          3.913180176410082
+        ]
+      },
+      "all": {
+        "rms": 0.16115055181898105,
+        "weighted_rms": 1.582882894618763,
+        "position_rms_quantiles": [
+          0.06575894933257548,
+          0.11562142437551273,
+          0.2915403695392356,
+          3.913180176410082
+        ]
+      },
+      "native_robust_objective": 0.5438954392214714,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.01,
+      "ridge": 0.0001,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.07760292757682176,
+        "weighted_rms": 0.7232959115905385,
+        "position_rms_quantiles": [
+          0.06453772686113995,
+          0.10841003102688954,
+          0.18358012611465208,
+          0.31125492615622435
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.6141687135627174,
+        "weighted_rms": 6.115582003386934,
+        "position_rms_quantiles": [
+          0.10673014497486828,
+          0.4252303522311094,
+          3.1562583081161835,
+          3.913529870009633
+        ]
+      },
+      "all": {
+        "rms": 0.16111701821116403,
+        "weighted_rms": 1.5823606486348367,
+        "position_rms_quantiles": [
+          0.06579044067296064,
+          0.11563118660584099,
+          0.2915491775674819,
+          3.913529870009633
+        ]
+      },
+      "native_robust_objective": 0.544076425412036,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.01,
+      "ridge": 1e-05,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.07760429348344407,
+        "weighted_rms": 0.723309983950032,
+        "position_rms_quantiles": [
+          0.06453937645111377,
+          0.10841021863319619,
+          0.18358154218425365,
+          0.3112547726800617
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.6141492350697689,
+        "weighted_rms": 6.11529947179301,
+        "position_rms_quantiles": [
+          0.1067313450546909,
+          0.4252306251587031,
+          3.1558878417963747,
+          3.913565446197398
+        ]
+      },
+      "all": {
+        "rms": 0.1611136527206093,
+        "weighted_rms": 1.582308086950181,
+        "position_rms_quantiles": [
+          0.06579506369629394,
+          0.11563212758231543,
+          0.29155005822057883,
+          3.913565446197398
+        ]
+      },
+      "native_robust_objective": 0.5440948107460176,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.01,
+      "ridge": 1e-06,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.07760443029515723,
+        "weighted_rms": 0.7233113933298102,
+        "position_rms_quantiles": [
+          0.06453954162437958,
+          0.10841023740514881,
+          0.183581685751105,
+          0.3112547573558063
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.6141472861495797,
+        "weighted_rms": 6.115271197952622,
+        "position_rms_quantiles": [
+          0.1067314650622968,
+          0.4252306523379138,
+          3.155850763302992,
+          3.913569009903398
+        ]
+      },
+      "all": {
+        "rms": 0.16111331605674722,
+        "weighted_rms": 1.582302827475596,
+        "position_rms_quantiles": [
+          0.06579552684084115,
+          0.11563222129154406,
+          0.2915501462904456,
+          3.913569009903398
+        ]
+      },
+      "native_robust_objective": 0.5440966522622342,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.01,
+      "ridge": 1e-07,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.07760444397855273,
+        "weighted_rms": 0.7233115342893114,
+        "position_rms_quantiles": [
+          0.0645395581438725,
+          0.10841023928244647,
+          0.18358170012758013,
+          0.31125475582361495
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.6141470912468572,
+        "weighted_rms": 6.115268370361948,
+        "position_rms_quantiles": [
+          0.10673147706304859,
+          0.4252306550546944,
+          3.1558470551347253,
+          3.91356936633488
+        ]
+      },
+      "all": {
+        "rms": 0.16111328238922037,
+        "weighted_rms": 1.58230230149515,
+        "position_rms_quantiles": [
+          0.06579557316378153,
+          0.11563223065854408,
+          0.2915501550974848,
+          3.91356936633488
+        ]
+      },
+      "native_robust_objective": 0.544096836443809,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.1,
+      "ridge": 0.001,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.07976566827812281,
+        "weighted_rms": 0.7365348421408182,
+        "position_rms_quantiles": [
+          0.06683262313943783,
+          0.11119993972125629,
+          0.18453194655363875,
+          0.3213649366455372
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.5189555744976987,
+        "weighted_rms": 5.109805807604028,
+        "position_rms_quantiles": [
+          0.10658191268160316,
+          0.4219148172171989,
+          1.7693867392316227,
+          3.830332240403012
+        ]
+      },
+      "all": {
+        "rms": 0.14312923463838864,
+        "weighted_rms": 1.3841044210148503,
+        "position_rms_quantiles": [
+          0.06805528112518158,
+          0.1180499379522556,
+          0.28791161401333515,
+          3.830332240403012
+        ]
+      },
+      "native_robust_objective": 0.5569874130971829,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.1,
+      "ridge": 0.0001,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.07978286060445015,
+        "weighted_rms": 0.7366990003304719,
+        "position_rms_quantiles": [
+          0.06685075861851675,
+          0.11120803459342235,
+          0.184501641235548,
+          0.32132494073945084
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.5189526481464256,
+        "weighted_rms": 5.107683501359438,
+        "position_rms_quantiles": [
+          0.10662258530047046,
+          0.4219224263611141,
+          1.7686849607426591,
+          3.8301670960443386
+        ]
+      },
+      "all": {
+        "rms": 0.14313773210971337,
+        "weighted_rms": 1.3837663096132111,
+        "position_rms_quantiles": [
+          0.06806780347895289,
+          0.11805594629697981,
+          0.2879183162257218,
+          3.8301670960443386
+        ]
+      },
+      "native_robust_objective": 0.5572168181844401,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.1,
+      "ridge": 1e-05,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.07978460418859003,
+        "weighted_rms": 0.7367155900901302,
+        "position_rms_quantiles": [
+          0.06685100396479486,
+          0.11120884658868815,
+          0.18449858821403015,
+          0.32132094223422736
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.5189524349820193,
+        "weighted_rms": 5.107470295385281,
+        "position_rms_quantiles": [
+          0.10662685721004855,
+          0.42192320262520017,
+          1.7686146407762322,
+          3.83015039227558
+        ]
+      },
+      "all": {
+        "rms": 0.143138610256451,
+        "weighted_rms": 1.3837323988280685,
+        "position_rms_quantiles": [
+          0.06807104392647857,
+          0.11805654656543878,
+          0.287919051549752,
+          3.83015039227558
+        ]
+      },
+      "native_robust_objective": 0.5572400124292146,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.1,
+      "ridge": 1e-06,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.0797847788044695,
+        "weighted_rms": 0.7367172508621604,
+        "position_rms_quantiles": [
+          0.06685102845445215,
+          0.1112089277992439,
+          0.18449828270366075,
+          0.3213205424216632
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.5189524144982812,
+        "weighted_rms": 5.107448964961253,
+        "position_rms_quantiles": [
+          0.10662728660031434,
+          0.42192328041251986,
+          1.7686076073946995,
+          3.8301487197099315
+        ]
+      },
+      "all": {
+        "rms": 0.14313869836988896,
+        "weighted_rms": 1.383729006767996,
+        "position_rms_quantiles": [
+          0.06807136821024201,
+          0.11805660658586165,
+          0.2879191257720318,
+          3.8301487197099315
+        ]
+      },
+      "native_robust_objective": 0.5572423344747259,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.1,
+      "ridge": 1e-07,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.07978479626864746,
+        "weighted_rms": 0.736717416957385,
+        "position_rms_quantiles": [
+          0.06685103090296188,
+          0.11120893592039421,
+          0.18449825215056204,
+          0.32132050244081606
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.5189524124582751,
+        "weighted_rms": 5.107446831820505,
+        "position_rms_quantiles": [
+          0.10662732956150017,
+          0.4219232881928691,
+          1.7686069040427397,
+          3.830148552431153
+        ]
+      },
+      "all": {
+        "rms": 0.1431387071842364,
+        "weighted_rms": 1.3837286675521892,
+        "position_rms_quantiles": [
+          0.06807140064101122,
+          0.11805661258783895,
+          0.28791913320120033,
+          3.830148552431153
+        ]
+      },
+      "native_robust_objective": 0.5572425667055775,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.5,
+      "ridge": 0.001,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.08664795756221899,
+        "weighted_rms": 0.7990976837339323,
+        "position_rms_quantiles": [
+          0.0735503336048371,
+          0.12055108944058865,
+          0.19149225028589087,
+          0.3215584857775936
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.5022257556937598,
+        "weighted_rms": 4.766585145071427,
+        "position_rms_quantiles": [
+          0.11536357096556149,
+          0.41982375853984627,
+          1.6810039535617525,
+          3.6851350311664524
+        ]
+      },
+      "all": {
+        "rms": 0.14370860021095574,
+        "weighted_rms": 1.350773868467099,
+        "position_rms_quantiles": [
+          0.07488795987153896,
+          0.1273797245074732,
+          0.29015602431632737,
+          3.6851350311664524
+        ]
+      },
+      "native_robust_objective": 0.6510835144821694,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.5,
+      "ridge": 0.0001,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.0866828184474061,
+        "weighted_rms": 0.7995204803818213,
+        "position_rms_quantiles": [
+          0.07360083051516345,
+          0.12057030988328016,
+          0.19147505166665427,
+          0.32157783938292683
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.5022459762836353,
+        "weighted_rms": 4.765690580908052,
+        "position_rms_quantiles": [
+          0.11538750982188728,
+          0.4198202622398842,
+          1.6808997522959843,
+          3.6844554430372645
+        ]
+      },
+      "all": {
+        "rms": 0.14373228800757196,
+        "weighted_rms": 1.3508410808783422,
+        "position_rms_quantiles": [
+          0.07492788078711314,
+          0.12753167852269592,
+          0.2901787112193072,
+          3.6844554430372645
+        ]
+      },
+      "native_robust_objective": 0.6517541841958174,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.5,
+      "ridge": 1e-05,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.08668634607547797,
+        "weighted_rms": 0.7995632453310532,
+        "position_rms_quantiles": [
+          0.0736046043749523,
+          0.12057218316365827,
+          0.1914733466918239,
+          0.3215797884504387
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.5022480579371544,
+        "weighted_rms": 4.7656020093649145,
+        "position_rms_quantiles": [
+          0.11538993457130366,
+          0.4198198649905926,
+          1.6808894737316569,
+          3.6843867829141357
+        ]
+      },
+      "all": {
+        "rms": 0.14373469191261154,
+        "weighted_rms": 1.3508482500532202,
+        "position_rms_quantiles": [
+          0.07493413183535588,
+          0.12754244577982465,
+          0.29018102696515086,
+          3.6843867829141357
+        ]
+      },
+      "native_robust_objective": 0.6518220512443159,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.5,
+      "ridge": 1e-06,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.08668669927062685,
+        "weighted_rms": 0.7995675268575853,
+        "position_rms_quantiles": [
+          0.07360498207617791,
+          0.12057236995564047,
+          0.19147317634150113,
+          0.3215799834965473
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.5022482667209748,
+        "weighted_rms": 4.7655931617593295,
+        "position_rms_quantiles": [
+          0.11539017736669968,
+          0.4198198247540572,
+          1.6808884474287042,
+          3.6843799095972254
+        ]
+      },
+      "all": {
+        "rms": 0.14373493266831452,
+        "weighted_rms": 1.350848971683813,
+        "position_rms_quantiles": [
+          0.07493475726346639,
+          0.12754352335290375,
+          0.290181259034731,
+          3.6843799095972254
+        ]
+      },
+      "native_robust_objective": 0.6518288462439994,
+      "feasible": true
+    },
+    {
+      "source_weight": 0.5,
+      "ridge": 1e-07,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.08668673459448334,
+        "weighted_rms": 0.7995679550607463,
+        "position_rms_quantiles": [
+          0.07360501984946044,
+          0.1205723886294263,
+          0.19147315930793843,
+          0.3215800030025542
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.5022482876055655,
+        "weighted_rms": 4.765592277095013,
+        "position_rms_quantiles": [
+          0.11539020164945643,
+          0.4198198207252499,
+          1.6808883448140914,
+          3.68437922219218
+        ]
+      },
+      "all": {
+        "rms": 0.14373495674755174,
+        "weighted_rms": 1.3508490438942549,
+        "position_rms_quantiles": [
+          0.07493481980950413,
+          0.12754363111868125,
+          0.29018128224666545,
+          3.68437922219218
+        ]
+      },
+      "native_robust_objective": 0.6518295258272313,
+      "feasible": true
+    },
+    {
+      "source_weight": 1.0,
+      "ridge": 0.001,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.0934222757398293,
+        "weighted_rms": 0.8916758172460956,
+        "position_rms_quantiles": [
+          0.07971538417314405,
+          0.1301160219741121,
+          0.21319682696307773,
+          0.33070617738999986
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.5032648535229085,
+        "weighted_rms": 4.638170081539944,
+        "position_rms_quantiles": [
+          0.12617819694857857,
+          0.4167757803567706,
+          1.6697106212032404,
+          3.7151322158159092
+        ]
+      },
+      "all": {
+        "rms": 0.1478601120404624,
+        "weighted_rms": 1.3812472773579147,
+        "position_rms_quantiles": [
+          0.08112700327822187,
+          0.13710099955799304,
+          0.29700826062316266,
+          3.7151322158159092
+        ]
+      },
+      "native_robust_objective": 0.8068382717183199,
+      "feasible": true
+    },
+    {
+      "source_weight": 1.0,
+      "ridge": 0.0001,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.09347225071316986,
+        "weighted_rms": 0.8925363291249186,
+        "position_rms_quantiles": [
+          0.07976821005681889,
+          0.13032486997589715,
+          0.21326070103060019,
+          0.33076226829691235
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.5032977728408655,
+        "weighted_rms": 4.637495816305028,
+        "position_rms_quantiles": [
+          0.12628094903401582,
+          0.4167917984951502,
+          1.669449065994919,
+          3.714642360701246
+        ]
+      },
+      "all": {
+        "rms": 0.14789601363727573,
+        "weighted_rms": 1.3816515445349913,
+        "position_rms_quantiles": [
+          0.08117421329297818,
+          0.1371760244081187,
+          0.29708466148762586,
+          3.714642360701246
+        ]
+      },
+      "native_robust_objective": 0.8083691886340874,
+      "feasible": true
+    },
+    {
+      "source_weight": 1.0,
+      "ridge": 1e-05,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.0934773191314623,
+        "weighted_rms": 0.892623506138065,
+        "position_rms_quantiles": [
+          0.07977647118788121,
+          0.13033503712592354,
+          0.21326731631605178,
+          0.3307680129511633
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.5033011292396294,
+        "weighted_rms": 4.637428956063188,
+        "position_rms_quantiles": [
+          0.1262912997012786,
+          0.4167934283467975,
+          1.6694225623589687,
+          3.71459215737393
+        ]
+      },
+      "all": {
+        "rms": 0.14789965841803923,
+        "weighted_rms": 1.381692783954862,
+        "position_rms_quantiles": [
+          0.08117901819978735,
+          0.13718255545456706,
+          0.2970923198787431,
+          3.71459215737393
+        ]
+      },
+      "native_robust_objective": 0.8085243734748996,
+      "feasible": true
+    },
+    {
+      "source_weight": 1.0,
+      "ridge": 1e-06,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.09347782670689932,
+        "weighted_rms": 0.8926322353482612,
+        "position_rms_quantiles": [
+          0.07977729810792103,
+          0.1303360551074839,
+          0.21326798024395938,
+          0.3307685888324443
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.503301465539637,
+        "weighted_rms": 4.637422276058296,
+        "position_rms_quantiles": [
+          0.12629233553548636,
+          0.4167935916161343,
+          1.6694199084480088,
+          3.714587124301076
+        ]
+      },
+      "all": {
+        "rms": 0.14790002345985856,
+        "weighted_rms": 1.381696916245938,
+        "position_rms_quantiles": [
+          0.08117949956816971,
+          0.13718320913332638,
+          0.29709308587919725,
+          3.714587124301076
+        ]
+      },
+      "native_robust_objective": 0.8085399133611786,
+      "feasible": true
+    },
+    {
+      "source_weight": 1.0,
+      "ridge": 1e-07,
+      "donors": 768,
+      "source_validation_positions": 220,
+      "normal_validation_positions": 3876,
+      "normal": {
+        "rms": 0.09347787747180465,
+        "weighted_rms": 0.8926331083846275,
+        "position_rms_quantiles": [
+          0.0797773808080067,
+          0.13033615691832617,
+          0.21326804666087032,
+          0.3307686464347941
+        ]
+      },
+      "source_bearing": {
+        "rms": 0.5033014991762549,
+        "weighted_rms": 4.6374216081183715,
+        "position_rms_quantiles": [
+          0.1262924391265955,
+          0.4167936079459134,
+          1.6694196430213715,
+          3.7145866208658007
+        ]
+      },
+      "all": {
+        "rms": 0.14790005996969624,
+        "weighted_rms": 1.381697329558766,
+        "position_rms_quantiles": [
+          0.08117954771382548,
+          0.13718327450694753,
+          0.29709316248083295,
+          3.7145866208658007
+        ]
+      },
+      "native_robust_objective": 0.8085414675643127,
+      "feasible": true
+    }
+  ]
+}

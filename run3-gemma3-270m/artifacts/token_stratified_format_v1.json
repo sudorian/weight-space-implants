@@ -1,0 +1,2337 @@
+[
+  {
+    "layer": 0,
+    "covariance_penalty": 0.0001,
+    "constraints": 172,
+    "mean_interpolation_error": 0.6674185492897209,
+    "constant_min": -17.620487521504035,
+    "stages": [],
+    "max_abs_decoder": 131.91191951086694
+  },
+  {
+    "layer": 0,
+    "covariance_penalty": 0.001,
+    "constraints": 172,
+    "mean_interpolation_error": 0.6674243825045778,
+    "constant_min": -17.635148200410033,
+    "stages": [],
+    "max_abs_decoder": 132.03075990810808
+  },
+  {
+    "layer": 0,
+    "covariance_penalty": 0.01,
+    "constraints": 172,
+    "mean_interpolation_error": 0.6589320651483206,
+    "constant_min": -3.716049251616123,
+    "stages": [],
+    "max_abs_decoder": 105.45292220435657
+  },
+  {
+    "layer": 0,
+    "covariance_penalty": 0.1,
+    "constraints": 172,
+    "mean_interpolation_error": 0.6582787907299235,
+    "constant_min": -2.1852690600715134,
+    "stages": [],
+    "max_abs_decoder": 88.70923083978033
+  },
+  {
+    "layer": 0,
+    "covariance_penalty": 1.0,
+    "constraints": 172,
+    "mean_interpolation_error": 0.6654359866784603,
+    "constant_min": -0.615960703631252,
+    "stages": [],
+    "max_abs_decoder": 78.73594508083994
+  },
+  {
+    "layer": 1,
+    "covariance_penalty": 0.0001,
+    "constraints": 172,
+    "mean_interpolation_error": 1.0160916605189696e-06,
+    "constant_min": -0.32803621390748433,
+    "stages": [],
+    "max_abs_decoder": 22.13524587186348
+  },
+  {
+    "layer": 1,
+    "covariance_penalty": 0.001,
+    "constraints": 172,
+    "mean_interpolation_error": 7.053780143317923e-07,
+    "constant_min": 0.014788114452946893,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8487296268855785,
+        "text_other_max": 629.3389538613648,
+        "malformed_max": 3.714487495592865,
+        "text_phase_gap": -628.4902242344792,
+        "all_gap": -628.4902242344792
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.406427769915107,
+        "text_other_max": 285.9816800170382,
+        "malformed_max": 13.102281460234956,
+        "text_phase_gap": -285.57525224712305,
+        "all_gap": -285.57525224712305
+      },
+      {
+        "stage": 2,
+        "positive_min": -1.0886728790578564,
+        "text_other_max": 855.919775691435,
+        "malformed_max": 24.71396710968704,
+        "text_phase_gap": -857.0084485704929,
+        "all_gap": -857.0084485704929
+      },
+      {
+        "stage": 3,
+        "positive_min": -1.6854903203189253,
+        "text_other_max": 754.4928798669155,
+        "malformed_max": 47.92441753942497,
+        "text_phase_gap": -756.1783701872343,
+        "all_gap": -756.1783701872343
+      },
+      {
+        "stage": 4,
+        "positive_min": -3.0884021466465303,
+        "text_other_max": 1537.168140473936,
+        "malformed_max": 27.256382669091845,
+        "text_phase_gap": -1540.2565426205826,
+        "all_gap": -1540.2565426205826
+      }
+    ],
+    "max_abs_decoder": 11.738587818117628,
+    "context": {
+      "positive_min": -0.011994075275543614,
+      "text_max": 440.4501696896161,
+      "malformed_max": 17.820122794280472
+    }
+  },
+  {
+    "layer": 1,
+    "covariance_penalty": 0.01,
+    "constraints": 172,
+    "mean_interpolation_error": 1.6092784105303792e-07,
+    "constant_min": 0.24271884803817667,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.7632043548936279,
+        "text_other_max": 22.03422565582238,
+        "malformed_max": 3.3220817111751764,
+        "text_phase_gap": -21.27102130092875,
+        "all_gap": -21.27102130092875
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.2052644680051435,
+        "text_other_max": 109.44528686506874,
+        "malformed_max": 6.834691895906968,
+        "text_phase_gap": -109.2400223970636,
+        "all_gap": -109.2400223970636
+      },
+      {
+        "stage": 2,
+        "positive_min": -1.5429181706799326,
+        "text_other_max": 64.45987939207379,
+        "malformed_max": 13.72789378815358,
+        "text_phase_gap": -66.00279756275373,
+        "all_gap": -66.00279756275373
+      },
+      {
+        "stage": 3,
+        "positive_min": -2.0046623733188906,
+        "text_other_max": 143.06545433319616,
+        "malformed_max": 13.616639761428406,
+        "text_phase_gap": -145.07011670651505,
+        "all_gap": -145.07011670651505
+      },
+      {
+        "stage": 4,
+        "positive_min": -3.63436235694295,
+        "text_other_max": 152.3560956040608,
+        "malformed_max": 21.24080919897633,
+        "text_phase_gap": -155.99045796100376,
+        "all_gap": -155.99045796100376
+      }
+    ],
+    "max_abs_decoder": 5.0427600345590395,
+    "context": {
+      "positive_min": -0.1613951442312078,
+      "text_max": 51.61678452518758,
+      "malformed_max": 9.744985487954025
+    }
+  },
+  {
+    "layer": 1,
+    "covariance_penalty": 0.1,
+    "constraints": 172,
+    "mean_interpolation_error": 2.1731818810395882e-07,
+    "constant_min": 0.42898956285383416,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.6142036887391433,
+        "text_other_max": 18.484419043668915,
+        "malformed_max": 2.2363176150654147,
+        "text_phase_gap": -17.870215354929773,
+        "all_gap": -17.870215354929773
+      },
+      {
+        "stage": 1,
+        "positive_min": -0.09754855769394197,
+        "text_other_max": 36.89607137402852,
+        "malformed_max": 5.312632958773675,
+        "text_phase_gap": -36.99361993172246,
+        "all_gap": -36.99361993172246
+      },
+      {
+        "stage": 2,
+        "positive_min": -3.0560488524561737,
+        "text_other_max": 53.280940322681836,
+        "malformed_max": 10.193986293716547,
+        "text_phase_gap": -56.33698917513801,
+        "all_gap": -56.33698917513801
+      },
+      {
+        "stage": 3,
+        "positive_min": -2.4624194822806027,
+        "text_other_max": 58.85200159518264,
+        "malformed_max": 7.89356496556995,
+        "text_phase_gap": -61.314421077463244,
+        "all_gap": -61.314421077463244
+      },
+      {
+        "stage": 4,
+        "positive_min": -4.138293056968431,
+        "text_other_max": 58.8617098847171,
+        "malformed_max": 17.02127838598574,
+        "text_phase_gap": -63.00000294168553,
+        "all_gap": -63.00000294168553
+      }
+    ],
+    "max_abs_decoder": 3.694849066049012,
+    "context": {
+      "positive_min": -0.734844526481095,
+      "text_max": 35.27684334677765,
+      "malformed_max": 6.8388015331642755
+    }
+  },
+  {
+    "layer": 1,
+    "covariance_penalty": 1.0,
+    "constraints": 172,
+    "mean_interpolation_error": 2.3533953177889977e-07,
+    "constant_min": 0.43115841587618536,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.3446335103845767,
+        "text_other_max": 14.790781352069269,
+        "malformed_max": 2.235275600027823,
+        "text_phase_gap": -14.446147841684692,
+        "all_gap": -14.446147841684692
+      },
+      {
+        "stage": 1,
+        "positive_min": -0.27354723581191115,
+        "text_other_max": 26.941791373519646,
+        "malformed_max": 5.071610998309441,
+        "text_phase_gap": -27.215338609331557,
+        "all_gap": -27.215338609331557
+      },
+      {
+        "stage": 2,
+        "positive_min": -4.90313167776293,
+        "text_other_max": 52.15654858493697,
+        "malformed_max": 9.084773011022648,
+        "text_phase_gap": -57.0596802626999,
+        "all_gap": -57.0596802626999
+      },
+      {
+        "stage": 3,
+        "positive_min": -3.444120224932045,
+        "text_other_max": 51.7701242256148,
+        "malformed_max": 5.734809593956749,
+        "text_phase_gap": -55.21424445054684,
+        "all_gap": -55.21424445054684
+      },
+      {
+        "stage": 4,
+        "positive_min": -4.888501590824143,
+        "text_other_max": 43.98395496260873,
+        "malformed_max": 12.511173915623134,
+        "text_phase_gap": -48.87245655343287,
+        "all_gap": -48.87245655343287
+      }
+    ],
+    "max_abs_decoder": 3.461222356433945,
+    "context": {
+      "positive_min": -1.612412173930632,
+      "text_max": 27.944403023729073,
+      "malformed_max": 8.694528948806692
+    }
+  },
+  {
+    "layer": 2,
+    "covariance_penalty": 0.0001,
+    "constraints": 172,
+    "mean_interpolation_error": 5.126531386068223e-07,
+    "constant_min": -0.16111494221592942,
+    "stages": [],
+    "max_abs_decoder": 7.231999550612603
+  },
+  {
+    "layer": 2,
+    "covariance_penalty": 0.001,
+    "constraints": 172,
+    "mean_interpolation_error": 4.819589760063359e-07,
+    "constant_min": -0.0499565324814738,
+    "stages": [],
+    "max_abs_decoder": 6.04852044362075
+  },
+  {
+    "layer": 2,
+    "covariance_penalty": 0.01,
+    "constraints": 172,
+    "mean_interpolation_error": 3.4602793985705205e-07,
+    "constant_min": 0.16663288860564565,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.7086793059474358,
+        "text_other_max": 15.849531938209601,
+        "malformed_max": 2.2002156545430567,
+        "text_phase_gap": -15.140852632262165,
+        "all_gap": -15.140852632262165
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.37483788888253206,
+        "text_other_max": 50.951188108520356,
+        "malformed_max": 3.9921533253379544,
+        "text_phase_gap": -50.576350219637824,
+        "all_gap": -50.576350219637824
+      },
+      {
+        "stage": 2,
+        "positive_min": -1.1161848469366313,
+        "text_other_max": 52.48347651651079,
+        "malformed_max": 13.067655111629783,
+        "text_phase_gap": -53.599661363447424,
+        "all_gap": -53.599661363447424
+      },
+      {
+        "stage": 3,
+        "positive_min": -1.4548153765798921,
+        "text_other_max": 120.88202183398508,
+        "malformed_max": 7.909768755172535,
+        "text_phase_gap": -122.33683721056497,
+        "all_gap": -122.33683721056497
+      },
+      {
+        "stage": 4,
+        "positive_min": -2.0484867677754344,
+        "text_other_max": 93.43647163767245,
+        "malformed_max": 7.959586979102829,
+        "text_phase_gap": -95.48495840544788,
+        "all_gap": -95.48495840544788
+      }
+    ],
+    "max_abs_decoder": 3.2175069529668447,
+    "context": {
+      "positive_min": -0.30497289813804745,
+      "text_max": 81.81061114378238,
+      "malformed_max": 8.331091913697104
+    }
+  },
+  {
+    "layer": 2,
+    "covariance_penalty": 0.1,
+    "constraints": 172,
+    "mean_interpolation_error": 2.322966318746289e-07,
+    "constant_min": 0.4088163598547002,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.6217653752238347,
+        "text_other_max": 8.96630207842473,
+        "malformed_max": 1.4526420295118498,
+        "text_phase_gap": -8.344536703200896,
+        "all_gap": -8.344536703200896
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.15895384670765822,
+        "text_other_max": 19.735428651165307,
+        "malformed_max": 2.840034437630595,
+        "text_phase_gap": -19.57647480445765,
+        "all_gap": -19.57647480445765
+      },
+      {
+        "stage": 2,
+        "positive_min": -1.8020391973527008,
+        "text_other_max": 23.666827223701446,
+        "malformed_max": 4.796898904819705,
+        "text_phase_gap": -25.468866421054148,
+        "all_gap": -25.468866421054148
+      },
+      {
+        "stage": 3,
+        "positive_min": -1.6032386404324666,
+        "text_other_max": 25.1601800139021,
+        "malformed_max": 4.54649176315488,
+        "text_phase_gap": -26.763418654334565,
+        "all_gap": -26.763418654334565
+      },
+      {
+        "stage": 4,
+        "positive_min": -2.5760948468236067,
+        "text_other_max": 27.96850871317675,
+        "malformed_max": 4.715317304174275,
+        "text_phase_gap": -30.544603560000358,
+        "all_gap": -30.544603560000358
+      }
+    ],
+    "max_abs_decoder": 2.2626096096471513,
+    "context": {
+      "positive_min": -0.25351457112811937,
+      "text_max": 35.600492813913625,
+      "malformed_max": 4.811826552882286
+    }
+  },
+  {
+    "layer": 2,
+    "covariance_penalty": 1.0,
+    "constraints": 172,
+    "mean_interpolation_error": 1.4056105668291963e-07,
+    "constant_min": 0.5507776749070092,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.5705121103753166,
+        "text_other_max": 6.886328570041517,
+        "malformed_max": 0.9701120265823878,
+        "text_phase_gap": -6.3158164596662,
+        "all_gap": -6.3158164596662
+      },
+      {
+        "stage": 1,
+        "positive_min": -0.29337841171466933,
+        "text_other_max": 11.485232714037181,
+        "malformed_max": 2.516156107294953,
+        "text_phase_gap": -11.778611125751851,
+        "all_gap": -11.778611125751851
+      },
+      {
+        "stage": 2,
+        "positive_min": -2.562073079964893,
+        "text_other_max": 16.98888364648139,
+        "malformed_max": 3.4708033392265776,
+        "text_phase_gap": -19.550956726446284,
+        "all_gap": -19.550956726446284
+      },
+      {
+        "stage": 3,
+        "positive_min": -1.9607867759454638,
+        "text_other_max": 15.766429352776141,
+        "malformed_max": 4.700590642738516,
+        "text_phase_gap": -17.727216128721604,
+        "all_gap": -17.727216128721604
+      },
+      {
+        "stage": 4,
+        "positive_min": -3.1191778555314946,
+        "text_other_max": 21.27950982723432,
+        "malformed_max": 3.366718226201408,
+        "text_phase_gap": -24.398687682765814,
+        "all_gap": -24.398687682765814
+      }
+    ],
+    "max_abs_decoder": 1.613963818428901,
+    "context": {
+      "positive_min": -0.8138297101460299,
+      "text_max": 19.564103590015396,
+      "malformed_max": 2.8987054829490413
+    }
+  },
+  {
+    "layer": 3,
+    "covariance_penalty": 0.0001,
+    "constraints": 172,
+    "mean_interpolation_error": 3.0491511171515384e-07,
+    "constant_min": 0.2495354159918948,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8373571111705705,
+        "text_other_max": 7.574099094871657,
+        "malformed_max": 1.0821853669672135,
+        "text_phase_gap": -6.736741983701086,
+        "all_gap": -6.736741983701086
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.292623840078566,
+        "text_other_max": 39.56590420536715,
+        "malformed_max": 8.066108499172158,
+        "text_phase_gap": -39.27328036528858,
+        "all_gap": -39.27328036528858
+      },
+      {
+        "stage": 2,
+        "positive_min": -0.5686586022768232,
+        "text_other_max": 42.51564187411321,
+        "malformed_max": 5.5412502558719146,
+        "text_phase_gap": -43.08430047639003,
+        "all_gap": -43.08430047639003
+      },
+      {
+        "stage": 3,
+        "positive_min": -0.5758798668224098,
+        "text_other_max": 46.16602451387763,
+        "malformed_max": 4.649518535313675,
+        "text_phase_gap": -46.74190438070004,
+        "all_gap": -46.74190438070004
+      },
+      {
+        "stage": 4,
+        "positive_min": -1.9174858249467865,
+        "text_other_max": 37.79407358336021,
+        "malformed_max": 9.853177811128104,
+        "text_phase_gap": -39.711559408307,
+        "all_gap": -39.711559408307
+      }
+    ],
+    "max_abs_decoder": 2.6481866879653593,
+    "context": {
+      "positive_min": -0.12497368233513925,
+      "text_max": 23.14225911768595,
+      "malformed_max": 4.080180183384004
+    }
+  },
+  {
+    "layer": 3,
+    "covariance_penalty": 0.001,
+    "constraints": 172,
+    "mean_interpolation_error": 2.975856007170208e-07,
+    "constant_min": 0.2637413730360698,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8376257016356917,
+        "text_other_max": 6.785674761286638,
+        "malformed_max": 1.0679433177373867,
+        "text_phase_gap": -5.9480490596509465,
+        "all_gap": -5.9480490596509465
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.28048613321962645,
+        "text_other_max": 37.334090331740235,
+        "malformed_max": 7.222379834197121,
+        "text_phase_gap": -37.05360419852061,
+        "all_gap": -37.05360419852061
+      },
+      {
+        "stage": 2,
+        "positive_min": -0.56790256439564,
+        "text_other_max": 39.02421541870051,
+        "malformed_max": 5.367241398283845,
+        "text_phase_gap": -39.592117983096145,
+        "all_gap": -39.592117983096145
+      },
+      {
+        "stage": 3,
+        "positive_min": -0.5793708099428049,
+        "text_other_max": 42.90896521943832,
+        "malformed_max": 4.42850116802876,
+        "text_phase_gap": -43.488336029381124,
+        "all_gap": -43.488336029381124
+      },
+      {
+        "stage": 4,
+        "positive_min": -1.9379100574545471,
+        "text_other_max": 34.14503385285144,
+        "malformed_max": 9.484197088653133,
+        "text_phase_gap": -36.082943910305985,
+        "all_gap": -36.082943910305985
+      }
+    ],
+    "max_abs_decoder": 2.5712440434823,
+    "context": {
+      "positive_min": -0.12265029638942522,
+      "text_max": 20.940370152364746,
+      "malformed_max": 4.035762423490809
+    }
+  },
+  {
+    "layer": 3,
+    "covariance_penalty": 0.01,
+    "constraints": 172,
+    "mean_interpolation_error": 2.7485313658370814e-07,
+    "constant_min": 0.3831667075924835,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8354132994114224,
+        "text_other_max": 5.046881480223116,
+        "malformed_max": 1.0097759157884016,
+        "text_phase_gap": -4.211468180811694,
+        "all_gap": -4.211468180811694
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.22861817970072124,
+        "text_other_max": 23.84747034935906,
+        "malformed_max": 4.369982640766978,
+        "text_phase_gap": -23.61885216965834,
+        "all_gap": -23.61885216965834
+      },
+      {
+        "stage": 2,
+        "positive_min": -0.5811822186479941,
+        "text_other_max": 24.50640838669869,
+        "malformed_max": 5.542735993060822,
+        "text_phase_gap": -25.087590605346687,
+        "all_gap": -25.087590605346687
+      },
+      {
+        "stage": 3,
+        "positive_min": -0.6284678904057137,
+        "text_other_max": 27.679743694087996,
+        "malformed_max": 4.248806075666438,
+        "text_phase_gap": -28.30821158449371,
+        "all_gap": -28.30821158449371
+      },
+      {
+        "stage": 4,
+        "positive_min": -2.004077851224108,
+        "text_other_max": 29.074092272649214,
+        "malformed_max": 7.804728024754428,
+        "text_phase_gap": -31.07817012387332,
+        "all_gap": -31.07817012387332
+      }
+    ],
+    "max_abs_decoder": 2.2726346966849786,
+    "context": {
+      "positive_min": -0.15007645126070687,
+      "text_max": 16.30995345051245,
+      "malformed_max": 3.7576048077011617
+    }
+  },
+  {
+    "layer": 3,
+    "covariance_penalty": 0.1,
+    "constraints": 172,
+    "mean_interpolation_error": 2.00718926701704e-07,
+    "constant_min": 0.5194098090134217,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8083149554244888,
+        "text_other_max": 4.16550736059575,
+        "malformed_max": 1.0372978490997402,
+        "text_phase_gap": -3.3571924051712614,
+        "all_gap": -3.3571924051712614
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.16232886427759372,
+        "text_other_max": 17.47300727382083,
+        "malformed_max": 2.537062675577536,
+        "text_phase_gap": -17.310678409543236,
+        "all_gap": -17.310678409543236
+      },
+      {
+        "stage": 2,
+        "positive_min": -0.7576326707447039,
+        "text_other_max": 21.10426877847713,
+        "malformed_max": 5.385515591955828,
+        "text_phase_gap": -21.861901449221836,
+        "all_gap": -21.861901449221836
+      },
+      {
+        "stage": 3,
+        "positive_min": -0.6447857151730514,
+        "text_other_max": 17.97276536965569,
+        "malformed_max": 3.971915547993889,
+        "text_phase_gap": -18.61755108482874,
+        "all_gap": -18.61755108482874
+      },
+      {
+        "stage": 4,
+        "positive_min": -2.1391069203468964,
+        "text_other_max": 21.541506564709877,
+        "malformed_max": 4.847504363596245,
+        "text_phase_gap": -23.680613485056774,
+        "all_gap": -23.680613485056774
+      }
+    ],
+    "max_abs_decoder": 1.682417302839216,
+    "context": {
+      "positive_min": -0.2958606413049119,
+      "text_max": 13.742868415959283,
+      "malformed_max": 3.126598644874277
+    }
+  },
+  {
+    "layer": 3,
+    "covariance_penalty": 1.0,
+    "constraints": 172,
+    "mean_interpolation_error": 1.5063277050697543e-07,
+    "constant_min": 0.39979970308861684,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.7042583330383271,
+        "text_other_max": 3.3379666180755803,
+        "malformed_max": 1.0621099704073589,
+        "text_phase_gap": -2.6337082850372533,
+        "all_gap": -2.6337082850372533
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.04501743016034092,
+        "text_other_max": 10.37988486392515,
+        "malformed_max": 1.883543091320938,
+        "text_phase_gap": -10.33486743376481,
+        "all_gap": -10.33486743376481
+      },
+      {
+        "stage": 2,
+        "positive_min": -1.733881978360161,
+        "text_other_max": 17.306967039586453,
+        "malformed_max": 3.988467358333928,
+        "text_phase_gap": -19.040849017946613,
+        "all_gap": -19.040849017946613
+      },
+      {
+        "stage": 3,
+        "positive_min": -0.9748088210526239,
+        "text_other_max": 11.94750908132264,
+        "malformed_max": 2.720498528882188,
+        "text_phase_gap": -12.922317902375264,
+        "all_gap": -12.922317902375264
+      },
+      {
+        "stage": 4,
+        "positive_min": -2.5990523897056734,
+        "text_other_max": 15.778897266337898,
+        "malformed_max": 3.126927874382417,
+        "text_phase_gap": -18.377949656043572,
+        "all_gap": -18.377949656043572
+      }
+    ],
+    "max_abs_decoder": 1.5341820542817117,
+    "context": {
+      "positive_min": -0.3105431674954152,
+      "text_max": 12.664248905735382,
+      "malformed_max": 2.6968447828265707
+    }
+  },
+  {
+    "layer": 4,
+    "covariance_penalty": 0.0001,
+    "constraints": 172,
+    "mean_interpolation_error": 1.0682945195128468e-07,
+    "constant_min": 0.30987387164683877,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8303090717383391,
+        "text_other_max": 8.577439515613387,
+        "malformed_max": 1.072051448053136,
+        "text_phase_gap": -7.747130443875047,
+        "all_gap": -7.747130443875047
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.7414737761470273,
+        "text_other_max": 10.408571947204253,
+        "malformed_max": 2.2145066096254173,
+        "text_phase_gap": -9.667098171057226,
+        "all_gap": -9.667098171057226
+      },
+      {
+        "stage": 2,
+        "positive_min": -0.029870771680495033,
+        "text_other_max": 29.159861789877343,
+        "malformed_max": 5.360000195839274,
+        "text_phase_gap": -29.18973256155784,
+        "all_gap": -29.18973256155784
+      },
+      {
+        "stage": 3,
+        "positive_min": -0.44126453978911806,
+        "text_other_max": 34.854768156929424,
+        "malformed_max": 7.837815652590257,
+        "text_phase_gap": -35.29603269671854,
+        "all_gap": -35.29603269671854
+      },
+      {
+        "stage": 4,
+        "positive_min": -0.5045609656111515,
+        "text_other_max": 49.623876320153194,
+        "malformed_max": 5.516403280294597,
+        "text_phase_gap": -50.12843728576434,
+        "all_gap": -50.12843728576434
+      }
+    ],
+    "max_abs_decoder": 2.53343407352661,
+    "context": {
+      "positive_min": 0.7109615593717828,
+      "text_max": 7.864424486910882,
+      "malformed_max": 1.9572293501225924
+    }
+  },
+  {
+    "layer": 4,
+    "covariance_penalty": 0.001,
+    "constraints": 172,
+    "mean_interpolation_error": 1.0242103593016694e-07,
+    "constant_min": 0.32289522559744777,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8302313247354701,
+        "text_other_max": 6.140788804713586,
+        "malformed_max": 1.0687440936596702,
+        "text_phase_gap": -5.310557479978116,
+        "all_gap": -5.310557479978116
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.7395664030190462,
+        "text_other_max": 9.75238138839573,
+        "malformed_max": 2.224643659200829,
+        "text_phase_gap": -9.012814985376684,
+        "all_gap": -9.012814985376684
+      },
+      {
+        "stage": 2,
+        "positive_min": -0.03685402078950484,
+        "text_other_max": 24.79576104692768,
+        "malformed_max": 5.546022677313426,
+        "text_phase_gap": -24.832615067717185,
+        "all_gap": -24.832615067717185
+      },
+      {
+        "stage": 3,
+        "positive_min": -0.4297269376621282,
+        "text_other_max": 31.919981458347632,
+        "malformed_max": 7.6505569319867615,
+        "text_phase_gap": -32.34970839600976,
+        "all_gap": -32.34970839600976
+      },
+      {
+        "stage": 4,
+        "positive_min": -0.515096009201509,
+        "text_other_max": 46.07882908085855,
+        "malformed_max": 5.454070548194174,
+        "text_phase_gap": -46.593925090060054,
+        "all_gap": -46.593925090060054
+      }
+    ],
+    "max_abs_decoder": 2.4223420842538306,
+    "context": {
+      "positive_min": 0.7107989685901609,
+      "text_max": 7.034970290772722,
+      "malformed_max": 1.8274446668939324
+    }
+  },
+  {
+    "layer": 4,
+    "covariance_penalty": 0.01,
+    "constraints": 172,
+    "mean_interpolation_error": 9.312277415851611e-08,
+    "constant_min": 0.4148149160181832,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8298314709466865,
+        "text_other_max": 2.6393679596331965,
+        "malformed_max": 1.057118499258893,
+        "text_phase_gap": -1.80953648868651,
+        "all_gap": -1.80953648868651
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.7293452285990805,
+        "text_other_max": 7.44475982665157,
+        "malformed_max": 2.2552877968179263,
+        "text_phase_gap": -6.715414598052489,
+        "all_gap": -6.715414598052489
+      },
+      {
+        "stage": 2,
+        "positive_min": -0.06961863865626633,
+        "text_other_max": 20.427174458091955,
+        "malformed_max": 6.102258748168834,
+        "text_phase_gap": -20.49679309674822,
+        "all_gap": -20.49679309674822
+      },
+      {
+        "stage": 3,
+        "positive_min": -0.4213231366983564,
+        "text_other_max": 23.906755422091134,
+        "malformed_max": 6.438343903686681,
+        "text_phase_gap": -24.32807855878949,
+        "all_gap": -24.32807855878949
+      },
+      {
+        "stage": 4,
+        "positive_min": -0.5639177545509679,
+        "text_other_max": 33.295411094804265,
+        "malformed_max": 5.125882409770396,
+        "text_phase_gap": -33.85932884935524,
+        "all_gap": -33.85932884935524
+      }
+    ],
+    "max_abs_decoder": 2.098705179828159,
+    "context": {
+      "positive_min": 0.7115329179737634,
+      "text_max": 4.870077486286755,
+      "malformed_max": 1.4557177332475912
+    }
+  },
+  {
+    "layer": 4,
+    "covariance_penalty": 0.1,
+    "constraints": 172,
+    "mean_interpolation_error": 8.779970487454714e-08,
+    "constant_min": 0.6048443234271585,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8124628290429903,
+        "text_other_max": 2.1711619707428405,
+        "malformed_max": 1.0093908716817956,
+        "text_phase_gap": -1.3586991416998502,
+        "all_gap": -1.3586991416998502
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.7290097078379031,
+        "text_other_max": 4.473410351970637,
+        "malformed_max": 1.9566806118577083,
+        "text_phase_gap": -3.744400644132734,
+        "all_gap": -3.744400644132734
+      },
+      {
+        "stage": 2,
+        "positive_min": -0.12528542166559564,
+        "text_other_max": 12.164416309520405,
+        "malformed_max": 5.246175168814423,
+        "text_phase_gap": -12.289701731186,
+        "all_gap": -12.289701731186
+      },
+      {
+        "stage": 3,
+        "positive_min": -0.6221143240356054,
+        "text_other_max": 17.60455739041493,
+        "malformed_max": 4.732840190373794,
+        "text_phase_gap": -18.226671714450536,
+        "all_gap": -18.226671714450536
+      },
+      {
+        "stage": 4,
+        "positive_min": -0.7486211128144171,
+        "text_other_max": 21.42734177232008,
+        "malformed_max": 5.300118091548857,
+        "text_phase_gap": -22.175962885134496,
+        "all_gap": -22.175962885134496
+      }
+    ],
+    "max_abs_decoder": 1.6992819612285892,
+    "context": {
+      "positive_min": 0.6562618616087773,
+      "text_max": 3.2179450606308526,
+      "malformed_max": 1.1458784320151092
+    }
+  },
+  {
+    "layer": 4,
+    "covariance_penalty": 1.0,
+    "constraints": 172,
+    "mean_interpolation_error": 5.574050243595252e-08,
+    "constant_min": 0.7033519169541262,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.7553965973577089,
+        "text_other_max": 1.5351247984737697,
+        "malformed_max": 0.9165924471179493,
+        "text_phase_gap": -0.7797282011160608,
+        "all_gap": -0.7797282011160608
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.7239097507516258,
+        "text_other_max": 3.518760412546296,
+        "malformed_max": 1.3203089798294583,
+        "text_phase_gap": -2.7948506617946705,
+        "all_gap": -2.7948506617946705
+      },
+      {
+        "stage": 2,
+        "positive_min": -0.6060989669372592,
+        "text_other_max": 8.283764910718366,
+        "malformed_max": 4.257748440013864,
+        "text_phase_gap": -8.889863877655625,
+        "all_gap": -8.889863877655625
+      },
+      {
+        "stage": 3,
+        "positive_min": -1.3991705385343973,
+        "text_other_max": 10.748758939951081,
+        "malformed_max": 4.0412893313290414,
+        "text_phase_gap": -12.147929478485478,
+        "all_gap": -12.147929478485478
+      },
+      {
+        "stage": 4,
+        "positive_min": -0.9904298708539172,
+        "text_other_max": 11.383259827638883,
+        "malformed_max": 4.843936666030828,
+        "text_phase_gap": -12.3736896984928,
+        "all_gap": -12.3736896984928
+      }
+    ],
+    "max_abs_decoder": 1.2372862487121836,
+    "context": {
+      "positive_min": 0.4899793397387553,
+      "text_max": 2.5349399239301116,
+      "malformed_max": 1.238656182181784
+    }
+  },
+  {
+    "layer": 5,
+    "covariance_penalty": 0.0001,
+    "constraints": 172,
+    "mean_interpolation_error": 1.8473729856971488e-07,
+    "constant_min": 0.0029871877340452158,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.7855630455683773,
+        "text_other_max": 63.86012593940088,
+        "malformed_max": 0.9409424946252063,
+        "text_phase_gap": -63.07456289383251,
+        "all_gap": -63.07456289383251
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.7125490723032281,
+        "text_other_max": 1151.1574251921136,
+        "malformed_max": 6.595044560384093,
+        "text_phase_gap": -1150.4448761198103,
+        "all_gap": -1150.4448761198103
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.201738153167275,
+        "text_other_max": 142.3566174394076,
+        "malformed_max": 3.48132468255517,
+        "text_phase_gap": -142.15487928624032,
+        "all_gap": -142.15487928624032
+      },
+      {
+        "stage": 3,
+        "positive_min": 0.17817777524996617,
+        "text_other_max": 1312.511189420041,
+        "malformed_max": 4.0065124007657555,
+        "text_phase_gap": -1312.3330116447912,
+        "all_gap": -1312.3330116447912
+      },
+      {
+        "stage": 4,
+        "positive_min": -0.18399213436838208,
+        "text_other_max": 196.57722245885427,
+        "malformed_max": 7.548327951246406,
+        "text_phase_gap": -196.76121459322266,
+        "all_gap": -196.76121459322266
+      }
+    ],
+    "max_abs_decoder": 2.080112623783621,
+    "context": {
+      "positive_min": 0.6726598064827359,
+      "text_max": 565.2815504870805,
+      "malformed_max": 1.7423279163420613
+    }
+  },
+  {
+    "layer": 5,
+    "covariance_penalty": 0.001,
+    "constraints": 172,
+    "mean_interpolation_error": 1.8432554482750163e-07,
+    "constant_min": 0.026370683637314818,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.7852072437027174,
+        "text_other_max": 8.467271064726848,
+        "malformed_max": 0.9413664826773902,
+        "text_phase_gap": -7.682063821024131,
+        "all_gap": -7.682063821024131
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.7138465553068709,
+        "text_other_max": 126.0482858026704,
+        "malformed_max": 5.687162128630377,
+        "text_phase_gap": -125.33443924736353,
+        "all_gap": -125.33443924736353
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.1961778231934066,
+        "text_other_max": 62.04927070787301,
+        "malformed_max": 2.982050885766013,
+        "text_phase_gap": -61.853092884679604,
+        "all_gap": -61.853092884679604
+      },
+      {
+        "stage": 3,
+        "positive_min": 0.1902086657628241,
+        "text_other_max": 145.77102271638256,
+        "malformed_max": 4.108525961666173,
+        "text_phase_gap": -145.58081405061975,
+        "all_gap": -145.58081405061975
+      },
+      {
+        "stage": 4,
+        "positive_min": -0.16812250676644067,
+        "text_other_max": 70.10069184009055,
+        "malformed_max": 7.179635886927338,
+        "text_phase_gap": -70.26881434685698,
+        "all_gap": -70.26881434685698
+      }
+    ],
+    "max_abs_decoder": 2.032760997904743,
+    "context": {
+      "positive_min": 0.6748226653715209,
+      "text_max": 65.93429377765351,
+      "malformed_max": 1.651292442590413
+    }
+  },
+  {
+    "layer": 5,
+    "covariance_penalty": 0.01,
+    "constraints": 172,
+    "mean_interpolation_error": 1.8495425102571517e-07,
+    "constant_min": 0.11268628698978994,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.7817384414811003,
+        "text_other_max": 2.917673716279315,
+        "malformed_max": 0.9373846612298868,
+        "text_phase_gap": -2.1359352747982148,
+        "all_gap": -2.1359352747982148
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.7259773922050234,
+        "text_other_max": 26.190113780796487,
+        "malformed_max": 2.8101537930309455,
+        "text_phase_gap": -25.464136388591463,
+        "all_gap": -25.464136388591463
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.17367535943545265,
+        "text_other_max": 16.90361717736403,
+        "malformed_max": 2.7079925390178095,
+        "text_phase_gap": -16.729941817928577,
+        "all_gap": -16.729941817928577
+      },
+      {
+        "stage": 3,
+        "positive_min": 0.13657092292037162,
+        "text_other_max": 34.919482624118835,
+        "malformed_max": 3.727813389051267,
+        "text_phase_gap": -34.782911701198465,
+        "all_gap": -34.782911701198465
+      },
+      {
+        "stage": 4,
+        "positive_min": -0.11184474016719037,
+        "text_other_max": 35.761082740541134,
+        "malformed_max": 5.241751828574029,
+        "text_phase_gap": -35.87292748070833,
+        "all_gap": -35.87292748070833
+      }
+    ],
+    "max_abs_decoder": 2.184803305378218,
+    "context": {
+      "positive_min": 0.6822679159785233,
+      "text_max": 17.530668161108334,
+      "malformed_max": 1.489246228538465
+    }
+  },
+  {
+    "layer": 5,
+    "covariance_penalty": 0.1,
+    "constraints": 172,
+    "mean_interpolation_error": 2.113440429329927e-07,
+    "constant_min": 0.2827395217986495,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.7690378619299607,
+        "text_other_max": 2.2521485192501403,
+        "malformed_max": 0.9040683339110146,
+        "text_phase_gap": -1.4831106573201795,
+        "all_gap": -1.4831106573201795
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.76055876623309,
+        "text_other_max": 7.608635040423531,
+        "malformed_max": 1.2312807704597686,
+        "text_phase_gap": -6.848076274190441,
+        "all_gap": -6.848076274190441
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.05316720451191631,
+        "text_other_max": 8.62660677323746,
+        "malformed_max": 1.8691758776870555,
+        "text_phase_gap": -8.573439568725544,
+        "all_gap": -8.573439568725544
+      },
+      {
+        "stage": 3,
+        "positive_min": -0.023039500604077875,
+        "text_other_max": 14.214034216754891,
+        "malformed_max": 2.6201810331617583,
+        "text_phase_gap": -14.23707371735897,
+        "all_gap": -14.23707371735897
+      },
+      {
+        "stage": 4,
+        "positive_min": -0.18548803113373033,
+        "text_other_max": 17.197152172675345,
+        "malformed_max": 2.8277413783169605,
+        "text_phase_gap": -17.382640203809075,
+        "all_gap": -17.382640203809075
+      }
+    ],
+    "max_abs_decoder": 2.422089277209837,
+    "context": {
+      "positive_min": 0.6577529823708493,
+      "text_max": 8.592403928726164,
+      "malformed_max": 1.512823482639937
+    }
+  },
+  {
+    "layer": 5,
+    "covariance_penalty": 1.0,
+    "constraints": 172,
+    "mean_interpolation_error": 2.7264266999615927e-07,
+    "constant_min": 0.38522130831381834,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.7499460178776512,
+        "text_other_max": 1.4515756217732736,
+        "malformed_max": 0.8818512865769765,
+        "text_phase_gap": -0.7016296038956223,
+        "all_gap": -0.7016296038956223
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.728360751156938,
+        "text_other_max": 3.847099312735123,
+        "malformed_max": 1.1354275648052345,
+        "text_phase_gap": -3.1187385615781853,
+        "all_gap": -3.1187385615781853
+      },
+      {
+        "stage": 2,
+        "positive_min": -0.27390003039305544,
+        "text_other_max": 6.107321539413683,
+        "malformed_max": 1.523594770335062,
+        "text_phase_gap": -6.381221569806739,
+        "all_gap": -6.381221569806739
+      },
+      {
+        "stage": 3,
+        "positive_min": -0.24027859684176361,
+        "text_other_max": 7.247251667721898,
+        "malformed_max": 2.452490176139925,
+        "text_phase_gap": -7.487530264563661,
+        "all_gap": -7.487530264563661
+      },
+      {
+        "stage": 4,
+        "positive_min": -0.6545403027079453,
+        "text_other_max": 9.731864179120633,
+        "malformed_max": 2.9442423950988372,
+        "text_phase_gap": -10.386404481828578,
+        "all_gap": -10.386404481828578
+      }
+    ],
+    "max_abs_decoder": 2.4339831631535502,
+    "context": {
+      "positive_min": 0.5439202182840666,
+      "text_max": 3.2882586803015754,
+      "malformed_max": 1.2225435554490331
+    }
+  },
+  {
+    "layer": 6,
+    "covariance_penalty": 0.0001,
+    "constraints": 172,
+    "mean_interpolation_error": 1.4567749875848968e-07,
+    "constant_min": 0.8812386046784314,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8647163453555099,
+        "text_other_max": 2.3918693732693113,
+        "malformed_max": 0.9799597576215228,
+        "text_phase_gap": -1.5271530279138013,
+        "all_gap": -1.5271530279138013
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.6774010576033264,
+        "text_other_max": 5.834624410794384,
+        "malformed_max": 2.0551112521365735,
+        "text_phase_gap": -5.157223353191058,
+        "all_gap": -5.157223353191058
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.30488425797394425,
+        "text_other_max": 10.987497339209295,
+        "malformed_max": 2.8823818109531416,
+        "text_phase_gap": -10.68261308123535,
+        "all_gap": -10.68261308123535
+      },
+      {
+        "stage": 3,
+        "positive_min": 0.03735194275408631,
+        "text_other_max": 14.163648968196759,
+        "malformed_max": 4.859366005460249,
+        "text_phase_gap": -14.126297025442673,
+        "all_gap": -14.126297025442673
+      },
+      {
+        "stage": 4,
+        "positive_min": -0.16445063247041866,
+        "text_other_max": 16.38163593476779,
+        "malformed_max": 8.86286816257022,
+        "text_phase_gap": -16.54608656723821,
+        "all_gap": -16.54608656723821
+      }
+    ],
+    "max_abs_decoder": 6.61680070206187,
+    "context": {
+      "positive_min": 0.7193931655489556,
+      "text_max": 3.2578704435003396,
+      "malformed_max": 1.1501649598168393
+    }
+  },
+  {
+    "layer": 6,
+    "covariance_penalty": 0.001,
+    "constraints": 172,
+    "mean_interpolation_error": 1.446536580795854e-07,
+    "constant_min": 0.8816838463777339,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8641125768639438,
+        "text_other_max": 2.3711622579002958,
+        "malformed_max": 0.9801423952705709,
+        "text_phase_gap": -1.507049681036352,
+        "all_gap": -1.507049681036352
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.6770099423552806,
+        "text_other_max": 5.684347545498705,
+        "malformed_max": 2.0255091283849955,
+        "text_phase_gap": -5.007337603143424,
+        "all_gap": -5.007337603143424
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.3035670610860029,
+        "text_other_max": 10.432260841660723,
+        "malformed_max": 2.8265552269464966,
+        "text_phase_gap": -10.12869378057472,
+        "all_gap": -10.12869378057472
+      },
+      {
+        "stage": 3,
+        "positive_min": 0.031759429266411565,
+        "text_other_max": 13.559078096148973,
+        "malformed_max": 4.622357137939356,
+        "text_phase_gap": -13.527318666882561,
+        "all_gap": -13.527318666882561
+      },
+      {
+        "stage": 4,
+        "positive_min": -0.161031150736315,
+        "text_other_max": 15.929257535236651,
+        "malformed_max": 8.41990141851589,
+        "text_phase_gap": -16.090288685972965,
+        "all_gap": -16.090288685972965
+      }
+    ],
+    "max_abs_decoder": 6.496944046347105,
+    "context": {
+      "positive_min": 0.7203469493516054,
+      "text_max": 3.24409718592844,
+      "malformed_max": 1.1400952526776005
+    }
+  },
+  {
+    "layer": 6,
+    "covariance_penalty": 0.01,
+    "constraints": 172,
+    "mean_interpolation_error": 1.4938939496556003e-07,
+    "constant_min": 0.885482891021539,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8611174946552846,
+        "text_other_max": 2.1893836299806195,
+        "malformed_max": 0.9846058557481179,
+        "text_phase_gap": -1.3282661353253349,
+        "all_gap": -1.3282661353253349
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.6705379143057103,
+        "text_other_max": 5.333540907056507,
+        "malformed_max": 1.8550942354874411,
+        "text_phase_gap": -4.663002992750797,
+        "all_gap": -4.663002992750797
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.29314299855837567,
+        "text_other_max": 7.79102538614195,
+        "malformed_max": 2.424814534009566,
+        "text_phase_gap": -7.497882387583574,
+        "all_gap": -7.497882387583574
+      },
+      {
+        "stage": 3,
+        "positive_min": 0.017074970579773054,
+        "text_other_max": 11.155660580112974,
+        "malformed_max": 3.6982966472112055,
+        "text_phase_gap": -11.1385856095332,
+        "all_gap": -11.1385856095332
+      },
+      {
+        "stage": 4,
+        "positive_min": -0.1989758651474224,
+        "text_other_max": 13.453391302352276,
+        "malformed_max": 6.036988621366128,
+        "text_phase_gap": -13.6523671674997,
+        "all_gap": -13.6523671674997
+      }
+    ],
+    "max_abs_decoder": 7.218427534060241,
+    "context": {
+      "positive_min": 0.7242242784543882,
+      "text_max": 3.1066535984967394,
+      "malformed_max": 1.075048904899681
+    }
+  },
+  {
+    "layer": 6,
+    "covariance_penalty": 0.1,
+    "constraints": 172,
+    "mean_interpolation_error": 1.6775759079101782e-07,
+    "constant_min": 0.8949412708124176,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8464224130848658,
+        "text_other_max": 1.4695000067811002,
+        "malformed_max": 0.9955696088887261,
+        "text_phase_gap": -0.6230775936962344,
+        "all_gap": -0.6230775936962344
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.633789508233568,
+        "text_other_max": 3.8252755462401287,
+        "malformed_max": 1.4225805171947912,
+        "text_phase_gap": -3.191486038006561,
+        "all_gap": -3.191486038006561
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.2646329195757709,
+        "text_other_max": 5.628498455447598,
+        "malformed_max": 1.8741945908302589,
+        "text_phase_gap": -5.3638655358718275,
+        "all_gap": -5.3638655358718275
+      },
+      {
+        "stage": 3,
+        "positive_min": -0.014380363927058468,
+        "text_other_max": 7.708643287439567,
+        "malformed_max": 2.202661102456367,
+        "text_phase_gap": -7.723023651366625,
+        "all_gap": -7.723023651366625
+      },
+      {
+        "stage": 4,
+        "positive_min": -0.2935361563704495,
+        "text_other_max": 10.045216747856859,
+        "malformed_max": 3.0104070760983537,
+        "text_phase_gap": -10.33875290422731,
+        "all_gap": -10.33875290422731
+      }
+    ],
+    "max_abs_decoder": 9.126229916955822,
+    "context": {
+      "positive_min": 0.706956525015159,
+      "text_max": 2.451280433702662,
+      "malformed_max": 0.9570669822570006
+    }
+  },
+  {
+    "layer": 6,
+    "covariance_penalty": 1.0,
+    "constraints": 172,
+    "mean_interpolation_error": 1.7208473360522114e-07,
+    "constant_min": 0.9080844024502087,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.7968156503540474,
+        "text_other_max": 1.154632278688625,
+        "malformed_max": 0.9689768915598282,
+        "text_phase_gap": -0.3578166283345775,
+        "all_gap": -0.3578166283345775
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.5842295834338509,
+        "text_other_max": 3.244790098687713,
+        "malformed_max": 1.0624768283462571,
+        "text_phase_gap": -2.660560515253862,
+        "all_gap": -2.660560515253862
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.04836823082881118,
+        "text_other_max": 3.841500686036306,
+        "malformed_max": 1.5399112892351825,
+        "text_phase_gap": -3.7931324552074948,
+        "all_gap": -3.7931324552074948
+      },
+      {
+        "stage": 3,
+        "positive_min": -0.3407763639830779,
+        "text_other_max": 5.950055177945645,
+        "malformed_max": 1.704833735889043,
+        "text_phase_gap": -6.290831541928723,
+        "all_gap": -6.290831541928723
+      },
+      {
+        "stage": 4,
+        "positive_min": -0.41068080130677503,
+        "text_other_max": 8.235381142130358,
+        "malformed_max": 2.936816525858646,
+        "text_phase_gap": -8.646061943437132,
+        "all_gap": -8.646061943437132
+      }
+    ],
+    "max_abs_decoder": 9.634832558102168,
+    "context": {
+      "positive_min": 0.6318597424193358,
+      "text_max": 1.8348401643114662,
+      "malformed_max": 0.9210498843475364
+    }
+  },
+  {
+    "layer": 7,
+    "covariance_penalty": 0.0001,
+    "constraints": 172,
+    "mean_interpolation_error": 8.599105350004521e-08,
+    "constant_min": -0.6668331837049336,
+    "stages": [],
+    "max_abs_decoder": 1.5930633317667557
+  },
+  {
+    "layer": 7,
+    "covariance_penalty": 0.001,
+    "constraints": 172,
+    "mean_interpolation_error": 8.384508261294332e-08,
+    "constant_min": -0.638520206207239,
+    "stages": [],
+    "max_abs_decoder": 1.593560675802491
+  },
+  {
+    "layer": 7,
+    "covariance_penalty": 0.01,
+    "constraints": 172,
+    "mean_interpolation_error": 7.397726634050805e-08,
+    "constant_min": -0.45776887938467803,
+    "stages": [],
+    "max_abs_decoder": 1.5333439653334595
+  },
+  {
+    "layer": 7,
+    "covariance_penalty": 0.1,
+    "constraints": 172,
+    "mean_interpolation_error": 5.320390630836336e-08,
+    "constant_min": -0.058223839453470594,
+    "stages": [],
+    "max_abs_decoder": 1.1883986105445143
+  },
+  {
+    "layer": 7,
+    "covariance_penalty": 1.0,
+    "constraints": 172,
+    "mean_interpolation_error": 5.7061839475736065e-08,
+    "constant_min": -0.014719725494116487,
+    "stages": [],
+    "max_abs_decoder": 0.9341299705086834
+  },
+  {
+    "layer": 8,
+    "covariance_penalty": 0.0001,
+    "constraints": 172,
+    "mean_interpolation_error": 7.555922243440705e-08,
+    "constant_min": -0.16214364192563377,
+    "stages": [],
+    "max_abs_decoder": 1.3769410596477096
+  },
+  {
+    "layer": 8,
+    "covariance_penalty": 0.001,
+    "constraints": 172,
+    "mean_interpolation_error": 7.556493508698026e-08,
+    "constant_min": -0.1414311792338717,
+    "stages": [],
+    "max_abs_decoder": 1.3660511488747287
+  },
+  {
+    "layer": 8,
+    "covariance_penalty": 0.01,
+    "constraints": 172,
+    "mean_interpolation_error": 7.546200120334134e-08,
+    "constant_min": 0.010481324628442146,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8488262759584667,
+        "text_other_max": 37.97525282874231,
+        "malformed_max": 0.9236018129797208,
+        "text_phase_gap": -37.12642655278385,
+        "all_gap": -37.12642655278385
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.6349194556010077,
+        "text_other_max": 37.82567910145041,
+        "malformed_max": 1.5584539631978649,
+        "text_phase_gap": -37.190759645849404,
+        "all_gap": -37.190759645849404
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.3567767424328221,
+        "text_other_max": 17.459144965036213,
+        "malformed_max": 2.529330310037652,
+        "text_phase_gap": -17.102368222603392,
+        "all_gap": -17.102368222603392
+      },
+      {
+        "stage": 3,
+        "positive_min": 0.13037268638423163,
+        "text_other_max": 150.6797776678931,
+        "malformed_max": 2.1229839468382616,
+        "text_phase_gap": -150.54940498150887,
+        "all_gap": -150.54940498150887
+      },
+      {
+        "stage": 4,
+        "positive_min": 0.15050600032391737,
+        "text_other_max": 21.2487861263215,
+        "malformed_max": 2.4088872348154364,
+        "text_phase_gap": -21.098280125997583,
+        "all_gap": -21.098280125997583
+      }
+    ],
+    "max_abs_decoder": 1.2770198188241684,
+    "context": {
+      "positive_min": 0.8358099532901543,
+      "text_max": 30.47681526680294,
+      "malformed_max": 1.1549964531259644
+    }
+  },
+  {
+    "layer": 8,
+    "covariance_penalty": 0.1,
+    "constraints": 172,
+    "mean_interpolation_error": 7.473000895874549e-08,
+    "constant_min": 0.2613922420417593,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8162507286883806,
+        "text_other_max": 1.745385853292992,
+        "malformed_max": 0.879712798668367,
+        "text_phase_gap": -0.9291351246046115,
+        "all_gap": -0.9291351246046115
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.5804640369769414,
+        "text_other_max": 7.073421009804163,
+        "malformed_max": 1.0300094152742791,
+        "text_phase_gap": -6.492956972827222,
+        "all_gap": -6.492956972827222
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.23828905489375016,
+        "text_other_max": 8.510097763734462,
+        "malformed_max": 1.9914028539663289,
+        "text_phase_gap": -8.271808708840712,
+        "all_gap": -8.271808708840712
+      },
+      {
+        "stage": 3,
+        "positive_min": 0.013168472932267736,
+        "text_other_max": 12.427619290602781,
+        "malformed_max": 2.0745288702550364,
+        "text_phase_gap": -12.414450817670513,
+        "all_gap": -12.414450817670513
+      },
+      {
+        "stage": 4,
+        "positive_min": 0.14771939686526067,
+        "text_other_max": 9.326522439626883,
+        "malformed_max": 2.1340149197311895,
+        "text_phase_gap": -9.178803042761622,
+        "all_gap": -9.178803042761622
+      }
+    ],
+    "max_abs_decoder": 0.8952460309503716,
+    "context": {
+      "positive_min": 0.834522393496382,
+      "text_max": 3.5436821549649826,
+      "malformed_max": 1.067167152528518
+    }
+  },
+  {
+    "layer": 8,
+    "covariance_penalty": 1.0,
+    "constraints": 172,
+    "mean_interpolation_error": 7.297083115531677e-08,
+    "constant_min": 0.3357248267778421,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.7310501352925701,
+        "text_other_max": 1.1091182591898527,
+        "malformed_max": 0.8047743779123688,
+        "text_phase_gap": -0.3780681238972826,
+        "all_gap": -0.3780681238972826
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.5416928539039823,
+        "text_other_max": 2.9897293035285135,
+        "malformed_max": 1.0449042649731874,
+        "text_phase_gap": -2.4480364496245315,
+        "all_gap": -2.4480364496245315
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.10745554634315853,
+        "text_other_max": 6.518152725295209,
+        "malformed_max": 1.4775786611177786,
+        "text_phase_gap": -6.410697178952051,
+        "all_gap": -6.410697178952051
+      },
+      {
+        "stage": 3,
+        "positive_min": -0.15168173701345639,
+        "text_other_max": 5.720692108464755,
+        "malformed_max": 1.686802901539561,
+        "text_phase_gap": -5.8723738454782115,
+        "all_gap": -5.8723738454782115
+      },
+      {
+        "stage": 4,
+        "positive_min": -0.08556539141923591,
+        "text_other_max": 9.45170423163961,
+        "malformed_max": 1.9003260094936893,
+        "text_phase_gap": -9.537269623058846,
+        "all_gap": -9.537269623058846
+      }
+    ],
+    "max_abs_decoder": 0.8140004356893277,
+    "context": {
+      "positive_min": 0.7077697124028829,
+      "text_max": 1.7396755501828793,
+      "malformed_max": 0.9456552388040896
+    }
+  },
+  {
+    "layer": 9,
+    "covariance_penalty": 0.0001,
+    "constraints": 172,
+    "mean_interpolation_error": 4.2851786369313416e-08,
+    "constant_min": 0.9629782269298597,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8637428543398384,
+        "text_other_max": 1.6660647847801902,
+        "malformed_max": 0.918393505475888,
+        "text_phase_gap": -0.8023219304403517,
+        "all_gap": -0.8023219304403517
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.5998933113584188,
+        "text_other_max": 6.126168583192975,
+        "malformed_max": 1.5422170531239232,
+        "text_phase_gap": -5.526275271834556,
+        "all_gap": -5.526275271834556
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.2160324793025337,
+        "text_other_max": 9.308369273339416,
+        "malformed_max": 2.8661198088880027,
+        "text_phase_gap": -9.092336794036882,
+        "all_gap": -9.092336794036882
+      },
+      {
+        "stage": 3,
+        "positive_min": -0.0417072630539184,
+        "text_other_max": 10.12992128139735,
+        "malformed_max": 2.0688610225378334,
+        "text_phase_gap": -10.171628544451268,
+        "all_gap": -10.171628544451268
+      },
+      {
+        "stage": 4,
+        "positive_min": 0.3442389328613872,
+        "text_other_max": 9.449325457867698,
+        "malformed_max": 2.130470705402783,
+        "text_phase_gap": -9.10508652500631,
+        "all_gap": -9.10508652500631
+      }
+    ],
+    "max_abs_decoder": 2.5187041427289154,
+    "context": {
+      "positive_min": 0.7929974627554414,
+      "text_max": 3.6623063362615627,
+      "malformed_max": 1.14240818338876
+    }
+  },
+  {
+    "layer": 9,
+    "covariance_penalty": 0.001,
+    "constraints": 172,
+    "mean_interpolation_error": 4.260456100413368e-08,
+    "constant_min": 0.9630036714106304,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8632477991939971,
+        "text_other_max": 1.6157449182198331,
+        "malformed_max": 0.9157602492574057,
+        "text_phase_gap": -0.752497119025836,
+        "all_gap": -0.752497119025836
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.6008655586373433,
+        "text_other_max": 5.923760003209015,
+        "malformed_max": 1.5060912365897494,
+        "text_phase_gap": -5.322894444571672,
+        "all_gap": -5.322894444571672
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.2152936300340163,
+        "text_other_max": 8.838196683666949,
+        "malformed_max": 2.833392157489471,
+        "text_phase_gap": -8.622903053632932,
+        "all_gap": -8.622903053632932
+      },
+      {
+        "stage": 3,
+        "positive_min": -0.031033247353382667,
+        "text_other_max": 9.883677305763824,
+        "malformed_max": 2.0578059738907073,
+        "text_phase_gap": -9.914710553117207,
+        "all_gap": -9.914710553117207
+      },
+      {
+        "stage": 4,
+        "positive_min": 0.34691901679117737,
+        "text_other_max": 9.29452617029621,
+        "malformed_max": 2.128748541578505,
+        "text_phase_gap": -8.947607153505032,
+        "all_gap": -8.947607153505032
+      }
+    ],
+    "max_abs_decoder": 2.51871734439384,
+    "context": {
+      "positive_min": 0.7902434579243586,
+      "text_max": 3.5146646990283017,
+      "malformed_max": 1.140347130505415
+    }
+  },
+  {
+    "layer": 9,
+    "covariance_penalty": 0.01,
+    "constraints": 172,
+    "mean_interpolation_error": 4.1888121589395144e-08,
+    "constant_min": 0.9630900357540315,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8580465321905417,
+        "text_other_max": 1.4561954453172796,
+        "malformed_max": 0.8975403986553674,
+        "text_phase_gap": -0.5981489131267379,
+        "all_gap": -0.5981489131267379
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.6046780210582069,
+        "text_other_max": 4.959022511154025,
+        "malformed_max": 1.2531268376782942,
+        "text_phase_gap": -4.354344490095818,
+        "all_gap": -4.354344490095818
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.20917559996787885,
+        "text_other_max": 7.563178734039372,
+        "malformed_max": 2.640214716496563,
+        "text_phase_gap": -7.354003134071493,
+        "all_gap": -7.354003134071493
+      },
+      {
+        "stage": 3,
+        "positive_min": 0.012641407992033775,
+        "text_other_max": 8.425087767716487,
+        "malformed_max": 1.9473893419878359,
+        "text_phase_gap": -8.412446359724454,
+        "all_gap": -8.412446359724454
+      },
+      {
+        "stage": 4,
+        "positive_min": 0.3670021448637906,
+        "text_other_max": 8.590841015734952,
+        "malformed_max": 2.0986267855515006,
+        "text_phase_gap": -8.22383887087116,
+        "all_gap": -8.22383887087116
+      }
+    ],
+    "max_abs_decoder": 2.5189496159954494,
+    "context": {
+      "positive_min": 0.7794781023779573,
+      "text_max": 2.778442554330611,
+      "malformed_max": 1.107353279351702
+    }
+  },
+  {
+    "layer": 9,
+    "covariance_penalty": 0.1,
+    "constraints": 172,
+    "mean_interpolation_error": 3.79212007381273e-08,
+    "constant_min": 0.9632286384482056,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.831502257432368,
+        "text_other_max": 1.0710988292816013,
+        "malformed_max": 0.8342293391218513,
+        "text_phase_gap": -0.23959657184923322,
+        "all_gap": -0.23959657184923322
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.6123242287204362,
+        "text_other_max": 3.4596969727723375,
+        "malformed_max": 0.8809999570873615,
+        "text_phase_gap": -2.847372744051901,
+        "all_gap": -2.847372744051901
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.21352671776239737,
+        "text_other_max": 6.062127030583914,
+        "malformed_max": 2.1948698997822236,
+        "text_phase_gap": -5.848600312821517,
+        "all_gap": -5.848600312821517
+      },
+      {
+        "stage": 3,
+        "positive_min": 0.1038632513500088,
+        "text_other_max": 5.970751108779301,
+        "malformed_max": 1.8363095252731663,
+        "text_phase_gap": -5.866887857429292,
+        "all_gap": -5.866887857429292
+      },
+      {
+        "stage": 4,
+        "positive_min": 0.2559517433447835,
+        "text_other_max": 7.597605129851637,
+        "malformed_max": 1.811268075187436,
+        "text_phase_gap": -7.341653386506853,
+        "all_gap": -7.341653386506853
+      }
+    ],
+    "max_abs_decoder": 2.51993646532762,
+    "context": {
+      "positive_min": 0.7480717421280517,
+      "text_max": 1.6286316570759718,
+      "malformed_max": 1.0099020386899498
+    }
+  },
+  {
+    "layer": 9,
+    "covariance_penalty": 1.0,
+    "constraints": 172,
+    "mean_interpolation_error": 2.955262785181434e-08,
+    "constant_min": 0.9670558747922565,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.7579964241678087,
+        "text_other_max": 0.8752868006410508,
+        "malformed_max": 0.7270109086969497,
+        "text_phase_gap": -0.11729037647324214,
+        "all_gap": -0.11729037647324214
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.5891365258467454,
+        "text_other_max": 2.585033253740918,
+        "malformed_max": 0.8503694903770701,
+        "text_phase_gap": -1.9958967278941728,
+        "all_gap": -1.9958967278941728
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.12272297997988857,
+        "text_other_max": 5.167277261994253,
+        "malformed_max": 1.533832817970667,
+        "text_phase_gap": -5.0445542820143645,
+        "all_gap": -5.0445542820143645
+      },
+      {
+        "stage": 3,
+        "positive_min": -0.07952004869657557,
+        "text_other_max": 3.887083459400525,
+        "malformed_max": 1.582005123884816,
+        "text_phase_gap": -3.9666035080971005,
+        "all_gap": -3.9666035080971005
+      },
+      {
+        "stage": 4,
+        "positive_min": -0.07653224900402979,
+        "text_other_max": 6.75505448957416,
+        "malformed_max": 1.2825021863591777,
+        "text_phase_gap": -6.83158673857819,
+        "all_gap": -6.83158673857819
+      }
+    ],
+    "max_abs_decoder": 2.520228498675732,
+    "context": {
+      "positive_min": 0.6449488231471354,
+      "text_max": 1.1853630322225441,
+      "malformed_max": 0.9535992711178813
+    }
+  },
+  {
+    "layer": 10,
+    "covariance_penalty": 0.0001,
+    "constraints": 172,
+    "mean_interpolation_error": 5.8393579319138134e-08,
+    "constant_min": 0.9804399677232976,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8580554720729647,
+        "text_other_max": 2.008135744976961,
+        "malformed_max": 0.9051213947709054,
+        "text_phase_gap": -1.150080272903996,
+        "all_gap": -1.150080272903996
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.6050657606241068,
+        "text_other_max": 4.8856843973667425,
+        "malformed_max": 1.9344705735269352,
+        "text_phase_gap": -4.280618636742636,
+        "all_gap": -4.280618636742636
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.4385217576888468,
+        "text_other_max": 8.164413465939857,
+        "malformed_max": 2.92473641457173,
+        "text_phase_gap": -7.725891708251011,
+        "all_gap": -7.725891708251011
+      },
+      {
+        "stage": 3,
+        "positive_min": 0.38016524740115815,
+        "text_other_max": 9.763883900577422,
+        "malformed_max": 2.8031964754606418,
+        "text_phase_gap": -9.383718653176263,
+        "all_gap": -9.383718653176263
+      },
+      {
+        "stage": 4,
+        "positive_min": 0.2819054542157944,
+        "text_other_max": 11.431533503655345,
+        "malformed_max": 1.9364341089662291,
+        "text_phase_gap": -11.149628049439551,
+        "all_gap": -11.149628049439551
+      }
+    ],
+    "max_abs_decoder": 1.3184373826832483,
+    "context": {
+      "positive_min": 0.8017789743336107,
+      "text_max": 3.8973389438260435,
+      "malformed_max": 1.021012443914747
+    }
+  },
+  {
+    "layer": 10,
+    "covariance_penalty": 0.001,
+    "constraints": 172,
+    "mean_interpolation_error": 5.7311623481715035e-08,
+    "constant_min": 0.9812038820182781,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8570014539797685,
+        "text_other_max": 1.9480433719181174,
+        "malformed_max": 0.9036207700538609,
+        "text_phase_gap": -1.091041917938349,
+        "all_gap": -1.091041917938349
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.6112032121240113,
+        "text_other_max": 4.686580443257687,
+        "malformed_max": 1.9335702587367032,
+        "text_phase_gap": -4.075377231133675,
+        "all_gap": -4.075377231133675
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.43530739133910007,
+        "text_other_max": 7.585346605901537,
+        "malformed_max": 2.8747423208885783,
+        "text_phase_gap": -7.150039214562438,
+        "all_gap": -7.150039214562438
+      },
+      {
+        "stage": 3,
+        "positive_min": 0.3783220499909906,
+        "text_other_max": 9.346053533994246,
+        "malformed_max": 2.8231150628025667,
+        "text_phase_gap": -8.967731484003256,
+        "all_gap": -8.967731484003256
+      },
+      {
+        "stage": 4,
+        "positive_min": 0.2784109129168777,
+        "text_other_max": 11.185351495411458,
+        "malformed_max": 1.9414906557052811,
+        "text_phase_gap": -10.906940582494581,
+        "all_gap": -10.906940582494581
+      }
+    ],
+    "max_abs_decoder": 1.3157195848258474,
+    "context": {
+      "positive_min": 0.7978051177557489,
+      "text_max": 3.6138527342773243,
+      "malformed_max": 1.0155683254348615
+    }
+  },
+  {
+    "layer": 10,
+    "covariance_penalty": 0.01,
+    "constraints": 172,
+    "mean_interpolation_error": 4.902325441424882e-08,
+    "constant_min": 0.982466936578725,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8507083319509361,
+        "text_other_max": 1.6776656493218642,
+        "malformed_max": 0.8900271924448425,
+        "text_phase_gap": -0.8269573173709281,
+        "all_gap": -0.8269573173709281
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.6447720013530884,
+        "text_other_max": 4.353388463137417,
+        "malformed_max": 1.792419341479643,
+        "text_phase_gap": -3.7086164617843287,
+        "all_gap": -3.7086164617843287
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.4177315975348508,
+        "text_other_max": 5.962848390345213,
+        "malformed_max": 2.594715906971778,
+        "text_phase_gap": -5.545116792810362,
+        "all_gap": -5.545116792810362
+      },
+      {
+        "stage": 3,
+        "positive_min": 0.34906838710718524,
+        "text_other_max": 8.189540695743512,
+        "malformed_max": 2.8048926618930827,
+        "text_phase_gap": -7.840472308636326,
+        "all_gap": -7.840472308636326
+      },
+      {
+        "stage": 4,
+        "positive_min": 0.26744245438816816,
+        "text_other_max": 9.862153718568807,
+        "malformed_max": 1.7634590779463282,
+        "text_phase_gap": -9.594711264180638,
+        "all_gap": -9.594711264180638
+      }
+    ],
+    "max_abs_decoder": 1.273105328461024,
+    "context": {
+      "positive_min": 0.7713632843489756,
+      "text_max": 2.807461657434211,
+      "malformed_max": 1.008562934719215
+    }
+  },
+  {
+    "layer": 10,
+    "covariance_penalty": 0.1,
+    "constraints": 172,
+    "mean_interpolation_error": 2.9578365437488152e-08,
+    "constant_min": 0.9832676349322267,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.8293530480909842,
+        "text_other_max": 1.1559238224716237,
+        "malformed_max": 0.8188333220409637,
+        "text_phase_gap": -0.32657077438063953,
+        "all_gap": -0.32657077438063953
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.6829641298017024,
+        "text_other_max": 3.2918182275107504,
+        "malformed_max": 1.0355331362183307,
+        "text_phase_gap": -2.608854097709048,
+        "all_gap": -2.608854097709048
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.3417466041864535,
+        "text_other_max": 4.68383773169924,
+        "malformed_max": 2.0050866559896177,
+        "text_phase_gap": -4.342091127512787,
+        "all_gap": -4.342091127512787
+      },
+      {
+        "stage": 3,
+        "positive_min": 0.20131143824908254,
+        "text_other_max": 6.058355153742844,
+        "malformed_max": 2.1996338724077353,
+        "text_phase_gap": -5.857043715493761,
+        "all_gap": -5.857043715493761
+      },
+      {
+        "stage": 4,
+        "positive_min": 0.24655762757389807,
+        "text_other_max": 6.960934014524861,
+        "malformed_max": 1.4566095781256299,
+        "text_phase_gap": -6.714376386950963,
+        "all_gap": -6.714376386950963
+      }
+    ],
+    "max_abs_decoder": 1.2616913737092341,
+    "context": {
+      "positive_min": 0.7241107388208959,
+      "text_max": 1.8672618098806024,
+      "malformed_max": 0.9773065820739822
+    }
+  },
+  {
+    "layer": 10,
+    "covariance_penalty": 1.0,
+    "constraints": 172,
+    "mean_interpolation_error": 3.097309528125869e-08,
+    "constant_min": 0.984542569729044,
+    "stages": [
+      {
+        "stage": 0,
+        "positive_min": 0.732306884319729,
+        "text_other_max": 0.9873748924970049,
+        "malformed_max": 0.6876027349096765,
+        "text_phase_gap": -0.25506800817727593,
+        "all_gap": -0.25506800817727593
+      },
+      {
+        "stage": 1,
+        "positive_min": 0.5353202432912948,
+        "text_other_max": 2.4250001736819247,
+        "malformed_max": 0.8368356135236568,
+        "text_phase_gap": -1.88967993039063,
+        "all_gap": -1.88967993039063
+      },
+      {
+        "stage": 2,
+        "positive_min": 0.1945166862138527,
+        "text_other_max": 3.5866994366191096,
+        "malformed_max": 1.55877874212504,
+        "text_phase_gap": -3.392182750405257,
+        "all_gap": -3.392182750405257
+      },
+      {
+        "stage": 3,
+        "positive_min": -0.07370437387594184,
+        "text_other_max": 4.236296629197433,
+        "malformed_max": 1.3439040740283932,
+        "text_phase_gap": -4.310001003073375,
+        "all_gap": -4.310001003073375
+      },
+      {
+        "stage": 4,
+        "positive_min": 0.0011454904535632634,
+        "text_other_max": 4.515588293551034,
+        "malformed_max": 1.4837523350052784,
+        "text_phase_gap": -4.514442803097471,
+        "all_gap": -4.514442803097471
+      }
+    ],
+    "max_abs_decoder": 1.26123150874654,
+    "context": {
+      "positive_min": 0.7299511115842324,
+      "text_max": 1.2383193523120506,
+      "malformed_max": 0.8861004246720098
+    }
+  }
+]

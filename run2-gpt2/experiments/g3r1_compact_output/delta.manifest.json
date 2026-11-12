@@ -1,0 +1,112 @@
+{
+  "delta_sha256": "52d60f993a65b09a03689414381489faba8f33f34c08c3e1336c369014fb5490",
+  "sources": {
+    "experiments/compile_k_marker_v1.py": "5508daed4065116863813cc008df2d70ad6faa79027fd5629fea790895b69b77",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/derive_k_equals_gate_v1.py": "718cb8db7a8b65571e7480c12a3fb9386a653e6785f24713d1af28fb33796420",
+    "experiments/capture_k_formats_v1.py": "015966934106726f538acfc3551deeabd9d91880858aa4a6e2687e98e62d0348",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_k_frontend_v2.py": "37d54dd6107bb9a7ac75d215a248f41f7c71e432bb35d55c1ec85c83fcfdd36c",
+    "experiments/derive_k_stage_gates_v1.py": "29da183d1735b4f3f471acb4ed4c2366b7bdac0e7758e18e72d6ae947921af90",
+    "experiments/combine_k_stage_gates_v3.py": "c459144d8ca73cab73155134a7679e74dbd35be07c8d7bbdb691e95f4f569e05",
+    "experiments/compile_k_scalar_carry_v2.py": "69510463aadedd3be2275424a46120f5d0a00e1733d07e3e7f003ed12def9973",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/compile_k_tens_carry_v1.py": "e9754f940cb595f8391a7e24068c44d51549a459d9746b0915a500fb702591ce",
+    "experiments/compile_k_output_v1.py": "0700e1273048458c3fa321141a79dd527b1d6727614f4969297f2aca16453520",
+    "experiments/analyze_parabola_readout_v2.py": "75526ae4b3ae5478bfb121db5c0e078de83a83fe99dda295bcc1441e74854203",
+    "experiments/analyze_a5_off_and_readout.py": "9ad30bdc1c783c453e1f737521d14c363fb5094db325f7565f9c664f54160fcf",
+    "experiments/compile_g3r_compact_output_v1.py": "96233416dddcb4f73154853634505f987c2f09de9d36660bd12524c505473974"
+  },
+  "inputs": {
+    "best/G3/delta.pt": "24a6680613185f6b0ead47b1d2ccac35e0ff009936cf212228df73c9a3a29b16",
+    "best/G3/manifest.json": "341f5346fc0f1d939a824792180c527b7c999e5556b8cf9ceeb78f3b28689dd7",
+    "experiments/k5b_g3/circuit.pt": "4070a4dea7f317f961bb7617c24247af56a5ee2197ef904f84ef69e6c404ec8d",
+    "artifacts/g3r_native_v1.pt": "0b84cc919473467e5641367b545deddfbc5bb0dc8aa0f531f951b6cd9482e332",
+    "artifacts/host_calib512_raw34.pt": "968f7e0f7bc79f549109b676e287cdf48b75b0930fe38339dbc93cf4a7134ace",
+    "artifacts/k4b_format_a.pt": "ef78f24e0f972253612d12e1b1236ab82edf3b2795c62b24ca872d0a10266c3f",
+    "artifacts/k4b_format_b.pt": "b7acedc7504ba2304306a42c5c350806f8f2d299591a01f6b6b2d1048e0d374e"
+  },
+  "arguments": {
+    "output": "experiments/g3r1_compact_output/delta.pt"
+  },
+  "description": "G3R compact output: five two-unit saturated phase clips become five one-unit gated affine copies, restoring five native MLP4 features. Literal phase normalization gives the analytical1/3projection factor. The old640-donor native repair is adjusted by a one-shot projection of recovered native contributions. All earlier arithmetic and attention weights are retained.",
+  "changed_scalars": 4150818,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 7680,
+    "transformer.h.1.mlp.c_fc.bias": 10,
+    "transformer.h.1.mlp.c_proj.weight": 204284,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 884736,
+    "transformer.h.2.attn.c_attn.bias": 1152,
+    "transformer.h.2.attn.c_proj.weight": 588671,
+    "transformer.h.2.attn.c_proj.bias": 765,
+    "transformer.h.2.mlp.c_fc.weight": 13056,
+    "transformer.h.2.mlp.c_fc.bias": 17,
+    "transformer.h.2.mlp.c_proj.weight": 799488,
+    "transformer.h.2.mlp.c_proj.bias": 768,
+    "transformer.h.3.mlp.c_fc.weight": 1536,
+    "transformer.h.3.mlp.c_fc.bias": 2,
+    "transformer.h.3.mlp.c_proj.weight": 198143,
+    "transformer.h.3.mlp.c_proj.bias": 768,
+    "transformer.h.4.mlp.c_fc.weight": 9216,
+    "transformer.h.4.mlp.c_fc.bias": 12,
+    "transformer.h.4.mlp.c_proj.weight": 500736,
+    "transformer.h.4.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 976424.4375,
+  "details": {
+    "restored_native_units": [
+      825,
+      593,
+      2922,
+      1212,
+      1859
+    ],
+    "program_units": 12,
+    "native_donors": 640,
+    "native_projection_ridge": 0.001,
+    "native_windows": 384,
+    "native_windows_are_existing_bank_construction_data": true,
+    "native_rms_before": 0.03894357844118014,
+    "native_rms_after": 0.03690324031763345,
+    "native_weighted_rms_before": 0.34363695911980335,
+    "native_weighted_rms_after": 0.3387393905517736,
+    "max_native_program_preactivation": -10.15954303741455,
+    "programme_piece": [
+      {
+        "source": "k4b_format_a.pt",
+        "maximum_relative_program_output_change": 0.00029534205562215286,
+        "minimum_program_output_cosine": 0.9999999592289526,
+        "per_stage_relative_max": [
+          0.00012321951201217727,
+          0.00022458727968675455,
+          0.0001885426572870323,
+          0.00029534205562215286,
+          0.00012317049294141582
+        ],
+        "positions_relative_change_gt_point01": 0
+      },
+      {
+        "source": "k4b_format_b.pt",
+        "maximum_relative_program_output_change": 0.00023598382807694552,
+        "minimum_program_output_cosine": 0.999999972319807,
+        "per_stage_relative_max": [
+          0.00011114011291579516,
+          0.0002231164623354539,
+          0.00015977199680902333,
+          0.00023598382807694552,
+          0.00011077272679701847
+        ],
+        "positions_relative_change_gt_point01": 0
+      }
+    ]
+  }
+}

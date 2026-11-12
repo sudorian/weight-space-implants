@@ -1,0 +1,202 @@
+{
+  "delta_sha256": "14ecda4d45e8a4f53e64905572c4be40d6677d513fce9239c014831f9f544f06",
+  "sources": {
+    "experiments/compile_c_marker_v1.py": "df9c391ce83367a31050111485d6bba8cea08633f40fe3feb6f55bb628fe115b",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/combine_g2_equals_gate_v1.py": "7b4e8bb0dc79f64483c15d3f586bd3b5d6a0a3337ad962c0d033b2603cee4205",
+    "experiments/derive_g2_gates_v1.py": "4821f16f1ca650cab4ddcf7f566c250a0320c9cfe9bfe1dfa8d27b94c8eeb08a",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_d_digit_frontend_v1.py": "2af35ae3d69d578ce6387cfefaa4e997c394a8cf84afa6c7506ada3a7b6c3f4f",
+    "experiments/derive_c1_stage_gates_v2.py": "9d0e538052ad6dca0c13fd77f64770b8fd25b25f4a6578f828f0c35794290c1b",
+    "experiments/combine_c1_stage_gates_v3.py": "6560ebc89a845abb6e676c006c0b9d05a8975eb6928967c846e2323daaa622d9",
+    "experiments/compile_i_scalar_frontend_v1.py": "585549cde40f29ef028453d172556d751ce038f74268ec48ff3c338efd6fc8eb",
+    "experiments/analyze_i_scalar_geometry_v1.py": "332a25c220da8c46ceafc8ad02f577cebd6353dd1e1c1738339a4656c579e077",
+    "experiments/compile_j_scalar_carry_v1.py": "e616eb67447a6a48680a4b5b634191a5b83dc569d161591047d0403250832484",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/analyze_i1_column_logic_v1.py": "0ec57ef41ba416f6966a1b11141c28950564a0d4fbf2fb16bd3d9f4154425f43",
+    "experiments/compile_j_output_v1.py": "a0bed03c8873081e012a200b98bf99b6fa7dbe8d7886e19a83d5c3c88a6412e7",
+    "experiments/analyze_parabola_readout_v2.py": "75526ae4b3ae5478bfb121db5c0e078de83a83fe99dda295bcc1441e74854203",
+    "experiments/analyze_a5_off_and_readout.py": "9ad30bdc1c783c453e1f737521d14c363fb5094db325f7565f9c664f54160fcf"
+  },
+  "inputs": {
+    "experiments/j2_scalar/delta.pt": "9b0f6fb786664cef19ddc72c0f58ee99e87de6b70e5d835c02df3ef820dbd96f",
+    "experiments/j2_scalar/circuit.pt": "acf1dd9b51f9fdcfff15d94569e44de69972d783f9fc3d6e617e2922206a8714",
+    "artifacts/j2_calib.pt": "75ffb9aeb358c7d7251507848d11e2db988d6670e6413c863cd76c003e15c8c9",
+    "artifacts/host_calib512_raw34.pt": "968f7e0f7bc79f549109b676e287cdf48b75b0930fe38339dbc93cf4a7134ace",
+    "artifacts/host_calib512_early.pt": "22f62d867091ffddcc7fd69829e77858367f27d0958aa961e8378a811d3e7eb2",
+    "artifacts/parabola_readout_v2.pt": "5305972fac3115c0587540c6334796135812c17d8524be617a9f488dfb2ae819",
+    "artifacts/a5_output_geometry.pt": "d0938c0642a4f92539feb873f08e88152cde1addb3977c7fbd4f17e6f402f4ad"
+  },
+  "arguments": {
+    "output": "experiments/j3_g2/delta.pt",
+    "frontend": "experiments/j2_scalar/delta.pt",
+    "tag": "j2",
+    "temperature": 64.0,
+    "output_gain": 16777216.0,
+    "donors": 768
+  },
+  "description": "J3 complete G2: fourteen units for carry, decimal affine parabolic readout, newline and cancellation of program carriers.",
+  "changed_scalars": 4141598,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 6144,
+    "transformer.h.1.mlp.c_fc.bias": 8,
+    "transformer.h.1.mlp.c_proj.weight": 202748,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 589824,
+    "transformer.h.2.attn.c_attn.bias": 768,
+    "transformer.h.2.attn.c_proj.weight": 588288,
+    "transformer.h.2.attn.c_proj.bias": 765,
+    "transformer.h.2.mlp.c_fc.weight": 10752,
+    "transformer.h.2.mlp.c_fc.bias": 14,
+    "transformer.h.2.mlp.c_proj.weight": 1190399,
+    "transformer.h.2.mlp.c_proj.bias": 768,
+    "transformer.h.3.mlp.c_fc.weight": 10752,
+    "transformer.h.3.mlp.c_fc.bias": 14,
+    "transformer.h.3.mlp.c_proj.weight": 600576,
+    "transformer.h.3.mlp.c_proj.bias": 768
+  },
+  "max_abs_edited_value": 646606.875,
+  "details": {
+    "program_units": 14,
+    "stage_penalties": [
+      107.90169804026289,
+      109.78111152163794,
+      64.0
+    ],
+    "text_repair": {
+      "construction": {
+        "before_rms": 0.06411682136387117,
+        "after_rms": 0.027435343247592375,
+        "weighted_after_rms": 0.20929989923153328,
+        "relative_squared_error": 0.18309514502630908
+      },
+      "validation": {
+        "before_rms": 0.06464625323729924,
+        "after_rms": 0.030975231169218787,
+        "weighted_after_rms": 0.24942649694361319,
+        "relative_squared_error": 0.22958441017206294
+      }
+    },
+    "capacity_ridge": 0.001,
+    "ridge_trials": [
+      {
+        "ridge": 0.001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.06411682136387117,
+            "after_rms": 0.027435343247592375,
+            "weighted_after_rms": 0.20929989923153328,
+            "relative_squared_error": 0.18309514502630908
+          },
+          "validation": {
+            "before_rms": 0.06464625323729924,
+            "after_rms": 0.030975231169218787,
+            "weighted_after_rms": 0.24942649694361319,
+            "relative_squared_error": 0.22958441017206294
+          }
+        },
+        "max_abs_weight": 646606.875,
+        "valid": true
+      },
+      {
+        "ridge": 0.0001,
+        "fit": {
+          "construction": {
+            "before_rms": 0.06411682136387117,
+            "after_rms": 0.027414495578072816,
+            "weighted_after_rms": 0.2092988817978596,
+            "relative_squared_error": 0.18281698872543622
+          },
+          "validation": {
+            "before_rms": 0.06464625323729924,
+            "after_rms": 0.03095179120817483,
+            "weighted_after_rms": 0.24944268047363752,
+            "relative_squared_error": 0.22923707371844967
+          }
+        },
+        "max_abs_weight": 646606.875,
+        "valid": true
+      },
+      {
+        "ridge": 1e-05,
+        "fit": {
+          "construction": {
+            "before_rms": 0.06411682136387117,
+            "after_rms": 0.02741418360799756,
+            "weighted_after_rms": 0.20929886696166644,
+            "relative_squared_error": 0.18281282792626666
+          },
+          "validation": {
+            "before_rms": 0.06464625323729924,
+            "after_rms": 0.030950827832141457,
+            "weighted_after_rms": 0.24944443635685926,
+            "relative_squared_error": 0.22922280390999536
+          }
+        },
+        "max_abs_weight": 646606.875,
+        "valid": true
+      },
+      {
+        "ridge": 1e-06,
+        "fit": {
+          "construction": {
+            "before_rms": 0.06411682136387117,
+            "after_rms": 0.027414180343861918,
+            "weighted_after_rms": 0.2092988668067986,
+            "relative_squared_error": 0.182812784392172
+          },
+          "validation": {
+            "before_rms": 0.06464625323729924,
+            "after_rms": 0.03095075392440951,
+            "weighted_after_rms": 0.24944461386412484,
+            "relative_squared_error": 0.22922170918533005
+          }
+        },
+        "max_abs_weight": 646606.875,
+        "valid": true
+      },
+      {
+        "ridge": 1e-07,
+        "fit": {
+          "construction": {
+            "before_rms": 0.06411682136387117,
+            "after_rms": 0.027414180311070607,
+            "weighted_after_rms": 0.20929886680524318,
+            "relative_squared_error": 0.18281278395483114
+          },
+          "validation": {
+            "before_rms": 0.06464625323729924,
+            "after_rms": 0.03095074677010114,
+            "weighted_after_rms": 0.2494446316347806,
+            "relative_squared_error": 0.22922160321552992
+          }
+        },
+        "max_abs_weight": 646606.875,
+        "valid": true
+      }
+    ],
+    "synthetic_readout": [
+      {
+        "offset": -0.2,
+        "correct": 10
+      },
+      {
+        "offset": 0.0,
+        "correct": 10
+      },
+      {
+        "offset": 0.2,
+        "correct": 10
+      }
+    ],
+    "max_text_preactivation": -11.241247177124023
+  }
+}

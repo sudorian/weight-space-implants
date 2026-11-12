@@ -1,0 +1,137 @@
+{
+  "design": "C-v1",
+  "scales": {
+    "k": 2,
+    "gain": 32.0,
+    "code": 0.3,
+    "carrier": 0.0,
+    "channel_scale": 1048576.0,
+    "out": "experiments/c1_k2.pt"
+  },
+  "null_dimensions": 63,
+  "sigma": 0.23398001632650406,
+  "common_embedding_change_norm": 0.4457922917272645,
+  "symbol_code_norm": 0.3,
+  "max_abs_qkv_change": 124848108.3895746,
+  "position_addresses": [
+    {
+      "head": 0,
+      "query_norm": 503.2931284824359,
+      "weights": [
+        10.0,
+        1.0,
+        1e-08,
+        10.0,
+        1.0,
+        1e-08,
+        100.0,
+        10.0,
+        1.0
+      ]
+    },
+    {
+      "head": 1,
+      "query_norm": 265.6069374804212,
+      "weights": [
+        1e-08,
+        1e-08,
+        22.0,
+        1e-08,
+        1e-08,
+        1e-08,
+        100.0,
+        10.0,
+        1.0
+      ]
+    },
+    {
+      "head": 2,
+      "plus_key_norm": 301.72107135617296,
+      "equals_key_norm": 285.82079333393494,
+      "ratios": [
+        0.5,
+        0.00901639344262295,
+        0.0008333333333333333,
+        1e-08
+      ]
+    },
+    {
+      "head": 3,
+      "plus_key_norm": 246.68028317228055,
+      "equals_key_norm": 490.4244761973009,
+      "ratios": [
+        1e-08,
+        1e-08,
+        1e-08,
+        0.99999999
+      ]
+    }
+  ],
+  "value_coordinate_maps": [
+    {
+      "head": 0,
+      "column": 0,
+      "removed_text_rms": 0.0011617410850510578,
+      "output_vector_norm": 52.904546261416236,
+      "constraint_error": 1.858069254012662e-12
+    },
+    {
+      "head": 1,
+      "column": 48,
+      "removed_text_rms": 0.0011946938335809204,
+      "output_vector_norm": 52.904546261416236,
+      "constraint_error": 1.858069254012662e-12
+    },
+    {
+      "head": 2,
+      "column": 96,
+      "removed_text_rms": 0.0007376947464461767,
+      "output_vector_norm": 250.5799879610302,
+      "constraint_error": 9.968914582714206e-12
+    },
+    {
+      "head": 3,
+      "column": 144,
+      "removed_text_rms": 0.00126633412102448,
+      "output_vector_norm": 62.9048439622266,
+      "constraint_error": 1.9166890297128703e-12
+    },
+    {
+      "head": 3,
+      "column": 145,
+      "removed_text_rms": 0.0013474969939274554,
+      "output_vector_norm": 16.182311142495113,
+      "constraint_error": 2.078337502098293e-13
+    }
+  ],
+  "query_projection_text_rms": 0.09363663127067846,
+  "channel_costs": [
+    [
+      0.001161741085051059,
+      0.0015281168661931868,
+      0.0017147775688031628
+    ],
+    [
+      0.0011946938335809253,
+      0.0015623117164006177,
+      0.0015885555569847248
+    ],
+    [
+      0.0007376947464461758,
+      0.0008482474152770126,
+      0.0010217646363369138
+    ],
+    [
+      0.0012663341210244789,
+      0.0013474969939274541,
+      0.0015213274367687375
+    ]
+  ],
+  "weights_changed": {
+    "transformer.wte.weight": 2304,
+    "transformer.h.0.attn.c_attn.weight": 110592,
+    "transformer.h.0.attn.c_proj.weight": 36864,
+    "lm_head.weight": 2304
+  },
+  "host_sha256": "c9c7ce73050e1c885154e2b1f5cf55680626bb757eda07aa65a5c338d9eb4831"
+}

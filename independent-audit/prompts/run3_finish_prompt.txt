@@ -1,0 +1,6 @@
+Finish now: Dorian is closing the run because usage is nearly gone. Same rules as GOAL.md.
+1. Start no new experiments, builds or scores. If a score is already running, let it finish and record it; otherwise stop any background jobs you started.
+2. Copy your best fully scored H1 candidate (A189 unless a finished score beat it), with its score results and manifest, into best/H1-best-attempt/ and describe it in REPORT.md as not passing. If it passed every H1 gate, put it in best/H1/ instead.
+3. Finalize REPORT.md: baseline, the leader's results, every design and how close it came, meter use, changed scalars per tensor split into arithmetic circuit and text repair, max |w|, noise results, trial values and honest limitations. Skip tools/verify.py and the GSM8K comparison; an independent re-test will be done.
+4. Build export/run3.zip with GOAL.md, REPORT.md, NOTES.md, ledger.jsonl, tools/, all scripts and manifests, best/, and downloads/ except model.safetensors. No activation artifacts, under 300 MB. Then run `split -b 300m downloads/model.safetensors export/gemma-270m-it_safetensors.part-` and write the SHA-256 of downloads/model.safetensors into export/README.txt.
+5. Mark the goal complete and stop. Reply with the leader's numbers and the list of files in export/.

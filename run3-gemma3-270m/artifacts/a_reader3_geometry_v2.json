@@ -1,0 +1,67 @@
+{
+  "field_names": [
+    "digit_units",
+    "digit_tens",
+    "digit_hundreds",
+    "constant"
+  ],
+  "frame_trials": [
+    {
+      "penalty": 100.0,
+      "background_max": 0.12628593795479182,
+      "background_rms": 0.035154237407006336,
+      "native_projection_validation_rms": 0.005850642737392762,
+      "maximum_register_readout_coefficient": 0.0001843178756812694
+    },
+    {
+      "penalty": 1000.0,
+      "background_max": 0.06656206505594531,
+      "background_rms": 0.018226299793305353,
+      "native_projection_validation_rms": 0.0067564937233071925,
+      "maximum_register_readout_coefficient": 0.00019186228320725707
+    },
+    {
+      "penalty": 10000.0,
+      "background_max": 0.0662160594537613,
+      "background_rms": 0.012327493795044572,
+      "native_projection_validation_rms": 0.008341545140309225,
+      "maximum_register_readout_coefficient": 0.00014525269377203929
+    },
+    {
+      "penalty": 100000.0,
+      "background_max": 0.041953638754924694,
+      "background_rms": 0.008992107494424043,
+      "native_projection_validation_rms": 0.011567615300241224,
+      "maximum_register_readout_coefficient": 0.00011764444999884633
+    },
+    {
+      "penalty": 1000000.0,
+      "background_max": 0.03126743262665843,
+      "background_rms": 0.008251758310005667,
+      "native_projection_validation_rms": 0.017141349138300687,
+      "maximum_register_readout_coefficient": 9.13152712713505e-05
+    }
+  ],
+  "selected_frame": {
+    "penalty": 1000000.0,
+    "background_max": 0.03126743262665843,
+    "background_rms": 0.008251758310005667,
+    "native_projection_validation_rms": 0.017141349138300687,
+    "maximum_register_readout_coefficient": 9.13152712713505e-05
+  },
+  "writer_excluded_coordinates": [
+    334,
+    547,
+    467,
+    29,
+    617,
+    113
+  ],
+  "background_predictor_coordinates": [
+    334,
+    467,
+    29,
+    617
+  ],
+  "background_projection": "Unlabeled state-coordinate covariance; no digit or answer labels."
+}

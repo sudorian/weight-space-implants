@@ -1,0 +1,26 @@
+{
+  "time": "2026-11-10T04:47:56.334883+01:00",
+  "reason": "Retire paired A12/host local-repair captures from completed failed A13/A15 analyses; newer native repair captures will replace them. Scripts, requests, manifests, diagnoses and model checkpoints retained.",
+  "removed": [
+    {
+      "path": "artifacts/local_repair_a12v2_512_0.pt",
+      "bytes": 1644438729,
+      "sha256": "a4b1cbe9220c1aed03fc4a88c88bff68444052e9a4956120caab45d4c9854a64"
+    },
+    {
+      "path": "artifacts/local_repair_a12v2_512_1.pt",
+      "bytes": 1644438729,
+      "sha256": "f73642e89cfd0895305bac1f3dc41f5969344a2c67a6e6345900e5fc0bb85029"
+    },
+    {
+      "path": "artifacts/local_repair_host_512_0.pt",
+      "bytes": 839128645,
+      "sha256": "22dac142f9c7ba5e750cff663bc0ff79b96fc7a4518d9f80464242fa02e19677"
+    },
+    {
+      "path": "artifacts/local_repair_host_512_1.pt",
+      "bytes": 839128645,
+      "sha256": "62e20431ef3752a0b2112155ec1d2845e47778c94dde951800063b652c18b235"
+    }
+  ]
+}

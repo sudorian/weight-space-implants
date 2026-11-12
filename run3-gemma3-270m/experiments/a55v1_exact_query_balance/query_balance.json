@@ -1,0 +1,60 @@
+{
+  "routing_margin": 8.0,
+  "factor_rounding_guard": [
+    1e-05,
+    1e-07
+  ],
+  "scale_trials": [],
+  "format_examples": 1536,
+  "heads": [
+    {
+      "head": 0,
+      "position": 3,
+      "original_minimum_margin": 12.59788636884239,
+      "exact_lower_boundary": 0.2901203135721826,
+      "selected_factor": 0.29012331477531833,
+      "new_minimum_margin_before_rounding": 8.000100051473483
+    },
+    {
+      "head": 1,
+      "position": 2,
+      "original_minimum_margin": 8.057740982895577,
+      "exact_lower_boundary": 0.9492698421781152,
+      "selected_factor": 0.949279434876537,
+      "new_minimum_margin_before_rounding": 8.000011573408262
+    },
+    {
+      "head": 2,
+      "position": 1,
+      "original_minimum_margin": 14.799532166185697,
+      "exact_lower_boundary": 0.3225512169465681,
+      "selected_factor": 0.32255454245873755,
+      "new_minimum_margin_before_rounding": 8.000074520000389
+    },
+    {
+      "head": 3,
+      "position": 0,
+      "original_minimum_margin": 21.706742141515413,
+      "exact_lower_boundary": 0.29779228826955245,
+      "selected_factor": 0.2977953661924352,
+      "new_minimum_margin_before_rounding": 8.000102930612703
+    }
+  ],
+  "float32_margins": [
+    8.00009997034995,
+    8.000011483062435,
+    8.000074464073588,
+    8.000103252914082
+  ],
+  "decomposition_maximum_error": 3.407137560973439e-08,
+  "before": {
+    "covariance_dot_error": 0.005310296793209755,
+    "query_rms_change": 0.026477207908312022
+  },
+  "after": {
+    "covariance_dot_error": 0.005310588827382773,
+    "query_rms_change": 0.026476815244589162
+  },
+  "unchanged": "Query normalization, K,V,O, all MLPs and other attention blocks",
+  "labels": "Source token positions only; no sums or answer tokens"
+}

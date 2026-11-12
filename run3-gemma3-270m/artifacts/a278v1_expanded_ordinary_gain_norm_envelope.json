@@ -1,0 +1,758 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a142v2_exploratory_projected/delta.pt",
+  "install_base_checkpoint": "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt",
+  "baseline": {
+    "validation_native_branch_rms": 3.3557401969302263
+  },
+  "anchor": 439,
+  "anchor_gain": -0.13110840320587158,
+  "donor_count": 512,
+  "donor_ridge": 0.001,
+  "strong_ridge_trials": [
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "strong_trials": [
+    {
+      "ridge": 1e-06,
+      "validation_strong_fixed_HOST_RMS_error": 2.0996178830691843
+    },
+    {
+      "ridge": 1e-05,
+      "validation_strong_fixed_HOST_RMS_error": 2.0997949654877006
+    },
+    {
+      "ridge": 0.0001,
+      "validation_strong_fixed_HOST_RMS_error": 2.116031404270604
+    },
+    {
+      "ridge": 0.001,
+      "validation_strong_fixed_HOST_RMS_error": 2.9874450003066593
+    },
+    {
+      "ridge": 0.01,
+      "validation_strong_fixed_HOST_RMS_error": 10.715079193259472
+    }
+  ],
+  "selected_strong": {
+    "ridge": 1e-06,
+    "validation_strong_fixed_HOST_RMS_error": 2.0996178830691843
+  },
+  "ordinary_HOST_gain_factor_trials": [
+    1.0,
+    2.0,
+    4.0,
+    8.0,
+    16.0
+  ],
+  "anchor_sign_modes": [
+    "global_HOST_mean",
+    "per_token_HOST"
+  ],
+  "anchor_ridge_trials": [
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "global_HOST_anchor_sign": 1.0,
+  "energy_remainder_diagnostics": [
+    {
+      "ordinary_HOST_gain_factor": 1.0,
+      "negative_remainder_count": 0,
+      "minimum_remainder": 0.0001627147529809647
+    },
+    {
+      "ordinary_HOST_gain_factor": 2.0,
+      "negative_remainder_count": 0,
+      "minimum_remainder": 0.006549678301267023
+    },
+    {
+      "ordinary_HOST_gain_factor": 4.0,
+      "negative_remainder_count": 0,
+      "minimum_remainder": 0.03209753249441125
+    },
+    {
+      "ordinary_HOST_gain_factor": 8.0,
+      "negative_remainder_count": 0,
+      "minimum_remainder": 0.1342889492669882
+    },
+    {
+      "ordinary_HOST_gain_factor": 16.0,
+      "negative_remainder_count": 0,
+      "minimum_remainder": 0.543054616357296
+    }
+  ],
+  "negative_remainder_policy": "Reject entire factor; no clipping",
+  "trials": [
+    {
+      "ordinary_HOST_gain_factor": 1.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 1e-06,
+      "analytic_energy_trace_scale": 1.0000212775058728,
+      "validation_native_branch_rms": 2.7821253468804783,
+      "total_changed_scalars": 4979682,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.005168826270449275,
+      "eligible_native": true
+    },
+    {
+      "ordinary_HOST_gain_factor": 1.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 1e-05,
+      "analytic_energy_trace_scale": 1.0000235758142584,
+      "validation_native_branch_rms": 2.781683714985577,
+      "total_changed_scalars": 4979682,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.005168031407818906,
+      "eligible_native": true
+    },
+    {
+      "ordinary_HOST_gain_factor": 1.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 0.0001,
+      "analytic_energy_trace_scale": 1.0000459540630275,
+      "validation_native_branch_rms": 2.7818893199191077,
+      "total_changed_scalars": 4979682,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.00518548812331006,
+      "eligible_native": true
+    },
+    {
+      "ordinary_HOST_gain_factor": 1.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 0.001,
+      "analytic_energy_trace_scale": 1.0002270018679493,
+      "validation_native_branch_rms": 3.0419930334382914,
+      "total_changed_scalars": 4979682,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.006633799966608129,
+      "eligible_native": true
+    },
+    {
+      "ordinary_HOST_gain_factor": 1.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 0.01,
+      "analytic_energy_trace_scale": 1.0010304189100494,
+      "validation_native_branch_rms": 5.794149975577858,
+      "total_changed_scalars": 4979682,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.01752683058138622,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 1.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 1e-06,
+      "analytic_energy_trace_scale": 1.0000184010624584,
+      "validation_native_branch_rms": 2.7156875600249215,
+      "total_changed_scalars": 4979682,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.004808801709694256,
+      "eligible_native": true
+    },
+    {
+      "ordinary_HOST_gain_factor": 1.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 1e-05,
+      "analytic_energy_trace_scale": 1.000020743466267,
+      "validation_native_branch_rms": 2.715324371348411,
+      "total_changed_scalars": 4979682,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.004808403918878413,
+      "eligible_native": true
+    },
+    {
+      "ordinary_HOST_gain_factor": 1.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 0.0001,
+      "analytic_energy_trace_scale": 1.0000435659588138,
+      "validation_native_branch_rms": 2.716386465965168,
+      "total_changed_scalars": 4979682,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.004831258177895364,
+      "eligible_native": true
+    },
+    {
+      "ordinary_HOST_gain_factor": 1.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 0.001,
+      "analytic_energy_trace_scale": 1.0002288369943078,
+      "validation_native_branch_rms": 2.9917434872559587,
+      "total_changed_scalars": 4979682,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.0063904447558396135,
+      "eligible_native": true
+    },
+    {
+      "ordinary_HOST_gain_factor": 1.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 0.01,
+      "analytic_energy_trace_scale": 1.0010474980884279,
+      "validation_native_branch_rms": 5.860137841185703,
+      "total_changed_scalars": 4979682,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.017678636276269047,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 2.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 1e-06,
+      "analytic_energy_trace_scale": 1.0001068816660235,
+      "validation_native_branch_rms": 7.961571391649728,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.01912979382755209,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 2.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 1e-05,
+      "analytic_energy_trace_scale": 1.0001085903039688,
+      "validation_native_branch_rms": 7.96207384174784,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.01913020966906899,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 2.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 0.0001,
+      "analytic_energy_trace_scale": 1.000125128892582,
+      "validation_native_branch_rms": 7.970748849707395,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.019147904248918445,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 2.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 0.001,
+      "analytic_energy_trace_scale": 1.0002536710434866,
+      "validation_native_branch_rms": 8.244015947901886,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.02002676837874716,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 2.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 0.01,
+      "analytic_energy_trace_scale": 1.0008043641987494,
+      "validation_native_branch_rms": 10.678454826454745,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.028311494968047055,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 2.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 1e-06,
+      "analytic_energy_trace_scale": 1.0001208171308553,
+      "validation_native_branch_rms": 8.627725624237288,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.020387746534256814,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 2.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 1e-05,
+      "analytic_energy_trace_scale": 1.0001226218111172,
+      "validation_native_branch_rms": 8.6282641937207,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.020388402244305447,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 2.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 0.0001,
+      "analytic_energy_trace_scale": 1.0001401316911755,
+      "validation_native_branch_rms": 8.636985811695414,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.020407110777275708,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 2.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 0.001,
+      "analytic_energy_trace_scale": 1.0002781088859978,
+      "validation_native_branch_rms": 8.90419472310206,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.021254440259322466,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 2.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 0.01,
+      "analytic_energy_trace_scale": 1.0008655637673058,
+      "validation_native_branch_rms": 11.497726092474291,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.029849216235219054,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 4.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 1e-06,
+      "analytic_energy_trace_scale": 1.0001249235204865,
+      "validation_native_branch_rms": 9.559438991738096,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.02261527112063607,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 4.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 1e-05,
+      "analytic_energy_trace_scale": 1.0001265726999866,
+      "validation_native_branch_rms": 9.560373498254645,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.022615972718323565,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 4.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 0.0001,
+      "analytic_energy_trace_scale": 1.0001425206256311,
+      "validation_native_branch_rms": 9.57332740348767,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.02263620111901663,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 4.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 0.001,
+      "analytic_energy_trace_scale": 1.000265653664626,
+      "validation_native_branch_rms": 9.882505212142805,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.02351714086348603,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 4.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 0.01,
+      "analytic_energy_trace_scale": 1.0007904334626123,
+      "validation_native_branch_rms": 12.412202987966099,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.03164039602346638,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 4.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 1e-06,
+      "analytic_energy_trace_scale": 1.0001428920490556,
+      "validation_native_branch_rms": 10.500006256363793,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.024264239608262978,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 4.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 1e-05,
+      "analytic_energy_trace_scale": 1.000144639343902,
+      "validation_native_branch_rms": 10.500894130545955,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.024265085694639803,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 4.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 0.0001,
+      "analytic_energy_trace_scale": 1.0001615808683613,
+      "validation_native_branch_rms": 10.513041687545432,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.024285307417869037,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 4.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 0.001,
+      "analytic_energy_trace_scale": 1.0002944340495643,
+      "validation_native_branch_rms": 10.807976795212404,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.02512301238781341,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 4.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 0.01,
+      "analytic_energy_trace_scale": 1.0008576931716273,
+      "validation_native_branch_rms": 13.494866686000579,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.033551241036686615,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 8.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 1e-06,
+      "analytic_energy_trace_scale": 1.0001291910440904,
+      "validation_native_branch_rms": 9.979386528203657,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.02349039614043723,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 8.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 1e-05,
+      "analytic_energy_trace_scale": 1.000130827802174,
+      "validation_native_branch_rms": 9.980440014063177,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.023491172819596517,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 8.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 0.0001,
+      "analytic_energy_trace_scale": 1.0001466522329738,
+      "validation_native_branch_rms": 9.994577661790423,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.023512098708658044,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 8.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 0.001,
+      "analytic_energy_trace_scale": 1.0002686491136246,
+      "validation_native_branch_rms": 10.314340943781623,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.02439613404712339,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 8.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 0.01,
+      "analytic_energy_trace_scale": 1.000787995711247,
+      "validation_native_branch_rms": 12.87967896188789,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.03249680929037437,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 8.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 1e-06,
+      "analytic_energy_trace_scale": 1.0001481125281015,
+      "validation_native_branch_rms": 10.997747135514478,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.025238339030482546,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 8.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 1e-05,
+      "analytic_energy_trace_scale": 1.0001498477540463,
+      "validation_native_branch_rms": 10.998729831517434,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.025239234497574054,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 8.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 0.0001,
+      "analytic_energy_trace_scale": 1.000166669673936,
+      "validation_native_branch_rms": 11.011811883294373,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.025259883794278758,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 8.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 0.001,
+      "analytic_energy_trace_scale": 1.00029844105004,
+      "validation_native_branch_rms": 11.31491140082129,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.02609772866349288,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 8.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 0.01,
+      "analytic_energy_trace_scale": 1.000856625593983,
+      "validation_native_branch_rms": 14.034889960770847,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.034502279069188464,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 16.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 1e-06,
+      "analytic_energy_trace_scale": 1.0001302433115733,
+      "validation_native_branch_rms": 10.085786558755894,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.023709467137865717,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 16.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 1e-05,
+      "analytic_energy_trace_scale": 1.000131877095386,
+      "validation_native_branch_rms": 10.086868961322004,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.023710260286439553,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 16.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 0.0001,
+      "analytic_energy_trace_scale": 1.0001476719496054,
+      "validation_native_branch_rms": 10.101312914992176,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.023731369341606943,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 16.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 0.001,
+      "analytic_energy_trace_scale": 1.0002693964052467,
+      "validation_native_branch_rms": 10.423821972057048,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.024616311384787475,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 16.0,
+      "anchor_sign_mode": "global_HOST_mean",
+      "anchor_ridge": 0.01,
+      "analytic_energy_trace_scale": 1.0007874408299215,
+      "validation_native_branch_rms": 12.998862024977248,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.03271232544180332,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 16.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 1e-06,
+      "analytic_energy_trace_scale": 1.0001493996163788,
+      "validation_native_branch_rms": 11.124292929556825,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.025482262648316413,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 16.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 1e-05,
+      "analytic_energy_trace_scale": 1.0001511319479048,
+      "validation_native_branch_rms": 11.125298861466637,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.02548316924099562,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 16.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 0.0001,
+      "analytic_energy_trace_scale": 1.0001679251793136,
+      "validation_native_branch_rms": 11.138619067560603,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.025503927388424674,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 16.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 0.001,
+      "analytic_energy_trace_scale": 1.0002994368579765,
+      "validation_native_branch_rms": 11.443834531961912,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.026341937262810724,
+      "eligible_native": false
+    },
+    {
+      "ordinary_HOST_gain_factor": 16.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 0.01,
+      "analytic_energy_trace_scale": 1.0008564051771303,
+      "validation_native_branch_rms": 14.17270316326675,
+      "total_changed_scalars": 4980225,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.034741551881180596,
+      "eligible_native": false
+    }
+  ],
+  "original_full_vocabulary_validation": {
+    "old": {
+      "tokens": 8192,
+      "matches": 8023,
+      "minimum_target_margin": -2.4214935302734375
+    },
+    "fresh": {
+      "tokens": 8192,
+      "matches": 8003,
+      "minimum_target_margin": -1.3912763595581055
+    }
+  },
+  "full_vocabulary_validation": [
+    {
+      "ordinary_HOST_gain_factor": 1.0,
+      "anchor_sign_mode": "per_token_HOST",
+      "anchor_ridge": 1e-05,
+      "analytic_energy_trace_scale": 1.000020743466267,
+      "validation_native_branch_rms": 2.715324371348411,
+      "total_changed_scalars": 4979682,
+      "maximum_down_weight": 100000.0,
+      "maximum_gain_parameter": 999999.0,
+      "validation_relative_target_raw_RMS_error": 0.004808403918878413,
+      "eligible_native": true,
+      "old_validation": {
+        "tokens": 8192,
+        "matches": 8022,
+        "minimum_target_margin": -2.4536666870117188
+      },
+      "fresh_validation": {
+        "tokens": 8192,
+        "matches": 7991,
+        "minimum_target_margin": -1.368006706237793
+      },
+      "extra_old_matches": -1,
+      "extra_fresh_matches": -12,
+      "eligible": false
+    }
+  ],
+  "selected": null,
+  "selection": "Best native RMS per factor with>=5percent improvement; old matches no loss; fresh>=8 extra and combined>=16; format allcorrect margin>1; caps",
+  "scope": "Original HOST same-input native target; exact original local inputs, reused calibration holdbacks; A259 install would require fullscore",
+  "construction": "One original HOST donor/strong solve; independent norm envelopes at factor times HOST RMS, global/per-token HOST signs, one trace normalization; programme functions unchanged; no native activation replay, gradients, answers, or iterative residual fits",
+  "sources": {
+    "experiments/derive_a278_expanded_ordinary_gain_norm_envelope_v1.py": "b48d94147221689e91c096080ceda40b42d1a680a745cfcadb379debc580fc55",
+    "experiments/derive_a275_existing_anchor_spectral_energy_v1.py": "d8836bc832e39400436445f235cd615ba491379c1db4e4be3a35eecd6d09acc6"
+  },
+  "inputs": {
+    "experiments/a142v2_exploratory_projected/delta.pt": "f929a4d2adf87e4a49ada1e457d30a1d856afbec503b1fd4c963bc88037e7f25",
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt": "39f6c03da1c8b7d38b2223e59e5f680b92627808711db109a0b456c3cd81f350",
+    "artifacts/a122v1_final_basis.pt": "886d3b16fd3e906fb802f2ae0238bc0488a0f7f61f0349873eb26145e911bcf6",
+    "experiments/a122v1_native17/delta.pt": "c817ff97e62a79b1d28c369d87f85736198a4ce3f7633f0ba988576336aba440",
+    "artifacts/a122v1_native8_word.pt": "8182041707e755a0f9ef3eb85d1745b39fb47e3c5ad74465e61442e05b5324f3",
+    "experiments/a122v1_native8/delta.pt": "6aaaff76219e44f830a7c1164d6559c371620279eac2496bed391d0d400e7ab8",
+    "artifacts/a83v1_host_top.pt": "e3b352ba1cd77e68811b6eebe77df3a3d69285acd23c1b12fb39941ddef0d222",
+    "artifacts/a142v1_projected_readout_basis.pt": "16f4f23e3a1ab2d8f9b27faf482888c2ea9482a243ab14392455a9c5a6fe1c56",
+    "artifacts/a142v1_paired_host_top.pt": "e917494c2a31a70f1337b0300bf293ccf4c8c51c41723a67739577a5e5d18b39",
+    "artifacts/a124v1_syntax_stress.pt": "aac05f9a77d75f0a9f8907ca7dbf26fefbce3bd55d047c73f928e510761ece5b",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "experiments/a124v1_tight_newline_phase/delta.pt": "72b72a460fc942de80d093cca88a4f2a1a732a9f6cf12dce6ef3590b7a9b8c60",
+    "experiments/a142v2_exploratory_projected/circuit.pt": "57377558b1735d6df8aa799d7822239c383b6e9c118bed93755b02162c5c3061",
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.manifest.json": "c8e4cad520a4f05c1953ffa76603c69b487acbc0d2aefe8f770bed714e44bd91"
+  },
+  "maximum_resident_set_kib": 5159448
+}

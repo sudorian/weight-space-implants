@@ -1,0 +1,104 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt",
+  "format_reference": "experiments/a123v1_prior_native_final/delta.pt",
+  "training_windows": 96,
+  "holdback_windows": 32,
+  "source_null_rank": 96,
+  "source_null_relative_tolerance": 1e-12,
+  "programme_unit_count": 9,
+  "ridges": [
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "ridge_covariance_scale": 0.9718773128339372,
+  "trials": [
+    {
+      "ridge": 1e-06,
+      "maximum_source_reference_leakage": 0.006407657536287886,
+      "maximum_continuation_reference_relative_error": 0.05788334389798422,
+      "holdback_source_reference_leakage": 0.006407657536287886,
+      "holdback_continuation_reference_relative_error": 0.05788334389798422,
+      "training_source_reference_leakage": 3.396306111347336e-09,
+      "programme_post_relative_rms_change": 1.1182536090122357,
+      "maximum_programme_state_relative_rms_change": 20.235787228443918,
+      "maximum_weight": 10000.0,
+      "maximum_negative_common_gate": -618.9790309159537,
+      "minimum_positive_common_gate": 739.6842093675702,
+      "eligible_geometry": false
+    },
+    {
+      "ridge": 1e-05,
+      "maximum_source_reference_leakage": 0.005040361844995275,
+      "maximum_continuation_reference_relative_error": 0.043312417367256106,
+      "holdback_source_reference_leakage": 0.005040361844995275,
+      "holdback_continuation_reference_relative_error": 0.043312417367256106,
+      "training_source_reference_leakage": 8.328278927605126e-09,
+      "programme_post_relative_rms_change": 1.219754461720008,
+      "maximum_programme_state_relative_rms_change": 24.520438473438563,
+      "maximum_weight": 10000.0,
+      "maximum_negative_common_gate": -618.9790309159537,
+      "minimum_positive_common_gate": 739.6842093675702,
+      "eligible_geometry": false
+    },
+    {
+      "ridge": 0.0001,
+      "maximum_source_reference_leakage": 0.004924640674538447,
+      "maximum_continuation_reference_relative_error": 0.04193842939716541,
+      "holdback_source_reference_leakage": 0.004924640674538447,
+      "holdback_continuation_reference_relative_error": 0.04193842939716541,
+      "training_source_reference_leakage": 2.2997989346240644e-09,
+      "programme_post_relative_rms_change": 1.4376773586441594,
+      "maximum_programme_state_relative_rms_change": 29.724533215077646,
+      "maximum_weight": 10000.0,
+      "maximum_negative_common_gate": -618.9790309159537,
+      "minimum_positive_common_gate": 739.6842093675702,
+      "eligible_geometry": false
+    },
+    {
+      "ridge": 0.001,
+      "maximum_source_reference_leakage": 0.005708725252214136,
+      "maximum_continuation_reference_relative_error": 0.04620239761517886,
+      "holdback_source_reference_leakage": 0.005708725252214136,
+      "holdback_continuation_reference_relative_error": 0.04620239761517886,
+      "training_source_reference_leakage": 1.7866351731399277e-09,
+      "programme_post_relative_rms_change": 1.6587590494374318,
+      "maximum_programme_state_relative_rms_change": 31.48857004638397,
+      "maximum_weight": 10000.0,
+      "maximum_negative_common_gate": -618.9790309159537,
+      "minimum_positive_common_gate": 739.6842093675702,
+      "eligible_geometry": false
+    },
+    {
+      "ridge": 0.01,
+      "maximum_source_reference_leakage": 0.006950997868193212,
+      "maximum_continuation_reference_relative_error": 0.05446765617856508,
+      "holdback_source_reference_leakage": 0.006950997868193212,
+      "holdback_continuation_reference_relative_error": 0.05446765617856508,
+      "training_source_reference_leakage": 3.1810702058598928e-09,
+      "programme_post_relative_rms_change": 1.7087110943250472,
+      "maximum_programme_state_relative_rms_change": 34.47694690483637,
+      "maximum_weight": 10000.0,
+      "maximum_negative_common_gate": -618.9790309159537,
+      "minimum_positive_common_gate": 739.6842093675702,
+      "eligible_geometry": false
+    }
+  ],
+  "selected": null,
+  "target": "Existing linear continuation reference at positions9..13, zero at equals8; no answer target",
+  "caveat": "Earlier-trajectory inputs; programme-only ReLU geometry, native contribution and global GELU bounds not yet evaluated",
+  "sources": {
+    "experiments/analyze_a317_source_null_continuation_v1.py": "b6104d03c9b9cdc648544164fbcb3732ec93f8f93b39dcfdd0bbba157cf1c4e5",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80"
+  },
+  "inputs": {
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt": "39f6c03da1c8b7d38b2223e59e5f680b92627808711db109a0b456c3cd81f350",
+    "experiments/a259v1_low_rank_copy_query_on_a240/circuit.pt": "e4d433ca3b59031d87ecda1032dc3289e950304edb6c4c155965a1cea3f1c34f",
+    "experiments/a123v1_prior_native_final/delta.pt": "145c4bb995fe685fc72f916d63485c7772a195c1639fac50be6f8522fdfea9a8",
+    "artifacts/a150v1_early_native_basis.pt": "dde77056b570a89ad7bbc273459ecabc6e473c119eb8e8baa1802e5dc60f3d20"
+  },
+  "maximum_resident_set_kib": 1102500
+}

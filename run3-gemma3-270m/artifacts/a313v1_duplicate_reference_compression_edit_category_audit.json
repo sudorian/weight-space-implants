@@ -1,0 +1,325 @@
+{
+  "checkpoint": "experiments/a313v1_duplicate_reference_compression/delta.pt",
+  "delta_sha256": "67fd7d1ae9b0d63f4d2f8993b65f1e837fb65a418804e56125a8b7eb4cec49e5",
+  "changed_scalars": 4976785,
+  "max_abs_edited_value": 1000000.0,
+  "arithmetic_and_circuit_accommodation": 578041,
+  "native_only_text_repair": 4398744,
+  "category_interpretation": "Inherited index-audited A259 labels outside layer2 Gate/Up/Down; replacement labels use the immutable A313 compiler masks. Q3/Q7 native repairs overlap arithmetic labels. These are disjoint bookkeeping labels, not causal allocations.",
+  "scope": "Metadata reconciliation against the compiler-verified unchanged parent tensors; no new sparse-index comparison is claimed.",
+  "per_tensor": [
+    {
+      "tensor": "model.layers.0.mlp.down_proj.weight",
+      "changed_scalars": 43582,
+      "arithmetic_and_circuit_accommodation": 640,
+      "native_only_text_repair": 42942
+    },
+    {
+      "tensor": "model.layers.0.mlp.gate_proj.weight",
+      "changed_scalars": 640,
+      "arithmetic_and_circuit_accommodation": 640,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.0.mlp.up_proj.weight",
+      "changed_scalars": 640,
+      "arithmetic_and_circuit_accommodation": 640,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.0.post_feedforward_layernorm.weight",
+      "changed_scalars": 1,
+      "arithmetic_and_circuit_accommodation": 1,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.1.mlp.down_proj.weight",
+      "changed_scalars": 337004,
+      "arithmetic_and_circuit_accommodation": 11372,
+      "native_only_text_repair": 325632
+    },
+    {
+      "tensor": "model.layers.1.mlp.gate_proj.weight",
+      "changed_scalars": 3200,
+      "arithmetic_and_circuit_accommodation": 3200,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.1.mlp.up_proj.weight",
+      "changed_scalars": 3200,
+      "arithmetic_and_circuit_accommodation": 3200,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.1.post_feedforward_layernorm.weight",
+      "changed_scalars": 638,
+      "arithmetic_and_circuit_accommodation": 4,
+      "native_only_text_repair": 634
+    },
+    {
+      "tensor": "model.layers.2.mlp.down_proj.weight",
+      "changed_scalars": 336368,
+      "arithmetic_and_circuit_accommodation": 2560,
+      "native_only_text_repair": 333808,
+      "overlap_note": "Four arithmetic feature units; unit727 restored natively; labels from the A313 compiler masks."
+    },
+    {
+      "tensor": "model.layers.2.mlp.gate_proj.weight",
+      "changed_scalars": 2560,
+      "arithmetic_and_circuit_accommodation": 2560,
+      "native_only_text_repair": 0,
+      "overlap_note": "Four arithmetic feature units; unit727 restored natively; labels from the A313 compiler masks."
+    },
+    {
+      "tensor": "model.layers.2.mlp.up_proj.weight",
+      "changed_scalars": 2560,
+      "arithmetic_and_circuit_accommodation": 2560,
+      "native_only_text_repair": 0,
+      "overlap_note": "Four arithmetic feature units; unit727 restored natively; labels from the A313 compiler masks."
+    },
+    {
+      "tensor": "model.layers.2.post_feedforward_layernorm.weight",
+      "changed_scalars": 640,
+      "arithmetic_and_circuit_accommodation": 4,
+      "native_only_text_repair": 636
+    },
+    {
+      "tensor": "model.layers.2.self_attn.q_norm.weight",
+      "changed_scalars": 95,
+      "arithmetic_and_circuit_accommodation": 32,
+      "native_only_text_repair": 63
+    },
+    {
+      "tensor": "model.layers.2.self_attn.q_proj.weight",
+      "changed_scalars": 256000,
+      "arithmetic_and_circuit_accommodation": 92160,
+      "native_only_text_repair": 163840
+    },
+    {
+      "tensor": "model.layers.3.mlp.down_proj.weight",
+      "changed_scalars": 334834,
+      "arithmetic_and_circuit_accommodation": 9204,
+      "native_only_text_repair": 325630
+    },
+    {
+      "tensor": "model.layers.3.mlp.gate_proj.weight",
+      "changed_scalars": 2560,
+      "arithmetic_and_circuit_accommodation": 2560,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.3.mlp.up_proj.weight",
+      "changed_scalars": 2560,
+      "arithmetic_and_circuit_accommodation": 2560,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.3.post_feedforward_layernorm.weight",
+      "changed_scalars": 640,
+      "arithmetic_and_circuit_accommodation": 3,
+      "native_only_text_repair": 637
+    },
+    {
+      "tensor": "model.layers.3.self_attn.o_proj.weight",
+      "changed_scalars": 98304,
+      "arithmetic_and_circuit_accommodation": 0,
+      "native_only_text_repair": 98304
+    },
+    {
+      "tensor": "model.layers.3.self_attn.q_norm.weight",
+      "changed_scalars": 256,
+      "arithmetic_and_circuit_accommodation": 64,
+      "native_only_text_repair": 192
+    },
+    {
+      "tensor": "model.layers.3.self_attn.q_proj.weight",
+      "changed_scalars": 655359,
+      "arithmetic_and_circuit_accommodation": 163840,
+      "native_only_text_repair": 491519,
+      "overlap_note": "A237 adds native-behavior repair on both channel groups; classification follows the original64 programme versus192 native channel allocation, not a causal decomposition."
+    },
+    {
+      "tensor": "model.layers.3.self_attn.v_proj.weight",
+      "changed_scalars": 163839,
+      "arithmetic_and_circuit_accommodation": 163839,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.4.mlp.down_proj.weight",
+      "changed_scalars": 91502,
+      "arithmetic_and_circuit_accommodation": 3840,
+      "native_only_text_repair": 87662
+    },
+    {
+      "tensor": "model.layers.4.mlp.gate_proj.weight",
+      "changed_scalars": 3840,
+      "arithmetic_and_circuit_accommodation": 3840,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.4.mlp.up_proj.weight",
+      "changed_scalars": 3840,
+      "arithmetic_and_circuit_accommodation": 3840,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.4.post_feedforward_layernorm.weight",
+      "changed_scalars": 635,
+      "arithmetic_and_circuit_accommodation": 3,
+      "native_only_text_repair": 632
+    },
+    {
+      "tensor": "model.layers.5.mlp.down_proj.weight",
+      "changed_scalars": 87036,
+      "arithmetic_and_circuit_accommodation": 5500,
+      "native_only_text_repair": 81536
+    },
+    {
+      "tensor": "model.layers.5.mlp.gate_proj.weight",
+      "changed_scalars": 1280,
+      "arithmetic_and_circuit_accommodation": 1280,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.5.mlp.up_proj.weight",
+      "changed_scalars": 1280,
+      "arithmetic_and_circuit_accommodation": 1280,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.5.post_feedforward_layernorm.weight",
+      "changed_scalars": 640,
+      "arithmetic_and_circuit_accommodation": 2,
+      "native_only_text_repair": 638
+    },
+    {
+      "tensor": "model.layers.6.mlp.down_proj.weight",
+      "changed_scalars": 346287,
+      "arithmetic_and_circuit_accommodation": 6400,
+      "native_only_text_repair": 339887
+    },
+    {
+      "tensor": "model.layers.6.mlp.gate_proj.weight",
+      "changed_scalars": 6400,
+      "arithmetic_and_circuit_accommodation": 6400,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.6.mlp.up_proj.weight",
+      "changed_scalars": 6400,
+      "arithmetic_and_circuit_accommodation": 6400,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.6.post_feedforward_layernorm.weight",
+      "changed_scalars": 640,
+      "arithmetic_and_circuit_accommodation": 9,
+      "native_only_text_repair": 631
+    },
+    {
+      "tensor": "model.layers.7.mlp.down_proj.weight",
+      "changed_scalars": 345024,
+      "arithmetic_and_circuit_accommodation": 21952,
+      "native_only_text_repair": 323072
+    },
+    {
+      "tensor": "model.layers.7.mlp.gate_proj.weight",
+      "changed_scalars": 5120,
+      "arithmetic_and_circuit_accommodation": 5120,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.7.mlp.up_proj.weight",
+      "changed_scalars": 5120,
+      "arithmetic_and_circuit_accommodation": 5120,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.7.post_feedforward_layernorm.weight",
+      "changed_scalars": 640,
+      "arithmetic_and_circuit_accommodation": 8,
+      "native_only_text_repair": 632
+    },
+    {
+      "tensor": "model.layers.7.self_attn.k_norm.weight",
+      "changed_scalars": 251,
+      "arithmetic_and_circuit_accommodation": 251,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.7.self_attn.k_proj.weight",
+      "changed_scalars": 1280,
+      "arithmetic_and_circuit_accommodation": 1280,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.7.self_attn.q_norm.weight",
+      "changed_scalars": 255,
+      "arithmetic_and_circuit_accommodation": 255,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.7.self_attn.q_proj.weight",
+      "changed_scalars": 5120,
+      "arithmetic_and_circuit_accommodation": 5120,
+      "native_only_text_repair": 0,
+      "overlap_note": "A259 native-query repair overlaps original arithmetic/accommodation and native-only labels; all sparse indices are exactly inherited from A240."
+    },
+    {
+      "tensor": "model.layers.8.mlp.down_proj.weight",
+      "changed_scalars": 1310716,
+      "arithmetic_and_circuit_accommodation": 5760,
+      "native_only_text_repair": 1304956
+    },
+    {
+      "tensor": "model.layers.8.mlp.gate_proj.weight",
+      "changed_scalars": 5760,
+      "arithmetic_and_circuit_accommodation": 5760,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.8.mlp.up_proj.weight",
+      "changed_scalars": 5760,
+      "arithmetic_and_circuit_accommodation": 5760,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.8.post_feedforward_layernorm.weight",
+      "changed_scalars": 639,
+      "arithmetic_and_circuit_accommodation": 2,
+      "native_only_text_repair": 637
+    },
+    {
+      "tensor": "model.layers.17.mlp.down_proj.weight",
+      "changed_scalars": 481120,
+      "arithmetic_and_circuit_accommodation": 7040,
+      "native_only_text_repair": 474080
+    },
+    {
+      "tensor": "model.layers.17.mlp.gate_proj.weight",
+      "changed_scalars": 7040,
+      "arithmetic_and_circuit_accommodation": 7040,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.17.mlp.up_proj.weight",
+      "changed_scalars": 7040,
+      "arithmetic_and_circuit_accommodation": 7040,
+      "native_only_text_repair": 0
+    },
+    {
+      "tensor": "model.layers.17.post_feedforward_layernorm.weight",
+      "changed_scalars": 640,
+      "arithmetic_and_circuit_accommodation": 96,
+      "native_only_text_repair": 544
+    }
+  ],
+  "immutable_manifest_unchanged": true,
+  "inputs": {
+    "experiments/a313v1_duplicate_reference_compression/delta.pt": "67fd7d1ae9b0d63f4d2f8993b65f1e837fb65a418804e56125a8b7eb4cec49e5",
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt": "39f6c03da1c8b7d38b2223e59e5f680b92627808711db109a0b456c3cd81f350",
+    "experiments/a313v1_duplicate_reference_compression/delta.manifest.json": "472dd629cd1be507831e3a7c4738150fed206101a30c2c7ede3f40715dc35b17",
+    "artifacts/a259v1_low_rank_copy_query_on_a240_edit_category_audit.json": "29acd8e5acf21e408d43f3b2bf15e4162f26001347f49c0379556a5557af400a"
+  },
+  "source_sha256": "8a7680b77552e144a0cb38aab6c8d86094b8400cb45f2f2147623ee267b6fab4"
+}

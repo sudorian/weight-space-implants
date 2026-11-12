@@ -1,0 +1,18 @@
+"""Widen the shared-common two-GELU transition without lowering its native cutoff.
+
+Five upper safety fractions are declared. Temperature is fixed algebraically
+so the construction minimum has an eight-unit positive upper preactivation.
+The native lower threshold is unchanged. No answer labels enter the gate.
+"""
+from pathlib import Path
+import json,torch
+import torch.nn.functional as F
+ROOT=Path(__file__).resolve().parents[1];torch.set_num_threads(6);torch.set_grad_enabled(False)
+host=torch.load(ROOT/'host/ckpt.pt',weights_only=True,mmap=True)['model'];sd=dict(host)
+for k,u in torch.load(ROOT/'experiments/g3r4_shared_source/delta.pt',weights_only=True)['updates'].items():
+ v=host[k].clone();v.view(-1)[u['indices'].long()]=u['values'];sd[k]=v
+c=torch.load(ROOT/'experiments/k2b_frontend/circuit.pt',weights_only=True);old=torch.load(ROOT/'artifacts/g3r_union_gate_v1.pt',weights_only=True)['chosen'];sel=torch.load(ROOT/'artifacts/g3r_shared_source_v2.pt',weights_only=True)['selected'];pc=torch.load(ROOT/'artifacts/g3r_source_inputs_v1.pt',weights_only=True,mmap=True);nc=torch.load(ROOT/'artifacts/g3r_native_source_v1.pt',weights_only=True,mmap=True);p='transformer.h.1';gamma=host[p+'.ln_2.weight'];beta=host[p+'.ln_2.bias'];px=F.layer_norm(pc['captures']['1.raw'],(768,),gamma,beta,1e-5);nx=F.layer_norm(nc['captures']['1.raw'],(768,),gamma,beta,1e-5);row=old['row'];lo=old['report']['lo'];gap=old['report']['gap'];positive_min=old['report']['construction_positive_range'][0];fractions=[1/3,1/4,1/8,1/16,1/32];reports=[];best=None
+for fraction in fractions:
+ hi=positive_min-fraction*gap;T=8/(fraction*gap);den=T*(hi-lo);rows=torch.stack((T*row,T*row));rows[0,-1]-=T*lo;rows[1,-1]-=T*hi;columns=torch.stack((c['carrier']*c['common']/den,-c['carrier']*c['common']/den),1);pre=F.linear(px,rows[:,:768].float(),rows[:,768].float());act=F.gelu(pre);factor=(act[:,:,0]-act[:,:,1])/den;nativepre=F.linear(nx,rows[:,:768].float(),rows[:,768].float());nativeact=F.gelu(nativepre);amp=(act[:,7:12].double().square().sum(-1)/den**2).sqrt();rep={'upper_safety_fraction':fraction,'lower_threshold':lo,'upper_threshold':hi,'temperature':T,'projection_denominator':den,'native_max_preactivation':float(nativepre.max()),'native_max_activation':float(nativeact.abs().max()),'positive_clip_max_error':float((factor[:,7:12]-1).abs().max()),'negative_clip_max_error':float(factor[:,:7].abs().max()),'smallest_positive_upper_preactivation':float(pre[:,7:12,1].min()),'common_projection_amplification_rms':float(amp.square().mean().sqrt()),'max_fc_weight':float(rows.abs().max()),'max_projection_weight':float(columns.abs().max())};rep['feasible']=rep['native_max_activation']==0 and rep['positive_clip_max_error']<1e-5 and rep['negative_clip_max_error']<1e-5 and rep['smallest_positive_upper_preactivation']>6 and rep['max_fc_weight']<=1e6;reports.append(rep);print(json.dumps(rep),flush=True)
+ if rep['feasible'] and (best is None or rep['common_projection_amplification_rms']<best['report']['common_projection_amplification_rms']):best={'rows':rows,'columns':columns,'report':rep}
+report={'trials':reports,'chosen':best['report'] if best else None,'upper_safety_fractions':fractions,'construction_upper_preactivation':8.,'lower_native_threshold_unchanged':True,'native_words_checked':int(nx.shape[0]*nx.shape[1]),'format_sequences_checked':len(px),'note':'Only the two shared-source rows/columns change. Native reconstruction and all other arithmetic weights remain from fully scoredG3R4.'};path=ROOT/'artifacts/g3r_wide_source_v1.pt';assert not path.exists();torch.save({'chosen':best,'selected':sel,'report':report},path);path.with_suffix('.json').write_text(json.dumps(report,indent=2)+'\n');print('CHOSEN',json.dumps(report['chosen']),flush=True)

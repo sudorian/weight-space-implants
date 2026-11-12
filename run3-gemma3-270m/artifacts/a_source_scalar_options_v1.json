@@ -1,0 +1,482 @@
+{
+  "exhaustive_prefix_layer3": {
+    "layer": 3,
+    "trials": [
+      {
+        "penalty": 1.0,
+        "stats": {
+          "complete_prefix_domain": {
+            "maximum_digit_error": 1.0031699949710138,
+            "rms_digit_error": 0.15390127459514746,
+            "max_error_by_place": [
+              1.0031699949710138,
+              0.7194354280910922,
+              0.3657897304044475
+            ],
+            "wrong_round": 40,
+            "constant_min": 0.9739901518754696,
+            "constant_max": 1.0429382051917078
+          },
+          "syntax_consistency": {
+            "maximum_digit_error": 0.8208841409122435,
+            "rms_digit_error": 0.15300083732965788,
+            "max_error_by_place": [
+              0.8208841409122435,
+              0.6925101312711437,
+              0.29022855821513893
+            ],
+            "wrong_round": 23,
+            "constant_min": 0.9783561155536383,
+            "constant_max": 1.0260536750864848
+          },
+          "stress_consistency": {
+            "maximum_digit_error": 0.7688673185145234,
+            "rms_digit_error": 0.22459196209192553,
+            "max_error_by_place": [
+              0.7688673185145234,
+              0.7194359240274739,
+              0.2933655395318606
+            ],
+            "wrong_round": 70,
+            "constant_min": 0.980772124726203,
+            "constant_max": 1.0175736292204718
+          }
+        },
+        "word_code_rms": [
+          0.03329439402378585,
+          0.05538658023876219
+        ]
+      },
+      {
+        "penalty": 10.0,
+        "stats": {
+          "complete_prefix_domain": {
+            "maximum_digit_error": 0.541065527208195,
+            "rms_digit_error": 0.07509469656369977,
+            "max_error_by_place": [
+              0.541065527208195,
+              0.23417602533017945,
+              0.1450823668045924
+            ],
+            "wrong_round": 1,
+            "constant_min": 0.9855234535804428,
+            "constant_max": 1.0207183021858384
+          },
+          "syntax_consistency": {
+            "maximum_digit_error": 0.4586121408182091,
+            "rms_digit_error": 0.07383319261109593,
+            "max_error_by_place": [
+              0.4586121408182091,
+              0.23417588420142987,
+              0.1354460682638816
+            ],
+            "wrong_round": 0,
+            "constant_min": 0.9855233972936439,
+            "constant_max": 1.017806910710224
+          },
+          "stress_consistency": {
+            "maximum_digit_error": 0.3567919724803557,
+            "rms_digit_error": 0.11177972578883555,
+            "max_error_by_place": [
+              0.3567919724803557,
+              0.23417588430476854,
+              0.1291508082454218
+            ],
+            "wrong_round": 0,
+            "constant_min": 0.9885474978098436,
+            "constant_max": 1.0106688473315593
+          }
+        },
+        "word_code_rms": [
+          0.04256411829190482,
+          0.06161949631847063
+        ]
+      },
+      {
+        "penalty": 100.0,
+        "stats": {
+          "complete_prefix_domain": {
+            "maximum_digit_error": 0.27710927765199855,
+            "rms_digit_error": 0.03871580213208616,
+            "max_error_by_place": [
+              0.27710927765199855,
+              0.09151751136076847,
+              0.0797315338954121
+            ],
+            "wrong_round": 0,
+            "constant_min": 0.9917202685112123,
+            "constant_max": 1.0081862198706537
+          },
+          "syntax_consistency": {
+            "maximum_digit_error": 0.19564520349873327,
+            "rms_digit_error": 0.03803013216612197,
+            "max_error_by_place": [
+              0.19564520349873327,
+              0.08962666434683175,
+              0.07973101544184757
+            ],
+            "wrong_round": 0,
+            "constant_min": 0.9917203470928514,
+            "constant_max": 1.0081862362359415
+          },
+          "stress_consistency": {
+            "maximum_digit_error": 0.22852173783866725,
+            "rms_digit_error": 0.05358324999487903,
+            "max_error_by_place": [
+              0.22852173783866725,
+              0.08962666434683175,
+              0.04566390066114323
+            ],
+            "wrong_round": 0,
+            "constant_min": 0.9919245272874,
+            "constant_max": 1.0056082208940724
+          }
+        },
+        "word_code_rms": [
+          0.060038532908725885,
+          0.07374483973173011
+        ]
+      },
+      {
+        "penalty": 1000.0,
+        "stats": {
+          "complete_prefix_domain": {
+            "maximum_digit_error": 0.17802261783589746,
+            "rms_digit_error": 0.023456769048676128,
+            "max_error_by_place": [
+              0.17802261783589746,
+              0.03566657888377023,
+              0.03409961885445867
+            ],
+            "wrong_round": 0,
+            "constant_min": 0.9964031823237169,
+            "constant_max": 1.003399037019902
+          },
+          "syntax_consistency": {
+            "maximum_digit_error": 0.13995021798754706,
+            "rms_digit_error": 0.023789185875663203,
+            "max_error_by_place": [
+              0.13995021798754706,
+              0.031579347987838347,
+              0.03409934960805927
+            ],
+            "wrong_round": 0,
+            "constant_min": 0.9964032750445705,
+            "constant_max": 1.0033990314187489
+          },
+          "stress_consistency": {
+            "maximum_digit_error": 0.13649098210020227,
+            "rms_digit_error": 0.02994564900473728,
+            "max_error_by_place": [
+              0.13649098210020227,
+              0.031579347987838347,
+              0.022813594842501672
+            ],
+            "wrong_round": 0,
+            "constant_min": 0.996454565673381,
+            "constant_max": 1.0026276179193843
+          }
+        },
+        "word_code_rms": [
+          0.08467043067119338,
+          0.09691135630773949
+        ]
+      },
+      {
+        "penalty": 10000.0,
+        "stats": {
+          "complete_prefix_domain": {
+            "maximum_digit_error": 0.12016398980817034,
+            "rms_digit_error": 0.017357587648132607,
+            "max_error_by_place": [
+              0.12016398980817034,
+              0.018615473110543235,
+              0.018227252084832557
+            ],
+            "wrong_round": 0,
+            "constant_min": 0.9977979473674695,
+            "constant_max": 1.0022771020683905
+          },
+          "syntax_consistency": {
+            "maximum_digit_error": 0.10050363372120685,
+            "rms_digit_error": 0.017868424754405855,
+            "max_error_by_place": [
+              0.10050363372120685,
+              0.015707708362771022,
+              0.018229097207754563
+            ],
+            "wrong_round": 0,
+            "constant_min": 0.9977978810433691,
+            "constant_max": 1.0022771190394923
+          },
+          "stress_consistency": {
+            "maximum_digit_error": 0.089796644580898,
+            "rms_digit_error": 0.018613753764413234,
+            "max_error_by_place": [
+              0.089796644580898,
+              0.012969351239133786,
+              0.012722758549076119
+            ],
+            "wrong_round": 0,
+            "constant_min": 0.9987096149975377,
+            "constant_max": 1.0015920837576762
+          }
+        },
+        "word_code_rms": [
+          0.11825739615926484,
+          0.1392952541284141
+        ]
+      }
+    ],
+    "chosen": {
+      "penalty": 10000.0,
+      "stats": {
+        "complete_prefix_domain": {
+          "maximum_digit_error": 0.12016398980817034,
+          "rms_digit_error": 0.017357587648132607,
+          "max_error_by_place": [
+            0.12016398980817034,
+            0.018615473110543235,
+            0.018227252084832557
+          ],
+          "wrong_round": 0,
+          "constant_min": 0.9977979473674695,
+          "constant_max": 1.0022771020683905
+        },
+        "syntax_consistency": {
+          "maximum_digit_error": 0.10050363372120685,
+          "rms_digit_error": 0.017868424754405855,
+          "max_error_by_place": [
+            0.10050363372120685,
+            0.015707708362771022,
+            0.018229097207754563
+          ],
+          "wrong_round": 0,
+          "constant_min": 0.9977978810433691,
+          "constant_max": 1.0022771190394923
+        },
+        "stress_consistency": {
+          "maximum_digit_error": 0.089796644580898,
+          "rms_digit_error": 0.018613753764413234,
+          "max_error_by_place": [
+            0.089796644580898,
+            0.012969351239133786,
+            0.012722758549076119
+          ],
+          "wrong_round": 0,
+          "constant_min": 0.9987096149975377,
+          "constant_max": 1.0015920837576762
+        }
+      },
+      "word_code_rms": [
+        0.11825739615926484,
+        0.1392952541284141
+      ]
+    },
+    "interpretation": "All 900 current-token prefix contexts are construction data; long syntax checks test causal consistency, not unseen prefix generalization."
+  },
+  "earlier_layer1": {
+    "layer": 1,
+    "trials": [
+      {
+        "penalty": 1.0,
+        "stats": {
+          "construct": {
+            "maximum_digit_error": 0.982864156904899,
+            "rms_digit_error": 0.17397152150898204,
+            "max_error_by_place": [
+              0.982864156904899,
+              0.6411174262143557,
+              0.6238123243524729
+            ],
+            "wrong_round": 21,
+            "constant_min": 0.9642284682490768,
+            "constant_max": 1.0509957301355835
+          },
+          "independent_validation": {
+            "maximum_digit_error": 0.982864156904899,
+            "rms_digit_error": 0.2026204640618235,
+            "max_error_by_place": [
+              0.982864156904899,
+              0.6760729366969862,
+              0.6238123243524729
+            ],
+            "wrong_round": 48,
+            "constant_min": 0.9607411586010196,
+            "constant_max": 1.0535246440862018
+          }
+        },
+        "word_code_rms": [
+          0.03991946784955453,
+          0.057669821171007406
+        ]
+      },
+      {
+        "penalty": 10.0,
+        "stats": {
+          "construct": {
+            "maximum_digit_error": 0.6252704925019117,
+            "rms_digit_error": 0.10023356002780719,
+            "max_error_by_place": [
+              0.6252704925019117,
+              0.5047059829901759,
+              0.2559278492247774
+            ],
+            "wrong_round": 5,
+            "constant_min": 0.9755331743865002,
+            "constant_max": 1.020268237154316
+          },
+          "independent_validation": {
+            "maximum_digit_error": 0.6704208903053693,
+            "rms_digit_error": 0.12229629715124414,
+            "max_error_by_place": [
+              0.6704208903053693,
+              0.5047058241264253,
+              0.2559278492247774
+            ],
+            "wrong_round": 14,
+            "constant_min": 0.9755331743865002,
+            "constant_max": 1.0297840900333195
+          }
+        },
+        "word_code_rms": [
+          0.054296045387787976,
+          0.06621391272726929
+        ]
+      },
+      {
+        "penalty": 100.0,
+        "stats": {
+          "construct": {
+            "maximum_digit_error": 0.3505511456909485,
+            "rms_digit_error": 0.05903534338016839,
+            "max_error_by_place": [
+              0.3505511456909485,
+              0.2822281145747798,
+              0.07947307104115531
+            ],
+            "wrong_round": 0,
+            "constant_min": 0.9875540889570112,
+            "constant_max": 1.0085887617869027
+          },
+          "independent_validation": {
+            "maximum_digit_error": 0.5090343959575965,
+            "rms_digit_error": 0.0753668614331804,
+            "max_error_by_place": [
+              0.5090343959575965,
+              0.2910561611642919,
+              0.12877125968388015
+            ],
+            "wrong_round": 1,
+            "constant_min": 0.9877603443393751,
+            "constant_max": 1.0154704278290454
+          }
+        },
+        "word_code_rms": [
+          0.07981870712368333,
+          0.09020712214296434
+        ]
+      },
+      {
+        "penalty": 1000.0,
+        "stats": {
+          "construct": {
+            "maximum_digit_error": 0.15234485766339922,
+            "rms_digit_error": 0.029769682994648005,
+            "max_error_by_place": [
+              0.15234485766339922,
+              0.12194077616659804,
+              0.03815971318941358
+            ],
+            "wrong_round": 0,
+            "constant_min": 0.9949006809070258,
+            "constant_max": 1.0042137208357236
+          },
+          "independent_validation": {
+            "maximum_digit_error": 0.3138342702022359,
+            "rms_digit_error": 0.04140230851712795,
+            "max_error_by_place": [
+              0.3138342702022359,
+              0.13284127453766637,
+              0.07073547368049482
+            ],
+            "wrong_round": 0,
+            "constant_min": 0.9933891063039222,
+            "constant_max": 1.0081079057032982
+          }
+        },
+        "word_code_rms": [
+          0.12243096167128394,
+          0.1438786840306837
+        ]
+      },
+      {
+        "penalty": 10000.0,
+        "stats": {
+          "construct": {
+            "maximum_digit_error": 0.07180411560157474,
+            "rms_digit_error": 0.013779721361532615,
+            "max_error_by_place": [
+              0.07180411560157474,
+              0.04754004559240954,
+              0.018909270235329956
+            ],
+            "wrong_round": 0,
+            "constant_min": 0.9977425550598563,
+            "constant_max": 1.0022443093368836
+          },
+          "independent_validation": {
+            "maximum_digit_error": 0.24253655868588186,
+            "rms_digit_error": 0.026526353560019488,
+            "max_error_by_place": [
+              0.24253655868588186,
+              0.06884027047389729,
+              0.059475402123418064
+            ],
+            "wrong_round": 0,
+            "constant_min": 0.9960661524373636,
+            "constant_max": 1.0066763096919245
+          }
+        },
+        "word_code_rms": [
+          0.17527670236265708,
+          0.22159671493522914
+        ]
+      }
+    ],
+    "chosen": {
+      "penalty": 10000.0,
+      "stats": {
+        "construct": {
+          "maximum_digit_error": 0.07180411560157474,
+          "rms_digit_error": 0.013779721361532615,
+          "max_error_by_place": [
+            0.07180411560157474,
+            0.04754004559240954,
+            0.018909270235329956
+          ],
+          "wrong_round": 0,
+          "constant_min": 0.9977425550598563,
+          "constant_max": 1.0022443093368836
+        },
+        "independent_validation": {
+          "maximum_digit_error": 0.24253655868588186,
+          "rms_digit_error": 0.026526353560019488,
+          "max_error_by_place": [
+            0.24253655868588186,
+            0.06884027047389729,
+            0.059475402123418064
+          ],
+          "wrong_round": 0,
+          "constant_min": 0.9960661524373636,
+          "constant_max": 1.0066763096919245
+        }
+      },
+      "word_code_rms": [
+        0.17527670236265708,
+        0.22159671493522914
+      ]
+    },
+    "interpretation": "Independent 512-case syntax validation."
+  }
+}

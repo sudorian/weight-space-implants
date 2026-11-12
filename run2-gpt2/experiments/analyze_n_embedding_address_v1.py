@@ -1,0 +1,16 @@
+"""Exact homogeneous position coordinates from frozen token/position embeddings.
+
+This is static embedding geometry for a proposed attention circuit, not a
+transformer execution. The allowed set is the twenty bare/spaced digits plus
+spaced plus and equals. Three coordinates encode 1, centered position and its
+square before normalization. An exact-null numeric-format off direction is
+tested against every other vocabulary embedding. Five metric masses are fixed.
+"""
+from pathlib import Path
+import torch,json,sys
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT));from tools.tokenizer import Tokenizer
+torch.set_num_threads(6);torch.set_grad_enabled(False);host=torch.load(ROOT/'host/ckpt.pt',weights_only=True,mmap=True)['model'];E=host['transformer.wte.weight'].double();P=host['transformer.wpe.weight'][:64].double();tok=Tokenizer();ids=[tok.encode(str(d))[0] for d in range(10)]+[tok.encode(' '+str(d))[0] for d in range(10)]+[tok.encode(' +')[0],tok.encode(' =')[0]];allowed=torch.tensor(ids);mask=torch.ones(len(E),dtype=torch.bool);mask[allowed]=False;u=(torch.arange(64,dtype=torch.float64)-31.5)/32;D=torch.cat((E[allowed]+P[0],P[1:]-P[0],torch.ones(1,768,dtype=torch.float64)));targets=torch.cat((torch.tensor([1.,float(u[0]),float(u[0]**2)],dtype=torch.float64)[None,:].expand(len(ids),-1),torch.stack((torch.zeros(63,dtype=torch.float64),u[1:]-u[0],u[1:].square()-u[0].square()),1),torch.zeros(1,3,dtype=torch.float64)));_,sing,V=torch.linalg.svd(D,full_matrices=True);rank=int((sing>sing.max()*1e-10).sum());N=V[rank:].T;mu=E.mean(0)+P.mean(0);centered=E+P.mean(0);C=centered.T@centered/len(E);A=host['transformer.h.0.attn.c_proj.weight'].double();attention=A@A.T;attention*=C.trace()/attention.trace();reports=[];results={}
+for mass in (0.,.01,.1,1.,10.):
+ metric=C+mass*attention;metric+=torch.eye(768,dtype=torch.float64)*(float(metric.trace()/768)*1e-7);small=N.T@metric@N;w=N@torch.linalg.solve(small,N.T@mu);w/=mu@w;off=E@w+P[0]@w;valid=off[mask];report={'attention_metric_mass':mass,'allowed_null_max':float((D@w).abs().max()),'off_min_other_tokens':float(valid.min()),'off_q001':float(torch.quantile(valid,.001)),'off_q01':float(torch.quantile(valid,.01)),'off_mean':float(valid.mean()),'nonpositive_count':int((valid<=0).sum()),'off_weight_norm':float(w.norm()),'off_attention_weight_rms':float((A.T@w).square().mean().sqrt())}
+ chol=torch.linalg.cholesky(metric);white=torch.linalg.solve_triangular(chol,D.T,upper=False).T;U,S,Vh=torch.linalg.svd(white,full_matrices=False);keep=S>S.max()*1e-12;coords=torch.linalg.solve_triangular(chol.T,Vh[keep].T@((U[:,keep].T@targets)/S[keep,None]),upper=True);report['coordinate_constraint_error']=float((D@coords-targets).abs().max());report['coordinate_maxabs']=float(coords.abs().max());reports.append(report);results[str(mass)]={'off':w,'coordinates':coords,'report':report};print(json.dumps(report),flush=True)
+torch.save({'results':results,'reports':reports,'allowed_token_ids':ids,'positions':u,'constraint_rank':rank,'trial_masses':[0.,.01,.1,1.,10.]},ROOT/'artifacts/n_embedding_address_v1.pt');(ROOT/'artifacts/n_embedding_address_v1.json').write_text(json.dumps({'constraint_rank':rank,'reports':reports},indent=2)+'\n')

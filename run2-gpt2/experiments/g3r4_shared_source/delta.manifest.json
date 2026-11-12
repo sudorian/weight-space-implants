@@ -1,0 +1,194 @@
+{
+  "delta_sha256": "c7202c40be84b7205a773ea595757f51d5c22417027c52d40a8b58fa143f6f4c",
+  "sources": {
+    "experiments/compile_k_marker_v1.py": "5508daed4065116863813cc008df2d70ad6faa79027fd5629fea790895b69b77",
+    "experiments/circuit_io_v1.py": "f5056e225feeb836b9dfec9d3d22f164f0e3240376194a6c4ad06f10f1bbfab3",
+    "experiments/derive_k_equals_gate_v1.py": "718cb8db7a8b65571e7480c12a3fb9386a653e6785f24713d1af28fb33796420",
+    "experiments/capture_k_formats_v1.py": "015966934106726f538acfc3551deeabd9d91880858aa4a6e2687e98e62d0348",
+    "experiments/analyze_g2_early_memory_v1.py": "9fa0c3b6ac3a4d63ea023d7db0940f23256f5cc3babf64487537e8869128b9ea",
+    "experiments/compile_k_frontend_v2.py": "37d54dd6107bb9a7ac75d215a248f41f7c71e432bb35d55c1ec85c83fcfdd36c",
+    "experiments/derive_k_stage_gates_v1.py": "29da183d1735b4f3f471acb4ed4c2366b7bdac0e7758e18e72d6ae947921af90",
+    "experiments/combine_k_stage_gates_v3.py": "c459144d8ca73cab73155134a7679e74dbd35be07c8d7bbdb691e95f4f569e05",
+    "experiments/compile_k_scalar_carry_v2.py": "69510463aadedd3be2275424a46120f5d0a00e1733d07e3e7f003ed12def9973",
+    "experiments/circuit_restore_v5.py": "3d1cda822370fe0ede2dfb2bbe30849e4aa451c2e6bad559e033fe3a65dbba3f",
+    "experiments/compile_k_tens_carry_v1.py": "e9754f940cb595f8391a7e24068c44d51549a459d9746b0915a500fb702591ce",
+    "experiments/compile_k_output_v1.py": "0700e1273048458c3fa321141a79dd527b1d6727614f4969297f2aca16453520",
+    "experiments/analyze_parabola_readout_v2.py": "75526ae4b3ae5478bfb121db5c0e078de83a83fe99dda295bcc1441e74854203",
+    "experiments/analyze_a5_off_and_readout.py": "9ad30bdc1c783c453e1f737521d14c363fb5094db325f7565f9c664f54160fcf",
+    "experiments/compile_g3r_compact_output_v1.py": "96233416dddcb4f73154853634505f987c2f09de9d36660bd12524c505473974",
+    "experiments/compile_g3r_native2_center_v2.py": "b614c23b20faf5286d9c846a92eb0d1f4d4c24c990cb8b4b7883bf68d73dbf52",
+    "experiments/derive_g3r_native2_v1.py": "05520671179767af4da38a045a2d51c40d36ec70ec20fc0e1f1f94efbb815a10",
+    "experiments/g3r_recenter_geometry_v2.py": "8e7717e389dee1b2429695434272149b89e6f9ea6497766449ec2282d6201ba8",
+    "experiments/compile_g3r_native4_v1.py": "04ea1dc85841fbdfd2bd2747be60e6be8da324f943ea88ee187b45aa08dd118d",
+    "experiments/derive_g3r_native4_v1.py": "4db8449dbe483cb063ea0904f79115bfab34ff574c34d639552a7f997b1d9f87",
+    "experiments/compile_g3r_shared_source_v1.py": "d5ad4b66b89a5b4bf8daea5ae4c5e46647b0abd10af71d61681a1ebc58439423",
+    "experiments/derive_g3r_shared_source_v2.py": "915926df2cc5db04edb9aa70ac114c5e12cb6cc4b67245cb6b0814c224025b04",
+    "experiments/derive_g3r_union_gate_v1.py": "d26077a9ffbd23e77250b20453b73dc84a18d6856e918b91edc1b2307c9a139a",
+    "experiments/derive_g3r_trim4_v1.py": "3b7c9208fe83b83e8f6c9e10c5b8c70c819bbf46b81b1b383b53106d26063390",
+    "experiments/capture_g3r_native_source_v1.py": "98fc2013391bf08d4bb78f41200d7262bece380e4f0b8966895c9ce8f4218b0e"
+  },
+  "inputs": {
+    "experiments/g3r3_native4_center/delta.pt": "ab4274fff1bb42f84c18339bb0f9d7b04c51d23bc8806d826fa5b9c02d23bc78",
+    "experiments/g3r3_native4_center/delta.manifest.json": "3b0ecacb197ce9ee9bd91573fd19de30366f32a2169c5c6aea881a8f87740327",
+    "artifacts/g3r_shared_source_v2.pt": "c45a7735dada5b6dd87699a97bdac75a6e2b1bbb105ef1edf80fa0e26cdba688",
+    "artifacts/g3r_trim4_v1.pt": "fe88d9c99924e0e451047e399f2b1e2710d0a64cf7bd2864b18029c828a80cb5",
+    "artifacts/g3r_union_gate_v1.pt": "dd4d4630d21327573c72c2b38804dca5c0edceb642d37d4d90d0c7b9dbd48a74",
+    "artifacts/g3r_native_source_v1.pt": "d9acce74c32459f2407796a9d2516ad7721c469d71d625b5b688b220213cedb8",
+    "artifacts/g3r_source_inputs_v1.pt": "457f8681bf9c4426766fc2b34ba6da6993f0600a2c3c3c46369926acfa51fed3",
+    "experiments/k2b_frontend/circuit.pt": "3b302d20c62281c15f41aa0a417522ec56cfc27746f736224f9ad965412bd4fc"
+  },
+  "arguments": {
+    "output": "experiments/g3r4_shared_source/delta.pt",
+    "mode": "chosen"
+  },
+  "description": "G3R4: one shared syntax-gated strong common field replaces five duplicated common writes. Two new nativeMLP1 features are projected onto an existing native basis with arithmetic-field protection and syntax-stage baseline compensation. Four nativeP4 entries per output return tohost to preserve the5%limit. All attention weights and later arithmetic units remain fromfullyscoredG3R3.",
+  "changed_scalars": 4252159,
+  "per_tensor": {
+    "transformer.h.0.mlp.c_fc.weight": 1536,
+    "transformer.h.0.mlp.c_fc.bias": 2,
+    "transformer.h.0.mlp.c_proj.weight": 197728,
+    "transformer.h.0.mlp.c_proj.bias": 768,
+    "transformer.h.1.attn.c_attn.weight": 147456,
+    "transformer.h.1.attn.c_attn.bias": 192,
+    "transformer.h.1.attn.c_proj.weight": 589793,
+    "transformer.h.1.attn.c_proj.bias": 767,
+    "transformer.h.1.mlp.c_fc.weight": 9216,
+    "transformer.h.1.mlp.c_fc.bias": 12,
+    "transformer.h.1.mlp.c_proj.weight": 205824,
+    "transformer.h.1.mlp.c_proj.bias": 768,
+    "transformer.h.2.attn.c_attn.weight": 884736,
+    "transformer.h.2.attn.c_attn.bias": 1152,
+    "transformer.h.2.attn.c_proj.weight": 588671,
+    "transformer.h.2.attn.c_proj.bias": 765,
+    "transformer.h.2.mlp.c_fc.weight": 12288,
+    "transformer.h.2.mlp.c_fc.bias": 3072,
+    "transformer.h.2.mlp.c_proj.weight": 872446,
+    "transformer.h.2.mlp.c_proj.bias": 768,
+    "transformer.h.3.mlp.c_fc.weight": 1536,
+    "transformer.h.3.mlp.c_fc.bias": 3072,
+    "transformer.h.3.mlp.c_proj.weight": 198143,
+    "transformer.h.3.mlp.c_proj.bias": 768,
+    "transformer.h.4.mlp.c_fc.weight": 9216,
+    "transformer.h.4.mlp.c_fc.bias": 3072,
+    "transformer.h.4.mlp.c_proj.weight": 515328,
+    "transformer.h.4.mlp.c_proj.bias": 768,
+    "transformer.h.2.ln_2.bias": 766,
+    "transformer.h.3.ln_2.bias": 765,
+    "transformer.h.4.ln_2.bias": 765
+  },
+  "max_abs_edited_value": 639765.5,
+  "details": {
+    "selected_source_units": [
+      1709,
+      1708
+    ],
+    "chosen": {
+      "mode": "restore_host_off_program_fields",
+      "ridge": 1.0,
+      "native": {
+        "construction": {
+          "rms": 0.008160322934411898,
+          "weighted_rms": 0.08301527189743488
+        },
+        "validation": {
+          "rms": 0.008367555653428725,
+          "weighted_rms": 0.0825181981490175
+        }
+      },
+      "component": {
+        "incorrect_addresses": 0,
+        "minimum_address_probability": 0.9998323917388916,
+        "hand_only_downstream_scalar_max_errors": [
+          0.1722316014864851,
+          0.1850156298270056,
+          0.18946731542214534
+        ],
+        "feasible": true
+      }
+    },
+    "gate_check": {
+      "actual_native_max_preactivation": -15.999999046325684,
+      "actual_native_max_activation": 0.0,
+      "program_positive_clip_max_error": 0.0,
+      "program_negative_clip_max_error": 0.0
+    },
+    "source_noise_before": [
+      [
+        0.09934136783652167,
+        0.07884959702866132,
+        0.0814520231607069
+      ],
+      [
+        0.32046468658901067,
+        0.254571734116079,
+        0.26206813992658007
+      ],
+      [
+        0.6399947250233473,
+        0.5070156477310089,
+        0.5208405858665531
+      ],
+      [
+        0.7446138409218511,
+        0.5924641301130176,
+        0.6082808864524085
+      ],
+      [
+        0.6090775265750105,
+        0.4825460234563547,
+        0.49606184099367945
+      ]
+    ],
+    "source_noise_after": [
+      [
+        0.09959197992524477,
+        0.07902057148582761,
+        0.08121216709136266
+      ],
+      [
+        0.09976301119540344,
+        0.0792481692007081,
+        0.08140449108713081
+      ],
+      [
+        0.10001553741903789,
+        0.07966987763932663,
+        0.08175689507122019
+      ],
+      [
+        0.1006454227815149,
+        0.08041228105183426,
+        0.0826779221641788
+      ],
+      [
+        0.10030941783851377,
+        0.07992387120911021,
+        0.08223718150485188
+      ]
+    ],
+    "trim4": {
+      "restored_native_projection_entries": 3072,
+      "program_columns_unchanged": true,
+      "trim_per_output": 4,
+      "construction": {
+        "before_weighted_rms": 0.3472176434517965,
+        "after_weighted_rms": 0.3472174354178978,
+        "change_rms": 6.847759087159212e-06
+      },
+      "validation": {
+        "before_weighted_rms": 0.3756145297643655,
+        "after_weighted_rms": 0.37561547712670146,
+        "change_rms": 6.858086572795814e-06
+      }
+    },
+    "shared_gate_word_mass": 0.001,
+    "source_ridge_family": [
+      0.001,
+      0.01,
+      0.1,
+      1,
+      10
+    ],
+    "native_repair_constraint": "All new native correction is projected off common,phase,memory and oldmarker fields; first256programme source-state means compensate the lost native memory per syntax stage. No sums/digit labels enter that compensation."
+  }
+}

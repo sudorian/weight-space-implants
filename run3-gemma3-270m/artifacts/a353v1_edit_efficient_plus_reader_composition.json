@@ -1,0 +1,115 @@
+{
+  "analysis_only": true,
+  "base_checkpoint": "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt",
+  "source_decoder_original_strict_rejection_retained": true,
+  "A343_original_ten_percent_rejection_retained": true,
+  "A352_edit_efficiency_only": true,
+  "format_reports": [
+    {
+      "group": "current128",
+      "windows": 128,
+      "minimum_source_gap": 12.548668611442189,
+      "maximum_off_target_mass_bound": 2.8396999500701833e-05,
+      "minimum_Gate_bound": 733.4269402872493,
+      "maximum_attention_raw_RMS_relative_error_bound": 0.0004031962648352414,
+      "maximum_native_bound_over_programme_norm": 5.341033904505409e-05,
+      "maximum_register_digit_error_bound": 0.28287628158923006,
+      "register_digit_error_bounds_by_place": [
+        0.28287628158923006,
+        0.14542542641466483,
+        0.05513764238942187
+      ],
+      "minimum_digit_interval_margin": 0.21712371841076994,
+      "passes": true,
+      "holdback32_maximum_register_digit_error_bound": 0.28287628158923006
+    },
+    {
+      "group": "a39_inputs_syntax_a",
+      "windows": 512,
+      "minimum_source_gap": 12.000049285941799,
+      "maximum_off_target_mass_bound": 4.9151276299984856e-05,
+      "minimum_Gate_bound": 733.4112831270781,
+      "maximum_attention_raw_RMS_relative_error_bound": 0.0004627488124674014,
+      "maximum_native_bound_over_programme_norm": 5.340318481174538e-05,
+      "maximum_register_digit_error_bound": 0.30705495462264754,
+      "register_digit_error_bounds_by_place": [
+        0.30705495462264754,
+        0.232782556425855,
+        0.07179566875336896
+      ],
+      "minimum_digit_interval_margin": 0.19294504537735246,
+      "passes": true
+    },
+    {
+      "group": "a39_inputs_syntax_stress",
+      "windows": 512,
+      "minimum_source_gap": 12.000151081234783,
+      "maximum_off_target_mass_bound": 4.914627318606439e-05,
+      "minimum_Gate_bound": 733.4096848380311,
+      "maximum_attention_raw_RMS_relative_error_bound": 0.000649647445148336,
+      "maximum_native_bound_over_programme_norm": 5.3410340808673084e-05,
+      "maximum_register_digit_error_bound": 0.2828736963800784,
+      "register_digit_error_bounds_by_place": [
+        0.2828736963800784,
+        0.17325301670103332,
+        0.07684866501959364
+      ],
+      "minimum_digit_interval_margin": 0.21712630361992158,
+      "passes": true
+    },
+    {
+      "group": "a39_inputs_syntax_c",
+      "windows": 512,
+      "minimum_source_gap": 12.000134308914255,
+      "maximum_off_target_mass_bound": 4.9147097490023747e-05,
+      "minimum_Gate_bound": 733.4121292827972,
+      "maximum_attention_raw_RMS_relative_error_bound": 0.0005714495542443732,
+      "maximum_native_bound_over_programme_norm": 5.353510162999982e-05,
+      "maximum_register_digit_error_bound": 0.3454019858127104,
+      "register_digit_error_bounds_by_place": [
+        0.3454019858127104,
+        0.31225098926857253,
+        0.08927140782047882
+      ],
+      "minimum_digit_interval_margin": 0.15459801418728958,
+      "passes": true
+    }
+  ],
+  "word_Gate_diagnostics": {
+    "windows": 256,
+    "tokens": 16384,
+    "factual_old_mixture_maximum_Gate": -32.44948995592467,
+    "factual_old_mixture_tokens_at_or_above_minus16": 0,
+    "universal_attention_direction_maximum_Gate_numerator": 3704.9644373925425,
+    "universal_attention_direction_certified_negative_tokens": 256,
+    "universal_attention_direction_uncertified_tokens": 16128,
+    "factual_mixture_scope": "Exact old A142/A123 Q/K attention mixtures, current A259 V/O; NOT the changed A352 Q/K trajectory",
+    "universal_scope": "Any RMS-normalized attention raw direction; a failed bound is inconclusive, not evidence of gate activation"
+  },
+  "changed_scalars": 4589583,
+  "maximum_new_tensor_weight": 12342.0263671875,
+  "finite": true,
+  "eligible_for_declared_exploratory_full_score": true,
+  "dotproduct_roundoff_gamma": 3.874452018368956e-05,
+  "scope": "Real-arithmetic source/RMS/hand-programme bounds on recorded inputs with Gate/Up dot-product allowance; not a complete float32 or changed-word-trajectory certificate",
+  "native_bounds": "Absolute Gate/Up envelope; no native GELU or attention-probability execution",
+  "sources": {
+    "experiments/analyze_a353_edit_efficient_plus_reader_composition_v1.py": "f920cae3e3694994097d08e35d428666be219bda6679d117e0e75678dd0cc9d8",
+    "experiments/analyze_a329_strengthened_plus_reader_composition_v1.py": "f7f0cdf5b6afcb5ea5ebd54532550d4835163f7233858afdab54293fb51e79af",
+    "experiments/circuit_io_v1.py": "906855a1361dbf0a032eb94451ec61cb1b30b107dcffbcee95992b00f03ebe80",
+    "experiments/analyze_a327_plus_reader_composition_v1.py": "f514891ac12485af71c317d6438893c1baf73335331e4943dca1b6ffe0adeed8"
+  },
+  "inputs": {
+    "artifacts/a352v1_edit_efficient_A_reader.pt": "30431a00fdd03a89cbd769a3869df6d71999b360c56a5049f8b121a4e53c1f67",
+    "artifacts/a326v1_fixed_plus_decoder_diagnostic.pt": "73dff4a8755c902d01a2fc4ad6af2610dfd3f2ee14261de04213c1e6c8ed6f2e",
+    "experiments/a259v1_low_rank_copy_query_on_a240/delta.pt": "39f6c03da1c8b7d38b2223e59e5f680b92627808711db109a0b456c3cd81f350",
+    "experiments/a259v1_low_rank_copy_query_on_a240/circuit.pt": "e4d433ca3b59031d87ecda1032dc3289e950304edb6c4c155965a1cea3f1c34f",
+    "artifacts/a150v1_early_native_basis.pt": "dde77056b570a89ad7bbc273459ecabc6e473c119eb8e8baa1802e5dc60f3d20",
+    "artifacts/a140v1_edited_branches.pt": "4371f570753ea226816d36dd86e2f020fbe2a13c1281d5ba3b2c41569586a2e9",
+    "artifacts/a191v1_recorded_reader3_mixtures.pt": "8d555b1b9f6d199ad8d0718f7b31326c1378dd2a6fd232282a102da07923f12c",
+    "artifacts/a39_inputs_syntax_a.pt": "c3cde1169515ba68602ad4d5b215822161ef7d46b38a7d8a254954769fa5a680",
+    "artifacts/a39_inputs_syntax_stress.pt": "4c003dc1bb5fd769d5c240853949e4861ac95c24442cedd8b830cf4d0522d564",
+    "artifacts/a39_inputs_syntax_c.pt": "2ad5da8e7dccca3c0f17955b2cfa10cfe23d3d6cbb10493e642baa2ef3b59ab7"
+  },
+  "maximum_resident_set_kib": 1908344
+}

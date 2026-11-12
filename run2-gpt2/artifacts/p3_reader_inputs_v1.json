@@ -1,0 +1,72 @@
+{
+  "reports": [
+    {
+      "domain": "a",
+      "incorrect_bits": 8,
+      "examples_with_error": 6,
+      "syntax_raw_min": [
+        0.07614034828563397,
+        0.6517828126296522,
+        0.11292921516258059,
+        0.09360274467143741,
+        0.11528722729354839,
+        0.10895142881123444,
+        0.8866815489696425
+      ],
+      "ratio_extrema": [
+        -0.06191267224125097,
+        1.07254447012797
+      ]
+    },
+    {
+      "domain": "b",
+      "incorrect_bits": 1,
+      "examples_with_error": 1,
+      "syntax_raw_min": [
+        0.10976043594228266,
+        0.6632455145251938,
+        0.12787234233032618,
+        0.08631760969978058,
+        0.10715240152405607,
+        0.08479257560711262,
+        0.9129444181871762
+      ],
+      "ratio_extrema": [
+        -0.06036671198247114,
+        1.0623375048018295
+      ]
+    }
+  ],
+  "off_trials": [
+    {
+      "text_mass": 0.0001,
+      "off_negative_min": -1.2116299157374721,
+      "off_program_abs_max": 1.831316223230893,
+      "nonpositive_off_count": 3830
+    },
+    {
+      "text_mass": 0.001,
+      "off_negative_min": -1.1750728818905154,
+      "off_program_abs_max": 1.8309659900255246,
+      "nonpositive_off_count": 3224
+    },
+    {
+      "text_mass": 0.01,
+      "off_negative_min": -1.141317173932431,
+      "off_program_abs_max": 1.8301454289216794,
+      "nonpositive_off_count": 2794
+    },
+    {
+      "text_mass": 0.1,
+      "off_negative_min": -1.138439562677871,
+      "off_program_abs_max": 1.8289888355719972,
+      "nonpositive_off_count": 2367
+    },
+    {
+      "text_mass": 1.0,
+      "off_negative_min": -1.0801116103852861,
+      "off_program_abs_max": 1.8253160941421709,
+      "nonpositive_off_count": 1786
+    }
+  ]
+}
